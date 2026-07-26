@@ -1,0 +1,2919 @@
+============================================================
+FILE: Data\Xml\CampaignFiles.xml
+============================================================
+
+<?xml version="1.0"?>
+<Campaign_Files>
+
+  <File>GC_Pegasus_Prelude.xml</File>
+  <File>GC_Systemlord_Alliance.xml</File>
+
+</Campaign_Files>
+
+============================================================
+FILE: Data\Xml\GC_Pegasus_Prelude.xml
+============================================================
+
+<?xml version="1.0"?>
+<Campaigns>
+
+<!-- ************************************************************************** -->
+<!-- ******************* SANDBOX CAMPAIGN "Pegasus Prelude" ******************* -->
+<!-- ************************************************************************** -->
+
+
+   <Campaign Name="Pegasus_Prelude_Ancients">
+
+      <Campaign_Set> Sandbox_Pegasus_Prelude_GC </Campaign_Set>
+      <Sort_Order>5</Sort_Order>
+
+      <Text_ID>TEXT_CAMPAIGN_SINGLE_PEGASUS_PRELUDE_TITLE_U</Text_ID>
+      <Description_Text>TEXT_CAMPAIGN_SINGLE_DESCRIPTION_PEGASUS_PRELUDE</Description_Text>
+
+      <Camera_Shift_X> 40.0 </Camera_Shift_X>
+      <Camera_Shift_Y> 0.0 </Camera_Shift_Y>
+      <Camera_Distance> 1200.0 </Camera_Distance>
+
+      <Locations>
+      Pegasus_Prelude_Galaxy_Core_Art_Model,
+      Pegasus_Prelude_Planet_Ascension,
+      Pegasus_Prelude_Planet_Asteroid_Field,
+      Pegasus_Prelude_Planet_Asuras,
+      Pegasus_Prelude_Planet_Athos,
+      Pegasus_Prelude_Planet_Aurora,
+      Pegasus_Prelude_Planet_Belkan,
+      Pegasus_Prelude_Planet_Dagan,
+      Pegasus_Prelude_Planet_Doranda,
+      Pegasus_Prelude_Planet_Edowin,
+      Pegasus_Prelude_Planet_Gas_Nebula,
+      Pegasus_Prelude_Planet_Gelda,
+      Pegasus_Prelude_Planet_Gonta,
+      Pegasus_Prelude_Planet_Hoff,
+      Pegasus_Prelude_Planet_Iratus_Bestiola,
+      Pegasus_Prelude_Planet_Jenev,
+      Pegasus_Prelude_Planet_Kohal,
+      Pegasus_Prelude_Planet_Lantea,
+      Pegasus_Prelude_Planet_Laros,
+      Pegasus_Prelude_Planet_M6H_987,
+      Pegasus_Prelude_Planet_Manaria,
+      Pegasus_Prelude_Planet_Olesia,
+      Pegasus_Prelude_Planet_Orakis,
+      Pegasus_Prelude_Planet_Orlan,
+      Pegasus_Prelude_Planet_Proculis,
+      Pegasus_Prelude_Planet_Rasputin,
+      Pegasus_Prelude_Planet_Sagon,
+      Pegasus_Prelude_Planet_Sun,
+      Pegasus_Prelude_Planet_Taranis,
+      Pegasus_Prelude_Planet_Vadena,
+      Pegasus_Prelude_Planet_Wraith_Homeworld,
+      Pegasus_Prelude_Planet_Wraith_ZPM_Base
+      </Locations>
+
+      <Trade_Routes>
+      PP_Asteroid_Field_Wraith_ZPM_Base,
+      PP_Athos_Belkan,
+      PP_Aurora_Dagan,
+      PP_Belkan_Doranda,
+      PP_Belkan_Orlan,
+      PP_Doranda_Ascension,
+      PP_Doranda_Laros,
+      PP_Doranda_Rasputin,
+      PP_Gas_Nebula_Hoff,
+      PP_Gas_Nebula_Iratus_Bestiola,
+      PP_Gas_Nebula_Laros,
+      PP_Gelda_Asuras,
+      PP_Gelda_Aurora,
+      PP_Gonta_Proculis,
+      PP_Gonta_Taranis,
+      PP_Gonta_ZPM_Base
+      PP_Hoff_Vadena,
+      PP_Iratus_Bestiola_Wraith_Homeworld,
+      PP_Jenev_Gelda,
+      PP_Jenev_M6H_987,
+      PP_Jenev_Manria,
+      PP_Kohal_Edowin,
+      PP_Lantea_Athos,
+      PP_Lantea_Orakis,
+      PP_M6H_987_Orakis,
+      PP_Manaria_Edowin,
+      PP_Manaria_Orlan,
+      PP_Manaria_Rasputin,
+      PP_Olesia_ZPM_Base,
+      PP_Orakis_Jenev,
+      PP_Orlan_Rasputin,
+      PP_Proculis_Olesia,
+      PP_Proculis_Wraith_ZPM_Base,
+      PP_Sagon_Gas_Nebula,
+      PP_Sagon_Hoff,
+      PP_Sagon_Laros,
+      PP_Sun_Edowin,
+      PP_Sun_Hoff,
+      PP_Sun_Rasputin,
+      PP_Sun_Sagon,
+      PP_Taranis_Asteroid_Field,
+      PP_Taranis_Dagan,
+      PP_Vadena_Proculis,
+      </Trade_Routes>
+
+      <Home_Location> Empire, Pegasus_Prelude_Planet_Wraith_Homeworld </Home_Location>
+      <Home_Location> Underworld, Pegasus_Prelude_Planet_Lantea </Home_Location>
+      <Home_Location> Asuran, Pegasus_Prelude_Planet_Asuras </Home_Location>
+
+      <Starting_Active_Player> Underworld </Starting_Active_Player>
+
+      <Empire_Story_Name>Story_Plots_Sandbox_Pegasus_Prelude_AI_Wraith.xml</Empire_Story_Name>
+      <Underworld_Story_Name>Story_Plots_Sandbox_Pegasus_Prelude_Tauri.xml</Underworld_Story_Name>
+
+      <AI_Player_Control> Empire, Wraith_Player_PP </AI_Player_Control>
+      <!-- This needs more fine control in the story file due to some stupid bug where the Asurans win the GC
+           if they are allied with the player and have an AI
+      <AI_Player_Control> Asuran, None  </AI_Player_Control>-->
+
+      <Markup_Filename>Empire, PegasusPreludeHints </Markup_Filename>
+      <Markup_Filename>Underworld, PegasusPreludeHints </Markup_Filename>
+      <Markup_Filename>Asuran, PegasusPreludeHints </Markup_Filename>
+
+      <Supports_Custom_Settings>False</Supports_Custom_Settings>
+      <Show_Completed_Tab>True</Show_Completed_Tab>
+
+      <Human_Victory_Conditions>
+         Galactic_All_Planets_Controlled
+      </Human_Victory_Conditions>
+      <AI_Victory_Conditions>
+         Galactic_All_Planets_Controlled
+      </AI_Victory_Conditions>
+
+      <Is_Multiplayer> No </Is_Multiplayer>
+
+      <!-- Wraith Starting Forces -->
+
+      <Starting_Credits> Empire,  100 </Starting_Credits>
+      <Starting_Tech_Level> Empire, 5 </Starting_Tech_Level>
+      <Max_Tech_Level> Empire, 5 </Max_Tech_Level>
+
+      <Starting_Forces> Empire, Pegasus_Prelude_Planet_Wraith_Homeworld, Empire_Star_Base_5 </Starting_Forces>
+      <Starting_Forces> Empire, Pegasus_Prelude_Planet_Wraith_Homeworld, wraith_Defense_Satellite_ANTICAPITAL_SS </Starting_Forces>
+      <Starting_Forces> Empire, Pegasus_Prelude_Planet_Wraith_Homeworld, Wraith_Large_Shipyard </Starting_Forces>
+
+      <Starting_Forces> Empire, Pegasus_Prelude_Planet_Edowin, Empire_Star_Base_1 </Starting_Forces>
+      <Starting_Forces> Empire, Pegasus_Prelude_Planet_Edowin, wraith_Defense_Satellite_ANTIFIGHTER_SS </Starting_Forces>
+      <Starting_Forces> Empire, Pegasus_Prelude_Planet_Edowin, wraith_Defense_Satellite_ANTICAPITAL_SS </Starting_Forces>
+
+      <Starting_Forces> Empire, Pegasus_Prelude_Planet_Kohal, Empire_Star_Base_1 </Starting_Forces>
+      <Starting_Forces> Empire, Pegasus_Prelude_Planet_Kohal, Wraith_Large_Shipyard </Starting_Forces>
+
+      <Starting_Forces> Empire, Pegasus_Prelude_Planet_Laros, Empire_Star_Base_2 </Starting_Forces>
+      <Starting_Forces> Empire, Pegasus_Prelude_Planet_Laros, Wraith_Hangar </Starting_Forces>
+
+      <Starting_Forces> Empire, Pegasus_Prelude_Planet_Sagon, Empire_Star_Base_1 </Starting_Forces>
+      <Starting_Forces> Empire, Pegasus_Prelude_Planet_Sagon, wraith_Defense_Satellite_ANTIFIGHTER_SS </Starting_Forces>
+      <Starting_Forces> Empire, Pegasus_Prelude_Planet_Sagon, Wraith_Hangar </Starting_Forces>
+
+      <Starting_Forces> Empire, Pegasus_Prelude_Planet_Hoff, Empire_Star_Base_4 </Starting_Forces>
+
+      <Starting_Forces> Empire, Pegasus_Prelude_Planet_Vadena, Empire_Star_Base_4 </Starting_Forces>
+      <Starting_Forces> Empire, Pegasus_Prelude_Planet_Vadena, Wraith_Large_Shipyard </Starting_Forces>
+      <Starting_Forces> Empire, Pegasus_Prelude_Planet_Vadena, Wraith_Hangar </Starting_Forces>
+
+      <Starting_Forces> Empire, Pegasus_Prelude_Planet_Gonta, Empire_Star_Base_1 </Starting_Forces>
+      <Starting_Forces> Empire, Pegasus_Prelude_Planet_Gonta, wraith_Defense_Satellite_ANTIFIGHTER_SS </Starting_Forces>
+
+      <Starting_Forces> Empire, Pegasus_Prelude_Planet_Proculis, Empire_Star_Base_1 </Starting_Forces>
+
+      <Starting_Forces> Empire, Pegasus_Prelude_Planet_Wraith_ZPM_Base, Empire_Star_Base_5 </Starting_Forces>
+      <Starting_Forces> Empire, Pegasus_Prelude_Planet_Wraith_ZPM_Base, Tartan_Patrol_Cruiser_PP </Starting_Forces>
+      <Starting_Forces> Empire, Pegasus_Prelude_Planet_Wraith_ZPM_Base, Tartan_Patrol_Cruiser_PP </Starting_Forces>
+      <Starting_Forces> Empire, Pegasus_Prelude_Planet_Wraith_ZPM_Base, TIE_Fighter_Squadron_PP </Starting_Forces>
+      <Starting_Forces> Empire, Pegasus_Prelude_Planet_Wraith_ZPM_Base, TIE_Fighter_Squadron_PP </Starting_Forces>
+      <Starting_Forces> Empire, Pegasus_Prelude_Planet_Wraith_ZPM_Base, Wraith_Large_Shipyard </Starting_Forces>
+      <Starting_Forces> Empire, Pegasus_Prelude_Planet_Wraith_ZPM_Base, Empire_Defense_Satellite_Repair_SS </Starting_Forces>
+
+      <Starting_Forces> Empire, Pegasus_Prelude_Planet_Olesia, Broadside_Class_Cruiser_PP </Starting_Forces>
+      <Starting_Forces> Empire, Pegasus_Prelude_Planet_Olesia, Acclamator_Assault_Ship_PP </Starting_Forces>
+
+      <Starting_Forces> Empire, Pegasus_Prelude_Planet_Iratus_Bestiola, Empire_Star_Base_3 </Starting_Forces>
+      <Starting_Forces> Empire, Pegasus_Prelude_Planet_Iratus_Bestiola, Victory_Destroyer_PP </Starting_Forces>
+      <Starting_Forces> Empire, Pegasus_Prelude_Planet_Iratus_Bestiola, Tartan_Patrol_Cruiser_PP </Starting_Forces>
+      <Starting_Forces> Empire, Pegasus_Prelude_Planet_Iratus_Bestiola, TIE_Defender_Squadron_PP </Starting_Forces>
+      <Starting_Forces> Empire, Pegasus_Prelude_Planet_Iratus_Bestiola, wraith_Defense_Satellite_ANTICAPITAL_SS </Starting_Forces>
+      <Starting_Forces> Empire, Pegasus_Prelude_Planet_Iratus_Bestiola, Empire_Defense_Satellite_Repair_SS </Starting_Forces>
+
+      <!-- Ancient Starting Forces -->
+
+      <Starting_Credits> Underworld,  4000 </Starting_Credits>
+      <Starting_Tech_Level> Underworld, 5 </Starting_Tech_Level>
+      <Max_Tech_Level> Underworld, 5 </Max_Tech_Level>
+
+      <Starting_Forces> Underworld, Pegasus_Prelude_Planet_Lantea, Ancient_Star_Base_3 </Starting_Forces>
+      <Starting_Forces> Underworld, Pegasus_Prelude_Planet_Lantea, Ancient_Frigate </Starting_Forces>
+      <Starting_Forces> Underworld, Pegasus_Prelude_Planet_Lantea, Ancient_Frigate </Starting_Forces>
+      <Starting_Forces> Underworld, Pegasus_Prelude_Planet_Lantea, Ancient_Corvette </Starting_Forces>
+      <Starting_Forces> Underworld, Pegasus_Prelude_Planet_Lantea, Ancient_Corvette </Starting_Forces>
+      <Starting_Forces> Underworld, Pegasus_Prelude_Planet_Lantea, Ancient_Jumper_Squadron </Starting_Forces>
+      <Starting_Forces> Underworld, Pegasus_Prelude_Planet_Lantea, Ancient_Jumper_Squadron </Starting_Forces>
+      <Starting_Forces> Underworld, Pegasus_Prelude_Planet_Lantea, Ancient_Jumper_Squadron </Starting_Forces>
+
+      <Starting_Forces> Underworld, Pegasus_Prelude_Planet_Ascension, Ancient_Jumper_Squadron </Starting_Forces>
+      <Starting_Forces> Underworld, Pegasus_Prelude_Planet_Asuras, Ancient_Star_Base_1 </Starting_Forces>
+      <Starting_Forces> Underworld, Pegasus_Prelude_Planet_Athos, Ancient_Jumper_Squadron </Starting_Forces>
+      <Starting_Forces> Underworld, Pegasus_Prelude_Planet_Aurora, Ancient_Corvette </Starting_Forces>
+      <Starting_Forces> Underworld, Pegasus_Prelude_Planet_Belkan, Ancient_Star_Base_1 </Starting_Forces>
+      <Starting_Forces> Underworld, Pegasus_Prelude_Planet_Dagan, Ancient_Jumper_Squadron </Starting_Forces>
+      <Starting_Forces> Underworld, Pegasus_Prelude_Planet_Doranda, Ancient_Destroyer </Starting_Forces>
+      <Starting_Forces> Underworld, Pegasus_Prelude_Planet_Doranda, Ancient_Jumper_Squadron </Starting_Forces>
+      <Starting_Forces> Underworld, Pegasus_Prelude_Planet_Doranda, Ancient_Star_Base_2 </Starting_Forces>
+      <Starting_Forces> Underworld, Pegasus_Prelude_Planet_Gelda, Ancient_Frigate </Starting_Forces>
+      <Starting_Forces> Underworld, Pegasus_Prelude_Planet_Jenev, Ancient_Jumper_Squadron </Starting_Forces>
+      <Starting_Forces> Underworld, Pegasus_Prelude_Planet_M6H_987, Ancient_Frigate </Starting_Forces>
+      <Starting_Forces> Underworld, Pegasus_Prelude_Planet_M6H_987, Ancient_Star_Base_2 </Starting_Forces>
+      <Starting_Forces> Underworld, Pegasus_Prelude_Planet_Manaria, Ancient_Corvette </Starting_Forces>
+      <Starting_Forces> Underworld, Pegasus_Prelude_Planet_Manaria, Ancient_Jumper_Squadron </Starting_Forces>
+      <Starting_Forces> Underworld, Pegasus_Prelude_Planet_Orakis, Ancient_Star_Base_1 </Starting_Forces>
+      <Starting_Forces> Underworld, Pegasus_Prelude_Planet_Orlan, Ancient_Jumper_Squadron </Starting_Forces>
+      <Starting_Forces> Underworld, Pegasus_Prelude_Planet_Rasputin, Ancient_Corvette </Starting_Forces>
+      <Starting_Forces> Underworld, Pegasus_Prelude_Planet_Taranis, Ancient_Corvette </Starting_Forces>
+      <Starting_Forces> Underworld, Pegasus_Prelude_Planet_Taranis, Ancient_Frigate </Starting_Forces>
+      <Starting_Forces> Underworld, Pegasus_Prelude_Planet_Taranis, Ancient_Jumper_Squadron </Starting_Forces>
+
+   </Campaign>
+
+
+   <Campaign Name="Pegasus_Prelude_Wraith">
+
+      <Campaign_Set> Sandbox_Pegasus_Prelude_GC </Campaign_Set>
+      <Sort_Order>5</Sort_Order>
+
+      <Text_ID>TEXT_CAMPAIGN_SINGLE_PEGASUS_PRELUDE_TITLE_U</Text_ID>
+      <Description_Text>TEXT_CAMPAIGN_SINGLE_DESCRIPTION_PEGASUS_PRELUDE</Description_Text>
+
+      <Camera_Shift_X> 600.0 </Camera_Shift_X>
+      <Camera_Shift_Y> 5900.0 </Camera_Shift_Y>
+      <Camera_Distance> 1200.0 </Camera_Distance>
+
+      <Locations>
+      Pegasus_Prelude_Galaxy_Core_Art_Model,
+      Pegasus_Prelude_Planet_Ascension,
+      Pegasus_Prelude_Planet_Asteroid_Field,
+      Pegasus_Prelude_Planet_Asuras,
+      Pegasus_Prelude_Planet_Athos,
+      Pegasus_Prelude_Planet_Aurora,
+      Pegasus_Prelude_Planet_Belkan,
+      Pegasus_Prelude_Planet_Dagan,
+      Pegasus_Prelude_Planet_Doranda,
+      Pegasus_Prelude_Planet_Edowin,
+      Pegasus_Prelude_Planet_Gas_Nebula,
+      Pegasus_Prelude_Planet_Gelda,
+      Pegasus_Prelude_Planet_Gonta,
+      Pegasus_Prelude_Planet_Hoff,
+      Pegasus_Prelude_Planet_Iratus_Bestiola,
+      Pegasus_Prelude_Planet_Jenev,
+      Pegasus_Prelude_Planet_Kohal,
+      Pegasus_Prelude_Planet_Lantea,
+      Pegasus_Prelude_Planet_Laros,
+      Pegasus_Prelude_Planet_M6H_987,
+      Pegasus_Prelude_Planet_Manaria,
+      Pegasus_Prelude_Planet_Olesia,
+      Pegasus_Prelude_Planet_Orakis,
+      Pegasus_Prelude_Planet_Orlan,
+      Pegasus_Prelude_Planet_Proculis,
+      Pegasus_Prelude_Planet_Rasputin,
+      Pegasus_Prelude_Planet_Sagon,
+      Pegasus_Prelude_Planet_Sun,
+      Pegasus_Prelude_Planet_Taranis,
+      Pegasus_Prelude_Planet_Vadena,
+      Pegasus_Prelude_Planet_Wraith_Homeworld,
+      Pegasus_Prelude_Planet_Wraith_ZPM_Base
+      </Locations>
+
+      <Trade_Routes>
+      PP_Asteroid_Field_Wraith_ZPM_Base,
+      PP_Athos_Belkan,
+      PP_Aurora_Dagan,
+      PP_Belkan_Doranda,
+      PP_Belkan_Orlan,
+      PP_Doranda_Ascension,
+      PP_Doranda_Laros,
+      PP_Doranda_Rasputin,
+      PP_Gas_Nebula_Hoff,
+      PP_Gas_Nebula_Iratus_Bestiola,
+      PP_Gas_Nebula_Laros,
+      PP_Gelda_Asuras,
+      PP_Gelda_Aurora,
+      PP_Gonta_Proculis,
+      PP_Gonta_Taranis,
+      PP_Gonta_ZPM_Base
+      PP_Hoff_Vadena,
+      PP_Iratus_Bestiola_Wraith_Homeworld,
+      PP_Jenev_Gelda,
+      PP_Jenev_M6H_987,
+      PP_Jenev_Manria,
+      PP_Kohal_Edowin,
+      PP_Lantea_Athos,
+      PP_Lantea_Orakis,
+      PP_M6H_987_Orakis,
+      PP_Manaria_Edowin,
+      PP_Manaria_Orlan,
+      PP_Manaria_Rasputin,
+      PP_Olesia_ZPM_Base,
+      PP_Orakis_Jenev,
+      PP_Orlan_Rasputin,
+      PP_Proculis_Olesia,
+      PP_Proculis_Wraith_ZPM_Base,
+      PP_Sagon_Gas_Nebula,
+      PP_Sagon_Hoff,
+      PP_Sagon_Laros,
+      PP_Sun_Edowin,
+      PP_Sun_Hoff,
+      PP_Sun_Rasputin,
+      PP_Sun_Sagon,
+      PP_Taranis_Asteroid_Field,
+      PP_Taranis_Dagan,
+      PP_Vadena_Proculis,
+      </Trade_Routes>
+
+      <Home_Location> Empire, Pegasus_Prelude_Planet_Wraith_Homeworld </Home_Location>
+      <Home_Location> Underworld, Pegasus_Prelude_Planet_Lantea </Home_Location>
+      <Home_Location> Asuran, Pegasus_Prelude_Planet_Asuras </Home_Location>
+
+      <Starting_Active_Player> Empire </Starting_Active_Player>
+
+      <Empire_Story_Name>Story_Plots_Sandbox_Pegasus_Prelude_Wraith.xml</Empire_Story_Name>
+      <Underworld_Story_Name>Story_Plots_Sandbox_Pegasus_Prelude_AI_Tauri.xml</Underworld_Story_Name>
+
+      <AI_Player_Control> Underworld, Ancient_Player_PP </AI_Player_Control>
+      <AI_Player_Control> Asuran, None  </AI_Player_Control>
+
+      <Markup_Filename>Empire, PegasusPreludeHints </Markup_Filename>
+      <Markup_Filename>Underworld, PegasusPreludeHints </Markup_Filename>
+      <Markup_Filename>Asuran, PegasusPreludeHints </Markup_Filename>
+
+      <Supports_Custom_Settings>False</Supports_Custom_Settings>
+      <Show_Completed_Tab>True</Show_Completed_Tab>
+
+      <Human_Victory_Conditions>
+         Galactic_All_Planets_Controlled
+      </Human_Victory_Conditions>
+      <AI_Victory_Conditions>
+         Galactic_All_Planets_Controlled
+      </AI_Victory_Conditions>
+
+      <Is_Multiplayer> No </Is_Multiplayer>
+
+      <!-- Wraith Starting Forces -->
+
+      <Starting_Credits> Empire,  10000 </Starting_Credits>
+      <Starting_Tech_Level> Empire, 5 </Starting_Tech_Level>
+      <Max_Tech_Level> Empire, 5 </Max_Tech_Level>
+
+      <Starting_Forces> Empire, Pegasus_Prelude_Planet_Wraith_Homeworld, Empire_Star_Base_3 </Starting_Forces>
+      <Starting_Forces> Empire, Pegasus_Prelude_Planet_Wraith_Homeworld, Interdictor_Cruiser_PP </Starting_Forces>
+      <Starting_Forces> Empire, Pegasus_Prelude_Planet_Wraith_Homeworld, Interdictor_Cruiser_PP </Starting_Forces>
+      <Starting_Forces> Empire, Pegasus_Prelude_Planet_Wraith_Homeworld, Interdictor_Cruiser_PP </Starting_Forces>
+      <Starting_Forces> Empire, Pegasus_Prelude_Planet_Wraith_Homeworld, Interdictor_Cruiser_PP </Starting_Forces>
+      <Starting_Forces> Empire, Pegasus_Prelude_Planet_Wraith_Homeworld, TIE_Fighter_Squadron_PP </Starting_Forces>
+      <Starting_Forces> Empire, Pegasus_Prelude_Planet_Wraith_Homeworld, TIE_Fighter_Squadron_PP </Starting_Forces>
+      <Starting_Forces> Empire, Pegasus_Prelude_Planet_Wraith_Homeworld, TIE_Fighter_Squadron_PP </Starting_Forces>
+      <Starting_Forces> Empire, Pegasus_Prelude_Planet_Wraith_Homeworld, TIE_Fighter_Squadron_PP </Starting_Forces>
+      <Starting_Forces> Empire, Pegasus_Prelude_Planet_Wraith_Homeworld, TIE_Bomber_Squadron_PP </Starting_Forces>
+      <Starting_Forces> Empire, Pegasus_Prelude_Planet_Wraith_Homeworld, TIE_Bomber_Squadron_PP </Starting_Forces>
+      <Starting_Forces> Empire, Pegasus_Prelude_Planet_Wraith_Homeworld, Probe_Droid_Team </Starting_Forces>
+      <Starting_Forces> Empire, Pegasus_Prelude_Planet_Wraith_Homeworld, wraith_Defense_Satellite_ANTICAPITAL_SS </Starting_Forces>
+
+      <Starting_Forces> Empire, Pegasus_Prelude_Planet_Iratus_Bestiola, Empire_Star_Base_3 </Starting_Forces>
+      <Starting_Forces> Empire, Pegasus_Prelude_Planet_Iratus_Bestiola, Interdictor_Cruiser_PP </Starting_Forces>
+      <Starting_Forces> Empire, Pegasus_Prelude_Planet_Iratus_Bestiola, TIE_Fighter_Squadron_PP </Starting_Forces>
+      <Starting_Forces> Empire, Pegasus_Prelude_Planet_Iratus_Bestiola, TIE_Fighter_Squadron_PP </Starting_Forces>
+      <Starting_Forces> Empire, Pegasus_Prelude_Planet_Iratus_Bestiola, TIE_Fighter_Squadron_PP </Starting_Forces>
+      <Starting_Forces> Empire, Pegasus_Prelude_Planet_Iratus_Bestiola, TIE_Fighter_Squadron_PP </Starting_Forces>
+      <Starting_Forces> Empire, Pegasus_Prelude_Planet_Iratus_Bestiola, TIE_Fighter_Squadron_PP </Starting_Forces>
+      <Starting_Forces> Empire, Pegasus_Prelude_Planet_Iratus_Bestiola, TIE_Fighter_Squadron_PP </Starting_Forces>
+      <Starting_Forces> Empire, Pegasus_Prelude_Planet_Iratus_Bestiola, TIE_Bomber_Squadron_PP </Starting_Forces>
+      <Starting_Forces> Empire, Pegasus_Prelude_Planet_Iratus_Bestiola, TIE_Bomber_Squadron_PP </Starting_Forces>
+      <Starting_Forces> Empire, Pegasus_Prelude_Planet_Iratus_Bestiola, TIE_Bomber_Squadron_PP </Starting_Forces>
+      <Starting_Forces> Empire, Pegasus_Prelude_Planet_Iratus_Bestiola, TIE_Bomber_Squadron_PP </Starting_Forces>
+
+      <Starting_Forces> Empire, Pegasus_Prelude_Planet_Sagon, Empire_Star_Base_3 </Starting_Forces>
+      <Starting_Forces> Empire, Pegasus_Prelude_Planet_Sagon, Interdictor_Cruiser_PP </Starting_Forces>
+      <Starting_Forces> Empire, Pegasus_Prelude_Planet_Sagon, Interdictor_Cruiser_PP </Starting_Forces>
+      <Starting_Forces> Empire, Pegasus_Prelude_Planet_Sagon, Interdictor_Cruiser_PP </Starting_Forces>
+      <Starting_Forces> Empire, Pegasus_Prelude_Planet_Sagon, TIE_Fighter_Squadron_PP </Starting_Forces>
+      <Starting_Forces> Empire, Pegasus_Prelude_Planet_Sagon, TIE_Fighter_Squadron_PP </Starting_Forces>
+      <Starting_Forces> Empire, Pegasus_Prelude_Planet_Sagon, TIE_Fighter_Squadron_PP </Starting_Forces>
+      <Starting_Forces> Empire, Pegasus_Prelude_Planet_Sagon, TIE_Bomber_Squadron_PP </Starting_Forces>
+      <Starting_Forces> Empire, Pegasus_Prelude_Planet_Sagon, TIE_Bomber_Squadron_PP </Starting_Forces>
+
+      <Starting_Forces> Empire, Pegasus_Prelude_Planet_Hoff, Empire_Star_Base_2 </Starting_Forces>
+      <Starting_Forces> Empire, Pegasus_Prelude_Planet_Hoff, Interdictor_Cruiser_PP </Starting_Forces>
+      <Starting_Forces> Empire, Pegasus_Prelude_Planet_Hoff, Interdictor_Cruiser_PP </Starting_Forces>
+      <Starting_Forces> Empire, Pegasus_Prelude_Planet_Hoff, TIE_Fighter_Squadron_PP </Starting_Forces>
+      <Starting_Forces> Empire, Pegasus_Prelude_Planet_Hoff, TIE_Fighter_Squadron_PP </Starting_Forces>
+
+      <Starting_Forces> Empire, Pegasus_Prelude_Planet_Vadena, Empire_Star_Base_2 </Starting_Forces>
+      <Starting_Forces> Empire, Pegasus_Prelude_Planet_Vadena, Interdictor_Cruiser_PP </Starting_Forces>
+      <Starting_Forces> Empire, Pegasus_Prelude_Planet_Vadena, Interdictor_Cruiser_PP </Starting_Forces>
+      <Starting_Forces> Empire, Pegasus_Prelude_Planet_Vadena, Interdictor_Cruiser_PP </Starting_Forces>
+      <Starting_Forces> Empire, Pegasus_Prelude_Planet_Vadena, TIE_Fighter_Squadron_PP </Starting_Forces>
+      <Starting_Forces> Empire, Pegasus_Prelude_Planet_Vadena, TIE_Fighter_Squadron_PP </Starting_Forces>
+      <Starting_Forces> Empire, Pegasus_Prelude_Planet_Vadena, TIE_Fighter_Squadron_PP </Starting_Forces>
+
+      <!-- Ancient Starting Forces -->
+
+      <Starting_Credits> Underworld,  1000 </Starting_Credits>
+      <Starting_Tech_Level> Underworld, 5 </Starting_Tech_Level>
+      <Max_Tech_Level> Underworld, 5 </Max_Tech_Level>
+
+      <Starting_Forces> Underworld, Pegasus_Prelude_Planet_Gonta, Ancient_Star_Base_1 </Starting_Forces>
+      <Starting_Forces> Underworld, Pegasus_Prelude_Planet_Lantea, Ancient_Star_Base_5 </Starting_Forces>
+      <Starting_Forces> Underworld, Pegasus_Prelude_Planet_Ascension, Ancient_Jumper_Squadron </Starting_Forces>
+      <Starting_Forces> Underworld, Pegasus_Prelude_Planet_Asuras, Ancient_Star_Base_3 </Starting_Forces>
+      <Starting_Forces> Underworld, Pegasus_Prelude_Planet_Athos, Ancient_Star_Base_3 </Starting_Forces>
+      <Starting_Forces> Underworld, Pegasus_Prelude_Planet_Belkan, Ancient_Star_Base_3 </Starting_Forces>
+      <Starting_Forces> Underworld, Pegasus_Prelude_Planet_Kohal, Ancient_Jumper_Squadron </Starting_Forces>
+      <Starting_Forces> Underworld, Pegasus_Prelude_Planet_Doranda, Ancient_Star_Base_5 </Starting_Forces>
+      <Starting_Forces> Underworld, Pegasus_Prelude_Planet_Gelda, Ancient_Frigate </Starting_Forces>
+      <Starting_Forces> Underworld, Pegasus_Prelude_Planet_Jenev, Ancient_Jumper_Squadron </Starting_Forces>
+      <Starting_Forces> Underworld, Pegasus_Prelude_Planet_Orakis, Ancient_Star_Base_4 </Starting_Forces>
+      <Starting_Forces> Underworld, Pegasus_Prelude_Planet_Orlan, Ancient_Jumper_Squadron </Starting_Forces>
+      <Starting_Forces> Underworld, Pegasus_Prelude_Planet_Edowin, Ancient_Jumper_Squadron </Starting_Forces>
+      <Starting_Forces> Underworld, Pegasus_Prelude_Planet_Rasputin, Ancient_Jumper_Squadron </Starting_Forces>
+      <Starting_Forces> Underworld, Pegasus_Prelude_Planet_Taranis, Ancient_Star_Base_3 </Starting_Forces>
+
+   </Campaign>
+
+
+</Campaigns>
+
+============================================================
+FILE: Data\Xml\GC_Systemlord_Alliance.xml
+============================================================
+
+<?xml version="1.0"?>
+<Campaigns>
+
+<!-- ************************************************************************** -->
+<!-- *************** SANDBOX CAMPAIGN "Allianz der Systemlords" *************** -->
+<!-- ************************************************************************** -->
+
+
+  <Campaign Name="Sandbox_Origin_Underworld">
+
+    <Campaign_Set> Sandbox_Origin_Of_Corruption </Campaign_Set>
+    <Sort_Order>10</Sort_Order>
+
+    <Text_ID> TEXT_CAMPAIGN_SINGLE_21_R</Text_ID>
+    <Description_Text>TEXT_CAMPAIGN_SINGLE_DESCRIPTION_21_R</Description_Text>
+
+    <Camera_Shift_X> 40.0 </Camera_Shift_X>
+    <Camera_Shift_Y> 0.0 </Camera_Shift_Y>
+    <Camera_Distance> 1200.0 </Camera_Distance>
+
+    <Locations>
+      Galaxy_Core_Art_Model_General,
+      Systemlords_Galaxy_Core_Art_Model,
+      Allianz_AlphaBasis,
+      Allianz_Anubis_Heimatwelt,
+      Allianz_CalMah,
+      Allianz_Chulak,
+      Allianz_Dakara,
+      Allianz_Delmak,
+      Allianz_Entac,
+      Allianz_Erde,
+      Allianz_Erebus,
+      Allianz_Haktyl,
+      Allianz_Hassara,
+      Allianz_HathorHeimatwelt,
+      Allianz_Juna,
+      Allianz_Kheb,
+      Allianz_Langara,
+      Allianz_Latona,
+      Allianz_P3S_114,
+      Allianz_P3X_116,
+      Allianz_P3X_254,
+      Allianz_P3X_367,
+      Allianz_P3X_666,
+      Allianz_P5S_117,
+      Allianz_Pangar,
+      Allianz_PX9_757,
+      Allianz_Revanna,
+      Allianz_Tagrea,
+      Allianz_Tartarus,
+      Allianz_Tollana,
+      Allianz_Vorash,
+      Allianz_YUs_Heimatwelt
+    </Locations>
+
+    <Trade_Routes>
+      Tollana_Latona,
+      Tollana_Vorash,
+      Tollana_Alphabasis,
+      Vorash_Erde,
+      P5S_117_Haktyl,
+      Latona_Erebus,
+      P5S_117_Erde,
+      Revanna_Haktyl,
+      Revanna_P3X_666,
+      Vorash_Delmak,
+      P3S_114_P3X_666,
+      Cal_Mah_P3X_254,
+      Entac_Erde,
+      Chulak_Delmak,
+      P3S_114_Tagrea,
+      Tagrea_Kheb,
+      Tagrea_Anubis_Heimatwelt,
+      Tartarus_Anubis_Heimatwelt,
+      Tartarus_Langara,
+      Dakara_Pangar,
+      Dakara_Chulak,
+      Delmak_Erebus,
+      Hasara_P3X_367,
+      P3X_116_P3X_367,
+      P3X_254_P3X_367,
+      P3X_254_Pangar,
+      Hasara_HathorHeimatwelt,
+      Juna_P3X_666,
+      Juna_P3S_114,
+      Vorash_P3X_116,
+      Erde_Alphabasis,
+      Tartarus_HathorHeimatwelt,
+      Juna_Hassara,
+      Hassara_PX9_757,
+      Entac_Haktyl,
+      Entac_Yus_Homeworld,
+      Yus_Homeworld_Hassara,
+      Yus_Homeworld_Juna,
+      Yus_Homeworld_Cal_Mah,
+      Anubis_Homeworld_Kheb,
+      Langara_Dakara,
+      Chulak_Pangar,
+      Chulak_Erebus,
+      Delmak_P3X_116,
+      Vorash_P3X_367,
+      Hathors_Homeworld_PX9_757,
+      PX9_757_Juna,
+      Hassara_Cal_Mah
+    </Trade_Routes>
+
+    <Home_Location> Rebel, Allianz_Anubis_Heimatwelt </Home_Location>
+    <Home_Location> Underworld, Allianz_Erde </Home_Location>
+    <Home_Location> Systemlord_Alliance, Allianz_Dakara </Home_Location>
+
+    <Starting_Active_Player> Underworld </Starting_Active_Player>
+
+    <Rebel_Story_Name>Story_Plots_Sandbox_Systemlord_Alliance_AI_Goauld.xml</Rebel_Story_Name>
+    <Empire_Story_Name> </Empire_Story_Name>
+    <Underworld_Story_Name>Story_Plots_Sandbox_Systemlord_Alliance_Tauri.xml</Underworld_Story_Name>
+
+    <AI_Player_Control> Underworld, SandboxHuman </AI_Player_Control>    <!-- Need this to evaluate perceptions for the human player -->
+    <AI_Player_Control> Rebel, BasicRebel </AI_Player_Control>
+    <AI_Player_Control> Systemlord_Alliance, None </AI_Player_Control>
+
+    <Markup_Filename>Rebel, SystemlordAllianceHints </Markup_Filename>
+    <Markup_Filename>Underworld, SystemlordAllianceHints </Markup_Filename>
+    <Markup_Filename>Systemlord_Alliance, SystemlordAllianceHints </Markup_Filename>
+
+    <Supports_Custom_Settings>False</Supports_Custom_Settings>
+    <Show_Completed_Tab>True</Show_Completed_Tab>
+
+    <Human_Victory_Conditions>
+        Galactic_All_Planets_Controlled
+    </Human_Victory_Conditions>
+    <AI_Victory_Conditions>
+        Galactic_All_Planets_Controlled
+    </AI_Victory_Conditions>
+
+    <!-- Goauld Starting Forces -->
+
+    <Starting_Credits> Rebel, 10000 </Starting_Credits>
+    <Starting_Tech_Level> Rebel, 2 </Starting_Tech_Level>
+    <Max_Tech_Level> Rebel, 2 </Max_Tech_Level>
+
+    <Starting_Forces> Rebel, Allianz_Anubis_Heimatwelt, Rebel_Star_Base_5 </Starting_Forces>
+    <Starting_Forces> Rebel, Allianz_Anubis_Heimatwelt, Goauld_Defense_Satellite_Flash_SS </Starting_Forces>
+    <Starting_Forces> Rebel, Allianz_Anubis_Heimatwelt, Rebel_X-Wing_Squadron </Starting_Forces>
+    <Starting_Forces> Rebel, Allianz_Anubis_Heimatwelt, Rebel_X-Wing_Squadron </Starting_Forces>
+    <Starting_Forces> Rebel, Allianz_Anubis_Heimatwelt, Rebel_X-Wing_Squadron </Starting_Forces>
+    <Starting_Forces> Rebel, Allianz_Anubis_Heimatwelt, Rebel_X-Wing_Squadron </Starting_Forces>
+    <Starting_Forces> Rebel, Allianz_Anubis_Heimatwelt, Y-Wing_Squadron </Starting_Forces>
+    <Starting_Forces> Rebel, Allianz_Anubis_Heimatwelt, Corellian_Corvette </Starting_Forces>
+    <Starting_Forces> Rebel, Allianz_Anubis_Heimatwelt, Corellian_Gunboat </Starting_Forces>
+    <Starting_Forces> Rebel, Allianz_Anubis_Heimatwelt, Corellian_Gunboat </Starting_Forces>
+    <Starting_Forces> Rebel, Allianz_Anubis_Heimatwelt, Corellian_Gunboat </Starting_Forces>
+    <Starting_Forces> Rebel, Allianz_Anubis_Heimatwelt, Corellian_Gunboat </Starting_Forces>
+
+    <Starting_Forces> Rebel, Allianz_Anubis_Heimatwelt, Rebel_Command_Center </Starting_Forces>
+    <Starting_Forces> Rebel, Allianz_Anubis_Heimatwelt, R_Ground_Barracks </Starting_Forces>
+    <Starting_Forces> Rebel, Allianz_Anubis_Heimatwelt, Rebel_Tank_Buster_Squad </Starting_Forces>
+    <Starting_Forces> Rebel, Allianz_Anubis_Heimatwelt, Rebel_Infantry_Squad </Starting_Forces>
+
+
+
+    <Starting_Forces> Rebel, Allianz_Tartarus, Rebel_Star_Base_5 </Starting_Forces>
+    <Starting_Forces> Rebel, Allianz_Tartarus, Y-Wing_Squadron </Starting_Forces>
+    <Starting_Forces> Rebel, Allianz_Tartarus, Corellian_Corvette </Starting_Forces>
+    <Starting_Forces> Rebel, Allianz_Tartarus, Nebulon_B_Frigate </Starting_Forces>
+    <Starting_Forces> Rebel, Allianz_Tartarus, Nebulon_B_Frigate </Starting_Forces>
+    <Starting_Forces> Rebel, Allianz_Tartarus, Corellian_Gunboat </Starting_Forces>
+    <Starting_Forces> Rebel, Allianz_Tartarus, Corellian_Gunboat </Starting_Forces>
+    <Starting_Forces> Rebel, Allianz_Tartarus, Corellian_Gunboat </Starting_Forces>
+    <Starting_Forces> Rebel, Allianz_Tartarus, Corellian_Gunboat </Starting_Forces>
+    <Starting_Forces> Rebel, Allianz_Tartarus, Corellian_Gunboat </Starting_Forces>
+    <Starting_Forces> Rebel, Allianz_Tartarus, Goauld_Defense_Satellite_Flash_SS </Starting_Forces>
+
+    <!--todo: spawn kulls via event?-->
+    <Starting_Forces> Rebel, Allianz_Tartarus, Rebel_Command_Center </Starting_Forces>
+    <Starting_Forces> Rebel, Allianz_Tartarus, R_Ground_Barracks </Starting_Forces>
+    <Starting_Forces> Rebel, Allianz_Tartarus, Rebel_Infantry_Squad </Starting_Forces>
+    <Starting_Forces> Rebel, Allianz_Tartarus, Rebel_Infantry_Squad </Starting_Forces>
+    <Starting_Forces> Rebel, Allianz_Tartarus, Rebel_Infantry_Squad </Starting_Forces>
+    <Starting_Forces> Rebel, Allianz_Anubis_Heimatwelt, Rebel_Tank_Buster_Squad </Starting_Forces>
+    <Starting_Forces> Rebel, Allianz_Anubis_Heimatwelt, Rebel_Speeder_Wing </Starting_Forces>
+    <Starting_Forces> Rebel, Allianz_Anubis_Heimatwelt, Rebel_Speeder_Wing </Starting_Forces>
+
+
+
+    <!-- Tauri Starting Forces -->
+
+    <Starting_Credits> Underworld, 9000 </Starting_Credits>
+    <Starting_Tech_Level> Underworld, 2 </Starting_Tech_Level>
+    <Max_Tech_Level> Underworld, 5 </Max_Tech_Level>
+
+    <Starting_Forces> Underworld, Allianz_Erde, Underworld_Star_Base_1 </Starting_Forces>
+    <Starting_Forces> Underworld, Allianz_Erde, Crusader_Gunship </Starting_Forces>
+
+    <Starting_Forces> Underworld, Allianz_Erde, U_Ground_Palace </Starting_Forces>
+    <Starting_Forces> Underworld, Allianz_Erde, U_Ground_Barracks </Starting_Forces>
+    <Starting_Forces> Underworld, Allianz_Erde, Underworld_Merc_Squad</Starting_Forces>
+    <Starting_Forces> Underworld, Allianz_Erde, Underworld_Merc_Squad</Starting_Forces>
+    <Starting_Forces> Underworld, Allianz_Erde, Underworld_Merc_Squad</Starting_Forces>
+    <Starting_Forces> Underworld, Allianz_Erde, Underworld_Merc_Squad </Starting_Forces>
+
+
+    <!-- Systemlord Allianz Starting Forces -->
+
+    <Starting_Credits> Systemlord_Alliance, 100 </Starting_Credits>
+    <Starting_Tech_Level> Systemlord_Alliance, 5 </Starting_Tech_Level>
+    <Max_Tech_Level> Systemlord_Alliance, 5 </Max_Tech_Level>
+
+
+    <Starting_Forces> Systemlord_Alliance, Allianz_P5S_117, Systemlord_Alliance_Jaffa_Company </Starting_Forces>
+    <Starting_Forces> Systemlord_Alliance, Allianz_P5S_117, Systemlord_Alliance_Jaffa_Company </Starting_Forces>
+
+
+    <Starting_Forces> Systemlord_Alliance, Allianz_Entac, Systemlord_Alliance_System_Flagship </Starting_Forces>
+    <Starting_Forces> Systemlord_Alliance, Allianz_Entac, Systemlord_Alliance_New_Hatak </Starting_Forces>
+    <Starting_Forces> Systemlord_Alliance, Allianz_Entac, Systemlord_Alliance_New_Hatak </Starting_Forces>
+    <Starting_Forces> Systemlord_Alliance, Allianz_Entac, Systemlord_Alliance_Old_Hatak </Starting_Forces>
+    <Starting_Forces> Systemlord_Alliance, Allianz_Entac, Systemlord_Alliance_Old_Hatak </Starting_Forces>
+    <Starting_Forces> Systemlord_Alliance, Allianz_Entac, Systemlord_Alliance_Pyramid_Ship </Starting_Forces>
+    <Starting_Forces> Systemlord_Alliance, Allianz_Entac, Systemlord_Alliance_Pyramid_Ship </Starting_Forces>
+    <Starting_Forces> Systemlord_Alliance, Allianz_Entac, Systemlord_Alliance_Pyramid_Ship </Starting_Forces>
+    <Starting_Forces> Systemlord_Alliance, Allianz_Entac, Systemlord_Alliance_Death_Glider_Squadron </Starting_Forces>
+    <Starting_Forces> Systemlord_Alliance, Allianz_Entac, Systemlord_Alliance_Death_Glider_Squadron </Starting_Forces>
+    <Starting_Forces> Systemlord_Alliance, Allianz_Entac, Systemlord_Alliance_Death_Glider_Squadron </Starting_Forces>
+    <Starting_Forces> Systemlord_Alliance, Allianz_Entac, Systemlord_Alliance_Death_Glider_Squadron </Starting_Forces>
+    <Starting_Forces> Systemlord_Alliance, Allianz_Entac, Systemlord_Alliance_Alkesh_Squadron </Starting_Forces>
+    <Starting_Forces> Systemlord_Alliance, Allianz_Entac, Systemlord_Alliance_Alkesh_Squadron </Starting_Forces>
+    <Starting_Forces> Systemlord_Alliance, Allianz_Entac, SysLords_Star_Base_1 </Starting_Forces>
+
+    <Starting_Forces> Systemlord_Alliance, Allianz_Entac, SysLords_Ground_Palace </Starting_Forces>
+    <Starting_Forces> Systemlord_Alliance, Allianz_Entac, Systemlord_Alliance_Jaffa_Company </Starting_Forces>
+    <Starting_Forces> Systemlord_Alliance, Allianz_Entac, Systemlord_Alliance_Jaffa_Company </Starting_Forces>
+    <Starting_Forces> Systemlord_Alliance, Allianz_Entac, Systemlord_Alliance_Jaffa_Company </Starting_Forces>
+    <Starting_Forces> Systemlord_Alliance, Allianz_Entac, Systemlord_Alliance_Necropolis_Guard_Company </Starting_Forces>
+    <Starting_Forces> Systemlord_Alliance, Allianz_Entac, Systemlord_Alliance_Necropolis_Guard_Company </Starting_Forces>
+    <Starting_Forces> Systemlord_Alliance, Allianz_Entac, Systemlord_Alliance_Deathglider_Company </Starting_Forces>
+    <Starting_Forces> Systemlord_Alliance, Allianz_Entac, Systemlord_Alliance_Deathglider_Company </Starting_Forces>
+
+
+
+    <Starting_Forces> Systemlord_Alliance, Allianz_Haktyl, Systemlord_Alliance_New_Hatak </Starting_Forces>
+    <Starting_Forces> Systemlord_Alliance, Allianz_Haktyl, Systemlord_Alliance_Old_Hatak </Starting_Forces>
+    <Starting_Forces> Systemlord_Alliance, Allianz_Haktyl, Systemlord_Alliance_Pyramid_Ship </Starting_Forces>
+    <Starting_Forces> Systemlord_Alliance, Allianz_Haktyl, Systemlord_Alliance_Pyramid_Ship </Starting_Forces>
+    <Starting_Forces> Systemlord_Alliance, Allianz_Haktyl, Systemlord_Alliance_Death_Glider_Squadron </Starting_Forces>
+    <Starting_Forces> Systemlord_Alliance, Allianz_Haktyl, Systemlord_Alliance_Death_Glider_Squadron </Starting_Forces>
+    <Starting_Forces> Systemlord_Alliance, Allianz_Haktyl, Systemlord_Alliance_Death_Glider_Squadron </Starting_Forces>
+    <Starting_Forces> Systemlord_Alliance, Allianz_Haktyl, Systemlord_Alliance_Death_Glider_Squadron </Starting_Forces>
+    <Starting_Forces> Systemlord_Alliance, Allianz_Haktyl, SysLords_Star_Base_2 </Starting_Forces>
+
+    <!--We don't have much troops on Haktyl so the player can use ground sneak attack as well-->
+    <Starting_Forces> Systemlord_Alliance, Allianz_Haktyl, SysLords_Ground_Palace </Starting_Forces>
+    <Starting_Forces> Systemlord_Alliance, Allianz_Haktyl, Systemlord_Alliance_Serpent_Guard_Company </Starting_Forces>
+    <Starting_Forces> Systemlord_Alliance, Allianz_Haktyl, Systemlord_Alliance_Jaffa_Company </Starting_Forces>
+    <Starting_Forces> Systemlord_Alliance, Allianz_Haktyl, Systemlord_Alliance_Jaffa_Company </Starting_Forces>
+
+
+    <Starting_Forces> Systemlord_Alliance, Allianz_Dakara, Systemlord_Alliance_Teltak_Squadron </Starting_Forces>
+    <Starting_Forces> Systemlord_Alliance, Allianz_Dakara, Systemlord_Alliance_New_Hatak </Starting_Forces>
+    <Starting_Forces> Systemlord_Alliance, Allianz_Dakara, Systemlord_Alliance_New_Hatak </Starting_Forces>
+    <Starting_Forces> Systemlord_Alliance, Allianz_Dakara, Systemlord_Alliance_New_Hatak </Starting_Forces>
+    <Starting_Forces> Systemlord_Alliance, Allianz_Dakara, Systemlord_Alliance_New_Hatak </Starting_Forces>
+    <Starting_Forces> Systemlord_Alliance, Allianz_Dakara, Systemlord_Alliance_New_Hatak </Starting_Forces>
+    <Starting_Forces> Systemlord_Alliance, Allianz_Dakara, Systemlord_Alliance_New_Hatak </Starting_Forces>
+    <Starting_Forces> Systemlord_Alliance, Allianz_Dakara, SysLords_Star_Base_4 </Starting_Forces>
+
+    <Starting_Forces> Systemlord_Alliance, Allianz_Dakara, SysLords_Ground_Palace </Starting_Forces>
+    <Starting_Forces> Systemlord_Alliance, Allianz_Dakara, SysLords_Ground_Barracks </Starting_Forces>
+    <Starting_Forces> Systemlord_Alliance, Allianz_Dakara, SysLords_Ground_Hangar </Starting_Forces>
+    <Starting_Forces> Systemlord_Alliance, Allianz_Dakara, SysLords_Ground_Shrine </Starting_Forces>
+    <Starting_Forces> Systemlord_Alliance, Allianz_Dakara, Systemlord_Alliance_Jaffa_Company </Starting_Forces>
+    <Starting_Forces> Systemlord_Alliance, Allianz_Dakara, Systemlord_Alliance_Jaffa_Company </Starting_Forces>
+    <Starting_Forces> Systemlord_Alliance, Allianz_Dakara, Systemlord_Alliance_Jaffa_Company </Starting_Forces>
+    <Starting_Forces> Systemlord_Alliance, Allianz_Dakara, Systemlord_Alliance_Jaffa_Company </Starting_Forces>
+    <Starting_Forces> Systemlord_Alliance, Allianz_Dakara, Systemlord_Alliance_Serpent_Guard_Company </Starting_Forces>
+    <Starting_Forces> Systemlord_Alliance, Allianz_Dakara, Systemlord_Alliance_Serpent_Guard_Company </Starting_Forces>
+    <Starting_Forces> Systemlord_Alliance, Allianz_Dakara, Systemlord_Alliance_Serpent_Guard_Company </Starting_Forces>
+    <Starting_Forces> Systemlord_Alliance, Allianz_Dakara, Systemlord_Alliance_Necropolis_Guard_Company </Starting_Forces>
+
+
+
+    <Starting_Forces> Systemlord_Alliance, Allianz_Chulak, SysLords_Ground_Palace </Starting_Forces>
+    <Starting_Forces> Systemlord_Alliance, Allianz_Chulak, SysLords_Ground_Barracks </Starting_Forces>
+    <Starting_Forces> Systemlord_Alliance, Allianz_Chulak, SysLords_Ground_Hangar </Starting_Forces>
+    <Starting_Forces> Systemlord_Alliance, Allianz_Chulak, Systemlord_Alliance_Serpent_Guard_Company </Starting_Forces>
+    <Starting_Forces> Systemlord_Alliance, Allianz_Chulak, Systemlord_Alliance_Serpent_Guard_Company </Starting_Forces>
+    <Starting_Forces> Systemlord_Alliance, Allianz_Chulak, Systemlord_Alliance_Serpent_Guard_Company </Starting_Forces>
+
+
+
+    <Starting_Forces> Systemlord_Alliance, Allianz_Hassara, Goauld_Hassara </Starting_Forces>
+
+
+
+    <Starting_Forces> Systemlord_Alliance, Allianz_Pangar, Systemlord_Alliance_Old_Hatak </Starting_Forces>
+    <Starting_Forces> Systemlord_Alliance, Allianz_Pangar, Systemlord_Alliance_New_Hatak </Starting_Forces>
+    <Starting_Forces> Systemlord_Alliance, Allianz_Pangar, Systemlord_Alliance_Death_Glider_Squadron </Starting_Forces>
+    <Starting_Forces> Systemlord_Alliance, Allianz_Pangar, Systemlord_Alliance_Death_Glider_Squadron </Starting_Forces>
+    <Starting_Forces> Systemlord_Alliance, Allianz_Pangar, Systemlord_Alliance_Death_Glider_Squadron </Starting_Forces>
+    <Starting_Forces> Systemlord_Alliance, Allianz_Pangar, Systemlord_Alliance_Alkesh_Squadron </Starting_Forces>
+    <Starting_Forces> Systemlord_Alliance, Allianz_Pangar, Systemlord_Alliance_Alkesh_Squadron </Starting_Forces>
+    <Starting_Forces> Systemlord_Alliance, Allianz_Pangar, Systemlord_Alliance_Alkesh_Squadron </Starting_Forces>
+    <Starting_Forces> Systemlord_Alliance, Allianz_Pangar, Systemlord_Alliance_Alkesh_Squadron </Starting_Forces>
+    <Starting_Forces> Systemlord_Alliance, Allianz_Pangar, Systemlord_Alliance_Teltak_Squadron </Starting_Forces>
+    <Starting_Forces> Systemlord_Alliance, Allianz_Pangar, Systemlord_Alliance_Teltak_Squadron </Starting_Forces>
+    <Starting_Forces> Systemlord_Alliance, Allianz_Pangar, SysLords_Star_Base_3 </Starting_Forces>
+
+    <Starting_Forces> Systemlord_Alliance, Allianz_Pangar, SysLords_Ground_Palace </Starting_Forces>
+    <Starting_Forces> Systemlord_Alliance, Allianz_Pangar, SysLords_Ground_Barracks </Starting_Forces>
+    <Starting_Forces> Systemlord_Alliance, Allianz_Pangar, SysLords_Ground_Shrine </Starting_Forces>
+    <Starting_Forces> Systemlord_Alliance, Allianz_Pangar, Systemlord_Alliance_Serpent_Guard_Company </Starting_Forces>
+    <Starting_Forces> Systemlord_Alliance, Allianz_Pangar, Systemlord_Alliance_Jaffa_Company </Starting_Forces>
+
+
+
+    <Starting_Forces> Systemlord_Alliance, Allianz_P3X_116, Systemlord_Alliance_Old_Hatak </Starting_Forces>
+    <Starting_Forces> Systemlord_Alliance, Allianz_P3X_116, Systemlord_Alliance_New_Hatak </Starting_Forces>
+    <Starting_Forces> Systemlord_Alliance, Allianz_P3X_116, Systemlord_Alliance_Death_Glider_Squadron </Starting_Forces>
+    <Starting_Forces> Systemlord_Alliance, Allianz_P3X_116, Systemlord_Alliance_Death_Glider_Squadron </Starting_Forces>
+    <Starting_Forces> Systemlord_Alliance, Allianz_P3X_116, Systemlord_Alliance_Death_Glider_Squadron </Starting_Forces>
+    <Starting_Forces> Systemlord_Alliance, Allianz_P3X_116, Systemlord_Alliance_Alkesh_Squadron </Starting_Forces>
+    <Starting_Forces> Systemlord_Alliance, Allianz_P3X_116, Systemlord_Alliance_Alkesh_Squadron </Starting_Forces>
+    <Starting_Forces> Systemlord_Alliance, Allianz_P3X_116, Systemlord_Alliance_Alkesh_Squadron </Starting_Forces>
+    <Starting_Forces> Systemlord_Alliance, Allianz_P3X_116, Systemlord_Alliance_Alkesh_Squadron </Starting_Forces>
+    <Starting_Forces> Systemlord_Alliance, Allianz_P3X_116, Systemlord_Alliance_Alkesh_Squadron </Starting_Forces>
+    <Starting_Forces> Systemlord_Alliance, Allianz_P3X_116, Systemlord_Alliance_Alkesh_Squadron </Starting_Forces>
+    <Starting_Forces> Systemlord_Alliance, Allianz_P3X_116, Systemlord_Alliance_Alkesh_Squadron </Starting_Forces>
+    <Starting_Forces> Systemlord_Alliance, Allianz_P3X_116, Systemlord_Alliance_Teltak_Squadron </Starting_Forces>
+    <Starting_Forces> Systemlord_Alliance, Allianz_P3X_116, Systemlord_Alliance_Teltak_Squadron </Starting_Forces>
+    <Starting_Forces> Systemlord_Alliance, Allianz_P3X_116, SysLords_Star_Base_2 </Starting_Forces>
+
+
+    <Starting_Forces> Systemlord_Alliance, Allianz_P3X_116, SysLords_Ground_Palace </Starting_Forces>
+    <Starting_Forces> Systemlord_Alliance, Allianz_P3X_116, SysLords_Ground_Barracks </Starting_Forces>
+    <Starting_Forces> Systemlord_Alliance, Allianz_P3X_116, SysLords_Ground_Hangar </Starting_Forces>
+    <Starting_Forces> Systemlord_Alliance, Allianz_P3X_116, Systemlord_Alliance_Jaffa_Company </Starting_Forces>
+    <Starting_Forces> Systemlord_Alliance, Allianz_P3X_116, Systemlord_Alliance_Necropolis_Guard_Company </Starting_Forces>
+    <Starting_Forces> Systemlord_Alliance, Allianz_P3X_116, Systemlord_Alliance_Necropolis_Guard_Company </Starting_Forces>
+
+
+
+    <Starting_Forces> Systemlord_Alliance, Allianz_Erebus, Systemlord_Alliance_Pyramid_Ship </Starting_Forces>
+    <Starting_Forces> Systemlord_Alliance, Allianz_Erebus, Systemlord_Alliance_Pyramid_Ship </Starting_Forces>
+    <Starting_Forces> Systemlord_Alliance, Allianz_Erebus, Systemlord_Alliance_Pyramid_Ship </Starting_Forces>
+    <Starting_Forces> Systemlord_Alliance, Allianz_Erebus, Systemlord_Alliance_New_Hatak </Starting_Forces>
+    <Starting_Forces> Systemlord_Alliance, Allianz_Erebus, Systemlord_Alliance_New_Hatak </Starting_Forces>
+    <Starting_Forces> Systemlord_Alliance, Allianz_Erebus, Systemlord_Alliance_Old_Hatak </Starting_Forces>
+    <Starting_Forces> Systemlord_Alliance, Allianz_Erebus, Systemlord_Alliance_Old_Hatak </Starting_Forces>
+    <Starting_Forces> Systemlord_Alliance, Allianz_Erebus, Systemlord_Alliance_Old_Hatak </Starting_Forces>
+    <Starting_Forces> Systemlord_Alliance, Allianz_Erebus, Systemlord_Alliance_Old_Hatak </Starting_Forces>
+    <Starting_Forces> Systemlord_Alliance, Allianz_Erebus, SysLords_Star_Base_2 </Starting_Forces>
+
+
+    <Starting_Forces> Systemlord_Alliance, Allianz_Erebus, SysLords_Ground_Palace </Starting_Forces>
+    <Starting_Forces> Systemlord_Alliance, Allianz_Erebus, SysLords_Ground_Mining_Facility </Starting_Forces>
+    <Starting_Forces> Systemlord_Alliance, Allianz_Erebus, SysLords_Ground_Mining_Facility </Starting_Forces>
+    <Starting_Forces> Systemlord_Alliance, Allianz_Erebus, SysLords_Ground_Mining_Facility </Starting_Forces>
+    <Starting_Forces> Systemlord_Alliance, Allianz_Erebus, SysLords_Ground_Small_Shipyard </Starting_Forces>
+    <Starting_Forces> Systemlord_Alliance, Allianz_Erebus, Systemlord_Alliance_Jaffa_Company </Starting_Forces>
+    <Starting_Forces> Systemlord_Alliance, Allianz_Erebus, Systemlord_Alliance_Jaffa_Company </Starting_Forces>
+    <Starting_Forces> Systemlord_Alliance, Allianz_Erebus, Systemlord_Alliance_Horus_Guard_Company </Starting_Forces>
+    <Starting_Forces> Systemlord_Alliance, Allianz_Erebus, Systemlord_Alliance_Horus_Guard_Company </Starting_Forces>
+    <Starting_Forces> Systemlord_Alliance, Allianz_Erebus, Systemlord_Alliance_Deathglider_Company </Starting_Forces>
+    <Starting_Forces> Systemlord_Alliance, Allianz_Erebus, Systemlord_Alliance_Deathglider_Company </Starting_Forces>
+
+
+
+
+    <Starting_Forces> Systemlord_Alliance, Allianz_Delmak, Systemlord_Alliance_System_Flagship </Starting_Forces>
+    <Starting_Forces> Systemlord_Alliance, Allianz_Delmak, Systemlord_Alliance_System_Flagship </Starting_Forces>
+    <Starting_Forces> Systemlord_Alliance, Allianz_Delmak, Systemlord_Alliance_System_Flagship </Starting_Forces>
+    <Starting_Forces> Systemlord_Alliance, Allianz_Delmak, Systemlord_Alliance_New_Hatak </Starting_Forces>
+    <Starting_Forces> Systemlord_Alliance, Allianz_Delmak, Systemlord_Alliance_New_Hatak </Starting_Forces>
+    <Starting_Forces> Systemlord_Alliance, Allianz_Delmak, Systemlord_Alliance_New_Hatak </Starting_Forces>
+    <Starting_Forces> Systemlord_Alliance, Allianz_Delmak, Systemlord_Alliance_Old_Hatak </Starting_Forces>
+    <Starting_Forces> Systemlord_Alliance, Allianz_Delmak, Systemlord_Alliance_Old_Hatak </Starting_Forces>
+    <Starting_Forces> Systemlord_Alliance, Allianz_Delmak, Systemlord_Alliance_Old_Hatak </Starting_Forces>
+    <Starting_Forces> Systemlord_Alliance, Allianz_Delmak, Systemlord_Alliance_Old_Hatak </Starting_Forces>
+    <Starting_Forces> Systemlord_Alliance, Allianz_Delmak, Systemlord_Alliance_Old_Hatak </Starting_Forces>
+    <Starting_Forces> Systemlord_Alliance, Allianz_Delmak, Systemlord_Alliance_Old_Hatak </Starting_Forces>
+    <Starting_Forces> Systemlord_Alliance, Allianz_Delmak, Systemlord_Alliance_Pyramid_Ship </Starting_Forces>
+    <Starting_Forces> Systemlord_Alliance, Allianz_Delmak, Systemlord_Alliance_Pyramid_Ship </Starting_Forces>
+    <Starting_Forces> Systemlord_Alliance, Allianz_Delmak, Systemlord_Alliance_Pyramid_Ship </Starting_Forces>
+    <Starting_Forces> Systemlord_Alliance, Allianz_Delmak, Systemlord_Alliance_Pyramid_Ship </Starting_Forces>
+    <Starting_Forces> Systemlord_Alliance, Allianz_Delmak, SysLords_Star_Base_5 </Starting_Forces>
+    <Starting_Forces> Systemlord_Alliance, Allianz_Delmak, SysLords_Large_Shipyard </Starting_Forces>
+
+    <Starting_Forces> Systemlord_Alliance, Allianz_Delmak, SysLords_Ground_Palace </Starting_Forces>
+    <Starting_Forces> Systemlord_Alliance, Allianz_Delmak, SysLords_Ground_Hangar </Starting_Forces>
+    <Starting_Forces> Systemlord_Alliance, Allianz_Delmak, SysLords_Ground_Small_Shipyard </Starting_Forces>
+    <Starting_Forces> Systemlord_Alliance, Allianz_Delmak, SysLords_Ground_Base_Shield </Starting_Forces>
+    <Starting_Forces> Systemlord_Alliance, Allianz_Delmak, SysLords_Ground_GTSW </Starting_Forces>
+    <Starting_Forces> Systemlord_Alliance, Allianz_Delmak, SysLords_Ground_Guard_Tower_Galactic_Defence </Starting_Forces>
+    <Starting_Forces> Systemlord_Alliance, Allianz_Delmak, Systemlord_Alliance_Jaffa_Company </Starting_Forces>
+    <Starting_Forces> Systemlord_Alliance, Allianz_Delmak, Systemlord_Alliance_Serpent_Guard_Company </Starting_Forces>
+    <Starting_Forces> Systemlord_Alliance, Allianz_Delmak, Systemlord_Alliance_Jackal_Guard_Company </Starting_Forces>
+    <Starting_Forces> Systemlord_Alliance, Allianz_Delmak, Systemlord_Alliance_Jackal_Guard_Company </Starting_Forces>
+    <Starting_Forces> Systemlord_Alliance, Allianz_Delmak, Systemlord_Alliance_Necropolis_Guard_Company </Starting_Forces>
+    <Starting_Forces> Systemlord_Alliance, Allianz_Delmak, Systemlord_Alliance_Necropolis_Guard_Company </Starting_Forces>
+    <Starting_Forces> Systemlord_Alliance, Allianz_Delmak, Systemlord_Alliance_Necropolis_Guard_Company </Starting_Forces>
+    <Starting_Forces> Systemlord_Alliance, Allianz_Delmak, Systemlord_Alliance_Deathglider_Company </Starting_Forces>
+    <Starting_Forces> Systemlord_Alliance, Allianz_Delmak, Systemlord_Alliance_Deathglider_Company </Starting_Forces>
+    <Starting_Forces> Systemlord_Alliance, Allianz_Delmak, Systemlord_Alliance_Deathglider_Company </Starting_Forces>
+
+
+    <Starting_Forces> Systemlord_Alliance, Allianz_YUs_Heimatwelt, Systemlord_Alliance_System_Flagship </Starting_Forces>
+    <Starting_Forces> Systemlord_Alliance, Allianz_YUs_Heimatwelt, Systemlord_Alliance_System_Flagship </Starting_Forces>
+    <Starting_Forces> Systemlord_Alliance, Allianz_YUs_Heimatwelt, Systemlord_Alliance_System_Flagship </Starting_Forces>
+    <Starting_Forces> Systemlord_Alliance, Allianz_YUs_Heimatwelt, Systemlord_Alliance_System_Flagship </Starting_Forces>
+    <Starting_Forces> Systemlord_Alliance, Allianz_YUs_Heimatwelt, Systemlord_Alliance_New_Hatak </Starting_Forces>
+    <Starting_Forces> Systemlord_Alliance, Allianz_YUs_Heimatwelt, Systemlord_Alliance_New_Hatak </Starting_Forces>
+    <Starting_Forces> Systemlord_Alliance, Allianz_YUs_Heimatwelt, Systemlord_Alliance_New_Hatak </Starting_Forces>
+    <Starting_Forces> Systemlord_Alliance, Allianz_YUs_Heimatwelt, Systemlord_Alliance_New_Hatak </Starting_Forces>
+    <Starting_Forces> Systemlord_Alliance, Allianz_YUs_Heimatwelt, Systemlord_Alliance_New_Hatak </Starting_Forces>
+    <Starting_Forces> Systemlord_Alliance, Allianz_YUs_Heimatwelt, Systemlord_Alliance_New_Hatak </Starting_Forces>
+    <Starting_Forces> Systemlord_Alliance, Allianz_YUs_Heimatwelt, Systemlord_Alliance_New_Hatak </Starting_Forces>
+    <Starting_Forces> Systemlord_Alliance, Allianz_YUs_Heimatwelt, Systemlord_Alliance_New_Hatak </Starting_Forces>
+    <Starting_Forces> Systemlord_Alliance, Allianz_YUs_Heimatwelt, Systemlord_Alliance_Death_Glider_Squadron </Starting_Forces>
+    <Starting_Forces> Systemlord_Alliance, Allianz_YUs_Heimatwelt, Systemlord_Alliance_Death_Glider_Squadron </Starting_Forces>
+    <Starting_Forces> Systemlord_Alliance, Allianz_YUs_Heimatwelt, Systemlord_Alliance_Death_Glider_Squadron </Starting_Forces>
+    <Starting_Forces> Systemlord_Alliance, Allianz_YUs_Heimatwelt, Systemlord_Alliance_Death_Glider_Squadron </Starting_Forces>
+    <Starting_Forces> Systemlord_Alliance, Allianz_YUs_Heimatwelt, Systemlord_Alliance_Death_Glider_Squadron </Starting_Forces>
+    <Starting_Forces> Systemlord_Alliance, Allianz_YUs_Heimatwelt, Systemlord_Alliance_Death_Glider_Squadron </Starting_Forces>
+    <Starting_Forces> Systemlord_Alliance, Allianz_YUs_Heimatwelt, Systemlord_Alliance_Death_Glider_Squadron </Starting_Forces>
+    <Starting_Forces> Systemlord_Alliance, Allianz_YUs_Heimatwelt, Systemlord_Alliance_Death_Glider_Squadron </Starting_Forces>
+    <Starting_Forces> Systemlord_Alliance, Allianz_YUs_Heimatwelt, Systemlord_Alliance_Death_Glider_Squadron </Starting_Forces>
+    <Starting_Forces> Systemlord_Alliance, Allianz_YUs_Heimatwelt, Systemlord_Alliance_Death_Glider_Squadron </Starting_Forces>
+    <Starting_Forces> Systemlord_Alliance, Allianz_YUs_Heimatwelt, Systemlord_Alliance_Death_Glider_Squadron </Starting_Forces>
+    <Starting_Forces> Systemlord_Alliance, Allianz_YUs_Heimatwelt, Systemlord_Alliance_Death_Glider_Squadron </Starting_Forces>
+    <Starting_Forces> Systemlord_Alliance, Allianz_YUs_Heimatwelt, Systemlord_Alliance_Death_Glider_Squadron </Starting_Forces>
+    <Starting_Forces> Systemlord_Alliance, Allianz_YUs_Heimatwelt, Systemlord_Alliance_Death_Glider_Squadron </Starting_Forces>
+    <Starting_Forces> Systemlord_Alliance, Allianz_YUs_Heimatwelt, Systemlord_Alliance_Death_Glider_Squadron </Starting_Forces>
+    <Starting_Forces> Systemlord_Alliance, Allianz_YUs_Heimatwelt, Systemlord_Alliance_Old_Hatak </Starting_Forces>
+    <Starting_Forces> Systemlord_Alliance, Allianz_YUs_Heimatwelt, Systemlord_Alliance_Old_Hatak </Starting_Forces>
+    <Starting_Forces> Systemlord_Alliance, Allianz_YUs_Heimatwelt, Systemlord_Alliance_Old_Hatak </Starting_Forces>
+    <Starting_Forces> Systemlord_Alliance, Allianz_YUs_Heimatwelt, Systemlord_Alliance_Pyramid_Ship </Starting_Forces>
+    <Starting_Forces> Systemlord_Alliance, Allianz_YUs_Heimatwelt, Systemlord_Alliance_Pyramid_Ship </Starting_Forces>
+    <Starting_Forces> Systemlord_Alliance, Allianz_YUs_Heimatwelt, Systemlord_Alliance_Pyramid_Ship </Starting_Forces>
+    <Starting_Forces> Systemlord_Alliance, Allianz_YUs_Heimatwelt, Systemlord_Alliance_Teltak_Squadron </Starting_Forces>
+    <Starting_Forces> Systemlord_Alliance, Allianz_YUs_Heimatwelt, Systemlord_Alliance_Teltak_Squadron </Starting_Forces>
+    <Starting_Forces> Systemlord_Alliance, Allianz_YUs_Heimatwelt, Systemlord_Alliance_Teltak_Squadron </Starting_Forces>
+    <Starting_Forces> Systemlord_Alliance, Allianz_YUs_Heimatwelt, Systemlord_Alliance_Teltak_Squadron </Starting_Forces>
+    <Starting_Forces> Systemlord_Alliance, Allianz_YUs_Heimatwelt, Systemlord_Alliance_Alkesh_Squadron </Starting_Forces>
+    <Starting_Forces> Systemlord_Alliance, Allianz_YUs_Heimatwelt, Systemlord_Alliance_Alkesh_Squadron </Starting_Forces>
+    <Starting_Forces> Systemlord_Alliance, Allianz_YUs_Heimatwelt, Systemlord_Alliance_Alkesh_Squadron </Starting_Forces>
+    <Starting_Forces> Systemlord_Alliance, Allianz_YUs_Heimatwelt, Systemlord_Alliance_Alkesh_Squadron </Starting_Forces>
+    <Starting_Forces> Systemlord_Alliance, Allianz_YUs_Heimatwelt, Systemlord_Alliance_Alkesh_Squadron </Starting_Forces>
+    <Starting_Forces> Systemlord_Alliance, Allianz_YUs_Heimatwelt, Systemlord_Alliance_Alkesh_Squadron </Starting_Forces>
+    <Starting_Forces> Systemlord_Alliance, Allianz_YUs_Heimatwelt, Systemlord_Alliance_Alkesh_Squadron </Starting_Forces>
+    <Starting_Forces> Systemlord_Alliance, Allianz_YUs_Heimatwelt, Systemlord_Alliance_Alkesh_Squadron </Starting_Forces>
+    <Starting_Forces> Systemlord_Alliance, Allianz_YUs_Heimatwelt, Systemlord_Alliance_Alkesh_Squadron </Starting_Forces>
+    <Starting_Forces> Systemlord_Alliance, Allianz_YUs_Heimatwelt, SysLords_Star_Base_5 </Starting_Forces>
+    <Starting_Forces> Systemlord_Alliance, Allianz_YUs_Heimatwelt, SysLords_Large_Shipyard </Starting_Forces>
+
+    <Starting_Forces> Systemlord_Alliance, Allianz_YUs_Heimatwelt, SysLords_Ground_Palace </Starting_Forces>
+    <Starting_Forces> Systemlord_Alliance, Allianz_YUs_Heimatwelt, SysLords_Ground_Barracks </Starting_Forces>
+    <Starting_Forces> Systemlord_Alliance, Allianz_YUs_Heimatwelt, SysLords_Ground_Hangar </Starting_Forces>
+    <Starting_Forces> Systemlord_Alliance, Allianz_YUs_Heimatwelt, SysLords_Ground_Base_Shield </Starting_Forces>
+    <Starting_Forces> Systemlord_Alliance, Allianz_YUs_Heimatwelt, SysLords_Ground_GTSW </Starting_Forces>
+    <Starting_Forces> Systemlord_Alliance, Allianz_YUs_Heimatwelt, SysLords_Ground_Guard_Tower_Galactic_Defence </Starting_Forces>
+    <Starting_Forces> Systemlord_Alliance, Allianz_YUs_Heimatwelt, Systemlord_Alliance_Serpent_Guard_Company </Starting_Forces>
+    <Starting_Forces> Systemlord_Alliance, Allianz_YUs_Heimatwelt, Systemlord_Alliance_Jaffa_Company </Starting_Forces>
+    <Starting_Forces> Systemlord_Alliance, Allianz_YUs_Heimatwelt, Systemlord_Alliance_Serpent_Guard_Company </Starting_Forces>
+    <Starting_Forces> Systemlord_Alliance, Allianz_YUs_Heimatwelt, Systemlord_Alliance_Jaffa_Company </Starting_Forces>
+    <Starting_Forces> Systemlord_Alliance, Allianz_YUs_Heimatwelt, Systemlord_Alliance_Horus_Guard_Company </Starting_Forces>
+    <Starting_Forces> Systemlord_Alliance, Allianz_YUs_Heimatwelt, Systemlord_Alliance_Jackal_Guard_Company </Starting_Forces>
+    <Starting_Forces> Systemlord_Alliance, Allianz_YUs_Heimatwelt, Systemlord_Alliance_Jackal_Guard_Company </Starting_Forces>
+    <Starting_Forces> Systemlord_Alliance, Allianz_YUs_Heimatwelt, Systemlord_Alliance_Deathglider_Company </Starting_Forces>
+    <Starting_Forces> Systemlord_Alliance, Allianz_YUs_Heimatwelt, Systemlord_Alliance_Deathglider_Company </Starting_Forces>
+    <Starting_Forces> Systemlord_Alliance, Allianz_YUs_Heimatwelt, Systemlord_Alliance_Deathglider_Company </Starting_Forces>
+
+
+    <Starting_Forces> Systemlord_Alliance, Allianz_Juna, Systemlord_Alliance_System_Flagship </Starting_Forces>
+    <Starting_Forces> Systemlord_Alliance, Allianz_Juna, Systemlord_Alliance_System_Flagship </Starting_Forces>
+    <Starting_Forces> Systemlord_Alliance, Allianz_Juna, Systemlord_Alliance_New_Hatak </Starting_Forces>
+    <Starting_Forces> Systemlord_Alliance, Allianz_Juna, Systemlord_Alliance_New_Hatak </Starting_Forces>
+    <Starting_Forces> Systemlord_Alliance, Allianz_Juna, Systemlord_Alliance_New_Hatak </Starting_Forces>
+    <Starting_Forces> Systemlord_Alliance, Allianz_Juna, Systemlord_Alliance_Death_Glider_Squadron </Starting_Forces>
+    <Starting_Forces> Systemlord_Alliance, Allianz_Juna, Systemlord_Alliance_Death_Glider_Squadron </Starting_Forces>
+    <Starting_Forces> Systemlord_Alliance, Allianz_Juna, Systemlord_Alliance_Death_Glider_Squadron </Starting_Forces>
+    <Starting_Forces> Systemlord_Alliance, Allianz_Juna, Systemlord_Alliance_Death_Glider_Squadron </Starting_Forces>
+    <Starting_Forces> Systemlord_Alliance, Allianz_Juna, Systemlord_Alliance_Death_Glider_Squadron </Starting_Forces>
+    <Starting_Forces> Systemlord_Alliance, Allianz_Juna, Systemlord_Alliance_Death_Glider_Squadron </Starting_Forces>
+    <Starting_Forces> Systemlord_Alliance, Allianz_Juna, Systemlord_Alliance_Death_Glider_Squadron </Starting_Forces>
+    <Starting_Forces> Systemlord_Alliance, Allianz_Juna, Systemlord_Alliance_Old_Hatak </Starting_Forces>
+    <Starting_Forces> Systemlord_Alliance, Allianz_Juna, Systemlord_Alliance_Teltak_Squadron </Starting_Forces>
+    <Starting_Forces> Systemlord_Alliance, Allianz_Juna, Systemlord_Alliance_Teltak_Squadron </Starting_Forces>
+    <Starting_Forces> Systemlord_Alliance, Allianz_Juna, Systemlord_Alliance_Teltak_Squadron </Starting_Forces>
+    <Starting_Forces> Systemlord_Alliance, Allianz_Juna, Systemlord_Alliance_Teltak_Squadron </Starting_Forces>
+    <Starting_Forces> Systemlord_Alliance, Allianz_Juna, Systemlord_Alliance_Alkesh_Squadron </Starting_Forces>
+    <Starting_Forces> Systemlord_Alliance, Allianz_Juna, Systemlord_Alliance_Alkesh_Squadron </Starting_Forces>
+    <Starting_Forces> Systemlord_Alliance, Allianz_Juna, Systemlord_Alliance_Alkesh_Squadron </Starting_Forces>
+    <Starting_Forces> Systemlord_Alliance, Allianz_Juna, Systemlord_Alliance_Alkesh_Squadron </Starting_Forces>
+    <Starting_Forces> Systemlord_Alliance, Allianz_Juna, SysLords_Star_Base_3 </Starting_Forces>
+
+    <Starting_Forces> Systemlord_Alliance, Allianz_Juna, SysLords_Ground_Palace </Starting_Forces>
+    <Starting_Forces> Systemlord_Alliance, Allianz_Juna, SysLords_Ground_Barracks </Starting_Forces>
+    <Starting_Forces> Systemlord_Alliance, Allianz_Juna, SysLords_Ground_Hangar </Starting_Forces>
+    <Starting_Forces> Systemlord_Alliance, Allianz_Juna, SysLords_Ground_Guard_Tower_Galactic_Defence </Starting_Forces>
+    <Starting_Forces> Systemlord_Alliance, Allianz_Juna, SysLords_Ground_GTSW </Starting_Forces>
+    <Starting_Forces> Systemlord_Alliance, Allianz_Juna, Systemlord_Alliance_Jaffa_Company </Starting_Forces>
+    <Starting_Forces> Systemlord_Alliance, Allianz_Juna, Systemlord_Alliance_Serpent_Guard_Company </Starting_Forces>
+    <Starting_Forces> Systemlord_Alliance, Allianz_Juna, Systemlord_Alliance_Horus_Guard_Company </Starting_Forces>
+    <Starting_Forces> Systemlord_Alliance, Allianz_Juna, Systemlord_Alliance_Jackal_Guard_Company </Starting_Forces>
+    <Starting_Forces> Systemlord_Alliance, Allianz_Juna, Systemlord_Alliance_Jackal_Guard_Company </Starting_Forces>
+    <Starting_Forces> Systemlord_Alliance, Allianz_Juna, Systemlord_Alliance_Jackal_Guard_Company </Starting_Forces>
+    <Starting_Forces> Systemlord_Alliance, Allianz_Juna, Systemlord_Alliance_Deathglider_Company </Starting_Forces>
+    <Starting_Forces> Systemlord_Alliance, Allianz_Juna, Systemlord_Alliance_Deathglider_Company </Starting_Forces>
+
+
+    <Starting_Forces> Systemlord_Alliance, Allianz_HathorHeimatwelt, Systemlord_Alliance_System_Flagship </Starting_Forces>
+    <Starting_Forces> Systemlord_Alliance, Allianz_HathorHeimatwelt, Systemlord_Alliance_New_Hatak </Starting_Forces>
+    <Starting_Forces> Systemlord_Alliance, Allianz_HathorHeimatwelt, Systemlord_Alliance_New_Hatak </Starting_Forces>
+    <Starting_Forces> Systemlord_Alliance, Allianz_HathorHeimatwelt, Systemlord_Alliance_Death_Glider_Squadron </Starting_Forces>
+    <Starting_Forces> Systemlord_Alliance, Allianz_HathorHeimatwelt, Systemlord_Alliance_Death_Glider_Squadron </Starting_Forces>
+    <Starting_Forces> Systemlord_Alliance, Allianz_HathorHeimatwelt, Systemlord_Alliance_Death_Glider_Squadron </Starting_Forces>
+    <Starting_Forces> Systemlord_Alliance, Allianz_HathorHeimatwelt, Systemlord_Alliance_Old_Hatak </Starting_Forces>
+    <Starting_Forces> Systemlord_Alliance, Allianz_HathorHeimatwelt, Systemlord_Alliance_Old_Hatak </Starting_Forces>
+    <Starting_Forces> Systemlord_Alliance, Allianz_HathorHeimatwelt, Systemlord_Alliance_Pyramid_Ship </Starting_Forces>
+    <Starting_Forces> Systemlord_Alliance, Allianz_HathorHeimatwelt, Systemlord_Alliance_Pyramid_Ship </Starting_Forces>
+    <Starting_Forces> Systemlord_Alliance, Allianz_HathorHeimatwelt, Systemlord_Alliance_Teltak_Squadron </Starting_Forces>
+    <Starting_Forces> Systemlord_Alliance, Allianz_HathorHeimatwelt, Systemlord_Alliance_Teltak_Squadron </Starting_Forces>
+    <Starting_Forces> Systemlord_Alliance, Allianz_HathorHeimatwelt, Systemlord_Alliance_Teltak_Squadron </Starting_Forces>
+    <Starting_Forces> Systemlord_Alliance, Allianz_HathorHeimatwelt, Systemlord_Alliance_Alkesh_Squadron </Starting_Forces>
+    <Starting_Forces> Systemlord_Alliance, Allianz_HathorHeimatwelt, Systemlord_Alliance_Alkesh_Squadron </Starting_Forces>
+    <Starting_Forces> Systemlord_Alliance, Allianz_HathorHeimatwelt, Systemlord_Alliance_Alkesh_Squadron </Starting_Forces>
+    <Starting_Forces> Systemlord_Alliance, Allianz_HathorHeimatwelt, SysLords_Star_Base_4 </Starting_Forces>
+
+    <Starting_Forces> Systemlord_Alliance, Allianz_HathorHeimatwelt, SysLords_Ground_Palace </Starting_Forces>
+    <Starting_Forces> Systemlord_Alliance, Allianz_HathorHeimatwelt, SysLords_Ground_Barracks </Starting_Forces>
+    <Starting_Forces> Systemlord_Alliance, Allianz_HathorHeimatwelt, SysLords_Ground_Hangar </Starting_Forces>
+    <Starting_Forces> Systemlord_Alliance, Allianz_HathorHeimatwelt, SysLords_Ground_Base_Shield </Starting_Forces>
+    <Starting_Forces> Systemlord_Alliance, Allianz_HathorHeimatwelt, Systemlord_Alliance_Bastet_Guard_Company </Starting_Forces>
+    <Starting_Forces> Systemlord_Alliance, Allianz_HathorHeimatwelt, Systemlord_Alliance_Bastet_Guard_Company </Starting_Forces>
+    <Starting_Forces> Systemlord_Alliance, Allianz_HathorHeimatwelt, Systemlord_Alliance_Bastet_Guard_Company </Starting_Forces>
+    <Starting_Forces> Systemlord_Alliance, Allianz_HathorHeimatwelt, Systemlord_Alliance_Horus_Guard_Company </Starting_Forces>
+    <Starting_Forces> Systemlord_Alliance, Allianz_HathorHeimatwelt, Systemlord_Alliance_Deathglider_Company </Starting_Forces>
+    <Starting_Forces> Systemlord_Alliance, Allianz_HathorHeimatwelt, Systemlord_Alliance_Jackal_Guard_Company </Starting_Forces>
+    <Starting_Forces> Systemlord_Alliance, Allianz_HathorHeimatwelt, Systemlord_Alliance_Deathglider_Company </Starting_Forces>
+    <Starting_Forces> Systemlord_Alliance, Allianz_HathorHeimatwelt, Systemlord_Alliance_Deathglider_Company </Starting_Forces>
+
+
+    <Starting_Forces> Systemlord_Alliance, Allianz_PX9_757, Systemlord_Alliance_New_Hatak </Starting_Forces>
+    <Starting_Forces> Systemlord_Alliance, Allianz_PX9_757, Systemlord_Alliance_New_Hatak </Starting_Forces>
+    <Starting_Forces> Systemlord_Alliance, Allianz_PX9_757, Systemlord_Alliance_Death_Glider_Squadron </Starting_Forces>
+    <Starting_Forces> Systemlord_Alliance, Allianz_PX9_757, Systemlord_Alliance_Death_Glider_Squadron </Starting_Forces>
+    <Starting_Forces> Systemlord_Alliance, Allianz_PX9_757, Systemlord_Alliance_Death_Glider_Squadron </Starting_Forces>
+    <Starting_Forces> Systemlord_Alliance, Allianz_PX9_757, Systemlord_Alliance_Death_Glider_Squadron </Starting_Forces>
+    <Starting_Forces> Systemlord_Alliance, Allianz_PX9_757, Systemlord_Alliance_Old_Hatak </Starting_Forces>
+    <Starting_Forces> Systemlord_Alliance, Allianz_PX9_757, Systemlord_Alliance_Old_Hatak </Starting_Forces>
+    <Starting_Forces> Systemlord_Alliance, Allianz_PX9_757, Systemlord_Alliance_Pyramid_Ship </Starting_Forces>
+    <Starting_Forces> Systemlord_Alliance, Allianz_PX9_757, Systemlord_Alliance_Teltak_Squadron </Starting_Forces>
+    <Starting_Forces> Systemlord_Alliance, Allianz_PX9_757, Systemlord_Alliance_Teltak_Squadron </Starting_Forces>
+    <Starting_Forces> Systemlord_Alliance, Allianz_PX9_757, Systemlord_Alliance_Alkesh_Squadron </Starting_Forces>
+    <Starting_Forces> Systemlord_Alliance, Allianz_PX9_757, Systemlord_Alliance_Alkesh_Squadron </Starting_Forces>
+    <Starting_Forces> Systemlord_Alliance, Allianz_PX9_757, SysLords_Star_Base_2 </Starting_Forces>
+
+    <Starting_Forces> Systemlord_Alliance, Allianz_PX9_757, SysLords_Ground_Palace </Starting_Forces>
+    <Starting_Forces> Systemlord_Alliance, Allianz_PX9_757, SysLords_Ground_Guard_Tower_Galactic_Defence </Starting_Forces>
+    <Starting_Forces> Systemlord_Alliance, Allianz_PX9_757, SysLords_Ground_Hangar </Starting_Forces>
+    <Starting_Forces> Systemlord_Alliance, Allianz_PX9_757, Systemlord_Alliance_Jaffa_Company </Starting_Forces>
+    <Starting_Forces> Systemlord_Alliance, Allianz_PX9_757, Systemlord_Alliance_Jaffa_Company </Starting_Forces>
+    <Starting_Forces> Systemlord_Alliance, Allianz_PX9_757, Systemlord_Alliance_Serpent_Guard_Company </Starting_Forces>
+    <Starting_Forces> Systemlord_Alliance, Allianz_PX9_757, Systemlord_Alliance_Bastet_Guard_Company </Starting_Forces>
+    <Starting_Forces> Systemlord_Alliance, Allianz_PX9_757, Systemlord_Alliance_Bastet_Guard_Company </Starting_Forces>
+
+
+    <Starting_Forces> Systemlord_Alliance, Allianz_P3X_254, Systemlord_Alliance_New_Hatak </Starting_Forces>
+    <Starting_Forces> Systemlord_Alliance, Allianz_P3X_254, Systemlord_Alliance_Death_Glider_Squadron </Starting_Forces>
+    <Starting_Forces> Systemlord_Alliance, Allianz_P3X_254, Systemlord_Alliance_Death_Glider_Squadron </Starting_Forces>
+    <Starting_Forces> Systemlord_Alliance, Allianz_P3X_254, Systemlord_Alliance_Old_Hatak </Starting_Forces>
+    <Starting_Forces> Systemlord_Alliance, Allianz_P3X_254, Systemlord_Alliance_Teltak_Squadron </Starting_Forces>
+    <Starting_Forces> Systemlord_Alliance, Allianz_P3X_254, Systemlord_Alliance_Alkesh_Squadron </Starting_Forces>
+    <Starting_Forces> Systemlord_Alliance, Allianz_P3X_254, Systemlord_Alliance_Alkesh_Squadron </Starting_Forces>
+    <Starting_Forces> Systemlord_Alliance, Allianz_P3X_254, SysLords_Star_Base_2 </Starting_Forces>
+
+    <Starting_Forces> Systemlord_Alliance, Allianz_P3X_254, SysLords_Ground_Palace </Starting_Forces>
+    <Starting_Forces> Systemlord_Alliance, Allianz_P3X_254, SysLords_Ground_Hangar </Starting_Forces>
+    <Starting_Forces> Systemlord_Alliance, Allianz_P3X_254, Systemlord_Alliance_Jaffa_Company </Starting_Forces>
+    <Starting_Forces> Systemlord_Alliance, Allianz_P3X_254, Systemlord_Alliance_Jaffa_Company </Starting_Forces>
+    <Starting_Forces> Systemlord_Alliance, Allianz_P3X_254, Systemlord_Alliance_Serpent_Guard_Company </Starting_Forces>
+    <Starting_Forces> Systemlord_Alliance, Allianz_P3X_254, Systemlord_Alliance_Serpent_Guard_Company </Starting_Forces>
+
+
+
+    <Starting_Forces> Systemlord_Alliance, Allianz_P3X_367, Systemlord_Alliance_New_Hatak </Starting_Forces>
+    <Starting_Forces> Systemlord_Alliance, Allianz_P3X_367, Systemlord_Alliance_Death_Glider_Squadron </Starting_Forces>
+    <Starting_Forces> Systemlord_Alliance, Allianz_P3X_367, Systemlord_Alliance_Death_Glider_Squadron </Starting_Forces>
+    <Starting_Forces> Systemlord_Alliance, Allianz_P3X_367, Systemlord_Alliance_Death_Glider_Squadron </Starting_Forces>
+    <Starting_Forces> Systemlord_Alliance, Allianz_P3X_367, Systemlord_Alliance_Death_Glider_Squadron </Starting_Forces>
+    <Starting_Forces> Systemlord_Alliance, Allianz_P3X_367, Systemlord_Alliance_Old_Hatak </Starting_Forces>
+    <Starting_Forces> Systemlord_Alliance, Allianz_P3X_367, Systemlord_Alliance_Old_Hatak </Starting_Forces>
+    <Starting_Forces> Systemlord_Alliance, Allianz_P3X_367, Systemlord_Alliance_Old_Hatak </Starting_Forces>
+    <Starting_Forces> Systemlord_Alliance, Allianz_P3X_367, Systemlord_Alliance_Pyramid_Ship </Starting_Forces>
+    <Starting_Forces> Systemlord_Alliance, Allianz_P3X_367, Systemlord_Alliance_Teltak_Squadron </Starting_Forces>
+    <Starting_Forces> Systemlord_Alliance, Allianz_P3X_367, Systemlord_Alliance_Teltak_Squadron </Starting_Forces>
+    <Starting_Forces> Systemlord_Alliance, Allianz_P3X_367, Systemlord_Alliance_Alkesh_Squadron </Starting_Forces>
+    <Starting_Forces> Systemlord_Alliance, Allianz_P3X_367, SysLords_Star_Base_1 </Starting_Forces>
+
+    <Starting_Forces> Systemlord_Alliance, Allianz_P3X_367, SysLords_Ground_Palace </Starting_Forces>
+    <Starting_Forces> Systemlord_Alliance, Allianz_P3X_367, SysLords_Ground_Barracks </Starting_Forces>
+    <Starting_Forces> Systemlord_Alliance, Allianz_P3X_367, Systemlord_Alliance_Jaffa_Company </Starting_Forces>
+    <Starting_Forces> Systemlord_Alliance, Allianz_P3X_367, Systemlord_Alliance_Jaffa_Company </Starting_Forces>
+    <Starting_Forces> Systemlord_Alliance, Allianz_P3X_367, Systemlord_Alliance_Jackal_Guard_Company </Starting_Forces>
+    <Starting_Forces> Systemlord_Alliance, Allianz_P3X_367, Systemlord_Alliance_Jackal_Guard_Company </Starting_Forces>
+
+
+
+
+    <Starting_Forces> Systemlord_Alliance, Allianz_P3S_114, Systemlord_Alliance_New_Hatak </Starting_Forces>
+    <Starting_Forces> Systemlord_Alliance, Allianz_P3S_114, Systemlord_Alliance_Old_Hatak </Starting_Forces>
+    <Starting_Forces> Systemlord_Alliance, Allianz_P3S_114, Systemlord_Alliance_Old_Hatak </Starting_Forces>
+    <Starting_Forces> Systemlord_Alliance, Allianz_P3S_114, Systemlord_Alliance_Teltak_Squadron </Starting_Forces>
+    <Starting_Forces> Systemlord_Alliance, Allianz_P3S_114, Systemlord_Alliance_Teltak_Squadron </Starting_Forces>
+    <Starting_Forces> Systemlord_Alliance, Allianz_P3S_114, SysLords_Star_Base_1 </Starting_Forces>
+
+    <Starting_Forces> Systemlord_Alliance, Allianz_P3S_114, SysLords_Ground_Palace </Starting_Forces>
+    <Starting_Forces> Systemlord_Alliance, Allianz_P3S_114, SysLords_Ground_Barracks </Starting_Forces>
+    <Starting_Forces> Systemlord_Alliance, Allianz_P3S_114, Systemlord_Alliance_Jaffa_Company </Starting_Forces>
+    <Starting_Forces> Systemlord_Alliance, Allianz_P3S_114, Systemlord_Alliance_Jaffa_Company </Starting_Forces>
+    <Starting_Forces> Systemlord_Alliance, Allianz_P3S_114, Systemlord_Alliance_Jackal_Guard_Company </Starting_Forces>
+
+  </Campaign>
+
+
+  <Campaign Name="Sandbox_Origin_Rebel">
+
+    <Campaign_Set> Sandbox_Origin_Of_Corruption </Campaign_Set>
+    <Sort_Order>10</Sort_Order>
+
+    <Text_ID> TEXT_CAMPAIGN_SINGLE_21_R</Text_ID>
+    <Description_Text>TEXT_CAMPAIGN_SINGLE_DESCRIPTION_21_R</Description_Text>
+
+    <Camera_Shift_X> 600.0 </Camera_Shift_X>
+    <Camera_Shift_Y> 5900.0 </Camera_Shift_Y>
+    <Camera_Distance> 1200.0 </Camera_Distance>
+
+    <Locations>
+      Galaxy_Core_Art_Model_General,
+      Systemlords_Galaxy_Core_Art_Model,
+      Allianz_Erde,
+      Allianz_Anubis_Heimatwelt,
+      Allianz_Tartarus,
+      Allianz_YUs_Heimatwelt,
+      Allianz_Juna,
+      Allianz_Delmak,
+      Allianz_Dakara,
+      Allianz_Tollana,
+      Allianz_Hassara,
+      Allianz_HathorHeimatwelt,
+      Allianz_CalMah,
+      Allianz_Langara,
+      Allianz_Pangar,
+      Allianz_Tagrea,
+      Allianz_Kheb,
+      Allianz_Haktyl,
+      Allianz_P3X_116,
+      Allianz_P3S_114,
+      Allianz_P3X_666,
+      Allianz_Latona,
+      Allianz_Erebus,
+      Allianz_Revanna,
+      Allianz_Entac,
+      Allianz_P3X_254,
+      Allianz_P3X_367,
+      Allianz_PX9_757,
+      Allianz_P5S_117,
+      Allianz_Chulak,
+      Allianz_Vorash,
+      Allianz_AlphaBasis
+    </Locations>
+
+    <Trade_Routes>
+      Tollana_Latona,
+      Tollana_Vorash,
+      Tollana_Alphabasis,
+      Vorash_Erde,
+      P5S_117_Haktyl,
+      Latona_Erebus,
+      P5S_117_Erde,
+      Revanna_Haktyl,
+      Revanna_P3X_666,
+      Vorash_Delmak,
+      P3S_114_P3X_666,
+      Cal_Mah_P3X_254,
+      Entac_Erde,
+      Chulak_Delmak,
+      P3S_114_Tagrea,
+      Tagrea_Kheb,
+      Tagrea_Anubis_Heimatwelt,
+      Tartarus_Anubis_Heimatwelt,
+      Tartarus_Langara,
+      Dakara_Pangar,
+      Dakara_Chulak,
+      Delmak_Erebus,
+      Hasara_P3X_367,
+      P3X_116_P3X_367,
+      P3X_254_P3X_367,
+      P3X_254_Pangar,
+      Hasara_HathorHeimatwelt,
+      Juna_P3X_666,
+      Juna_P3S_114,
+      Vorash_P3X_116,
+      Erde_Alphabasis,
+      Tartarus_HathorHeimatwelt,
+      Juna_Hassara,
+      Hassara_PX9_757,
+      Entac_Haktyl,
+      Entac_Yus_Homeworld,
+      Yus_Homeworld_Hassara,
+      Yus_Homeworld_Juna,
+      Yus_Homeworld_Cal_Mah,
+      Anubis_Homeworld_Kheb,
+      Langara_Dakara,
+      Chulak_Pangar,
+      Chulak_Erebus,
+      Delmak_P3X_116,
+      Vorash_P3X_367,
+      Hathors_Homeworld_PX9_757,
+      PX9_757_Juna,
+      Hassara_Cal_Mah
+    </Trade_Routes>
+
+    <Home_Location> Rebel, Allianz_Anubis_Heimatwelt </Home_Location>
+    <Home_Location> Underworld, Allianz_Erde </Home_Location>
+    <Home_Location> Systemlord_Alliance, Allianz_Dakara </Home_Location>
+
+    <Starting_Active_Player> Rebel </Starting_Active_Player>
+
+    <Rebel_Story_Name>Story_Plots_Sandbox_Systemlord_Alliance_Goauld.xml</Rebel_Story_Name>
+    <Empire_Story_Name></Empire_Story_Name>
+    <Underworld_Story_Name>Story_Plots_Sandbox_Systemlord_Alliance_AI_Tauri.xml</Underworld_Story_Name>
+
+    <AI_Player_Control> Underworld, None </AI_Player_Control><!--activate AI later-->
+    <AI_Player_Control> Systemlord_Alliance, None </AI_Player_Control>
+    <AI_Player_Control> Traveler, None </AI_Player_Control>
+    <AI_Player_Control> Jaffa_Rebels, None </AI_Player_Control>
+
+    <Markup_Filename>Systemlord_Alliance, SystemlordAllianceHints </Markup_Filename>
+    <Markup_Filename>Rebel, SystemlordAllianceHints </Markup_Filename>
+    <Markup_Filename>Underworld, SystemlordAllianceHints </Markup_Filename>
+
+    <Supports_Custom_Settings>False</Supports_Custom_Settings>
+    <Show_Completed_Tab>True</Show_Completed_Tab>
+
+    <Human_Victory_Conditions>
+        Galactic_All_Planets_Controlled
+    </Human_Victory_Conditions>
+
+    <AI_Victory_Conditions>
+        Galactic_All_Planets_Controlled,
+        Galactic_Kill_Enemy_Leader
+    </AI_Victory_Conditions>
+
+    <Starting_Credits> Rebel, 6000 </Starting_Credits>
+    <Starting_Tech_Level> Rebel, 0 </Starting_Tech_Level>
+    <Max_Tech_Level> Rebel, 4 </Max_Tech_Level>
+
+
+    <Starting_Forces> Rebel, Allianz_Anubis_Heimatwelt, Rebel_X-Wing_Squadron </Starting_Forces>
+    <Starting_Forces> Rebel, Allianz_Anubis_Heimatwelt, Rebel_X-Wing_Squadron </Starting_Forces>
+    <Starting_Forces> Rebel, Allianz_Anubis_Heimatwelt, Rebel_X-Wing_Squadron </Starting_Forces>
+    <Starting_Forces> Rebel, Allianz_Anubis_Heimatwelt, Rebel_X-Wing_Squadron </Starting_Forces>
+    <Starting_Forces> Rebel, Allianz_Anubis_Heimatwelt, B-Wing_Squadron </Starting_Forces>
+    <Starting_Forces> Rebel, Allianz_Anubis_Heimatwelt, B-Wing_Squadron </Starting_Forces>
+    <Starting_Forces> Rebel, Allianz_Anubis_Heimatwelt, B-Wing_Squadron </Starting_Forces>
+    <Starting_Forces> Rebel, Allianz_Anubis_Heimatwelt, Nebulon_B_Frigate </Starting_Forces>
+    <Starting_Forces> Rebel, Allianz_Anubis_Heimatwelt, Nebulon_B_Frigate </Starting_Forces>
+    <Starting_Forces> Rebel, Allianz_Anubis_Heimatwelt, Corellian_Gunboat </Starting_Forces>
+    <Starting_Forces> Rebel, Allianz_Anubis_Heimatwelt, Corellian_Corvette </Starting_Forces>
+    <Starting_Forces> Rebel, Allianz_Anubis_Heimatwelt, Rebel_Star_Base_1 </Starting_Forces>
+
+    <Starting_Forces> Rebel, Allianz_Anubis_Heimatwelt, Rebel_Command_Center </Starting_Forces>
+    <Starting_Forces> Rebel, Allianz_Anubis_Heimatwelt, R_Ground_Barracks </Starting_Forces>
+    <Starting_Forces> Rebel, Allianz_Anubis_Heimatwelt, Rebel_Infantry_Squad </Starting_Forces>
+    <Starting_Forces> Rebel, Allianz_Anubis_Heimatwelt, Rebel_Infantry_Squad </Starting_Forces>
+    <Starting_Forces> Rebel, Allianz_Anubis_Heimatwelt, Rebel_Infantry_Squad </Starting_Forces>
+
+
+
+    <!-- Underworld Starting Forces -->
+
+    <Starting_Credits> Underworld,  10000 </Starting_Credits>
+    <Starting_Tech_Level> Underworld, 2 </Starting_Tech_Level>
+    <Max_Tech_Level> Underworld, 5 </Max_Tech_Level>
+
+
+    <Starting_Forces> Underworld, Allianz_Erde, Underworld_Star_Base_5 </Starting_Forces>
+    <Starting_Forces> Underworld, Allianz_Erde, Interceptor4_Frigate </Starting_Forces>
+    <Starting_Forces> Underworld, Allianz_Erde, Interceptor4_Frigate </Starting_Forces>
+    <Starting_Forces> Underworld, Allianz_Erde, StarViper_Squadron </Starting_Forces>
+    <Starting_Forces> Underworld, Allianz_Erde, StarViper_Squadron </Starting_Forces>
+    <Starting_Forces> Underworld, Allianz_Erde, StarViper_Squadron </Starting_Forces>
+    <Starting_Forces> Underworld, Allianz_Erde, Skipray_Squadron </Starting_Forces>
+    <Starting_Forces> Underworld, Allianz_Erde, Skipray_Squadron </Starting_Forces>
+    <Starting_Forces> Underworld, Allianz_Erde, Crusader_Gunship </Starting_Forces>
+    <Starting_Forces> Underworld, Allianz_Erde, Crusader_Gunship </Starting_Forces>
+
+    <Starting_Forces> Underworld, Allianz_Erde, U_Ground_Palace </Starting_Forces>
+    <Starting_Forces> Underworld, Allianz_Erde, U_Ground_Droid_Works </Starting_Forces>
+    <Starting_Forces> Underworld, Allianz_Erde, U_Ground_Vehicle_Factory </Starting_Forces>
+    <!-- <Starting_Forces> Underworld, Allianz_Erde, Ancient_Weapon_Plattform </Starting_Forces> -->
+    <Starting_Forces> Underworld, Allianz_Erde, Underworld_Merc_Squad</Starting_Forces>
+    <Starting_Forces> Underworld, Allianz_Erde, Underworld_Disruptor_Merc_Squad </Starting_Forces>
+    <Starting_Forces> Underworld, Allianz_Erde, MZ8_Pulse_Cannon_Tank_Company </Starting_Forces>
+    <Starting_Forces> Underworld, Allianz_Erde, Underworld_Merc_Squad</Starting_Forces>
+    <Starting_Forces> Underworld, Allianz_Erde, Underworld_Disruptor_Merc_Squad </Starting_Forces>
+
+
+
+    <Starting_Forces> Underworld, Allianz_AlphaBasis, Underworld_Star_Base_3 </Starting_Forces>
+    <Starting_Forces> Underworld, Allianz_AlphaBasis, Interceptor4_Frigate </Starting_Forces>
+    <Starting_Forces> Underworld, Allianz_AlphaBasis, Interceptor4_Frigate </Starting_Forces>
+    <Starting_Forces> Underworld, Allianz_AlphaBasis, StarViper_Squadron </Starting_Forces>
+    <Starting_Forces> Underworld, Allianz_AlphaBasis, StarViper_Squadron </Starting_Forces>
+    <Starting_Forces> Underworld, Allianz_AlphaBasis, Skipray_Squadron </Starting_Forces>
+    <Starting_Forces> Underworld, Allianz_AlphaBasis, Skipray_Squadron </Starting_Forces>
+    <Starting_Forces> Underworld, Allianz_AlphaBasis, Crusader_Gunship </Starting_Forces>
+    <Starting_Forces> Underworld, Allianz_AlphaBasis, Crusader_Gunship </Starting_Forces>
+
+    <Starting_Forces> Underworld, Allianz_AlphaBasis, U_Ground_Palace </Starting_Forces>
+    <Starting_Forces> Underworld, Allianz_AlphaBasis, U_Ground_Vehicle_Factory </Starting_Forces>
+    <Starting_Forces> Underworld, Allianz_AlphaBasis, Underworld_Merc_Squad</Starting_Forces>
+    <Starting_Forces> Underworld, Allianz_AlphaBasis, Underworld_Disruptor_Merc_Squad </Starting_Forces>
+    <Starting_Forces> Underworld, Allianz_AlphaBasis, MZ8_Pulse_Cannon_Tank_Company </Starting_Forces>
+
+
+
+    <Starting_Forces> Underworld, Allianz_P3X_666, Underworld_Saboteur_Team </Starting_Forces>
+    <Starting_Forces> Underworld, Allianz_P3X_666, Underworld_Saboteur_Team </Starting_Forces>
+
+
+
+    <Starting_Forces> Underworld, Allianz_Tagrea, Underworld_Merc_Squad </Starting_Forces>
+    <Starting_Forces> Underworld, Allianz_Tagrea, Underworld_Merc_Squad </Starting_Forces>
+    <Starting_Forces> Underworld, Allianz_Tagrea, Underworld_Disruptor_Merc_Squad </Starting_Forces>
+    <Starting_Forces> Underworld, Allianz_Tagrea, Tagrean_Gun_Balloon_SS </Starting_Forces>
+
+
+    <!-- Tokra Starting Forces -->
+
+    <Starting_Credits> Traveler,  10000 </Starting_Credits>
+    <Starting_Tech_Level> Traveler, 5 </Starting_Tech_Level>
+    <Max_Tech_Level> Traveler, 5 </Max_Tech_Level>
+
+    <Starting_Forces> Traveler, Allianz_Vorash, Tokra_Hero_Selmak_Teltak </Starting_Forces>
+    <Starting_Forces> Traveler, Allianz_Vorash, Tokra_Needle_Threader_Squadron </Starting_Forces>
+    <Starting_Forces> Traveler, Allianz_Vorash, Tokra_Needle_Threader_Squadron </Starting_Forces>
+    <Starting_Forces> Traveler, Allianz_Vorash, Tokra_Needle_Threader_Squadron </Starting_Forces>
+    <Starting_Forces> Traveler, Allianz_Vorash, Tokra_Teltak_Squadron </Starting_Forces>
+    <Starting_Forces> Traveler, Allianz_Vorash, Tokra_Teltak_Squadron </Starting_Forces>
+    <Starting_Forces> Traveler, Allianz_Vorash, Tokra_Teltak_Squadron </Starting_Forces>
+    <Starting_Forces> Traveler, Allianz_Vorash, Tokra_Teltak_Squadron </Starting_Forces>
+    <Starting_Forces> Traveler, Allianz_Vorash, Tokra_Teltak_Squadron </Starting_Forces>
+    <Starting_Forces> Traveler, Allianz_Vorash, Tokra_Teltak_Squadron </Starting_Forces>
+    <Starting_Forces> Traveler, Allianz_Vorash, Tokra_Teltak_Squadron </Starting_Forces>
+    <Starting_Forces> Traveler, Allianz_Vorash, Tokra_Teltak_Squadron </Starting_Forces>
+    <Starting_Forces> Traveler, Allianz_Vorash, Tokra_Old_Hatak </Starting_Forces>
+    <Starting_Forces> Traveler, Allianz_Vorash, Tokra_New_Hatak </Starting_Forces>
+    <Starting_Forces> Traveler, Allianz_Vorash, Tokra_New_Hatak </Starting_Forces>
+
+    <Starting_Forces> Traveler, Allianz_Vorash, Tokra_Soldier_Company </Starting_Forces>
+    <Starting_Forces> Traveler, Allianz_Vorash, Tokra_Soldier_Company </Starting_Forces>
+    <Starting_Forces> Traveler, Allianz_Vorash, Tokra_Soldier_Company </Starting_Forces>
+    <Starting_Forces> Traveler, Allianz_Vorash, Tokra_Soldier_Company </Starting_Forces>
+    <Starting_Forces> Traveler, Allianz_Vorash, Tokra_Scientist_Company </Starting_Forces>
+    <Starting_Forces> Traveler, Allianz_Vorash, Tokra_Scientist_Company </Starting_Forces>
+    <Starting_Forces> Traveler, Allianz_Vorash, Tokra_Teltak_Land_Company </Starting_Forces>
+    <Starting_Forces> Traveler, Allianz_Vorash, Tokra_Teltak_Land_Company </Starting_Forces>
+    <Starting_Forces> Traveler, Allianz_Vorash, Tokra_Transportation_Rings </Starting_Forces>
+
+
+
+    <Starting_Forces> Traveler, Allianz_Revanna, Tokra_Teltak_Squadron </Starting_Forces>
+    <Starting_Forces> Traveler, Allianz_Revanna, Tokra_Teltak_Squadron </Starting_Forces>
+    <Starting_Forces> Traveler, Allianz_Revanna, Tokra_Teltak_Squadron </Starting_Forces>
+    <Starting_Forces> Traveler, Allianz_Revanna, Tokra_Teltak_Squadron </Starting_Forces>
+    <Starting_Forces> Traveler, Allianz_Revanna, Tokra_Old_Hatak </Starting_Forces>
+
+    <Starting_Forces> Traveler, Allianz_Revanna, Tokra_Soldier_Company </Starting_Forces>
+    <Starting_Forces> Traveler, Allianz_Revanna, Tokra_Scientist_Company </Starting_Forces>
+
+
+
+    <!-- Systemlord Allianz Starting Forces -->
+
+    <Starting_Credits> Systemlord_Alliance,  10000 </Starting_Credits>
+    <Starting_Tech_Level> Systemlord_Alliance, 5 </Starting_Tech_Level>
+    <Max_Tech_Level> Systemlord_Alliance, 5 </Max_Tech_Level>
+
+
+    <Starting_Forces> Systemlord_Alliance, Allianz_Kheb, Systemlord_Alliance_Jaffa_Company </Starting_Forces>
+    <Starting_Forces> Systemlord_Alliance, Allianz_Kheb, Systemlord_Alliance_Jaffa_Company </Starting_Forces>
+
+
+    <Starting_Forces> Systemlord_Alliance, Allianz_Entac, Systemlord_Alliance_System_Flagship </Starting_Forces>
+    <Starting_Forces> Systemlord_Alliance, Allianz_Entac, Systemlord_Alliance_New_Hatak </Starting_Forces>
+    <Starting_Forces> Systemlord_Alliance, Allianz_Entac, Systemlord_Alliance_New_Hatak </Starting_Forces>
+    <Starting_Forces> Systemlord_Alliance, Allianz_Entac, Systemlord_Alliance_Old_Hatak </Starting_Forces>
+    <Starting_Forces> Systemlord_Alliance, Allianz_Entac, Systemlord_Alliance_Old_Hatak </Starting_Forces>
+    <Starting_Forces> Systemlord_Alliance, Allianz_Entac, Systemlord_Alliance_Old_Hatak </Starting_Forces>
+    <Starting_Forces> Systemlord_Alliance, Allianz_Entac, Systemlord_Alliance_Pyramid_Ship </Starting_Forces>
+    <Starting_Forces> Systemlord_Alliance, Allianz_Entac, Systemlord_Alliance_Death_Glider_Squadron </Starting_Forces>
+    <Starting_Forces> Systemlord_Alliance, Allianz_Entac, Systemlord_Alliance_Death_Glider_Squadron </Starting_Forces>
+    <Starting_Forces> Systemlord_Alliance, Allianz_Entac, Systemlord_Alliance_Death_Glider_Squadron </Starting_Forces>
+    <Starting_Forces> Systemlord_Alliance, Allianz_Entac, Systemlord_Alliance_Death_Glider_Squadron </Starting_Forces>
+    <Starting_Forces> Systemlord_Alliance, Allianz_Entac, Systemlord_Alliance_Alkesh_Squadron </Starting_Forces>
+    <Starting_Forces> Systemlord_Alliance, Allianz_Entac, Systemlord_Alliance_Alkesh_Squadron </Starting_Forces>
+    <Starting_Forces> Systemlord_Alliance, Allianz_Entac, SysLords_Star_Base_3 </Starting_Forces>
+
+    <Starting_Forces> Systemlord_Alliance, Allianz_Entac, SysLords_Ground_Palace </Starting_Forces>
+    <Starting_Forces> Systemlord_Alliance, Allianz_Entac, Systemlord_Alliance_Jaffa_Company </Starting_Forces>
+    <Starting_Forces> Systemlord_Alliance, Allianz_Entac, Systemlord_Alliance_Jaffa_Company </Starting_Forces>
+    <Starting_Forces> Systemlord_Alliance, Allianz_Entac, Systemlord_Alliance_Jackal_Guard_Company </Starting_Forces>
+    <Starting_Forces> Systemlord_Alliance, Allianz_Entac, Systemlord_Alliance_Horus_Guard_Company </Starting_Forces>
+    <Starting_Forces> Systemlord_Alliance, Allianz_Entac, Systemlord_Alliance_Necropolis_Guard_Company </Starting_Forces>
+    <Starting_Forces> Systemlord_Alliance, Allianz_Entac, Systemlord_Alliance_Necropolis_Guard_Company </Starting_Forces>
+    <Starting_Forces> Systemlord_Alliance, Allianz_Entac, Systemlord_Alliance_Necropolis_Guard_Company </Starting_Forces>
+    <Starting_Forces> Systemlord_Alliance, Allianz_Entac, Systemlord_Alliance_Deathglider_Company </Starting_Forces>
+    <Starting_Forces> Systemlord_Alliance, Allianz_Entac, Systemlord_Alliance_Deathglider_Company </Starting_Forces>
+    <Starting_Forces> Systemlord_Alliance, Allianz_Entac, Systemlord_Alliance_Deathglider_Company </Starting_Forces>
+
+
+
+    <Starting_Forces> Systemlord_Alliance, Allianz_Haktyl, Systemlord_Alliance_Old_Hatak </Starting_Forces>
+    <Starting_Forces> Systemlord_Alliance, Allianz_Haktyl, Systemlord_Alliance_Death_Glider_Squadron </Starting_Forces>
+    <Starting_Forces> Systemlord_Alliance, Allianz_Haktyl, Systemlord_Alliance_Death_Glider_Squadron </Starting_Forces>
+    <Starting_Forces> Systemlord_Alliance, Allianz_Haktyl, SysLords_Star_Base_2 </Starting_Forces>
+
+    <Starting_Forces> Systemlord_Alliance, Allianz_Haktyl, SysLords_Ground_Palace </Starting_Forces>
+    <Starting_Forces> Systemlord_Alliance, Allianz_Haktyl, SysLords_Ground_Barracks </Starting_Forces>
+    <Starting_Forces> Systemlord_Alliance, Allianz_Haktyl, Systemlord_Alliance_Serpent_Guard_Company </Starting_Forces>
+    <Starting_Forces> Systemlord_Alliance, Allianz_Haktyl, Systemlord_Alliance_Jaffa_Company </Starting_Forces>
+    <Starting_Forces> Systemlord_Alliance, Allianz_Haktyl, Systemlord_Alliance_Jaffa_Company </Starting_Forces>
+    <Starting_Forces> Systemlord_Alliance, Allianz_Haktyl, Systemlord_Alliance_Jaffa_Company </Starting_Forces>
+
+
+
+    <Starting_Forces> Systemlord_Alliance, Allianz_Dakara, Systemlord_Alliance_Death_Glider_Squadron </Starting_Forces>
+    <Starting_Forces> Systemlord_Alliance, Allianz_Dakara, Systemlord_Alliance_Death_Glider_Squadron </Starting_Forces>
+    <Starting_Forces> Systemlord_Alliance, Allianz_Dakara, Systemlord_Alliance_Teltak_Squadron </Starting_Forces>
+    <Starting_Forces> Systemlord_Alliance, Allianz_Dakara, Systemlord_Alliance_Pyramid_Ship </Starting_Forces>
+    <Starting_Forces> Systemlord_Alliance, Allianz_Dakara, Systemlord_Alliance_Old_Hatak </Starting_Forces>
+    <Starting_Forces> Systemlord_Alliance, Allianz_Dakara, Systemlord_Alliance_Old_Hatak </Starting_Forces>
+    <Starting_Forces> Systemlord_Alliance, Allianz_Dakara, Systemlord_Alliance_Old_Hatak </Starting_Forces>
+    <Starting_Forces> Systemlord_Alliance, Allianz_Dakara, Systemlord_Alliance_New_Hatak </Starting_Forces>
+    <Starting_Forces> Systemlord_Alliance, Allianz_Dakara, SysLords_Star_Base_2 </Starting_Forces>
+
+    <Starting_Forces> Systemlord_Alliance, Allianz_Dakara, SysLords_Ground_Palace </Starting_Forces>
+    <Starting_Forces> Systemlord_Alliance, Allianz_Dakara, SysLords_Ground_Barracks </Starting_Forces>
+    <Starting_Forces> Systemlord_Alliance, Allianz_Dakara, SysLords_Ground_Shrine </Starting_Forces>
+    <Starting_Forces> Systemlord_Alliance, Allianz_Dakara, Systemlord_Alliance_Jaffa_Company </Starting_Forces>
+    <Starting_Forces> Systemlord_Alliance, Allianz_Dakara, Systemlord_Alliance_Jaffa_Company </Starting_Forces>
+    <Starting_Forces> Systemlord_Alliance, Allianz_Dakara, Systemlord_Alliance_Jaffa_Company </Starting_Forces>
+    <Starting_Forces> Systemlord_Alliance, Allianz_Dakara, Systemlord_Alliance_Jaffa_Company </Starting_Forces>
+
+
+
+    <Starting_Forces> Systemlord_Alliance, Allianz_Chulak, Systemlord_Alliance_Teltak_Squadron </Starting_Forces>
+    <Starting_Forces> Systemlord_Alliance, Allianz_Chulak, Systemlord_Alliance_Teltak_Squadron </Starting_Forces>
+    <Starting_Forces> Systemlord_Alliance, Allianz_Chulak, Systemlord_Alliance_Pyramid_Ship </Starting_Forces>
+    <Starting_Forces> Systemlord_Alliance, Allianz_Chulak, Systemlord_Alliance_Pyramid_Ship </Starting_Forces>
+    <Starting_Forces> Systemlord_Alliance, Allianz_Chulak, Systemlord_Alliance_Old_Hatak </Starting_Forces>
+    <Starting_Forces> Systemlord_Alliance, Allianz_Chulak, Systemlord_Alliance_Old_Hatak </Starting_Forces>
+    <Starting_Forces> Systemlord_Alliance, Allianz_Chulak, Systemlord_Alliance_Old_Hatak </Starting_Forces>
+    <Starting_Forces> Systemlord_Alliance, Allianz_Chulak, Systemlord_Alliance_Old_Hatak </Starting_Forces>
+    <Starting_Forces> Systemlord_Alliance, Allianz_Chulak, SysLords_Star_Base_1 </Starting_Forces>
+
+    <Starting_Forces> Systemlord_Alliance, Allianz_Chulak, SysLords_Ground_Palace </Starting_Forces>
+    <Starting_Forces> Systemlord_Alliance, Allianz_Chulak, SysLords_Ground_Hangar </Starting_Forces>
+    <Starting_Forces> Systemlord_Alliance, Allianz_Chulak, Systemlord_Alliance_Serpent_Guard_Company </Starting_Forces>
+    <Starting_Forces> Systemlord_Alliance, Allianz_Chulak, Systemlord_Alliance_Serpent_Guard_Company </Starting_Forces>
+    <Starting_Forces> Systemlord_Alliance, Allianz_Chulak, Systemlord_Alliance_Serpent_Guard_Company </Starting_Forces>
+    <Starting_Forces> Systemlord_Alliance, Allianz_Chulak, Systemlord_Alliance_Serpent_Guard_Company </Starting_Forces>
+    <Starting_Forces> Systemlord_Alliance, Allianz_Chulak, Systemlord_Alliance_Jaffa_Company </Starting_Forces>
+    <Starting_Forces> Systemlord_Alliance, Allianz_Chulak, Systemlord_Alliance_Jaffa_Company </Starting_Forces>
+
+
+
+    <Starting_Forces> Systemlord_Alliance, Allianz_Hassara, Goauld_Hassara </Starting_Forces>
+    <Starting_Forces> Systemlord_Alliance, Allianz_Hassara, Systemlord_Alliance_System_Flagship </Starting_Forces>
+    <Starting_Forces> Systemlord_Alliance, Allianz_Hassara, Systemlord_Alliance_System_Flagship </Starting_Forces>
+    <Starting_Forces> Systemlord_Alliance, Allianz_Hassara, Systemlord_Alliance_New_Hatak </Starting_Forces>
+    <Starting_Forces> Systemlord_Alliance, Allianz_Hassara, Systemlord_Alliance_New_Hatak </Starting_Forces>
+    <Starting_Forces> Systemlord_Alliance, Allianz_Hassara, Systemlord_Alliance_New_Hatak </Starting_Forces>
+    <Starting_Forces> Systemlord_Alliance, Allianz_Hassara, Systemlord_Alliance_New_Hatak </Starting_Forces>
+    <Starting_Forces> Systemlord_Alliance, Allianz_Hassara, Systemlord_Alliance_New_Hatak </Starting_Forces>
+    <Starting_Forces> Systemlord_Alliance, Allianz_Hassara, Systemlord_Alliance_Old_Hatak </Starting_Forces>
+    <Starting_Forces> Systemlord_Alliance, Allianz_Hassara, Systemlord_Alliance_Old_Hatak </Starting_Forces>
+    <Starting_Forces> Systemlord_Alliance, Allianz_Hassara, Systemlord_Alliance_Old_Hatak </Starting_Forces>
+    <Starting_Forces> Systemlord_Alliance, Allianz_Hassara, Systemlord_Alliance_Old_Hatak </Starting_Forces>
+    <Starting_Forces> Systemlord_Alliance, Allianz_Hassara, Systemlord_Alliance_Teltak_Squadron </Starting_Forces>
+    <Starting_Forces> Systemlord_Alliance, Allianz_Hassara, Systemlord_Alliance_Teltak_Squadron </Starting_Forces>
+    <Starting_Forces> Systemlord_Alliance, Allianz_Hassara, Systemlord_Alliance_Teltak_Squadron </Starting_Forces>
+    <Starting_Forces> Systemlord_Alliance, Allianz_Hassara, Systemlord_Alliance_Teltak_Squadron </Starting_Forces>
+    <Starting_Forces> Systemlord_Alliance, Allianz_Hassara, Systemlord_Alliance_Alkesh_Squadron </Starting_Forces>
+    <Starting_Forces> Systemlord_Alliance, Allianz_Hassara, Systemlord_Alliance_Alkesh_Squadron </Starting_Forces>
+    <Starting_Forces> Systemlord_Alliance, Allianz_Hassara, Systemlord_Alliance_Alkesh_Squadron </Starting_Forces>
+    <Starting_Forces> Systemlord_Alliance, Allianz_Hassara, Systemlord_Alliance_Death_Glider_Squadron </Starting_Forces>
+    <Starting_Forces> Systemlord_Alliance, Allianz_Hassara, Systemlord_Alliance_Death_Glider_Squadron </Starting_Forces>
+    <Starting_Forces> Systemlord_Alliance, Allianz_Hassara, Systemlord_Alliance_Death_Glider_Squadron </Starting_Forces>
+    <Starting_Forces> Systemlord_Alliance, Allianz_Hassara, Systemlord_Alliance_Death_Glider_Squadron </Starting_Forces>
+    <Starting_Forces> Systemlord_Alliance, Allianz_Hassara, Systemlord_Alliance_Death_Glider_Squadron </Starting_Forces>
+    <Starting_Forces> Systemlord_Alliance, Allianz_Hassara, Systemlord_Alliance_Death_Glider_Squadron </Starting_Forces>
+    <Starting_Forces> Systemlord_Alliance, Allianz_Hassara, Systemlord_Alliance_Death_Glider_Squadron </Starting_Forces>
+
+
+
+    <Starting_Forces> Systemlord_Alliance, Allianz_Pangar, Systemlord_Alliance_Old_Hatak </Starting_Forces>
+    <Starting_Forces> Systemlord_Alliance, Allianz_Pangar, Systemlord_Alliance_New_Hatak </Starting_Forces>
+    <Starting_Forces> Systemlord_Alliance, Allianz_Pangar, Systemlord_Alliance_Death_Glider_Squadron </Starting_Forces>
+    <Starting_Forces> Systemlord_Alliance, Allianz_Pangar, Systemlord_Alliance_Death_Glider_Squadron </Starting_Forces>
+    <Starting_Forces> Systemlord_Alliance, Allianz_Pangar, Systemlord_Alliance_Death_Glider_Squadron </Starting_Forces>
+    <Starting_Forces> Systemlord_Alliance, Allianz_Pangar, Systemlord_Alliance_Alkesh_Squadron </Starting_Forces>
+    <Starting_Forces> Systemlord_Alliance, Allianz_Pangar, Systemlord_Alliance_Alkesh_Squadron </Starting_Forces>
+    <Starting_Forces> Systemlord_Alliance, Allianz_Pangar, Systemlord_Alliance_Alkesh_Squadron </Starting_Forces>
+    <Starting_Forces> Systemlord_Alliance, Allianz_Pangar, Systemlord_Alliance_Alkesh_Squadron </Starting_Forces>
+    <Starting_Forces> Systemlord_Alliance, Allianz_Pangar, Systemlord_Alliance_Alkesh_Squadron </Starting_Forces>
+    <Starting_Forces> Systemlord_Alliance, Allianz_Pangar, Systemlord_Alliance_Alkesh_Squadron </Starting_Forces>
+    <Starting_Forces> Systemlord_Alliance, Allianz_Pangar, Systemlord_Alliance_Alkesh_Squadron </Starting_Forces>
+    <Starting_Forces> Systemlord_Alliance, Allianz_Pangar, Systemlord_Alliance_Teltak_Squadron </Starting_Forces>
+    <Starting_Forces> Systemlord_Alliance, Allianz_Pangar, Systemlord_Alliance_Teltak_Squadron </Starting_Forces>
+    <Starting_Forces> Systemlord_Alliance, Allianz_Pangar, Systemlord_Alliance_Teltak_Squadron </Starting_Forces>
+    <Starting_Forces> Systemlord_Alliance, Allianz_Pangar, SysLords_Star_Base_3 </Starting_Forces>
+
+    <Starting_Forces> Systemlord_Alliance, Allianz_Pangar, SysLords_Ground_Palace </Starting_Forces>
+    <Starting_Forces> Systemlord_Alliance, Allianz_Pangar, SysLords_Ground_Barracks </Starting_Forces>
+    <Starting_Forces> Systemlord_Alliance, Allianz_Pangar, Systemlord_Alliance_Serpent_Guard_Company </Starting_Forces>
+    <Starting_Forces> Systemlord_Alliance, Allianz_Pangar, Systemlord_Alliance_Jaffa_Company </Starting_Forces>
+    <Starting_Forces> Systemlord_Alliance, Allianz_Pangar, Systemlord_Alliance_Jaffa_Company </Starting_Forces>
+    <Starting_Forces> Systemlord_Alliance, Allianz_Pangar, Systemlord_Alliance_Horus_Guard_Company </Starting_Forces>
+
+
+
+    <Starting_Forces> Systemlord_Alliance, Allianz_P3X_116, Systemlord_Alliance_Old_Hatak </Starting_Forces>
+    <Starting_Forces> Systemlord_Alliance, Allianz_P3X_116, Systemlord_Alliance_New_Hatak </Starting_Forces>
+    <Starting_Forces> Systemlord_Alliance, Allianz_P3X_116, Systemlord_Alliance_Death_Glider_Squadron </Starting_Forces>
+    <Starting_Forces> Systemlord_Alliance, Allianz_P3X_116, Systemlord_Alliance_Death_Glider_Squadron </Starting_Forces>
+    <Starting_Forces> Systemlord_Alliance, Allianz_P3X_116, Systemlord_Alliance_Death_Glider_Squadron </Starting_Forces>
+    <Starting_Forces> Systemlord_Alliance, Allianz_P3X_116, Systemlord_Alliance_Alkesh_Squadron </Starting_Forces>
+    <Starting_Forces> Systemlord_Alliance, Allianz_P3X_116, Systemlord_Alliance_Alkesh_Squadron </Starting_Forces>
+    <Starting_Forces> Systemlord_Alliance, Allianz_P3X_116, Systemlord_Alliance_Alkesh_Squadron </Starting_Forces>
+    <Starting_Forces> Systemlord_Alliance, Allianz_P3X_116, Systemlord_Alliance_Alkesh_Squadron </Starting_Forces>
+    <Starting_Forces> Systemlord_Alliance, Allianz_P3X_116, Systemlord_Alliance_Alkesh_Squadron </Starting_Forces>
+    <Starting_Forces> Systemlord_Alliance, Allianz_P3X_116, Systemlord_Alliance_Alkesh_Squadron </Starting_Forces>
+    <Starting_Forces> Systemlord_Alliance, Allianz_P3X_116, Systemlord_Alliance_Alkesh_Squadron </Starting_Forces>
+    <Starting_Forces> Systemlord_Alliance, Allianz_P3X_116, Systemlord_Alliance_Alkesh_Squadron </Starting_Forces>
+    <Starting_Forces> Systemlord_Alliance, Allianz_P3X_116, Systemlord_Alliance_Alkesh_Squadron </Starting_Forces>
+    <Starting_Forces> Systemlord_Alliance, Allianz_P3X_116, Systemlord_Alliance_Alkesh_Squadron </Starting_Forces>
+    <Starting_Forces> Systemlord_Alliance, Allianz_P3X_116, Systemlord_Alliance_Alkesh_Squadron </Starting_Forces>
+    <Starting_Forces> Systemlord_Alliance, Allianz_P3X_116, Systemlord_Alliance_Alkesh_Squadron </Starting_Forces>
+    <Starting_Forces> Systemlord_Alliance, Allianz_P3X_116, Systemlord_Alliance_Alkesh_Squadron </Starting_Forces>
+    <Starting_Forces> Systemlord_Alliance, Allianz_P3X_116, Systemlord_Alliance_Alkesh_Squadron </Starting_Forces>
+    <Starting_Forces> Systemlord_Alliance, Allianz_P3X_116, Systemlord_Alliance_Alkesh_Squadron </Starting_Forces>
+    <Starting_Forces> Systemlord_Alliance, Allianz_P3X_116, Systemlord_Alliance_Alkesh_Squadron </Starting_Forces>
+    <Starting_Forces> Systemlord_Alliance, Allianz_P3X_116, Systemlord_Alliance_Alkesh_Squadron </Starting_Forces>
+    <Starting_Forces> Systemlord_Alliance, Allianz_P3X_116, Systemlord_Alliance_Alkesh_Squadron </Starting_Forces>
+    <Starting_Forces> Systemlord_Alliance, Allianz_P3X_116, Systemlord_Alliance_Alkesh_Squadron </Starting_Forces>
+    <Starting_Forces> Systemlord_Alliance, Allianz_P3X_116, Systemlord_Alliance_Alkesh_Squadron </Starting_Forces>
+    <Starting_Forces> Systemlord_Alliance, Allianz_P3X_116, Systemlord_Alliance_Alkesh_Squadron </Starting_Forces>
+    <Starting_Forces> Systemlord_Alliance, Allianz_P3X_116, Systemlord_Alliance_Alkesh_Squadron </Starting_Forces>
+    <Starting_Forces> Systemlord_Alliance, Allianz_P3X_116, Systemlord_Alliance_Alkesh_Squadron </Starting_Forces>
+    <Starting_Forces> Systemlord_Alliance, Allianz_P3X_116, Systemlord_Alliance_Alkesh_Squadron </Starting_Forces>
+    <Starting_Forces> Systemlord_Alliance, Allianz_P3X_116, Systemlord_Alliance_Alkesh_Squadron </Starting_Forces>
+    <Starting_Forces> Systemlord_Alliance, Allianz_P3X_116, Systemlord_Alliance_Teltak_Squadron </Starting_Forces>
+    <Starting_Forces> Systemlord_Alliance, Allianz_P3X_116, Systemlord_Alliance_Teltak_Squadron </Starting_Forces>
+    <Starting_Forces> Systemlord_Alliance, Allianz_P3X_116, SysLords_Star_Base_2 </Starting_Forces>
+
+    <Starting_Forces> Systemlord_Alliance, Allianz_P3X_116, SysLords_Ground_Palace </Starting_Forces>
+    <Starting_Forces> Systemlord_Alliance, Allianz_P3X_116, SysLords_Ground_Barracks </Starting_Forces>
+    <Starting_Forces> Systemlord_Alliance, Allianz_P3X_116, SysLords_Ground_Hangar </Starting_Forces>
+    <Starting_Forces> Systemlord_Alliance, Allianz_P3X_116, Systemlord_Alliance_Jaffa_Company </Starting_Forces>
+    <Starting_Forces> Systemlord_Alliance, Allianz_P3X_116, Systemlord_Alliance_Jaffa_Company </Starting_Forces>
+    <Starting_Forces> Systemlord_Alliance, Allianz_P3X_116, Systemlord_Alliance_Horus_Guard_Company </Starting_Forces>
+    <Starting_Forces> Systemlord_Alliance, Allianz_P3X_116, Systemlord_Alliance_Necropolis_Guard_Company </Starting_Forces>
+    <Starting_Forces> Systemlord_Alliance, Allianz_P3X_116, Systemlord_Alliance_Necropolis_Guard_Company </Starting_Forces>
+
+
+
+    <Starting_Forces> Systemlord_Alliance, Allianz_Erebus, Systemlord_Alliance_New_Hatak </Starting_Forces>
+    <Starting_Forces> Systemlord_Alliance, Allianz_Erebus, Systemlord_Alliance_New_Hatak </Starting_Forces>
+    <Starting_Forces> Systemlord_Alliance, Allianz_Erebus, Systemlord_Alliance_Old_Hatak </Starting_Forces>
+    <Starting_Forces> Systemlord_Alliance, Allianz_Erebus, Systemlord_Alliance_Old_Hatak </Starting_Forces>
+    <Starting_Forces> Systemlord_Alliance, Allianz_Erebus, Systemlord_Alliance_Pyramid_Ship </Starting_Forces>
+    <Starting_Forces> Systemlord_Alliance, Allianz_Erebus, Systemlord_Alliance_Pyramid_Ship </Starting_Forces>
+    <Starting_Forces> Systemlord_Alliance, Allianz_Erebus, SysLords_Star_Base_3 </Starting_Forces>
+
+    <Starting_Forces> Systemlord_Alliance, Allianz_Erebus, SysLords_Ground_Palace </Starting_Forces>
+    <Starting_Forces> Systemlord_Alliance, Allianz_Erebus, SysLords_Ground_Small_Shipyard </Starting_Forces>
+    <Starting_Forces> Systemlord_Alliance, Allianz_Erebus, SysLords_Ground_Mining_Facility </Starting_Forces>
+    <Starting_Forces> Systemlord_Alliance, Allianz_Erebus, SysLords_Ground_Mining_Facility </Starting_Forces>
+    <Starting_Forces> Systemlord_Alliance, Allianz_Erebus, SysLords_Ground_Mining_Facility </Starting_Forces>
+    <Starting_Forces> Systemlord_Alliance, Allianz_Erebus, Systemlord_Alliance_Serpent_Guard_Company </Starting_Forces>
+    <Starting_Forces> Systemlord_Alliance, Allianz_Erebus, Systemlord_Alliance_Jaffa_Company </Starting_Forces>
+    <Starting_Forces> Systemlord_Alliance, Allianz_Erebus, Systemlord_Alliance_Jaffa_Company </Starting_Forces>
+    <Starting_Forces> Systemlord_Alliance, Allianz_Erebus, Systemlord_Alliance_Horus_Guard_Company </Starting_Forces>
+    <Starting_Forces> Systemlord_Alliance, Allianz_Erebus, Systemlord_Alliance_Deathglider_Company </Starting_Forces>
+
+
+
+
+    <Starting_Forces> Systemlord_Alliance, Allianz_Delmak, Systemlord_Alliance_System_Flagship </Starting_Forces>
+    <Starting_Forces> Systemlord_Alliance, Allianz_Delmak, Systemlord_Alliance_Stealth_Hatak </Starting_Forces>
+    <Starting_Forces> Systemlord_Alliance, Allianz_Delmak, Systemlord_Alliance_Stealth_Hatak </Starting_Forces>
+    <Starting_Forces> Systemlord_Alliance, Allianz_Delmak, Systemlord_Alliance_Stealth_Hatak </Starting_Forces>
+    <Starting_Forces> Systemlord_Alliance, Allianz_Delmak, Systemlord_Alliance_Stealth_Hatak </Starting_Forces>
+    <Starting_Forces> Systemlord_Alliance, Allianz_Delmak, Systemlord_Alliance_Stealth_Hatak </Starting_Forces>
+    <Starting_Forces> Systemlord_Alliance, Allianz_Delmak, Systemlord_Alliance_Stealth_Hatak </Starting_Forces>
+    <Starting_Forces> Systemlord_Alliance, Allianz_Delmak, Systemlord_Alliance_Old_Hatak </Starting_Forces>
+    <Starting_Forces> Systemlord_Alliance, Allianz_Delmak, Systemlord_Alliance_Old_Hatak </Starting_Forces>
+    <Starting_Forces> Systemlord_Alliance, Allianz_Delmak, Systemlord_Alliance_Old_Hatak </Starting_Forces>
+    <Starting_Forces> Systemlord_Alliance, Allianz_Delmak, Systemlord_Alliance_Old_Hatak </Starting_Forces>
+    <Starting_Forces> Systemlord_Alliance, Allianz_Delmak, Systemlord_Alliance_Old_Hatak </Starting_Forces>
+    <Starting_Forces> Systemlord_Alliance, Allianz_Delmak, Systemlord_Alliance_Pyramid_Ship </Starting_Forces>
+    <Starting_Forces> Systemlord_Alliance, Allianz_Delmak, Systemlord_Alliance_Pyramid_Ship </Starting_Forces>
+    <Starting_Forces> Systemlord_Alliance, Allianz_Delmak, Systemlord_Alliance_Pyramid_Ship </Starting_Forces>
+    <Starting_Forces> Systemlord_Alliance, Allianz_Delmak, Systemlord_Alliance_Pyramid_Ship </Starting_Forces>
+    <Starting_Forces> Systemlord_Alliance, Allianz_Delmak, SysLords_Star_Base_5 </Starting_Forces>
+    <Starting_Forces> Systemlord_Alliance, Allianz_Delmak, SysLords_Large_Shipyard </Starting_Forces>
+
+    <Starting_Forces> Systemlord_Alliance, Allianz_Delmak, SysLords_Ground_Palace </Starting_Forces>
+    <Starting_Forces> Systemlord_Alliance, Allianz_Delmak, SysLords_Ground_Hangar </Starting_Forces>
+    <Starting_Forces> Systemlord_Alliance, Allianz_Delmak, SysLords_Ground_Small_Shipyard </Starting_Forces>
+    <Starting_Forces> Systemlord_Alliance, Allianz_Delmak, SysLords_Ground_Base_Shield </Starting_Forces>
+    <Starting_Forces> Systemlord_Alliance, Allianz_Delmak, SysLords_Ground_GTSW </Starting_Forces>
+    <Starting_Forces> Systemlord_Alliance, Allianz_Delmak, SysLords_Ground_Guard_Tower_Galactic_Defence </Starting_Forces>
+    <Starting_Forces> Systemlord_Alliance, Allianz_Delmak, Systemlord_Alliance_Jaffa_Company </Starting_Forces>
+    <Starting_Forces> Systemlord_Alliance, Allianz_Delmak, Systemlord_Alliance_Jaffa_Company </Starting_Forces>
+    <Starting_Forces> Systemlord_Alliance, Allianz_Delmak, Systemlord_Alliance_Jackal_Guard_Company </Starting_Forces>
+    <Starting_Forces> Systemlord_Alliance, Allianz_Delmak, Systemlord_Alliance_Necropolis_Guard_Company </Starting_Forces>
+    <Starting_Forces> Systemlord_Alliance, Allianz_Delmak, Systemlord_Alliance_Necropolis_Guard_Company </Starting_Forces>
+    <Starting_Forces> Systemlord_Alliance, Allianz_Delmak, Systemlord_Alliance_Deathglider_Company </Starting_Forces>
+    <Starting_Forces> Systemlord_Alliance, Allianz_Delmak, Systemlord_Alliance_Deathglider_Company </Starting_Forces>
+    <Starting_Forces> Systemlord_Alliance, Allianz_Delmak, Systemlord_Alliance_Deathglider_Company </Starting_Forces>
+
+
+
+    <Starting_Forces> Systemlord_Alliance, Allianz_YUs_Heimatwelt, Systemlord_Alliance_System_Flagship </Starting_Forces>
+    <Starting_Forces> Systemlord_Alliance, Allianz_YUs_Heimatwelt, Systemlord_Alliance_System_Flagship </Starting_Forces>
+    <Starting_Forces> Systemlord_Alliance, Allianz_YUs_Heimatwelt, Systemlord_Alliance_System_Flagship </Starting_Forces>
+    <Starting_Forces> Systemlord_Alliance, Allianz_YUs_Heimatwelt, Systemlord_Alliance_System_Flagship </Starting_Forces>
+    <Starting_Forces> Systemlord_Alliance, Allianz_YUs_Heimatwelt, Systemlord_Alliance_New_Hatak </Starting_Forces>
+    <Starting_Forces> Systemlord_Alliance, Allianz_YUs_Heimatwelt, Systemlord_Alliance_New_Hatak </Starting_Forces>
+    <Starting_Forces> Systemlord_Alliance, Allianz_YUs_Heimatwelt, Systemlord_Alliance_New_Hatak </Starting_Forces>
+    <Starting_Forces> Systemlord_Alliance, Allianz_YUs_Heimatwelt, Systemlord_Alliance_New_Hatak </Starting_Forces>
+    <Starting_Forces> Systemlord_Alliance, Allianz_YUs_Heimatwelt, Systemlord_Alliance_New_Hatak </Starting_Forces>
+    <Starting_Forces> Systemlord_Alliance, Allianz_YUs_Heimatwelt, Systemlord_Alliance_New_Hatak </Starting_Forces>
+    <Starting_Forces> Systemlord_Alliance, Allianz_YUs_Heimatwelt, Systemlord_Alliance_New_Hatak </Starting_Forces>
+    <Starting_Forces> Systemlord_Alliance, Allianz_YUs_Heimatwelt, Systemlord_Alliance_New_Hatak </Starting_Forces>
+    <Starting_Forces> Systemlord_Alliance, Allianz_YUs_Heimatwelt, Systemlord_Alliance_Death_Glider_Squadron </Starting_Forces>
+    <Starting_Forces> Systemlord_Alliance, Allianz_YUs_Heimatwelt, Systemlord_Alliance_Death_Glider_Squadron </Starting_Forces>
+    <Starting_Forces> Systemlord_Alliance, Allianz_YUs_Heimatwelt, Systemlord_Alliance_Death_Glider_Squadron </Starting_Forces>
+    <Starting_Forces> Systemlord_Alliance, Allianz_YUs_Heimatwelt, Systemlord_Alliance_Death_Glider_Squadron </Starting_Forces>
+    <Starting_Forces> Systemlord_Alliance, Allianz_YUs_Heimatwelt, Systemlord_Alliance_Death_Glider_Squadron </Starting_Forces>
+    <Starting_Forces> Systemlord_Alliance, Allianz_YUs_Heimatwelt, Systemlord_Alliance_Death_Glider_Squadron </Starting_Forces>
+    <Starting_Forces> Systemlord_Alliance, Allianz_YUs_Heimatwelt, Systemlord_Alliance_Death_Glider_Squadron </Starting_Forces>
+    <Starting_Forces> Systemlord_Alliance, Allianz_YUs_Heimatwelt, Systemlord_Alliance_Death_Glider_Squadron </Starting_Forces>
+    <Starting_Forces> Systemlord_Alliance, Allianz_YUs_Heimatwelt, Systemlord_Alliance_Death_Glider_Squadron </Starting_Forces>
+    <Starting_Forces> Systemlord_Alliance, Allianz_YUs_Heimatwelt, Systemlord_Alliance_Death_Glider_Squadron </Starting_Forces>
+    <Starting_Forces> Systemlord_Alliance, Allianz_YUs_Heimatwelt, Systemlord_Alliance_Death_Glider_Squadron </Starting_Forces>
+    <Starting_Forces> Systemlord_Alliance, Allianz_YUs_Heimatwelt, Systemlord_Alliance_Death_Glider_Squadron </Starting_Forces>
+    <Starting_Forces> Systemlord_Alliance, Allianz_YUs_Heimatwelt, Systemlord_Alliance_Death_Glider_Squadron </Starting_Forces>
+    <Starting_Forces> Systemlord_Alliance, Allianz_YUs_Heimatwelt, Systemlord_Alliance_Death_Glider_Squadron </Starting_Forces>
+    <Starting_Forces> Systemlord_Alliance, Allianz_YUs_Heimatwelt, Systemlord_Alliance_Death_Glider_Squadron </Starting_Forces>
+    <Starting_Forces> Systemlord_Alliance, Allianz_YUs_Heimatwelt, Systemlord_Alliance_Old_Hatak </Starting_Forces>
+    <Starting_Forces> Systemlord_Alliance, Allianz_YUs_Heimatwelt, Systemlord_Alliance_Old_Hatak </Starting_Forces>
+    <Starting_Forces> Systemlord_Alliance, Allianz_YUs_Heimatwelt, Systemlord_Alliance_Old_Hatak </Starting_Forces>
+    <Starting_Forces> Systemlord_Alliance, Allianz_YUs_Heimatwelt, Systemlord_Alliance_Old_Hatak </Starting_Forces>
+    <Starting_Forces> Systemlord_Alliance, Allianz_YUs_Heimatwelt, Systemlord_Alliance_Old_Hatak </Starting_Forces>
+    <Starting_Forces> Systemlord_Alliance, Allianz_YUs_Heimatwelt, Systemlord_Alliance_Teltak_Squadron </Starting_Forces>
+    <Starting_Forces> Systemlord_Alliance, Allianz_YUs_Heimatwelt, Systemlord_Alliance_Teltak_Squadron </Starting_Forces>
+    <Starting_Forces> Systemlord_Alliance, Allianz_YUs_Heimatwelt, Systemlord_Alliance_Teltak_Squadron </Starting_Forces>
+    <Starting_Forces> Systemlord_Alliance, Allianz_YUs_Heimatwelt, Systemlord_Alliance_Teltak_Squadron </Starting_Forces>
+    <Starting_Forces> Systemlord_Alliance, Allianz_YUs_Heimatwelt, Systemlord_Alliance_Teltak_Squadron </Starting_Forces>
+    <Starting_Forces> Systemlord_Alliance, Allianz_YUs_Heimatwelt, Systemlord_Alliance_Alkesh_Squadron </Starting_Forces>
+    <Starting_Forces> Systemlord_Alliance, Allianz_YUs_Heimatwelt, Systemlord_Alliance_Alkesh_Squadron </Starting_Forces>
+    <Starting_Forces> Systemlord_Alliance, Allianz_YUs_Heimatwelt, Systemlord_Alliance_Alkesh_Squadron </Starting_Forces>
+    <Starting_Forces> Systemlord_Alliance, Allianz_YUs_Heimatwelt, Systemlord_Alliance_Alkesh_Squadron </Starting_Forces>
+    <Starting_Forces> Systemlord_Alliance, Allianz_YUs_Heimatwelt, Systemlord_Alliance_Alkesh_Squadron </Starting_Forces>
+    <Starting_Forces> Systemlord_Alliance, Allianz_YUs_Heimatwelt, Systemlord_Alliance_Alkesh_Squadron </Starting_Forces>
+    <Starting_Forces> Systemlord_Alliance, Allianz_YUs_Heimatwelt, Systemlord_Alliance_Alkesh_Squadron </Starting_Forces>
+    <Starting_Forces> Systemlord_Alliance, Allianz_YUs_Heimatwelt, Systemlord_Alliance_Alkesh_Squadron </Starting_Forces>
+    <Starting_Forces> Systemlord_Alliance, Allianz_YUs_Heimatwelt, Systemlord_Alliance_Alkesh_Squadron </Starting_Forces>
+    <Starting_Forces> Systemlord_Alliance, Allianz_YUs_Heimatwelt, SysLords_Star_Base_5 </Starting_Forces>
+    <Starting_Forces> Systemlord_Alliance, Allianz_YUs_Heimatwelt, SysLords_Large_Shipyard </Starting_Forces>
+
+    <Starting_Forces> Systemlord_Alliance, Allianz_YUs_Heimatwelt, SysLords_Ground_Palace </Starting_Forces>
+    <Starting_Forces> Systemlord_Alliance, Allianz_YUs_Heimatwelt, SysLords_Ground_Barracks </Starting_Forces>
+    <Starting_Forces> Systemlord_Alliance, Allianz_YUs_Heimatwelt, SysLords_Ground_Hangar </Starting_Forces>
+    <Starting_Forces> Systemlord_Alliance, Allianz_YUs_Heimatwelt, SysLords_Ground_Base_Shield </Starting_Forces>
+    <Starting_Forces> Systemlord_Alliance, Allianz_YUs_Heimatwelt, SysLords_Ground_GTSW </Starting_Forces>
+    <Starting_Forces> Systemlord_Alliance, Allianz_YUs_Heimatwelt, SysLords_Ground_Guard_Tower_Galactic_Defence </Starting_Forces>
+    <Starting_Forces> Systemlord_Alliance, Allianz_YUs_Heimatwelt, Systemlord_Alliance_Jaffa_Company </Starting_Forces>
+    <Starting_Forces> Systemlord_Alliance, Allianz_YUs_Heimatwelt, Systemlord_Alliance_Serpent_Guard_Company </Starting_Forces>
+    <Starting_Forces> Systemlord_Alliance, Allianz_YUs_Heimatwelt, Systemlord_Alliance_Serpent_Guard_Company </Starting_Forces>
+    <Starting_Forces> Systemlord_Alliance, Allianz_YUs_Heimatwelt, Systemlord_Alliance_Horus_Guard_Company </Starting_Forces>
+    <Starting_Forces> Systemlord_Alliance, Allianz_YUs_Heimatwelt, Systemlord_Alliance_Jackal_Guard_Company </Starting_Forces>
+    <Starting_Forces> Systemlord_Alliance, Allianz_YUs_Heimatwelt, Systemlord_Alliance_Jackal_Guard_Company </Starting_Forces>
+    <Starting_Forces> Systemlord_Alliance, Allianz_YUs_Heimatwelt, Systemlord_Alliance_Necropolis_Guard_Company </Starting_Forces>
+    <Starting_Forces> Systemlord_Alliance, Allianz_YUs_Heimatwelt, Systemlord_Alliance_Deathglider_Company </Starting_Forces>
+    <Starting_Forces> Systemlord_Alliance, Allianz_YUs_Heimatwelt, Systemlord_Alliance_Deathglider_Company </Starting_Forces>
+    <Starting_Forces> Systemlord_Alliance, Allianz_YUs_Heimatwelt, Systemlord_Alliance_Deathglider_Company </Starting_Forces>
+
+
+    <Starting_Forces> Systemlord_Alliance, Allianz_Juna, Systemlord_Alliance_System_Flagship </Starting_Forces>
+    <Starting_Forces> Systemlord_Alliance, Allianz_Juna, Systemlord_Alliance_System_Flagship </Starting_Forces>
+    <Starting_Forces> Systemlord_Alliance, Allianz_Juna, Systemlord_Alliance_New_Hatak </Starting_Forces>
+    <Starting_Forces> Systemlord_Alliance, Allianz_Juna, Systemlord_Alliance_New_Hatak </Starting_Forces>
+    <Starting_Forces> Systemlord_Alliance, Allianz_Juna, Systemlord_Alliance_New_Hatak </Starting_Forces>
+    <Starting_Forces> Systemlord_Alliance, Allianz_Juna, Systemlord_Alliance_New_Hatak </Starting_Forces>
+    <Starting_Forces> Systemlord_Alliance, Allianz_Juna, Systemlord_Alliance_Death_Glider_Squadron </Starting_Forces>
+    <Starting_Forces> Systemlord_Alliance, Allianz_Juna, Systemlord_Alliance_Death_Glider_Squadron </Starting_Forces>
+    <Starting_Forces> Systemlord_Alliance, Allianz_Juna, Systemlord_Alliance_Death_Glider_Squadron </Starting_Forces>
+    <Starting_Forces> Systemlord_Alliance, Allianz_Juna, Systemlord_Alliance_Death_Glider_Squadron </Starting_Forces>
+    <Starting_Forces> Systemlord_Alliance, Allianz_Juna, Systemlord_Alliance_Death_Glider_Squadron </Starting_Forces>
+    <Starting_Forces> Systemlord_Alliance, Allianz_Juna, Systemlord_Alliance_Death_Glider_Squadron </Starting_Forces>
+    <Starting_Forces> Systemlord_Alliance, Allianz_Juna, Systemlord_Alliance_Death_Glider_Squadron </Starting_Forces>
+    <Starting_Forces> Systemlord_Alliance, Allianz_Juna, Systemlord_Alliance_Death_Glider_Squadron </Starting_Forces>
+    <Starting_Forces> Systemlord_Alliance, Allianz_Juna, Systemlord_Alliance_Death_Glider_Squadron </Starting_Forces>
+    <Starting_Forces> Systemlord_Alliance, Allianz_Juna, Systemlord_Alliance_Death_Glider_Squadron </Starting_Forces>
+    <Starting_Forces> Systemlord_Alliance, Allianz_Juna, Systemlord_Alliance_Death_Glider_Squadron </Starting_Forces>
+    <Starting_Forces> Systemlord_Alliance, Allianz_Juna, Systemlord_Alliance_Death_Glider_Squadron </Starting_Forces>
+    <Starting_Forces> Systemlord_Alliance, Allianz_Juna, Systemlord_Alliance_Death_Glider_Squadron </Starting_Forces>
+    <Starting_Forces> Systemlord_Alliance, Allianz_Juna, Systemlord_Alliance_Old_Hatak </Starting_Forces>
+    <Starting_Forces> Systemlord_Alliance, Allianz_Juna, Systemlord_Alliance_Teltak_Squadron </Starting_Forces>
+    <Starting_Forces> Systemlord_Alliance, Allianz_Juna, Systemlord_Alliance_Teltak_Squadron </Starting_Forces>
+    <Starting_Forces> Systemlord_Alliance, Allianz_Juna, Systemlord_Alliance_Teltak_Squadron </Starting_Forces>
+    <Starting_Forces> Systemlord_Alliance, Allianz_Juna, Systemlord_Alliance_Teltak_Squadron </Starting_Forces>
+    <Starting_Forces> Systemlord_Alliance, Allianz_Juna, Systemlord_Alliance_Teltak_Squadron </Starting_Forces>
+    <Starting_Forces> Systemlord_Alliance, Allianz_Juna, Systemlord_Alliance_Alkesh_Squadron </Starting_Forces>
+    <Starting_Forces> Systemlord_Alliance, Allianz_Juna, Systemlord_Alliance_Alkesh_Squadron </Starting_Forces>
+    <Starting_Forces> Systemlord_Alliance, Allianz_Juna, Systemlord_Alliance_Alkesh_Squadron </Starting_Forces>
+    <Starting_Forces> Systemlord_Alliance, Allianz_Juna, Systemlord_Alliance_Alkesh_Squadron </Starting_Forces>
+    <Starting_Forces> Systemlord_Alliance, Allianz_Juna, Systemlord_Alliance_Alkesh_Squadron </Starting_Forces>
+    <Starting_Forces> Systemlord_Alliance, Allianz_Juna, Systemlord_Alliance_Alkesh_Squadron </Starting_Forces>
+    <Starting_Forces> Systemlord_Alliance, Allianz_Juna, SysLords_Star_Base_3 </Starting_Forces>
+
+    <Starting_Forces> Systemlord_Alliance, Allianz_Juna, SysLords_Ground_Palace </Starting_Forces>
+    <Starting_Forces> Systemlord_Alliance, Allianz_Juna, SysLords_Ground_Barracks </Starting_Forces>
+    <Starting_Forces> Systemlord_Alliance, Allianz_Juna, SysLords_Ground_Hangar </Starting_Forces>
+    <Starting_Forces> Systemlord_Alliance, Allianz_Juna, SysLords_Ground_Guard_Tower_Galactic_Defence </Starting_Forces>
+    <Starting_Forces> Systemlord_Alliance, Allianz_Juna, SysLords_Ground_GTSW </Starting_Forces>
+    <Starting_Forces> Systemlord_Alliance, Allianz_Juna, Systemlord_Alliance_Jaffa_Company </Starting_Forces>
+    <Starting_Forces> Systemlord_Alliance, Allianz_Juna, Systemlord_Alliance_Serpent_Guard_Company </Starting_Forces>
+    <Starting_Forces> Systemlord_Alliance, Allianz_Juna, Systemlord_Alliance_Horus_Guard_Company </Starting_Forces>
+    <Starting_Forces> Systemlord_Alliance, Allianz_Juna, Systemlord_Alliance_Jackal_Guard_Company </Starting_Forces>
+    <Starting_Forces> Systemlord_Alliance, Allianz_Juna, Systemlord_Alliance_Jackal_Guard_Company </Starting_Forces>
+    <Starting_Forces> Systemlord_Alliance, Allianz_Juna, Systemlord_Alliance_Jackal_Guard_Company </Starting_Forces>
+    <Starting_Forces> Systemlord_Alliance, Allianz_Juna, Systemlord_Alliance_Deathglider_Company </Starting_Forces>
+    <Starting_Forces> Systemlord_Alliance, Allianz_Juna, Systemlord_Alliance_Deathglider_Company </Starting_Forces>
+
+
+    <Starting_Forces> Systemlord_Alliance, Allianz_HathorHeimatwelt, Systemlord_Alliance_System_Flagship </Starting_Forces>
+    <Starting_Forces> Systemlord_Alliance, Allianz_HathorHeimatwelt, Systemlord_Alliance_New_Hatak </Starting_Forces>
+    <Starting_Forces> Systemlord_Alliance, Allianz_HathorHeimatwelt, Systemlord_Alliance_New_Hatak </Starting_Forces>
+    <Starting_Forces> Systemlord_Alliance, Allianz_HathorHeimatwelt, Systemlord_Alliance_New_Hatak </Starting_Forces>
+    <Starting_Forces> Systemlord_Alliance, Allianz_HathorHeimatwelt, Systemlord_Alliance_New_Hatak </Starting_Forces>
+    <Starting_Forces> Systemlord_Alliance, Allianz_HathorHeimatwelt, Systemlord_Alliance_New_Hatak </Starting_Forces>
+    <Starting_Forces> Systemlord_Alliance, Allianz_HathorHeimatwelt, Systemlord_Alliance_New_Hatak </Starting_Forces>
+    <Starting_Forces> Systemlord_Alliance, Allianz_HathorHeimatwelt, Systemlord_Alliance_Death_Glider_Squadron </Starting_Forces>
+    <Starting_Forces> Systemlord_Alliance, Allianz_HathorHeimatwelt, Systemlord_Alliance_Death_Glider_Squadron </Starting_Forces>
+    <Starting_Forces> Systemlord_Alliance, Allianz_HathorHeimatwelt, Systemlord_Alliance_Death_Glider_Squadron </Starting_Forces>
+    <Starting_Forces> Systemlord_Alliance, Allianz_HathorHeimatwelt, Systemlord_Alliance_Old_Hatak </Starting_Forces>
+    <Starting_Forces> Systemlord_Alliance, Allianz_HathorHeimatwelt, Systemlord_Alliance_Old_Hatak </Starting_Forces>
+    <Starting_Forces> Systemlord_Alliance, Allianz_HathorHeimatwelt, Systemlord_Alliance_Old_Hatak </Starting_Forces>
+    <Starting_Forces> Systemlord_Alliance, Allianz_HathorHeimatwelt, Systemlord_Alliance_Old_Hatak </Starting_Forces>
+    <Starting_Forces> Systemlord_Alliance, Allianz_HathorHeimatwelt, Systemlord_Alliance_Teltak_Squadron </Starting_Forces>
+    <Starting_Forces> Systemlord_Alliance, Allianz_HathorHeimatwelt, Systemlord_Alliance_Teltak_Squadron </Starting_Forces>
+    <Starting_Forces> Systemlord_Alliance, Allianz_HathorHeimatwelt, Systemlord_Alliance_Teltak_Squadron </Starting_Forces>
+    <Starting_Forces> Systemlord_Alliance, Allianz_HathorHeimatwelt, Systemlord_Alliance_Alkesh_Squadron </Starting_Forces>
+    <Starting_Forces> Systemlord_Alliance, Allianz_HathorHeimatwelt, Systemlord_Alliance_Alkesh_Squadron </Starting_Forces>
+    <Starting_Forces> Systemlord_Alliance, Allianz_HathorHeimatwelt, Systemlord_Alliance_Alkesh_Squadron </Starting_Forces>
+    <Starting_Forces> Systemlord_Alliance, Allianz_HathorHeimatwelt, SysLords_Star_Base_4 </Starting_Forces>
+
+    <Starting_Forces> Systemlord_Alliance, Allianz_HathorHeimatwelt, SysLords_Ground_Palace </Starting_Forces>
+    <Starting_Forces> Systemlord_Alliance, Allianz_HathorHeimatwelt, SysLords_Ground_Barracks </Starting_Forces>
+    <Starting_Forces> Systemlord_Alliance, Allianz_HathorHeimatwelt, SysLords_Ground_Hangar </Starting_Forces>
+    <Starting_Forces> Systemlord_Alliance, Allianz_HathorHeimatwelt, SysLords_Ground_Base_Shield </Starting_Forces>
+    <Starting_Forces> Systemlord_Alliance, Allianz_HathorHeimatwelt, Systemlord_Alliance_Bastet_Guard_Company </Starting_Forces>
+    <Starting_Forces> Systemlord_Alliance, Allianz_HathorHeimatwelt, Systemlord_Alliance_Bastet_Guard_Company </Starting_Forces>
+    <Starting_Forces> Systemlord_Alliance, Allianz_HathorHeimatwelt, Systemlord_Alliance_Bastet_Guard_Company </Starting_Forces>
+    <Starting_Forces> Systemlord_Alliance, Allianz_HathorHeimatwelt, Systemlord_Alliance_Horus_Guard_Company </Starting_Forces>
+    <Starting_Forces> Systemlord_Alliance, Allianz_HathorHeimatwelt, Systemlord_Alliance_Deathglider_Company </Starting_Forces>
+    <Starting_Forces> Systemlord_Alliance, Allianz_HathorHeimatwelt, Systemlord_Alliance_Jackal_Guard_Company </Starting_Forces>
+    <Starting_Forces> Systemlord_Alliance, Allianz_HathorHeimatwelt, Systemlord_Alliance_Deathglider_Company </Starting_Forces>
+    <Starting_Forces> Systemlord_Alliance, Allianz_HathorHeimatwelt, Systemlord_Alliance_Deathglider_Company </Starting_Forces>
+
+
+
+    <Starting_Forces> Systemlord_Alliance, Allianz_PX9_757, Systemlord_Alliance_New_Hatak </Starting_Forces>
+    <Starting_Forces> Systemlord_Alliance, Allianz_PX9_757, Systemlord_Alliance_New_Hatak </Starting_Forces>
+    <Starting_Forces> Systemlord_Alliance, Allianz_PX9_757, Systemlord_Alliance_New_Hatak </Starting_Forces>
+    <Starting_Forces> Systemlord_Alliance, Allianz_PX9_757, Systemlord_Alliance_New_Hatak </Starting_Forces>
+    <Starting_Forces> Systemlord_Alliance, Allianz_PX9_757, Systemlord_Alliance_Death_Glider_Squadron </Starting_Forces>
+    <Starting_Forces> Systemlord_Alliance, Allianz_PX9_757, Systemlord_Alliance_Death_Glider_Squadron </Starting_Forces>
+    <Starting_Forces> Systemlord_Alliance, Allianz_PX9_757, Systemlord_Alliance_Death_Glider_Squadron </Starting_Forces>
+    <Starting_Forces> Systemlord_Alliance, Allianz_PX9_757, Systemlord_Alliance_Death_Glider_Squadron </Starting_Forces>
+    <Starting_Forces> Systemlord_Alliance, Allianz_PX9_757, Systemlord_Alliance_Old_Hatak </Starting_Forces>
+    <Starting_Forces> Systemlord_Alliance, Allianz_PX9_757, Systemlord_Alliance_Teltak_Squadron </Starting_Forces>
+    <Starting_Forces> Systemlord_Alliance, Allianz_PX9_757, Systemlord_Alliance_Teltak_Squadron </Starting_Forces>
+    <Starting_Forces> Systemlord_Alliance, Allianz_PX9_757, Systemlord_Alliance_Teltak_Squadron </Starting_Forces>
+    <Starting_Forces> Systemlord_Alliance, Allianz_PX9_757, Systemlord_Alliance_Alkesh_Squadron </Starting_Forces>
+    <Starting_Forces> Systemlord_Alliance, Allianz_PX9_757, Systemlord_Alliance_Alkesh_Squadron </Starting_Forces>
+    <Starting_Forces> Systemlord_Alliance, Allianz_PX9_757, SysLords_Star_Base_2 </Starting_Forces>
+
+    <Starting_Forces> Systemlord_Alliance, Allianz_PX9_757, SysLords_Ground_Palace </Starting_Forces>
+    <Starting_Forces> Systemlord_Alliance, Allianz_PX9_757, SysLords_Ground_Guard_Tower_Galactic_Defence </Starting_Forces>
+    <Starting_Forces> Systemlord_Alliance, Allianz_PX9_757, SysLords_Ground_Hangar </Starting_Forces>
+    <Starting_Forces> Systemlord_Alliance, Allianz_PX9_757, Systemlord_Alliance_Jaffa_Company </Starting_Forces>
+    <Starting_Forces> Systemlord_Alliance, Allianz_PX9_757, Systemlord_Alliance_Jaffa_Company </Starting_Forces>
+    <Starting_Forces> Systemlord_Alliance, Allianz_PX9_757, Systemlord_Alliance_Serpent_Guard_Company </Starting_Forces>
+    <Starting_Forces> Systemlord_Alliance, Allianz_PX9_757, Systemlord_Alliance_Bastet_Guard_Company </Starting_Forces>
+    <Starting_Forces> Systemlord_Alliance, Allianz_PX9_757, Systemlord_Alliance_Bastet_Guard_Company </Starting_Forces>
+
+
+    <Starting_Forces> Systemlord_Alliance, Allianz_P3X_254, Systemlord_Alliance_New_Hatak </Starting_Forces>
+    <Starting_Forces> Systemlord_Alliance, Allianz_P3X_254, Systemlord_Alliance_New_Hatak </Starting_Forces>
+    <Starting_Forces> Systemlord_Alliance, Allianz_P3X_254, Systemlord_Alliance_Death_Glider_Squadron </Starting_Forces>
+    <Starting_Forces> Systemlord_Alliance, Allianz_P3X_254, Systemlord_Alliance_Death_Glider_Squadron </Starting_Forces>
+    <Starting_Forces> Systemlord_Alliance, Allianz_P3X_254, Systemlord_Alliance_Old_Hatak </Starting_Forces>
+    <Starting_Forces> Systemlord_Alliance, Allianz_P3X_254, Systemlord_Alliance_Teltak_Squadron </Starting_Forces>
+    <Starting_Forces> Systemlord_Alliance, Allianz_P3X_254, Systemlord_Alliance_Alkesh_Squadron </Starting_Forces>
+    <Starting_Forces> Systemlord_Alliance, Allianz_P3X_254, Systemlord_Alliance_Alkesh_Squadron </Starting_Forces>
+    <Starting_Forces> Systemlord_Alliance, Allianz_P3X_254, SysLords_Star_Base_2 </Starting_Forces>
+
+    <Starting_Forces> Systemlord_Alliance, Allianz_P3X_254, SysLords_Ground_Palace </Starting_Forces>
+    <Starting_Forces> Systemlord_Alliance, Allianz_P3X_254, SysLords_Ground_Hangar </Starting_Forces>
+    <Starting_Forces> Systemlord_Alliance, Allianz_P3X_254, Systemlord_Alliance_Jaffa_Company </Starting_Forces>
+    <Starting_Forces> Systemlord_Alliance, Allianz_P3X_254, Systemlord_Alliance_Jaffa_Company </Starting_Forces>
+    <Starting_Forces> Systemlord_Alliance, Allianz_P3X_254, Systemlord_Alliance_Serpent_Guard_Company </Starting_Forces>
+    <Starting_Forces> Systemlord_Alliance, Allianz_P3X_254, Systemlord_Alliance_Serpent_Guard_Company </Starting_Forces>
+
+
+
+    <Starting_Forces> Systemlord_Alliance, Allianz_P3X_367, Systemlord_Alliance_New_Hatak </Starting_Forces>
+    <Starting_Forces> Systemlord_Alliance, Allianz_P3X_367, Systemlord_Alliance_New_Hatak </Starting_Forces>
+    <Starting_Forces> Systemlord_Alliance, Allianz_P3X_367, Systemlord_Alliance_Death_Glider_Squadron </Starting_Forces>
+    <Starting_Forces> Systemlord_Alliance, Allianz_P3X_367, Systemlord_Alliance_Death_Glider_Squadron </Starting_Forces>
+    <Starting_Forces> Systemlord_Alliance, Allianz_P3X_367, Systemlord_Alliance_Death_Glider_Squadron </Starting_Forces>
+    <Starting_Forces> Systemlord_Alliance, Allianz_P3X_367, Systemlord_Alliance_Death_Glider_Squadron </Starting_Forces>
+    <Starting_Forces> Systemlord_Alliance, Allianz_P3X_367, Systemlord_Alliance_Old_Hatak </Starting_Forces>
+    <Starting_Forces> Systemlord_Alliance, Allianz_P3X_367, Systemlord_Alliance_Old_Hatak </Starting_Forces>
+    <Starting_Forces> Systemlord_Alliance, Allianz_P3X_367, Systemlord_Alliance_Old_Hatak </Starting_Forces>
+    <Starting_Forces> Systemlord_Alliance, Allianz_P3X_367, Systemlord_Alliance_Teltak_Squadron </Starting_Forces>
+    <Starting_Forces> Systemlord_Alliance, Allianz_P3X_367, Systemlord_Alliance_Teltak_Squadron </Starting_Forces>
+    <Starting_Forces> Systemlord_Alliance, Allianz_P3X_367, Systemlord_Alliance_Teltak_Squadron </Starting_Forces>
+    <Starting_Forces> Systemlord_Alliance, Allianz_P3X_367, Systemlord_Alliance_Alkesh_Squadron </Starting_Forces>
+    <Starting_Forces> Systemlord_Alliance, Allianz_P3X_367, SysLords_Star_Base_3 </Starting_Forces>
+
+    <Starting_Forces> Systemlord_Alliance, Allianz_P3X_367, SysLords_Ground_Palace </Starting_Forces>
+    <Starting_Forces> Systemlord_Alliance, Allianz_P3X_367, SysLords_Ground_Barracks </Starting_Forces>
+    <Starting_Forces> Systemlord_Alliance, Allianz_P3X_367, Systemlord_Alliance_Jaffa_Company </Starting_Forces>
+    <Starting_Forces> Systemlord_Alliance, Allianz_P3X_367, Systemlord_Alliance_Jaffa_Company </Starting_Forces>
+    <Starting_Forces> Systemlord_Alliance, Allianz_P3X_367, Systemlord_Alliance_Jackal_Guard_Company </Starting_Forces>
+    <Starting_Forces> Systemlord_Alliance, Allianz_P3X_367, Systemlord_Alliance_Jackal_Guard_Company </Starting_Forces>
+
+
+
+
+    <Starting_Forces> Systemlord_Alliance, Allianz_P3S_114, Systemlord_Alliance_New_Hatak </Starting_Forces>
+    <Starting_Forces> Systemlord_Alliance, Allianz_P3S_114, Systemlord_Alliance_Old_Hatak </Starting_Forces>
+    <Starting_Forces> Systemlord_Alliance, Allianz_P3S_114, Systemlord_Alliance_Old_Hatak </Starting_Forces>
+    <Starting_Forces> Systemlord_Alliance, Allianz_P3S_114, Systemlord_Alliance_Teltak_Squadron </Starting_Forces>
+    <Starting_Forces> Systemlord_Alliance, Allianz_P3S_114, Systemlord_Alliance_Teltak_Squadron </Starting_Forces>
+    <Starting_Forces> Systemlord_Alliance, Allianz_P3S_114, SysLords_Star_Base_1 </Starting_Forces>
+
+    <Starting_Forces> Systemlord_Alliance, Allianz_P3S_114, SysLords_Ground_Palace </Starting_Forces>
+    <Starting_Forces> Systemlord_Alliance, Allianz_P3S_114, SysLords_Ground_Barracks </Starting_Forces>
+    <Starting_Forces> Systemlord_Alliance, Allianz_P3S_114, Systemlord_Alliance_Jaffa_Company </Starting_Forces>
+    <Starting_Forces> Systemlord_Alliance, Allianz_P3S_114, Systemlord_Alliance_Jaffa_Company </Starting_Forces>
+    <Starting_Forces> Systemlord_Alliance, Allianz_P3S_114, Systemlord_Alliance_Jackal_Guard_Company </Starting_Forces>
+
+
+
+    <!-- Rebel Jaffa Starting Forces -->
+
+    <Starting_Credits> Jaffa_Rebels,  10000 </Starting_Credits>
+    <Starting_Tech_Level> Jaffa_Rebels, 5 </Starting_Tech_Level>
+    <Max_Tech_Level> Jaffa_Rebels, 5 </Max_Tech_Level>
+
+    <Starting_Forces> Jaffa_Rebels, Allianz_CalMah, Rebel_Jaffa_Squad </Starting_Forces>
+    <Starting_Forces> Jaffa_Rebels, Allianz_CalMah, Rebel_Jaffa_Squad </Starting_Forces>
+
+  </Campaign>
+
+
+ </Campaigns>
+
+============================================================
+FILE: Data\Xml\Planets_Pegasus_Prelude.xml
+============================================================
+
+<?xml version="1.0"?>
+<Planets>
+   <Planet Name="Pegasus_Prelude_Galaxy_Core_Art_Model">
+      <Text_ID />
+      <Galactic_Model_Name>Planet_Galaxy_Pegasus.ALO</Galactic_Model_Name>
+      <Loop_Idle_Anim_00>Yes</Loop_Idle_Anim_00>
+      <Always_Instantiate_Galactic>yes</Always_Instantiate_Galactic>
+      <Mass>1.0</Mass>
+      <Scale_Factor>1.7</Scale_Factor>
+      <Show_Name>No</Show_Name>
+      <Name_Adjust>-10.0, 10.0, -0.1</Name_Adjust>
+      <Behavior>IDLE</Behavior>
+      <Pre_Lit>no</Pre_Lit>
+      <Political_Control>0</Political_Control>
+      <Camera_Aligned>Yes</Camera_Aligned>
+      <Terrain />
+      <Planet_Credit_Value>0</Planet_Credit_Value>
+      <Galactic_Position>0.0, 0.0, 0.0</Galactic_Position>
+      <Special_Structures>0</Special_Structures>
+      <In_Background>yes</In_Background>
+      <Max_Ground_Base>0</Max_Ground_Base>
+      <Max_Space_Base>0</Max_Space_Base>
+   </Planet>
+
+   <Planet Name="Planet_Base_PP">
+      <Variant_Of_Existing_Type>Template_Planet_Space_Only</Variant_Of_Existing_Type>
+      <Planet_Capture_Bonus_Reward>500</Planet_Capture_Bonus_Reward>
+   </Planet>
+
+   <Planet Name="Pegasus_Prelude_Planet_Ascension"><!--Conventus Orbis-->
+      <Variant_Of_Existing_Type>Planet_Base_PP</Variant_Of_Existing_Type>
+      <Text_ID>TEXT_OBJECT_STAR_SYSTEM_CLOISTER</Text_ID>
+      <Galactic_Model_Name>W_planet_Naboo_Low.alo</Galactic_Model_Name>
+      <Scale_Factor>1.3</Scale_Factor>
+      <Galactic_Position>63.0, 225.0, 10.0</Galactic_Position>
+      <Facing_Adjust>0.0, 0.0, 280.0</Facing_Adjust>
+      <Planet_Credit_Value>75</Planet_Credit_Value>
+      <Max_Space_Base>2</Max_Space_Base>
+      <Land_Tactical_Map>Map_GC_Space_Cloister_Planet.ted</Land_Tactical_Map>
+      <Space_Tactical_Map>Map_GC_Space_Cloister_Planet.ted</Space_Tactical_Map>
+      <Describe_Terrain>TEXT_PLANET_CLOISTER_INFO_TER</Describe_Terrain>
+      <Describe_Weather>TEXT_PLANET_CLOISTER_INFO_WEA_PP</Describe_Weather>
+      <Describe_Tactical>TEXT_PLANET_CLOISTER_INFO_TAC_PP</Describe_Tactical>
+      <Describe_Advantage>TEXT_PLANET_AURORA_INFO_ADV</Describe_Advantage>
+      <Describe_History>TEXT_PLANET_CLOISTER_INFO_HIS_PP</Describe_History>
+      <Planet_Ability_Name>TEXT_PLANET_AURORA_INFO_ADV</Planet_Ability_Name>
+      <Planet_Ability_Description>TEXT_PLANET_CLOISTER_ENCYC</Planet_Ability_Description>
+      <Encyclopedia_Text>TEXT_PLANET_CLOISTER_ENCYC</Encyclopedia_Text>
+      <!--Planet_Ability_Icon>i_pa_sg_base_stealth.tga</Planet_Ability_Icon-->
+   </Planet>
+
+   <Planet Name="Pegasus_Prelude_Planet_Asteroid_Field">
+      <Variant_Of_Existing_Type>Planet_Base_PP</Variant_Of_Existing_Type>
+      <Text_ID>TEXT_OBJECT_STAR_SYSTEM_ASTEROIDENFELD</Text_ID>
+      <Galactic_Model_Name>W_planet_Asteroids.alo</Galactic_Model_Name>
+      <Scale_Factor>1.0</Scale_Factor>
+      <Galactic_Position>-155.0, -235.0, 10.0</Galactic_Position>
+      <Planet_Credit_Value>10</Planet_Credit_Value>
+      <Max_Space_Base>0</Max_Space_Base>
+      <Special_Structures_Space>0</Special_Structures_Space>
+      <Land_Tactical_Map>Map_GC_Space_Asteroid_Field.ted</Land_Tactical_Map>
+      <Space_Tactical_Map>Map_GC_Space_Asteroid_Field.ted</Space_Tactical_Map>
+      <Describe_Terrain>TEXT_PLANET_ASTEROIDENFELD_INFO_TER</Describe_Terrain>
+      <Describe_Weather>TEXT_PLANET_ASTEROIDENFELD_INFO_WEA</Describe_Weather>
+      <Describe_Tactical>TEXT_PLANET_ASTEROIDENFELD_INFO_TAC_PP</Describe_Tactical>
+      <Describe_Advantage>TEXT_PLANET_ASTEROIDENFELD_INFO_ADV</Describe_Advantage>
+      <Describe_History>TEXT_PLANET_ASTEROIDENFELD_INFO_HIS</Describe_History>
+      <Planet_Ability_Name>TEXT_PLANET_ASTEROIDENFELD_INFO_ADV</Planet_Ability_Name>
+      <Planet_Ability_Description>TEXT_PLANET_ASTEROIDENFELD_ENCYC</Planet_Ability_Description>
+      <Encyclopedia_Text>TEXT_PLANET_ASTEROIDENFELD_ENCYC</Encyclopedia_Text>
+   </Planet>
+
+   <Planet Name="Pegasus_Prelude_Planet_Asuras">
+      <Variant_Of_Existing_Type>Planet_Base_PP</Variant_Of_Existing_Type>
+      <Text_ID>TEXT_OBJECT_STAR_SYSTEM_ASURAS</Text_ID>
+      <Galactic_Model_Name>W_planet_Ocean01.alo</Galactic_Model_Name>
+      <Scale_Factor>1.4</Scale_Factor>
+      <Galactic_Position>90.0, -220.0, 10.0</Galactic_Position>
+      <Planet_Credit_Value>150</Planet_Credit_Value>
+      <Planet_Capture_Bonus_Reward>1000</Planet_Capture_Bonus_Reward>
+      <Max_Space_Base>5</Max_Space_Base>
+      <Land_Tactical_Map>Map_GC_Space_Asuras.ted</Land_Tactical_Map>
+      <Space_Tactical_Map>Map_GC_Space_Asuras.ted</Space_Tactical_Map>
+      <Describe_Terrain>TEXT_PLANET_ASURAS_INFO_TER</Describe_Terrain>
+      <Describe_Weather>TEXT_PLANET_ASURAS_INFO_WEA</Describe_Weather>
+      <Describe_Tactical>TEXT_PLANET_ASURAS_INFO_TAC_PP</Describe_Tactical>
+      <Describe_Advantage>TEXT_PLANET_AURORA_INFO_ADV</Describe_Advantage>
+      <Describe_History>TEXT_PLANET_ASURAS_INFO_HIS_PP</Describe_History>
+      <Planet_Ability_Name>TEXT_PLANET_AURORA_INFO_ADV</Planet_Ability_Name>
+      <Planet_Ability_Description>TEXT_PLANET_ASURAS_ENCYC_PP</Planet_Ability_Description>
+      <Encyclopedia_Text>TEXT_PLANET_ASURAS_ENCYC_PP</Encyclopedia_Text>
+      <Additional_Population_Capacity>10</Additional_Population_Capacity>
+      <!--Planet_Ability_Icon>i_pa_sg_cheaper_capital_ships.tga</Planet_Ability_Icon>
+      <Abilities SubObjectList="Yes">
+         <Reduce_Production_Price_Ability Name="PP_Asuras_Capital_Ships_Production_Boost">
+            <Unit_Strength_Category />
+            <Applicable_Unit_Categories />
+            <Applicable_Unit_Types>Interceptor4_Frigate, Crusader_Gunship, Vengeance_Frigate, Corellian_Corvette, Nebulon_B_Frigate, Corellian_Gunboat, Goauld_Anubis_Hatak, Tartan_Patrol_Cruiser, Interdictor_Cruiser, Acclamator_Assault_Ship</Applicable_Unit_Types>
+            <Price_Reduction_Percentage>0.20</Price_Reduction_Percentage>
+            <Stacking_Category>9</Stacking_Category>
+            <Galaxy_Wide>No</Galaxy_Wide>
+         </Reduce_Production_Price_Ability>
+      </Abilities-->
+   </Planet>
+
+   <Planet Name="Pegasus_Prelude_Planet_Athos">
+      <Variant_Of_Existing_Type>Planet_Base_PP</Variant_Of_Existing_Type>
+      <Text_ID>TEXT_OBJECT_STAR_SYSTEM_ATHOS</Text_ID>
+      <Galactic_Model_Name>W_planet_Forest01.alo</Galactic_Model_Name>
+      <Scale_Factor>1.4</Scale_Factor>
+      <Galactic_Position>300.0, 60.0, 10.0</Galactic_Position>
+      <Planet_Credit_Value>50</Planet_Credit_Value>
+      <Max_Space_Base>4</Max_Space_Base>
+      <Land_Tactical_Map>Map_GC_Space_Athos.ted</Land_Tactical_Map>
+      <Space_Tactical_Map>Map_GC_Space_Athos.ted</Space_Tactical_Map>
+      <Describe_Terrain>TEXT_PLANET_ATHOS_INFO_TER</Describe_Terrain>
+      <Describe_Weather>TEXT_PLANET_ATHOS_INFO_WEA</Describe_Weather>
+      <Describe_Tactical>TEXT_PLANET_ATHOS_INFO_TAC_PP</Describe_Tactical>
+      <Describe_Advantage>TEXT_PLANET_AURORA_INFO_ADV</Describe_Advantage>
+      <Describe_History>TEXT_PLANET_ATHOS_INFO_HIS_PP</Describe_History>
+      <Planet_Ability_Name>TEXT_PLANET_AURORA_INFO_ADV</Planet_Ability_Name>
+      <Planet_Ability_Description>TEXT_PLANET_ATHOS_ENCYC</Planet_Ability_Description>
+      <Encyclopedia_Text>TEXT_PLANET_ATHOS_ENCYC</Encyclopedia_Text>
+      <!--Planet_Ability_Icon>i_pa_sg_cheaper_buildings.tga</Planet_Ability_Icon>
+      <Abilities SubObjectList="Yes">
+         <Reduce_Production_Price_Ability Name="PP_Athos_Ground_Building_Production_Boost">
+            <Unit_Strength_Category />
+            <Applicable_Unit_Categories />
+            <Applicable_Unit_Types>U_Ground_Shipyard, U_Space_Asgard_Shipyard, U_Ground_Droid_Works, U_Ground_Barracks</Applicable_Unit_Types>
+            <Price_Reduction_Percentage>0.20</Price_Reduction_Percentage>
+            <Stacking_Category>9</Stacking_Category>
+            <Galaxy_Wide>No</Galaxy_Wide>
+         </Reduce_Production_Price_Ability>
+      </Abilities-->
+   </Planet>
+
+   <Planet Name="Pegasus_Prelude_Planet_Aurora">
+      <Variant_Of_Existing_Type>Planet_Base_PP</Variant_Of_Existing_Type>
+      <Text_ID>TEXT_OBJECT_STAR_SYSTEM_UNKNOWN_SECTOR</Text_ID>
+      <Galactic_Model_Name>Map_Planet_UnknownSector.ALO</Galactic_Model_Name>
+      <Scale_Factor>1.7</Scale_Factor>
+      <Galactic_Position>75.0, -320.0, 10.0</Galactic_Position>
+      <Planet_Credit_Value>10</Planet_Credit_Value>
+      <Special_Structures_Space>0</Special_Structures_Space>
+      <Max_Space_Base>0</Max_Space_Base>
+      <Land_Tactical_Map>Map_GC_Space_Unknown_Sector.ted</Land_Tactical_Map>
+      <Space_Tactical_Map>Map_GC_Space_Unknown_Sector.ted</Space_Tactical_Map>
+      <Describe_Terrain>TEXT_PLANET_AURORA_INFO_TER</Describe_Terrain>
+      <Describe_Weather>TEXT_PLANET_AURORA_INFO_WEA</Describe_Weather>
+      <Describe_Tactical>TEXT_PLANET_AURORA_INFO_TAC</Describe_Tactical>
+      <Describe_Advantage>TEXT_PLANET_AURORA_INFO_ADV</Describe_Advantage>
+      <Describe_History>TEXT_PLANET_AURORA_INFO_HIS</Describe_History>
+      <Planet_Ability_Name>TEXT_PLANET_AURORA_INFO_ADV</Planet_Ability_Name>
+      <Planet_Ability_Description>TEXT_PLANET_AURORA_ENCYC</Planet_Ability_Description>
+      <Encyclopedia_Text>TEXT_PLANET_AURORA_ENCYC</Encyclopedia_Text>
+   </Planet>
+
+   <Planet Name="Pegasus_Prelude_Planet_Belkan">
+      <Variant_Of_Existing_Type>Planet_Base_PP</Variant_Of_Existing_Type>
+      <Text_ID>TEXT_OBJECT_STAR_SYSTEM_BELKAN</Text_ID>
+      <Galactic_Model_Name>W_planet_Ralltiir_Low.alo</Galactic_Model_Name>
+      <Scale_Factor>1.3</Scale_Factor>
+      <Galactic_Position>225.0, 65.0, 10.0</Galactic_Position>
+      <Planet_Credit_Value>50</Planet_Credit_Value>
+      <Max_Space_Base>4</Max_Space_Base>
+      <Land_Tactical_Map>Map_GC_Space_Belkan.ted</Land_Tactical_Map>
+      <Space_Tactical_Map>Map_GC_Space_Belkan.ted</Space_Tactical_Map>
+      <Describe_Terrain>TEXT_PLANET_BELKAN_INFO_TER</Describe_Terrain>
+      <Describe_Weather>TEXT_PLANET_BELKAN_INFO_WEA</Describe_Weather>
+      <Describe_Tactical>TEXT_PLANET_BELKAN_INFO_TAC_PP</Describe_Tactical>
+      <Describe_Advantage>TEXT_PLANET_AURORA_INFO_ADV</Describe_Advantage>
+      <Describe_History>TEXT_PLANET_BELKAN_INFO_HIS_PP</Describe_History>
+      <Planet_Ability_Name>TEXT_PLANET_AURORA_INFO_ADV</Planet_Ability_Name>
+      <Planet_Ability_Description>TEXT_PLANET_BELKAN_ENCYC_PP</Planet_Ability_Description>
+      <Encyclopedia_Text>TEXT_PLANET_BELKAN_ENCYC_PP</Encyclopedia_Text>
+      <!--Planet_Ability_Icon>i_pa_sg_bounty.tga</Planet_Ability_Icon>
+      <Abilities SubObjectList="Yes">
+         <Galaxy_Wide_Upgrade_Ability Name="PP_Belkan_Bounty_Bonus">
+            <Space_Upgrade_Type>NalHutta_Planetary_Advantage</Space_Upgrade_Type>
+            </Galaxy_Wide_Upgrade_Ability>
+      </Abilities-->
+   </Planet>
+
+   <Planet Name="Pegasus_Prelude_Planet_Dagan">
+      <Variant_Of_Existing_Type>Planet_Base_PP</Variant_Of_Existing_Type>
+      <Text_ID>TEXT_OBJECT_STAR_SYSTEM_DAGAN</Text_ID>
+      <Galactic_Model_Name>W_planet_bonadan_low.alo</Galactic_Model_Name>
+      <Scale_Factor>1.3</Scale_Factor>
+      <Galactic_Position>-30.0, -250.0, 10.0</Galactic_Position>
+      <Planet_Credit_Value>50</Planet_Credit_Value>
+      <Max_Space_Base>4</Max_Space_Base>
+      <Land_Tactical_Map>Map_GC_Space_Dagan.ted</Land_Tactical_Map>
+      <Space_Tactical_Map>Map_GC_Space_Dagan.ted</Space_Tactical_Map>
+      <Describe_Terrain>TEXT_PLANET_DAGAN_INFO_TER</Describe_Terrain>
+      <Describe_Weather>TEXT_PLANET_DAGAN_INFO_WEA</Describe_Weather>
+      <Describe_Tactical>TEXT_PLANET_DAGAN_INFO_TAC_PP</Describe_Tactical>
+      <Describe_Advantage>TEXT_PLANET_DAGAN_INFO_ADV</Describe_Advantage>
+      <Describe_History>TEXT_PLANET_DAGAN_INFO_HIS_PP</Describe_History>
+      <Encyclopedia_Text>TEXT_PLANET_DAGAN_ENCYC_PP</Encyclopedia_Text>
+   </Planet>
+
+   <Planet Name="Pegasus_Prelude_Planet_Doranda">
+      <Variant_Of_Existing_Type>Planet_Base_PP</Variant_Of_Existing_Type>
+      <Text_ID>TEXT_OBJECT_STAR_SYSTEM_DORONDA</Text_ID>
+      <Galactic_Model_Name>W_planet_Ryloth_Low.alo</Galactic_Model_Name>
+      <Scale_Factor>1.3</Scale_Factor>
+      <Galactic_Position>100.0, 100.0, 10.0</Galactic_Position>
+      <Planet_Credit_Value>150</Planet_Credit_Value>
+      <Max_Space_Base>5</Max_Space_Base>
+      <Land_Tactical_Map>Map_GC_Space_Doranda_PP.ted</Land_Tactical_Map>
+      <Space_Tactical_Map>Map_GC_Space_Doranda_PP.ted</Space_Tactical_Map>
+      <Describe_Terrain>TEXT_PLANET_DORANDA_INFO_TER_PP</Describe_Terrain>
+      <Describe_Weather>TEXT_PLANET_DORANDA_INFO_WEA_PP</Describe_Weather>
+      <Describe_Tactical>TEXT_PLANET_DORANDA_INFO_TAC_PP</Describe_Tactical>
+      <Describe_Advantage>TEXT_PLANET_DORANDA_INFO_ADV</Describe_Advantage>
+      <Describe_History>TEXT_PLANET_DORANDA_INFO_HIS_PP</Describe_History>
+      <Planet_Ability_Name>TEXT_PLANET_DORANDA_INFO_ADV</Planet_Ability_Name>
+      <Planet_Ability_Description>TEXT_PLANET_DORANDA_ENCYC_PP</Planet_Ability_Description>
+      <Encyclopedia_Text>TEXT_PLANET_DORANDA_ENCYC_PP</Encyclopedia_Text>
+   </Planet>
+
+   <Planet Name="Pegasus_Prelude_Planet_Edowin">
+      <Variant_Of_Existing_Type>Planet_Base_PP</Variant_Of_Existing_Type>
+      <Text_ID>TEXT_OBJECT_STAR_SYSTEM_EDOWIN</Text_ID>
+      <Galactic_Model_Name>W_planet_Naboo_Low.alo</Galactic_Model_Name>
+      <Scale_Factor>1.3</Scale_Factor>
+      <Galactic_Position>65.0, -100.0, 10.0</Galactic_Position>
+      <Facing_Adjust>0.0, 0.0, 210.0</Facing_Adjust>
+      <Planet_Credit_Value>50</Planet_Credit_Value>
+      <Max_Space_Base>4</Max_Space_Base>
+      <Land_Tactical_Map>Map_GC_Space_Edowin.ted</Land_Tactical_Map>
+      <Space_Tactical_Map>Map_GC_Space_Edowin.ted</Space_Tactical_Map>
+      <Describe_Terrain>TEXT_PLANET_EDOWIN_INFO_TER</Describe_Terrain>
+      <Describe_Weather>TEXT_PLANET_EDOWIN_INFO_WEA</Describe_Weather>
+      <Describe_Tactical>TEXT_PLANET_EDOWIN_INFO_TAC_PP</Describe_Tactical>
+      <Describe_Advantage>TEXT_PLANET_EDOWIN_INFO_ADV</Describe_Advantage>
+      <Describe_History>TEXT_PLANET_EDOWIN_INFO_HIS_PP</Describe_History>
+      <Planet_Ability_Name>TEXT_PLANET_EDOWIN_INFO_ADV</Planet_Ability_Name>
+      <Planet_Ability_Description>TEXT_PLANET_EDOWIN_ENCYC</Planet_Ability_Description>
+      <Encyclopedia_Text>TEXT_PLANET_EDOWIN_ENCYC</Encyclopedia_Text>
+   </Planet>
+
+   <Planet Name="Pegasus_Prelude_Planet_Gas_Nebula">
+      <Variant_Of_Existing_Type>Planet_Base_PP</Variant_Of_Existing_Type>
+      <Text_ID>TEXT_OBJECT_STAR_SYSTEM_METREONGASNEBEL</Text_ID>
+      <Galactic_Model_Name>Planet_GC_Ion_Nebula.ALO</Galactic_Model_Name>
+      <Scale_Factor>1.5</Scale_Factor>
+      <Galactic_Position>-55.0, 110.0, 10.0</Galactic_Position>
+      <Planet_Credit_Value>10</Planet_Credit_Value>
+      <Max_Space_Base>0</Max_Space_Base>
+      <Special_Structures_Space>0</Special_Structures_Space>
+      <Land_Tactical_Map>Map_GC_Space_Metreongas_Nebula.ted</Land_Tactical_Map>
+      <Space_Tactical_Map>Map_GC_Space_Metreongas_Nebula.ted</Space_Tactical_Map>
+      <Describe_Terrain>TEXT_PLANET_METREONGASNEBEL_INFO_TER</Describe_Terrain>
+      <Describe_Weather>TEXT_PLANET_METREONGASNEBEL_INFO_WEA</Describe_Weather>
+      <Describe_Tactical>TEXT_PLANET_METREONGASNEBEL_INFO_TAC</Describe_Tactical>
+      <Describe_Advantage>TEXT_PLANET_METREONGASNEBEL_INFO_ADV</Describe_Advantage>
+      <Describe_History>TEXT_PLANET_METREONGASNEBEL_INFO_HIS</Describe_History>
+      <Planet_Ability_Name>TEXT_PLANET_METREONGASNEBEL_INFO_ADV</Planet_Ability_Name>
+      <Planet_Ability_Description>TEXT_PLANET_METREONGASNEBEL_ENCYC</Planet_Ability_Description>
+      <Encyclopedia_Text>TEXT_PLANET_METREONGASNEBEL_ENCYC</Encyclopedia_Text>
+   </Planet>
+
+   <Planet Name="Pegasus_Prelude_Planet_Gelda"><!--M4D-058/Bellum-->
+      <Variant_Of_Existing_Type>Planet_Base_PP</Variant_Of_Existing_Type>
+      <Text_ID>TEXT_OBJECT_STAR_SYSTEM_GELDA_PP</Text_ID>
+      <Galactic_Model_Name>W_planet_Forest01.alo</Galactic_Model_Name>
+      <Scale_Factor>1.4</Scale_Factor>
+      <Galactic_Position>150.0, -250.0, 10.0</Galactic_Position>
+      <Facing_Adjust>0.0, 0.0, 240.0</Facing_Adjust>
+      <Planet_Credit_Value>75</Planet_Credit_Value>
+      <Max_Space_Base>5</Max_Space_Base>
+      <Land_Tactical_Map>Map_GC_Space_M4D_058.ted</Land_Tactical_Map>
+      <Space_Tactical_Map>Map_GC_Space_M4D_058.ted</Space_Tactical_Map>
+      <Describe_Terrain>TEXT_PLANET_GELDA_INFO_TER</Describe_Terrain>
+      <Describe_Weather>TEXT_PLANET_GELDA_INFO_WEA</Describe_Weather>
+      <Describe_Tactical>TEXT_PLANET_GELDA_INFO_TAC_PP</Describe_Tactical>
+      <Describe_Advantage>TEXT_PLANET_GELDA_INFO_ADV</Describe_Advantage>
+      <Describe_History>TEXT_PLANET_GELDA_INFO_HIS_PP</Describe_History>
+      <Planet_Ability_Name>TEXT_PLANET_GELDA_INFO_ADV</Planet_Ability_Name>
+      <Planet_Ability_Description>TEXT_PLANET_GELDA_ENCYC_PP</Planet_Ability_Description>
+      <Encyclopedia_Text>TEXT_PLANET_GELDA_ENCYC_PP</Encyclopedia_Text>
+   </Planet>
+
+   <Planet Name="Pegasus_Prelude_Planet_Gonta">
+      <Variant_Of_Existing_Type>Planet_Base_PP</Variant_Of_Existing_Type>
+      <Text_ID>TEXT_OBJECT_STAR_SYSTEM_GONTA</Text_ID>
+      <Galactic_Model_Name>W_planet_Forest01.alo</Galactic_Model_Name>
+      <Scale_Factor>1.4</Scale_Factor>
+      <Galactic_Position>-110.0, -135.0, 10.0</Galactic_Position>
+      <Facing_Adjust>0.0, 0.0, 120.0</Facing_Adjust>
+      <Planet_Credit_Value>75</Planet_Credit_Value>
+      <Max_Space_Base>5</Max_Space_Base>
+      <Land_Tactical_Map>Map_GC_Space_Gonta.ted</Land_Tactical_Map>
+      <Space_Tactical_Map>Map_GC_Space_Gonta.ted</Space_Tactical_Map>
+      <Describe_Terrain>TEXT_PLANET_GONTA_INFO_TER</Describe_Terrain>
+      <Describe_Weather>TEXT_PLANET_GONTA_INFO_WEA_PP</Describe_Weather>
+      <Describe_Tactical>TEXT_PLANET_GONTA_INFO_TAC_PP</Describe_Tactical>
+      <Describe_Advantage>TEXT_PLANET_GONTA_INFO_ADV</Describe_Advantage>
+      <Describe_History>TEXT_PLANET_GONTA_INFO_HIS_PP</Describe_History>
+      <Planet_Ability_Name>TEXT_PLANET_GONTA_INFO_ADV</Planet_Ability_Name>
+      <Planet_Ability_Description>TEXT_PLANET_GONTA_ENCYC_PP</Planet_Ability_Description>
+      <Encyclopedia_Text>TEXT_PLANET_GONTA_ENCYC_PP</Encyclopedia_Text>
+   </Planet>
+
+   <Planet Name="Pegasus_Prelude_Planet_Hoff">
+      <Variant_Of_Existing_Type>Planet_Base_PP</Variant_Of_Existing_Type>
+      <Text_ID>TEXT_OBJECT_STAR_SYSTEM_HOFF</Text_ID>
+      <Galactic_Model_Name>W_planet_Thyferra01.alo</Galactic_Model_Name>
+      <Scale_Factor>1.4</Scale_Factor>
+      <Galactic_Position>-15.0, 0.0, 10.0</Galactic_Position>
+      <Planet_Credit_Value>75</Planet_Credit_Value>
+      <Max_Space_Base>5</Max_Space_Base>
+      <Land_Tactical_Map>Map_GC_Space_Hoff.ted</Land_Tactical_Map>
+      <Space_Tactical_Map>Map_GC_Space_Hoff.ted</Space_Tactical_Map>
+      <Describe_Terrain>TEXT_PLANET_HOFF_INFO_TER</Describe_Terrain>
+      <Describe_Weather>TEXT_PLANET_HOFF_INFO_WEA</Describe_Weather>
+      <Describe_Tactical>TEXT_PLANET_HOFF_INFO_TAC_PP</Describe_Tactical>
+      <Describe_Advantage>TEXT_PLANET_AURORA_INFO_ADV</Describe_Advantage>
+      <Describe_History>TEXT_PLANET_HOFF_INFO_HIS_PP</Describe_History>
+      <Encyclopedia_Text>TEXT_PLANET_HOFF_ENCYC_PP</Encyclopedia_Text>
+      <!--Planet_Ability_Icon>i_pa_sg_mining_colony.tga</Planet_Ability_Icon-->
+   </Planet>
+
+   <Planet Name="Pegasus_Prelude_Planet_Iratus_Bestiola">
+      <Variant_Of_Existing_Type>Planet_Base_PP</Variant_Of_Existing_Type>
+      <Text_ID>TEXT_OBJECT_STAR_SYSTEM_IRATUS_BESTIOLA</Text_ID>
+      <Galactic_Model_Name>W_planet_Swamp01.alo</Galactic_Model_Name>
+      <Scale_Factor>1.4</Scale_Factor>
+      <Galactic_Position>-135.0, 95.0, 10.0</Galactic_Position>
+      <Planet_Credit_Value>75</Planet_Credit_Value>
+      <Max_Space_Base>5</Max_Space_Base>
+      <Land_Tactical_Map>Map_GC_Space_Iratus_Bestiola.ted</Land_Tactical_Map>
+      <Space_Tactical_Map>Map_GC_Space_Iratus_Bestiola.ted</Space_Tactical_Map>
+      <Describe_Terrain>TEXT_PLANET_IRATUS_BESTIOLA_INFO_TER</Describe_Terrain>
+      <Describe_Weather>TEXT_PLANET_IRATUS_BESTIOLA_INFO_WEA</Describe_Weather>
+      <Describe_Tactical>TEXT_PLANET_IRATUS_BESTIOLA_INFO_TAC_PP</Describe_Tactical>
+      <Describe_Advantage>TEXT_PLANET_AURORA_INFO_ADV</Describe_Advantage>
+      <Describe_History>TEXT_PLANET_IRATUS_BESTIOLA_INFO_HIS</Describe_History>
+      <Planet_Ability_Name>TEXT_PLANET_AURORA_INFO_ADV</Planet_Ability_Name>
+      <Planet_Ability_Description>TEXT_PLANET_IRATUS_BESTIOLA_ENCYC</Planet_Ability_Description>
+      <Encyclopedia_Text>TEXT_PLANET_IRATUS_BESTIOLA_ENCYC</Encyclopedia_Text>
+      <!--Planet_Ability_Icon>i_pa_sg_infantry_health.tga</Planet_Ability_Icon-->
+   </Planet>
+
+   <Planet Name="Pegasus_Prelude_Planet_Jenev">
+      <Variant_Of_Existing_Type>Planet_Base_PP</Variant_Of_Existing_Type>
+      <Text_ID>TEXT_OBJECT_STAR_SYSTEM_JENEV</Text_ID>
+      <Galactic_Model_Name>W_planet_alderaan_low.alo</Galactic_Model_Name>
+      <Scale_Factor>1.3</Scale_Factor>
+      <Galactic_Position>210.0, -160.0, 10.0</Galactic_Position>
+      <Planet_Credit_Value>50</Planet_Credit_Value>
+      <Max_Space_Base>4</Max_Space_Base>
+      <Land_Tactical_Map>Map_GC_Space_Jenev.ted</Land_Tactical_Map>
+      <Space_Tactical_Map>Map_GC_Space_Jenev.ted</Space_Tactical_Map>
+      <Describe_Terrain>TEXT_PLANET_JENEV_INFO_TER</Describe_Terrain>
+      <Describe_Weather>TEXT_PLANET_JENEV_INFO_WEA</Describe_Weather>
+      <Describe_Tactical>TEXT_PLANET_JENEV_INFO_TAC_PP</Describe_Tactical>
+      <Describe_Advantage>TEXT_PLANET_JENEV_INFO_ADV</Describe_Advantage>
+      <Describe_History>TEXT_PLANET_JENEV_INFO_HIS_PP</Describe_History>
+      <Planet_Ability_Name>TEXT_PLANET_JENEV_INFO_ADV</Planet_Ability_Name>
+      <Planet_Ability_Description>TEXT_PLANET_JENEV_ENCYC</Planet_Ability_Description>
+      <Encyclopedia_Text>TEXT_PLANET_JENEV_ENCYC</Encyclopedia_Text>
+   </Planet>
+
+   <Planet Name="Pegasus_Prelude_Planet_Kohal">
+      <Variant_Of_Existing_Type>Planet_Base_PP</Variant_Of_Existing_Type>
+      <Text_ID>TEXT_OBJECT_STAR_SYSTEM_KOHAL</Text_ID>
+      <Galactic_Model_Name>W_planet_Balmorra_Low.alo</Galactic_Model_Name>
+      <Scale_Factor>1.3</Scale_Factor>
+      <Galactic_Position>25.0, -140.0, 10.0</Galactic_Position>
+      <Planet_Credit_Value>50</Planet_Credit_Value>
+      <Max_Space_Base>4</Max_Space_Base>
+      <Land_Tactical_Map>Map_GC_Space_Kohal.ted</Land_Tactical_Map>
+      <Space_Tactical_Map>Map_GC_Space_Kohal.ted</Space_Tactical_Map>
+      <Describe_Terrain>TEXT_PLANET_KOHAL_INFO_TER</Describe_Terrain>
+      <Describe_Weather>TEXT_PLANET_KOHAL_INFO_WEA</Describe_Weather>
+      <Describe_Tactical>TEXT_PLANET_KOHAL_INFO_TAC_PP</Describe_Tactical>
+      <Describe_Advantage>TEXT_PLANET_KOHAL_INFO_ADV</Describe_Advantage>
+      <Describe_History>TEXT_PLANET_KOHAL_INFO_HIS_PP</Describe_History>
+      <Planet_Ability_Name>TEXT_PLANET_KOHAL_INFO_ADV</Planet_Ability_Name>
+      <Planet_Ability_Description>TEXT_PLANET_KOHAL_ENCYC</Planet_Ability_Description>
+      <Encyclopedia_Text>TEXT_PLANET_KOHAL_ENCYC</Encyclopedia_Text>
+   </Planet>
+
+   <Planet Name="Pegasus_Prelude_Planet_Lantea">
+      <Variant_Of_Existing_Type>Planet_Base_PP</Variant_Of_Existing_Type>
+      <Text_ID>TEXT_OBJECT_STAR_SYSTEM_LANTEA</Text_ID>
+      <Galactic_Model_Name>W_planet_kamino_low.alo</Galactic_Model_Name>
+      <Scale_Factor>1.5</Scale_Factor>
+      <Galactic_Position>330.0, -35.0, 10.0</Galactic_Position>
+      <Planet_Credit_Value>500</Planet_Credit_Value>
+      <Max_Space_Base>5</Max_Space_Base>
+      <Land_Tactical_Map>Map_GC_Space_Atlantis.ted</Land_Tactical_Map>
+      <Space_Tactical_Map>Map_GC_Space_Atlantis.ted</Space_Tactical_Map>
+      <Describe_Terrain>TEXT_PLANET_ATLANTIS_INFO_TER</Describe_Terrain>
+      <Describe_Weather>TEXT_PLANET_ATLANTIS_INFO_WEA_PP</Describe_Weather>
+      <Describe_Tactical>TEXT_PLANET_ATLANTIS_INFO_TAC_PP</Describe_Tactical>
+      <Describe_Advantage>TEXT_PLANET_ATLANTIS_INFO_ADV_PP</Describe_Advantage>
+      <Describe_History>TEXT_PLANET_ATLANTIS_INFO_HIS_PP</Describe_History>
+      <Encyclopedia_Text>TEXT_PLANET_ATLANTIS_ENCYC_PP</Encyclopedia_Text>
+      <Additional_Population_Capacity>15</Additional_Population_Capacity>
+      <Planet_Ability_Icon>i_pa_sg_cheaper_fighters.tga</Planet_Ability_Icon>
+      <Abilities SubObjectList="Yes">
+         <Reduce_Production_Price_Ability Name="PP_Lantea_Fighter_Production_Boost">
+            <Unit_Strength_Category />
+            <Applicable_Unit_Categories />
+            <Applicable_Unit_Types>Ancient_Jumper_Squadron, Ancient_Drone_Squadron, Ancient_Heavy_Fighter_Squadron, Ancient_Heavy_Bomber_Squadron, Probe_Droid_Team, TIE_Fighter_Squadron_PP, TIE_Bomber_Squadron_PP, TIE_Interceptor_Squadron_PP, TIE_Defender_Squadron_PP, TIE_Phantom_Squadron_PP</Applicable_Unit_Types>
+            <Price_Reduction_Percentage>0.20</Price_Reduction_Percentage>
+            <Stacking_Category>9</Stacking_Category>
+            <Galaxy_Wide>No</Galaxy_Wide>
+         </Reduce_Production_Price_Ability>
+      </Abilities>
+      <!--todo: debug-->
+      <!--Galactic_Influence_Range>9000.0</Galactic_Influence_Range>
+      <Hyperspace_Fleet_Reveal_Range>9000.0</Hyperspace_Fleet_Reveal_Range>
+      <Abilities SubObjectList="Yes">
+         <System_Spy_Ability Name="See_Everything_Debug">
+            <Initially_Enabled>Yes</Initially_Enabled>
+            <Activation_Style>Galactic_Automatic</Activation_Style>
+            <Causes_Despawn>No</Causes_Despawn>
+            <Duration_In_Secs>-1.0</Duration_In_Secs>
+            <See_Base_Levels>Yes</See_Base_Levels>
+            <See_Credit_Income>Yes</See_Credit_Income>
+            <See_Credit_Income_Breakdown>Yes</See_Credit_Income_Breakdown>
+            <See_Num_Fleets>Yes</See_Num_Fleets>
+            <See_Most_Powerful_Ship>Yes</See_Most_Powerful_Ship>
+            <See_Fleet_Contents>Yes</See_Fleet_Contents>
+            <See_Num_Ground_Companies>Yes</See_Num_Ground_Companies>
+            <See_Ground_Company_Contents>Yes</See_Ground_Company_Contents>
+            <See_Special_Structures>Yes</See_Special_Structures>
+            <See_Political_Control>No</See_Political_Control>
+            <See_Political_Control_Breakdown>No</See_Political_Control_Breakdown>
+            <See_Current_Production>Yes</See_Current_Production>
+            <See_Minor_Stealth_Heroes>Yes</See_Minor_Stealth_Heroes>
+            <See_Major_Stealth_Heroes>Yes</See_Major_Stealth_Heroes>
+         </System_Spy_Ability>
+      </Abilities-->
+   </Planet>
+
+   <Planet Name="Pegasus_Prelude_Planet_Laros">
+      <Variant_Of_Existing_Type>Planet_Base_PP</Variant_Of_Existing_Type>
+      <Text_ID>TEXT_OBJECT_STAR_SYSTEM_LAROS</Text_ID>
+      <Galactic_Model_Name>W_planet_Temperate01.alo</Galactic_Model_Name>
+      <Scale_Factor>1.3</Scale_Factor>
+      <Galactic_Position>15.0, 135.0, 10.0</Galactic_Position>
+      <Planet_Credit_Value>75</Planet_Credit_Value>
+      <Max_Space_Base>5</Max_Space_Base>
+      <Land_Tactical_Map>Map_GC_Space_Laros.ted</Land_Tactical_Map>
+      <Space_Tactical_Map>Map_GC_Space_Laros.ted</Space_Tactical_Map>
+      <Describe_Terrain>TEXT_PLANET_LAROS_INFO_TER</Describe_Terrain>
+      <Describe_Weather>TEXT_PLANET_LAROS_INFO_WEA</Describe_Weather>
+      <Describe_Tactical>TEXT_PLANET_LAROS_INFO_TAC_PP</Describe_Tactical>
+      <Describe_Advantage>TEXT_PLANET_LAROS_INFO_ADV</Describe_Advantage>
+      <Describe_History>TEXT_PLANET_LAROS_INFO_HIS_PP</Describe_History>
+      <Planet_Ability_Name>TEXT_PLANET_LAROS_INFO_ADV</Planet_Ability_Name>
+      <Planet_Ability_Description>TEXT_PLANET_LAROS_ENCYC</Planet_Ability_Description>
+      <Encyclopedia_Text>TEXT_PLANET_LAROS_ENCYC</Encyclopedia_Text>
+   </Planet>
+
+   <Planet Name="Pegasus_Prelude_Planet_M6H_987"><!--Aesculetum-->
+      <Variant_Of_Existing_Type>Planet_Base_PP</Variant_Of_Existing_Type>
+      <Text_ID>TEXT_OBJECT_STAR_SYSTEM_M6H_987_PP</Text_ID>
+      <Galactic_Model_Name>Planet_GC_M6H_987.ALO</Galactic_Model_Name>
+      <Scale_Factor>1.3</Scale_Factor>
+      <Galactic_Position>281.0, -195.0, 10.0</Galactic_Position>
+      <Planet_Credit_Value>75</Planet_Credit_Value>
+      <Max_Space_Base>5</Max_Space_Base>
+      <Land_Tactical_Map>Map_GC_Space_M6H_987.ted</Land_Tactical_Map>
+      <Space_Tactical_Map>Map_GC_Space_M6H_987.ted</Space_Tactical_Map>
+      <Describe_Terrain>TEXT_PLANET_M6H_987_INFO_TER</Describe_Terrain>
+      <Describe_Weather>TEXT_PLANET_M6H_987_INFO_WEA</Describe_Weather>
+      <Describe_Tactical>TEXT_PLANET_M6H_987_INFO_TAC_PP</Describe_Tactical>
+      <Describe_Advantage>TEXT_PLANET_AURORA_INFO_ADV</Describe_Advantage>
+      <Describe_History>TEXT_PLANET_M6H_987_INFO_HIS_PP</Describe_History>
+      <Planet_Ability_Name>TEXT_PLANET_AURORA_INFO_ADV</Planet_Ability_Name>
+      <Planet_Ability_Description>TEXT_PLANET_M6H_987_ENCYC</Planet_Ability_Description>
+      <Encyclopedia_Text>TEXT_PLANET_M6H_987_ENCYC</Encyclopedia_Text>
+      <!--Planet_Ability_Icon>i_pa_sg_cheaper_satellites.tga</Planet_Ability_Icon>
+      <Abilities SubObjectList="Yes">
+         <Reduce_Production_Price_Ability Name="PP_M6H_987_Satellites_Production_Boost">
+            <Unit_Strength_Category />
+            <Applicable_Unit_Categories />
+            <Applicable_Unit_Types>
+               Ancient_Space_Building_Sensor_SS_PP, Ancient_Defense_Satellite_SS,
+               wraith_Defense_Satellite_ANTIFIGHTER_SS, wraith_Defense_Satellite_ANTICAPITAL_SS, Empire_Defense_Satellite_Repair_SS, Wraith_Space_Building_Ion_Mine_SS
+            </Applicable_Unit_Types>
+            <Price_Reduction_Percentage>0.20</Price_Reduction_Percentage>
+            <Stacking_Category>9</Stacking_Category>
+            <Galaxy_Wide>No</Galaxy_Wide>
+         </Reduce_Production_Price_Ability>
+      </Abilities-->
+   </Planet>
+
+   <Planet Name="Pegasus_Prelude_Planet_Manaria">
+      <Variant_Of_Existing_Type>Planet_Base_PP</Variant_Of_Existing_Type>
+      <Text_ID>TEXT_OBJECT_STAR_SYSTEM_MANARIA</Text_ID>
+      <Galactic_Model_Name>W_planet_Naboo_Low.alo</Galactic_Model_Name>
+      <Scale_Factor>1.3</Scale_Factor>
+      <Galactic_Position>150.0, -125.0, 10.0</Galactic_Position>
+      <Facing_Adjust>0.0, 0.0, 140.0</Facing_Adjust>
+      <Planet_Credit_Value>50</Planet_Credit_Value>
+      <Max_Space_Base>3</Max_Space_Base>
+      <Land_Tactical_Map>Map_GC_Space_Manaria.ted</Land_Tactical_Map>
+      <Space_Tactical_Map>Map_GC_Space_Manaria.ted</Space_Tactical_Map>
+      <Describe_Terrain>TEXT_PLANET_MANARIA_INFO_TER</Describe_Terrain>
+      <Describe_Weather>TEXT_PLANET_MANARIA_INFO_WEA</Describe_Weather>
+      <Describe_Tactical>TEXT_PLANET_MANARIA_INFO_TAC_PP</Describe_Tactical>
+      <Describe_Advantage>TEXT_PLANET_AURORA_INFO_ADV</Describe_Advantage>
+      <Describe_History>TEXT_PLANET_MANARIA_INFO_HIS_PP</Describe_History>
+      <Planet_Ability_Name>TEXT_PLANET_AURORA_INFO_ADV</Planet_Ability_Name>
+      <Planet_Ability_Description>TEXT_PLANET_MANARIA_ENCYC</Planet_Ability_Description>
+      <Encyclopedia_Text>TEXT_PLANET_MANARIA_ENCYC</Encyclopedia_Text>
+      <!--Planet_Ability_Icon>i_pa_sg_black_market.tga</Planet_Ability_Icon-->
+   </Planet>
+
+   <Planet Name="Pegasus_Prelude_Planet_Olesia">
+      <Variant_Of_Existing_Type>Planet_Base_PP</Variant_Of_Existing_Type>
+      <Text_ID>TEXT_OBJECT_STAR_SYSTEM_OLESIA</Text_ID>
+      <Galactic_Model_Name>W_planet_Naboo_Low.alo</Galactic_Model_Name>
+      <Scale_Factor>1.3</Scale_Factor>
+      <Galactic_Position>-205.0, -40.0, 10.0</Galactic_Position>
+      <Facing_Adjust>0.0, 0.0, 70.0</Facing_Adjust>
+      <Planet_Credit_Value>150</Planet_Credit_Value>
+      <Max_Space_Base>4</Max_Space_Base>
+      <Land_Tactical_Map>Map_GC_Space_Olesia.ted</Land_Tactical_Map>
+      <Space_Tactical_Map>Map_GC_Space_Olesia.ted</Space_Tactical_Map>
+      <Describe_Terrain>TEXT_PLANET_OLESIA_INFO_TER</Describe_Terrain>
+      <Describe_Weather>TEXT_PLANET_OLESIA_INFO_WEA</Describe_Weather>
+      <Describe_Tactical>TEXT_PLANET_OLESIA_INFO_TAC_PP</Describe_Tactical>
+      <Describe_Advantage>TEXT_PLANET_OLESIA_INFO_ADV</Describe_Advantage>
+      <Describe_History>TEXT_PLANET_OLESIA_INFO_HIS_PP</Describe_History>
+      <Planet_Ability_Name>TEXT_PLANET_OLESIA_INFO_ADV</Planet_Ability_Name>
+      <Planet_Ability_Description>TEXT_PLANET_OLESIA_ENCYC</Planet_Ability_Description>
+      <Encyclopedia_Text>TEXT_PLANET_OLESIA_ENCYC</Encyclopedia_Text>
+   </Planet>
+
+   <Planet Name="Pegasus_Prelude_Planet_Orakis">
+      <Variant_Of_Existing_Type>Planet_Base_PP</Variant_Of_Existing_Type>
+      <Text_ID>TEXT_OBJECT_STAR_SYSTEM_ORAKIS</Text_ID>
+      <Galactic_Model_Name>W_planet_Desert01.alo</Galactic_Model_Name>
+      <Scale_Factor>1.5</Scale_Factor>
+      <Galactic_Position>310.0, -100.0, 10.0</Galactic_Position>
+      <Planet_Credit_Value>50</Planet_Credit_Value>
+      <Max_Space_Base>4</Max_Space_Base>
+      <Land_Tactical_Map>Map_GC_Space_Orakis.ted</Land_Tactical_Map>
+      <Space_Tactical_Map>Map_GC_Space_Orakis.ted</Space_Tactical_Map>
+      <Describe_Terrain>TEXT_PLANET_ORAKIS_INFO_TER</Describe_Terrain>
+      <Describe_Weather>TEXT_PLANET_ORAKIS_INFO_WEA</Describe_Weather>
+      <Describe_Tactical>TEXT_PLANET_ORAKIS_INFO_TAC_PP</Describe_Tactical>
+      <Describe_Advantage>TEXT_PLANET_ORAKIS_INFO_ADV</Describe_Advantage>
+      <Describe_History>TEXT_PLANET_ORAKIS_INFO_HIS_PP</Describe_History>
+      <Planet_Ability_Name>TEXT_PLANET_ORAKIS_INFO_ADV</Planet_Ability_Name>
+      <Planet_Ability_Description>TEXT_PLANET_ORAKIS_ENCYC_PP</Planet_Ability_Description>
+      <Encyclopedia_Text>TEXT_PLANET_ORAKIS_ENCYC_PP</Encyclopedia_Text>
+   </Planet>
+
+   <Planet Name="Pegasus_Prelude_Planet_Orlan">
+      <Variant_Of_Existing_Type>Planet_Base_PP</Variant_Of_Existing_Type>
+      <Text_ID>TEXT_OBJECT_STAR_SYSTEM_ORLAN</Text_ID>
+      <Galactic_Model_Name>W_planet_Swamp01.alo</Galactic_Model_Name>
+      <Scale_Factor>1.4</Scale_Factor>
+      <Galactic_Position>170.0, -50.0, 10.0</Galactic_Position>
+      <Facing_Adjust>0.0, 0.0, 170.0</Facing_Adjust>
+      <Planet_Credit_Value>50</Planet_Credit_Value>
+      <Max_Space_Base>2</Max_Space_Base>
+      <Land_Tactical_Map>Map_GC_Space_Orlan.ted</Land_Tactical_Map>
+      <Space_Tactical_Map>Map_GC_Space_Orlan.ted</Space_Tactical_Map>
+      <Describe_Terrain>TEXT_PLANET_ORLAN_INFO_TER</Describe_Terrain>
+      <Describe_Weather>TEXT_PLANET_ORLAN_INFO_WEA</Describe_Weather>
+      <Describe_Tactical>TEXT_PLANET_ORLAN_INFO_TAC_PP</Describe_Tactical>
+      <Describe_Advantage>TEXT_PLANET_ORLAN_INFO_ADV</Describe_Advantage>
+      <Describe_History>TEXT_PLANET_ORLAN_INFO_HIS_PP</Describe_History>
+      <Planet_Ability_Name>TEXT_PLANET_ORLAN_INFO_ADV</Planet_Ability_Name>
+      <Planet_Ability_Description>TEXT_PLANET_ORLAN_ENCYC</Planet_Ability_Description>
+      <Encyclopedia_Text>TEXT_PLANET_ORLAN_ENCYC</Encyclopedia_Text>
+   </Planet>
+
+   <Planet Name="Pegasus_Prelude_Planet_Proculis">
+      <Variant_Of_Existing_Type>Planet_Base_PP</Variant_Of_Existing_Type>
+      <Text_ID>TEXT_OBJECT_STAR_SYSTEM_PROCULUS</Text_ID>
+      <Galactic_Model_Name>W_planet_Temperate01.alo</Galactic_Model_Name>
+      <Scale_Factor>1.3</Scale_Factor>
+      <Galactic_Position>-140.0, -30.0, 10.0</Galactic_Position>
+      <Facing_Adjust>0.0, 0.0, 240.0</Facing_Adjust>
+      <Planet_Credit_Value>50</Planet_Credit_Value>
+      <Max_Space_Base>4</Max_Space_Base>
+      <Land_Tactical_Map>Map_GC_Space_Proculis.ted</Land_Tactical_Map>
+      <Space_Tactical_Map>Map_GC_Space_Proculis.ted</Space_Tactical_Map>
+      <Describe_Terrain>TEXT_PLANET_PROCULUS_INFO_TER</Describe_Terrain>
+      <Describe_Weather>TEXT_PLANET_PROCULUS_INFO_WEA</Describe_Weather>
+      <Describe_Tactical>TEXT_PLANET_PROCULUS_INFO_TAC_PP</Describe_Tactical>
+      <Describe_Advantage>TEXT_PLANET_PROCULUS_INFO_ADV</Describe_Advantage>
+      <Describe_History>TEXT_PLANET_PROCULUS_INFO_HIS_PP</Describe_History>
+      <Planet_Ability_Name>TEXT_PLANET_PROCULUS_INFO_ADV</Planet_Ability_Name>
+      <Planet_Ability_Description>TEXT_PLANET_PROCULUS_ENCYC</Planet_Ability_Description>
+      <Encyclopedia_Text>TEXT_PLANET_PROCULUS_ENCYC</Encyclopedia_Text>
+   </Planet>
+
+   <Planet Name="Pegasus_Prelude_Planet_Rasputin"><!--Nostos-->
+      <Variant_Of_Existing_Type>Planet_Base_PP</Variant_Of_Existing_Type>
+      <Text_ID>TEXT_OBJECT_STAR_SYSTEM_RASPUTIN_PP</Text_ID>
+      <Galactic_Model_Name>W_planet_Temperate01.alo</Galactic_Model_Name>
+      <Scale_Factor>1.3</Scale_Factor>
+      <Galactic_Position>105.0, -40.0, 10.0</Galactic_Position>
+      <Facing_Adjust>0.0, 0.0, 120.0</Facing_Adjust>
+      <Planet_Credit_Value>50</Planet_Credit_Value>
+      <Max_Space_Base>2</Max_Space_Base>
+      <Land_Tactical_Map>Map_GC_Space_Rasputin.ted</Land_Tactical_Map>
+      <Space_Tactical_Map>Map_GC_Space_Rasputin.ted</Space_Tactical_Map>
+      <Describe_Terrain>TEXT_PLANET_RASPUTIN_INFO_TER</Describe_Terrain>
+      <Describe_Weather>TEXT_PLANET_RASPUTIN_INFO_WEA_PP</Describe_Weather>
+      <Describe_Tactical>TEXT_PLANET_RASPUTIN_INFO_TAC_PP</Describe_Tactical>
+      <Describe_Advantage>TEXT_PLANET_AURORA_INFO_ADV</Describe_Advantage>
+      <Describe_History>TEXT_PLANET_RASPUTIN_INFO_HIS_PP</Describe_History>
+      <Planet_Ability_Name>TEXT_PLANET_AURORA_INFO_ADV</Planet_Ability_Name>
+      <Planet_Ability_Description>TEXT_PLANET_RASPUTIN_ENCYC_PP</Planet_Ability_Description>
+      <Encyclopedia_Text>TEXT_PLANET_RASPUTIN_ENCYC_PP</Encyclopedia_Text>
+      <!--Planet_Ability_Icon>i_pa_sg_spy_network.tga</Planet_Ability_Icon-->
+   </Planet>
+
+   <Planet Name="Pegasus_Prelude_Planet_Sagon">
+      <Variant_Of_Existing_Type>Planet_Base_PP</Variant_Of_Existing_Type>
+      <Text_ID>TEXT_OBJECT_STAR_SYSTEM_SAGON</Text_ID>
+      <Galactic_Model_Name>W_planet_Dagobah_Low.alo</Galactic_Model_Name>
+      <Scale_Factor>1.4</Scale_Factor>
+      <Galactic_Position>15.0, 55.0, 10.0</Galactic_Position>
+      <Planet_Credit_Value>50</Planet_Credit_Value>
+      <Max_Space_Base>4</Max_Space_Base>
+      <Land_Tactical_Map>Map_GC_Space_Sagon.ted</Land_Tactical_Map>
+      <Space_Tactical_Map>Map_GC_Space_Sagon.ted</Space_Tactical_Map>
+      <Describe_Terrain>TEXT_PLANET_SAGON_INFO_TER</Describe_Terrain>
+      <Describe_Weather>TEXT_PLANET_SAGON_INFO_WEA</Describe_Weather>
+      <Describe_Tactical>TEXT_PLANET_SAGON_INFO_TAC_PP</Describe_Tactical>
+      <Describe_Advantage>TEXT_PLANET_SAGON_INFO_ADV</Describe_Advantage>
+      <Describe_History>TEXT_PLANET_SAGON_INFO_HIS</Describe_History>
+      <Planet_Ability_Name>TEXT_PLANET_SAGON_INFO_ADV</Planet_Ability_Name>
+      <Planet_Ability_Description>TEXT_PLANET_SAGON_ENCYC</Planet_Ability_Description>
+      <Encyclopedia_Text>TEXT_PLANET_SAGON_ENCYC</Encyclopedia_Text>
+   </Planet>
+
+   <Planet Name="Pegasus_Prelude_Planet_Sun">
+      <Variant_Of_Existing_Type>Planet_Base_PP</Variant_Of_Existing_Type>
+      <Text_ID>TEXT_OBJECT_STAR_SYSTEM_SONNE</Text_ID>
+      <Galactic_Model_Name>Planet_GC_Yellow_Sun.ALO</Galactic_Model_Name>
+      <Scale_Factor>2.1</Scale_Factor>
+      <Galactic_Position>50.0, -20.0, 10.0</Galactic_Position>
+      <Planet_Credit_Value>10</Planet_Credit_Value>
+      <Max_Space_Base>0</Max_Space_Base>
+      <Special_Structures_Space>0</Special_Structures_Space>
+      <Land_Tactical_Map>Map_GC_Space_Sun.ted</Land_Tactical_Map>
+      <Space_Tactical_Map>Map_GC_Space_Sun.ted</Space_Tactical_Map>
+      <Describe_Terrain>TEXT_PLANET_SONNE_INFO_TER</Describe_Terrain>
+      <Describe_Weather>TEXT_PLANET_SONNE_INFO_WEA</Describe_Weather>
+      <Describe_Tactical>TEXT_PLANET_SONNE_INFO_TAC</Describe_Tactical>
+      <Describe_Advantage>TEXT_PLANET_SONNE_INFO_ADV</Describe_Advantage>
+      <Describe_History>TEXT_PLANET_SONNE_INFO_HIS</Describe_History>
+      <Planet_Ability_Name>TEXT_PLANET_SONNE_INFO_ADV</Planet_Ability_Name>
+      <Planet_Ability_Description>TEXT_PLANET_SONNE_ENCYC</Planet_Ability_Description>
+      <Encyclopedia_Text>TEXT_PLANET_SONNE_ENCYC</Encyclopedia_Text>
+   </Planet>
+
+   <Planet Name="Pegasus_Prelude_Planet_Taranis">
+      <Variant_Of_Existing_Type>Planet_Base_PP</Variant_Of_Existing_Type>
+      <Text_ID>TEXT_OBJECT_STAR_SYSTEM_TARANIS</Text_ID>
+      <Galactic_Model_Name>w_planet_Eriadu_Low.alo</Galactic_Model_Name>
+      <Scale_Factor>1.3</Scale_Factor>
+      <Galactic_Position>-70.0, -200.0, 10.0</Galactic_Position>
+      <Planet_Credit_Value>150</Planet_Credit_Value>
+      <Max_Space_Base>5</Max_Space_Base>
+      <Land_Tactical_Map>Map_GC_Space_Taranis.ted</Land_Tactical_Map>
+      <Space_Tactical_Map>Map_GC_Space_Taranis.ted</Space_Tactical_Map>
+      <Describe_Terrain>TEXT_PLANET_TARANIS_INFO_TER</Describe_Terrain>
+      <Describe_Weather>TEXT_PLANET_TARANIS_INFO_WEA</Describe_Weather>
+      <Describe_Tactical>TEXT_PLANET_TARANIS_INFO_TAC_PP</Describe_Tactical>
+      <Describe_Advantage>TEXT_PLANET_TARANIS_INFO_ADV</Describe_Advantage>
+      <Describe_History>TEXT_PLANET_TARANIS_INFO_HIS_PP</Describe_History>
+      <Planet_Ability_Name>TEXT_PLANET_TARANIS_INFO_ADV</Planet_Ability_Name>
+      <Planet_Ability_Description>TEXT_PLANET_TARANIS_ENCYC</Planet_Ability_Description>
+      <Encyclopedia_Text>TEXT_PLANET_TARANIS_ENCYC</Encyclopedia_Text>
+      <Additional_Population_Capacity>10</Additional_Population_Capacity>
+      <Planet_Ability_Icon>i_pa_sg_improved_shielding.tga</Planet_Ability_Icon>
+      <Abilities SubObjectList="Yes">
+         <Galaxy_Wide_Upgrade_Ability Name="PP_Taranis_Upgrade_Bonus">
+            <Space_Upgrade_Type>RS_Enhanced_Shielding_L1_Upgrade</Space_Upgrade_Type>
+            <Land_Upgrade_Type />
+         </Galaxy_Wide_Upgrade_Ability>
+      </Abilities>
+   </Planet>
+
+   <Planet Name="Pegasus_Prelude_Planet_Vadena">
+      <Variant_Of_Existing_Type>Planet_Base_PP</Variant_Of_Existing_Type>
+      <Text_ID>TEXT_OBJECT_STAR_SYSTEM_VADENA</Text_ID>
+      <Galactic_Model_Name>W_planet_Utapau_Low.alo</Galactic_Model_Name>
+      <Scale_Factor>1.4</Scale_Factor>
+      <Galactic_Position>-70.0, -20.0, 10.0</Galactic_Position>
+      <Planet_Credit_Value>50</Planet_Credit_Value>
+      <Max_Space_Base>4</Max_Space_Base>
+      <Land_Tactical_Map>Map_GC_Space_Vedeena.ted</Land_Tactical_Map>
+      <Space_Tactical_Map>Map_GC_Space_Vedeena.ted</Space_Tactical_Map>
+      <Describe_Terrain>TEXT_PLANET_VADENA_INFO_TER</Describe_Terrain>
+      <Describe_Weather>TEXT_PLANET_VADENA_INFO_WEA</Describe_Weather>
+      <Describe_Tactical>TEXT_PLANET_VADENA_INFO_TAC_PP</Describe_Tactical>
+      <Describe_Advantage>TEXT_PLANET_AURORA_INFO_ADV</Describe_Advantage>
+      <Describe_History>TEXT_PLANET_VADENA_INFO_HIS_PP</Describe_History>
+      <Planet_Ability_Name>TEXT_PLANET_AURORA_INFO_ADV</Planet_Ability_Name>
+      <Planet_Ability_Description>TEXT_PLANET_VADENA_ENCYC</Planet_Ability_Description>
+      <Encyclopedia_Text>TEXT_PLANET_VADENA_ENCYC</Encyclopedia_Text>
+      <!--Planet_Ability_Icon>i_pa_sg_enhanced_armour.tga</Planet_Ability_Icon-->
+   </Planet>
+
+   <Planet Name="Pegasus_Prelude_Planet_Wraith_Homeworld"><!--Avitus-->
+      <Variant_Of_Existing_Type>Planet_Base_PP</Variant_Of_Existing_Type>
+      <Text_ID>TEXT_OBJECT_STAR_SYSTEM_WRAITH_HEIMATWELT</Text_ID>
+      <Galactic_Model_Name>Planet_GC_Wraith_Homeworld.ALO</Galactic_Model_Name>
+      <Scale_Factor>1.5</Scale_Factor>
+      <Galactic_Position>-210.0, 100.0, 10.0</Galactic_Position>
+      <Planet_Credit_Value>500</Planet_Credit_Value>
+      <Max_Space_Base>5</Max_Space_Base>
+      <Land_Tactical_Map>Map_GC_Space_Wraith_Homeworld.ted</Land_Tactical_Map>
+      <Space_Tactical_Map>Map_GC_Space_Wraith_Homeworld.ted</Space_Tactical_Map>
+      <Describe_Terrain>TEXT_PLANET_WRAITH_HOME_INFO_TER</Describe_Terrain>
+      <Describe_Weather>TEXT_PLANET_WRAITH_HOME_INFO_WEA</Describe_Weather>
+      <Describe_Tactical>TEXT_PLANET_WRAITH_HOME_INFO_TAC</Describe_Tactical>
+      <Describe_Advantage>TEXT_PLANET_AURORA_INFO_ADV</Describe_Advantage>
+      <Describe_History>TEXT_PLANET_WRAITH_HOME_INFO_HIS</Describe_History>
+      <Planet_Ability_Name>TEXT_PLANET_AURORA_INFO_ADV</Planet_Ability_Name>
+      <Planet_Ability_Description>TEXT_PLANET_WRAITH_HOME_ENCYC</Planet_Ability_Description>
+      <Encyclopedia_Text>TEXT_PLANET_WRAITH_HOME_ENCYC</Encyclopedia_Text>
+      <Additional_Population_Capacity>15</Additional_Population_Capacity>
+   </Planet>
+
+   <Planet Name="Pegasus_Prelude_Planet_Wraith_ZPM_Base"><!--Arcanus-->
+      <Variant_Of_Existing_Type>Planet_Base_PP</Variant_Of_Existing_Type>
+      <Text_ID>TEXT_OBJECT_STAR_SYSTEM_WRAITH_KLONANLAGE</Text_ID>
+      <Galactic_Model_Name>W_planet_Ryloth_Low.alo</Galactic_Model_Name>
+      <Scale_Factor>1.3</Scale_Factor>
+      <Galactic_Position>-170.0, -125.0, 10.0</Galactic_Position>
+      <Facing_Adjust>0.0, 0.0, 170.0</Facing_Adjust>
+      <Planet_Credit_Value>150</Planet_Credit_Value>
+      <Planet_Capture_Bonus_Reward>1000</Planet_Capture_Bonus_Reward>
+      <Max_Space_Base>5</Max_Space_Base>
+      <Land_Tactical_Map>Map_GC_Space_Wraith_Clonebase.ted</Land_Tactical_Map>
+      <Space_Tactical_Map>Map_GC_Space_Wraith_Clonebase.ted</Space_Tactical_Map>
+      <Describe_Terrain>TEXT_PLANET_WRAITH_KLONANLAGE_INFO_TER</Describe_Terrain>
+      <Describe_Weather>TEXT_PLANET_WRAITH_KLONANLAGE_INFO_WEA</Describe_Weather>
+      <Describe_Tactical>TEXT_PLANET_WRAITH_KLONANLAGE_INFO_TAC_PP</Describe_Tactical>
+      <Describe_Advantage>TEXT_PLANET_WRAITH_KLONANLAGE_INFO_ADV_PP</Describe_Advantage>
+      <Describe_History>TEXT_PLANET_WRAITH_KLONANLAGE_INFO_HIS_PP</Describe_History>
+      <Planet_Ability_Name>TEXT_PLANET_WRAITH_KLONANLAGE_INFO_ADV</Planet_Ability_Name>
+      <Planet_Ability_Description>TEXT_PLANET_WRAITH_KLONANLAGE_ENCYC_PP</Planet_Ability_Description>
+      <Encyclopedia_Text>TEXT_PLANET_WRAITH_KLONANLAGE_ENCYC_PP</Encyclopedia_Text>
+      <Additional_Population_Capacity>10</Additional_Population_Capacity>
+      <Planet_Ability_Icon>i_pa_sg_cheaper_capital_ships.tga</Planet_Ability_Icon>
+      <Abilities SubObjectList="Yes">
+         <Reduce_Production_Price_Ability Name="PP_Wraith_ZPM_Base_Unit_Production_Boost">
+            <Unit_Strength_Category />
+            <Applicable_Unit_Categories />
+            <Applicable_Unit_Types>Probe_Droid_Team, TIE_Fighter_Squadron_PP, TIE_Interceptor_Squadron_PP, TIE_Bomber_Squadron_PP, TIE_Defender_Squadron_PP, TIE_Phantom_Squadron_PP, Broadside_Class_Cruiser_PP, Victory_Destroyer_PP, Tartan_Patrol_Cruiser_PP, Interdictor_Cruiser_PP, Acclamator_Assault_Ship_PP, Star_Destroyer_PP</Applicable_Unit_Types>
+            <Price_Reduction_Percentage>0.5</Price_Reduction_Percentage>
+            <Stacking_Category>9</Stacking_Category>
+            <Galaxy_Wide>No</Galaxy_Wide>
+         </Reduce_Production_Price_Ability>
+         <!-- <Reduce_Production_Time_Ability Name="PP_Wraith_ZPM_Base_Unit_Production_Boost_Time">
+            <Unit_Strength_Category/>
+            <Applicable_Unit_Categories/>
+            <Applicable_Unit_Types> Victory_Destroyer_PP, Star_Destroyer_PP</Applicable_Unit_Types>
+            <Time_Reduction_Percentage>0.15</Time_Reduction_Percentage>
+            <Stacking_Category>9</Stacking_Category>
+            <Galaxy_Wide>No</Galaxy_Wide>
+         </Reduce_Production_Time_Ability> -->
+      </Abilities>
+   </Planet>
+
+
+   <!--Unused Planets-->
+   <!--
+  <Planet Name="Pegasus_Prelude_Planet_Vanir">
+    <Variant_Of_Existing_Type>Vanir</Variant_Of_Existing_Type>
+    <Galactic_Position>-65.0, -320.0, 10.0</Galactic_Position>
+    <Zoomed_Terrain_Index>16</Zoomed_Terrain_Index>
+    <Planet_Is_Destroyable_By_TSW>No</Planet_Is_Destroyable_By_TSW>
+    <Planet_Surface_Accessible>No</Planet_Surface_Accessible>
+    <Planet_Retains_Residual_Influence>Yes</Planet_Retains_Residual_Influence>
+  </Planet>
+
+  <Planet Name="Pegasus_Prelude_Planet_Basis_Ford">
+    <Variant_Of_Existing_Type>Basis_Ford</Variant_Of_Existing_Type>
+    <Galactic_Position>90.0, -170.0, 10.0</Galactic_Position>
+  </Planet>
+
+  <Planet Name="Pegasus_Prelude_Planet_M7G_677">
+    <Variant_Of_Existing_Type>M7G_677</Variant_Of_Existing_Type>
+    <Galactic_Position>-100.0, 35.0, 10.0</Galactic_Position>
+  </Planet>
+
+  <Planet Name="Pegasus_Prelude_Planet_M4F_788">
+    <Variant_Of_Existing_Type>M4F_788</Variant_Of_Existing_Type>
+    <Galactic_Position>225.0, -100.0, 10.0</Galactic_Position>
+  </Planet>
+
+  <Planet Name="Pegasus_Prelude_Planet_M8G_352">
+    <Variant_Of_Existing_Type>M8G_352</Variant_Of_Existing_Type>
+    <Galactic_Position>230.0, 45.0, 10.0</Galactic_Position>
+  </Planet>
+
+  <Planet Name="Pegasus_Prelude_Planet_M2R_441">
+    <Variant_Of_Existing_Type>M2R_441</Variant_Of_Existing_Type>
+    <Galactic_Position>-240.0, -100.0, 10.0</Galactic_Position>
+  </Planet>
+
+  <Planet Name="Pegasus_Prelude_Planet_M5V_801">
+    <Variant_Of_Existing_Type>M5V_801</Variant_Of_Existing_Type>
+    <Galactic_Position>60.0, 90.0, 10.0</Galactic_Position>
+  </Planet>
+
+  <Planet Name="Pegasus_Prelude_Planet_M65_PL8">
+    <Variant_Of_Existing_Type>M65_PL8</Variant_Of_Existing_Type>
+    <Galactic_Position>160.0, 30.0, 10.0</Galactic_Position>
+  </Planet>
+
+  <Planet Name="Pegasus_Prelude_Planet_P3M_736">
+    <Variant_Of_Existing_Type>P3M_736</Variant_Of_Existing_Type>
+    <Galactic_Position>-110.0, 210.0, 10.0</Galactic_Position>
+  </Planet>
+
+  <Planet Name="Pegasus_Prelude_Planet_M9R_373">
+    <Variant_Of_Existing_Type>M9R_373</Variant_Of_Existing_Type>
+    <Galactic_Position>-140.0, -200.0, 10.0</Galactic_Position>
+  </Planet>
+
+  <Planet Name="Pegasus_Prelude_Planet_M56_768">
+    <Variant_Of_Existing_Type>M56_768</Variant_Of_Existing_Type>
+    <Galactic_Position>-190.0, -170.0, 10.0</Galactic_Position>
+  </Planet>
+
+  <Planet Name="Pegasus_Prelude_Planet_Sateda">
+    <Variant_Of_Existing_Type>Sateda</Variant_Of_Existing_Type>
+    <Galactic_Position>120.0, 130.0, 10.0</Galactic_Position>
+  </Planet>
+
+  <Planet Name="Pegasus_Prelude_Planet_M6R_867">
+    <Variant_Of_Existing_Type>M6R_867</Variant_Of_Existing_Type>
+    <Galactic_Position>165.0, -190.0, 10.0</Galactic_Position>
+  </Planet>
+
+  <Planet Name="Pegasus_Prelude_Planet_Mondbasis">
+    <Variant_Of_Existing_Type>Mondbasis</Variant_Of_Existing_Type>
+    <Galactic_Position>-45.0, -140.0, 10.0</Galactic_Position>
+  </Planet>
+
+  <Planet Name="Pegasus_Prelude_Planet_M6R_214">
+    <Variant_Of_Existing_Type>M6R_214</Variant_Of_Existing_Type>
+    <Galactic_Position>-255.0, -160.0, 10.0</Galactic_Position>
+  </Planet>
+
+  <Planet Name="Pegasus_Prelude_Planet_M4H_212">
+    <Variant_Of_Existing_Type>M4H_212</Variant_Of_Existing_Type>
+    <Galactic_Position>225.0, -31.0, 10.0</Galactic_Position>
+  </Planet>
+
+  <Planet Name="Pegasus_Prelude_Planet_Schwarze_Leere">
+    <Variant_Of_Existing_Type>Schwarze_Leere</Variant_Of_Existing_Type>
+    <Galactic_Position>450.0, -145.0, 10.0</Galactic_Position>
+  </Planet>
+
+  <Planet Name="Pegasus_Prelude_Planet_AlphaBasis_P">
+    <Variant_Of_Existing_Type>AlphaBasis_P</Variant_Of_Existing_Type>
+    <Galactic_Position>230.0, -165.0, 10.0</Galactic_Position>
+  </Planet>
+
+  <Planet Name="Pegasus_Prelude_Planet_M1K_177">
+    <Variant_Of_Existing_Type>M1K_177</Variant_Of_Existing_Type>
+    <Galactic_Position>10.0, -210.0, 10.0</Galactic_Position>
+  </Planet>
+
+  <Planet Name="Pegasus_Prelude_Planet_M1B_129">
+    <Variant_Of_Existing_Type>M1B_129</Variant_Of_Existing_Type>
+    <Galactic_Position>-175.0, 25.0, 10.0</Galactic_Position>
+  </Planet>
+
+  <Planet Name="Pegasus_Prelude_Planet_M4X_337">
+    <Variant_Of_Existing_Type>M4X_337</Variant_Of_Existing_Type>
+    <Galactic_Position>75.0, -240.0, 10.0</Galactic_Position>
+  </Planet>
+
+  <Planet Name="Pegasus_Prelude_Planet_M35_117">
+    <Variant_Of_Existing_Type>M35_117</Variant_Of_Existing_Type>
+    <Galactic_Position>180.0, 120.0, 10.0</Galactic_Position>
+  </Planet>
+
+  <Planet Name="Pegasus_Prelude_Planet_M5R_179">
+    <Variant_Of_Existing_Type>M5R_179</Variant_Of_Existing_Type>
+    <Galactic_Position>-170.0, 160.0, 10.0</Galactic_Position>
+  </Planet>
+
+  <Planet Name="Pegasus_Prelude_Planet_M5S_224">
+    <Variant_Of_Existing_Type>M5S_224</Variant_Of_Existing_Type>
+    <Galactic_Position>235.0, 170.0, 10.0</Galactic_Position>
+  </Planet>
+
+  <Planet Name="Pegasus_Prelude_Planet_M2S_445">
+    <Variant_Of_Existing_Type>M2S_445</Variant_Of_Existing_Type>
+    <Galactic_Position>-40.0, 175.0, 10.0</Galactic_Position>
+  </Planet>
+
+  -->
+</Planets>
+
+============================================================
+FILE: Data\Xml\Planets_Systemlord_Alliance.xml
+============================================================
+
+<?xml version="1.0"?>
+<Planets>
+
+        <Planet Name="Systemlords_Galaxy_Core_Art_Model">
+                <Variant_Of_Existing_Type>Galaxy_Core_Art_Model_Milkyway</Variant_Of_Existing_Type>
+    <Scale_Factor>1.2</Scale_Factor>
+                <Galactic_Position>21.9, -9.3, 0.0</Galactic_Position>
+        </Planet>
+
+
+        <Planet Name="Allianz_Erde">
+                <Variant_Of_Existing_Type>Erde</Variant_Of_Existing_Type>
+                <Galactic_Position>-170.0, -120.0, 10.0</Galactic_Position>
+        </Planet>
+
+        <Planet Name="Allianz_Anubis_Heimatwelt">
+                <Galactic_Position>210.0, 220.0, 10.0</Galactic_Position>
+                <Variant_Of_Existing_Type>Anubis_Heimatwelt</Variant_Of_Existing_Type>
+        </Planet>
+
+        <Planet Name="Allianz_Tartarus">
+                <Galactic_Position>250.0, 80.0, 10.0</Galactic_Position>
+                <Variant_Of_Existing_Type>Tartarus</Variant_Of_Existing_Type>
+        </Planet>
+
+        <Planet Name="Allianz_Juna">
+                <Galactic_Position>6.0, 100.0, 10.0</Galactic_Position>
+                <Variant_Of_Existing_Type>Juna</Variant_Of_Existing_Type>
+        </Planet>
+
+        <Planet Name="Allianz_Delmak">
+                <Galactic_Position>100.0, -300.0, 10.0</Galactic_Position>
+                <Variant_Of_Existing_Type>Delmak</Variant_Of_Existing_Type>
+    <Special_Structures_Land>6</Special_Structures_Land>
+        </Planet>
+
+        <Planet Name="Allianz_Dakara">
+                <Galactic_Position>300.0, -105.0, 10.0</Galactic_Position>
+                <Variant_Of_Existing_Type>Dakara</Variant_Of_Existing_Type>
+        </Planet>
+
+        <Planet Name="Allianz_Tollana">
+                <Galactic_Position>-100.0, -400.0, 10.0</Galactic_Position>
+                <Variant_Of_Existing_Type>Tollana</Variant_Of_Existing_Type>
+        </Planet>
+
+        <Planet Name="Allianz_Hassara">
+                <Galactic_Position>0.0, 0.0, 10.0</Galactic_Position>
+                <Variant_Of_Existing_Type>Hassara</Variant_Of_Existing_Type>
+        </Planet>
+
+        <Planet Name="Allianz_CalMah">
+                <Galactic_Position>-80.0, -40.0, 10.0</Galactic_Position>
+                <Variant_Of_Existing_Type>CalMah</Variant_Of_Existing_Type>
+        </Planet>
+
+        <Planet Name="Allianz_Langara">
+                <Galactic_Position>300.0, -20.0, 10.0</Galactic_Position>
+                <Variant_Of_Existing_Type>Langara</Variant_Of_Existing_Type>
+        </Planet>
+
+        <Planet Name="Allianz_Pangar">
+                <Galactic_Position>200.0, -100.0, 10.0</Galactic_Position>
+                <Variant_Of_Existing_Type>Pangar</Variant_Of_Existing_Type>
+        </Planet>
+
+        <Planet Name="Allianz_Haktyl">
+                <Galactic_Position>-150.0, 130.0, 10.0</Galactic_Position>
+                <Variant_Of_Existing_Type>Haktyl</Variant_Of_Existing_Type>
+        </Planet>
+
+        <Planet Name="Allianz_Erebus">
+                <Galactic_Position>200.0, -280.0, 10.0</Galactic_Position>
+                <Variant_Of_Existing_Type>Erebus</Variant_Of_Existing_Type>
+        </Planet>
+
+        <Planet Name="Allianz_Entac">
+                <Galactic_Position>-130.0, 70.0, 10.0</Galactic_Position>
+                <Variant_Of_Existing_Type>Entac</Variant_Of_Existing_Type>
+        </Planet>
+
+        <Planet Name="Allianz_P3X_254">
+                <Galactic_Position>100.0, -115.0, 10.0</Galactic_Position>
+                <Variant_Of_Existing_Type>P3X_254</Variant_Of_Existing_Type>
+        </Planet>
+
+
+        <Planet Name="Allianz_P5S_117">
+                <Galactic_Position>-230.0, 0.0, 10.0</Galactic_Position>
+                <Variant_Of_Existing_Type>P5S_117</Variant_Of_Existing_Type>
+        </Planet>
+
+        <Planet Name="Allianz_Chulak">
+                <Galactic_Position>200.0, -200.0, 10.0</Galactic_Position>
+                <Variant_Of_Existing_Type>Chulak</Variant_Of_Existing_Type>
+        </Planet>
+
+        <Planet Name="Allianz_Vorash">
+                <Galactic_Position>-30.0, -240.0, 10.0</Galactic_Position>
+                <Variant_Of_Existing_Type>Vorash</Variant_Of_Existing_Type>
+        </Planet>
+
+        <Planet Name="Allianz_Revanna">
+                <Galactic_Position>-250.0, 180.0, 10.0</Galactic_Position>
+                <Variant_Of_Existing_Type>Revanna</Variant_Of_Existing_Type>
+        </Planet>
+
+        <Planet Name="Allianz_AlphaBasis">
+                <Galactic_Position>-155.0, -250.0, 10.0</Galactic_Position>
+                <Variant_Of_Existing_Type>AlphaBasis</Variant_Of_Existing_Type>
+        </Planet>
+
+        <Planet Name="Allianz_YUs_Heimatwelt">
+                <Galactic_Position>-60.0, 50.0, 10.0</Galactic_Position>
+                <Variant_Of_Existing_Type>YUs_Heimatwelt</Variant_Of_Existing_Type>
+    <Special_Structures_Land>6</Special_Structures_Land>
+        </Planet>
+
+        <Planet Name="Allianz_HathorHeimatwelt">
+                <Galactic_Position>100.0, 8.0, 10.0</Galactic_Position>
+                <Variant_Of_Existing_Type>HathorHeimatwelt</Variant_Of_Existing_Type>
+        </Planet>
+
+        <Planet Name="Allianz_Tagrea"> <!--x-303 Vorfall Taktische Mission Goauld -->
+                <Galactic_Position>110.0, 280.0, 10.0</Galactic_Position>
+                <Variant_Of_Existing_Type>Tagrea</Variant_Of_Existing_Type>
+        </Planet>
+
+        <Planet Name="Allianz_Kheb">
+                <Galactic_Position>180.0, 160.0, 10.0</Galactic_Position>
+                <Variant_Of_Existing_Type>Kheb</Variant_Of_Existing_Type>
+        </Planet>
+
+        <Planet Name="Allianz_P3X_116">
+                <Galactic_Position>99.0, -230.0, 10.0</Galactic_Position>
+                <Variant_Of_Existing_Type>P3X_116</Variant_Of_Existing_Type>
+        </Planet>
+
+        <Planet Name="Allianz_P3S_114">
+                <Galactic_Position>30.0, 250.0, 10.0</Galactic_Position>
+                <Variant_Of_Existing_Type>P3S_114</Variant_Of_Existing_Type>
+        </Planet>
+
+
+        <Planet Name="Allianz_P3X_666">
+                <Galactic_Position>-70.0, 230.0, 10.0</Galactic_Position>
+                <Variant_Of_Existing_Type>P3X_666</Variant_Of_Existing_Type>
+        </Planet>
+
+        <Planet Name="Allianz_P3X_367">
+                <Galactic_Position>-30.0, -140.0, 10.0</Galactic_Position>
+                <Variant_Of_Existing_Type>P3X_367</Variant_Of_Existing_Type>
+        </Planet>
+
+        <Planet Name="Allianz_Latona">
+                <Galactic_Position>170.0, -405.0, 10.0</Galactic_Position>
+                <Variant_Of_Existing_Type>Latona</Variant_Of_Existing_Type>
+        </Planet>
+
+        <Planet Name="Allianz_PX9_757">
+                <Galactic_Position>70.0, 80.0, 10.0</Galactic_Position>
+                <Variant_Of_Existing_Type>PX9_757</Variant_Of_Existing_Type>
+        </Planet>
+
+
+</Planets
