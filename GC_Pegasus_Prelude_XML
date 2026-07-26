@@ -1,0 +1,428 @@
+<?xml version="1.0"?>
+<Campaigns>
+
+<!-- ************************************************************************** -->
+<!-- ******************* SANDBOX CAMPAIGN "Pegasus Prelude" ******************* -->
+<!-- ************************************************************************** -->
+
+
+   <Campaign Name="Pegasus_Prelude_Ancients">
+
+      <Campaign_Set> Sandbox_Pegasus_Prelude_GC </Campaign_Set>
+      <Sort_Order>5</Sort_Order>
+      
+      <Text_ID>TEXT_CAMPAIGN_SINGLE_PEGASUS_PRELUDE_TITLE_U</Text_ID>
+      <Description_Text>TEXT_CAMPAIGN_SINGLE_DESCRIPTION_PEGASUS_PRELUDE</Description_Text>
+
+      <Camera_Shift_X> 40.0 </Camera_Shift_X>
+      <Camera_Shift_Y> 0.0 </Camera_Shift_Y>
+      <Camera_Distance> 1200.0 </Camera_Distance>
+
+      <Locations> 
+      Pegasus_Prelude_Galaxy_Core_Art_Model,
+      Pegasus_Prelude_Planet_Ascension,
+      Pegasus_Prelude_Planet_Asteroid_Field,
+      Pegasus_Prelude_Planet_Asuras,
+      Pegasus_Prelude_Planet_Athos,
+      Pegasus_Prelude_Planet_Aurora,
+      Pegasus_Prelude_Planet_Belkan,
+      Pegasus_Prelude_Planet_Dagan,
+      Pegasus_Prelude_Planet_Doranda,
+      Pegasus_Prelude_Planet_Edowin,
+      Pegasus_Prelude_Planet_Gas_Nebula,
+      Pegasus_Prelude_Planet_Gelda,
+      Pegasus_Prelude_Planet_Gonta,
+      Pegasus_Prelude_Planet_Hoff,
+      Pegasus_Prelude_Planet_Iratus_Bestiola,
+      Pegasus_Prelude_Planet_Jenev,
+      Pegasus_Prelude_Planet_Kohal,
+      Pegasus_Prelude_Planet_Lantea,
+      Pegasus_Prelude_Planet_Laros,
+      Pegasus_Prelude_Planet_M6H_987,
+      Pegasus_Prelude_Planet_Manaria,
+      Pegasus_Prelude_Planet_Olesia,
+      Pegasus_Prelude_Planet_Orakis,
+      Pegasus_Prelude_Planet_Orlan,
+      Pegasus_Prelude_Planet_Proculis,
+      Pegasus_Prelude_Planet_Rasputin,
+      Pegasus_Prelude_Planet_Sagon,
+      Pegasus_Prelude_Planet_Sun,
+      Pegasus_Prelude_Planet_Taranis,
+      Pegasus_Prelude_Planet_Vadena,
+      Pegasus_Prelude_Planet_Wraith_Homeworld,
+      Pegasus_Prelude_Planet_Wraith_ZPM_Base 
+      </Locations>
+
+      <Trade_Routes>   
+      PP_Asteroid_Field_Wraith_ZPM_Base,
+      PP_Athos_Belkan,
+      PP_Aurora_Dagan,
+      PP_Belkan_Doranda,
+      PP_Belkan_Orlan,
+      PP_Doranda_Ascension,
+      PP_Doranda_Laros,
+      PP_Doranda_Rasputin,
+      PP_Gas_Nebula_Hoff,
+      PP_Gas_Nebula_Iratus_Bestiola,
+      PP_Gas_Nebula_Laros,
+      PP_Gelda_Asuras,
+      PP_Gelda_Aurora,
+      PP_Gonta_Proculis,
+      PP_Gonta_Taranis,
+      PP_Gonta_ZPM_Base
+      PP_Hoff_Vadena,
+      PP_Iratus_Bestiola_Wraith_Homeworld,
+      PP_Jenev_Gelda,
+      PP_Jenev_M6H_987,
+      PP_Jenev_Manria,
+      PP_Kohal_Edowin,
+      PP_Lantea_Athos,
+      PP_Lantea_Orakis,
+      PP_M6H_987_Orakis,
+      PP_Manaria_Edowin,
+      PP_Manaria_Orlan,
+      PP_Manaria_Rasputin,
+      PP_Olesia_ZPM_Base,
+      PP_Orakis_Jenev,
+      PP_Orlan_Rasputin,
+      PP_Proculis_Olesia,
+      PP_Proculis_Wraith_ZPM_Base,
+      PP_Sagon_Gas_Nebula,
+      PP_Sagon_Hoff,
+      PP_Sagon_Laros,
+      PP_Sun_Edowin,
+      PP_Sun_Hoff,
+      PP_Sun_Rasputin,
+      PP_Sun_Sagon,
+      PP_Taranis_Asteroid_Field,
+      PP_Taranis_Dagan,
+      PP_Vadena_Proculis,
+      </Trade_Routes>
+
+      <Home_Location> Empire, Pegasus_Prelude_Planet_Wraith_Homeworld </Home_Location>
+      <Home_Location> Underworld, Pegasus_Prelude_Planet_Lantea </Home_Location>
+      <Home_Location> Asuran, Pegasus_Prelude_Planet_Asuras </Home_Location>
+
+      <Starting_Active_Player> Underworld </Starting_Active_Player>
+
+      <Empire_Story_Name>Story_Plots_Sandbox_Pegasus_Prelude_AI_Wraith.xml</Empire_Story_Name>
+      <Underworld_Story_Name>Story_Plots_Sandbox_Pegasus_Prelude_Tauri.xml</Underworld_Story_Name>
+        
+      <AI_Player_Control> Empire, Wraith_Player_PP </AI_Player_Control>
+      <!-- This needs more fine control in the story file due to some stupid bug where the Asurans win the GC
+           if they are allied with the player and have an AI
+      <AI_Player_Control> Asuran, None  </AI_Player_Control>-->
+      
+      <Markup_Filename>Empire, PegasusPreludeHints </Markup_Filename>
+      <Markup_Filename>Underworld, PegasusPreludeHints </Markup_Filename>
+      <Markup_Filename>Asuran, PegasusPreludeHints </Markup_Filename>
+      
+      <Supports_Custom_Settings>False</Supports_Custom_Settings>
+      <Show_Completed_Tab>True</Show_Completed_Tab>
+
+      <Human_Victory_Conditions>
+         Galactic_All_Planets_Controlled
+      </Human_Victory_Conditions>
+      <AI_Victory_Conditions>
+         Galactic_All_Planets_Controlled
+      </AI_Victory_Conditions>
+    
+      <Is_Multiplayer> No </Is_Multiplayer>
+    
+      <!-- Wraith Starting Forces -->
+    
+      <Starting_Credits> Empire,  100 </Starting_Credits>
+      <Starting_Tech_Level> Empire, 5 </Starting_Tech_Level>
+      <Max_Tech_Level> Empire, 5 </Max_Tech_Level>          
+      
+      <Starting_Forces> Empire, Pegasus_Prelude_Planet_Wraith_Homeworld, Empire_Star_Base_5 </Starting_Forces>
+      <Starting_Forces> Empire, Pegasus_Prelude_Planet_Wraith_Homeworld, wraith_Defense_Satellite_ANTICAPITAL_SS </Starting_Forces> 
+      <Starting_Forces> Empire, Pegasus_Prelude_Planet_Wraith_Homeworld, Wraith_Large_Shipyard </Starting_Forces> 
+      
+      <Starting_Forces> Empire, Pegasus_Prelude_Planet_Edowin, Empire_Star_Base_1 </Starting_Forces>
+      <Starting_Forces> Empire, Pegasus_Prelude_Planet_Edowin, wraith_Defense_Satellite_ANTIFIGHTER_SS </Starting_Forces>
+      <Starting_Forces> Empire, Pegasus_Prelude_Planet_Edowin, wraith_Defense_Satellite_ANTICAPITAL_SS </Starting_Forces>
+      
+      <Starting_Forces> Empire, Pegasus_Prelude_Planet_Kohal, Empire_Star_Base_1 </Starting_Forces>
+      <Starting_Forces> Empire, Pegasus_Prelude_Planet_Kohal, Wraith_Large_Shipyard </Starting_Forces>
+      
+      <Starting_Forces> Empire, Pegasus_Prelude_Planet_Laros, Empire_Star_Base_2 </Starting_Forces>
+      <Starting_Forces> Empire, Pegasus_Prelude_Planet_Laros, Wraith_Hangar </Starting_Forces>
+      
+      <Starting_Forces> Empire, Pegasus_Prelude_Planet_Sagon, Empire_Star_Base_1 </Starting_Forces>
+      <Starting_Forces> Empire, Pegasus_Prelude_Planet_Sagon, wraith_Defense_Satellite_ANTIFIGHTER_SS </Starting_Forces>
+      <Starting_Forces> Empire, Pegasus_Prelude_Planet_Sagon, Wraith_Hangar </Starting_Forces>
+      
+      <Starting_Forces> Empire, Pegasus_Prelude_Planet_Hoff, Empire_Star_Base_4 </Starting_Forces>
+      
+      <Starting_Forces> Empire, Pegasus_Prelude_Planet_Vadena, Empire_Star_Base_4 </Starting_Forces>  
+      <Starting_Forces> Empire, Pegasus_Prelude_Planet_Vadena, Wraith_Large_Shipyard </Starting_Forces>
+      <Starting_Forces> Empire, Pegasus_Prelude_Planet_Vadena, Wraith_Hangar </Starting_Forces>
+      
+      <Starting_Forces> Empire, Pegasus_Prelude_Planet_Gonta, Empire_Star_Base_1 </Starting_Forces>
+      <Starting_Forces> Empire, Pegasus_Prelude_Planet_Gonta, wraith_Defense_Satellite_ANTIFIGHTER_SS </Starting_Forces>
+      
+      <Starting_Forces> Empire, Pegasus_Prelude_Planet_Proculis, Empire_Star_Base_1 </Starting_Forces>
+      
+      <Starting_Forces> Empire, Pegasus_Prelude_Planet_Wraith_ZPM_Base, Empire_Star_Base_5 </Starting_Forces> 
+      <Starting_Forces> Empire, Pegasus_Prelude_Planet_Wraith_ZPM_Base, Tartan_Patrol_Cruiser_PP </Starting_Forces>
+      <Starting_Forces> Empire, Pegasus_Prelude_Planet_Wraith_ZPM_Base, Tartan_Patrol_Cruiser_PP </Starting_Forces>
+      <Starting_Forces> Empire, Pegasus_Prelude_Planet_Wraith_ZPM_Base, TIE_Fighter_Squadron_PP </Starting_Forces>
+      <Starting_Forces> Empire, Pegasus_Prelude_Planet_Wraith_ZPM_Base, TIE_Fighter_Squadron_PP </Starting_Forces>
+      <Starting_Forces> Empire, Pegasus_Prelude_Planet_Wraith_ZPM_Base, Wraith_Large_Shipyard </Starting_Forces>
+      <Starting_Forces> Empire, Pegasus_Prelude_Planet_Wraith_ZPM_Base, Empire_Defense_Satellite_Repair_SS </Starting_Forces> 
+       
+      <Starting_Forces> Empire, Pegasus_Prelude_Planet_Olesia, Broadside_Class_Cruiser_PP </Starting_Forces>
+      <Starting_Forces> Empire, Pegasus_Prelude_Planet_Olesia, Acclamator_Assault_Ship_PP </Starting_Forces>
+      
+      <Starting_Forces> Empire, Pegasus_Prelude_Planet_Iratus_Bestiola, Empire_Star_Base_3 </Starting_Forces>
+      <Starting_Forces> Empire, Pegasus_Prelude_Planet_Iratus_Bestiola, Victory_Destroyer_PP </Starting_Forces>
+      <Starting_Forces> Empire, Pegasus_Prelude_Planet_Iratus_Bestiola, Tartan_Patrol_Cruiser_PP </Starting_Forces>
+      <Starting_Forces> Empire, Pegasus_Prelude_Planet_Iratus_Bestiola, TIE_Defender_Squadron_PP </Starting_Forces>
+      <Starting_Forces> Empire, Pegasus_Prelude_Planet_Iratus_Bestiola, wraith_Defense_Satellite_ANTICAPITAL_SS </Starting_Forces> 
+      <Starting_Forces> Empire, Pegasus_Prelude_Planet_Iratus_Bestiola, Empire_Defense_Satellite_Repair_SS </Starting_Forces> 
+      
+      <!-- Ancient Starting Forces -->
+      
+      <Starting_Credits> Underworld,  4000 </Starting_Credits>
+      <Starting_Tech_Level> Underworld, 5 </Starting_Tech_Level>
+      <Max_Tech_Level> Underworld, 5 </Max_Tech_Level>
+
+      <Starting_Forces> Underworld, Pegasus_Prelude_Planet_Lantea, Ancient_Star_Base_3 </Starting_Forces>
+      <Starting_Forces> Underworld, Pegasus_Prelude_Planet_Lantea, Ancient_Frigate </Starting_Forces>
+      <Starting_Forces> Underworld, Pegasus_Prelude_Planet_Lantea, Ancient_Frigate </Starting_Forces>
+      <Starting_Forces> Underworld, Pegasus_Prelude_Planet_Lantea, Ancient_Corvette </Starting_Forces>
+      <Starting_Forces> Underworld, Pegasus_Prelude_Planet_Lantea, Ancient_Corvette </Starting_Forces>
+      <Starting_Forces> Underworld, Pegasus_Prelude_Planet_Lantea, Ancient_Jumper_Squadron </Starting_Forces>
+      <Starting_Forces> Underworld, Pegasus_Prelude_Planet_Lantea, Ancient_Jumper_Squadron </Starting_Forces>
+      <Starting_Forces> Underworld, Pegasus_Prelude_Planet_Lantea, Ancient_Jumper_Squadron </Starting_Forces>
+    
+      <Starting_Forces> Underworld, Pegasus_Prelude_Planet_Ascension, Ancient_Jumper_Squadron </Starting_Forces>
+      <Starting_Forces> Underworld, Pegasus_Prelude_Planet_Asuras, Ancient_Star_Base_1 </Starting_Forces>
+      <Starting_Forces> Underworld, Pegasus_Prelude_Planet_Athos, Ancient_Jumper_Squadron </Starting_Forces>
+      <Starting_Forces> Underworld, Pegasus_Prelude_Planet_Aurora, Ancient_Corvette </Starting_Forces>
+      <Starting_Forces> Underworld, Pegasus_Prelude_Planet_Belkan, Ancient_Star_Base_1 </Starting_Forces>
+      <Starting_Forces> Underworld, Pegasus_Prelude_Planet_Dagan, Ancient_Jumper_Squadron </Starting_Forces>
+      <Starting_Forces> Underworld, Pegasus_Prelude_Planet_Doranda, Ancient_Destroyer </Starting_Forces>
+      <Starting_Forces> Underworld, Pegasus_Prelude_Planet_Doranda, Ancient_Jumper_Squadron </Starting_Forces>
+      <Starting_Forces> Underworld, Pegasus_Prelude_Planet_Doranda, Ancient_Star_Base_2 </Starting_Forces>
+      <Starting_Forces> Underworld, Pegasus_Prelude_Planet_Gelda, Ancient_Frigate </Starting_Forces>
+      <Starting_Forces> Underworld, Pegasus_Prelude_Planet_Jenev, Ancient_Jumper_Squadron </Starting_Forces>
+      <Starting_Forces> Underworld, Pegasus_Prelude_Planet_M6H_987, Ancient_Frigate </Starting_Forces>
+      <Starting_Forces> Underworld, Pegasus_Prelude_Planet_M6H_987, Ancient_Star_Base_2 </Starting_Forces>
+      <Starting_Forces> Underworld, Pegasus_Prelude_Planet_Manaria, Ancient_Corvette </Starting_Forces>
+      <Starting_Forces> Underworld, Pegasus_Prelude_Planet_Manaria, Ancient_Jumper_Squadron </Starting_Forces>
+      <Starting_Forces> Underworld, Pegasus_Prelude_Planet_Orakis, Ancient_Star_Base_1 </Starting_Forces>
+      <Starting_Forces> Underworld, Pegasus_Prelude_Planet_Orlan, Ancient_Jumper_Squadron </Starting_Forces>
+      <Starting_Forces> Underworld, Pegasus_Prelude_Planet_Rasputin, Ancient_Corvette </Starting_Forces>
+      <Starting_Forces> Underworld, Pegasus_Prelude_Planet_Taranis, Ancient_Corvette </Starting_Forces>
+      <Starting_Forces> Underworld, Pegasus_Prelude_Planet_Taranis, Ancient_Frigate </Starting_Forces>
+      <Starting_Forces> Underworld, Pegasus_Prelude_Planet_Taranis, Ancient_Jumper_Squadron </Starting_Forces>
+    
+   </Campaign>
+
+
+   <Campaign Name="Pegasus_Prelude_Wraith">
+
+      <Campaign_Set> Sandbox_Pegasus_Prelude_GC </Campaign_Set>
+      <Sort_Order>5</Sort_Order>
+
+      <Text_ID>TEXT_CAMPAIGN_SINGLE_PEGASUS_PRELUDE_TITLE_U</Text_ID>
+      <Description_Text>TEXT_CAMPAIGN_SINGLE_DESCRIPTION_PEGASUS_PRELUDE</Description_Text>
+
+      <Camera_Shift_X> 600.0 </Camera_Shift_X>  
+      <Camera_Shift_Y> 5900.0 </Camera_Shift_Y>   
+      <Camera_Distance> 1200.0 </Camera_Distance>
+
+      <Locations> 
+      Pegasus_Prelude_Galaxy_Core_Art_Model,
+      Pegasus_Prelude_Planet_Ascension,
+      Pegasus_Prelude_Planet_Asteroid_Field,
+      Pegasus_Prelude_Planet_Asuras,
+      Pegasus_Prelude_Planet_Athos,
+      Pegasus_Prelude_Planet_Aurora,
+      Pegasus_Prelude_Planet_Belkan,
+      Pegasus_Prelude_Planet_Dagan,
+      Pegasus_Prelude_Planet_Doranda,
+      Pegasus_Prelude_Planet_Edowin,
+      Pegasus_Prelude_Planet_Gas_Nebula,
+      Pegasus_Prelude_Planet_Gelda,
+      Pegasus_Prelude_Planet_Gonta,
+      Pegasus_Prelude_Planet_Hoff,
+      Pegasus_Prelude_Planet_Iratus_Bestiola,
+      Pegasus_Prelude_Planet_Jenev,
+      Pegasus_Prelude_Planet_Kohal,
+      Pegasus_Prelude_Planet_Lantea,
+      Pegasus_Prelude_Planet_Laros,
+      Pegasus_Prelude_Planet_M6H_987,
+      Pegasus_Prelude_Planet_Manaria,
+      Pegasus_Prelude_Planet_Olesia,
+      Pegasus_Prelude_Planet_Orakis,
+      Pegasus_Prelude_Planet_Orlan,
+      Pegasus_Prelude_Planet_Proculis,
+      Pegasus_Prelude_Planet_Rasputin,
+      Pegasus_Prelude_Planet_Sagon,
+      Pegasus_Prelude_Planet_Sun,
+      Pegasus_Prelude_Planet_Taranis,
+      Pegasus_Prelude_Planet_Vadena,
+      Pegasus_Prelude_Planet_Wraith_Homeworld,
+      Pegasus_Prelude_Planet_Wraith_ZPM_Base 
+      </Locations>
+      
+      <Trade_Routes>
+      PP_Asteroid_Field_Wraith_ZPM_Base,
+      PP_Athos_Belkan,
+      PP_Aurora_Dagan,
+      PP_Belkan_Doranda,
+      PP_Belkan_Orlan,
+      PP_Doranda_Ascension,
+      PP_Doranda_Laros,
+      PP_Doranda_Rasputin,
+      PP_Gas_Nebula_Hoff,
+      PP_Gas_Nebula_Iratus_Bestiola,
+      PP_Gas_Nebula_Laros,
+      PP_Gelda_Asuras,
+      PP_Gelda_Aurora,
+      PP_Gonta_Proculis,
+      PP_Gonta_Taranis,
+      PP_Gonta_ZPM_Base
+      PP_Hoff_Vadena,
+      PP_Iratus_Bestiola_Wraith_Homeworld,
+      PP_Jenev_Gelda,
+      PP_Jenev_M6H_987,
+      PP_Jenev_Manria,
+      PP_Kohal_Edowin,
+      PP_Lantea_Athos,
+      PP_Lantea_Orakis,
+      PP_M6H_987_Orakis,
+      PP_Manaria_Edowin,
+      PP_Manaria_Orlan,
+      PP_Manaria_Rasputin,
+      PP_Olesia_ZPM_Base,
+      PP_Orakis_Jenev,
+      PP_Orlan_Rasputin,
+      PP_Proculis_Olesia,
+      PP_Proculis_Wraith_ZPM_Base,
+      PP_Sagon_Gas_Nebula,
+      PP_Sagon_Hoff,
+      PP_Sagon_Laros,
+      PP_Sun_Edowin,
+      PP_Sun_Hoff,
+      PP_Sun_Rasputin,
+      PP_Sun_Sagon,
+      PP_Taranis_Asteroid_Field,
+      PP_Taranis_Dagan,
+      PP_Vadena_Proculis,
+      </Trade_Routes>
+
+      <Home_Location> Empire, Pegasus_Prelude_Planet_Wraith_Homeworld </Home_Location>
+      <Home_Location> Underworld, Pegasus_Prelude_Planet_Lantea </Home_Location>
+      <Home_Location> Asuran, Pegasus_Prelude_Planet_Asuras </Home_Location>
+    
+      <Starting_Active_Player> Empire </Starting_Active_Player>
+
+      <Empire_Story_Name>Story_Plots_Sandbox_Pegasus_Prelude_Wraith.xml</Empire_Story_Name>
+      <Underworld_Story_Name>Story_Plots_Sandbox_Pegasus_Prelude_AI_Tauri.xml</Underworld_Story_Name>
+        
+      <AI_Player_Control> Underworld, Ancient_Player_PP </AI_Player_Control>
+      <AI_Player_Control> Asuran, None  </AI_Player_Control>
+      
+      <Markup_Filename>Empire, PegasusPreludeHints </Markup_Filename>
+      <Markup_Filename>Underworld, PegasusPreludeHints </Markup_Filename>
+      <Markup_Filename>Asuran, PegasusPreludeHints </Markup_Filename>
+      
+      <Supports_Custom_Settings>False</Supports_Custom_Settings>
+      <Show_Completed_Tab>True</Show_Completed_Tab>
+
+      <Human_Victory_Conditions>
+         Galactic_All_Planets_Controlled
+      </Human_Victory_Conditions>
+      <AI_Victory_Conditions>
+         Galactic_All_Planets_Controlled
+      </AI_Victory_Conditions>
+    
+      <Is_Multiplayer> No </Is_Multiplayer>
+
+      <!-- Wraith Starting Forces -->
+    
+      <Starting_Credits> Empire,  10000 </Starting_Credits>
+      <Starting_Tech_Level> Empire, 5 </Starting_Tech_Level>
+      <Max_Tech_Level> Empire, 5 </Max_Tech_Level>    
+      
+      <Starting_Forces> Empire, Pegasus_Prelude_Planet_Wraith_Homeworld, Empire_Star_Base_3 </Starting_Forces>
+      <Starting_Forces> Empire, Pegasus_Prelude_Planet_Wraith_Homeworld, Interdictor_Cruiser_PP </Starting_Forces>
+      <Starting_Forces> Empire, Pegasus_Prelude_Planet_Wraith_Homeworld, Interdictor_Cruiser_PP </Starting_Forces>
+      <Starting_Forces> Empire, Pegasus_Prelude_Planet_Wraith_Homeworld, Interdictor_Cruiser_PP </Starting_Forces>
+      <Starting_Forces> Empire, Pegasus_Prelude_Planet_Wraith_Homeworld, Interdictor_Cruiser_PP </Starting_Forces>
+      <Starting_Forces> Empire, Pegasus_Prelude_Planet_Wraith_Homeworld, TIE_Fighter_Squadron_PP </Starting_Forces>
+      <Starting_Forces> Empire, Pegasus_Prelude_Planet_Wraith_Homeworld, TIE_Fighter_Squadron_PP </Starting_Forces>
+      <Starting_Forces> Empire, Pegasus_Prelude_Planet_Wraith_Homeworld, TIE_Fighter_Squadron_PP </Starting_Forces>
+      <Starting_Forces> Empire, Pegasus_Prelude_Planet_Wraith_Homeworld, TIE_Fighter_Squadron_PP </Starting_Forces>
+      <Starting_Forces> Empire, Pegasus_Prelude_Planet_Wraith_Homeworld, TIE_Bomber_Squadron_PP </Starting_Forces>
+      <Starting_Forces> Empire, Pegasus_Prelude_Planet_Wraith_Homeworld, TIE_Bomber_Squadron_PP </Starting_Forces>
+      <Starting_Forces> Empire, Pegasus_Prelude_Planet_Wraith_Homeworld, Probe_Droid_Team </Starting_Forces>
+      <Starting_Forces> Empire, Pegasus_Prelude_Planet_Wraith_Homeworld, wraith_Defense_Satellite_ANTICAPITAL_SS </Starting_Forces> 
+     
+      <Starting_Forces> Empire, Pegasus_Prelude_Planet_Iratus_Bestiola, Empire_Star_Base_3 </Starting_Forces>
+      <Starting_Forces> Empire, Pegasus_Prelude_Planet_Iratus_Bestiola, Interdictor_Cruiser_PP </Starting_Forces>
+      <Starting_Forces> Empire, Pegasus_Prelude_Planet_Iratus_Bestiola, TIE_Fighter_Squadron_PP </Starting_Forces>
+      <Starting_Forces> Empire, Pegasus_Prelude_Planet_Iratus_Bestiola, TIE_Fighter_Squadron_PP </Starting_Forces>
+      <Starting_Forces> Empire, Pegasus_Prelude_Planet_Iratus_Bestiola, TIE_Fighter_Squadron_PP </Starting_Forces>
+      <Starting_Forces> Empire, Pegasus_Prelude_Planet_Iratus_Bestiola, TIE_Fighter_Squadron_PP </Starting_Forces>
+      <Starting_Forces> Empire, Pegasus_Prelude_Planet_Iratus_Bestiola, TIE_Fighter_Squadron_PP </Starting_Forces>
+      <Starting_Forces> Empire, Pegasus_Prelude_Planet_Iratus_Bestiola, TIE_Fighter_Squadron_PP </Starting_Forces>
+      <Starting_Forces> Empire, Pegasus_Prelude_Planet_Iratus_Bestiola, TIE_Bomber_Squadron_PP </Starting_Forces>
+      <Starting_Forces> Empire, Pegasus_Prelude_Planet_Iratus_Bestiola, TIE_Bomber_Squadron_PP </Starting_Forces>
+      <Starting_Forces> Empire, Pegasus_Prelude_Planet_Iratus_Bestiola, TIE_Bomber_Squadron_PP </Starting_Forces>
+      <Starting_Forces> Empire, Pegasus_Prelude_Planet_Iratus_Bestiola, TIE_Bomber_Squadron_PP </Starting_Forces>
+    
+      <Starting_Forces> Empire, Pegasus_Prelude_Planet_Sagon, Empire_Star_Base_3 </Starting_Forces>
+      <Starting_Forces> Empire, Pegasus_Prelude_Planet_Sagon, Interdictor_Cruiser_PP </Starting_Forces>
+      <Starting_Forces> Empire, Pegasus_Prelude_Planet_Sagon, Interdictor_Cruiser_PP </Starting_Forces>
+      <Starting_Forces> Empire, Pegasus_Prelude_Planet_Sagon, Interdictor_Cruiser_PP </Starting_Forces>
+      <Starting_Forces> Empire, Pegasus_Prelude_Planet_Sagon, TIE_Fighter_Squadron_PP </Starting_Forces>
+      <Starting_Forces> Empire, Pegasus_Prelude_Planet_Sagon, TIE_Fighter_Squadron_PP </Starting_Forces>
+      <Starting_Forces> Empire, Pegasus_Prelude_Planet_Sagon, TIE_Fighter_Squadron_PP </Starting_Forces>
+      <Starting_Forces> Empire, Pegasus_Prelude_Planet_Sagon, TIE_Bomber_Squadron_PP </Starting_Forces>
+      <Starting_Forces> Empire, Pegasus_Prelude_Planet_Sagon, TIE_Bomber_Squadron_PP </Starting_Forces>
+
+      <Starting_Forces> Empire, Pegasus_Prelude_Planet_Hoff, Empire_Star_Base_2 </Starting_Forces>
+      <Starting_Forces> Empire, Pegasus_Prelude_Planet_Hoff, Interdictor_Cruiser_PP </Starting_Forces>
+      <Starting_Forces> Empire, Pegasus_Prelude_Planet_Hoff, Interdictor_Cruiser_PP </Starting_Forces>
+      <Starting_Forces> Empire, Pegasus_Prelude_Planet_Hoff, TIE_Fighter_Squadron_PP </Starting_Forces>
+      <Starting_Forces> Empire, Pegasus_Prelude_Planet_Hoff, TIE_Fighter_Squadron_PP </Starting_Forces>
+
+      <Starting_Forces> Empire, Pegasus_Prelude_Planet_Vadena, Empire_Star_Base_2 </Starting_Forces>
+      <Starting_Forces> Empire, Pegasus_Prelude_Planet_Vadena, Interdictor_Cruiser_PP </Starting_Forces>
+      <Starting_Forces> Empire, Pegasus_Prelude_Planet_Vadena, Interdictor_Cruiser_PP </Starting_Forces>
+      <Starting_Forces> Empire, Pegasus_Prelude_Planet_Vadena, Interdictor_Cruiser_PP </Starting_Forces>
+      <Starting_Forces> Empire, Pegasus_Prelude_Planet_Vadena, TIE_Fighter_Squadron_PP </Starting_Forces>
+      <Starting_Forces> Empire, Pegasus_Prelude_Planet_Vadena, TIE_Fighter_Squadron_PP </Starting_Forces>
+      <Starting_Forces> Empire, Pegasus_Prelude_Planet_Vadena, TIE_Fighter_Squadron_PP </Starting_Forces>     
+      
+      <!-- Ancient Starting Forces -->
+
+      <Starting_Credits> Underworld,  1000 </Starting_Credits>
+      <Starting_Tech_Level> Underworld, 5 </Starting_Tech_Level>
+      <Max_Tech_Level> Underworld, 5 </Max_Tech_Level>
+
+      <Starting_Forces> Underworld, Pegasus_Prelude_Planet_Gonta, Ancient_Star_Base_1 </Starting_Forces>
+      <Starting_Forces> Underworld, Pegasus_Prelude_Planet_Lantea, Ancient_Star_Base_5 </Starting_Forces>     
+      <Starting_Forces> Underworld, Pegasus_Prelude_Planet_Ascension, Ancient_Jumper_Squadron </Starting_Forces>
+      <Starting_Forces> Underworld, Pegasus_Prelude_Planet_Asuras, Ancient_Star_Base_3 </Starting_Forces>
+      <Starting_Forces> Underworld, Pegasus_Prelude_Planet_Athos, Ancient_Star_Base_3 </Starting_Forces>
+      <Starting_Forces> Underworld, Pegasus_Prelude_Planet_Belkan, Ancient_Star_Base_3 </Starting_Forces>
+      <Starting_Forces> Underworld, Pegasus_Prelude_Planet_Kohal, Ancient_Jumper_Squadron </Starting_Forces>     
+      <Starting_Forces> Underworld, Pegasus_Prelude_Planet_Doranda, Ancient_Star_Base_5 </Starting_Forces>
+      <Starting_Forces> Underworld, Pegasus_Prelude_Planet_Gelda, Ancient_Frigate </Starting_Forces>
+      <Starting_Forces> Underworld, Pegasus_Prelude_Planet_Jenev, Ancient_Jumper_Squadron </Starting_Forces>
+      <Starting_Forces> Underworld, Pegasus_Prelude_Planet_Orakis, Ancient_Star_Base_4 </Starting_Forces>
+      <Starting_Forces> Underworld, Pegasus_Prelude_Planet_Orlan, Ancient_Jumper_Squadron </Starting_Forces>    
+      <Starting_Forces> Underworld, Pegasus_Prelude_Planet_Edowin, Ancient_Jumper_Squadron </Starting_Forces>
+      <Starting_Forces> Underworld, Pegasus_Prelude_Planet_Rasputin, Ancient_Jumper_Squadron </Starting_Forces>
+      <Starting_Forces> Underworld, Pegasus_Prelude_Planet_Taranis, Ancient_Star_Base_3 </Starting_Forces>
+      
+   </Campaign>
+
+    
+</Campaigns>
