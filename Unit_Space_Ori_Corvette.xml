@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<SpaceUnits>
+  
+  <SpaceUnit Name="Ori_Corvette">
+    <Variant_Of_Existing_Type>Template_Space_Unit_Corvette</Variant_Of_Existing_Type>    
+    <Text_ID>TEXT_ORI_SPACE_UNIT_CORVETTE</Text_ID>
+    <Encyclopedia_Text>TEXT_DESCRIPTION_ORI_CORVETTE_SPACE</Encyclopedia_Text>
+	 <Encyclopedia_Good_Against></Encyclopedia_Good_Against>
+	 <Encyclopedia_Vulnerable_To></Encyclopedia_Vulnerable_To>
+    <Icon_Name>ORI_SPACE_UNIT_CORVETTE.tga</Icon_Name>
+    <Space_Model_Name>Ori_Space_Unit_Corvette.alo</Space_Model_Name>
+    <Galactic_Fleet_Override_Model_Name>W_planet_fleet_OriCorvette.ALO</Galactic_Fleet_Override_Model_Name>
+    <Radar_Icon_Name>I_RADAR_ORI_CORVETTE.tga</Radar_Icon_Name>
+    <Radar_Icon_Size>0.056  0.064</Radar_Icon_Size>
+    <Layer_Z_Adjust>-100</Layer_Z_Adjust>
+
+      <SFXEvent_Select>Unit_Select_Ori_P</SFXEvent_Select>
+      <SFXEvent_Move>Unit_Move_Ori_P</SFXEvent_Move>
+	<SFXEvent_Attack>Unit_Attack_Ori_P</SFXEvent_Attack>
+	<SFXEvent_Attack>Unit_Spawn_Ori_P</SFXEvent_Attack>
+
+    <GUI_Bounds_Scale>0.3</GUI_Bounds_Scale> 
+    <Select_Box_Scale>130</Select_Box_Scale>
+    <Select_Box_Z_Adjust>-300</Select_Box_Z_Adjust>
+    <Tactical_Health>980</Tactical_Health>
+    <Shield_Points>1500</Shield_Points>
+    <Shield_Refresh_Rate>6</Shield_Refresh_Rate>
+    <Max_Speed>3.2</Max_Speed>
+    <Max_Rate_Of_Roll>0.3</Max_Rate_Of_Roll>
+    <Max_Rate_Of_Turn>0.6</Max_Rate_Of_Turn>
+    <Bank_Turn_Angle>16.0</Bank_Turn_Angle>
+    <Population_Value>4</Population_Value>
+    <AI_Combat_Power>800</AI_Combat_Power>
+
+    <HardPoints>
+      HP_Ori_Corvette_01, HP_Ori_Corvette_02, HP_Ori_Corvette_03,
+      HP_Ori_Corvette_04, HP_Ori_Corvette_05, HP_Ori_Corvette_06, 
+      HP_Ori_Corvette_Engines
+    </HardPoints>   
+    
+    <Lua_Script>ObjectScript_HW_Small</Lua_Script>
+    <Death_Clone>Damage_Normal, Ori_Corvette_Death_Clone</Death_Clone>
+    <Behavior>DUMMY_STARSHIP, SELECTABLE</Behavior>
+    <SpaceBehavior>ABILITY_COUNTDOWN, ASTEROID_FIELD_DAMAGE, DAMAGE_TRACKING, HIDE_WHEN_FOGGED, IDLE, ION_STUN_EFFECT, NEBULA, POWERED, REVEAL, SHIELDED, SIMPLE_SPACE_LOCOMOTOR, TARGETING, UNIT_AI</SpaceBehavior>
+    <Affiliation>Ori</Affiliation>
+    <Build_Cost_Credits>1000</Build_Cost_Credits>
+    <Build_Time_Seconds>6</Build_Time_Seconds>
+    <Tactical_Build_Cost_Multiplayer>1500</Tactical_Build_Cost_Multiplayer>
+    <Tactical_Build_Time_Seconds>6</Tactical_Build_Time_Seconds>
+    <Required_Star_Base_Level>1</Required_Star_Base_Level>
+    <Tech_Level>1</Tech_Level>
+    <Required_Special_Structures>Ori_Ground_Building_Shipyard</Required_Special_Structures>
+    <Build_Limit_Current_Per_Player>16</Build_Limit_Current_Per_Player>
+  </SpaceUnit>
+  
+  <SpaceUnit Name="Ori_Corvette_Death_Clone">
+    <Space_Model_Name>Ori_Space_Unit_Corvette_D.alo</Space_Model_Name>
+    <Scale_Factor>1.0</Scale_Factor>
+    <Layer_Z_Adjust>-100</Layer_Z_Adjust>
+    <Death_Explosions>Large_Explosion_Space</Death_Explosions>
+    <Death_SFXEvent_Start_Die>Unit_Star_Destroyer_Death_SFX</Death_SFXEvent_Start_Die>
+    <Death_Persistence_Duration>0</Death_Persistence_Duration>
+    <Remove_Upon_Death>true</Remove_Upon_Death>
+  </SpaceUnit>
+  
+    <!-- Projectiles -->
+  <Projectile Name="Proj_Ori_Corvette_Mainlaser">
+    <Variant_Of_Existing_Type>Proj_Ori_Space_Superlaser_Small</Variant_Of_Existing_Type>
+    <Scale_Factor>0.3</Scale_Factor>
+    <Max_Speed>30.0</Max_Speed>
+    <Max_Rate_Of_Turn>0.0</Max_Rate_Of_Turn>
+    <Projectile_Max_Flight_Distance>1500.0</Projectile_Max_Flight_Distance>
+    <Projectile_Damages_Random_Hard_Points>No</Projectile_Damages_Random_Hard_Points>
+    <Projectile_Damage>100.0</Projectile_Damage>
+    <Projectile_Does_Shield_Damage>Yes</Projectile_Does_Shield_Damage>
+    <Projectile_Does_Energy_Damage>No</Projectile_Does_Energy_Damage>
+    <Projectile_Does_Hitpoint_Damage>Yes</Projectile_Does_Hitpoint_Damage>
+    <Projectile_Energy_Per_Shot>90</Projectile_Energy_Per_Shot>
+    <AI_Combat_Power>100</AI_Combat_Power>
+  </Projectile>
+  
+  <Projectile Name="Proj_Ori_Corvette_Plasma">
+    <Variant_Of_Existing_Type>Proj_Ori_Space_Plasma</Variant_Of_Existing_Type>
+    <Projectile_Damages_Random_Hard_Points>No</Projectile_Damages_Random_Hard_Points>
+    <Max_Speed>25.0</Max_Speed>
+    <Max_Rate_Of_Turn>0.0</Max_Rate_Of_Turn>
+    <Projectile_Max_Flight_Distance>1700.0</Projectile_Max_Flight_Distance>
+    <Projectile_Damage>7.0</Projectile_Damage>
+    <Projectile_Does_Shield_Damage>Yes</Projectile_Does_Shield_Damage>
+    <Projectile_Does_Energy_Damage>No</Projectile_Does_Energy_Damage>
+    <Projectile_Does_Hitpoint_Damage>Yes</Projectile_Does_Hitpoint_Damage>
+    <Projectile_Energy_Per_Shot>30</Projectile_Energy_Per_Shot>
+    <AI_Combat_Power>100</AI_Combat_Power>
+  </Projectile>  
+
+</SpaceUnits>

@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<SpaceunitsOri>
+  <SpaceUnit Name="Ori_Mothership_No_Spawn">
+    <Variant_Of_Existing_Type>Template_Space_Unit_Heavy_Battleship</Variant_Of_Existing_Type>
+    <Text_ID>TEXT_ORI_SPACE_UNIT_KRIEGSSCHIFF</Text_ID>
+    <Encyclopedia_Good_Against> Vengeance_Frigate MC30_Frigate Victory_Destroyer </Encyclopedia_Good_Against>
+    <Encyclopedia_Vulnerable_To> Tauri_HB_302 B-wing TIE_Defender </Encyclopedia_Vulnerable_To>
+    <Space_Model_Name>Ori_Space_Unit_MotherShip.ALO</Space_Model_Name>
+    <Galactic_Fleet_Override_Model_Name> W_planet_fleet_OriMotherShip.ALO </Galactic_Fleet_Override_Model_Name>
+    <Select_Box_Scale>600</Select_Box_Scale>
+    <Select_Box_Z_Adjust>-50</Select_Box_Z_Adjust>
+    <Scale_Factor>1.0</Scale_Factor>
+    <Max_Rate_Of_Turn>0.3</Max_Rate_Of_Turn>
+    <Layer_Z_Adjust>-360.0</Layer_Z_Adjust>
+    <Max_Rate_Of_Roll>0.1</Max_Rate_Of_Roll>
+    <Bank_Turn_Angle>5</Bank_Turn_Angle>
+    <Affiliation>Ori</Affiliation>
+    <Tech_Level>99</Tech_Level>
+
+    <SFXEvent_Select>Unit_Select_Ori_P</SFXEvent_Select>
+    <SFXEvent_Move>Unit_Move_Ori_P</SFXEvent_Move>
+    <SFXEvent_Attack>Unit_Attack_Ori_P</SFXEvent_Attack>
+    <SFXEvent_Attack>Unit_Spawn_Ori_P</SFXEvent_Attack>
+
+    <Required_Ground_Base_Level>0</Required_Ground_Base_Level>
+    <Required_Star_Base_Level>1</Required_Star_Base_Level>
+    <Shield_Points>10000</Shield_Points>
+    <Tactical_Health>2000</Tactical_Health>
+    <Shield_Refresh_Rate>200</Shield_Refresh_Rate>
+    <Build_Cost_Credits>6000</Build_Cost_Credits>
+    <AI_Combat_Power>6900</AI_Combat_Power>
+    <Build_Time_Seconds>90</Build_Time_Seconds>
+    <Behavior> SELECTABLE, DUMMY_STARSHIP, POWERED, SHIELDED </Behavior>
+    <SpaceBehavior>
+      ABILITY_COUNTDOWN,
+      ASTEROID_FIELD_DAMAGE,
+      DAMAGE_TRACKING,
+      HIDE_WHEN_FOGGED,
+      ION_STUN_EFFECT,
+      NEBULA,
+      POWERED,
+      REVEAL,
+      SHIELDED,
+      SIMPLE_SPACE_LOCOMOTOR,
+      SPAWN_SQUADRON,
+      TARGETING,
+      UNIT_AI
+    </SpaceBehavior>
+    <Death_Clone>Damage_Normal, Ori_Mothership_Death_Clone</Death_Clone>
+    <Targeting_Max_Attack_Distance>2000.0</Targeting_Max_Attack_Distance>
+    <HardPoints>
+      HP_Ori_Mothership_F_SL,
+      HP_Ori_Mothership_F_OPB_00,
+      HP_Ori_Mothership_M_OPB_01,<!-- left;view from front -->
+      HP_Ori_Mothership_M_OPB_00,<!-- right;view from front -->
+      HP_Ori_Mothership_Shield_Generator,
+      HP_Ori_Mothership_Engines,
+      HP_Ori_Mothership_Fighter_Bay
+    </HardPoints>
+    <SFXEvent_Select />
+    <SFXEvent_Move />
+    <SFXEvent_Fleet_Move />
+    <SFXEvent_Attack />
+    <SFXEvent_Guard />
+    <SFXEvent_Move_Opposite />
+    <SFXEvent_Barrage />
+    <SFXEvent_Stop />
+    <SFXEvent_Move_Into_Asteroid_Field />
+    <SFXEvent_Move_Into_Nebula />
+    <SFXEvent_Damaged_By_Asteroid> SFX_Asteroid_Detonation </SFXEvent_Damaged_By_Asteroid>
+    <SFXEvent_Bombard_Select_Target> </SFXEvent_Bombard_Select_Target>
+    <SFXEvent_Bombard_Incoming> </SFXEvent_Bombard_Incoming>
+    <SFXEvent_Attack_Hardpoint />
+    <SFXEvent_Hardpoint_Destroyed />
+    <Death_SFXEvent_Start_Die>Explosion_Frigate</Death_SFXEvent_Start_Die>
+    <SFXEvent_Build_Started></SFXEvent_Build_Started>
+    <SFXEvent_Build_Cancelled></SFXEvent_Build_Cancelled>
+    <SFXEvent_Build_Complete></SFXEvent_Build_Complete>
+    <SFXEvent_Ambient_Loop>Engine_Ori</SFXEvent_Ambient_Loop>
+    <SFXEvent_Engine_Moving_Loop> Engine_Ori </SFXEvent_Engine_Moving_Loop>
+    <SFXEvent_Engine_Idle_Loop> Engine_Ori_Idle </SFXEvent_Engine_Idle_Loop>
+    <SFXEvent_Engine_Cinematic_Focus_Loop> Engine_Ori_Cinematic </SFXEvent_Engine_Cinematic_Focus_Loop>
+    <Icon_Name>ORI_SPACE_UNIT_MOTHERSHIP.TGA</Icon_Name>
+    <Targeting_Priority_Set>Capital</Targeting_Priority_Set>
+    <Is_Visible_On_Radar>Yes</Is_Visible_On_Radar>
+    <Radar_Icon_Name>I_RADAR_ORI_MOTHERSHIP.TGA</Radar_Icon_Name>
+    <Radar_Icon_Size>0.11 0.11</Radar_Icon_Size>
+    <Encyclopedia_Text>TEXT_DESCRIPTION_ORI_KRIEGSSCHIFF</Encyclopedia_Text>
+    <Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_ORI_KRIEGSSCHIFF</Encyclopedia_Unit_Class>
+    <Tactical_Build_Cost_Multiplayer>7500</Tactical_Build_Cost_Multiplayer>
+    <Tactical_Build_Time_Seconds>35</Tactical_Build_Time_Seconds>
+
+  </SpaceUnit>
+
+  <SpaceUnit Name="Ori_Mothership">
+    <Variant_Of_Existing_Type>Ori_Mothership_No_Spawn</Variant_Of_Existing_Type>
+    <Starting_Spawned_Units_Tech_0>Ori_Fighter_Squadron, 2</Starting_Spawned_Units_Tech_0>
+    <Spawned_Squadron_Delay_Seconds>5</Spawned_Squadron_Delay_Seconds>
+    <Reserve_Spawned_Units_Tech_0>Ori_Fighter_Squadron, -1</Reserve_Spawned_Units_Tech_0>
+    <Required_Special_Structures>Ori_Ground_Building_Shipyard</Required_Special_Structures>
+    <Tech_Level>1</Tech_Level>
+  </SpaceUnit>
+
+
+  <SpaceUnit Name="Ori_Mothership_MP">
+    <Variant_of_existing_type>Ori_Mothership</Variant_of_existing_type>
+    <Affiliation>Empire, Rebel, Underworld</Affiliation>
+    <Tech_Level>99</Tech_Level>
+    <Lua_Script>ObjectScript_HW_Big</Lua_Script>
+  </SpaceUnit>
+
+
+  <SpaceUnit Name="Ori_Mothership_P3Y_229">
+    <Variant_of_existing_type>Ori_Mothership</Variant_of_existing_type>
+    <Affiliation>Hostile</Affiliation>
+    <Tech_Level>99</Tech_Level>
+    <!--Lua_Script>Ori_Mothership_Patrol</Lua_Script-->
+  </SpaceUnit>
+
+  <!-- Deathclone Ori Mothership -->
+  <SpaceUnit Name="Ori_Mothership_Death_Clone">
+    <Variant_Of_Existing_Type>Template_Space_Deathclone</Variant_Of_Existing_Type>
+    <Affiliation>Ori</Affiliation>
+    <Space_Model_Name>Ori_Space_Unit_MotherShip_D.alo</Space_Model_Name>
+  </SpaceUnit>
+
+  <!-- Projectiles Ori Mothership -->
+  <!-- Attention! This projectiles are also used in the Ori-Starbase! -->
+  <Projectile Name="Proj_Ori_Mothership_Superlaser_Heavy">
+    <Variant_Of_Existing_Type>Proj_Ori_Space_Superlaser_Heavy</Variant_Of_Existing_Type>
+    <Max_Speed>50.0</Max_Speed>
+    <Max_Rate_Of_Turn>0.0</Max_Rate_Of_Turn>
+    <Projectile_Max_Flight_Distance>2200.0</Projectile_Max_Flight_Distance>
+    <Projectile_Damages_Random_Hard_Points>No</Projectile_Damages_Random_Hard_Points>
+    <Projectile_Damage>550.0</Projectile_Damage>
+    <Projectile_Does_Shield_Damage>Yes</Projectile_Does_Shield_Damage>
+    <Projectile_Does_Energy_Damage>No</Projectile_Does_Energy_Damage>
+    <Projectile_Does_Hitpoint_Damage>Yes</Projectile_Does_Hitpoint_Damage>
+    <Projectile_Energy_Per_Shot>200</Projectile_Energy_Per_Shot>
+    <AI_Combat_Power>540</AI_Combat_Power>
+  </Projectile>
+
+  <Projectile Name="Proj_Ori_Mothership_Plasma">
+    <Variant_Of_Existing_Type>Proj_Ori_Space_Plasma</Variant_Of_Existing_Type>
+    <Projectile_Damages_Random_Hard_Points>No</Projectile_Damages_Random_Hard_Points>
+    <Max_Speed>30.0</Max_Speed>
+    <Max_Rate_Of_Turn>0.0</Max_Rate_Of_Turn>
+    <Projectile_Max_Flight_Distance>2200.0</Projectile_Max_Flight_Distance>
+    <Projectile_Damage>70.0</Projectile_Damage>
+    <Projectile_Does_Shield_Damage>Yes</Projectile_Does_Shield_Damage>
+    <Projectile_Does_Energy_Damage>No</Projectile_Does_Energy_Damage>
+    <Projectile_Does_Hitpoint_Damage>Yes</Projectile_Does_Hitpoint_Damage>
+    <Projectile_Energy_Per_Shot>100</Projectile_Energy_Per_Shot>
+    <AI_Combat_Power>160</AI_Combat_Power>
+  </Projectile>
+
+</SpaceunitsOri>

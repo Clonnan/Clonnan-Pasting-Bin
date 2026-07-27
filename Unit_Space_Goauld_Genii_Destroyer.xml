@@ -1,0 +1,46 @@
+<?xml version="1.0"?>
+<GoauldGeniiSpaceUnitDestroyer>
+  
+  <SpaceUnit Name="Goauld_Genii_Destroyer_No_Spawn">
+    <Variant_Of_Existing_Type>Genii_Destroyer_No_Spawn</Variant_Of_Existing_Type>
+    <Text_ID>TEXT_SUPERGATE_UNIT_CAPTURED_GENII_DESTROYER</Text_ID>
+    <Encyclopedia_Text>TEXT_DESCRIPTION_SUPERGATE_UNIT_CAPTURED_GENII_DESTROYER</Encyclopedia_Text>
+    <Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_GENII_ZERSTOERER</Encyclopedia_Unit_Class>
+    <Affiliation>Rebel</Affiliation>
+    <Death_Clone>Damage_Normal, Goauld_Genii_Destroyer_Death_Clone</Death_Clone>
+    <Tactical_Build_Cost_Multiplayer>2500</Tactical_Build_Cost_Multiplayer>
+    <Tactical_Build_Time_Seconds>22</Tactical_Build_Time_Seconds>
+	</SpaceUnit>
+
+  <SpaceUnit Name="Goauld_Genii_Destroyer_SK">
+    <Variant_Of_Existing_Type>Goauld_Genii_Destroyer_No_Spawn</Variant_Of_Existing_Type>
+    <Starting_Spawned_Units_Tech_0>Goauld_Genii_Fighter_Squadron_SK, 2</Starting_Spawned_Units_Tech_0>
+    <Spawned_Squadron_Delay_Seconds>7</Spawned_Squadron_Delay_Seconds>
+    <Reserve_Spawned_Units_Tech_0>Goauld_Genii_Fighter_Squadron_SK, 2</Reserve_Spawned_Units_Tech_0>
+    <Tactical_Build_Prerequisites> General_Tech_2_Prereq </Tactical_Build_Prerequisites>
+  </SpaceUnit>
+	
+	<SpaceUnit Name="Goauld_Genii_Destroyer_Death_Clone">
+	  <Variant_Of_Existing_Type>Genii_Destroyer_Death_Clone</Variant_Of_Existing_Type>
+		<Affiliation>Rebel</Affiliation>
+	</SpaceUnit>
+	
+	
+	<Squadron Name="Goauld_Genii_Fighter_Squadron_SK">
+    <Variant_Of_Existing_Type>Genii_Fighter_Squadron_No_Prereq</Variant_Of_Existing_Type>
+    <Affiliation>Rebel</Affiliation>
+    <Squadron_Units>Goauld_Genii_Fighter_SK, Goauld_Genii_Fighter_SK</Squadron_Units>
+    <Squadron_Units>Goauld_Genii_Fighter_SK, Goauld_Genii_Fighter_SK</Squadron_Units>
+    <Squadron_Units>Goauld_Genii_Fighter_SK</Squadron_Units>   
+  </Squadron>
+  
+  <SpaceUnit Name="Goauld_Genii_Fighter_SK">
+    <Variant_Of_Existing_Type>Genii_Fighter</Variant_Of_Existing_Type>
+    <Damage_Type>Damage_Fighter</Damage_Type>
+    <Affiliation>Rebel</Affiliation>
+    <Armor_Type>Armor_Fighter</Armor_Type>
+    <Shield_Armor_Type>Armor_Fighter</Shield_Armor_Type>
+    <Damage>4</Damage>
+  </SpaceUnit>
+  
+</GoauldGeniiSpaceUnitDestroyer>

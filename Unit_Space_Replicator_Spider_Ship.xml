@@ -1,0 +1,68 @@
+<?xml version="1.0"?>
+<SpaceReplicator>
+
+   <SpaceUnit Name="Replicator_Spider_Ship">
+      <Variant_Of_Existing_Type>Template_Space_Unit_Light_Battleship</Variant_Of_Existing_Type>
+      <Text_ID>TEXT_REPLIKATOREN_SPACE_UNIT_SPINNENSCHIFF</Text_ID>
+      <Encyclopedia_Text>TEXT_DESCRIPTION_REPLIKATOREN_SPINNENSCHIFF</Encyclopedia_Text>
+      <Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_REPLIKATOREN_SPINNENSCHIFF</Encyclopedia_Unit_Class>
+      <Encyclopedia_Good_Against> TIE_Fighter TIE_Bomber Starviper_Fighter </Encyclopedia_Good_Against>
+      <Encyclopedia_Vulnerable_To> Vengeance_Frigate Victory_Destroyer Acclamator_Assault_Ship </Encyclopedia_Vulnerable_To>
+      <Icon_Name>REPLICATOR_SPACE_UNIT_SPIDER.TGA</Icon_Name>
+      <Space_Model_Name>Replicator_Space_Unit_Spider.ALO</Space_Model_Name>
+      <Galactic_Fleet_Override_Model_Name>w_planet_fleet_replicatorspider.ALO</Galactic_Fleet_Override_Model_Name>
+      <Radar_Icon_Name>I_RADAR_REPLICATOR_SPIDER.TGA</Radar_Icon_Name>
+      <Affiliation>Replicator</Affiliation>
+      <Armor_Type>Armor_Replicator</Armor_Type>	  	  
+      <SpaceBehavior>SIMPLE_SPACE_LOCOMOTOR, ASTEROID_FIELD_DAMAGE, DAMAGE_TRACKING, HIDE_WHEN_FOGGED, ION_STUN_EFFECT, NEBULA, POWERED, REVEAL, SELECTABLE, SPAWN_SQUADRON, TARGETING, UNIT_AI</SpaceBehavior>
+      <HardPoints>
+         HP_Replicator_Spider_M_IBS_00,
+         HP_Replicator_Spider_M_IBS_01,
+         HP_Replicator_Spider_F_IBM_00,
+         HP_Replicator_Spider_R_IBM_00,
+         HP_Replicator_Spider_Ship_Engines
+      </HardPoints>
+      <Select_Box_Scale>90</Select_Box_Scale>
+      <Select_Box_Z_Adjust>-30</Select_Box_Z_Adjust>
+      <Max_Speed>3.1</Max_Speed>
+      <Max_Rate_Of_Turn>1.25</Max_Rate_Of_Turn>
+      <Max_Rate_Of_Roll>0.2</Max_Rate_Of_Roll>
+      <Bank_Turn_Angle>15</Bank_Turn_Angle>
+      <Max_Thrust>0.5</Max_Thrust>
+      <Hyperspace_Speed>1</Hyperspace_Speed>
+      <Tactical_Health>1900</Tactical_Health>
+      <Shield_Points>0</Shield_Points>
+      <Shield_Refresh_Rate>0</Shield_Refresh_Rate>
+      <Death_Clone>Damage_Normal, Replicator_Spider_Ship_Death_Clone</Death_Clone>
+      <Tech_Level>2</Tech_Level> 	  
+      <Required_Star_Base_Level>1</Required_Star_Base_Level>
+	  <Required_Ground_Base_Level>0</Required_Ground_Base_Level>	  
+      <GUI_Row>1</GUI_Row>
+      <Build_Cost_Credits>1200</Build_Cost_Credits>
+      <Build_Time_Seconds>20</Build_Time_Seconds>		  
+      <Lua_Script>ObjectScript_HW_Middle</Lua_Script>
+   </SpaceUnit>
+
+
+   <SpaceUnit Name="Replicator_Spider_Ship_Death_Clone">
+      <Variant_Of_Existing_Type>Template_Space_Deathclone</Variant_Of_Existing_Type>
+      <Affiliation>Replicator</Affiliation>
+      <Space_Model_Name>Replicator_Space_Unit_Spider_D.alo</Space_Model_Name>
+   </SpaceUnit>
+
+
+   <Projectile Name="Proj_Replicator_Spidership_Impulse_Battery_Small">
+      <Variant_Of_Existing_Type>Proj_Replicator_Space_Impulse_Battery_Small</Variant_Of_Existing_Type>
+      <Projectile_Damage>10.0</Projectile_Damage>
+      <Damage_Type>Damage_LightBS</Damage_Type>
+   </Projectile>
+
+   <Projectile Name="Proj_Replicator_Spidership_Impulse_Battery_Middle">
+      <Variant_Of_Existing_Type>Proj_Replicator_Space_Impulse_Battery_Middle</Variant_Of_Existing_Type>
+      <Projectile_Damage>20.0</Projectile_Damage>
+      <Damage_Type>Damage_LightBS</Damage_Type>
+   </Projectile>
+
+</SpaceReplicator>
+
+

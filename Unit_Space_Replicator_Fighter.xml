@@ -1,0 +1,80 @@
+<?xml version="1.0"?>
+<FighterUnits>
+
+   <SpaceUnit Name="Replicator_Fighter">
+      <Variant_Of_Existing_Type>Template_Space_Unit_Fighter_Multi</Variant_Of_Existing_Type>
+      <Text_ID>TEXT_REPLIKATOREN_SPACE_UNIT_JAEGER</Text_ID>
+      <Encyclopedia_Text>TEXT_DESCRIPTION_REPLIKATOREN_JAEGER</Encyclopedia_Text>
+      <Encyclopedia_Unit_Class> TEXT_ENCYCLOPEDIA_CLASS_REPLIKATOREN_JAEGER </Encyclopedia_Unit_Class>
+      <Encyclopedia_Good_Against> TIE_Fighter TIE_Bomber Starviper_Fighter </Encyclopedia_Good_Against>
+      <Encyclopedia_Vulnerable_To> Tartan_Patrol_Cruiser Broadside_Class_Cruiser Crusader_Gunship </Encyclopedia_Vulnerable_To>
+      <Icon_Name>REPLICATOR_SPACE_UNIT_FIGHTER.TGA</Icon_Name>
+      <Space_Model_Name>Replicator_Space_Unit_Fighter.ALO</Space_Model_Name>
+      <Galactic_Fleet_Override_Model_Name>w_planet_fleet_replicatorfighter.ALO</Galactic_Fleet_Override_Model_Name>
+      <Affiliation>Replicator</Affiliation>
+      <Armor_Type>Armor_Replicator</Armor_Type>	  	  
+      <SpaceBehavior>FIGHTER_LOCOMOTOR, AMBIENT_SFX, DAMAGE_TRACKING, HIDE_WHEN_FOGGED, HUNT, NEBULA, POWERED, REVEAL, SELECTABLE, TARGETING, WEAPON</SpaceBehavior>
+      <Tactical_Health>60</Tactical_Health>
+      <FormationOrder>2</FormationOrder>
+      <Formation_Priority>1</Formation_Priority>
+      <Damage_Type>Damage_Fighter</Damage_Type>
+      <SFXEvent_Fire></SFXEvent_Fire>
+      <Projectile_Types>Proj_Replicator_Fighter_Laser</Projectile_Types>
+      <Projectile_Fire_Pulse_Count>2</Projectile_Fire_Pulse_Count>
+      <Projectile_Fire_Pulse_Delay_Seconds>0.01</Projectile_Fire_Pulse_Delay_Seconds>
+      <Projectile_Fire_Recharge_Seconds>1.5</Projectile_Fire_Recharge_Seconds>
+      <Fires_Forward>no</Fires_Forward>
+      <Turret_Rotate_Extent_Degrees>20</Turret_Rotate_Extent_Degrees>
+      <Turret_Elevate_Extent_Degrees>40</Turret_Elevate_Extent_Degrees>
+      <Fire_Inaccuracy_Distance> Fighter, 1.0 </Fire_Inaccuracy_Distance>
+      <Fire_Inaccuracy_Distance> Bomber, 1.0 </Fire_Inaccuracy_Distance>
+      <Fire_Inaccuracy_Distance> Corvette, 15.0 </Fire_Inaccuracy_Distance>
+      <Fire_Inaccuracy_Distance> Frigate, 30.0 </Fire_Inaccuracy_Distance>
+      <Fire_Inaccuracy_Distance> Capital, 30.0 </Fire_Inaccuracy_Distance>
+      <Fire_Inaccuracy_Distance> Super, 30.0 </Fire_Inaccuracy_Distance>
+      <Fire_Inaccuracy_Distance> Transport, 1.0 </Fire_Inaccuracy_Distance>
+      <Unit_Abilities_Data SubObjectList="Yes">
+         <Unit_Ability>
+            <Type>HUNT</Type>
+            <Alternate_Name_Text>TEXT_ABILITY_REPLIKATOREN_JAEGER_GEGNER_JAGEN</Alternate_Name_Text>
+            <Alternate_Description_Text>TEXT_DESCRIPTION_ABILITY_SPACE_REPLIKATOREN_JAEGER_GEGNER_JAGEN</Alternate_Description_Text>
+         </Unit_Ability>
+      </Unit_Abilities_Data>
+   </SpaceUnit>
+
+
+   <Squadron Name="Replicator_Fighter_Squadron">
+      <Variant_Of_Existing_Type>Template_Space_Squadron</Variant_Of_Existing_Type>
+      <Text_ID>TEXT_REPLIKATOREN_SPACE_UNIT_JAEGER</Text_ID>
+      <Encyclopedia_Text>TEXT_DESCRIPTION_REPLIKATOREN_JAEGER</Encyclopedia_Text>
+      <Encyclopedia_Unit_Class> TEXT_ENCYCLOPEDIA_CLASS_REPLIKATOREN_JAEGER </Encyclopedia_Unit_Class>
+      <Encyclopedia_Good_Against> TIE_Fighter TIE_Bomber Starviper_Fighter </Encyclopedia_Good_Against>
+      <Encyclopedia_Vulnerable_To> Tartan_Patrol_Cruiser Broadside_Class_Cruiser Crusader_Gunship </Encyclopedia_Vulnerable_To>
+      <Icon_Name>REPLICATOR_SPACE_UNIT_FIGHTER.TGA</Icon_Name>
+      <Affiliation>Replicator</Affiliation>
+      <Squadron_Units>Replicator_Fighter, Replicator_Fighter, Replicator_Fighter, Replicator_Fighter, Replicator_Fighter</Squadron_Units>
+      <Is_Bomber>no</Is_Bomber>
+      <Is_Escort>yes</Is_Escort>
+      <Tech_Level>1</Tech_Level> 	  
+      <Required_Star_Base_Level>1</Required_Star_Base_Level>
+	  <Required_Ground_Base_Level>0</Required_Ground_Base_Level>	  
+      <GUI_Row>1</GUI_Row>
+      <Build_Cost_Credits>150</Build_Cost_Credits>
+      <Build_Time_Seconds>10</Build_Time_Seconds>		  
+      <Autonomous_Move_Extension_Vs_Attacker>500.0</Autonomous_Move_Extension_Vs_Attacker>
+      <Unit_Abilities_Data SubObjectList="Yes">
+         <Unit_Ability>
+            <Type>HUNT</Type>
+            <Alternate_Name_Text>TEXT_ABILITY_REPLIKATOREN_JAEGER_GEGNER_JAGEN</Alternate_Name_Text>
+            <Alternate_Description_Text>TEXT_DESCRIPTION_ABILITY_SPACE_REPLIKATOREN_JAEGER_GEGNER_JAGEN</Alternate_Description_Text>
+         </Unit_Ability>
+      </Unit_Abilities_Data>
+   </Squadron>
+
+   <!-- Projectiles Replicator Fighter -->
+   <Projectile Name="Proj_Replicator_Fighter_Laser">
+      <Variant_Of_Existing_Type>Proj_Replicator_Space_Fighter_Laser</Variant_Of_Existing_Type>
+      <Projectile_Damage>3.0</Projectile_Damage>
+   </Projectile>
+
+</FighterUnits>

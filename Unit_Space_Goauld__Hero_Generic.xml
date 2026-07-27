@@ -1,0 +1,260 @@
+<?xml version="1.0"?>
+<Units_Generic_Heros_Goauld>
+  <!-- Information Goauld Generic Hero Tertius -->
+  <GenericHeroUnit Name="Generic_Fleet_Commander_Rebel">
+    <Text_ID>TEXT_GOAULD_SPACE_UNIT_TERTIUS</Text_ID>
+    <!-- AJA 11/28/2005 - These are NOT named heroes. If you need some functionality that this flag provides, add a new flag. <Is_Named_Hero>Yes</Is_Named_Hero>-->
+    <Show_Hero_Head>Yes</Show_Hero_Head>
+    <GUI_Row> 1 </GUI_Row>
+    <Icon_Name>GOAULD_SPACE_UNIT_FLEETCOMMANDER_TERTIUS.TGA</Icon_Name>
+    <Mass>1.0</Mass>
+    <Scale_Factor>1.0</Scale_Factor>
+    <Is_Sprite>No</Is_Sprite>
+    <Type>Walk</Type>
+    <Affiliation>Rebel</Affiliation>
+    <Political_Control>0</Political_Control>
+    <Size_Value>75</Size_Value>
+    <!--		<Damage>2</Damage> -->
+    <Execute_Script_On_Type>true</Execute_Script_On_Type>
+    <Lua_Script>FleetCommander</Lua_Script>
+    <Is_Generic_Hero>Yes</Is_Generic_Hero>
+    <Attach_To_Flagship_During_Space_Battle>Yes</Attach_To_Flagship_During_Space_Battle>
+    <Stay_In_Transport_During_Ground_Battle>Yes</Stay_In_Transport_During_Ground_Battle>
+    <Always_Spawn_In_Orbit>Yes</Always_Spawn_In_Orbit>
+    <Encyclopedia_Text>TEXT_DESCRIPTION_GOAULD_TERTIUS_SPACE</Encyclopedia_Text>
+    <Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_FLEET_COMMANDER</Encyclopedia_Unit_Class>
+    <Neutralization_Cost>100.0</Neutralization_Cost>
+    <Can_Be_Neutralized_By_Major_Heroes>Yes</Can_Be_Neutralized_By_Major_Heroes>
+    <Can_Be_Neutralized_By_Minor_Heroes>Yes</Can_Be_Neutralized_By_Minor_Heroes>
+    <CategoryMask> SpaceHero </CategoryMask>
+    <Ranking_In_Category> 21 </Ranking_In_Category>
+    <Abilities SubObjectList="Yes">
+      <Combat_Bonus_Ability Name="Tertius_Combat_Bonus">
+        <Activation_Style>Space_Automatic</Activation_Style>
+        <Unit_Strength_Category>Transport | Corvette | Frigate | Capital</Unit_Strength_Category>
+        <Applicable_Unit_Categories>Transport | Corvette | Frigate | Capital</Applicable_Unit_Categories>
+        <Applicable_Unit_Types />
+        <Health_Bonus_Percentage>0.0</Health_Bonus_Percentage>
+        <Damage_Bonus_Percentage>0.0</Damage_Bonus_Percentage>
+        <Energy_Pool_Bonus_Percentage>0.0</Energy_Pool_Bonus_Percentage>
+        <Shield_Bonus_Percentage>0.0</Shield_Bonus_Percentage>
+        <Defense_Bonus_Percentage>0.0</Defense_Bonus_Percentage>
+        <Movement_Speed_Bonus_Percentage>0.2</Movement_Speed_Bonus_Percentage>
+        <Stacking_Category>0</Stacking_Category>
+      </Combat_Bonus_Ability>
+    </Abilities>
+  </GenericHeroUnit>
+
+  <!-- Company Information Goauld Generic Hero Tertius -->
+  <HeroCompany Name="Fleet_Com_Rebel_Team">
+    <GUI_Row>1</GUI_Row>
+    <Text_ID>TEXT_GOAULD_SPACE_UNIT_TERTIUS</Text_ID>
+    <Icon_Name>GOAULD_SPACE_UNIT_FLEETCOMMANDER_TERTIUS.TGA</Icon_Name>
+    <Is_Dummy>Yes</Is_Dummy>
+    <Affiliation>Rebel</Affiliation>
+    <Build_Cost_Credits>1000</Build_Cost_Credits>
+    <Build_Time_Seconds>90</Build_Time_Seconds>
+    <Build_Time_Reduced_By_Multiple_Factories> Yes </Build_Time_Reduced_By_Multiple_Factories>
+    <Build_Tab_Heroes>Yes</Build_Tab_Heroes>
+    <Build_Initially_Locked>No</Build_Initially_Locked>
+    <Build_Can_Be_Unlocked_By_Slicer>No</Build_Can_Be_Unlocked_By_Slicer>
+    <Tech_Level>99</Tech_Level>
+    <Required_Timeline>0</Required_Timeline>
+    <Required_Ground_Base_Level>0</Required_Ground_Base_Level>
+    <Required_Star_Base_Level>2</Required_Star_Base_Level>
+    <Required_Special_Structures>R_Ground_Academy</Required_Special_Structures>
+    <Required_Planets/>
+    <Behavior>DUMMY_GROUND_COMPANY</Behavior>
+    <Company_Transport_Unit>Alliance_Shuttle</Company_Transport_Unit>
+    <Company_Units>Generic_Fleet_Commander_Rebel</Company_Units>
+    <Is_Generic_Hero>Yes</Is_Generic_Hero>
+    <SFXEvent_Build_Complete></SFXEvent_Build_Complete>
+    <SFXEvent_Build_Started> </SFXEvent_Build_Started>
+    <SFXEvent_Build_Cancelled> </SFXEvent_Build_Cancelled>
+    <Encyclopedia_Text>TEXT_DESCRIPTION_GOAULD_TERTIUS_SPACE</Encyclopedia_Text>
+    <Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_FLEET_COMMANDER</Encyclopedia_Unit_Class>
+    <!--<MULTIPLAYER SKIRMISH VALUES BEGIN>-->
+    <Tactical_Build_Cost_Multiplayer>2500</Tactical_Build_Cost_Multiplayer>
+    <Tactical_Build_Time_Seconds>40</Tactical_Build_Time_Seconds>
+    <Tactical_Build_Prerequisites />
+    <Tactical_Production_Queue>Tactical_Units</Tactical_Production_Queue>
+    <Build_Limit_Current_Per_Player>3</Build_Limit_Current_Per_Player>
+    <Build_Limit_Lifetime_For_All_Allies>-1</Build_Limit_Lifetime_For_All_Allies>
+    <!--<MULTIPLAYER SKIRMISH VALUES END>-->
+    <CategoryMask>SpaceHero</CategoryMask>
+    <Population_Value>1</Population_Value>
+    <Score_Cost_Credits> 500 </Score_Cost_Credits>
+  </HeroCompany>
+  
+  <!-- Information Goauld Generic Hero Secundus -->
+  <GenericHeroUnit Name="Goauld_Hero_Secundus">
+    <Text_ID>TEXT_GOAULD_SPACE_UNIT_SECUNDUS</Text_ID>
+    <!-- AJA 11/28/2005 - These are NOT named heroes. If you need some functionality that this flag provides, add a new flag. <Is_Named_Hero>Yes</Is_Named_Hero>-->
+    <Show_Hero_Head>Yes</Show_Hero_Head>
+    <GUI_Row> 1 </GUI_Row>
+    <Icon_Name>GOAULD_SPACE_UNIT_FLEETCOMMANDER_SECUNDUS.TGA</Icon_Name>
+    <Mass>1.0</Mass>
+    <Scale_Factor>1.0</Scale_Factor>
+    <Is_Sprite>No</Is_Sprite>
+    <Type>Walk</Type>
+    <Affiliation>Rebel</Affiliation>
+    <Political_Control>0</Political_Control>
+    <Size_Value>75</Size_Value>
+    <!--		<Damage>2</Damage> -->
+    <Execute_Script_On_Type>true</Execute_Script_On_Type>
+    <Lua_Script>FleetCommander</Lua_Script>
+    <Is_Generic_Hero>Yes</Is_Generic_Hero>
+    <Attach_To_Flagship_During_Space_Battle>Yes</Attach_To_Flagship_During_Space_Battle>
+    <Stay_In_Transport_During_Ground_Battle>Yes</Stay_In_Transport_During_Ground_Battle>
+    <Always_Spawn_In_Orbit>Yes</Always_Spawn_In_Orbit>
+    <Encyclopedia_Text>TEXT_DESCRIPTION_GOAULD_SECUNDUS_SPACE</Encyclopedia_Text>
+    <Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_FLEET_COMMANDER</Encyclopedia_Unit_Class>
+    <Neutralization_Cost>100.0</Neutralization_Cost>
+    <Can_Be_Neutralized_By_Major_Heroes>Yes</Can_Be_Neutralized_By_Major_Heroes>
+    <Can_Be_Neutralized_By_Minor_Heroes>Yes</Can_Be_Neutralized_By_Minor_Heroes>
+    <CategoryMask> SpaceHero </CategoryMask>
+    <Ranking_In_Category> 21 </Ranking_In_Category>
+    <Abilities SubObjectList="Yes">
+      <Combat_Bonus_Ability Name="Secundus_Combat_Bonus">
+        <Activation_Style>Space_Automatic</Activation_Style>
+        <Unit_Strength_Category>Transport | Corvette | Frigate | Capital</Unit_Strength_Category>
+        <Applicable_Unit_Categories>Transport | Corvette | Frigate | Capital</Applicable_Unit_Categories>
+        <Applicable_Unit_Types />
+        <Health_Bonus_Percentage>0.0</Health_Bonus_Percentage>
+        <Damage_Bonus_Percentage>0.0</Damage_Bonus_Percentage>
+        <Energy_Pool_Bonus_Percentage>0.0</Energy_Pool_Bonus_Percentage>
+        <Shield_Bonus_Percentage>0.1</Shield_Bonus_Percentage>
+        <Defense_Bonus_Percentage>0.0</Defense_Bonus_Percentage>
+        <Movement_Speed_Bonus_Percentage>0.0</Movement_Speed_Bonus_Percentage>
+        <Stacking_Category>0</Stacking_Category>
+      </Combat_Bonus_Ability>
+    </Abilities>
+  </GenericHeroUnit>
+
+  <!-- Company Information Goauld Generic Hero Secundus -->
+  <HeroCompany Name="Goauld_Hero_Secundus_Team">
+    <GUI_Row>1</GUI_Row>
+    <Text_ID>TEXT_GOAULD_SPACE_UNIT_SECUNDUS</Text_ID>
+    <Icon_Name>GOAULD_SPACE_UNIT_FLEETCOMMANDER_SECUNDUS.TGA</Icon_Name>
+    <Is_Dummy>Yes</Is_Dummy>
+    <Affiliation>Rebel</Affiliation>
+    <Build_Cost_Credits>1250</Build_Cost_Credits>
+    <Build_Time_Seconds>90</Build_Time_Seconds>
+    <Build_Time_Reduced_By_Multiple_Factories> Yes </Build_Time_Reduced_By_Multiple_Factories>
+    <Build_Tab_Heroes>Yes</Build_Tab_Heroes>
+    <Build_Initially_Locked>No</Build_Initially_Locked>
+    <Build_Can_Be_Unlocked_By_Slicer>No</Build_Can_Be_Unlocked_By_Slicer>
+    <Tech_Level>99</Tech_Level>
+    <Required_Timeline>0</Required_Timeline>
+    <Required_Ground_Base_Level>0</Required_Ground_Base_Level>
+    <Required_Star_Base_Level>3</Required_Star_Base_Level>
+    <Required_Special_Structures>R_Ground_Academy</Required_Special_Structures>
+    <Required_Planets/>
+    <Behavior>DUMMY_GROUND_COMPANY</Behavior>
+    <Company_Transport_Unit>Alliance_Shuttle</Company_Transport_Unit>
+    <Company_Units>Goauld_Hero_Secundus</Company_Units>
+    <Is_Generic_Hero>Yes</Is_Generic_Hero>
+    <SFXEvent_Build_Complete></SFXEvent_Build_Complete>
+    <SFXEvent_Build_Started> </SFXEvent_Build_Started>
+    <SFXEvent_Build_Cancelled> </SFXEvent_Build_Cancelled>
+    <Encyclopedia_Text>TEXT_DESCRIPTION_GOAULD_SECUNDUS_SPACE</Encyclopedia_Text>
+    <Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_FLEET_COMMANDER</Encyclopedia_Unit_Class>
+    <!--<MULTIPLAYER SKIRMISH VALUES BEGIN>-->
+    <Tactical_Build_Cost_Multiplayer>2500</Tactical_Build_Cost_Multiplayer>
+    <Tactical_Build_Time_Seconds>40</Tactical_Build_Time_Seconds>
+    <Tactical_Build_Prerequisites />
+    <Tactical_Production_Queue>Tactical_Units</Tactical_Production_Queue>
+    <Build_Limit_Current_Per_Player>3</Build_Limit_Current_Per_Player>
+    <Build_Limit_Lifetime_For_All_Allies>-1</Build_Limit_Lifetime_For_All_Allies>
+    <!--<MULTIPLAYER SKIRMISH VALUES END>-->
+    <CategoryMask>SpaceHero</CategoryMask>
+    <Population_Value>1</Population_Value>
+    <Score_Cost_Credits> 500 </Score_Cost_Credits>
+  </HeroCompany>
+
+  <!-- Information Goauld Generic Hero Primus -->
+  <GenericHeroUnit Name="Goauld_Hero_Prime">
+    <Text_ID>TEXT_GOAULD_SPACE_UNIT_PRIMUS</Text_ID>
+    <!-- AJA 11/28/2005 - These are NOT named heroes. If you need some functionality that this flag provides, add a new flag. <Is_Named_Hero>Yes</Is_Named_Hero>-->
+    <Show_Hero_Head>Yes</Show_Hero_Head>
+    <GUI_Row> 1 </GUI_Row>
+    <Icon_Name>GOAULD_SPACE_UNIT_FLEETCOMMANDER_PRIMUS.TGA</Icon_Name>
+    <Mass>1.0</Mass>
+    <Scale_Factor>1.0</Scale_Factor>
+    <Is_Sprite>No</Is_Sprite>
+    <Type>Walk</Type>
+    <Affiliation>Rebel</Affiliation>
+    <Political_Control>0</Political_Control>
+    <Size_Value>75</Size_Value>
+    <!--		<Damage>2</Damage> -->
+    <Execute_Script_On_Type>true</Execute_Script_On_Type>
+    <Lua_Script>FleetCommander</Lua_Script>
+    <Is_Generic_Hero>Yes</Is_Generic_Hero>
+    <Attach_To_Flagship_During_Space_Battle>Yes</Attach_To_Flagship_During_Space_Battle>
+    <Stay_In_Transport_During_Ground_Battle>Yes</Stay_In_Transport_During_Ground_Battle>
+    <Always_Spawn_In_Orbit>Yes</Always_Spawn_In_Orbit>
+    <Encyclopedia_Text>TEXT_DESCRIPTION_GOAULD_PRIMUS_SPACE</Encyclopedia_Text>
+    <Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_FLEET_COMMANDER</Encyclopedia_Unit_Class>
+    <Neutralization_Cost>100.0</Neutralization_Cost>
+    <Can_Be_Neutralized_By_Major_Heroes>Yes</Can_Be_Neutralized_By_Major_Heroes>
+    <Can_Be_Neutralized_By_Minor_Heroes>Yes</Can_Be_Neutralized_By_Minor_Heroes>
+    <CategoryMask> SpaceHero </CategoryMask>
+    <Ranking_In_Category> 21 </Ranking_In_Category>
+    <Abilities SubObjectList="Yes">
+      <Combat_Bonus_Ability Name="Primus_Combat_Bonus">
+        <Activation_Style>Space_Automatic</Activation_Style>
+        <Unit_Strength_Category>Transport | Corvette | Frigate | Capital</Unit_Strength_Category>
+        <Applicable_Unit_Categories>Transport | Corvette | Frigate | Capital</Applicable_Unit_Categories>
+        <Applicable_Unit_Types />
+        <Health_Bonus_Percentage>0.0</Health_Bonus_Percentage>
+        <Damage_Bonus_Percentage>0.15</Damage_Bonus_Percentage>
+        <Energy_Pool_Bonus_Percentage>0.0</Energy_Pool_Bonus_Percentage>
+        <Shield_Bonus_Percentage>0.0</Shield_Bonus_Percentage>
+        <Defense_Bonus_Percentage>0.0</Defense_Bonus_Percentage>
+        <Movement_Speed_Bonus_Percentage>0.0</Movement_Speed_Bonus_Percentage>
+        <Stacking_Category>0</Stacking_Category>
+      </Combat_Bonus_Ability>
+    </Abilities>
+  </GenericHeroUnit>
+
+  <!-- Company Information Goauld Generic Hero Primus -->
+  <HeroCompany Name="Goauld_Hero_Prime_Team">
+    <GUI_Row>1</GUI_Row>
+    <Text_ID>TEXT_GOAULD_SPACE_UNIT_PRIMUS</Text_ID>
+    <Icon_Name>GOAULD_SPACE_UNIT_FLEETCOMMANDER_PRIMUS.TGA</Icon_Name>
+    <Is_Dummy>Yes</Is_Dummy>
+    <Affiliation>Rebel</Affiliation>
+    <Build_Cost_Credits>1500</Build_Cost_Credits>
+    <Build_Time_Seconds>90</Build_Time_Seconds>
+    <Build_Time_Reduced_By_Multiple_Factories> Yes </Build_Time_Reduced_By_Multiple_Factories>
+    <Build_Tab_Heroes>Yes</Build_Tab_Heroes>
+    <Build_Initially_Locked>No</Build_Initially_Locked>
+    <Build_Can_Be_Unlocked_By_Slicer>No</Build_Can_Be_Unlocked_By_Slicer>
+    <Tech_Level>99</Tech_Level>
+    <Required_Timeline>0</Required_Timeline>
+    <Required_Ground_Base_Level>0</Required_Ground_Base_Level>
+    <Required_Star_Base_Level>2</Required_Star_Base_Level>
+    <Required_Special_Structures>R_Ground_Academy</Required_Special_Structures>
+    <Required_Planets/>
+    <Behavior>DUMMY_GROUND_COMPANY</Behavior>
+    <Company_Transport_Unit>Alliance_Shuttle</Company_Transport_Unit>
+    <Company_Units>Goauld_Hero_Prime</Company_Units>
+    <Is_Generic_Hero>Yes</Is_Generic_Hero>
+    <SFXEvent_Build_Complete></SFXEvent_Build_Complete>
+    <SFXEvent_Build_Started> </SFXEvent_Build_Started>
+    <SFXEvent_Build_Cancelled> </SFXEvent_Build_Cancelled>
+    <Encyclopedia_Text>TEXT_DESCRIPTION_GOAULD_PRIMUS_SPACE</Encyclopedia_Text>
+    <Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_FLEET_COMMANDER</Encyclopedia_Unit_Class>
+    <!--<MULTIPLAYER SKIRMISH VALUES BEGIN>-->
+    <Tactical_Build_Cost_Multiplayer>2500</Tactical_Build_Cost_Multiplayer>
+    <Tactical_Build_Time_Seconds>40</Tactical_Build_Time_Seconds>
+    <Tactical_Build_Prerequisites />
+    <Tactical_Production_Queue>Tactical_Units</Tactical_Production_Queue>
+    <Build_Limit_Current_Per_Player>3</Build_Limit_Current_Per_Player>
+    <Build_Limit_Lifetime_For_All_Allies>-1</Build_Limit_Lifetime_For_All_Allies>
+    <!--<MULTIPLAYER SKIRMISH VALUES END>-->
+    <CategoryMask>SpaceHero</CategoryMask>
+    <Population_Value>1</Population_Value>
+    <Score_Cost_Credits> 500 </Score_Cost_Credits>
+  </HeroCompany>
+</Units_Generic_Heros_Goauld>

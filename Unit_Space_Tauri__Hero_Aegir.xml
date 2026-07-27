@@ -1,0 +1,47 @@
+<?xml version="1.0"?>
+<SpaceUnits>
+
+   <SpaceUnit Name="Tauri_Hero_Aegir">
+      <Variant_Of_Existing_Type>Kedalbe_Battleship</Variant_Of_Existing_Type>
+      <Text_ID>TEXT_TAURI_SPACE_HERO_AEGIR</Text_ID>
+      <Encyclopedia_Text>TEXT_DESCRIPTION_TAURI_AEGIR_SPACE</Encyclopedia_Text>
+      <Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_AEGIR_SPACE</Encyclopedia_Unit_Class>
+      <Icon_Name>ASGARD_SPACE_HERO_AEGIR.TGA</Icon_Name>
+      <HardPoints>
+         HP_ONEILL_FR_ICH,
+         HP_ONEILL_FL_ICH,
+         Aegir_01,
+         Aegir_02,
+         HP_ONEILL_MR_ICS,
+         HP_ONEILL_ML_ICS,
+         HP_ONEILL_ENGINE,
+         HP_ONEILL_SHIELD
+      </HardPoints>
+      <Show_Hero_Head>Yes</Show_Hero_Head>
+      <Tech_Level>99</Tech_Level>
+      <Tactical_Health>4000</Tactical_Health>
+      <Shield_Points>4200</Shield_Points>
+      <Build_Limit_Current_Per_Player>1</Build_Limit_Current_Per_Player>
+      <Unit_Abilities_Data SubObjectList="Yes">
+        <Unit_Ability>
+          <Type>POWER_TO_WEAPONS</Type>
+          <Alternate_Name_Text>TEXT_ABILITY_DISTORTION_FIELD</Alternate_Name_Text>
+          <Alternate_Description_Text>TEXT_DESCRIPTION_ABILITY_DISTORTION_FIELD_ONEILL_CLASS</Alternate_Description_Text>
+          <Alternate_Icon_Name>I_SA_DISTORTION.TGA</Alternate_Icon_Name>
+          <Mod_Multiplier>SPEED_MULTIPLIER,   0.01f</Mod_Multiplier>
+          <Mod_Multiplier>TAKE_DAMAGE_MULTIPLIER, 0.8f</Mod_Multiplier>
+          <Recharge_Seconds>70</Recharge_Seconds>
+          <Expiration_Seconds>20</Expiration_Seconds>
+        </Unit_Ability>
+      </Unit_Abilities_Data>
+   </SpaceUnit>
+
+
+   <Projectile Name="Proj_Aegir_Superlaser">
+      <Variant_Of_Existing_Type>Proj_Tauri_Superlaser</Variant_Of_Existing_Type>
+      <Projectile_Does_Hitpoint_Damage>Yes</Projectile_Does_Hitpoint_Damage>
+      <Projectile_Damage>300.0</Projectile_Damage>
+      <Projectile_Max_Flight_Distance>1800.0</Projectile_Max_Flight_Distance>
+   </Projectile>
+
+</SpaceUnits>

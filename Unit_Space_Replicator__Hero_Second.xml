@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ReplicatorHeroes>
+
+   <SpaceHero Name="Replicator_Second">
+      <Variant_Of_Existing_Type>Replicator_Corvette</Variant_Of_Existing_Type>
+      <Text_ID>TEXT_REPLICATOR_SPACE_HERO_SECOND</Text_ID>
+      <Encyclopedia_Text>TEXT_DESCRIPTION_REPLICATOR_HERO_SECOND</Encyclopedia_Text>
+      <Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_FIRST</Encyclopedia_Unit_Class>
+      <Icon_Name>REPLICATOR_SPACE_HERO_SECOND.TGA</Icon_Name>
+      <Space_Model_Name>Replicator_Space_Unit_Corvette.ALO</Space_Model_Name>
+      <Galactic_Fleet_Override_Model_Name>w_planet_fleet_replicatorcorvette.ALO</Galactic_Fleet_Override_Model_Name>
+	  <Scale_Factor>1.25</Scale_Factor>
+	  <Max_Speed>3.5</Max_Speed>
+      <CategoryMask>Capital | SpaceHero | AntiCapital</CategoryMask>
+      <AI_Combat_Power>5500</AI_Combat_Power>
+      <Armor_Type>Armor_Replicator</Armor_Type>	  
+      <Shield_Armor_Type>Armor_Hero_MediumBS</Shield_Armor_Type>
+      <Ranking_In_Category>7</Ranking_In_Category>
+      <Is_Named_Hero>No</Is_Named_Hero>
+      <Is_Generic_Hero>Yes</Is_Generic_Hero>
+      <Show_Hero_Head>Yes</Show_Hero_Head>
+      <Score_Cost_Credits>25000</Score_Cost_Credits>
+      <Neutralization_Cost>5000.0</Neutralization_Cost>
+      <Can_Be_Neutralized_By_Major_Heroes>No</Can_Be_Neutralized_By_Major_Heroes>
+      <Can_Be_Neutralized_By_Minor_Heroes>No</Can_Be_Neutralized_By_Minor_Heroes>
+      <Tactical_Health>3000</Tactical_Health>
+      <HardPoints>
+         HP_Replicator_Second_M_IBT_00,
+         HP_Replicator_Second_M_IBS_00,
+         HP_Replicator_Second_M_IBS_01,
+         HP_Replicator_Second_F_IBS_00,
+         HP_Replicator_Corvette_Engines,
+      </HardPoints>
+	  <Build_Limit_Current_Per_Player>1</Build_Limit_Current_Per_Player>	
+      <Tech_Level>99</Tech_Level>   	  
+  </SpaceHero>
+
+  <!-- Projectiles Replicator Second -->
+   <Projectile Name="Proj_Replicator_Second_Impulse_Battery_Small">
+    <Variant_Of_Existing_Type>Proj_Replicator_Space_Impulse_Battery_Small</Variant_Of_Existing_Type>
+    <Projectile_Damage>11.0</Projectile_Damage>
+    <Damage_Type>Damage_Corvette</Damage_Type>
+  </Projectile>
+
+  <Projectile Name="Proj_Replicator_Second_Impulse_Battery_Turbo">
+    <Variant_Of_Existing_Type>Proj_Replicator_Space_Impulse_Battery_Turbo</Variant_Of_Existing_Type>
+    <Projectile_Damage>16.0</Projectile_Damage>
+    <Damage_Type>Damage_Corvette</Damage_Type>
+  </Projectile>
+
+</ReplicatorHeroes>

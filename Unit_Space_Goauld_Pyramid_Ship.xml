@@ -1,0 +1,102 @@
+<?xml version="1.0"?>
+<SpaceCorvettes>
+
+   <SpaceUnit Name="Corellian_Corvette">
+      <Variant_Of_Existing_Type>Template_Space_Unit_Corvette</Variant_Of_Existing_Type>
+      <Text_ID>TEXT_GOAULD_SPACE_UNIT_PYRAMIDENSCHIFF</Text_ID>
+      <Encyclopedia_Text>TEXT_DESCRIPTION_GOAULD_PYRAMIDENSCHIFF</Encyclopedia_Text>
+      <Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_PYRAMIDENSCHIFF</Encyclopedia_Unit_Class>
+      <Encyclopedia_Good_Against>TIE_Fighter TIE_Bomber Starviper_Fighter</Encyclopedia_Good_Against>
+      <Encyclopedia_Vulnerable_To>Vengeance_Frigate Victory_Destroyer Acclamator_Assault_Ship</Encyclopedia_Vulnerable_To>
+      <Icon_Name>GOAULD_SPACE_UNIT_PYRAMIDSHIP.TGA</Icon_Name>
+      <Space_Model_Name>Goauld_Space_Unit_Pyramid_Ship.ALO</Space_Model_Name>
+      <Galactic_Fleet_Override_Model_Name>W_planet_fleet_PyramidShip.ALO</Galactic_Fleet_Override_Model_Name>
+      <Galactic_Fleet_Override_Icon_Index>4</Galactic_Fleet_Override_Icon_Index>
+      <Radar_Icon_Name>I_RADAR_PYRAMIDESHIP.TGA</Radar_Icon_Name>
+      <Radar_Icon_Size>0.036 0.036</Radar_Icon_Size>
+      <SpaceBehavior>ABILITY_COUNTDOWN, DAMAGE_TRACKING, HIDE_WHEN_FOGGED, ION_STUN_EFFECT, NEBULA, REVEAL, SELECTABLE, SHIELDED, SIMPLE_SPACE_LOCOMOTOR, TARGETING, UNIT_AI</SpaceBehavior>
+      <Affiliation>Rebel</Affiliation>
+      <Tech_Level>0</Tech_Level>
+      <Select_Box_Scale>250</Select_Box_Scale>
+      <Select_Box_Z_Adjust>-30</Select_Box_Z_Adjust>
+      <Layer_Z_Adjust>-20.0</Layer_Z_Adjust>
+
+      <Tactical_Health>900</Tactical_Health>
+      <Shield_Points>400</Shield_Points>
+      <Shield_Refresh_Rate>16</Shield_Refresh_Rate>
+      <Space_FOW_Reveal_Range>1100.0</Space_FOW_Reveal_Range>
+      <Targeting_Max_Attack_Distance>1400.0</Targeting_Max_Attack_Distance>
+      <AI_Combat_Power>1200</AI_Combat_Power>
+
+      <Max_Rate_Of_Turn>1.25</Max_Rate_Of_Turn>
+      <Max_Rate_Of_Roll>0.2</Max_Rate_Of_Roll>
+      <Bank_Turn_Angle>15</Bank_Turn_Angle>
+      <OverrideAcceleration>.05</OverrideAcceleration>
+      <OverrideDeceleration>.05</OverrideDeceleration>
+      <Max_Thrust>0.5</Max_Thrust>
+      <Min_Speed>2.0</Min_Speed>
+      <Max_Speed>3.1</Max_Speed>
+
+      <HardPoints>
+         HP_PYRAMIDE_SHIP_R_SBS,
+         HP_PYRAMIDE_SHIP_F_SBS,
+         HP_PYRAMIDE_SHIP_M_SBS_00,
+         HP_PYRAMIDE_SHIP_M_SBS_01,
+         HP_PYRAMIDE_SHIP_SHIELD,
+         HP_PYRAMIDE_SHIP_ENGINE
+      </HardPoints>
+
+      <Population_Value>2</Population_Value>
+      <Death_Clone>Damage_Normal, Corellian_Corvette_Death_Clone</Death_Clone>
+      <Build_Cost_Credits>1550</Build_Cost_Credits>
+      <Build_Time_Seconds>20</Build_Time_Seconds>
+      <Tactical_Build_Cost_Multiplayer>1550</Tactical_Build_Cost_Multiplayer>
+      <Tactical_Build_Time_Seconds>15</Tactical_Build_Time_Seconds>
+      <Required_Star_Base_Level>1</Required_Star_Base_Level>
+      <Required_Special_Structures>R_Ground_Small_Shipyard</Required_Special_Structures>
+
+      <SFXEvent_Attack>Unit_Attack_Goauld_Pyramid</SFXEvent_Attack>
+      <SFXEvent_Fleet_Move>Unit_Move_Goauld_Pyramid</SFXEvent_Fleet_Move>
+      <SFXEvent_Health_Low_Warning>Unit_LOWHP_Goauld_Pyramid</SFXEvent_Health_Low_Warning>
+      <SFXEvent_Move>Unit_Move_Goauld_Pyramid</SFXEvent_Move>
+      <SFXEvent_Select>Unit_Select_Goauld_Pyramid</SFXEvent_Select>
+
+      <SFXEvent_Engine_Idle_Loop>Engine_Goauld_Low_Idle</SFXEvent_Engine_Idle_Loop>
+      <SFXEvent_Engine_Moving_Loop>Engine_Goauld_Low</SFXEvent_Engine_Moving_Loop>
+      <SFXEvent_Engine_Cinematic_Focus_Loop>Engine_Goauld_Low_Cinematic</SFXEvent_Engine_Cinematic_Focus_Loop>
+
+      <!--Unit_Abilities_Data SubObjectList="Yes">
+         <Unit_Ability>
+            <Type>LURE</Type>
+            <Alternate_Name_Text>TEXT_ABILITY_GOAULD_SPACE_PYRAMIDENSCHIFF_JAEGER_LOCKEN</Alternate_Name_Text>
+            <Alternate_Description_Text>TEXT_DESCRIPTION_ABILITY_SPACE_PYRAMIDENSCHIFF_JAEGER_LOCKEN</Alternate_Description_Text>
+            <Effective_Radius>600</Effective_Radius>
+            <Target_Types>TIE_Fighter, TIE_Fighter_Squadron, TIE_Interceptor, TIE_Interceptor_Squadron, TIE_Scout, TIE_Scout_Squadron, TIE_Defender, TIE_Defender_Squadron, Rebel_X-Wing_Squadron, A_Wing_Squadron, Skipray_Squadron, Skipray_Blastboat, StarViper_Squadron, Starviper_Fighter, Genii_Fighter, Genii_Fighter_Squadron, Replicator_Fighter, Replicator_Fighter_Squadron, Replicator_Bomber_Squadron, Ori_Fighter, Ori_Fighter_Squadron, Lucian_Alliance_Death_Glider, Lucian_Alliance_Death_Glider_Squadron, Lucian_Alliance_Teltak, Lucian_Alliance_Teltak_Squadron, Lucian_Alliance_Alkesh, Lucian_Alliance_Alkesh_Squadron, Systemlord_Alliance_Death_Glider, Systemlord_Alliance_Death_Glider_Squadron, Systemlord_Alliance_Teltak, Systemlord_Alliance_Teltak_Squadron, Systemlord_Alliance_Alkesh, Systemlord_Alliance_Alkesh_Squadron, Tauri_X_301, Tauri_X_301_Squadron, Wraith_Rebel_Dart, Wraith_Rebel_Dart_Squadron, Wraith_Rebel_Heavy_Fighter, Wraith_Rebel_Heavy_Fighter_Squadron, Wraith_Rebel_Heavy_Bomber, Wraith_Rebel_Heavy_Bomber_Squadron, Aschen_Fighter, Aschen_Fighter_Squadron, Asuran_Drone, Asuran_Drone_Squadron, Asuran_Puddle_Jumper, Asuran_Puddle_Jumper_Squadron, Ancient_Drone_Squadron, Ancient_Jumper_Squadron, Ancient_Heavy_Bomber, Ancient_Heavy_Bomber_Squadron, X-Wing, Goauld_Needle_Threader, Goauld_Needle_Threader_Squadron, Tauri_Puddle_Jumper, Tauri_Puddle_Jumper_Squadron, B-Wing, B-Wing_Squadron, Y-Wing, Y-Wing_Squadron, Tauri_HB_302, Tauri_HB_302_Squadron, TIE_Bomber, TIE_Bomber_Squadron, TIE_Phantom, TIE_Phantom_Squadron,</Target_Types>
+            <Recharge_Seconds>45</Recharge_Seconds>
+            <Expiration_Seconds>16</Expiration_Seconds>
+            <Is_Pulsing>Yes</Is_Pulsing>
+            <Pulse_Frequency_Secs>0.5</Pulse_Frequency_Secs>
+            <Max_Number_Of_Pulses>40</Max_Number_Of_Pulses>
+            <Particle_Effect>Lure_Ability_Particle</Particle_Effect>
+            <Mod_Multiplier>TAKE_DAMAGE_MULTIPLIER, 0.7f</Mod_Multiplier>
+         </Unit_Ability>
+      </Unit_Abilities_Data-->
+      <Lua_Script>ObjectScript_HW_Small</Lua_Script>
+   </SpaceUnit>
+
+   <SpaceUnit Name="Corellian_Corvette_Death_Clone">
+      <Variant_Of_Existing_Type>Template_Space_Deathclone</Variant_Of_Existing_Type>
+      <Affiliation>Rebel</Affiliation>
+      <Space_Model_Name>Goauld_Space_Unit_Pyramid_Ship_D.alo</Space_Model_Name>
+   </SpaceUnit>
+
+
+   <Projectile Name="Proj_Goauld_Pyramide_Ship_Laser_Small">
+      <Variant_Of_Existing_Type>Proj_Goauld_Space_Laser_Small</Variant_Of_Existing_Type>
+      <Max_Speed>40.0</Max_Speed>
+      <Projectile_Max_Flight_Distance>1400.0</Projectile_Max_Flight_Distance>
+      <Projectile_Damage>9.0</Projectile_Damage>
+      <AI_Combat_Power>120</AI_Combat_Power>
+   </Projectile>
+
+</SpaceCorvettes>

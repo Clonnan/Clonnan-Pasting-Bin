@@ -1,0 +1,360 @@
+<?xml version="1.0"?>
+<Units_ZPM>
+
+   <!-- Space transports whose ability can be used to attach them to a ship-->
+   <SpaceUnit Name="Neutral_ZPM_Transport_Tauri">
+      <Variant_Of_Existing_Type>Underworld_Infantry_Droid_Shuttle</Variant_Of_Existing_Type>
+      <Text_ID>TEXT_TAURI_SPECIAL_HERO_ZPM</Text_ID>
+      <Encyclopedia_Text>TEXT_DESCRIPTION_TAURI_GC_ZPM</Encyclopedia_Text>
+      <Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_ZPM</Encyclopedia_Unit_Class>
+      <Icon_Name>TAURI_ZPM.TGA</Icon_Name>
+      <SpaceBehavior>SIMPLE_SPACE_LOCOMOTOR, ABILITY_COUNTDOWN, DAMAGE_TRACKING, HIDE_WHEN_FOGGED, ION_STUN_EFFECT, NEBULA, POWERED, REVEAL, SELECTABLE, SHIELDED, TARGETING, UNIT_AI</SpaceBehavior>
+      <Unit_Abilities_Data SubObjectList="Yes">
+         <Unit_Ability>
+            <Type>TARGETED_INVULNERABILITY</Type>
+            <Alternate_Name_Text>TEXT_ABILITY_LOAD_INTO</Alternate_Name_Text>
+            <Alternate_Description_Text>TEXT_DESCRIPTION_ABILITY_LOAD_INTO_ITEM </Alternate_Description_Text>
+            <Alternate_Icon_Name>I_SA_JOIN_ME.tga</Alternate_Icon_Name>
+            <Activation_Style>User_Input</Activation_Style>
+            <Recharge_Seconds>5.0</Recharge_Seconds>
+            <Spawned_Object_Type>Dummy_Proj_Load_Into</Spawned_Object_Type>
+            <Effective_Radius>3000</Effective_Radius>
+            <Friendly_Ability>true</Friendly_Ability>
+            <Supports_Autofire>False</Supports_Autofire>
+         </Unit_Ability>
+      </Unit_Abilities_Data>
+      <Lua_Script>ObjectScript_Fleet_Commander_and_Items</Lua_Script>
+   </SpaceUnit>
+   <SpaceUnit Name="Neutral_ZPM_Transport_Goauld">
+     <Variant_Of_Existing_Type>Gallofree_Transport</Variant_Of_Existing_Type>
+      <Text_ID>TEXT_TAURI_SPECIAL_HERO_ZPM</Text_ID>
+      <Encyclopedia_Text>TEXT_DESCRIPTION_TAURI_GC_ZPM</Encyclopedia_Text>
+      <Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_ZPM</Encyclopedia_Unit_Class>
+      <Icon_Name>TAURI_ZPM.TGA</Icon_Name>
+      <SpaceBehavior>SIMPLE_SPACE_LOCOMOTOR, ABILITY_COUNTDOWN, DAMAGE_TRACKING, HIDE_WHEN_FOGGED, ION_STUN_EFFECT, NEBULA, POWERED, REVEAL, SELECTABLE, SHIELDED, TARGETING, UNIT_AI</SpaceBehavior>
+      <Unit_Abilities_Data SubObjectList="Yes">
+         <Unit_Ability>
+            <Type>TARGETED_INVULNERABILITY</Type>
+            <Alternate_Name_Text>TEXT_ABILITY_LOAD_INTO</Alternate_Name_Text>
+            <Alternate_Description_Text>TEXT_DESCRIPTION_ABILITY_LOAD_INTO_ITEM </Alternate_Description_Text>
+            <Alternate_Icon_Name>I_SA_JOIN_ME.tga</Alternate_Icon_Name>
+            <Activation_Style>User_Input</Activation_Style>
+            <Recharge_Seconds>5.0</Recharge_Seconds>
+            <Spawned_Object_Type>Dummy_Proj_Load_Into</Spawned_Object_Type>
+            <Effective_Radius>3000</Effective_Radius>
+            <Friendly_Ability>true</Friendly_Ability>
+            <Supports_Autofire>False</Supports_Autofire>
+         </Unit_Ability>
+      </Unit_Abilities_Data>
+      <Lua_Script>ObjectScript_Fleet_Commander_and_Items</Lua_Script>
+   </SpaceUnit>
+   <SpaceUnit Name="Neutral_ZPM_Transport_Wraith">
+     <Variant_Of_Existing_Type>Shuttle_Tyderium</Variant_Of_Existing_Type>
+      <Text_ID>TEXT_TAURI_SPECIAL_HERO_ZPM</Text_ID>
+      <Encyclopedia_Text>TEXT_DESCRIPTION_TAURI_GC_ZPM</Encyclopedia_Text>
+      <Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_ZPM</Encyclopedia_Unit_Class>
+      <Icon_Name>TAURI_ZPM.TGA</Icon_Name>
+      <SpaceBehavior>SIMPLE_SPACE_LOCOMOTOR, ABILITY_COUNTDOWN, DAMAGE_TRACKING, HIDE_WHEN_FOGGED, ION_STUN_EFFECT, NEBULA, POWERED, REVEAL, SELECTABLE, TARGETING, UNIT_AI</SpaceBehavior>
+      <Unit_Abilities_Data SubObjectList="Yes">
+         <Unit_Ability>
+            <Type>TARGETED_INVULNERABILITY</Type>
+            <Alternate_Name_Text>TEXT_ABILITY_LOAD_INTO</Alternate_Name_Text>
+            <Alternate_Description_Text>TEXT_DESCRIPTION_ABILITY_LOAD_INTO_ITEM </Alternate_Description_Text>
+            <Alternate_Icon_Name>I_SA_JOIN_ME.tga</Alternate_Icon_Name>
+            <Activation_Style>User_Input</Activation_Style>
+            <Recharge_Seconds>5.0</Recharge_Seconds>
+            <Spawned_Object_Type>Dummy_Proj_Load_Into</Spawned_Object_Type>
+            <Effective_Radius>3000</Effective_Radius>
+            <Friendly_Ability>true</Friendly_Ability>
+            <Supports_Autofire>False</Supports_Autofire>
+         </Unit_Ability>
+      </Unit_Abilities_Data>
+      <Lua_Script>ObjectScript_Fleet_Commander_and_Items</Lua_Script>
+   </SpaceUnit>
+   <SpaceUnit Name="Neutral_ZPM_Transport_Ancient">
+     <Variant_Of_Existing_Type>Asuran_Jumper_Transport</Variant_Of_Existing_Type>
+      <Text_ID>TEXT_TAURI_SPECIAL_HERO_ZPM</Text_ID>
+      <Encyclopedia_Text>TEXT_DESCRIPTION_TAURI_GC_ZPM</Encyclopedia_Text>
+      <Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_ZPM</Encyclopedia_Unit_Class>
+      <Icon_Name>TAURI_ZPM.TGA</Icon_Name>
+      <SpaceBehavior>SIMPLE_SPACE_LOCOMOTOR, ABILITY_COUNTDOWN, DAMAGE_TRACKING, HIDE_WHEN_FOGGED, ION_STUN_EFFECT, NEBULA, POWERED, REVEAL, SELECTABLE, SHIELDED, TARGETING, UNIT_AI</SpaceBehavior>
+      <Unit_Abilities_Data SubObjectList="Yes">
+         <Unit_Ability>
+            <Type>TARGETED_INVULNERABILITY</Type>
+            <Alternate_Name_Text>TEXT_ABILITY_LOAD_INTO</Alternate_Name_Text>
+            <Alternate_Description_Text>TEXT_DESCRIPTION_ABILITY_LOAD_INTO_ITEM </Alternate_Description_Text>
+            <Alternate_Icon_Name>I_SA_JOIN_ME.tga</Alternate_Icon_Name>
+            <Activation_Style>User_Input</Activation_Style>
+            <Recharge_Seconds>5.0</Recharge_Seconds>
+            <Spawned_Object_Type>Dummy_Proj_Load_Into</Spawned_Object_Type>
+            <Effective_Radius>3000</Effective_Radius>
+            <Friendly_Ability>true</Friendly_Ability>
+            <Supports_Autofire>False</Supports_Autofire>
+         </Unit_Ability>
+      </Unit_Abilities_Data>
+      <Lua_Script>ObjectScript_Fleet_Commander_and_Items</Lua_Script>
+   </SpaceUnit>
+
+   <SpaceUnit Name="Neutral_Partially_Depleted_ZPM_Transport_Tauri">
+      <Variant_Of_Existing_Type>Neutral_ZPM_Transport_Tauri</Variant_Of_Existing_Type>
+      <Text_ID>TEXT_TAURI_SPECIAL_HERO_PARTIAL_ZPM</Text_ID>
+      <Encyclopedia_Text>TEXT_DESCRIPTION_TAURI_GC_PARTIAL_ZPM</Encyclopedia_Text>
+      <Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_PARTIAL_ZPM</Encyclopedia_Unit_Class>
+   </SpaceUnit>
+   <SpaceUnit Name="Neutral_Partially_Depleted_ZPM_Transport_Goauld">
+      <Variant_Of_Existing_Type>Neutral_ZPM_Transport_Goauld</Variant_Of_Existing_Type>
+      <Text_ID>TEXT_TAURI_SPECIAL_HERO_PARTIAL_ZPM</Text_ID>
+      <Encyclopedia_Text>TEXT_DESCRIPTION_TAURI_GC_PARTIAL_ZPM</Encyclopedia_Text>
+      <Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_PARTIAL_ZPM</Encyclopedia_Unit_Class>
+   </SpaceUnit>
+
+
+   <HeroCompany Name="Neutral_ZPM_Company">
+      <Variant_Of_Existing_Type>Template_Ground_Company</Variant_Of_Existing_Type>
+      <Text_ID>TEXT_TAURI_SPECIAL_HERO_ZPM</Text_ID>
+      <Encyclopedia_Text>TEXT_DESCRIPTION_TAURI_GC_ZPM</Encyclopedia_Text>
+      <Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_ZPM</Encyclopedia_Unit_Class>
+      <Icon_Name>TAURI_ZPM.TGA</Icon_Name>
+      <Company_Units>Neutral_ZPM_Generic</Company_Units>
+      <CategoryMask>NonCombatHero</CategoryMask>
+      <Required_Star_Base_Level>1</Required_Star_Base_Level>
+      <Required_Ground_Base_Level>0</Required_Ground_Base_Level>
+   </HeroCompany>
+
+   <HeroCompany Name="Neutral_ZPM_Generic_Team_Tauri">
+      <Variant_Of_Existing_Type>Neutral_ZPM_Company</Variant_Of_Existing_Type>
+      <Affiliation>Underworld</Affiliation>
+      <Company_Transport_Unit>Neutral_ZPM_Transport_Tauri</Company_Transport_Unit>
+   </HeroCompany>
+   <HeroCompany Name="Neutral_Partial_ZPM_Generic_Team_Tauri">
+      <Variant_Of_Existing_Type>Neutral_ZPM_Generic_Team_Tauri</Variant_Of_Existing_Type>
+      <Text_ID>TEXT_TAURI_SPECIAL_HERO_PARTIAL_ZPM</Text_ID>
+      <Encyclopedia_Text>TEXT_DESCRIPTION_TAURI_GC_PARTIAL_ZPM</Encyclopedia_Text>
+      <Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_PARTIAL_ZPM</Encyclopedia_Unit_Class>
+      <Company_Transport_Unit>Neutral_Partially_Depleted_ZPM_Transport_Tauri</Company_Transport_Unit>
+   </HeroCompany>
+   <HeroCompany Name="Neutral_ZPM_Generic_Team_Goauld">
+      <Variant_Of_Existing_Type>Neutral_ZPM_Company</Variant_Of_Existing_Type>
+      <Affiliation>Rebel</Affiliation>
+      <Company_Transport_Unit>Neutral_ZPM_Transport_Goauld</Company_Transport_Unit>
+   </HeroCompany>
+   <HeroCompany Name="Neutral_Partial_ZPM_Generic_Team_Goauld">
+      <Variant_Of_Existing_Type>Neutral_ZPM_Generic_Team_Goauld</Variant_Of_Existing_Type>
+      <Text_ID>TEXT_TAURI_SPECIAL_HERO_PARTIAL_ZPM</Text_ID>
+      <Encyclopedia_Text>TEXT_DESCRIPTION_TAURI_GC_PARTIAL_ZPM</Encyclopedia_Text>
+      <Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_PARTIAL_ZPM</Encyclopedia_Unit_Class>
+      <Company_Transport_Unit>Neutral_Partially_Depleted_ZPM_Transport_Tauri</Company_Transport_Unit>
+   </HeroCompany>
+   <HeroCompany Name="Neutral_ZPM_Generic_Team_Wraith">
+      <Variant_Of_Existing_Type>Neutral_ZPM_Company</Variant_Of_Existing_Type>
+      <Affiliation>Empire</Affiliation>
+      <Company_Transport_Unit>Neutral_ZPM_Transport_Wraith</Company_Transport_Unit>
+   </HeroCompany>
+   <HeroCompany Name="Neutral_ZPM_Generic_Team_Ancient">
+      <Variant_Of_Existing_Type>Neutral_ZPM_Company</Variant_Of_Existing_Type>
+      <Affiliation>Underworld, Asuran</Affiliation>
+      <Company_Transport_Unit>Neutral_ZPM_Transport_Ancient</Company_Transport_Unit>
+   </HeroCompany>
+
+
+   <!--Dummy ground unit-->
+  <GenericHeroUnit Name="Neutral_ZPM_Generic">
+      <Text_ID>TEXT_TAURI_SPECIAL_HERO_ZPM</Text_ID>
+      <Encyclopedia_Text>TEXT_DESCRIPTION_TAURI_GC_ZPM</Encyclopedia_Text>
+      <Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_ZPM</Encyclopedia_Unit_Class>
+      <Icon_Name>TAURI_ZPM.TGA</Icon_Name>
+      <Show_Hero_Head>Yes</Show_Hero_Head>
+      <GUI_Row> 1 </GUI_Row>
+      <Mass>1.0</Mass>
+      <Scale_Factor>1.0</Scale_Factor>
+      <Is_Sprite>No</Is_Sprite>
+      <Type>Walk</Type>
+      <Affiliation>Rebel, Underworld, Empire, Asuran</Affiliation>
+      <Political_Control>0</Political_Control>
+      <Size_Value>75</Size_Value>
+      <Is_Generic_Hero>Yes</Is_Generic_Hero>
+      <!--For some reason, adding adding the tag below will prevent the company from being spawnable when using a pathfinder in GC. Without it, the unit shows in the ground unit resupply window but cannot be used.-->
+      <!--Stay_In_Transport_During_Ground_Battle>Yes</Stay_In_Transport_During_Ground_Battle-->
+      <Always_Spawn_In_Orbit>Yes</Always_Spawn_In_Orbit>
+      <Neutralization_Cost>100.0</Neutralization_Cost>
+      <Can_Be_Neutralized_By_Major_Heroes>No</Can_Be_Neutralized_By_Major_Heroes>
+      <Can_Be_Neutralized_By_Minor_Heroes>No</Can_Be_Neutralized_By_Minor_Heroes>
+      <CategoryMask>NonCombatHero</CategoryMask>
+      <Ranking_In_Category>21</Ranking_In_Category>
+  </GenericHeroUnit>
+
+
+
+  <Projectile Name="Dummy_Proj_Load_Into">
+     <Text_ID>TEXT_NONE</Text_ID>
+     <Space_Model_Name>W_LASER_INVISIBLE.ALO</Space_Model_Name>
+     <Damage_Type> Damage_Normal </Damage_Type>
+     <Scale_Factor>1.0</Scale_Factor>
+     <Max_Speed>15</Max_Speed>
+     <Max_Rate_Of_Turn>1</Max_Rate_Of_Turn>
+     <Behavior>PROJECTILE, HIDE_WHEN_FOGGED</Behavior>
+     <Projectile_Category>DEFAULT</Projectile_Category>
+     <Projectile_Max_Flight_Distance>10</Projectile_Max_Flight_Distance>
+     <Projectile_Damage>0.0</Projectile_Damage>
+     <Projectile_Does_Shield_Damage>No</Projectile_Does_Shield_Damage>
+     <Projectile_Does_Energy_Damage>No</Projectile_Does_Energy_Damage>
+     <Projectile_Does_Hitpoint_Damage>No</Projectile_Does_Hitpoint_Damage>
+     <Projectile_Energy_Per_Shot>0</Projectile_Energy_Per_Shot>
+     <Projectile_SFXEvent_Detonate></Projectile_SFXEvent_Detonate>
+     <Projectile_Object_Detonation_Particle>Distract_Particles</Projectile_Object_Detonation_Particle>
+     <Projectile_Lifetime_Detonation_Particle>Distract_Particles</Projectile_Lifetime_Detonation_Particle>
+     <AI_Combat_Power>0</AI_Combat_Power>
+     <Projectile_Cause_Invulnerability_On_Detonation>Yes</Projectile_Cause_Invulnerability_On_Detonation>
+     <Projectile_Cause_Invulnerability_Duration_Frames>1</Projectile_Cause_Invulnerability_Duration_Frames>
+     <Projectile_Cause_Invulnerability_Radius>0.0</Projectile_Cause_Invulnerability_Radius>
+     <Projectile_Cause_Invulnerability_Max_Targets>1</Projectile_Cause_Invulnerability_Max_Targets>
+     <Projectile_Cause_Invulnerability_Spawn_Effect>Particle_Fleet_Commander_Ability_Target</Projectile_Cause_Invulnerability_Spawn_Effect>
+     <Projectile_Cause_Invulnerability_Targets_Category_Mask>Corvette | Frigate | Capital | SpaceHero | Structure</Projectile_Cause_Invulnerability_Targets_Category_Mask>
+   </Projectile>
+
+
+   <Projectile Name="Proj_Neutral_ZPM_Commander_Defence_Bonus">
+     <Variant_Of_Existing_Type>Proj_Neutral_Template_Commander_Bonus</Variant_Of_Existing_Type>
+     <Projectile_Combat_Mod>COMBAT_MOD_DEFENSE</Projectile_Combat_Mod>
+     <Projectile_Combat_Mod_Duration>7200.0</Projectile_Combat_Mod_Duration>
+     <Projectile_Combat_Mod_Value>0.3f</Projectile_Combat_Mod_Value>
+     <Projectile_Combat_Mod_Effect>Particle_Tauri_Commander_Buff</Projectile_Combat_Mod_Effect>
+     <Projectile_Combat_Mod_Category_Mask>Corvette | Frigate | Capital | SpaceHero | Structure</Projectile_Combat_Mod_Category_Mask>
+   </Projectile>
+
+   <Projectile Name="Proj_Neutral_ZPM_Commander_Speed_Bonus">
+     <Variant_Of_Existing_Type>Proj_Neutral_Template_Commander_Bonus</Variant_Of_Existing_Type>
+     <Projectile_Combat_Mod>COMBAT_MOD_SPEED</Projectile_Combat_Mod>
+     <Projectile_Combat_Mod_Duration>7200.0</Projectile_Combat_Mod_Duration>
+     <Projectile_Combat_Mod_Value>0.75f</Projectile_Combat_Mod_Value>
+     <Projectile_Combat_Mod_Effect>Particle_Tauri_Commander_Buff</Projectile_Combat_Mod_Effect>
+     <Projectile_Combat_Mod_Category_Mask>Corvette | Frigate | Capital | SpaceHero | Structure</Projectile_Combat_Mod_Category_Mask>
+   </Projectile>
+
+   <Projectile Name="Proj_Neutral_ZPM_Commander_Fire_Rate_Bonus">
+     <Variant_Of_Existing_Type>Proj_Neutral_Template_Commander_Bonus</Variant_Of_Existing_Type>
+     <Projectile_Combat_Mod>COMBAT_MOD_FIRE_RATE</Projectile_Combat_Mod>
+     <Projectile_Combat_Mod_Duration>7200.0</Projectile_Combat_Mod_Duration>
+     <Projectile_Combat_Mod_Value>0.4f</Projectile_Combat_Mod_Value>
+     <Projectile_Combat_Mod_Effect>Particle_Tauri_Commander_Buff</Projectile_Combat_Mod_Effect>
+     <Projectile_Combat_Mod_Category_Mask>Corvette | Frigate | Capital | SpaceHero | Structure</Projectile_Combat_Mod_Category_Mask>
+   </Projectile>
+
+   <Projectile Name="Proj_Neutral_ZPM_Commander_Fire_Range_Bonus">
+     <Variant_Of_Existing_Type>Proj_Neutral_Template_Commander_Bonus</Variant_Of_Existing_Type>
+     <Projectile_Combat_Mod>COMBAT_MOD_FIRE_RANGE</Projectile_Combat_Mod>
+     <Projectile_Combat_Mod_Duration>7200.0</Projectile_Combat_Mod_Duration>
+     <Projectile_Combat_Mod_Value>0.1f</Projectile_Combat_Mod_Value>
+     <Projectile_Combat_Mod_Effect>Particle_Tauri_Commander_Buff</Projectile_Combat_Mod_Effect>
+     <Projectile_Combat_Mod_Category_Mask>Corvette | Frigate | Capital | SpaceHero | Structure</Projectile_Combat_Mod_Category_Mask>
+   </Projectile>
+
+   <Projectile Name="Proj_Neutral_ZPM_Commander_Damage_Bonus">
+     <Variant_Of_Existing_Type>Proj_Neutral_Template_Commander_Bonus</Variant_Of_Existing_Type>
+     <Projectile_Combat_Mod>COMBAT_MOD_DAMAGE</Projectile_Combat_Mod>
+     <Projectile_Combat_Mod_Duration>7200.0</Projectile_Combat_Mod_Duration>
+     <Projectile_Combat_Mod_Value>0.35f</Projectile_Combat_Mod_Value>
+     <Projectile_Combat_Mod_Effect>Particle_Tauri_Commander_Buff</Projectile_Combat_Mod_Effect>
+     <Projectile_Combat_Mod_Category_Mask>Corvette | Frigate | Capital | SpaceHero | Structure</Projectile_Combat_Mod_Category_Mask>
+   </Projectile>
+
+   <Projectile Name="Proj_Neutral_ZPM_Commander_Ability_Bonus">
+      <Variant_Of_Existing_Type>Proj_Neutral_Template_Commander_Bonus</Variant_Of_Existing_Type>
+      <Projectile_Combat_Mod>COMBAT_MOD_ABILITY_RECHARGE_TIME</Projectile_Combat_Mod>
+      <Projectile_Combat_Mod_Duration>7200.0</Projectile_Combat_Mod_Duration>
+      <Projectile_Combat_Mod_Value>0.35f</Projectile_Combat_Mod_Value>
+      <Projectile_Combat_Mod_Effect>Particle_Tauri_Commander_Buff</Projectile_Combat_Mod_Effect>
+      <Projectile_Combat_Mod_Category_Mask>Corvette | Frigate | Capital | SpaceHero | Structure</Projectile_Combat_Mod_Category_Mask>
+   </Projectile>
+
+
+   <Projectile Name="Proj_Neutral_Partially_Depleted_ZPM_Commander_Defence_Bonus">
+     <Variant_Of_Existing_Type>Proj_Neutral_Template_Commander_Bonus</Variant_Of_Existing_Type>
+     <Projectile_Combat_Mod>COMBAT_MOD_DEFENSE</Projectile_Combat_Mod>
+     <Projectile_Combat_Mod_Duration>7200.0</Projectile_Combat_Mod_Duration>
+     <Projectile_Combat_Mod_Value>0.2f</Projectile_Combat_Mod_Value>
+     <Projectile_Combat_Mod_Effect>Particle_Tauri_Commander_Buff</Projectile_Combat_Mod_Effect>
+     <Projectile_Combat_Mod_Category_Mask>Corvette | Frigate | Capital | SpaceHero | Structure</Projectile_Combat_Mod_Category_Mask>
+   </Projectile>
+
+   <Projectile Name="Proj_Neutral_Partially_Depleted_ZPM_Commander_Speed_Bonus">
+     <Variant_Of_Existing_Type>Proj_Neutral_Template_Commander_Bonus</Variant_Of_Existing_Type>
+     <Projectile_Combat_Mod>COMBAT_MOD_SPEED</Projectile_Combat_Mod>
+     <Projectile_Combat_Mod_Duration>7200.0</Projectile_Combat_Mod_Duration>
+     <Projectile_Combat_Mod_Value>0.35f</Projectile_Combat_Mod_Value>
+     <Projectile_Combat_Mod_Effect>Particle_Tauri_Commander_Buff</Projectile_Combat_Mod_Effect>
+     <Projectile_Combat_Mod_Category_Mask>Corvette | Frigate | Capital | SpaceHero | Structure</Projectile_Combat_Mod_Category_Mask>
+   </Projectile>
+
+   <Projectile Name="Proj_Neutral_Partially_Depleted_ZPM_Commander_Fire_Rate_Bonus">
+     <Variant_Of_Existing_Type>Proj_Neutral_Template_Commander_Bonus</Variant_Of_Existing_Type>
+     <Projectile_Combat_Mod>COMBAT_MOD_FIRE_RATE</Projectile_Combat_Mod>
+     <Projectile_Combat_Mod_Duration>7200.0</Projectile_Combat_Mod_Duration>
+     <Projectile_Combat_Mod_Value>0.2f</Projectile_Combat_Mod_Value>
+     <Projectile_Combat_Mod_Effect>Particle_Tauri_Commander_Buff</Projectile_Combat_Mod_Effect>
+     <Projectile_Combat_Mod_Category_Mask>Corvette | Frigate | Capital | SpaceHero | Structure</Projectile_Combat_Mod_Category_Mask>
+   </Projectile>
+
+   <Projectile Name="Proj_Neutral_Partially_Depleted_ZPM_Commander_Fire_Range_Bonus">
+     <Variant_Of_Existing_Type>Proj_Neutral_Template_Commander_Bonus</Variant_Of_Existing_Type>
+     <Projectile_Combat_Mod>COMBAT_MOD_FIRE_RANGE</Projectile_Combat_Mod>
+     <Projectile_Combat_Mod_Duration>7200.0</Projectile_Combat_Mod_Duration>
+     <Projectile_Combat_Mod_Value>0.1f</Projectile_Combat_Mod_Value>
+     <Projectile_Combat_Mod_Effect>Particle_Tauri_Commander_Buff</Projectile_Combat_Mod_Effect>
+     <Projectile_Combat_Mod_Category_Mask>Corvette | Frigate | Capital | SpaceHero | Structure</Projectile_Combat_Mod_Category_Mask>
+   </Projectile>
+
+   <Projectile Name="Proj_Neutral_Partially_Depleted_ZPM_Commander_Damage_Bonus">
+     <Variant_Of_Existing_Type>Proj_Neutral_Template_Commander_Bonus</Variant_Of_Existing_Type>
+     <Projectile_Combat_Mod>COMBAT_MOD_DAMAGE</Projectile_Combat_Mod>
+     <Projectile_Combat_Mod_Duration>7200.0</Projectile_Combat_Mod_Duration>
+     <Projectile_Combat_Mod_Value>0.2f</Projectile_Combat_Mod_Value>
+     <Projectile_Combat_Mod_Effect>Particle_Tauri_Commander_Buff</Projectile_Combat_Mod_Effect>
+     <Projectile_Combat_Mod_Category_Mask>Corvette | Frigate | Capital | SpaceHero | Structure</Projectile_Combat_Mod_Category_Mask>
+   </Projectile>
+
+   <Projectile Name="Proj_Neutral_Partially_Depleted_ZPM_Commander_Ability_Bonus">
+     <Variant_Of_Existing_Type>Proj_Neutral_Template_Commander_Bonus</Variant_Of_Existing_Type>
+     <Projectile_Combat_Mod>COMBAT_MOD_ABILITY_RECHARGE_TIME</Projectile_Combat_Mod>
+     <Projectile_Combat_Mod_Duration>7200.0</Projectile_Combat_Mod_Duration>
+     <Projectile_Combat_Mod_Value>0.25f</Projectile_Combat_Mod_Value>
+     <Projectile_Combat_Mod_Effect>Particle_Tauri_Commander_Buff</Projectile_Combat_Mod_Effect>
+     <Projectile_Combat_Mod_Category_Mask>Corvette | Frigate | Capital | SpaceHero | Structure</Projectile_Combat_Mod_Category_Mask>
+   </Projectile>
+
+
+   <SpaceUnit Name="Neutral_ZPM_Mission_Icon">
+     <Text_ID>TEXT_TAURI_SPECIAL_HERO_ZPM</Text_ID>
+     <Encyclopedia_Text>TEXT_DESCRIPTION_TAURI_GC_ZPM</Encyclopedia_Text>
+     <Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_ZPM</Encyclopedia_Unit_Class>
+     <Space_Model_Name>W_LASER_INVISIBLE.alo</Space_Model_Name>
+     <Icon_Name>TAURI_ZPM.TGA</Icon_Name>
+     <Select_Box_Scale>0</Select_Box_Scale>
+     <Select_Box_Z_Adjust>-1</Select_Box_Z_Adjust>
+     <Show_Hero_Head>Yes</Show_Hero_Head>
+     <Hyperspace>No</Hyperspace>
+     <Behavior> SELECTABLE, DUMMY_STARSHIP, IDLE</Behavior>
+     <SpaceBehavior>ABILITY_COUNTDOWN, IDLE, SIMPLE_SPACE_LOCOMOTOR, TARGETING, HIDE_WHEN_FOGGED, REVEAL, UNIT_AI, ASTEROID_FIELD_DAMAGE, DAMAGE_TRACKING, ION_STUN_EFFECT, NEBULA </SpaceBehavior>
+     <Space_FOW_Reveal_Range>1000.0</Space_FOW_Reveal_Range>
+     <Max_Speed>4.0</Max_Speed>
+     <Max_Rate_Of_Turn>0.4</Max_Rate_Of_Turn>
+     <Max_Thrust> 0.7 </Max_Thrust>
+     <Layer_Z_Adjust>-100.0</Layer_Z_Adjust>
+     <Max_Rate_Of_Roll>0.3</Max_Rate_Of_Roll>
+     <Bank_Turn_Angle>35</Bank_Turn_Angle>
+     <Is_Visible_On_Radar>No</Is_Visible_On_Radar>
+     <Radar_Icon_Name>i_radar_fighter.tga</Radar_Icon_Name>
+     <Radar_Icon_Size>0.04  0.04</Radar_Icon_Size>
+     <Ship_Class>Fighter</Ship_Class>
+     <CategoryMask>Fighter</CategoryMask>
+     <Affiliation>Neutral</Affiliation>
+     <Death_Clone>Damage_Normal, Large_Explosion_Space_Empire</Death_Clone>
+     <HardPoints>Asteroid_Damage_Point</HardPoints>
+     <Tactical_Health>1000</Tactical_Health>
+     <Layer_Z_Adjust>-5.0</Layer_Z_Adjust>
+     <Sort_Order_Adjust>-1</Sort_Order_Adjust>
+     <Population_Value>0</Population_Value>
+     <Victory_Relevant>no</Victory_Relevant>
+   </SpaceUnit>
+
+</Units_ZPM>

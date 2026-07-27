@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ReplicatorHeroes>
+
+   <SpaceHero Name="Replicator_RepliCarter">
+      <Variant_Of_Existing_Type>Replicator_Battle_Cruiser</Variant_Of_Existing_Type>
+      <Text_ID>TEXT_REPLIKATOREN_SPACE_HERO_REPLICARTER</Text_ID>
+      <Encyclopedia_Text>TEXT_DESCRIPTION_REPLIKATOREN_GC_REPLICARTER_SPACE</Encyclopedia_Text>
+      <Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_REPLICARTER_SCHLACHTKREUZER</Encyclopedia_Unit_Class>
+      <Encyclopedia_Good_Against> Acclamator_Assault_Ship Tartan_Patrol_Cruiser Interceptor4_Frigate </Encyclopedia_Good_Against>
+      <Encyclopedia_Vulnerable_To> TIE_Bomber Skipray_Blastboat</Encyclopedia_Vulnerable_To>
+      <Icon_Name>REPLICATOR_SPACE_HERO_REPLICARTER.TGA</Icon_Name>
+      <Space_Model_Name>Replicator_Space_Hero_RepliCarter.ALO</Space_Model_Name>
+      <CategoryMask>Capital | SpaceHero | AntiCapital</CategoryMask>
+      <AI_Combat_Power>5500</AI_Combat_Power>
+      <Armor_Type>Armor_Replicator</Armor_Type>	  
+      <Shield_Armor_Type>Armor_Hero_MediumBS</Shield_Armor_Type>
+      <Ranking_In_Category>7</Ranking_In_Category>
+      <Is_Named_Hero>No</Is_Named_Hero>
+      <Is_Generic_Hero>Yes</Is_Generic_Hero>
+      <Show_Hero_Head>Yes</Show_Hero_Head>
+      <Score_Cost_Credits>25000</Score_Cost_Credits>
+      <Neutralization_Cost>5000.0</Neutralization_Cost>
+      <Can_Be_Neutralized_By_Major_Heroes>No</Can_Be_Neutralized_By_Major_Heroes>
+      <Can_Be_Neutralized_By_Minor_Heroes>No</Can_Be_Neutralized_By_Minor_Heroes>
+      <Tactical_Health>4300</Tactical_Health>
+      <HardPoints>
+         HP_Replicator_RepliCarter_M_IBM_00,
+         HP_Replicator_RepliCarter_M_IBM_01,
+         HP_Replicator_RepliCarter_F_IBH_00,
+         HP_Replicator_RepliCarter_F_IBH_01,
+         HP_Replicator_RepliCarter_M_IBM_02,
+         HP_Replicator_RepliCarter_M_IBM_03,
+         HP_Replicator_RepliCarter_Fighter_Bay,
+         HP_Replicator_RepliCarter_Engines,
+         HP_Replicarter_Nanite_Missile,
+      </HardPoints>
+      <Population_Value>8</Population_Value>
+      <Starting_Spawned_Units_Tech_0>Replicator_Fighter_Squadron, 1</Starting_Spawned_Units_Tech_0>
+      <Starting_Spawned_Units_Tech_0>Replicator_Bomber_Squadron, 1</Starting_Spawned_Units_Tech_0>
+      <Spawned_Squadron_Delay_Seconds>5</Spawned_Squadron_Delay_Seconds>
+      <Reserve_Spawned_Units_Tech_0>Replicator_Fighter_Squadron, -1</Reserve_Spawned_Units_Tech_0>
+      <Reserve_Spawned_Units_Tech_0>Replicator_Bomber_Squadron, -1</Reserve_Spawned_Units_Tech_0>
+	  <Build_Limit_Current_Per_Player>1</Build_Limit_Current_Per_Player>	  	
+      <Tech_Level>99</Tech_Level> 	  
+     <Unit_Abilities_Data SubObjectList="Yes">
+        <Unit_Ability>
+           <Type>BLAST</Type>
+           <Recharge_Seconds>100000</Recharge_Seconds>
+           <GUI_Activated_Ability_Name> Replicator_Blast </GUI_Activated_Ability_Name>
+           <SFXEvent_GUI_Unit_Ability_Activated></SFXEvent_GUI_Unit_Ability_Activated>
+           <Alternate_Name_Text></Alternate_Name_Text>
+           <Alternate_Description_Text></Alternate_Description_Text>
+           <Targeting_Max_Attack_Distance>1800.0</Targeting_Max_Attack_Distance>
+         </Unit_Ability>
+      <Unit_Ability>
+        <Type>FULL_SALVO</Type>
+        <Recharge_Seconds>100000</Recharge_Seconds>
+        <Expiration_Seconds>0.5</Expiration_Seconds>
+        <SFXEvent_GUI_Unit_Ability_Activated></SFXEvent_GUI_Unit_Ability_Activated>
+        <GUI_Activated_Ability_Name></GUI_Activated_Ability_Name>
+        <Must_Be_Bought_On_Black_Market>No</Must_Be_Bought_On_Black_Market>
+        <Alternate_Name_Text>TEXT_ABILITY_ANTI_REPLICATOR_FIELD</Alternate_Name_Text>
+        <Alternate_Description_Text>TEXT_DESCRIPTION_ABILITY_ANTI_REPLICATOR_FIELD_THOR</Alternate_Description_Text>
+        <Alternate_Icon_Name>I_SA_ANTIREPLISAT.TGA</Alternate_Icon_Name>
+      </Unit_Ability>		 
+      </Unit_Abilities_Data>
+      <Abilities SubObjectList="Yes">
+         <Blast_Ability Name="Replicator_Blast">
+          <Activation_Style> User_Input </Activation_Style>
+          <Charge_Up_Seconds>0.1</Charge_Up_Seconds>
+          <Damage_Multiplier>1</Damage_Multiplier>
+          <Charging_Effect />
+          <Charged_Effect />
+          <SFXEvent_Activate></SFXEvent_Activate>
+        </Blast_Ability>
+      </Abilities>
+      <Lua_Script>ObjectScript_Nanite_Missile</Lua_Script>
+  </SpaceHero>
+
+  <!-- Projectiles Replicator RepliCater -->
+   <Projectile Name="Proj_Replicator_RepliCarter_Impulse_Battery_Middle">
+      <Variant_Of_Existing_Type>Proj_Replicator_Space_Impulse_Battery_Middle</Variant_Of_Existing_Type>
+      <Projectile_Damage>25.0</Projectile_Damage>
+   </Projectile>
+
+   <Projectile Name="Proj_Replicator_RepliCarter_Impulse_Battery_Heavy">
+      <Variant_Of_Existing_Type>Proj_Replicator_Space_Impulse_Battery_Heavy</Variant_Of_Existing_Type>
+      <Projectile_Damage>40.0</Projectile_Damage>
+   </Projectile>
+
+</ReplicatorHeroes>

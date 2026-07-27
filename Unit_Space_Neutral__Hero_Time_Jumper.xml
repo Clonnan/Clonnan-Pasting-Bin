@@ -1,0 +1,213 @@
+<?xml version="1.0"?>
+<Time_Jumper>
+
+    <UniqueUnit Name="Neutral_Hero_Time_Jumper_Squadron">
+        <Text_ID>TEXT_NEUTRAL_UNIT_TIME_JUMPER</Text_ID>
+        <Encyclopedia_Text>TEXT_DESCRIPTION_GC_TIME_JUMPER TEXT_DESCRIPTION_FIGHTER_HYPERSPACE_YES</Encyclopedia_Text>
+        <Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_TIME_JUMPER</Encyclopedia_Unit_Class>
+        <Encyclopedia_Good_Against> TIE_Bomber TIE_Fighter Starviper_Fighter </Encyclopedia_Good_Against>
+        <Encyclopedia_Vulnerable_To> Vengeance_Frigate Victory_Destroyer Acclamator_Assault_Ship </Encyclopedia_Vulnerable_To>
+        <Icon_Name>NEUTRAL_SPACE_HERO_TIME_JUMPER.TGA</Icon_Name>
+        <Is_Named_Hero>No</Is_Named_Hero>
+		<Is_Generic_Hero>Yes</Is_Generic_Hero>
+		<Show_Hero_Head>Yes</Show_Hero_Head>
+        <Space_Model_Name>Asuran_Space_Unit_Puddle_Jumper.ALO</Space_Model_Name>
+        <Galactic_Fleet_Override_Model_Name>W_planet_fleet_PuddleJumper.ALO</Galactic_Fleet_Override_Model_Name>
+        <Galactic_Fleet_Override_Icon_Index> 4 </Galactic_Fleet_Override_Icon_Index>
+        <Scale_Factor>1.4</Scale_Factor>
+        <Select_Box_Scale>40</Select_Box_Scale>
+        <Select_Box_Z_Adjust>-1</Select_Box_Z_Adjust>
+        <Mass>0.98</Mass>
+        <Ranking_In_Category>3</Ranking_In_Category>
+        <MovementClass> Space </MovementClass>
+        <Mass>0.98</Mass>
+        <Max_Speed>6.0</Max_Speed>
+        <Min_Speed>4.5</Min_Speed>
+        <Max_Rate_Of_Turn>2.0</Max_Rate_Of_Turn>
+        <Max_Thrust>0.1</Max_Thrust>
+        <Max_Rate_Of_Roll>5.0</Max_Rate_Of_Roll>
+        <Bank_Turn_Angle>50</Bank_Turn_Angle>
+        <Begin_Turn_Towards_Distance>300.0</Begin_Turn_Towards_Distance>
+        <Fires_Forward>no</Fires_Forward>
+        <Turret_Rotate_Extent_Degrees>20</Turret_Rotate_Extent_Degrees>
+        <Turret_Elevate_Extent_Degrees>40</Turret_Elevate_Extent_Degrees>
+        <Max_Lift>1.5</Max_Lift>
+        <Build_Cost_Credits>3200</Build_Cost_Credits>
+        <Population_Value>3</Population_Value>
+		<AI_Combat_Power>180</AI_Combat_Power>
+        <Hyperspace>yes</Hyperspace>
+        <Hyperspace_Speed>1.0</Hyperspace_Speed>
+        <OverrideAcceleration> .3 </OverrideAcceleration>
+        <OverrideDeceleration> .3 </OverrideDeceleration>
+        <Layer_Z_Adjust> -20 </Layer_Z_Adjust>
+        <Affiliation>Underworld</Affiliation>
+        <Tactical_Health>400</Tactical_Health>
+        <Shield_Points>400</Shield_Points>
+        <Shield_Refresh_Rate>4</Shield_Refresh_Rate>
+        <Energy_Capacity>10000</Energy_Capacity>
+        <Energy_Refresh_Rate>900</Energy_Refresh_Rate>
+        <Ship_Class>fighter</Ship_Class>
+        <Armor_Type>Armor_Hero_Fighter</Armor_Type>
+        <Shield_Armor_Type>Armor_Hero_Fighter</Shield_Armor_Type>
+        <Is_Escort>Yes</Is_Escort>
+        <Is_Bomber>no</Is_Bomber>
+        <Squadron_Capacity>0</Squadron_Capacity>
+        <Size_Value>8</Size_Value>
+        <Behavior>DUMMY_STARSHIP, SELECTABLE, POWERED, SHIELDED</Behavior>
+        <SpaceBehavior>ABILITY_COUNTDOWN, FIGHTER_LOCOMOTOR, SELECTABLE, TARGETING, POWERED, SHIELDED, REVEAL, HIDE_WHEN_FOGGED, AMBIENT_SFX, DAMAGE_TRACKING, UNIT_AI, NEBULA </SpaceBehavior>
+        <LandBehavior>REVEAL, HIDE_WHEN_FOGGED</LandBehavior>
+        <GUI_Bracket_Size>0</GUI_Bracket_Size>
+        <Collidable_By_Projectile_Living>Yes</Collidable_By_Projectile_Living>
+        <Death_Explosions>Medium_Explosion_Space</Death_Explosions>
+        <HardPoints>
+            HP_SGA_Missile_1,
+            HP_SGA_Missile_2
+        </HardPoints>
+        <Asteroid_Damage_Hit_Particles>Small_Damage_Space</Asteroid_Damage_Hit_Particles>
+        <Turret_Rotate_Extent_Degrees>360</Turret_Rotate_Extent_Degrees>
+        <Turret_Elevate_Extent_Degrees>90</Turret_Elevate_Extent_Degrees>
+        <Land_FOW_Reveal_Range>200.0</Land_FOW_Reveal_Range>
+        <Space_FOW_Reveal_Range>1000.0</Space_FOW_Reveal_Range>
+        <Dense_FOW_Reveal_Range_Multiplier>0.2</Dense_FOW_Reveal_Range_Multiplier>
+        <Targeting_Max_Attack_Distance>1000.0</Targeting_Max_Attack_Distance>
+        <SFXEvent_Attack></SFXEvent_Attack>
+        <SFXEvent_Fleet_Move></SFXEvent_Fleet_Move>
+        <SFXEvent_Guard></SFXEvent_Guard>
+        <SFXEvent_Health_Critical_Warning></SFXEvent_Health_Critical_Warning>
+        <SFXEvent_Health_Low_Warning></SFXEvent_Health_Low_Warning>
+        <SFXEvent_Move></SFXEvent_Move>
+        <SFXEvent_Move_Into_Asteroid_Field></SFXEvent_Move_Into_Asteroid_Field>
+        <SFXEvent_Move_Into_Nebula></SFXEvent_Move_Into_Nebula>
+        <SFXEvent_Select></SFXEvent_Select>
+        <SFXEvent_Stop></SFXEvent_Stop>
+
+        <SFXEvent_Build_Started></SFXEvent_Build_Started>
+        <SFXEvent_Build_Cancelled></SFXEvent_Build_Cancelled>
+
+        <SFXEvent_Build_Complete></SFXEvent_Build_Complete>
+        <Death_SFXEvent_Start_Die></Death_SFXEvent_Start_Die>
+        <SFXEvent_Hero_Respawned></SFXEvent_Hero_Respawned>
+
+        <Score_Cost_Credits> 15000 </Score_Cost_Credits>
+
+        <Ranged_Target_Z_Adjust>-3.0</Ranged_Target_Z_Adjust>
+        <MovementClass> Space </MovementClass>
+        <CategoryMask> Fighter | SpaceHero </CategoryMask>
+        <Victory_Relevant>yes</Victory_Relevant>
+        <Hover_Offset>5</Hover_Offset>
+
+        <Is_Visible_On_Radar>Yes</Is_Visible_On_Radar>
+        <Radar_Icon_Name>I_RADAR_PUDDLE_JUMPER.TGA</Radar_Icon_Name>
+        <Radar_Icon_Size>0.025 0.025</Radar_Icon_Size>
+        <Radar_Icon_Scale_Land>1.0</Radar_Icon_Scale_Land>
+        <Radar_Icon_Scale_Space>1.0</Radar_Icon_Scale_Space>
+        <Targeting_Priority_Set>Fighter</Targeting_Priority_Set>
+        <Guard_Chase_Range>1000.0</Guard_Chase_Range>
+        <Idle_Chase_Range>400.0</Idle_Chase_Range>
+        <Attack_Move_Response_Range>400.0</Attack_Move_Response_Range>
+        <Targeting_Stickiness_Time_Threshold>5.0</Targeting_Stickiness_Time_Threshold>
+        <Autonomous_Move_Extension_Vs_Attacker>500.0</Autonomous_Move_Extension_Vs_Attacker>
+        <Spin_Away_On_Death>Yes</Spin_Away_On_Death>
+        <Spin_Away_On_Death_Chance>0.2</Spin_Away_On_Death_Chance>
+        <Spin_Away_On_Death_Time>2.0f</Spin_Away_On_Death_Time>
+        <Spin_Away_On_Death_Explosion>Small_Explosion_Space</Spin_Away_On_Death_Explosion>
+        <Spin_Away_On_Death_SFXEvent_Start_Die></Spin_Away_On_Death_SFXEvent_Start_Die>
+        <Remove_Upon_Death>true</Remove_Upon_Death>
+        <Tactical_Build_Cost_Multiplayer>2000</Tactical_Build_Cost_Multiplayer>
+        <Tactical_Build_Time_Seconds>20</Tactical_Build_Time_Seconds>
+        <Tactical_Build_Prerequisites/>
+        <Tactical_Production_Queue>Tactical_Units</Tactical_Production_Queue>
+		<Required_Star_Base_Level>1</Required_Star_Base_Level>
+		<Required_Ground_Base_Level>0</Required_Ground_Base_Level>
+		<Tech_Level>99</Tech_Level>
+        <Build_Limit_Current_For_All_Allies>-1</Build_Limit_Current_For_All_Allies>
+        <Build_Limit_Lifetime_For_All_Allies>-1</Build_Limit_Lifetime_For_All_Allies>
+        <Build_Limit_Lifetime_Per_Player>-1</Build_Limit_Lifetime_Per_Player>
+        <Build_Limit_Current_Per_Player>1</Build_Limit_Current_Per_Player>
+        <Unit_Abilities_Data SubObjectList="Yes">
+            <Unit_Ability>
+                <Type>STEALTH</Type>
+                <Alternate_Icon_Name>i_sa_stealth_jumper.tga</Alternate_Icon_Name>
+                <Alternate_Name_Text>TEXT_TOOLTIP_CLOAK</Alternate_Name_Text>
+                <GUI_Activated_Ability_Name>Stealth_Puddle_Jumper</GUI_Activated_Ability_Name>
+                <Recharge_Seconds>15.0</Recharge_Seconds>
+                <Expiration_Seconds>60.0</Expiration_Seconds>
+                <SFXEvent_GUI_Unit_Ability_Activated>Effect_Jumper_Stealth_On</SFXEvent_GUI_Unit_Ability_Activated>
+                <SFXEvent_GUI_Unit_Ability_Deactivated>Effect_Jumper_Stealth_Off</SFXEvent_GUI_Unit_Ability_Deactivated>
+                <Must_Be_Bought_On_Black_Market>No</Must_Be_Bought_On_Black_Market>
+                <Alternate_Name_Text>TEXT_ABILITY_TAURI_SPACE_PUDDLE_JUMPER_TARNUNG</Alternate_Name_Text>
+                <Alternate_Description_Text>TEXT_ABILITY_DESCRIPTION_TAURI_SPACE_JUMPER_TARNUNG</Alternate_Description_Text>
+            </Unit_Ability>
+      <Unit_Ability>
+        <Type>FULL_SALVO</Type>
+        <Recharge_Seconds>240</Recharge_Seconds>
+        <Expiration_Seconds>5</Expiration_Seconds>
+        <SFXEvent_GUI_Unit_Ability_Activated></SFXEvent_GUI_Unit_Ability_Activated>
+        <GUI_Activated_Ability_Name>TIME_JUMP</GUI_Activated_Ability_Name>
+        <Must_Be_Bought_On_Black_Market>No</Must_Be_Bought_On_Black_Market>
+        <Alternate_Name_Text>TEXT_ABILITY_TIME_JUMP</Alternate_Name_Text>
+        <Alternate_Description_Text>TEXT_DESCRIPTION_ABILITY_TIME_JUMP_PUDDLE_JUMPER</Alternate_Description_Text>
+        <Alternate_Icon_Name>I_SA_TIME_JUMP.TGA</Alternate_Icon_Name>
+      </Unit_Ability>			 
+        </Unit_Abilities_Data>
+        <Abilities SubObjectList="Yes">
+            <Stealth_Ability Name="Stealth_Puddle_Jumper">
+                <Activation_Style> User_Input </Activation_Style>
+                <Stealth_Color>255, 255, 255, 255</Stealth_Color>
+                <Stealth_Transition_Time>.5</Stealth_Transition_Time>
+                <SFXEvent_Activate>Effect_Jumper_Stealth_On</SFXEvent_Activate>
+                <Must_Be_Bought_On_Black_Market>No</Must_Be_Bought_On_Black_Market>
+            </Stealth_Ability>
+        </Abilities>
+		<Lua_Script>ObjectScript_Time_Jumper</Lua_Script>
+    </UniqueUnit>
+
+	<MiscObject Name="Time_Heal">
+		<Text_ID />
+		<Space_Model_Name>p_instant_heal.ALO</Space_Model_Name>
+		<Scale_Factor>1.0</Scale_Factor>
+		<Behavior>DUMMY_ORBITAL_STRUCTURE</Behavior>
+		<SpaceBehavior>ABILITY_COUNTDOWN, SELF_DESTRUCT, UNIT_AI</SpaceBehavior>
+		<Layer_Z_Adjust>0.0</Layer_Z_Adjust>
+		<Remove_Upon_Death>true</Remove_Upon_Death>
+		<Selt_Destruct_SFXEvent_Start_Die>Effect_Shield_Absorb_Light</Selt_Destruct_SFXEvent_Start_Die>
+		<Abilities SubObjectList="Yes">
+			<Force_Healing_Ability Name="Repair_Ship_Healing">
+				<Activation_Style>Space_Automatic</Activation_Style>
+				<Heal_Range>10.0</Heal_Range>
+				<Heal_Amount>400</Heal_Amount>
+				<Blob_Color>0, 255, 0, 0</Blob_Color>
+				<Heal_Interval_In_Secs>0.1</Heal_Interval_In_Secs>
+				<Single_Target_Heal>Yes</Single_Target_Heal>
+				<Heal_Range_Blob_Material>Reinforcement_Point_Radius_Overlay</Heal_Range_Blob_Material>
+				<Applicable_Unit_Categories>Fighter | SpaceHero</Applicable_Unit_Categories>
+				<SFXEvent_Target_Affected></SFXEvent_Target_Affected>
+				<Target_Particle_Effect>Shield_Sparks_Medium</Target_Particle_Effect>
+				<Target_Particle_Bone_Name>ELEC_BOX_ALT2</Target_Particle_Bone_Name>
+				<Target_Light_Effect_Type>Color_Flash</Target_Light_Effect_Type>
+				<Target_Light_Effect_Color>1.2, 1.2, 2.0</Target_Light_Effect_Color>
+				<Target_Light_Effect_Color2 />
+				<Target_Light_Effect_Duration>1.6</Target_Light_Effect_Duration>
+				<Target_Light_Effect_Pulse_Count>100</Target_Light_Effect_Pulse_Count>
+				<Owner_Particle_Bone_Name>ROOT</Owner_Particle_Bone_Name>
+				<Owner_Light_Effect_Type>Color_Flash</Owner_Light_Effect_Type>
+				<Owner_Light_Effect_Color>1.2, 1.2, 2.0</Owner_Light_Effect_Color>
+				<Owner_Light_Effect_Color2 />
+				<Owner_Light_Effect_Duration>1.6</Owner_Light_Effect_Duration>
+				<Owner_Light_Effect_Pulse_Count>100</Owner_Light_Effect_Pulse_Count>
+			</Force_Healing_Ability>
+		</Abilities>
+		<Unit_Abilities_Data SubObjectList="Yes">
+			<Unit_Ability>
+				<Type>SELF_DESTRUCT</Type>
+				<Expiration_Seconds>0.1</Expiration_Seconds>
+				<Supports_Autofire>False</Supports_Autofire>
+			</Unit_Ability>
+		</Unit_Abilities_Data>
+	</MiscObject>
+
+   <Projectile Name="Proj_Time_Point">
+      <Variant_Of_Existing_Type>Proj_Neutral_Template_Commander_Bonus</Variant_Of_Existing_Type>
+   </Projectile>
+
+</Time_Jumper>

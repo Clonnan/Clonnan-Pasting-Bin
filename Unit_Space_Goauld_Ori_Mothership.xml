@@ -1,0 +1,122 @@
+<?xml version="1.0"?>
+<Goauld_Ori_Mothership>
+  <!--Buildable in the Ancient Sensor-->
+  <SpaceUnit Name="Goauld_Ori_Mothership">
+    <Variant_Of_Existing_Type>Ori_Mothership_No_Spawn</Variant_Of_Existing_Type>
+    <Text_ID>TEXT_GOAULD_SPACE_UNIT_SK_ORI_KRIEGSSCHIFF</Text_ID>
+    <Encyclopedia_Text>TEXT_DESCRIPTION_GOAULD_SK_ORI_KRIEGSSCHIFF</Encyclopedia_Text>
+    <Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_ORI_KRIEGSSCHIFF</Encyclopedia_Unit_Class>
+
+    <CategoryMask> Capital | SpaceHero | AntiFrigate </CategoryMask>
+    <Score_Cost_Credits> 45000</Score_Cost_Credits>
+    <Affiliation>Rebel</Affiliation>
+
+    <Damage>70</Damage>
+    <Shield_Points>4500</Shield_Points>
+    <Shield_Refresh_Rate>75</Shield_Refresh_Rate>
+    <Build_Cost_Credits>5800</Build_Cost_Credits>
+    <Tactical_Health>2916</Tactical_Health>
+    <Is_Generic_Hero>Yes</Is_Generic_Hero>
+    <Show_Hero_Head>No</Show_Hero_Head>
+    <Neutralization_Cost>13300.0</Neutralization_Cost>
+    <AI_Combat_Power>6900</AI_Combat_Power>
+
+    <Starting_Spawned_Units_Tech_0>Ori_Fighter_Squadron, 2</Starting_Spawned_Units_Tech_0>
+    <Spawned_Squadron_Delay_Seconds>5</Spawned_Squadron_Delay_Seconds>
+    <Reserve_Spawned_Units_Tech_0>Ori_Fighter_Squadron, -1</Reserve_Spawned_Units_Tech_0>
+    <HardPoints>
+      HP_Goauld_Ori_Mothership_F_SL,
+      HP_Goauld_Ori_Mothership_F_OPB_00,
+      HP_Goauld_Ori_Mothership_M_OPB_01, <!-- left;view from front -->
+      HP_Goauld_Ori_Mothership_M_OPB_00, <!-- right;view from front -->
+      HP_Goauld_Ori_Mothership_Shield_Generator,
+      HP_Goauld_Ori_Mothership_Engines,
+      HP_Goauld_Ori_Mothership_Fighter_Bay
+    </HardPoints>
+
+    <SFXEvent_Select>Unit_Select_Goauld_Anubis_Super_Hatak</SFXEvent_Select>
+    <SFXEvent_Move>Unit_Move_Goauld_Anubis_Super_Hatak</SFXEvent_Move>
+    <SFXEvent_Fleet_Move>Unit_Move_Goauld_Anubis_Super_Hatak</SFXEvent_Fleet_Move>
+    <SFXEvent_Attack>Unit_Attack_Goauld_Anubis_Super_Hatak</SFXEvent_Attack>
+    <SFXEvent_Health_Low_Warning>Unit_LOWHP_Goauld_Anubis_Super_Hatak</SFXEvent_Health_Low_Warning>
+
+    <Tactical_Build_Cost_Multiplayer>7000</Tactical_Build_Cost_Multiplayer>
+    <Tactical_Build_Time_Seconds>55</Tactical_Build_Time_Seconds>
+    <Tactical_Production_Queue>Tactical_Units</Tactical_Production_Queue>
+    <Build_Limit_Current_For_All_Allies>-1</Build_Limit_Current_For_All_Allies>
+    <Build_Limit_Lifetime_For_All_Allies>-1</Build_Limit_Lifetime_For_All_Allies>
+    <Build_Limit_Lifetime_Per_Player>-1</Build_Limit_Lifetime_Per_Player>
+    <Build_Limit_Current_Per_Player>1</Build_Limit_Current_Per_Player>
+    <Population_Value>10</Population_Value>
+    <Required_Star_Base_Level>1</Required_Star_Base_Level>
+
+    <Unit_Abilities_Data SubObjectList="Yes">
+      <Unit_Ability>
+        <Type>BLAST</Type>
+        <Alternate_Name_Text>TEXT_ABILITY_ORI_SPACE_KRIEGSSCHIFF_SUPERLASER</Alternate_Name_Text>
+        <Alternate_Description_Text>TEXT_DESCRIPTION_ABILITY_SPACE_ORI_KRIEGSSCHIFF_SUPERLASER</Alternate_Description_Text>
+        <Alternate_Icon_Name>I_SA_ION_CANNON_SHOT.TGA</Alternate_Icon_Name>
+        <Recharge_Seconds>20.0</Recharge_Seconds>
+        <GUI_Activated_Ability_Name> Goauld_Ori_Mothership_Blast </GUI_Activated_Ability_Name>
+        <Targeting_Max_Attack_Distance>2000.0</Targeting_Max_Attack_Distance>
+      </Unit_Ability>
+    </Unit_Abilities_Data>
+    <Abilities SubObjectList="Yes">
+      <Blast_Ability Name="Goauld_Ori_Mothership_Blast">
+        <Activation_Style> User_Input </Activation_Style>
+        <Charge_Up_Seconds>1</Charge_Up_Seconds>
+        <Damage_Multiplier>1</Damage_Multiplier>
+        <Charging_Effect />
+        <Charged_Effect />
+        <SFXEvent_Activate />
+      </Blast_Ability>
+    </Abilities>
+
+    <Lua_Script>ObjectScript_Major_Weapon_Use</Lua_Script>
+  </SpaceUnit>
+
+  <SpaceUnit Name="Goauld_Ori_Mothership_SK">
+    <Variant_Of_Existing_Type>Goauld_Ori_Mothership</Variant_Of_Existing_Type>
+    <Tactical_Build_Prerequisites> General_Tech_4_Prereq </Tactical_Build_Prerequisites>
+    <Tech_Level>99</Tech_Level>
+    <Lua_Script>ObjectScript_Major_Weapon_Use</Lua_Script>
+  </SpaceUnit>
+
+  <!-- Deathclone Goauld Ori Mothership -->
+  <SpaceUnit Name="Goauld_Ori_Mothership_Death_Clone">
+    <Variant_Of_Existing_Type>Ori_Mothership_Death_Clone</Variant_Of_Existing_Type>
+    <Affiliation>Rebel</Affiliation>
+  </SpaceUnit>
+
+  <!-- Projectiles Goauld version of the Ori Mothership -->
+  <Projectile Name="Proj_Goauld_Ori_Mothership_Superlaser_Heavy">
+    <Variant_Of_Existing_Type>Proj_Ori_Space_Superlaser_Heavy</Variant_Of_Existing_Type>
+    <Damage_Type>Damage_HeavyBS</Damage_Type>
+    <Max_Speed>50.0</Max_Speed>
+    <Max_Rate_Of_Turn>0.0</Max_Rate_Of_Turn>
+    <Projectile_Max_Flight_Distance>2000.0</Projectile_Max_Flight_Distance>
+    <Projectile_Damages_Random_Hard_Points>No</Projectile_Damages_Random_Hard_Points>
+    <Projectile_Damage>2000.0</Projectile_Damage>
+    <Projectile_Does_Shield_Damage>Yes</Projectile_Does_Shield_Damage>
+    <Projectile_Does_Energy_Damage>No</Projectile_Does_Energy_Damage>
+    <Projectile_Does_Hitpoint_Damage>Yes</Projectile_Does_Hitpoint_Damage>
+    <Projectile_Energy_Per_Shot>200</Projectile_Energy_Per_Shot>
+    <AI_Combat_Power>540</AI_Combat_Power>
+  </Projectile>
+
+  <Projectile Name="Proj_Goauld_Ori_Mothership_Plasma">
+    <Variant_Of_Existing_Type>Proj_Ori_Space_Plasma</Variant_Of_Existing_Type>
+    <Projectile_Damages_Random_Hard_Points>No</Projectile_Damages_Random_Hard_Points>
+    <Damage_Type>Damage_MediumBS</Damage_Type>
+    <Max_Speed>30.0</Max_Speed>
+    <Max_Rate_Of_Turn>0.0</Max_Rate_Of_Turn>
+    <Projectile_Max_Flight_Distance>1800.0</Projectile_Max_Flight_Distance>
+    <Projectile_Damage>50.0</Projectile_Damage>
+    <Projectile_Does_Shield_Damage>Yes</Projectile_Does_Shield_Damage>
+    <Projectile_Does_Energy_Damage>No</Projectile_Does_Energy_Damage>
+    <Projectile_Does_Hitpoint_Damage>Yes</Projectile_Does_Hitpoint_Damage>
+    <Projectile_Energy_Per_Shot>100</Projectile_Energy_Per_Shot>
+    <AI_Combat_Power>160</AI_Combat_Power>
+  </Projectile>
+
+</Goauld_Ori_Mothership>

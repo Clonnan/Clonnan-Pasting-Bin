@@ -1,0 +1,231 @@
+<?xml version="1.0"?>
+<Systemlord_Units>
+
+  <!-- Information SLA (Systemlords Alliance) Deathglider -->
+  <SpaceUnit Name="Systemlord_Alliance_Death_Glider">
+    <Variant_Of_Existing_Type>X-Wing</Variant_Of_Existing_Type>
+    <Affiliation>Systemlord_Alliance</Affiliation>
+  </SpaceUnit>
+  
+  <SpaceUnit Name="Systemlord_Alliance_Death_Glider_Squadron">
+    <Variant_Of_Existing_Type>Rebel_X-Wing_Squadron</Variant_Of_Existing_Type>
+    <Affiliation>Systemlord_Alliance</Affiliation>
+    <Squadron_Units>Systemlord_Alliance_Death_Glider,Systemlord_Alliance_Death_Glider,Systemlord_Alliance_Death_Glider,Systemlord_Alliance_Death_Glider,Systemlord_Alliance_Death_Glider</Squadron_Units>
+    <Build_Initially_Locked>No</Build_Initially_Locked>
+    <Build_Can_Be_Unlocked_By_Slicer>No</Build_Can_Be_Unlocked_By_Slicer>
+    <Build_Tab_Space_Units>Yes</Build_Tab_Space_Units>
+    <Required_Star_Base_Level>1</Required_Star_Base_Level>
+    <Required_Special_Structures>SysLords_Ground_Hangar</Required_Special_Structures>
+  </SpaceUnit>
+
+  <!-- Information SLA (Systemlords Alliance) Teltak -->
+  <SpaceUnit Name="Systemlord_Alliance_Teltak">
+    <Variant_Of_Existing_Type>Y-Wing</Variant_Of_Existing_Type>
+    <Affiliation>Systemlord_Alliance</Affiliation>
+  </SpaceUnit> 
+  
+  <SpaceUnit Name="Systemlord_Alliance_Teltak_Squadron">
+    <Variant_Of_Existing_Type>Y-Wing_Squadron</Variant_Of_Existing_Type>
+    <Affiliation>Systemlord_Alliance</Affiliation>
+    <Squadron_Units>Systemlord_Alliance_Teltak,Systemlord_Alliance_Teltak,Systemlord_Alliance_Teltak</Squadron_Units>
+    <Build_Initially_Locked>No</Build_Initially_Locked>
+    <Build_Can_Be_Unlocked_By_Slicer>No</Build_Can_Be_Unlocked_By_Slicer>
+    <Build_Tab_Space_Units>Yes</Build_Tab_Space_Units>
+    <Required_Star_Base_Level>1</Required_Star_Base_Level>
+    <Required_Special_Structures>SysLords_Ground_Hangar</Required_Special_Structures>
+  </SpaceUnit>
+  
+  <!-- Information SLA (Systemlords Alliance) Alkesh -->
+  <SpaceUnit Name="Systemlord_Alliance_Alkesh">
+    <Variant_Of_Existing_Type>B-Wing</Variant_Of_Existing_Type>
+    <Affiliation>Systemlord_Alliance</Affiliation>
+  </SpaceUnit>  
+  
+  <SpaceUnit Name="Systemlord_Alliance_Alkesh_Squadron">
+    <Variant_Of_Existing_Type>B-Wing_Squadron</Variant_Of_Existing_Type>
+    <Affiliation>Systemlord_Alliance</Affiliation>
+    <Squadron_Units>Systemlord_Alliance_Alkesh,Systemlord_Alliance_Alkesh,Systemlord_Alliance_Alkesh</Squadron_Units>
+    <Build_Initially_Locked>No</Build_Initially_Locked>
+    <Build_Can_Be_Unlocked_By_Slicer>No</Build_Can_Be_Unlocked_By_Slicer>
+    <Build_Tab_Space_Units>Yes</Build_Tab_Space_Units>
+    <Required_Star_Base_Level>1</Required_Star_Base_Level>
+    <Required_Special_Structures>SysLords_Ground_Hangar</Required_Special_Structures>
+  </SpaceUnit>
+
+  <!-- Information SLA (Systemlords Alliance) Pyramid Ship -->
+  <SpaceUnit Name="Systemlord_Alliance_Pyramid_Ship">
+    <Variant_Of_Existing_Type>Corellian_Corvette</Variant_Of_Existing_Type>
+    <Text_ID></Text_ID>
+    <Encyclopedia_Text></Encyclopedia_Text>
+    
+    <Affiliation>Systemlord_Alliance</Affiliation>
+    <Build_Initially_Locked>No</Build_Initially_Locked>
+    <Build_Can_Be_Unlocked_By_Slicer>No</Build_Can_Be_Unlocked_By_Slicer>
+    <Build_Tab_Space_Units>Yes</Build_Tab_Space_Units>
+    <Required_Star_Base_Level>1</Required_Star_Base_Level>
+    <Required_Special_Structures>SysLords_Ground_Small_Shipyard</Required_Special_Structures>
+    
+    <Death_Clone>Damage_Normal, Systemlord_Alliance_Pyramid_Ship_Death_Clone</Death_Clone>
+  </SpaceUnit>
+  
+  <SpaceUnit Name="Systemlord_Alliance_Pyramid_Ship_Death_Clone">
+	  <Variant_Of_Existing_Type>Corellian_Corvette_Death_Clone</Variant_Of_Existing_Type>
+		<Affiliation>Systemlord_Alliance</Affiliation>
+	</SpaceUnit>
+  
+  <!-- Information SLA (Systemlords Alliance) Old Hatak -->
+  <SpaceUnit Name="Systemlord_Alliance_Old_Hatak">
+    <Variant_Of_Existing_Type>Nebulon_B_Frigate_No_Spawn</Variant_Of_Existing_Type>
+    <Text_ID>TEXT_SYSTEMLORDS_SPACE_UNIT_ALTES_HATAK</Text_ID>
+    <Encyclopedia_Text>TEXT_DESCRIPTION_SYSTEMLORDS_ALTES_HATAK</Encyclopedia_Text>
+    
+    <Affiliation>Systemlord_Alliance</Affiliation>
+    <Tech_Level>2</Tech_Level>
+    <Build_Initially_Locked>No</Build_Initially_Locked>
+    <Build_Can_Be_Unlocked_By_Slicer>No</Build_Can_Be_Unlocked_By_Slicer>
+    <Build_Tab_Space_Units>Yes</Build_Tab_Space_Units>
+    <Required_Star_Base_Level>1</Required_Star_Base_Level>
+    <Required_Special_Structures>SysLords_Ground_Small_Shipyard</Required_Special_Structures>
+    
+    <Death_Clone>Damage_Normal, Systemlord_Alliance_Old_Hatak_Death_Clone</Death_Clone>
+    <Starting_Spawned_Units_Tech_0>Systemlord_Alliance_Death_Glider_Squadron, 1</Starting_Spawned_Units_Tech_0>
+    <Spawned_Squadron_Delay_Seconds>5</Spawned_Squadron_Delay_Seconds>
+    <Reserve_Spawned_Units_Tech_0>Systemlord_Alliance_Death_Glider_Squadron, -1</Reserve_Spawned_Units_Tech_0>
+  </SpaceUnit>
+  
+  <SpaceUnit Name="Systemlord_Alliance_Old_Hatak_Death_Clone">
+	  <Variant_Of_Existing_Type>Nebulon_Death_Clone</Variant_Of_Existing_Type>
+		<Affiliation>Systemlord_Alliance</Affiliation>
+	</SpaceUnit>
+  
+  <!-- Information SLA (Systemlords Alliance) New Hatak -->
+  <SpaceUnit Name="Systemlord_Alliance_New_Hatak">
+    <Variant_Of_Existing_Type>Corellian_Gunboat_No_Spawn</Variant_Of_Existing_Type>
+    <Text_ID>TEXT_SYSTEMLORDS_SPACE_UNIT_NEUES_HATAK</Text_ID>
+    <Encyclopedia_Text>TEXT_DESCRIPTION_SYSTEMLORDS_NEUES_HATAK</Encyclopedia_Text>
+	  <Space_Model_Name>Systemlord_Space_Unit_Hatak.ALO</Space_Model_Name>
+	  <Icon_Name>SYSTEMLORDS_SPACE_UNIT_HATAK.TGA</Icon_Name>
+  
+    <Affiliation>Systemlord_Alliance</Affiliation>
+    <Tech_Level>2</Tech_Level>
+    <Build_Initially_Locked>No</Build_Initially_Locked>
+    <Build_Can_Be_Unlocked_By_Slicer>No</Build_Can_Be_Unlocked_By_Slicer>
+    <Build_Tab_Space_Units>Yes</Build_Tab_Space_Units>
+    <Required_Star_Base_Level>1</Required_Star_Base_Level>
+    <Required_Special_Structures>SysLords_Ground_Small_Shipyard</Required_Special_Structures>
+
+    <Death_Clone>Damage_Normal, Systemlord_Alliance_New_Hatak_Death_Clone</Death_Clone>
+    <Starting_Spawned_Units_Tech_0>Systemlord_Alliance_Death_Glider_Squadron, 1</Starting_Spawned_Units_Tech_0>
+    <Spawned_Squadron_Delay_Seconds>5</Spawned_Squadron_Delay_Seconds>
+    <Reserve_Spawned_Units_Tech_0>Systemlord_Alliance_Death_Glider_Squadron, -1</Reserve_Spawned_Units_Tech_0>
+  </SpaceUnit>
+  
+  <SpaceUnit Name="Systemlord_Alliance_New_Hatak_Death_Clone">
+	  <Variant_Of_Existing_Type>Corellian_Gunboat_Death_Clone</Variant_Of_Existing_Type>
+		<Space_Model_Name>Systemlord_Space_Unit_Hatak_D.ALO</Space_Model_Name>
+		<xxxSpace_Model_Name>Systemlord_Space_Unit_Hatak_D.ALO</xxxSpace_Model_Name>
+		<Affiliation>Systemlord_Alliance</Affiliation>
+	</SpaceUnit>
+
+  <!-- Information SLA (Systemlords Alliance) Stealth Hatak -->
+  <SpaceUnit Name="Systemlord_Alliance_Stealth_Hatak">
+    <Variant_Of_Existing_Type>Corellian_Gunboat_No_Spawn</Variant_Of_Existing_Type>
+    <Text_ID>TEXT_SYSTEMLORDS_SPACE_UNIT_STEALTH_HATAK</Text_ID>
+    <Encyclopedia_Text>TEXT_DESCRIPTION_SYSTEMLORDS_STEALTH_HATAK</Encyclopedia_Text>
+    <Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_SYSTEMLORDS_STEALTH_HATAK</Encyclopedia_Unit_Class>
+    <Icon_Name>SYSTEMLORDS_SPACE_UNIT_STEALTH_HATAK.TGA</Icon_Name>
+	<Space_Model_Name>Systemlord_Space_Unit_Hatak.ALO</Space_Model_Name>
+    <Tech_Level>99</Tech_Level>
+    <Affiliation>Systemlord_Alliance, Rebel</Affiliation>
+    <Build_Initially_Locked>Yes</Build_Initially_Locked>
+    <Build_Can_Be_Unlocked_By_Slicer>No</Build_Can_Be_Unlocked_By_Slicer>
+    <Build_Tab_Space_Units>No</Build_Tab_Space_Units>
+    <Required_Star_Base_Level>1</Required_Star_Base_Level>
+    <SpaceBehavior>SPAWN_SQUADRON, ABILITY_COUNTDOWN, SIMPLE_SPACE_LOCOMOTOR, TARGETING, REVEAL, HIDE_WHEN_FOGGED, UNIT_AI, ASTEROID_FIELD_DAMAGE, DAMAGE_TRACKING, ION_STUN_EFFECT, NEBULA, SHIELDED </SpaceBehavior>
+    <Death_Clone>Damage_Normal, Systemlord_Alliance_New_Hatak_Death_Clone</Death_Clone>
+    <Starting_Spawned_Units_Tech_0>Systemlord_Alliance_Death_Glider_Squadron, 1</Starting_Spawned_Units_Tech_0>
+    <Spawned_Squadron_Delay_Seconds>5</Spawned_Squadron_Delay_Seconds>
+    <Reserve_Spawned_Units_Tech_0>Systemlord_Alliance_Death_Glider_Squadron, -1</Reserve_Spawned_Units_Tech_0>
+    <Unit_Abilities_Data SubObjectList="Yes">
+      <Unit_Ability>
+        <Type>STEALTH</Type>
+        <Alternate_Icon_Name>i_sa_stealth.tga</Alternate_Icon_Name>
+        <Alternate_Name_Text>TEXT_TOOLTIP_CLOAK</Alternate_Name_Text>
+        <GUI_Activated_Ability_Name>Stealth_Systemlord_Alliance_Stealth_Hatak</GUI_Activated_Ability_Name>
+        <Recharge_Seconds>45.0</Recharge_Seconds>
+        <Expiration_Seconds>35.0</Expiration_Seconds>
+        <SFXEvent_GUI_Unit_Ability_Activated>Effect_Jumper_Stealth_On</SFXEvent_GUI_Unit_Ability_Activated>
+        <SFXEvent_GUI_Unit_Ability_Deactivated>Effect_Jumper_Stealth_Off</SFXEvent_GUI_Unit_Ability_Deactivated>
+        <Must_Be_Bought_On_Black_Market>No</Must_Be_Bought_On_Black_Market>
+        <Alternate_Name_Text>TEXT_ABILITY_SYSTEMLORDS_SPACE_STEALTH_HATAK_TARNUNG</Alternate_Name_Text>
+        <Alternate_Description_Text>TEXT_DESCRIPTION_ABILITY_SPACE_STEALTH_HATAK_TARNUNG</Alternate_Description_Text>
+      </Unit_Ability>      
+    </Unit_Abilities_Data>    
+    <Abilities SubObjectList="Yes">
+      <Stealth_Ability Name="Stealth_Systemlord_Alliance_Stealth_Hatak">
+        <Activation_Style> User_Input </Activation_Style>
+        <Stealth_Color>255, 255, 255, 255</Stealth_Color>
+        <Stealth_Transition_Time>.3</Stealth_Transition_Time>
+        <SFXEvent_Activate></SFXEvent_Activate>
+        <Must_Be_Bought_On_Black_Market>No</Must_Be_Bought_On_Black_Market>
+      </Stealth_Ability>     
+    </Abilities>   
+  </SpaceUnit>
+
+  <!--Special space body guard versions-->
+  <SpaceUnit Name="Systemlord_Alliance_Apophis_Hatak">
+    <Variant_Of_Existing_Type>Systemlord_Alliance_New_Hatak</Variant_Of_Existing_Type>
+    <Tech_Level>99</Tech_Level>
+    <HardPoints>
+      HP_HATAK_F_SBM_00,
+      HP_HATAK_F_SBM_01,
+      HP_HATAK_R_SBM_00,
+      HP_HATAK_R_SBM_01,
+      HP_HATAK_SHIELD,
+      HP_HATAK_ENGINE,
+      HP_HATAK_HANGAR,
+      Emblem_New_Hatak_Apophis
+    </HardPoints>
+  </SpaceUnit>
+  <SpaceUnit Name="Systemlord_Alliance_Sokar_Hatak">
+    <Variant_Of_Existing_Type>Systemlord_Alliance_New_Hatak</Variant_Of_Existing_Type>
+    <Tech_Level>99</Tech_Level>
+    <HardPoints>
+      HP_HATAK_F_SBM_00,
+      HP_HATAK_F_SBM_01,
+      HP_HATAK_R_SBM_00,
+      HP_HATAK_R_SBM_01,
+      HP_HATAK_SHIELD,
+      HP_HATAK_ENGINE,
+      HP_HATAK_HANGAR,
+      Emblem_New_Hatak_Sokar
+    </HardPoints>
+  </SpaceUnit>
+  
+  <!-- Information SLA (Systemlords Alliance) System Hatak -->
+  <SpaceUnit Name="Systemlord_Alliance_System_Flagship">
+    <Variant_Of_Existing_Type>MC30_Frigate</Variant_Of_Existing_Type>
+    <Text_ID>TEXT_SYSTEMLORDS_SPACE_UNIT_SYSTEMFLAGGSCHIFF</Text_ID>
+    <Encyclopedia_Text>TEXT_DESCRIPTION_SYSTEMLORDS_SYSTEMFLAGGSCHIFF</Encyclopedia_Text>
+    
+    <Affiliation>Systemlord_Alliance</Affiliation>
+    <Build_Initially_Locked>No</Build_Initially_Locked>
+    <Build_Can_Be_Unlocked_By_Slicer>No</Build_Can_Be_Unlocked_By_Slicer>
+    <Build_Tab_Space_Units>Yes</Build_Tab_Space_Units>
+    <Required_Star_Base_Level>1</Required_Star_Base_Level>
+    <Required_Special_Structures>SysLords_Large_Shipyard</Required_Special_Structures>
+    
+    <Death_Clone>Damage_Normal, Systemlord_Alliance_System_Flagship_Death_Clone</Death_Clone>
+    <Starting_Spawned_Units_Tech_0>Systemlord_Alliance_Death_Glider_Squadron, 1</Starting_Spawned_Units_Tech_0>
+    <Starting_Spawned_Units_Tech_0>Systemlord_Alliance_Teltak_Squadron, 1</Starting_Spawned_Units_Tech_0>
+    <Spawned_Squadron_Delay_Seconds>5</Spawned_Squadron_Delay_Seconds>
+    <Reserve_Spawned_Units_Tech_0>Systemlord_Alliance_Death_Glider_Squadron, -1</Reserve_Spawned_Units_Tech_0>
+    <Reserve_Spawned_Units_Tech_0>Systemlord_Alliance_Teltak_Squadron, 0</Reserve_Spawned_Units_Tech_0>
+  </SpaceUnit>
+  
+  <SpaceUnit Name="Systemlord_Alliance_System_Flagship_Death_Clone">
+	  <Variant_Of_Existing_Type>MC30_Frigate_Death_Clone</Variant_Of_Existing_Type>
+		<Affiliation>Systemlord_Alliance</Affiliation>
+	</SpaceUnit>
+
+</Systemlord_Units>

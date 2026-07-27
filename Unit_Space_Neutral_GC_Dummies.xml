@@ -1,0 +1,1454 @@
+<?xml version="1.0"?>
+<GC_Dummies>
+
+<!--Search for # to get an overview-->
+
+<!--======================================================================================================
+#    GENERIC: I Win Button
+======================================================================================================-->
+   <!-- Removed from the GC
+   <GC_Dummy Name="Victory_Button_Space">
+      <Text_ID>EVENT_TEXT_CAMPAIGN_VICTORY_TITLE</Text_ID>
+      <Encyclopedia_Text>EVENT_TEXT_CAMPAIGN_VICTORY_DESCRIPTION</Encyclopedia_Text>
+      <Encyclopedia_Unit_Class>TEXT_NONE</Encyclopedia_Unit_Class>
+      <Icon_Name>VICTORY_BUTTON.TGA</Icon_Name>
+      <Behavior>DUMMY_ORBITAL_STRUCTURE</Behavior>
+      <Victory_Relevant>no</Victory_Relevant>
+      <Population_Value>0</Population_Value>
+      <Affiliation>Rebel, Empire, Underworld</Affiliation>
+      <Build_Tab_Special_Structures>Yes</Build_Tab_Special_Structures>
+      <Base_Position>Orbital</Base_Position>
+      <Build_Max_Instances_Per_Planet> 1 </Build_Max_Instances_Per_Planet>
+      <Build_Cost_Credits>1</Build_Cost_Credits>
+      <Build_Time_Seconds>1</Build_Time_Seconds>
+      <Tech_Level>0</Tech_Level>
+      <Required_Planets>Allianz_Erde, Allianz_Anubis_Heimatwelt</Required_Planets>
+      <Required_Star_Base_Level>1</Required_Star_Base_Level>
+   </GC_Dummy>
+
+  <GC_Dummy Name="Victory_Button_Ground">
+      <Text_ID>EVENT_TEXT_CAMPAIGN_VICTORY_TITLE</Text_ID>
+      <Encyclopedia_Text>EVENT_TEXT_CAMPAIGN_VICTORY_DESCRIPTION</Encyclopedia_Text>
+      <Encyclopedia_Unit_Class>TEXT_NONE</Encyclopedia_Unit_Class>
+      <Icon_Name>VICTORY_BUTTON.TGA</Icon_Name>
+      <Behavior>DUMMY_GROUND_STRUCTURE</Behavior>
+      <Victory_Relevant>no</Victory_Relevant>
+      <Population_Value>0</Population_Value>
+      <Affiliation>Rebel, Empire, Underworld</Affiliation>
+      <Build_Tab_Special_Structures>Yes</Build_Tab_Special_Structures>
+      <Build_Max_Instances_Per_Planet> 1 </Build_Max_Instances_Per_Planet>
+      <Build_Cost_Credits>1</Build_Cost_Credits>
+      <Build_Time_Seconds>1</Build_Time_Seconds>
+      <Tech_Level>0</Tech_Level>
+      <Required_Planets>Allianz_Erde, Allianz_Anubis_Heimatwelt</Required_Planets>
+      <Required_Ground_Base_Level>1</Required_Ground_Base_Level>
+   </GC_Dummy>
+  -->
+
+<!--======================================================================================================
+#    Template
+======================================================================================================-->
+
+  <Template Name="GC_Dummy_Base_Space">
+      <Text_ID>TEXT_NONE</Text_ID>
+      <Encyclopedia_Text>TEXT_NONE</Encyclopedia_Text>
+      <Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_ANTARCTICA_RESEARCH</Encyclopedia_Unit_Class>
+      <Icon_Name>DUMMY_ICON.tga</Icon_Name>
+      <Behavior>DUMMY_STARSHIP</Behavior><!--DUMMY_ORBITAL_STRUCTURE-->
+      <GUI_Row>0</GUI_Row><!--0: Bottom Row, 1: Upper Row-->
+      <Victory_Relevant>no</Victory_Relevant>
+      <Population_Value>0</Population_Value>
+      <Hyperspace>no</Hyperspace>
+      <Build_Tab_Heroes>No</Build_Tab_Heroes>
+      <Build_Tab_Land_Units>No</Build_Tab_Land_Units>
+      <Build_Tab_Space_Station>No</Build_Tab_Space_Station>
+      <Build_Tab_Space_Units>Yes</Build_Tab_Space_Units>
+      <Build_Tab_Special_Structures>No</Build_Tab_Special_Structures>
+      <Build_Max_Instances_Per_Planet>1</Build_Max_Instances_Per_Planet>
+      <Build_Cost_Credits>1</Build_Cost_Credits>
+      <Build_Time_Seconds>1</Build_Time_Seconds>
+      <Tech_Level>0</Tech_Level>
+      <Required_Star_Base_Level>1</Required_Star_Base_Level>
+      <Required_Ground_Base_Level>0</Required_Ground_Base_Level>
+      <Required_Special_Structures></Required_Special_Structures>
+      <Required_Planets></Required_Planets>
+      <Required_Timeline>0</Required_Timeline>
+      <Build_Limit_Current_For_All_Allies>1</Build_Limit_Current_For_All_Allies>
+      <Build_Limit_Lifetime_For_All_Allies>-1</Build_Limit_Lifetime_For_All_Allies>
+      <Build_Limit_Lifetime_Per_Player>-1</Build_Limit_Lifetime_Per_Player>
+      <Build_Limit_Current_Per_Player>1</Build_Limit_Current_Per_Player>
+   </Template>
+
+<!--======================================================================================================
+#    Pegasus Prelude
+======================================================================================================-->
+
+  <GC_Dummy Name="GC_Dummy_Ancient_Drone_Squadron_Research">
+      <Variant_Of_Existing_Type>GC_Dummy_Base_Space</Variant_Of_Existing_Type>
+      <Text_ID>TEXT_GC_DUMMY_ANCIENT_DRONE_SQUADRON_RESEARCH_TITLE</Text_ID>
+      <Encyclopedia_Text>TEXT_GC_DUMMY_ANCIENT_DRONE_SQUADRON_RESEARCH_DESCRIPTION</Encyclopedia_Text>
+      <Icon_Name>I_MULTI_RESEARCH_ANCIENT_BATTLEDRONE.TGA</Icon_Name>
+      <Affiliation>Underworld</Affiliation>
+      <Build_Cost_Credits>2100</Build_Cost_Credits>
+      <Build_Time_Seconds>43</Build_Time_Seconds>
+      <Required_Planets>Pegasus_Prelude_Planet_Lantea</Required_Planets>
+      <Required_Star_Base_Level>1</Required_Star_Base_Level>
+   </GC_Dummy>
+
+  <GC_Dummy Name="GC_Dummy_Ancient_Heavy_Fighter_Squadron_Research">
+      <Variant_Of_Existing_Type>GC_Dummy_Base_Space</Variant_Of_Existing_Type>
+      <Text_ID>TEXT_GC_DUMMY_ANCIENT_HEAVY_FIGHTER_SQUADRON_RESEARCH_TITLE</Text_ID>
+      <Encyclopedia_Text>TEXT_GC_DUMMY_ANCIENT_HEAVY_FIGHTER_SQUADRON_RESEARCH_DESCRIPTION</Encyclopedia_Text>
+      <Icon_Name>I_MULTI_RESEARCH_ANCIENT_HEAVY_FIGHTER.TGA</Icon_Name>
+      <Affiliation>Underworld</Affiliation>
+      <Build_Cost_Credits>2000</Build_Cost_Credits>
+      <Build_Time_Seconds>43</Build_Time_Seconds>
+      <Required_Planets>Pegasus_Prelude_Planet_Lantea</Required_Planets>
+      <Required_Star_Base_Level>1</Required_Star_Base_Level>
+   </GC_Dummy>
+
+  <GC_Dummy Name="GC_Dummy_Ancient_Heavy_Bomber_Squadron_Research">
+      <Variant_Of_Existing_Type>GC_Dummy_Base_Space</Variant_Of_Existing_Type>
+      <Text_ID>TEXT_GC_DUMMY_ANCIENT_HEAVY_BOMBER_SQUADRON_RESEARCH_TITLE</Text_ID>
+      <Encyclopedia_Text>TEXT_GC_DUMMY_ANCIENT_HEAVY_BOMBER_SQUADRON_RESEARCH_DESCRIPTION</Encyclopedia_Text>
+      <Icon_Name>I_MULTI_RESEARCH_ANCIENT_HEAVY_BOMBER.TGA</Icon_Name>
+      <Affiliation>Underworld</Affiliation>
+      <Build_Cost_Credits>2000</Build_Cost_Credits>
+      <Build_Time_Seconds>43</Build_Time_Seconds>
+      <Required_Planets>Pegasus_Prelude_Planet_Lantea</Required_Planets>
+      <Required_Star_Base_Level>1</Required_Star_Base_Level>
+   </GC_Dummy>
+
+  <GC_Dummy Name="GC_Dummy_Ancient_Destroyer_Research">
+      <Variant_Of_Existing_Type>GC_Dummy_Base_Space</Variant_Of_Existing_Type>
+      <Text_ID>TEXT_GC_DUMMY_ANCIENT_DESTROYER_RESEARCH_TITLE</Text_ID>
+      <Encyclopedia_Text>TEXT_GC_DUMMY_ANCIENT_DESTROYER_RESEARCH_DESCRIPTION</Encyclopedia_Text>
+      <Icon_Name>I_MULTI_RESEARCH_ANCIENT_DESTROYER.TGA</Icon_Name>
+      <Affiliation>Underworld</Affiliation>
+      <Build_Cost_Credits>3000</Build_Cost_Credits>
+      <Build_Time_Seconds>50</Build_Time_Seconds>
+      <Required_Planets>Pegasus_Prelude_Planet_Lantea</Required_Planets>
+      <Required_Star_Base_Level>1</Required_Star_Base_Level>
+   </GC_Dummy>
+
+  <GC_Dummy Name="GC_Dummy_Ancient_Cruiser_Research">
+      <Variant_Of_Existing_Type>GC_Dummy_Base_Space</Variant_Of_Existing_Type>
+      <Text_ID>TEXT_GC_DUMMY_ANCIENT_CRUISER_RESEARCH_TITLE</Text_ID>
+      <Encyclopedia_Text>TEXT_GC_DUMMY_ANCIENT_CRUISER_RESEARCH_DESCRIPTION</Encyclopedia_Text>
+      <Icon_Name>I_MULTI_RESEARCH_ANCIENT_CRUISER.TGA</Icon_Name>
+      <Affiliation>Underworld</Affiliation>
+      <Build_Cost_Credits>4000</Build_Cost_Credits>
+      <Build_Time_Seconds>53</Build_Time_Seconds>
+      <Required_Planets>Pegasus_Prelude_Planet_Lantea</Required_Planets>
+      <Required_Star_Base_Level>1</Required_Star_Base_Level>
+   </GC_Dummy>
+
+  <GC_Dummy Name="GC_Dummy_Ancient_Battleship_Research">
+      <Variant_Of_Existing_Type>GC_Dummy_Base_Space</Variant_Of_Existing_Type>
+      <Text_ID>TEXT_GC_DUMMY_ANCIENT_BATTLESHIP_RESEARCH_TITLE</Text_ID>
+      <Encyclopedia_Text>TEXT_GC_DUMMY_ANCIENT_BATTLESHIP_RESEARCH_DESCRIPTION</Encyclopedia_Text>
+      <Icon_Name>I_MULTI_RESEARCH_ANCIENT_BATTLESHIP.TGA</Icon_Name>
+      <Affiliation>Underworld</Affiliation>
+      <Build_Cost_Credits>5000</Build_Cost_Credits>
+      <Build_Time_Seconds>63</Build_Time_Seconds>
+      <Required_Planets>Pegasus_Prelude_Planet_Lantea</Required_Planets>
+      <Required_Star_Base_Level>1</Required_Star_Base_Level>
+   </GC_Dummy>
+
+  <GC_Dummy Name="GC_Dummy_Nanite_Research">
+      <Variant_Of_Existing_Type>GC_Dummy_Base_Space</Variant_Of_Existing_Type>
+      <Text_ID>TEXT_GC_DUMMY_NANITE_RESEARCH_TITLE</Text_ID>
+      <Encyclopedia_Text>TEXT_GC_DUMMY_NANITE_RESEARCH_DESCRIPTION</Encyclopedia_Text>
+      <Icon_Name>I_MULTI_RESEARCH_NANITES.TGA</Icon_Name>
+      <Affiliation>Underworld</Affiliation>
+      <Build_Cost_Credits>2000</Build_Cost_Credits>
+      <Build_Time_Seconds>43</Build_Time_Seconds>
+      <Required_Planets>Pegasus_Prelude_Planet_Lantea</Required_Planets>
+      <Required_Star_Base_Level>1</Required_Star_Base_Level>
+   </GC_Dummy>
+
+  <GC_Dummy Name="GC_Dummy_Ancient_Hero_Pride_Of_Troy_Research">
+      <Variant_Of_Existing_Type>GC_Dummy_Base_Space</Variant_Of_Existing_Type>
+      <Text_ID>TEXT_GC_DUMMY_PRIDE_OF_TROY_RESEARCH_TITLE</Text_ID>
+      <Encyclopedia_Text>TEXT_GC_DUMMY_PRIDE_OF_TROY_DESCRIPTION</Encyclopedia_Text>
+      <Icon_Name>I_MULTI_RESEARCH_PRIDE_OF_TROY.TGA</Icon_Name>
+      <Affiliation>Underworld</Affiliation>
+      <Build_Cost_Credits>10000</Build_Cost_Credits>
+      <Build_Time_Seconds>93</Build_Time_Seconds>
+      <Required_Planets>Pegasus_Prelude_Planet_Lantea</Required_Planets>
+      <Required_Star_Base_Level>1</Required_Star_Base_Level>
+   </GC_Dummy>
+
+  <GC_Dummy Name="GC_Dummy_Ancient_Hero_Moros_Research">
+      <Variant_Of_Existing_Type>GC_Dummy_Base_Space</Variant_Of_Existing_Type>
+      <Text_ID>TEXT_GC_DUMMY_ANCIENT_HERO_MOROS_RESEARCH_TITLE</Text_ID>
+      <Encyclopedia_Text>TEXT_GC_DUMMY_ANCIENT_HERO_MOROS_RESEARCH_DESCRIPTION</Encyclopedia_Text>
+      <Icon_Name>I_MULTI_RESEARCH_MOROS.TGA</Icon_Name>
+      <Affiliation>Underworld</Affiliation>
+      <Build_Cost_Credits>2500</Build_Cost_Credits>
+      <Build_Time_Seconds>43</Build_Time_Seconds>
+      <Required_Planets>Pegasus_Prelude_Planet_Lantea</Required_Planets>
+      <Required_Star_Base_Level>1</Required_Star_Base_Level>
+   </GC_Dummy>
+
+  <GC_Dummy Name="GC_Dummy_Ancient_Hero_Moros_Dreadnought_Research">
+      <Variant_Of_Existing_Type>GC_Dummy_Base_Space</Variant_Of_Existing_Type>
+      <Text_ID>TEXT_GC_DUMMY_ANCIENT_HERO_MOROS_DREADNOUGHT_RESEARCH_TITLE</Text_ID>
+      <Encyclopedia_Text>TEXT_GC_DUMMY_ANCIENT_HERO_MOROS_DREADNOUGHT_RESEARCH_DESCRIPTION</Encyclopedia_Text>
+      <Icon_Name>I_MULTI_RESEARCH_MOROS_DREADNOUGHT.TGA</Icon_Name>
+      <Affiliation>Underworld</Affiliation>
+      <Build_Cost_Credits>4000</Build_Cost_Credits>
+      <Build_Time_Seconds>60</Build_Time_Seconds>
+      <Required_Planets>Pegasus_Prelude_Planet_Lantea</Required_Planets>
+      <Required_Star_Base_Level>1</Required_Star_Base_Level>
+      <Required_Orbiting_Units>Ancient_Hero_Moros</Required_Orbiting_Units>
+   </GC_Dummy>
+
+  <GC_Dummy Name="GC_Dummy_Project_Arcturus_Research">
+      <Variant_Of_Existing_Type>GC_Dummy_Base_Space</Variant_Of_Existing_Type>
+      <Text_ID>TEXT_GC_DUMMY_PROJECT_ARCTURUS_RESEARCH_TITLE</Text_ID>
+      <Encyclopedia_Text>TEXT_GC_DUMMY_PROJECT_ARCTURUS_RESEARCH_DESCRIPTION</Encyclopedia_Text>
+      <Icon_Name>I_MULTI_RESEARCH_PROJECT_ARCTURUS.TGA</Icon_Name>
+      <Affiliation>Underworld</Affiliation>
+      <Build_Cost_Credits>3000</Build_Cost_Credits>
+      <Build_Time_Seconds>33</Build_Time_Seconds>
+      <Required_Planets>Pegasus_Prelude_Planet_Doranda</Required_Planets>
+      <Required_Star_Base_Level>1</Required_Star_Base_Level>
+   </GC_Dummy>
+
+  <GC_Dummy Name="GC_Dummy_Attero_Device_Research">
+      <Variant_Of_Existing_Type>GC_Dummy_Base_Space</Variant_Of_Existing_Type>
+      <Text_ID>TEXT_GC_DUMMY_ATTERO_DEVICE_RESEARCH_TITLE</Text_ID>
+      <Encyclopedia_Text>TEXT_GC_DUMMY_ATTERO_DEVICE_RESEARCH_DESCRIPTION</Encyclopedia_Text>
+      <Icon_Name>I_MULTI_RESEARCH_ATTERO_DEVICE.TGA</Icon_Name>
+      <Affiliation>Underworld</Affiliation>
+      <Build_Cost_Credits>6000</Build_Cost_Credits>
+      <Build_Time_Seconds>50</Build_Time_Seconds>
+      <Required_Planets>Pegasus_Prelude_Planet_M6H_987</Required_Planets>
+      <Required_Star_Base_Level>1</Required_Star_Base_Level>
+   </GC_Dummy>
+
+  <GC_Dummy Name="GC_Dummy_Attero_Device_Online">
+      <Variant_Of_Existing_Type>GC_Dummy_Base_Space</Variant_Of_Existing_Type>
+      <Text_ID>TEXT_GC_DUMMY_ATTERO_DEVICE_ONLINE_TITLE</Text_ID>
+      <Encyclopedia_Text>TEXT_GC_DUMMY_ATTERO_DEVICE_ONLINE_DESCRIPTION</Encyclopedia_Text>
+      <Icon_Name>I_MULTI_RESEARCH_ATTERO_DEVICE_ONLINE.TGA</Icon_Name>
+      <Affiliation>Underworld</Affiliation>
+      <Build_Cost_Credits>500</Build_Cost_Credits>
+      <Build_Time_Seconds>30</Build_Time_Seconds>
+      <Required_Planets>Pegasus_Prelude_Planet_M6H_987</Required_Planets>
+      <Required_Star_Base_Level>1</Required_Star_Base_Level>
+   </GC_Dummy>
+
+  <GC_Dummy Name="GC_Dummy_Attero_Device_Offline">
+      <Variant_Of_Existing_Type>GC_Dummy_Base_Space</Variant_Of_Existing_Type>
+      <Text_ID>TEXT_GC_DUMMY_ATTERO_DEVICE_OFFLINE_TITLE</Text_ID>
+      <Encyclopedia_Text>TEXT_GC_DUMMY_ATTERO_DEVICE_OFFLINE_DESCRIPTION</Encyclopedia_Text>
+      <Icon_Name>I_MULTI_RESEARCH_ATTERO_DEVICE_OFFLINE.TGA</Icon_Name>
+      <Affiliation>Underworld</Affiliation>
+      <Build_Cost_Credits>500</Build_Cost_Credits>
+
+      <Required_Planets>Pegasus_Prelude_Planet_M6H_987</Required_Planets>
+      <Required_Star_Base_Level>1</Required_Star_Base_Level>
+   </GC_Dummy>
+
+<!--======================================================================================================
+#    Pegasus Prelude (Multiplayer)(Test only)
+======================================================================================================-->
+
+  <GC_Dummy Name="GC_Dummy_Ancient_Tech_Level_2">
+      <Variant_Of_Existing_Type>GC_Dummy_Base_Space</Variant_Of_Existing_Type>
+      <Text_ID>TEXT_ENCYCLOPEDIA_TECH_UPGRADE_02</Text_ID>
+      <Encyclopedia_Unit_Class> TEXT_ENCYCLOPEDIA_CLASS_ADVANCE </Encyclopedia_Unit_Class>
+      <Encyclopedia_Text> TEXT_UPGRADE_TOOLTIP_TECHNOLOGY_LEVEL_TWO </Encyclopedia_Text>
+      <Icon_Name>I_BUTTON_A_TECH_UPGRADE_2.tga</Icon_Name>
+      <Affiliation>Underworld</Affiliation>
+      <Build_Cost_Credits>22</Build_Cost_Credits>
+      <Tech_Level>1</Tech_Level>
+      <Required_Star_Base_Level>1</Required_Star_Base_Level>
+      <!--Required_Special_Structures>Ancient_Star_Base_1</Required_Special_Structures-->
+      <!--Build_Advances_Tech_Level>1</Build_Advances_Tech_Level-->
+      <Required_Planets>
+      Pegasus_Prelude_Planet_Ascension,
+      Pegasus_Prelude_Planet_Asteroid_Field,
+      Pegasus_Prelude_Planet_Asuras,
+      Pegasus_Prelude_Planet_Athos,
+      Pegasus_Prelude_Planet_Aurora,
+      Pegasus_Prelude_Planet_Belkan,
+      Pegasus_Prelude_Planet_Dagan,
+      Pegasus_Prelude_Planet_Doranda,
+      Pegasus_Prelude_Planet_Edowin,
+      Pegasus_Prelude_Planet_Gas_Nebula,
+      Pegasus_Prelude_Planet_Gelda,
+      Pegasus_Prelude_Planet_Gonta,
+      Pegasus_Prelude_Planet_Hoff,
+      Pegasus_Prelude_Planet_Iratus_Bestiola,
+      Pegasus_Prelude_Planet_Jenev,
+      Pegasus_Prelude_Planet_Kohal,
+      Pegasus_Prelude_Planet_Lantea,
+      Pegasus_Prelude_Planet_Laros,
+      Pegasus_Prelude_Planet_M6H_987,
+      Pegasus_Prelude_Planet_Manaria,
+      Pegasus_Prelude_Planet_Olesia,
+      Pegasus_Prelude_Planet_Orakis,
+      Pegasus_Prelude_Planet_Orlan,
+      Pegasus_Prelude_Planet_Proculis,
+      Pegasus_Prelude_Planet_Rasputin,
+      Pegasus_Prelude_Planet_Sagon,
+      Pegasus_Prelude_Planet_Sun,
+      Pegasus_Prelude_Planet_Taranis,
+      Pegasus_Prelude_Planet_Vadena,
+      Pegasus_Prelude_Planet_Wraith_Homeworld,
+      Pegasus_Prelude_Planet_Wraith_ZPM_Base
+      </Required_Planets>
+   </GC_Dummy>
+
+  <GC_Dummy Name="GC_Dummy_Ancient_Tech_Level_3">
+      <Variant_Of_Existing_Type>GC_Dummy_Ancient_Tech_Level_2</Variant_Of_Existing_Type>
+      <Text_ID>TEXT_ENCYCLOPEDIA_TECH_UPGRADE_03</Text_ID>
+      <Encyclopedia_Unit_Class> TEXT_ENCYCLOPEDIA_CLASS_ADVANCE </Encyclopedia_Unit_Class>
+      <Encyclopedia_Text> TEXT_UPGRADE_TOOLTIP_TECHNOLOGY_LEVEL_THREE </Encyclopedia_Text>
+      <Icon_Name>I_BUTTON_A_TECH_UPGRADE_3.tga</Icon_Name>
+      <Affiliation>Underworld</Affiliation>
+      <Build_Cost_Credits>33</Build_Cost_Credits>
+      <Tech_Level>2</Tech_Level>
+      <Required_Star_Base_Level>1</Required_Star_Base_Level>
+   </GC_Dummy>
+
+  <GC_Dummy Name="GC_Dummy_Ancient_Tech_Level_4">
+      <Variant_Of_Existing_Type>GC_Dummy_Ancient_Tech_Level_2</Variant_Of_Existing_Type>
+      <Text_ID>TEXT_ENCYCLOPEDIA_TECH_UPGRADE_04</Text_ID>
+      <Encyclopedia_Unit_Class> TEXT_ENCYCLOPEDIA_CLASS_ADVANCE </Encyclopedia_Unit_Class>
+      <Encyclopedia_Text> TEXT_UPGRADE_TOOLTIP_TECHNOLOGY_LEVEL_FOUR </Encyclopedia_Text>
+      <Icon_Name>I_BUTTON_A_TECH_UPGRADE_4.tga</Icon_Name>
+      <Affiliation>Underworld</Affiliation>
+      <Build_Cost_Credits>44</Build_Cost_Credits>
+      <Tech_Level>3</Tech_Level>
+      <Required_Star_Base_Level>1</Required_Star_Base_Level>
+   </GC_Dummy>
+
+  <GC_Dummy Name="GC_Dummy_Ancient_Tech_Level_5">
+      <Variant_Of_Existing_Type>GC_Dummy_Ancient_Tech_Level_2</Variant_Of_Existing_Type>
+      <Text_ID>TEXT_ENCYCLOPEDIA_TECH_UPGRADE_05</Text_ID>
+      <Encyclopedia_Unit_Class> TEXT_ENCYCLOPEDIA_CLASS_ADVANCE </Encyclopedia_Unit_Class>
+      <Encyclopedia_Text> TEXT_UPGRADE_TOOLTIP_TECHNOLOGY_LEVEL_FIVE </Encyclopedia_Text>
+      <Icon_Name>I_BUTTON_A_TECH_UPGRADE_5.tga</Icon_Name>
+      <Affiliation>Underworld</Affiliation>
+      <Build_Cost_Credits>55</Build_Cost_Credits>
+      <Tech_Level>4</Tech_Level>
+      <Required_Star_Base_Level>1</Required_Star_Base_Level>
+   </GC_Dummy>
+
+  <GC_Dummy Name="GC_Dummy_Wraith_Tech_Level_2">
+      <Variant_Of_Existing_Type>GC_Dummy_Base_Space</Variant_Of_Existing_Type>
+      <Text_ID>TEXT_ENCYCLOPEDIA_TECH_UPGRADE_02</Text_ID>
+      <Encyclopedia_Unit_Class> TEXT_ENCYCLOPEDIA_CLASS_ADVANCE </Encyclopedia_Unit_Class>
+      <Encyclopedia_Text> TEXT_UPGRADE_TOOLTIP_TECHNOLOGY_LEVEL_TWO </Encyclopedia_Text>
+      <Icon_Name>I_BUTTON_E_TECH_UPGRADE_2.tga</Icon_Name>
+      <Affiliation>Empire</Affiliation>
+      <Build_Cost_Credits>22</Build_Cost_Credits>
+      <Tech_Level>1</Tech_Level>
+      <Required_Star_Base_Level>1</Required_Star_Base_Level>
+      <Required_Planets>
+      Pegasus_Prelude_Planet_Ascension,
+      Pegasus_Prelude_Planet_Asteroid_Field,
+      Pegasus_Prelude_Planet_Asuras,
+      Pegasus_Prelude_Planet_Athos,
+      Pegasus_Prelude_Planet_Aurora,
+      Pegasus_Prelude_Planet_Belkan,
+      Pegasus_Prelude_Planet_Dagan,
+      Pegasus_Prelude_Planet_Doranda,
+      Pegasus_Prelude_Planet_Edowin,
+      Pegasus_Prelude_Planet_Gas_Nebula,
+      Pegasus_Prelude_Planet_Gelda,
+      Pegasus_Prelude_Planet_Gonta,
+      Pegasus_Prelude_Planet_Hoff,
+      Pegasus_Prelude_Planet_Iratus_Bestiola,
+      Pegasus_Prelude_Planet_Jenev,
+      Pegasus_Prelude_Planet_Kohal,
+      Pegasus_Prelude_Planet_Lantea,
+      Pegasus_Prelude_Planet_Laros,
+      Pegasus_Prelude_Planet_M6H_987,
+      Pegasus_Prelude_Planet_Manaria,
+      Pegasus_Prelude_Planet_Olesia,
+      Pegasus_Prelude_Planet_Orakis,
+      Pegasus_Prelude_Planet_Orlan,
+      Pegasus_Prelude_Planet_Proculis,
+      Pegasus_Prelude_Planet_Rasputin,
+      Pegasus_Prelude_Planet_Sagon,
+      Pegasus_Prelude_Planet_Sun,
+      Pegasus_Prelude_Planet_Taranis,
+      Pegasus_Prelude_Planet_Vadena,
+      Pegasus_Prelude_Planet_Wraith_Homeworld,
+      Pegasus_Prelude_Planet_Wraith_ZPM_Base
+      </Required_Planets>
+   </GC_Dummy>
+
+  <GC_Dummy Name="GC_Dummy_Wraith_Tech_Level_3">
+      <Variant_Of_Existing_Type>GC_Dummy_Wraith_Tech_Level_2</Variant_Of_Existing_Type>
+      <Text_ID>TEXT_ENCYCLOPEDIA_TECH_UPGRADE_03</Text_ID>
+      <Encyclopedia_Unit_Class> TEXT_ENCYCLOPEDIA_CLASS_ADVANCE </Encyclopedia_Unit_Class>
+      <Encyclopedia_Text> TEXT_UPGRADE_TOOLTIP_TECHNOLOGY_LEVEL_THREE </Encyclopedia_Text>
+      <Icon_Name>I_BUTTON_E_TECH_UPGRADE_3.tga</Icon_Name>
+      <Affiliation>Empire</Affiliation>
+      <Build_Cost_Credits>33</Build_Cost_Credits>
+      <Tech_Level>2</Tech_Level>
+      <Required_Star_Base_Level>1</Required_Star_Base_Level>
+   </GC_Dummy>
+
+  <GC_Dummy Name="GC_Dummy_Wraith_Tech_Level_4">
+      <Variant_Of_Existing_Type>GC_Dummy_Wraith_Tech_Level_2</Variant_Of_Existing_Type>
+      <Text_ID>TEXT_ENCYCLOPEDIA_TECH_UPGRADE_04</Text_ID>
+      <Encyclopedia_Unit_Class> TEXT_ENCYCLOPEDIA_CLASS_ADVANCE </Encyclopedia_Unit_Class>
+      <Encyclopedia_Text> TEXT_UPGRADE_TOOLTIP_TECHNOLOGY_LEVEL_FOUR </Encyclopedia_Text>
+      <Icon_Name>I_BUTTON_E_TECH_UPGRADE_4.tga</Icon_Name>
+      <Affiliation>Empire</Affiliation>
+      <Build_Cost_Credits>44</Build_Cost_Credits>
+      <Tech_Level>3</Tech_Level>
+      <Required_Star_Base_Level>1</Required_Star_Base_Level>
+   </GC_Dummy>
+
+  <GC_Dummy Name="GC_Dummy_Wraith_Tech_Level_5">
+      <Variant_Of_Existing_Type>GC_Dummy_Wraith_Tech_Level_2</Variant_Of_Existing_Type>
+      <Text_ID>TEXT_ENCYCLOPEDIA_TECH_UPGRADE_05</Text_ID>
+      <Encyclopedia_Unit_Class> TEXT_ENCYCLOPEDIA_CLASS_ADVANCE </Encyclopedia_Unit_Class>
+      <Encyclopedia_Text> TEXT_UPGRADE_TOOLTIP_TECHNOLOGY_LEVEL_FIVE </Encyclopedia_Text>
+      <Icon_Name>I_BUTTON_E_TECH_UPGRADE_5.tga</Icon_Name>
+      <Affiliation>Empire</Affiliation>
+      <Build_Cost_Credits>55</Build_Cost_Credits>
+      <Tech_Level>4</Tech_Level>
+      <Required_Star_Base_Level>1</Required_Star_Base_Level>
+   </GC_Dummy>
+
+<!--======================================================================================================
+#    Pegasus Prelude (Debug)
+======================================================================================================-->
+
+  <!--Ancients-->
+  <GC_Dummy Name="GC_Dummy_Debug_Event_PP_T_Laros">
+      <Variant_Of_Existing_Type>GC_Dummy_Base_Space</Variant_Of_Existing_Type>
+      <Text_ID>EVENT_TEXT_TAURI_PP_LOG_CONQUER_LAROS_TITLE</Text_ID>
+      <Encyclopedia_Text>EVENT_TEXT_TAURI_PP_LOG_CONQUER_LAROS</Encyclopedia_Text>
+      <Icon_Name>DUMMY_ICON.TGA</Icon_Name>
+      <Affiliation>Underworld</Affiliation>
+      <Required_Planets>Pegasus_Prelude_Planet_Lantea</Required_Planets>
+      <Required_Star_Base_Level>1</Required_Star_Base_Level>
+   </GC_Dummy>
+
+  <GC_Dummy Name="GC_Dummy_Debug_Event_PP_T_Hippaforalkus">
+      <Variant_Of_Existing_Type>GC_Dummy_Base_Space</Variant_Of_Existing_Type>
+      <Text_ID>EVENT_TEXT_TAURI_PP_LOG_SEND_HIPPAFORALKUS_TO_TARANIS_TITLE</Text_ID>
+      <Encyclopedia_Text>EVENT_TEXT_TAURI_PP_LOG_SEND_HIPPAFORALKUS_TO_TARANIS</Encyclopedia_Text>
+      <Icon_Name>DUMMY_ICON.TGA</Icon_Name>
+      <Affiliation>Underworld</Affiliation>
+      <Required_Planets>Pegasus_Prelude_Planet_Lantea</Required_Planets>
+      <Required_Star_Base_Level>1</Required_Star_Base_Level>
+   </GC_Dummy>
+
+  <GC_Dummy Name="GC_Dummy_Debug_Event_PP_T_Taranis">
+      <Variant_Of_Existing_Type>GC_Dummy_Base_Space</Variant_Of_Existing_Type>
+      <Text_ID>EVENT_TEXT_TAURI_PP_LOG_HOLD_TARANIS_TITLE</Text_ID>
+      <Encyclopedia_Text>EVENT_TEXT_TAURI_PP_LOG_HOLD_TARANIS</Encyclopedia_Text>
+      <Icon_Name>DUMMY_ICON.TGA</Icon_Name>
+      <Affiliation>Underworld</Affiliation>
+      <Required_Planets>Pegasus_Prelude_Planet_Lantea</Required_Planets>
+      <Required_Star_Base_Level>1</Required_Star_Base_Level>
+   </GC_Dummy>
+
+  <GC_Dummy Name="GC_Dummy_Debug_Event_PP_T_Hold_Ground">
+      <Variant_Of_Existing_Type>GC_Dummy_Base_Space</Variant_Of_Existing_Type>
+      <Text_ID>EVENT_TEXT_TAURI_PP_LOG_HOLD_GROUND_TITLE</Text_ID>
+      <Encyclopedia_Text>EVENT_TEXT_TAURI_PP_LOG_HOLD_GROUND</Encyclopedia_Text>
+      <Icon_Name>DUMMY_ICON.TGA</Icon_Name>
+      <Affiliation>Underworld</Affiliation>
+      <Required_Planets>Pegasus_Prelude_Planet_Lantea</Required_Planets>
+      <Required_Star_Base_Level>1</Required_Star_Base_Level>
+   </GC_Dummy>
+
+  <GC_Dummy Name="GC_Dummy_Debug_Event_PP_T_Gonta">
+      <Variant_Of_Existing_Type>GC_Dummy_Base_Space</Variant_Of_Existing_Type>
+      <Text_ID>EVENT_TEXT_TAURI_PP_LOG_SURVIVORS_ON_GONTA_TITLE</Text_ID>
+      <Encyclopedia_Text>EVENT_TEXT_TAURI_PP_LOG_SURVIVORS_ON_GONTA</Encyclopedia_Text>
+      <Icon_Name>DUMMY_ICON.TGA</Icon_Name>
+      <Affiliation>Underworld</Affiliation>
+      <Required_Planets>Pegasus_Prelude_Planet_Lantea</Required_Planets>
+      <Required_Star_Base_Level>1</Required_Star_Base_Level>
+   </GC_Dummy>
+
+  <GC_Dummy Name="GC_Dummy_Debug_Event_PP_T_Moros">
+      <Variant_Of_Existing_Type>GC_Dummy_Base_Space</Variant_Of_Existing_Type>
+      <Text_ID>TEXT_GC_DUMMY_ANCIENT_HERO_MOROS_RESEARCH_TITLE</Text_ID>
+      <Encyclopedia_Text>EVENT_TEXT_TAURI_PP_FINANCE_MOROS_RESCUE_MISSION</Encyclopedia_Text>
+      <Icon_Name>DUMMY_ICON.TGA</Icon_Name>
+      <Affiliation>Underworld</Affiliation>
+      <Required_Planets>Pegasus_Prelude_Planet_Lantea</Required_Planets>
+      <Required_Star_Base_Level>1</Required_Star_Base_Level>
+   </GC_Dummy>
+
+  <GC_Dummy Name="GC_Dummy_Debug_Event_PP_T_Nanite_Technology">
+      <Variant_Of_Existing_Type>GC_Dummy_Base_Space</Variant_Of_Existing_Type>
+      <Text_ID>EVENT_TEXT_TAURI_PP_LOG_NANITE_TECHNOLOGY_DEVELOPED_TITLE</Text_ID>
+      <Encyclopedia_Text>EVENT_TEXT_TAURI_PP_LOG_NANITE_TECHNOLOGY_DEVELOPED</Encyclopedia_Text>
+      <Icon_Name>DUMMY_ICON.TGA</Icon_Name>
+      <Affiliation>Underworld</Affiliation>
+      <Required_Planets>Pegasus_Prelude_Planet_Lantea</Required_Planets>
+      <Required_Star_Base_Level>1</Required_Star_Base_Level>
+   </GC_Dummy>
+
+  <GC_Dummy Name="GC_Dummy_Debug_Event_PP_T_Convoy">
+      <Variant_Of_Existing_Type>GC_Dummy_Base_Space</Variant_Of_Existing_Type>
+      <Text_ID>EVENT_TEXT_TAURI_PP_LOG_CONVOY_NEEDS_PROTECTION_TITLE</Text_ID>
+      <Encyclopedia_Text>EVENT_TEXT_TAURI_PP_LOG_CONVOY_NEEDS_PROTECTION</Encyclopedia_Text>
+      <Icon_Name>DUMMY_ICON.TGA</Icon_Name>
+      <Affiliation>Underworld</Affiliation>
+      <Required_Planets>Pegasus_Prelude_Planet_Lantea</Required_Planets>
+      <Required_Star_Base_Level>1</Required_Star_Base_Level>
+   </GC_Dummy>
+
+  <GC_Dummy Name="GC_Dummy_Debug_Event_PP_T_Arcturus">
+      <Variant_Of_Existing_Type>GC_Dummy_Base_Space</Variant_Of_Existing_Type>
+      <Text_ID>EVENT_TEXT_TAURI_PP_LOG_PROJECT_ARCTURUS_TITLE</Text_ID>
+      <Encyclopedia_Text>EVENT_TEXT_TAURI_PP_LOG_PROJECT_ARCTURUS</Encyclopedia_Text>
+      <Icon_Name>DUMMY_ICON.TGA</Icon_Name>
+      <Affiliation>Underworld</Affiliation>
+      <Required_Planets>Pegasus_Prelude_Planet_Lantea</Required_Planets>
+      <Required_Star_Base_Level>1</Required_Star_Base_Level>
+   </GC_Dummy>
+
+  <GC_Dummy Name="GC_Dummy_Debug_Event_PP_T_Attero">
+      <Variant_Of_Existing_Type>GC_Dummy_Base_Space</Variant_Of_Existing_Type>
+      <Text_ID>EVENT_TEXT_TAURI_PP_LOG_ATTERO_DEVICE_DEVELOPED_TITLE</Text_ID>
+      <Encyclopedia_Text>EVENT_TEXT_TAURI_PP_LOG_ATTERO_DEVICE_DEVELOPED</Encyclopedia_Text>
+      <Icon_Name>DUMMY_ICON.TGA</Icon_Name>
+      <Affiliation>Underworld</Affiliation>
+      <Required_Planets>Pegasus_Prelude_Planet_Lantea</Required_Planets>
+      <Required_Star_Base_Level>1</Required_Star_Base_Level>
+   </GC_Dummy>
+
+  <GC_Dummy Name="GC_Dummy_Debug_Event_PP_T_Retreat">
+      <Variant_Of_Existing_Type>GC_Dummy_Base_Space</Variant_Of_Existing_Type>
+      <Text_ID>EVENT_TEXT_TAURI_PP_LOG_RETREAT_TO_ATLANTIS_TITLE</Text_ID>
+      <Encyclopedia_Text>EVENT_TEXT_TAURI_PP_LOG_RETREAT_TO_ATLANTIS</Encyclopedia_Text>
+      <Icon_Name>DUMMY_ICON.TGA</Icon_Name>
+      <Affiliation>Underworld</Affiliation>
+      <Required_Planets>Pegasus_Prelude_Planet_Lantea</Required_Planets>
+      <Required_Star_Base_Level>1</Required_Star_Base_Level>
+   </GC_Dummy>
+
+  <GC_Dummy Name="GC_Dummy_Debug_Event_PP_T_Atlantis_Mission_Ancients">
+      <Variant_Of_Existing_Type>GC_Dummy_Base_Space</Variant_Of_Existing_Type>
+      <Text_ID>MTMAP_MI_SPACE_T_ATLANTIS</Text_ID>
+      <Encyclopedia_Text>MBMAP_MI_SPACE_T_ATLANTIS</Encyclopedia_Text>
+      <Icon_Name>DUMMY_ICON.TGA</Icon_Name>
+      <Affiliation>Underworld</Affiliation>
+      <Required_Planets>Pegasus_Prelude_Planet_Lantea</Required_Planets>
+      <Required_Star_Base_Level>1</Required_Star_Base_Level>
+   </GC_Dummy>
+
+  <!--Wraith-->
+  <GC_Dummy Name="GC_Dummy_Debug_Event_PP_W_The_ZPM">
+      <Variant_Of_Existing_Type>GC_Dummy_Base_Space</Variant_Of_Existing_Type>
+      <Text_ID>EVENT_TEXT_WRAITH_PP_LOG_MORE_POWER_TITLE</Text_ID>
+      <Encyclopedia_Text>EVENT_TEXT_WRAITH_PP_LOG_MORE_POWER</Encyclopedia_Text>
+      <Icon_Name>DUMMY_ICON.TGA</Icon_Name>
+      <Affiliation>Empire</Affiliation>
+      <Required_Planets>Pegasus_Prelude_Planet_Wraith_Homeworld</Required_Planets>
+      <Required_Star_Base_Level>1</Required_Star_Base_Level>
+   </GC_Dummy>
+
+  <GC_Dummy Name="GC_Dummy_Debug_Event_PP_W_Hold_Arcanus">
+      <Variant_Of_Existing_Type>GC_Dummy_Base_Space</Variant_Of_Existing_Type>
+      <Text_ID>EVENT_TEXT_WRAITH_PP_LOG_HOLD_ARCANUS_TITLE</Text_ID>
+      <Encyclopedia_Text>EVENT_TEXT_WRAITH_PP_LOG_HOLD_ARCANUS</Encyclopedia_Text>
+      <Icon_Name>DUMMY_ICON.TGA</Icon_Name>
+      <Affiliation>Empire</Affiliation>
+      <Required_Planets>Pegasus_Prelude_Planet_Wraith_Homeworld</Required_Planets>
+      <Required_Star_Base_Level>1</Required_Star_Base_Level>
+   </GC_Dummy>
+
+  <GC_Dummy Name="GC_Dummy_Debug_Event_PP_W_Fallback_ZPM">
+      <Variant_Of_Existing_Type>GC_Dummy_Base_Space</Variant_Of_Existing_Type>
+      <Text_ID>EVENT_TEXT_WRAITH_PP_LOG_FALLBACK_ZPM_TITLE</Text_ID>
+      <Encyclopedia_Text>EVENT_TEXT_WRAITH_PP_LOG_FALLBACK_ZPM</Encyclopedia_Text>
+      <Icon_Name>DUMMY_ICON.TGA</Icon_Name>
+      <Affiliation>Empire</Affiliation>
+      <Required_Planets>Pegasus_Prelude_Planet_Wraith_Homeworld</Required_Planets>
+      <Required_Star_Base_Level>1</Required_Star_Base_Level>
+   </GC_Dummy>
+
+  <GC_Dummy Name="GC_Dummy_Debug_Event_PP_W_Aurora">
+      <Variant_Of_Existing_Type>GC_Dummy_Base_Space</Variant_Of_Existing_Type>
+      <Text_ID>EVENT_TEXT_WRAITH_PP_LOG_AURORA_SPIED_TITLE</Text_ID>
+      <Encyclopedia_Text>EVENT_TEXT_WRAITH_PP_LOG_AURORA_SPIED</Encyclopedia_Text>
+      <Icon_Name>DUMMY_ICON.TGA</Icon_Name>
+      <Affiliation>Empire</Affiliation>
+      <Required_Planets>Pegasus_Prelude_Planet_Wraith_Homeworld</Required_Planets>
+      <Required_Star_Base_Level>1</Required_Star_Base_Level>
+   </GC_Dummy>
+
+  <GC_Dummy Name="GC_Dummy_Debug_Event_PP_W_Encounter_With_The_Vanir">
+      <Variant_Of_Existing_Type>GC_Dummy_Base_Space</Variant_Of_Existing_Type>
+      <Text_ID>EVENT_TEXT_WRAITH_PP_LOG_VANIR_ENCOUNTER_TITLE</Text_ID>
+      <Encyclopedia_Text>EVENT_TEXT_WRAITH_PP_LOG_VANIR_ENCOUNTER</Encyclopedia_Text>
+      <Icon_Name>DUMMY_ICON.TGA</Icon_Name>
+      <Affiliation>Empire</Affiliation>
+      <Required_Planets>Pegasus_Prelude_Planet_Wraith_Homeworld</Required_Planets>
+      <Required_Star_Base_Level>1</Required_Star_Base_Level>
+   </GC_Dummy>
+
+  <GC_Dummy Name="GC_Dummy_Debug_Event_PP_W_Kohal_Destroyer">
+      <Variant_Of_Existing_Type>GC_Dummy_Base_Space</Variant_Of_Existing_Type>
+      <Text_ID>EVENT_TEXT_WRAITH_PP_LOG_HOLD_KOHAL_TITLE</Text_ID>
+      <Encyclopedia_Text>EVENT_TEXT_WRAITH_PP_LOG_HOLD_KOHAL</Encyclopedia_Text>
+      <Icon_Name>DUMMY_ICON.TGA</Icon_Name>
+      <Affiliation>Empire</Affiliation>
+      <Required_Planets>Pegasus_Prelude_Planet_Wraith_Homeworld</Required_Planets>
+      <Required_Star_Base_Level>1</Required_Star_Base_Level>
+   </GC_Dummy>
+
+  <GC_Dummy Name="GC_Dummy_Debug_Event_PP_W_Gonta">
+      <Variant_Of_Existing_Type>GC_Dummy_Base_Space</Variant_Of_Existing_Type>
+      <Text_ID>EVENT_TEXT_WRAITH_PP_LOG_GONTA_CITY_SHIP_TITLE</Text_ID>
+      <Encyclopedia_Text>EVENT_TEXT_WRAITH_PP_LOG_GONTA_CITY_SHIP</Encyclopedia_Text>
+      <Icon_Name>DUMMY_ICON.TGA</Icon_Name>
+      <Affiliation>Empire</Affiliation>
+      <Required_Planets>Pegasus_Prelude_Planet_Wraith_Homeworld</Required_Planets>
+      <Required_Star_Base_Level>1</Required_Star_Base_Level>
+   </GC_Dummy>
+
+  <GC_Dummy Name="GC_Dummy_Debug_Event_PP_W_Dreadnought">
+      <Variant_Of_Existing_Type>GC_Dummy_Base_Space</Variant_Of_Existing_Type>
+      <Text_ID>EVENT_TEXT_TAURI_PP_LOG_HOLD_TARANIS_TITLE</Text_ID>
+      <Encyclopedia_Text>EVENT_TEXT_WRAITH_PP_LOG_DREADNOUGHTS</Encyclopedia_Text>
+      <Icon_Name>DUMMY_ICON.TGA</Icon_Name>
+      <Affiliation>Empire</Affiliation>
+      <Required_Planets>Pegasus_Prelude_Planet_Wraith_Homeworld</Required_Planets>
+      <Required_Star_Base_Level>1</Required_Star_Base_Level>
+   </GC_Dummy>
+
+  <GC_Dummy Name="GC_Dummy_Debug_Event_PP_W_Dreadnought_2">
+      <Variant_Of_Existing_Type>GC_Dummy_Base_Space</Variant_Of_Existing_Type>
+      <Text_ID>EVENT_TEXT_TAURI_PP_LOG_HOLD_TARANIS_TITLE</Text_ID>
+      <Encyclopedia_Text>EVENT_TEXT_WRAITH_PP_LOG_DREADNOUGHTS_ATTACKING</Encyclopedia_Text>
+      <Icon_Name>DUMMY_ICON.TGA</Icon_Name>
+      <Affiliation>Empire</Affiliation>
+      <Required_Planets>Pegasus_Prelude_Planet_Wraith_Homeworld</Required_Planets>
+      <Required_Star_Base_Level>1</Required_Star_Base_Level>
+   </GC_Dummy>
+
+  <GC_Dummy Name="GC_Dummy_Debug_Event_PP_W_The_Asurans">
+      <Variant_Of_Existing_Type>GC_Dummy_Base_Space</Variant_Of_Existing_Type>
+      <Text_ID>EVENT_TEXT_WRAITH_PP_LOG_ASURAS_INTRO_TITLE</Text_ID>
+      <Encyclopedia_Text>EVENT_TEXT_WRAITH_PP_LOG_ASURAS_INTRO</Encyclopedia_Text>
+      <Icon_Name>DUMMY_ICON.TGA</Icon_Name>
+      <Affiliation>Empire</Affiliation>
+      <Required_Planets>Pegasus_Prelude_Planet_Wraith_Homeworld</Required_Planets>
+      <Required_Star_Base_Level>1</Required_Star_Base_Level>
+   </GC_Dummy>
+
+  <GC_Dummy Name="GC_Dummy_Debug_Event_PP_W_The_Asurans_2">
+      <Variant_Of_Existing_Type>GC_Dummy_Base_Space</Variant_Of_Existing_Type>
+      <Text_ID>EVENT_TEXT_WRAITH_PP_LOG_ASURAS_TITLE</Text_ID>
+      <Encyclopedia_Text>EVENT_TEXT_WRAITH_PP_LOG_ASURAS</Encyclopedia_Text>
+      <Icon_Name>DUMMY_ICON.TGA</Icon_Name>
+      <Affiliation>Empire</Affiliation>
+      <Required_Planets>Pegasus_Prelude_Planet_Wraith_Homeworld</Required_Planets>
+      <Required_Star_Base_Level>1</Required_Star_Base_Level>
+   </GC_Dummy>
+
+  <GC_Dummy Name="GC_Dummy_Debug_Event_PP_W_Finale_Hint">
+      <Variant_Of_Existing_Type>GC_Dummy_Base_Space</Variant_Of_Existing_Type>
+      <Text_ID>EVENT_TEXT_WRAITH_PP_LOG_FINALE_HINT_TITLE</Text_ID>
+      <Encyclopedia_Text>EVENT_TEXT_WRAITH_PP_LOG_FINALE_HINT</Encyclopedia_Text>
+      <Icon_Name>DUMMY_ICON.TGA</Icon_Name>
+      <Affiliation>Empire</Affiliation>
+      <Required_Planets>Pegasus_Prelude_Planet_Wraith_Homeworld</Required_Planets>
+      <Required_Star_Base_Level>1</Required_Star_Base_Level>
+   </GC_Dummy>
+
+  <GC_Dummy Name="GC_Dummy_Debug_Event_PP_W_Finale_Start">
+      <Variant_Of_Existing_Type>GC_Dummy_Base_Space</Variant_Of_Existing_Type>
+      <Text_ID>EVENT_TEXT_WRAITH_PP_LOG_FINALE_ATHOS_TITLE</Text_ID>
+      <Encyclopedia_Text>EVENT_TEXT_WRAITH_PP_LOG_FINALE_ATHOS</Encyclopedia_Text>
+      <Icon_Name>DUMMY_ICON.TGA</Icon_Name>
+      <Affiliation>Empire</Affiliation>
+      <Required_Planets>Pegasus_Prelude_Planet_Wraith_Homeworld</Required_Planets>
+      <Required_Star_Base_Level>1</Required_Star_Base_Level>
+   </GC_Dummy>
+
+  <GC_Dummy Name="GC_Dummy_Debug_Event_PP_W_Finale_Atlantis">
+      <Variant_Of_Existing_Type>GC_Dummy_Base_Space</Variant_Of_Existing_Type>
+      <Text_ID>MTMAP_MI_SPACE_W_ATLANTIS</Text_ID>
+      <Encyclopedia_Text>MBMAP_MI_SPACE_W_ATLANTIS</Encyclopedia_Text>
+      <Icon_Name>DUMMY_ICON.TGA</Icon_Name>
+      <Affiliation>Empire</Affiliation>
+      <Required_Planets>Pegasus_Prelude_Planet_Wraith_Homeworld</Required_Planets>
+      <Required_Star_Base_Level>1</Required_Star_Base_Level>
+   </GC_Dummy>
+
+
+<!--======================================================================================================
+#    Systemlord Alliance
+======================================================================================================-->
+
+   <GC_Dummy Name="GC_Dummy_Syslord_Story_Goauld_Eye2">
+      <Variant_Of_Existing_Type>GC_Dummy_Base_Space</Variant_Of_Existing_Type>
+      <Text_ID>EVENT_TEXT_21U_GOAULD_EYE2_RESEARCH</Text_ID>
+      <Encyclopedia_Text>EVENT_TEXT_21U_GOAULD_EYE2_RESEARCH_DESCRIPTION</Encyclopedia_Text>
+      <Encyclopedia_Unit_Class>TEXT_NONE</Encyclopedia_Unit_Class>
+      <Icon_Name>I_MULTI_EYE_EXCAVATION_R.TGA</Icon_Name>
+      <Affiliation>Rebel</Affiliation>
+      <Behavior>DUMMY_GROUND_COMPANY</Behavior>
+      <Company_Transport_Unit>Alliance_Shuttle</Company_Transport_Unit>
+      <GUI_Row>0</GUI_Row>
+      <Build_Tab_Space_Units>No</Build_Tab_Space_Units>
+      <Build_Tab_Land_Units>Yes</Build_Tab_Land_Units>
+      <Build_Cost_Credits>20000</Build_Cost_Credits>
+      <Build_Time_Seconds>100</Build_Time_Seconds>
+      <Required_Planets>Allianz_P3X_367</Required_Planets>
+      <Required_Ground_Base_Level>1</Required_Ground_Base_Level>
+      <Required_Star_Base_Level>0</Required_Star_Base_Level>
+   </GC_Dummy>
+
+<!--======================================================================================================
+#    Systemlord Alliance (Debug)
+======================================================================================================-->
+
+   <!--Tauri-->
+   <GC_Dummy Name="GC_Dummy_Debug_Event_Syslord_T_Finish_Alphasite">
+      <Variant_Of_Existing_Type>GC_Dummy_Base_Space</Variant_Of_Existing_Type>
+      <Text_ID>EVENT_TEXT_TAURI_21U_ALPHABASIS_00</Text_ID>
+      <Encyclopedia_Text>EVENT_TEXT_TAURI_21U_ALPHABASIS_01</Encyclopedia_Text>
+      <Icon_Name>DUMMY_ICON.TGA</Icon_Name>
+      <Affiliation>Underworld</Affiliation>
+      <Required_Planets>Allianz_Erde</Required_Planets>
+      <Required_Star_Base_Level>1</Required_Star_Base_Level>
+   </GC_Dummy>
+
+   <GC_Dummy Name="GC_Dummy_Debug_Event_Syslord_T_Win_Vorash">
+      <Variant_Of_Existing_Type>GC_Dummy_Base_Space</Variant_Of_Existing_Type>
+      <Text_ID>MTMAP_MI_SPACE_T_VORASH</Text_ID>
+      <Encyclopedia_Text>MBMAP_MI_SPACE_T_VORASH</Encyclopedia_Text>
+      <Icon_Name>DUMMY_ICON.TGA</Icon_Name>
+      <Affiliation>Underworld</Affiliation>
+      <Required_Planets>Allianz_Erde</Required_Planets>
+      <Required_Star_Base_Level>1</Required_Star_Base_Level>
+   </GC_Dummy>
+
+   <GC_Dummy Name="GC_Dummy_Debug_Event_Syslord_T_Win_Hassara">
+      <Variant_Of_Existing_Type>GC_Dummy_Base_Space</Variant_Of_Existing_Type>
+      <Text_ID>MTMAP_MI_SPACE_T_HASSARA</Text_ID>
+      <Encyclopedia_Text>MBMAP_MI_SPACE_T_HASSARA</Encyclopedia_Text>
+      <Icon_Name>DUMMY_ICON.TGA</Icon_Name>
+      <Affiliation>Underworld</Affiliation>
+      <Required_Planets>Allianz_Erde</Required_Planets>
+      <Required_Star_Base_Level>1</Required_Star_Base_Level>
+   </GC_Dummy>
+
+   <GC_Dummy Name="GC_Dummy_Debug_Event_Syslord_T_Win_Chulak">
+      <Variant_Of_Existing_Type>GC_Dummy_Base_Space</Variant_Of_Existing_Type>
+      <Text_ID>EVENT_TEXT_TAURI_21U_JAFFA_REBELLION_CHULAK_TITEL</Text_ID>
+      <Encyclopedia_Text>EVENT_TEXT_TAURI_21U_JAFFA_REBELLION_CHULAK</Encyclopedia_Text>
+      <Icon_Name>DUMMY_ICON.TGA</Icon_Name>
+      <Affiliation>Underworld</Affiliation>
+      <Required_Planets>Allianz_Erde</Required_Planets>
+      <Required_Star_Base_Level>1</Required_Star_Base_Level>
+   </GC_Dummy>
+
+   <GC_Dummy Name="GC_Dummy_Debug_Event_Syslord_T_Skip_Kull_Event">
+      <Variant_Of_Existing_Type>GC_Dummy_Base_Space</Variant_Of_Existing_Type>
+      <Text_ID>EVENT_TEXT_TAURI_21U_KULL_EVENT_TITEL</Text_ID>
+      <Encyclopedia_Text>EVENT_TEXT_TAURI_21U_KULL_EVENT_MAIN_TEXT</Encyclopedia_Text>
+      <Icon_Name>DUMMY_ICON.TGA</Icon_Name>
+      <Affiliation>Underworld</Affiliation>
+      <Required_Planets>Allianz_Erde</Required_Planets>
+      <Required_Star_Base_Level>1</Required_Star_Base_Level>
+   </GC_Dummy>
+
+
+
+   <!--Anubis-->
+   <GC_Dummy Name="GC_Dummy_Debug_Event_Syslord_A_Skip_Tagrea">
+      <Variant_Of_Existing_Type>GC_Dummy_Base_Space</Variant_Of_Existing_Type>
+      <Text_ID>EVENT_TEXT_GOAULD_21U_303_WAYTO_TAGREA_TITLE</Text_ID>
+      <Encyclopedia_Text>EVENT_TEXT_GOAULD_21U_303_WAYTO_TAGREA</Encyclopedia_Text>
+      <Icon_Name>DUMMY_ICON.TGA</Icon_Name>
+      <Affiliation>Rebel</Affiliation>
+      <Required_Planets>Allianz_Anubis_Heimatwelt</Required_Planets>
+      <Required_Star_Base_Level>1</Required_Star_Base_Level>
+   </GC_Dummy>
+   <GC_Dummy Name="GC_Dummy_Debug_Event_Syslord_A_Skip_DCE">
+      <Variant_Of_Existing_Type>GC_Dummy_Base_Space</Variant_Of_Existing_Type>
+      <Text_ID>EVENT_TEXT_GOAULD_21U_DAKARA_CHULAK_EREBUS_CONQ_TITLE</Text_ID>
+      <Encyclopedia_Text>EVENT_TEXT_GOAULD_21U_DAKARA_CHULAK_EREBUS_CONQ</Encyclopedia_Text>
+      <Icon_Name>DUMMY_ICON.TGA</Icon_Name>
+      <Affiliation>Rebel</Affiliation>
+      <Required_Planets>Allianz_Anubis_Heimatwelt</Required_Planets>
+      <Required_Star_Base_Level>1</Required_Star_Base_Level>
+   </GC_Dummy>
+   <GC_Dummy Name="GC_Dummy_Debug_Event_Syslord_A_Skip_Revanna">
+      <Variant_Of_Existing_Type>GC_Dummy_Base_Space</Variant_Of_Existing_Type>
+      <Text_ID>EVENT_TEXT_GOAULD_21U_REVANNA_TITLE</Text_ID>
+      <Encyclopedia_Text>EVENT_TEXT_GOAULD_21U_REVANNA</Encyclopedia_Text>
+      <Icon_Name>DUMMY_ICON.TGA</Icon_Name>
+      <Affiliation>Rebel</Affiliation>
+      <Required_Planets>Allianz_Anubis_Heimatwelt</Required_Planets>
+      <Required_Star_Base_Level>1</Required_Star_Base_Level>
+   </GC_Dummy>
+   <GC_Dummy Name="GC_Dummy_Debug_Event_Syslord_A_Skip_Truce">
+      <Variant_Of_Existing_Type>GC_Dummy_Base_Space</Variant_Of_Existing_Type>
+      <Text_ID>EVENT_TEXT_GOAULD_21U_TRUCE_TITLE</Text_ID>
+      <Encyclopedia_Text>EVENT_TEXT_GOAULD_21U_TRUCE</Encyclopedia_Text>
+      <Icon_Name>DUMMY_ICON.TGA</Icon_Name>
+      <Affiliation>Rebel</Affiliation>
+      <Required_Planets>Allianz_Anubis_Heimatwelt</Required_Planets>
+      <Required_Star_Base_Level>1</Required_Star_Base_Level>
+   </GC_Dummy>
+   <GC_Dummy Name="GC_Dummy_Debug_Event_Syslord_A_Skip_Vorash">
+      <Variant_Of_Existing_Type>GC_Dummy_Base_Space</Variant_Of_Existing_Type>
+      <Text_ID>EVENT_TEXT_GOAULD_21U_VORASH_TITLE</Text_ID>
+      <Encyclopedia_Text>EVENT_TEXT_GOAULD_21U_VORASH</Encyclopedia_Text>
+      <Icon_Name>DUMMY_ICON.TGA</Icon_Name>
+      <Affiliation>Rebel</Affiliation>
+      <Required_Planets>Allianz_Anubis_Heimatwelt</Required_Planets>
+      <Required_Star_Base_Level>1</Required_Star_Base_Level>
+   </GC_Dummy>
+   <GC_Dummy Name="GC_Dummy_Debug_Event_Syslord_A_Skip_Kull_Development">
+      <Variant_Of_Existing_Type>GC_Dummy_Base_Space</Variant_Of_Existing_Type>
+      <Text_ID>EVENT_TEXT_GOAULD_21U_WISSENSCHAFTLER_TITLE</Text_ID>
+      <Encyclopedia_Text>EVENT_TEXT_GOAULD_21U_WISSENSCHAFTLER</Encyclopedia_Text>
+      <Icon_Name>DUMMY_ICON.TGA</Icon_Name>
+      <Affiliation>Rebel</Affiliation>
+      <Required_Planets>Allianz_Anubis_Heimatwelt</Required_Planets>
+      <Required_Star_Base_Level>1</Required_Star_Base_Level>
+   </GC_Dummy>
+
+<!--======================================================================================================
+#    Debug
+======================================================================================================-->
+
+  <GC_Dummy Name="GC_Dummy_Debug_Grant_Fleet">
+      <Variant_Of_Existing_Type>GC_Dummy_Base_Space</Variant_Of_Existing_Type>
+      <Text_ID>TEXT_REINFORCE</Text_ID>
+      <Encyclopedia_Text>TEXT_UNKNOWN</Encyclopedia_Text>
+      <Icon_Name>I_ENCYCLOPEDIA_MONEY.TGA</Icon_Name>
+      <Affiliation>Underworld, Empire, Rebel</Affiliation>
+      <GUI_Row>1</GUI_Row>
+      <Required_Planets>Pegasus_Prelude_Planet_Lantea, Pegasus_Prelude_Planet_Wraith_Homeworld</Required_Planets>
+      <Required_Planets>Allianz_Erde, Allianz_Anubis_Heimatwelt</Required_Planets>
+      <Required_Planets>Universe_L_Earth, Universe_L_Anubis_Homeworld, Universe_L_Wraith_Homeworld</Required_Planets>
+      <Required_Planets>SGU_Earth</Required_Planets>
+      <Required_Star_Base_Level>1</Required_Star_Base_Level>
+      <Build_Max_Instances_Per_Planet> 100 </Build_Max_Instances_Per_Planet>
+      <Build_Limit_Current_For_All_Allies>-1</Build_Limit_Current_For_All_Allies>
+      <Build_Limit_Current_Per_Player>-1</Build_Limit_Current_Per_Player>
+   </GC_Dummy>
+
+   <GC_Dummy Name="GC_Dummy_Debug_Grant_Ground_Force">
+      <Variant_Of_Existing_Type>GC_Dummy_Base_Space</Variant_Of_Existing_Type>
+      <Text_ID>TEXT_REINFORCE</Text_ID>
+      <Encyclopedia_Text>TEXT_GROUND_BARRACKS</Encyclopedia_Text>
+      <Icon_Name>I_ENCYCLOPEDIA_MONEY.TGA</Icon_Name>
+      <Affiliation>Underworld, Empire, Rebel</Affiliation>
+      <GUI_Row>1</GUI_Row>
+      <Required_Planets>Allianz_Erde, Allianz_Anubis_Heimatwelt</Required_Planets>
+      <Required_Planets>Universe_L_Earth, Universe_L_Anubis_Homeworld, Universe_L_Wraith_Homeworld</Required_Planets>
+      <Required_Star_Base_Level>1</Required_Star_Base_Level>
+      <Build_Max_Instances_Per_Planet> 100 </Build_Max_Instances_Per_Planet>
+      <Build_Limit_Current_For_All_Allies>-1</Build_Limit_Current_For_All_Allies>
+      <Build_Limit_Current_Per_Player>-1</Build_Limit_Current_Per_Player>
+   </GC_Dummy>
+
+  <GC_Dummy Name="GC_Dummy_Debug_Give_Money">
+      <Variant_Of_Existing_Type>GC_Dummy_Base_Space</Variant_Of_Existing_Type>
+      <Text_ID>TEXT_CREDITS</Text_ID>
+      <Encyclopedia_Text>TEXT_UNKNOWN</Encyclopedia_Text>
+      <Icon_Name>I_MULTI_INCREASED_PRODUCTION2.TGA</Icon_Name>
+      <Affiliation>Underworld, Empire, Rebel</Affiliation>
+      <GUI_Row>1</GUI_Row>
+      <Required_Planets>Pegasus_Prelude_Planet_Lantea, Pegasus_Prelude_Planet_Wraith_Homeworld</Required_Planets>
+      <Required_Planets>Allianz_Erde, Allianz_Anubis_Heimatwelt</Required_Planets>
+      <Required_Planets>Universe_L_Earth, Universe_L_Anubis_Homeworld, Universe_L_Wraith_Homeworld</Required_Planets>
+      <Required_Planets>SGU_Earth</Required_Planets>
+      <Required_Star_Base_Level>1</Required_Star_Base_Level>
+      <Build_Max_Instances_Per_Planet> 100 </Build_Max_Instances_Per_Planet>
+      <Build_Limit_Current_For_All_Allies>-1</Build_Limit_Current_For_All_Allies>
+      <Build_Limit_Current_Per_Player>-1</Build_Limit_Current_Per_Player>
+   </GC_Dummy>
+
+  <GC_Dummy Name="GC_Dummy_Debug_Reveal_Everything">
+      <Variant_Of_Existing_Type>GC_Dummy_Base_Space</Variant_Of_Existing_Type>
+      <Text_ID>TEXT_TOOLTIP_ABILITY_FOW_REVEAL_PING_NAME</Text_ID>
+      <Encyclopedia_Text>TEXT_ENCYCLOPEDIA_REMOTE_SENSOR_POD</Encyclopedia_Text>
+      <Icon_Name>I_BUTTON_SENSOR_NODE.TGA</Icon_Name>
+      <Affiliation>Underworld, Empire, Rebel</Affiliation>
+      <GUI_Row>1</GUI_Row>
+      <Required_Planets>Pegasus_Prelude_Planet_Lantea, Pegasus_Prelude_Planet_Wraith_Homeworld</Required_Planets>
+      <Required_Planets>Allianz_Erde, Allianz_Anubis_Heimatwelt</Required_Planets>
+      <Required_Planets>Universe_L_Earth, Universe_L_Anubis_Homeworld, Universe_L_Wraith_Homeworld</Required_Planets>
+      <Required_Planets>SGU_Earth</Required_Planets>
+      <Required_Planets>Earth</Required_Planets>
+      <Required_Star_Base_Level>1</Required_Star_Base_Level>
+      <Build_Max_Instances_Per_Planet> 100 </Build_Max_Instances_Per_Planet>
+      <Build_Limit_Current_For_All_Allies>-1</Build_Limit_Current_For_All_Allies>
+      <Build_Limit_Current_Per_Player>-1</Build_Limit_Current_Per_Player>
+      <Galactic_Influence_Range>9000.0</Galactic_Influence_Range>
+      <Hyperspace_Fleet_Reveal_Range>9000.0</Hyperspace_Fleet_Reveal_Range>
+      <Abilities SubObjectList="Yes">
+         <System_Spy_Ability Name="See_Everything_Debug">
+            <Initially_Enabled>Yes</Initially_Enabled>
+            <Activation_Style>Galactic_Automatic</Activation_Style>
+            <Causes_Despawn>No</Causes_Despawn>
+            <Duration_In_Secs>-1.0</Duration_In_Secs>
+            <See_Base_Levels>Yes</See_Base_Levels>
+            <See_Credit_Income>Yes</See_Credit_Income>
+            <See_Credit_Income_Breakdown>Yes</See_Credit_Income_Breakdown>
+            <See_Num_Fleets>Yes</See_Num_Fleets>
+            <See_Most_Powerful_Ship>Yes</See_Most_Powerful_Ship>
+            <See_Fleet_Contents>Yes</See_Fleet_Contents>
+            <See_Num_Ground_Companies>Yes</See_Num_Ground_Companies>
+            <See_Ground_Company_Contents>Yes</See_Ground_Company_Contents>
+            <See_Special_Structures>Yes</See_Special_Structures>
+            <See_Political_Control>Yes</See_Political_Control>
+            <See_Political_Control_Breakdown>Yes</See_Political_Control_Breakdown>
+            <See_Current_Production>Yes</See_Current_Production>
+            <See_Minor_Stealth_Heroes>Yes</See_Minor_Stealth_Heroes>
+            <See_Major_Stealth_Heroes>Yes</See_Major_Stealth_Heroes>
+            <See_Force_Sensitive_Heroes>Yes</See_Force_Sensitive_Heroes>
+            <See_Super_Weapons>Yes</See_Super_Weapons>
+         </System_Spy_Ability>
+      </Abilities>
+   </GC_Dummy>
+
+  <GC_Dummy Name="GC_Dummy_Debug_Unlock_All_Tech">
+      <Variant_Of_Existing_Type>GC_Dummy_Base_Space</Variant_Of_Existing_Type>
+      <Text_ID>TEXT_CREDITS</Text_ID>
+      <Encyclopedia_Text>MP_TEXT_ENCYCLOPEDIA_RESEARCH_00</Encyclopedia_Text>
+      <Icon_Name>I_BUTTON_CORRUPTION_BLACK_MARKET_G.TGA</Icon_Name>
+      <Affiliation>Underworld, Empire</Affiliation>
+      <GUI_Row>1</GUI_Row>
+      <Required_Planets>Pegasus_Prelude_Planet_Lantea, Pegasus_Prelude_Planet_Wraith_Homeworld</Required_Planets>
+      <Required_Star_Base_Level>1</Required_Star_Base_Level>
+      <Build_Max_Instances_Per_Planet> 100 </Build_Max_Instances_Per_Planet>
+      <Build_Limit_Current_For_All_Allies>-1</Build_Limit_Current_For_All_Allies>
+      <Build_Limit_Current_Per_Player>-1</Build_Limit_Current_Per_Player>
+   </GC_Dummy>
+
+
+<!--======================================================================================================
+#    Large Stargate Universe GC
+======================================================================================================-->
+
+   <GC_Dummy Name="GC_Dummy_12U_G_Research_Adria">
+     <Variant_Of_Existing_Type>GC_Dummy_Base_Space</Variant_Of_Existing_Type>
+      <Text_ID>TEXT_RESEARCH_ADRIA</Text_ID>
+      <Encyclopedia_Text>TEXT_DESCRIPTION_RESEARCH_ADRIA</Encyclopedia_Text>
+      <Icon_Name>I_MULTI_RESEARCH_ADRIA.TGA</Icon_Name>
+      <Affiliation>Rebel</Affiliation>
+      <Tech_Level>1</Tech_Level>
+      <Build_Cost_Credits>25000</Build_Cost_Credits>
+      <Build_Time_Seconds>150</Build_Time_Seconds>
+      <Required_Planets>Universe_L_Celestis</Required_Planets>
+      <Required_Star_Base_Level>1</Required_Star_Base_Level>
+   </GC_Dummy>
+
+   <GC_Dummy Name="GC_Dummy_12U_G_Research_Anubis_Flagship">
+      <Variant_Of_Existing_Type>GC_Dummy_Base_Space</Variant_Of_Existing_Type>
+      <Text_ID>TEXT_RESEARCH_ANUBIS_FLAGSHIP</Text_ID>
+      <Encyclopedia_Text>TEXT_DESCRIPTION_RESEARCH_ANUBIS_FLAGSHIP</Encyclopedia_Text>
+      <Icon_Name>I_MULTI_RESEARCH_ANUBIS_FLAGSHIP.TGA</Icon_Name>
+      <Affiliation>Rebel</Affiliation>
+      <Tech_Level>1</Tech_Level>
+      <Build_Cost_Credits>8000</Build_Cost_Credits>
+      <Build_Time_Seconds>60</Build_Time_Seconds>
+      <Required_Orbiting_Units>Calamari_Cruiser</Required_Orbiting_Units>	  
+      <Required_Planets>Universe_L_Anubis_Homeworld</Required_Planets>
+      <Required_Star_Base_Level>1</Required_Star_Base_Level> 
+	  <Lua_Script>ObjectScript_Space_Unit_Upgrade</Lua_Script>	  
+    </GC_Dummy>
+
+   <GC_Dummy Name="GC_Dummy_12U_T_Research_Atlantis">
+      <Variant_Of_Existing_Type>GC_Dummy_Base_Space</Variant_Of_Existing_Type>
+      <Text_ID>TEXT_RESEARCH_ATLANTIS</Text_ID>
+      <Encyclopedia_Text>TEXT_DESCRIPTION_RESEARCH_ATLANTIS</Encyclopedia_Text>
+      <Icon_Name>I_MULTI_RESEARCH_ATLANTIS.TGA</Icon_Name>
+      <Affiliation>Underworld</Affiliation>
+      <Build_Cost_Credits>20000</Build_Cost_Credits>
+      <Build_Time_Seconds>120</Build_Time_Seconds>
+      <Required_Planets>Universe_L_Lantea</Required_Planets>
+      <Required_Star_Base_Level>1</Required_Star_Base_Level>
+    </GC_Dummy>
+
+   <GC_Dummy Name="GC_Dummy_12U_T_Research_Odins_Ship">
+      <Variant_Of_Existing_Type>GC_Dummy_Base_Space</Variant_Of_Existing_Type>
+      <Text_ID>TEXT_RESEARCH_ODINS_SHIP</Text_ID>
+      <Encyclopedia_Text>TEXT_DESCRIPTION_RESEARCH_ODINS_SHIP</Encyclopedia_Text>
+      <Icon_Name>I_MULTI_RESEARCH_ODINS_SHIP.TGA</Icon_Name>
+      <Affiliation>Underworld</Affiliation>
+      <Build_Cost_Credits>10000</Build_Cost_Credits>
+      <Build_Time_Seconds>90</Build_Time_Seconds>
+      <Required_Planets>Universe_L_Othala</Required_Planets>
+      <Required_Star_Base_Level>1</Required_Star_Base_Level>
+    </GC_Dummy>
+
+   <GC_Dummy Name="GC_Dummy_12U_T_Research_SOL">
+      <Variant_Of_Existing_Type>GC_Dummy_Base_Space</Variant_Of_Existing_Type>
+      <Text_ID>TEXT_RESEARCH_ESF_SOL</Text_ID>
+      <Encyclopedia_Text>TEXT_DESCRIPTION_RESEARCH_ESF_SOL</Encyclopedia_Text>
+      <Icon_Name>I_MULTI_RESEARCH_SOL.TGA</Icon_Name>
+      <Affiliation>Underworld</Affiliation>
+      <Build_Cost_Credits>10000</Build_Cost_Credits>
+      <Build_Time_Seconds>90</Build_Time_Seconds>
+      <Required_Planets>Universe_L_Earth</Required_Planets>
+      <Required_Star_Base_Level>1</Required_Star_Base_Level>
+    </GC_Dummy>
+
+   <GC_Dummy Name="GC_Dummy_12U_W_Research_ZPM_Hive">
+      <Variant_Of_Existing_Type>GC_Dummy_Base_Space</Variant_Of_Existing_Type>
+      <Text_ID>TEXT_RESEARCH_ZPM_HIVE</Text_ID>
+      <Encyclopedia_Text>TEXT_DESCRIPTION_RESEARCH_ZPM_HIVE</Encyclopedia_Text>
+      <Icon_Name>I_MULTI_RESEARCH_ZPM_HIVE.TGA</Icon_Name>
+      <Tech_Level>5</Tech_Level>
+	  <Affiliation>Empire</Affiliation>
+      <Build_Cost_Credits>15000</Build_Cost_Credits>
+      <Build_Time_Seconds>90</Build_Time_Seconds>
+      <Required_Orbiting_Units>Star_Destroyer Neutral_ZPM_Transport_Wraith</Required_Orbiting_Units>
+	  <Required_Special_Structures>Wraith_Large_Shipyard</Required_Special_Structures>
+      <Required_Star_Base_Level>1</Required_Star_Base_Level>
+	  <Lua_Script>ObjectScript_Space_Unit_Upgrade</Lua_Script>
+   </GC_Dummy>
+   
+     <GC_Dummy Name="GC_Dummy_Asgard_Research">
+      <Variant_Of_Existing_Type>GC_Dummy_Base_Space</Variant_Of_Existing_Type>
+      <Text_ID>TEXT_UPGRADE_N_ASGARD_TECH_UNLOCK</Text_ID>
+      <Encyclopedia_Text>TEXT_UPGRADE_TOOLTIP_ASGARD_BEAM_TECH_UNLOCK</Encyclopedia_Text>
+      <Icon_Name>I_MULTI_ODYSSEY_RETROFIT.TGA</Icon_Name>
+      <Affiliation>Underworld</Affiliation>
+      <Build_Cost_Credits>12000</Build_Cost_Credits>
+      <Build_Time_Seconds>120</Build_Time_Seconds>
+      <Required_Planets>Universe_L_Othala</Required_Planets>
+      <Required_Star_Base_Level>1</Required_Star_Base_Level>
+	  <Required_Orbiting_Units>Tauri_Hero_Odyssey_No_Beams</Required_Orbiting_Units>
+   </GC_Dummy>
+
+  <GC_Dummy Name="GC_Dummy_Asgard_Beam_Research">
+      <Variant_Of_Existing_Type>GC_Dummy_Base_Space</Variant_Of_Existing_Type>
+      <Text_ID>TEXT_UPGRADE_N_ASGARD_BEAM_TECH_UNLOCK</Text_ID>
+      <Encyclopedia_Text>TEXT_UPGRADE_TOOLTIP_BC304_MK2_TECH_UNLOCK</Encyclopedia_Text>
+      <Icon_Name>I_MULTI_BC304_MK2_RETROFIT.TGA</Icon_Name>
+      <Affiliation>Underworld</Affiliation>
+      <Build_Cost_Credits>15000</Build_Cost_Credits>
+      <Build_Time_Seconds>160</Build_Time_Seconds>
+      <Required_Planets>Universe_L_Earth</Required_Planets>
+      <Required_Star_Base_Level>1</Required_Star_Base_Level>
+	  <Required_Orbiting_Units>Tauri_Hero_Odyssey</Required_Orbiting_Units>
+   </GC_Dummy>
+   
+   <GC_Dummy Name="GC_Dummy_Thor_Research">
+      <Variant_Of_Existing_Type>GC_Dummy_Base_Space</Variant_Of_Existing_Type>
+      <Text_ID>TEXT_GC_DUMMY_THOR_RESEARCH_TITLE</Text_ID>
+      <Encyclopedia_Text>TEXT_GC_DUMMY_THOR_RESEARCH_DESCRIPTION</Encyclopedia_Text>
+      <Icon_Name>I_MULTI_THOR_RETROFIT.TGA</Icon_Name>
+      <Affiliation>Underworld</Affiliation>
+      <Build_Cost_Credits>7500</Build_Cost_Credits>
+      <Build_Time_Seconds>75</Build_Time_Seconds>
+      <Required_Planets>Universe_L_Othala</Required_Planets>
+      <Required_Star_Base_Level>1</Required_Star_Base_Level>
+	  <Required_Orbiting_Units>Tauri_Hero_Thor_Anti_Replicator</Required_Orbiting_Units>
+   </GC_Dummy>
+
+   <GC_Dummy Name="GC_Dummy_Atlantis_Expedition">
+      <Variant_Of_Existing_Type>GC_Dummy_Base_Space</Variant_Of_Existing_Type>
+      <Text_ID>TEXT_GC_DUMMY_ATLANTIS_EXPEDITION_TITLE</Text_ID>
+      <Encyclopedia_Text>TEXT_GC_DUMMY_ATLANTIS_EXPEDITION_DESCRIPTION</Encyclopedia_Text>
+      <Icon_Name>I_MULTI_ATLANTIS_EXPEDITION.TGA</Icon_Name>
+      <Affiliation>Underworld</Affiliation>
+      <Build_Cost_Credits>6000</Build_Cost_Credits>
+      <Build_Time_Seconds>120</Build_Time_Seconds>
+      <Required_Planets>Universe_L_Earth</Required_Planets>
+      <Required_Star_Base_Level>1</Required_Star_Base_Level>		  
+   </GC_Dummy> 
+
+   <GC_Dummy Name="GC_Dummy_12U_T_Research_Base_Code">
+      <Variant_Of_Existing_Type>GC_Dummy_Base_Space</Variant_Of_Existing_Type>
+      <Text_ID>TEXT_GC_DUMMY_ASURAN_BASE_CODE_TITLE</Text_ID>
+      <Encyclopedia_Text>TEXT_GC_DUMMY_ASURAN_BASE_CODE_DESCRIPTION</Encyclopedia_Text>
+      <Icon_Name>I_MULTI_RESEARCH_ASURAN_BASECODE.TGA</Icon_Name>
+      <Affiliation>Underworld</Affiliation>
+      <Build_Cost_Credits>3000</Build_Cost_Credits>
+      <Build_Time_Seconds>240</Build_Time_Seconds>	  
+      <Required_Planets>Universe_L_Lantea</Required_Planets>
+      <Required_Star_Base_Level>1</Required_Star_Base_Level>		  
+   </GC_Dummy>      
+
+<!--======================================================================================================
+#    Digsites Tauri
+======================================================================================================-->   
+
+   <GC_Dummy Name="GC_Dummy_Asuras_Dig_Site">
+      <Variant_Of_Existing_Type>GC_Dummy_Base_Space</Variant_Of_Existing_Type>
+      <Text_ID>TEXT_GC_DUMMY_ASURAS_DIG_SITE_TITLE</Text_ID>
+      <Encyclopedia_Text>TEXT_GC_DUMMY_ASURAS_DIG_SITE_DESCRIPTION</Encyclopedia_Text>
+      <Icon_Name>I_MULTI_DIG_SITE_U.TGA</Icon_Name>
+      <Affiliation>Underworld</Affiliation>
+      <Build_Cost_Credits>5000</Build_Cost_Credits>
+      <Build_Time_Seconds>300</Build_Time_Seconds>
+      <Required_Planets>Universe_L_Asuras</Required_Planets>
+      <Tech_Level>5</Tech_Level>	
+	  <Required_Star_Base_Level>1</Required_Star_Base_Level>
+      <Required_Ground_Base_Level>0</Required_Ground_Base_Level>	  
+	  <Lua_Script>ObjectScript_Dig_Sites_Tauri</Lua_Script>	  
+   </GC_Dummy>
+   
+   <GC_Dummy Name="GC_Dummy_Ancient_Dig_Site_Base">
+      <Variant_Of_Existing_Type>GC_Dummy_Base_Space</Variant_Of_Existing_Type>
+      <!--Text_ID>TEXT_GC_DUMMY_ANCIENT_DIG_SITE_TITLE</Text_ID-->
+      <Encyclopedia_Text>TEXT_GC_DUMMY_ANCIENT_DIG_SITE_DESCRIPTION</Encyclopedia_Text>
+      <Icon_Name>I_MULTI_DIG_SITE_U.TGA</Icon_Name>
+      <Affiliation>Underworld</Affiliation>
+      <Tech_Level>99</Tech_Level>	  
+      <Required_Star_Base_Level>1</Required_Star_Base_Level>
+      <Required_Ground_Base_Level>0</Required_Ground_Base_Level>	  
+	  <Lua_Script>ObjectScript_Dig_Sites_Tauri</Lua_Script>	  
+   </GC_Dummy>  
+
+   <GC_Dummy Name="GC_Dummy_Ancient_Dig_Site_Dagan">
+      <Variant_Of_Existing_Type>GC_Dummy_Ancient_Dig_Site_Base</Variant_Of_Existing_Type>
+      <Text_ID>TEXT_GC_DUMMY_ANCIENT_DAGAN_DIG_SITE_TITLE</Text_ID>
+      <Encyclopedia_Text>TEXT_GC_DUMMY_ANCIENT_DAGAN_DIG_SITE_DESCRIPTION</Encyclopedia_Text>
+      <Build_Cost_Credits>4000</Build_Cost_Credits>
+      <Build_Time_Seconds>200</Build_Time_Seconds>
+	  <Tech_Level>4</Tech_Level>
+      <Required_Star_Base_Level>1</Required_Star_Base_Level>
+      <Required_Ground_Base_Level>0</Required_Ground_Base_Level>	 	  
+      <Required_Planets>Universe_L_Dagan</Required_Planets>	  
+   </GC_Dummy>      
+
+   <GC_Dummy Name="GC_Dummy_Ancient_Dig_Site_Doranda">
+      <Variant_Of_Existing_Type>GC_Dummy_Ancient_Dig_Site_Base</Variant_Of_Existing_Type>
+      <Text_ID>TEXT_GC_DUMMY_ANCIENT_DORANDA_DIG_SITE_TITLE</Text_ID>
+      <Encyclopedia_Text>TEXT_GC_DUMMY_ANCIENT_DORANDA_DIG_SITE_DESCRIPTION</Encyclopedia_Text>
+      <Build_Cost_Credits>3500</Build_Cost_Credits>
+      <Build_Time_Seconds>160</Build_Time_Seconds>
+	  <Tech_Level>4</Tech_Level>
+      <Required_Star_Base_Level>1</Required_Star_Base_Level>
+      <Required_Ground_Base_Level>0</Required_Ground_Base_Level>	 	  
+      <Required_Planets>Universe_L_Doranda</Required_Planets>	  
+   </GC_Dummy> 
+   
+   <GC_Dummy Name="GC_Dummy_Ancient_Dig_Site_Praclarush_Taonas">
+      <Variant_Of_Existing_Type>GC_Dummy_Ancient_Dig_Site_Base</Variant_Of_Existing_Type>
+      <Text_ID>TEXT_GC_DUMMY_ANCIENT_PRACLARUSH_DIG_SITE_TITLE</Text_ID>
+      <Encyclopedia_Text>TEXT_GC_DUMMY_ANCIENT_PRACLARUSH_DIG_SITE_DESCRIPTION</Encyclopedia_Text>
+      <Build_Cost_Credits>4000</Build_Cost_Credits>
+      <Build_Time_Seconds>200</Build_Time_Seconds>
+	  <Tech_Level>4</Tech_Level>
+      <Required_Star_Base_Level>1</Required_Star_Base_Level>
+      <Required_Ground_Base_Level>0</Required_Ground_Base_Level>	 	  
+      <Required_Planets>Universe_L_Praclarush_Taonas</Required_Planets>  
+   </GC_Dummy> 
+
+   <GC_Dummy Name="GC_Dummy_Ancient_Dig_Site_P3X_666">
+      <Variant_Of_Existing_Type>GC_Dummy_Ancient_Dig_Site_Base</Variant_Of_Existing_Type>
+      <Text_ID>TEXT_GC_DUMMY_ANCIENT_P3X_666_DIG_SITE_TITLE</Text_ID>
+      <Encyclopedia_Text>TEXT_GC_DUMMY_ANCIENT_P3X_666_DIG_SITE_DESCRIPTION</Encyclopedia_Text>
+      <Build_Cost_Credits>3500</Build_Cost_Credits>
+      <Build_Time_Seconds>160</Build_Time_Seconds>
+	  <Tech_Level>4</Tech_Level>
+      <Required_Star_Base_Level>1</Required_Star_Base_Level>
+      <Required_Ground_Base_Level>0</Required_Ground_Base_Level>	 	  
+      <Required_Planets>Universe_L_P3X_666</Required_Planets>	  
+   </GC_Dummy>   
+
+   <GC_Dummy Name="GC_Dummy_Ancient_Dig_Site_P3X_439">
+      <Variant_Of_Existing_Type>GC_Dummy_Ancient_Dig_Site_Base</Variant_Of_Existing_Type>
+      <Text_ID>TEXT_GC_DUMMY_ANCIENT_P3X_439_DIG_SITE_TITLE</Text_ID>
+      <Encyclopedia_Text>TEXT_GC_DUMMY_ANCIENT_P3X_439_DIG_SITE_DESCRIPTION</Encyclopedia_Text>
+      <Build_Cost_Credits>4000</Build_Cost_Credits>
+      <Build_Time_Seconds>200</Build_Time_Seconds>
+	  <Tech_Level>4</Tech_Level>
+      <Required_Star_Base_Level>1</Required_Star_Base_Level>
+      <Required_Ground_Base_Level>0</Required_Ground_Base_Level>	 	  
+      <Required_Planets>Universe_L_P3X_439</Required_Planets>	  
+   </GC_Dummy>  
+
+   <GC_Dummy Name="GC_Dummy_Goauld_Dig_Site_Base">
+      <Variant_Of_Existing_Type>GC_Dummy_Base_Space</Variant_Of_Existing_Type>
+      <Text_ID>TEXT_GC_DUMMY_GOAULD_DIG_SITE_TITLE</Text_ID>
+      <Encyclopedia_Text>TEXT_GC_DUMMY_GOAULD_DIG_SITE_DESCRIPTION</Encyclopedia_Text>
+      <Icon_Name>I_MULTI_DIG_SITE_U.TGA</Icon_Name>
+      <Affiliation>Underworld</Affiliation>
+      <Tech_Level>99</Tech_Level>
+      <Build_Cost_Credits>2000</Build_Cost_Credits>
+      <Build_Time_Seconds>120</Build_Time_Seconds>
+      <Required_Star_Base_Level>1</Required_Star_Base_Level>
+      <Required_Ground_Base_Level>0</Required_Ground_Base_Level>	  
+	  <Lua_Script>ObjectScript_Dig_Sites_Tauri</Lua_Script>	  
+   </GC_Dummy>     
+
+   <GC_Dummy Name="GC_Dummy_Goauld_Dig_Site_Abydos">
+      <Variant_Of_Existing_Type>GC_Dummy_Goauld_Dig_Site_Base</Variant_Of_Existing_Type>
+      <Required_Star_Base_Level>1</Required_Star_Base_Level>
+      <Required_Ground_Base_Level>0</Required_Ground_Base_Level>
+      <Tech_Level>2</Tech_Level>	  
+      <Required_Planets>Universe_L_Abydos</Required_Planets>	 
+   </GC_Dummy>     
+ 
+   <GC_Dummy Name="GC_Dummy_Goauld_Dig_Site_Erebus">
+      <Variant_Of_Existing_Type>GC_Dummy_Goauld_Dig_Site_Base</Variant_Of_Existing_Type>
+      <Required_Star_Base_Level>1</Required_Star_Base_Level>
+      <Required_Ground_Base_Level>0</Required_Ground_Base_Level>
+      <Tech_Level>3</Tech_Level>	  
+      <Required_Planets>Universe_L_Erebus</Required_Planets>	 
+   </GC_Dummy>     
+
+   <GC_Dummy Name="GC_Dummy_Goauld_Dig_Site_Dakara">
+      <Variant_Of_Existing_Type>GC_Dummy_Goauld_Dig_Site_Base</Variant_Of_Existing_Type>
+      <Required_Star_Base_Level>1</Required_Star_Base_Level>
+      <Required_Ground_Base_Level>0</Required_Ground_Base_Level>
+	  <Tech_Level>4</Tech_Level>
+      <Required_Planets>Universe_L_Dakara</Required_Planets>	 
+   </GC_Dummy>     
+
+   <GC_Dummy Name="GC_Dummy_Goauld_Dig_Site_Delmak">
+      <Variant_Of_Existing_Type>GC_Dummy_Goauld_Dig_Site_Base</Variant_Of_Existing_Type>
+      <Required_Star_Base_Level>1</Required_Star_Base_Level>
+      <Required_Ground_Base_Level>0</Required_Ground_Base_Level>
+	  <Tech_Level>2</Tech_Level>
+      <Required_Planets>Universe_L_Delmak</Required_Planets>	 
+   </GC_Dummy>   
+
+   <GC_Dummy Name="GC_Dummy_Goauld_Dig_Site_Tartarus">
+      <Variant_Of_Existing_Type>GC_Dummy_Goauld_Dig_Site_Base</Variant_Of_Existing_Type>
+      <Required_Star_Base_Level>1</Required_Star_Base_Level>
+      <Required_Ground_Base_Level>0</Required_Ground_Base_Level>
+	  <Tech_Level>4</Tech_Level>
+      <Required_Planets>Universe_L_Tartarus</Required_Planets>	 
+   </GC_Dummy>
+
+   <GC_Dummy Name="GC_Dummy_Goauld_Dig_Site_Yu">
+      <Variant_Of_Existing_Type>GC_Dummy_Goauld_Dig_Site_Base</Variant_Of_Existing_Type>
+      <Required_Star_Base_Level>1</Required_Star_Base_Level>
+      <Required_Ground_Base_Level>0</Required_Ground_Base_Level>
+	  <Tech_Level>3</Tech_Level>
+      <Required_Planets>Universe_L_Yus_Homeworld</Required_Planets>	 
+   </GC_Dummy>   
+   
+   <!--======================================================================================================
+#    Digsites Anubis
+======================================================================================================-->   
+
+   <GC_Dummy Name="GC_Dummy_Asuras_Dig_Site_Anubis">
+      <Variant_Of_Existing_Type>GC_Dummy_Base_Space</Variant_Of_Existing_Type>
+      <Text_ID>TEXT_GC_DUMMY_ASURAS_DIG_SITE_TITLE</Text_ID>
+      <Encyclopedia_Text>TEXT_GC_DUMMY_ASURAS_DIG_SITE_DESCRIPTION</Encyclopedia_Text>
+      <Icon_Name>I_MULTI_DIG_SITE_R.TGA</Icon_Name>
+      <Affiliation>Rebel</Affiliation>
+      <Build_Cost_Credits>5000</Build_Cost_Credits>
+      <Build_Time_Seconds>360</Build_Time_Seconds> 
+      <Required_Planets>Universe_L_Asuras</Required_Planets>
+      <Tech_Level>4</Tech_Level>	
+	  <Required_Star_Base_Level>1</Required_Star_Base_Level>
+      <Required_Ground_Base_Level>0</Required_Ground_Base_Level>	  
+	  <Lua_Script>ObjectScript_Dig_Sites_Anubis</Lua_Script>	  
+   </GC_Dummy>
+
+   <GC_Dummy Name="GC_Dummy_Anubis_Eye_Dig_Site_Base">
+      <Variant_Of_Existing_Type>GC_Dummy_Base_Space</Variant_Of_Existing_Type>
+      <Text_ID>TEXT_GC_DUMMY_GOAULD_DIG_SITE_TITLE</Text_ID>
+      <Encyclopedia_Text>TEXT_GC_DUMMY_ANUBIS_EYE_DIG_SITE_DESCRIPTION</Encyclopedia_Text>
+      <Icon_Name>I_MULTI_DIG_SITE_R.TGA</Icon_Name>
+      <Affiliation>Rebel</Affiliation>
+      <Tech_Level>99</Tech_Level>
+      <Build_Cost_Credits>1</Build_Cost_Credits>
+      <Build_Time_Seconds>1</Build_Time_Seconds>	  
+      <Required_Star_Base_Level>1</Required_Star_Base_Level>
+      <Required_Ground_Base_Level>0</Required_Ground_Base_Level>	  
+	  <Lua_Script>ObjectScript_Dig_Sites_Anubis</Lua_Script>	  
+   </GC_Dummy>     
+
+   <GC_Dummy Name="GC_Dummy_Anubis_Eye_Dig_Site_Abydos">
+      <Variant_Of_Existing_Type>GC_Dummy_Anubis_Eye_Dig_Site_Base</Variant_Of_Existing_Type>
+      <Build_Cost_Credits>5000</Build_Cost_Credits>
+      <Build_Time_Seconds>240</Build_Time_Seconds>
+      <Required_Star_Base_Level>1</Required_Star_Base_Level>
+      <Required_Ground_Base_Level>0</Required_Ground_Base_Level>
+      <Tech_Level>4</Tech_Level>	  
+      <Required_Planets>Universe_L_Abydos</Required_Planets>	 
+   </GC_Dummy>     
+ 
+   <GC_Dummy Name="GC_Dummy_Anubis_Eye_Dig_Site_Erebus">
+      <Variant_Of_Existing_Type>GC_Dummy_Anubis_Eye_Dig_Site_Base</Variant_Of_Existing_Type>
+      <Build_Cost_Credits>4000</Build_Cost_Credits>
+      <Build_Time_Seconds>200</Build_Time_Seconds>	
+      <Required_Star_Base_Level>1</Required_Star_Base_Level>
+      <Required_Ground_Base_Level>0</Required_Ground_Base_Level>
+      <Tech_Level>4</Tech_Level>	  
+      <Required_Planets>Universe_L_Erebus</Required_Planets>	 
+   </GC_Dummy>     
+
+   <GC_Dummy Name="GC_Dummy_Anubis_Eye_Dig_Site_Dakara">
+      <Variant_Of_Existing_Type>GC_Dummy_Anubis_Eye_Dig_Site_Base</Variant_Of_Existing_Type>
+      <Build_Cost_Credits>4000</Build_Cost_Credits>
+      <Build_Time_Seconds>200</Build_Time_Seconds>	 		  
+      <Required_Star_Base_Level>1</Required_Star_Base_Level>
+      <Required_Ground_Base_Level>0</Required_Ground_Base_Level>
+	  <Tech_Level>2</Tech_Level>
+      <Required_Planets>Universe_L_Dakara</Required_Planets>	 
+   </GC_Dummy>     
+
+   <GC_Dummy Name="GC_Dummy_Anubis_Eye_Dig_Site_P3X_666">
+      <Variant_Of_Existing_Type>GC_Dummy_Anubis_Eye_Dig_Site_Base</Variant_Of_Existing_Type>
+      <Build_Cost_Credits>5000</Build_Cost_Credits>
+      <Build_Time_Seconds>240</Build_Time_Seconds>
+      <Required_Star_Base_Level>1</Required_Star_Base_Level>
+      <Required_Ground_Base_Level>0</Required_Ground_Base_Level>
+      <Tech_Level>4</Tech_Level>	  
+      <Required_Planets>Universe_L_P3X_666</Required_Planets>	 
+   </GC_Dummy>   
+
+   <GC_Dummy Name="GC_Dummy_Anubis_Eye_Dig_Site_P2X_338">
+      <Variant_Of_Existing_Type>GC_Dummy_Anubis_Eye_Dig_Site_Base</Variant_Of_Existing_Type>
+      <Build_Cost_Credits>4000</Build_Cost_Credits>
+      <Build_Time_Seconds>200</Build_Time_Seconds>	  	
+      <Required_Star_Base_Level>1</Required_Star_Base_Level>
+      <Required_Ground_Base_Level>0</Required_Ground_Base_Level>
+	  <Tech_Level>3</Tech_Level>
+      <Required_Planets>Universe_L_P2X_338</Required_Planets>	 
+   </GC_Dummy>
+
+   <GC_Dummy Name="GC_Dummy_Anubis_Eye_Dig_Site_Chulak">
+      <Variant_Of_Existing_Type>GC_Dummy_Anubis_Eye_Dig_Site_Base</Variant_Of_Existing_Type>
+      <Build_Cost_Credits>5000</Build_Cost_Credits>
+      <Build_Time_Seconds>240</Build_Time_Seconds>	  
+      <Required_Star_Base_Level>1</Required_Star_Base_Level>
+      <Required_Ground_Base_Level>0</Required_Ground_Base_Level>
+	  <Tech_Level>4</Tech_Level>
+      <Required_Planets>Universe_L_Chulak</Required_Planets>	 
+   </GC_Dummy>   
+
+<!--======================================================================================================
+#    Large Stargate Universe GC (Debug)
+======================================================================================================-->
+
+    <GC_Dummy Name="GC_Dummy_Debug_Event_12U_T_Enable_Syslord_AI">
+      <Variant_Of_Existing_Type>GC_Dummy_Base_Space</Variant_Of_Existing_Type>
+      <Encyclopedia_Text>TEXT_FACTION_SYSTEMLORDS TEXT_AI_PLAYER_NAME</Encyclopedia_Text>
+      <Icon_Name>SYSTEMLORDS_SPACE_UNIT_HATAK.TGA</Icon_Name>
+      <Affiliation>Underworld</Affiliation>
+      <Required_Planets>Universe_L_Earth</Required_Planets>
+      <Required_Star_Base_Level>1</Required_Star_Base_Level>
+    </GC_Dummy>
+
+    <GC_Dummy Name="GC_Dummy_Debug_Event_12U_T_Enable_Wraith_AI">
+      <Variant_Of_Existing_Type>GC_Dummy_Base_Space</Variant_Of_Existing_Type>
+      <Encyclopedia_Text>TEXT_FACTION_EMPIRE TEXT_AI_PLAYER_NAME</Encyclopedia_Text>
+      <Icon_Name>WRAITH_SPACE_UNIT_HIVE.TGA</Icon_Name>
+      <Affiliation>Underworld</Affiliation>
+      <Required_Planets>Universe_L_Earth</Required_Planets>
+      <Required_Star_Base_Level>1</Required_Star_Base_Level>
+    </GC_Dummy>
+
+    <GC_Dummy Name="GC_Dummy_Debug_Event_12U_T_Start_Replicator_Invasion">
+      <Variant_Of_Existing_Type>GC_Dummy_Base_Space</Variant_Of_Existing_Type>
+      <Encyclopedia_Text>EVENT_TEXT_TAURI_12U_REPLICATORS_ACTIVE</Encyclopedia_Text>
+      <Icon_Name>REPLICATOR_SPACE_UNIT_BATTLESHIP.TGA</Icon_Name>
+      <Affiliation>Underworld</Affiliation>
+      <Required_Planets>Universe_L_Earth</Required_Planets>
+      <Required_Star_Base_Level>1</Required_Star_Base_Level>
+    </GC_Dummy>
+
+    <GC_Dummy Name="GC_Dummy_Debug_Event_12U_T_Start_Ori_Invasion">
+      <Variant_Of_Existing_Type>GC_Dummy_Base_Space</Variant_Of_Existing_Type>
+      <Encyclopedia_Text>EVENT_TEXT_TAURI_12U_P3Y_229_SSG</Encyclopedia_Text>
+      <Icon_Name>ORI_SPACE_UNIT_MOTHERSHIP.TGA</Icon_Name>
+      <Affiliation>Underworld</Affiliation>
+      <Required_Planets>Universe_L_Earth</Required_Planets>
+      <Required_Star_Base_Level>1</Required_Star_Base_Level>
+    </GC_Dummy>
+
+    <GC_Dummy Name="GC_Dummy_Debug_Event_12U_T_Unlock_Midway">
+      <Variant_Of_Existing_Type>GC_Dummy_Base_Space</Variant_Of_Existing_Type>
+      <Encyclopedia_Text>EVENT_TEXT_TAURI_12U_MIDWAY_UNLOCKED</Encyclopedia_Text>
+      <Icon_Name>TAURI_SPACE_BUILDING_STATIONTECH1.TGA</Icon_Name>
+      <Affiliation>Underworld</Affiliation>
+      <Required_Planets>Universe_L_Earth</Required_Planets>
+      <Required_Star_Base_Level>1</Required_Star_Base_Level>
+    </GC_Dummy>
+
+
+<!--======================================================================================================
+#    Self-Strenghten dummies
+==========================================================================================================
+In GC, we want some units to be stronger than in skirmish. To save us the work we basically make use of a
+dummy that provides a Combat_Bonus_Ability to the specified unit (as sadly the effect cannot be self-applied).
+=======================================================================================================-->
+
+
+    <Template Name="Template_Dummy_Combat_Bonus_Ground_Unit">
+      <Variant_Of_Existing_Type>Template_Ground_Unit</Variant_Of_Existing_Type>
+      <Land_Model_Name>W_LASER_INVISIBLE.ALO</Land_Model_Name>
+      <Tactical_Health>999999</Tactical_Health>
+      <Behavior>HIDE_WHEN_FOGGED</Behavior>
+      <LandBehavior>HIDE_WHEN_FOGGED</LandBehavior>
+      <Is_Visible_On_Radar>No</Is_Visible_On_Radar>
+      <Is_Visible_On_Enemy_Radar>No</Is_Visible_On_Enemy_Radar>
+      <Remove_Upon_Death>true</Remove_Upon_Death>
+      <Victory_Relevant>No</Victory_Relevant>
+      <Is_Squashable>No</Is_Squashable>
+      <Movie_Object>false</Movie_Object>
+      <AI_Combat_Power>0</AI_Combat_Power>
+      <Ground_Infantry_Turret_Target>No</Ground_Infantry_Turret_Target>
+      <Influences_Capture_Point>False</Influences_Capture_Point>
+      <Collidable_By_Projectile_Living>No</Collidable_By_Projectile_Living>
+      <Collidable_By_Projectile_Dead>No</Collidable_By_Projectile_Dead>
+      <Is_Valid_Target>No</Is_Valid_Target>
+      <Immune_To_Damage>True</Immune_To_Damage>
+      <Population_Value>0</Population_Value>
+   </Template>
+
+   <Template Name="Template_Dummy_Combat_Bonus_Space_Unit">
+      <Variant_Of_Existing_Type>Template_Space_Unit_Base</Variant_Of_Existing_Type>
+      <Space_Model_Name>W_LASER_INVISIBLE.ALO</Space_Model_Name>
+      <Tactical_Health>999999</Tactical_Health>
+      <SpaceBehavior>HIDE_WHEN_FOGGED</SpaceBehavior>
+      <Is_Visible_On_Radar>No</Is_Visible_On_Radar>
+      <Is_Visible_On_Enemy_Radar>No</Is_Visible_On_Enemy_Radar>
+      <Remove_Upon_Death>true</Remove_Upon_Death>
+      <Victory_Relevant>No</Victory_Relevant>
+      <Movie_Object>false</Movie_Object>
+      <AI_Combat_Power>0</AI_Combat_Power>
+      <Collidable_By_Projectile_Living>No</Collidable_By_Projectile_Living>
+      <Collidable_By_Projectile_Dead>No</Collidable_By_Projectile_Dead>
+      <Is_Valid_Target>No</Is_Valid_Target>
+      <Immune_To_Damage>True</Immune_To_Damage>
+      <Population_Value>0</Population_Value>
+   </Template>
+
+   <GC_Dummy Name="Dummy_Combat_Bonus_Systemlord_Alliance_Hero">
+      <Variant_Of_Existing_Type>Template_Dummy_Combat_Bonus_Space_Unit</Variant_Of_Existing_Type>
+      <Abilities SubObjectList="Yes">
+         <Combat_Bonus_Ability Name="Systemlord_Alliance_Hero_Combat_Bonus_GC">
+            <Activation_Style>Space_Automatic</Activation_Style>
+            <Applicable_Unit_Types>Systemlord_Alliance_Hero_Apophis, Systemlord_Alliance_Hero_Baal, Systemlord_Alliance_Hero_Bastet, Systemlord_Alliance_Hero_Cronus, Systemlord_Alliance_Hero_Seth, Systemlord_Alliance_Hero_Sokar</Applicable_Unit_Types>
+            <Damage_Bonus_Percentage>0.8</Damage_Bonus_Percentage>
+            <Shield_Bonus_Percentage>0.8</Shield_Bonus_Percentage>
+            <Stacking_Category>1</Stacking_Category>
+         </Combat_Bonus_Ability>
+      </Abilities>
+   </GC_Dummy>
+   <GC_Dummy Name="Dummy_Combat_Bonus_Systemlord_Alliance_Hero_Yu">
+      <Variant_Of_Existing_Type>Template_Dummy_Combat_Bonus_Space_Unit</Variant_Of_Existing_Type>
+      <Abilities SubObjectList="Yes">
+         <Combat_Bonus_Ability Name="Systemlord_Alliance_Hero_Yu_Combat_Bonus_GC">
+            <Activation_Style>Space_Automatic</Activation_Style>
+            <Applicable_Unit_Types>Systemlord_Alliance_Hero_Lord_Yu</Applicable_Unit_Types>
+            <Health_Bonus_Percentage>1.0</Health_Bonus_Percentage>
+            <Damage_Bonus_Percentage>1.5</Damage_Bonus_Percentage>
+            <Shield_Bonus_Percentage>1.2</Shield_Bonus_Percentage>
+            <Stacking_Category>1</Stacking_Category>
+         </Combat_Bonus_Ability>
+      </Abilities>
+   </GC_Dummy>
+
+</GC_Dummies>

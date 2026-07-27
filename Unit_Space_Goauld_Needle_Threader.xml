@@ -1,0 +1,296 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FighterUnits>
+
+   <!-- Needle Threader in GC Team Information -->
+   <HeroCompany Name="Needle_Threader_Generic_Team">
+      <GUI_Row>1</GUI_Row>
+      <Text_ID>TEXT_GOAULD_SPACE_UNIT_GC_NADELGLEITER</Text_ID>
+      <Encyclopedia_Text>TEXT_DESCRIPTION_GOAULD_GC_NADELGLEITER</Encyclopedia_Text>
+      <Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_GC_NADELGLEITER</Encyclopedia_Unit_Class>
+      <Is_Dummy>Yes</Is_Dummy>
+      <Affiliation>Rebel</Affiliation>
+      <Build_Cost_Credits>550</Build_Cost_Credits>
+      <Build_Time_Seconds>18</Build_Time_Seconds>
+      <Build_Tab_Heroes>Yes</Build_Tab_Heroes>
+      <Tech_Level>0</Tech_Level>
+      <Required_Timeline>0</Required_Timeline>
+      <Required_Ground_Base_Level>0</Required_Ground_Base_Level>
+      <Required_Star_Base_Level>1</Required_Star_Base_Level>
+      <Required_Special_Structures></Required_Special_Structures>
+      <Required_Planets></Required_Planets>
+      <Behavior>DUMMY_GROUND_COMPANY</Behavior>
+      <Company_Transport_Unit>Goauld_Needle_Threader_Single</Company_Transport_Unit>
+      <Company_Units>Needle_Threader_Generic</Company_Units>
+      <Icon_Name>GOAULD_SPACE_UNIT_NEEDLETHREADER.TGA</Icon_Name>
+      <Is_Generic_Hero>Yes</Is_Generic_Hero>
+      <Is_Stealth_Company>Yes</Is_Stealth_Company>
+      <SFXEvent_Build_Started></SFXEvent_Build_Started>
+      <SFXEvent_Build_Cancelled></SFXEvent_Build_Cancelled>
+      <SFXEvent_Build_Complete></SFXEvent_Build_Complete>
+      <SFXEvent_Move>Unit_Move_GFB</SFXEvent_Move>
+      <SFXEvent_Fleet_Move>Unit_Move_GFB</SFXEvent_Fleet_Move>
+      <CategoryMask>NonCombatHero</CategoryMask>
+      <Population_Value>1</Population_Value>
+   </HeroCompany>
+
+
+   <!--Dummy ground unit needed for the galactic ability-->
+   <GenericHeroUnit Name="Needle_Threader_Generic">
+      <Text_ID>TEXT_GOAULD_SPACE_UNIT_GC_NADELGLEITER</Text_ID>
+      <Encyclopedia_Text>TEXT_DESCRIPTION_GOAULD_GC_NADELGLEITER</Encyclopedia_Text>
+      <Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_GC_NADELGLEITER</Encyclopedia_Unit_Class>
+      <Icon_Name>GOAULD_SPACE_UNIT_NEEDLETHREADER.tga</Icon_Name>
+      <Galactic_Fleet_Override_Model_Name>W_planet_fleet_NeedleThreader.ALO</Galactic_Fleet_Override_Model_Name>
+      <Galactic_Fleet_Override_Icon_Index>4</Galactic_Fleet_Override_Icon_Index>
+      <GUI_Row>1</GUI_Row>
+      <Mass>1.0</Mass>
+      <Scale_Factor>1.0</Scale_Factor>
+      <Is_Sprite>No</Is_Sprite>
+      <Type>Walk</Type>
+      <Affiliation>Rebel</Affiliation>
+      <Political_Control>0</Political_Control>
+      <Size_Value>75</Size_Value>
+      <Is_Generic_Hero>Yes</Is_Generic_Hero>
+      <Attach_To_Flagship_During_Space_Battle>No</Attach_To_Flagship_During_Space_Battle>
+      <Stay_In_Transport_During_Ground_Battle>Yes</Stay_In_Transport_During_Ground_Battle>
+      <Always_Spawn_In_Orbit>Yes</Always_Spawn_In_Orbit>
+      <SFXEvent_Move>Unit_Move_GFB</SFXEvent_Move>
+      <SFXEvent_Fleet_Move>Unit_Move_GFB</SFXEvent_Fleet_Move>
+      <Neutralization_Cost>20.0</Neutralization_Cost>
+      <Can_Be_Neutralized_By_Major_Heroes>Yes</Can_Be_Neutralized_By_Major_Heroes>
+      <Can_Be_Neutralized_By_Minor_Heroes>Yes</Can_Be_Neutralized_By_Minor_Heroes>
+      <Can_Hyperspace_Without_Activating_Ability>No</Can_Hyperspace_Without_Activating_Ability>
+      <CategoryMask>NonCombatHero</CategoryMask>
+      <Ranking_In_Category>22</Ranking_In_Category>
+      <Abilities SubObjectList="Yes">
+         <Galactic_Stealth_Ability Name="Needle_Threader_Galactic_Stealth">
+            <Evade_Detection_Chance>0.0</Evade_Detection_Chance>
+         </Galactic_Stealth_Ability>
+         <System_Spy_Ability Name="Needle_Threader_System_Spy">
+            <Initially_Enabled>Yes</Initially_Enabled>
+            <Activation_Style>Ground_Activated</Activation_Style>
+            <Causes_Despawn>Yes</Causes_Despawn>
+            <Duration_In_Secs>90.0</Duration_In_Secs>
+            <See_Base_Levels>Yes</See_Base_Levels>
+            <See_Credit_Income>No</See_Credit_Income>
+            <See_Credit_Income_Breakdown>No</See_Credit_Income_Breakdown>
+            <See_Num_Fleets>Yes</See_Num_Fleets>
+            <See_Fleet_Contents>Yes</See_Fleet_Contents>
+            <See_Num_Ground_Companies>Yes</See_Num_Ground_Companies>
+            <See_Ground_Company_Contents>Yes</See_Ground_Company_Contents>
+            <See_Special_Structures>Yes</See_Special_Structures>
+            <See_Political_Control>Yes</See_Political_Control>
+            <See_Political_Control_Breakdown>No</See_Political_Control_Breakdown>
+            <See_Current_Production>No</See_Current_Production>
+            <See_Minor_Stealth_Heroes>Yes</See_Minor_Stealth_Heroes>
+            <See_Major_Stealth_Heroes>No</See_Major_Stealth_Heroes>
+         </System_Spy_Ability>
+      </Abilities>
+   </GenericHeroUnit>
+
+
+   <!-- Fighter Information Needle Threader  -->
+   <SpaceUnit Name="Goauld_Needle_Threader">
+      <Variant_Of_Existing_Type>Template_Space_Unit_Fighter_Multi</Variant_Of_Existing_Type>
+      <Text_ID>TEXT_GOAULD_SPACE_UNIT_SK_NADELGLEITER</Text_ID>
+      <Encyclopedia_Text>TEXT_DESCRIPTION_GOAULD_SK_NADELGLEITER</Encyclopedia_Text>
+      <Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_SK_NADELGLEITER</Encyclopedia_Unit_Class>
+      <Encyclopedia_Good_Against>TIE_Scout Imperial_Landing_Craft Underworld_Infantry_Droid_Shuttle</Encyclopedia_Good_Against>
+      <Encyclopedia_Vulnerable_To>Tauri_X_301 TIE_Fighter Crusader_Gunship</Encyclopedia_Vulnerable_To>
+      <Icon_Name>GOAULD_SPACE_UNIT_NEEDLETHREADER.TGA</Icon_Name>
+      <Space_Model_Name>Goauld_Space_Unit_NeedleThreader.ALO</Space_Model_Name>
+      <SpaceBehavior>ABILITY_COUNTDOWN, AMBIENT_SFX, DAMAGE_TRACKING, FIGHTER_LOCOMOTOR, HIDE_WHEN_FOGGED, HUNT, NEBULA, POWERED, SELECTABLE, TARGETING, WEAPON</SpaceBehavior>
+      <Affiliation>Rebel</Affiliation>
+      <Select_Box_Scale>70</Select_Box_Scale>
+      <Select_Box_Z_Adjust>1.0f</Select_Box_Z_Adjust>
+
+      <Tactical_Health>70</Tactical_Health>
+      <Armor_Type>Armor_Scout</Armor_Type>
+      <Damage_Type>Damage_Scout</Damage_Type>
+      <Land_FOW_Reveal_Range>130.0</Land_FOW_Reveal_Range>
+      <Space_FOW_Reveal_Range>1200.0</Space_FOW_Reveal_Range>
+      <Targeting_Max_Attack_Distance>700.0</Targeting_Max_Attack_Distance>
+      <FormationOrder>2</FormationOrder>
+      <AI_Combat_Power>50</AI_Combat_Power>
+
+      <Max_Speed>4.0</Max_Speed>
+      <Min_Speed>2.5</Min_Speed>
+      <Max_Rate_Of_Turn>3.0</Max_Rate_Of_Turn>
+      <Max_Thrust>1.0</Max_Thrust>
+      <Max_Rate_Of_Roll>5.0</Max_Rate_Of_Roll>
+      <Bank_Turn_Angle>40</Bank_Turn_Angle>
+      <Turret_Rotate_Extent_Degrees>20</Turret_Rotate_Extent_Degrees>
+      <Turret_Elevate_Extent_Degrees>40</Turret_Elevate_Extent_Degrees>
+
+      <Hyperspace>Yes</Hyperspace>
+      <Target_Stealth_Units>Yes</Target_Stealth_Units>
+      <Can_Hyperspace_Without_Activating_Ability>No</Can_Hyperspace_Without_Activating_Ability>
+
+      <Projectile_Types>Proj_Needle_Threader_Laser</Projectile_Types>
+      <Projectile_Fire_Pulse_Count>2</Projectile_Fire_Pulse_Count>
+      <Projectile_Fire_Pulse_Delay_Seconds>0.25</Projectile_Fire_Pulse_Delay_Seconds>
+      <Projectile_Fire_Recharge_Seconds>1.8</Projectile_Fire_Recharge_Seconds>
+      <Fire_Inaccuracy_Distance>Fighter, 1.8</Fire_Inaccuracy_Distance>
+      <Fire_Inaccuracy_Distance>Bomber, 1.5</Fire_Inaccuracy_Distance>
+      <Fire_Inaccuracy_Distance>Transport, 1.0</Fire_Inaccuracy_Distance>
+      <Fire_Inaccuracy_Distance>Corvette, 30.0</Fire_Inaccuracy_Distance>
+      <Fire_Inaccuracy_Distance>Frigate, 30.0</Fire_Inaccuracy_Distance>
+      <Fire_Inaccuracy_Distance>Capital, 30.0</Fire_Inaccuracy_Distance>
+      <Fire_Inaccuracy_Distance>Super, 30.0</Fire_Inaccuracy_Distance>
+
+      <SFXEvent_Fire>Weapon_Light_Laser_Goauld</SFXEvent_Fire>
+      <SFXEvent_Attack>Unit_Attack_GFB</SFXEvent_Attack>
+      <SFXEvent_Fleet_Move>Unit_Move_GFB</SFXEvent_Fleet_Move>
+      <SFXEvent_Move>Unit_Move_GFB</SFXEvent_Move>
+      <SFXEvent_Select>Unit_Select_GFB</SFXEvent_Select>
+
+      <SFXEvent_Engine_Idle_Loop>Engine_Goauld_Deathglider_Idle</SFXEvent_Engine_Idle_Loop>
+      <SFXEvent_Engine_Moving_Loop>Engine_Goauld_Deathglider</SFXEvent_Engine_Moving_Loop>
+      <SFXEvent_Engine_Cinematic_Focus_Loop>Engine_Goauld_Deathglider</SFXEvent_Engine_Cinematic_Focus_Loop>
+
+      <Unit_Abilities_Data SubObjectList="Yes">
+         <Unit_Ability>
+            <Type>FOW_REVEAL_PING</Type>
+            <Alternate_Name_Text>TEXT_ABILITY_GOAULD_SPACE_NADELGLEITER_PING</Alternate_Name_Text>
+            <Alternate_Description_Text>TEXT_DESCRIPTION_ABILITY_SPACE_NADELGLEITER_PING</Alternate_Description_Text>
+            <Recharge_Seconds>30.0</Recharge_Seconds>
+            <Spawned_Object_Type>Proj_Special_Space_FOW_Reveal_Ping_Blast_Needle_Threader</Spawned_Object_Type>
+            <Effective_Radius>0.0</Effective_Radius>
+            <Area_Effect_Decal_Distance>600.0</Area_Effect_Decal_Distance>
+            <GUI_Activated_Ability_Name></GUI_Activated_Ability_Name>
+         </Unit_Ability>
+         <Unit_Ability>
+            <Type>HUNT</Type>
+            <Alternate_Name_Text>TEXT_ABILITY_GOAULD_SPACE_NADELGLEITER_GEGNER_JAGEN</Alternate_Name_Text>
+            <Alternate_Description_Text>TEXT_DESCRIPTION_ABILITY_SPACE_NADELGLEITER_GEGNER_JAGEN</Alternate_Description_Text>
+         </Unit_Ability>
+      </Unit_Abilities_Data>
+   </SpaceUnit>
+
+   <!-- Special variant used for linking the transport unit -->
+   <SpaceUnit Name="Goauld_Needle_Threader_Single">
+      <Variant_Of_Existing_Type>Goauld_Needle_Threader</Variant_Of_Existing_Type>
+      <Behavior>TRANSPORT</Behavior>
+      <Tactical_Health>999999</Tactical_Health>
+      <Is_Valid_Target>False</Is_Valid_Target>
+      <Is_Visible_On_Radar>No</Is_Visible_On_Radar>
+      <Collidable_By_Projectile_Living>No</Collidable_By_Projectile_Living>
+      <Collidable_By_Projectile_Dead>No</Collidable_By_Projectile_Dead>
+      <Victory_Relevant>no</Victory_Relevant>
+      <Lua_Script>ObjectScript_Goauld_Needle_Threader_GC</Lua_Script>
+   </SpaceUnit>
+
+
+   <!-- Squadron Information -->
+   <Squadron Name="Goauld_Needle_Threader_Squadron">
+      <LOD_Bias>10</LOD_Bias>
+      <Text_ID>TEXT_GOAULD_SPACE_UNIT_SK_NADELGLEITER</Text_ID>
+      <Encyclopedia_Good_Against>TIE_Scout Imperial_Landing_Craft Underworld_Infantry_Droid_Shuttle</Encyclopedia_Good_Against>
+      <Encyclopedia_Vulnerable_To>Tauri_X_301 TIE_Fighter Crusader_Gunship</Encyclopedia_Vulnerable_To>
+      <GUI_Row>1</GUI_Row>
+      <Icon_Name>GOAULD_SPACE_UNIT_NEEDLETHREADER.TGA</Icon_Name>
+      <Is_Dummy>Yes</Is_Dummy>
+      <Formation_Priority>1</Formation_Priority>
+      <Is_Escort>Yes</Is_Escort>
+      <Is_Bomber>no</Is_Bomber>
+      <Affiliation>Rebel</Affiliation>
+      <Build_Cost_Credits>520</Build_Cost_Credits>
+      <Piracy_Value_Credits>50</Piracy_Value_Credits>
+      <Build_Time_Seconds>15</Build_Time_Seconds>
+      <Build_Tab_Space_Units>No</Build_Tab_Space_Units>
+      <Build_Initially_Locked>No</Build_Initially_Locked>
+      <Build_Can_Be_Unlocked_By_Slicer>No</Build_Can_Be_Unlocked_By_Slicer>
+      <Tech_Level>0</Tech_Level>
+      <Required_Timeline />
+      <Required_Star_Base_Level>1</Required_Star_Base_Level>
+      <Required_Special_Structures />
+      <Behavior>DUMMY_SPACE_FIGHTER_SQUADRON</Behavior>
+      <Squadron_Units>Goauld_Needle_Threader, Goauld_Needle_Threader</Squadron_Units>
+      <Squadron_Units>Goauld_Needle_Threader, Goauld_Needle_Threader</Squadron_Units>
+      <Squadron_Units>Goauld_Needle_Threader</Squadron_Units>
+      <Squadron_Offsets>30.0,0.0,0.0</Squadron_Offsets>
+      <Squadron_Offsets>0.0,15.0,0.0</Squadron_Offsets>
+      <Squadron_Offsets>0.0,-15.0,0.0</Squadron_Offsets>
+      <Squadron_Offsets>-30.0,30.0,0.0</Squadron_Offsets>
+      <Squadron_Offsets>-30.0,-30.0,0.0</Squadron_Offsets>
+      <GUI_Model_Name>RV_xwing.ALO</GUI_Model_Name>
+      <GUI_Distance>95</GUI_Distance>
+      <GUI_Velocity>45</GUI_Velocity>
+      <SFXEvent_Build_Started></SFXEvent_Build_Started>
+      <SFXEvent_Build_Cancelled></SFXEvent_Build_Cancelled>
+      <SFXEvent_Build_Complete></SFXEvent_Build_Complete>
+      <FormationOrder>2</FormationOrder>
+      <Squadron_Formation_Error_Tolerance>25.0</Squadron_Formation_Error_Tolerance>
+      <Guard_Chase_Range>1000.0</Guard_Chase_Range>
+      <Idle_Chase_Range>200.0</Idle_Chase_Range>
+      <Attack_Move_Response_Range>300.0</Attack_Move_Response_Range>
+      <Property_Flags>SmallShip</Property_Flags>
+      <Autonomous_Move_Extension_Vs_Attacker>500.0</Autonomous_Move_Extension_Vs_Attacker>
+      <Target_Stealth_Units>Yes</Target_Stealth_Units>
+      <Unit_Abilities_Data SubObjectList="Yes">
+         <Unit_Ability>
+            <Type>FOW_REVEAL_PING</Type>
+            <Recharge_Seconds>30.0</Recharge_Seconds>
+            <Spawned_Object_Type>Proj_Special_Space_FOW_Reveal_Ping_Blast_Needle_Threader</Spawned_Object_Type>
+            <Effective_Radius>0.0</Effective_Radius>
+            <Area_Effect_Decal_Distance>600.0</Area_Effect_Decal_Distance>
+            <GUI_Activated_Ability_Name></GUI_Activated_Ability_Name>
+            <Alternate_Name_Text>TEXT_ABILITY_GOAULD_SPACE_NADELGLEITER_PING</Alternate_Name_Text>
+            <Alternate_Description_Text>TEXT_DESCRIPTION_ABILITY_SPACE_NADELGLEITER_PING</Alternate_Description_Text>
+         </Unit_Ability>
+         <Unit_Ability>
+            <Type>HUNT</Type>
+            <Alternate_Name_Text>TEXT_ABILITY_GOAULD_SPACE_NADELGLEITER_GEGNER_JAGEN</Alternate_Name_Text>
+            <Alternate_Description_Text>TEXT_DESCRIPTION_ABILITY_SPACE_NADELGLEITER_GEGNER_JAGEN</Alternate_Description_Text>
+         </Unit_Ability>
+      </Unit_Abilities_Data>
+      <Encyclopedia_Text>TEXT_DESCRIPTION_GOAULD_SK_NADELGLEITER</Encyclopedia_Text>
+      <Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_SK_NADELGLEITER</Encyclopedia_Unit_Class>
+      <Tactical_Build_Cost_Multiplayer>400</Tactical_Build_Cost_Multiplayer>
+      <Tactical_Build_Time_Seconds>15</Tactical_Build_Time_Seconds>
+      <Tactical_Build_Prerequisites />
+      <Tactical_Production_Queue>Tactical_Units</Tactical_Production_Queue>
+      <Population_Value>1</Population_Value>
+      <Score_Cost_Credits>600</Score_Cost_Credits>
+   </Squadron>
+
+
+   <!-- Projectiles Goauld Needle Threader -->
+   <Projectile Name="Proj_Needle_Threader_Laser">
+      <Variant_Of_Existing_Type>Proj_Goauld_Space_Fighter_Laser_Small</Variant_Of_Existing_Type>
+      <Max_Speed>25.0</Max_Speed>
+      <Damage_Type>Damage_Scout</Damage_Type>
+      <Projectile_Max_Flight_Distance>800.0</Projectile_Max_Flight_Distance>
+      <Projectile_Damage>5.0</Projectile_Damage>
+      <AI_Combat_Power>50</AI_Combat_Power>
+   </Projectile>
+
+
+   <!-- Special space projectile to instantly detonate and reveal the map via the "FOW Reveal Ping" unit ability -->
+   <Projectile Name="Proj_Special_Space_FOW_Reveal_Ping_Blast_Needle_Threader">
+      <Text_ID>TEXT_NONE</Text_ID>
+      <Space_Model_Name>W_LASER_INVISIBLE.ALO</Space_Model_Name>
+      <Damage_Type>Damage_Scout</Damage_Type>
+      <Scale_Factor>1.0</Scale_Factor>
+      <Max_Speed>0.01</Max_Speed>
+      <Max_Rate_Of_Turn>0.0</Max_Rate_Of_Turn>
+      <Behavior>PROJECTILE, HIDE_WHEN_FOGGED, REVEAL</Behavior>
+      <Space_FOW_Reveal_Range>1200.0</Space_FOW_Reveal_Range>
+      <Dense_FOW_Reveal_Range_Multiplier>1.0</Dense_FOW_Reveal_Range_Multiplier>
+      <Projectile_Category>DEFAULT</Projectile_Category>
+      <Projectile_Max_Flight_Distance>0.01</Projectile_Max_Flight_Distance>
+      <Projectile_Damage>0.0</Projectile_Damage>
+      <Projectile_Does_Shield_Damage>No</Projectile_Does_Shield_Damage>
+      <Projectile_Does_Energy_Damage>No</Projectile_Does_Energy_Damage>
+      <Projectile_Does_Hitpoint_Damage>No</Projectile_Does_Hitpoint_Damage>
+      <Projectile_Energy_Per_Shot>0</Projectile_Energy_Per_Shot>
+      <Projectile_SFXEvent_Detonate>SFX_Proton_Torpedo_Detonation</Projectile_SFXEvent_Detonate>
+      <Projectile_Object_Detonation_Particle>FOW_Ping_Blast_Particles</Projectile_Object_Detonation_Particle>
+      <Projectile_Ground_Detonation_Particle>FOW_Ping_Blast_Particles</Projectile_Ground_Detonation_Particle>
+      <Projectile_Lifetime_Detonation_Particle>FOW_Ping_Blast_Particles</Projectile_Lifetime_Detonation_Particle>
+      <Projectile_Absorbed_By_Shields_Particle />
+      <AI_Combat_Power>0</AI_Combat_Power>
+      <Model_Visible_To_Enemy>No</Model_Visible_To_Enemy>
+   </Projectile>
+
+</FighterUnits>

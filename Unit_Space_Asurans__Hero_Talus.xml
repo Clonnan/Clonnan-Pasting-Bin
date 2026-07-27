@@ -1,0 +1,71 @@
+<?xml version="1.0"?>
+<SpaceUnits>
+
+   <SpaceUnit Name="Asuran_Hero_Talus">
+      <Variant_Of_Existing_Type>Asuran_Cruiser</Variant_Of_Existing_Type>
+      <Text_ID>TEXT_ASURANS_SPACE_HERO_TALUS</Text_ID>
+      <Encyclopedia_Text>TEXT_DESCRIPTION_ASURANS_SK_TALUS_SPACE</Encyclopedia_Text>
+      <Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_TALUS</Encyclopedia_Unit_Class>
+      <Icon_Name>ASURAN_SPACE_HERO_TALUS.TGA</Icon_Name>
+      <Affiliation>Asuran</Affiliation>
+      <Armor_Type>Armor_Hero_Cruiser</Armor_Type>
+      <Shield_Armor_Type>Armor_Hero_Cruiser</Shield_Armor_Type>
+      <CategoryMask> Frigate | SpaceHero | AntiCorvette </CategoryMask>
+      <SFXEvent_Attack>Unit_Attack_Talus</SFXEvent_Attack>
+      <SFXEvent_Move>Unit_Move_Talus</SFXEvent_Move>
+      <SFXEvent_Select>Unit_Select_Talus</SFXEvent_Select>
+      <SFXEvent_Guard>Unit_Move_Talus</SFXEvent_Guard>
+      <SFXEvent_Fleet_Move>Unit_Move_Talus</SFXEvent_Fleet_Move>
+      <SFXEvent_Spawn>Unit_Select_Talus</SFXEvent_Spawn>
+      <SFXEvent_Build_Complete>Unit_Select_Talus</SFXEvent_Build_Complete>
+      <Max_Speed>4.0</Max_Speed>
+      <AI_Combat_Power>3500</AI_Combat_Power>
+      <Tech_Level>99</Tech_Level>
+      <Is_Named_Hero>No</Is_Named_Hero>
+      <Is_Generic_Hero>Yes</Is_Generic_Hero>
+      <Can_Be_Neutralized_By_Major_Heroes>Yes</Can_Be_Neutralized_By_Major_Heroes>
+      <Can_Be_Neutralized_By_Minor_Heroes>Yes</Can_Be_Neutralized_By_Minor_Heroes>
+      <Show_Hero_Head>Yes</Show_Hero_Head>
+      <Neutralization_Cost>2000.0</Neutralization_Cost>
+      <Tactical_Build_Cost_Multiplayer>6000</Tactical_Build_Cost_Multiplayer>
+      <Tactical_Build_Time_Seconds>60</Tactical_Build_Time_Seconds>
+      <Build_Limit_Current_For_All_Allies>-1</Build_Limit_Current_For_All_Allies>
+      <Build_Limit_Lifetime_For_All_Allies>-1</Build_Limit_Lifetime_For_All_Allies>
+      <Build_Limit_Lifetime_Per_Player>-1</Build_Limit_Lifetime_Per_Player>
+      <Build_Limit_Current_Per_Player>1</Build_Limit_Current_Per_Player>
+      <Lua_Script>ObjectScript_Wallus</Lua_Script>
+      <Unit_Abilities_Data SubObjectList="Yes">
+         <Unit_Ability>
+		    <Type>POWER_TO_WEAPONS</Type>
+            <Alternate_Name_Text>TEXT_ABILITY_DEPLOY_SATELLITE</Alternate_Name_Text>
+            <Alternate_Description_Text>TEXT_DESCRIPTION_ABILITY_DEPLOY_SATELLITE_TALUS</Alternate_Description_Text>
+            <Alternate_Icon_Name>I_SA_GATE_SATELLITE.TGA</Alternate_Icon_Name>
+            <Recharge_Seconds>60</Recharge_Seconds>
+            <Expiration_Seconds>0.1</Expiration_Seconds>
+         </Unit_Ability>
+         <Unit_Ability>
+            <Type>DEFEND</Type>
+            <Alternate_Name_Text>TEXT_TOOLTIP_ABILITY_DEFEND_NAME</Alternate_Name_Text>
+            <Alternate_Description_Text>TEXT_DESCRIPTION_ABILITY_SHIELDBOOST_TALUS_SPACE</Alternate_Description_Text>
+            <Alternate_Icon_Name>I_SA_SHIELD_BOOST_ANCIENT_CRUISER.TGA</Alternate_Icon_Name>
+            <Expiration_Seconds>15</Expiration_Seconds>
+            <Mod_Multiplier>WEAPON_DELAY_MULTIPLIER,   3.0f</Mod_Multiplier>
+            <Mod_Multiplier>SHIELD_REGEN_MULTIPLIER,   1.0f</Mod_Multiplier>
+            <Mod_Multiplier>SHIELD_REGEN_INTERVAL_MULTIPLIER,   0.10f</Mod_Multiplier>
+            <Mod_Multiplier>SPEED_MULTIPLIER,       0.8f</Mod_Multiplier>
+            <Recharge_Seconds>65</Recharge_Seconds>
+            <Expiration_Seconds>15</Expiration_Seconds>
+            <SFXEvent_GUI_Unit_Ability_Activated>Unit_Shield_Talus</SFXEvent_GUI_Unit_Ability_Activated>
+            <SFXEvent_GUI_Unit_Ability_Deactivated/>
+            <Supports_Autofire>True</Supports_Autofire>
+         </Unit_Ability>
+      </Unit_Abilities_Data>
+   </SpaceUnit>
+
+   <SpaceUnit Name="Asuran_Hero_Talus_SK">
+      <Variant_Of_Existing_Type>Asuran_Hero_Talus</Variant_Of_Existing_Type>
+      <Is_Named_Hero>Yes</Is_Named_Hero>
+      <Is_Generic_Hero>No</Is_Generic_Hero>
+   </SpaceUnit>
+
+</SpaceUnits>

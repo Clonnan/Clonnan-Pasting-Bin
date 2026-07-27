@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Ori_Hero_Doci>
+  <UniqueUnit Name="Ori_Hero_Doci">
+    <Variant_Of_Existing_Type>Ori_Cruiser</Variant_Of_Existing_Type>
+    <Text_ID>TEXT_ORI_SPACE_HERO_DOCI</Text_ID>
+    <Encyclopedia_Good_Against> TIE_Bomber TIE_Fighter Starviper_Fighter </Encyclopedia_Good_Against>
+    <Encyclopedia_Vulnerable_To> Vengeance_Frigate Victory_Destroyer Acclamator_Assault_Ship </Encyclopedia_Vulnerable_To>
+    <Icon_Name>ORI_SPACE_HERO_DOCI.TGA</Icon_Name>
+    <Space_Model_Name>Ori_Space_Unit_Doci.ALO</Space_Model_Name>
+    <Is_Named_Hero>No</Is_Named_Hero>
+    <Is_Generic_Hero>Yes</Is_Generic_Hero>
+    <Can_Be_Neutralized_By_Major_Heroes>No</Can_Be_Neutralized_By_Major_Heroes>
+    <Can_Be_Neutralized_By_Minor_Heroes>No</Can_Be_Neutralized_By_Minor_Heroes>
+    <Show_Hero_Head>Yes</Show_Hero_Head>
+    <Select_Box_Scale>250</Select_Box_Scale>
+    <Select_Box_Z_Adjust>-30</Select_Box_Z_Adjust>
+    <Build_Cost_Credits>3000</Build_Cost_Credits>
+    <Affiliation>Ori</Affiliation>
+    <Build_Initially_Locked>Yes</Build_Initially_Locked>
+    <Build_Can_Be_Unlocked_By_Slicer>No</Build_Can_Be_Unlocked_By_Slicer>
+    <Tech_Level>99</Tech_Level>
+    <Shield_Points>5000</Shield_Points>
+    <Tactical_Health>2350</Tactical_Health>
+    <Shield_Refresh_Rate>100</Shield_Refresh_Rate>
+    <AI_Combat_Power>4500</AI_Combat_Power>
+    <Behavior>DUMMY_STARSHIP, SELECTABLE, POWERED, SHIELDED, TRANSPORT</Behavior>
+    <SpaceBehavior>SPAWN_SQUADRON, ABILITY_COUNTDOWN, SIMPLE_SPACE_LOCOMOTOR, SELECTABLE, TARGETING, REVEAL, HIDE_WHEN_FOGGED, UNIT_AI, DAMAGE_TRACKING, ION_STUN_EFFECT, NEBULA </SpaceBehavior>
+    <Space_FOW_Reveal_Range>2200.0</Space_FOW_Reveal_Range>
+    <Targeting_Max_Attack_Distance>2000.0</Targeting_Max_Attack_Distance>
+    <HardPoints>
+      HP_Ori_Doci_F_SL,
+      HP_Ori_Doci_F_OPB_00,
+      HP_Ori_Doci_M_OPB_01,<!-- left;view from front -->
+      HP_Ori_Doci_M_OPB_00,<!-- right;view from front -->
+      HP_Ori_Doci_R_OPB_00,
+      HP_Ori_Doci_Shield_Generator,
+      HP_Ori_Doci_Engines,
+      HP_Ori_Doci_Fighter_Bay
+    </HardPoints> 
+	
+    <Starting_Spawned_Units_Tech_0>Ori_Fighter_Squadron, 2</Starting_Spawned_Units_Tech_0>
+    <Spawned_Squadron_Delay_Seconds>6</Spawned_Squadron_Delay_Seconds>
+    <Reserve_Spawned_Units_Tech_0>Ori_Fighter_Squadron, -1</Reserve_Spawned_Units_Tech_0>
+
+    <SFXEvent_Ambient_Loop>Engine_Ori</SFXEvent_Ambient_Loop>
+    <SFXEvent_Engine_Idle_Loop> Engine_Ori_Idle </SFXEvent_Engine_Idle_Loop>
+    <SFXEvent_Engine_Moving_Loop> Engine_Ori </SFXEvent_Engine_Moving_Loop>
+    <SFXEvent_Engine_Cinematic_Focus_Loop> Engine_Ori_Cinematic </SFXEvent_Engine_Cinematic_Focus_Loop>
+    <Death_SFXEvent_Start_Die>Explosion_Cruiser</Death_SFXEvent_Start_Die>
+    <Is_Visible_On_Radar>Yes</Is_Visible_On_Radar>
+    <Radar_Icon_Name>I_RADAR_ORI_CRUISER.TGA</Radar_Icon_Name>
+    <Radar_Icon_Size>0.08 0.08</Radar_Icon_Size>
+    <Population_Value>6</Population_Value>
+    <Death_Clone>Damage_Normal, Ori_Hero_Doci_Death_Clone</Death_Clone>
+    <Neutralization_Cost>3200.0</Neutralization_Cost>
+    <Encyclopedia_Text>TEXT_DESCRIPTION_ORI_GC_DOCI_SPACE</Encyclopedia_Text>
+    <Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_DOCI_KREUZER</Encyclopedia_Unit_Class>
+    <Score_Cost_Credits> 35000 </Score_Cost_Credits>
+    
+    <!-- Non-Hero unit abilities description -->
+    <Unit_Abilities_Data SubObjectList="Yes">
+      
+      <!-- Primary ability -->    
+      <!--<Unit_Ability>
+        <Type>ROCKET_ATTACK</Type>
+        <Expiration_Seconds>1</Expiration_Seconds>
+        <Recharge_Seconds>6</Recharge_Seconds>
+        <Targeting_Max_Attack_Distance>2200.0</Targeting_Max_Attack_Distance>
+        <Alternate_Name_Text>TEXT_ABILITY_ORI_SPACE_KRIEGSSCHIFF_SUPERLASER</Alternate_Name_Text>
+        <Alternate_Description_Text>TEXT_DESCRIPTION_ABILITY_SPACE_ORI_KRIEGSSCHIFF_SUPERLASER</Alternate_Description_Text>
+        <Alternate_Icon_Name>I_SA_ION_CANNON_SHOT.TGA</Alternate_Icon_Name>
+        <Supports_Autofire>True</Supports_Autofire>
+      </Unit_Ability>-->
+      
+      <Unit_Ability>
+        <Type>POWER_TO_WEAPONS</Type>
+        <Expiration_Seconds>20</Expiration_Seconds>
+        <Mod_Multiplier>WEAPON_DELAY_MULTIPLIER,	0.5f</Mod_Multiplier>
+        <Mod_Multiplier>SHIELD_REGEN_MULTIPLIER,	-3f</Mod_Multiplier>
+        <Mod_Multiplier>ENERGY_REGEN_MULTIPLIER,	1.0f</Mod_Multiplier>
+        <Mod_Multiplier>SPEED_MULTIPLIER,		0.5f</Mod_Multiplier>
+        <Recharge_Seconds>60</Recharge_Seconds>
+        <SFXEvent_GUI_Unit_Ability_Activated></SFXEvent_GUI_Unit_Ability_Activated>
+        <Alternate_Name_Text>TEXT_ABILITY_ORI_DOCI_WAFFENBOOST</Alternate_Name_Text>
+        <Alternate_Description_Text>TEXT_DESCRIPTION_ABILITY_SPACE_ORI_DOCI_WAFFENBOOST</Alternate_Description_Text>
+      </Unit_Ability>
+    
+    </Unit_Abilities_Data>
+
+
+    <Required_Star_Base_Level>1</Required_Star_Base_Level>
+    <Tactical_Build_Cost_Multiplayer>3000</Tactical_Build_Cost_Multiplayer>
+    <Tactical_Build_Time_Seconds>30</Tactical_Build_Time_Seconds>
+    <Build_Limit_Current_Per_Player>1</Build_Limit_Current_Per_Player>
+    <Build_Limit_Lifetime_Per_Player>-1</Build_Limit_Lifetime_Per_Player>
+    <Landing_Transport_Variant>Ori_Land_Unit_Fireball_Landing</Landing_Transport_Variant>
+    <Lua_Script>ObjectScript_Adria</Lua_Script>
+  </UniqueUnit>
+
+  <!-- Deathclone Ori Hero Doci -->
+  <UniqueUnit Name="Ori_Hero_Doci_Death_Clone">
+    <Text_ID>TEXT_ORI_SPACE_HERO_DOCI</Text_ID>
+    <Space_Model_Name>Ori_Space_Unit_Doci_D.ALO</Space_Model_Name>
+    <Death_SFXEvent_Start_Die>Explosion_Cruiser</Death_SFXEvent_Start_Die>
+    <Scale_Factor>1.0</Scale_Factor>
+    <Layer_Z_Adjust>-130.0</Layer_Z_Adjust>
+    <Max_Speed>0.25</Max_Speed>
+    <Max_Rate_Of_Turn>0.02</Max_Rate_Of_Turn>
+    <Max_Thrust>0.05</Max_Thrust>
+    <Max_Rate_Of_Roll>0.02</Max_Rate_Of_Roll>
+    <Bank_Turn_Angle>5</Bank_Turn_Angle>
+    <Remove_Upon_Death>true</Remove_Upon_Death>
+    <Affiliation>Ori</Affiliation>
+  </UniqueUnit>
+
+  <Projectile Name="Proj_Ori_Doci_Plasma">
+    <Variant_Of_Existing_Type>Proj_Ori_Space_Plasma</Variant_Of_Existing_Type>
+    <Projectile_Damages_Random_Hard_Points>No</Projectile_Damages_Random_Hard_Points>
+    <Max_Speed>30.0</Max_Speed>
+    <Max_Rate_Of_Turn>0.0</Max_Rate_Of_Turn>
+    <Projectile_Max_Flight_Distance>2100.0</Projectile_Max_Flight_Distance>
+    <Projectile_Damage>45.0</Projectile_Damage>
+    <Projectile_Does_Shield_Damage>Yes</Projectile_Does_Shield_Damage>
+    <Projectile_Does_Energy_Damage>No</Projectile_Does_Energy_Damage>
+    <Projectile_Does_Hitpoint_Damage>Yes</Projectile_Does_Hitpoint_Damage>
+    <Projectile_Energy_Per_Shot>100</Projectile_Energy_Per_Shot>
+    <AI_Combat_Power>160</AI_Combat_Power>
+  </Projectile>
+  
+</Ori_Hero_Doci>

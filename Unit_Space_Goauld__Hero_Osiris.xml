@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<UniqueUnits>
+  <!-- Goauld Hero Osiris  -->
+  <UniqueUnit Name="Sundered_Heart">
+    <Text_ID>TEXT_GOAULD_SPACE_HERO_OSIRIS</Text_ID>
+    <Encyclopedia_Good_Against> TIE_Bomber TIE_Fighter Starviper_Fighter </Encyclopedia_Good_Against>
+    <Encyclopedia_Vulnerable_To> Vengeance_Frigate Victory_Destroyer Acclamator_Assault_Ship </Encyclopedia_Vulnerable_To>
+    <Encyclopedia_Text>TEXT_DESCRIPTION_GOAULD_SK_OSIRIS_SPACE</Encyclopedia_Text>
+    <Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_OSIRIS_KELTEK</Encyclopedia_Unit_Class>
+    <Icon_Name>GOAULD_SPACE_HERO_OSIRIS.TGA</Icon_Name>
+    <Is_Named_Hero>Yes</Is_Named_Hero>
+    <Space_Model_Name>Goauld_Space_Hero_Osiris.ALO</Space_Model_Name>
+    <Galactic_Fleet_Override_Model_Name> W_planet_fleet_Osiris.ALO </Galactic_Fleet_Override_Model_Name>
+    <Galactic_Fleet_Override_Icon_Index> 4 </Galactic_Fleet_Override_Icon_Index>
+    <Scale_Factor>1.0</Scale_Factor>
+    <Select_Box_Scale>150</Select_Box_Scale>
+    <Select_Box_Z_Adjust>-1</Select_Box_Z_Adjust>
+    <Mass>0.98</Mass>
+    <No_Colorization_Color> 255, 255, 255, 255 </No_Colorization_Color>
+    <Ranking_In_Category>3</Ranking_In_Category>
+    <MovementClass> Space </MovementClass>
+    <Mass>0.98</Mass>
+    <Max_Speed>6.0</Max_Speed>
+    <Min_Speed>4.5</Min_Speed>
+    <Max_Rate_Of_Turn>2.0</Max_Rate_Of_Turn>
+    <Max_Thrust>0.1</Max_Thrust>
+    <Max_Rate_Of_Roll>5.0</Max_Rate_Of_Roll>
+    <Bank_Turn_Angle>50</Bank_Turn_Angle>
+    <Begin_Turn_Towards_Distance>300.0</Begin_Turn_Towards_Distance>
+    <Fires_Forward>no</Fires_Forward>
+    <Max_Lift>1.5</Max_Lift>
+    <Build_Cost_Credits>3200</Build_Cost_Credits>
+    <AI_Combat_Power>180</AI_Combat_Power>
+    <Hyperspace>Yes</Hyperspace>
+    <Hyperspace_Speed>2.0</Hyperspace_Speed>
+    <OverrideAcceleration> .3 </OverrideAcceleration>
+    <OverrideDeceleration> .3 </OverrideDeceleration>
+    <Layer_Z_Adjust> -20 </Layer_Z_Adjust>
+    <Affiliation>Rebel</Affiliation>
+    <Neutralization_Cost>3400.0</Neutralization_Cost>
+    <Can_Be_Neutralized_By_Major_Heroes>Yes</Can_Be_Neutralized_By_Major_Heroes>
+    <Can_Be_Neutralized_By_Minor_Heroes>Yes</Can_Be_Neutralized_By_Minor_Heroes>
+
+    <Tactical_Health>450</Tactical_Health>
+    <Shield_Points>450</Shield_Points>
+    <Shield_Refresh_Rate>4</Shield_Refresh_Rate>
+    <Energy_Capacity>10000</Energy_Capacity>
+    <Energy_Refresh_Rate>900</Energy_Refresh_Rate>
+    <Ship_Class>figther</Ship_Class>
+    <Armor_Type>Armor_Hero_Fighter</Armor_Type>
+    <Shield_Armor_Type>Armor_Hero_Fighter</Shield_Armor_Type>
+
+    <Is_Escort>Yes</Is_Escort>
+    <Is_Bomber>no</Is_Bomber>
+    <Squadron_Capacity>0</Squadron_Capacity>
+    <Size_Value>8</Size_Value>
+    <Behavior>DUMMY_STARSHIP, SELECTABLE, POWERED, SHIELDED</Behavior>
+    <SpaceBehavior>ABILITY_COUNTDOWN, FIGHTER_LOCOMOTOR, SELECTABLE, TARGETING, POWERED, SHIELDED, REVEAL, HIDE_WHEN_FOGGED, AMBIENT_SFX, DAMAGE_TRACKING, UNIT_AI, NEBULA </SpaceBehavior>
+    <LandBehavior>REVEAL, HIDE_WHEN_FOGGED</LandBehavior>
+    <GUI_Bracket_Size>1</GUI_Bracket_Size>
+    <Collidable_By_Projectile_Living>Yes</Collidable_By_Projectile_Living>
+    <Death_Explosions>Medium_Explosion_Space</Death_Explosions>
+
+    <HardPoints>
+      HP_OSIRIS_R_SBS_00,
+      HP_OSIRIS_M_SBS_00,
+      HP_OSIRIS_M_SBS_01,
+      HP_OSIRIS_F_SBM_00,
+      HP_OSIRIS_SHIELD,
+      HP_OSIRIS_ENGINE
+    </HardPoints>
+
+    <Asteroid_Damage_Hit_Particles>Small_Damage_Space</Asteroid_Damage_Hit_Particles>
+
+    <Land_FOW_Reveal_Range>200.0</Land_FOW_Reveal_Range>
+    <Space_FOW_Reveal_Range>1000.0</Space_FOW_Reveal_Range>
+    <Dense_FOW_Reveal_Range_Multiplier>0.2</Dense_FOW_Reveal_Range_Multiplier>
+    <Targeting_Max_Attack_Distance>1000.0</Targeting_Max_Attack_Distance>
+    <SFXEvent_Select>Unit_Select_Osiris</SFXEvent_Select>
+    <SFXEvent_Move>Unit_Move_Osiris</SFXEvent_Move>
+    <SFXEvent_Move_Into_Nebula>Unit_Into_Nebula_Osiris</SFXEvent_Move_Into_Nebula>
+    <SFXEvent_Fleet_Move>Unit_Move_Osiris</SFXEvent_Fleet_Move>
+    <SFXEvent_Attack>Unit_Attack_Osiris</SFXEvent_Attack>
+    <SFXEvent_Guard>Unit_Move_Osiris</SFXEvent_Guard>
+    <SFXEvent_Deploy/>
+    <SFXEvent_Fire/>
+    <SFXEvent_Stop>Unit_Stop_Osiris</SFXEvent_Stop>
+    <SFXEvent_Health_Critical_Warning>Unit_CriticalHP_Osiris</SFXEvent_Health_Critical_Warning>
+    <SFXEvent_Health_Low_Warning>Unit_LOWHP_Osiris</SFXEvent_Health_Low_Warning>
+    <SFXEvent_Build_Complete>Unit_Spawn_Osiris</SFXEvent_Build_Complete>
+    <Death_SFXEvent_Start_Die>Unit_Defeat_Osiris</Death_SFXEvent_Start_Die>
+
+    <SFXEvent_Engine_Idle_Loop>Engine_Goauld_Alkesh_Idle</SFXEvent_Engine_Idle_Loop>
+    <SFXEvent_Engine_Moving_Loop>Engine_Goauld_Alkesh</SFXEvent_Engine_Moving_Loop>
+    <SFXEvent_Engine_Cinematic_Focus_Loop>Engine_Goauld_Alkesh</SFXEvent_Engine_Cinematic_Focus_Loop>
+
+    <Score_Cost_Credits> 15000 </Score_Cost_Credits>
+
+    <Ranged_Target_Z_Adjust>-3.0</Ranged_Target_Z_Adjust>
+    <MovementClass> Space </MovementClass>
+    <CategoryMask> Fighter | SpaceHero </CategoryMask>
+    <Victory_Relevant>yes</Victory_Relevant>
+    <Hover_Offset>5</Hover_Offset>
+
+    <Is_Visible_On_Radar>Yes</Is_Visible_On_Radar>
+    <Radar_Icon_Name>I_RADAR_OSIRIS.TGA</Radar_Icon_Name>
+    <Radar_Icon_Size>0.045 0.045</Radar_Icon_Size>
+    <Radar_Icon_Scale_Land>1.0</Radar_Icon_Scale_Land>
+    <Radar_Icon_Scale_Space>1.0</Radar_Icon_Scale_Space>
+    <Targeting_Priority_Set>Fighter</Targeting_Priority_Set>
+    <Guard_Chase_Range>1000.0</Guard_Chase_Range>
+    <Idle_Chase_Range>400.0</Idle_Chase_Range>
+    <Attack_Move_Response_Range>400.0</Attack_Move_Response_Range>
+    <Targeting_Stickiness_Time_Threshold>5.0</Targeting_Stickiness_Time_Threshold>
+    <Autonomous_Move_Extension_Vs_Attacker>300.0</Autonomous_Move_Extension_Vs_Attacker>
+
+    <!--<MULTIPLAYER SKIRMISH VALUES BEGIN>-->
+    <Tactical_Build_Cost_Multiplayer>2000</Tactical_Build_Cost_Multiplayer>
+    <Tactical_Build_Time_Seconds>20</Tactical_Build_Time_Seconds>
+    <Tactical_Build_Prerequisites/>
+    <Tactical_Production_Queue>Tactical_Units</Tactical_Production_Queue>
+    <Build_Limit_Current_For_All_Allies>-1</Build_Limit_Current_For_All_Allies>
+    <Build_Limit_Lifetime_For_All_Allies>-1</Build_Limit_Lifetime_For_All_Allies>
+    <Build_Limit_Lifetime_Per_Player>-1</Build_Limit_Lifetime_Per_Player>
+    <Build_Limit_Current_Per_Player>1</Build_Limit_Current_Per_Player>
+    <!--<MULTIPLAYER SKIRMISH VALUES END>-->
+
+    <!-- Non-Hero unit abilities description -->
+    <Unit_Abilities_Data SubObjectList="Yes">
+
+      <!-- Primary ability -->
+      <Unit_Ability>
+        <Type>FULL_SALVO</Type>
+        <Recharge_Seconds>45</Recharge_Seconds>
+        <Expiration_Seconds>7</Expiration_Seconds>
+        <SFXEvent_GUI_Unit_Ability_Activated>Unit_Power_Weapons_Osiris</SFXEvent_GUI_Unit_Ability_Activated>
+        <GUI_Activated_Ability_Name>Interceptor_Full_Salvo</GUI_Activated_Ability_Name>
+        <Must_Be_Bought_On_Black_Market>No</Must_Be_Bought_On_Black_Market>
+        <Alternate_Name_Text>TEXT_ABILITY_GOAULD_SPACE_OSIRIS_VOLLE_SALVE</Alternate_Name_Text>
+        <Alternate_Description_Text>TEXT_DESCRIPTION_ABILITY_SPACE_OSIRIS_VOLLE_SALVE</Alternate_Description_Text>
+        <Alternate_Icon_Name>I_SA_STAFF_WEAPON.TGA</Alternate_Icon_Name>
+      </Unit_Ability>
+
+      <Unit_Ability>
+        <Type>SENSOR_JAMMING</Type>
+        <GUI_Activated_Ability_Name> Osiris_Sensor_Jamming </GUI_Activated_Ability_Name>
+        <Recharge_Seconds>75.0</Recharge_Seconds>
+        <Expiration_Seconds>30.0</Expiration_Seconds>
+        <Effective_Radius>900.0</Effective_Radius>
+        <Alternate_Name_Text>TEXT_ABILITY_SENSOR_JAMMING</Alternate_Name_Text>
+        <Alternate_Description_Text>TEXT_DESCRIPTION_ABILITY_SENSOR_JAMMING_OSIRIS_SPACE</Alternate_Description_Text>
+      </Unit_Ability>
+    </Unit_Abilities_Data>
+
+    <Abilities SubObjectList="Yes">
+      <Sensor_Jamming_Ability Name="Osiris_Sensor_Jamming">
+        <Activation_Style> User_Input </Activation_Style>
+        <Owner_Particle_Effect>Sensor_Jamming_Effect</Owner_Particle_Effect>
+        <Show_Blob_To_Enemies>Yes</Show_Blob_To_Enemies>
+      </Sensor_Jamming_Ability>
+    </Abilities>
+
+    <Death_Clone>Damage_Normal, Sundered_Heart_Death_Clone</Death_Clone>
+    <Population_Value>1</Population_Value>
+    <Lua_Script>ObjectScript_HW_Small</Lua_Script>
+  </UniqueUnit>
+
+  <!-- Deathclone Goauld Hero Osiris -->
+  <UniqueUnit Name="Sundered_Heart_Death_Clone">
+    <Text_ID>TEXT_GOAULD_SPACE_HERO_OSIRIS</Text_ID>
+    <Space_Model_Name>Goauld_Space_Hero_Osiris_D.ALO</Space_Model_Name>
+    <Death_SFXEvent_Start_Die>Explosion_Figther</Death_SFXEvent_Start_Die>
+    <Scale_Factor>0.5</Scale_Factor>
+    <Layer_Z_Adjust>-20.0</Layer_Z_Adjust>
+    <Max_Speed>0.25</Max_Speed>
+    <Max_Rate_Of_Turn>0.02</Max_Rate_Of_Turn>
+    <Max_Thrust>0.05</Max_Thrust>
+    <Max_Rate_Of_Roll>0.02</Max_Rate_Of_Roll>
+    <Bank_Turn_Angle>5</Bank_Turn_Angle>
+    <Remove_Upon_Death>true</Remove_Upon_Death>
+  </UniqueUnit>
+
+  <!-- Projectiles Goauld Hero Osiris -->
+  <Projectile Name="Proj_Goauld_Osiris_Laser_Small">
+    <Variant_Of_Existing_Type>Proj_Goauld_Space_Laser_Small</Variant_Of_Existing_Type>
+    <Max_Speed>40.0</Max_Speed>
+    <Max_Rate_Of_Turn>0.0</Max_Rate_Of_Turn>
+    <Projectile_Max_Flight_Distance>1300.0</Projectile_Max_Flight_Distance>
+    <Projectile_Damages_Random_Hard_Points>No</Projectile_Damages_Random_Hard_Points>
+    <Projectile_Damage>10.0</Projectile_Damage>
+    <Projectile_Does_Shield_Damage>Yes</Projectile_Does_Shield_Damage>
+    <Projectile_Does_Energy_Damage>No</Projectile_Does_Energy_Damage>
+    <Projectile_Does_Hitpoint_Damage>Yes</Projectile_Does_Hitpoint_Damage>
+    <Projectile_Energy_Per_Shot>10</Projectile_Energy_Per_Shot>
+    <AI_Combat_Power>120</AI_Combat_Power>
+  </Projectile>
+
+  <Projectile Name="Proj_Goauld_Osiris_Laser_Medium">
+    <Variant_Of_Existing_Type>Proj_Goauld_Space_Laser_Medium</Variant_Of_Existing_Type>
+    <Max_Speed>30.0</Max_Speed>
+    <Max_Rate_Of_Turn>0.0</Max_Rate_Of_Turn>
+    <Projectile_Max_Flight_Distance>1500.0</Projectile_Max_Flight_Distance>
+    <Projectile_Damages_Random_Hard_Points>No</Projectile_Damages_Random_Hard_Points>
+    <Projectile_Damage>20.0</Projectile_Damage>
+    <Projectile_Does_Shield_Damage>Yes</Projectile_Does_Shield_Damage>
+    <Projectile_Does_Energy_Damage>No</Projectile_Does_Energy_Damage>
+    <Projectile_Does_Hitpoint_Damage>Yes</Projectile_Does_Hitpoint_Damage>
+    <Projectile_Energy_Per_Shot>10</Projectile_Energy_Per_Shot>
+    <AI_Combat_Power>110</AI_Combat_Power>
+  </Projectile>
+
+</UniqueUnits>

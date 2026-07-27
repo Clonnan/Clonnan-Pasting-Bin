@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<SpaceUnits>
+
+   <SpaceUnit Name="Martin_Lloyds_Ship">
+      <Variant_Of_Existing_Type>Template_Space_Unit_Cruiser</Variant_Of_Existing_Type>
+      <Text_ID>TEXT_UNKNOWN_RACE_SPACE_UNIT_MARTIN_LLOYDS_SHIP</Text_ID>
+      <Encyclopedia_Text>TEXT_DESCRIPTION_UNKNOWN_SPACE_UNIT_MARTIN_LLOYDS_SHIP</Encyclopedia_Text>
+      <Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_CORVETTE</Encyclopedia_Unit_Class>
+      <Icon_Name>UNKNOWN_RACE_SPACE_UNIT_MARTIN_LLOYDS_SHIP.TGA</Icon_Name>
+      <Space_Model_Name>Unknown_Space_Unit_Martin_Lloyds_Ship.alo</Space_Model_Name>
+      <Radar_Icon_Name>I_RADAR_MARTIN_LLOYDS_SHIP.tga</Radar_Icon_Name>
+      <Radar_Icon_Size>0.06 0.06</Radar_Icon_Size>
+      <Affiliation>Traveler</Affiliation>
+      <Scale_Factor>0.75</Scale_Factor>
+      <Max_Speed>3.5</Max_Speed>
+      <Max_Thrust>0.9</Max_Thrust>
+      <Tactical_Health>1400</Tactical_Health>
+      <HardPoints>
+         HP_Martin_Lloyds_Ship_01, HP_Martin_Lloyds_Ship_02,
+         HP_Martin_Lloyds_Ship_03, HP_Martin_Lloyds_Ship_04,
+         HP_Martin_Lloyds_Ship_Shield, HP_Martin_Lloyds_Ship_Engine
+      </HardPoints>
+      <!--HP_Martin_Lloyds_Ship_05, HP_Martin_Lloyds_Ship_06,-->
+      <Death_Clone>Damage_Normal, Martin_Lloyds_Ship_Death_Clone</Death_Clone>
+      <Required_Star_Base_Level>1</Required_Star_Base_Level>
+      <Required_Ground_Base_Level>0</Required_Ground_Base_Level>
+      <Unit_Abilities_Data SubObjectList="Yes">
+         <Unit_Ability>
+            <Type>SPOILER_LOCK</Type>
+			<Alternate_Description_Text>TEXT_DESCRIPTION_ABILITY_SPOILER_LOCK_MARTIN_LLOYDS_SHIP</Alternate_Description_Text>
+			<Alternate_Icon_Name>I_SA_SPOILER_LOCK_VANIR_FRIGATE.TGA</Alternate_Icon_Name>
+            <Mod_Multiplier>WEAPON_DELAY_MULTIPLIER,  3.0f</Mod_Multiplier>
+            <Mod_Multiplier>SHIELD_REGEN_MULTIPLIER,  3.0f</Mod_Multiplier>
+            <Mod_Multiplier>SPEED_MULTIPLIER,          2.0</Mod_Multiplier>
+            <SFXEvent_GUI_Unit_Ability_Activated></SFXEvent_GUI_Unit_Ability_Activated>
+            <SFXEvent_GUI_Unit_Ability_Deactivated></SFXEvent_GUI_Unit_Ability_Deactivated>
+         </Unit_Ability>
+      </Unit_Abilities_Data>
+   </SpaceUnit>
+
+   <SpaceUnit Name="Martin_Lloyds_Ship_SK">
+      <Variant_Of_Existing_Type>Martin_Lloyds_Ship</Variant_Of_Existing_Type>
+      <Affiliation>Asuran</Affiliation>
+      <Tactical_Build_Time_Seconds>30</Tactical_Build_Time_Seconds>
+      <Tactical_Build_Cost_Multiplayer>2500</Tactical_Build_Cost_Multiplayer>
+      <Tactical_Build_Prerequisites>General_Tech_2_Prereq</Tactical_Build_Prerequisites>
+   </SpaceUnit>
+
+   <SpaceUnit Name="Martin_Lloyds_Ship_Death_Clone">
+      <Variant_Of_Existing_Type>Template_Space_Deathclone</Variant_Of_Existing_Type>
+      <Affiliation>Traveler</Affiliation>
+      <Space_Model_Name>Unknown_Space_Unit_Martin_Lloyds_Ship_D.alo</Space_Model_Name>
+      <Scale_Factor>0.75</Scale_Factor>
+   </SpaceUnit>
+   
+</SpaceUnits>

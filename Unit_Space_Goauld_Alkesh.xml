@@ -1,0 +1,194 @@
+<?xml version="1.0"?>
+<BWing_Files>
+
+  <SpaceUnit Name="B-Wing">
+    <Variant_Of_Existing_Type>Template_Space_Unit_Bomber_Multi</Variant_Of_Existing_Type>
+    <Text_ID>TEXT_GOAULD_SPACE_UNIT_ALKESH</Text_ID>
+    <Encyclopedia_Text>TEXT_DESCRIPTION_GOAULD_ALKESH TEXT_DESCRIPTION_FIGHTER_HYPERSPACE_YES</Encyclopedia_Text>
+    <Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_ALKESH</Encyclopedia_Unit_Class>
+    <Encyclopedia_Good_Against> Star_Destroyer Victory_Destroyer Krayt_Class_Destroyer </Encyclopedia_Good_Against>
+    <Encyclopedia_Vulnerable_To> Tartan_Patrol_Cruiser TIE_Defender Crusader_Gunship</Encyclopedia_Vulnerable_To>
+    <Space_Model_Name>Goauld_Space_Unit_Alkesh.ALO</Space_Model_Name>
+    <Icon_Name>GOAULD_SPACE_UNIT_ALKESH.TGA</Icon_Name>
+    <Scale_Factor>1.0</Scale_Factor>
+    <Select_Box_Scale>70</Select_Box_Scale>
+    <Select_Box_Z_Adjust>-1</Select_Box_Z_Adjust>
+    <Affiliation>Rebel</Affiliation>
+    <SpaceBehavior>FIGHTER_LOCOMOTOR, SELECTABLE, ABILITY_COUNTDOWN, POWERED, SHIELDED, HIDE_WHEN_FOGGED, AMBIENT_SFX, DAMAGE_TRACKING, REVEAL, NEBULA, HUNT</SpaceBehavior>
+    
+    <Shield_Points>55</Shield_Points>
+    <Shield_Refresh_Rate>3</Shield_Refresh_Rate>
+    <Tactical_Health>80</Tactical_Health>
+    <AI_Combat_Power>75</AI_Combat_Power>
+    <Armor_Type>Armor_HeavyBomber</Armor_Type>
+    <Shield_Armor_Type>Armor_HeavyBomber</Shield_Armor_Type>
+    <Hyperspace>Yes</Hyperspace>
+    <Land_Bomber_Type>Y-Wing_Bombing_Run</Land_Bomber_Type>
+    <Air_Vehicle_Turret_Target> Yes </Air_Vehicle_Turret_Target>
+    
+    <Max_Speed>3.8</Max_Speed>
+    <Min_Speed>2.5</Min_Speed>
+    <Max_Rate_Of_Turn>3.0</Max_Rate_Of_Turn>
+    <Max_Thrust>1.0</Max_Thrust>
+    <Max_Rate_Of_Roll>5.0</Max_Rate_Of_Roll>
+    <Bank_Turn_Angle>80</Bank_Turn_Angle>
+    <Min_Speed_Fraction_For_Turn>0.6</Min_Speed_Fraction_For_Turn>
+    <Begin_Turn_Towards_Distance>600.0</Begin_Turn_Towards_Distance>  
+    
+    <Space_FOW_Reveal_Range>700.0</Space_FOW_Reveal_Range>
+    <Targeting_Max_Attack_Distance>1200.0</Targeting_Max_Attack_Distance>
+    
+    <HardPoints>
+      HP_Alkesh_Laser,
+      HP_Alkesh_Bomb
+    </HardPoints>
+    
+    <SFXEvent_Attack>Unit_Attack_GFB</SFXEvent_Attack>
+    <SFXEvent_Fleet_Move>Unit_Move_GFB</SFXEvent_Fleet_Move>
+    <SFXEvent_Move>Unit_Move_GFB</SFXEvent_Move>
+    <SFXEvent_Select>Unit_Select_GFB</SFXEvent_Select>
+           
+    <SFXEvent_Engine_Idle_Loop>Engine_Goauld_Alkesh_Idle</SFXEvent_Engine_Idle_Loop>
+    <SFXEvent_Engine_Moving_Loop>Engine_Goauld_Alkesh</SFXEvent_Engine_Moving_Loop>
+    <SFXEvent_Engine_Cinematic_Focus_Loop>Engine_Goauld_Alkesh</SFXEvent_Engine_Cinematic_Focus_Loop>
+
+    <Required_Ground_Base_Level>0</Required_Ground_Base_Level>
+    <Required_Star_Base_Level>1</Required_Star_Base_Level>
+    <Unit_Abilities_Data SubObjectList="Yes">
+      <Unit_Ability>
+        <Type>STEALTH</Type>
+        <Alternate_Icon_Name>I_SA_STEALTH_ALKESH.tga</Alternate_Icon_Name>
+        <Alternate_Name_Text>TEXT_TOOLTIP_CLOAK</Alternate_Name_Text>
+        <Alternate_Description_Text>TEXT_DESCRIPTION_ABILITY_CLOAKING_BOMBER</Alternate_Description_Text>
+        <GUI_Activated_Ability_Name>Stealth_Alkesh</GUI_Activated_Ability_Name>
+        <Recharge_Seconds>45.0</Recharge_Seconds>
+        <Expiration_Seconds>35.0</Expiration_Seconds>
+        <SFXEvent_GUI_Unit_Ability_Activated>Effect_Jumper_Stealth_On</SFXEvent_GUI_Unit_Ability_Activated>
+        <SFXEvent_GUI_Unit_Ability_Deactivated>Effect_Jumper_Stealth_Off</SFXEvent_GUI_Unit_Ability_Deactivated>
+        <Must_Be_Bought_On_Black_Market>No</Must_Be_Bought_On_Black_Market>
+      </Unit_Ability>
+      <Unit_Ability>
+        <Type>HUNT</Type>
+        <Alternate_Name_Text>TEXT_ABILITY_GOAULD_SPACE_ALKESH_GEGNER_JAGEN</Alternate_Name_Text>
+        <Alternate_Description_Text>TEXT_DESCRIPTION_ABILITY_SPACE_ALKESH_GEGNER_JAGEN</Alternate_Description_Text>
+      </Unit_Ability>
+    </Unit_Abilities_Data>
+    <Abilities SubObjectList="Yes">
+      <Stealth_Ability Name="Stealth_Alkesh">
+        <Activation_Style> User_Input </Activation_Style>
+        <Stealth_Color>255, 255, 255, 255</Stealth_Color>
+        <Stealth_Transition_Time>.3</Stealth_Transition_Time>
+        <SFXEvent_Activate></SFXEvent_Activate>
+        <Must_Be_Bought_On_Black_Market>No</Must_Be_Bought_On_Black_Market>
+      </Stealth_Ability>
+    </Abilities>
+  </SpaceUnit>
+
+  <!-- **** SQUADRON INFORMATION **** -->
+  <Squadron Name="B-Wing_Squadron">
+    <LOD_Bias>10</LOD_Bias>
+    <Text_ID>TEXT_GOAULD_SPACE_UNIT_ALKESH</Text_ID>
+    <Encyclopedia_Text>TEXT_DESCRIPTION_GOAULD_ALKESH TEXT_DESCRIPTION_FIGHTER_HYPERSPACE_YES</Encyclopedia_Text>
+    <Encyclopedia_Unit_Class> TEXT_ENCYCLOPEDIA_CLASS_ALKESH </Encyclopedia_Unit_Class>
+    <Encyclopedia_Good_Against> Star_Destroyer Victory_Destroyer Acclamator_Assault_Ship </Encyclopedia_Good_Against>
+    <Encyclopedia_Vulnerable_To> Tartan_Patrol_Cruiser TIE_Defender </Encyclopedia_Vulnerable_To>
+    <Icon_Name>GOAULD_SPACE_UNIT_ALKESH.TGA</Icon_Name>
+    <GUI_Row> 1 </GUI_Row>
+    <Is_Dummy>Yes</Is_Dummy>
+    <Formation_Priority>2</Formation_Priority>
+    <Is_Escort>No</Is_Escort>
+    <Is_Bomber>yes</Is_Bomber>
+    <Affiliation>Rebel</Affiliation>
+    <Build_Cost_Credits>600</Build_Cost_Credits>
+    <Build_Time_Seconds>22</Build_Time_Seconds>
+    <Build_Tab_Space_Units>Yes</Build_Tab_Space_Units>
+    <Build_Initially_Locked>Yes</Build_Initially_Locked>
+    <Build_Can_Be_Unlocked_By_Slicer>Yes</Build_Can_Be_Unlocked_By_Slicer>
+    <Slice_Cost_Credits>400</Slice_Cost_Credits>
+    <Tech_Level>1</Tech_Level>
+    <Required_Timeline/>
+    <Required_Star_Base_Level>1</Required_Star_Base_Level>
+    <Required_Special_Structures>R_Ground_Hangar</Required_Special_Structures>
+    <Behavior>DUMMY_SPACE_FIGHTER_SQUADRON</Behavior>
+    <Squadron_Units>B-Wing, B-Wing, B-Wing</Squadron_Units>
+    <Squadron_Offsets>60.0,0.0,0.0</Squadron_Offsets>
+    <Squadron_Offsets>0.0,30.0,0.0</Squadron_Offsets>
+    <Squadron_Offsets>0.0,-30.0,0.0</Squadron_Offsets>
+    <FormationOrder>3</FormationOrder>
+    <Hyperspace>Yes</Hyperspace>
+    <Hyperspace_Speed>1.0</Hyperspace_Speed>
+    <Squadron_Formation_Error_Tolerance>25.0</Squadron_Formation_Error_Tolerance>
+    <Guard_Chase_Range>1000.0</Guard_Chase_Range>
+    <Idle_Chase_Range>200.0</Idle_Chase_Range>
+    <Attack_Move_Response_Range>300.0</Attack_Move_Response_Range>
+    <Autonomous_Move_Extension_Vs_Attacker>300.0</Autonomous_Move_Extension_Vs_Attacker>
+    <Property_Flags> SmallShip </Property_Flags>
+    <Tactical_Bribe_Cost>150</Tactical_Bribe_Cost>
+    <Max_Squad_Size> 3 </Max_Squad_Size>
+    <Population_Value>1</Population_Value>
+    <Score_Cost_Credits> 900</Score_Cost_Credits>
+    <Tactical_Build_Cost_Multiplayer>600</Tactical_Build_Cost_Multiplayer>
+    <Tactical_Build_Time_Seconds>17</Tactical_Build_Time_Seconds>
+    <Tactical_Build_Prerequisites/>
+    <Tactical_Production_Queue>Tactical_Units</Tactical_Production_Queue>
+    <Unit_Abilities_Data SubObjectList="Yes">
+      <Unit_Ability>
+        <Type>STEALTH</Type>
+        <Alternate_Icon_Name>I_SA_STEALTH_ALKESH.tga</Alternate_Icon_Name>
+        <Alternate_Name_Text>TEXT_TOOLTIP_CLOAK</Alternate_Name_Text>
+        <Alternate_Description_Text>TEXT_DESCRIPTION_ABILITY_CLOAKING_BOMBER</Alternate_Description_Text>
+        <GUI_Activated_Ability_Name>Stealth_Alkesh</GUI_Activated_Ability_Name>
+        <Recharge_Seconds>45.0</Recharge_Seconds>
+        <Expiration_Seconds>35.0</Expiration_Seconds>
+        <SFXEvent_GUI_Unit_Ability_Activated>Effect_Jumper_Stealth_On</SFXEvent_GUI_Unit_Ability_Activated>
+        <SFXEvent_GUI_Unit_Ability_Deactivated>Effect_Jumper_Stealth_Off</SFXEvent_GUI_Unit_Ability_Deactivated>
+        <Must_Be_Bought_On_Black_Market>No</Must_Be_Bought_On_Black_Market>
+      </Unit_Ability>
+      <Unit_Ability>
+        <Type>HUNT</Type>
+        <Alternate_Name_Text>TEXT_ABILITY_GOAULD_SPACE_ALKESH_GEGNER_JAGEN</Alternate_Name_Text>
+        <Alternate_Description_Text>TEXT_DESCRIPTION_ABILITY_SPACE_ALKESH_GEGNER_JAGEN</Alternate_Description_Text>
+      </Unit_Ability>
+    </Unit_Abilities_Data>
+    <Abilities SubObjectList="Yes">
+      <Stealth_Ability Name="Stealth_Alkesh">
+        <Activation_Style> User_Input </Activation_Style>
+        <Stealth_Color>255, 255, 255, 255</Stealth_Color>
+        <Stealth_Transition_Time>.3</Stealth_Transition_Time>
+        <SFXEvent_Activate></SFXEvent_Activate>
+        <Must_Be_Bought_On_Black_Market>No</Must_Be_Bought_On_Black_Market>
+      </Stealth_Ability>
+    </Abilities>
+  </Squadron>
+
+
+  <!-- Projectiles Goauld Alkesh -->
+  <Projectile Name="Proj_Goauld_Alkesh_Laser">
+    <Variant_Of_Existing_Type>Proj_Goauld_Space_Twin_Staff_Laser</Variant_Of_Existing_Type>
+    <Damage_Type>Damage_Fighter</Damage_Type>
+    <Max_Speed>20.0</Max_Speed>
+    <Max_Rate_Of_Turn>0.0</Max_Rate_Of_Turn>
+    <Projectile_Max_Flight_Distance>700.0</Projectile_Max_Flight_Distance>
+    <Projectile_Damage>4.0</Projectile_Damage>
+    <Projectile_Does_Shield_Damage>Yes</Projectile_Does_Shield_Damage>
+    <Projectile_Does_Energy_Damage>No</Projectile_Does_Energy_Damage>
+    <Projectile_Does_Hitpoint_Damage>Yes</Projectile_Does_Hitpoint_Damage>
+    <Projectile_Energy_Per_Shot>10</Projectile_Energy_Per_Shot>
+    <AI_Combat_Power>120</AI_Combat_Power>
+  </Projectile>
+
+  <Projectile Name="Proj_Goauld_Alkesh_Bomb">
+    <Variant_Of_Existing_Type>Proj_Goauld_Space_Bomber_Bomb</Variant_Of_Existing_Type>
+    <Damage_Type>Damage_HeavyBomber</Damage_Type>
+    <Max_Speed>9.0</Max_Speed>
+    <Max_Rate_Of_Turn>0.0</Max_Rate_Of_Turn>
+    <Projectile_Max_Flight_Distance>900.0</Projectile_Max_Flight_Distance>
+    <Projectile_Damage>30.0</Projectile_Damage>
+    <Projectile_Does_Shield_Damage>Yes</Projectile_Does_Shield_Damage>
+    <Projectile_Does_Energy_Damage>No</Projectile_Does_Energy_Damage>
+    <Projectile_Does_Hitpoint_Damage>Yes</Projectile_Does_Hitpoint_Damage>
+    <Projectile_Energy_Per_Shot>20</Projectile_Energy_Per_Shot>
+    <AI_Combat_Power>160</AI_Combat_Power>
+  </Projectile>
+  
+</BWing_Files>

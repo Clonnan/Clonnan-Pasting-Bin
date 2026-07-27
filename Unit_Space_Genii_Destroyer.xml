@@ -1,0 +1,483 @@
+<?xml version="1.0"?>
+<GeniiSpaceUnitDestroyer>
+
+   <SpaceUnit Name="Genii_Destroyer_No_Spawn">
+      <Variant_Of_Existing_Type>Template_Space_Unit_Light_Battleship</Variant_Of_Existing_Type>
+      <Text_ID>TEXT_GENII_SPACE_UNIT_ZERSTOERER</Text_ID>
+      <Encyclopedia_Text>TEXT_DESCRIPTION_GENII_ZERSTOERER</Encyclopedia_Text>
+      <Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_GENII_ZERSTOERER</Encyclopedia_Unit_Class>
+      <Encyclopedia_Good_Against> Crusader_Gunship Nebulon_B_Frigate Interdictor_Cruiser </Encyclopedia_Good_Against>
+      <Encyclopedia_Vulnerable_To> Vengeance_Frigate MC30_Frigate Victory_Destroyer </Encyclopedia_Vulnerable_To>
+      <Icon_Name>Genii_Space_Unit_Destroyer.tga</Icon_Name>
+      <Radar_Icon_Name>I_RADAR_GENII_DESTROYER.TGA</Radar_Icon_Name>
+      <Radar_Icon_Size>0.07 0.07</Radar_Icon_Size>
+      <Space_Model_Name>Genii_Space_Unit_Destroyer.ALO</Space_Model_Name>
+      <Select_Box_Scale>400</Select_Box_Scale>
+      <Select_Box_Z_Adjust>-30</Select_Box_Z_Adjust>
+
+      <Max_Speed>2.5</Max_Speed>
+      <Max_Rate_Of_Turn>0.7</Max_Rate_Of_Turn>
+      <Max_Rate_Of_Roll>0.1</Max_Rate_Of_Roll>
+      <Bank_Turn_Angle>13</Bank_Turn_Angle>
+      <OverrideAcceleration>.05</OverrideAcceleration>
+      <OverrideDeceleration>.05</OverrideDeceleration>
+
+      <Tactical_Health>2500</Tactical_Health>
+      <Shield_Points>0</Shield_Points>
+      <Shield_Refresh_Rate>0</Shield_Refresh_Rate>
+      <Space_FOW_Reveal_Range>1200.0</Space_FOW_Reveal_Range>
+      <Targeting_Max_Attack_Distance>1500.0</Targeting_Max_Attack_Distance>
+      <Tactical_Build_Cost_Multiplayer>2800</Tactical_Build_Cost_Multiplayer>
+      <Tactical_Build_Time_Seconds>25</Tactical_Build_Time_Seconds>
+      <Population_Value>4</Population_Value>
+
+      <Affiliation>Pirates</Affiliation>
+      <SpaceBehavior>SELF_DESTRUCT, SPAWN_SQUADRON, ABILITY_COUNTDOWN, SIMPLE_SPACE_LOCOMOTOR, TARGETING, REVEAL, HIDE_WHEN_FOGGED, UNIT_AI, ASTEROID_FIELD_DAMAGE, DAMAGE_TRACKING, ION_STUN_EFFECT, NEBULA</SpaceBehavior>
+      <Selt_Destruct_SFXEvent_Start_Die>Effect_Empty_Sound</Selt_Destruct_SFXEvent_Start_Die>
+      <Death_Clone>Damage_Normal, Genii_Destroyer_Death_Clone</Death_Clone>
+      <Required_Star_Base_Level>1</Required_Star_Base_Level>
+
+      <HardPoints>
+         HP_Genii_Destroyer_ML_AF_00,
+         HP_Genii_Destroyer_ML_AGKS_00,
+         HP_Genii_Destroyer_Turret_0,
+         HP_Genii_Destroyer_Turret_1,
+         HP_Genii_Destroyer_Turret_2,
+         HP_Genii_Destroyer_Turret_3,
+         HP_Genii_Destroyer_Turret_4,
+         HP_Genii_Destroyer_Fighter_Bay_0,
+         HP_Genii_Destroyer_Fighter_Bay_1,
+         HP_Genii_Destroyer_Engines
+      </HardPoints>
+
+      <Unit_Abilities_Data SubObjectList="Yes">
+         <Unit_Ability>
+            <Type>SELF_DESTRUCT</Type>
+            <Alternate_Icon_Name>I_SA_CORE_OVERLOAD.TGA </Alternate_Icon_Name>
+            <Alternate_Name_Text> TEXT_ABILITY_CORE_OVERLOAD</Alternate_Name_Text>
+            <Alternate_Description_Text>TEXT_DESCRIPTION_ABILITY_SELF_DESTRUCTION_GENII_DESTROYER</Alternate_Description_Text>
+            <Expiration_Seconds>3.5</Expiration_Seconds>
+            <Recharge_Seconds>10</Recharge_Seconds>
+            <Spawned_Object_Type>Genii_Destroyer_Core_Overload</Spawned_Object_Type>
+            <GUI_Activated_Ability_Name>Krayt_Self_Destruct</GUI_Activated_Ability_Name>
+            <Stop_When_Activated>No</Stop_When_Activated>
+            <SFXEvent_GUI_Unit_Ability_Activated></SFXEvent_GUI_Unit_Ability_Activated>
+            <Must_Be_Bought_On_Black_Market>No</Must_Be_Bought_On_Black_Market>
+            <Supports_Autofire>False</Supports_Autofire>
+         </Unit_Ability>
+      </Unit_Abilities_Data>
+      <Lua_Script>ObjectScript_Ancient_Warship</Lua_Script>
+   </SpaceUnit>
+
+   <SpaceUnit Name="Genii_Destroyer">
+      <Variant_Of_Existing_Type>Genii_Destroyer_No_Spawn</Variant_Of_Existing_Type>
+      <Starting_Spawned_Units_Tech_0>Genii_Fighter_Squadron, 2</Starting_Spawned_Units_Tech_0>
+      <Spawned_Squadron_Delay_Seconds>7</Spawned_Squadron_Delay_Seconds>
+      <Reserve_Spawned_Units_Tech_0>Genii_Fighter_Squadron, 2</Reserve_Spawned_Units_Tech_0>
+   </SpaceUnit>
+
+   <SpaceUnit Name="Genii_Destroyer_Death_Clone">
+      <Variant_Of_Existing_Type>Template_Space_Deathclone</Variant_Of_Existing_Type>
+      <Affiliation>Pirates</Affiliation>
+      <Space_Model_Name>Genii_Space_Unit_Destroyer_D.alo</Space_Model_Name>
+   </SpaceUnit>
+
+   <!-- I created six similar miscobjects. First one spawning the second and second spawning the third and so on.
+  I did this to give enemy units a chance to get away from the affected area.
+  Each level is stronger and bigger than the previous one.-->
+  <MiscObject Name="Genii_Destroyer_Core_Overload">
+      <Text_ID />
+      <Space_Model_Name>Tauri_Particle_Nuke.ALO</Space_Model_Name>
+      <Scale_Factor>0.1</Scale_Factor>
+      <Idle_Anim_00_Rate_Mod>1.0</Idle_Anim_00_Rate_Mod>
+      <Behavior>DUMMY_ORBITAL_STRUCTURE, SPACE_OBSTACLE, IDLE</Behavior>
+      <SpaceBehavior>ABILITY_COUNTDOWN, SELF_DESTRUCT, UNIT_AI</SpaceBehavior>
+      <Layer_Z_Adjust>-50.0</Layer_Z_Adjust>
+      <Sort_Order_Adjust>-1</Sort_Order_Adjust>
+      <Remove_Upon_Death>true</Remove_Upon_Death>
+      <Is_Ion_Storm>Yes</Is_Ion_Storm>
+      <Is_Nebula> Yes </Is_Nebula>
+      <Space_Obstacle_Radius> 400 </Space_Obstacle_Radius>
+      <Space_Obstacle_Offset> 0 0 0 </Space_Obstacle_Offset>
+      <Space_Layer> StaticObject </Space_Layer>
+      <Selt_Destruct_SFXEvent_Start_Die>Effect_Empty_Sound</Selt_Destruct_SFXEvent_Start_Die>
+      <Lua_Script>ObjectScript_Genii_Destroyer</Lua_Script>
+      <Unit_Abilities_Data SubObjectList="Yes">
+        <Unit_Ability>
+            <Type>SELF_DESTRUCT</Type>
+            <Expiration_Seconds>4</Expiration_Seconds>
+            <Spawned_Object_Type> Genii_Destroyer_Core_Overload_2 </Spawned_Object_Type>
+        </Unit_Ability>
+      </Unit_Abilities_Data>
+      <Abilities SubObjectList="Yes">
+          <Force_Healing_Ability Name="Biogenic_Contamination">
+              <Activation_Style>Space_Automatic</Activation_Style>
+              <Heal_Range>300.0</Heal_Range>
+              <Heal_Amount>-2.0</Heal_Amount><!--20/sec-->
+              <Heal_Interval_In_Secs>.10</Heal_Interval_In_Secs>
+              <Applicable_Unit_Categories>Fighter | Bomber | Transport | Corvette | Frigate | Capital | Super | SpaceHero</Applicable_Unit_Categories>
+              <Excluded_Unit_Types>
+                 Ancient_Starbase_Skirmish,
+                 Aschen_Starbase_GC1,
+                 Aschen_Starbase_Skirmish,
+                 Ori_Starbase,
+                     Rebel_Star_Base_1,
+                      Rebel_Star_Base_2,
+                      Rebel_Star_Base_3,
+                      Rebel_Star_Base_4,
+                      Rebel_Star_Base_5,
+                      Empire_Star_Base_1,
+                      Empire_Star_Base_2,
+                      Empire_Star_Base_3,
+                      Empire_Star_Base_4,
+                      Empire_Star_Base_5,
+                      Skirmish_Rebel_Star_Base_1,
+                      Skirmish_Rebel_Star_Base_2,
+                      Skirmish_Rebel_Star_Base_3,
+                      Skirmish_Rebel_Star_Base_4,
+                      Skirmish_Rebel_Star_Base_5,
+                      Skirmish_Empire_Star_Base_1,
+                      Skirmish_Empire_Star_Base_2,
+                      Skirmish_Empire_Star_Base_3,
+                      Skirmish_Empire_Star_Base_4,
+                      Skirmish_Empire_Star_Base_5,
+                      Underworld_Star_Base_1,
+                      Underworld_Star_Base_2,
+                      Underworld_Star_Base_3,
+                      Underworld_Star_Base_4,
+                      Underworld_Star_Base_5,
+                      Skirmish_Underworld_Star_Base_1,
+                      Skirmish_Underworld_Star_Base_2,
+                      Skirmish_Underworld_Star_Base_3,
+                      Skirmish_Underworld_Star_Base_4,
+                      Skirmish_Underworld_Star_Base_5
+                  </Excluded_Unit_Types>
+          </Force_Healing_Ability>
+      </Abilities>
+   </MiscObject>
+
+  <MiscObject Name="Genii_Destroyer_Core_Overload_2">
+      <Variant_Of_Existing_Type>Genii_Destroyer_Core_Overload</Variant_Of_Existing_Type>
+      <Space_Obstacle_Radius> 500 </Space_Obstacle_Radius>
+      <Space_Model_Name>w_lightning.alo</Space_Model_Name>
+      <Scale_Factor>0.3</Scale_Factor>
+      <Unit_Abilities_Data SubObjectList="Yes">
+        <Unit_Ability>
+            <Type>SELF_DESTRUCT</Type>
+            <Expiration_Seconds>4</Expiration_Seconds>
+            <Spawned_Object_Type> Genii_Destroyer_Core_Overload_3 </Spawned_Object_Type>
+        </Unit_Ability>
+      </Unit_Abilities_Data>
+      <Abilities SubObjectList="Yes">
+          <Force_Healing_Ability Name="Biogenic_Contamination">
+              <Activation_Style>Space_Automatic</Activation_Style>
+              <Heal_Range>600.0</Heal_Range>
+              <Heal_Amount>-5.0</Heal_Amount><!--25/sec-->
+              <Heal_Interval_In_Secs>.20</Heal_Interval_In_Secs>
+              <Applicable_Unit_Categories>Fighter | Bomber | Transport | Corvette | Frigate | Capital | Super | SpaceHero</Applicable_Unit_Categories>
+              <Excluded_Unit_Types>
+                 Ancient_Starbase_Skirmish,
+                 Aschen_Starbase_GC1,
+                 Aschen_Starbase_Skirmish,
+                 Ori_Starbase,
+                     Rebel_Star_Base_1,
+                      Rebel_Star_Base_2,
+                      Rebel_Star_Base_3,
+                      Rebel_Star_Base_4,
+                      Rebel_Star_Base_5,
+                      Empire_Star_Base_1,
+                      Empire_Star_Base_2,
+                      Empire_Star_Base_3,
+                      Empire_Star_Base_4,
+                      Empire_Star_Base_5,
+                      Skirmish_Rebel_Star_Base_1,
+                      Skirmish_Rebel_Star_Base_2,
+                      Skirmish_Rebel_Star_Base_3,
+                      Skirmish_Rebel_Star_Base_4,
+                      Skirmish_Rebel_Star_Base_5,
+                      Skirmish_Empire_Star_Base_1,
+                      Skirmish_Empire_Star_Base_2,
+                      Skirmish_Empire_Star_Base_3,
+                      Skirmish_Empire_Star_Base_4,
+                      Skirmish_Empire_Star_Base_5,
+                      Underworld_Star_Base_1,
+                      Underworld_Star_Base_2,
+                      Underworld_Star_Base_3,
+                      Underworld_Star_Base_4,
+                      Underworld_Star_Base_5,
+                      Skirmish_Underworld_Star_Base_1,
+                      Skirmish_Underworld_Star_Base_2,
+                      Skirmish_Underworld_Star_Base_3,
+                      Skirmish_Underworld_Star_Base_4,
+                      Skirmish_Underworld_Star_Base_5
+                  </Excluded_Unit_Types>
+          </Force_Healing_Ability>
+      </Abilities>
+   </MiscObject>
+
+  <MiscObject Name="Genii_Destroyer_Core_Overload_3">
+      <Variant_Of_Existing_Type>Genii_Destroyer_Core_Overload</Variant_Of_Existing_Type>
+      <Space_Obstacle_Radius> 600 </Space_Obstacle_Radius>
+      <Space_Model_Name>w_lightning.alo</Space_Model_Name>
+      <Scale_Factor>0.6</Scale_Factor>
+      <Unit_Abilities_Data SubObjectList="Yes">
+        <Unit_Ability>
+            <Type>SELF_DESTRUCT</Type>
+            <Expiration_Seconds>4</Expiration_Seconds>
+            <Spawned_Object_Type> Genii_Destroyer_Core_Overload_4 </Spawned_Object_Type>
+        </Unit_Ability>
+      </Unit_Abilities_Data>
+      <Abilities SubObjectList="Yes">
+          <Force_Healing_Ability Name="Biogenic_Contamination">
+              <Activation_Style>Space_Automatic</Activation_Style>
+              <Heal_Range>900.0</Heal_Range>
+              <Heal_Amount>-9.0</Heal_Amount><!--30/sec-->
+              <Heal_Interval_In_Secs>.30</Heal_Interval_In_Secs>
+              <Applicable_Unit_Categories>Fighter | Bomber | Transport | Corvette | Frigate | Capital | Super | SpaceHero</Applicable_Unit_Categories>
+              <Excluded_Unit_Types>
+                 Ancient_Starbase_Skirmish,
+                 Aschen_Starbase_GC1,
+                 Aschen_Starbase_Skirmish,
+                 Ori_Starbase,
+                     Rebel_Star_Base_1,
+                      Rebel_Star_Base_2,
+                      Rebel_Star_Base_3,
+                      Rebel_Star_Base_4,
+                      Rebel_Star_Base_5,
+                      Empire_Star_Base_1,
+                      Empire_Star_Base_2,
+                      Empire_Star_Base_3,
+                      Empire_Star_Base_4,
+                      Empire_Star_Base_5,
+                      Skirmish_Rebel_Star_Base_1,
+                      Skirmish_Rebel_Star_Base_2,
+                      Skirmish_Rebel_Star_Base_3,
+                      Skirmish_Rebel_Star_Base_4,
+                      Skirmish_Rebel_Star_Base_5,
+                      Skirmish_Empire_Star_Base_1,
+                      Skirmish_Empire_Star_Base_2,
+                      Skirmish_Empire_Star_Base_3,
+                      Skirmish_Empire_Star_Base_4,
+                      Skirmish_Empire_Star_Base_5,
+                      Underworld_Star_Base_1,
+                      Underworld_Star_Base_2,
+                      Underworld_Star_Base_3,
+                      Underworld_Star_Base_4,
+                      Underworld_Star_Base_5,
+                      Skirmish_Underworld_Star_Base_1,
+                      Skirmish_Underworld_Star_Base_2,
+                      Skirmish_Underworld_Star_Base_3,
+                      Skirmish_Underworld_Star_Base_4,
+                      Skirmish_Underworld_Star_Base_5
+                  </Excluded_Unit_Types>
+          </Force_Healing_Ability>
+      </Abilities>
+   </MiscObject>
+
+  <MiscObject Name="Genii_Destroyer_Core_Overload_4">
+      <Variant_Of_Existing_Type>Genii_Destroyer_Core_Overload</Variant_Of_Existing_Type>
+      <Space_Obstacle_Radius> 700 </Space_Obstacle_Radius>
+      <Space_Model_Name>w_lightning.alo</Space_Model_Name>
+      <Idle_Anim_00_Rate_Mod>0.8</Idle_Anim_00_Rate_Mod>
+      <Scale_Factor>0.9</Scale_Factor>
+      <Unit_Abilities_Data SubObjectList="Yes">
+        <Unit_Ability>
+            <Type>SELF_DESTRUCT</Type>
+            <Expiration_Seconds>4</Expiration_Seconds>
+            <Spawned_Object_Type> Genii_Destroyer_Core_Overload_5 </Spawned_Object_Type>
+        </Unit_Ability>
+      </Unit_Abilities_Data>
+      <Abilities SubObjectList="Yes">
+          <Force_Healing_Ability Name="Biogenic_Contamination">
+              <Activation_Style>Space_Automatic</Activation_Style>
+              <Heal_Range>1100.0</Heal_Range>
+              <Heal_Amount>-14.0</Heal_Amount><!--35/sec-->
+              <Heal_Interval_In_Secs>.40</Heal_Interval_In_Secs>
+              <Applicable_Unit_Categories>Fighter | Bomber | Transport | Corvette | Frigate | Capital | Super | SpaceHero</Applicable_Unit_Categories>
+              <Excluded_Unit_Types>
+                 Ancient_Starbase_Skirmish,
+                 Aschen_Starbase_GC1,
+                 Aschen_Starbase_Skirmish,
+                 Ori_Starbase,
+                     Rebel_Star_Base_1,
+                      Rebel_Star_Base_2,
+                      Rebel_Star_Base_3,
+                      Rebel_Star_Base_4,
+                      Rebel_Star_Base_5,
+                      Empire_Star_Base_1,
+                      Empire_Star_Base_2,
+                      Empire_Star_Base_3,
+                      Empire_Star_Base_4,
+                      Empire_Star_Base_5,
+                      Skirmish_Rebel_Star_Base_1,
+                      Skirmish_Rebel_Star_Base_2,
+                      Skirmish_Rebel_Star_Base_3,
+                      Skirmish_Rebel_Star_Base_4,
+                      Skirmish_Rebel_Star_Base_5,
+                      Skirmish_Empire_Star_Base_1,
+                      Skirmish_Empire_Star_Base_2,
+                      Skirmish_Empire_Star_Base_3,
+                      Skirmish_Empire_Star_Base_4,
+                      Skirmish_Empire_Star_Base_5,
+                      Underworld_Star_Base_1,
+                      Underworld_Star_Base_2,
+                      Underworld_Star_Base_3,
+                      Underworld_Star_Base_4,
+                      Underworld_Star_Base_5,
+                      Skirmish_Underworld_Star_Base_1,
+                      Skirmish_Underworld_Star_Base_2,
+                      Skirmish_Underworld_Star_Base_3,
+                      Skirmish_Underworld_Star_Base_4,
+                      Skirmish_Underworld_Star_Base_5
+                  </Excluded_Unit_Types>
+          </Force_Healing_Ability>
+      </Abilities>
+   </MiscObject>
+
+  <MiscObject Name="Genii_Destroyer_Core_Overload_5">
+      <Variant_Of_Existing_Type>Genii_Destroyer_Core_Overload</Variant_Of_Existing_Type>
+      <Space_Obstacle_Radius> 750 </Space_Obstacle_Radius>
+      <Space_Model_Name>w_lightning.alo</Space_Model_Name>
+      <Idle_Anim_00_Rate_Mod>0.6</Idle_Anim_00_Rate_Mod>
+      <Scale_Factor>1.2</Scale_Factor>
+      <Unit_Abilities_Data SubObjectList="Yes">
+        <Unit_Ability>
+            <Type>SELF_DESTRUCT</Type>
+            <Expiration_Seconds>4</Expiration_Seconds>
+            <Spawned_Object_Type> Genii_Destroyer_Core_Overload_6 </Spawned_Object_Type>
+        </Unit_Ability>
+      </Unit_Abilities_Data>
+      <Abilities SubObjectList="Yes">
+          <Force_Healing_Ability Name="Biogenic_Contamination">
+              <Activation_Style>Space_Automatic</Activation_Style>
+              <Heal_Range>1300.0</Heal_Range>
+              <Heal_Amount>-20.0</Heal_Amount><!--40/sec-->
+              <Heal_Interval_In_Secs>.50</Heal_Interval_In_Secs>
+              <Applicable_Unit_Categories>Fighter | Bomber | Transport | Corvette | Frigate | Capital | Super | SpaceHero</Applicable_Unit_Categories>
+              <Excluded_Unit_Types>
+                 Ancient_Starbase_Skirmish,
+                 Aschen_Starbase_GC1,
+                 Aschen_Starbase_Skirmish,
+                 Ori_Starbase,
+                     Rebel_Star_Base_1,
+                      Rebel_Star_Base_2,
+                      Rebel_Star_Base_3,
+                      Rebel_Star_Base_4,
+                      Rebel_Star_Base_5,
+                      Empire_Star_Base_1,
+                      Empire_Star_Base_2,
+                      Empire_Star_Base_3,
+                      Empire_Star_Base_4,
+                      Empire_Star_Base_5,
+                      Skirmish_Rebel_Star_Base_1,
+                      Skirmish_Rebel_Star_Base_2,
+                      Skirmish_Rebel_Star_Base_3,
+                      Skirmish_Rebel_Star_Base_4,
+                      Skirmish_Rebel_Star_Base_5,
+                      Skirmish_Empire_Star_Base_1,
+                      Skirmish_Empire_Star_Base_2,
+                      Skirmish_Empire_Star_Base_3,
+                      Skirmish_Empire_Star_Base_4,
+                      Skirmish_Empire_Star_Base_5,
+                      Underworld_Star_Base_1,
+                      Underworld_Star_Base_2,
+                      Underworld_Star_Base_3,
+                      Underworld_Star_Base_4,
+                      Underworld_Star_Base_5,
+                      Skirmish_Underworld_Star_Base_1,
+                      Skirmish_Underworld_Star_Base_2,
+                      Skirmish_Underworld_Star_Base_3,
+                      Skirmish_Underworld_Star_Base_4,
+                      Skirmish_Underworld_Star_Base_5
+                  </Excluded_Unit_Types>
+          </Force_Healing_Ability>
+      </Abilities>
+   </MiscObject>
+
+  <MiscObject Name="Genii_Destroyer_Core_Overload_6">
+      <Variant_Of_Existing_Type>Genii_Destroyer_Core_Overload</Variant_Of_Existing_Type>
+      <Space_Obstacle_Radius> 750 </Space_Obstacle_Radius>
+      <Space_Model_Name>w_lightning.alo</Space_Model_Name>
+      <Idle_Anim_00_Rate_Mod>0.4</Idle_Anim_00_Rate_Mod>
+      <Scale_Factor>1.5</Scale_Factor>
+      <Unit_Abilities_Data SubObjectList="Yes">
+        <Unit_Ability>
+            <Type>SELF_DESTRUCT</Type>
+            <Expiration_Seconds>4</Expiration_Seconds>
+        </Unit_Ability>
+      </Unit_Abilities_Data>
+      <Abilities SubObjectList="Yes">
+          <Force_Healing_Ability Name="Biogenic_Contamination">
+              <Activation_Style>Space_Automatic</Activation_Style>
+              <Heal_Range>1500.0</Heal_Range>
+              <Heal_Amount>-27.0</Heal_Amount><!--45/sec-->
+              <Heal_Interval_In_Secs>.60</Heal_Interval_In_Secs>
+              <Applicable_Unit_Categories>Fighter | Bomber | Transport | Corvette | Frigate | Capital | Super | SpaceHero</Applicable_Unit_Categories>
+              <Excluded_Unit_Types>
+                 Ancient_Starbase_Skirmish,
+                 Aschen_Starbase_GC1,
+                 Aschen_Starbase_Skirmish,
+                 Ori_Starbase,
+                     Rebel_Star_Base_1,
+                      Rebel_Star_Base_2,
+                      Rebel_Star_Base_3,
+                      Rebel_Star_Base_4,
+                      Rebel_Star_Base_5,
+                      Empire_Star_Base_1,
+                      Empire_Star_Base_2,
+                      Empire_Star_Base_3,
+                      Empire_Star_Base_4,
+                      Empire_Star_Base_5,
+                      Skirmish_Rebel_Star_Base_1,
+                      Skirmish_Rebel_Star_Base_2,
+                      Skirmish_Rebel_Star_Base_3,
+                      Skirmish_Rebel_Star_Base_4,
+                      Skirmish_Rebel_Star_Base_5,
+                      Skirmish_Empire_Star_Base_1,
+                      Skirmish_Empire_Star_Base_2,
+                      Skirmish_Empire_Star_Base_3,
+                      Skirmish_Empire_Star_Base_4,
+                      Skirmish_Empire_Star_Base_5,
+                      Underworld_Star_Base_1,
+                      Underworld_Star_Base_2,
+                      Underworld_Star_Base_3,
+                      Underworld_Star_Base_4,
+                      Underworld_Star_Base_5,
+                      Skirmish_Underworld_Star_Base_1,
+                      Skirmish_Underworld_Star_Base_2,
+                      Skirmish_Underworld_Star_Base_3,
+                      Skirmish_Underworld_Star_Base_4,
+                      Skirmish_Underworld_Star_Base_5
+                  </Excluded_Unit_Types>
+          </Force_Healing_Ability>
+      </Abilities>
+   </MiscObject>
+
+
+<!-- Projectiles Genii Destroyer -->
+  <Projectile Name="Proj_Genii_Detroyer_Flak_Cannon">
+      <Variant_Of_Existing_Type>Proj_Genii_Space_Flak_Cannon</Variant_Of_Existing_Type>
+      <Projectile_Damage>3.0</Projectile_Damage>
+  </Projectile>
+
+  <Projectile Name="Proj_Genii_Destroyer_Missile">
+      <Variant_Of_Existing_Type>Proj_Genii_Space_Missile</Variant_Of_Existing_Type>
+      <Projectile_Damage>40.0</Projectile_Damage>
+  </Projectile>
+
+  <Projectile Name="Proj_Genii_Destroyer_AFMissile">
+      <Variant_Of_Existing_Type>Proj_Genii_Space_Missile</Variant_Of_Existing_Type>
+      <Projectile_Damage>18.0</Projectile_Damage>
+  </Projectile>
+
+  <Projectile Name="Proj_Genii_Detroyer_Mass_Driver_Middle">
+      <Variant_Of_Existing_Type>Proj_Genii_Space_Mass_Driver_Middle</Variant_Of_Existing_Type>
+      <Projectile_Damage>6.0</Projectile_Damage>
+  </Projectile>
+
+  <Projectile Name="Proj_Genii_Detroyer_Mass_Driver_Heavy">
+      <Variant_Of_Existing_Type>Proj_Genii_Space_Mass_Driver_Heavy</Variant_Of_Existing_Type>
+      <Projectile_Damage>10.0</Projectile_Damage>
+  </Projectile>
+
+</GeniiSpaceUnitDestroyer>

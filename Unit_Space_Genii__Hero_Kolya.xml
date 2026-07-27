@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GENII_HERO_KOLYA>
+
+   <UniqueUnit Name="Genii_Hero_Kolya">
+      <Variant_Of_Existing_Type>Template_Space_Hero_Medium_Battleship</Variant_Of_Existing_Type>
+      <Text_ID>TEXT_GENII_SPACE_HERO_KOLYA</Text_ID>
+      <Encyclopedia_Text>TEXT_DESCRIPTION_GENII_GC_KOLYA_SPACE</Encyclopedia_Text>
+      <Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_KOLYA_ZERSTOERER</Encyclopedia_Unit_Class>
+      <Encyclopedia_Good_Against> Crusader_Gunship Nebulon_B_Frigate Interdictor_Cruiser </Encyclopedia_Good_Against>
+      <Encyclopedia_Vulnerable_To> Vengeance_Frigate MC30_Frigate Victory_Destroyer </Encyclopedia_Vulnerable_To>
+      <Icon_Name>GENII_SPACE_HERO_KOLYA.TGA</Icon_Name>
+      <Radar_Icon_Name>I_RADAR_GENII_DESTROYER.TGA</Radar_Icon_Name>
+      <Radar_Icon_Size>0.07 0.07</Radar_Icon_Size>
+      <Space_Model_Name>Genii_Space_Hero_Kolya.ALO</Space_Model_Name>
+      <Select_Box_Scale>170</Select_Box_Scale>
+      <Select_Box_Z_Adjust>-30</Select_Box_Z_Adjust>
+
+      <Is_Named_Hero>No</Is_Named_Hero>
+      <Is_Generic_Hero>Yes</Is_Generic_Hero>
+
+      <Max_Speed>2.5</Max_Speed>
+      <Max_Rate_Of_Turn>2.4</Max_Rate_Of_Turn>
+      <Max_Rate_Of_Roll>0.8</Max_Rate_Of_Roll>
+      <Bank_Turn_Angle>15</Bank_Turn_Angle>
+      <OverrideAcceleration> .12 </OverrideAcceleration>
+      <OverrideDeceleration> .12 </OverrideDeceleration>
+
+      <Affiliation>Pirates</Affiliation>
+      <Shield_Points>1800</Shield_Points>
+      <Tactical_Health>3000</Tactical_Health>
+      <Shield_Refresh_Rate>40</Shield_Refresh_Rate>
+      <Space_FOW_Reveal_Range>1000.0</Space_FOW_Reveal_Range>
+      <Targeting_Max_Attack_Distance>1000.0</Targeting_Max_Attack_Distance>
+
+      <SpaceBehavior>SPAWN_SQUADRON, ABILITY_COUNTDOWN, SIMPLE_SPACE_LOCOMOTOR, SELECTABLE, TARGETING, REVEAL, HIDE_WHEN_FOGGED, UNIT_AI, DAMAGE_TRACKING, ION_STUN_EFFECT, NEBULA, SHIELDED</SpaceBehavior>
+      <Starting_Spawned_Units_Tech_0>Genii_Fighter_Squadron, 2</Starting_Spawned_Units_Tech_0>
+      <Spawned_Squadron_Delay_Seconds>5</Spawned_Squadron_Delay_Seconds>
+      <Population_Value>5</Population_Value>
+      <Death_Clone>Damage_Normal, Genii_Destroyer_Death_Clone</Death_Clone>
+      <Lua_Script>ObjectScript_HW_Middle</Lua_Script>
+
+      <HardPoints>
+         HP_Genii_Kolya_ML_AF_00,<!--250-->
+         HP_Genii_Kolya_ML_AGKS_00,
+         HP_Genii_Kolya_ML_AGKS_01,
+         HP_Genii_Space_Unit_Kolya_Turret_0,
+         HP_Genii_Space_Unit_Kolya_Turret_1,
+         HP_Genii_Space_Unit_Kolya_Turret_2,
+         HP_Genii_Space_Unit_Kolya_Turret_3,
+         HP_Genii_Space_Unit_Kolya_Turret_4,
+         HP_Genii_Kolya_Fighter_Bay_0,
+         HP_Genii_Kolya_Fighter_Bay_1,
+         HP_Genii_Kolya_Engines,
+         HP_Genii_Kolya_Shield_Generator
+      </HardPoints>
+
+      <Unit_Abilities_Data SubObjectList="Yes">
+         <Unit_Ability>
+            <Type>POWER_TO_WEAPONS</Type>
+            <Alternate_Name_Text>TEXT_ABILITY_GENII_SPACE_KOLYA_WEAPONSBOOST</Alternate_Name_Text>
+            <Alternate_Description_Text>TEXT_DESCRIPTION_ABILITY_WEAPONSBOOST_KOLYA_SPACE</Alternate_Description_Text>
+            <Expiration_Seconds>20</Expiration_Seconds>
+            <Mod_Multiplier>WEAPON_DELAY_MULTIPLIER, 0.5f</Mod_Multiplier>
+            <Mod_Multiplier>SHIELD_REGEN_MULTIPLIER, -3f</Mod_Multiplier>
+            <Mod_Multiplier>ENERGY_REGEN_MULTIPLIER, 1.0f</Mod_Multiplier>
+            <Mod_Multiplier>SPEED_MULTIPLIER, 0.5f</Mod_Multiplier>
+            <Recharge_Seconds>60</Recharge_Seconds>
+            <SFXEvent_GUI_Unit_Ability_Activated></SFXEvent_GUI_Unit_Ability_Activated>
+         </Unit_Ability>
+      </Unit_Abilities_Data>
+      <Required_Star_Base_Level>1</Required_Star_Base_Level>
+  </UniqueUnit>
+
+
+  <!-- Projectiles Genii Kolya -->
+  <Projectile Name="Proj_Genii_Kolya_Flak_Cannon">
+      <Variant_Of_Existing_Type>Proj_Genii_Space_Flak_Cannon</Variant_Of_Existing_Type>
+      <Projectile_Damage>3.0</Projectile_Damage>
+  </Projectile>
+
+  <Projectile Name="Proj_Genii_Kolya_Missile">
+      <Variant_Of_Existing_Type>Proj_Genii_Space_Missile</Variant_Of_Existing_Type>
+      <Projectile_Damage>50.0</Projectile_Damage>
+  </Projectile>
+
+  <Projectile Name="Proj_Genii_Kolya_AFMissile">
+      <Variant_Of_Existing_Type>Proj_Genii_Space_AFMissile</Variant_Of_Existing_Type>
+      <Projectile_Damage>25.0</Projectile_Damage>
+  </Projectile>
+
+  <Projectile Name="Proj_Genii_Kolya_Mass_Driver_Middle">
+      <Variant_Of_Existing_Type>Proj_Genii_Space_Mass_Driver_Middle</Variant_Of_Existing_Type>
+      <Projectile_Damage>6.0</Projectile_Damage>
+  </Projectile>
+
+  <Projectile Name="Proj_Genii_Kolya_Mass_Driver_Heavy">
+      <Variant_Of_Existing_Type>Proj_Genii_Space_Mass_Driver_Heavy</Variant_Of_Existing_Type>
+      <Projectile_Damage>10.0</Projectile_Damage>
+  </Projectile>
+
+</GENII_HERO_KOLYA>

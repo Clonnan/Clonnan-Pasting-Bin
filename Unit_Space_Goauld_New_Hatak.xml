@@ -1,0 +1,110 @@
+<?xml version="1.0"?>
+<SpaceCorvettes>
+
+   <SpaceUnit Name="Corellian_Gunboat_No_Spawn">
+      <Variant_Of_Existing_Type>Template_Space_Unit_Light_Battleship</Variant_Of_Existing_Type>
+      <Text_ID>TEXT_GOAULD_SPACE_UNIT_NEUES_HATAK</Text_ID>
+      <Encyclopedia_Text>TEXT_DESCRIPTION_GOAULD_NEUES_HATAK TEXT_DESCRIPTION_ORBITAL_BOMBARDMENT_UNIT</Encyclopedia_Text>
+      <Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_NEUES_HATAK</Encyclopedia_Unit_Class>
+      <Encyclopedia_Good_Against>Crusader_Gunship Interceptor4_Frigate Tartan_Patrol_Cruiser</Encyclopedia_Good_Against>
+      <Encyclopedia_Vulnerable_To>Vengeance_Frigate Victory_Destroyer Tauri_HB_302</Encyclopedia_Vulnerable_To>
+      <Icon_Name>GOAULD_SPACE_UNIT_HATAK.TGA</Icon_Name>
+      <Radar_Icon_Name>I_RADAR_HATAK.TGA</Radar_Icon_Name>
+      <Radar_Icon_Size>0.065 0.065</Radar_Icon_Size>
+      <Space_Model_Name>Goauld_Space_Unit_Hatak.ALO</Space_Model_Name>
+      <Galactic_Fleet_Override_Model_Name>W_planet_fleet_Hatak.ALO</Galactic_Fleet_Override_Model_Name>
+      <Galactic_Fleet_Override_Icon_Index>4</Galactic_Fleet_Override_Icon_Index>
+      <SpaceBehavior>ABILITY_COUNTDOWN, ASTEROID_FIELD_DAMAGE, DAMAGE_TRACKING, HIDE_WHEN_FOGGED, ION_STUN_EFFECT, NEBULA, REVEAL, SHIELDED, SIMPLE_SPACE_LOCOMOTOR, SPAWN_SQUADRON, TARGETING, UNIT_AI</SpaceBehavior>
+      <Affiliation>Rebel</Affiliation>
+      <Tech_Level>99</Tech_Level>
+      <Select_Box_Scale>375</Select_Box_Scale>
+      <Select_Box_Z_Adjust>-30</Select_Box_Z_Adjust>
+      <Layer_Z_Adjust>-150.0</Layer_Z_Adjust>
+
+      <Tactical_Health>2240</Tactical_Health>
+      <Shield_Points>1400</Shield_Points>
+      <Shield_Refresh_Rate>35</Shield_Refresh_Rate>
+      <Space_FOW_Reveal_Range>1225.0</Space_FOW_Reveal_Range>
+      <Targeting_Max_Attack_Distance>1525.0</Targeting_Max_Attack_Distance>
+      <AI_Combat_Power>2200</AI_Combat_Power>
+
+      <Max_Speed>2.1</Max_Speed>
+      <Max_Rate_Of_Turn>1.2</Max_Rate_Of_Turn>
+      <Max_Rate_Of_Roll>0.2</Max_Rate_Of_Roll>
+      <Bank_Turn_Angle>15</Bank_Turn_Angle>
+      <OverrideAcceleration>.05</OverrideAcceleration>
+      <OverrideDeceleration>.05</OverrideDeceleration>
+      <Max_Thrust>0.8</Max_Thrust>
+
+      <HardPoints>
+         HP_HATAK_F_SBM_00,
+         HP_HATAK_F_SBM_01,
+         HP_HATAK_R_SBM_00,
+         HP_HATAK_R_SBM_01,
+         HP_HATAK_SHIELD,
+         HP_HATAK_ENGINE,
+         HP_HATAK_HANGAR
+      </HardPoints>
+
+      <Population_Value>5</Population_Value>
+      <Death_Clone>Damage_Normal, Corellian_Gunboat_Death_Clone</Death_Clone>
+      <Build_Cost_Credits>2550</Build_Cost_Credits>
+      <Build_Time_Seconds>34</Build_Time_Seconds>
+      <Tactical_Build_Cost_Multiplayer>2550</Tactical_Build_Cost_Multiplayer>
+      <Tactical_Build_Time_Seconds>21</Tactical_Build_Time_Seconds>
+      <Required_Star_Base_Level>1</Required_Star_Base_Level>
+      <Required_Special_Structures>R_Ground_Small_Shipyard</Required_Special_Structures>
+
+      <SFXEvent_Attack>Unit_Attack_Goauld_NewHatak</SFXEvent_Attack>
+      <SFXEvent_Fleet_Move>Unit_Move_Goauld_NewHatak</SFXEvent_Fleet_Move>
+      <SFXEvent_Health_Critical_Warning>Unit_CriticalHP_Goauld_NewHatak</SFXEvent_Health_Critical_Warning>
+      <SFXEvent_Health_Low_Warning>Unit_LOWHP_Goauld_NewHatak</SFXEvent_Health_Low_Warning>
+      <SFXEvent_Move>Unit_Move_Goauld_NewHatak</SFXEvent_Move>
+      <SFXEvent_Select>Unit_Select_Goauld_NewHatak</SFXEvent_Select>
+
+      <SFXEvent_Engine_Idle_Loop>Engine_Goauld_Hatak</SFXEvent_Engine_Idle_Loop>
+      <SFXEvent_Engine_Moving_Loop>Engine_Goauld_Hatak_Idle</SFXEvent_Engine_Moving_Loop>
+      <SFXEvent_Engine_Cinematic_Focus_Loop>Engine_Goauld_Hatak_Cinematic</SFXEvent_Engine_Cinematic_Focus_Loop>
+
+      <Unit_Abilities_Data SubObjectList="Yes">
+         <Unit_Ability>
+            <Type>POWER_TO_WEAPONS</Type>
+            <Alternate_Name_Text>TEXT_ABILITY_GOAULD_SPACE_NEUES_HATAK_STURM</Alternate_Name_Text>
+            <Alternate_Description_Text>TEXT_DESCRIPTION_ABILITY_SPACE_NEUES_HATAK_STURM</Alternate_Description_Text>
+            <Alternate_Icon_Name>i_sa_assault.tga</Alternate_Icon_Name>
+            <Mod_Multiplier>WEAPON_DELAY_MULTIPLIER, 0.3</Mod_Multiplier>
+            <Mod_Multiplier>SPEED_MULTIPLIER, 2.0</Mod_Multiplier>
+            <Mod_Multiplier>CAUSE_DAMAGE_MULTIPLIER , 1.6</Mod_Multiplier>
+            <Recharge_Seconds>50</Recharge_Seconds>
+            <Expiration_Seconds>7</Expiration_Seconds>
+         </Unit_Ability>
+      </Unit_Abilities_Data>
+      <Lua_Script>ObjectScript_HW_Middle</Lua_Script>
+   </SpaceUnit>
+
+
+   <SpaceUnit Name="Corellian_Gunboat_Death_Clone">
+      <Variant_Of_Existing_Type>Template_Space_Deathclone</Variant_Of_Existing_Type>
+      <Affiliation>Rebel</Affiliation>
+      <Space_Model_Name>Goauld_Space_Unit_Hatak_D.alo</Space_Model_Name>
+   </SpaceUnit>
+
+
+   <SpaceUnit Name="Corellian_Gunboat">
+      <Variant_Of_Existing_Type>Corellian_Gunboat_No_Spawn</Variant_Of_Existing_Type>
+      <Tech_Level>2</Tech_Level>
+      <Starting_Spawned_Units_Tech_0>Rebel_X-Wing_Squadron, 1</Starting_Spawned_Units_Tech_0>
+      <Spawned_Squadron_Delay_Seconds>5</Spawned_Squadron_Delay_Seconds>
+      <Reserve_Spawned_Units_Tech_0>Rebel_X-Wing_Squadron, -1</Reserve_Spawned_Units_Tech_0>
+      <Death_Clone>Damage_Normal, Corellian_Gunboat_Death_Clone</Death_Clone>
+   </SpaceUnit>
+
+   <Projectile Name="Proj_Goauld_New_Hatak_Laser_Medium">
+      <Variant_Of_Existing_Type>Proj_Goauld_Space_Laser_Medium</Variant_Of_Existing_Type>
+      <Max_Speed>25.0</Max_Speed>
+      <Projectile_Max_Flight_Distance>1650.0</Projectile_Max_Flight_Distance>
+      <Projectile_Damage>23.0</Projectile_Damage>
+      <AI_Combat_Power>130</AI_Combat_Power>
+   </Projectile>
+
+</SpaceCorvettes>

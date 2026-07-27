@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ReplicatorHeroes>
+
+   <SpaceHero Name="Replicator_Third">
+      <Variant_Of_Existing_Type>Replicator_Cruiser_No_Spawn</Variant_Of_Existing_Type>
+      <Text_ID>TEXT_REPLICATOR_SPACE_HERO_THIRD</Text_ID>
+      <Encyclopedia_Text>TEXT_DESCRIPTION_REPLICATOR_HERO_THIRD</Encyclopedia_Text>
+      <Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_FIRST</Encyclopedia_Unit_Class>
+      <Encyclopedia_Good_Against> Acclamator_Assault_Ship Tartan_Patrol_Cruiser Interceptor4_Frigate </Encyclopedia_Good_Against>
+      <Encyclopedia_Vulnerable_To> TIE_Bomber Skipray_Blastboat</Encyclopedia_Vulnerable_To>
+      <Icon_Name>REPLICATOR_SPACE_HERO_THIRD.TGA</Icon_Name>
+      <Affiliation>Replicator</Affiliation>
+      <Armor_Type>Armor_Replicator</Armor_Type>	  	  
+      <SpaceBehavior>SIMPLE_SPACE_LOCOMOTOR, ASTEROID_FIELD_DAMAGE, DAMAGE_TRACKING, HIDE_WHEN_FOGGED, ION_STUN_EFFECT, NEBULA, POWERED, REVEAL, SHIELDED, SELECTABLE, SPAWN_SQUADRON, TARGETING, UNIT_AI</SpaceBehavior>
+      <HardPoints>
+         HP_Replicator_Third_M_IBM_00,
+         HP_Replicator_Third_M_IBM_01,
+         HP_Replicator_Third_M_IBM_02,
+         HP_Replicator_Third_M_IBM_03,
+         HP_Replicator_Cruiser_Shield_Generator,
+         HP_Replicator_Cruiser_Engines
+      </HardPoints>	  
+	  <CategoryMask>Capital | SpaceHero | AntiCapital</CategoryMask>
+      <AI_Combat_Power>5500</AI_Combat_Power>
+      <Shield_Armor_Type>Armor_Hero_MediumBS</Shield_Armor_Type>
+      <Ranking_In_Category>7</Ranking_In_Category>
+	  <Is_Named_Hero>No</Is_Named_Hero>
+      <Is_Generic_Hero>Yes</Is_Generic_Hero>
+      <Show_Hero_Head>Yes</Show_Hero_Head>
+      <Select_Box_Scale>300</Select_Box_Scale>
+      <Select_Box_Z_Adjust>-250</Select_Box_Z_Adjust>
+      <Max_Speed>2.5</Max_Speed>
+      <Max_Rate_Of_Turn>1.2</Max_Rate_Of_Turn>
+      <Max_Rate_Of_Roll>0.2</Max_Rate_Of_Roll>
+      <Bank_Turn_Angle>15</Bank_Turn_Angle>
+      <Max_Thrust>0.8</Max_Thrust>
+      <Hyperspace_Speed>1</Hyperspace_Speed>
+      <Tactical_Health>3300</Tactical_Health>
+      <Shield_Points>1500</Shield_Points>
+      <Shield_Refresh_Rate>15</Shield_Refresh_Rate>
+	  <Build_Limit_Current_Per_Player>1</Build_Limit_Current_Per_Player>	 
+      <Tech_Level>99</Tech_Level> 	 	  
+      <Death_Clone>Damage_Normal, Replicator_Third_Death_Clone</Death_Clone>  	  
+  </SpaceHero>
+
+
+   <SpaceUnit Name="Replicator_Third_Death_Clone">
+      <Variant_Of_Existing_Type>Template_Space_Deathclone</Variant_Of_Existing_Type>
+      <Affiliation>Replicator</Affiliation>
+      <Space_Model_Name>Replicator_Space_Unit_Cruiser_D.alo</Space_Model_Name>
+   </SpaceUnit>
+
+  <!-- Projectiles Replicator Third -->
+   <Projectile Name="Proj_Replicator_Third_Laser_Beam">
+    <Variant_Of_Existing_Type>Proj_Asuran_Satellite_Beam</Variant_Of_Existing_Type>
+    <Space_Model_Name>Asuran_Projectile_Satellite_Laser.ALO</Space_Model_Name>
+    <Projectile_Does_Hitpoint_Damage>Yes</Projectile_Does_Hitpoint_Damage>
+    <Max_Speed>25.0</Max_Speed>		
+    <Projectile_Damage>40.0</Projectile_Damage>
+    <Projectile_Max_Flight_Distance>1500.0</Projectile_Max_Flight_Distance>
+    <Projectile_Object_Detonation_Particle>Particle_Asuran_Satellite_laser_Hit</Projectile_Object_Detonation_Particle>
+    <Projectile_Ground_Detonation_Particle>Particle_Asuran_Satellite_laser_Hit</Projectile_Ground_Detonation_Particle>
+    <Projectile_Lifetime_Detonation_Particle>Particle_Asuran_Satellite_laser_Hit</Projectile_Lifetime_Detonation_Particle>
+    <Projectile_Absorbed_By_Shields_Particle>Particle_Asuran_Satellite_Laser_Shield_Absorb</Projectile_Absorbed_By_Shields_Particle>
+    <Damage_Type>Damage_Cruiser</Damage_Type>
+   </Projectile>
+
+</ReplicatorHeroes>

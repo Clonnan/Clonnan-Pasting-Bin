@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+
+<Aschen>
+<!--No new unit needed since Aschen units already require skirmish balancing-->
+ <SpaceUnit Name="Goauld_Aschen_Cruiser_SK">
+    <Variant_Of_Existing_Type>Aschen_Cruiser</Variant_Of_Existing_Type>
+    <Text_ID>TEXT_SUPERGATE_UNIT_CAPTURED_ASCHEN_CRUISER</Text_ID>
+    <Encyclopedia_Text>TEXT_DESCRIPTION_SUPERGATE_UNIT_CAPTURED_ASCHEN_CRUISER</Encyclopedia_Text>
+    <Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_ASCHEN_KREUZER</Encyclopedia_Unit_Class>
+    <Affiliation>Rebel</Affiliation>
+	<Tech_Level>99</Tech_Level>
+	
+	<Build_Limit_Current_Per_Player>4</Build_Limit_Current_Per_Player>
+    <Build_Limit_Lifetime_Per_Player>-1</Build_Limit_Lifetime_Per_Player>
+	
+	<Lua_Script>ObjectScript_HW_Middle</Lua_Script>
+  </SpaceUnit>
+</Aschen>

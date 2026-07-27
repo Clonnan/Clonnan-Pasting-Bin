@@ -1,0 +1,93 @@
+<?xml version="1.0"?>
+<UniqueUnits>
+  <SpaceUnit Name="Goauld_Hero_Adria">
+    <Variant_Of_Existing_Type>Ori_Mothership_No_Spawn</Variant_Of_Existing_Type>
+    <Text_ID>TEXT_ORI_SPACE_HERO_ADRIA</Text_ID>
+    <Encyclopedia_Text> TEXT_DESCRIPTION_GOAULD_ADRIA_SPACE </Encyclopedia_Text>
+    <Encyclopedia_Unit_Class> TEXT_ENCYCLOPEDIA_CLASS_ADRIA_KRIEGSSCHIFF </Encyclopedia_Unit_Class>
+    <Is_Named_Hero>Yes</Is_Named_Hero>
+    <Icon_Name>ORI_SPACE_HERO_ADRIA.TGA</Icon_Name>
+    <Tech_Level>99</Tech_Level>
+    <Armor_Type>Armor_Hero_HeavyBS</Armor_Type>
+    <Shield_Armor_Type>Armor_Hero_HeavyBS</Shield_Armor_Type>
+    <Shield_Points>12000</Shield_Points>
+    <Shield_Refresh_Rate>200</Shield_Refresh_Rate>
+    <Affiliation>Rebel</Affiliation>
+    <Squadron_Capacity>50</Squadron_Capacity>
+    <!--Starting_Spawned_Units_Tech_0>Ori_Fighter_Squadron, 2</Starting_Spawned_Units_Tech_0>
+    <Spawned_Squadron_Delay_Seconds>6</Spawned_Squadron_Delay_Seconds>
+    <Reserve_Spawned_Units_Tech_0>Ori_Fighter_Squadron, 2</Reserve_Spawned_Units_Tech_0-->
+    <SFXEvent_Select>Unit_Select_Adria</SFXEvent_Select>
+    <SFXEvent_Move>Unit_Move_Adria</SFXEvent_Move>
+    <SFXEvent_Fleet_Move>Unit_Fleet_Move_Adria</SFXEvent_Fleet_Move>
+    <SFXEvent_Attack>Unit_Attack_Adria</SFXEvent_Attack>
+    <SFXEvent_Guard/>
+    <SFXEvent_Bombard_Select_Target></SFXEvent_Bombard_Select_Target>
+    <SFXEvent_Bombard_Incoming></SFXEvent_Bombard_Incoming>
+    <SFXEvent_Engine_Idle_Loop> Unit_Calamari_Idle_Engine_Loop </SFXEvent_Engine_Idle_Loop>
+    <SFXEvent_Engine_Moving_Loop> Unit_Calamari_Moving_Engine_Loop </SFXEvent_Engine_Moving_Loop>
+    <SFXEvent_Engine_Cinematic_Focus_Loop> Unit_Calamari_Cinematic_Engine_Loop </SFXEvent_Engine_Cinematic_Focus_Loop>
+    <SFXEvent_Build_Started></SFXEvent_Build_Started>
+    <SFXEvent_Build_Cancelled></SFXEvent_Build_Cancelled>
+    <SFXEvent_Build_Complete>Unit_Select_Adria</SFXEvent_Build_Complete>
+    <Death_SFXEvent_Start_Die>Explosion_Frigate</Death_SFXEvent_Start_Die>
+    <Population_Value>15</Population_Value>
+    <Can_Be_Neutralized_By_Major_Heroes>No</Can_Be_Neutralized_By_Major_Heroes>
+    <Can_Be_Neutralized_By_Minor_Heroes>No</Can_Be_Neutralized_By_Minor_Heroes>
+    <Is_Named_Hero>Yes</Is_Named_Hero>
+    <Visible_On_Radar_When_Fogged>true</Visible_On_Radar_When_Fogged>
+    <CategoryMask> Capital | SpaceHero | AntiFrigate </CategoryMask>
+    <Unit_Abilities_Data SubObjectList="Yes">
+      <Unit_Ability>
+        <Type>BLAST</Type>
+        <Recharge_Seconds>3.0</Recharge_Seconds>
+        <GUI_Activated_Ability_Name> Goauld_Adria_Blast </GUI_Activated_Ability_Name>
+        <SFXEvent_GUI_Unit_Ability_Activated/>
+        <Targeting_Max_Attack_Distance>2200.0</Targeting_Max_Attack_Distance>
+        <Alternate_Name_Text>TEXT_ABILITY_ORI_SPACE_KRIEGSSCHIFF_SUPERLASER</Alternate_Name_Text>
+        <Alternate_Description_Text>TEXT_DESCRIPTION_ABILITY_SPACE_ORI_KRIEGSSCHIFF_SUPERLASER</Alternate_Description_Text>
+        <Alternate_Icon_Name>I_SA_ION_CANNON_SHOT.TGA</Alternate_Icon_Name>
+      </Unit_Ability>
+      <Unit_Ability>
+        <Type>DEFEND</Type>
+        <Expiration_Seconds>15</Expiration_Seconds>
+        <Mod_Multiplier>WEAPON_DELAY_MULTIPLIER,	3.0f</Mod_Multiplier>
+        <Mod_Multiplier>SHIELD_REGEN_MULTIPLIER,	1.0f</Mod_Multiplier>
+        <Mod_Multiplier>SHIELD_REGEN_INTERVAL_MULTIPLIER,	0.10f</Mod_Multiplier>
+        <Mod_Multiplier>ENERGY_REGEN_INTERVAL_MULTIPLIER,	0.10f</Mod_Multiplier>
+        <Mod_Multiplier>ENERGY_REGEN_MULTIPLIER,	5.0f</Mod_Multiplier>
+        <Mod_Multiplier>SPEED_MULTIPLIER,			0.8f</Mod_Multiplier>
+        <Recharge_Seconds>45</Recharge_Seconds>
+        <Expiration_Seconds>15</Expiration_Seconds>
+        <SFXEvent_GUI_Unit_Ability_Activated></SFXEvent_GUI_Unit_Ability_Activated>
+        <SFXEvent_GUI_Unit_Ability_Deactivated/>
+        <Supports_Autofire>True</Supports_Autofire>
+        <Alternate_Name_Text>TEXT_ABILITY_ORI_SPACE_ADRIAS_KRIEGSSCHIFF_SCHILDBOOST</Alternate_Name_Text>
+        <Alternate_Description_Text>TEXT_DESCRIPTION_ABILITY_SPACE_ADRIAS_KRIEGSSCHIFF_SCHILDBOOST</Alternate_Description_Text>
+      </Unit_Ability>    
+    </Unit_Abilities_Data>   
+    <Abilities SubObjectList="Yes">
+      <Combat_Bonus_Ability Name="Goauld_Adria_Combat_Bonus_GC">
+				<Activation_Style>Space_Automatic</Activation_Style>
+				<Applicable_Unit_Types>Goauld_Hero_Adria</Applicable_Unit_Types>
+				<Health_Bonus_Percentage>0.1</Health_Bonus_Percentage>
+				<Damage_Bonus_Percentage>0.5</Damage_Bonus_Percentage>
+				<Energy_Pool_Bonus_Percentage>0.0</Energy_Pool_Bonus_Percentage>
+				<Shield_Bonus_Percentage>0.4</Shield_Bonus_Percentage>
+				<Defense_Bonus_Percentage>0.0</Defense_Bonus_Percentage>
+				<Movement_Speed_Bonus_Percentage>0.0</Movement_Speed_Bonus_Percentage>
+				<Stacking_Category>1</Stacking_Category>
+			</Combat_Bonus_Ability>      
+      <Blast_Ability Name="Goauld_Adria_Blast">
+        <Activation_Style> User_Input </Activation_Style>
+        <Charge_Up_Seconds>1</Charge_Up_Seconds>
+        <Damage_Multiplier>1</Damage_Multiplier>
+        <Charging_Effect />
+        <Charged_Effect />
+        <SFXEvent_Activate/>
+      </Blast_Ability>
+    </Abilities>   
+    <Lua_Script>ObjectScript_Adria</Lua_Script>
+  </SpaceUnit>
+
+</UniqueUnits>

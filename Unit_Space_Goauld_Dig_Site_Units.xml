@@ -1,0 +1,258 @@
+<?xml version="1.0"?>
+<Dig_Site_Units>
+
+  <!-- Information Ra_Hatak_Dig -->
+  <SpaceUnit Name="Ra_Hatak_Dig">
+    <Variant_Of_Existing_Type>Corellian_Gunboat</Variant_Of_Existing_Type>
+    <Tech_Level>99</Tech_Level>
+    <Affiliation>Rebel</Affiliation>
+    <Text_ID>TEXT_GOAULD_SPACE_UNIT_RA_HATAK_DIG</Text_ID>
+    <Encyclopedia_Text>TEXT_DESCRIPTION_GOAULD_RA_HATAK_DIG</Encyclopedia_Text>
+    <HardPoints>
+      HP_HATAK_F_SBM_00,
+      HP_HATAK_F_SBM_01,
+      HP_HATAK_R_SBM_00,
+      HP_HATAK_R_SBM_01,
+      HP_HATAK_R_SBM_02,
+      HP_HATAK_R_SBM_03,
+      HP_HATAK_SHIELD,
+      HP_HATAK_ENGINE,
+      HP_HATAK_HANGAR,
+    Emblem_New_Hatak_Ra
+    </HardPoints>
+
+    <SFXEvent_Attack>Unit_Attack_GFC</SFXEvent_Attack>
+    <SFXEvent_Fleet_Move>Unit_Move_GFC</SFXEvent_Fleet_Move>
+    <SFXEvent_Guard></SFXEvent_Guard>
+    <SFXEvent_Health_Critical_Warning></SFXEvent_Health_Critical_Warning>
+    <SFXEvent_Health_Low_Warning></SFXEvent_Health_Low_Warning>
+    <SFXEvent_Move>Unit_Move_GFC</SFXEvent_Move>
+    <SFXEvent_Move_Into_Asteroid_Field></SFXEvent_Move_Into_Asteroid_Field>
+    <SFXEvent_Move_Into_Nebula></SFXEvent_Move_Into_Nebula>
+    <SFXEvent_Select>Unit_Select_GFC</SFXEvent_Select>
+    <SFXEvent_Stop></SFXEvent_Stop>	
+
+    <Starting_Spawned_Units_Tech_0>Rebel_X-Wing_Squadron, 1</Starting_Spawned_Units_Tech_0>
+    <Spawned_Squadron_Delay_Seconds>5</Spawned_Squadron_Delay_Seconds>
+    <Reserve_Spawned_Units_Tech_0>Rebel_X-Wing_Squadron, -1</Reserve_Spawned_Units_Tech_0>
+    <Death_Clone>Damage_Normal, Corellian_Gunboat_Death_Clone</Death_Clone>
+    <Unit_Abilities_Data SubObjectList="Yes">
+      <Unit_Ability>	
+        <Type>FULL_SALVO</Type>
+        <Recharge_Seconds>45</Recharge_Seconds>
+        <Expiration_Seconds>7</Expiration_Seconds>
+        <SFXEvent_GUI_Unit_Ability_Activated></SFXEvent_GUI_Unit_Ability_Activated>
+        <GUI_Activated_Ability_Name>Interceptor_Full_Salvo</GUI_Activated_Ability_Name>
+        <Must_Be_Bought_On_Black_Market>No</Must_Be_Bought_On_Black_Market>
+        <Alternate_Name_Text>TEXT_ABILITY_GOAULD_SPACE_ANUBIS_HATAK_VOLLE_SALVE</Alternate_Name_Text>
+        <Alternate_Description_Text>TEXT_DESCRIPTION_ABILITY_SPACE_DIG_HATAK_VOLLE_SALVE</Alternate_Description_Text>
+        <Alternate_Icon_Name>I_SA_STAFF_WEAPON.TGA</Alternate_Icon_Name>
+      </Unit_Ability>
+    </Unit_Abilities_Data>
+    <Lua_Script>ObjectScript_HW_Middle</Lua_Script>	
+  </SpaceUnit>	
+
+  <!-- Information Baal_Hatak_Dig -->
+  <SpaceUnit Name="Baal_Hatak_Dig">
+    <Variant_Of_Existing_Type>Corellian_Gunboat</Variant_Of_Existing_Type>
+    <Tech_Level>99</Tech_Level>
+    <Affiliation>Rebel</Affiliation>
+    <Text_ID>TEXT_GOAULD_SPACE_UNIT_BAAL_HATAK_DIG</Text_ID>
+    <Encyclopedia_Text>TEXT_DESCRIPTION_GOAULD_BAAL_HATAK_DIG</Encyclopedia_Text>
+    <HardPoints>
+      HP_HATAK_F_SBM_00,
+      HP_HATAK_F_SBM_01,
+      HP_HATAK_R_SBM_00,
+      HP_HATAK_R_SBM_01,
+      HP_HATAK_R_SBM_02,
+      HP_HATAK_R_SBM_03,
+      HP_HATAK_SHIELD,
+      HP_HATAK_ENGINE,
+      HP_HATAK_HANGAR,
+    Emblem_New_Hatak_Baal
+    </HardPoints>
+
+    <SFXEvent_Attack>Unit_Attack_GFC</SFXEvent_Attack>
+    <SFXEvent_Fleet_Move>Unit_Move_GFC</SFXEvent_Fleet_Move>
+    <SFXEvent_Guard></SFXEvent_Guard>
+    <SFXEvent_Health_Critical_Warning></SFXEvent_Health_Critical_Warning>
+    <SFXEvent_Health_Low_Warning></SFXEvent_Health_Low_Warning>
+    <SFXEvent_Move>Unit_Move_GFC</SFXEvent_Move>
+    <SFXEvent_Move_Into_Asteroid_Field></SFXEvent_Move_Into_Asteroid_Field>
+    <SFXEvent_Move_Into_Nebula></SFXEvent_Move_Into_Nebula>
+    <SFXEvent_Select>Unit_Select_GFC</SFXEvent_Select>
+    <SFXEvent_Stop></SFXEvent_Stop>	
+
+    <Starting_Spawned_Units_Tech_0>Rebel_X-Wing_Squadron, 1</Starting_Spawned_Units_Tech_0>
+    <Spawned_Squadron_Delay_Seconds>5</Spawned_Squadron_Delay_Seconds>
+    <Reserve_Spawned_Units_Tech_0>Rebel_X-Wing_Squadron, -1</Reserve_Spawned_Units_Tech_0>
+    <Death_Clone>Damage_Normal, Corellian_Gunboat_Death_Clone</Death_Clone>
+    <Unit_Abilities_Data SubObjectList="Yes">
+      <Unit_Ability>	
+        <Type>FULL_SALVO</Type>
+        <Recharge_Seconds>45</Recharge_Seconds>
+        <Expiration_Seconds>7</Expiration_Seconds>
+        <SFXEvent_GUI_Unit_Ability_Activated></SFXEvent_GUI_Unit_Ability_Activated>
+        <GUI_Activated_Ability_Name>Interceptor_Full_Salvo</GUI_Activated_Ability_Name>
+        <Must_Be_Bought_On_Black_Market>No</Must_Be_Bought_On_Black_Market>
+        <Alternate_Name_Text>TEXT_ABILITY_GOAULD_SPACE_ANUBIS_HATAK_VOLLE_SALVE</Alternate_Name_Text>
+        <Alternate_Description_Text>TEXT_DESCRIPTION_ABILITY_SPACE_DIG_HATAK_VOLLE_SALVE</Alternate_Description_Text>
+        <Alternate_Icon_Name>I_SA_STAFF_WEAPON.TGA</Alternate_Icon_Name>
+      </Unit_Ability>
+    </Unit_Abilities_Data>
+    <Lua_Script>ObjectScript_HW_Middle</Lua_Script>	
+  </SpaceUnit>	
+
+  <!-- Information Heruur_Hatak_Dig -->
+  <SpaceUnit Name="Heruur_Hatak_Dig">
+    <Variant_Of_Existing_Type>Corellian_Gunboat</Variant_Of_Existing_Type>
+    <Tech_Level>99</Tech_Level>
+    <Affiliation>Rebel</Affiliation>
+    <Text_ID>TEXT_GOAULD_SPACE_UNIT_HERUUR_HATAK_DIG</Text_ID>
+    <Encyclopedia_Text>TEXT_DESCRIPTION_GOAULD_HERUUR_HATAK_DIG</Encyclopedia_Text>
+    <HardPoints>
+      HP_HATAK_F_SBM_00,
+      HP_HATAK_F_SBM_01,
+      HP_HATAK_R_SBM_00,
+      HP_HATAK_R_SBM_01,
+      HP_HATAK_R_SBM_02,
+      HP_HATAK_R_SBM_03,
+      HP_HATAK_SHIELD,
+      HP_HATAK_ENGINE,
+      HP_HATAK_HANGAR,
+    Emblem_New_Hatak_Heruur
+    </HardPoints>
+
+    <SFXEvent_Attack>Unit_Attack_GFC</SFXEvent_Attack>
+    <SFXEvent_Fleet_Move>Unit_Move_GFC</SFXEvent_Fleet_Move>
+    <SFXEvent_Guard></SFXEvent_Guard>
+    <SFXEvent_Health_Critical_Warning></SFXEvent_Health_Critical_Warning>
+    <SFXEvent_Health_Low_Warning></SFXEvent_Health_Low_Warning>
+    <SFXEvent_Move>Unit_Move_GFC</SFXEvent_Move>
+    <SFXEvent_Move_Into_Asteroid_Field></SFXEvent_Move_Into_Asteroid_Field>
+    <SFXEvent_Move_Into_Nebula></SFXEvent_Move_Into_Nebula>
+    <SFXEvent_Select>Unit_Select_GFC</SFXEvent_Select>
+    <SFXEvent_Stop></SFXEvent_Stop>	
+
+    <Starting_Spawned_Units_Tech_0>Rebel_X-Wing_Squadron, 1</Starting_Spawned_Units_Tech_0>
+    <Spawned_Squadron_Delay_Seconds>5</Spawned_Squadron_Delay_Seconds>
+    <Reserve_Spawned_Units_Tech_0>Rebel_X-Wing_Squadron, -1</Reserve_Spawned_Units_Tech_0>
+    <Death_Clone>Damage_Normal, Corellian_Gunboat_Death_Clone</Death_Clone>
+    <Unit_Abilities_Data SubObjectList="Yes">
+      <Unit_Ability>	
+        <Type>FULL_SALVO</Type>
+        <Recharge_Seconds>45</Recharge_Seconds>
+        <Expiration_Seconds>7</Expiration_Seconds>
+        <SFXEvent_GUI_Unit_Ability_Activated></SFXEvent_GUI_Unit_Ability_Activated>
+        <GUI_Activated_Ability_Name>Interceptor_Full_Salvo</GUI_Activated_Ability_Name>
+        <Must_Be_Bought_On_Black_Market>No</Must_Be_Bought_On_Black_Market>
+        <Alternate_Name_Text>TEXT_ABILITY_GOAULD_SPACE_ANUBIS_HATAK_VOLLE_SALVE</Alternate_Name_Text>
+        <Alternate_Description_Text>TEXT_DESCRIPTION_ABILITY_SPACE_DIG_HATAK_VOLLE_SALVE</Alternate_Description_Text>
+        <Alternate_Icon_Name>I_SA_STAFF_WEAPON.TGA</Alternate_Icon_Name>
+      </Unit_Ability>
+    </Unit_Abilities_Data>
+    <Lua_Script>ObjectScript_HW_Middle</Lua_Script>	
+  </SpaceUnit>	
+
+  <!-- Information Yu_Hatak_Dig -->
+  <SpaceUnit Name="Yu_Hatak_Dig">
+    <Variant_Of_Existing_Type>Corellian_Gunboat</Variant_Of_Existing_Type>
+    <Tech_Level>99</Tech_Level>
+    <Affiliation>Rebel</Affiliation>
+    <Text_ID>TEXT_GOAULD_SPACE_UNIT_YU_HATAK_DIG</Text_ID>
+    <Encyclopedia_Text>TEXT_DESCRIPTION_GOAULD_YU_HATAK_DIG</Encyclopedia_Text>
+    <Radar_Icon_Name>I_RADAR_HATAK_OUTDATED.TGA</Radar_Icon_Name>	
+    <Space_Model_Name>Goauld_Space_Hero_Yu.ALO</Space_Model_Name>	
+    <Scale_Factor>0.8</Scale_Factor>	
+    <HardPoints>
+      HP_HATAK_F_SBM_00,
+      HP_HATAK_F_SBM_01,
+      HP_HATAK_R_SBM_00,
+      HP_HATAK_R_SBM_01,
+      HP_HATAK_R_SBM_02,
+      HP_HATAK_R_SBM_03,
+      HP_HATAK_SHIELD,
+      HP_HATAK_ENGINE,
+      HP_HATAK_HANGAR,
+    Emblem_New_Hatak_Yu
+    </HardPoints>
+
+    <SFXEvent_Attack>Unit_Attack_GFC</SFXEvent_Attack>
+    <SFXEvent_Fleet_Move>Unit_Move_GFC</SFXEvent_Fleet_Move>
+    <SFXEvent_Guard></SFXEvent_Guard>
+    <SFXEvent_Health_Critical_Warning></SFXEvent_Health_Critical_Warning>
+    <SFXEvent_Health_Low_Warning></SFXEvent_Health_Low_Warning>
+    <SFXEvent_Move>Unit_Move_GFC</SFXEvent_Move>
+    <SFXEvent_Move_Into_Asteroid_Field></SFXEvent_Move_Into_Asteroid_Field>
+    <SFXEvent_Move_Into_Nebula></SFXEvent_Move_Into_Nebula>
+    <SFXEvent_Select>Unit_Select_GFC</SFXEvent_Select>
+    <SFXEvent_Stop></SFXEvent_Stop>	
+
+    <Starting_Spawned_Units_Tech_0>Rebel_X-Wing_Squadron, 1</Starting_Spawned_Units_Tech_0>
+    <Spawned_Squadron_Delay_Seconds>5</Spawned_Squadron_Delay_Seconds>
+    <Reserve_Spawned_Units_Tech_0>Rebel_X-Wing_Squadron, -1</Reserve_Spawned_Units_Tech_0>
+    <Death_Clone>Damage_Normal, Systemlord_Alliance_Hero_Lord_Yu_Death_Clone</Death_Clone>
+    <Unit_Abilities_Data SubObjectList="Yes">
+      <Unit_Ability>       
+	   <Type>FULL_SALVO</Type>
+        <Recharge_Seconds>45</Recharge_Seconds>
+        <Expiration_Seconds>7</Expiration_Seconds>
+        <SFXEvent_GUI_Unit_Ability_Activated></SFXEvent_GUI_Unit_Ability_Activated>
+        <GUI_Activated_Ability_Name>Interceptor_Full_Salvo</GUI_Activated_Ability_Name>
+        <Must_Be_Bought_On_Black_Market>No</Must_Be_Bought_On_Black_Market>
+        <Alternate_Name_Text>TEXT_ABILITY_GOAULD_SPACE_ANUBIS_HATAK_VOLLE_SALVE</Alternate_Name_Text>
+        <Alternate_Description_Text>TEXT_DESCRIPTION_ABILITY_SPACE_DIG_HATAK_VOLLE_SALVE</Alternate_Description_Text>
+        <Alternate_Icon_Name>I_SA_STAFF_WEAPON.TGA</Alternate_Icon_Name>
+      </Unit_Ability>
+    </Unit_Abilities_Data>
+    <Lua_Script>ObjectScript_HW_Middle</Lua_Script>	
+  </SpaceUnit>	
+
+  <!-- Information Ra's Ship -->
+  <SpaceUnit Name="Goauld_Ra_Ship_Dig">
+    <Variant_Of_Existing_Type>Template_Space_Unit_Medium_Battleship</Variant_Of_Existing_Type>
+    <Text_ID>TEXT_GOAULD_SPACE_UNIT_RAS_SHIP_DIG</Text_ID>
+    <Encyclopedia_Text>TEXT_DESCRIPTION_GOAULD_RAS_SHIP_DIG</Encyclopedia_Text>
+    <Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_SOKAR_SYSTEMFLAGGSCHIFF</Encyclopedia_Unit_Class>
+    <Icon_Name>GOAULD_SPACE_UNIT_PYRAMIDSHIP_RA.TGA</Icon_Name>
+    <Encyclopedia_Good_Against> Victory_Destroyer Acclamator_Assault_Ship Interceptor4_Frigate </Encyclopedia_Good_Against>
+    <Encyclopedia_Vulnerable_To> TIE_Bomber Skipray_Blastboat </Encyclopedia_Vulnerable_To>
+    <Space_Model_Name>Goauld_Space_Hero_Ra.ALO</Space_Model_Name>
+    <Space_Layer> Corvette </Space_Layer>
+    <Scale_Factor>0.6</Scale_Factor>	
+    <Layer_Z_Adjust>-20.0</Layer_Z_Adjust>
+    <Affiliation>Rebel</Affiliation>
+    <Tech_Level>99</Tech_Level>
+    <Tactical_Build_Cost_Multiplayer>6000</Tactical_Build_Cost_Multiplayer>
+    <Shield_Points>2000</Shield_Points>
+    <Shield_Refresh_Rate>20</Shield_Refresh_Rate>
+    <Energy_Capacity>90000</Energy_Capacity>
+    <Energy_Refresh_Rate>1000</Energy_Refresh_Rate>
+    <Required_Star_Base_Level>1</Required_Star_Base_Level>
+    <Death_Clone>Damage_Normal, Corellian_Corvette_Death_Clone</Death_Clone>
+    <Starting_Spawned_Units_Tech_0>Rebel_X-Wing_Squadron, 1</Starting_Spawned_Units_Tech_0>
+    <Spawned_Squadron_Delay_Seconds>5</Spawned_Squadron_Delay_Seconds>
+    <Reserve_Spawned_Units_Tech_0>Rebel_X-Wing_Squadron, -1</Reserve_Spawned_Units_Tech_0>
+
+    <HardPoints>
+      HP_RA_R_SBS,
+      HP_RA_F_SBS,
+      HP_RA_M_SBS_00,
+      HP_RA_M_SBS_01,
+      HP_RA_M_SBS_02,
+      HP_RA_M_SBS_03,
+      HP_RA_SHIELD,
+      HP_RA_ENGINE,
+      HP_RA_HANGAR
+    </HardPoints>
+
+    <SFXEvent_Attack>Unit_Attack_Goauld_Pyramid</SFXEvent_Attack>
+    <SFXEvent_Fleet_Move>Unit_Move_Goauld_Pyramid</SFXEvent_Fleet_Move>
+    <SFXEvent_Health_Low_Warning>Unit_LOWHP_Goauld_Pyramid</SFXEvent_Health_Low_Warning>
+    <SFXEvent_Move>Unit_Move_Goauld_Pyramid</SFXEvent_Move>
+    <SFXEvent_Select>Unit_Select_Goauld_Pyramid</SFXEvent_Select>
+
+    <Lua_Script>ObjectScript_HW_Middle</Lua_Script>	
+  </SpaceUnit>
+  
+</Dig_Site_Units>

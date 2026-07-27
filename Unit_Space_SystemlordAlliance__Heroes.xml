@@ -1,0 +1,706 @@
+<?xml version="1.0"?>
+<Systemlord_Heroes>
+
+  <!-- Information SLA (Systemlords Alliance) Hero Apophis -->
+  <SpaceUnit Name="Systemlord_Alliance_Hero_Apophis">
+    <Variant_Of_Existing_Type>Goauld_Hero_Apophis_No_Spawn</Variant_Of_Existing_Type>
+    <Encyclopedia_Text> TEXT_DESCRIPTION_SYSTEMLORDS_GC_APOPHIS_SPACE </Encyclopedia_Text>
+    <Icon_Name>SYSTEMLORDS_SPACE_HERO_APOPHIS.TGA</Icon_Name>
+    <Behavior>DUMMY_STARSHIP, SELECTABLE</Behavior>
+    <Affiliation>Systemlord_Alliance</Affiliation>
+    <Tech_Level>99</Tech_Level>
+    <Is_Named_Hero>No</Is_Named_Hero>
+    <Is_Generic_Hero>Yes</Is_Generic_Hero>
+    <Can_Be_Neutralized_By_Major_Heroes>No</Can_Be_Neutralized_By_Major_Heroes>
+    <Can_Be_Neutralized_By_Minor_Heroes>No</Can_Be_Neutralized_By_Minor_Heroes>
+    <Show_Hero_Head>Yes</Show_Hero_Head>
+    <Neutralization_Cost>2000.0</Neutralization_Cost>
+    <Required_Star_Base_Level>1</Required_Star_Base_Level>
+    <Death_Clone>Damage_Normal, Systemlord_Alliance_Hero_Apophis_Death_Clone</Death_Clone>
+    <Starting_Spawned_Units_Tech_0>Dummy_Combat_Bonus_Systemlord_Alliance_Hero, 1</Starting_Spawned_Units_Tech_0>
+    <Starting_Spawned_Units_Tech_0>Systemlord_Alliance_Death_Glider_Squadron, 1</Starting_Spawned_Units_Tech_0>
+    <Reserve_Spawned_Units_Tech_0>Systemlord_Alliance_Death_Glider_Squadron, -1</Reserve_Spawned_Units_Tech_0>
+    <Starting_Spawned_Units_Tech_0>Systemlord_Alliance_Teltak_Squadron, 1</Starting_Spawned_Units_Tech_0>
+    <Reserve_Spawned_Units_Tech_0>Systemlord_Alliance_Teltak_Squadron, -1</Reserve_Spawned_Units_Tech_0>
+    <Spawned_Squadron_Delay_Seconds>5</Spawned_Squadron_Delay_Seconds>
+    <!--<Lua_Script>ObjectScript_Syslord_Space_Body_Guard_Hataks</Lua_Script>-->
+    <Abilities SubObjectList="Yes">
+      <Stealth_Ability Name="Stealth_Goauld_Hero_Apophis">
+        <Activation_Style> User_Input </Activation_Style>
+        <Stealth_Color>255, 255, 255, 255</Stealth_Color>
+        <Stealth_Transition_Time>.3</Stealth_Transition_Time>
+        <SFXEvent_Activate></SFXEvent_Activate>
+        <Must_Be_Bought_On_Black_Market>No</Must_Be_Bought_On_Black_Market>
+      </Stealth_Ability>
+    </Abilities>
+  </SpaceUnit>
+
+  <SpaceUnit Name="Systemlord_Alliance_Hero_Apophis_Death_Clone">
+    <Variant_Of_Existing_Type>Systemlord_Alliance_System_Flagship_Death_Clone</Variant_Of_Existing_Type>
+    <Space_Model_Name>Goauld_Space_Hero_Apophis_D.ALO</Space_Model_Name>
+    <Affiliation>Systemlord_Alliance</Affiliation>
+  </SpaceUnit>
+
+  <SpaceUnit Name="Goauld_Hero_Apophis_2_SK">
+    <Variant_Of_Existing_Type>Systemlord_Alliance_Hero_Apophis</Variant_Of_Existing_Type>
+    <Tactical_Build_Prerequisites> General_Tech_3_Prereq </Tactical_Build_Prerequisites>
+    <Affiliation>Rebel</Affiliation>
+    <Build_Limit_Current_For_All_Allies>-1</Build_Limit_Current_For_All_Allies>
+    <Build_Limit_Lifetime_For_All_Allies>-1</Build_Limit_Lifetime_For_All_Allies>
+    <Build_Limit_Lifetime_Per_Player>-1</Build_Limit_Lifetime_Per_Player>
+    <Build_Limit_Current_Per_Player>1</Build_Limit_Current_Per_Player>
+    <Lua_Script>ObjectScript_HW_Big</Lua_Script>
+    <Population_Value>6</Population_Value>
+    <Tech_Level>99</Tech_Level>
+  </SpaceUnit>
+
+  <!-- Information SLA (Systemlords Alliance) Hero Baal -->
+  <SpaceUnit Name="Systemlord_Alliance_Hero_Baal">
+    <Variant_Of_Existing_Type>Goauld_Hero_Baal_No_Spawn</Variant_Of_Existing_Type>
+    <Encyclopedia_Text> TEXT_DESCRIPTION_SYSTEMLORDS_GC_BAAL_SPACE </Encyclopedia_Text>
+    <Affiliation>Systemlord_Alliance</Affiliation>
+    <Space_Model_Name>Systemlord_Space_Unit_Hatak.ALO</Space_Model_Name>
+    <Behavior> SELECTABLE, DUMMY_STARSHIP, POWERED, SHIELDED</Behavior>
+    <Tech_Level>99</Tech_Level>
+    <Is_Named_Hero>No</Is_Named_Hero>
+    <Is_Generic_Hero>Yes</Is_Generic_Hero>
+    <Can_Be_Neutralized_By_Major_Heroes>No</Can_Be_Neutralized_By_Major_Heroes>
+    <Can_Be_Neutralized_By_Minor_Heroes>No</Can_Be_Neutralized_By_Minor_Heroes>
+    <Show_Hero_Head>Yes</Show_Hero_Head>
+    <Required_Star_Base_Level>1</Required_Star_Base_Level>
+
+    <HardPoints>
+      HP_HATAK_F_SBM_00,
+      HP_HATAK_F_SBM_01,
+      HP_HATAK_R_SBM_00,
+      HP_HATAK_R_SBM_01,
+      HP_HATAK_R_SBM_02,
+      HP_HATAK_R_SBM_03,
+      HP_HATAK_SHIELD,
+      HP_HATAK_ENGINE,
+      HP_HATAK_HANGAR,
+      Emblem_New_Hatak_Baal
+    </HardPoints>
+
+    <Death_Clone>Damage_Normal, Systemlord_Alliance_Hero_Baal_Death_Clone</Death_Clone>
+    <Starting_Spawned_Units_Tech_0>Dummy_Combat_Bonus_Systemlord_Alliance_Hero, 1</Starting_Spawned_Units_Tech_0>
+    <Starting_Spawned_Units_Tech_0>Systemlord_Alliance_Death_Glider_Squadron, 2</Starting_Spawned_Units_Tech_0>
+    <Spawned_Squadron_Delay_Seconds>6</Spawned_Squadron_Delay_Seconds>
+    <Reserve_Spawned_Units_Tech_0>Systemlord_Alliance_Death_Glider_Squadron, -1</Reserve_Spawned_Units_Tech_0>
+  </SpaceUnit>
+
+  <SpaceUnit Name="Systemlord_Alliance_Hero_Baal_Death_Clone">
+    <Variant_Of_Existing_Type>Systemlord_Alliance_New_Hatak_Death_Clone</Variant_Of_Existing_Type>
+    <Space_Model_Name>Systemlord_Space_Unit_Hatak_D.ALO</Space_Model_Name>
+    <Affiliation>Systemlord_Alliance</Affiliation>
+  </SpaceUnit>
+
+  <!-- Information SLA (Systemlords Alliance) Hero Bastet -->
+  <SpaceUnit Name="Systemlord_Alliance_Hero_Bastet">
+    <Variant_Of_Existing_Type>Corellian_Gunboat_No_Spawn</Variant_Of_Existing_Type>
+    <Text_ID>TEXT_SYSTEMLORDS_SPACE_HERO_BASTET</Text_ID>
+    <Encyclopedia_Text> TEXT_DESCRIPTION_SYSTEMLORDS_GC_BASTET_SPACE </Encyclopedia_Text>
+    <Encyclopedia_Unit_Class> TEXT_ENCYCLOPEDIA_CLASS_BASTET_NEUES_HATAK </Encyclopedia_Unit_Class>
+    <Icon_Name>SYSTEMLORDS_SPACE_HERO_BASTED.TGA</Icon_Name>
+    <Space_Model_Name>Systemlord_Space_Unit_Hatak.ALO</Space_Model_Name>
+    <Affiliation>Systemlord_Alliance</Affiliation>
+    <Tech_Level>99</Tech_Level>
+    <Armor_Type>Armor_Hero_Cruiser</Armor_Type>
+    <Shield_Armor_Type>Armor_Hero_Cruiser</Shield_Armor_Type>
+    <Is_Named_Hero>No</Is_Named_Hero>
+    <SFXEvent_Attack>Unit_Attack_Quetesh</SFXEvent_Attack>
+    <SFXEvent_Fleet_Move>Unit_Move_Quetesh</SFXEvent_Fleet_Move>
+    <SFXEvent_Health_Low_Warning>Unit_LOWHP_Quetesh</SFXEvent_Health_Low_Warning>
+    <SFXEvent_Move>Unit_Move_Quetesh</SFXEvent_Move>
+    <SFXEvent_Select>Unit_Select_Quetesh</SFXEvent_Select>
+    <SFXEvent_Build_Complete>Unit_Spawn_Quetesh</SFXEvent_Build_Complete>
+    <Is_Generic_Hero>Yes</Is_Generic_Hero>
+    <Can_Be_Neutralized_By_Major_Heroes>No</Can_Be_Neutralized_By_Major_Heroes>
+    <Can_Be_Neutralized_By_Minor_Heroes>No</Can_Be_Neutralized_By_Minor_Heroes>
+    <Show_Hero_Head>Yes</Show_Hero_Head>
+    <Neutralization_Cost>2000.0</Neutralization_Cost>
+    <Required_Star_Base_Level>1</Required_Star_Base_Level>
+    <CategoryMask> Capital | SpaceHero | AntiCorvette </CategoryMask>
+
+    <HardPoints>
+      HP_HATAK_F_SBM_00,
+      HP_HATAK_F_SBM_01,
+      HP_HATAK_R_SBM_00,
+      HP_HATAK_R_SBM_01,
+    HP_HATAK_R_SBM_02,
+    HP_HATAK_R_SBM_03,
+      HP_HATAK_SHIELD,
+      HP_HATAK_ENGINE,
+      HP_HATAK_HANGAR,
+    Emblem_New_Hatak_Bastet
+    </HardPoints>
+
+    <Death_Clone>Damage_Normal, Systemlord_Alliance_Hero_Bastet_Death_Clone</Death_Clone>
+    <Starting_Spawned_Units_Tech_0>Dummy_Combat_Bonus_Systemlord_Alliance_Hero, 1</Starting_Spawned_Units_Tech_0>
+    <Starting_Spawned_Units_Tech_0>Systemlord_Alliance_Death_Glider_Squadron, 2</Starting_Spawned_Units_Tech_0>
+    <Spawned_Squadron_Delay_Seconds>6</Spawned_Squadron_Delay_Seconds>
+    <Reserve_Spawned_Units_Tech_0>Systemlord_Alliance_Death_Glider_Squadron, -1</Reserve_Spawned_Units_Tech_0>
+  </SpaceUnit>
+
+  <SpaceUnit Name="Systemlord_Alliance_Hero_Bastet_Death_Clone">
+    <Variant_Of_Existing_Type>Systemlord_Alliance_New_Hatak_Death_Clone</Variant_Of_Existing_Type>
+    <Space_Model_Name>Systemlord_Space_Unit_Hatak_D.ALO</Space_Model_Name>
+    <Affiliation>Systemlord_Alliance</Affiliation>
+  </SpaceUnit>
+
+  <SpaceUnit Name="Goauld_Hero_Bastet_SK">
+    <Variant_Of_Existing_Type>Systemlord_Alliance_Hero_Bastet</Variant_Of_Existing_Type>
+    <Tactical_Build_Prerequisites></Tactical_Build_Prerequisites>
+    <Affiliation>Rebel</Affiliation>
+    <Build_Limit_Current_For_All_Allies>-1</Build_Limit_Current_For_All_Allies>
+    <Build_Limit_Lifetime_For_All_Allies>-1</Build_Limit_Lifetime_For_All_Allies>
+    <Build_Limit_Lifetime_Per_Player>-1</Build_Limit_Lifetime_Per_Player>
+    <Build_Limit_Current_Per_Player>1</Build_Limit_Current_Per_Player>
+    <Lua_Script>ObjectScript_HW_Middle</Lua_Script>
+    <Population_Value>5</Population_Value>
+    <Tech_Level>99</Tech_Level>
+  </SpaceUnit>
+
+  <!-- Information SLA (Systemlords Alliance) Hero Cronus -->
+  <SpaceUnit Name="Systemlord_Alliance_Hero_Cronus">
+    <Variant_Of_Existing_Type>Goauld_Hero_Cronus_No_Spawn</Variant_Of_Existing_Type>
+    <Text_ID>TEXT_SYSTEMLORDS_SPACE_HERO_CRONUS</Text_ID>
+    <Encyclopedia_Text> TEXT_DESCRIPTION_SYSTEMLORDS_GC_CRONUS_SPACE </Encyclopedia_Text>
+    <Encyclopedia_Unit_Class> TEXT_ENCYCLOPEDIA_CLASS_CRONUS_SYSTEMFLAGGSCHIFF </Encyclopedia_Unit_Class>
+    <Icon_Name>SYSTEMLORDS_SPACE_HERO_CRONOS.TGA</Icon_Name>
+    <Space_Model_Name>Systemlord_Space_Unit_Hatak.ALO</Space_Model_Name>
+    <Affiliation>Systemlord_Alliance</Affiliation>
+    <Tech_Level>99</Tech_Level>
+    <Is_Named_Hero>No</Is_Named_Hero>
+    <Is_Generic_Hero>Yes</Is_Generic_Hero>
+    <Can_Be_Neutralized_By_Major_Heroes>No</Can_Be_Neutralized_By_Major_Heroes>
+    <Can_Be_Neutralized_By_Minor_Heroes>No</Can_Be_Neutralized_By_Minor_Heroes>
+    <Show_Hero_Head>Yes</Show_Hero_Head>
+    <Neutralization_Cost>2000.0</Neutralization_Cost>
+    <Required_Star_Base_Level>1</Required_Star_Base_Level>
+    <Death_Clone>Damage_Normal, Systemlord_Alliance_Hero_Cronus_Death_Clone</Death_Clone>
+    <Starting_Spawned_Units_Tech_0>Dummy_Combat_Bonus_Systemlord_Alliance_Hero, 1</Starting_Spawned_Units_Tech_0>
+    <Starting_Spawned_Units_Tech_0>Systemlord_Alliance_Death_Glider_Squadron, 1</Starting_Spawned_Units_Tech_0>
+    <Starting_Spawned_Units_Tech_0>Systemlord_Alliance_Teltak_Squadron, 1</Starting_Spawned_Units_Tech_0>
+    <Spawned_Squadron_Delay_Seconds>5</Spawned_Squadron_Delay_Seconds>
+    <Reserve_Spawned_Units_Tech_0>Systemlord_Alliance_Death_Glider_Squadron, -1</Reserve_Spawned_Units_Tech_0>
+    <Reserve_Spawned_Units_Tech_0>Systemlord_Alliance_Teltak_Squadron, -1</Reserve_Spawned_Units_Tech_0>
+  </SpaceUnit>
+
+  <SpaceUnit Name="Systemlord_Alliance_Hero_Cronus_Death_Clone">
+    <Variant_Of_Existing_Type>Systemlord_Alliance_New_Hatak_Death_Clone</Variant_Of_Existing_Type>
+    <Space_Model_Name>Systemlord_Space_Unit_Hatak_D.ALO</Space_Model_Name>
+    <Affiliation>Systemlord_Alliance</Affiliation>
+  </SpaceUnit>
+
+  <!-- Information SLA (Systemlords Alliance) Hero Heruur -->
+  <SpaceUnit Name="Systemlord_Alliance_Hero_Heruur_Space">
+    <Variant_Of_Existing_Type>Goauld_Anubis_Hatak_No_Spawn</Variant_Of_Existing_Type>
+    <Text_ID>TEXT_SYSTEMLORDS_SPACE_HERO_HERUUR</Text_ID>
+    <Encyclopedia_Text> TEXT_DESCRIPTION_SYSTEMLORDS_GC_HERUUR_SPACE </Encyclopedia_Text>
+    <Encyclopedia_Unit_Class> TEXT_ENCYCLOPEDIA_CLASS_HERUUR_ANUBIS_HATAK </Encyclopedia_Unit_Class>
+    <Icon_Name>SYSTEMLORDS_SPACE_HERO_HERUUR.TGA</Icon_Name>
+    <Space_Model_Name>Systemlord_Space_Unit_Hatak.ALO</Space_Model_Name>
+    <Affiliation>Systemlord_Alliance</Affiliation>
+    <Behavior>DUMMY_STARSHIP, SELECTABLE, POWERED, SHIELDED, TRANSPORT</Behavior>
+    <Tech_Level>99</Tech_Level>
+    <Armor_Type>Armor_Hero_LightBS</Armor_Type>
+    <Shield_Armor_Type>Armor_Hero_LightBS</Shield_Armor_Type>
+    <Is_Named_Hero>No</Is_Named_Hero>
+    <Is_Generic_Hero>No</Is_Generic_Hero>
+    <Show_Hero_Head>Yes</Show_Hero_Head>
+    <Tactical_Build_Cost_Multiplayer>3500</Tactical_Build_Cost_Multiplayer>
+    <Can_Be_Neutralized_By_Major_Heroes>No</Can_Be_Neutralized_By_Major_Heroes>
+    <Can_Be_Neutralized_By_Minor_Heroes>No</Can_Be_Neutralized_By_Minor_Heroes>
+    <Neutralization_Cost>2000.0</Neutralization_Cost>
+    <Required_Star_Base_Level>1</Required_Star_Base_Level>
+    <CategoryMask> Capital | SpaceHero | AntiCorvette </CategoryMask>
+
+    <HardPoints>
+      HP_HATAK_F_SBM_00,
+      HP_HATAK_F_SBM_01,
+      HP_HATAK_R_SBM_00,
+      HP_HATAK_R_SBM_01,
+    HP_HATAK_R_SBM_02,
+    HP_HATAK_R_SBM_03,
+      HP_HATAK_SHIELD,
+      HP_HATAK_ENGINE,
+      HP_HATAK_HANGAR,
+    Emblem_New_Hatak_Heruur
+    </HardPoints>
+
+    <Death_Clone>Damage_Normal, Systemlord_Alliance_Hero_Heruur_Space_Death_Clone</Death_Clone>
+    <Starting_Spawned_Units_Tech_0>Dummy_Combat_Bonus_Systemlord_Alliance_Hero, 1</Starting_Spawned_Units_Tech_0>
+    <Starting_Spawned_Units_Tech_0>Systemlord_Alliance_Death_Glider_Squadron, 2</Starting_Spawned_Units_Tech_0>
+    <Spawned_Squadron_Delay_Seconds>6</Spawned_Squadron_Delay_Seconds>
+    <Reserve_Spawned_Units_Tech_0>Systemlord_Alliance_Death_Glider_Squadron, -1</Reserve_Spawned_Units_Tech_0>
+    <Landing_Transport_Variant>Goauld_Landing_Rings_Up</Landing_Transport_Variant>
+
+    <SFXEvent_Ambient_Loop>Engine_Goauld_Heavy</SFXEvent_Ambient_Loop>
+    <SFXEvent_Attack>Unit_Attack_HeruUr</SFXEvent_Attack>
+    <SFXEvent_Fleet_Move>Unit_Move_HeruUr</SFXEvent_Fleet_Move>
+    <SFXEvent_Health_Critical_Warning>Unit_CriticalHP_HeruUr</SFXEvent_Health_Critical_Warning>
+    <SFXEvent_Health_Low_Warning>Unit_LOWHP_HeruUr</SFXEvent_Health_Low_Warning>
+    <SFXEvent_Move>Unit_Move_HeruUr</SFXEvent_Move>
+    <SFXEvent_Select>Unit_Select_HeruUr</SFXEvent_Select>
+    <SFXEvent_Engine_Idle_Loop>Engine_Goauld_Heavy_Idle</SFXEvent_Engine_Idle_Loop>
+    <SFXEvent_Engine_Moving_Loop>Engine_Goauld_Heavy</SFXEvent_Engine_Moving_Loop>
+    <SFXEvent_Engine_Cinematic_Focus_Loop>Engine_Goauld_Heavy_Cinematic</SFXEvent_Engine_Cinematic_Focus_Loop>
+    <SFXEvent_Build_Complete>Unit_Spawn_HeruUr</SFXEvent_Build_Complete>
+	<Lua_Script>ObjectScript_HW_Middle</Lua_Script>
+  </SpaceUnit>
+
+  <SpaceUnit Name="Systemlord_Alliance_Hero_Heruur_Space_Death_Clone">
+    <Variant_Of_Existing_Type>Systemlord_Alliance_New_Hatak_Death_Clone</Variant_Of_Existing_Type>
+    <Space_Model_Name>Systemlord_Space_Unit_Hatak_D.ALO</Space_Model_Name>
+    <Affiliation>Systemlord_Alliance</Affiliation>
+  </SpaceUnit>
+
+  <SpaceUnit Name="Goauld_Hero_Heruur_SK">
+    <Variant_Of_Existing_Type>Systemlord_Alliance_Hero_Heruur_Space</Variant_Of_Existing_Type>
+    <Tactical_Build_Prerequisites> General_Tech_2_Prereq </Tactical_Build_Prerequisites>
+    <Affiliation>Rebel</Affiliation>
+    <Build_Limit_Current_For_All_Allies>-1</Build_Limit_Current_For_All_Allies>
+    <Build_Limit_Lifetime_For_All_Allies>-1</Build_Limit_Lifetime_For_All_Allies>
+    <Build_Limit_Lifetime_Per_Player>-1</Build_Limit_Lifetime_Per_Player>
+    <Build_Limit_Current_Per_Player>1</Build_Limit_Current_Per_Player>
+    <Lua_Script>ObjectScript_HW_Middle</Lua_Script>
+    <Population_Value>5</Population_Value>
+    <Tech_Level>99</Tech_Level>
+  </SpaceUnit>
+
+  <!-- Information SLA (Systemlords Alliance) Hero Osiris -->
+  <SpaceUnit Name="Systemlord_Alliance_Hero_Osiris">
+    <Variant_Of_Existing_Type>Sundered_Heart</Variant_Of_Existing_Type>
+    <Encyclopedia_Text> TEXT_DESCRIPTION_SYSTEMLORDS_GC_OSIRIS_SPACE </Encyclopedia_Text>
+    <Affiliation>Systemlord_Alliance</Affiliation>
+    <Tech_Level>99</Tech_Level>
+    <Is_Named_Hero>No</Is_Named_Hero>
+    <Is_Generic_Hero>Yes</Is_Generic_Hero>
+    <Can_Be_Neutralized_By_Major_Heroes>No</Can_Be_Neutralized_By_Major_Heroes>
+    <Can_Be_Neutralized_By_Minor_Heroes>No</Can_Be_Neutralized_By_Minor_Heroes>
+    <Show_Hero_Head>Yes</Show_Hero_Head>
+    <Neutralization_Cost>2000.0</Neutralization_Cost>
+    <Required_Star_Base_Level>1</Required_Star_Base_Level>
+  </SpaceUnit>
+
+
+  <!-- Information SLA (Systemlords Alliance) Hero Seth -->
+  <SpaceUnit Name="Systemlord_Alliance_Hero_Seth">
+    <Variant_Of_Existing_Type>Goauld_Anubis_Hatak_No_Spawn</Variant_Of_Existing_Type>
+    <Text_ID>TEXT_SYSTEMLORDS_SPACE_HERO_SETH</Text_ID>
+    <Encyclopedia_Text>TEXT_DESCRIPTION_SYSTEMLORDS_SETH_SPACE</Encyclopedia_Text>
+    <Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_HERUUR_ANUBIS_HATAK</Encyclopedia_Unit_Class>
+    <Icon_Name>SYSTEMLORDS_SPACE_HERO_SETH.TGA</Icon_Name>
+    <Space_Model_Name>Systemlord_Space_Unit_Hatak.ALO</Space_Model_Name>
+    <Affiliation>Systemlord_Alliance</Affiliation>
+    <Tech_Level>99</Tech_Level>
+    <Armor_Type>Armor_Hero_LightBS</Armor_Type>
+    <Shield_Armor_Type>Armor_Hero_LightBS</Shield_Armor_Type>
+    <Is_Named_Hero>No</Is_Named_Hero>
+    <Is_Generic_Hero>Yes</Is_Generic_Hero>
+
+
+    <SFXEvent_Attack>Unit_Attack_Seth</SFXEvent_Attack>
+    <SFXEvent_Fleet_Move>Unit_Move_Seth</SFXEvent_Fleet_Move>
+    <SFXEvent_Move>Unit_Move_Seth</SFXEvent_Move>
+    <SFXEvent_Select>Unit_Select_Seth</SFXEvent_Select>
+    <SFXEvent_Build_Complete>Unit_Spawn_Seth</SFXEvent_Build_Complete>
+
+    <Show_Hero_Head>Yes</Show_Hero_Head>
+    <Can_Be_Neutralized_By_Major_Heroes>No</Can_Be_Neutralized_By_Major_Heroes>
+    <Can_Be_Neutralized_By_Minor_Heroes>No</Can_Be_Neutralized_By_Minor_Heroes>
+    <Neutralization_Cost>2000.0</Neutralization_Cost>
+    <Required_Star_Base_Level>1</Required_Star_Base_Level>
+    <CategoryMask> Capital | SpaceHero | AntiCorvette </CategoryMask>
+
+    <HardPoints>
+      HP_HATAK_F_SBM_00,
+      HP_HATAK_F_SBM_01,
+      HP_HATAK_R_SBM_00,
+      HP_HATAK_R_SBM_01,
+      HP_HATAK_R_SBM_02,
+      HP_HATAK_R_SBM_03,
+      HP_HATAK_SHIELD,
+      HP_HATAK_ENGINE,
+      HP_HATAK_HANGAR,
+      Emblem_New_Hatak_Seth
+    </HardPoints>
+
+    <Death_Clone>Damage_Normal, Systemlord_Alliance_Hero_Seth_Space_Death_Clone</Death_Clone>
+    <Starting_Spawned_Units_Tech_0>Dummy_Combat_Bonus_Systemlord_Alliance_Hero, 1</Starting_Spawned_Units_Tech_0>
+    <Starting_Spawned_Units_Tech_0>Systemlord_Alliance_Death_Glider_Squadron, 2</Starting_Spawned_Units_Tech_0>
+    <Spawned_Squadron_Delay_Seconds>6</Spawned_Squadron_Delay_Seconds>
+    <Reserve_Spawned_Units_Tech_0>Systemlord_Alliance_Death_Glider_Squadron, -1</Reserve_Spawned_Units_Tech_0>
+	<Lua_Script>ObjectScript_HW_Middle</Lua_Script>
+  </SpaceUnit>
+  
+  <SpaceUnit Name="Systemlord_Alliance_Hero_Seth_Space_Death_Clone">
+    <Variant_Of_Existing_Type>Systemlord_Alliance_New_Hatak_Death_Clone</Variant_Of_Existing_Type>
+    <Space_Model_Name>Systemlord_Space_Unit_Hatak_D.ALO</Space_Model_Name>
+    <Affiliation>Systemlord_Alliance</Affiliation>
+  </SpaceUnit>
+
+  <SpaceUnit Name="Goauld_Hero_Seth_SK">
+    <Variant_Of_Existing_Type>Systemlord_Alliance_Hero_Seth</Variant_Of_Existing_Type>
+    <Affiliation>Rebel</Affiliation>
+    <Build_Limit_Current_For_All_Allies>-1</Build_Limit_Current_For_All_Allies>
+    <Build_Limit_Lifetime_For_All_Allies>-1</Build_Limit_Lifetime_For_All_Allies>
+    <Build_Limit_Lifetime_Per_Player>-1</Build_Limit_Lifetime_Per_Player>
+    <Build_Limit_Current_Per_Player>1</Build_Limit_Current_Per_Player>
+    <Lua_Script>ObjectScript_HW_Middle</Lua_Script>
+    <Population_Value>5</Population_Value>
+    <Tech_Level>99</Tech_Level>
+  </SpaceUnit>
+
+  <!-- Information SLA (Systemlords Alliance) Hero Sokar -->
+  <SpaceUnit Name="Systemlord_Alliance_Hero_Sokar">
+    <Variant_Of_Existing_Type>Goauld_Hero_Apophis_No_Spawn</Variant_Of_Existing_Type>
+    <Text_ID>TEXT_SYSTEMLORDS_SPACE_HERO_SOKAR</Text_ID>
+    <Encyclopedia_Text> TEXT_DESCRIPTION_SYSTEMLORDS_GC_SOKAR_SPACE </Encyclopedia_Text>
+    <Encyclopedia_Unit_Class> TEXT_ENCYCLOPEDIA_CLASS_SOKAR_SYSTEMFLAGGSCHIFF </Encyclopedia_Unit_Class>
+    <Icon_Name>SYSTEMLORDS_SPACE_HERO_SOKAR.TGA</Icon_Name>
+    <Space_Model_Name>Goauld_Space_Hero_Sokar.ALO</Space_Model_Name>
+    <Affiliation>Systemlord_Alliance</Affiliation>
+    <Behavior>DUMMY_STARSHIP, SELECTABLE, POWERED, SHIELDED, TRANSPORT</Behavior>
+    <Tech_Level>99</Tech_Level>
+    <Is_Named_Hero>No</Is_Named_Hero>
+    <Is_Generic_Hero>No</Is_Generic_Hero>
+    <Show_Hero_Head>Yes</Show_Hero_Head>
+    <Can_Be_Neutralized_By_Major_Heroes>No</Can_Be_Neutralized_By_Major_Heroes>
+    <Can_Be_Neutralized_By_Minor_Heroes>No</Can_Be_Neutralized_By_Minor_Heroes>
+    <Neutralization_Cost>2000.0</Neutralization_Cost>
+    <Required_Star_Base_Level>1</Required_Star_Base_Level>
+    <CategoryMask> Capital | SpaceHero | AntiFrigate </CategoryMask>
+    <Death_Clone>Damage_Normal, Systemlord_Alliance_Hero_Sokar_Death_Clone</Death_Clone>
+    <Starting_Spawned_Units_Tech_0>Dummy_Combat_Bonus_Systemlord_Alliance_Hero, 1</Starting_Spawned_Units_Tech_0>
+    <Starting_Spawned_Units_Tech_0>Systemlord_Alliance_Death_Glider_Squadron, 1</Starting_Spawned_Units_Tech_0>
+    <Starting_Spawned_Units_Tech_0>Systemlord_Alliance_Teltak_Squadron, 1</Starting_Spawned_Units_Tech_0>
+    <Spawned_Squadron_Delay_Seconds>5</Spawned_Squadron_Delay_Seconds>
+    <Reserve_Spawned_Units_Tech_0>Systemlord_Alliance_Death_Glider_Squadron, -1</Reserve_Spawned_Units_Tech_0>
+    <Reserve_Spawned_Units_Tech_0>Systemlord_Alliance_Teltak_Squadron, -1</Reserve_Spawned_Units_Tech_0>
+
+    <SFXEvent_Ambient_Loop>Engine_Goauld_Heavy</SFXEvent_Ambient_Loop>
+    <SFXEvent_Attack>Unit_Attack_Sokar</SFXEvent_Attack>
+    <SFXEvent_Fleet_Move>Unit_Move_Sokar</SFXEvent_Fleet_Move>
+    <SFXEvent_Health_Critical_Warning>Unit_CriticalHP_Sokar</SFXEvent_Health_Critical_Warning>
+    <SFXEvent_Health_Low_Warning>Unit_LOWHP_Sokar</SFXEvent_Health_Low_Warning>
+    <SFXEvent_Move>Unit_Move_Sokar</SFXEvent_Move>
+    <SFXEvent_Select>Unit_Select_Sokar</SFXEvent_Select>
+    <SFXEvent_Engine_Idle_Loop>Engine_Goauld_Heavy_Idle</SFXEvent_Engine_Idle_Loop>
+    <SFXEvent_Engine_Moving_Loop>Engine_Goauld_Heavy</SFXEvent_Engine_Moving_Loop>
+    <SFXEvent_Engine_Cinematic_Focus_Loop>Engine_Goauld_Heavy_Cinematic</SFXEvent_Engine_Cinematic_Focus_Loop>
+    <SFXEvent_Build_Complete>Unit_Spawn_Sokar</SFXEvent_Build_Complete>
+    <Landing_Transport_Variant>Goauld_Landing_Teltak_Escort</Landing_Transport_Variant>
+    <Lua_Script>ObjectScript_HW_Big</Lua_Script>
+    <!--<Lua_Script>ObjectScript_Syslord_Space_Body_Guard_Hataks</Lua_Script>-->
+
+    <Unit_Abilities_Data SubObjectList="Yes">
+      <Unit_Ability>
+        <Type>SPOILER_LOCK</Type>
+        <Mod_Multiplier>WEAPON_DELAY_MULTIPLIER,	3.0f</Mod_Multiplier>
+        <Mod_Multiplier>SHIELD_REGEN_MULTIPLIER,	1.2f</Mod_Multiplier>
+        <Mod_Multiplier>ENERGY_REGEN_MULTIPLIER,	3.0f</Mod_Multiplier>
+        <Mod_Multiplier>SPEED_MULTIPLIER,		            1.75</Mod_Multiplier>
+        <SFXEvent_GUI_Unit_Ability_Activated>Effect_Goauld_Ship_Deploy</SFXEvent_GUI_Unit_Ability_Activated>
+        <SFXEvent_GUI_Unit_Ability_Deactivated>Effect_Goauld_Ship_Deploy</SFXEvent_GUI_Unit_Ability_Deactivated>
+        <Alternate_Icon_Name>I_SA_SYSTEMHATAK_DEPLOYED.TGA</Alternate_Icon_Name>
+      </Unit_Ability>
+      <Unit_Ability>
+        <Type>POWER_TO_WEAPONS</Type>
+        <Mod_Multiplier>SPEED_MULTIPLIER,		0.5f</Mod_Multiplier>
+        <Mod_Multiplier>SHIELD_REGEN_MULTIPLIER,	-8.0</Mod_Multiplier>
+        <Mod_Multiplier>ENERGY_REGEN_MULTIPLIER,	1.0</Mod_Multiplier>
+        <Mod_Multiplier>WEAPON_DELAY_MULTIPLIER,	0.2f</Mod_Multiplier>
+        <Recharge_Seconds>48</Recharge_Seconds>
+        <Expiration_Seconds>7</Expiration_Seconds>
+        <SFXEvent_GUI_Unit_Ability_Activated/>
+        <SFXEvent_GUI_Unit_Ability_Deactivated />
+        <Alternate_Name_Text>TEXT_ABILITY_GOAULD_SPACE_SYSTEMFLAGGSCHIFF_WAFFENBOOST</Alternate_Name_Text>
+        <Alternate_Description_Text>TEXT_DESCRIPTION_ABILITY_SPACE_SYSTEMFLAGGSCHIFF_WAFFENBOOST</Alternate_Description_Text>
+      </Unit_Ability>
+    </Unit_Abilities_Data>
+  </SpaceUnit>
+
+  <SpaceUnit Name="Systemlord_Alliance_Hero_Sokar_Death_Clone">
+    <Variant_Of_Existing_Type>Systemlord_Alliance_System_Flagship_Death_Clone</Variant_Of_Existing_Type>
+    <Space_Model_Name>Goauld_Space_Hero_Sokar_D.ALO</Space_Model_Name>
+    <Affiliation>Systemlord_Alliance</Affiliation>
+  </SpaceUnit>
+
+  <SpaceUnit Name="Goauld_Hero_Sokar_SK">
+    <Variant_Of_Existing_Type>Systemlord_Alliance_Hero_Sokar</Variant_Of_Existing_Type>
+    <Tactical_Build_Prerequisites> General_Tech_3_Prereq </Tactical_Build_Prerequisites>
+    <Affiliation>Rebel</Affiliation>
+    <Build_Limit_Current_For_All_Allies>-1</Build_Limit_Current_For_All_Allies>
+    <Build_Limit_Lifetime_For_All_Allies>-1</Build_Limit_Lifetime_For_All_Allies>
+    <Build_Limit_Lifetime_Per_Player>-1</Build_Limit_Lifetime_Per_Player>
+    <Build_Limit_Current_Per_Player>1</Build_Limit_Current_Per_Player>
+    <Lua_Script>ObjectScript_HW_Big</Lua_Script>
+    <Population_Value>6</Population_Value>
+    <Tech_Level>99</Tech_Level>
+  </SpaceUnit>
+
+  <!-- Information SLA (Systemlords Alliance) Hero Lord Yu 
+  warning: he's an evil bitch :D-->
+  <SpaceUnit Name="Systemlord_Alliance_Hero_Lord_Yu">
+    <Variant_Of_Existing_Type>Goauld_Anubis_Hatak_No_Spawn</Variant_Of_Existing_Type>
+    <Text_ID>TEXT_SYSTEMLORDS_SPACE_HERO_YU</Text_ID>
+    <Encyclopedia_Text> TEXT_DESCRIPTION_SYSTEMLORDS_GC_YU_SPACE </Encyclopedia_Text>
+    <Encyclopedia_Unit_Class> TEXT_ENCYCLOPEDIA_CLASS_YU_ANUBIS_HATAK </Encyclopedia_Unit_Class>
+    <Behavior>DUMMY_STARSHIP, SELECTABLE, POWERED, SHIELDED, TRANSPORT</Behavior>
+    <Radar_Icon_Name>I_RADAR_HATAK_OUTDATED.TGA</Radar_Icon_Name>
+    <Icon_Name>SYSTEMLORDS_SPACE_HERO_YU.TGA</Icon_Name>
+    <Space_Model_Name>Goauld_Space_Hero_Yu.ALO</Space_Model_Name>
+    <Scale_Factor>0.8</Scale_Factor>
+    <Affiliation>Systemlord_Alliance</Affiliation>
+    <Tech_Level>99</Tech_Level>
+    <Tactical_Build_Cost_Multiplayer>3500</Tactical_Build_Cost_Multiplayer>
+    <Armor_Type>Armor_Hero_LightBS</Armor_Type>
+    <Shield_Armor_Type>Armor_Hero_LightBS</Shield_Armor_Type>
+    <Death_Clone>Damage_Normal, Systemlord_Alliance_Hero_Lord_Yu_Death_Clone</Death_Clone>
+    <Death_Clone>Damage_Normal, Systemlord_Alliance_Hero_Lord_Yu_Death_Clone</Death_Clone>
+    <Is_Named_Hero>No</Is_Named_Hero>
+    <Is_Generic_Hero>No</Is_Generic_Hero>
+    <Can_Be_Neutralized_By_Major_Heroes>No</Can_Be_Neutralized_By_Major_Heroes>
+    <Can_Be_Neutralized_By_Minor_Heroes>No</Can_Be_Neutralized_By_Minor_Heroes>
+    <Show_Hero_Head>Yes</Show_Hero_Head>
+    <Neutralization_Cost>2000.0</Neutralization_Cost>
+    <Required_Star_Base_Level>1</Required_Star_Base_Level>
+    <CategoryMask> Capital | SpaceHero | AntiFrigate </CategoryMask>
+    <Landing_Transport_Variant>Goauld_Landing_Teltak_Escort</Landing_Transport_Variant>
+
+    <HardPoints>
+      HP_HATAK_F_SBM_00,
+      HP_HATAK_F_SBM_01,
+      HP_HATAK_R_SBM_00,
+      HP_HATAK_R_SBM_01,
+      HP_HATAK_R_SBM_02,
+      HP_HATAK_R_SBM_03,
+      HP_HATAK_SHIELD,
+      HP_HATAK_ENGINE,
+      HP_HATAK_HANGAR,
+      Emblem_New_Hatak_Yu
+    </HardPoints>
+
+    <Starting_Spawned_Units_Tech_0>Dummy_Combat_Bonus_Systemlord_Alliance_Hero_Yu, 1</Starting_Spawned_Units_Tech_0>
+    <Starting_Spawned_Units_Tech_0>Systemlord_Alliance_Death_Glider_Squadron, 2</Starting_Spawned_Units_Tech_0>
+    <Starting_Spawned_Units_Tech_0>Systemlord_Alliance_Teltak_Squadron, 1</Starting_Spawned_Units_Tech_0>
+    <Spawned_Squadron_Delay_Seconds>6</Spawned_Squadron_Delay_Seconds>
+    <Reserve_Spawned_Units_Tech_0>Systemlord_Alliance_Death_Glider_Squadron, -1</Reserve_Spawned_Units_Tech_0>
+    <Reserve_Spawned_Units_Tech_0>Systemlord_Alliance_Teltak_Squadron, 0</Reserve_Spawned_Units_Tech_0>
+
+    <SFXEvent_Ambient_Loop>Engine_Goauld_Heavy</SFXEvent_Ambient_Loop>
+    <SFXEvent_Attack>Unit_Attack_Yu</SFXEvent_Attack>
+    <SFXEvent_Fleet_Move>Unit_Move_Yu</SFXEvent_Fleet_Move>
+    <SFXEvent_Health_Critical_Warning>Unit_CriticalHP_Yu</SFXEvent_Health_Critical_Warning>
+    <SFXEvent_Move>Unit_Move_Yu</SFXEvent_Move>
+    <SFXEvent_Select>Unit_Select_Yu</SFXEvent_Select>
+    <SFXEvent_Engine_Idle_Loop>Engine_Goauld_Heavy_Idle</SFXEvent_Engine_Idle_Loop>
+    <SFXEvent_Engine_Moving_Loop>Engine_Goauld_Heavy</SFXEvent_Engine_Moving_Loop>
+    <SFXEvent_Engine_Cinematic_Focus_Loop>Engine_Goauld_Heavy_Cinematic</SFXEvent_Engine_Cinematic_Focus_Loop>
+    <SFXEvent_Build_Complete>Unit_Spawn_Yu</SFXEvent_Build_Complete>
+
+
+    <Unit_Abilities_Data SubObjectList="Yes">
+      <Unit_Ability>
+        <Type>POWER_TO_WEAPONS</Type>
+        <Mod_Multiplier>WEAPON_DELAY_MULTIPLIER,	0.3</Mod_Multiplier>
+        <Mod_Multiplier>SPEED_MULTIPLIER,		2.0</Mod_Multiplier>
+        <Mod_Multiplier>CAUSE_DAMAGE_MULTIPLIER ,	1.8</Mod_Multiplier>
+        <Recharge_Seconds>40</Recharge_Seconds>
+        <Expiration_Seconds>10</Expiration_Seconds>
+        <Supports_Autofire>True</Supports_Autofire>
+        <Alternate_Name_Text>TEXT_ABILITY_GOAULD_SPACE_BAAL_STURM</Alternate_Name_Text>
+        <Alternate_Description_Text>TEXT_DESCRIPTION_ABILITY_SPACE_BAAL_STURM</Alternate_Description_Text>
+        <Alternate_Icon_Name>i_sa_assault.tga</Alternate_Icon_Name>
+      </Unit_Ability>
+      <Unit_Ability>
+        <Type>DEFEND</Type>
+        <Expiration_Seconds>15</Expiration_Seconds>
+        <Mod_Multiplier>WEAPON_DELAY_MULTIPLIER,	3.0f</Mod_Multiplier>
+        <Mod_Multiplier>SHIELD_REGEN_MULTIPLIER,	1.0f</Mod_Multiplier>
+        <Mod_Multiplier>SHIELD_REGEN_INTERVAL_MULTIPLIER,	0.10f</Mod_Multiplier>
+        <Mod_Multiplier>ENERGY_REGEN_INTERVAL_MULTIPLIER,	0.10f</Mod_Multiplier>
+        <Mod_Multiplier>ENERGY_REGEN_MULTIPLIER,	5.0f</Mod_Multiplier>
+        <Mod_Multiplier>SPEED_MULTIPLIER,			0.8f</Mod_Multiplier>
+        <Recharge_Seconds>65</Recharge_Seconds>
+        <Expiration_Seconds>15</Expiration_Seconds>
+        <SFXEvent_GUI_Unit_Ability_Activated></SFXEvent_GUI_Unit_Ability_Activated>
+        <SFXEvent_GUI_Unit_Ability_Deactivated/>
+        <Supports_Autofire>True</Supports_Autofire>
+        <Alternate_Name_Text>TEXT_ABILITY_GOAULD_SPACE_BAAL_SHIELDBOOST</Alternate_Name_Text>
+        <Alternate_Description_Text>TEXT_DESCRIPTION_ABILITY_SHIELDBOOST_BAAL_SPACE</Alternate_Description_Text>
+        <Alternate_Icon_Name>I_SA_SHIELD_BOOST_HATAK.TGA</Alternate_Icon_Name>
+      </Unit_Ability>
+    </Unit_Abilities_Data>
+    <Lua_Script>ObjectScript_HW_Middle</Lua_Script>	
+  </SpaceUnit>
+
+  <SpaceUnit Name="Systemlord_Alliance_Hero_Lord_Yu_Death_Clone">
+    <Variant_Of_Existing_Type>Systemlord_Alliance_New_Hatak_Death_Clone</Variant_Of_Existing_Type>
+    <Space_Model_Name>Goauld_Space_Hero_Yu_D.ALO</Space_Model_Name>
+    <Scale_Factor>0.8</Scale_Factor>
+    <Affiliation>Systemlord_Alliance</Affiliation>
+  </SpaceUnit>
+
+  <SpaceUnit Name="Goauld_Hero_Yu_SK">
+    <Variant_Of_Existing_Type>Systemlord_Alliance_Hero_Lord_Yu</Variant_Of_Existing_Type>
+    <Tactical_Build_Prerequisites> General_Tech_2_Prereq </Tactical_Build_Prerequisites>
+    <Affiliation>Rebel</Affiliation>
+    <Build_Limit_Current_For_All_Allies>-1</Build_Limit_Current_For_All_Allies>
+    <Build_Limit_Lifetime_For_All_Allies>-1</Build_Limit_Lifetime_For_All_Allies>
+    <Build_Limit_Lifetime_Per_Player>-1</Build_Limit_Lifetime_Per_Player>
+    <Build_Limit_Current_Per_Player>1</Build_Limit_Current_Per_Player>
+    <Lua_Script>ObjectScript_HW_Middle</Lua_Script>
+    <Population_Value>5</Population_Value>
+    <Tech_Level>99</Tech_Level>
+  </SpaceUnit>
+
+  <!-- Information SLA (Systemlords Alliance) Hero Ra -->
+  <SpaceUnit Name="Systemlord_Alliance_Hero_Ra">
+    <Variant_Of_Existing_Type>Template_Space_Unit_Medium_Battleship</Variant_Of_Existing_Type>
+    <Text_ID>TEXT_SYSTEMLORDS_SPACE_HERO_RA</Text_ID>
+    <Encyclopedia_Text> TEXT_DESCRIPTION_SYSTEMLORDS_GC_RA_SPACE </Encyclopedia_Text>
+    <Encyclopedia_Unit_Class> TEXT_ENCYCLOPEDIA_CLASS_SOKAR_SYSTEMFLAGGSCHIFF </Encyclopedia_Unit_Class>
+    <Icon_Name>SYSTEMLORDS_SPACE_HERO_RA.TGA</Icon_Name>
+    <Encyclopedia_Good_Against> Victory_Destroyer Acclamator_Assault_Ship Interceptor4_Frigate </Encyclopedia_Good_Against>
+    <Encyclopedia_Vulnerable_To> TIE_Bomber Skipray_Blastboat </Encyclopedia_Vulnerable_To>
+    <Space_Model_Name>Goauld_Space_Hero_Ra.ALO</Space_Model_Name>
+    <Space_Layer> Corvette </Space_Layer>
+    <Layer_Z_Adjust>-20.0</Layer_Z_Adjust>
+    <Affiliation>Systemlord_Alliance</Affiliation>
+    <Behavior>DUMMY_STARSHIP, SELECTABLE, POWERED, SHIELDED, TRANSPORT</Behavior>
+    <Tech_Level>99</Tech_Level>
+    <Tactical_Build_Cost_Multiplayer>6000</Tactical_Build_Cost_Multiplayer>
+    <Shield_Points>3400</Shield_Points>
+    <Shield_Refresh_Rate>20</Shield_Refresh_Rate>
+    <Energy_Capacity>90000</Energy_Capacity>
+    <Energy_Refresh_Rate>1000</Energy_Refresh_Rate>
+    <Is_Named_Hero>No</Is_Named_Hero>
+    <SpaceBehavior>SPAWN_SQUADRON, ABILITY_COUNTDOWN, SIMPLE_SPACE_LOCOMOTOR, POWERED, SHIELDED, TARGETING, HIDE_WHEN_FOGGED, REVEAL, UNIT_AI, ASTEROID_FIELD_DAMAGE, DAMAGE_TRACKING, ION_STUN_EFFECT, NEBULA </SpaceBehavior>
+    <Is_Generic_Hero>Yes</Is_Generic_Hero>
+    <Show_Hero_Head>Yes</Show_Hero_Head>
+    <Can_Be_Neutralized_By_Major_Heroes>No</Can_Be_Neutralized_By_Major_Heroes>
+    <Can_Be_Neutralized_By_Minor_Heroes>No</Can_Be_Neutralized_By_Minor_Heroes>
+    <Neutralization_Cost>2000.0</Neutralization_Cost>
+    <Required_Star_Base_Level>1</Required_Star_Base_Level>
+    <CategoryMask> Capital | SpaceHero | AntiFrigate </CategoryMask>
+    <Death_Clone>Damage_Normal, Systemlord_Alliance_Hero_Ra_Death_Clone</Death_Clone>
+    <Starting_Spawned_Units_Tech_0>Ra_Hatak, 6</Starting_Spawned_Units_Tech_0>
+    <Spawned_Squadron_Delay_Seconds>6</Spawned_Squadron_Delay_Seconds>
+    <Reserve_Spawned_Units_Tech_0>Ra_Hatak, 0</Reserve_Spawned_Units_Tech_0>
+    <Landing_Transport_Variant>Goauld_Landing_Teltak_Escort</Landing_Transport_Variant>
+
+    <HardPoints>
+      HP_RA_R_SBS,
+      HP_RA_F_SBS,
+      HP_RA_M_SBS_00,
+      HP_RA_M_SBS_01,
+      HP_RA_M_SBS_02,
+      HP_RA_M_SBS_03,
+      HP_RA_SHIELD,
+      HP_RA_ENGINE,
+      HP_RA_HANGAR
+    </HardPoints>
+
+    <SFXEvent_Ambient_Loop>Engine_Goauld_Heavy</SFXEvent_Ambient_Loop>
+    <SFXEvent_Attack>Unit_Attack_Ra</SFXEvent_Attack>
+    <SFXEvent_Fleet_Move>Unit_Move_Ra</SFXEvent_Fleet_Move>
+    <SFXEvent_Health_Critical_Warning>Unit_CriticalHP_Ra</SFXEvent_Health_Critical_Warning>
+    <SFXEvent_Health_Low_Warning>Unit_LOWHP_Ra</SFXEvent_Health_Low_Warning>
+    <SFXEvent_Move>Unit_Move_Ra</SFXEvent_Move>
+    <SFXEvent_Select>Unit_Select_Ra</SFXEvent_Select>
+    <SFXEvent_Engine_Idle_Loop>Engine_Goauld_Heavy_Idle</SFXEvent_Engine_Idle_Loop>
+    <SFXEvent_Engine_Moving_Loop>Engine_Goauld_Heavy</SFXEvent_Engine_Moving_Loop>
+    <SFXEvent_Engine_Cinematic_Focus_Loop>Engine_Goauld_Heavy_Cinematic</SFXEvent_Engine_Cinematic_Focus_Loop>
+    <SFXEvent_Build_Complete>Unit_Spawn_Ra</SFXEvent_Build_Complete>
+
+
+    <Unit_Abilities_Data SubObjectList="Yes">
+
+      <Unit_Ability>
+        <Type>DEPLOY_SQUAD</Type>
+        <Alternate_Icon_Name>I_SA_REINFORCEMENT.TGA</Alternate_Icon_Name>
+        <Alternate_Name_Text>TEXT_ABILITY_CALL_REINFORCEMENT </Alternate_Name_Text>
+        <Alternate_Description_Text>TEXT_DESCRIPTION_ABILITY_REINFORCEMENT_RA_SPACE</Alternate_Description_Text>
+        <Recharge_Seconds>20</Recharge_Seconds>
+        <SFXEvent_GUI_Unit_Ability_Activated></SFXEvent_GUI_Unit_Ability_Activated>
+      </Unit_Ability>
+
+      <Unit_Ability>
+        <Type>SPOILER_LOCK</Type>
+        <Mod_Multiplier>SPEED_MULTIPLIER,		0.01f</Mod_Multiplier>
+        <Mod_Multiplier>WEAPON_DELAY_MULTIPLIER,	1.5f</Mod_Multiplier>
+        <Mod_Multiplier>CAUSE_DAMAGE_MULTIPLIER ,	1.5</Mod_Multiplier>
+        <Mod_Multiplier>SHIELD_REGEN_MULTIPLIER,	0.5f</Mod_Multiplier>
+        <Mod_Multiplier>SHIELD_REGEN_INTERVAL_MULTIPLIER,	0.10f</Mod_Multiplier>
+        <Mod_Multiplier>ENERGY_REGEN_INTERVAL_MULTIPLIER,	0.10f</Mod_Multiplier>
+        <Mod_Multiplier>ENERGY_REGEN_MULTIPLIER,	3.0f</Mod_Multiplier>
+        <SFXEvent_GUI_Unit_Ability_Activated>Effect_Goauld_Ship_Deploy</SFXEvent_GUI_Unit_Ability_Activated>
+        <SFXEvent_GUI_Unit_Ability_Deactivated>Effect_Goauld_Ship_Deploy</SFXEvent_GUI_Unit_Ability_Deactivated>
+        <Alternate_Name_Text>TEXT_ABILITY_GOAULD_SPACE_SUPER_HATAK_FESTUNGSMODUS</Alternate_Name_Text>
+        <Alternate_Description_Text>TEXT_DESCRIPTION_ABILITY_FORTRESSMODE_RAS_SHIP</Alternate_Description_Text>
+        <Alternate_Icon_Name>I_SA_SHIELD_BOOST_SUPERHATAK.tga</Alternate_Icon_Name>
+      </Unit_Ability>
+
+    </Unit_Abilities_Data>
+
+    <Lua_Script>ObjectScript_HW_Middle</Lua_Script>
+  </SpaceUnit>
+
+  <SpaceUnit Name="Systemlord_Alliance_Hero_Ra_Death_Clone">
+    <Variant_Of_Existing_Type>Template_Space_Deathclone</Variant_Of_Existing_Type>
+    <Space_Model_Name>Goauld_Space_Hero_Ra_D.ALO</Space_Model_Name>
+    <Affiliation>Systemlord_Alliance</Affiliation>
+  </SpaceUnit>
+
+  <SpaceUnit Name="Goauld_Hero_Ra_SK">
+    <Variant_Of_Existing_Type>Systemlord_Alliance_Hero_Ra</Variant_Of_Existing_Type>
+    <Tactical_Build_Prerequisites> General_Tech_4_Prereq </Tactical_Build_Prerequisites>
+    <Affiliation>Rebel</Affiliation>
+    <Build_Limit_Current_For_All_Allies>-1</Build_Limit_Current_For_All_Allies>
+    <Build_Limit_Lifetime_For_All_Allies>-1</Build_Limit_Lifetime_For_All_Allies>
+    <Build_Limit_Lifetime_Per_Player>-1</Build_Limit_Lifetime_Per_Player>
+    <Build_Limit_Current_Per_Player>1</Build_Limit_Current_Per_Player>
+    <Lua_Script>ObjectScript_HW_Middle</Lua_Script>
+    <Population_Value>5</Population_Value>
+    <Tech_Level>99</Tech_Level>
+  </SpaceUnit>
+
+  <SpaceUnit Name="Ra_Hatak">
+    <Variant_Of_Existing_Type>Corellian_Gunboat</Variant_Of_Existing_Type>
+    <Tech_Level>99</Tech_Level>
+    <Affiliation>Neutral</Affiliation>
+    <Text_ID>TEXT_SYSTEMLORDS_SPACE_UNIT_RA_HATAK</Text_ID>
+    <Encyclopedia_Text> TEXT_DESCRIPTION_SYSTEMLORDS_RA_HATAK </Encyclopedia_Text>
+    <HardPoints>
+      HP_HATAK_F_SBM_00,
+      HP_HATAK_F_SBM_01,
+      HP_HATAK_R_SBM_00,
+      HP_HATAK_R_SBM_01,
+      HP_HATAK_R_SBM_02,
+      HP_HATAK_R_SBM_03,
+      HP_HATAK_SHIELD,
+      HP_HATAK_ENGINE,
+      HP_HATAK_HANGAR,
+    Emblem_New_Hatak_Ra
+    </HardPoints>
+
+    <SFXEvent_Attack>Unit_Attack_GFC</SFXEvent_Attack>
+    <SFXEvent_Fleet_Move>Unit_Move_GFC</SFXEvent_Fleet_Move>
+    <SFXEvent_Guard></SFXEvent_Guard>
+    <SFXEvent_Health_Critical_Warning></SFXEvent_Health_Critical_Warning>
+    <SFXEvent_Health_Low_Warning></SFXEvent_Health_Low_Warning>
+    <SFXEvent_Move>Unit_Move_GFC</SFXEvent_Move>
+    <SFXEvent_Move_Into_Asteroid_Field></SFXEvent_Move_Into_Asteroid_Field>
+    <SFXEvent_Move_Into_Nebula></SFXEvent_Move_Into_Nebula>
+    <SFXEvent_Select>Unit_Select_GFC</SFXEvent_Select>
+    <SFXEvent_Stop></SFXEvent_Stop>
+
+    <Starting_Spawned_Units_Tech_0>Rebel_X-Wing_Squadron, 1</Starting_Spawned_Units_Tech_0>
+    <Spawned_Squadron_Delay_Seconds>5</Spawned_Squadron_Delay_Seconds>
+    <Reserve_Spawned_Units_Tech_0>Rebel_X-Wing_Squadron, -1</Reserve_Spawned_Units_Tech_0>
+    <Death_Clone>Damage_Normal, Corellian_Gunboat_Death_Clone</Death_Clone>
+  </SpaceUnit>
+</Systemlord_Heroes>

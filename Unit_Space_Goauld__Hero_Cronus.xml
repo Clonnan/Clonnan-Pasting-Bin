@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<UniqueUnits>
+  <!-- Goauld Hero Cronus  -->
+  <SpaceUnit Name="Goauld_Hero_Cronus_No_Spawn">
+    <Variant_Of_Existing_Type>Corellian_Gunboat_No_Spawn</Variant_Of_Existing_Type>
+    <Text_ID>TEXT_SYSTEMLORDS_SPACE_HERO_CRONUS</Text_ID>
+    <Encyclopedia_Text>TEXT_DESCRIPTION_GOAULD_CRONUS_SPACE TEXT_DESCRIPTION_ORBITAL_BOMBARDMENT_UNIT</Encyclopedia_Text>
+    <Encyclopedia_Unit_Class> TEXT_ENCYCLOPEDIA_CLASS_CRONUS_SYSTEMFLAGGSCHIFF </Encyclopedia_Unit_Class>
+    <Space_Model_Name>Systemlord_Space_Unit_Hatak.ALO</Space_Model_Name>
+    <Icon_Name>SYSTEMLORDS_SPACE_HERO_CRONOS.TGA</Icon_Name>
+    <Armor_Type>Armor_Hero_LightBS</Armor_Type>
+    <Shield_Armor_Type>Armor_Hero_LightBS</Shield_Armor_Type>
+    <Affiliation>Rebel</Affiliation>
+    <Tech_Level>99</Tech_Level>
+    <Is_Named_Hero>No</Is_Named_Hero>
+    <Is_Generic_Hero>Yes</Is_Generic_Hero>
+    <Neutralization_Cost>2800.0</Neutralization_Cost>
+    <Can_Be_Neutralized_By_Major_Heroes>Yes</Can_Be_Neutralized_By_Major_Heroes>
+    <Can_Be_Neutralized_By_Minor_Heroes>Yes</Can_Be_Neutralized_By_Minor_Heroes>
+    <Show_Hero_Head>Yes</Show_Hero_Head>
+
+    <HardPoints>
+      HP_HATAK_F_SBM_00,
+      HP_HATAK_F_SBM_01,
+      HP_HATAK_R_SBM_00,
+      HP_HATAK_R_SBM_01,
+      HP_HATAK_R_SBM_02,
+      HP_HATAK_R_SBM_03,
+      HP_HATAK_SHIELD,
+      HP_HATAK_ENGINE,
+      HP_HATAK_HANGAR,
+      Emblem_New_Hatak_Cronus
+    </HardPoints>
+
+    <SFXEvent_Attack>Unit_Attack_Cronus</SFXEvent_Attack>
+    <SFXEvent_Fleet_Move>Unit_Move_Cronus</SFXEvent_Fleet_Move>
+    <SFXEvent_Guard></SFXEvent_Guard>
+    <SFXEvent_Health_Critical_Warning></SFXEvent_Health_Critical_Warning>
+    <SFXEvent_Health_Low_Warning></SFXEvent_Health_Low_Warning>
+    <SFXEvent_Move>Unit_Move_Cronus</SFXEvent_Move>
+    <SFXEvent_Move_Into_Asteroid_Field></SFXEvent_Move_Into_Asteroid_Field>
+    <SFXEvent_Move_Into_Nebula></SFXEvent_Move_Into_Nebula>
+    <SFXEvent_Select>Unit_Select_Cronus</SFXEvent_Select>
+    <SFXEvent_Stop></SFXEvent_Stop>
+    <SFXEvent_Build_Complete></SFXEvent_Build_Complete>
+    <Death_SFXEvent_Start_Die></Death_SFXEvent_Start_Die>
+    <SFXEvent_Hero_Respawned></SFXEvent_Hero_Respawned>
+    <Build_Limit_Current_For_All_Allies>-1</Build_Limit_Current_For_All_Allies>
+    <Build_Limit_Lifetime_For_All_Allies>-1</Build_Limit_Lifetime_For_All_Allies>
+    <Build_Limit_Lifetime_Per_Player>-1</Build_Limit_Lifetime_Per_Player>
+    <Build_Limit_Current_Per_Player>1</Build_Limit_Current_Per_Player>
+    <Population_Value>5</Population_Value>
+    <Death_Clone>Damage_Normal, Systemlord_Alliance_New_Hatak_Death_Clone</Death_Clone>
+    <Unit_Abilities_Data SubObjectList="Yes">
+      <Unit_Ability>
+        <Type>DEFEND</Type>
+        <Expiration_Seconds>20</Expiration_Seconds>
+        <Mod_Multiplier>WEAPON_DELAY_MULTIPLIER,	3.0f</Mod_Multiplier>
+        <Mod_Multiplier>SHIELD_REGEN_MULTIPLIER,	1.0f</Mod_Multiplier>
+        <Mod_Multiplier>SHIELD_REGEN_INTERVAL_MULTIPLIER,	0.10f</Mod_Multiplier>
+        <Mod_Multiplier>ENERGY_REGEN_INTERVAL_MULTIPLIER,	0.10f</Mod_Multiplier>
+        <Mod_Multiplier>ENERGY_REGEN_MULTIPLIER,	5.0f</Mod_Multiplier>
+        <Mod_Multiplier>SPEED_MULTIPLIER,			0.8f</Mod_Multiplier>
+        <Recharge_Seconds>65</Recharge_Seconds>
+        <Expiration_Seconds>15</Expiration_Seconds>
+        <SFXEvent_GUI_Unit_Ability_Activated>Unit_Shield_Regeneration_Baal</SFXEvent_GUI_Unit_Ability_Activated>
+        <SFXEvent_GUI_Unit_Ability_Deactivated/>
+        <Supports_Autofire>True</Supports_Autofire>
+        <Alternate_Name_Text>TEXT_ABILITY_GOAULD_SPACE_CRONUS_SHIELDBOOST</Alternate_Name_Text>
+        <Alternate_Description_Text>TEXT_DESCRIPTION_ABILITY_SHIELDBOOST_CRONUS_SPACE</Alternate_Description_Text>
+        <Alternate_Icon_Name>I_SA_SHIELD_BOOST_HATAK.TGA</Alternate_Icon_Name>
+      </Unit_Ability>
+      <Unit_Ability>
+        <Type>FULL_SALVO</Type>
+        <Recharge_Seconds>45</Recharge_Seconds>
+        <Expiration_Seconds>7</Expiration_Seconds>
+        <SFXEvent_GUI_Unit_Ability_Activated></SFXEvent_GUI_Unit_Ability_Activated>
+        <GUI_Activated_Ability_Name>Interceptor_Full_Salvo</GUI_Activated_Ability_Name>
+        <Must_Be_Bought_On_Black_Market>No</Must_Be_Bought_On_Black_Market>
+        <Alternate_Name_Text>TEXT_ABILITY_GOAULD_SPACE_ANUBIS_HATAK_VOLLE_SALVE</Alternate_Name_Text>
+        <Alternate_Description_Text>TEXT_DESCRIPTION_ABILITY_SPACE_ANUBIS_HATAK_VOLLE_SALVE</Alternate_Description_Text>
+        <Alternate_Icon_Name>I_SA_STAFF_WEAPON.TGA</Alternate_Icon_Name>
+      </Unit_Ability>
+    </Unit_Abilities_Data>
+    <CategoryMask> Capital | SpaceHero | AntiFrigate </CategoryMask>
+  </SpaceUnit>
+
+  <SpaceUnit Name="Goauld_Hero_Cronus">
+    <Variant_Of_Existing_Type>Goauld_Hero_Cronus_No_Spawn</Variant_Of_Existing_Type>
+    <Tech_Level>99</Tech_Level>
+    <Starting_Spawned_Units_Tech_0>Rebel_X-Wing_Squadron, 2</Starting_Spawned_Units_Tech_0>
+    <Spawned_Squadron_Delay_Seconds>5</Spawned_Squadron_Delay_Seconds>
+    <Reserve_Spawned_Units_Tech_0>Rebel_X-Wing_Squadron, -1</Reserve_Spawned_Units_Tech_0>
+    <Abilities SubObjectList="Yes">
+      <Combat_Bonus_Ability Name="Goauld_Hero_Cronus_Combat_Bonus_GC">
+        <Activation_Style>Space_Automatic</Activation_Style>
+        <Applicable_Unit_Types>Goauld_Hero_Cronus</Applicable_Unit_Types>
+        <Health_Bonus_Percentage>0.4</Health_Bonus_Percentage>
+        <Damage_Bonus_Percentage>0.4</Damage_Bonus_Percentage>
+        <Energy_Pool_Bonus_Percentage>0.0</Energy_Pool_Bonus_Percentage>
+        <Shield_Bonus_Percentage>0.0</Shield_Bonus_Percentage>
+        <Defense_Bonus_Percentage>0.0</Defense_Bonus_Percentage>
+        <Movement_Speed_Bonus_Percentage>0.0</Movement_Speed_Bonus_Percentage>
+        <Stacking_Category>1</Stacking_Category>
+      </Combat_Bonus_Ability>
+    </Abilities>
+  </SpaceUnit>
+
+  <SpaceUnit Name="Goauld_Hero_Cronus_SK">
+    <Variant_Of_Existing_Type>Goauld_Hero_Cronus</Variant_Of_Existing_Type>
+    <Tactical_Build_Prerequisites></Tactical_Build_Prerequisites>
+    <Lua_Script>ObjectScript_HW_Middle</Lua_Script>
+    <Tech_Level>99</Tech_Level>
+  </SpaceUnit>
+
+  <!-- ===== This is the Goauld Primus icon spawned by the Ringtransporter ability ===== -->
+  <SpaceUnit Name="Goauld_Hero_Sindar">
+    <Text_ID>TEXT_NONE</Text_ID>
+    <Encyclopedia_Text>TEXT_NONE</Encyclopedia_Text>
+    <Encyclopedia_Unit_Class>TEXT_NONE</Encyclopedia_Unit_Class>
+    <Space_Model_Name>W_LASER_INVISIBLE.alo</Space_Model_Name>
+    <Scale_Factor>1.0</Scale_Factor>
+    <Icon_Name>SYSTEMLORDS_SPACE_HERO_SINDAR.TGA </Icon_Name>
+    <Select_Box_Scale>0</Select_Box_Scale>
+    <Select_Box_Z_Adjust>-1</Select_Box_Z_Adjust>
+    <Show_Hero_Head>Yes</Show_Hero_Head>
+    <Hyperspace>No</Hyperspace>
+    <Behavior> SELECTABLE, DUMMY_STARSHIP, IDLE</Behavior>
+    <SpaceBehavior>ABILITY_COUNTDOWN, IDLE, SIMPLE_SPACE_LOCOMOTOR, TARGETING, HIDE_WHEN_FOGGED, REVEAL, UNIT_AI, ASTEROID_FIELD_DAMAGE, DAMAGE_TRACKING, ION_STUN_EFFECT, NEBULA </SpaceBehavior>
+    <Space_FOW_Reveal_Range>1000.0</Space_FOW_Reveal_Range>
+    <Max_Speed>4.0</Max_Speed>
+    <Max_Rate_Of_Turn>0.4</Max_Rate_Of_Turn>
+    <Max_Thrust> 0.7 </Max_Thrust>
+    <Max_Rate_Of_Roll>0.3</Max_Rate_Of_Roll>
+    <Bank_Turn_Angle>35</Bank_Turn_Angle>
+    <Is_Visible_On_Radar>No</Is_Visible_On_Radar>
+    <Radar_Icon_Name>i_radar_hatak.tga</Radar_Icon_Name>
+    <Radar_Icon_Size>0.04 0.04</Radar_Icon_Size>
+    <Ship_Class>Fighter</Ship_Class>
+    <CategoryMask>Fighter</CategoryMask>
+
+    <Affiliation>Rebel</Affiliation>
+    <Lua_Script></Lua_Script>
+    <Death_Clone>Damage_Normal, Large_Explosion_Space_Empire</Death_Clone>
+    <HardPoints>Asteroid_Damage_Point</HardPoints>
+    <Tactical_Health>1000</Tactical_Health>
+    <Layer_Z_Adjust>-5.0</Layer_Z_Adjust>
+    <Sort_Order_Adjust>-1</Sort_Order_Adjust>
+    <Population_Value>0</Population_Value>
+  </SpaceUnit>
+
+</UniqueUnits>

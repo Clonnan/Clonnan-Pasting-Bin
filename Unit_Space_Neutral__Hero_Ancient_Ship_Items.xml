@@ -1,0 +1,178 @@
+<?xml version="1.0"?>
+<Units_Neutral_Heroes_Ancient_Ship_Items>
+
+   <!-- Information Ancient Item -->
+   <SpaceUnit Name="Neutral_Ancient_Item_Transport_Base">
+      <Variant_Of_Existing_Type>Template_Space_Unit_Corvette</Variant_Of_Existing_Type>
+      <Text_ID>TEXT_TAURI_SPECIAL_HERO_ANCIENT_ITEM_TRANSPORT</Text_ID>
+      <Encyclopedia_Text>TEXT_DESCRIPTION_TAURI_GC_ANCIENT_ITEM_TRANSPORT</Encyclopedia_Text>
+      <Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_ITEM</Encyclopedia_Unit_Class>
+      <Icon_Name>DUMMY_ICON.TGA</Icon_Name>
+      <Space_Model_Name>Tauri_Space_Unit_T-302.ALO</Space_Model_Name>
+      <Affiliation>Underworld Empire</Affiliation>
+	  <Galactic_Fleet_Override_Model_Name>W_planet_fleet_DropShip.ALO</Galactic_Fleet_Override_Model_Name>
+      <Radar_Icon_Name>I_RADAR_DROPSHIP.TGA</Radar_Icon_Name>
+      <Radar_Icon_Size>0.036 0.036</Radar_Icon_Size>
+      <Scale_Factor>1.0</Scale_Factor>
+      <Select_Box_Scale>80</Select_Box_Scale>
+      <Select_Box_Z_Adjust>-30</Select_Box_Z_Adjust>
+      <Tactical_Health>400</Tactical_Health>
+      <Shield_Points>200</Shield_Points>
+      <Shield_Refresh_Rate>5</Shield_Refresh_Rate>
+      <Population_Value>0</Population_Value>
+      <Death_Explosions>Medium_Explosion_Space</Death_Explosions>
+      <Death_Clone>Damage_Normal, Underworld_Infantry_Droid_Shuttle_Death_Clone</Death_Clone>
+      <Always_Spawn_In_Orbit>Yes</Always_Spawn_In_Orbit>
+      <Behavior>DUMMY_STARSHIP, TRANSPORT</Behavior>
+      <SpaceBehavior> SIMPLE_SPACE_LOCOMOTOR, SELECTABLE, TARGETING, POWERED, SHIELDED, REVEAL, SPAWN_SQUADRON, HIDE_WHEN_FOGGED, AMBIENT_SFX, DAMAGE_TRACKING, UNIT_AI, NEBULA</SpaceBehavior>
+  </SpaceUnit>  
+
+  <HeroUnit Name="Neutral_Hero_Ancient_Item_Generic_Base">
+      <Variant_Of_Existing_Type>Template_Non_Combat_Hero</Variant_Of_Existing_Type>
+      <Text_ID>TEXT_NONE</Text_ID>
+      <Encyclopedia_Text>TEXT_NONE</Encyclopedia_Text>
+      <Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_ITEM</Encyclopedia_Unit_Class>
+      <Icon_Name>DUMMY_ICON.tga</Icon_Name>
+      <Behavior>DUMMY_STARSHIP</Behavior><!--DUMMY_ORBITAL_STRUCTURE-->
+      <Affiliation>Underworld Empire</Affiliation>
+      <Always_Spawn_In_Orbit>Yes</Always_Spawn_In_Orbit>
+      <Ranking_In_Category> 1 </Ranking_In_Category>
+      <Can_Be_Neutralized_By_Major_Heroes>No</Can_Be_Neutralized_By_Major_Heroes>
+      <Can_Be_Neutralized_By_Minor_Heroes>No</Can_Be_Neutralized_By_Minor_Heroes>
+      <Score_Cost_Credits> 500 </Score_Cost_Credits>
+      <Is_Named_Hero>No</Is_Named_Hero>
+      <Is_Generic_Hero>Yes</Is_Generic_Hero>
+      <Stay_In_Transport_During_Ground_Battle>Yes</Stay_In_Transport_During_Ground_Battle>	 
+      <Can_Be_Neutralized_By_Major_Heroes>No</Can_Be_Neutralized_By_Major_Heroes>
+      <Can_Be_Neutralized_By_Minor_Heroes>No</Can_Be_Neutralized_By_Minor_Heroes>
+      <CategoryMask>NonCombatHero</CategoryMask>	  
+   </HeroUnit>
+
+   <HeroCompany Name="Neutral_Hero_Ancient_Item_Base_Team">
+      <Variant_Of_Existing_Type>Template_Ground_Hero_Company</Variant_Of_Existing_Type>
+      <Text_ID>TEXT_NONE</Text_ID>
+      <Encyclopedia_Text>TEXT_NONE</Encyclopedia_Text>
+      <Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_ITEM</Encyclopedia_Unit_Class>
+      <Icon_Name>DUMMY_ICON.tga</Icon_Name>
+      <Affiliation>Underworld Empire</Affiliation>
+      <CategoryMask>NonCombatHero</CategoryMask>
+      <Score_Cost_Credits>500</Score_Cost_Credits>
+      <Company_Transport_Unit>Neutral_Ancient_Item_Transport_Base</Company_Transport_Unit>
+      <Company_Units>Neutral_Hero_Ancient_Item_Generic_Base</Company_Units>
+      <Required_Star_Base_Level>1</Required_Star_Base_Level>
+      <Required_Ground_Base_Level>0</Required_Ground_Base_Level>
+      <Population_Value>1</Population_Value>
+      <Ranking_In_Category>10</Ranking_In_Category>
+   </HeroCompany>
+
+   <!-- Information Ancient Item - Shield -->
+ 
+   <SpaceUnit Name="Neutral_Hero_Ancient_Item_Shield_Transport">
+     <Variant_Of_Existing_Type>Neutral_Ancient_Item_Transport_Base</Variant_Of_Existing_Type>
+   </SpaceUnit>
+ 
+   <HeroUnit Name="Neutral_Hero_Ancient_Item_Generic_Shield">
+      <Variant_Of_Existing_Type>Neutral_Hero_Ancient_Item_Generic_Base</Variant_Of_Existing_Type>
+      <Text_ID>TEXT_TAURI_SPECIAL_HERO_ANCIENT_SHIELD_ITEM</Text_ID>
+      <Encyclopedia_Text>TEXT_DESCRIPTION_TAURI_GC_ANCIENT_SHIELD_ITEM</Encyclopedia_Text>
+      <Icon_Name>ANCIENT_SPECIAL_ITEM_SHIELD_GENERATOR.tga</Icon_Name>  
+   </HeroUnit>
+
+   <HeroCompany Name="Neutral_Hero_Ancient_Item_Shield_Team">
+      <Variant_Of_Existing_Type>Neutral_Hero_Ancient_Item_Base_Team</Variant_Of_Existing_Type>
+      <Text_ID>TEXT_TAURI_SPECIAL_HERO_ANCIENT_SHIELD_ITEM</Text_ID>
+      <Encyclopedia_Text>TEXT_DESCRIPTION_TAURI_GC_ANCIENT_SHIELD_ITEM</Encyclopedia_Text>
+      <Icon_Name>ANCIENT_SPECIAL_ITEM_SHIELD_GENERATOR.tga</Icon_Name>
+	  <Company_Transport_Unit>Neutral_Hero_Ancient_Item_Shield_Transport</Company_Transport_Unit>
+      <Company_Units>Neutral_Hero_Ancient_Item_Generic_Shield</Company_Units>
+   </HeroCompany>   
+
+   <!-- Information Ancient Item - Powerplant -->
+
+   <SpaceUnit Name="Neutral_Hero_Ancient_Item_Powerplant_Transport">
+     <Variant_Of_Existing_Type>Neutral_Ancient_Item_Transport_Base</Variant_Of_Existing_Type>
+   </SpaceUnit>
+   
+   <HeroUnit Name="Neutral_Hero_Ancient_Item_Generic_Powerplant">
+      <Variant_Of_Existing_Type>Neutral_Hero_Ancient_Item_Generic_Base</Variant_Of_Existing_Type>
+      <Text_ID>TEXT_TAURI_SPECIAL_HERO_ANCIENT_POWER_ITEM</Text_ID>
+      <Encyclopedia_Text>TEXT_DESCRIPTION_TAURI_GC_ANCIENT_POWER_ITEM</Encyclopedia_Text>
+      <Icon_Name>ANCIENT_SPECIAL_ITEM_POWER_GENERATOR.tga</Icon_Name> 
+   </HeroUnit>
+
+   <HeroCompany Name="Neutral_Hero_Ancient_Item_Powerplant_Team">
+      <Variant_Of_Existing_Type>Neutral_Hero_Ancient_Item_Base_Team</Variant_Of_Existing_Type>
+      <Text_ID>TEXT_TAURI_SPECIAL_HERO_ANCIENT_POWER_ITEM</Text_ID>
+      <Encyclopedia_Text>TEXT_DESCRIPTION_TAURI_GC_ANCIENT_POWER_ITEM</Encyclopedia_Text>
+      <Icon_Name>ANCIENT_SPECIAL_ITEM_POWER_GENERATOR.tga</Icon_Name>
+      <Company_Transport_Unit>Neutral_Hero_Ancient_Item_Powerplant_Transport</Company_Transport_Unit>
+	  <Company_Units>Neutral_Hero_Ancient_Item_Generic_Powerplant</Company_Units>
+   </HeroCompany> 
+
+   <!-- Information Ancient Item - Engines -->
+ 
+   <SpaceUnit Name="Neutral_Hero_Ancient_Item_Engines_Transport">
+     <Variant_Of_Existing_Type>Neutral_Ancient_Item_Transport_Base</Variant_Of_Existing_Type>
+   </SpaceUnit>
+ 
+   <HeroUnit Name="Neutral_Hero_Ancient_Item_Generic_Engines">
+      <Variant_Of_Existing_Type>Neutral_Hero_Ancient_Item_Generic_Base</Variant_Of_Existing_Type>
+      <Text_ID>TEXT_TAURI_SPECIAL_HERO_ANCIENT_ENGINES_ITEM</Text_ID>
+      <Encyclopedia_Text>TEXT_DESCRIPTION_TAURI_GC_ANCIENT_ENGINES_ITEM</Encyclopedia_Text>
+      <Icon_Name>ANCIENT_SPECIAL_ITEM_ENGINES.tga</Icon_Name>  
+   </HeroUnit>
+
+   <HeroCompany Name="Neutral_Hero_Ancient_Item_Engines_Team">
+      <Variant_Of_Existing_Type>Neutral_Hero_Ancient_Item_Base_Team</Variant_Of_Existing_Type>
+      <Text_ID>TEXT_TAURI_SPECIAL_HERO_ANCIENT_ENGINES_ITEM</Text_ID>
+      <Encyclopedia_Text>TEXT_DESCRIPTION_TAURI_GC_ANCIENT_ENGINES_ITEM</Encyclopedia_Text>
+      <Icon_Name>ANCIENT_SPECIAL_ITEM_ENGINES.tga</Icon_Name>
+      <Company_Transport_Unit>Neutral_Hero_Ancient_Item_Engines_Transport</Company_Transport_Unit>	  
+      <Company_Units>Neutral_Hero_Ancient_Item_Generic_Engines</Company_Units>
+   </HeroCompany> 
+
+   <!-- Information Ancient Item - Weapons -->
+
+   <SpaceUnit Name="Neutral_Hero_Ancient_Item_Weapons_Transport">
+     <Variant_Of_Existing_Type>Neutral_Ancient_Item_Transport_Base</Variant_Of_Existing_Type>
+   </SpaceUnit>
+   
+   <HeroUnit Name="Neutral_Hero_Ancient_Item_Generic_Weapons">
+      <Variant_Of_Existing_Type>Neutral_Hero_Ancient_Item_Generic_Base</Variant_Of_Existing_Type>
+      <Text_ID>TEXT_TAURI_SPECIAL_HERO_ANCIENT_WEAPONS_ITEM</Text_ID>
+      <Encyclopedia_Text>TEXT_DESCRIPTION_TAURI_GC_ANCIENT_WEAPONS_ITEM</Encyclopedia_Text>
+      <Icon_Name>ANCIENT_SPECIAL_ITEM_WEAPONS.tga</Icon_Name>  
+   </HeroUnit>
+
+   <HeroCompany Name="Neutral_Hero_Ancient_Item_Weapons_Team">
+      <Variant_Of_Existing_Type>Neutral_Hero_Ancient_Item_Base_Team</Variant_Of_Existing_Type>
+      <Text_ID>TEXT_TAURI_SPECIAL_HERO_ANCIENT_WEAPONS_ITEM</Text_ID>
+      <Encyclopedia_Text>TEXT_DESCRIPTION_TAURI_GC_ANCIENT_WEAPONS_ITEM</Encyclopedia_Text>
+      <Icon_Name>ANCIENT_SPECIAL_ITEM_WEAPONS.tga</Icon_Name>
+	  <Company_Transport_Unit>Neutral_Hero_Ancient_Item_Weapons_Transport</Company_Transport_Unit>	 
+      <Company_Units>Neutral_Hero_Ancient_Item_Generic_Weapons</Company_Units>
+   </HeroCompany> 
+   
+   <!-- Information Ancient Item - Hyperdrive -->
+
+   <SpaceUnit Name="Neutral_Hero_Ancient_Item_Hyperdrive_Transport">
+     <Variant_Of_Existing_Type>Neutral_Ancient_Item_Transport_Base</Variant_Of_Existing_Type>
+   </SpaceUnit>
+   
+   <HeroUnit Name="Neutral_Hero_Ancient_Item_Generic_Hyperdrive">
+      <Variant_Of_Existing_Type>Neutral_Hero_Ancient_Item_Generic_Base</Variant_Of_Existing_Type>
+      <Text_ID>TEXT_TAURI_SPECIAL_HERO_ANCIENT_HYPERDRIVE_ITEM</Text_ID>
+      <Encyclopedia_Text>TEXT_DESCRIPTION_TAURI_GC_ANCIENT_HYPERDRIVE_ITEM</Encyclopedia_Text>
+      <Icon_Name>ANCIENT_SPECIAL_ITEM_HYPERDRIVE.tga</Icon_Name>  
+   </HeroUnit>
+
+   <HeroCompany Name="Neutral_Hero_Ancient_Item_Hyperdrive_Team">
+      <Variant_Of_Existing_Type>Neutral_Hero_Ancient_Item_Base_Team</Variant_Of_Existing_Type>
+      <Text_ID>TEXT_TAURI_SPECIAL_HERO_ANCIENT_HYPERDRIVE_ITEM</Text_ID>
+      <Encyclopedia_Text>TEXT_DESCRIPTION_TAURI_GC_ANCIENT_HYPERDRIVE_ITEM</Encyclopedia_Text>
+      <Icon_Name>ANCIENT_SPECIAL_ITEM_HYPERDRIVE.tga</Icon_Name>
+	  <Company_Transport_Unit>Neutral_Hero_Ancient_Item_Hyperdrive_Transport</Company_Transport_Unit>
+      <Company_Units>Neutral_Hero_Ancient_Item_Generic_Hyperdrive</Company_Units>
+   </HeroCompany>    
+
+</Units_Neutral_Heroes_Ancient_Ship_Items>

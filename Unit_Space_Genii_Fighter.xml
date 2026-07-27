@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Genii_fighters>
+
+   <SpaceUnit Name="Genii_Fighter">
+      <Variant_Of_Existing_Type>Template_Space_Unit_Direct_Fire</Variant_Of_Existing_Type>
+      <Text_ID>TEXT_GENII_SPACE_UNIT_JAEGER</Text_ID>
+      <Encyclopedia_Text>TEXT_DESCRIPTION_GENII_JAEGER</Encyclopedia_Text>
+      <Encyclopedia_Unit_Class> TEXT_ENCYCLOPEDIA_CLASS_GENII_JAEGER</Encyclopedia_Unit_Class>
+      <Encyclopedia_Good_Against> Skipray_Blastboat Y-Wing TIE_Bomber </Encyclopedia_Good_Against>
+      <Encyclopedia_Vulnerable_To> Crusader_Gunship Corellian_Corvette Tartan_Patrol_Cruiser </Encyclopedia_Vulnerable_To>
+      <Icon_Name>GENII_SPACE_UNIT_FIGHTER.TGA</Icon_Name>
+      <Space_Model_Name>Genii_Space_Unit_Fighter.ALO</Space_Model_Name>
+      <Select_Box_Scale>70</Select_Box_Scale>
+
+      <!-- (Temporary?) fix for autoresolve-loop where the Genii fighter tries to retreat, but can't due to missing hyperspace, instantly re-triggering the battle -->
+      <Hyperspace>Yes</Hyperspace>
+      <Hyperspace_Speed>1.0</Hyperspace_Speed>
+
+      <Max_Speed>4.0</Max_Speed>
+      <Min_Speed>2.5</Min_Speed>
+      <Max_Rate_Of_Turn>3.0</Max_Rate_Of_Turn>
+      <Max_Thrust>1.0</Max_Thrust>
+      <Max_Rate_Of_Roll>5.0</Max_Rate_Of_Roll>
+      <Bank_Turn_Angle>40</Bank_Turn_Angle>
+
+      <Affiliation>Pirates</Affiliation>
+      <Tactical_Health>60</Tactical_Health>
+      <Shield_Points>20</Shield_Points>
+      <Shield_Refresh_Rate>3</Shield_Refresh_Rate>
+      <Spin_Away_On_Death>Yes</Spin_Away_On_Death>
+
+      <Projectile_Types>Proj_Genii_Fighter_Laser</Projectile_Types>
+      <Projectile_Fire_Pulse_Count>8</Projectile_Fire_Pulse_Count>
+      <Projectile_Fire_Pulse_Delay_Seconds>0.05</Projectile_Fire_Pulse_Delay_Seconds>
+      <Projectile_Fire_Recharge_Seconds>1.5</Projectile_Fire_Recharge_Seconds>
+      <Turret_Rotate_Extent_Degrees>20</Turret_Rotate_Extent_Degrees>
+      <Turret_Elevate_Extent_Degrees>40</Turret_Elevate_Extent_Degrees>
+      <Fire_Inaccuracy_Distance> Fighter, 1.0 </Fire_Inaccuracy_Distance>
+      <Fire_Inaccuracy_Distance> Bomber, 1.0 </Fire_Inaccuracy_Distance>
+      <Fire_Inaccuracy_Distance> Transport, 1.0 </Fire_Inaccuracy_Distance>
+      <Fire_Inaccuracy_Distance> Corvette, 30.0 </Fire_Inaccuracy_Distance>
+      <Fire_Inaccuracy_Distance> Frigate, 30.0 </Fire_Inaccuracy_Distance>
+      <Fire_Inaccuracy_Distance> Capital, 30.0 </Fire_Inaccuracy_Distance>
+      <Fire_Inaccuracy_Distance> Super, 30.0 </Fire_Inaccuracy_Distance>
+      <Space_FOW_Reveal_Range>500.0</Space_FOW_Reveal_Range>
+      <Targeting_Max_Attack_Distance>450.0</Targeting_Max_Attack_Distance>
+
+      <Unit_Abilities_Data SubObjectList="Yes">
+         <Unit_Ability>
+            <Type>HUNT</Type>
+            <Alternate_Name_Text>TEXT_ABILITY_GENII_JAEGER_GEGNER_JAGEN</Alternate_Name_Text>
+            <Alternate_Description_Text>TEXT_DESCRIPTION_ABILITY_SPACE_GENII_JAEGER_GEGNER_JAGEN</Alternate_Description_Text>
+         </Unit_Ability>
+      </Unit_Abilities_Data>
+   </SpaceUnit>
+
+
+  <!-- **** SQUADRON INFORMATION **** -->
+  <Squadron Name="Genii_Fighter_Squadron_No_Prereq">
+      <LOD_Bias>10</LOD_Bias>
+      <Text_ID>TEXT_GENII_SPACE_UNIT_JAEGER</Text_ID>
+      <Encyclopedia_Good_Against> Skipray_Blastboat Y-Wing TIE_Bomber </Encyclopedia_Good_Against>
+      <Encyclopedia_Vulnerable_To> Crusader_Gunship Corellian_Corvette Tartan_Patrol_Cruiser </Encyclopedia_Vulnerable_To>
+      <GUI_Row> 1 </GUI_Row>
+      <Icon_Name>GENII_SPACE_UNIT_FIGHTER.TGA</Icon_Name>
+      <Is_Dummy>Yes</Is_Dummy>
+      <Formation_Priority>1</Formation_Priority>
+      <Is_Escort>Yes</Is_Escort>
+      <Is_Bomber>no</Is_Bomber>
+      <Damage>25</Damage>
+      <Affiliation>Neutral</Affiliation>
+      <Political_Control>0</Political_Control>
+      <Build_Cost_Credits>300</Build_Cost_Credits>
+      <Piracy_Value_Credits>50</Piracy_Value_Credits>
+      <Build_Time_Seconds>10</Build_Time_Seconds>
+      <Build_Tab_Space_Units>No</Build_Tab_Space_Units>
+      <Build_Initially_Locked>Yes</Build_Initially_Locked>
+      <Build_Can_Be_Unlocked_By_Slicer>No</Build_Can_Be_Unlocked_By_Slicer>
+      <Tech_Level>99</Tech_Level>
+      <Required_Timeline/>
+      <Required_Star_Base_Level>1</Required_Star_Base_Level>
+      <Required_Special_Structures/>
+      <Behavior>DUMMY_SPACE_FIGHTER_SQUADRON</Behavior>
+      <Squadron_Offsets>30.0,0.0,0.0</Squadron_Offsets>
+      <Squadron_Offsets>0.0,15.0,0.0</Squadron_Offsets>
+      <Squadron_Offsets>0.0,-15.0,0.0</Squadron_Offsets>
+      <Squadron_Offsets>-30.0,30.0,0.0</Squadron_Offsets>
+      <Squadron_Offsets>-30.0,-30.0,0.0</Squadron_Offsets>
+      <GUI_Model_Name>Genii_Space_Unit_Fighter.ALO</GUI_Model_Name>
+      <GUI_Distance>95</GUI_Distance>
+      <GUI_Velocity>45</GUI_Velocity>
+      <SFXEvent_Build_Started> </SFXEvent_Build_Started>
+      <SFXEvent_Build_Cancelled> </SFXEvent_Build_Cancelled>
+      <SFXEvent_Build_Complete></SFXEvent_Build_Complete>
+      <FormationOrder>2</FormationOrder>
+      <Squadron_Formation_Error_Tolerance>25.0</Squadron_Formation_Error_Tolerance>
+      <Guard_Chase_Range>1000.0</Guard_Chase_Range>
+      <Idle_Chase_Range>200.0</Idle_Chase_Range>
+      <Attack_Move_Response_Range>300.0</Attack_Move_Response_Range>
+      <Property_Flags> SmallShip </Property_Flags>
+      <Autonomous_Move_Extension_Vs_Attacker>500.0</Autonomous_Move_Extension_Vs_Attacker>
+      <Unit_Abilities_Data SubObjectList="Yes">
+      <Unit_Ability>
+        <Type>HUNT</Type>
+        <Alternate_Name_Text>TEXT_ABILITY_GENII_JAEGER_GEGNER_JAGEN</Alternate_Name_Text>
+        <Alternate_Description_Text>TEXT_DESCRIPTION_ABILITY_SPACE_GENII_JAEGER_GEGNER_JAGEN</Alternate_Description_Text>
+      </Unit_Ability>
+      </Unit_Abilities_Data>
+      <Encyclopedia_Text>TEXT_DESCRIPTION_GENII_JAEGER</Encyclopedia_Text>
+      <Encyclopedia_Unit_Class> TEXT_ENCYCLOPEDIA_CLASS_GENII_JAEGER </Encyclopedia_Unit_Class>
+      <Tactical_Build_Cost_Multiplayer>500</Tactical_Build_Cost_Multiplayer>
+      <Tactical_Build_Time_Seconds>15</Tactical_Build_Time_Seconds>
+      <Tactical_Build_Prerequisites/>
+      <Tactical_Production_Queue>Tactical_Units</Tactical_Production_Queue>
+      <Population_Value>1</Population_Value>
+      <Score_Cost_Credits> 600</Score_Cost_Credits>
+  </Squadron>
+
+  <Squadron Name="Genii_Fighter_Squadron">
+      <Variant_Of_Existing_Type>Genii_Fighter_Squadron_No_Prereq</Variant_Of_Existing_Type>
+      <Squadron_Units>Genii_Fighter, Genii_Fighter</Squadron_Units>
+      <Squadron_Units>Genii_Fighter, Genii_Fighter</Squadron_Units>
+      <Squadron_Units>Genii_Fighter</Squadron_Units>
+      <Affiliation>Pirates</Affiliation>
+  </Squadron>
+
+
+  <!-- Projectiles Genii Fighter -->
+  <Projectile Name="Proj_Genii_Fighter_Laser">
+      <Variant_Of_Existing_Type>Proj_Genii_Space_Fighter_Laser</Variant_Of_Existing_Type>
+      <Projectile_Damage>5</Projectile_Damage>
+  </Projectile>
+
+</Genii_fighters>

@@ -1,0 +1,237 @@
+<?xml version="1.0"?>
+<SpaceCorvettes>
+
+  <SpaceUnit Name="Marauder_Missile_Cruiser">
+    <Text_ID>TEXT_GOAULD_SPACE_UNIT_ARTILLERIE_HATAK</Text_ID>
+    <Encyclopedia_Good_Against> Underworld_Star_Base_1 Empire_Star_Base_5 Star_Destroyer </Encyclopedia_Good_Against>
+    <Encyclopedia_Vulnerable_To> Tauri_X_301 TIE_Interceptor TIE_Defender </Encyclopedia_Vulnerable_To>
+    <GUI_Row> 1 </GUI_Row>
+    <Space_Model_Name>Goauld_Space_Unit_ArtilleryHatak.ALO</Space_Model_Name>
+    <Galactic_Fleet_Override_Model_Name> W_planet_fleet_ArtilleryHatak.ALO </Galactic_Fleet_Override_Model_Name>
+    <Galactic_Fleet_Override_Icon_Index> 4 </Galactic_Fleet_Override_Icon_Index>
+    <Icon_Name>GOAULD_SPACE_UNIT_ARTILLERYHATAK.TGA</Icon_Name>
+    <Select_Box_Scale>300</Select_Box_Scale>
+    <Select_Box_Z_Adjust>-30</Select_Box_Z_Adjust>
+    <Mass>0.995</Mass>
+    <Scale_Factor>1.0</Scale_Factor>
+    <Dense_FOW_Reveal_Range_Multiplier>0.2</Dense_FOW_Reveal_Range_Multiplier>
+
+    <Tactical_Health>1200</Tactical_Health>
+    <Shield_Points>1200</Shield_Points>
+    <Shield_Refresh_Rate>10</Shield_Refresh_Rate>
+    <Energy_Capacity>10000</Energy_Capacity>
+    <Energy_Refresh_Rate>900</Energy_Refresh_Rate>
+    <Ship_Class>corvette</Ship_Class>
+    <Armor_Type>Armor_Artillery</Armor_Type>
+    <Shield_Armor_Type>Armor_Artillery</Shield_Armor_Type>
+    <Damage_Type>Damage_Artillery</Damage_Type>
+    
+    <Ranking_In_Category>6</Ranking_In_Category>
+    <Max_Speed>2.8</Max_Speed>
+    <Max_Rate_Of_Turn>1.5</Max_Rate_Of_Turn>
+    <MovementClass> Space </MovementClass>
+    <Space_Layer> Frigate </Space_Layer>
+    <Layer_Z_Adjust>-150.0</Layer_Z_Adjust>
+    <Max_Rate_Of_Roll>0.2</Max_Rate_Of_Roll>
+    <Bank_Turn_Angle>15</Bank_Turn_Angle>
+    <OverrideAcceleration> .05 </OverrideAcceleration>
+    <OverrideDeceleration> .05 </OverrideDeceleration>
+    <Ranged_Target_Z_Adjust>0</Ranged_Target_Z_Adjust>
+    
+    <Max_Thrust>0.5</Max_Thrust>
+    <Hyperspace>Yes</Hyperspace>
+    <Hyperspace_Speed>1.5</Hyperspace_Speed>
+    <Maintenance_Cost>0.05</Maintenance_Cost>
+    <Min_Speed>2.0</Min_Speed>
+    <Max_Lift>0.0</Max_Lift>
+
+    <Death_Clone>Damage_Normal, Marauder_Missile_Cruiser_Death_Clone</Death_Clone>
+    <Space_FOW_Reveal_Range>1500.0</Space_FOW_Reveal_Range>
+    <Targeting_Max_Attack_Distance>3000.0</Targeting_Max_Attack_Distance>
+    <Targeting_Fire_Inaccuracy_Fixed_Radius> 100 </Targeting_Fire_Inaccuracy_Fixed_Radius>
+    <Targeting_Min_Attack_Distance>500</Targeting_Min_Attack_Distance>
+    <Fire_Category_Restrictions> Fighter, Bomber, Transport </Fire_Category_Restrictions>
+
+    <Affiliation>Rebel</Affiliation>
+    <Build_Initially_Locked>No</Build_Initially_Locked>
+    <Build_Can_Be_Unlocked_By_Slicer>No</Build_Can_Be_Unlocked_By_Slicer>
+    <Slice_Cost_Credits>640</Slice_Cost_Credits>
+    <Tech_Level>2</Tech_Level>
+    <Required_Timeline>0</Required_Timeline>
+    <Required_Ground_Base_Level>0</Required_Ground_Base_Level>
+    <Required_Star_Base_Level>1</Required_Star_Base_Level>
+    <Required_Special_Structures>R_Ground_Small_Shipyard</Required_Special_Structures>
+    <Required_Planets />
+
+    <FormationPriority>3</FormationPriority>
+    <Is_Escort>Yes</Is_Escort>
+    <Is_Bomber>no</Is_Bomber>
+    <Squadron_Capacity>0</Squadron_Capacity>
+    <Transport_Capacity>4</Transport_Capacity>
+    <Number_per_Squadron>1</Number_per_Squadron>
+    <Build_Cost_Credits>3400</Build_Cost_Credits>
+    <Piracy_Value_Credits>50</Piracy_Value_Credits>
+    <AI_Combat_Power>2200</AI_Combat_Power>
+    <Build_Time_Seconds>24</Build_Time_Seconds>
+    <Build_Tab_Space_Units>Yes</Build_Tab_Space_Units>
+    <Size_Value>120</Size_Value>
+    <Behavior>DUMMY_STARSHIP, SELECTABLE, POWERED, SHIELDED</Behavior>
+    <SpaceBehavior>ASTEROID_FIELD_DAMAGE, BARRAGE, ABILITY_COUNTDOWN, SIMPLE_SPACE_LOCOMOTOR, SELECTABLE, TARGETING, WEAPON, REVEAL, HIDE_WHEN_FOGGED, UNIT_AI, DAMAGE_TRACKING, ION_STUN_EFFECT, NEBULA </SpaceBehavior>
+
+    <Projectile_Types>Proj_Goauld_Plasma_Artillery</Projectile_Types>
+    <Turret_Rotate_Extent_Degrees>30</Turret_Rotate_Extent_Degrees>
+    <Turret_Elevate_Extent_Degrees>40</Turret_Elevate_Extent_Degrees>
+    <Projectile_Fire_Pulse_Count>3</Projectile_Fire_Pulse_Count>
+    <Projectile_Fire_Pulse_Delay_Seconds>0.6</Projectile_Fire_Pulse_Delay_Seconds>
+    <Projectile_Fire_Recharge_Seconds>5.5</Projectile_Fire_Recharge_Seconds>
+
+    <CategoryMask> Frigate | AntiFrigate | AntiCapital</CategoryMask>
+    <Collidable_By_Projectile_Living>Yes</Collidable_By_Projectile_Living>
+    <Death_Explosions>Large_Explosion_Space</Death_Explosions>
+    <Victory_Relevant>yes</Victory_Relevant>
+    <Has_Space_Evaluator>True</Has_Space_Evaluator>
+
+    <SFXEvent_Fire>Weapon_Artillery_Goauld</SFXEvent_Fire>
+    <SFXEvent_Attack>Unit_Attack_Goauld_ArtilleryHatak</SFXEvent_Attack>
+    <SFXEvent_Fleet_Move>Unit_Move_Goauld_ArtilleryHatak</SFXEvent_Fleet_Move>
+    <SFXEvent_Move>Unit_Move_Goauld_ArtilleryHatak</SFXEvent_Move>
+    <SFXEvent_Select>Unit_Select_Goauld_ArtilleryHatak</SFXEvent_Select>
+           
+    <SFXEvent_Engine_Idle_Loop>Engine_Goauld_Hatak_Idle</SFXEvent_Engine_Idle_Loop>
+    <SFXEvent_Engine_Moving_Loop>Engine_Goauld_Hatak</SFXEvent_Engine_Moving_Loop>
+    <SFXEvent_Engine_Cinematic_Focus_Loop>Engine_Goauld_Hatak_Cinematic</SFXEvent_Engine_Cinematic_Focus_Loop>
+    
+    <SFXEvent_Build_Started></SFXEvent_Build_Started>
+    <SFXEvent_Build_Cancelled></SFXEvent_Build_Cancelled>
+    <SFXEvent_Build_Complete></SFXEvent_Build_Complete>
+   
+    <Death_SFXEvent_Start_Die>Explosion_Corvette</Death_SFXEvent_Start_Die>
+
+    <Is_Visible_On_Radar>Yes</Is_Visible_On_Radar>
+    <Radar_Icon_Name>I_RADAR_ARTILLERYHATAK.TGA</Radar_Icon_Name>
+    <Radar_Icon_Scale_Land>1.0</Radar_Icon_Scale_Land>
+    <Radar_Icon_Scale_Space>1.0</Radar_Icon_Scale_Space>
+
+    <MovementClass> Space </MovementClass>
+    <Guard_Chase_Range>1000.0</Guard_Chase_Range>
+    <Idle_Chase_Range>400.0</Idle_Chase_Range>
+    <Attack_Move_Response_Range>2225.0</Attack_Move_Response_Range>
+    <Targeting_Stickiness_Time_Threshold>5.0</Targeting_Stickiness_Time_Threshold>
+    <Targeting_Priority_Set>SpaceArtillery</Targeting_Priority_Set>
+    <Autonomous_Move_Extension_Vs_Attacker>200.0</Autonomous_Move_Extension_Vs_Attacker>
+    <Tactical_Bribe_Cost>900</Tactical_Bribe_Cost>
+
+    <Unit_Abilities_Data SubObjectList="Yes">
+      <Unit_Ability>
+        <Type>BARRAGE</Type>
+        <Projectile_Types_Override>Proj_Goauld_Plasma_Artillery_Barrage</Projectile_Types_Override>
+        <Expiration_Seconds>15</Expiration_Seconds>
+        <Recharge_Seconds>40</Recharge_Seconds>
+        <Mod_Multiplier>FIRE_RATE_MULTIPLIER,			3.0f</Mod_Multiplier>
+        <SFXEvent_Target_Ability/>
+        <SFXEvent_GUI_Unit_Ability_Activated/>
+        <!-- keep this the same as Targeting_Fire_Inaccuracy_Fixed_Radius_Override -->
+        <Area_Effect_Decal_Distance> 320.0 </Area_Effect_Decal_Distance>
+        <!-- keep this the same as Area_Effect_Decal_Distance -->
+        <Targeting_Fire_Inaccuracy_Fixed_Radius_Override>320.0</Targeting_Fire_Inaccuracy_Fixed_Radius_Override>
+        <Target_Position_Z_Offset>-150</Target_Position_Z_Offset>
+        <Alternate_Name_Text>TEXT_ABILITY_GOAULD_SPACE_ARTILLERIE_HATAK_FLAECHENBESCHUSS</Alternate_Name_Text>
+        <Alternate_Description_Text>TEXT_DESCRIPTION_ABILITY_SPACE_ARTILLERIE_HATAK_FLAECHENBESCHUSS</Alternate_Description_Text>
+      </Unit_Ability>
+      <Unit_Ability>
+        <Type>MISSILE_SHIELD</Type>
+        <Disable_Movement>Yes</Disable_Movement>
+        <Effective_Radius>750</Effective_Radius>
+        <Recharge_Seconds>40</Recharge_Seconds>
+        <Expiration_Seconds>30</Expiration_Seconds>
+        <SFXEvent_GUI_Unit_Ability_Activated/>
+        <SFXEvent_GUI_Unit_Ability_Deactivated />
+        <Alternate_Name_Text>TEXT_ABILITY_GOAULD_SPACE_ARTILLERIE_HATAK_STOERFELD</Alternate_Name_Text>
+        <Alternate_Description_Text>TEXT_DESCRIPTION_ABILITY_SPACE_ARTILLERIE_HATAK_STOERFELD</Alternate_Description_Text>
+        <Supports_Autofire>False</Supports_Autofire>
+      </Unit_Ability>
+    </Unit_Abilities_Data>
+
+    <Encyclopedia_Text>TEXT_DESCRIPTION_GOAULD_ARTILLERIE_HATAK</Encyclopedia_Text>
+    <Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_ARTILLERIE_HATAK</Encyclopedia_Unit_Class>
+    <Score_Cost_Credits> 1400</Score_Cost_Credits>
+    <!--<MULTIPLAYER SKIRMISH VALUES BEGIN>-->
+    <Tactical_Build_Cost_Multiplayer>2400</Tactical_Build_Cost_Multiplayer>
+    <Tactical_Build_Time_Seconds>24</Tactical_Build_Time_Seconds>
+    <Tactical_Build_Prerequisites />
+    <Tactical_Production_Queue>Tactical_Units</Tactical_Production_Queue>
+    <!--<Build_Limit_Current_Per_Player>0</Build_Limit_Current_Per_Player>-->
+    <!--<Build_Limit_Lifetime_Per_Player>0</Build_Limit_Lifetime_Per_Player>-->
+    <!--<MULTIPLAYER SKIRMISH VALUES END>-->
+    <Population_Value>5</Population_Value>
+	 <Lua_Script>ObjectScript_MissileShield</Lua_Script>
+	
+  </SpaceUnit>
+  
+  
+  <!-- Deathclone Goauld Artillery Hatak -->
+  <SpaceUnit Name="Marauder_Missile_Cruiser_Death_Clone">
+    <Text_ID>TEXT_NONE</Text_ID>
+    <Space_Model_Name>Goauld_Space_Unit_ArtilleryHatak_D.ALO</Space_Model_Name>
+    <xxxSpace_Model_Name>Goauld_Space_Unit_ArtilleryHatak_D.ALO</xxxSpace_Model_Name>
+    <Death_SFXEvent_Start_Die>Explosion_Corvette</Death_SFXEvent_Start_Die>
+    <Death_Explosions>Large_Explosion_Space</Death_Explosions>
+    <Scale_Factor>1.0</Scale_Factor>
+    <Layer_Z_Adjust>-150.0</Layer_Z_Adjust>
+    <Max_Speed>0.25</Max_Speed>
+    <Max_Rate_Of_Turn>0.4</Max_Rate_Of_Turn>
+    <Max_Thrust>0.05</Max_Thrust>
+    <Max_Rate_Of_Roll>0.02</Max_Rate_Of_Roll>
+    <Bank_Turn_Angle>5</Bank_Turn_Angle>
+    <Affiliation>Rebel</Affiliation>
+    <Ship_Class>corvette</Ship_Class>
+    <Remove_Upon_Death>true</Remove_Upon_Death>
+  </SpaceUnit>
+
+  
+  <!-- Projectiles Goauld Artillery Hatak -->
+  <Projectile Name="Proj_Goauld_Plasma_Artillery">
+    <Variant_Of_Existing_Type>Proj_Goauld_Space_Plasma_Artillery</Variant_Of_Existing_Type>
+    <Projectile_Damages_Random_Hard_Points>No</Projectile_Damages_Random_Hard_Points>  
+    <Explode_When_Reached_Target_Radius> Yes </Explode_When_Reached_Target_Radius>  
+    <Projectile_Blast_Area_Dropoff>True</Projectile_Blast_Area_Dropoff>
+    <Projectile_Blast_Area_Dropoff_Tiers>5</Projectile_Blast_Area_Dropoff_Tiers>
+    <Projectile_Blast_Area_Damage> 60 </Projectile_Blast_Area_Damage>
+    <Projectile_Blast_Area_Range> 100 </Projectile_Blast_Area_Range>
+    <Max_Secs_For_AE_Delayed_Damage>0</Max_Secs_For_AE_Delayed_Damage>
+    <Max_Speed>12.0</Max_Speed>
+    <Max_Rate_Of_Turn>0.0</Max_Rate_Of_Turn>
+    <Projectile_Max_Flight_Distance>2225.0</Projectile_Max_Flight_Distance>
+    <Projectile_Max_Scan_Range>2225.0</Projectile_Max_Scan_Range>
+    <Projectile_Damage>100.0</Projectile_Damage>
+    <Projectile_Does_Shield_Damage>Yes</Projectile_Does_Shield_Damage>
+    <Projectile_Does_Energy_Damage>No</Projectile_Does_Energy_Damage>
+    <Projectile_Does_Hitpoint_Damage>Yes</Projectile_Does_Hitpoint_Damage>
+    <Projectile_Energy_Per_Shot>50</Projectile_Energy_Per_Shot>
+    <AI_Combat_Power>160</AI_Combat_Power>
+  </Projectile>
+
+  <Projectile Name="Proj_Goauld_Plasma_Artillery_Barrage">
+    <Variant_Of_Existing_Type>Proj_Goauld_Space_Plasma_Artillery_Barrage</Variant_Of_Existing_Type>
+    <Max_Speed>12.0</Max_Speed>
+    <Max_Rate_Of_Turn>0.0</Max_Rate_Of_Turn>
+    <Projectile_Rocket_Curve_Distance>500</Projectile_Rocket_Curve_Distance>
+    <Projectile_Rocket_Curve_Offset>0</Projectile_Rocket_Curve_Offset>
+    <Projectile_Rocket_Straight_Distance>500</Projectile_Rocket_Straight_Distance>
+    <Projectile_Max_Flight_Distance>2225.0</Projectile_Max_Flight_Distance>
+    <Projectile_Max_Scan_Range>2225.0</Projectile_Max_Scan_Range>
+    <Explode_When_Reached_Target_Radius> Yes </Explode_When_Reached_Target_Radius>
+    <Projectile_Blast_Area_Dropoff>True</Projectile_Blast_Area_Dropoff>
+    <Projectile_Blast_Area_Dropoff_Tiers>5</Projectile_Blast_Area_Dropoff_Tiers>
+    <Projectile_Damage>30</Projectile_Damage>
+    <Projectile_Blast_Area_Damage> 120 </Projectile_Blast_Area_Damage>
+    <Projectile_Blast_Area_Range> 200 </Projectile_Blast_Area_Range>
+    <Max_Secs_For_AE_Delayed_Damage>0</Max_Secs_For_AE_Delayed_Damage>
+    <Projectile_Does_Shield_Damage>Yes</Projectile_Does_Shield_Damage>
+    <Projectile_Does_Energy_Damage>No</Projectile_Does_Energy_Damage>
+    <Projectile_Does_Hitpoint_Damage>Yes</Projectile_Does_Hitpoint_Damage>
+    <Projectile_Energy_Per_Shot>0</Projectile_Energy_Per_Shot>
+    <AI_Combat_Power>600</AI_Combat_Power>
+  </Projectile>
+  
+</SpaceCorvettes>

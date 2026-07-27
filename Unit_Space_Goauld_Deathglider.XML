@@ -1,0 +1,143 @@
+<?xml version="1.0"?>
+<FighterUnits>
+
+   <SpaceUnit Name="X-Wing">
+      <Variant_Of_Existing_Type>Template_Space_Unit_Fighter_Multi</Variant_Of_Existing_Type>
+      <Text_ID>TEXT_GOAULD_SPACE_UNIT_TODESGLEITER</Text_ID>
+      <Encyclopedia_Text>TEXT_DESCRIPTION_GOAULD_TODESGLEITER TEXT_DESCRIPTION_FIGHTER_HYPERSPACE_NO</Encyclopedia_Text>
+      <Encyclopedia_Unit_Class> TEXT_ENCYCLOPEDIA_CLASS_TODESGLEITER </Encyclopedia_Unit_Class>
+      <Encyclopedia_Good_Against> TIE_Fighter TIE_Bomber Starviper_Fighter </Encyclopedia_Good_Against>
+      <Encyclopedia_Vulnerable_To> Tartan_Patrol_Cruiser Broadside_Class_Cruiser Crusader_Gunship </Encyclopedia_Vulnerable_To>
+      <Icon_Name>GOAULD_SPACE_UNIT_DEATHGLIDER.TGA</Icon_Name>
+      <Space_Model_Name>Goauld_Space_Unit_DeathGlider.ALO</Space_Model_Name>
+      <!--Radar_Icon_Name>I_RADAR_DEATHGLIDER.tga</Radar_Icon_Name-->
+      <!--Galactic_Fleet_Override_Model_Name>w_planet_fleet_deathglider.ALO</Galactic_Fleet_Override_Model_Name-->
+      <Scale_Factor>1.0</Scale_Factor>
+      <Select_Box_Scale>70</Select_Box_Scale>
+      <Select_Box_Z_Adjust>1.0f</Select_Box_Z_Adjust>
+      <Affiliation>Rebel</Affiliation>
+      <SpaceBehavior>FIGHTER_LOCOMOTOR, SELECTABLE, TARGETING, WEAPON, POWERED, HIDE_WHEN_FOGGED, AMBIENT_SFX, DAMAGE_TRACKING, NEBULA, HUNT</SpaceBehavior>
+
+      <Tactical_Health>65</Tactical_Health>
+      <AI_Combat_Power>60</AI_Combat_Power>
+      <Number_per_Squadron>5</Number_per_Squadron>
+
+      <Max_Speed>5.5</Max_Speed>
+      <Min_Speed>4.0</Min_Speed>
+      <Max_Rate_Of_Turn>3.0</Max_Rate_Of_Turn>
+      <Max_Thrust>1.0</Max_Thrust>
+      <Max_Rate_Of_Roll>5.0</Max_Rate_Of_Roll>
+      <Bank_Turn_Angle>40</Bank_Turn_Angle>
+      <Begin_Turn_Towards_Distance>800.0</Begin_Turn_Towards_Distance>
+
+      <Damage_Type>Damage_Fighter</Damage_Type>
+      <Fires_Forward>no</Fires_Forward>
+      <Turret_Rotate_Extent_Degrees>20</Turret_Rotate_Extent_Degrees>
+      <Turret_Elevate_Extent_Degrees>40</Turret_Elevate_Extent_Degrees>
+      <Projectile_Types>Proj_Deathglider_Laser</Projectile_Types>
+      <Projectile_Fire_Pulse_Count>2</Projectile_Fire_Pulse_Count>
+      <Projectile_Fire_Pulse_Delay_Seconds>0.03</Projectile_Fire_Pulse_Delay_Seconds>
+      <Projectile_Fire_Recharge_Seconds>1.5</Projectile_Fire_Recharge_Seconds>
+      <Fire_Inaccuracy_Distance> Fighter, 1.0 </Fire_Inaccuracy_Distance>
+      <Fire_Inaccuracy_Distance> Bomber, 1.0 </Fire_Inaccuracy_Distance>
+      <Fire_Inaccuracy_Distance> Transport, 1.0 </Fire_Inaccuracy_Distance>
+      <Fire_Inaccuracy_Distance> Corvette, 30.0 </Fire_Inaccuracy_Distance>
+      <Fire_Inaccuracy_Distance> Frigate, 30.0 </Fire_Inaccuracy_Distance>
+      <Fire_Inaccuracy_Distance> Capital, 30.0 </Fire_Inaccuracy_Distance>
+      <Fire_Inaccuracy_Distance> Super, 30.0 </Fire_Inaccuracy_Distance>
+      <SFXEvent_Fire>Weapon_Light_Laser_Goauld</SFXEvent_Fire>
+
+      <SFXEvent_Attack>Unit_Attack_GFB</SFXEvent_Attack>
+      <SFXEvent_Fleet_Move>Unit_Move_GFB</SFXEvent_Fleet_Move>
+      <SFXEvent_Guard></SFXEvent_Guard>
+      <SFXEvent_Health_Critical_Warning></SFXEvent_Health_Critical_Warning>
+      <SFXEvent_Health_Low_Warning></SFXEvent_Health_Low_Warning>
+      <SFXEvent_Move>Unit_Move_GFB</SFXEvent_Move>
+      <SFXEvent_Move_Into_Asteroid_Field></SFXEvent_Move_Into_Asteroid_Field>
+      <SFXEvent_Move_Into_Nebula></SFXEvent_Move_Into_Nebula>
+      <SFXEvent_Select>Unit_Select_GFB</SFXEvent_Select>
+      <SFXEvent_Stop></SFXEvent_Stop>
+
+      <SFXEvent_Engine_Idle_Loop>Engine_Goauld_Deathglider_Idle</SFXEvent_Engine_Idle_Loop>
+      <SFXEvent_Engine_Moving_Loop>Engine_Goauld_Deathglider</SFXEvent_Engine_Moving_Loop>
+      <SFXEvent_Engine_Cinematic_Focus_Loop>Engine_Goauld_Deathglider</SFXEvent_Engine_Cinematic_Focus_Loop>
+
+      <Unit_Abilities_Data SubObjectList="Yes">
+         <Unit_Ability>
+            <Type>HUNT</Type>
+            <Alternate_Name_Text>TEXT_ABILITY_GOAULD_SPACE_TODESGLEITER_GEGNER_JAGEN</Alternate_Name_Text>
+            <Alternate_Description_Text>TEXT_DESCRIPTION_ABILITY_SPACE_TODESGLEITER_GEGNER_JAGEN</Alternate_Description_Text>
+         </Unit_Ability>
+      </Unit_Abilities_Data>
+   </SpaceUnit>
+
+
+   <Squadron Name="Rebel_X-Wing_Squadron">
+      <Text_ID>TEXT_GOAULD_SPACE_UNIT_TODESGLEITER</Text_ID>
+      <Encyclopedia_Text>TEXT_DESCRIPTION_GOAULD_TODESGLEITER TEXT_DESCRIPTION_FIGHTER_HYPERSPACE_NO</Encyclopedia_Text>
+      <Encyclopedia_Unit_Class> TEXT_ENCYCLOPEDIA_CLASS_TODESGLEITER </Encyclopedia_Unit_Class>
+      <Encyclopedia_Good_Against> TIE_Fighter TIE_Bomber Starviper_Fighter </Encyclopedia_Good_Against>
+      <Encyclopedia_Vulnerable_To> Tartan_Patrol_Cruiser Broadside_Class_Cruiser Crusader_Gunship </Encyclopedia_Vulnerable_To>
+      <Icon_Name>GOAULD_SPACE_UNIT_DEATHGLIDER.TGA</Icon_Name>
+      <GUI_Row> 1 </GUI_Row>
+      <Radar_Icon_Name>I_RADAR_DEATHGLIDER.tga</Radar_Icon_Name>
+      <Is_Dummy>Yes</Is_Dummy>
+      <Formation_Priority>1</Formation_Priority>
+      <Is_Escort>Yes</Is_Escort>
+      <Is_Bomber>no</Is_Bomber>
+      <Affiliation>Rebel</Affiliation>
+      <Build_Cost_Credits>350</Build_Cost_Credits>
+      <Piracy_Value_Credits>50</Piracy_Value_Credits>
+      <Build_Time_Seconds>9</Build_Time_Seconds>
+      <Build_Tab_Space_Units>Yes</Build_Tab_Space_Units>
+      <Build_Initially_Locked>No</Build_Initially_Locked>
+      <Build_Can_Be_Unlocked_By_Slicer>No</Build_Can_Be_Unlocked_By_Slicer>
+      <Tech_Level>0</Tech_Level>
+      <Required_Star_Base_Level>1</Required_Star_Base_Level>
+      <Required_Special_Structures>R_Ground_Hangar</Required_Special_Structures>
+      <Behavior>DUMMY_SPACE_FIGHTER_SQUADRON</Behavior>
+      <Squadron_Units>X-Wing, X-Wing</Squadron_Units>
+      <Squadron_Units>X-Wing, X-Wing</Squadron_Units>
+      <Squadron_Units>X-Wing</Squadron_Units>
+      <Squadron_Offsets>30.0,0.0,0.0</Squadron_Offsets>
+      <Squadron_Offsets>0.0,15.0,0.0</Squadron_Offsets>
+      <Squadron_Offsets>0.0,-15.0,0.0</Squadron_Offsets>
+      <Squadron_Offsets>-30.0,30.0,0.0</Squadron_Offsets>
+      <Squadron_Offsets>-30.0,-30.0,0.0</Squadron_Offsets>
+      <FormationOrder>2</FormationOrder>
+      <Squadron_Formation_Error_Tolerance>25.0</Squadron_Formation_Error_Tolerance>
+      <Guard_Chase_Range>1000.0</Guard_Chase_Range>
+      <Idle_Chase_Range>200.0</Idle_Chase_Range>
+      <Attack_Move_Response_Range>300.0</Attack_Move_Response_Range>
+      <Property_Flags> SmallShip </Property_Flags>
+      <Autonomous_Move_Extension_Vs_Attacker>500.0</Autonomous_Move_Extension_Vs_Attacker>
+      <Unit_Abilities_Data SubObjectList="Yes">
+        <Unit_Ability>
+          <Type>HUNT</Type>
+          <Alternate_Name_Text>TEXT_ABILITY_GOAULD_SPACE_TODESGLEITER_GEGNER_JAGEN</Alternate_Name_Text>
+          <Alternate_Description_Text>TEXT_DESCRIPTION_ABILITY_SPACE_TODESGLEITER_GEGNER_JAGEN</Alternate_Description_Text>
+        </Unit_Ability>
+      </Unit_Abilities_Data>
+      <Tactical_Build_Cost_Multiplayer>350</Tactical_Build_Cost_Multiplayer>
+      <Tactical_Build_Time_Seconds>8</Tactical_Build_Time_Seconds>
+      <Tactical_Build_Prerequisites/>
+      <Tactical_Production_Queue>Tactical_Units</Tactical_Production_Queue>
+      <Population_Value>1</Population_Value>
+      <Score_Cost_Credits>600</Score_Cost_Credits>
+   </Squadron>
+
+
+   <Projectile Name="Proj_Deathglider_Laser">
+      <Variant_Of_Existing_Type>Proj_Goauld_Space_Fighter_Laser_Small</Variant_Of_Existing_Type>
+      <Max_Speed>25.0</Max_Speed>
+      <Max_Rate_Of_Turn>0.0</Max_Rate_Of_Turn>
+      <Projectile_Max_Flight_Distance>700.0</Projectile_Max_Flight_Distance>
+      <Projectile_Damage>4.0</Projectile_Damage>
+      <Projectile_Does_Shield_Damage>Yes</Projectile_Does_Shield_Damage>
+      <Projectile_Does_Energy_Damage>No</Projectile_Does_Energy_Damage>
+      <Projectile_Does_Hitpoint_Damage>Yes</Projectile_Does_Hitpoint_Damage>
+      <Projectile_Energy_Per_Shot>5</Projectile_Energy_Per_Shot>
+      <AI_Combat_Power>50</AI_Combat_Power>
+   </Projectile>
+
+</FighterUnits>

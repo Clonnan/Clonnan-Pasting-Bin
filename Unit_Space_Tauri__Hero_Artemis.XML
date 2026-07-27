@@ -1,0 +1,66 @@
+<?xml version="1.0"?>
+<Artemis_Hero>
+
+  <UniqueUnit Name="Tauri_Hero_Artemis">
+    <Variant_Of_Existing_Type>Asuran_Aurora_No_Spawn_No_Ability</Variant_Of_Existing_Type>
+    <Text_ID>TEXT_TAURI_SPACE_HERO_ARTEMIS</Text_ID>
+    <Encyclopedia_Text>TEXT_DESCRIPTION_TAURI_GC_ARTEMIS_SPACE</Encyclopedia_Text>
+    <Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_ARTEMIS</Encyclopedia_Unit_Class>
+    <Icon_Name>TAURI_SPACE_HERO_ARTEMIS.TGA</Icon_Name>
+    <Affiliation>Underworld</Affiliation>
+    <Death_Clone>Damage_Normal, Tauri_Aurora_Death_Clone</Death_Clone>
+    <Is_Named_Hero>No</Is_Named_Hero>
+    <Is_Generic_Hero>Yes</Is_Generic_Hero>
+    <Can_Be_Neutralized_By_Major_Heroes>No</Can_Be_Neutralized_By_Major_Heroes>
+    <Can_Be_Neutralized_By_Minor_Heroes>No</Can_Be_Neutralized_By_Minor_Heroes>
+    <Show_Hero_Head>Yes</Show_Hero_Head>
+    <Shield_Armor_Type>Armor_Hero_HeavyBS</Shield_Armor_Type>
+    <Armor_Type>Armor_Hero_HeavyBS</Armor_Type>
+    <Population_Value>6</Population_Value>
+    <!--Starting_Spawned_Units_Tech_0>Tauri_Puddle_Jumper_Squadron, 2</Starting_Spawned_Units_Tech_0>
+    <Spawned_Squadron_Delay_Seconds>4</Spawned_Squadron_Delay_Seconds>
+    <Reserve_Spawned_Units_Tech_0>Tauri_Puddle_Jumper_Squadron, 2</Reserve_Spawned_Units_Tech_0--> 
+    <HardPoints>
+      HP_Aurora_Front,
+      HP_Aurora_Middle_1,
+      HP_Aurora_Middle_2,
+      HP_Aurora_Back,
+      HP_Aurora_Drone_Tank_1,
+      HP_Aurora_Drone_Tank_4,
+      HP_Aurora_Engine,
+      HP_Aurora_Shield,
+    </HardPoints> 
+    <SFXEvent_Attack>Unit_Attack_Artemis</SFXEvent_Attack>
+    <SFXEvent_Fleet_Move>Unit_Move_Artemis</SFXEvent_Fleet_Move>
+    <SFXEvent_Guard></SFXEvent_Guard>
+    <SFXEvent_Health_Critical_Warning>Unit_CriticalHP_Artemis</SFXEvent_Health_Critical_Warning> 
+    <SFXEvent_Health_Low_Warning>Unit_LOWHP_Artemis</SFXEvent_Health_Low_Warning>
+    <SFXEvent_Move>Unit_Move_Artemis</SFXEvent_Move>
+    <SFXEvent_Move_Into_Asteroid_Field></SFXEvent_Move_Into_Asteroid_Field>
+    <SFXEvent_Move_Into_Nebula></SFXEvent_Move_Into_Nebula>
+    <SFXEvent_Select>Unit_Select_Artemis</SFXEvent_Select>
+    <SFXEvent_Stop></SFXEvent_Stop>
+    <SFXEvent_Build_Complete>Unit_Spawn_Artemis</SFXEvent_Build_Complete>
+    <Death_SFXEvent_Start_Die></Death_SFXEvent_Start_Die>
+    <SFXEvent_Hero_Respawned>Unit_Spawn_Artemis</SFXEvent_Hero_Respawned>
+   
+    <SFXEvent_Hardpoint_All_Weapons_Destroyed>Unit_NoWeapon_Artemis</SFXEvent_Hardpoint_All_Weapons_Destroyed>
+    <SFXEvent_Hardpoint_Destroyed> HARD_POINT_WEAPON_LASER, Unit_NoWeapon_Artemis</SFXEvent_Hardpoint_Destroyed>
+
+    <Unit_Abilities_Data SubObjectList="Yes">
+      <Unit_Ability>
+        <Type>POWER_TO_WEAPONS</Type>
+        <Mod_Multiplier>WEAPON_DELAY_MULTIPLIER,	0.33</Mod_Multiplier>
+        <Mod_Multiplier>SPEED_MULTIPLIER,		1.0</Mod_Multiplier>
+        <Mod_Multiplier>CAUSE_DAMAGE_MULTIPLIER ,	3.0</Mod_Multiplier>
+		<Mod_Multiplier>SHIELD_REGEN_MULTIPLIER,	-25.0</Mod_Multiplier>
+        <Recharge_Seconds>50</Recharge_Seconds>
+        <Expiration_Seconds>7</Expiration_Seconds>
+        <Alternate_Name_Text>TEXT_ABILITY_TAURI_SPACE_ARTEMIS_WAFFENBOOST</Alternate_Name_Text>
+        <Alternate_Description_Text>TEXT_DESCRIPTION_ABILITY_SPACE_ARTEMIS_WAFFENBOOST</Alternate_Description_Text>
+      </Unit_Ability>
+    </Unit_Abilities_Data>
+    <Lua_Script>ObjectScript_HW_Big</Lua_Script>
+  </UniqueUnit>
+
+</Artemis_Hero>

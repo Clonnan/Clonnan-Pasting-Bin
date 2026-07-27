@@ -1,0 +1,73 @@
+<?xml version="1.0"?>
+<Jaffa_Units>
+
+  <!-- Information Jaffa New Hatak -->
+  <SpaceUnit Name="Jaffa_New_Hatak">
+    <Variant_Of_Existing_Type>Corellian_Gunboat</Variant_Of_Existing_Type>
+    <Text_ID>TEXT_JAFFA_SPACE_UNIT_HATAK</Text_ID>
+    <Encyclopedia_Text>TEXT_DESCRIPTION_JAFFA_HATAK</Encyclopedia_Text>
+    <Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_JAFFA_HATAK</Encyclopedia_Unit_Class>
+    <Affiliation>Jaffa_Rebels</Affiliation>
+    <Tech_Level>99</Tech_Level>
+    <Build_Tab_Space_Units>No</Build_Tab_Space_Units>
+    <Required_Star_Base_Level>1</Required_Star_Base_Level>
+	<SFXEvent_Attack>Unit_Attack_Jaffa_Hatak</SFXEvent_Attack>
+    <SFXEvent_Fleet_Move>Unit_Move_Goauld_NewHatak</SFXEvent_Fleet_Move>
+    <SFXEvent_Health_Critical_Warning>Unit_CriticalHP_Jaffa_Hatak</SFXEvent_Health_Critical_Warning>
+    <SFXEvent_Health_Low_Warning>Unit_LOWHP_Jaffa_Hatak</SFXEvent_Health_Low_Warning>
+    <SFXEvent_Move>Unit_Move_Jaffa_Hatak</SFXEvent_Move>
+    <SFXEvent_Select>Unit_Select_Jaffa_Hatak</SFXEvent_Select>
+  </SpaceUnit>
+
+  <!-- Information Jaffa Teltak -->
+  <SpaceUnit Name="Jaffa_Teltak">
+    <Variant_Of_Existing_Type>Y-Wing</Variant_Of_Existing_Type>
+    <Affiliation>Jaffa_Rebels</Affiliation>
+  </SpaceUnit>
+
+  <SpaceUnit Name="Jaffa_Teltak_Squadron">
+    <Variant_Of_Existing_Type>Y-Wing_Squadron</Variant_Of_Existing_Type>
+    <Affiliation>Jaffa_Rebels</Affiliation>
+    <Squadron_Units>Jaffa_Teltak, Jaffa_Teltak, Jaffa_Teltak</Squadron_Units>
+    <Tech_Level>99</Tech_Level>
+    <Build_Initially_Locked>Yes</Build_Initially_Locked>
+    <Build_Can_Be_Unlocked_By_Slicer>No</Build_Can_Be_Unlocked_By_Slicer>
+    <Build_Tab_Space_Units>No</Build_Tab_Space_Units>
+    <Required_Star_Base_Level>1</Required_Star_Base_Level>
+  </SpaceUnit>
+
+  <!-- Information Jaffa Deathglider -->
+  <SpaceUnit Name="Jaffa_Death_Glider">
+    <Variant_Of_Existing_Type>X-Wing</Variant_Of_Existing_Type>
+    <Affiliation>Jaffa_Rebels</Affiliation>
+  </SpaceUnit>
+
+  <SpaceUnit Name="Jaffa_Death_Glider_Squadron">
+    <Variant_Of_Existing_Type>Rebel_X-Wing_Squadron</Variant_Of_Existing_Type>
+    <Affiliation>Jaffa_Rebels</Affiliation>
+    <Squadron_Units>Jaffa_Death_Glider, Jaffa_Death_Glider, Jaffa_Death_Glider, Jaffa_Death_Glider, Jaffa_Death_Glider</Squadron_Units>
+    <Tech_Level>99</Tech_Level>
+    <Build_Initially_Locked>Yes</Build_Initially_Locked>
+    <Build_Can_Be_Unlocked_By_Slicer>No</Build_Can_Be_Unlocked_By_Slicer>
+    <Build_Tab_Space_Units>No</Build_Tab_Space_Units>
+    <Required_Star_Base_Level>1</Required_Star_Base_Level>
+  </SpaceUnit>
+
+  <!-- Information Jaffa Alkesh -->
+  <SpaceUnit Name="Jaffa_Alkesh">
+    <Variant_Of_Existing_Type>B-Wing</Variant_Of_Existing_Type>
+    <Affiliation>Jaffa_Rebels</Affiliation>
+  </SpaceUnit>
+
+  <SpaceUnit Name="Jaffa_Alkesh_Squadron">
+    <Variant_Of_Existing_Type>B-Wing_Squadron</Variant_Of_Existing_Type>
+    <Affiliation>Jaffa_Rebels</Affiliation>
+    <Squadron_Units>Jaffa_Alkesh, Jaffa_Alkesh, Jaffa_Alkesh</Squadron_Units>
+    <Tech_Level>99</Tech_Level>
+    <Build_Initially_Locked>Yes</Build_Initially_Locked>
+    <Build_Can_Be_Unlocked_By_Slicer>No</Build_Can_Be_Unlocked_By_Slicer>
+    <Build_Tab_Space_Units>No</Build_Tab_Space_Units>
+    <Required_Star_Base_Level>1</Required_Star_Base_Level>
+  </SpaceUnit>
+
+</Jaffa_Units>

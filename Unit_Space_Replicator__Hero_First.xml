@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ReplicatorHeroes>
+
+   <SpaceHero Name="Replicator_First">
+      <Variant_Of_Existing_Type>Replicator_Beliskner</Variant_Of_Existing_Type>
+    <Text_ID>TEXT_REPLICATOR_SPACE_HERO_FIRST</Text_ID>
+     <Encyclopedia_Text>TEXT_DESCRIPTION_REPLICATOR_HERO_FIRST</Encyclopedia_Text>
+     <Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_FIRST</Encyclopedia_Unit_Class>
+     <Icon_Name>REPLICATOR_SPACE_HERO_FIRST.TGA</Icon_Name>
+    <Galactic_Fleet_Override_Model_Name>w_planet_fleet_replicatorbeliskner.ALO</Galactic_Fleet_Override_Model_Name>
+    <Affiliation>Replicator</Affiliation>
+    <Death_Clone>Damage_Normal, Replicator_First_Death_Clone</Death_Clone>
+	<Shield_Points>4000</Shield_Points>	
+	<CategoryMask>Capital | SpaceHero | AntiCapital</CategoryMask>
+    <AI_Combat_Power>5500</AI_Combat_Power>
+    <Armor_Type>Armor_Replicator</Armor_Type>	  
+    <Shield_Armor_Type>Armor_Hero_MediumBS</Shield_Armor_Type>
+    <Ranking_In_Category>7</Ranking_In_Category>
+	<Is_Named_Hero>No</Is_Named_Hero>
+    <Is_Generic_Hero>Yes</Is_Generic_Hero>
+    <Show_Hero_Head>Yes</Show_Hero_Head>
+    <HardPoints>
+      HP_Replicator_First_F_ICH_00,
+      HP_Replicator_First_M_ICM_00,
+      HP_Replicator_First_M_ICM_01,
+      HP_Replicator_First_F_ICS_00,
+      HP_Replicator_First_F_ICS_01,
+      HP_Replicator_Beliskner_Shield_Generator,
+      HP_Replicator_Beliskner_Engines
+    </HardPoints>
+    <Custom_Hard_XExtent> 220.0 </Custom_Hard_XExtent>
+    <Custom_Hard_YExtent> 170.0 </Custom_Hard_YExtent>	
+    <SpaceBehavior>SIMPLE_SPACE_LOCOMOTOR, ABILITY_COUNTDOWN, ASTEROID_FIELD_DAMAGE, DAMAGE_TRACKING, HIDE_WHEN_FOGGED, ION_STUN_EFFECT, NEBULA, POWERED, REVEAL, SELECTABLE, SHIELDED, TARGETING, UNIT_AI</SpaceBehavior>	
+    <Unit_Abilities_Data SubObjectList="Yes">
+         <Unit_Ability>
+            <Type>SHIELD_FLARE</Type>
+            <Alternate_Icon_Name>I_SA_SHIELD_OVERLOAD_BELISKNER.tga</Alternate_Icon_Name>
+            <Alternate_Description_Text>TEXT_DESCRIPTION_ABILITY_SPACE_BELISKNER_SCHILDUEBERLADUNG</Alternate_Description_Text>
+            <Recharge_Seconds>45</Recharge_Seconds>
+            <GUI_Activated_Ability_Name> Shield_Flare_Beliskner_First </GUI_Activated_Ability_Name>
+            <SFXEvent_GUI_Unit_Ability_Activated></SFXEvent_GUI_Unit_Ability_Activated>
+            <Supports_Autofire>False</Supports_Autofire>
+         </Unit_Ability>
+         <Unit_Ability>
+            <Type>DEFEND</Type>
+            <Alternate_Name_Text>TEXT_ABILITY_TAURI_SPACE_DANIEL_JACKSON_SCHILDENERGIESCHUB</Alternate_Name_Text>
+            <Alternate_Description_Text>TEXT_DESCRIPTION_ABILITY_SPACE_DANIEL_JACKSON_SCHILDENERGIESCHUB</Alternate_Description_Text>
+            <Alternate_Icon_Name>I_SA_SHIELD_BOOST_DANIEL_JACKSON.TGA</Alternate_Icon_Name>
+            <Expiration_Seconds>20</Expiration_Seconds>
+            <Mod_Multiplier>WEAPON_DELAY_MULTIPLIER,   3.0f</Mod_Multiplier>
+            <Mod_Multiplier>SHIELD_REGEN_MULTIPLIER,   1.0f</Mod_Multiplier>
+            <Mod_Multiplier>SHIELD_REGEN_INTERVAL_MULTIPLIER,   0.10f</Mod_Multiplier>
+            <Mod_Multiplier>SPEED_MULTIPLIER,       0.8f</Mod_Multiplier>
+            <Recharge_Seconds>60</Recharge_Seconds>
+            <Supports_Autofire>False</Supports_Autofire>
+         </Unit_Ability>	
+    </Unit_Abilities_Data>
+    <Abilities SubObjectList="Yes">
+      <Shield_Flare_Ability Name="Shield_Flare_Beliskner_First">
+            <Max_Damage_Per_Victim>1250</Max_Damage_Per_Victim>
+            <Damage_Radius>1500</Damage_Radius>
+            <Charge_Up_Seconds>3</Charge_Up_Seconds>
+            <Activation_Style> User_Input </Activation_Style>
+            <Owner_Particle_Effect>Shield_Flare_Beliskner_Red</Owner_Particle_Effect>
+            <Owner_Light_Effect_Type>Color_Flash</Owner_Light_Effect_Type>
+            <Owner_Light_Effect_Color>1.0, 0.0, 0.0</Owner_Light_Effect_Color>
+            <Owner_Light_Effect_Color2 />
+            <Owner_Light_Effect_Duration>1.5</Owner_Light_Effect_Duration>
+            <Owner_Light_Effect_Pulse_Count />
+            <SFXEvent_Activate>Shield_Flare_SFX_Event</SFXEvent_Activate>
+      </Shield_Flare_Ability>		 
+      <Combat_Bonus_Ability Name="Replicator_First_Combat_Bonus_GC">
+				<Activation_Style>Space_Automatic</Activation_Style>
+				<Applicable_Unit_Types>Replicator_Beliskner</Applicable_Unit_Types>
+				<Health_Bonus_Percentage>0.1</Health_Bonus_Percentage>
+				<Damage_Bonus_Percentage>0.5</Damage_Bonus_Percentage>
+				<Energy_Pool_Bonus_Percentage>0.0</Energy_Pool_Bonus_Percentage>
+				<Shield_Bonus_Percentage>0.4</Shield_Bonus_Percentage>
+				<Defense_Bonus_Percentage>0.0</Defense_Bonus_Percentage>
+				<Movement_Speed_Bonus_Percentage>0.0</Movement_Speed_Bonus_Percentage>
+        <Stacking_Category>1</Stacking_Category>
+      </Combat_Bonus_Ability>
+    </Abilities> 
+	<Build_Limit_Current_Per_Player>1</Build_Limit_Current_Per_Player>	 
+    <Tech_Level>99</Tech_Level>  	
+	<Lua_Script>ObjectScript_First</Lua_Script>
+  </SpaceHero>
+
+  <SpaceHero Name="Replicator_First_Death_Clone">
+    <Variant_Of_Existing_Type>Krayt_Class_Destroyer_Death_Clone</Variant_Of_Existing_Type>
+    <Space_Model_Name>Replicator_Space_Unit_Beliskner_D.ALO</Space_Model_Name>
+	<Scale_Factor>1.25</Scale_Factor>
+    <Affiliation>Replicator</Affiliation>
+  </SpaceHero>
+
+
+  <!-- Projectile Replicator First -->
+  <Projectile Name="Proj_Replicator_First_Beam_Weapon">
+    <Variant_Of_Existing_Type>Proj_Asuran_Satellite_Beam</Variant_Of_Existing_Type>
+    <Space_Model_Name>Asuran_Projectile_Satellite_Laser.ALO</Space_Model_Name>
+      <Projectile_Does_Hitpoint_Damage>Yes</Projectile_Does_Hitpoint_Damage>
+      <Projectile_Damage>400.0</Projectile_Damage>
+      <Projectile_Max_Flight_Distance>2000.0</Projectile_Max_Flight_Distance>
+      <Projectile_Object_Detonation_Particle>Particle_Asuran_Satellite_laser_Hit</Projectile_Object_Detonation_Particle>
+      <Projectile_Ground_Detonation_Particle>Particle_Asuran_Satellite_laser_Hit</Projectile_Ground_Detonation_Particle>
+      <Projectile_Lifetime_Detonation_Particle>Particle_Asuran_Satellite_laser_Hit</Projectile_Lifetime_Detonation_Particle>
+      <Projectile_Absorbed_By_Shields_Particle>Particle_Asuran_Satellite_Laser_Shield_Absorb</Projectile_Absorbed_By_Shields_Particle>
+  </Projectile>
+ 
+  
+</ReplicatorHeroes>

@@ -1,0 +1,307 @@
+<?xml version="1.0"?>
+<Units_Eye>
+   <!-- Information General Generic Hero Eye Of The Gods - base -->
+   <SpaceUnit Name="Goauld_Hero_Eye_Of_The_Gods_Transport_Base">
+      <Variant_Of_Existing_Type>Template_Space_Unit_Corvette</Variant_Of_Existing_Type>
+      <Text_ID>TEXT_GOAULD_SPECIAL_HERO_EYE_OF_THE_GODS</Text_ID>
+      <Encyclopedia_Text>TEXT_DESCRIPTION_GOAULD_EYE_OF_THE_GODS_SPECIAL</Encyclopedia_Text>
+      <Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_EYE_OF_THE_GODS</Encyclopedia_Unit_Class>
+      <Icon_Name>GOAULD_EYES_OF_GODS.TGA</Icon_Name>
+      <Space_Model_Name>Goauld_Space_Unit_Teltak.ALO</Space_Model_Name>
+      <Affiliation>Rebel</Affiliation>
+      <Galactic_Fleet_Override_Model_Name> W_planet_fleet_Teltak.ALO </Galactic_Fleet_Override_Model_Name>
+      <Galactic_Fleet_Override_Icon_Index> 4 </Galactic_Fleet_Override_Icon_Index> 
+      <Radar_Icon_Name>I_RADAR_TELTAK.TGA</Radar_Icon_Name>
+      <Radar_Icon_Size>0.036 0.036</Radar_Icon_Size>
+      <Scale_Factor>0.025</Scale_Factor>
+      <Select_Box_Scale>80</Select_Box_Scale>
+      <Select_Box_Z_Adjust>-30</Select_Box_Z_Adjust>
+      <Tactical_Health>400</Tactical_Health>
+      <Shield_Points>200</Shield_Points>
+      <Shield_Refresh_Rate>5</Shield_Refresh_Rate>
+      <Population_Value>0</Population_Value>
+      <Death_Explosions>Medium_Explosion_Space</Death_Explosions>
+      <Death_Clone>Damage_Normal, Underworld_Infantry_Droid_Shuttle_Death_Clone</Death_Clone>
+      <Always_Spawn_In_Orbit>Yes</Always_Spawn_In_Orbit>
+      <Behavior>DUMMY_STARSHIP, TRANSPORT</Behavior>
+      <SpaceBehavior>ABILITY_COUNTDOWN, SIMPLE_SPACE_LOCOMOTOR, SELECTABLE, TARGETING, POWERED, SHIELDED, REVEAL, SPAWN_SQUADRON, HIDE_WHEN_FOGGED, AMBIENT_SFX, DAMAGE_TRACKING, UNIT_AI, NEBULA</SpaceBehavior>
+      <Unit_Abilities_Data SubObjectList="Yes">
+         <Unit_Ability>
+            <Type>TARGETED_INVULNERABILITY</Type>
+            <Alternate_Name_Text>TEXT_ABILITY_LOAD_INTO</Alternate_Name_Text>
+            <Alternate_Description_Text>TEXT_DESCRIPTION_ABILITY_LOAD_INTO_ITEM </Alternate_Description_Text>
+			<Alternate_Icon_Name>I_SA_JOIN_ME.tga</Alternate_Icon_Name>
+			<Activation_Style> User_Input </Activation_Style>
+            <Recharge_Seconds>5.0</Recharge_Seconds>
+            <GUI_Activated_Ability_Name> </GUI_Activated_Ability_Name>
+            <Spawned_Object_Type>Dummy_Proj_Load_Into</Spawned_Object_Type>
+            <Effective_Radius>3000</Effective_Radius>
+            <Friendly_Ability> true </Friendly_Ability>
+            <Supports_Autofire>False</Supports_Autofire>
+         </Unit_Ability>
+      </Unit_Abilities_Data>
+      <Lua_Script>ObjectScript_Fleet_Commander_and_Items</Lua_Script>
+   </SpaceUnit>
+   
+   <HeroCompany Name="Goauld_Hero_Eye_Of_The_Gods_Team_Base">
+      <Variant_Of_Existing_Type>Template_Ground_Minor_Hero_Company</Variant_Of_Existing_Type>
+      <Text_ID>TEXT_GOAULD_SPECIAL_HERO_EYE_OF_THE_GODS</Text_ID>
+      <Encyclopedia_Text>TEXT_DESCRIPTION_GOAULD_EYE_OF_THE_GODS_SPECIAL</Encyclopedia_Text>
+      <Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_EYE_OF_THE_GODS</Encyclopedia_Unit_Class>
+	  <Affiliation>Rebel</Affiliation>      
+	  <Icon_Name>GOAULD_EYES_OF_GODS.TGA</Icon_Name>
+      <Company_Transport_Unit>Goauld_Hero_Eye_Of_The_Gods_Transport_Base</Company_Transport_Unit>
+      <Company_Units>Goauld_Hero_Eye_Of_The_Gods</Company_Units>
+      <CategoryMask>NonCombatHero</CategoryMask>
+      <Required_Star_Base_Level>1</Required_Star_Base_Level>
+	  <Required_Ground_Base_Level>0</Required_Ground_Base_Level>
+   </HeroCompany>
+
+   <GenericHeroUnit Name="Goauld_Hero_Eye_Of_The_Gods">
+      <Text_ID>TEXT_GOAULD_SPECIAL_HERO_EYE_OF_THE_GODS</Text_ID>
+      <Encyclopedia_Text>TEXT_DESCRIPTION_GOAULD_EYE_OF_THE_GODS_SPECIAL</Encyclopedia_Text>
+      <Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_EYE_OF_THE_GODS</Encyclopedia_Unit_Class>
+      <Icon_Name>GOAULD_EYES_OF_GODS.TGA</Icon_Name>
+      <Show_Hero_Head>Yes</Show_Hero_Head>
+      <GUI_Row> 1 </GUI_Row>
+      <Mass>1.0</Mass>
+      <Scale_Factor>1.0</Scale_Factor>
+      <Is_Sprite>No</Is_Sprite>
+      <Type>Walk</Type>
+      <Affiliation>Rebel</Affiliation>
+      <Political_Control>0</Political_Control>
+      <Size_Value>75</Size_Value>
+      <Is_Generic_Hero>Yes</Is_Generic_Hero>
+      <Always_Spawn_In_Orbit>Yes</Always_Spawn_In_Orbit>
+      <Neutralization_Cost>100.0</Neutralization_Cost>
+      <Can_Be_Neutralized_By_Major_Heroes>No</Can_Be_Neutralized_By_Major_Heroes>
+      <Can_Be_Neutralized_By_Minor_Heroes>No</Can_Be_Neutralized_By_Minor_Heroes>
+      <CategoryMask>NonCombatHero</CategoryMask>
+      <Ranking_In_Category>21</Ranking_In_Category>
+  </GenericHeroUnit>
+  
+    <!-- Information General Generic Hero Eye Of Apophis -->
+	
+   <SpaceUnit Name="Goauld_Hero_Eye_Of_Apophis_Transport">
+     <Variant_Of_Existing_Type>Goauld_Hero_Eye_Of_The_Gods_Transport_Base</Variant_Of_Existing_Type>
+     <Text_ID>TEXT_GOAULD_SPECIAL_HERO_EYE_OF_APOPHIS</Text_ID>
+     <Encyclopedia_Text>TEXT_DESCRIPTION_GOAULD_EYE_OF_APOPHIS_SPECIAL</Encyclopedia_Text>	 
+     <Icon_Name>GOAULD_EYE_OF_APOPHIS.TGA</Icon_Name>	  	 
+	 <Affiliation>Rebel</Affiliation>
+	 <Space_Model_Name>Goauld_Space_Unit_Teltak.ALO</Space_Model_Name>
+   </SpaceUnit>
+   
+   <HeroCompany Name="Goauld_Hero_Eye_Of_Apophis_Team">
+     <Variant_Of_Existing_Type>Goauld_Hero_Eye_Of_The_Gods_Team_Base</Variant_Of_Existing_Type>
+     <Text_ID>TEXT_GOAULD_SPECIAL_HERO_EYE_OF_APOPHIS</Text_ID>
+     <Encyclopedia_Text>TEXT_DESCRIPTION_GOAULD_EYE_OF_APOPHIS_SPECIAL</Encyclopedia_Text>	 
+     <Icon_Name>GOAULD_EYE_OF_APOPHIS.TGA</Icon_Name>	  
+	 <Affiliation>Rebel</Affiliation>
+     <Company_Transport_Unit>Goauld_Hero_Eye_Of_Apophis_Transport</Company_Transport_Unit>
+     <Company_Units>Goauld_Hero_Eye_Of_The_Gods_Apophis</Company_Units>
+   </HeroCompany>	
+
+   <GenericHeroUnit Name="Goauld_Hero_Eye_Of_The_Gods_Apophis">
+      <Variant_Of_Existing_Type>Goauld_Hero_Eye_Of_The_Gods</Variant_Of_Existing_Type>
+      <Text_ID>TEXT_GOAULD_SPECIAL_HERO_EYE_OF_APOPHIS</Text_ID>
+      <Encyclopedia_Text>TEXT_DESCRIPTION_GOAULD_EYE_OF_APOPHIS_SPECIAL</Encyclopedia_Text>	 	  
+      <Icon_Name>GOAULD_EYE_OF_APOPHIS.TGA</Icon_Name>
+  </GenericHeroUnit>
+
+    <!-- Information General Generic Hero Eye Of Baal -->
+	
+   <SpaceUnit Name="Goauld_Hero_Eye_Of_Baal_Transport">
+     <Variant_Of_Existing_Type>Goauld_Hero_Eye_Of_The_Gods_Transport_Base</Variant_Of_Existing_Type>
+     <Text_ID>TEXT_GOAULD_SPECIAL_HERO_EYE_OF_BAAL</Text_ID>
+     <Encyclopedia_Text>TEXT_DESCRIPTION_GOAULD_EYE_OF_BAAL_SPECIAL</Encyclopedia_Text>	 	 
+     <Icon_Name>GOAULD_EYE_OF_BAAL.TGA</Icon_Name>	  	 
+	 <Affiliation>Rebel</Affiliation>
+	 <Space_Model_Name>Goauld_Space_Unit_Teltak.ALO</Space_Model_Name>
+   </SpaceUnit>
+   
+   <HeroCompany Name="Goauld_Hero_Eye_Of_Baal_Team">
+     <Variant_Of_Existing_Type>Goauld_Hero_Eye_Of_The_Gods_Team_Base</Variant_Of_Existing_Type>
+     <Text_ID>TEXT_GOAULD_SPECIAL_HERO_EYE_OF_BAAL</Text_ID>
+     <Icon_Name>GOAULD_EYE_OF_BAAL.TGA</Icon_Name>	  
+     <Encyclopedia_Text>TEXT_DESCRIPTION_GOAULD_EYE_OF_BAAL_SPECIAL</Encyclopedia_Text>	 	 
+	 <Affiliation>Rebel</Affiliation>
+     <Company_Transport_Unit>Goauld_Hero_Eye_Of_Baal_Transport</Company_Transport_Unit>
+     <Company_Units>Goauld_Hero_Eye_Of_The_Gods_Baal</Company_Units>
+   </HeroCompany>	
+
+   <GenericHeroUnit Name="Goauld_Hero_Eye_Of_The_Gods_Baal">
+      <Variant_Of_Existing_Type>Goauld_Hero_Eye_Of_The_Gods</Variant_Of_Existing_Type>   
+      <Text_ID>TEXT_GOAULD_SPECIAL_HERO_EYE_OF_BAAL</Text_ID>
+      <Encyclopedia_Text>TEXT_DESCRIPTION_GOAULD_EYE_OF_BAAL_SPECIAL</Encyclopedia_Text>	 	  
+      <Icon_Name>GOAULD_EYE_OF_BAAL.TGA</Icon_Name>
+  </GenericHeroUnit>
+   
+    <!-- Information General Generic Hero Eye Of Horus -->
+	
+   <SpaceUnit Name="Goauld_Hero_Eye_Of_Horus_Transport">
+     <Variant_Of_Existing_Type>Goauld_Hero_Eye_Of_The_Gods_Transport_Base</Variant_Of_Existing_Type>
+     <Text_ID>TEXT_GOAULD_SPECIAL_HERO_EYE_OF_HORUS</Text_ID>
+     <Encyclopedia_Text>TEXT_DESCRIPTION_GOAULD_EYE_OF_HORUS_SPECIAL</Encyclopedia_Text>	 	 
+     <Icon_Name>GOAULD_EYE_OF_HORUS.TGA</Icon_Name>	  	 
+	 <Affiliation>Rebel</Affiliation>
+	 <Space_Model_Name>Goauld_Space_Unit_Teltak.ALO</Space_Model_Name>
+   </SpaceUnit>
+   
+   <HeroCompany Name="Goauld_Hero_Eye_Of_Horus_Team">
+     <Variant_Of_Existing_Type>Goauld_Hero_Eye_Of_The_Gods_Team_Base</Variant_Of_Existing_Type>
+     <Text_ID>TEXT_GOAULD_SPECIAL_HERO_EYE_OF_HORUS</Text_ID>
+     <Encyclopedia_Text>TEXT_DESCRIPTION_GOAULD_EYE_OF_HORUS_SPECIAL</Encyclopedia_Text>	 	 
+     <Icon_Name>GOAULD_EYE_OF_HORUS.TGA</Icon_Name>	  
+	 <Affiliation>Rebel</Affiliation>
+     <Company_Transport_Unit>Goauld_Hero_Eye_Of_Horus_Transport</Company_Transport_Unit>
+     <Company_Units>Goauld_Hero_Eye_Of_The_Gods_Horus</Company_Units>
+   </HeroCompany>	
+
+   <GenericHeroUnit Name="Goauld_Hero_Eye_Of_The_Gods_Horus">
+      <Variant_Of_Existing_Type>Goauld_Hero_Eye_Of_The_Gods</Variant_Of_Existing_Type>   
+      <Text_ID>TEXT_GOAULD_SPECIAL_HERO_EYE_OF_HORUS</Text_ID>
+      <Encyclopedia_Text>TEXT_DESCRIPTION_GOAULD_EYE_OF_HORUS_SPECIAL</Encyclopedia_Text>	 	  
+      <Icon_Name>GOAULD_EYE_OF_HORUS.TGA</Icon_Name>
+  </GenericHeroUnit>
+
+    <!-- Information General Generic Hero Eye Of Osiris -->
+	
+   <SpaceUnit Name="Goauld_Hero_Eye_Of_Osiris_Transport">
+     <Variant_Of_Existing_Type>Goauld_Hero_Eye_Of_The_Gods_Transport_Base</Variant_Of_Existing_Type>
+     <Text_ID>TEXT_GOAULD_SPECIAL_HERO_EYE_OF_OSIRIS</Text_ID>
+     <Encyclopedia_Text>TEXT_DESCRIPTION_GOAULD_EYE_OF_OSIRIS_SPECIAL</Encyclopedia_Text>	 	 
+     <Icon_Name>GOAULD_EYE_OF_OSIRIS.TGA</Icon_Name>	  	 
+	 <Affiliation>Rebel</Affiliation>
+	 <Space_Model_Name>Goauld_Space_Unit_Teltak.ALO</Space_Model_Name>
+   </SpaceUnit>
+   
+   <HeroCompany Name="Goauld_Hero_Eye_Of_Osiris_Team">
+     <Variant_Of_Existing_Type>Goauld_Hero_Eye_Of_The_Gods_Team_Base</Variant_Of_Existing_Type>
+     <Text_ID>TEXT_GOAULD_SPECIAL_HERO_EYE_OF_OSIRIS</Text_ID>
+     <Encyclopedia_Text>TEXT_DESCRIPTION_GOAULD_EYE_OF_OSIRIS_SPECIAL</Encyclopedia_Text>	 	 
+     <Icon_Name>GOAULD_EYE_OF_OSIRIS.TGA</Icon_Name>	  
+	 <Affiliation>Rebel</Affiliation>
+     <Company_Transport_Unit>Goauld_Hero_Eye_Of_Osiris_Transport</Company_Transport_Unit>
+     <Company_Units>Goauld_Hero_Eye_Of_The_Gods_Osiris</Company_Units>
+   </HeroCompany>	
+
+   <GenericHeroUnit Name="Goauld_Hero_Eye_Of_The_Gods_Osiris">
+      <Variant_Of_Existing_Type>Goauld_Hero_Eye_Of_The_Gods</Variant_Of_Existing_Type>   
+      <Text_ID>TEXT_GOAULD_SPECIAL_HERO_EYE_OF_OSIRIS</Text_ID>
+      <Encyclopedia_Text>TEXT_DESCRIPTION_GOAULD_EYE_OF_OSIRIS_SPECIAL</Encyclopedia_Text>	 	  
+      <Icon_Name>GOAULD_EYE_OF_OSIRIS.TGA</Icon_Name>
+  </GenericHeroUnit>
+
+    <!-- Information General Generic Hero Eye Of Ra -->
+	
+   <SpaceUnit Name="Goauld_Hero_Eye_Of_Ra_Transport">
+     <Variant_Of_Existing_Type>Goauld_Hero_Eye_Of_The_Gods_Transport_Base</Variant_Of_Existing_Type>
+     <Text_ID>TEXT_GOAULD_SPECIAL_HERO_EYE_OF_RA</Text_ID>
+     <Encyclopedia_Text>TEXT_DESCRIPTION_GOAULD_EYE_OF_RA_SPECIAL</Encyclopedia_Text>	 	 
+     <Icon_Name>GOAULD_EYE_OF_RA.TGA</Icon_Name>	  	 
+	 <Affiliation>Rebel</Affiliation>
+	 <Space_Model_Name>Goauld_Space_Unit_Teltak.ALO</Space_Model_Name>
+   </SpaceUnit>
+   
+   <HeroCompany Name="Goauld_Hero_Eye_Of_Ra_Team">
+     <Variant_Of_Existing_Type>Goauld_Hero_Eye_Of_The_Gods_Team_Base</Variant_Of_Existing_Type>
+     <Text_ID>TEXT_GOAULD_SPECIAL_HERO_EYE_OF_RA</Text_ID>
+     <Encyclopedia_Text>TEXT_DESCRIPTION_GOAULD_EYE_OF_RA_SPECIAL</Encyclopedia_Text>	 	 
+     <Icon_Name>GOAULD_EYE_OF_RA.TGA</Icon_Name>	  
+	 <Affiliation>Rebel</Affiliation>
+     <Company_Transport_Unit>Goauld_Hero_Eye_Of_Ra_Transport</Company_Transport_Unit>
+     <Company_Units>Goauld_Hero_Eye_Of_The_Gods_Ra</Company_Units>
+   </HeroCompany>	
+
+   <GenericHeroUnit Name="Goauld_Hero_Eye_Of_The_Gods_Ra">
+      <Variant_Of_Existing_Type>Goauld_Hero_Eye_Of_The_Gods</Variant_Of_Existing_Type>   
+      <Text_ID>TEXT_GOAULD_SPECIAL_HERO_EYE_OF_RA</Text_ID>
+      <Encyclopedia_Text>TEXT_DESCRIPTION_GOAULD_EYE_OF_RA_SPECIAL</Encyclopedia_Text>	 	  
+      <Icon_Name>GOAULD_EYE_OF_Ra.TGA</Icon_Name>
+  </GenericHeroUnit>
+
+    <!-- Information General Generic Hero Eye Of Tiamat -->
+	
+   <SpaceUnit Name="Goauld_Hero_Eye_Of_Tiamat_Transport">
+     <Variant_Of_Existing_Type>Goauld_Hero_Eye_Of_The_Gods_Transport_Base</Variant_Of_Existing_Type>
+     <Text_ID>TEXT_GOAULD_SPECIAL_HERO_EYE_OF_TIAMAT</Text_ID>
+     <Encyclopedia_Text>TEXT_DESCRIPTION_GOAULD_EYE_OF_TIAMAT_SPECIAL</Encyclopedia_Text>	 	 
+     <Icon_Name>GOAULD_EYE_OF_TIAMAT.TGA</Icon_Name>	  	 
+	 <Affiliation>Rebel</Affiliation>
+	 <Space_Model_Name>Goauld_Space_Unit_Teltak.ALO</Space_Model_Name>
+   </SpaceUnit>
+   
+   <HeroCompany Name="Goauld_Hero_Eye_Of_Tiamat_Team">
+     <Variant_Of_Existing_Type>Goauld_Hero_Eye_Of_The_Gods_Team_Base</Variant_Of_Existing_Type>
+     <Text_ID>TEXT_GOAULD_SPECIAL_HERO_EYE_OF_TIAMAT</Text_ID>
+     <Encyclopedia_Text>TEXT_DESCRIPTION_GOAULD_EYE_OF_TIAMAT_SPECIAL</Encyclopedia_Text>	 	 
+     <Icon_Name>GOAULD_EYE_OF_TIAMAT.TGA</Icon_Name>	  
+	 <Affiliation>Rebel</Affiliation>
+     <Company_Transport_Unit>Goauld_Hero_Eye_Of_Tiamat_Transport</Company_Transport_Unit>
+     <Company_Units>Goauld_Hero_Eye_Of_The_Gods_Tiamat</Company_Units>
+   </HeroCompany>	
+
+   <GenericHeroUnit Name="Goauld_Hero_Eye_Of_The_Gods_Tiamat">
+      <Variant_Of_Existing_Type>Goauld_Hero_Eye_Of_The_Gods</Variant_Of_Existing_Type>   
+      <Text_ID>TEXT_GOAULD_SPECIAL_HERO_EYE_OF_TIAMAT</Text_ID>
+      <Encyclopedia_Text>TEXT_DESCRIPTION_GOAULD_EYE_OF_TIAMAT_SPECIAL</Encyclopedia_Text>	 	  
+      <Icon_Name>GOAULD_EYE_OF_TIAMAT.TGA</Icon_Name>
+  </GenericHeroUnit>
+
+	<!-- Bonuses for each eye -->
+
+   <Projectile Name="Proj_Goauld_Eye_Of_The_Gods_Commander_Defence_Bonus">
+       <Variant_Of_Existing_Type>Proj_Neutral_Template_Commander_Bonus</Variant_Of_Existing_Type>
+       <Projectile_Combat_Mod>COMBAT_MOD_DEFENSE</Projectile_Combat_Mod>
+        <Projectile_Combat_Mod_Duration>7200.0</Projectile_Combat_Mod_Duration>
+        <Projectile_Combat_Mod_Value>0.25</Projectile_Combat_Mod_Value>
+        <Projectile_Combat_Mod_Effect>Particle_Tauri_Commander_Buff</Projectile_Combat_Mod_Effect>
+        <Projectile_Combat_Mod_Category_Mask>Corvette | Frigate | Capital | SpaceHero | Structure</Projectile_Combat_Mod_Category_Mask>
+   </Projectile>
+
+   <Projectile Name="Proj_Goauld_Eye_Of_The_Gods_Commander_Speed_Bonus">
+        <Variant_Of_Existing_Type>Proj_Neutral_Template_Commander_Bonus</Variant_Of_Existing_Type>
+       <Projectile_Combat_Mod>COMBAT_MOD_SPEED</Projectile_Combat_Mod>
+        <Projectile_Combat_Mod_Duration>7200.0</Projectile_Combat_Mod_Duration>
+        <Projectile_Combat_Mod_Value>0.5</Projectile_Combat_Mod_Value>
+        <Projectile_Combat_Mod_Effect>Particle_Tauri_Commander_Buff</Projectile_Combat_Mod_Effect>
+        <Projectile_Combat_Mod_Category_Mask>Corvette | Frigate | Capital | SpaceHero | Structure</Projectile_Combat_Mod_Category_Mask>
+   </Projectile>
+
+   <Projectile Name="Proj_Goauld_Eye_Of_The_Gods_Commander_Fire_Rate_Bonus">
+       <Variant_Of_Existing_Type>Proj_Neutral_Template_Commander_Bonus</Variant_Of_Existing_Type>
+       <Projectile_Combat_Mod>COMBAT_MOD_FIRE_RATE</Projectile_Combat_Mod>
+        <Projectile_Combat_Mod_Duration>7200.0</Projectile_Combat_Mod_Duration>
+        <Projectile_Combat_Mod_Value>0.3</Projectile_Combat_Mod_Value>
+        <Projectile_Combat_Mod_Effect>Particle_Tauri_Commander_Buff</Projectile_Combat_Mod_Effect>
+        <Projectile_Combat_Mod_Category_Mask>Corvette | Frigate | Capital | SpaceHero | Structure</Projectile_Combat_Mod_Category_Mask>
+   </Projectile>
+
+   <Projectile Name="Proj_Goauld_Eye_Of_The_Gods_Commander_Fire_Range_Bonus">
+       <Variant_Of_Existing_Type>Proj_Neutral_Template_Commander_Bonus</Variant_Of_Existing_Type>
+       <Projectile_Combat_Mod>COMBAT_MOD_FIRE_RANGE</Projectile_Combat_Mod>
+        <Projectile_Combat_Mod_Duration>7200.0</Projectile_Combat_Mod_Duration>
+        <Projectile_Combat_Mod_Value>0.075</Projectile_Combat_Mod_Value>
+        <Projectile_Combat_Mod_Effect>Particle_Tauri_Commander_Buff</Projectile_Combat_Mod_Effect>
+        <Projectile_Combat_Mod_Category_Mask>Corvette | Frigate | Capital | SpaceHero | Structure</Projectile_Combat_Mod_Category_Mask>
+   </Projectile>
+
+   <Projectile Name="Proj_Goauld_Eye_Of_The_Gods_Commander_Damage_Bonus">
+       <Variant_Of_Existing_Type>Proj_Neutral_Template_Commander_Bonus</Variant_Of_Existing_Type>
+       <Projectile_Combat_Mod>COMBAT_MOD_DAMAGE</Projectile_Combat_Mod>
+        <Projectile_Combat_Mod_Duration>7200.0</Projectile_Combat_Mod_Duration>
+        <Projectile_Combat_Mod_Value>0.25</Projectile_Combat_Mod_Value>
+        <Projectile_Combat_Mod_Effect>Particle_Tauri_Commander_Buff</Projectile_Combat_Mod_Effect>
+        <Projectile_Combat_Mod_Category_Mask>Corvette | Frigate | Capital | SpaceHero | Structure</Projectile_Combat_Mod_Category_Mask>
+   </Projectile>
+
+   <Projectile Name="Proj_Goauld_Eye_Of_The_Gods_Commander_Ability_Bonus">
+       <Variant_Of_Existing_Type>Proj_Neutral_Template_Commander_Bonus</Variant_Of_Existing_Type>
+       <Projectile_Combat_Mod>COMBAT_MOD_ABILITY_RECHARGE_TIME</Projectile_Combat_Mod>
+        <Projectile_Combat_Mod_Duration>7200.0</Projectile_Combat_Mod_Duration>
+        <Projectile_Combat_Mod_Value>0.2</Projectile_Combat_Mod_Value>
+        <Projectile_Combat_Mod_Effect>Particle_Tauri_Commander_Buff</Projectile_Combat_Mod_Effect>
+        <Projectile_Combat_Mod_Category_Mask>Corvette | Frigate | Capital | SpaceHero | Structure</Projectile_Combat_Mod_Category_Mask>
+   </Projectile>
+
+</Units_Eye>

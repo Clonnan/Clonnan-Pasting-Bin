@@ -1,0 +1,86 @@
+<?xml version="1.0"?>
+<SpaceUnits>
+
+   <SpaceUnit Name="Asuran_Hero_Niam">
+      <Variant_Of_Existing_Type>Asuran_Frigate</Variant_Of_Existing_Type>
+      <Text_ID>TEXT_ASURANS_SPACE_HERO_NIAM</Text_ID>
+      <Encyclopedia_Text>TEXT_DESCRIPTION_ASURANS_SK_NIAM_SPACE</Encyclopedia_Text>
+      <Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_NIAM</Encyclopedia_Unit_Class>
+      <Icon_Name>ASURAN_SPACE_HERO_NIAM.TGA</Icon_Name>
+      <Affiliation>Asuran</Affiliation>
+      <HardPoints>
+         HP_Asuran_Frigate_Shield,
+         HP_Asuran_Frigate_Engine,
+         HP_Asuran_Frigate_Drone_Tank,
+         HP_Asuran_Hero_Niam_Drone_Tank,
+         HP_Asuran_Frigate_Plasma_Battery_1,
+         HP_Asuran_Frigate_Plasma_Battery_2,
+         HP_Asuran_Frigate_Plasma_Battery_3,
+         HP_Asuran_Frigate_Plasma_Battery_4,
+         HP_Asuran_Hero_Niam_Plasma_Battery_1,
+         HP_Asuran_Hero_Niam_Plasma_Battery_2
+      </HardPoints>
+      <SFXEvent_Attack>Unit_Attack_Niam</SFXEvent_Attack>
+      <SFXEvent_Health_Critical_Warning>Unit_CriticalHP_Niam</SFXEvent_Health_Critical_Warning>
+      <SFXEvent_Move>Unit_Move_Niam</SFXEvent_Move>
+      <SFXEvent_Select>Unit_Select_Niam</SFXEvent_Select>
+      <SFXEvent_Spawn>Unit_Spawn_Niam</SFXEvent_Spawn>
+      <SFXEvent_Build_Complete>Unit_Spawn_Niam</SFXEvent_Build_Complete>
+      <SFXEvent_Guard>Unit_Move_Niam</SFXEvent_Guard>
+      <SFXEvent_Fleet_Move>Unit_Move_Niam</SFXEvent_Fleet_Move>
+      <Armor_Type>Armor_Hero_Cruiser</Armor_Type>
+      <Shield_Armor_Type>Armor_Hero_Cruiser</Shield_Armor_Type>
+      <CategoryMask> Frigate | SpaceHero | AntiCorvette </CategoryMask>
+      <Max_Speed>4.0</Max_Speed>
+      <AI_Combat_Power>3500</AI_Combat_Power>
+      <Tech_Level>99</Tech_Level>
+      <Is_Named_Hero>No</Is_Named_Hero>
+      <Is_Generic_Hero>Yes</Is_Generic_Hero>
+      <Can_Be_Neutralized_By_Major_Heroes>Yes</Can_Be_Neutralized_By_Major_Heroes>
+      <Can_Be_Neutralized_By_Minor_Heroes>Yes</Can_Be_Neutralized_By_Minor_Heroes>
+      <Show_Hero_Head>Yes</Show_Hero_Head>
+      <Neutralization_Cost>2000.0</Neutralization_Cost>
+      <Tactical_Build_Cost_Multiplayer>3500</Tactical_Build_Cost_Multiplayer>
+      <Tactical_Build_Time_Seconds>40</Tactical_Build_Time_Seconds>
+      <Build_Limit_Current_For_All_Allies>-1</Build_Limit_Current_For_All_Allies>
+      <Build_Limit_Lifetime_For_All_Allies>-1</Build_Limit_Lifetime_For_All_Allies>
+      <Build_Limit_Lifetime_Per_Player>-1</Build_Limit_Lifetime_Per_Player>
+      <Build_Limit_Current_Per_Player>1</Build_Limit_Current_Per_Player>
+      <Unit_Abilities_Data SubObjectList="Yes">
+         <Unit_Ability>
+            <Type>TURBO</Type>
+            <Alternate_Name_Text>TEXT_ABILITY_ENGINES_BURST</Alternate_Name_Text>
+            <Alternate_Description_Text>TEXT_DESCRIPTION_ABILITY_ENGINESBOOST_NIAM_SPACE</Alternate_Description_Text>
+            <Alternate_Icon_Name>I_SA_POWER_ENGINES_ANCIENT_FRIGATE.tga</Alternate_Icon_Name>
+            <Expiration_Seconds>4</Expiration_Seconds>
+            <Recharge_Seconds>50</Recharge_Seconds>
+            <Mod_Multiplier>SPEED_MULTIPLIER,      10.0f</Mod_Multiplier>
+            <SFXEvent_GUI_Unit_Ability_Activated></SFXEvent_GUI_Unit_Ability_Activated>
+            <SFXEvent_GUI_Unit_Ability_Deactivated/>
+         </Unit_Ability>
+         <Unit_Ability>
+            <Type>ROCKET_ATTACK</Type>
+            <Alternate_Name_Text>TEXT_ABILITY_WRAITH_SPACE_KORVETTE_FLAK</Alternate_Name_Text>
+            <Alternate_Description_Text>TEXT_DESCRIPTION_ABILITY_SWITCH_WEAPONS_NIAM_SPACE</Alternate_Description_Text>
+            <Alternate_Icon_Name>I_SA_BLAST.tga</Alternate_Icon_Name>
+            <Recharge_Seconds>70</Recharge_Seconds>
+            <Expiration_Seconds>18</Expiration_Seconds>
+            <Mod_Multiplier>WEAPON_DELAY_MULTIPLIER, 0.3f</Mod_Multiplier>
+            <Mod_Multiplier>CAUSE_DAMAGE_MULTIPLIER ,	0.3f</Mod_Multiplier>
+         </Unit_Ability>
+      </Unit_Abilities_Data>
+   </SpaceUnit>
+
+   <SpaceUnit Name="Asuran_Hero_Niam_SK">
+      <Variant_Of_Existing_Type>Asuran_Hero_Niam</Variant_Of_Existing_Type>
+      <Is_Named_Hero>Yes</Is_Named_Hero>
+      <Is_Generic_Hero>No</Is_Generic_Hero>
+   </SpaceUnit>
+
+   <Projectile Name="Proj_Asuran_Hero_Niam_Plasma">
+    <Variant_Of_Existing_Type>Proj_Asuran_Laser_Medium</Variant_Of_Existing_Type>
+    <Damage_Type>Damage_Corvette</Damage_Type>
+    <Projectile_Damage>20.0</Projectile_Damage>
+  </Projectile>
+
+</SpaceUnits>

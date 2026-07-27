@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ReplicatorHeroes>
+   <SpaceHero Name="Replicator_Fifth">
+      <Variant_Of_Existing_Type>Replicator_Battle_Ship_Convert</Variant_Of_Existing_Type>
+      <Text_ID>TEXT_REPLICATOR_SPACE_HERO_FITH</Text_ID>
+      <Encyclopedia_Text>TEXT_DESCRIPTION_REPLICATOR_HERO_FITH</Encyclopedia_Text>
+      <Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_FITH</Encyclopedia_Unit_Class>
+      <Icon_Name>REPLICATOR_SPACE_HERO_FIFTH.TGA</Icon_Name>
+      <CategoryMask>Capital | SpaceHero | AntiCapital</CategoryMask>
+      <AI_Combat_Power>7500</AI_Combat_Power>
+      <Armor_Type>Armor_Replicator</Armor_Type>	  
+      <Shield_Armor_Type>Armor_Hero_HeavyBS</Shield_Armor_Type>
+      <Ranking_In_Category>7</Ranking_In_Category>
+      <Is_Named_Hero>No</Is_Named_Hero>
+      <Is_Generic_Hero>Yes</Is_Generic_Hero>
+      <Show_Hero_Head>Yes</Show_Hero_Head>
+      <Score_Cost_Credits>30000</Score_Cost_Credits>
+      <Neutralization_Cost>6000.0</Neutralization_Cost>
+      <Can_Be_Neutralized_By_Major_Heroes>No</Can_Be_Neutralized_By_Major_Heroes>
+      <Can_Be_Neutralized_By_Minor_Heroes>No</Can_Be_Neutralized_By_Minor_Heroes>
+      <Starting_Spawned_Units_Tech_0>Replicator_Fighter_Squadron, 2</Starting_Spawned_Units_Tech_0>
+      <Starting_Spawned_Units_Tech_0>Replicator_Bomber_Squadron, 2</Starting_Spawned_Units_Tech_0>
+      <Spawned_Squadron_Delay_Seconds>5</Spawned_Squadron_Delay_Seconds>
+      <Reserve_Spawned_Units_Tech_0>Replicator_Fighter_Squadron, -1</Reserve_Spawned_Units_Tech_0>
+      <Reserve_Spawned_Units_Tech_0>Replicator_Bomber_Squadron, -1</Reserve_Spawned_Units_Tech_0>
+	  <Build_Limit_Current_Per_Player>1</Build_Limit_Current_Per_Player>
+      <Tech_Level>99</Tech_Level> 	  
+  </SpaceHero>
+</ReplicatorHeroes>

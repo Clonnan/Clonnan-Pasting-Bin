@@ -1,0 +1,390 @@
+<?xml version="1.0"?>
+<Rogue_Squadron_Data>
+
+   <UniqueUnit Name="Goauld_Hero_Herak_Fighter">
+		<Variant_Of_Existing_Type>A-Wing</Variant_Of_Existing_Type>
+      <Text_ID>TEXT_GOAULD_SPACE_HERO_HERAK</Text_ID>
+      <Encyclopedia_Text>TEXT_DESCRIPTION_GOAULD_SK_HERAK_SPACE</Encyclopedia_Text>
+      <Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_HERAK_ANUBIS_GLEITER</Encyclopedia_Unit_Class>
+      <Icon_Name>GOAULD_SPACE_HERO_HERAK.TGA</Icon_Name>
+      <Affiliation>Rebel</Affiliation>
+      <Behavior>TRANSPORT</Behavior>
+		<SpaceBehavior>ABILITY_COUNTDOWN, FIGHTER_LOCOMOTOR, SELECTABLE, TARGETING, WEAPON, POWERED, REVEAL, HIDE_WHEN_FOGGED, AMBIENT_SFX, NEBULA, DAMAGE_TRACKING, HUNT</SpaceBehavior>
+      <Armor_Type>Armor_Hero_Fighter</Armor_Type>
+      <Damage_Type>Damage_Hero_Fighter</Damage_Type>
+      <HardPoints>
+         HP_GOAULD_HERAK_00,
+         HP_GOAULD_HERAK_01
+      </HardPoints>
+      <Hyperspace>yes</Hyperspace>
+		<Hyperspace_Speed>1.5</Hyperspace_Speed>
+      <Create_Team>Yes</Create_Team>
+      <AI_Combat_Power>50</AI_Combat_Power>
+      <SFXEvent_Attack>Unit_Attack_Herak</SFXEvent_Attack>
+      <SFXEvent_Fleet_Move>Unit_Move_Herak</SFXEvent_Fleet_Move>
+      <SFXEvent_Guard></SFXEvent_Guard>
+      <SFXEvent_Health_Critical_Warning>Unit_CriticalHP_Herak</SFXEvent_Health_Critical_Warning>
+      <SFXEvent_Health_Low_Warning></SFXEvent_Health_Low_Warning>
+      <SFXEvent_Move>Unit_Move_Herak</SFXEvent_Move>
+      <SFXEvent_Move_Into_Asteroid_Field></SFXEvent_Move_Into_Asteroid_Field>
+      <SFXEvent_Move_Into_Nebula></SFXEvent_Move_Into_Nebula>
+      <SFXEvent_Select>Unit_Select_Herak</SFXEvent_Select>
+      <SFXEvent_Stop></SFXEvent_Stop>
+      <Unit_Abilities_Data SubObjectList="Yes">
+         <!--Unit_Ability>
+            <Type>HUNT</Type>
+            <Alternate_Name_Text>TEXT_ABILITY_GOAULD_SPACE_HERAK_SK_GEGNER_JAGEN</Alternate_Name_Text>
+            <Alternate_Description_Text>TEXT_DESCRIPTION_ABILITY_SPACE_HERAK_SK_GEGNER_JAGEN</Alternate_Description_Text>
+         </Unit_Ability-->
+         <Unit_Ability>
+            <Type>HARMONIC_BOMB</Type>
+            <Alternate_Name_Text>TEXT_ABILITY_GOAULD_SPACE_HERAK_STUN</Alternate_Name_Text>
+            <Alternate_Description_Text>TEXT_DESCRIPTION_ABILITY_SPACE_HERAK_STUN</Alternate_Description_Text>
+            <Alternate_Icon_Name>I_SA_STUN_BOMB.TGA</Alternate_Icon_Name>
+            <Recharge_Seconds>40</Recharge_Seconds>
+            <Spawned_Object_Type>Proj_Goauld_Herak_Stun_Blast</Spawned_Object_Type>
+            <Bomb_Countdown_Seconds>1.5</Bomb_Countdown_Seconds>
+            <SFXEvent_GUI_Unit_Ability_Activated/>
+            <Supports_Autofire>False</Supports_Autofire>            
+         </Unit_Ability>
+         <Unit_Ability>
+				<Type>REPLENISH_WINGMEN</Type>
+				<Alternate_Description_Text>TEXT_DESCRIPTION_ABILITY_REPLENISH_WINGMEN_HERAK_SPACE</Alternate_Description_Text>
+				<Alternate_Icon_Name>I_SA_REPLENISH_WINGMEN.TGA</Alternate_Icon_Name>
+				<Particle_Effect>Replenish_Wingmen_Particle_Effect</Particle_Effect>
+				<Recharge_Seconds>60</Recharge_Seconds>
+				<Active_By_Default>Yes</Active_By_Default>
+				<SFXEvent_GUI_Unit_Ability_Activated></SFXEvent_GUI_Unit_Ability_Activated>
+				<Supports_Autofire>True</Supports_Autofire>
+			</Unit_Ability>
+      </Unit_Abilities_Data>
+      <Abilities SubObjectList="Yes">
+         <Combat_Bonus_Ability Name="Herak_Fighter_Combat_Bonus">
+            <Activation_Style>Space_Automatic</Activation_Style>
+            <Unit_Strength_Category>Fighter | Bomber</Unit_Strength_Category>
+            <Applicable_Unit_Categories>Fighter | Bomber</Applicable_Unit_Categories>
+            <Applicable_Unit_Types />
+            <Health_Bonus_Percentage>0.15</Health_Bonus_Percentage>
+            <Damage_Bonus_Percentage>0.0</Damage_Bonus_Percentage>
+            <Energy_Pool_Bonus_Percentage>0.0</Energy_Pool_Bonus_Percentage>
+            <Shield_Bonus_Percentage>0.15</Shield_Bonus_Percentage>
+            <Defense_Bonus_Percentage>0.0</Defense_Bonus_Percentage>
+            <Movement_Speed_Bonus_Percentage>0.0</Movement_Speed_Bonus_Percentage>
+            <Stacking_Category>1</Stacking_Category>
+         </Combat_Bonus_Ability>
+      </Abilities>		
+		<Create_Team> Yes </Create_Team>
+		<Create_Team_Type>Rogue_Squadron_Space</Create_Team_Type>		
+		<Redirect_Damage_To_Teammates>Yes</Redirect_Damage_To_Teammates>
+		<AI_Combat_Power>750</AI_Combat_Power>		
+	</UniqueUnit>
+   
+   <SpaceUnit Name="Goauld_Hero_Herak_Fighter_Wingman">
+      <Variant_Of_Existing_Type>A-Wing</Variant_Of_Existing_Type>
+      <Text_ID>TEXT_GOAULD_SPACE_HERO_HERAK</Text_ID>
+      <Encyclopedia_Text>TEXT_DESCRIPTION_GOAULD_SK_HERAK_SPACE</Encyclopedia_Text>
+      <Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_HERAK_ANUBIS_GLEITER</Encyclopedia_Unit_Class>
+      <Icon_Name>GOAULD_SPACE_HERO_HERAK.TGA</Icon_Name>
+      <Affiliation>Rebel</Affiliation>
+      <Armor_Type>Armor_Hero_Fighter</Armor_Type>
+      <Damage_Type>Damage_Hero_Fighter</Damage_Type>
+      <HardPoints>
+         HP_GOAULD_HERAK_00,
+         HP_GOAULD_HERAK_01
+      </HardPoints>
+   </SpaceUnit>
+   
+   <Squadron Name="Rogue_Squadron_Space">
+      <Text_ID>TEXT_GOAULD_SPACE_HERO_HERAK</Text_ID>
+      <Encyclopedia_Text>TEXT_DESCRIPTION_GOAULD_SK_HERAK_SPACE TEXT_DESCRIPTION_FIGHTER_HYPERSPACE_YES</Encyclopedia_Text>
+      <Encyclopedia_Unit_Class> TEXT_ENCYCLOPEDIA_CLASS_HERAK_ANUBIS_GLEITER </Encyclopedia_Unit_Class>
+      <Encyclopedia_Good_Against> TIE_Fighter TIE_Bomber </Encyclopedia_Good_Against>
+      <Encyclopedia_Vulnerable_To> Tartan_Patrol_Cruiser </Encyclopedia_Vulnerable_To>
+      <Icon_Name>GOAULD_SPACE_HERO_HERAK.TGA</Icon_Name>
+      <Ranking_in_Category>5</Ranking_in_Category>
+      <Is_Dummy>Yes</Is_Dummy>
+      <Formation_Priority>1</Formation_Priority>
+      <Is_Escort>Yes</Is_Escort>
+      <Is_Bomber>no</Is_Bomber>
+      <Damage>50</Damage>
+      <Affiliation>Rebel</Affiliation>
+      <Build_Initially_Locked>Yes</Build_Initially_Locked>
+      <Build_Can_Be_Unlocked_By_Slicer>No</Build_Can_Be_Unlocked_By_Slicer>
+      <Tech_Level>5</Tech_Level>
+      <GUI_Row> 1 </GUI_Row>
+      <Required_Timeline />
+      <Required_Star_Base_Level>1</Required_Star_Base_Level>
+      <Required_Special_Structures/>
+      <Required_Planets></Required_Planets>
+      <Behavior>DUMMY_SPACE_FIGHTER_SQUADRON</Behavior>
+      <Squadron_Units> Goauld_Hero_Herak_Fighter, Goauld_Hero_Herak_Fighter_Wingman </Squadron_Units>
+      <Squadron_Units> Goauld_Hero_Herak_Fighter_Wingman, Goauld_Hero_Herak_Fighter_Wingman </Squadron_Units>
+      <Squadron_Units> Goauld_Hero_Herak_Fighter_Wingman, Goauld_Hero_Herak_Fighter_Wingman </Squadron_Units>    
+      <Max_Squad_Size> 6 </Max_Squad_Size>     
+      <Squadron_Offsets>60.0,0.0,0.0</Squadron_Offsets>
+      <Squadron_Offsets>0.0,30.0,0.0</Squadron_Offsets>
+      <Squadron_Offsets>0.0,-30.0,0.0</Squadron_Offsets>
+      <Squadron_Offsets>-60.0,60.0,0.0</Squadron_Offsets>
+      <Squadron_Offsets>-60.0,-60.0,0.0</Squadron_Offsets>
+      <Squadron_Offsets>-30.0,0.0,0.0</Squadron_Offsets>
+
+      <FormationOrder>2</FormationOrder>
+      <Squadron_Formation_Error_Tolerance>25.0</Squadron_Formation_Error_Tolerance>
+      <Guard_Chase_Range>500.0</Guard_Chase_Range>
+      <Idle_Chase_Range>150.0</Idle_Chase_Range>
+      <Attack_Move_Response_Range>200.0</Attack_Move_Response_Range>
+      <Autonomous_Move_Extension_Vs_Attacker>300.0</Autonomous_Move_Extension_Vs_Attacker>
+      <Space_FOW_Reveal_Range>800.0</Space_FOW_Reveal_Range>
+      <Property_Flags> SmallShip </Property_Flags>
+      <Population_Value>1</Population_Value>
+      <Is_Homogeneous>Yes</Is_Homogeneous>
+      <Score_Cost_Credits> 15000 </Score_Cost_Credits>
+
+      <SFXEvent_Attack>Unit_Attack_Herak</SFXEvent_Attack>
+      <SFXEvent_Fleet_Move>Unit_Move_Herak</SFXEvent_Fleet_Move>
+      <SFXEvent_Guard></SFXEvent_Guard>
+      <SFXEvent_Health_Critical_Warning>Unit_CriticalHP_Herak</SFXEvent_Health_Critical_Warning>
+      <SFXEvent_Health_Low_Warning></SFXEvent_Health_Low_Warning>
+      <SFXEvent_Move>Unit_Move_Herak</SFXEvent_Move>
+      <SFXEvent_Move_Into_Asteroid_Field></SFXEvent_Move_Into_Asteroid_Field>
+      <SFXEvent_Move_Into_Nebula></SFXEvent_Move_Into_Nebula>
+      <SFXEvent_Select>Unit_Select_Herak</SFXEvent_Select>
+      <SFXEvent_Stop></SFXEvent_Stop>
+
+      <SFXEvent_Build_Started></SFXEvent_Build_Started>
+      <SFXEvent_Build_Cancelled></SFXEvent_Build_Cancelled>
+
+      <SFXEvent_Build_Complete>Unit_Spawn_Herak</SFXEvent_Build_Complete>
+      <Death_SFXEvent_Start_Die></Death_SFXEvent_Start_Die>
+      <SFXEvent_Hero_Respawned>Unit_Spawn_Herak</SFXEvent_Hero_Respawned>
+      <Tactical_Bribe_Cost>150</Tactical_Bribe_Cost>
+      
+      <Create_Team_Type>Rogue_Squadron_Space_Container</Create_Team_Type>
+      
+      <Unit_Abilities_Data SubObjectList="Yes">      
+         <!--Unit_Ability>
+            <Type>HUNT</Type>
+            <Alternate_Name_Text>TEXT_ABILITY_GOAULD_SPACE_HERAK_SK_GEGNER_JAGEN</Alternate_Name_Text>
+            <Alternate_Description_Text>TEXT_DESCRIPTION_ABILITY_SPACE_HERAK_SK_GEGNER_JAGEN</Alternate_Description_Text>
+         </Unit_Ability--> 
+         <Unit_Ability>
+            <Type>HARMONIC_BOMB</Type>
+            <Alternate_Name_Text>TEXT_ABILITY_GOAULD_SPACE_HERAK_STUN</Alternate_Name_Text>
+            <Alternate_Description_Text>TEXT_DESCRIPTION_ABILITY_SPACE_HERAK_STUN</Alternate_Description_Text>
+            <Alternate_Icon_Name>I_SA_STUN_BOMB.TGA</Alternate_Icon_Name>
+            <Recharge_Seconds>40</Recharge_Seconds>
+            <Spawned_Object_Type>Proj_Goauld_Herak_Stun_Blast</Spawned_Object_Type>
+            <Bomb_Countdown_Seconds>1.5</Bomb_Countdown_Seconds>
+            <SFXEvent_GUI_Unit_Ability_Activated/>
+            <Supports_Autofire>False</Supports_Autofire>            
+         </Unit_Ability>
+         <Unit_Ability>
+				<Type>REPLENISH_WINGMEN</Type>
+				<Alternate_Description_Text>TEXT_DESCRIPTION_ABILITY_REPLENISH_WINGMEN_HERAK_SPACE</Alternate_Description_Text>
+            <Alternate_Icon_Name>I_SA_REPLENISH_WINGMEN.TGA</Alternate_Icon_Name>
+				<Supports_Autofire>True</Supports_Autofire>
+			</Unit_Ability>    
+      </Unit_Abilities_Data>
+      <Tactical_Build_Cost_Multiplayer>1800</Tactical_Build_Cost_Multiplayer>
+      <Tactical_Build_Time_Seconds>20</Tactical_Build_Time_Seconds>
+      <Tactical_Build_Prerequisites />
+      <Tactical_Production_Queue>Tactical_Units</Tactical_Production_Queue>
+      <Build_Limit_Current_For_All_Allies>-1</Build_Limit_Current_For_All_Allies>
+      <Build_Limit_Lifetime_For_All_Allies>-1</Build_Limit_Lifetime_For_All_Allies>
+      <Build_Limit_Lifetime_Per_Player>-1</Build_Limit_Lifetime_Per_Player>
+      <Build_Limit_Current_Per_Player>1</Build_Limit_Current_Per_Player>
+   </Squadron>
+   
+   <!-- **** SQUADRON INFORMATION **** -->
+   <Container Name="Rogue_Squadron_Space_Container">
+		 <Text_ID>TEXT_GOAULD_SPACE_HERO_HERAK</Text_ID>
+      <Encyclopedia_Unit_Class> TEXT_ENCYCLOPEDIA_CLASS_HERAK_ANUBIS_GLEITER </Encyclopedia_Unit_Class>
+      <Encyclopedia_Good_Against> TIE_Fighter TIE_Bomber </Encyclopedia_Good_Against>
+      <Encyclopedia_Vulnerable_To> Tartan_Patrol_Cruiser </Encyclopedia_Vulnerable_To>
+      <Encyclopedia_Text>TEXT_DESCRIPTION_GOAULD_SK_HERAK_SPACE TEXT_DESCRIPTION_FIGHTER_HYPERSPACE_YES</Encyclopedia_Text>
+      <Show_Name>No</Show_Name>
+      <Icon_Name>GOAULD_SPACE_HERO_HERAK.TGA</Icon_Name>
+		<Formation_Priority>1</Formation_Priority>
+		<Damage>50</Damage>
+		<Affiliation>Rebel</Affiliation>
+		<AI_Combat_Power>3000</AI_Combat_Power>
+		<Build_Initially_Locked>Yes</Build_Initially_Locked>
+		<Build_Can_Be_Unlocked_By_Slicer>No</Build_Can_Be_Unlocked_By_Slicer>
+		<Tech_Level>5</Tech_Level>
+		
+		<Behavior>TEAM,SELECTABLE,UNIT_AI,TEAM_LOCOMOTOR, TARGETING</Behavior>
+		<SpaceBehavior> REVEAL</SpaceBehavior>
+	
+		<Space_FOW_Reveal_Range>800.0</Space_FOW_Reveal_Range>
+		<MovementClass>Space</MovementClass>
+		<Is_Visible_On_Radar>Yes</Is_Visible_On_Radar>
+		<Radar_Icon_Scale_Land>80</Radar_Icon_Scale_Land>
+		<Radar_Icon_Scale_Space>200</Radar_Icon_Scale_Space>
+	 			
+	 	<CategoryMask>SpaceHero | Fighter</CategoryMask>
+		<FormationOrder>2</FormationOrder>
+		<Squadron_Formation_Error_Tolerance>25.0</Squadron_Formation_Error_Tolerance>
+		<Guard_Chase_Range>1000.0</Guard_Chase_Range>
+		<Idle_Chase_Range>200.0</Idle_Chase_Range>
+		<Attack_Move_Response_Range>300.0</Attack_Move_Response_Range>
+		<Autonomous_Move_Extension_Vs_Attacker>300.0</Autonomous_Move_Extension_Vs_Attacker>
+		<Space_FOW_Reveal_Range>800.0</Space_FOW_Reveal_Range>
+		
+		<Targeting_Max_Attack_Distance>1000.0</Targeting_Max_Attack_Distance>
+		
+		<Squadron_Offsets>60.0,0.0,0.0</Squadron_Offsets>
+		<Squadron_Offsets>0.0,30.0,0.0</Squadron_Offsets>
+		<Squadron_Offsets>0.0,-30.0,0.0</Squadron_Offsets>
+		<Squadron_Offsets>-60.0,60.0,0.0</Squadron_Offsets>
+		<Squadron_Offsets>-60.0,-60.0,0.0</Squadron_Offsets>
+		<Squadron_Offsets>-30.0,0.0,0.0</Squadron_Offsets>
+
+		<Tactical_Build_Cost_Multiplayer>1800</Tactical_Build_Cost_Multiplayer>
+		<Tactical_Build_Time_Seconds>12</Tactical_Build_Time_Seconds>
+		<Tactical_Build_Prerequisites />
+		<Tactical_Production_Queue>Tactical_Units</Tactical_Production_Queue>
+		<Build_Limit_Current_For_All_Allies>-1</Build_Limit_Current_For_All_Allies>
+      <Build_Limit_Lifetime_For_All_Allies>-1</Build_Limit_Lifetime_For_All_Allies>
+      <Build_Limit_Lifetime_Per_Player>-1</Build_Limit_Lifetime_Per_Player>
+      <Build_Limit_Current_Per_Player>1</Build_Limit_Current_Per_Player>
+
+		<Max_Speed>5.0</Max_Speed>
+		<Min_Speed>1.5</Min_Speed>
+	
+		<Lua_Script>ObjectScript_Herak_Fighter</Lua_Script>
+		<Unit_Abilities_Data SubObjectList="Yes">
+			<!--Unit_Ability>
+            <Type>HUNT</Type>
+            <Alternate_Name_Text>TEXT_ABILITY_GOAULD_SPACE_HERAK_SK_GEGNER_JAGEN</Alternate_Name_Text>
+            <Alternate_Description_Text>TEXT_DESCRIPTION_ABILITY_SPACE_HERAK_SK_GEGNER_JAGEN</Alternate_Description_Text>
+         </Unit_Ability-->
+         <Unit_Ability>
+            <Type>HARMONIC_BOMB</Type>
+            <Alternate_Name_Text>TEXT_ABILITY_GOAULD_SPACE_HERAK_STUN</Alternate_Name_Text>
+            <Alternate_Description_Text>TEXT_DESCRIPTION_ABILITY_SPACE_HERAK_STUN</Alternate_Description_Text>
+            <Alternate_Icon_Name>I_SA_STUN_BOMB.TGA</Alternate_Icon_Name>
+            <Recharge_Seconds>40</Recharge_Seconds>
+            <Spawned_Object_Type>Proj_Goauld_Herak_Stun_Blast</Spawned_Object_Type>
+            <Bomb_Countdown_Seconds>1.5</Bomb_Countdown_Seconds>
+            <SFXEvent_GUI_Unit_Ability_Activated/>
+            <Supports_Autofire>False</Supports_Autofire>            
+         </Unit_Ability>
+         <Unit_Ability>
+				<Type>REPLENISH_WINGMEN</Type>
+				<Alternate_Description_Text>TEXT_DESCRIPTION_ABILITY_REPLENISH_WINGMEN_HERAK_SPACE</Alternate_Description_Text>
+            <Alternate_Icon_Name>I_SA_REPLENISH_WINGMEN.TGA</Alternate_Icon_Name>
+				<Supports_Autofire>True</Supports_Autofire>
+			</Unit_Ability>
+		</Unit_Abilities_Data>
+	</Container>
+
+   <!-- Goauld Hero Herak in GC with Anubis Flaggship -->
+   <SpaceUnit Name="Goauld_Hero_Herak_Syslord_Space">
+      <Variant_Of_Existing_Type>Home_One</Variant_Of_Existing_Type>
+      <Text_ID>TEXT_GOAULD_SPACE_HERO_HERAK</Text_ID>
+      <Encyclopedia_Text>TEXT_DESCRIPTION_GOAULD_GC_HERAK_SPACE TEXT_DESCRIPTION_ORBITAL_BOMBARDMENT_UNIT</Encyclopedia_Text>
+      <Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_HERAK_SUPER_HATAK</Encyclopedia_Unit_Class>
+      <Icon_Name>GOAULD_SPACE_HERO_HERAK.TGA</Icon_Name>
+      <SFXEvent_Hardpoint_Destroyed> HARD_POINT_SHIELD_GENERATOR, Unit_NoShields_Herak </SFXEvent_Hardpoint_Destroyed>
+      <SFXEvent_Attack>Unit_Attack_Herak</SFXEvent_Attack>
+      <SFXEvent_Fleet_Move>Unit_Move_Herak</SFXEvent_Fleet_Move>
+      <SFXEvent_Guard></SFXEvent_Guard>
+      <SFXEvent_Health_Critical_Warning>Unit_CriticalHP_Herak</SFXEvent_Health_Critical_Warning>
+      <SFXEvent_Health_Low_Warning></SFXEvent_Health_Low_Warning>
+      <SFXEvent_Move>Unit_Move_Herak</SFXEvent_Move>
+      <SFXEvent_Move_Into_Asteroid_Field></SFXEvent_Move_Into_Asteroid_Field>
+      <SFXEvent_Move_Into_Nebula></SFXEvent_Move_Into_Nebula>
+      <SFXEvent_Select>Unit_Select_Herak</SFXEvent_Select>
+      <SFXEvent_Stop></SFXEvent_Stop>
+      <SFXEvent_Build_Started></SFXEvent_Build_Started>
+      <SFXEvent_Build_Cancelled></SFXEvent_Build_Cancelled>
+      <SFXEvent_Build_Complete>Unit_Spawn_Herak</SFXEvent_Build_Complete>
+      <Death_SFXEvent_Start_Die></Death_SFXEvent_Start_Die>
+      <SFXEvent_Hero_Respawned>Unit_Spawn_Herak</SFXEvent_Hero_Respawned>
+      <Is_Named_Hero>No</Is_Named_Hero>
+      <Required_Star_Base_Level>1</Required_Star_Base_Level>
+      <Unit_Abilities_Data SubObjectList="Yes">
+      <Unit_Ability>
+        <Type>DRAIN_LIFE</Type>
+        <Recharge_Seconds>50.0</Recharge_Seconds>
+        <GUI_Activated_Ability_Name>Herak_Syslord_Flash_Weapon</GUI_Activated_Ability_Name>
+        <Supports_Autofire>False</Supports_Autofire>
+        <Alternate_Name_Text>TEXT_ABILITY_GOAULD_SPACE_HERAK_GC_BLITZWAFFE</Alternate_Name_Text>
+        <Alternate_Description_Text>TEXT_DESCRIPTION_ABILITY_SPACE_HERAK_GC_BLITZWAFFE</Alternate_Description_Text>
+        <Alternate_Icon_Name>I_SA_BOLT.TGA</Alternate_Icon_Name>
+      </Unit_Ability>
+    </Unit_Abilities_Data>
+    <Abilities SubObjectList="Yes">
+            <Combat_Bonus_Ability Name="Goauld_Hero_Herak_Syslord_Combat_Bonus">
+                <Activation_Style>Space_Automatic</Activation_Style>
+                <Unit_Strength_Category>Fighter | Bomber | Transport | Corvette | Frigate | Capital | Super</Unit_Strength_Category>
+                <Applicable_Unit_Categories>Fighter | Bomber | Transport | Corvette | Frigate | Capital | Super</Applicable_Unit_Categories>
+                <Applicable_Unit_Types/>
+                <Health_Bonus_Percentage>0.0</Health_Bonus_Percentage>
+                <Damage_Bonus_Percentage>0.2</Damage_Bonus_Percentage>
+                <Energy_Pool_Bonus_Percentage>0.0</Energy_Pool_Bonus_Percentage>
+                <Shield_Bonus_Percentage>0.0</Shield_Bonus_Percentage>
+                <Defense_Bonus_Percentage>0.0</Defense_Bonus_Percentage>
+                <Movement_Speed_Bonus_Percentage>0.0</Movement_Speed_Bonus_Percentage>
+                <Stacking_Category>0</Stacking_Category>
+            </Combat_Bonus_Ability>
+            <Drain_Life_Ability Name="Herak_Syslord_Flash_Weapon">
+                <Activation_Style> User_Input </Activation_Style>
+                <Applicable_Unit_Categories>Transport | Corvette | Frigate | Capital | Super | SpaceHero | Structure </Applicable_Unit_Categories>
+                <Duration_In_Seconds>6</Duration_In_Seconds>
+                <Damage_Per_Second>700</Damage_Per_Second>
+                <Drain_Effect_Name>Anubis_Lightning_Weapon</Drain_Effect_Name>
+                <Drain_Source_Bone_Name>MUZZLEA_16</Drain_Source_Bone_Name>
+                <SFXEvent_Activate/>
+                <Max_Drain_Victims>8</Max_Drain_Victims>
+                <Should_Heal>No</Should_Heal>
+                <Charging_Time_In_Seconds>3.0</Charging_Time_In_Seconds>
+                <Drain_Radius>1700.0</Drain_Radius>
+                <Owner_Particle_Effect>Particle_Anubis_Flash_Source</Owner_Particle_Effect>
+                <Owner_Particle_Bone_Name>MUZZLEA_16</Owner_Particle_Bone_Name>
+                <Target_Particle_Effect>Particle_Anubis_Flash_Target</Target_Particle_Effect>
+                <Target_Particle_Bone_Name>Root</Target_Particle_Bone_Name>
+                <Target_Light_Effect_Type>Linear_Pulse</Target_Light_Effect_Type>
+                <Target_Light_Effect_Color>0.8, 0.8, 0.3</Target_Light_Effect_Color>
+                <Target_Light_Effect_Color2/>
+                <Target_Light_Effect_Duration>2.3893</Target_Light_Effect_Duration>
+                <Target_Light_Effect_Pulse_Count>25</Target_Light_Effect_Pulse_Count>
+            </Drain_Life_Ability>
+        </Abilities>
+   </SpaceUnit>
+
+   <!-- Projectiles Goauld Hero Herak Skirmish-->
+   <Projectile Name="Proj_Goauld_Herak_Fighter_Laser">
+      <Variant_Of_Existing_Type>Proj_Goauld_Space_Fighter_Laser_Heavy</Variant_Of_Existing_Type>
+      <Max_Speed>25.0</Max_Speed>
+      <Max_Rate_Of_Turn>0.0</Max_Rate_Of_Turn>
+      <Projectile_Max_Flight_Distance>1000.0</Projectile_Max_Flight_Distance>
+      <Projectile_Damage>6.0</Projectile_Damage>
+      <Projectile_Does_Shield_Damage>Yes</Projectile_Does_Shield_Damage>
+      <Projectile_Does_Energy_Damage>No</Projectile_Does_Energy_Damage>
+      <Projectile_Does_Hitpoint_Damage>Yes</Projectile_Does_Hitpoint_Damage>
+      <Projectile_Energy_Per_Shot>5</Projectile_Energy_Per_Shot>
+      <AI_Combat_Power>50</AI_Combat_Power>
+   </Projectile>
+
+   <!--If you want to change the time the weapons are disabled, make sure to adjust selfdestruct time, sleep time of the script and particle lifetime-->
+   <MiscObject Name="Proj_Goauld_Herak_Stun_Blast">
+      <Text_ID />
+      <Space_Model_Name>Goauld_Particle_Stunbomb.ALO</Space_Model_Name>
+      <Scale_Factor>1.0</Scale_Factor>
+      <Behavior>DUMMY_ORBITAL_STRUCTURE</Behavior>
+      <SpaceBehavior>ABILITY_COUNTDOWN, SELF_DESTRUCT, UNIT_AI</SpaceBehavior>
+      <Layer_Z_Adjust>0.0</Layer_Z_Adjust>
+      <Remove_Upon_Death>true</Remove_Upon_Death>
+      <Selt_Destruct_SFXEvent_Start_Die>Effect_Empty_Sound</Selt_Destruct_SFXEvent_Start_Die>
+      <Lua_Script>ObjectScript_Herak_Stunbomb</Lua_Script>
+      <Unit_Abilities_Data SubObjectList="Yes">
+         <Unit_Ability>
+            <Type>SELF_DESTRUCT</Type>
+            <Expiration_Seconds>13.0</Expiration_Seconds>
+            <Supports_Autofire>False</Supports_Autofire>
+         </Unit_Ability>
+      </Unit_Abilities_Data>
+   </MiscObject>
+   
+</Rogue_Squadron_Data>

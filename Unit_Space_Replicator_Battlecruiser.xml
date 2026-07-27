@@ -1,0 +1,87 @@
+<?xml version="1.0"?>
+<SpaceUnits>
+
+   <SpaceUnit Name="Replicator_Battle_Cruiser">
+      <Variant_Of_Existing_Type>Template_Space_Unit_Medium_Battleship</Variant_Of_Existing_Type>
+      <Text_ID>TEXT_REPLIKATOREN_SPACE_UNIT_SCHLACHTKREUZER</Text_ID>
+      <Encyclopedia_Text>TEXT_DESCRIPTION_REPLIKATOREN_SCHLACHTKREUZER</Encyclopedia_Text>
+      <Encyclopedia_Unit_Class> TEXT_ENCYCLOPEDIA_CLASS_REPLIKATOREN_SCHLACHTKREUZER </Encyclopedia_Unit_Class>
+      <Encyclopedia_Good_Against> Calamari_Cruiser Star_Destroyer </Encyclopedia_Good_Against>
+      <Encyclopedia_Vulnerable_To> TIE_Bomber Y-Wing </Encyclopedia_Vulnerable_To>
+      <Icon_Name>REPLICATOR_SPACE_UNIT_BATTLECRUISER.TGA</Icon_Name>
+      <Space_Model_Name>Replicator_Space_Unit_BattleCruiser.ALO</Space_Model_Name>
+      <Galactic_Fleet_Override_Model_Name>w_planet_fleet_replicatorbattlecruiser.ALO</Galactic_Fleet_Override_Model_Name>
+      <Radar_Icon_Name>I_RADAR_REPLICATOR_BATTLECRUISER.TGA</Radar_Icon_Name>
+      <Radar_Icon_Size>0.08 0.07</Radar_Icon_Size>
+      <Affiliation>Replicator</Affiliation>
+      <Armor_Type>Armor_Replicator</Armor_Type>	  	  
+      <SpaceBehavior>ABILITY_COUNTDOWN, SIMPLE_SPACE_LOCOMOTOR, ASTEROID_FIELD_DAMAGE, DAMAGE_TRACKING, HIDE_WHEN_FOGGED, IDLE, ION_STUN_EFFECT, NEBULA, POWERED, REVEAL, SELECTABLE, SPAWN_SQUADRON, TARGETING, UNIT_AI</SpaceBehavior>
+      <Allow_Idle_When_Moving>True</Allow_Idle_When_Moving>
+      <HardPoints>
+         HP_Replicator_Battle_Cruiser_M_IBM_00,
+         HP_Replicator_Battle_Cruiser_M_IBM_01,
+         HP_Replicator_Battle_Cruiser_F_IBH_00,
+         HP_Replicator_Battle_Cruiser_F_IBH_01,
+         HP_Replicator_Battle_Cruiser_Fighter_Bay,
+         HP_Replicator_Battle_Cruiser_Engines
+      </HardPoints>
+      <!--HP_Replicator_Nanite_Missile,-->
+      <Select_Box_Scale>190</Select_Box_Scale>
+      <Select_Box_Z_Adjust>-50</Select_Box_Z_Adjust>
+      <Max_Speed>2.5</Max_Speed>
+      <Max_Rate_Of_Turn>0.4</Max_Rate_Of_Turn>
+      <Max_Rate_Of_Roll>0.2</Max_Rate_Of_Roll>
+      <Bank_Turn_Angle>25</Bank_Turn_Angle>
+      <Max_Thrust>0.2</Max_Thrust>
+      <Hyperspace_Speed>1</Hyperspace_Speed>
+      <Tactical_Health>3200</Tactical_Health>
+      <Shield_Points>0</Shield_Points>
+      <Shield_Refresh_Rate>0</Shield_Refresh_Rate>
+      <Starting_Spawned_Units_Tech_0>Replicator_Fighter_Squadron, 2</Starting_Spawned_Units_Tech_0>
+      <Spawned_Squadron_Delay_Seconds>5</Spawned_Squadron_Delay_Seconds>
+      <Reserve_Spawned_Units_Tech_0>Replicator_Fighter_Squadron, -1</Reserve_Spawned_Units_Tech_0>
+      <Death_Clone>Damage_Normal, Replicator_BattleCruiser_Death_Clone</Death_Clone>
+      <Tech_Level>3</Tech_Level> 	  
+      <Required_Star_Base_Level>1</Required_Star_Base_Level>
+	  <Required_Ground_Base_Level>0</Required_Ground_Base_Level>	  
+      <GUI_Row>1</GUI_Row>
+      <Build_Cost_Credits>2200</Build_Cost_Credits>
+      <Build_Time_Seconds>35</Build_Time_Seconds>		  
+		<Unit_Abilities_Data SubObjectList="Yes">
+			<Unit_Ability>
+				<Type>WEAKEN_ENEMY</Type>
+				<Recharge_Seconds>75</Recharge_Seconds>				
+				<Effective_Radius> 2000.0 </Effective_Radius>
+		        <Spawned_Object_Type>Replicator_Weaken_Enemy_Effect</Spawned_Object_Type>  
+				<SFXEvent_GUI_Unit_Ability_Deactivated />
+                <!-- Area effect decal size depends on "Antills_Weaken_Enemy_Effect" -->
+                <Area_Effect_Decal_Distance> 300 </Area_Effect_Decal_Distance>
+			</Unit_Ability>
+		</Unit_Abilities_Data>		  
+      <Lua_Script>ObjectScript_Weaken_Enemy</Lua_Script>
+   </SpaceUnit>
+
+   <SpaceUnit Name="Replicator_BattleCruiser_Death_Clone">
+      <Variant_Of_Existing_Type>Template_Space_Deathclone</Variant_Of_Existing_Type>
+      <Affiliation>Replicator</Affiliation>
+      <Space_Model_Name>Replicator_Space_Unit_BattleCruiser_D.alo</Space_Model_Name>
+   </SpaceUnit>
+
+
+   <Projectile Name="Proj_Replicator_Battlecruiser_Impulse_Battery_Middle">
+      <Variant_Of_Existing_Type>Proj_Replicator_Space_Impulse_Battery_Middle</Variant_Of_Existing_Type>
+      <Projectile_Damage>20.0</Projectile_Damage>
+      <Damage_Type>Damage_MediumBS</Damage_Type>
+   </Projectile>
+
+   <Projectile Name="Proj_Replicator_Battlecruiser_Impulse_Battery_Heavy">
+      <Variant_Of_Existing_Type>Proj_Replicator_Space_Impulse_Battery_Heavy</Variant_Of_Existing_Type>
+      <Projectile_Damage>30.0</Projectile_Damage>
+      <Damage_Type>Damage_MediumBS</Damage_Type>
+   </Projectile>
+
+</SpaceUnits>
+
+
+
+

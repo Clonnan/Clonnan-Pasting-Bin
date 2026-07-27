@@ -1,0 +1,67 @@
+<?xml version="1.0"?>
+<Pegasus_Cyborgs>
+
+   <SpaceUnit Name="Pegasus_Cyborg_Battleship_No_Spawn">
+      <Variant_Of_Existing_Type>Template_Space_Unit_Light_Battleship</Variant_Of_Existing_Type>
+      <Text_ID>TEXT_SPACE_UNIT_PEGASUS_CYBORG_SHIP</Text_ID>
+      <Encyclopedia_Text>TEXT_DESCRIPTION_PEGASUS_CYBORG_SHIP_SPACE</Encyclopedia_Text>
+      <Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_PEGASUS_CYBORG_SHIP</Encyclopedia_Unit_Class>
+      <Encyclopedia_Good_Against> Crusader_Gunship Corellian_Corvette Goauld_Defense_Satellite_small </Encyclopedia_Good_Against>
+      <Encyclopedia_Vulnerable_To> Tauri_HB_302 Vengeance_Frigate B-Wing </Encyclopedia_Vulnerable_To>
+      <Space_Model_Name>Pegasus_Cyborg_Mothership.alo</Space_Model_Name>
+      <Icon_Name>PEGASUS_CYBORGS_SPACE_UNIT_MOTHERSHIP.TGA</Icon_Name>
+      <Radar_Icon_Name>I_RADAR_CYBORGMOTHERSHIP.TGA</Radar_Icon_Name>
+      <Radar_Icon_Size>0.08 0.08</Radar_Icon_Size>
+      <Select_Box_Scale>550</Select_Box_Scale>
+      <Select_Box_Z_Adjust>-300</Select_Box_Z_Adjust>
+    
+      <Max_Speed>2.2</Max_Speed>
+      <Max_Rate_Of_Turn>0.6</Max_Rate_Of_Turn>
+      <Affiliation>Hostile</Affiliation>
+    
+      <Tactical_Health>1600</Tactical_Health>
+      <Shield_Points>1600</Shield_Points>
+      <Shield_Refresh_Rate>45</Shield_Refresh_Rate>
+      <AI_Combat_Power>2000</AI_Combat_Power>
+      <Space_FOW_Reveal_Range>1150.0</Space_FOW_Reveal_Range>
+      <Targeting_Max_Attack_Distance>1450.0</Targeting_Max_Attack_Distance>
+      
+      <SpaceBehavior>SPAWN_SQUADRON, SHIELDED, ABILITY_COUNTDOWN, SIMPLE_SPACE_LOCOMOTOR, TARGETING, REVEAL, HIDE_WHEN_FOGGED, UNIT_AI, ASTEROID_FIELD_DAMAGE, DAMAGE_TRACKING, ION_STUN_EFFECT, NEBULA</SpaceBehavior>
+      <Death_Clone>Damage_Normal, Pegasus_Cyborg_Battleship_Death_Clone</Death_Clone>
+      
+      <HardPoints>
+         HP_PEGASUS_CYBORG_MOTHERSHIP_HP01,
+         HP_PEGASUS_CYBORG_MOTHERSHIP_HP02,
+         HP_PEGASUS_CYBORG_MOTHERSHIP_HP03,
+         HP_PEGASUS_CYBORG_MOTHERSHIP_HP04,
+         HP_PEGASUS_CYBORG_MOTHERSHIP_HANGAR,
+         HP_PEGASUS_CYBORG_MOTHERSHIP_SHIELD,
+         HP_PEGASUS_CYBORG_MOTHERSHIP_ENGINE,
+      </HardPoints>
+      
+      <Tactical_Build_Cost_Multiplayer>2800</Tactical_Build_Cost_Multiplayer>
+      <Tactical_Build_Time_Seconds>25</Tactical_Build_Time_Seconds>
+      <Population_Value>4</Population_Value>
+   </SpaceUnit>
+
+   <SpaceUnit Name="Pegasus_Cyborg_Battleship">
+      <Variant_Of_Existing_Type>Pegasus_Cyborg_Battleship_No_Spawn</Variant_Of_Existing_Type>
+      <Starting_Spawned_Units_Tech_0>Pegasus_Cyborg_Fighter_Squadron, 2</Starting_Spawned_Units_Tech_0>
+      <Spawned_Squadron_Delay_Seconds>10</Spawned_Squadron_Delay_Seconds>
+      <Reserve_Spawned_Units_Tech_0>Pegasus_Cyborg_Fighter_Squadron, -1</Reserve_Spawned_Units_Tech_0>
+      <Lua_Script>ObjectScript_HW_Middle</Lua_Script>
+  </SpaceUnit>
+
+   <SpaceUnit Name="Pegasus_Cyborg_Battleship_Death_Clone">
+      <Variant_Of_Existing_Type>Template_Space_Deathclone</Variant_Of_Existing_Type>
+      <Affiliation>Hostile</Affiliation>
+      <Space_Model_Name>Pegasus_Cyborg_Mothership_D.alo</Space_Model_Name>
+   </SpaceUnit>
+
+   <Projectile Name="Proj_Pegasus_Cyborg_Battleship">
+      <Variant_Of_Existing_Type>Proj_Pegasus_Cyborg_Battleship_Plasma</Variant_Of_Existing_Type>
+      <Damage_Type>Damage_LightBS</Damage_Type>
+      <Projectile_Damage>36.0</Projectile_Damage>
+   </Projectile>
+
+</Pegasus_Cyborgs>

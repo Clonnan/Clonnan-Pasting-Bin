@@ -1,0 +1,160 @@
+<?xml version="1.0"?>
+<Asurans>
+
+   <SpaceUnit Name="Asuran_City_No_Prereq">
+      <Variant_Of_Existing_Type>Template_Space_Unit_Heavy_Battleship</Variant_Of_Existing_Type>
+      <Text_ID>TEXT_ASURANS_SPACE_UNIT_CITYSHIP</Text_ID>
+      <Encyclopedia_Text>TEXT_DESCRIPTION_ASURANS_CITYSHIP</Encyclopedia_Text>
+      <Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_ASURANS_CITYSHIP</Encyclopedia_Unit_Class>
+      <Encyclopedia_Good_Against/>
+      <Encyclopedia_Vulnerable_To/>
+      <Icon_Name>TAURI_SPACE_UNIT_ATLANTIS.TGA</Icon_Name>
+      <Space_Model_Name>Tauri_Space_Unit_Atlantis.ALO</Space_Model_Name>
+      <Galactic_Fleet_Override_Model_Name>W_planet_fleet_AsuranCityShip.ALO</Galactic_Fleet_Override_Model_Name>
+      <Radar_Icon_Name>I_RADAR_ATLANTIS.TGA</Radar_Icon_Name>
+      <Radar_Icon_Size>0.1 0.1</Radar_Icon_Size>
+      <Select_Box_Scale>2500</Select_Box_Scale>
+      <Scale_Factor>0.8</Scale_Factor>
+      <Layer_Z_Adjust>-500.0</Layer_Z_Adjust>
+      <GUI_Bounds_Scale>0.33</GUI_Bounds_Scale>
+      <Affiliation>Neutral</Affiliation>
+      <SpaceBehavior>SIMPLE_SPACE_LOCOMOTOR, ABILITY_COUNTDOWN, ASTEROID_FIELD_DAMAGE, DAMAGE_TRACKING, HIDE_WHEN_FOGGED, ION_STUN_EFFECT, NEBULA, POWERED, REVEAL, SELECTABLE, SHIELDED, SPAWN_SQUADRON, TARGETING, UNIT_AI</SpaceBehavior>
+      <HardPoints>
+         HP_Atlantis_Shield,
+         HP_Atlantis_Hangar,
+         HP_Atlantis_Engine,
+         HP_Atlantis_Drone_Tank_1,
+         HP_Atlantis_Drone_Tank_2,
+         HP_Atlantis_Drone_Tank_3
+         <!-- HP_Atlantis_Drone_Tank_4, HP_Atlantis_Drone_Tank_5, HP_Atlantis_Drone_Tank_6,
+         HP_Atlantis_Drone_Tank_7, HP_Atlantis_Drone_Tank_8, HP_Atlantis_Drone_Tank_9 -->
+      </HardPoints>
+
+      <!--Shield_Sub_Mesh>shield</Shield_Sub_Mesh-->
+      <Mass>0.9998</Mass>
+      
+      <AI_Combat_Power>7000</AI_Combat_Power>
+      <Shield_Points>6000</Shield_Points>
+      <Tactical_Health>2250</Tactical_Health>
+      <Shield_Refresh_Rate>200</Shield_Refresh_Rate>
+      <Build_Cost_Credits>10000</Build_Cost_Credits>
+		<Build_Time_Seconds>300</Build_Time_Seconds>
+      <Space_FOW_Reveal_Range>3000.0</Space_FOW_Reveal_Range>
+		<Targeting_Max_Attack_Distance>2000.0</Targeting_Max_Attack_Distance>
+
+      <Max_Speed>1.5</Max_Speed>
+      <Max_Rate_Of_Turn>0.4</Max_Rate_Of_Turn>
+      <Max_Rate_Of_Roll>0.06</Max_Rate_Of_Roll>
+      <Bank_Turn_Angle>23</Bank_Turn_Angle>
+      <OverrideAcceleration> .02 </OverrideAcceleration>
+		<OverrideDeceleration> .02 </OverrideDeceleration>
+      <Max_Thrust>0.6</Max_Thrust>
+
+      <Death_SFXEvent_Start_Die>Explosion_Nuclear</Death_SFXEvent_Start_Die>
+
+      <SFXEvent_Engine_Idle_Loop> Engine_Ancient_City_Idle </SFXEvent_Engine_Idle_Loop>
+      <SFXEvent_Engine_Moving_Loop> Engine_Ancient_City </SFXEvent_Engine_Moving_Loop>
+      <SFXEvent_Engine_Cinematic_Focus_Loop> Engine_Ancient_City_Cinematic </SFXEvent_Engine_Cinematic_Focus_Loop>
+
+      <Required_Star_Base_Level>1</Required_Star_Base_Level>
+      <Build_Limit_Current_Per_Player>1</Build_Limit_Current_Per_Player>
+      <Population_Value>21</Population_Value>
+      <Lua_Script>ObjectScript_HW_Huge</Lua_Script>
+   </SpaceUnit>
+
+   <SpaceUnit Name="Asuran_City">
+      <Variant_Of_Existing_Type>Asuran_City_No_Prereq</Variant_Of_Existing_Type>
+      <Affiliation>Asuran</Affiliation>
+      <Starting_Spawned_Units_Tech_0>Asuran_Puddle_Jumper_Squadron, 4</Starting_Spawned_Units_Tech_0>
+      <Spawned_Squadron_Delay_Seconds>5</Spawned_Squadron_Delay_Seconds>
+      <Reserve_Spawned_Units_Tech_0>Asuran_Puddle_Jumper_Squadron, -1</Reserve_Spawned_Units_Tech_0>
+      <Death_Clone>Damage_Normal, Asuran_City_Death_Clone</Death_Clone>
+      <Tactical_Health>3500</Tactical_Health>
+      <HardPoints>
+         HP_Atlantis_Shield,
+         HP_Atlantis_Hangar,
+         HP_Atlantis_Engine,
+         04_Ancient_Drone_Tank,
+         08_Ancient_Drone_Tank,
+         12_Ancient_Drone_Tank,
+         13_Large_Antikerlaser, 14_Large_Antikerlaser, 15_Large_Antikerlaser, 16_Large_Antikerlaser,
+         17_Large_Antikerlaser, 18_Large_Antikerlaser, 19_Small_Antikerlaser, 20_Small_Antikerlaser,
+         21_Small_Antikerlaser, 22_Small_Antikerlaser, 23_Small_Antikerlaser, 24_Small_Antikerlaser
+      </HardPoints>
+      <Unit_Abilities_Data SubObjectList="Yes">
+      <Unit_Ability>
+        <Type>POWER_TO_WEAPONS</Type>
+        <Mod_Multiplier>WEAPON_DELAY_MULTIPLIER,	3.0f</Mod_Multiplier>
+        <Mod_Multiplier>SHIELD_REGEN_MULTIPLIER,	1.0f</Mod_Multiplier>
+        <Mod_Multiplier>SHIELD_REGEN_INTERVAL_MULTIPLIER,	0.10f</Mod_Multiplier>
+        <Mod_Multiplier>ENERGY_REGEN_INTERVAL_MULTIPLIER,	0.10f</Mod_Multiplier>
+        <Mod_Multiplier>ENERGY_REGEN_MULTIPLIER,	5.0f</Mod_Multiplier>
+        <Mod_Multiplier>SPEED_MULTIPLIER,			0.8f</Mod_Multiplier>
+        <Recharge_Seconds>20</Recharge_Seconds>
+        <Alternate_Name_Text>TEXT_ABILITY_ASURANER_SPACE_STADTSCHIFF_SCHILDBOOST</Alternate_Name_Text>
+        <Alternate_Description_Text>TEXT_DESCRIPTION_ABILITY_SPACE_ASURANER_STADTSCHIFF_SCHILDBOOST</Alternate_Description_Text>
+        <Expiration_Seconds>15</Expiration_Seconds>
+        <SFXEvent_GUI_Unit_Ability_Activated/>
+        <SFXEvent_GUI_Unit_Ability_Deactivated/>
+        <Alternate_Icon_Name>I_SA_SHIELD_BOOST_CITYSHIP.TGA</Alternate_Icon_Name>
+      </Unit_Ability>
+    </Unit_Abilities_Data>
+    <Abilities SubObjectList="Yes">
+			<Combat_Bonus_Ability Name="Asuran_City_Ship_Combat_Bonus_GC">
+				<Activation_Style>Space_Automatic</Activation_Style>
+				<Applicable_Unit_Types>Asuran_City</Applicable_Unit_Types>
+				<Health_Bonus_Percentage>0.3</Health_Bonus_Percentage>
+				<Damage_Bonus_Percentage>0.5</Damage_Bonus_Percentage>
+				<Energy_Pool_Bonus_Percentage>0.5</Energy_Pool_Bonus_Percentage>
+				<Shield_Bonus_Percentage>0.0</Shield_Bonus_Percentage>
+				<Defense_Bonus_Percentage>0.0</Defense_Bonus_Percentage>
+				<Movement_Speed_Bonus_Percentage>0.2</Movement_Speed_Bonus_Percentage>
+				<Stacking_Category>1</Stacking_Category>
+			</Combat_Bonus_Ability>
+		</Abilities>
+   </SpaceUnit>
+
+   <SpaceUnit Name="Asuran_City_SK">
+      <Variant_Of_Existing_Type>Asuran_City</Variant_Of_Existing_Type>
+      <Affiliation>Asuran</Affiliation>
+      <Tactical_Health>3170</Tactical_Health>
+      <HardPoints>
+         HP_Atlantis_Shield,
+         HP_Atlantis_Hangar,
+         HP_Atlantis_Engine,
+         HP_Atlantis_Drone_Tank_1,
+         HP_Atlantis_Drone_Tank_2,
+         HP_Atlantis_Drone_Tank_3,
+         13_Large_Antikerlaser, 14_Large_Antikerlaser, 15_Large_Antikerlaser, 16_Large_Antikerlaser,
+         17_Large_Antikerlaser, 18_Large_Antikerlaser, 19_Small_Antikerlaser, 20_Small_Antikerlaser,
+         21_Small_Antikerlaser, 22_Small_Antikerlaser, 23_Small_Antikerlaser, 24_Small_Antikerlaser
+      </HardPoints>
+      <Tactical_Build_Time_Seconds>75</Tactical_Build_Time_Seconds>
+      <Tactical_Build_Cost_Multiplayer>10000</Tactical_Build_Cost_Multiplayer>
+      <Tech_Level>99</Tech_Level>
+      <Tactical_Build_Prerequisites>General_Tech_5_Prereq</Tactical_Build_Prerequisites>
+      <Build_Limit_Current_Per_Player>1</Build_Limit_Current_Per_Player>
+      <Starting_Spawned_Units_Tech_0>Asuran_Puddle_Jumper_Squadron, 2</Starting_Spawned_Units_Tech_0>
+   </SpaceUnit>
+
+   <SpaceUnit Name="Asuran_City_Death_Clone">
+      <Variant_Of_Existing_Type>Template_Space_Deathclone</Variant_Of_Existing_Type>
+      <Space_Model_Name>Tauri_Space_Unit_Atlantis_D.alo</Space_Model_Name>
+      <Scale_Factor>0.8</Scale_Factor>
+      <Affiliation>Asuran</Affiliation>
+   </SpaceUnit>
+
+
+  <Projectile Name="Proj_Asuran_Drone_City">
+      <Variant_Of_Existing_Type>Proj_Asuran_Drones_Rocket</Variant_Of_Existing_Type>
+      <Projectile_Damage>50.0</Projectile_Damage>
+      <Damage_Type>Damage_Hero_MediumBS</Damage_Type>
+  </Projectile>
+
+  <Projectile Name="Proj_Lantea_Drone">
+      <Variant_Of_Existing_Type>Proj_Asuran_Drones_Rocket</Variant_Of_Existing_Type>
+      <Projectile_Damage>8.0</Projectile_Damage>
+      <Damage_Type>Damage_Hero_MediumBS</Damage_Type>
+  </Projectile>
+   
+</Asurans>

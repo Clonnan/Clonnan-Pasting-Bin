@@ -1,0 +1,107 @@
+<?xml version="1.0"?>
+<Atlantis>
+
+   <SpaceUnit Name="Tauri_Hero_Atlantis">
+      <Variant_Of_Existing_Type>Asuran_City_No_Prereq</Variant_Of_Existing_Type>
+      <Text_ID>TEXT_TAURI_SPACE_HERO_ATLANTIS</Text_ID>
+      <Encyclopedia_Text>TEXT_DESCRIPTION_TAURI_GC_ATLANTIS_SPACE</Encyclopedia_Text>
+      <Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_ATLANTIS</Encyclopedia_Unit_Class>
+      <Encyclopedia_Good_Against/>
+      <Encyclopedia_Vulnerable_To/>
+      <Icon_Name>TAURI_SPACE_HERO_WOOLSEY.TGA</Icon_Name>
+      <Space_Model_Name>Tauri_Space_Unit_Atlantis.ALO</Space_Model_Name>
+      <Galactic_Fleet_Override_Model_Name>W_planet_fleet_Atlantis.ALO</Galactic_Fleet_Override_Model_Name>
+      <Affiliation>Underworld</Affiliation>
+      <Is_Named_Hero>No</Is_Named_Hero>
+      <Is_Generic_Hero>Yes</Is_Generic_Hero>
+      <Can_Be_Neutralized_By_Major_Heroes>No</Can_Be_Neutralized_By_Major_Heroes>
+      <Can_Be_Neutralized_By_Minor_Heroes>No</Can_Be_Neutralized_By_Minor_Heroes>
+      <Show_Hero_Head>Yes</Show_Hero_Head>
+      <Armor_Type>Armor_Hero_HeavyBS</Armor_Type>
+      <Shield_Armor_Type>Armor_Hero_HeavyBS</Shield_Armor_Type>
+      <Starting_Spawned_Units_Tech_0>Tauri_Puddle_Jumper_Squadron, 3</Starting_Spawned_Units_Tech_0>
+      <Spawned_Squadron_Delay_Seconds>5</Spawned_Squadron_Delay_Seconds>
+      <Reserve_Spawned_Units_Tech_0>Tauri_Puddle_Jumper_Squadron, -1</Reserve_Spawned_Units_Tech_0>
+      <HardPoints>
+         HP_Atlantis_Shield,
+         HP_Atlantis_Hangar,
+         HP_Atlantis_Engine,
+         HP_Atlantis_Drone_Tank_1,
+         HP_Atlantis_Drone_Tank_2,
+         HP_Atlantis_Drone_Tank_3,
+		 HP_Atlantis_RailGun_19,
+		 HP_Atlantis_RailGun_20,
+		 HP_Atlantis_RailGun_21,
+		 HP_Atlantis_RailGun_22,
+		 HP_Atlantis_RailGun_23,
+		 HP_Atlantis_RailGun_24,
+		 HP_Atlantis_RailGun_26,
+		 HP_Atlantis_RailGun_27,
+		 HP_Atlantis_RailGun_28		 
+      </HardPoints>
+
+      <SFXEvent_Attack>Unit_Attack_Atlantis</SFXEvent_Attack>
+      <SFXEvent_Fleet_Move>Unit_Move_Atlantis</SFXEvent_Fleet_Move>
+      <SFXEvent_Move>Unit_Move_Atlantis</SFXEvent_Move>
+      <SFXEvent_Select>Unit_Select_Atlantis</SFXEvent_Select>
+      <SFXEvent_Guard>Unit_Move_Trebal</SFXEvent_Guard>
+      <SFXEvent_Hardpoint_Destroyed> HARD_POINT_WEAPON_LASER,Unit_NoWeapon_Atlantis</SFXEvent_Hardpoint_Destroyed>
+      <SFXEvent_Hardpoint_Destroyed> HARD_POINT_WEAPON_ION_CANNON,Unit_NoWeapon_Atlantis</SFXEvent_Hardpoint_Destroyed>
+      <SFXEvent_Hardpoint_Destroyed> HARD_POINT_SHIELD_GENERATOR,Unit_NoWeapon_Atlantis</SFXEvent_Hardpoint_Destroyed>
+      <SFXEvent_Hardpoint_Destroyed> HARD_POINT_ENGINE,Unit_NoWeapon_Atlantis</SFXEvent_Hardpoint_Destroyed>
+
+      <Required_Star_Base_Level>1</Required_Star_Base_Level>
+      <Death_Clone>Damage_Normal, Tauri_Hero_Atlantis_Death_Clone</Death_Clone>
+      <Build_Limit_Current_Per_Player>1</Build_Limit_Current_Per_Player>
+      <Population_Value>21</Population_Value>
+      <Unit_Abilities_Data SubObjectList="Yes">
+        <Unit_Ability>
+          <Type>POWER_TO_WEAPONS</Type>
+          <Mod_Multiplier>WEAPON_DELAY_MULTIPLIER,   3.0f</Mod_Multiplier>
+          <Mod_Multiplier>SHIELD_REGEN_MULTIPLIER,   1.0f</Mod_Multiplier>
+          <Mod_Multiplier>SHIELD_REGEN_INTERVAL_MULTIPLIER,   0.10f</Mod_Multiplier>
+          <Mod_Multiplier>ENERGY_REGEN_INTERVAL_MULTIPLIER,   0.10f</Mod_Multiplier>
+          <Mod_Multiplier>ENERGY_REGEN_MULTIPLIER,   5.0f</Mod_Multiplier>
+          <Mod_Multiplier>SPEED_MULTIPLIER,       0.8f</Mod_Multiplier>
+          <Recharge_Seconds>20</Recharge_Seconds>
+          <Alternate_Name_Text>TEXT_ABILITY_TAURI_SPACE_ATLANTIS_SCHILDENERGIESCHUB</Alternate_Name_Text>
+          <Alternate_Description_Text>TEXT_DESCRIPTION_ABILITY_SPACE_ATLANTIS_SCHILDENERGIESCHUB</Alternate_Description_Text>
+          <Expiration_Seconds>15</Expiration_Seconds>
+          <SFXEvent_GUI_Unit_Ability_Activated>Unit_ShildBoost_Atlantis</SFXEvent_GUI_Unit_Ability_Activated>
+          <SFXEvent_GUI_Unit_Ability_Deactivated />
+          <Alternate_Icon_Name>I_SA_DEFEND_MODE.TGA</Alternate_Icon_Name>
+        </Unit_Ability>
+      </Unit_Abilities_Data>
+      <Lua_Script>ObjectScript_HW_Huge</Lua_Script>
+   </SpaceUnit>
+
+   <SpaceUnit Name="Tauri_Hero_Atlantis_Death_Clone">
+      <Variant_Of_Existing_Type>Asuran_City_Death_Clone</Variant_Of_Existing_Type>
+      <Affiliation>Underworld</Affiliation>
+   </SpaceUnit>
+   
+	<Projectile Name="Proj_Tauri_Atlantis_Railgun_General">
+		<Text_ID>TEXT_NONE</Text_ID>
+		<Space_Model_Name>Tauri_Projectile_303_Railgun.ALO</Space_Model_Name>
+		<Scale_Factor>2.0</Scale_Factor>
+		<Projectile_Category>Laser</Projectile_Category>
+		<Max_Speed>35.0</Max_Speed>
+		<Max_Rate_Of_Turn>0.0</Max_Rate_Of_Turn>
+		<Behavior>PROJECTILE, HIDE_WHEN_FOGGED</Behavior>
+		<Projectile_Max_Flight_Distance>2400</Projectile_Max_Flight_Distance>
+		<Projectile_Damage>7.5</Projectile_Damage>
+		<Projectile_Does_Shield_Damage>Yes</Projectile_Does_Shield_Damage>
+		<Projectile_Does_Energy_Damage>No</Projectile_Does_Energy_Damage>
+		<Projectile_Does_Hitpoint_Damage>Yes</Projectile_Does_Hitpoint_Damage>
+		<Projectile_Energy_Per_Shot>0</Projectile_Energy_Per_Shot>
+		<Projectile_Object_Detonation_Particle>Particle_General_Hit_Small </Projectile_Object_Detonation_Particle>
+		<Projectile_Object_Armor_Reduced_Detonation_Particle>Particle_General_Hit_Small</Projectile_Object_Armor_Reduced_Detonation_Particle>
+		<Projectile_Ground_Detonation_Particle/>
+		<Projectile_Lifetime_Detonation_Particle/>
+		<Projectile_Absorbed_By_Shields_Particle>Particle_Tauri_Railgun_Shield_Hit</Projectile_Absorbed_By_Shields_Particle>
+		<AI_Combat_Power>50</AI_Combat_Power>
+		<Projectile_SFXEvent_Detonate/>
+		<Projectile_SFXEvent_Detonate_Reduced_By_Armor>Damage_Shield_Absorb_Small</Projectile_SFXEvent_Detonate_Reduced_By_Armor>
+	</Projectile>   
+
+</Atlantis>

@@ -1,0 +1,101 @@
+<?xml version="1.0"?>
+<FighterUnits>
+
+   <SpaceUnit Name="Pegasus_Cyborg_Fighter">
+      <Variant_Of_Existing_Type>Template_Space_Unit_Fighter_Multi</Variant_Of_Existing_Type>
+      <Text_ID>TEXT_SPACE_UNIT_PEGASUS_CYBORG_FIGHTER</Text_ID>
+      <Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_PEGASUS_CYBORG_FIGHTER</Encyclopedia_Unit_Class>
+      <Encyclopedia_Text>TEXT_DESCRIPTION_PEGASUS_CYBORG_FIGHTER_SPACE</Encyclopedia_Text>
+      <Encyclopedia_Good_Against> TIE_Fighter Skipray_Blastboat TIE_Bomber </Encyclopedia_Good_Against>
+      <Encyclopedia_Vulnerable_To> Tartan_Patrol_Cruiser Crusader_Gunship</Encyclopedia_Vulnerable_To>
+      <Icon_Name>PEGASUS_CYBORGS_SPACE_UNIT_FIGHTER.TGA</Icon_Name>
+      <Space_Model_Name>Pegasus_Cyborg_Fighter.alo</Space_Model_Name>
+
+      <Affiliation>Hostile</Affiliation>
+      <Tactical_Health>80</Tactical_Health>
+
+      <SpaceBehavior>ABILITY_COUNTDOWN, FIGHTER_LOCOMOTOR, SELECTABLE, TARGETING, WEAPON, POWERED, HIDE_WHEN_FOGGED, AMBIENT_SFX, DAMAGE_TRACKING, NEBULA, HUNT</SpaceBehavior>
+      <Select_Box_Scale>70</Select_Box_Scale>
+      <Max_Speed>5.5</Max_Speed>
+      <Min_Speed>4.5</Min_Speed>
+      <Turret_Rotate_Extent_Degrees>20</Turret_Rotate_Extent_Degrees>
+      <Turret_Elevate_Extent_Degrees>40</Turret_Elevate_Extent_Degrees>
+   
+      <Projectile_Types>Proj_Pegasus_Cyborg_Fighter</Projectile_Types>
+      <Projectile_Fire_Pulse_Count>5</Projectile_Fire_Pulse_Count>
+      <Projectile_Fire_Pulse_Delay_Seconds>0.15</Projectile_Fire_Pulse_Delay_Seconds>
+      <Projectile_Fire_Recharge_Seconds>1.5</Projectile_Fire_Recharge_Seconds>
+   
+      <SFXEvent_Fire>Weapon_Small_Daedalus_Variations</SFXEvent_Fire>
+      <SFXEvent_Ambient_Moving> Unit_A_Wing_Fly_By </SFXEvent_Ambient_Moving>
+      <SFXEvent_Ambient_Moving_Min_Delay_Seconds> 5 </SFXEvent_Ambient_Moving_Min_Delay_Seconds>
+      <SFXEvent_Ambient_Moving_Max_Delay_Seconds> 10 </SFXEvent_Ambient_Moving_Max_Delay_Seconds>
+      <SFXEvent_Engine_Cinematic_Focus_Loop> Unit_A_Wing_Cinematic_Engine_Loop </SFXEvent_Engine_Cinematic_Focus_Loop>
+
+      <Required_Star_Base_Level>1</Required_Star_Base_Level>
+
+      <Unit_Abilities_Data SubObjectList="Yes">
+         <Unit_Ability>
+            <Type>HUNT</Type>
+            <Alternate_Name_Text>TEXT_TOOLTIP_ABILITY_HUNT_NAME</Alternate_Name_Text>
+            <Alternate_Description_Text>TEXT_DESCRIPTION_ABILITY_HUNT_CYBORG_FIGHTER_SPACE</Alternate_Description_Text>
+         </Unit_Ability>
+      </Unit_Abilities_Data>
+   </SpaceUnit>
+
+   <Squadron Name="Pegasus_Cyborg_Fighter_Squadron_No_Prereq">
+      <Text_ID>TEXT_SPACE_UNIT_PEGASUS_CYBORG_FIGHTER</Text_ID>
+      <Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_PEGASUS_CYBORG_FIGHTER</Encyclopedia_Unit_Class>
+      <Encyclopedia_Text>TEXT_DESCRIPTION_PEGASUS_CYBORG_FIGHTER_SPACE</Encyclopedia_Text>
+      <Encyclopedia_Good_Against> TIE_Fighter Skipray_Blastboat TIE_Bomber </Encyclopedia_Good_Against>
+      <Encyclopedia_Vulnerable_To> Tartan_Patrol_Cruiser Crusader_Gunship</Encyclopedia_Vulnerable_To>
+      <Icon_Name>PEGASUS_CYBORGS_SPACE_UNIT_FIGHTER.TGA</Icon_Name>
+      <GUI_Row> 1 </GUI_Row>
+      <Is_Dummy>Yes</Is_Dummy>
+      <Formation_Priority>1</Formation_Priority>
+      <Is_Escort>Yes</Is_Escort>
+      <Is_Bomber>no</Is_Bomber>
+      <Affiliation>Neutral</Affiliation>
+      <Build_Cost_Credits>500</Build_Cost_Credits>
+      <Build_Time_Seconds>14</Build_Time_Seconds>
+      <Tech_Level>99</Tech_Level>
+      <Required_Star_Base_Level>1</Required_Star_Base_Level>
+      <Behavior>DUMMY_SPACE_FIGHTER_SQUADRON</Behavior>
+      <Squadron_Offsets>30.0,0.0,0.0</Squadron_Offsets>
+      <Squadron_Offsets>0.0,15.0,0.0</Squadron_Offsets>
+      <Squadron_Offsets>0.0,-15.0,0.0</Squadron_Offsets>
+      <Squadron_Offsets>-30.0,30.0,0.0</Squadron_Offsets>
+      <Squadron_Offsets>-30.0,-30.0,0.0</Squadron_Offsets>
+      <FormationOrder>1</FormationOrder>
+      <Squadron_Formation_Error_Tolerance>25.0</Squadron_Formation_Error_Tolerance>
+      <Guard_Chase_Range>1000.0</Guard_Chase_Range>
+      <Idle_Chase_Range>200.0</Idle_Chase_Range>
+      <Attack_Move_Response_Range>300.0</Attack_Move_Response_Range>
+      <Autonomous_Move_Extension_Vs_Attacker>500.0</Autonomous_Move_Extension_Vs_Attacker>
+      <Property_Flags> SmallShip </Property_Flags>
+      <Score_Cost_Credits>600</Score_Cost_Credits>
+      <Tactical_Build_Cost_Multiplayer>400</Tactical_Build_Cost_Multiplayer>
+      <Tactical_Build_Time_Seconds>10</Tactical_Build_Time_Seconds>
+      <Tactical_Production_Queue>Tactical_Units</Tactical_Production_Queue>
+      <Population_Value>1</Population_Value>
+      <Unit_Abilities_Data SubObjectList="Yes">
+         <Unit_Ability>
+            <Type>HUNT</Type>
+            <Alternate_Name_Text>TEXT_TOOLTIP_ABILITY_HUNT_NAME</Alternate_Name_Text>
+            <Alternate_Description_Text>TEXT_DESCRIPTION_ABILITY_HUNT_CYBORG_FIGHTER_SPACE</Alternate_Description_Text>
+         </Unit_Ability>
+      </Unit_Abilities_Data>
+   </Squadron>
+  
+   <Squadron Name="Pegasus_Cyborg_Fighter_Squadron">
+      <Variant_Of_Existing_Type>Pegasus_Cyborg_Fighter_Squadron_No_Prereq</Variant_Of_Existing_Type>
+      <Squadron_Units>Pegasus_Cyborg_Fighter, Pegasus_Cyborg_Fighter, Pegasus_Cyborg_Fighter, Pegasus_Cyborg_Fighter, Pegasus_Cyborg_Fighter</Squadron_Units>
+      <Affiliation>Hostile</Affiliation>
+   </Squadron>
+
+   <Projectile Name="Proj_Pegasus_Cyborg_Fighter">
+      <Variant_Of_Existing_Type>Proj_Pegasus_Cyborg_Fighter_Laser</Variant_Of_Existing_Type>
+		<Projectile_Damage>5.0</Projectile_Damage>
+   </Projectile>
+
+</FighterUnits>

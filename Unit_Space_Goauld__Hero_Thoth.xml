@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<HeroUnits>
+  <!-- Information Goauld Hero Thoth -->
+  <HeroUnit Name="Goauld_Hero_Thoth">
+    <Text_ID>TEXT_GOAULD_SPECIAL_HERO_THOTH</Text_ID>
+    <Encyclopedia_Text> TEXT_DESCRIPTION_GOAULD_TOTH_SPECIAL </Encyclopedia_Text>
+    <Encyclopedia_Unit_Class> TEXT_ENCYCLOPEDIA_CLASS_THOTH </Encyclopedia_Unit_Class>
+    <Icon_Name>GOAULD_SPACE_HERO_THOTH.TGA</Icon_Name>
+    <Mass>1.0</Mass>
+    <Scale_Factor>1.0</Scale_Factor>
+    <Type>Walk</Type>
+    <Affiliation>Rebel</Affiliation>
+    <Political_Control>0</Political_Control>
+    <Political_Faction>Rebel</Political_Faction>
+    <Required_Timeline>1</Required_Timeline>
+    <Required_Ground_Base_Level>0</Required_Ground_Base_Level>
+    <Required_Star_Base_Level>0</Required_Star_Base_Level>
+    <Required_Special_Structures />
+    <Required_Planets />
+    <Size_Value>75</Size_Value>
+    <Damage>80</Damage>
+    <Attach_To_Flagship_During_Space_Battle>Yes</Attach_To_Flagship_During_Space_Battle>
+    <Stay_In_Transport_During_Ground_Battle>Yes</Stay_In_Transport_During_Ground_Battle>
+    <Icon_Name>GOAULD_SPACE_HERO_THOTH.TGA</Icon_Name>
+    <CategoryMask> NonCombatHero </CategoryMask>
+    <Ranking_In_Category> 3 </Ranking_In_Category>
+    <Is_Named_Hero>No</Is_Named_Hero>
+    <Is_Generic_Hero>Yes</Is_Generic_Hero>
+    <Can_Be_Neutralized_By_Major_Heroes>No</Can_Be_Neutralized_By_Major_Heroes>
+    <Can_Be_Neutralized_By_Minor_Heroes>No</Can_Be_Neutralized_By_Minor_Heroes>
+    <Show_Hero_Head>Yes</Show_Hero_Head>
+    <Neutralization_Cost>1500.0</Neutralization_Cost>
+    <Score_Cost_Credits> 10000 </Score_Cost_Credits>
+    <Abilities SubObjectList="Yes">
+      <Reduce_Production_Price_Ability Name="Thoth_Reduce_Production_Price_Kull">
+        <Applicable_Unit_Types>Rebel_Infiltrator_Team, Rebel_Infiltrator_Team_GC</Applicable_Unit_Types>
+        <Price_Reduction_Percentage>0.2</Price_Reduction_Percentage>
+        <Stacking_Category>0</Stacking_Category>
+      </Reduce_Production_Price_Ability>
+      <Combat_Bonus_Ability Name="Thoth_Combat_Bonus">
+        <Activation_Style>Space_Automatic</Activation_Style>
+        <Unit_Strength_Category>Fighter | Bomber | Transport | Corvette | Frigate | Capital | Super</Unit_Strength_Category>
+        <Applicable_Unit_Categories>Fighter | Bomber | Transport | Corvette | Frigate | Capital | Super</Applicable_Unit_Categories>
+        <Ability_Recharge_Bonus_Percentage>0.8</Ability_Recharge_Bonus_Percentage>
+        <Stacking_Category>1</Stacking_Category>
+      </Combat_Bonus_Ability>
+    </Abilities>
+  </HeroUnit>
+  
+  <!-- Company Information Goauld Hero Thoth -->
+  <HeroCompany Name="Goauld_Hero_Thoth_Team">
+    <Text_ID>TEXT_GOAULD_SPECIAL_HERO_THOTH</Text_ID>
+    <Encyclopedia_Text>TEXT_DESCRIPTION_GOAULD_TOTH_SPECIAL</Encyclopedia_Text>
+    <Encyclopedia_Unit_Class> TEXT_ENCYCLOPEDIA_CLASS_THOTH </Encyclopedia_Unit_Class>
+    <Icon_Name>GOAULD_SPACE_HERO_THOTH.TGA</Icon_Name>
+    <Is_Dummy>Yes</Is_Dummy>
+    <Damage>60</Damage>
+    <Affiliation>Rebel</Affiliation>
+    <Build_Time_Seconds>0</Build_Time_Seconds>
+    <Tech_Level>1</Tech_Level>
+    <Required_Timeline>1</Required_Timeline>
+    <Required_Ground_Base_Level>0</Required_Ground_Base_Level>
+    <Required_Star_Base_Level>0</Required_Star_Base_Level>
+    <Required_Special_Structures></Required_Special_Structures>
+    <Required_Planets></Required_Planets>
+    <Behavior>DUMMY_GROUND_COMPANY</Behavior>
+    <Company_Transport_Unit>Gallofree_Transport</Company_Transport_Unit>
+    <Company_Units>Goauld_Hero_Thoth</Company_Units>
+    <Is_Named_Hero>No</Is_Named_Hero>
+    <Is_Generic_Hero>Yes</Is_Generic_Hero>
+    <Can_Be_Neutralized_By_Major_Heroes>No</Can_Be_Neutralized_By_Major_Heroes>
+    <Can_Be_Neutralized_By_Minor_Heroes>No</Can_Be_Neutralized_By_Minor_Heroes>
+    <Show_Hero_Head>Yes</Show_Hero_Head> 
+    <SFXEvent_Build_Started></SFXEvent_Build_Started>
+    <SFXEvent_Build_Cancelled></SFXEvent_Build_Cancelled>
+    <SFXEvent_Build_Complete></SFXEvent_Build_Complete>
+    <SFXEvent_Hero_Respawned></SFXEvent_Hero_Respawned>
+    <Score_Cost_Credits> 10000 </Score_Cost_Credits>
+    <CategoryMask>NonCombatHero</CategoryMask>
+    <Ranking_In_Category> 3 </Ranking_In_Category>
+    <Population_Value>1</Population_Value>
+  </HeroCompany>
+  
+</HeroUnits>

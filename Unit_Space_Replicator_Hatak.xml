@@ -1,0 +1,69 @@
+<?xml version="1.0"?>
+<ReplicatorBeliskner>
+
+  <SpaceUnit Name="Replicator_Hatak">
+    <Variant_Of_Existing_Type>Corellian_Gunboat_No_Spawn</Variant_Of_Existing_Type>
+    <Text_ID>TEXT_REPLIKATOREN_SPACE_UNIT_HATAK</Text_ID>
+    <Encyclopedia_Text>TEXT_DESCRIPTION_REPLIKATOREN_HATAK</Encyclopedia_Text>
+    <Icon_Name>REPLICATOR_SPACE_UNIT_HATAK.TGA</Icon_Name>
+    <Space_Model_Name>Replicator_Space_Unit_Hatak.ALO</Space_Model_Name>
+    <Affiliation>Replicator</Affiliation>
+    <Armor_Type>Armor_Replicator</Armor_Type>
+    <Tech_Level>3</Tech_Level> 	  
+    <Required_Star_Base_Level>1</Required_Star_Base_Level>
+	<Required_Ground_Base_Level>0</Required_Ground_Base_Level>	  
+    <GUI_Row>1</GUI_Row>
+    <Build_Cost_Credits>1800</Build_Cost_Credits>
+    <Build_Time_Seconds>30</Build_Time_Seconds>
+    <Required_Special_Structures>None</Required_Special_Structures>
+    <Death_Clone>Damage_Normal, Replicator_Hatak_Death_Clone</Death_Clone>
+    <SFXEvent_Attack>Effect_Empty_Sound</SFXEvent_Attack>
+    <SFXEvent_Fleet_Move>Effect_Empty_Sound</SFXEvent_Fleet_Move>
+    <SFXEvent_Guard>Effect_Empty_Sound</SFXEvent_Guard>
+    <SFXEvent_Health_Critical_Warning>Effect_Empty_Sound</SFXEvent_Health_Critical_Warning>
+    <SFXEvent_Health_Low_Warning>Effect_Empty_Sound</SFXEvent_Health_Low_Warning>
+    <SFXEvent_Move>Effect_Empty_Sound</SFXEvent_Move>
+    <SFXEvent_Move_Into_Asteroid_Field>Effect_Empty_Sound</SFXEvent_Move_Into_Asteroid_Field>
+    <SFXEvent_Move_Into_Nebula>Effect_Empty_Sound</SFXEvent_Move_Into_Nebula>
+    <SFXEvent_Select>Effect_Empty_Sound</SFXEvent_Select>
+    <SFXEvent_Stop>Effect_Empty_Sound</SFXEvent_Stop>
+    <HardPoints>
+      HP_REPLICATOR_HATAK_F_SBM_00,
+      HP_REPLICATOR_HATAK_F_SBM_01,
+      HP_REPLICATOR_HATAK_R_SBM_00,
+      HP_REPLICATOR_HATAK_R_SBM_01,
+      HP_HATAK_SHIELD,
+      HP_HATAK_ENGINE,
+      HP_HATAK_HANGAR
+    </HardPoints>
+    <Abilities SubObjectList="Yes">
+      <Combat_Bonus_Ability Name="Replicator_Hatak_Combat_Bonus_GC">
+				<Activation_Style>Space_Automatic</Activation_Style>
+				<Applicable_Unit_Types>Replicator_Hatak</Applicable_Unit_Types>
+				<Health_Bonus_Percentage>0.1</Health_Bonus_Percentage>
+				<Damage_Bonus_Percentage>0.5</Damage_Bonus_Percentage>
+				<Energy_Pool_Bonus_Percentage>0.0</Energy_Pool_Bonus_Percentage>
+				<Shield_Bonus_Percentage>1.0</Shield_Bonus_Percentage>
+				<Defense_Bonus_Percentage>0.0</Defense_Bonus_Percentage>
+				<Movement_Speed_Bonus_Percentage>0.4</Movement_Speed_Bonus_Percentage>
+        <Stacking_Category>1</Stacking_Category>
+      </Combat_Bonus_Ability>
+		</Abilities> 
+  </SpaceUnit>
+
+  <SpaceUnit Name="Replicator_Hatak_Death_Clone">
+    <Variant_Of_Existing_Type>Corellian_Gunboat_Death_Clone</Variant_Of_Existing_Type>
+    <Space_Model_Name>Replicator_Space_Unit_Hatak_D.ALO</Space_Model_Name>
+    <Affiliation>Replicator</Affiliation>
+  </SpaceUnit>
+
+
+  <!-- Projectiles Replicator Beliskner -->
+  <Projectile Name="Proj_Replicator_Hatak_Laser_Medium">
+    <Variant_Of_Existing_Type>Proj_Replikator_Space_Laser_Medium_Hatak</Variant_Of_Existing_Type> 
+    <Projectile_Damage>20.0</Projectile_Damage>
+  </Projectile>  
+  
+</ReplicatorBeliskner>
+
+

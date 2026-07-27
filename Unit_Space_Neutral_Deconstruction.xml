@@ -1,0 +1,259 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Deconstruction_Dummy>
+    <!--
+        How this works:
+        There is a Deconstruction Object for every secondary space structure,
+        which becomes buildable when the respective structure is built. (Required_Special_Structures)
+
+        When the deconstructon dummy is built, the attached ObjectScript (ObjectScript_Space_Building_Deconstruction)
+        checks whether the dummy matches a secondary space structure and if so, it despawns the first one it finds on
+        the respective planet.
+
+        This way the same script can be used for every DeconstructionObject.
+
+
+        To add a new deconstruction Object:
+        - Create a new variant of Abstract_Deconstruction (see below for examples)
+          A new Icon and new Encyclopedia_Text string are needed
+        - Create a new if-case on ObjectScript_Space_Building_Deconstruction (see examples there)
+     -->
+
+
+    <MiscObject Name="Abstract_Deconstruction">
+        <Text_ID>TEXT_DECONSTRUCT</Text_ID>
+        <Encyclopedia_Unit_Class>TEXT_BUTTON_DECONSTRUCT</Encyclopedia_Unit_Class>
+        <Behavior> DUMMY_STARSHIP </Behavior>
+        <GUI_Row>0</GUI_Row>
+        <Land_Model_Name>W_LASER_INVISIBLE.ALO</Land_Model_Name>
+        <Victory_Relevant>No</Victory_Relevant>
+        <Is_Valid_Target>No</Is_Valid_Target>
+        <Affiliation>Rebel, Empire, Underworld</Affiliation>
+        <Lua_Script>ObjectScript_Space_Building_Deconstruction</Lua_Script>
+        <Build_Tab_Space_Units>Yes</Build_Tab_Space_Units>
+        <Build_Cost_Credits>1</Build_Cost_Credits>
+        <Build_Time_Seconds>1</Build_Time_Seconds>
+        <Build_Initially_Locked>No</Build_Initially_Locked>
+        <Tech_Level>99</Tech_Level>
+        <Required_Star_Base_Level>1</Required_Star_Base_Level>
+        <Required_Ground_Base_Level>0</Required_Ground_Base_Level>
+        <Required_Special_Structures></Required_Special_Structures>
+        <Required_Planets></Required_Planets>
+        <Required_Timeline></Required_Timeline>
+        <Population_Value>0</Population_Value>
+    </MiscObject>
+
+    <!-- Wraith -->
+    <SpaceUnit Name="Deconstruction_Wraith_Hangar">
+        <Variant_Of_Existing_Type>Abstract_Deconstruction</Variant_Of_Existing_Type>
+        <Icon_Name>WRAITH_SPACE_BUILDING_HANGAR_DECONSTRUCT.TGA</Icon_Name>
+        <Encyclopedia_Text>TEXT_DECONSTRUCT_WRAITH_ORBITAL_HANGAR</Encyclopedia_Text>
+        <Tech_Level>1</Tech_Level>
+        <Required_Special_Structures>Wraith_Hangar</Required_Special_Structures>
+    </SpaceUnit>
+
+    <SpaceUnit Name="Deconstruction_Wraith_Large_Shipyard">
+        <Variant_Of_Existing_Type>Abstract_Deconstruction</Variant_Of_Existing_Type>
+        <Icon_Name>WRAITH_SPACE_BUILDING_HEAVY_SHIPYARD_DECONSTRUCT.TGA</Icon_Name>
+        <Encyclopedia_Text>TEXT_DECONSTRUCT_WRAITH_LARGE_SHIPYARD</Encyclopedia_Text>
+        <Tech_Level>1</Tech_Level>
+        <Required_Special_Structures>Wraith_Large_Shipyard</Required_Special_Structures>
+    </SpaceUnit>
+
+    <SpaceUnit Name="Deconstruction_wraith_Defense_Satellite_ANTIFIGHTER_SS">
+        <Variant_Of_Existing_Type>Abstract_Deconstruction</Variant_Of_Existing_Type>
+        <Icon_Name>WRAITH_SPACE_BUILDING_AFSATELLITE_DECONSTRUCT.TGA</Icon_Name>
+        <Encyclopedia_Text>TEXT_DECONSTRUCT_WRAITH_ANTIFIGHTER_SAT</Encyclopedia_Text>
+        <Tech_Level>1</Tech_Level>
+        <Required_Special_Structures>wraith_Defense_Satellite_ANTIFIGHTER_SS</Required_Special_Structures>
+    </SpaceUnit>
+
+    <SpaceUnit Name="Deconstruction_wraith_Defense_Satellite_ANTICAPITAL_SS">
+        <Variant_Of_Existing_Type>Abstract_Deconstruction</Variant_Of_Existing_Type>
+        <Icon_Name>WRAITH_SPACE_BUILDING_ACSSATELLITE_DECONSTRUCT.TGA</Icon_Name>
+        <Encyclopedia_Text>TEXT_DECONSTRUCT_WRAITH_ANTICAPITAL_SAT</Encyclopedia_Text>
+        <Tech_Level>1</Tech_Level>
+        <Required_Special_Structures>wraith_Defense_Satellite_ANTICAPITAL_SS</Required_Special_Structures>
+    </SpaceUnit>
+
+    <SpaceUnit Name="Deconstruction_Wraith_Space_Building_Ion_Mine_SS">
+        <Variant_Of_Existing_Type>Abstract_Deconstruction</Variant_Of_Existing_Type>
+        <Icon_Name>WRAITH_SPACE_BUILDING_IONMINE_DECONSTRUCT.TGA</Icon_Name>
+        <Encyclopedia_Text>TEXT_DECONSTRUCT_WRAITH_IONMINE</Encyclopedia_Text>
+        <Tech_Level>1</Tech_Level>
+        <Required_Special_Structures>Wraith_Space_Building_Ion_Mine_SS</Required_Special_Structures>
+    </SpaceUnit>
+
+    <SpaceUnit Name="Deconstruction_Wraith_Space_Asteroid_Mine">
+        <Variant_Of_Existing_Type>Abstract_Deconstruction</Variant_Of_Existing_Type>
+        <Icon_Name>WRAITH_SPACE_BUILDING_MINE_DECONSTRUCT.tga</Icon_Name>
+        <Encyclopedia_Text>TEXT_DECONSTRUCT_WRAITH_MINE</Encyclopedia_Text>
+        <Tech_Level>1</Tech_Level>
+        <Required_Special_Structures>Wraith_Space_Asteroid_Mine</Required_Special_Structures>
+    </SpaceUnit>
+
+    <SpaceUnit Name="Deconstruction_Wraith_Space_Asteroid_Mine_PP">
+        <Variant_Of_Existing_Type>Abstract_Deconstruction</Variant_Of_Existing_Type>
+        <Icon_Name>WRAITH_SPACE_BUILDING_MINE_DECONSTRUCT.tga</Icon_Name>
+        <Encyclopedia_Text>TEXT_DECONSTRUCT_WRAITH_MINE</Encyclopedia_Text>
+        <Tech_Level>1</Tech_Level>
+        <Required_Special_Structures>Wraith_Space_Asteroid_Mine_PP</Required_Special_Structures>
+    </SpaceUnit>
+
+    <SpaceUnit Name="Deconstruction_Empire_Defense_Satellite_Repair_SS">
+        <Variant_Of_Existing_Type>Abstract_Deconstruction</Variant_Of_Existing_Type>
+        <Icon_Name>WRAITH_SPACE_BUILDING_REPAIR_SAT_DECONSTRUCT.tga</Icon_Name>
+        <Encyclopedia_Text>TEXT_DECONSTRUCT_WRAITH_REPAIR_SAT</Encyclopedia_Text>
+        <Tech_Level>1</Tech_Level>
+        <Required_Special_Structures>Empire_Defense_Satellite_Repair_SS</Required_Special_Structures>
+    </SpaceUnit>
+
+    <!-- Ancients (Tauri) -->
+    <SpaceUnit Name="Deconstruction_Ancient_Defense_Satellite_SS">
+        <Variant_Of_Existing_Type>Abstract_Deconstruction</Variant_Of_Existing_Type>
+        <Icon_Name>TAURI_SPACE_BUIDLING_ANCIENTSATELLITE_DECONSTRUCT.TGA</Icon_Name>
+        <Encyclopedia_Text>TEXT_DECONSTRUCT_ANCIENT_SAT</Encyclopedia_Text>
+        <Tech_Level>1</Tech_Level>
+        <Required_Special_Structures>Ancient_Defense_Satellite_SS</Required_Special_Structures>
+    </SpaceUnit>
+
+    <SpaceUnit Name="Deconstruction_Ancient_Space_Building_Sensor_SS">
+        <Variant_Of_Existing_Type>Abstract_Deconstruction</Variant_Of_Existing_Type>
+        <Icon_Name>MAP_SPACE_BUILDING_ANCIENTSENSOR_DECONSTRUCT.TGA</Icon_Name>
+        <Encyclopedia_Text>TEXT_DECONSTRUCT_ANCIENT_SENSOR</Encyclopedia_Text>
+        <Tech_Level>1</Tech_Level>
+        <Required_Special_Structures>Ancient_Space_Building_Sensor_SS</Required_Special_Structures>
+    </SpaceUnit>
+
+    <SpaceUnit Name="Deconstruction_Ancient_Space_Building_Sensor_SS_PP">
+        <Variant_Of_Existing_Type>Abstract_Deconstruction</Variant_Of_Existing_Type>
+        <Icon_Name>MAP_SPACE_BUILDING_ANCIENTSENSOR_DECONSTRUCT.TGA</Icon_Name>
+        <Encyclopedia_Text>TEXT_DECONSTRUCT_ANCIENT_SENSOR</Encyclopedia_Text>
+        <Tech_Level>1</Tech_Level>
+        <Required_Special_Structures>Ancient_Space_Building_Sensor_SS_PP</Required_Special_Structures>
+    </SpaceUnit>
+
+
+    <!-- Tauri -->
+    <SpaceUnit Name="Deconstruction_Tauri_Defense_Satellite_Railgun_SS">
+        <Variant_Of_Existing_Type>Abstract_Deconstruction</Variant_Of_Existing_Type>
+        <Icon_Name>TAURI_SPACE_BUILDING_RAILGUNSATELLITE_DECONSTRUCT.TGA</Icon_Name>
+        <Encyclopedia_Text>TEXT_DECONSTRUCT_TAURI_DEFENSE_SATELLITE_RAILGUN</Encyclopedia_Text>
+        <Tech_Level>1</Tech_Level>
+        <Required_Special_Structures>Tauri_Defense_Satellite_Railgun_SS</Required_Special_Structures>
+    </SpaceUnit>
+
+    <SpaceUnit Name="Deconstruction_Tauri_Defense_Satellite_Missile_SS">
+        <Variant_Of_Existing_Type>Abstract_Deconstruction</Variant_Of_Existing_Type>
+        <Icon_Name>TAURI_SPACE_BUILDING_MISSILESATELLITE_DECONSTRUCT.TGA</Icon_Name>
+        <Encyclopedia_Text>TEXT_DECONSTRUCT_TAURI_DEFENSE_SATELLITE_MISSILE</Encyclopedia_Text>
+        <Tech_Level>1</Tech_Level>
+        <Required_Special_Structures>Tauri_Defense_Satellite_Missile_SS</Required_Special_Structures>
+    </SpaceUnit>
+
+    <SpaceUnit Name="Deconstruction_Tauri_Defense_Satellite_Shield_SS">
+        <Variant_Of_Existing_Type>Abstract_Deconstruction</Variant_Of_Existing_Type>
+        <Icon_Name>TAURI_SPACE_BUILDING_SHIELDSATELLITE_DECONSTRUCT.TGA</Icon_Name>
+        <Encyclopedia_Text>TEXT_DECONSTRUCT_TAURI_DEFENSE_SATELLITE_SHIELD</Encyclopedia_Text>
+        <Tech_Level>1</Tech_Level>
+        <Required_Special_Structures>Tauri_Defense_Satellite_Shield_SS</Required_Special_Structures>
+    </SpaceUnit>
+
+    <SpaceUnit Name="Deconstruction_Tauri_Orbital_Long_Range_Sensor_SS">
+        <Variant_Of_Existing_Type>Abstract_Deconstruction</Variant_Of_Existing_Type>
+        <Icon_Name>TAURI_SPACE_BUILDING_LONGRANGESENSOR_DECONSTRUCT.TGA</Icon_Name>
+        <Encyclopedia_Text>TEXT_DECONSTRUCT_TAURI_ORBITAL_LONG_RANGE_SENSOR</Encyclopedia_Text>
+        <Tech_Level>1</Tech_Level>
+        <Required_Special_Structures>Tauri_Orbital_Long_Range_Sensor_SS</Required_Special_Structures>
+    </SpaceUnit>
+
+    <SpaceUnit Name="Deconstruction_Tauri_Space_Building_AG_3_SS">
+        <Variant_Of_Existing_Type>Abstract_Deconstruction</Variant_Of_Existing_Type>
+        <Icon_Name>TAURI_SPACE_BUILDING_AG3_DECONSTRUCT.TGA</Icon_Name>
+        <Encyclopedia_Text>TEXT_DECONSTRUCT_TAURI_SPACE_BUILDING_AG_3</Encyclopedia_Text>
+        <Tech_Level>1</Tech_Level>
+        <Required_Special_Structures>Tauri_Space_Building_AG_3_SS</Required_Special_Structures>
+    </SpaceUnit>
+
+    <SpaceUnit Name="Deconstruction_Tauri_Space_Building_Ancient_Satellite_SS">
+        <Variant_Of_Existing_Type>Abstract_Deconstruction</Variant_Of_Existing_Type>
+        <Icon_Name>TAURI_SPACE_BUIDLING_ANCIENTSATELLITE_DECONSTRUCT.TGA</Icon_Name>
+        <Encyclopedia_Text>TEXT_DECONSTRUCT_ANCIENT_SAT</Encyclopedia_Text>
+        <Tech_Level>1</Tech_Level>
+        <Required_Special_Structures>Tauri_Space_Building_Ancient_Satellite_SS</Required_Special_Structures>
+    </SpaceUnit>
+
+    <SpaceUnit Name="Deconstruction_Tauri_Space_Asteroid_Mine">
+        <Variant_Of_Existing_Type>Abstract_Deconstruction</Variant_Of_Existing_Type>
+        <Icon_Name>TAURI_SPACE_BUILDING_MINE_DECONSTRUCT.TGA</Icon_Name>
+        <Encyclopedia_Text>TEXT_DECONSTRUCT_TAURI_SPACE_ASTEROID_MINE</Encyclopedia_Text>
+        <Tech_Level>1</Tech_Level>
+        <Required_Special_Structures>Tauri_Space_Asteroid_Mine</Required_Special_Structures>
+    </SpaceUnit>
+
+    <SpaceUnit Name="Deconstruction_U_Space_Asgard_Shipyard">
+        <Variant_Of_Existing_Type>Abstract_Deconstruction</Variant_Of_Existing_Type>
+        <Icon_Name>TAURI_SPACE_BUILDING_ASGARD_SHIPYARD_DECONSTRUCT.TGA</Icon_Name>
+        <Encyclopedia_Text>TEXT_DECONSTRUCT_U_SPACE_ASGARD_SHIPYARD</Encyclopedia_Text>
+        <Tech_Level>1</Tech_Level>
+        <Required_Special_Structures>U_Space_Asgard_Shipyard</Required_Special_Structures>
+    </SpaceUnit>
+
+
+    <!-- Goauld -->
+    <SpaceUnit Name="Deconstruction_Goauld_Defense_Satellite_small_SS">
+        <Variant_Of_Existing_Type>Abstract_Deconstruction</Variant_Of_Existing_Type>
+        <Icon_Name>GOAULD_SPACE_BUILDING_AFSATELLITE_DECONSTRUCT.TGA</Icon_Name>
+        <Encyclopedia_Text>TEXT_DECONSTRUCT_GOAULD_DEFENSE_SATELLITE_SMALL_SS</Encyclopedia_Text>
+        <Tech_Level>1</Tech_Level>
+        <Required_Special_Structures>Goauld_Defense_Satellite_small_SS</Required_Special_Structures>
+    </SpaceUnit>
+
+    <SpaceUnit Name="Deconstruction_Goauld_Defense_Satellite_Huge_SS">
+        <Variant_Of_Existing_Type>Abstract_Deconstruction</Variant_Of_Existing_Type>
+        <Icon_Name>GOAULD_SPACE_BUILDING_ACSSATELLITE_DECONSTRUCT.TGA</Icon_Name>
+        <Encyclopedia_Text>TEXT_DECONSTRUCT_GOAULD_DEFENSE_SATELLITE_HUGE_SS</Encyclopedia_Text>
+        <Tech_Level>1</Tech_Level>
+        <Required_Special_Structures>Goauld_Defense_Satellite_Huge_SS</Required_Special_Structures>
+    </SpaceUnit>
+
+    <SpaceUnit Name="Deconstruction_Goauld_Defense_Satellite_Disruptor_SS">
+        <Variant_Of_Existing_Type>Abstract_Deconstruction</Variant_Of_Existing_Type>
+        <Icon_Name>GOAULD_SPACE_BUILDING_JAMMING_SATELLITE_DECONSTRUCT.TGA</Icon_Name>
+        <Encyclopedia_Text>TEXT_DECONSTRUCT_GOAULD_DEFENSE_SATELLITE_DISRUPTOR_SS</Encyclopedia_Text>
+        <Tech_Level>1</Tech_Level>
+        <Required_Special_Structures>Goauld_Defense_Satellite_Disruptor_SS</Required_Special_Structures>
+    </SpaceUnit>
+
+    <SpaceUnit Name="Deconstruction_Goauld_Defense_Satellite_Flash_SS">
+        <Variant_Of_Existing_Type>Abstract_Deconstruction</Variant_Of_Existing_Type>
+        <Icon_Name>GOAULD_SPACE_BUILDING_FLASHSATELLITE_DECONSTRUCT.TGA</Icon_Name>
+        <Encyclopedia_Text>TEXT_DECONSTRUCT_GOAULD_DEFENSE_SATELLITE_FLASH_SS</Encyclopedia_Text>
+        <Tech_Level>1</Tech_Level>
+        <Required_Special_Structures>Goauld_Defense_Satellite_Flash_SS</Required_Special_Structures>
+    </SpaceUnit>
+
+    <SpaceUnit Name="Deconstruction_Goauld_Large_Shipyard">
+        <Variant_Of_Existing_Type>Abstract_Deconstruction</Variant_Of_Existing_Type>
+        <Icon_Name>GOAULD_SPACE_BUILDING_HEAVY_SHIPYARD_DECONSTRUCT.TGA</Icon_Name>
+        <Encyclopedia_Text>TEXT_DECONSTRUCT_GOAULD_LARGE_SHIPYARD</Encyclopedia_Text>
+        <Tech_Level>1</Tech_Level>
+        <Required_Special_Structures>Goauld_Large_Shipyard</Required_Special_Structures>
+    </SpaceUnit>
+
+    <SpaceUnit Name="Deconstruction_Goauld_Space_Asteroid_Mine">
+        <Variant_Of_Existing_Type>Abstract_Deconstruction</Variant_Of_Existing_Type>
+        <Icon_Name>GOAULD_SPACE_BUILDING_MINE_DECONSTRUCT.TGA</Icon_Name>
+        <Encyclopedia_Text>TEXT_DECONSTRUCT_GOAULD_SPACE_ASTEROID_MINE</Encyclopedia_Text>
+        <Tech_Level>1</Tech_Level>
+        <Required_Special_Structures>Goauld_Space_Asteroid_Mine</Required_Special_Structures>
+    </SpaceUnit>
+
+    <SpaceUnit Name="Deconstruction_ORI_Satellite_SS">
+        <Variant_Of_Existing_Type>Abstract_Deconstruction</Variant_Of_Existing_Type>
+        <Icon_Name>ORI_SPACE_BUILDING_SATELLITE_DECONSTRUCT.TGA</Icon_Name>
+        <Encyclopedia_Text>TEXT_DECONSTRUCT_ORI_SATELLITE_SS</Encyclopedia_Text>
+        <Tech_Level>1</Tech_Level>
+        <Required_Special_Structures>ORI_Satellite_SS</Required_Special_Structures>
+    </SpaceUnit>
+
+</Deconstruction_Dummy>
