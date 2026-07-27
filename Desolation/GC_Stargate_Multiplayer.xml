@@ -1,0 +1,2217 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<Campaigns>
+
+<Campaign Name="Multiplayer_Large_Stargate_Universe"> <!--#-->
+
+    <Campaign_Set> Multiplayer_Campaign_Set </Campaign_Set>
+    <Sort_Order>103</Sort_Order>
+
+    <Text_ID> TEXT_CAMPAIGN_SINGLE_12 </Text_ID>
+    <Description_Text> TEXT_CAMPAIGN_SINGLE_DESCRIPTION_12 </Description_Text>
+
+    <Camera_Shift_X> 40.0 </Camera_Shift_X>
+    <Camera_Shift_Y> 0.0 </Camera_Shift_Y>
+    <Camera_Distance> 1200.0 </Camera_Distance>
+
+    <Locations>
+      Galaxy_Core_Art_Model_General,
+      Galaxy_Core_Art_Model_Universe_L_Milkyway,
+      Galaxy_Core_Art_Model_Universe_L_Pegasus,
+      Galaxy_Core_Art_Model_Universe_L_Ida,
+      Galaxy_Core_Art_Model_Universe_L_Ori_Galaxy,
+
+      Universe_L_Midway,
+      Universe_L_Void,
+
+      <!--#Milkyway-->
+      Universe_L_Abydos,
+      Universe_L_Adara,
+      Universe_L_Alpha_Site,
+      Universe_L_Anubis_Homeworld,
+      Universe_L_Black_Hole,
+      Universe_L_Cal_Mah,
+      Universe_L_Chulak,
+      Universe_L_Cimmeria,
+      Universe_L_Cunae,
+      Universe_L_Dakara,
+      Universe_L_Dar_Eshkalon,
+      Universe_L_Delmak,
+      Universe_L_Earth,
+      Universe_L_Entac,
+      Universe_L_Erebus,
+      Universe_L_Gamma_Site,
+      Universe_L_Haktyl,
+      Universe_L_Hanka,
+      Universe_L_Hassara,
+      Universe_L_Hathor_Homeworld,
+      Universe_L_Hebridan,
+      Universe_L_Icarus_Base,
+      Universe_L_Ion_Nebula,
+      Universe_L_Juna,
+      Universe_L_Kallana,
+      Universe_L_Kheb,
+      Universe_L_Kreshta,
+      Universe_L_KS7_535,
+      Universe_L_Ktau,
+      Universe_L_Langara,
+      Universe_L_Latona,
+      Universe_L_Lucian_Base,
+      Universe_L_Minefield,
+      Universe_L_Oran,
+      Universe_L_Orban,
+      Universe_L_P2X_338,
+      Universe_L_P34_353J,
+      Universe_L_P3R_118,
+      Universe_L_P3R_636,
+      Universe_L_P3S_114,
+      Universe_L_P3X_116,
+      Universe_L_P3X_254,
+      Universe_L_P3X_367,
+      Universe_L_P3X_403,
+      Universe_L_P3X_439,
+      Universe_L_P3X_474,
+      Universe_L_P3X_584,
+      Universe_L_P3X_666,
+      Universe_L_P3Y_229,
+      Universe_L_P4C_970,
+      Universe_L_P4M_399,
+      Universe_L_P4S_237,
+      Universe_L_P5C_353,
+      Universe_L_P5S_117,
+      Universe_L_P6G_452,
+      Universe_L_P8X_412,
+      Universe_L_P9C_882,
+      Universe_L_Pangar,
+      Universe_L_Praclarush_Taonas,
+      Universe_L_PX9_757,
+      Universe_L_Reese_Homeworld,
+      Universe_L_Revanna,
+      Universe_L_Sodan,
+      Universe_L_Tagrea,
+      <!-- Universe_L_Talthus, -->
+      Universe_L_Tartarus,
+      Universe_L_Tegalus,
+      Universe_L_Tobin,
+      Universe_L_Tollana,
+      Universe_L_Vis_Uban,
+      Universe_L_Volian,
+      Universe_L_Vorash,
+      Universe_L_Yus_Homeworld,
+
+      <!--#Pegasus-->
+      Universe_L_Alpha_Site_P,
+      Universe_L_Asteroid_Field,
+      Universe_L_Asuras,
+      Universe_L_Athos,
+      Universe_L_Basis_Ford,
+      Universe_L_Belkan,
+      Universe_L_Black_Hole_P,
+      Universe_L_Cloister,
+      Universe_L_Dagan,
+      Universe_L_Doranda,
+      Universe_L_Edowin,
+      Universe_L_Gas_Cloud,
+      Universe_L_Gelda,
+      Universe_L_Genii,
+      Universe_L_Gonta,
+      Universe_L_Hoff,
+      Universe_L_Iratus_Bestiola,
+      Universe_L_Jenev,
+      Universe_L_Kohal,
+      Universe_L_Lantea,
+      Universe_L_Laros,
+      Universe_L_M1B_129,
+      Universe_L_M1K_177,
+      Universe_L_M2R_441,
+      Universe_L_M2S_445,
+      Universe_L_M35_117,
+      Universe_L_M4F_788,
+      Universe_L_M4H_212,
+      Universe_L_M4X_337,
+      Universe_L_M56_768,
+      Universe_L_M5R_179,
+      Universe_L_M5S_224,
+      Universe_L_M5V_801,
+      Universe_L_M65_PL8,
+      Universe_L_M6H_987,
+      Universe_L_M6R_214,
+      Universe_L_M6R_867,
+      Universe_L_M7G_677,
+      Universe_L_M8G_352,
+      Universe_L_M9R_373,
+      Universe_L_Manaria,
+      Universe_L_Moon_Base,
+      Universe_L_New_Athos,
+      Universe_L_Olesia,
+      Universe_L_Orakis,
+      Universe_L_Orlan,
+      Universe_L_P3M_736,
+      Universe_L_Proculis,
+      Universe_L_Rasputin,
+      Universe_L_Sagon,
+      Universe_L_Sateda,
+      Universe_L_Sun,
+      Universe_L_Taranis,
+      Universe_L_Unknown_Sector_P,
+      Universe_L_Vadena,
+      Universe_L_Vanir,
+      Universe_L_Wraith_Cloning_Facility,
+      Universe_L_Wraith_Homeworld,
+
+      <!--Ida-->
+      Universe_L_Algiz,
+      Universe_L_Engi,
+      Universe_L_Hala,
+      Universe_L_Orilla,
+      Universe_L_Othala,
+      Universe_L_Thrudvang,
+
+      <!--Ori galaxy-->
+      Universe_L_Celestis,
+      Universe_L_Supergate,
+      Universe_L_Ver_Isca,
+      Universe_L_Ver_Omesh,
+      Universe_L_Via_Caelum,
+      Universe_L_Vis_Deorum,
+    </Locations>
+
+    <Trade_Routes>
+      LM1, LM2, LM4, LM5, LM6, LM7, LM8, LM9,
+      LM10, LM11, LM12, LM13, LM14, LM15, LM16, LM17, LM18, LM19,
+      LM20, LM21, LM22, LM23, LM24, LM25, LM26, LM27, LM28, LM29,
+      LM30, LM31, LM32, LM33, LM34, LM35, LM36, LM37, <!-- LM38, --> LM39,
+      LM40, LM41, LM42, LM43, LM44, LM45, LM46, LM47, LM48, LM49,
+      LM50, LM51, LM52, LM53, LM54, LM55, LM56, LM57, LM58, LM59,
+      LM60, LM61, LM62, LM63, LM64, LM65, LM66, LM67, LM68, LM69,
+      LM70, LM71, LM72, LM73, LM74, LM75, LM76, LM77, LM78, LM79,
+      LM80, LM81, LM82, LM83, LM84, LM85, LM86, LM87, LM88, LM89,
+      LM90, LM91, LM92, LM93, LM94, LM95, LM96, LM97, LM98, LM99,
+      LM100, LM101, LM102, LM103, LM104, LM105, <!-- LM106, --> LM107, LM108, LM109,
+      LG1, LG2, LG3, LG4, LG6, LG7, LG8, LG9,
+      LI1, LI2, LI3, LI4, LI5,
+      LO1, LO2, LO3, LO4, LO5, LO6, LO7,
+      LP1, LP2, LP3, LP4, LP5, LP6, LP7, LP8, LP9,
+      LP10, LP11, LP12, LP13, LP14, LP15, LP16, LP17, LP18, LP19,
+      LP20, LP21, LP22, LP23, LP24, LP25, LP26, LP27, LP28, LP29,
+      LP30, LP31, LP32, LP33, LP34, LP35, LP36, LP37, LP38, LP39,
+      LP40, LP41, LP43, LP44, LP45, LP47, LP48, LP49,
+      LP50, LP51, LP52, LP53, LP54, LP55, LP56, LP57, LP58, LP59,
+      LP60, LP61, LP62, LP63, LP64, LP65, LP66, LP67, LP68, LP69,
+      LP70, LP71, LP72, LP73, LP74, LP75, LP76, LP77, LP78, LP79,
+      LP80, LP81, LP82
+    </Trade_Routes>
+
+    <Home_Location> Rebel, Universe_L_Anubis_Homeworld </Home_Location>
+    <Home_Location> Empire, Universe_L_Wraith_Homeworld </Home_Location>
+    <Home_Location> Underworld, Universe_L_Earth </Home_Location>
+    <Home_Location> Systemlord_Alliance, Universe_L_Yus_Homeworld </Home_Location>	
+    <Home_Location> Ori, Universe_L_Celestis </Home_Location>		
+    <Home_Location> Replicator, Universe_L_Othala </Home_Location>		
+    <Home_Location> Asuran, Universe_L_Asuras </Home_Location>	
+    <Home_Location> Aschen, Universe_L_P4C_970 </Home_Location>			
+
+    <Is_Multiplayer> Yes </Is_Multiplayer><!--BasicEmpire will be enabled through story file-->
+
+      <Rebel_Story_Name>Story_Plots_Gate_Defense_Network.xml</Rebel_Story_Name>
+      <Empire_Story_Name>Story_Plots_Gate_Defense_Network.xml</Empire_Story_Name>
+      <Underworld_Story_Name>Story_Plots_Gate_Defense_Network.xml</Underworld_Story_Name>
+    <!--Ori_Player will be enabled through story file-->
+    <!--Replicators_Player will be enabled through story file-->
+    <!--Systemlords_Player will be enabled through story file-->
+    <Markup_Filename>Empire, UniverseLargeHints </Markup_Filename>
+    <Markup_Filename>Rebel, UniverseLargeHints </Markup_Filename>
+    <Markup_Filename>Pirates, UniverseLargeHints </Markup_Filename>
+    <Markup_Filename>Underworld, UniverseLargeHints </Markup_Filename>
+    <Markup_Filename>Aschen, UniverseLargeHints </Markup_Filename>
+    <Markup_Filename>Hostile, UniverseLargeHints </Markup_Filename>
+    <Markup_Filename>Ori, UniverseLargeHints </Markup_Filename>
+    <Markup_Filename>Asuran, UniverseLargeHints </Markup_Filename>
+    <Markup_Filename>Replicator, UniverseLargeHints </Markup_Filename>
+    <Markup_Filename>Systemlord_Alliance, UniverseLargeHints </Markup_Filename>
+    <Markup_Filename>Jaffa_Rebels, UniverseLargeHints </Markup_Filename>
+    <Markup_Filename>Wraith_Rebel, UniverseLargeHints </Markup_Filename>
+    <Markup_Filename>Lucian_Alliance, UniverseLargeHints </Markup_Filename>
+    <Markup_Filename>Hostile, UniverseLargeHints </Markup_Filename>
+
+    <Supports_Custom_Settings>True</Supports_Custom_Settings>
+    <Show_Completed_Tab>False</Show_Completed_Tab>
+
+
+    <!-- Win Conditions -->
+
+    <Human_Victory_Conditions>
+      Galactic_All_Planets_Controlled
+    </Human_Victory_Conditions>
+
+    <AI_Victory_Conditions>
+      Galactic_All_Planets_Controlled
+    </AI_Victory_Conditions>
+
+
+    <!-- #Goauld Starting Forces -->
+    <Starting_Credits> Rebel,  5000 </Starting_Credits>
+    <Starting_Tech_Level> Rebel, 0 </Starting_Tech_Level>
+    <Max_Tech_Level> Rebel, 4 </Max_Tech_Level>
+
+    <Starting_Forces> Rebel, Universe_L_Anubis_Homeworld, Rebel_Star_Base_5 </Starting_Forces>
+    <Starting_Forces> Rebel, Universe_L_Anubis_Homeworld, Rebel_X-Wing_Squadron </Starting_Forces>
+    <Starting_Forces> Rebel, Universe_L_Anubis_Homeworld, Rebel_X-Wing_Squadron </Starting_Forces>
+    <Starting_Forces> Rebel, Universe_L_Anubis_Homeworld, Goauld_Anubis_Hatak </Starting_Forces>
+    <Starting_Forces> Rebel, Universe_L_Anubis_Homeworld, Goauld_Anubis_Hatak </Starting_Forces>
+    <Starting_Forces> Rebel, Universe_L_Anubis_Homeworld, Goauld_Anubis_Hatak </Starting_Forces>
+
+    <Starting_Forces> Rebel, Universe_L_Anubis_Homeworld, Rebel_Command_Center </Starting_Forces>
+    <Starting_Forces> Rebel, Universe_L_Anubis_Homeworld, R_Ground_Barracks </Starting_Forces>
+    <Starting_Forces> Rebel, Universe_L_Anubis_Homeworld, R_Ground_Light_Vehicle_Factory </Starting_Forces>
+    <Starting_Forces> Rebel, Universe_L_Anubis_Homeworld, R_Ground_Small_Shipyard </Starting_Forces>
+    <Starting_Forces> Rebel, Universe_L_Anubis_Homeworld, R_Ground_Research_Facility </Starting_Forces>
+    <Starting_Forces> Rebel, Universe_L_Anubis_Homeworld, Rebel_Infantry_Squad </Starting_Forces>
+    <Starting_Forces> Rebel, Universe_L_Anubis_Homeworld, Rebel_Infantry_Squad </Starting_Forces>
+    <Starting_Forces> Rebel, Universe_L_Anubis_Homeworld, Rebel_Infantry_Squad </Starting_Forces>
+    <Starting_Forces> Rebel, Universe_L_Anubis_Homeworld, Rebel_Infantry_Squad </Starting_Forces>
+    <Starting_Forces> Rebel, Universe_L_Anubis_Homeworld, Goauld_Jackal_Guard_Company </Starting_Forces>
+    <Starting_Forces> Rebel, Universe_L_Anubis_Homeworld, Goauld_Jackal_Guard_Company </Starting_Forces>
+    <Starting_Forces> Rebel, Universe_L_Anubis_Homeworld, Goauld_Jackal_Guard_Company </Starting_Forces>
+    <Starting_Forces> Rebel, Universe_L_Anubis_Homeworld, Goauld_Jackal_Guard_Company </Starting_Forces>
+
+
+    <!-- #Tauri Starting Forces -->
+    <Starting_Credits> Underworld,  5000 </Starting_Credits>
+    <Starting_Tech_Level> Underworld, 1 </Starting_Tech_Level>
+    <Max_Tech_Level> Underworld, 5 </Max_Tech_Level>
+
+    <Starting_Forces> Underworld, Universe_L_Earth, Underworld_Star_Base_2 </Starting_Forces>
+    <Starting_Forces> Underworld, Universe_L_Earth, Tauri_Hero_X_302_Squadron </Starting_Forces>	
+    <Starting_Forces> Underworld, Universe_L_Earth, Tauri_X_301_Squadron </Starting_Forces>
+    <Starting_Forces> Underworld, Universe_L_Earth, Tauri_X_301_Squadron </Starting_Forces>
+    <Starting_Forces> Underworld, Universe_L_Earth, Crusader_Gunship </Starting_Forces>
+    <Starting_Forces> Underworld, Universe_L_Earth, Crusader_Gunship </Starting_Forces>
+
+    <Starting_Forces> Underworld, Universe_L_Earth, U_Ground_Palace </Starting_Forces>
+    <Starting_Forces> Underworld, Universe_L_Earth, U_Ground_Barracks </Starting_Forces>
+    <Starting_Forces> Underworld, Universe_L_Earth, U_Ground_Droid_Works </Starting_Forces>
+    <Starting_Forces> Underworld, Universe_L_Earth, U_Ground_Shipyard </Starting_Forces>
+    <Starting_Forces> Underworld, Universe_L_Earth, Underworld_Saboteur_Team </Starting_Forces>
+    <Starting_Forces> Underworld, Universe_L_Earth, Underworld_Saboteur_Team </Starting_Forces>
+    <Starting_Forces> Underworld, Universe_L_Earth, Underworld_Merc_Squad </Starting_Forces>
+    <Starting_Forces> Underworld, Universe_L_Earth, Underworld_Merc_Squad </Starting_Forces>
+    <Starting_Forces> Underworld, Universe_L_Earth, Underworld_Merc_Squad </Starting_Forces>
+    <Starting_Forces> Underworld, Universe_L_Earth, Underworld_Disruptor_Merc_Squad </Starting_Forces>
+
+
+    <!-- #Wraith Starting Forces -->
+    <Starting_Credits> Empire,  15000 </Starting_Credits>
+    <Starting_Tech_Level> Empire, 2 </Starting_Tech_Level>
+    <Max_Tech_Level> Empire, 5 </Max_Tech_Level>
+
+
+    <Starting_Forces> Empire, Universe_L_Wraith_Homeworld, Empire_Star_Base_5 </Starting_Forces>
+    <Starting_Forces> Empire, Universe_L_Wraith_Homeworld, Wraith_Hangar </Starting_Forces>
+    <Starting_Forces> Empire, Universe_L_Wraith_Homeworld, Wraith_Large_Shipyard </Starting_Forces>
+    <Starting_Forces> Empire, Universe_L_Wraith_Homeworld, Interdictor_Cruiser </Starting_Forces>
+    <Starting_Forces> Empire, Universe_L_Wraith_Homeworld, Interdictor_Cruiser </Starting_Forces>
+    <Starting_Forces> Empire, Universe_L_Wraith_Homeworld, Interdictor_Cruiser </Starting_Forces>
+    <Starting_Forces> Empire, Universe_L_Wraith_Homeworld, Interdictor_Cruiser </Starting_Forces>
+    <Starting_Forces> Empire, Universe_L_Wraith_Homeworld, Tartan_Patrol_Cruiser </Starting_Forces>
+    <Starting_Forces> Empire, Universe_L_Wraith_Homeworld, Tartan_Patrol_Cruiser </Starting_Forces>
+    <Starting_Forces> Empire, Universe_L_Wraith_Homeworld, Tartan_Patrol_Cruiser </Starting_Forces>
+    <Starting_Forces> Empire, Universe_L_Wraith_Homeworld, Tartan_Patrol_Cruiser </Starting_Forces>
+    <Starting_Forces> Empire, Universe_L_Wraith_Homeworld, TIE_Fighter_Squadron </Starting_Forces>
+    <Starting_Forces> Empire, Universe_L_Wraith_Homeworld, TIE_Fighter_Squadron </Starting_Forces>
+    <Starting_Forces> Empire, Universe_L_Wraith_Homeworld, TIE_Fighter_Squadron </Starting_Forces>
+    <Starting_Forces> Empire, Universe_L_Wraith_Homeworld, Probe_Droid_Team </Starting_Forces>
+    <Starting_Forces> Empire, Universe_L_Wraith_Homeworld, Probe_Droid_Team </Starting_Forces>
+
+    <Starting_Forces> Empire, Universe_L_Wraith_Homeworld, Imperial_Command_Center </Starting_Forces>
+    <Starting_Forces> Empire, Universe_L_Wraith_Homeworld, Wraith_Ground_Hangar </Starting_Forces>
+    <Starting_Forces> Empire, Universe_L_Wraith_Homeworld, E_Ground_Light_Vehicle_Factory </Starting_Forces>
+    <Starting_Forces> Empire, Universe_L_Wraith_Homeworld, E_Ground_Barracks </Starting_Forces>
+    <Starting_Forces> Empire, Universe_L_Wraith_Homeworld, Wraith_Small_Shipyard </Starting_Forces>
+    <Starting_Forces> Empire, Universe_L_Wraith_Homeworld, Imperial_Stormtrooper_Squad </Starting_Forces>
+    <Starting_Forces> Empire, Universe_L_Wraith_Homeworld, Imperial_Stormtrooper_Squad </Starting_Forces>
+    <Starting_Forces> Empire, Universe_L_Wraith_Homeworld, Imperial_Stormtrooper_Squad </Starting_Forces>
+    <Starting_Forces> Empire, Universe_L_Wraith_Homeworld, DarkTrooper_P1_Company </Starting_Forces>
+    <Starting_Forces> Empire, Universe_L_Wraith_Homeworld, DarkTrooper_P1_Company </Starting_Forces>
+    <Starting_Forces> Empire, Universe_L_Wraith_Homeworld, Field_Com_Empire_Team </Starting_Forces>
+    <Starting_Forces> Empire, Universe_L_Wraith_Homeworld, Imperial_Light_Scout_Squad </Starting_Forces>
+    <Starting_Forces> Empire, Universe_L_Wraith_Homeworld, Imperial_Anti_Aircraft_Company </Starting_Forces>
+    <Starting_Forces> Empire, Universe_L_Wraith_Homeworld, Imperial_Heavy_Assault_Company </Starting_Forces>
+    <Starting_Forces> Empire, Universe_L_Wraith_Homeworld, Wraith_Dart_Land_Company </Starting_Forces>
+
+
+    <Starting_Forces> Empire, Universe_L_Wraith_Cloning_Facility, Empire_Star_Base_4 </Starting_Forces>
+    <Starting_Forces> Empire, Universe_L_Wraith_Cloning_Facility, wraith_Defense_Satellite_ANTICAPITAL_SS </Starting_Forces>
+    <Starting_Forces> Empire, Universe_L_Wraith_Cloning_Facility, Interdictor_Cruiser </Starting_Forces>
+    <Starting_Forces> Empire, Universe_L_Wraith_Cloning_Facility, Interdictor_Cruiser </Starting_Forces>
+    <Starting_Forces> Empire, Universe_L_Wraith_Cloning_Facility, Tartan_Patrol_Cruiser </Starting_Forces>
+    <Starting_Forces> Empire, Universe_L_Wraith_Cloning_Facility, Tartan_Patrol_Cruiser </Starting_Forces>
+    <Starting_Forces> Empire, Universe_L_Wraith_Cloning_Facility, TIE_Fighter_Squadron </Starting_Forces>
+    <Starting_Forces> Empire, Universe_L_Wraith_Cloning_Facility, TIE_Fighter_Squadron </Starting_Forces>
+    <Starting_Forces> Empire, Universe_L_Wraith_Cloning_Facility, TIE_Fighter_Squadron </Starting_Forces>
+    <Starting_Forces> Empire, Universe_L_Wraith_Cloning_Facility, Probe_Droid_Team </Starting_Forces>
+
+    <Starting_Forces> Empire, Universe_L_Wraith_Cloning_Facility, Imperial_Command_Center </Starting_Forces>
+    <Starting_Forces> Empire, Universe_L_Wraith_Cloning_Facility, E_Ground_Research_Facility </Starting_Forces>
+    <Starting_Forces> Empire, Universe_L_Wraith_Cloning_Facility, E_Ground_Barracks </Starting_Forces>
+    <Starting_Forces> Empire, Universe_L_Wraith_Cloning_Facility, E_Ground_Barracks </Starting_Forces>
+    <Starting_Forces> Empire, Universe_L_Wraith_Cloning_Facility, Imperial_Stormtrooper_Squad </Starting_Forces>
+    <Starting_Forces> Empire, Universe_L_Wraith_Cloning_Facility, Imperial_Stormtrooper_Squad </Starting_Forces>
+    <Starting_Forces> Empire, Universe_L_Wraith_Cloning_Facility, Imperial_Stormtrooper_Squad </Starting_Forces>
+    <Starting_Forces> Empire, Universe_L_Wraith_Cloning_Facility, DarkTrooper_P1_Company </Starting_Forces>
+    <Starting_Forces> Empire, Universe_L_Wraith_Cloning_Facility, DarkTrooper_P1_Company </Starting_Forces>
+    <Starting_Forces> Empire, Universe_L_Wraith_Cloning_Facility, Wraith_Worshippers_Squad </Starting_Forces>
+
+
+    <Starting_Forces> Empire, Universe_L_Iratus_Bestiola, Empire_Star_Base_2 </Starting_Forces>
+    <Starting_Forces> Empire, Universe_L_Iratus_Bestiola, wraith_Defense_Satellite_ANTIFIGHTER_SS </Starting_Forces>
+    <Starting_Forces> Empire, Universe_L_Iratus_Bestiola, Broadside_Class_Cruiser </Starting_Forces>
+    <Starting_Forces> Empire, Universe_L_Iratus_Bestiola, Tartan_Patrol_Cruiser </Starting_Forces>
+    <Starting_Forces> Empire, Universe_L_Iratus_Bestiola, Tartan_Patrol_Cruiser </Starting_Forces>
+    <Starting_Forces> Empire, Universe_L_Iratus_Bestiola, TIE_Fighter_Squadron </Starting_Forces>
+    <Starting_Forces> Empire, Universe_L_Iratus_Bestiola, TIE_Fighter_Squadron </Starting_Forces>
+    <Starting_Forces> Empire, Universe_L_Iratus_Bestiola, TIE_Fighter_Squadron </Starting_Forces>
+
+    <Starting_Forces> Empire, Universe_L_Iratus_Bestiola, Imperial_Command_Center </Starting_Forces>
+    <Starting_Forces> Empire, Universe_L_Iratus_Bestiola, E_Ground_Light_Vehicle_Factory </Starting_Forces>
+    <Starting_Forces> Empire, Universe_L_Iratus_Bestiola, Imperial_Stormtrooper_Squad </Starting_Forces>
+    <Starting_Forces> Empire, Universe_L_Iratus_Bestiola, Imperial_Stormtrooper_Squad </Starting_Forces>
+    <Starting_Forces> Empire, Universe_L_Iratus_Bestiola, Imperial_Stormtrooper_Squad </Starting_Forces>
+    <Starting_Forces> Empire, Universe_L_Iratus_Bestiola, Imperial_Light_Scout_Squad </Starting_Forces>
+    <Starting_Forces> Empire, Universe_L_Iratus_Bestiola, Imperial_Light_Scout_Squad </Starting_Forces>
+    <Starting_Forces> Empire, Universe_L_Iratus_Bestiola, Imperial_Anti_Aircraft_Company </Starting_Forces>
+
+
+    <Starting_Forces> Empire, Universe_L_P3M_736, Empire_Star_Base_2 </Starting_Forces>
+    <Starting_Forces> Empire, Universe_L_P3M_736, Tartan_Patrol_Cruiser </Starting_Forces>
+    <Starting_Forces> Empire, Universe_L_P3M_736, Tartan_Patrol_Cruiser </Starting_Forces>
+    <Starting_Forces> Empire, Universe_L_P3M_736, TIE_Fighter_Squadron </Starting_Forces>
+    <Starting_Forces> Empire, Universe_L_P3M_736, TIE_Fighter_Squadron </Starting_Forces>
+    <Starting_Forces> Empire, Universe_L_P3M_736, TIE_Fighter_Squadron </Starting_Forces>
+
+    <Starting_Forces> Empire, Universe_L_P3M_736, Imperial_Command_Center </Starting_Forces>
+    <Starting_Forces> Empire, Universe_L_P3M_736, E_Ground_Light_Vehicle_Factory </Starting_Forces>
+    <Starting_Forces> Empire, Universe_L_P3M_736, Imperial_Stormtrooper_Squad </Starting_Forces>
+    <Starting_Forces> Empire, Universe_L_P3M_736, Imperial_Stormtrooper_Squad </Starting_Forces>
+
+
+    <Starting_Forces> Empire, Universe_L_Proculis, Empire_Star_Base_2 </Starting_Forces>
+
+    <Starting_Forces> Empire, Universe_L_Proculis, Imperial_Command_Center </Starting_Forces>
+    <Starting_Forces> Empire, Universe_L_Proculis, E_Ground_Light_Vehicle_Factory </Starting_Forces>
+
+
+    <Starting_Forces> Empire, Universe_L_Vadena, Empire_Star_Base_1 </Starting_Forces>
+    <Starting_Forces> Empire, Universe_L_Vadena, TIE_Fighter_Squadron </Starting_Forces>
+    <Starting_Forces> Empire, Universe_L_Vadena, TIE_Fighter_Squadron </Starting_Forces>
+
+    <Starting_Forces> Empire, Universe_L_Vadena, Imperial_Command_Center </Starting_Forces>
+    <Starting_Forces> Empire, Universe_L_Vadena, E_Ground_Officer_Academy </Starting_Forces>
+    <Starting_Forces> Empire, Universe_L_Vadena, Imperial_Stormtrooper_Squad </Starting_Forces>
+
+
+    <Starting_Forces> Empire, Universe_L_Taranis, Empire_Star_Base_3 </Starting_Forces>
+    <Starting_Forces> Empire, Universe_L_Taranis, TIE_Fighter_Squadron </Starting_Forces>
+    <Starting_Forces> Empire, Universe_L_Taranis, TIE_Fighter_Squadron </Starting_Forces>
+    <Starting_Forces> Empire, Universe_L_Taranis, TIE_Fighter_Squadron </Starting_Forces>
+
+    <Starting_Forces> Empire, Universe_L_Taranis, Imperial_Command_Center </Starting_Forces>
+    <Starting_Forces> Empire, Universe_L_Taranis, E_Ground_Barracks </Starting_Forces>
+    <Starting_Forces> Empire, Universe_L_Taranis, Imperial_Stormtrooper_Squad </Starting_Forces>
+
+
+    <Starting_Forces> Empire, Universe_L_Doranda, Empire_Star_Base_4 </Starting_Forces>
+    <Starting_Forces> Empire, Universe_L_Doranda, wraith_Defense_Satellite_ANTIFIGHTER_SS </Starting_Forces>
+    <Starting_Forces> Empire, Universe_L_Doranda, Tartan_Patrol_Cruiser </Starting_Forces>
+
+    <Starting_Forces> Empire, Universe_L_Doranda, Imperial_Command_Center </Starting_Forces>
+    <Starting_Forces> Empire, Universe_L_Doranda, E_Ground_Light_Vehicle_Factory </Starting_Forces>
+    <Starting_Forces> Empire, Universe_L_Doranda, Imperial_Stormtrooper_Squad </Starting_Forces>
+
+
+
+
+    <!--#Aschen Forces-->
+
+    <Starting_Forces> Aschen, Universe_L_P4C_970, Aschen_Harvester_Company </Starting_Forces>
+    <Starting_Forces> Aschen, Universe_L_P4C_970, Aschen_Harvester_Company </Starting_Forces>
+    <Starting_Forces> Aschen, Universe_L_P4C_970, Aschen_Harvester_Company </Starting_Forces>
+    <Starting_Forces> Aschen, Universe_L_P4C_970, Aschen_Harvester_Company </Starting_Forces>
+    <Starting_Forces> Aschen, Universe_L_P4C_970, Aschen_Harvester_Company </Starting_Forces>
+
+    <Starting_Forces> Aschen, Universe_L_P4C_970, Aschen_Starbase_GC1 </Starting_Forces>
+    <Starting_Forces> Aschen, Universe_L_P4C_970, Aschen_Battleship </Starting_Forces>
+    <Starting_Forces> Aschen, Universe_L_P4C_970, Aschen_Battleship </Starting_Forces>
+    <Starting_Forces> Aschen, Universe_L_P4C_970, Aschen_Hero_Mollem </Starting_Forces>
+    <Starting_Forces> Aschen, Universe_L_P4C_970, Aschen_Corvette </Starting_Forces>
+    <Starting_Forces> Aschen, Universe_L_P4C_970, Aschen_Corvette </Starting_Forces>
+    <Starting_Forces> Aschen, Universe_L_P4C_970, Aschen_Corvette </Starting_Forces>
+    <Starting_Forces> Aschen, Universe_L_P4C_970, Aschen_Corvette </Starting_Forces>
+    <Starting_Forces> Aschen, Universe_L_P4C_970, Aschen_Corvette </Starting_Forces>
+    <Starting_Forces> Aschen, Universe_L_P4C_970, Aschen_Corvette </Starting_Forces>
+    <Starting_Forces> Aschen, Universe_L_P4C_970, Aschen_Cruiser </Starting_Forces>
+    <Starting_Forces> Aschen, Universe_L_P4C_970, Aschen_Cruiser </Starting_Forces>
+    <Starting_Forces> Aschen, Universe_L_P4C_970, Aschen_Cruiser </Starting_Forces>
+    <Starting_Forces> Aschen, Universe_L_P4C_970, Aschen_Cruiser </Starting_Forces>
+
+
+    <Starting_Forces> Aschen, Universe_L_Volian, Aschen_Harvester_Company </Starting_Forces>
+    <Starting_Forces> Aschen, Universe_L_Volian, Aschen_Harvester_Company </Starting_Forces>
+    <Starting_Forces> Aschen, Universe_L_Volian, Aschen_Harvester_Company </Starting_Forces>
+    <Starting_Forces> Aschen, Universe_L_Volian, Aschen_Harvester_Company </Starting_Forces>
+    <Starting_Forces> Aschen, Universe_L_Volian, Aschen_Harvester_Company </Starting_Forces>
+    <Starting_Forces> Aschen, Universe_L_Volian, Aschen_Harvester_Company </Starting_Forces>
+
+    <Starting_Forces> Aschen, Universe_L_Volian, Aschen_Starbase_GC1 </Starting_Forces>
+    <Starting_Forces> Aschen, Universe_L_Volian, Aschen_Battleship </Starting_Forces>
+    <Starting_Forces> Aschen, Universe_L_Volian, Aschen_Battleship </Starting_Forces>
+    <Starting_Forces> Aschen, Universe_L_Volian, Aschen_Battleship </Starting_Forces>
+    <Starting_Forces> Aschen, Universe_L_Volian, Aschen_Battleship </Starting_Forces>
+    <Starting_Forces> Aschen, Universe_L_Volian, Aschen_Hero_Borren </Starting_Forces>
+    <Starting_Forces> Aschen, Universe_L_Volian, Aschen_Corvette </Starting_Forces>
+    <Starting_Forces> Aschen, Universe_L_Volian, Aschen_Corvette </Starting_Forces>
+    <Starting_Forces> Aschen, Universe_L_Volian, Aschen_Corvette </Starting_Forces>
+    <Starting_Forces> Aschen, Universe_L_Volian, Aschen_Cruiser </Starting_Forces>
+    <Starting_Forces> Aschen, Universe_L_Volian, Aschen_Cruiser </Starting_Forces>
+    <Starting_Forces> Aschen, Universe_L_Volian, Aschen_Cruiser </Starting_Forces>
+    <Starting_Forces> Aschen, Universe_L_Volian, Aschen_Cruiser </Starting_Forces>
+    <Starting_Forces> Aschen, Universe_L_Volian, Aschen_Cruiser </Starting_Forces>
+    <Starting_Forces> Aschen, Universe_L_Volian, Aschen_Cruiser </Starting_Forces>
+    <Starting_Forces> Aschen, Universe_L_Volian, Aschen_Fighter_Squadron </Starting_Forces>
+    <Starting_Forces> Aschen, Universe_L_Volian, Aschen_Fighter_Squadron </Starting_Forces>
+    <Starting_Forces> Aschen, Universe_L_Volian, Aschen_Fighter_Squadron </Starting_Forces>
+    <Starting_Forces> Aschen, Universe_L_Volian, Aschen_Drone_Squadron </Starting_Forces>
+    <Starting_Forces> Aschen, Universe_L_Volian, Aschen_Drone_Squadron </Starting_Forces>
+    <Starting_Forces> Aschen, Universe_L_Volian, Aschen_Drone_Squadron </Starting_Forces>
+
+
+
+
+    <!--#Asuran Forces-->
+
+    <Starting_Forces> Asuran, Universe_L_Asuras, Asuran_Soldier_Company </Starting_Forces>
+    <Starting_Forces> Asuran, Universe_L_Asuras, Asuran_Soldier_Company </Starting_Forces>
+    <Starting_Forces> Asuran, Universe_L_Asuras, Asuran_Soldier_Company </Starting_Forces>
+    <Starting_Forces> Asuran, Universe_L_Asuras, Asuran_Soldier_Company </Starting_Forces>
+    <Starting_Forces> Asuran, Universe_L_Asuras, Asuran_Soldier_Company </Starting_Forces>
+    <Starting_Forces> Asuran, Universe_L_Asuras, Asuran_Soldier_Company </Starting_Forces>
+    <Starting_Forces> Asuran, Universe_L_Asuras, Asuran_Land_Jumper_Company </Starting_Forces>
+    <Starting_Forces> Asuran, Universe_L_Asuras, Asuran_Land_Jumper_Company </Starting_Forces>
+    <Starting_Forces> Asuran, Universe_L_Asuras, Asuran_Land_Jumper_Company </Starting_Forces>
+    <Starting_Forces> Asuran, Universe_L_Asuras, Asuran_Transport_Land_Company </Starting_Forces>
+    <Starting_Forces> Asuran, Universe_L_Asuras, Asuran_Ground_Building_HQ_HW </Starting_Forces>
+    <Starting_Forces> Asuran, Universe_L_Asuras, Asuran_Ground_Building_Barracks_HW </Starting_Forces>
+    <Starting_Forces> Asuran, Universe_L_Asuras, Asuran_Ground_Building_Hangar_HW </Starting_Forces>
+    <Starting_Forces> Asuran, Universe_L_Asuras, Asuran_Ground_Building_Research_Center </Starting_Forces>		
+    <Starting_Forces> Asuran, Universe_L_Asuras, Asuran_Ground_Building_GTSW </Starting_Forces>			
+
+    <Starting_Forces> Asuran, Universe_L_Asuras, Asuran_Star_Base_5 </Starting_Forces>
+    <Starting_Forces> Asuran, Universe_L_Asuras, Asuran_Headquarters </Starting_Forces>
+    <Starting_Forces> Asuran, Universe_L_Asuras, Asuran_Large_Shipyard </Starting_Forces>
+    <Starting_Forces> Asuran, Universe_L_Asuras, Asuran_City </Starting_Forces>
+    <Starting_Forces> Asuran, Universe_L_Asuras, Asuran_Hero_Oberoth </Starting_Forces>
+    <Starting_Forces> Asuran, Universe_L_Asuras, Asuran_Hero_Talus </Starting_Forces>
+    <Starting_Forces> Asuran, Universe_L_Asuras, Asuran_Hero_Cetus </Starting_Forces>
+    <Starting_Forces> Asuran, Universe_L_Asuras, Asuran_Hero_Niam </Starting_Forces>
+    <Starting_Forces> Asuran, Universe_L_Asuras, Asuran_Hero_Atavus </Starting_Forces>
+    <Starting_Forces> Asuran, Universe_L_Asuras, Asuran_Puddle_Jumper_Squadron </Starting_Forces>
+    <Starting_Forces> Asuran, Universe_L_Asuras, Asuran_Puddle_Jumper_Squadron </Starting_Forces>
+    <Starting_Forces> Asuran, Universe_L_Asuras, Asuran_Drone_Squadron </Starting_Forces>
+    <Starting_Forces> Asuran, Universe_L_Asuras, Asuran_Heavy_Fighter_Squadron </Starting_Forces>
+    <Starting_Forces> Asuran, Universe_L_Asuras, Asuran_Heavy_Bomber_Squadron </Starting_Forces>
+    <Starting_Forces> Asuran, Universe_L_Asuras, Asuran_Heavy_Bomber_Squadron </Starting_Forces>
+    <Starting_Forces> Asuran, Universe_L_Asuras, Asuran_Corvette </Starting_Forces>
+    <Starting_Forces> Asuran, Universe_L_Asuras, Asuran_Corvette </Starting_Forces>
+    <Starting_Forces> Asuran, Universe_L_Asuras, Asuran_Corvette </Starting_Forces>
+    <Starting_Forces> Asuran, Universe_L_Asuras, Asuran_Frigate </Starting_Forces>
+    <Starting_Forces> Asuran, Universe_L_Asuras, Asuran_Destroyer </Starting_Forces>
+    <Starting_Forces> Asuran, Universe_L_Asuras, Asuran_Cruiser </Starting_Forces>
+    <Starting_Forces> Asuran, Universe_L_Asuras, Asuran_Cruiser </Starting_Forces>	
+    <Starting_Forces> Asuran, Universe_L_Asuras, Asuran_Aurora </Starting_Forces>
+    <Starting_Forces> Asuran, Universe_L_Asuras, Asuran_Aurora </Starting_Forces>
+    <Starting_Forces> Asuran, Universe_L_Asuras, Asuran_Aurora </Starting_Forces>
+
+
+
+    <!--#Genii-->
+
+    <Starting_Forces> Pirates, Universe_L_Genii, Genii_Hero_Kolya </Starting_Forces>
+    <Starting_Forces> Pirates, Universe_L_Genii, Genii_Destroyer </Starting_Forces>
+    <Starting_Forces> Pirates, Universe_L_Genii, Genii_Destroyer </Starting_Forces>
+    <Starting_Forces> Pirates, Universe_L_Genii, Genii_Destroyer </Starting_Forces>
+    <Starting_Forces> Pirates, Universe_L_Genii, Genii_Destroyer </Starting_Forces>
+    <Starting_Forces> Pirates, Universe_L_Genii, Genii_Destroyer </Starting_Forces>
+    <Starting_Forces> Pirates, Universe_L_Genii, Genii_Destroyer </Starting_Forces>
+    <Starting_Forces> Pirates, Universe_L_Genii, Genii_Destroyer </Starting_Forces>
+    <Starting_Forces> Pirates, Universe_L_Genii, Genii_Fighter_Squadron </Starting_Forces>
+    <Starting_Forces> Pirates, Universe_L_Genii, Genii_Fighter_Squadron </Starting_Forces>
+    <Starting_Forces> Pirates, Universe_L_Genii, Genii_Fighter_Squadron </Starting_Forces>
+    <Starting_Forces> Pirates, Universe_L_Genii, Genii_Fighter_Squadron </Starting_Forces>
+    <Starting_Forces> Pirates, Universe_L_Genii, Genii_Fighter_Squadron </Starting_Forces>
+
+    <Starting_Forces> Pirates, Universe_L_Genii, Genii_Ground_Building_Barracks </Starting_Forces>
+    <Starting_Forces> Pirates, Universe_L_Genii, Genii_Ground_Building_Barracks </Starting_Forces>
+    <Starting_Forces> Pirates, Universe_L_Genii, Genii_Ground_Building_Barracks </Starting_Forces>
+    <Starting_Forces> Pirates, Universe_L_Genii, Genii_Ground_Building_Hangar </Starting_Forces>
+    <Starting_Forces> Pirates, Universe_L_Genii, Genii_Soldier_Company </Starting_Forces>
+    <Starting_Forces> Pirates, Universe_L_Genii, Genii_Soldier_Company </Starting_Forces>
+    <Starting_Forces> Pirates, Universe_L_Genii, Genii_Soldier_Company </Starting_Forces>
+    <Starting_Forces> Pirates, Universe_L_Genii, Genii_Rifleman_Company </Starting_Forces>
+    <Starting_Forces> Pirates, Universe_L_Genii, Genii_Rifleman_Company </Starting_Forces>
+    <Starting_Forces> Pirates, Universe_L_Genii, Genii_Rifleman_Company </Starting_Forces>
+    <Starting_Forces> Pirates, Universe_L_Genii, Genii_Rifleman_Company </Starting_Forces>
+    <Starting_Forces> Pirates, Universe_L_Genii, Genii_Rifleman_Company </Starting_Forces>
+
+
+    <Starting_Forces> Pirates, Universe_L_M1B_129, Genii_Destroyer </Starting_Forces>
+    <Starting_Forces> Pirates, Universe_L_M1B_129, Genii_Fighter_Squadron </Starting_Forces>
+
+    <Starting_Forces> Pirates, Universe_L_M1B_129, Genii_Soldier_Company </Starting_Forces>
+    <Starting_Forces> Pirates, Universe_L_M1B_129, Genii_Soldier_Company </Starting_Forces>
+
+
+    <Starting_Forces> Pirates, Universe_L_M4H_212, Genii_Destroyer </Starting_Forces>
+    <Starting_Forces> Pirates, Universe_L_M4H_212, Genii_Destroyer </Starting_Forces>
+    <Starting_Forces> Pirates, Universe_L_M4H_212, Genii_Destroyer </Starting_Forces>
+
+    <Starting_Forces> Pirates, Universe_L_M4H_212, Genii_Soldier_Company </Starting_Forces>
+    <Starting_Forces> Pirates, Universe_L_M4H_212, Genii_Rifleman_Company </Starting_Forces>
+    <Starting_Forces> Pirates, Universe_L_M4H_212, Genii_Rifleman_Company </Starting_Forces>
+
+
+    <Starting_Forces> Pirates, Universe_L_Jenev, Genii_Destroyer </Starting_Forces>
+    <Starting_Forces> Pirates, Universe_L_Jenev, Genii_Destroyer </Starting_Forces>
+    <Starting_Forces> Pirates, Universe_L_Jenev, Genii_Destroyer </Starting_Forces>
+    <Starting_Forces> Pirates, Universe_L_Jenev, Genii_Destroyer </Starting_Forces>
+    <Starting_Forces> Pirates, Universe_L_Jenev, Genii_Destroyer </Starting_Forces>
+    <Starting_Forces> Pirates, Universe_L_Jenev, Genii_Destroyer </Starting_Forces>
+    <Starting_Forces> Pirates, Universe_L_Jenev, Genii_Fighter_Squadron </Starting_Forces>
+    <Starting_Forces> Pirates, Universe_L_Jenev, Genii_Fighter_Squadron </Starting_Forces>
+    <Starting_Forces> Pirates, Universe_L_Jenev, Genii_Fighter_Squadron </Starting_Forces>
+    <Starting_Forces> Pirates, Universe_L_Jenev, Genii_Fighter_Squadron </Starting_Forces>
+    <Starting_Forces> Pirates, Universe_L_Jenev, Genii_Fighter_Squadron </Starting_Forces>
+
+    <Starting_Forces> Pirates, Universe_L_Jenev, Genii_Ground_Building_Barracks </Starting_Forces>
+    <Starting_Forces> Pirates, Universe_L_Jenev, Genii_Ground_Building_Barracks </Starting_Forces>
+    <Starting_Forces> Pirates, Universe_L_Jenev, Genii_Ground_Building_Hangar </Starting_Forces>
+    <Starting_Forces> Pirates, Universe_L_Jenev, Genii_Soldier_Company </Starting_Forces>
+    <Starting_Forces> Pirates, Universe_L_Jenev, Genii_Soldier_Company </Starting_Forces>
+    <Starting_Forces> Pirates, Universe_L_Jenev, Genii_Soldier_Company </Starting_Forces>
+    <Starting_Forces> Pirates, Universe_L_Jenev, Genii_Rifleman_Company </Starting_Forces>
+    <Starting_Forces> Pirates, Universe_L_Jenev, Genii_Rifleman_Company </Starting_Forces>
+    <Starting_Forces> Pirates, Universe_L_Jenev, Genii_Rifleman_Company </Starting_Forces>
+
+
+    <Starting_Forces> Pirates, Universe_L_M5V_801, Genii_Destroyer </Starting_Forces>
+    <Starting_Forces> Pirates, Universe_L_M5V_801, Genii_Destroyer </Starting_Forces>
+    <Starting_Forces> Pirates, Universe_L_M5V_801, Genii_Destroyer </Starting_Forces>
+    <Starting_Forces> Pirates, Universe_L_M5V_801, Genii_Destroyer </Starting_Forces>
+
+    <Starting_Forces> Pirates, Universe_L_M5V_801, Genii_Ground_Building_Barracks </Starting_Forces>
+    <Starting_Forces> Pirates, Universe_L_M5V_801, Genii_Ground_Building_Barracks </Starting_Forces>
+    <Starting_Forces> Pirates, Universe_L_M5V_801, Genii_Soldier_Company </Starting_Forces>
+    <Starting_Forces> Pirates, Universe_L_M5V_801, Genii_Soldier_Company </Starting_Forces>
+    <Starting_Forces> Pirates, Universe_L_M5V_801, Genii_Rifleman_Company </Starting_Forces>
+    <Starting_Forces> Pirates, Universe_L_M5V_801, Genii_Rifleman_Company </Starting_Forces>
+
+
+    <Starting_Forces> Pirates, Universe_L_Rasputin, Genii_Destroyer </Starting_Forces>
+    <Starting_Forces> Pirates, Universe_L_Rasputin, Genii_Destroyer </Starting_Forces>
+    <Starting_Forces> Pirates, Universe_L_Rasputin, Genii_Destroyer </Starting_Forces>
+    <Starting_Forces> Pirates, Universe_L_Rasputin, Genii_Destroyer </Starting_Forces>
+    <Starting_Forces> Pirates, Universe_L_Rasputin, Genii_Destroyer </Starting_Forces>
+    <Starting_Forces> Pirates, Universe_L_Rasputin, Genii_Destroyer </Starting_Forces>
+
+    <Starting_Forces> Pirates, Universe_L_Rasputin, Genii_Ground_Building_Barracks </Starting_Forces>
+    <Starting_Forces> Pirates, Universe_L_Rasputin, Genii_Ground_Building_Barracks </Starting_Forces>
+    <Starting_Forces> Pirates, Universe_L_Rasputin, Genii_Ground_Building_Hangar </Starting_Forces>
+    <Starting_Forces> Pirates, Universe_L_Rasputin, Genii_Soldier_Company </Starting_Forces>
+    <Starting_Forces> Pirates, Universe_L_Rasputin, Genii_Soldier_Company </Starting_Forces>
+    <Starting_Forces> Pirates, Universe_L_Rasputin, Genii_Soldier_Company </Starting_Forces>
+    <Starting_Forces> Pirates, Universe_L_Rasputin, Genii_Rifleman_Company </Starting_Forces>
+    <Starting_Forces> Pirates, Universe_L_Rasputin, Genii_Rifleman_Company </Starting_Forces>
+    <Starting_Forces> Pirates, Universe_L_Rasputin, Genii_Rifleman_Company </Starting_Forces>
+    <Starting_Forces> Pirates, Universe_L_Rasputin, Genii_Rifleman_Company </Starting_Forces>
+
+
+
+    <!--#Grace Forces-->
+
+    <Starting_Forces> Hostile, Universe_L_Ion_Nebula, Grace_Mothership </Starting_Forces>
+    <Starting_Forces> Hostile, Universe_L_Ion_Nebula, Grace_Mothership </Starting_Forces>
+    <Starting_Forces> Hostile, Universe_L_Ion_Nebula, Grace_Mothership </Starting_Forces>
+
+    <Starting_Forces> Hostile, Universe_L_P5C_353, Grace_Mothership </Starting_Forces>
+
+
+
+    <!--#Jaffa Rebels--><!--Only as enemies, not for TAU-->
+    <!--
+    <Starting_Forces> Jaffa_Rebels, Universe_L_Haktyl, Rebel_Jaffa_Squad </Starting_Forces>
+    <Starting_Forces> Jaffa_Rebels, Universe_L_Haktyl, Rebel_Jaffa_Squad </Starting_Forces>
+    <Starting_Forces> Jaffa_Rebels, Universe_L_Haktyl, Rebel_Jaffa_Squad </Starting_Forces>
+
+    <Starting_Forces> Jaffa_Rebels, Universe_L_Cal_Mah, Jaffa_Hero_Raknor_Squadron </Starting_Forces>
+    <Starting_Forces> Jaffa_Rebels, Universe_L_Cal_Mah, Jaffa_New_Hatak </Starting_Forces>
+    <Starting_Forces> Jaffa_Rebels, Universe_L_Cal_Mah, Jaffa_New_Hatak </Starting_Forces>
+    <Starting_Forces> Jaffa_Rebels, Universe_L_Cal_Mah, Jaffa_New_Hatak </Starting_Forces>
+    <Starting_Forces> Jaffa_Rebels, Universe_L_Cal_Mah, Jaffa_Death_Glider_Squadron </Starting_Forces>
+    <Starting_Forces> Jaffa_Rebels, Universe_L_Cal_Mah, Jaffa_Death_Glider_Squadron </Starting_Forces>
+    <Starting_Forces> Jaffa_Rebels, Universe_L_Cal_Mah, Jaffa_Death_Glider_Squadron </Starting_Forces>
+    <Starting_Forces> Jaffa_Rebels, Universe_L_Cal_Mah, Jaffa_Teltak_Squadron </Starting_Forces>
+    <Starting_Forces> Jaffa_Rebels, Universe_L_Cal_Mah, Jaffa_Teltak_Squadron </Starting_Forces>
+    <Starting_Forces> Jaffa_Rebels, Universe_L_Cal_Mah, Jaffa_Teltak_Squadron </Starting_Forces>
+
+    <Starting_Forces> Jaffa_Rebels, Universe_L_Cal_Mah, Rebel_Jaffa_Squad </Starting_Forces>
+    <Starting_Forces> Jaffa_Rebels, Universe_L_Cal_Mah, Rebel_Jaffa_Squad </Starting_Forces>
+    <Starting_Forces> Jaffa_Rebels, Universe_L_Cal_Mah, Rebel_Jaffa_Squad </Starting_Forces>
+    <Starting_Forces> Jaffa_Rebels, Universe_L_Cal_Mah, Rebel_Jaffa_Squad </Starting_Forces>
+    <Starting_Forces> Jaffa_Rebels, Universe_L_Cal_Mah, Rebel_Jaffa_Squad </Starting_Forces>
+    <Starting_Forces> Jaffa_Rebels, Universe_L_Cal_Mah, Rebel_Jaffa_Squad </Starting_Forces>
+    <Starting_Forces> Jaffa_Rebels, Universe_L_Cal_Mah, Rebel_Jaffa_Squad </Starting_Forces>
+    <Starting_Forces> Jaffa_Rebels, Universe_L_Cal_Mah, Rebel_Jaffa_Squad </Starting_Forces>
+    <Starting_Forces> Jaffa_Rebels, Universe_L_Cal_Mah, Rebel_Jaffa_Squad </Starting_Forces>
+
+
+    <Starting_Forces> Jaffa_Rebels, Universe_L_Kallana, Jaffa_Gerak </Starting_Forces>
+    <Starting_Forces> Jaffa_Rebels, Universe_L_Kallana, Jaffa_New_Hatak </Starting_Forces>
+    <Starting_Forces> Jaffa_Rebels, Universe_L_Kallana, Jaffa_New_Hatak </Starting_Forces>
+    <Starting_Forces> Jaffa_Rebels, Universe_L_Kallana, Jaffa_New_Hatak </Starting_Forces>
+    <Starting_Forces> Jaffa_Rebels, Universe_L_Kallana, Jaffa_Death_Glider_Squadron </Starting_Forces>
+    <Starting_Forces> Jaffa_Rebels, Universe_L_Kallana, Jaffa_Alkesh_Squadron </Starting_Forces>
+    <Starting_Forces> Jaffa_Rebels, Universe_L_Kallana, Jaffa_Alkesh_Squadron </Starting_Forces>
+    <Starting_Forces> Jaffa_Rebels, Universe_L_Kallana, Jaffa_Alkesh_Squadron </Starting_Forces>
+    <Starting_Forces> Jaffa_Rebels, Universe_L_Kallana, Jaffa_Teltak_Squadron </Starting_Forces>
+    <Starting_Forces> Jaffa_Rebels, Universe_L_Kallana, Jaffa_Teltak_Squadron </Starting_Forces>
+
+    <Starting_Forces> Jaffa_Rebels, Universe_L_Kallana, Rebel_Jaffa_Squad </Starting_Forces>
+    <Starting_Forces> Jaffa_Rebels, Universe_L_Kallana, Rebel_Jaffa_Squad </Starting_Forces>
+    <Starting_Forces> Jaffa_Rebels, Universe_L_Kallana, Rebel_Jaffa_Squad </Starting_Forces>
+    <Starting_Forces> Jaffa_Rebels, Universe_L_Kallana, Rebel_Jaffa_Squad </Starting_Forces>
+    <Starting_Forces> Jaffa_Rebels, Universe_L_Kallana, Rebel_Jaffa_Squad </Starting_Forces>
+
+
+    <Starting_Forces> Jaffa_Rebels, Universe_L_Sodan, Rebel_Jaffa_Squad </Starting_Forces>
+    <Starting_Forces> Jaffa_Rebels, Universe_L_Sodan, Rebel_Jaffa_Squad </Starting_Forces>
+    <Starting_Forces> Jaffa_Rebels, Universe_L_Sodan, Rebel_Jaffa_Squad </Starting_Forces>
+    <Starting_Forces> Jaffa_Rebels, Universe_L_Sodan, Rebel_Jaffa_Squad </Starting_Forces>
+    <Starting_Forces> Jaffa_Rebels, Universe_L_Sodan, Rebel_Jaffa_Squad </Starting_Forces>
+    <Starting_Forces> Jaffa_Rebels, Universe_L_Sodan, Rebel_Jaffa_Squad </Starting_Forces>
+    <Starting_Forces> Jaffa_Rebels, Universe_L_Sodan, Rebel_Jaffa_Squad </Starting_Forces>
+    <Starting_Forces> Jaffa_Rebels, Universe_L_Sodan, Rebel_Jaffa_Squad </Starting_Forces>
+    <Starting_Forces> Jaffa_Rebels, Universe_L_Sodan, Rebel_Jaffa_Squad </Starting_Forces>
+    <Starting_Forces> Jaffa_Rebels, Universe_L_Sodan, Rebel_Jaffa_Squad </Starting_Forces>
+
+
+    <Starting_Forces> Jaffa_Rebels, Universe_L_P4S_237, Jaffa_New_Hatak </Starting_Forces>
+    <Starting_Forces> Jaffa_Rebels, Universe_L_P4S_237, Jaffa_Alkesh_Squadron </Starting_Forces>
+
+    <Starting_Forces> Jaffa_Rebels, Universe_L_P4S_237, Rebel_Jaffa_Squad </Starting_Forces>
+    <Starting_Forces> Jaffa_Rebels, Universe_L_P4S_237, Rebel_Jaffa_Squad </Starting_Forces>
+    -->
+
+
+
+    <!--#Lucian Alliance Forces-->
+
+    <Starting_Forces> Lucian_Alliance, Universe_L_Oran, Lucian_Alliance_Hero_Netan </Starting_Forces>
+    <Starting_Forces> Lucian_Alliance, Universe_L_Oran, Lucian_Alliance_Hatak </Starting_Forces>
+    <Starting_Forces> Lucian_Alliance, Universe_L_Oran, Lucian_Alliance_Hatak </Starting_Forces>
+    <Starting_Forces> Lucian_Alliance, Universe_L_Oran, Lucian_Alliance_Hatak </Starting_Forces>
+    <Starting_Forces> Lucian_Alliance, Universe_L_Oran, Lucian_Alliance_Hatak </Starting_Forces>
+    <Starting_Forces> Lucian_Alliance, Universe_L_Oran, Lucian_Alliance_Kassa_Transporter </Starting_Forces>
+    <Starting_Forces> Lucian_Alliance, Universe_L_Oran, Lucian_Alliance_Kassa_Transporter </Starting_Forces>
+    <Starting_Forces> Lucian_Alliance, Universe_L_Oran, Lucian_Alliance_Kassa_Transporter </Starting_Forces>
+    <Starting_Forces> Lucian_Alliance, Universe_L_Oran, Lucian_Alliance_Kassa_Transporter </Starting_Forces>
+    <Starting_Forces> Lucian_Alliance, Universe_L_Oran, Lucian_Alliance_Kassa_Transporter </Starting_Forces>
+    <Starting_Forces> Lucian_Alliance, Universe_L_Oran, Lucian_Alliance_Kassa_Transporter </Starting_Forces>
+    <Starting_Forces> Lucian_Alliance, Universe_L_Oran, Lucian_Alliance_Kassa_Transporter </Starting_Forces>
+    <Starting_Forces> Lucian_Alliance, Universe_L_Oran, Lucian_Alliance_Kassa_Transporter </Starting_Forces>
+    <Starting_Forces> Lucian_Alliance, Universe_L_Oran, Lucian_Alliance_Command_Ship </Starting_Forces>
+    <Starting_Forces> Lucian_Alliance, Universe_L_Oran, Lucian_Alliance_Command_Ship </Starting_Forces>
+
+    <Starting_Forces> Lucian_Alliance, Universe_L_P6G_452, Lucian_Alliance_Hatak </Starting_Forces>
+    <Starting_Forces> Lucian_Alliance, Universe_L_P6G_452, Lucian_Alliance_Hatak </Starting_Forces>
+    <Starting_Forces> Lucian_Alliance, Universe_L_P6G_452, Lucian_Alliance_Hatak </Starting_Forces>
+    <Starting_Forces> Lucian_Alliance, Universe_L_P6G_452, Lucian_Alliance_Hatak </Starting_Forces>
+    <Starting_Forces> Lucian_Alliance, Universe_L_P6G_452, Lucian_Alliance_Hatak </Starting_Forces>
+    <Starting_Forces> Lucian_Alliance, Universe_L_P6G_452, Lucian_Alliance_Hatak </Starting_Forces>
+    <Starting_Forces> Lucian_Alliance, Universe_L_P6G_452, Lucian_Alliance_Alkesh_Squadron </Starting_Forces>
+    <Starting_Forces> Lucian_Alliance, Universe_L_P6G_452, Lucian_Alliance_Alkesh_Squadron </Starting_Forces>
+    <Starting_Forces> Lucian_Alliance, Universe_L_P6G_452, Lucian_Alliance_Alkesh_Squadron </Starting_Forces>
+    <Starting_Forces> Lucian_Alliance, Universe_L_P6G_452, Lucian_Alliance_Alkesh_Squadron </Starting_Forces>
+    <Starting_Forces> Lucian_Alliance, Universe_L_P6G_452, Lucian_Alliance_Alkesh_Squadron </Starting_Forces>
+    <Starting_Forces> Lucian_Alliance, Universe_L_P6G_452, Lucian_Alliance_Alkesh_Squadron </Starting_Forces>
+    <Starting_Forces> Lucian_Alliance, Universe_L_P6G_452, Lucian_Alliance_Alkesh_Squadron </Starting_Forces>
+    <Starting_Forces> Lucian_Alliance, Universe_L_P6G_452, Lucian_Alliance_Kassa_Transporter </Starting_Forces>
+    <Starting_Forces> Lucian_Alliance, Universe_L_P6G_452, Lucian_Alliance_Kassa_Transporter </Starting_Forces>
+    <Starting_Forces> Lucian_Alliance, Universe_L_P6G_452, Lucian_Alliance_Kassa_Transporter </Starting_Forces>
+    <Starting_Forces> Lucian_Alliance, Universe_L_P6G_452, Lucian_Alliance_Kassa_Transporter </Starting_Forces>
+    <Starting_Forces> Lucian_Alliance, Universe_L_P6G_452, Lucian_Alliance_Command_Ship </Starting_Forces>
+    <Starting_Forces> Lucian_Alliance, Universe_L_P6G_452, Lucian_Alliance_Command_Ship </Starting_Forces>
+    <Starting_Forces> Lucian_Alliance, Universe_L_P6G_452, Lucian_Alliance_Command_Ship </Starting_Forces>
+    <Starting_Forces> Lucian_Alliance, Universe_L_P6G_452, Lucian_Alliance_Command_Ship </Starting_Forces>
+
+    <Starting_Forces> Lucian_Alliance, Universe_L_Vis_Uban, Lucian_Alliance_Hatak </Starting_Forces>
+    <Starting_Forces> Lucian_Alliance, Universe_L_Vis_Uban, Lucian_Alliance_Hatak </Starting_Forces>
+    <Starting_Forces> Lucian_Alliance, Universe_L_Vis_Uban, Lucian_Alliance_Hatak </Starting_Forces>
+    <Starting_Forces> Lucian_Alliance, Universe_L_Vis_Uban, Lucian_Alliance_Hatak </Starting_Forces>
+    <Starting_Forces> Lucian_Alliance, Universe_L_Vis_Uban, Lucian_Alliance_Hatak </Starting_Forces>
+    <Starting_Forces> Lucian_Alliance, Universe_L_Vis_Uban, Lucian_Alliance_Alkesh_Squadron </Starting_Forces>
+    <Starting_Forces> Lucian_Alliance, Universe_L_Vis_Uban, Lucian_Alliance_Alkesh_Squadron </Starting_Forces>
+    <Starting_Forces> Lucian_Alliance, Universe_L_Vis_Uban, Lucian_Alliance_Alkesh_Squadron </Starting_Forces>
+    <Starting_Forces> Lucian_Alliance, Universe_L_Vis_Uban, Lucian_Alliance_Alkesh_Squadron </Starting_Forces>
+    <Starting_Forces> Lucian_Alliance, Universe_L_Vis_Uban, Lucian_Alliance_Alkesh_Squadron </Starting_Forces>
+    <Starting_Forces> Lucian_Alliance, Universe_L_Vis_Uban, Lucian_Alliance_Alkesh_Squadron </Starting_Forces>
+    <Starting_Forces> Lucian_Alliance, Universe_L_Vis_Uban, Lucian_Alliance_Kassa_Transporter </Starting_Forces>
+    <Starting_Forces> Lucian_Alliance, Universe_L_Vis_Uban, Lucian_Alliance_Kassa_Transporter </Starting_Forces>
+    <Starting_Forces> Lucian_Alliance, Universe_L_Vis_Uban, Lucian_Alliance_Kassa_Transporter </Starting_Forces>
+    <Starting_Forces> Lucian_Alliance, Universe_L_Vis_Uban, Lucian_Alliance_Command_Ship </Starting_Forces>
+    <Starting_Forces> Lucian_Alliance, Universe_L_Vis_Uban, Lucian_Alliance_Command_Ship </Starting_Forces>
+    <Starting_Forces> Lucian_Alliance, Universe_L_Vis_Uban, Lucian_Alliance_Command_Ship </Starting_Forces>
+
+    <Starting_Forces> Lucian_Alliance, Universe_L_P3X_439, Lucian_Alliance_Hatak </Starting_Forces>
+    <Starting_Forces> Lucian_Alliance, Universe_L_P3X_439, Lucian_Alliance_Hatak </Starting_Forces>
+    <Starting_Forces> Lucian_Alliance, Universe_L_P3X_439, Lucian_Alliance_Hatak </Starting_Forces>
+    <Starting_Forces> Lucian_Alliance, Universe_L_P3X_439, Lucian_Alliance_Hatak </Starting_Forces>
+    <Starting_Forces> Lucian_Alliance, Universe_L_P3X_439, Lucian_Alliance_Hatak </Starting_Forces>
+    <Starting_Forces> Lucian_Alliance, Universe_L_P3X_439, Lucian_Alliance_Alkesh_Squadron </Starting_Forces>
+    <Starting_Forces> Lucian_Alliance, Universe_L_P3X_439, Lucian_Alliance_Alkesh_Squadron </Starting_Forces>
+    <Starting_Forces> Lucian_Alliance, Universe_L_P3X_439, Lucian_Alliance_Alkesh_Squadron </Starting_Forces>
+    <Starting_Forces> Lucian_Alliance, Universe_L_P3X_439, Lucian_Alliance_Alkesh_Squadron </Starting_Forces>
+    <Starting_Forces> Lucian_Alliance, Universe_L_P3X_439, Lucian_Alliance_Alkesh_Squadron </Starting_Forces>
+    <Starting_Forces> Lucian_Alliance, Universe_L_P3X_439, Lucian_Alliance_Alkesh_Squadron </Starting_Forces>
+    <Starting_Forces> Lucian_Alliance, Universe_L_P3X_439, Lucian_Alliance_Kassa_Transporter </Starting_Forces>
+    <Starting_Forces> Lucian_Alliance, Universe_L_P3X_439, Lucian_Alliance_Kassa_Transporter </Starting_Forces>
+    <Starting_Forces> Lucian_Alliance, Universe_L_P3X_439, Lucian_Alliance_Kassa_Transporter </Starting_Forces>
+    <Starting_Forces> Lucian_Alliance, Universe_L_P3X_439, Lucian_Alliance_Command_Ship </Starting_Forces>
+    <Starting_Forces> Lucian_Alliance, Universe_L_P3X_439, Lucian_Alliance_Command_Ship </Starting_Forces>
+    <Starting_Forces> Lucian_Alliance, Universe_L_P3X_439, Lucian_Alliance_Command_Ship </Starting_Forces>
+
+
+
+    <!-- #Ori Starting Forces -->
+    <Starting_Credits> Ori,  10000 </Starting_Credits>
+    <Starting_Tech_Level> Ori, 5 </Starting_Tech_Level>
+    <Max_Tech_Level> Ori, 5 </Max_Tech_Level>
+
+    <Starting_Forces> Ori, Universe_L_Celestis, Ori_Starbase </Starting_Forces>
+    <Starting_Forces> Ori, Universe_L_Celestis, Ori_Satellite_SS </Starting_Forces>
+    <Starting_Forces> Ori, Universe_L_Celestis, Ori_Mothership </Starting_Forces>
+    <Starting_Forces> Ori, Universe_L_Celestis, Ori_Mothership </Starting_Forces>
+    <Starting_Forces> Ori, Universe_L_Celestis, Ori_Mothership </Starting_Forces>
+    <Starting_Forces> Ori, Universe_L_Celestis, Ori_Mothership </Starting_Forces>
+    <Starting_Forces> Ori, Universe_L_Celestis, Ori_Cruiser </Starting_Forces>
+    <Starting_Forces> Ori, Universe_L_Celestis, Ori_Cruiser </Starting_Forces>
+    <Starting_Forces> Ori, Universe_L_Celestis, Ori_Cruiser </Starting_Forces>
+    <Starting_Forces> Ori, Universe_L_Celestis, Ori_Cruiser </Starting_Forces>
+    <Starting_Forces> Ori, Universe_L_Celestis, Ori_Corvette </Starting_Forces>
+    <Starting_Forces> Ori, Universe_L_Celestis, Ori_Corvette </Starting_Forces>
+    <Starting_Forces> Ori, Universe_L_Celestis, Ori_Corvette </Starting_Forces>
+    <Starting_Forces> Ori, Universe_L_Celestis, Ori_Fighter_Squadron </Starting_Forces>
+    <Starting_Forces> Ori, Universe_L_Celestis, Ori_Fighter_Squadron </Starting_Forces>
+    <Starting_Forces> Ori, Universe_L_Celestis, Ori_Fighter_Squadron </Starting_Forces>
+
+
+    <Starting_Forces> Ori, Universe_L_Celestis, Ori_Ground_Building_Barracks_HW </Starting_Forces>
+    <Starting_Forces> Ori, Universe_L_Celestis, Ori_Ground_Building_Shipyard_HW </Starting_Forces>
+    <Starting_Forces> Ori, Universe_L_Celestis, Ori_Ground_Building_Temple_HW </Starting_Forces>
+    <Starting_Forces> Ori, Universe_L_Celestis, Doci_Company </Starting_Forces>
+    <Starting_Forces> Ori, Universe_L_Celestis, Ori_Prior_Company </Starting_Forces>
+    <Starting_Forces> Ori, Universe_L_Celestis, Ori_Prior_Company </Starting_Forces>
+    <Starting_Forces> Ori, Universe_L_Celestis, Ori_Prior_Company </Starting_Forces>
+    <Starting_Forces> Ori, Universe_L_Celestis, Ori_Commander_Company </Starting_Forces>
+    <Starting_Forces> Ori, Universe_L_Celestis, Ori_Soldier_Company </Starting_Forces>
+    <Starting_Forces> Ori, Universe_L_Celestis, Ori_Soldier_Company </Starting_Forces>
+    <Starting_Forces> Ori, Universe_L_Celestis, Ori_Soldier_Company </Starting_Forces>
+    <Starting_Forces> Ori, Universe_L_Celestis, Ori_Land_Fighter_Company </Starting_Forces>
+    <Starting_Forces> Ori, Universe_L_Celestis, Ori_Land_Fighter_Company </Starting_Forces>
+
+
+    <Starting_Forces> Ori, Universe_L_Via_Caelum, Ori_Cruiser </Starting_Forces>
+    <Starting_Forces> Ori, Universe_L_Via_Caelum, Ori_Cruiser </Starting_Forces>
+    <Starting_Forces> Ori, Universe_L_Via_Caelum, Ori_Cruiser </Starting_Forces>
+
+    <Starting_Forces> Ori, Universe_L_Via_Caelum, Ori_Commander_Company </Starting_Forces>
+    <Starting_Forces> Ori, Universe_L_Via_Caelum, Ori_Soldier_Company </Starting_Forces>
+    <Starting_Forces> Ori, Universe_L_Via_Caelum, Ori_Soldier_Company </Starting_Forces>
+    <Starting_Forces> Ori, Universe_L_Via_Caelum, Ori_Land_Fighter_Company </Starting_Forces>
+    <Starting_Forces> Ori, Universe_L_Via_Caelum, Ori_Land_Transporter_Company </Starting_Forces>
+    <Starting_Forces> Ori, Universe_L_Via_Caelum, Ori_Land_Transporter_Company </Starting_Forces>
+
+
+    <Starting_Forces> Ori, Universe_L_Vis_Deorum, Ori_Starbase </Starting_Forces>
+    <Starting_Forces> Ori, Universe_L_Vis_Deorum, Ori_Mothership </Starting_Forces>
+    <Starting_Forces> Ori, Universe_L_Vis_Deorum, Ori_Mothership </Starting_Forces>
+    <Starting_Forces> Ori, Universe_L_Vis_Deorum, Ori_Cruiser </Starting_Forces>
+    <Starting_Forces> Ori, Universe_L_Vis_Deorum, Ori_Cruiser </Starting_Forces>
+    <Starting_Forces> Ori, Universe_L_Vis_Deorum, Ori_Cruiser </Starting_Forces>
+    <Starting_Forces> Ori, Universe_L_Vis_Deorum, Ori_Cruiser </Starting_Forces>
+    <Starting_Forces> Ori, Universe_L_Vis_Deorum, Ori_Cruiser </Starting_Forces>
+    <Starting_Forces> Ori, Universe_L_Vis_Deorum, Ori_Cruiser </Starting_Forces>
+    <Starting_Forces> Ori, Universe_L_Vis_Deorum, Ori_Fighter_Squadron </Starting_Forces>
+    <Starting_Forces> Ori, Universe_L_Vis_Deorum, Ori_Fighter_Squadron </Starting_Forces>
+    <Starting_Forces> Ori, Universe_L_Vis_Deorum, Ori_Fighter_Squadron </Starting_Forces>
+    <Starting_Forces> Ori, Universe_L_Vis_Deorum, Ori_Fighter_Squadron </Starting_Forces>
+
+    <Starting_Forces> Ori, Universe_L_Vis_Deorum, Ori_Ground_Building_Barracks </Starting_Forces>
+    <Starting_Forces> Ori, Universe_L_Vis_Deorum, Ori_Ground_Building_Shipyard </Starting_Forces>
+    <Starting_Forces> Ori, Universe_L_Vis_Deorum, Ori_Prior_Company </Starting_Forces>
+    <Starting_Forces> Ori, Universe_L_Vis_Deorum, Ori_Commander_Company </Starting_Forces>
+    <Starting_Forces> Ori, Universe_L_Vis_Deorum, Ori_Commander_Company </Starting_Forces>
+    <Starting_Forces> Ori, Universe_L_Vis_Deorum, Ori_Commander_Company </Starting_Forces>
+    <Starting_Forces> Ori, Universe_L_Vis_Deorum, Ori_Soldier_Company </Starting_Forces>
+    <Starting_Forces> Ori, Universe_L_Vis_Deorum, Ori_Soldier_Company </Starting_Forces>
+    <Starting_Forces> Ori, Universe_L_Vis_Deorum, Ori_Soldier_Company </Starting_Forces>
+    <Starting_Forces> Ori, Universe_L_Vis_Deorum, Ori_Soldier_Company </Starting_Forces>
+    <Starting_Forces> Ori, Universe_L_Vis_Deorum, Ori_Soldier_Company </Starting_Forces>
+    <Starting_Forces> Ori, Universe_L_Vis_Deorum, Ori_Soldier_Company </Starting_Forces>
+
+
+    <Starting_Forces> Ori, Universe_L_Supergate, Adria_Company </Starting_Forces>
+    <Starting_Forces> Ori, Universe_L_Supergate, Ori_Mothership </Starting_Forces>
+    <Starting_Forces> Ori, Universe_L_Supergate, Ori_Cruiser </Starting_Forces>
+    <Starting_Forces> Ori, Universe_L_Supergate, Ori_Cruiser </Starting_Forces>
+    <Starting_Forces> Ori, Universe_L_Supergate, Ori_Cruiser </Starting_Forces>
+    <Starting_Forces> Ori, Universe_L_Supergate, Ori_Cruiser </Starting_Forces>
+    <Starting_Forces> Ori, Universe_L_Supergate, Ori_Cruiser </Starting_Forces>
+    <Starting_Forces> Ori, Universe_L_Supergate, Ori_Cruiser </Starting_Forces>
+    <Starting_Forces> Ori, Universe_L_Supergate, Ori_Corvette </Starting_Forces>
+    <Starting_Forces> Ori, Universe_L_Supergate, Ori_Corvette </Starting_Forces>
+    <Starting_Forces> Ori, Universe_L_Supergate, Ori_Corvette </Starting_Forces>
+    <Starting_Forces> Ori, Universe_L_Supergate, Ori_Corvette </Starting_Forces>
+    <Starting_Forces> Ori, Universe_L_Supergate, Ori_Corvette </Starting_Forces>
+    <Starting_Forces> Ori, Universe_L_Supergate, Ori_Corvette </Starting_Forces>
+    <Starting_Forces> Ori, Universe_L_Supergate, Ori_Fighter_Squadron </Starting_Forces>
+    <Starting_Forces> Ori, Universe_L_Supergate, Ori_Fighter_Squadron </Starting_Forces>
+    <Starting_Forces> Ori, Universe_L_Supergate, Ori_Fighter_Squadron </Starting_Forces>
+    <Starting_Forces> Ori, Universe_L_Supergate, Ori_Fighter_Squadron </Starting_Forces>
+
+
+    <Starting_Forces> Ori, Universe_L_Ver_Isca, Ori_Starbase </Starting_Forces>
+    <Starting_Forces> Ori, Universe_L_Ver_Isca, Ori_Mothership </Starting_Forces>
+    <Starting_Forces> Ori, Universe_L_Ver_Isca, Ori_Mothership </Starting_Forces>
+    <Starting_Forces> Ori, Universe_L_Ver_Isca, Ori_Cruiser </Starting_Forces>
+    <Starting_Forces> Ori, Universe_L_Ver_Isca, Ori_Cruiser </Starting_Forces>
+    <Starting_Forces> Ori, Universe_L_Ver_Isca, Ori_Cruiser </Starting_Forces>
+    <Starting_Forces> Ori, Universe_L_Ver_Isca, Ori_Cruiser </Starting_Forces>
+    <Starting_Forces> Ori, Universe_L_Ver_Isca, Ori_Cruiser </Starting_Forces>
+    <Starting_Forces> Ori, Universe_L_Ver_Isca, Ori_Cruiser </Starting_Forces>
+    <Starting_Forces> Ori, Universe_L_Ver_Isca, Ori_Fighter_Squadron </Starting_Forces>
+    <Starting_Forces> Ori, Universe_L_Ver_Isca, Ori_Fighter_Squadron </Starting_Forces>
+    <Starting_Forces> Ori, Universe_L_Ver_Isca, Ori_Fighter_Squadron </Starting_Forces>
+    <Starting_Forces> Ori, Universe_L_Ver_Isca, Ori_Fighter_Squadron </Starting_Forces>
+
+    <Starting_Forces> Ori, Universe_L_Ver_Isca, Ori_Ground_Building_Barracks </Starting_Forces>
+    <Starting_Forces> Ori, Universe_L_Ver_Isca, Ori_Ground_Building_Shipyard </Starting_Forces>
+    <Starting_Forces> Ori, Universe_L_Ver_Isca, Ori_Prior_Company </Starting_Forces>
+    <Starting_Forces> Ori, Universe_L_Ver_Isca, Ori_Commander_Company </Starting_Forces>
+    <Starting_Forces> Ori, Universe_L_Ver_Isca, Ori_Commander_Company </Starting_Forces>
+    <Starting_Forces> Ori, Universe_L_Ver_Isca, Ori_Commander_Company </Starting_Forces>
+    <Starting_Forces> Ori, Universe_L_Ver_Isca, Ori_Soldier_Company </Starting_Forces>
+    <Starting_Forces> Ori, Universe_L_Ver_Isca, Ori_Soldier_Company </Starting_Forces>
+    <Starting_Forces> Ori, Universe_L_Ver_Isca, Ori_Soldier_Company </Starting_Forces>
+    <Starting_Forces> Ori, Universe_L_Ver_Isca, Ori_Soldier_Company </Starting_Forces>
+    <Starting_Forces> Ori, Universe_L_Ver_Isca, Ori_Soldier_Company </Starting_Forces>
+    <Starting_Forces> Ori, Universe_L_Ver_Isca, Ori_Soldier_Company </Starting_Forces>
+
+
+    <Starting_Forces> Ori, Universe_L_Ver_Omesh, Ori_Cruiser </Starting_Forces>
+    <Starting_Forces> Ori, Universe_L_Ver_Omesh, Ori_Fighter_Squadron </Starting_Forces>
+    <Starting_Forces> Ori, Universe_L_Ver_Omesh, Ori_Fighter_Squadron </Starting_Forces>
+
+    <Starting_Forces> Ori, Universe_L_Ver_Omesh, Ori_Ground_Building_Barracks </Starting_Forces>
+    <Starting_Forces> Ori, Universe_L_Ver_Omesh, Ori_Commander_Company </Starting_Forces>
+    <Starting_Forces> Ori, Universe_L_Ver_Omesh, Ori_Soldier_Company </Starting_Forces>
+    <Starting_Forces> Ori, Universe_L_Ver_Omesh, Ori_Soldier_Company </Starting_Forces>
+
+
+
+    <!--#Pegasus Cyborgs-->
+
+    <Starting_Forces> Hostile, Universe_L_Sun, Pegasus_Cyborg_Battleship </Starting_Forces>
+    <Starting_Forces> Hostile, Universe_L_Sun, Pegasus_Cyborg_Battleship </Starting_Forces>
+    <Starting_Forces> Hostile, Universe_L_Sun, Pegasus_Cyborg_Battleship </Starting_Forces>
+    <Starting_Forces> Hostile, Universe_L_Sun, Pegasus_Cyborg_Battleship </Starting_Forces>
+    <Starting_Forces> Hostile, Universe_L_Sun, Pegasus_Cyborg_Fighter_Squadron </Starting_Forces>
+    <Starting_Forces> Hostile, Universe_L_Sun, Pegasus_Cyborg_Fighter_Squadron </Starting_Forces>
+    <Starting_Forces> Hostile, Universe_L_Sun, Pegasus_Cyborg_Fighter_Squadron </Starting_Forces>
+    <Starting_Forces> Hostile, Universe_L_Sun, Pegasus_Cyborg_Fighter_Squadron </Starting_Forces>
+
+    <Starting_Forces> Hostile, Universe_L_Void, Pegasus_Cyborg_Battleship </Starting_Forces>
+    <Starting_Forces> Hostile, Universe_L_Void, Pegasus_Cyborg_Battleship </Starting_Forces>
+    <Starting_Forces> Hostile, Universe_L_Void, Pegasus_Cyborg_Battleship </Starting_Forces>
+    <Starting_Forces> Hostile, Universe_L_Void, Pegasus_Cyborg_Battleship </Starting_Forces>
+    <Starting_Forces> Hostile, Universe_L_Void, Pegasus_Cyborg_Battleship </Starting_Forces>
+    <Starting_Forces> Hostile, Universe_L_Void, Pegasus_Cyborg_Fighter_Squadron </Starting_Forces>
+    <Starting_Forces> Hostile, Universe_L_Void, Pegasus_Cyborg_Fighter_Squadron </Starting_Forces>
+    <Starting_Forces> Hostile, Universe_L_Void, Pegasus_Cyborg_Fighter_Squadron </Starting_Forces>
+    <Starting_Forces> Hostile, Universe_L_Void, Pegasus_Cyborg_Fighter_Squadron </Starting_Forces>
+
+
+
+    <!--#Replicator forces-->
+
+    <Starting_Forces> Replicator, Universe_L_Reese_Homeworld, Replicator_Hatak </Starting_Forces>
+    <Starting_Forces> Replicator, Universe_L_Reese_Homeworld, Replicator_Hatak </Starting_Forces>
+
+    <Starting_Forces> Replicator, Universe_L_Reese_Homeworld, Replicator_Bug_Squad </Starting_Forces>
+    <Starting_Forces> Replicator, Universe_L_Reese_Homeworld, Replicator_Bug_Squad </Starting_Forces>
+    <Starting_Forces> Replicator, Universe_L_Reese_Homeworld, Replicator_Bug_Squad </Starting_Forces>
+    <Starting_Forces> Replicator, Universe_L_Reese_Homeworld, Replicator_Bug_Squad </Starting_Forces>
+    <Starting_Forces> Replicator, Universe_L_Reese_Homeworld, Replicator_Bug_Squad </Starting_Forces>
+    <Starting_Forces> Replicator, Universe_L_Reese_Homeworld, Replicator_Bug_Squad </Starting_Forces>
+    <Starting_Forces> Replicator, Universe_L_Reese_Homeworld, Replicator_Bug_Squad </Starting_Forces>
+
+
+    <Starting_Forces> Replicator, Universe_L_Orilla, Replicator_First </Starting_Forces>
+    <Starting_Forces> Replicator, Universe_L_Orilla, Replicator_Battle_Ship_Convert </Starting_Forces>
+    <Starting_Forces> Replicator, Universe_L_Orilla, Replicator_Battle_Ship_Convert </Starting_Forces>
+    <Starting_Forces> Replicator, Universe_L_Orilla, Replicator_Battle_Cruiser </Starting_Forces>
+    <Starting_Forces> Replicator, Universe_L_Orilla, Replicator_Battle_Cruiser </Starting_Forces>
+    <Starting_Forces> Replicator, Universe_L_Orilla, Replicator_Corvette </Starting_Forces>
+    <Starting_Forces> Replicator, Universe_L_Orilla, Replicator_Corvette </Starting_Forces>
+    <Starting_Forces> Replicator, Universe_L_Orilla, Replicator_Corvette </Starting_Forces>
+    <Starting_Forces> Replicator, Universe_L_Orilla, Replicator_Corvette </Starting_Forces>
+    <Starting_Forces> Replicator, Universe_L_Orilla, Replicator_Cruiser </Starting_Forces>
+    <Starting_Forces> Replicator, Universe_L_Orilla, Replicator_Spider_Ship </Starting_Forces>
+    <Starting_Forces> Replicator, Universe_L_Orilla, Replicator_Spider_Ship </Starting_Forces>
+    <Starting_Forces> Replicator, Universe_L_Orilla, Replicator_Spider_Ship </Starting_Forces>
+    <Starting_Forces> Replicator, Universe_L_Orilla, Replicator_Spider_Ship </Starting_Forces>
+    <Starting_Forces> Replicator, Universe_L_Orilla, Replicator_Spider_Ship </Starting_Forces>
+    <Starting_Forces> Replicator, Universe_L_Orilla, Replicator_Spider_Ship </Starting_Forces>
+
+    <Starting_Forces> Replicator, Universe_L_Orilla, Replicator_Ground_Building_Constructor </Starting_Forces>
+    <Starting_Forces> Replicator, Universe_L_Orilla, Replicator_Ground_Building_Constructor </Starting_Forces>
+    <Starting_Forces> Replicator, Universe_L_Orilla, Replicator_Bug_Squad </Starting_Forces>
+    <Starting_Forces> Replicator, Universe_L_Orilla, Replicator_Bug_Squad </Starting_Forces>
+    <Starting_Forces> Replicator, Universe_L_Orilla, Replicator_Bug_Squad </Starting_Forces>
+    <Starting_Forces> Replicator, Universe_L_Orilla, Replicator_Bug_Squad </Starting_Forces>
+    <Starting_Forces> Replicator, Universe_L_Orilla, Replicator_Warrior_Squad </Starting_Forces>
+    <Starting_Forces> Replicator, Universe_L_Orilla, Replicator_Warrior_Squad </Starting_Forces>
+    <Starting_Forces> Replicator, Universe_L_Orilla, Replicator_Queen_Squad </Starting_Forces>
+
+
+    <Starting_Forces> Replicator, Universe_L_Othala, Replicator_RepliCarter </Starting_Forces>
+    <Starting_Forces> Replicator, Universe_L_Othala, Replicator_Battle_Ship_Convert </Starting_Forces>
+    <Starting_Forces> Replicator, Universe_L_Othala, Replicator_Battle_Ship_Convert </Starting_Forces>
+    <Starting_Forces> Replicator, Universe_L_Othala, Replicator_Battle_Ship_Convert </Starting_Forces>
+    <Starting_Forces> Replicator, Universe_L_Othala, Replicator_Beliskner </Starting_Forces>
+    <Starting_Forces> Replicator, Universe_L_Othala, Replicator_Beliskner </Starting_Forces>
+    <Starting_Forces> Replicator, Universe_L_Othala, Replicator_Corvette </Starting_Forces>
+    <Starting_Forces> Replicator, Universe_L_Othala, Replicator_Corvette </Starting_Forces>
+    <Starting_Forces> Replicator, Universe_L_Othala, Replicator_Corvette </Starting_Forces>
+    <Starting_Forces> Replicator, Universe_L_Othala, Replicator_Corvette </Starting_Forces>
+    <Starting_Forces> Replicator, Universe_L_Othala, Replicator_Corvette </Starting_Forces>
+    <Starting_Forces> Replicator, Universe_L_Othala, Replicator_Corvette </Starting_Forces>
+    <Starting_Forces> Replicator, Universe_L_Othala, Replicator_Cruiser </Starting_Forces>
+    <Starting_Forces> Replicator, Universe_L_Othala, Replicator_Cruiser </Starting_Forces>
+    <Starting_Forces> Replicator, Universe_L_Othala, Replicator_Spider_Ship </Starting_Forces>
+    <Starting_Forces> Replicator, Universe_L_Othala, Replicator_Spider_Ship </Starting_Forces>
+    <Starting_Forces> Replicator, Universe_L_Othala, Replicator_Spider_Ship </Starting_Forces>
+    <Starting_Forces> Replicator, Universe_L_Othala, Replicator_Spider_Ship </Starting_Forces>
+
+    <Starting_Forces> Replicator, Universe_L_Othala, Replicator_Ground_Building_Constructor_HW </Starting_Forces>
+    <Starting_Forces> Replicator, Universe_L_Othala, Replicator_Ground_Building_Constructor_HW </Starting_Forces>
+    <Starting_Forces> Replicator, Universe_L_Othala, Replicator_Ground_Building_Constructor_HW </Starting_Forces>
+    <Starting_Forces> Replicator, Universe_L_Othala, Replicator_Ground_Building_Constructor_HW </Starting_Forces>
+    <Starting_Forces> Replicator, Universe_L_Othala, Replicator_Bug_Squad </Starting_Forces>
+    <Starting_Forces> Replicator, Universe_L_Othala, Replicator_Bug_Squad </Starting_Forces>
+    <Starting_Forces> Replicator, Universe_L_Othala, Replicator_Bug_Squad </Starting_Forces>
+    <Starting_Forces> Replicator, Universe_L_Othala, Replicator_Warrior_Squad </Starting_Forces>
+    <Starting_Forces> Replicator, Universe_L_Othala, Replicator_Warrior_Squad </Starting_Forces>
+    <Starting_Forces> Replicator, Universe_L_Othala, Replicator_Warrior_Squad </Starting_Forces>
+    <Starting_Forces> Replicator, Universe_L_Othala, Replicator_Queen_Squad </Starting_Forces>
+    <Starting_Forces> Replicator, Universe_L_Othala, Replicator_Queen_Squad </Starting_Forces>
+
+
+    <Starting_Forces> Replicator, Universe_L_Hala, Replicator_Fifth </Starting_Forces>
+    <Starting_Forces> Replicator, Universe_L_Hala, Replicator_Battle_Cruiser </Starting_Forces>
+    <Starting_Forces> Replicator, Universe_L_Hala, Replicator_Beliskner </Starting_Forces>
+    <Starting_Forces> Replicator, Universe_L_Hala, Replicator_Beliskner </Starting_Forces>
+    <Starting_Forces> Replicator, Universe_L_Hala, Replicator_Corvette </Starting_Forces>
+    <Starting_Forces> Replicator, Universe_L_Hala, Replicator_Corvette </Starting_Forces>
+    <Starting_Forces> Replicator, Universe_L_Hala, Replicator_Cruiser </Starting_Forces>
+    <Starting_Forces> Replicator, Universe_L_Hala, Replicator_Cruiser </Starting_Forces>
+    <Starting_Forces> Replicator, Universe_L_Hala, Replicator_Spider_Ship </Starting_Forces>
+    <Starting_Forces> Replicator, Universe_L_Hala, Replicator_Spider_Ship </Starting_Forces>
+    <Starting_Forces> Replicator, Universe_L_Hala, Replicator_Spider_Ship </Starting_Forces>
+
+    <Starting_Forces> Replicator, Universe_L_Hala, Replicator_Ground_Building_Constructor </Starting_Forces>
+    <Starting_Forces> Replicator, Universe_L_Hala, Replicator_Ground_Building_Constructor </Starting_Forces>
+    <Starting_Forces> Replicator, Universe_L_Hala, Replicator_Ground_Building_Constructor </Starting_Forces>
+    <Starting_Forces> Replicator, Universe_L_Hala, Replicator_Bug_Squad </Starting_Forces>
+    <Starting_Forces> Replicator, Universe_L_Hala, Replicator_Bug_Squad </Starting_Forces>
+    <Starting_Forces> Replicator, Universe_L_Hala, Replicator_Bug_Squad </Starting_Forces>
+    <Starting_Forces> Replicator, Universe_L_Hala, Replicator_Bug_Squad </Starting_Forces>
+    <Starting_Forces> Replicator, Universe_L_Hala, Replicator_Warrior_Squad </Starting_Forces>
+    <Starting_Forces> Replicator, Universe_L_Hala, Replicator_Warrior_Squad </Starting_Forces>
+
+    <Starting_Forces> Replicator, Universe_L_Engi, Replicator_Second </Starting_Forces>
+    <Starting_Forces> Replicator, Universe_L_Engi, Replicator_Battle_Ship_Convert </Starting_Forces>
+    <Starting_Forces> Replicator, Universe_L_Engi, Replicator_Battle_Cruiser </Starting_Forces>
+    <Starting_Forces> Replicator, Universe_L_Engi, Replicator_Corvette </Starting_Forces>
+    <Starting_Forces> Replicator, Universe_L_Engi, Replicator_Corvette </Starting_Forces>
+    <Starting_Forces> Replicator, Universe_L_Engi, Replicator_Spider_Ship </Starting_Forces>
+    <Starting_Forces> Replicator, Universe_L_Engi, Replicator_Spider_Ship </Starting_Forces>
+    <Starting_Forces> Replicator, Universe_L_Engi, Replicator_Spider_Ship </Starting_Forces>
+
+    <Starting_Forces> Replicator, Universe_L_Engi, Replicator_Bug_Squad </Starting_Forces>
+    <Starting_Forces> Replicator, Universe_L_Engi, Replicator_Bug_Squad </Starting_Forces>
+    <Starting_Forces> Replicator, Universe_L_Engi, Replicator_Bug_Squad </Starting_Forces>
+    <Starting_Forces> Replicator, Universe_L_Engi, Replicator_Warrior_Squad </Starting_Forces>
+    <Starting_Forces> Replicator, Universe_L_Engi, Replicator_Warrior_Squad </Starting_Forces>
+    <Starting_Forces> Replicator, Universe_L_Engi, Replicator_Warrior_Squad </Starting_Forces>
+
+
+    <Starting_Forces> Replicator, Universe_L_Algiz, Replicator_Third </Starting_Forces>
+    <Starting_Forces> Replicator, Universe_L_Algiz, Replicator_Battle_Cruiser </Starting_Forces>
+    <Starting_Forces> Replicator, Universe_L_Algiz, Replicator_Corvette </Starting_Forces>
+    <Starting_Forces> Replicator, Universe_L_Algiz, Replicator_Corvette </Starting_Forces>
+    <Starting_Forces> Replicator, Universe_L_Algiz, Replicator_Spider_Ship </Starting_Forces>
+    <Starting_Forces> Replicator, Universe_L_Algiz, Replicator_Spider_Ship </Starting_Forces>
+
+    <Starting_Forces> Replicator, Universe_L_Algiz, Replicator_Ground_Building_Constructor </Starting_Forces>
+    <Starting_Forces> Replicator, Universe_L_Algiz, Replicator_Bug_Squad </Starting_Forces>
+    <Starting_Forces> Replicator, Universe_L_Algiz, Replicator_Bug_Squad </Starting_Forces>
+    <Starting_Forces> Replicator, Universe_L_Algiz, Replicator_Warrior_Squad </Starting_Forces>
+    <Starting_Forces> Replicator, Universe_L_Algiz, Replicator_Warrior_Squad </Starting_Forces>
+
+
+    <!--#Special-->
+
+    <Starting_Forces> Hostile, Universe_L_Tagrea, Tagrean_Gun_Balloon_SS </Starting_Forces><!--Todo: Adjust faction to planet owner-->
+
+    <!--<Starting_Forces> Traveler, Universe_L_Talthus, Martin_Lloyds_Ship </Starting_Forces>--><!--Todo: Only as enemy, not for TAU-->
+
+
+
+    <!--#System Lords Forces-->
+    <Starting_Credits> Systemlord_Alliance,  8000 </Starting_Credits>
+    <Starting_Tech_Level> Systemlord_Alliance, 5 </Starting_Tech_Level>
+    <Max_Tech_Level> Systemlord_Alliance, 5 </Max_Tech_Level>
+
+    <Starting_Forces> Systemlord_Alliance, Universe_L_Abydos, Systemlord_Alliance_Hero_Ra_Company </Starting_Forces>
+
+    <Starting_Forces> Systemlord_Alliance, Universe_L_Abydos, SysLords_Ground_Palace </Starting_Forces>
+    <Starting_Forces> Systemlord_Alliance, Universe_L_Abydos, SysLords_Ground_Barracks </Starting_Forces>
+    <Starting_Forces> Systemlord_Alliance, Universe_L_Abydos, Systemlord_Alliance_Jaffa_Company </Starting_Forces>
+    <Starting_Forces> Systemlord_Alliance, Universe_L_Abydos, Systemlord_Alliance_Jaffa_Company </Starting_Forces>
+
+
+    <Starting_Forces> Systemlord_Alliance, Universe_L_Hebridan, SysLords_Star_Base_4 </Starting_Forces>
+    <Starting_Forces> Systemlord_Alliance, Universe_L_Hebridan, Systemlord_Alliance_Teltak_Squadron </Starting_Forces>
+    <Starting_Forces> Systemlord_Alliance, Universe_L_Hebridan, Systemlord_Alliance_Teltak_Squadron </Starting_Forces>
+    <Starting_Forces> Systemlord_Alliance, Universe_L_Hebridan, Systemlord_Alliance_Pyramid_Ship </Starting_Forces>
+    <Starting_Forces> Systemlord_Alliance, Universe_L_Hebridan, Systemlord_Alliance_New_Hatak </Starting_Forces>
+    <Starting_Forces> Systemlord_Alliance, Universe_L_Hebridan, Systemlord_Alliance_New_Hatak </Starting_Forces>
+    <Starting_Forces> Systemlord_Alliance, Universe_L_Hebridan, Systemlord_Alliance_System_Flagship </Starting_Forces>
+    <Starting_Forces> Systemlord_Alliance, Universe_L_Hebridan, Systemlord_Alliance_System_Flagship </Starting_Forces>
+    <Starting_Forces> Systemlord_Alliance, Universe_L_Hebridan, Systemlord_Alliance_System_Flagship </Starting_Forces>
+    <Starting_Forces> Systemlord_Alliance, Universe_L_Hebridan, Systemlord_Alliance_System_Flagship </Starting_Forces>
+    <Starting_Forces> Systemlord_Alliance, Universe_L_Hebridan, Systemlord_Alliance_System_Flagship </Starting_Forces>
+
+    <Starting_Forces> Systemlord_Alliance, Universe_L_Hebridan, SysLords_Ground_Palace </Starting_Forces>
+    <Starting_Forces> Systemlord_Alliance, Universe_L_Hebridan, SysLords_Ground_Barracks </Starting_Forces>
+    <Starting_Forces> Systemlord_Alliance, Universe_L_Hebridan, SysLords_Ground_Small_Shipyard </Starting_Forces>
+    <Starting_Forces> Systemlord_Alliance, Universe_L_Hebridan, SysLords_Ground_GTSW </Starting_Forces>
+    <Starting_Forces> Systemlord_Alliance, Universe_L_Hebridan, Systemlord_Alliance_Jaffa_Company </Starting_Forces>
+    <Starting_Forces> Systemlord_Alliance, Universe_L_Hebridan, Systemlord_Alliance_Serpent_Guard_Company </Starting_Forces>
+    <Starting_Forces> Systemlord_Alliance, Universe_L_Hebridan, Systemlord_Alliance_Serpent_Guard_Company </Starting_Forces>
+    <Starting_Forces> Systemlord_Alliance, Universe_L_Hebridan, Systemlord_Alliance_Serpent_Guard_Company </Starting_Forces>
+    <Starting_Forces> Systemlord_Alliance, Universe_L_Hebridan, Systemlord_Alliance_Serpent_Guard_Company </Starting_Forces>
+    <Starting_Forces> Systemlord_Alliance, Universe_L_Hebridan, Systemlord_Alliance_Horus_Guard_Company </Starting_Forces>
+    <Starting_Forces> Systemlord_Alliance, Universe_L_Hebridan, Systemlord_Alliance_Horus_Guard_Company </Starting_Forces>
+    <Starting_Forces> Systemlord_Alliance, Universe_L_Hebridan, Systemlord_Alliance_Jackal_Guard_Company </Starting_Forces>
+
+
+    <Starting_Forces> Systemlord_Alliance, Universe_L_P34_353J, Systemlord_Alliance_Death_Glider_Squadron </Starting_Forces>
+    <Starting_Forces> Systemlord_Alliance, Universe_L_P34_353J, Systemlord_Alliance_Death_Glider_Squadron </Starting_Forces>
+    <Starting_Forces> Systemlord_Alliance, Universe_L_P34_353J, Systemlord_Alliance_Teltak_Squadron </Starting_Forces>
+    <Starting_Forces> Systemlord_Alliance, Universe_L_P34_353J, Systemlord_Alliance_Pyramid_Ship </Starting_Forces>
+    <Starting_Forces> Systemlord_Alliance, Universe_L_P34_353J, Systemlord_Alliance_Pyramid_Ship </Starting_Forces>
+    <Starting_Forces> Systemlord_Alliance, Universe_L_P34_353J, Systemlord_Alliance_Old_Hatak </Starting_Forces>
+
+    <Starting_Forces> Systemlord_Alliance, Universe_L_P34_353J, Systemlord_Alliance_Jaffa_Company </Starting_Forces>
+    <Starting_Forces> Systemlord_Alliance, Universe_L_P34_353J, Systemlord_Alliance_Jaffa_Company </Starting_Forces>
+    <Starting_Forces> Systemlord_Alliance, Universe_L_P34_353J, Systemlord_Alliance_Serpent_Guard_Company </Starting_Forces>
+    <Starting_Forces> Systemlord_Alliance, Universe_L_P34_353J, Systemlord_Alliance_Serpent_Guard_Company </Starting_Forces>
+    <Starting_Forces> Systemlord_Alliance, Universe_L_P34_353J, Systemlord_Alliance_Serpent_Guard_Company </Starting_Forces>
+
+
+    <Starting_Forces> Systemlord_Alliance, Universe_L_Vorash, Systemlord_Alliance_Teltak_Squadron </Starting_Forces>
+    <Starting_Forces> Systemlord_Alliance, Universe_L_Vorash, Systemlord_Alliance_Teltak_Squadron </Starting_Forces>
+    <Starting_Forces> Systemlord_Alliance, Universe_L_Vorash, Systemlord_Alliance_Teltak_Squadron </Starting_Forces>
+    <Starting_Forces> Systemlord_Alliance, Universe_L_Vorash, Systemlord_Alliance_Old_Hatak </Starting_Forces>
+    <Starting_Forces> Systemlord_Alliance, Universe_L_Vorash, Systemlord_Alliance_Old_Hatak </Starting_Forces>
+
+    <Starting_Forces> Systemlord_Alliance, Universe_L_Vorash, SysLords_Ground_Palace </Starting_Forces>
+    <Starting_Forces> Systemlord_Alliance, Universe_L_Vorash, SysLords_Ground_Barracks </Starting_Forces>
+    <Starting_Forces> Systemlord_Alliance, Universe_L_Vorash, Systemlord_Alliance_Jaffa_Company </Starting_Forces>
+    <Starting_Forces> Systemlord_Alliance, Universe_L_Vorash, Systemlord_Alliance_Jaffa_Company </Starting_Forces>
+
+
+    <Starting_Forces> Systemlord_Alliance, Universe_L_Ktau, SysLords_Star_Base_1 </Starting_Forces>
+    <Starting_Forces> Systemlord_Alliance, Universe_L_Ktau, Systemlord_Alliance_Death_Glider_Squadron </Starting_Forces>
+    <Starting_Forces> Systemlord_Alliance, Universe_L_Ktau, Systemlord_Alliance_Pyramid_Ship </Starting_Forces>
+    <Starting_Forces> Systemlord_Alliance, Universe_L_Ktau, Systemlord_Alliance_Pyramid_Ship </Starting_Forces>
+    <Starting_Forces> Systemlord_Alliance, Universe_L_Ktau, Systemlord_Alliance_Pyramid_Ship </Starting_Forces>
+    <Starting_Forces> Systemlord_Alliance, Universe_L_Ktau, Systemlord_Alliance_Old_Hatak </Starting_Forces>
+    <Starting_Forces> Systemlord_Alliance, Universe_L_Ktau, Systemlord_Alliance_Old_Hatak </Starting_Forces>
+
+    <Starting_Forces> Systemlord_Alliance, Universe_L_Ktau, SysLords_Ground_Palace </Starting_Forces>
+    <Starting_Forces> Systemlord_Alliance, Universe_L_Ktau, Systemlord_Alliance_Jaffa_Company </Starting_Forces>
+    <Starting_Forces> Systemlord_Alliance, Universe_L_Ktau, Systemlord_Alliance_Jaffa_Company </Starting_Forces>
+    <Starting_Forces> Systemlord_Alliance, Universe_L_Ktau, Systemlord_Alliance_Serpent_Guard_Company </Starting_Forces>
+    <Starting_Forces> Systemlord_Alliance, Universe_L_Ktau, Systemlord_Alliance_Serpent_Guard_Company </Starting_Forces>
+
+
+    <Starting_Forces> Systemlord_Alliance, Universe_L_P5S_117, SysLords_Star_Base_2 </Starting_Forces>
+    <Starting_Forces> Systemlord_Alliance, Universe_L_P5S_117, Systemlord_Alliance_Old_Hatak </Starting_Forces>
+    <Starting_Forces> Systemlord_Alliance, Universe_L_P5S_117, Systemlord_Alliance_Old_Hatak </Starting_Forces>
+    <Starting_Forces> Systemlord_Alliance, Universe_L_P5S_117, Systemlord_Alliance_Old_Hatak </Starting_Forces>
+    <Starting_Forces> Systemlord_Alliance, Universe_L_P5S_117, Systemlord_Alliance_Old_Hatak </Starting_Forces>
+
+    <Starting_Forces> Systemlord_Alliance, Universe_L_P5S_117, SysLords_Ground_Palace </Starting_Forces>
+    <Starting_Forces> Systemlord_Alliance, Universe_L_P5S_117, SysLords_Ground_Barracks </Starting_Forces>
+    <Starting_Forces> Systemlord_Alliance, Universe_L_P5S_117, Systemlord_Alliance_Jaffa_Company </Starting_Forces>
+    <Starting_Forces> Systemlord_Alliance, Universe_L_P5S_117, Systemlord_Alliance_Jaffa_Company </Starting_Forces>
+    <Starting_Forces> Systemlord_Alliance, Universe_L_P5S_117, Systemlord_Alliance_Jaffa_Company </Starting_Forces>
+    <Starting_Forces> Systemlord_Alliance, Universe_L_P5S_117, Systemlord_Alliance_Serpent_Guard_Company </Starting_Forces>
+    <Starting_Forces> Systemlord_Alliance, Universe_L_P5S_117, Systemlord_Alliance_Serpent_Guard_Company </Starting_Forces>
+
+
+    <Starting_Forces> Systemlord_Alliance, Universe_L_Cal_Mah, SysLords_Star_Base_3 </Starting_Forces>
+
+    <Starting_Forces> Systemlord_Alliance, Universe_L_Cal_Mah, SysLords_Ground_Palace </Starting_Forces>
+    <Starting_Forces> Systemlord_Alliance, Universe_L_Cal_Mah, SysLords_Ground_Barracks </Starting_Forces>
+    <Starting_Forces> Systemlord_Alliance, Universe_L_Cal_Mah, SysLords_Ground_Barracks </Starting_Forces>
+    <Starting_Forces> Systemlord_Alliance, Universe_L_Cal_Mah, SysLords_Ground_Barracks </Starting_Forces>
+
+
+    <Starting_Forces> Systemlord_Alliance, Universe_L_P3R_118, SysLords_Star_Base_1 </Starting_Forces>
+    <Starting_Forces> Systemlord_Alliance, Universe_L_P3R_118, Systemlord_Alliance_System_Flagship </Starting_Forces>
+    <Starting_Forces> Systemlord_Alliance, Universe_L_P3R_118, Systemlord_Alliance_System_Flagship </Starting_Forces>
+    <Starting_Forces> Systemlord_Alliance, Universe_L_P3R_118, Systemlord_Alliance_System_Flagship </Starting_Forces>
+
+
+    <Starting_Forces> Systemlord_Alliance, Universe_L_Orban, SysLords_Star_Base_4 </Starting_Forces>
+    <Starting_Forces> Systemlord_Alliance, Universe_L_Orban, Systemlord_Alliance_New_Hatak </Starting_Forces>
+    <Starting_Forces> Systemlord_Alliance, Universe_L_Orban, Systemlord_Alliance_New_Hatak </Starting_Forces>
+    <Starting_Forces> Systemlord_Alliance, Universe_L_Orban, Systemlord_Alliance_New_Hatak </Starting_Forces>
+    <Starting_Forces> Systemlord_Alliance, Universe_L_Orban, Systemlord_Alliance_Pyramid_Ship </Starting_Forces>
+    <Starting_Forces> Systemlord_Alliance, Universe_L_Orban, Systemlord_Alliance_Alkesh_Squadron </Starting_Forces>
+    <Starting_Forces> Systemlord_Alliance, Universe_L_Orban, Systemlord_Alliance_Alkesh_Squadron </Starting_Forces>
+    <Starting_Forces> Systemlord_Alliance, Universe_L_Orban, Systemlord_Alliance_Alkesh_Squadron </Starting_Forces>
+
+    <Starting_Forces> Systemlord_Alliance, Universe_L_Orban, SysLords_Ground_Palace </Starting_Forces>
+    <Starting_Forces> Systemlord_Alliance, Universe_L_Orban, SysLords_Ground_Barracks </Starting_Forces>
+    <Starting_Forces> Systemlord_Alliance, Universe_L_Orban, SysLords_Ground_Barracks </Starting_Forces>
+    <Starting_Forces> Systemlord_Alliance, Universe_L_Orban, SysLords_Ground_Barracks </Starting_Forces>
+    <Starting_Forces> Systemlord_Alliance, Universe_L_Orban, SysLords_Ground_Barracks </Starting_Forces>
+    <Starting_Forces> Systemlord_Alliance, Universe_L_Orban, Systemlord_Alliance_Jaffa_Company </Starting_Forces>
+    <Starting_Forces> Systemlord_Alliance, Universe_L_Orban, Systemlord_Alliance_Jaffa_Company </Starting_Forces>
+    <Starting_Forces> Systemlord_Alliance, Universe_L_Orban, Systemlord_Alliance_Jaffa_Company </Starting_Forces>
+    <Starting_Forces> Systemlord_Alliance, Universe_L_Orban, Systemlord_Alliance_Jaffa_Company </Starting_Forces>
+    <Starting_Forces> Systemlord_Alliance, Universe_L_Orban, Systemlord_Alliance_Serpent_Guard_Company </Starting_Forces>
+    <Starting_Forces> Systemlord_Alliance, Universe_L_Orban, Systemlord_Alliance_Serpent_Guard_Company </Starting_Forces>
+
+
+    <Starting_Forces> Systemlord_Alliance, Universe_L_Tollana, SysLords_Star_Base_4 </Starting_Forces>
+    <Starting_Forces> Systemlord_Alliance, Universe_L_Tollana, Systemlord_Alliance_New_Hatak </Starting_Forces>
+    <Starting_Forces> Systemlord_Alliance, Universe_L_Tollana, Systemlord_Alliance_New_Hatak </Starting_Forces>
+    <Starting_Forces> Systemlord_Alliance, Universe_L_Tollana, Systemlord_Alliance_New_Hatak </Starting_Forces>
+    <Starting_Forces> Systemlord_Alliance, Universe_L_Tollana, Systemlord_Alliance_Pyramid_Ship </Starting_Forces>
+    <Starting_Forces> Systemlord_Alliance, Universe_L_Tollana, Systemlord_Alliance_Alkesh_Squadron </Starting_Forces>
+    <Starting_Forces> Systemlord_Alliance, Universe_L_Tollana, Systemlord_Alliance_Alkesh_Squadron </Starting_Forces>
+    <Starting_Forces> Systemlord_Alliance, Universe_L_Tollana, Systemlord_Alliance_Alkesh_Squadron </Starting_Forces>
+
+    <Starting_Forces> Systemlord_Alliance, Universe_L_Tollana, SysLords_Ground_Palace </Starting_Forces>
+    <Starting_Forces> Systemlord_Alliance, Universe_L_Tollana, SysLords_Ground_Barracks </Starting_Forces>
+    <Starting_Forces> Systemlord_Alliance, Universe_L_Tollana, SysLords_Ground_Barracks </Starting_Forces>
+    <Starting_Forces> Systemlord_Alliance, Universe_L_Tollana, SysLords_Ground_Barracks </Starting_Forces>
+    <Starting_Forces> Systemlord_Alliance, Universe_L_Tollana, SysLords_Ground_Barracks </Starting_Forces>
+    <Starting_Forces> Systemlord_Alliance, Universe_L_Tollana, Systemlord_Alliance_Jaffa_Company </Starting_Forces>
+    <Starting_Forces> Systemlord_Alliance, Universe_L_Tollana, Systemlord_Alliance_Jaffa_Company </Starting_Forces>
+    <Starting_Forces> Systemlord_Alliance, Universe_L_Tollana, Systemlord_Alliance_Jaffa_Company </Starting_Forces>
+    <Starting_Forces> Systemlord_Alliance, Universe_L_Tollana, Systemlord_Alliance_Jaffa_Company </Starting_Forces>
+    <Starting_Forces> Systemlord_Alliance, Universe_L_Tollana, Systemlord_Alliance_Serpent_Guard_Company </Starting_Forces>
+    <Starting_Forces> Systemlord_Alliance, Universe_L_Tollana, Systemlord_Alliance_Serpent_Guard_Company </Starting_Forces>
+
+
+    <Starting_Forces> Systemlord_Alliance, Universe_L_P3X_666, SysLords_Star_Base_2 </Starting_Forces>
+    <Starting_Forces> Systemlord_Alliance, Universe_L_P3X_666, Systemlord_Alliance_Teltak_Squadron </Starting_Forces>
+    <Starting_Forces> Systemlord_Alliance, Universe_L_P3X_666, Systemlord_Alliance_Teltak_Squadron </Starting_Forces>
+    <Starting_Forces> Systemlord_Alliance, Universe_L_P3X_666, Systemlord_Alliance_Pyramid_Ship </Starting_Forces>
+    <Starting_Forces> Systemlord_Alliance, Universe_L_P3X_666, Systemlord_Alliance_New_Hatak </Starting_Forces>
+    <Starting_Forces> Systemlord_Alliance, Universe_L_P3X_666, Systemlord_Alliance_New_Hatak </Starting_Forces>
+    <Starting_Forces> Systemlord_Alliance, Universe_L_P3X_666, Systemlord_Alliance_System_Flagship </Starting_Forces>
+    <Starting_Forces> Systemlord_Alliance, Universe_L_P3X_666, Systemlord_Alliance_System_Flagship </Starting_Forces>
+    <Starting_Forces> Systemlord_Alliance, Universe_L_P3X_666, Systemlord_Alliance_System_Flagship </Starting_Forces>
+    <Starting_Forces> Systemlord_Alliance, Universe_L_P3X_666, Systemlord_Alliance_System_Flagship </Starting_Forces>
+    <Starting_Forces> Systemlord_Alliance, Universe_L_P3X_666, Systemlord_Alliance_System_Flagship </Starting_Forces>
+
+    <Starting_Forces> Systemlord_Alliance, Universe_L_P3X_666, SysLords_Ground_Palace </Starting_Forces>
+    <Starting_Forces> Systemlord_Alliance, Universe_L_P3X_666, SysLords_Ground_Barracks </Starting_Forces>
+    <Starting_Forces> Systemlord_Alliance, Universe_L_P3X_666, SysLords_Ground_Hangar </Starting_Forces>
+    <Starting_Forces> Systemlord_Alliance, Universe_L_P3X_666, SysLords_Ground_GTSW </Starting_Forces>
+    <Starting_Forces> Systemlord_Alliance, Universe_L_P3X_666, Systemlord_Alliance_Jaffa_Company </Starting_Forces>
+    <Starting_Forces> Systemlord_Alliance, Universe_L_P3X_666, Systemlord_Alliance_Serpent_Guard_Company </Starting_Forces>
+    <Starting_Forces> Systemlord_Alliance, Universe_L_P3X_666, Systemlord_Alliance_Serpent_Guard_Company </Starting_Forces>
+    <Starting_Forces> Systemlord_Alliance, Universe_L_P3X_666, Systemlord_Alliance_Serpent_Guard_Company </Starting_Forces>
+    <Starting_Forces> Systemlord_Alliance, Universe_L_P3X_666, Systemlord_Alliance_Serpent_Guard_Company </Starting_Forces>
+    <Starting_Forces> Systemlord_Alliance, Universe_L_P3X_666, Systemlord_Alliance_Horus_Guard_Company </Starting_Forces>
+    <Starting_Forces> Systemlord_Alliance, Universe_L_P3X_666, Systemlord_Alliance_Horus_Guard_Company </Starting_Forces>
+    <Starting_Forces> Systemlord_Alliance, Universe_L_P3X_666, Systemlord_Alliance_Jackal_Guard_Company </Starting_Forces>
+
+
+    <Starting_Forces> Systemlord_Alliance, Universe_L_P3X_403, SysLords_Star_Base_3 </Starting_Forces>
+    <Starting_Forces> Systemlord_Alliance, Universe_L_P3X_403, Systemlord_Alliance_Teltak_Squadron </Starting_Forces>
+    <Starting_Forces> Systemlord_Alliance, Universe_L_P3X_403, Systemlord_Alliance_Teltak_Squadron </Starting_Forces>
+    <Starting_Forces> Systemlord_Alliance, Universe_L_P3X_403, Systemlord_Alliance_Old_Hatak </Starting_Forces>
+    <Starting_Forces> Systemlord_Alliance, Universe_L_P3X_403, Systemlord_Alliance_Old_Hatak </Starting_Forces>
+    <Starting_Forces> Systemlord_Alliance, Universe_L_P3X_403, Systemlord_Alliance_New_Hatak </Starting_Forces>
+    <Starting_Forces> Systemlord_Alliance, Universe_L_P3X_403, Systemlord_Alliance_New_Hatak </Starting_Forces>
+
+    <Starting_Forces> Systemlord_Alliance, Universe_L_P3X_403, SysLords_Ground_Palace </Starting_Forces>
+    <Starting_Forces> Systemlord_Alliance, Universe_L_P3X_403, SysLords_Ground_Barracks </Starting_Forces>
+    <Starting_Forces> Systemlord_Alliance, Universe_L_P3X_403, Systemlord_Alliance_Jaffa_Company </Starting_Forces>
+    <Starting_Forces> Systemlord_Alliance, Universe_L_P3X_403, Systemlord_Alliance_Jaffa_Company </Starting_Forces>
+    <Starting_Forces> Systemlord_Alliance, Universe_L_P3X_403, Systemlord_Alliance_Jaffa_Company </Starting_Forces>
+    <Starting_Forces> Systemlord_Alliance, Universe_L_P3X_403, Systemlord_Alliance_Horus_Guard_Company </Starting_Forces>
+    <Starting_Forces> Systemlord_Alliance, Universe_L_P3X_403, Systemlord_Alliance_Horus_Guard_Company </Starting_Forces>
+    <Starting_Forces> Systemlord_Alliance, Universe_L_P3X_403, Systemlord_Alliance_Jackal_Guard_Company </Starting_Forces>
+
+
+    <Starting_Forces> Systemlord_Alliance, Universe_L_P3X_474, SysLords_Star_Base_3 </Starting_Forces>
+    <Starting_Forces> Systemlord_Alliance, Universe_L_P3X_474, Systemlord_Alliance_Alkesh_Squadron </Starting_Forces>
+    <Starting_Forces> Systemlord_Alliance, Universe_L_P3X_474, Systemlord_Alliance_Alkesh_Squadron </Starting_Forces>
+    <Starting_Forces> Systemlord_Alliance, Universe_L_P3X_474, Systemlord_Alliance_Alkesh_Squadron </Starting_Forces>
+    <Starting_Forces> Systemlord_Alliance, Universe_L_P3X_474, Systemlord_Alliance_Alkesh_Squadron </Starting_Forces>
+    <Starting_Forces> Systemlord_Alliance, Universe_L_P3X_474, Systemlord_Alliance_Alkesh_Squadron </Starting_Forces>
+    <Starting_Forces> Systemlord_Alliance, Universe_L_P3X_474, Systemlord_Alliance_Alkesh_Squadron </Starting_Forces>
+    <Starting_Forces> Systemlord_Alliance, Universe_L_P3X_474, Systemlord_Alliance_Alkesh_Squadron </Starting_Forces>
+    <Starting_Forces> Systemlord_Alliance, Universe_L_P3X_474, Systemlord_Alliance_Alkesh_Squadron </Starting_Forces>
+    <Starting_Forces> Systemlord_Alliance, Universe_L_P3X_474, Systemlord_Alliance_Alkesh_Squadron </Starting_Forces>
+    <Starting_Forces> Systemlord_Alliance, Universe_L_P3X_474, Systemlord_Alliance_Alkesh_Squadron </Starting_Forces>
+    <Starting_Forces> Systemlord_Alliance, Universe_L_P3X_474, Systemlord_Alliance_Alkesh_Squadron </Starting_Forces>
+    <Starting_Forces> Systemlord_Alliance, Universe_L_P3X_474, Systemlord_Alliance_Alkesh_Squadron </Starting_Forces>
+
+    <Starting_Forces> Systemlord_Alliance, Universe_L_P3X_474, SysLords_Ground_Palace </Starting_Forces>
+    <Starting_Forces> Systemlord_Alliance, Universe_L_P3X_474, SysLords_Ground_Hangar </Starting_Forces>
+    <Starting_Forces> Systemlord_Alliance, Universe_L_P3X_474, SysLords_Ground_Hangar </Starting_Forces>
+    <Starting_Forces> Systemlord_Alliance, Universe_L_P3X_474, Systemlord_Alliance_Horus_Guard_Company </Starting_Forces>
+    <Starting_Forces> Systemlord_Alliance, Universe_L_P3X_474, Systemlord_Alliance_Horus_Guard_Company </Starting_Forces>
+    <Starting_Forces> Systemlord_Alliance, Universe_L_P3X_474, Systemlord_Alliance_Horus_Guard_Company </Starting_Forces>
+    <Starting_Forces> Systemlord_Alliance, Universe_L_P3X_474, Systemlord_Alliance_Horus_Guard_Company </Starting_Forces>
+
+
+    <Starting_Forces> Systemlord_Alliance, Universe_L_P3X_584, SysLords_Star_Base_2 </Starting_Forces>
+    <Starting_Forces> Systemlord_Alliance, Universe_L_P3X_584, Systemlord_Alliance_New_Hatak </Starting_Forces>
+    <Starting_Forces> Systemlord_Alliance, Universe_L_P3X_584, Systemlord_Alliance_New_Hatak </Starting_Forces>
+    <Starting_Forces> Systemlord_Alliance, Universe_L_P3X_584, Systemlord_Alliance_New_Hatak </Starting_Forces>
+    <Starting_Forces> Systemlord_Alliance, Universe_L_P3X_584, Systemlord_Alliance_New_Hatak </Starting_Forces>
+    <Starting_Forces> Systemlord_Alliance, Universe_L_P3X_584, Systemlord_Alliance_New_Hatak </Starting_Forces>
+    <Starting_Forces> Systemlord_Alliance, Universe_L_P3X_584, Systemlord_Alliance_New_Hatak </Starting_Forces>
+
+    <Starting_Forces> Systemlord_Alliance, Universe_L_P3X_584, SysLords_Ground_Palace </Starting_Forces>
+    <Starting_Forces> Systemlord_Alliance, Universe_L_P3X_584, SysLords_Ground_GTSW </Starting_Forces>
+    <Starting_Forces> Systemlord_Alliance, Universe_L_P3X_584, SysLords_Ground_GTSW </Starting_Forces>
+    <Starting_Forces> Systemlord_Alliance, Universe_L_P3X_584, Systemlord_Alliance_Jackal_Guard_Company </Starting_Forces>
+    <Starting_Forces> Systemlord_Alliance, Universe_L_P3X_584, Systemlord_Alliance_Jackal_Guard_Company </Starting_Forces>
+    <Starting_Forces> Systemlord_Alliance, Universe_L_P3X_584, Systemlord_Alliance_Jackal_Guard_Company </Starting_Forces>
+    <Starting_Forces> Systemlord_Alliance, Universe_L_P3X_584, Systemlord_Alliance_Jackal_Guard_Company </Starting_Forces>
+    <Starting_Forces> Systemlord_Alliance, Universe_L_P3X_584, Systemlord_Alliance_Jackal_Guard_Company </Starting_Forces>
+
+
+    <Starting_Forces> Systemlord_Alliance, Universe_L_P4M_399, SysLords_Star_Base_1 </Starting_Forces>
+    <Starting_Forces> Systemlord_Alliance, Universe_L_P4M_399, Systemlord_Alliance_Hero_Seth</Starting_Forces>
+    <Starting_Forces> Systemlord_Alliance, Universe_L_P4M_399, Systemlord_Alliance_Pyramid_Ship </Starting_Forces>
+    <Starting_Forces> Systemlord_Alliance, Universe_L_P4M_399, Systemlord_Alliance_Pyramid_Ship </Starting_Forces>
+    <Starting_Forces> Systemlord_Alliance, Universe_L_P4M_399, Systemlord_Alliance_Pyramid_Ship </Starting_Forces>
+    <Starting_Forces> Systemlord_Alliance, Universe_L_P4M_399, Systemlord_Alliance_New_Hatak </Starting_Forces>
+    <Starting_Forces> Systemlord_Alliance, Universe_L_P4M_399, Systemlord_Alliance_New_Hatak </Starting_Forces>
+    <Starting_Forces> Systemlord_Alliance, Universe_L_P4M_399, Systemlord_Alliance_New_Hatak </Starting_Forces>
+    <Starting_Forces> Systemlord_Alliance, Universe_L_P4M_399, Systemlord_Alliance_New_Hatak </Starting_Forces>
+    <Starting_Forces> Systemlord_Alliance, Universe_L_P4M_399, Systemlord_Alliance_System_Flagship </Starting_Forces>
+    <Starting_Forces> Systemlord_Alliance, Universe_L_P4M_399, Systemlord_Alliance_System_Flagship </Starting_Forces>
+    <Starting_Forces> Systemlord_Alliance, Universe_L_P4M_399, Systemlord_Alliance_System_Flagship </Starting_Forces>
+
+    <Starting_Forces> Systemlord_Alliance, Universe_L_P4M_399, SysLords_Ground_Palace </Starting_Forces>
+    <Starting_Forces> Systemlord_Alliance, Universe_L_P4M_399, Systemlord_Alliance_Setesh_Guard_Company </Starting_Forces>
+    <Starting_Forces> Systemlord_Alliance, Universe_L_P4M_399, Systemlord_Alliance_Setesh_Guard_Company </Starting_Forces>
+    <Starting_Forces> Systemlord_Alliance, Universe_L_P4M_399, Systemlord_Alliance_Setesh_Guard_Company </Starting_Forces>
+    <Starting_Forces> Systemlord_Alliance, Universe_L_P4M_399, Systemlord_Alliance_Setesh_Guard_Company </Starting_Forces>
+    <Starting_Forces> Systemlord_Alliance, Universe_L_P4M_399, Systemlord_Alliance_Setesh_Guard_Company </Starting_Forces>
+    <Starting_Forces> Systemlord_Alliance, Universe_L_P4M_399, Systemlord_Alliance_Setesh_Guard_Company </Starting_Forces>
+    <Starting_Forces> Systemlord_Alliance, Universe_L_P4M_399, Systemlord_Alliance_Deathglider_Company </Starting_Forces>
+    <Starting_Forces> Systemlord_Alliance, Universe_L_P4M_399, Systemlord_Alliance_Deathglider_Company </Starting_Forces>
+
+
+    <Starting_Forces> Systemlord_Alliance, Universe_L_Revanna, SysLords_Ground_Palace </Starting_Forces>
+    <Starting_Forces> Systemlord_Alliance, Universe_L_Revanna, SysLords_Ground_Barracks </Starting_Forces>
+    <Starting_Forces> Systemlord_Alliance, Universe_L_Revanna, SysLords_Ground_Hangar </Starting_Forces>
+    <Starting_Forces> Systemlord_Alliance, Universe_L_Revanna, Systemlord_Alliance_Jaffa_Company </Starting_Forces>
+    <Starting_Forces> Systemlord_Alliance, Universe_L_Revanna, Systemlord_Alliance_Jaffa_Company </Starting_Forces>
+    <Starting_Forces> Systemlord_Alliance, Universe_L_Revanna, Systemlord_Alliance_Jaffa_Company </Starting_Forces>
+    <Starting_Forces> Systemlord_Alliance, Universe_L_Revanna, Systemlord_Alliance_Horus_Guard_Company </Starting_Forces>
+    <Starting_Forces> Systemlord_Alliance, Universe_L_Revanna, Systemlord_Alliance_Horus_Guard_Company </Starting_Forces>
+    <Starting_Forces> Systemlord_Alliance, Universe_L_Revanna, Systemlord_Alliance_Jackal_Guard_Company </Starting_Forces>
+
+
+    <Starting_Forces> Systemlord_Alliance, Universe_L_P3X_254, SysLords_Ground_Palace </Starting_Forces>
+    <Starting_Forces> Systemlord_Alliance, Universe_L_P3X_254, SysLords_Ground_Barracks </Starting_Forces>
+    <Starting_Forces> Systemlord_Alliance, Universe_L_P3X_254, SysLords_Ground_Hangar </Starting_Forces>
+    <Starting_Forces> Systemlord_Alliance, Universe_L_P3X_254, Systemlord_Alliance_Jaffa_Company </Starting_Forces>
+    <Starting_Forces> Systemlord_Alliance, Universe_L_P3X_254, Systemlord_Alliance_Jaffa_Company </Starting_Forces>
+    <Starting_Forces> Systemlord_Alliance, Universe_L_P3X_254, Systemlord_Alliance_Jaffa_Company </Starting_Forces>
+    <Starting_Forces> Systemlord_Alliance, Universe_L_P3X_254, Systemlord_Alliance_Horus_Guard_Company </Starting_Forces>
+    <Starting_Forces> Systemlord_Alliance, Universe_L_P3X_254, Systemlord_Alliance_Horus_Guard_Company </Starting_Forces>
+    <Starting_Forces> Systemlord_Alliance, Universe_L_P3X_254, Systemlord_Alliance_Jackal_Guard_Company </Starting_Forces>
+    <Starting_Forces> Systemlord_Alliance, Universe_L_P3X_254, Systemlord_Alliance_Deathglider_Company </Starting_Forces>
+
+
+    <!-- TODO <Starting_Forces> Systemlord_Alliance, Universe_L_P3X_367, NIIRTI </Starting_Forces>-->
+
+    <Starting_Forces> Systemlord_Alliance, Universe_L_P3X_367, SysLords_Ground_Palace </Starting_Forces>
+    <Starting_Forces> Systemlord_Alliance, Universe_L_P3X_367, SysLords_Ground_Barracks </Starting_Forces>
+    <Starting_Forces> Systemlord_Alliance, Universe_L_P3X_367, Systemlord_Alliance_Jaffa_Company </Starting_Forces>
+    <Starting_Forces> Systemlord_Alliance, Universe_L_P3X_367, Systemlord_Alliance_Jaffa_Company </Starting_Forces>
+    <Starting_Forces> Systemlord_Alliance, Universe_L_P3X_367, Systemlord_Alliance_Jaffa_Company </Starting_Forces>
+    <Starting_Forces> Systemlord_Alliance, Universe_L_P3X_367, Systemlord_Alliance_Serpent_Guard_Company </Starting_Forces>
+    <Starting_Forces> Systemlord_Alliance, Universe_L_P3X_367, Systemlord_Alliance_Serpent_Guard_Company </Starting_Forces>
+
+
+    <!-- TODO <Starting_Forces> Systemlord_Alliance, Universe_L_Hathor_Homeworld, HATHOR </Starting_Forces>-->
+    <Starting_Forces> Systemlord_Alliance, Universe_L_Hathor_Homeworld, Systemlord_Alliance_New_Hatak </Starting_Forces>
+    <Starting_Forces> Systemlord_Alliance, Universe_L_Hathor_Homeworld, Systemlord_Alliance_New_Hatak </Starting_Forces>
+    <Starting_Forces> Systemlord_Alliance, Universe_L_Hathor_Homeworld, Systemlord_Alliance_Pyramid_Ship </Starting_Forces>
+    <Starting_Forces> Systemlord_Alliance, Universe_L_Hathor_Homeworld, Systemlord_Alliance_Pyramid_Ship </Starting_Forces>
+    <Starting_Forces> Systemlord_Alliance, Universe_L_Hathor_Homeworld, Systemlord_Alliance_Pyramid_Ship </Starting_Forces>
+    <Starting_Forces> Systemlord_Alliance, Universe_L_Hathor_Homeworld, Systemlord_Alliance_Alkesh_Squadron </Starting_Forces>
+    <Starting_Forces> Systemlord_Alliance, Universe_L_Hathor_Homeworld, Systemlord_Alliance_Alkesh_Squadron </Starting_Forces>
+    <Starting_Forces> Systemlord_Alliance, Universe_L_Hathor_Homeworld, Systemlord_Alliance_Alkesh_Squadron </Starting_Forces>
+    <Starting_Forces> Systemlord_Alliance, Universe_L_Hathor_Homeworld, Systemlord_Alliance_Alkesh_Squadron </Starting_Forces>
+    <Starting_Forces> Systemlord_Alliance, Universe_L_Hathor_Homeworld, Systemlord_Alliance_Alkesh_Squadron </Starting_Forces>
+
+    <Starting_Forces> Systemlord_Alliance, Universe_L_Hathor_Homeworld, SysLords_Ground_Palace </Starting_Forces>
+    <Starting_Forces> Systemlord_Alliance, Universe_L_Hathor_Homeworld, SysLords_Ground_Barracks </Starting_Forces>
+    <Starting_Forces> Systemlord_Alliance, Universe_L_Hathor_Homeworld, Systemlord_Alliance_Jaffa_Company </Starting_Forces>
+    <Starting_Forces> Systemlord_Alliance, Universe_L_Hathor_Homeworld, Systemlord_Alliance_Jaffa_Company </Starting_Forces>
+    <Starting_Forces> Systemlord_Alliance, Universe_L_Hathor_Homeworld, Systemlord_Alliance_Jaffa_Company </Starting_Forces>
+    <Starting_Forces> Systemlord_Alliance, Universe_L_Hathor_Homeworld, Systemlord_Alliance_Serpent_Guard_Company </Starting_Forces>
+    <Starting_Forces> Systemlord_Alliance, Universe_L_Hathor_Homeworld, Systemlord_Alliance_Serpent_Guard_Company </Starting_Forces>
+
+
+    <Starting_Forces> Systemlord_Alliance, Universe_L_Hassara, Goauld_Hassara </Starting_Forces>
+    <Starting_Forces> Systemlord_Alliance, Universe_L_Hassara, Systemlord_Alliance_Hero_Osiris </Starting_Forces>
+    <Starting_Forces> Systemlord_Alliance, Universe_L_Hassara, Systemlord_Alliance_System_Flagship </Starting_Forces>
+    <Starting_Forces> Systemlord_Alliance, Universe_L_Hassara, Systemlord_Alliance_System_Flagship </Starting_Forces>
+    <Starting_Forces> Systemlord_Alliance, Universe_L_Hassara, Systemlord_Alliance_New_Hatak </Starting_Forces>
+    <Starting_Forces> Systemlord_Alliance, Universe_L_Hassara, Systemlord_Alliance_New_Hatak </Starting_Forces>
+    <Starting_Forces> Systemlord_Alliance, Universe_L_Hassara, Systemlord_Alliance_New_Hatak </Starting_Forces>
+    <Starting_Forces> Systemlord_Alliance, Universe_L_Hassara, Systemlord_Alliance_New_Hatak </Starting_Forces>
+    <Starting_Forces> Systemlord_Alliance, Universe_L_Hassara, Systemlord_Alliance_New_Hatak </Starting_Forces>
+    <Starting_Forces> Systemlord_Alliance, Universe_L_Hassara, Systemlord_Alliance_Pyramid_Ship </Starting_Forces>
+    <Starting_Forces> Systemlord_Alliance, Universe_L_Hassara, Systemlord_Alliance_Pyramid_Ship </Starting_Forces>
+    <Starting_Forces> Systemlord_Alliance, Universe_L_Hassara, Systemlord_Alliance_Pyramid_Ship </Starting_Forces>
+    <Starting_Forces> Systemlord_Alliance, Universe_L_Hassara, Systemlord_Alliance_Alkesh_Squadron </Starting_Forces>
+    <Starting_Forces> Systemlord_Alliance, Universe_L_Hassara, Systemlord_Alliance_Alkesh_Squadron </Starting_Forces>
+    <Starting_Forces> Systemlord_Alliance, Universe_L_Hassara, Systemlord_Alliance_Alkesh_Squadron </Starting_Forces>
+    <Starting_Forces> Systemlord_Alliance, Universe_L_Hassara, Systemlord_Alliance_Alkesh_Squadron </Starting_Forces>
+    <Starting_Forces> Systemlord_Alliance, Universe_L_Hassara, Systemlord_Alliance_Alkesh_Squadron </Starting_Forces>
+    <Starting_Forces> Systemlord_Alliance, Universe_L_Hassara, Systemlord_Alliance_Alkesh_Squadron </Starting_Forces>
+    <Starting_Forces> Systemlord_Alliance, Universe_L_Hassara, Systemlord_Alliance_Alkesh_Squadron </Starting_Forces>
+    <Starting_Forces> Systemlord_Alliance, Universe_L_Hassara, Systemlord_Alliance_Alkesh_Squadron </Starting_Forces>
+
+
+    <Starting_Forces> Systemlord_Alliance, Universe_L_Chulak, SysLords_Star_Base_2 </Starting_Forces>
+    <Starting_Forces> Systemlord_Alliance, Universe_L_Chulak, Systemlord_Alliance_Hero_Apophis </Starting_Forces>
+    <Starting_Forces> Systemlord_Alliance, Universe_L_Chulak, Systemlord_Alliance_New_Hatak </Starting_Forces>
+    <Starting_Forces> Systemlord_Alliance, Universe_L_Chulak, Systemlord_Alliance_New_Hatak </Starting_Forces>
+    <Starting_Forces> Systemlord_Alliance, Universe_L_Chulak, Systemlord_Alliance_New_Hatak </Starting_Forces>
+    <Starting_Forces> Systemlord_Alliance, Universe_L_Chulak, Systemlord_Alliance_Pyramid_Ship </Starting_Forces>
+    <Starting_Forces> Systemlord_Alliance, Universe_L_Chulak, Systemlord_Alliance_Death_Glider_Squadron </Starting_Forces>
+    <Starting_Forces> Systemlord_Alliance, Universe_L_Chulak, Systemlord_Alliance_Death_Glider_Squadron </Starting_Forces>
+    <Starting_Forces> Systemlord_Alliance, Universe_L_Chulak, Systemlord_Alliance_Teltak_Squadron </Starting_Forces>
+    <Starting_Forces> Systemlord_Alliance, Universe_L_Chulak, Systemlord_Alliance_Teltak_Squadron </Starting_Forces>
+    <Starting_Forces> Systemlord_Alliance, Universe_L_Chulak, Systemlord_Alliance_Teltak_Squadron </Starting_Forces>
+
+    <Starting_Forces> Systemlord_Alliance, Universe_L_Chulak, SysLords_Ground_Palace </Starting_Forces>
+    <Starting_Forces> Systemlord_Alliance, Universe_L_Chulak, SysLords_Ground_Barracks </Starting_Forces>
+    <Starting_Forces> Systemlord_Alliance, Universe_L_Chulak, SysLords_Ground_Shrine </Starting_Forces>
+    <Starting_Forces> Systemlord_Alliance, Universe_L_Chulak, Systemlord_Alliance_Serpent_Guard_Company </Starting_Forces>
+    <Starting_Forces> Systemlord_Alliance, Universe_L_Chulak, Systemlord_Alliance_Serpent_Guard_Company </Starting_Forces>
+    <Starting_Forces> Systemlord_Alliance, Universe_L_Chulak, Systemlord_Alliance_Serpent_Guard_Company </Starting_Forces>
+    <Starting_Forces> Systemlord_Alliance, Universe_L_Chulak, Systemlord_Alliance_Serpent_Guard_Company </Starting_Forces>
+    <Starting_Forces> Systemlord_Alliance, Universe_L_Chulak, Systemlord_Alliance_Deathglider_Company </Starting_Forces>
+
+
+    <Starting_Forces> Systemlord_Alliance, Universe_L_Delmak, SysLords_Star_Base_4 </Starting_Forces>
+    <Starting_Forces> Systemlord_Alliance, Universe_L_Delmak, Systemlord_Alliance_System_Flagship </Starting_Forces>
+    <Starting_Forces> Systemlord_Alliance, Universe_L_Delmak, Systemlord_Alliance_System_Flagship </Starting_Forces>
+    <Starting_Forces> Systemlord_Alliance, Universe_L_Delmak, Systemlord_Alliance_Hero_Sokar_Company </Starting_Forces>
+    <Starting_Forces> Systemlord_Alliance, Universe_L_Delmak, Systemlord_Alliance_Stealth_Hatak </Starting_Forces>
+    <Starting_Forces> Systemlord_Alliance, Universe_L_Delmak, Systemlord_Alliance_Stealth_Hatak </Starting_Forces>
+    <Starting_Forces> Systemlord_Alliance, Universe_L_Delmak, Systemlord_Alliance_Stealth_Hatak </Starting_Forces>
+    <Starting_Forces> Systemlord_Alliance, Universe_L_Delmak, Systemlord_Alliance_Stealth_Hatak </Starting_Forces>
+    <Starting_Forces> Systemlord_Alliance, Universe_L_Delmak, Systemlord_Alliance_Old_Hatak </Starting_Forces>
+    <Starting_Forces> Systemlord_Alliance, Universe_L_Delmak, Systemlord_Alliance_Old_Hatak </Starting_Forces>
+    <Starting_Forces> Systemlord_Alliance, Universe_L_Delmak, Systemlord_Alliance_Old_Hatak </Starting_Forces>
+    <Starting_Forces> Systemlord_Alliance, Universe_L_Delmak, Systemlord_Alliance_Old_Hatak </Starting_Forces>
+    <Starting_Forces> Systemlord_Alliance, Universe_L_Delmak, Systemlord_Alliance_Death_Glider_Squadron </Starting_Forces>
+    <Starting_Forces> Systemlord_Alliance, Universe_L_Delmak, Systemlord_Alliance_Death_Glider_Squadron </Starting_Forces>
+    <Starting_Forces> Systemlord_Alliance, Universe_L_Delmak, Systemlord_Alliance_Alkesh_Squadron </Starting_Forces>
+    <Starting_Forces> Systemlord_Alliance, Universe_L_Delmak, Systemlord_Alliance_Alkesh_Squadron </Starting_Forces>
+    <Starting_Forces> Systemlord_Alliance, Universe_L_Delmak, Systemlord_Alliance_Alkesh_Squadron </Starting_Forces>
+
+    <Starting_Forces> Systemlord_Alliance, Universe_L_Delmak, SysLords_Ground_Palace </Starting_Forces>
+    <Starting_Forces> Systemlord_Alliance, Universe_L_Delmak, SysLords_Ground_Barracks </Starting_Forces>
+    <Starting_Forces> Systemlord_Alliance, Universe_L_Delmak, SysLords_Ground_Hangar </Starting_Forces>
+    <Starting_Forces> Systemlord_Alliance, Universe_L_Delmak, SysLords_Ground_Small_Shipyard </Starting_Forces>
+    <Starting_Forces> Systemlord_Alliance, Universe_L_Delmak, SysLords_Ground_Base_Shield </Starting_Forces>
+    <Starting_Forces> Systemlord_Alliance, Universe_L_Delmak, Systemlord_Alliance_Necropolis_Guard_Staff_Company </Starting_Forces>
+    <Starting_Forces> Systemlord_Alliance, Universe_L_Delmak, Systemlord_Alliance_Necropolis_Guard_Staff_Company </Starting_Forces>
+    <Starting_Forces> Systemlord_Alliance, Universe_L_Delmak, Systemlord_Alliance_Necropolis_Guard_Staff_Company </Starting_Forces>
+    <Starting_Forces> Systemlord_Alliance, Universe_L_Delmak, Systemlord_Alliance_Necropolis_Guard_Company </Starting_Forces>
+    <Starting_Forces> Systemlord_Alliance, Universe_L_Delmak, Systemlord_Alliance_Necropolis_Guard_Company </Starting_Forces>
+    <Starting_Forces> Systemlord_Alliance, Universe_L_Delmak, Systemlord_Alliance_Necropolis_Guard_Company </Starting_Forces>
+    <Starting_Forces> Systemlord_Alliance, Universe_L_Delmak, Systemlord_Alliance_Necropolis_Guard_Company </Starting_Forces>
+    <Starting_Forces> Systemlord_Alliance, Universe_L_Delmak, Systemlord_Alliance_Deathglider_Company </Starting_Forces>
+
+
+    <Starting_Forces> Systemlord_Alliance, Universe_L_Erebus, Systemlord_Alliance_Hero_Heruur_Company </Starting_Forces>
+    <Starting_Forces> Systemlord_Alliance, Universe_L_Erebus, SysLords_Star_Base_3 </Starting_Forces>
+    <Starting_Forces> Systemlord_Alliance, Universe_L_Erebus, Systemlord_Alliance_New_Hatak </Starting_Forces>
+    <Starting_Forces> Systemlord_Alliance, Universe_L_Erebus, Systemlord_Alliance_New_Hatak </Starting_Forces>
+    <Starting_Forces> Systemlord_Alliance, Universe_L_Erebus, Systemlord_Alliance_New_Hatak </Starting_Forces>
+    <Starting_Forces> Systemlord_Alliance, Universe_L_Erebus, Systemlord_Alliance_New_Hatak </Starting_Forces>
+    <Starting_Forces> Systemlord_Alliance, Universe_L_Erebus, Systemlord_Alliance_Old_Hatak </Starting_Forces>
+    <Starting_Forces> Systemlord_Alliance, Universe_L_Erebus, Systemlord_Alliance_Old_Hatak </Starting_Forces>
+    <Starting_Forces> Systemlord_Alliance, Universe_L_Erebus, Systemlord_Alliance_Old_Hatak </Starting_Forces>
+    <Starting_Forces> Systemlord_Alliance, Universe_L_Erebus, Systemlord_Alliance_Old_Hatak </Starting_Forces>
+    <Starting_Forces> Systemlord_Alliance, Universe_L_Erebus, Systemlord_Alliance_Old_Hatak </Starting_Forces>
+    <Starting_Forces> Systemlord_Alliance, Universe_L_Erebus, Systemlord_Alliance_Death_Glider_Squadron </Starting_Forces>
+    <Starting_Forces> Systemlord_Alliance, Universe_L_Erebus, Systemlord_Alliance_Death_Glider_Squadron </Starting_Forces>
+    <Starting_Forces> Systemlord_Alliance, Universe_L_Erebus, Systemlord_Alliance_Death_Glider_Squadron </Starting_Forces>
+    <Starting_Forces> Systemlord_Alliance, Universe_L_Erebus, Systemlord_Alliance_Teltak_Squadron </Starting_Forces>
+    <Starting_Forces> Systemlord_Alliance, Universe_L_Erebus, Systemlord_Alliance_Teltak_Squadron </Starting_Forces>
+    <Starting_Forces> Systemlord_Alliance, Universe_L_Erebus, Systemlord_Alliance_Alkesh_Squadron </Starting_Forces>
+    <Starting_Forces> Systemlord_Alliance, Universe_L_Erebus, Systemlord_Alliance_Alkesh_Squadron </Starting_Forces>
+    <Starting_Forces> Systemlord_Alliance, Universe_L_Erebus, Systemlord_Alliance_Alkesh_Squadron </Starting_Forces>
+
+    <Starting_Forces> Systemlord_Alliance, Universe_L_Erebus, SysLords_Ground_Palace </Starting_Forces>
+    <Starting_Forces> Systemlord_Alliance, Universe_L_Erebus, SysLords_Ground_Small_Shipyard </Starting_Forces>
+    <Starting_Forces> Systemlord_Alliance, Universe_L_Erebus, SysLords_Ground_Mining_Facility </Starting_Forces>
+    <Starting_Forces> Systemlord_Alliance, Universe_L_Erebus, SysLords_Ground_Mining_Facility </Starting_Forces>
+    <Starting_Forces> Systemlord_Alliance, Universe_L_Erebus, SysLords_Ground_Mining_Facility </Starting_Forces>
+    <Starting_Forces> Systemlord_Alliance, Universe_L_Erebus, Systemlord_Alliance_Horus_Guard_Staff_Company </Starting_Forces>
+    <Starting_Forces> Systemlord_Alliance, Universe_L_Erebus, Systemlord_Alliance_Horus_Guard_Staff_Company </Starting_Forces>
+    <Starting_Forces> Systemlord_Alliance, Universe_L_Erebus, Systemlord_Alliance_Horus_Guard_Staff_Company </Starting_Forces>
+    <Starting_Forces> Systemlord_Alliance, Universe_L_Erebus, Systemlord_Alliance_Horus_Guard_Staff_Company </Starting_Forces>
+    <Starting_Forces> Systemlord_Alliance, Universe_L_Erebus, Systemlord_Alliance_Horus_Guard_Staff_Company </Starting_Forces>
+    <Starting_Forces> Systemlord_Alliance, Universe_L_Erebus, Systemlord_Alliance_Horus_Guard_Company </Starting_Forces>
+    <Starting_Forces> Systemlord_Alliance, Universe_L_Erebus, Systemlord_Alliance_Horus_Guard_Company </Starting_Forces>
+    <Starting_Forces> Systemlord_Alliance, Universe_L_Erebus, Systemlord_Alliance_Deathglider_Company </Starting_Forces>
+
+
+    <Starting_Forces> Systemlord_Alliance, Universe_L_Juna, SysLords_Star_Base_3 </Starting_Forces>
+    <Starting_Forces> Systemlord_Alliance, Universe_L_Juna, Systemlord_Alliance_System_Flagship </Starting_Forces>
+    <Starting_Forces> Systemlord_Alliance, Universe_L_Juna, Systemlord_Alliance_Hero_Cronus </Starting_Forces>
+    <Starting_Forces> Systemlord_Alliance, Universe_L_Juna, Systemlord_Alliance_New_Hatak </Starting_Forces>
+    <Starting_Forces> Systemlord_Alliance, Universe_L_Juna, Systemlord_Alliance_New_Hatak </Starting_Forces>
+    <Starting_Forces> Systemlord_Alliance, Universe_L_Juna, Systemlord_Alliance_New_Hatak </Starting_Forces>
+    <Starting_Forces> Systemlord_Alliance, Universe_L_Juna, Systemlord_Alliance_New_Hatak </Starting_Forces>
+    <Starting_Forces> Systemlord_Alliance, Universe_L_Juna, Systemlord_Alliance_Old_Hatak </Starting_Forces>
+    <Starting_Forces> Systemlord_Alliance, Universe_L_Juna, Systemlord_Alliance_Old_Hatak </Starting_Forces>
+    <Starting_Forces> Systemlord_Alliance, Universe_L_Juna, Systemlord_Alliance_Old_Hatak </Starting_Forces>
+    <Starting_Forces> Systemlord_Alliance, Universe_L_Juna, Systemlord_Alliance_Alkesh_Squadron </Starting_Forces>
+    <Starting_Forces> Systemlord_Alliance, Universe_L_Juna, Systemlord_Alliance_Alkesh_Squadron </Starting_Forces>
+    <Starting_Forces> Systemlord_Alliance, Universe_L_Juna, Systemlord_Alliance_Alkesh_Squadron </Starting_Forces>
+
+    <Starting_Forces> Systemlord_Alliance, Universe_L_Juna, SysLords_Ground_Palace </Starting_Forces>
+    <Starting_Forces> Systemlord_Alliance, Universe_L_Juna, SysLords_Ground_Barracks </Starting_Forces>
+    <Starting_Forces> Systemlord_Alliance, Universe_L_Juna, SysLords_Ground_Guard_Tower_Galactic_Defence </Starting_Forces>
+    <Starting_Forces> Systemlord_Alliance, Universe_L_Juna, Systemlord_Alliance_Jaffa_Company </Starting_Forces>
+    <Starting_Forces> Systemlord_Alliance, Universe_L_Juna, Systemlord_Alliance_Jaffa_Company </Starting_Forces>
+    <Starting_Forces> Systemlord_Alliance, Universe_L_Juna, Systemlord_Alliance_Jaffa_Company </Starting_Forces>
+    <Starting_Forces> Systemlord_Alliance, Universe_L_Juna, Systemlord_Alliance_Deathglider_Company </Starting_Forces>
+    <Starting_Forces> Systemlord_Alliance, Universe_L_Juna, Systemlord_Alliance_Deathglider_Company </Starting_Forces>
+    <Starting_Forces> Systemlord_Alliance, Universe_L_Juna, Systemlord_Alliance_Deathglider_Company </Starting_Forces>
+    <Starting_Forces> Systemlord_Alliance, Universe_L_Juna, Systemlord_Alliance_Deathglider_Company </Starting_Forces>
+
+
+    <Starting_Forces> Systemlord_Alliance, Universe_L_Yus_Homeworld, SysLords_Star_Base_5 </Starting_Forces>
+    <Starting_Forces> Systemlord_Alliance, Universe_L_Yus_Homeworld, Systemlord_Alliance_Hero_Yu_Company </Starting_Forces>
+    <Starting_Forces> Systemlord_Alliance, Universe_L_Yus_Homeworld, Systemlord_Alliance_System_Flagship </Starting_Forces>
+    <Starting_Forces> Systemlord_Alliance, Universe_L_Yus_Homeworld, Systemlord_Alliance_System_Flagship </Starting_Forces>
+    <Starting_Forces> Systemlord_Alliance, Universe_L_Yus_Homeworld, Systemlord_Alliance_System_Flagship </Starting_Forces>
+    <Starting_Forces> Systemlord_Alliance, Universe_L_Yus_Homeworld, Systemlord_Alliance_New_Hatak </Starting_Forces>
+    <Starting_Forces> Systemlord_Alliance, Universe_L_Yus_Homeworld, Systemlord_Alliance_New_Hatak </Starting_Forces>
+    <Starting_Forces> Systemlord_Alliance, Universe_L_Yus_Homeworld, Systemlord_Alliance_New_Hatak </Starting_Forces>
+    <Starting_Forces> Systemlord_Alliance, Universe_L_Yus_Homeworld, Systemlord_Alliance_New_Hatak </Starting_Forces>
+    <Starting_Forces> Systemlord_Alliance, Universe_L_Yus_Homeworld, Systemlord_Alliance_New_Hatak </Starting_Forces>
+    <Starting_Forces> Systemlord_Alliance, Universe_L_Yus_Homeworld, Systemlord_Alliance_Old_Hatak </Starting_Forces>
+    <Starting_Forces> Systemlord_Alliance, Universe_L_Yus_Homeworld, Systemlord_Alliance_Old_Hatak </Starting_Forces>
+    <Starting_Forces> Systemlord_Alliance, Universe_L_Yus_Homeworld, Systemlord_Alliance_Old_Hatak </Starting_Forces>
+    <Starting_Forces> Systemlord_Alliance, Universe_L_Yus_Homeworld, Systemlord_Alliance_Old_Hatak </Starting_Forces>
+    <Starting_Forces> Systemlord_Alliance, Universe_L_Yus_Homeworld, Systemlord_Alliance_Old_Hatak </Starting_Forces>
+    <Starting_Forces> Systemlord_Alliance, Universe_L_Yus_Homeworld, Systemlord_Alliance_Old_Hatak </Starting_Forces>
+    <Starting_Forces> Systemlord_Alliance, Universe_L_Yus_Homeworld, Systemlord_Alliance_Alkesh_Squadron </Starting_Forces>
+    <Starting_Forces> Systemlord_Alliance, Universe_L_Yus_Homeworld, Systemlord_Alliance_Alkesh_Squadron </Starting_Forces>
+    <Starting_Forces> Systemlord_Alliance, Universe_L_Yus_Homeworld, Systemlord_Alliance_Alkesh_Squadron </Starting_Forces>
+    <Starting_Forces> Systemlord_Alliance, Universe_L_Yus_Homeworld, Systemlord_Alliance_Alkesh_Squadron </Starting_Forces>
+    <Starting_Forces> Systemlord_Alliance, Universe_L_Yus_Homeworld, Systemlord_Alliance_Alkesh_Squadron </Starting_Forces>
+    <Starting_Forces> Systemlord_Alliance, Universe_L_Yus_Homeworld, Systemlord_Alliance_Alkesh_Squadron </Starting_Forces>
+    <Starting_Forces> Systemlord_Alliance, Universe_L_Yus_Homeworld, Systemlord_Alliance_Alkesh_Squadron </Starting_Forces>
+    <Starting_Forces> Systemlord_Alliance, Universe_L_Yus_Homeworld, Systemlord_Alliance_Alkesh_Squadron </Starting_Forces>
+
+    <Starting_Forces> Systemlord_Alliance, Universe_L_Yus_Homeworld, SysLords_Ground_Palace_HW </Starting_Forces>
+    <Starting_Forces> Systemlord_Alliance, Universe_L_Yus_Homeworld, SysLords_Ground_Barracks </Starting_Forces>
+    <Starting_Forces> Systemlord_Alliance, Universe_L_Yus_Homeworld, SysLords_Ground_GTSW </Starting_Forces>
+    <Starting_Forces> Systemlord_Alliance, Universe_L_Yus_Homeworld, SysLords_Ground_Guard_Tower_Galactic_Defence </Starting_Forces>
+    <Starting_Forces> Systemlord_Alliance, Universe_L_Yus_Homeworld, Systemlord_Alliance_Jaffa_Company </Starting_Forces>
+    <Starting_Forces> Systemlord_Alliance, Universe_L_Yus_Homeworld, Systemlord_Alliance_Serpent_Guard_Company </Starting_Forces>
+    <Starting_Forces> Systemlord_Alliance, Universe_L_Yus_Homeworld, Systemlord_Alliance_Horus_Guard_Company </Starting_Forces>
+    <Starting_Forces> Systemlord_Alliance, Universe_L_Yus_Homeworld, Systemlord_Alliance_Horus_Guard_Company </Starting_Forces>
+    <Starting_Forces> Systemlord_Alliance, Universe_L_Yus_Homeworld, Systemlord_Alliance_Jackal_Guard_Company </Starting_Forces>
+    <Starting_Forces> Systemlord_Alliance, Universe_L_Yus_Homeworld, Systemlord_Alliance_Jackal_Guard_Company </Starting_Forces>
+    <Starting_Forces> Systemlord_Alliance, Universe_L_Yus_Homeworld, Systemlord_Alliance_Deathglider_Company </Starting_Forces>
+    <Starting_Forces> Systemlord_Alliance, Universe_L_Yus_Homeworld, Systemlord_Alliance_Deathglider_Company </Starting_Forces>
+
+
+    <Starting_Forces> Systemlord_Alliance, Universe_L_Entac, Systemlord_Alliance_New_Hatak </Starting_Forces>
+    <Starting_Forces> Systemlord_Alliance, Universe_L_Entac, Systemlord_Alliance_New_Hatak </Starting_Forces>
+    <Starting_Forces> Systemlord_Alliance, Universe_L_Entac, Systemlord_Alliance_New_Hatak </Starting_Forces>
+    <Starting_Forces> Systemlord_Alliance, Universe_L_Entac, Systemlord_Alliance_Old_Hatak </Starting_Forces>
+    <Starting_Forces> Systemlord_Alliance, Universe_L_Entac, Systemlord_Alliance_Old_Hatak </Starting_Forces>
+    <Starting_Forces> Systemlord_Alliance, Universe_L_Entac, Systemlord_Alliance_Death_Glider_Squadron </Starting_Forces>
+    <Starting_Forces> Systemlord_Alliance, Universe_L_Entac, Systemlord_Alliance_Death_Glider_Squadron </Starting_Forces>
+    <Starting_Forces> Systemlord_Alliance, Universe_L_Entac, Systemlord_Alliance_Death_Glider_Squadron </Starting_Forces>
+
+    <Starting_Forces> Systemlord_Alliance, Universe_L_Entac, Systemlord_Alliance_Jaffa_Company </Starting_Forces>
+    <Starting_Forces> Systemlord_Alliance, Universe_L_Entac, Systemlord_Alliance_Jaffa_Company </Starting_Forces>
+    <Starting_Forces> Systemlord_Alliance, Universe_L_Entac, Systemlord_Alliance_Jaffa_Company </Starting_Forces>
+    <Starting_Forces> Systemlord_Alliance, Universe_L_Entac, Systemlord_Alliance_Jaffa_Company </Starting_Forces>
+    <Starting_Forces> Systemlord_Alliance, Universe_L_Entac, Systemlord_Alliance_Horus_Guard_Company </Starting_Forces>
+    <Starting_Forces> Systemlord_Alliance, Universe_L_Entac, Systemlord_Alliance_Deathglider_Company </Starting_Forces>
+
+
+    <Starting_Forces> Systemlord_Alliance, Universe_L_P3R_636, Systemlord_Alliance_Hero_Bastet </Starting_Forces>
+    <Starting_Forces> Systemlord_Alliance, Universe_L_P3R_636, SysLords_Star_Base_1 </Starting_Forces>
+    <Starting_Forces> Systemlord_Alliance, Universe_L_P3R_636, Systemlord_Alliance_New_Hatak </Starting_Forces>
+    <Starting_Forces> Systemlord_Alliance, Universe_L_P3R_636, Systemlord_Alliance_New_Hatak </Starting_Forces>
+    <Starting_Forces> Systemlord_Alliance, Universe_L_P3R_636, Systemlord_Alliance_New_Hatak </Starting_Forces>
+    <Starting_Forces> Systemlord_Alliance, Universe_L_P3R_636, Systemlord_Alliance_New_Hatak </Starting_Forces>
+    <Starting_Forces> Systemlord_Alliance, Universe_L_P3R_636, Systemlord_Alliance_New_Hatak </Starting_Forces>
+    <Starting_Forces> Systemlord_Alliance, Universe_L_P3R_636, Systemlord_Alliance_New_Hatak </Starting_Forces>
+    <Starting_Forces> Systemlord_Alliance, Universe_L_P3R_636, Systemlord_Alliance_Old_Hatak </Starting_Forces>
+    <Starting_Forces> Systemlord_Alliance, Universe_L_P3R_636, Systemlord_Alliance_Old_Hatak </Starting_Forces>
+    <Starting_Forces> Systemlord_Alliance, Universe_L_P3R_636, Systemlord_Alliance_Old_Hatak </Starting_Forces>
+    <Starting_Forces> Systemlord_Alliance, Universe_L_P3R_636, Systemlord_Alliance_Old_Hatak </Starting_Forces>
+    <Starting_Forces> Systemlord_Alliance, Universe_L_P3R_636, Systemlord_Alliance_Old_Hatak </Starting_Forces>
+    <Starting_Forces> Systemlord_Alliance, Universe_L_P3R_636, Systemlord_Alliance_Old_Hatak </Starting_Forces>
+
+    <Starting_Forces> Systemlord_Alliance, Universe_L_P3R_636, SysLords_Ground_Palace </Starting_Forces>
+    <Starting_Forces> Systemlord_Alliance, Universe_L_P3R_636, Systemlord_Alliance_Bastet_Guard_Company </Starting_Forces>
+    <Starting_Forces> Systemlord_Alliance, Universe_L_P3R_636, Systemlord_Alliance_Bastet_Guard_Company </Starting_Forces>
+    <Starting_Forces> Systemlord_Alliance, Universe_L_P3R_636, Systemlord_Alliance_Bastet_Guard_Company </Starting_Forces>
+    <Starting_Forces> Systemlord_Alliance, Universe_L_P3R_636, Systemlord_Alliance_Bastet_Guard_Company </Starting_Forces>
+
+
+    <Starting_Forces> Systemlord_Alliance, Universe_L_Dakara, SysLords_Star_Base_4 </Starting_Forces>
+    <Starting_Forces> Systemlord_Alliance, Universe_L_Dakara, Systemlord_Alliance_System_Flagship </Starting_Forces>
+    <Starting_Forces> Systemlord_Alliance, Universe_L_Dakara, Systemlord_Alliance_New_Hatak </Starting_Forces>
+    <Starting_Forces> Systemlord_Alliance, Universe_L_Dakara, Systemlord_Alliance_New_Hatak </Starting_Forces>
+    <Starting_Forces> Systemlord_Alliance, Universe_L_Dakara, Systemlord_Alliance_New_Hatak </Starting_Forces>
+    <Starting_Forces> Systemlord_Alliance, Universe_L_Dakara, Systemlord_Alliance_New_Hatak </Starting_Forces>
+    <Starting_Forces> Systemlord_Alliance, Universe_L_Dakara, Systemlord_Alliance_New_Hatak </Starting_Forces>
+    <Starting_Forces> Systemlord_Alliance, Universe_L_Dakara, Systemlord_Alliance_New_Hatak </Starting_Forces>
+    <Starting_Forces> Systemlord_Alliance, Universe_L_Dakara, Systemlord_Alliance_New_Hatak </Starting_Forces>
+    <Starting_Forces> Systemlord_Alliance, Universe_L_Dakara, Systemlord_Alliance_Old_Hatak </Starting_Forces>
+    <Starting_Forces> Systemlord_Alliance, Universe_L_Dakara, Systemlord_Alliance_Pyramid_Ship </Starting_Forces>
+    <Starting_Forces> Systemlord_Alliance, Universe_L_Dakara, Systemlord_Alliance_Pyramid_Ship </Starting_Forces>
+    <Starting_Forces> Systemlord_Alliance, Universe_L_Dakara, Systemlord_Alliance_Pyramid_Ship </Starting_Forces>
+    <Starting_Forces> Systemlord_Alliance, Universe_L_Dakara, Systemlord_Alliance_Death_Glider_Squadron </Starting_Forces>
+    <Starting_Forces> Systemlord_Alliance, Universe_L_Dakara, Systemlord_Alliance_Death_Glider_Squadron </Starting_Forces>
+    <Starting_Forces> Systemlord_Alliance, Universe_L_Dakara, Systemlord_Alliance_Death_Glider_Squadron </Starting_Forces>
+    <Starting_Forces> Systemlord_Alliance, Universe_L_Dakara, Systemlord_Alliance_Death_Glider_Squadron </Starting_Forces>
+    <Starting_Forces> Systemlord_Alliance, Universe_L_Dakara, Systemlord_Alliance_Alkesh_Squadron </Starting_Forces>
+    <Starting_Forces> Systemlord_Alliance, Universe_L_Dakara, Systemlord_Alliance_Alkesh_Squadron </Starting_Forces>
+    <Starting_Forces> Systemlord_Alliance, Universe_L_Dakara, Systemlord_Alliance_Alkesh_Squadron </Starting_Forces>
+    <Starting_Forces> Systemlord_Alliance, Universe_L_Dakara, Systemlord_Alliance_Alkesh_Squadron </Starting_Forces>
+    <Starting_Forces> Systemlord_Alliance, Universe_L_Dakara, Systemlord_Alliance_Alkesh_Squadron </Starting_Forces>
+    <Starting_Forces> Systemlord_Alliance, Universe_L_Dakara, Systemlord_Alliance_Alkesh_Squadron </Starting_Forces>
+
+    <Starting_Forces> Systemlord_Alliance, Universe_L_Dakara, Systemlord_Alliance_Hero_Baal </Starting_Forces>
+    <Starting_Forces> Systemlord_Alliance, Universe_L_Dakara, SysLords_Ground_Palace </Starting_Forces>
+    <Starting_Forces> Systemlord_Alliance, Universe_L_Dakara, SysLords_Ground_Barracks </Starting_Forces>
+    <Starting_Forces> Systemlord_Alliance, Universe_L_Dakara, SysLords_Ground_Shrine </Starting_Forces>
+    <Starting_Forces> Systemlord_Alliance, Universe_L_Dakara, SysLords_Ground_Base_Shield </Starting_Forces>
+    <Starting_Forces> Systemlord_Alliance, Universe_L_Dakara, SysLords_Ground_GTSW </Starting_Forces>
+    <Starting_Forces> Systemlord_Alliance, Universe_L_Dakara, Systemlord_Alliance_Jaffa_Company </Starting_Forces>
+    <Starting_Forces> Systemlord_Alliance, Universe_L_Dakara, Systemlord_Alliance_Jaffa_Company </Starting_Forces>
+    <Starting_Forces> Systemlord_Alliance, Universe_L_Dakara, Systemlord_Alliance_Serpent_Guard_Company </Starting_Forces>
+    <Starting_Forces> Systemlord_Alliance, Universe_L_Dakara, Systemlord_Alliance_Necropolis_Guard_Company </Starting_Forces>
+    <Starting_Forces> Systemlord_Alliance, Universe_L_Dakara, Systemlord_Alliance_Horus_Guard_Company </Starting_Forces>
+    <Starting_Forces> Systemlord_Alliance, Universe_L_Dakara, Systemlord_Alliance_Jackal_Guard_Company </Starting_Forces>
+    <Starting_Forces> Systemlord_Alliance, Universe_L_Dakara, Systemlord_Alliance_Jackal_Guard_Company </Starting_Forces>
+    <Starting_Forces> Systemlord_Alliance, Universe_L_Dakara, Systemlord_Alliance_Deathglider_Company </Starting_Forces>
+    <Starting_Forces> Systemlord_Alliance, Universe_L_Dakara, Systemlord_Alliance_Deathglider_Company </Starting_Forces>
+
+
+    <Starting_Forces> Systemlord_Alliance, Universe_L_Haktyl, SysLords_Ground_Palace </Starting_Forces>
+    <Starting_Forces> Systemlord_Alliance, Universe_L_Haktyl, Systemlord_Alliance_Jaffa_Company </Starting_Forces>
+    <Starting_Forces> Systemlord_Alliance, Universe_L_Haktyl, Systemlord_Alliance_Jaffa_Company </Starting_Forces>
+    <Starting_Forces> Systemlord_Alliance, Universe_L_Haktyl, Systemlord_Alliance_Horus_Guard_Company </Starting_Forces>
+
+
+    <Starting_Forces> Systemlord_Alliance, Universe_L_Kreshta, SysLords_Star_Base_1 </Starting_Forces>
+    <Starting_Forces> Systemlord_Alliance, Universe_L_Kreshta, Systemlord_Alliance_Old_Hatak </Starting_Forces>
+    <Starting_Forces> Systemlord_Alliance, Universe_L_Kreshta, Systemlord_Alliance_Old_Hatak </Starting_Forces>
+    <Starting_Forces> Systemlord_Alliance, Universe_L_Kreshta, Systemlord_Alliance_Old_Hatak </Starting_Forces>
+    <Starting_Forces> Systemlord_Alliance, Universe_L_Kreshta, Systemlord_Alliance_Pyramid_Ship </Starting_Forces>
+    <Starting_Forces> Systemlord_Alliance, Universe_L_Kreshta, Systemlord_Alliance_Death_Glider_Squadron </Starting_Forces>
+
+    <Starting_Forces> Systemlord_Alliance, Universe_L_Kreshta, SysLords_Ground_Palace </Starting_Forces>
+    <Starting_Forces> Systemlord_Alliance, Universe_L_Kreshta, SysLords_Ground_Barracks </Starting_Forces>
+    <Starting_Forces> Systemlord_Alliance, Universe_L_Kreshta, Systemlord_Alliance_Jaffa_Company </Starting_Forces>
+    <Starting_Forces> Systemlord_Alliance, Universe_L_Kreshta, Systemlord_Alliance_Jaffa_Company </Starting_Forces>
+    <Starting_Forces> Systemlord_Alliance, Universe_L_Kreshta, Systemlord_Alliance_Jaffa_Company </Starting_Forces>
+    <Starting_Forces> Systemlord_Alliance, Universe_L_Kreshta, Systemlord_Alliance_Jaffa_Company </Starting_Forces>
+    <Starting_Forces> Systemlord_Alliance, Universe_L_Kreshta, Systemlord_Alliance_Horus_Guard_Company </Starting_Forces>
+
+
+    <Starting_Forces> Systemlord_Alliance, Universe_L_Kallana, SysLords_Star_Base_1 </Starting_Forces>
+    <Starting_Forces> Systemlord_Alliance, Universe_L_Kallana, Systemlord_Alliance_New_Hatak </Starting_Forces>
+    <Starting_Forces> Systemlord_Alliance, Universe_L_Kallana, Systemlord_Alliance_Old_Hatak </Starting_Forces>
+    <Starting_Forces> Systemlord_Alliance, Universe_L_Kallana, Systemlord_Alliance_Death_Glider_Squadron </Starting_Forces>
+    <Starting_Forces> Systemlord_Alliance, Universe_L_Kallana, Systemlord_Alliance_Death_Glider_Squadron </Starting_Forces>
+    <Starting_Forces> Systemlord_Alliance, Universe_L_Kallana, Systemlord_Alliance_Alkesh_Squadron </Starting_Forces>
+    <Starting_Forces> Systemlord_Alliance, Universe_L_Kallana, Systemlord_Alliance_Alkesh_Squadron </Starting_Forces>
+
+    <Starting_Forces> Systemlord_Alliance, Universe_L_Kallana, SysLords_Ground_Palace </Starting_Forces>
+    <Starting_Forces> Systemlord_Alliance, Universe_L_Kallana, Systemlord_Alliance_Jaffa_Company </Starting_Forces>
+    <Starting_Forces> Systemlord_Alliance, Universe_L_Kallana, Systemlord_Alliance_Jaffa_Company </Starting_Forces>
+    <Starting_Forces> Systemlord_Alliance, Universe_L_Kallana, Systemlord_Alliance_Necropolis_Guard_Company </Starting_Forces>
+
+
+    <Starting_Forces> Systemlord_Alliance, Universe_L_Tobin, Systemlord_Alliance_New_Hatak </Starting_Forces>
+    <Starting_Forces> Systemlord_Alliance, Universe_L_Tobin, Systemlord_Alliance_New_Hatak </Starting_Forces>
+    <Starting_Forces> Systemlord_Alliance, Universe_L_Tobin, Systemlord_Alliance_Old_Hatak </Starting_Forces>
+
+
+
+    <!--#Tokra--><!--Only as enemies, not for TAU-->
+    <!--
+    <Starting_Forces> Traveler, Universe_L_Vorash, Tokra_Teltak_Squadron </Starting_Forces>
+    <Starting_Forces> Traveler, Universe_L_Vorash, Tokra_Teltak_Squadron </Starting_Forces>
+    <Starting_Forces> Traveler, Universe_L_Vorash, Tokra_Teltak_Squadron </Starting_Forces>
+    <Starting_Forces> Traveler, Universe_L_Vorash, Tokra_Teltak_Squadron </Starting_Forces>
+    <Starting_Forces> Traveler, Universe_L_Vorash, Tokra_Old_Hatak </Starting_Forces>
+    <Starting_Forces> Traveler, Universe_L_Vorash, Tokra_Old_Hatak </Starting_Forces>
+
+    <Starting_Forces> Traveler, Universe_L_Vorash, Tokra_Transportation_Rings </Starting_Forces>
+    <Starting_Forces> Traveler, Universe_L_Vorash, Tokra_Transportation_Rings </Starting_Forces>
+    <Starting_Forces> Traveler, Universe_L_Vorash, Tokra_Transportation_Rings </Starting_Forces>
+    <Starting_Forces> Traveler, Universe_L_Vorash, Tokra_Soldier_Company </Starting_Forces>
+    <Starting_Forces> Traveler, Universe_L_Vorash, Tokra_Soldier_Company </Starting_Forces>
+    <Starting_Forces> Traveler, Universe_L_Vorash, Tokra_Soldier_Company </Starting_Forces>
+    <Starting_Forces> Traveler, Universe_L_Vorash, Tokra_Scientist_Company </Starting_Forces>
+    <Starting_Forces> Traveler, Universe_L_Vorash, Tokra_Scientist_Company </Starting_Forces>
+    <Starting_Forces> Traveler, Universe_L_Vorash, Tokra_Teltak_Land_Company </Starting_Forces>
+
+
+    <Starting_Forces> Traveler, Universe_L_P34_353J, Tokra_Needle_Threader_Squadron </Starting_Forces>
+    <Starting_Forces> Traveler, Universe_L_P34_353J, Tokra_Death_Glider_Squadron </Starting_Forces>
+    <Starting_Forces> Traveler, Universe_L_P34_353J, Tokra_Death_Glider_Squadron </Starting_Forces>
+    <Starting_Forces> Traveler, Universe_L_P34_353J, Tokra_Alkesh_Squadron </Starting_Forces>
+    <Starting_Forces> Traveler, Universe_L_P34_353J, Tokra_New_Hatak </Starting_Forces>
+
+    <Starting_Forces> Traveler, Universe_L_P34_353J, Tokra_Transportation_Rings </Starting_Forces>
+    <Starting_Forces> Traveler, Universe_L_P34_353J, Tokra_Transportation_Rings </Starting_Forces>
+    <Starting_Forces> Traveler, Universe_L_P34_353J, Tokra_Soldier_Company </Starting_Forces>
+    <Starting_Forces> Traveler, Universe_L_P34_353J, Tokra_Soldier_Company </Starting_Forces>
+    <Starting_Forces> Traveler, Universe_L_P34_353J, Tokra_Soldier_Company </Starting_Forces>
+    <Starting_Forces> Traveler, Universe_L_P34_353J, Tokra_Scientist_Company </Starting_Forces>
+    <Starting_Forces> Traveler, Universe_L_P34_353J, Tokra_Scientist_Company </Starting_Forces>
+
+
+    <Starting_Forces> Traveler, Universe_L_Revanna, Tokra_Death_Glider_Squadron </Starting_Forces>
+    <Starting_Forces> Traveler, Universe_L_Revanna, Tokra_Teltak_Squadron </Starting_Forces>
+    <Starting_Forces> Traveler, Universe_L_Revanna, Tokra_Teltak_Squadron </Starting_Forces>
+    <Starting_Forces> Traveler, Universe_L_Revanna, Tokra_Teltak_Squadron </Starting_Forces>
+    <Starting_Forces> Traveler, Universe_L_Revanna, Tokra_Teltak_Squadron </Starting_Forces>
+    <Starting_Forces> Traveler, Universe_L_Revanna, Tokra_Old_Hatak </Starting_Forces>
+    <Starting_Forces> Traveler, Universe_L_Revanna, Tokra_Old_Hatak </Starting_Forces>
+
+    <Starting_Forces> Traveler, Universe_L_Revanna, Tokra_Transportation_Rings </Starting_Forces>
+    <Starting_Forces> Traveler, Universe_L_Revanna, Tokra_Transportation_Rings </Starting_Forces>
+    <Starting_Forces> Traveler, Universe_L_Revanna, Tokra_Soldier_Company </Starting_Forces>
+    <Starting_Forces> Traveler, Universe_L_Revanna, Tokra_Soldier_Company </Starting_Forces>
+    <Starting_Forces> Traveler, Universe_L_Revanna, Tokra_Scientist_Company </Starting_Forces>
+    <Starting_Forces> Traveler, Universe_L_Revanna, Tokra_Teltak_Land_Company </Starting_Forces>
+    -->
+
+
+
+    <!--#Traveller--><!--Todo: Only as enemies, not for TAU-->
+    <!--
+    <Starting_Forces> Traveler, Universe_L_M4X_337, Traveler_Hero_Larin </Starting_Forces>
+    <Starting_Forces> Traveler, Universe_L_M4X_337, Traveler_Frigate </Starting_Forces>
+    <Starting_Forces> Traveler, Universe_L_M4X_337, Traveler_Frigate </Starting_Forces>
+    <Starting_Forces> Traveler, Universe_L_M4X_337, Traveler_Frigate </Starting_Forces>
+    <Starting_Forces> Traveler, Universe_L_M4X_337, Traveler_Frigate </Starting_Forces>
+    <Starting_Forces> Traveler, Universe_L_M4X_337, Traveler_Frigate </Starting_Forces>
+
+
+    <Starting_Forces> Traveler, Universe_L_Jenev, Traveler_Frigate </Starting_Forces>
+    <Starting_Forces> Traveler, Universe_L_Jenev, Traveler_Frigate </Starting_Forces>
+    <Starting_Forces> Traveler, Universe_L_Jenev, Traveler_Frigate </Starting_Forces>
+    -->
+
+
+
+    <!--#Vanir Forces-->
+
+    <Starting_Forces> Hostile, Universe_L_M6H_987, Vanir_Frigate </Starting_Forces>
+    <Starting_Forces> Hostile, Universe_L_M6H_987, Vanir_Frigate </Starting_Forces>
+    <Starting_Forces> Hostile, Universe_L_M6H_987, Vanir_Frigate </Starting_Forces>
+    <Starting_Forces> Hostile, Universe_L_M6H_987, Vanir_Frigate </Starting_Forces>
+    <Starting_Forces> Hostile, Universe_L_M6H_987, Vanir_Frigate </Starting_Forces>
+    <Starting_Forces> Hostile, Universe_L_M6H_987, Vanir_Frigate </Starting_Forces>
+    <Starting_Forces> Hostile, Universe_L_M6H_987, Vanir_Frigate </Starting_Forces>
+    <Starting_Forces> Hostile, Universe_L_M6H_987, Vanir_Frigate </Starting_Forces>
+
+
+    <Starting_Forces> Hostile, Universe_L_M4X_337, Vanir_Frigate </Starting_Forces>
+    <Starting_Forces> Hostile, Universe_L_M4X_337, Vanir_Frigate </Starting_Forces>
+    <Starting_Forces> Hostile, Universe_L_M4X_337, Vanir_Frigate </Starting_Forces>
+    <Starting_Forces> Hostile, Universe_L_M4X_337, Vanir_Frigate </Starting_Forces>
+    <Starting_Forces> Hostile, Universe_L_M4X_337, Vanir_Frigate </Starting_Forces>
+    <Starting_Forces> Hostile, Universe_L_M4X_337, Vanir_Frigate </Starting_Forces>
+
+
+    <Starting_Forces> Hostile, Universe_L_Vanir, Vanir_Beliskner </Starting_Forces>
+    <Starting_Forces> Hostile, Universe_L_Vanir, Vanir_Beliskner </Starting_Forces>
+    <Starting_Forces> Hostile, Universe_L_Vanir, Vanir_Beliskner </Starting_Forces>
+    <Starting_Forces> Hostile, Universe_L_Vanir, Vanir_Beliskner </Starting_Forces>
+    <Starting_Forces> Hostile, Universe_L_Vanir, Vanir_Beliskner </Starting_Forces>
+    <Starting_Forces> Hostile, Universe_L_Vanir, Vanir_Frigate </Starting_Forces>
+    <Starting_Forces> Hostile, Universe_L_Vanir, Vanir_Frigate </Starting_Forces>
+    <Starting_Forces> Hostile, Universe_L_Vanir, Vanir_Frigate </Starting_Forces>
+
+
+
+    <!--#Wraith Rebel Forces-->
+
+    <Starting_Forces> Wraith_Rebel, Universe_L_M4F_788, Wraith_Rebel_Starbase </Starting_Forces>
+    <Starting_Forces> Wraith_Rebel, Universe_L_M4F_788, Wraith_Rebel_Hero_Queen </Starting_Forces>
+    <Starting_Forces> Wraith_Rebel, Universe_L_M4F_788, Wraith_Rebel_Corvette </Starting_Forces>
+    <Starting_Forces> Wraith_Rebel, Universe_L_M4F_788, Wraith_Rebel_Corvette </Starting_Forces>
+    <Starting_Forces> Wraith_Rebel, Universe_L_M4F_788, Wraith_Rebel_Corvette </Starting_Forces>
+    <Starting_Forces> Wraith_Rebel, Universe_L_M4F_788, Wraith_Rebel_Cruiser </Starting_Forces>
+    <Starting_Forces> Wraith_Rebel, Universe_L_M4F_788, Wraith_Rebel_Cruiser </Starting_Forces>
+    <Starting_Forces> Wraith_Rebel, Universe_L_M4F_788, Wraith_Rebel_Cruiser </Starting_Forces>
+    <Starting_Forces> Wraith_Rebel, Universe_L_M4F_788, Wraith_Rebel_Cruiser </Starting_Forces>
+    <Starting_Forces> Wraith_Rebel, Universe_L_M4F_788, Wraith_Rebel_Destroyer </Starting_Forces>
+    <Starting_Forces> Wraith_Rebel, Universe_L_M4F_788, Wraith_Rebel_Destroyer </Starting_Forces>
+    <Starting_Forces> Wraith_Rebel, Universe_L_M4F_788, Wraith_Rebel_Battlecruiser </Starting_Forces>
+    <Starting_Forces> Wraith_Rebel, Universe_L_M4F_788, Wraith_Rebel_Battlecruiser </Starting_Forces>
+    <Starting_Forces> Wraith_Rebel, Universe_L_M4F_788, Wraith_Rebel_Hive </Starting_Forces>
+
+    <Starting_Forces> Wraith_Rebel, Universe_L_M4F_788, Wraith_Rebels_Command_Center </Starting_Forces>
+    <Starting_Forces> Wraith_Rebel, Universe_L_M4F_788, Wraith_Rebels_Ground_Sensor_Array </Starting_Forces>
+    <Starting_Forces> Wraith_Rebel, Universe_L_M4F_788, Wraith_Rebels_Ground_GTSW </Starting_Forces>
+    <Starting_Forces> Wraith_Rebel, Universe_L_M4F_788, Wraith_Rebel_Warrior_Company </Starting_Forces>
+    <Starting_Forces> Wraith_Rebel, Universe_L_M4F_788, Wraith_Rebel_Warrior_Company </Starting_Forces>
+    <Starting_Forces> Wraith_Rebel, Universe_L_M4F_788, Wraith_Rebel_Warrior_Company </Starting_Forces>
+    <Starting_Forces> Wraith_Rebel, Universe_L_M4F_788, Wraith_Rebel_Elite_Soldier_Company </Starting_Forces>
+    <Starting_Forces> Wraith_Rebel, Universe_L_M4F_788, Wraith_Rebel_Elite_Soldier_Company </Starting_Forces>
+    <Starting_Forces> Wraith_Rebel, Universe_L_M4F_788, Wraith_Rebel_Elite_Soldier_Company </Starting_Forces>
+    <Starting_Forces> Wraith_Rebel, Universe_L_M4F_788, Wraith_Rebel_Elite_Soldier_Company </Starting_Forces>
+    <Starting_Forces> Wraith_Rebel, Universe_L_M4F_788, Wraith_Rebel_Shuttle_Company </Starting_Forces>
+
+
+    <Starting_Forces> Wraith_Rebel, Universe_L_Dagan, Wraith_Rebel_Starbase </Starting_Forces>
+    <Starting_Forces> Wraith_Rebel, Universe_L_Dagan, Wraith_Rebel_Corvette </Starting_Forces>
+    <Starting_Forces> Wraith_Rebel, Universe_L_Dagan, Wraith_Rebel_Corvette </Starting_Forces>
+    <Starting_Forces> Wraith_Rebel, Universe_L_Dagan, Wraith_Rebel_Corvette </Starting_Forces>
+    <Starting_Forces> Wraith_Rebel, Universe_L_Dagan, Wraith_Rebel_Corvette </Starting_Forces>
+    <Starting_Forces> Wraith_Rebel, Universe_L_Dagan, Wraith_Rebel_Artillery_Ship </Starting_Forces>
+    <Starting_Forces> Wraith_Rebel, Universe_L_Dagan, Wraith_Rebel_Cruiser </Starting_Forces>
+    <Starting_Forces> Wraith_Rebel, Universe_L_Dagan, Wraith_Rebel_Cruiser </Starting_Forces>
+    <Starting_Forces> Wraith_Rebel, Universe_L_Dagan, Wraith_Rebel_Cruiser </Starting_Forces>
+    <Starting_Forces> Wraith_Rebel, Universe_L_Dagan, Wraith_Rebel_Cruiser </Starting_Forces>
+    <Starting_Forces> Wraith_Rebel, Universe_L_Dagan, Wraith_Rebel_Destroyer </Starting_Forces>
+    <Starting_Forces> Wraith_Rebel, Universe_L_Dagan, Wraith_Rebel_Destroyer </Starting_Forces>
+    <Starting_Forces> Wraith_Rebel, Universe_L_Dagan, Wraith_Rebel_Destroyer </Starting_Forces>
+    <Starting_Forces> Wraith_Rebel, Universe_L_Dagan, Wraith_Rebel_Hive </Starting_Forces>
+
+    <Starting_Forces> Wraith_Rebel, Universe_L_Dagan, Wraith_Rebels_Command_Center </Starting_Forces>
+    <Starting_Forces> Wraith_Rebel, Universe_L_Dagan, Wraith_Rebels_Ground_Barracks </Starting_Forces>
+    <Starting_Forces> Wraith_Rebel, Universe_L_Dagan, Wraith_Rebels_Ground_Sensor_Array </Starting_Forces>
+    <Starting_Forces> Wraith_Rebel, Universe_L_Dagan, Wraith_Rebels_Ground_GTSW </Starting_Forces>
+    <Starting_Forces> Wraith_Rebel, Universe_L_Dagan, Wraith_Rebel_Warrior_Company </Starting_Forces>
+    <Starting_Forces> Wraith_Rebel, Universe_L_Dagan, Wraith_Rebel_Warrior_Company </Starting_Forces>
+    <Starting_Forces> Wraith_Rebel, Universe_L_Dagan, Wraith_Rebel_Warrior_Company </Starting_Forces>
+    <Starting_Forces> Wraith_Rebel, Universe_L_Dagan, Wraith_Rebel_Elite_Soldier_Company </Starting_Forces>
+    <Starting_Forces> Wraith_Rebel, Universe_L_Dagan, Wraith_Rebel_Elite_Soldier_Company </Starting_Forces>
+    <Starting_Forces> Wraith_Rebel, Universe_L_Dagan, Wraith_Rebel_Elite_Soldier_Company </Starting_Forces>
+    <Starting_Forces> Wraith_Rebel, Universe_L_Dagan, Wraith_Rebel_Dart_Land_Company </Starting_Forces>
+    <Starting_Forces> Wraith_Rebel, Universe_L_Dagan, Wraith_Rebel_Dart_Land_Company </Starting_Forces>
+    <Starting_Forces> Wraith_Rebel, Universe_L_Dagan, Wraith_Rebel_Dart_Land_Company </Starting_Forces>
+
+
+    <Starting_Forces> Wraith_Rebel, Universe_L_Hoff, Wraith_Rebel_Starbase </Starting_Forces>
+    <Starting_Forces> Wraith_Rebel, Universe_L_Hoff, Wraith_Rebel_Corvette </Starting_Forces>
+    <Starting_Forces> Wraith_Rebel, Universe_L_Hoff, Wraith_Rebel_Corvette </Starting_Forces>
+    <Starting_Forces> Wraith_Rebel, Universe_L_Hoff, Wraith_Rebel_Corvette </Starting_Forces>
+    <Starting_Forces> Wraith_Rebel, Universe_L_Hoff, Wraith_Rebel_Artillery_Ship </Starting_Forces>
+    <Starting_Forces> Wraith_Rebel, Universe_L_Hoff, Wraith_Rebel_Artillery_Ship </Starting_Forces>
+    <Starting_Forces> Wraith_Rebel, Universe_L_Hoff, Wraith_Rebel_Cruiser </Starting_Forces>
+    <Starting_Forces> Wraith_Rebel, Universe_L_Hoff, Wraith_Rebel_Cruiser </Starting_Forces>
+    <Starting_Forces> Wraith_Rebel, Universe_L_Hoff, Wraith_Rebel_Cruiser </Starting_Forces>
+    <Starting_Forces> Wraith_Rebel, Universe_L_Hoff, Wraith_Rebel_Destroyer </Starting_Forces>
+    <Starting_Forces> Wraith_Rebel, Universe_L_Hoff, Wraith_Rebel_Destroyer </Starting_Forces>
+    <Starting_Forces> Wraith_Rebel, Universe_L_Hoff, Wraith_Rebel_Destroyer </Starting_Forces>
+    <Starting_Forces> Wraith_Rebel, Universe_L_Hoff, Wraith_Rebel_Battlecruiser </Starting_Forces>
+    <Starting_Forces> Wraith_Rebel, Universe_L_Hoff, Wraith_Rebel_Battlecruiser </Starting_Forces>
+    <Starting_Forces> Wraith_Rebel, Universe_L_Hoff, Wraith_Rebel_Battlecruiser </Starting_Forces>
+    <Starting_Forces> Wraith_Rebel, Universe_L_Hoff, Wraith_Rebel_Hive </Starting_Forces>
+    <Starting_Forces> Wraith_Rebel, Universe_L_Hoff, Wraith_Rebel_Hive </Starting_Forces>
+    <Starting_Forces> Wraith_Rebel, Universe_L_Hoff, Wraith_Rebel_Hive </Starting_Forces>
+    <Starting_Forces> Wraith_Rebel, Universe_L_Hoff, Wraith_Rebel_Hive </Starting_Forces>
+    <Starting_Forces> Wraith_Rebel, Universe_L_Hoff, Wraith_Rebel_Hive </Starting_Forces>
+
+    <Starting_Forces> Wraith_Rebel, Universe_L_Hoff, Wraith_Rebels_Command_Center </Starting_Forces>
+    <Starting_Forces> Wraith_Rebel, Universe_L_Hoff, Wraith_Rebels_Ground_Barracks </Starting_Forces>
+    <Starting_Forces> Wraith_Rebel, Universe_L_Hoff, Wraith_Rebels_Ground_Hangar </Starting_Forces>
+    <Starting_Forces> Wraith_Rebel, Universe_L_Hoff, Wraith_Rebels_Ground_Research_Facility </Starting_Forces>
+    <Starting_Forces> Wraith_Rebel, Universe_L_Hoff, Wraith_Rebel_Dart_Land_Company </Starting_Forces>
+    <Starting_Forces> Wraith_Rebel, Universe_L_Hoff, Wraith_Rebel_Dart_Land_Company </Starting_Forces>
+
+
+    <Starting_Forces> Wraith_Rebel, Universe_L_Olesia, Wraith_Rebel_Hero_Envoy </Starting_Forces>
+    <Starting_Forces> Wraith_Rebel, Universe_L_Olesia, Wraith_Rebel_Corvette </Starting_Forces>
+    <Starting_Forces> Wraith_Rebel, Universe_L_Olesia, Wraith_Rebel_Corvette </Starting_Forces>
+    <Starting_Forces> Wraith_Rebel, Universe_L_Olesia, Wraith_Rebel_Cruiser </Starting_Forces>
+    <Starting_Forces> Wraith_Rebel, Universe_L_Olesia, Wraith_Rebel_Cruiser </Starting_Forces>
+
+
+    <Starting_Forces> Wraith_Rebel, Universe_L_Sateda, Wraith_Rebel_Starbase </Starting_Forces>
+    <Starting_Forces> Wraith_Rebel, Universe_L_Sateda, Wraith_Rebel_Hero_Warlord </Starting_Forces>
+    <Starting_Forces> Wraith_Rebel, Universe_L_Sateda, Wraith_Rebel_Corvette </Starting_Forces>
+    <Starting_Forces> Wraith_Rebel, Universe_L_Sateda, Wraith_Rebel_Corvette </Starting_Forces>
+    <Starting_Forces> Wraith_Rebel, Universe_L_Sateda, Wraith_Rebel_Corvette </Starting_Forces>
+    <Starting_Forces> Wraith_Rebel, Universe_L_Sateda, Wraith_Rebel_Artillery_Ship </Starting_Forces>
+    <Starting_Forces> Wraith_Rebel, Universe_L_Sateda, Wraith_Rebel_Cruiser </Starting_Forces>
+    <Starting_Forces> Wraith_Rebel, Universe_L_Sateda, Wraith_Rebel_Cruiser </Starting_Forces>
+    <Starting_Forces> Wraith_Rebel, Universe_L_Sateda, Wraith_Rebel_Cruiser </Starting_Forces>
+    <Starting_Forces> Wraith_Rebel, Universe_L_Sateda, Wraith_Rebel_Cruiser </Starting_Forces>
+    <Starting_Forces> Wraith_Rebel, Universe_L_Sateda, Wraith_Rebel_Destroyer </Starting_Forces>
+    <Starting_Forces> Wraith_Rebel, Universe_L_Sateda, Wraith_Rebel_Destroyer </Starting_Forces>
+    <Starting_Forces> Wraith_Rebel, Universe_L_Sateda, Wraith_Rebel_Battlecruiser </Starting_Forces>
+    <Starting_Forces> Wraith_Rebel, Universe_L_Sateda, Wraith_Rebel_Battlecruiser </Starting_Forces>
+    <Starting_Forces> Wraith_Rebel, Universe_L_Sateda, Wraith_Rebel_Battlecruiser </Starting_Forces>
+
+    <Starting_Forces> Wraith_Rebel, Universe_L_Sateda, Wraith_Rebels_Command_Center </Starting_Forces>
+    <Starting_Forces> Wraith_Rebel, Universe_L_Sateda, Wraith_Rebels_Ground_Hangar </Starting_Forces>
+    <Starting_Forces> Wraith_Rebel, Universe_L_Sateda, Wraith_Rebels_Ground_Academy </Starting_Forces>
+    <Starting_Forces> Wraith_Rebel, Universe_L_Sateda, Wraith_Rebels_Ground_Indoctrination_Camp </Starting_Forces>
+    <Starting_Forces> Wraith_Rebel, Universe_L_Sateda, Wraith_Rebels_Ground_GTSW </Starting_Forces>
+    <Starting_Forces> Wraith_Rebel, Universe_L_Sateda, Wraith_Rebel_Warrior_Company </Starting_Forces>
+    <Starting_Forces> Wraith_Rebel, Universe_L_Sateda, Wraith_Rebel_Warrior_Company </Starting_Forces>
+    <Starting_Forces> Wraith_Rebel, Universe_L_Sateda, Wraith_Rebel_Warrior_Company </Starting_Forces>
+    <Starting_Forces> Wraith_Rebel, Universe_L_Sateda, Wraith_Rebel_Elite_Soldier_Company </Starting_Forces>
+    <Starting_Forces> Wraith_Rebel, Universe_L_Sateda, Wraith_Rebel_Elite_Soldier_Company </Starting_Forces>
+    <Starting_Forces> Wraith_Rebel, Universe_L_Sateda, Wraith_Rebel_Commander_Company </Starting_Forces>
+    <Starting_Forces> Wraith_Rebel, Universe_L_Sateda, Wraith_Rebel_Worshipper_Company </Starting_Forces>
+    <Starting_Forces> Wraith_Rebel, Universe_L_Sateda, Wraith_Rebel_Worshipper_Company </Starting_Forces>
+
+
+    <Starting_Forces> Wraith_Rebel, Universe_L_Edowin, Wraith_Rebel_Starbase </Starting_Forces>
+    <Starting_Forces> Wraith_Rebel, Universe_L_Edowin, Wraith_Rebel_Corvette </Starting_Forces>
+    <Starting_Forces> Wraith_Rebel, Universe_L_Edowin, Wraith_Rebel_Corvette </Starting_Forces>
+    <Starting_Forces> Wraith_Rebel, Universe_L_Edowin, Wraith_Rebel_Corvette </Starting_Forces>
+    <Starting_Forces> Wraith_Rebel, Universe_L_Edowin, Wraith_Rebel_Artillery_Ship </Starting_Forces>
+    <Starting_Forces> Wraith_Rebel, Universe_L_Edowin, Wraith_Rebel_Cruiser </Starting_Forces>
+    <Starting_Forces> Wraith_Rebel, Universe_L_Edowin, Wraith_Rebel_Cruiser </Starting_Forces>
+    <Starting_Forces> Wraith_Rebel, Universe_L_Edowin, Wraith_Rebel_Cruiser </Starting_Forces>
+    <Starting_Forces> Wraith_Rebel, Universe_L_Edowin, Wraith_Rebel_Cruiser </Starting_Forces>
+    <Starting_Forces> Wraith_Rebel, Universe_L_Edowin, Wraith_Rebel_Destroyer </Starting_Forces>
+
+    <Starting_Forces> Wraith_Rebel, Universe_L_Edowin, Wraith_Rebels_Command_Center </Starting_Forces>
+    <Starting_Forces> Wraith_Rebel, Universe_L_Edowin, Wraith_Rebels_Ground_Barracks </Starting_Forces>
+    <Starting_Forces> Wraith_Rebel, Universe_L_Edowin, Wraith_Rebels_Ground_Shipyard </Starting_Forces>
+    <Starting_Forces> Wraith_Rebel, Universe_L_Edowin, Wraith_Rebels_Ground_GTSW </Starting_Forces>
+    <Starting_Forces> Wraith_Rebel, Universe_L_Edowin, Wraith_Rebel_Warrior_Company </Starting_Forces>
+    <Starting_Forces> Wraith_Rebel, Universe_L_Edowin, Wraith_Rebel_Warrior_Company </Starting_Forces>
+    <Starting_Forces> Wraith_Rebel, Universe_L_Edowin, Wraith_Rebel_Warrior_Company </Starting_Forces>
+    <Starting_Forces> Wraith_Rebel, Universe_L_Edowin, Wraith_Rebel_Warrior_Company </Starting_Forces>
+    <Starting_Forces> Wraith_Rebel, Universe_L_Edowin, Wraith_Rebel_Elite_Soldier_Company </Starting_Forces>
+    <Starting_Forces> Wraith_Rebel, Universe_L_Edowin, Wraith_Rebel_Elite_Soldier_Company </Starting_Forces>
+    <Starting_Forces> Wraith_Rebel, Universe_L_Edowin, Wraith_Rebel_Commander_Company </Starting_Forces>
+    <Starting_Forces> Wraith_Rebel, Universe_L_Edowin, Wraith_Rebel_Commander_Company </Starting_Forces>
+
+
+    <Starting_Forces> Wraith_Rebel, Universe_L_Orlan, Wraith_Rebel_Warrior_Company </Starting_Forces>
+    <Starting_Forces> Wraith_Rebel, Universe_L_Orlan, Wraith_Rebel_Warrior_Company </Starting_Forces>
+    <Starting_Forces> Wraith_Rebel, Universe_L_Orlan, Wraith_Rebel_Warrior_Company </Starting_Forces>
+    <Starting_Forces> Wraith_Rebel, Universe_L_Orlan, Wraith_Rebel_Warrior_Company </Starting_Forces>
+    <Starting_Forces> Wraith_Rebel, Universe_L_Orlan, Wraith_Rebel_Elite_Soldier_Company </Starting_Forces>
+    <Starting_Forces> Wraith_Rebel, Universe_L_Orlan, Wraith_Rebel_Elite_Soldier_Company </Starting_Forces>
+    <Starting_Forces> Wraith_Rebel, Universe_L_Orlan, Wraith_Rebel_Dart_Land_Company </Starting_Forces>
+    <Starting_Forces> Wraith_Rebel, Universe_L_Orlan, Wraith_Rebel_Dart_Land_Company </Starting_Forces>
+
+
+    <Starting_Forces> Wraith_Rebel, Universe_L_Unknown_Sector_P, Wraith_Rebel_Starbase </Starting_Forces>
+    <Starting_Forces> Wraith_Rebel, Universe_L_Unknown_Sector_P, Wraith_Rebel_Corvette </Starting_Forces>
+    <Starting_Forces> Wraith_Rebel, Universe_L_Unknown_Sector_P, Wraith_Rebel_Corvette </Starting_Forces>
+    <Starting_Forces> Wraith_Rebel, Universe_L_Unknown_Sector_P, Wraith_Rebel_Corvette </Starting_Forces>
+    <Starting_Forces> Wraith_Rebel, Universe_L_Unknown_Sector_P, Wraith_Rebel_Artillery_Ship </Starting_Forces>
+    <Starting_Forces> Wraith_Rebel, Universe_L_Unknown_Sector_P, Wraith_Rebel_Cruiser </Starting_Forces>
+    <Starting_Forces> Wraith_Rebel, Universe_L_Unknown_Sector_P, Wraith_Rebel_Cruiser </Starting_Forces>
+    <Starting_Forces> Wraith_Rebel, Universe_L_Unknown_Sector_P, Wraith_Rebel_Cruiser </Starting_Forces>
+    <Starting_Forces> Wraith_Rebel, Universe_L_Unknown_Sector_P, Wraith_Rebel_Cruiser </Starting_Forces>
+    <Starting_Forces> Wraith_Rebel, Universe_L_Unknown_Sector_P, Wraith_Rebel_Destroyer </Starting_Forces>
+    <Starting_Forces> Wraith_Rebel, Universe_L_Unknown_Sector_P, Wraith_Rebel_Destroyer </Starting_Forces>
+    <Starting_Forces> Wraith_Rebel, Universe_L_Unknown_Sector_P, Wraith_Rebel_Battlecruiser </Starting_Forces>
+    <Starting_Forces> Wraith_Rebel, Universe_L_Unknown_Sector_P, Wraith_Rebel_Battlecruiser </Starting_Forces>
+    <Starting_Forces> Wraith_Rebel, Universe_L_Unknown_Sector_P, Wraith_Rebel_Hive </Starting_Forces>
+    <Starting_Forces> Wraith_Rebel, Universe_L_Unknown_Sector_P, Wraith_Rebel_Hive </Starting_Forces>
+    <Starting_Forces> Wraith_Rebel, Universe_L_Unknown_Sector_P, Wraith_Rebel_Hive </Starting_Forces>
+    <Starting_Forces> Wraith_Rebel, Universe_L_Unknown_Sector_P, Wraith_Rebel_Hive </Starting_Forces>
+    <Starting_Forces> Wraith_Rebel, Universe_L_Unknown_Sector_P, Wraith_Rebel_Hive </Starting_Forces>
+
+
+    <Starting_Forces> Wraith_Rebel, Universe_L_M7G_677, Wraith_Rebel_Corvette </Starting_Forces>
+    <Starting_Forces> Wraith_Rebel, Universe_L_M7G_677, Wraith_Rebel_Corvette </Starting_Forces>
+    <Starting_Forces> Wraith_Rebel, Universe_L_M7G_677, Wraith_Rebel_Corvette </Starting_Forces>
+    <Starting_Forces> Wraith_Rebel, Universe_L_M7G_677, Wraith_Rebel_Cruiser </Starting_Forces>
+    <Starting_Forces> Wraith_Rebel, Universe_L_M7G_677, Wraith_Rebel_Cruiser </Starting_Forces>
+    <Starting_Forces> Wraith_Rebel, Universe_L_M7G_677, Wraith_Rebel_Cruiser </Starting_Forces>
+    <Starting_Forces> Wraith_Rebel, Universe_L_M7G_677, Wraith_Rebel_Cruiser </Starting_Forces>
+
+    <Starting_Forces> Wraith_Rebel, Universe_L_M7G_677, Wraith_Rebels_Command_Center </Starting_Forces>
+    <Starting_Forces> Wraith_Rebel, Universe_L_M7G_677, Wraith_Rebels_Ground_Barracks </Starting_Forces>
+    <Starting_Forces> Wraith_Rebel, Universe_L_M7G_677, Wraith_Rebels_Ground_Barracks </Starting_Forces>
+    <Starting_Forces> Wraith_Rebel, Universe_L_M7G_677, Wraith_Rebel_Warrior_Company </Starting_Forces>
+    <Starting_Forces> Wraith_Rebel, Universe_L_M7G_677, Wraith_Rebel_Warrior_Company </Starting_Forces>
+    <Starting_Forces> Wraith_Rebel, Universe_L_M7G_677, Wraith_Rebel_Warrior_Company </Starting_Forces>
+    <Starting_Forces> Wraith_Rebel, Universe_L_M7G_677, Wraith_Rebel_Warrior_Company </Starting_Forces>
+    <Starting_Forces> Wraith_Rebel, Universe_L_M7G_677, Wraith_Rebel_Elite_Soldier_Company </Starting_Forces>
+    <Starting_Forces> Wraith_Rebel, Universe_L_M7G_677, Wraith_Rebel_Elite_Soldier_Company </Starting_Forces>
+    <Starting_Forces> Wraith_Rebel, Universe_L_M7G_677, Wraith_Rebel_Commander_Company </Starting_Forces>
+
+
+    <Starting_Forces> Wraith_Rebel, Universe_L_M9R_373, Wraith_Rebel_Battlecruiser </Starting_Forces>
+
+    <Starting_Forces> Wraith_Rebel, Universe_L_M9R_373, Wraith_Rebels_Command_Center </Starting_Forces>
+    <Starting_Forces> Wraith_Rebel, Universe_L_M9R_373, Wraith_Rebel_Warrior_Company </Starting_Forces>
+    <Starting_Forces> Wraith_Rebel, Universe_L_M9R_373, Wraith_Rebel_Warrior_Company </Starting_Forces>
+    <Starting_Forces> Wraith_Rebel, Universe_L_M9R_373, Wraith_Rebel_Dart_Land_Company </Starting_Forces>
+    <Starting_Forces> Wraith_Rebel, Universe_L_M9R_373, Wraith_Rebel_Dart_Land_Company </Starting_Forces>
+    <Starting_Forces> Wraith_Rebel, Universe_L_M9R_373, Wraith_Rebel_Dart_Land_Company </Starting_Forces>
+
+
+    <Starting_Forces> Wraith_Rebel, Universe_L_M2R_441, Wraith_Rebel_Starbase </Starting_Forces>
+    <Starting_Forces> Wraith_Rebel, Universe_L_M2R_441, Wraith_Rebel_Corvette </Starting_Forces>
+    <Starting_Forces> Wraith_Rebel, Universe_L_M2R_441, Wraith_Rebel_Corvette </Starting_Forces>
+    <Starting_Forces> Wraith_Rebel, Universe_L_M2R_441, Wraith_Rebel_Corvette </Starting_Forces>
+    <Starting_Forces> Wraith_Rebel, Universe_L_M2R_441, Wraith_Rebel_Cruiser </Starting_Forces>
+    <Starting_Forces> Wraith_Rebel, Universe_L_M2R_441, Wraith_Rebel_Cruiser </Starting_Forces>
+    <Starting_Forces> Wraith_Rebel, Universe_L_M2R_441, Wraith_Rebel_Cruiser </Starting_Forces>
+    <Starting_Forces> Wraith_Rebel, Universe_L_M2R_441, Wraith_Rebel_Cruiser </Starting_Forces>
+    <Starting_Forces> Wraith_Rebel, Universe_L_M2R_441, Wraith_Rebel_Destroyer </Starting_Forces>
+    <Starting_Forces> Wraith_Rebel, Universe_L_M2R_441, Wraith_Rebel_Destroyer </Starting_Forces>
+    <Starting_Forces> Wraith_Rebel, Universe_L_M2R_441, Wraith_Rebel_Battlecruiser </Starting_Forces>
+    <Starting_Forces> Wraith_Rebel, Universe_L_M2R_441, Wraith_Rebel_Battlecruiser </Starting_Forces>
+    <Starting_Forces> Wraith_Rebel, Universe_L_M2R_441, Wraith_Rebel_Hive </Starting_Forces>
+
+    <Starting_Forces> Wraith_Rebel, Universe_L_M2R_441, Wraith_Rebels_Command_Center </Starting_Forces>
+    <Starting_Forces> Wraith_Rebel, Universe_L_M2R_441, Wraith_Rebels_Ground_Indoctrination_Camp </Starting_Forces>
+    <Starting_Forces> Wraith_Rebel, Universe_L_M2R_441, Wraith_Rebels_Ground_GTSW </Starting_Forces>
+    <Starting_Forces> Wraith_Rebel, Universe_L_M2R_441, Wraith_Rebel_Warrior_Company </Starting_Forces>
+    <Starting_Forces> Wraith_Rebel, Universe_L_M2R_441, Wraith_Rebel_Warrior_Company </Starting_Forces>
+    <Starting_Forces> Wraith_Rebel, Universe_L_M2R_441, Wraith_Rebel_Warrior_Company </Starting_Forces>
+    <Starting_Forces> Wraith_Rebel, Universe_L_M2R_441, Wraith_Rebel_Elite_Soldier_Company </Starting_Forces>
+    <Starting_Forces> Wraith_Rebel, Universe_L_M2R_441, Wraith_Rebel_Elite_Soldier_Company </Starting_Forces>
+    <Starting_Forces> Wraith_Rebel, Universe_L_M2R_441, Wraith_Rebel_Elite_Soldier_Company </Starting_Forces>
+    <Starting_Forces> Wraith_Rebel, Universe_L_M2R_441, Wraith_Rebel_Worshipper_Company </Starting_Forces>
+    <Starting_Forces> Wraith_Rebel, Universe_L_M2R_441, Wraith_Rebel_Shuttle_Company </Starting_Forces>
+
+
+    <Starting_Forces> Wraith_Rebel, Universe_L_Manaria, Wraith_Rebel_Starbase </Starting_Forces>
+    <Starting_Forces> Wraith_Rebel, Universe_L_Manaria, Wraith_Rebel_Cruiser </Starting_Forces>
+    <Starting_Forces> Wraith_Rebel, Universe_L_Manaria, Wraith_Rebel_Cruiser </Starting_Forces>
+    <Starting_Forces> Wraith_Rebel, Universe_L_Manaria, Wraith_Rebel_Cruiser </Starting_Forces>
+    <Starting_Forces> Wraith_Rebel, Universe_L_Manaria, Wraith_Rebel_Cruiser </Starting_Forces>
+
+    <Starting_Forces> Wraith_Rebel, Universe_L_Manaria, Wraith_Rebels_Command_Center </Starting_Forces>
+    <Starting_Forces> Wraith_Rebel, Universe_L_Manaria, Wraith_Rebels_Ground_Indoctrination_Camp </Starting_Forces>
+    <Starting_Forces> Wraith_Rebel, Universe_L_Manaria, Wraith_Rebels_Ground_GTSW </Starting_Forces>
+    <Starting_Forces> Wraith_Rebel, Universe_L_Manaria, Imperial_Stormtrooper_Squad </Starting_Forces>
+    <Starting_Forces> Wraith_Rebel, Universe_L_Manaria, Imperial_Stormtrooper_Squad </Starting_Forces>
+    <Starting_Forces> Wraith_Rebel, Universe_L_Manaria, Imperial_Stormtrooper_Squad </Starting_Forces>
+    <Starting_Forces> Wraith_Rebel, Universe_L_Manaria, Imperial_Stormtrooper_Squad </Starting_Forces>
+    <Starting_Forces> Wraith_Rebel, Universe_L_Manaria, DarkTrooper_P1_Company </Starting_Forces>
+    <Starting_Forces> Wraith_Rebel, Universe_L_Manaria, DarkTrooper_P1_Company </Starting_Forces>
+    <Starting_Forces> Wraith_Rebel, Universe_L_Manaria, Field_Com_Empire_Team </Starting_Forces>
+
+
+    <Starting_Forces> Wraith_Rebel, Universe_L_Athos, Wraith_Rebel_Cruiser </Starting_Forces>
+    <Starting_Forces> Wraith_Rebel, Universe_L_Athos, Wraith_Rebel_Cruiser </Starting_Forces>
+    <Starting_Forces> Wraith_Rebel, Universe_L_Athos, Wraith_Rebel_Cruiser </Starting_Forces>
+    <Starting_Forces> Wraith_Rebel, Universe_L_Athos, Wraith_Rebel_Cruiser </Starting_Forces>
+    <Starting_Forces> Wraith_Rebel, Universe_L_Athos, Wraith_Rebel_Battlecruiser </Starting_Forces>
+    <Starting_Forces> Wraith_Rebel, Universe_L_Athos, Wraith_Rebel_Battlecruiser </Starting_Forces>
+
+    <Starting_Forces> Wraith_Rebel, Universe_L_Athos, Wraith_Rebels_Command_Center </Starting_Forces>
+    <Starting_Forces> Wraith_Rebel, Universe_L_Athos, Wraith_Rebels_Ground_Sensor_Array </Starting_Forces>
+    <Starting_Forces> Wraith_Rebel, Universe_L_Athos, Wraith_Rebels_Ground_Barracks </Starting_Forces>
+    <Starting_Forces> Wraith_Rebel, Universe_L_Athos, Wraith_Rebel_Warrior_Company </Starting_Forces>
+    <Starting_Forces> Wraith_Rebel, Universe_L_Athos, Wraith_Rebel_Warrior_Company </Starting_Forces>
+    <Starting_Forces> Wraith_Rebel, Universe_L_Athos, Wraith_Rebel_Warrior_Company </Starting_Forces>
+    <Starting_Forces> Wraith_Rebel, Universe_L_Athos, Wraith_Rebel_Elite_Soldier_Company </Starting_Forces>
+    <Starting_Forces> Wraith_Rebel, Universe_L_Athos, Wraith_Rebel_Elite_Soldier_Company </Starting_Forces>
+
+
+    <Starting_Forces> Wraith_Rebel, Universe_L_M8G_352, Wraith_Rebel_Starbase </Starting_Forces>
+    <Starting_Forces> Wraith_Rebel, Universe_L_M8G_352, Wraith_Rebel_Dart_Squadron </Starting_Forces>
+    <Starting_Forces> Wraith_Rebel, Universe_L_M8G_352, Wraith_Rebel_Dart_Squadron </Starting_Forces>
+    <Starting_Forces> Wraith_Rebel, Universe_L_M8G_352, Wraith_Rebel_Dart_Squadron </Starting_Forces>
+    <Starting_Forces> Wraith_Rebel, Universe_L_M8G_352, Wraith_Rebel_Dart_Squadron </Starting_Forces>
+    <Starting_Forces> Wraith_Rebel, Universe_L_M8G_352, Wraith_Rebel_Dart_Squadron </Starting_Forces>
+    <Starting_Forces> Wraith_Rebel, Universe_L_M8G_352, Wraith_Rebel_Dart_Squadron </Starting_Forces>
+    <Starting_Forces> Wraith_Rebel, Universe_L_M8G_352, Wraith_Rebel_Dart_Squadron </Starting_Forces>
+    <Starting_Forces> Wraith_Rebel, Universe_L_M8G_352, Wraith_Rebel_Corvette </Starting_Forces>
+    <Starting_Forces> Wraith_Rebel, Universe_L_M8G_352, Wraith_Rebel_Artillery_Ship </Starting_Forces>
+    <Starting_Forces> Wraith_Rebel, Universe_L_M8G_352, Wraith_Rebel_Artillery_Ship </Starting_Forces>
+    <Starting_Forces> Wraith_Rebel, Universe_L_M8G_352, Wraith_Rebel_Artillery_Ship </Starting_Forces>
+    <Starting_Forces> Wraith_Rebel, Universe_L_M8G_352, Wraith_Rebel_Artillery_Ship </Starting_Forces>
+    <Starting_Forces> Wraith_Rebel, Universe_L_M8G_352, Wraith_Rebel_Artillery_Ship </Starting_Forces>
+    <Starting_Forces> Wraith_Rebel, Universe_L_M8G_352, Wraith_Rebel_Artillery_Ship </Starting_Forces>
+    <Starting_Forces> Wraith_Rebel, Universe_L_M8G_352, Wraith_Rebel_Destroyer </Starting_Forces>
+
+    <Starting_Forces> Wraith_Rebel, Universe_L_M8G_352, Wraith_Rebels_Command_Center </Starting_Forces>
+    <Starting_Forces> Wraith_Rebel, Universe_L_M8G_352, Wraith_Rebels_Ground_Barracks </Starting_Forces>
+    <Starting_Forces> Wraith_Rebel, Universe_L_M8G_352, Wraith_Rebels_Ground_Shipyard </Starting_Forces>
+    <Starting_Forces> Wraith_Rebel, Universe_L_M8G_352, Wraith_Rebel_Warrior_Company </Starting_Forces>
+    <Starting_Forces> Wraith_Rebel, Universe_L_M8G_352, Wraith_Rebel_Warrior_Company </Starting_Forces>
+    <Starting_Forces> Wraith_Rebel, Universe_L_M8G_352, Wraith_Rebel_Warrior_Company </Starting_Forces>
+    <Starting_Forces> Wraith_Rebel, Universe_L_M8G_352, Wraith_Rebel_Warrior_Company </Starting_Forces>
+    <Starting_Forces> Wraith_Rebel, Universe_L_M8G_352, Wraith_Rebel_Elite_Soldier_Company </Starting_Forces>
+    <Starting_Forces> Wraith_Rebel, Universe_L_M8G_352, Wraith_Rebel_Elite_Soldier_Company </Starting_Forces>
+    <Starting_Forces> Wraith_Rebel, Universe_L_M8G_352, Wraith_Rebel_Commander_Company </Starting_Forces>
+    <Starting_Forces> Wraith_Rebel, Universe_L_M8G_352, Wraith_Rebel_Commander_Company </Starting_Forces>
+
+
+    <Starting_Forces> Wraith_Rebel, Universe_L_M65_PL8, Wraith_Rebel_Starbase </Starting_Forces>
+    <Starting_Forces> Wraith_Rebel, Universe_L_M65_PL8, Wraith_Rebel_Dart_Squadron </Starting_Forces>
+    <Starting_Forces> Wraith_Rebel, Universe_L_M65_PL8, Wraith_Rebel_Dart_Squadron </Starting_Forces>
+    <Starting_Forces> Wraith_Rebel, Universe_L_M65_PL8, Wraith_Rebel_Dart_Squadron </Starting_Forces>
+    <Starting_Forces> Wraith_Rebel, Universe_L_M65_PL8, Wraith_Rebel_Dart_Squadron </Starting_Forces>
+    <Starting_Forces> Wraith_Rebel, Universe_L_M65_PL8, Wraith_Rebel_Dart_Squadron </Starting_Forces>
+    <Starting_Forces> Wraith_Rebel, Universe_L_M65_PL8, Wraith_Rebel_Dart_Squadron </Starting_Forces>
+    <Starting_Forces> Wraith_Rebel, Universe_L_M65_PL8, Wraith_Rebel_Heavy_Fighter_Squadron </Starting_Forces>
+    <Starting_Forces> Wraith_Rebel, Universe_L_M65_PL8, Wraith_Rebel_Heavy_Fighter_Squadron </Starting_Forces>
+    <Starting_Forces> Wraith_Rebel, Universe_L_M65_PL8, Wraith_Rebel_Heavy_Fighter_Squadron </Starting_Forces>
+    <Starting_Forces> Wraith_Rebel, Universe_L_M65_PL8, Wraith_Rebel_Heavy_Bomber_Squadron </Starting_Forces>
+    <Starting_Forces> Wraith_Rebel, Universe_L_M65_PL8, Wraith_Rebel_Heavy_Bomber_Squadron </Starting_Forces>
+    <Starting_Forces> Wraith_Rebel, Universe_L_M65_PL8, Wraith_Rebel_Heavy_Bomber_Squadron </Starting_Forces>
+    <Starting_Forces> Wraith_Rebel, Universe_L_M65_PL8, Wraith_Rebel_Heavy_Bomber_Squadron </Starting_Forces>
+    <Starting_Forces> Wraith_Rebel, Universe_L_M65_PL8, Wraith_Rebel_Heavy_Bomber_Squadron </Starting_Forces>
+    <Starting_Forces> Wraith_Rebel, Universe_L_M65_PL8, Wraith_Rebel_Heavy_Bomber_Squadron </Starting_Forces>
+
+    <Starting_Forces> Wraith_Rebel, Universe_L_M65_PL8, Wraith_Rebels_Command_Center </Starting_Forces>
+    <Starting_Forces> Wraith_Rebel, Universe_L_M65_PL8, Wraith_Rebels_Ground_Hangar </Starting_Forces>
+    <Starting_Forces> Wraith_Rebel, Universe_L_M65_PL8, Wraith_Rebels_Ground_Hangar </Starting_Forces>
+    <Starting_Forces> Wraith_Rebel, Universe_L_M65_PL8, Wraith_Rebel_Warrior_Company </Starting_Forces>
+    <Starting_Forces> Wraith_Rebel, Universe_L_M65_PL8, Wraith_Rebel_Warrior_Company </Starting_Forces>
+    <Starting_Forces> Wraith_Rebel, Universe_L_M65_PL8, Wraith_Rebel_Warrior_Company </Starting_Forces>
+    <Starting_Forces> Wraith_Rebel, Universe_L_M65_PL8, Wraith_Rebel_Dart_Land_Company </Starting_Forces>
+    <Starting_Forces> Wraith_Rebel, Universe_L_M65_PL8, Wraith_Rebel_Dart_Land_Company </Starting_Forces>
+    <Starting_Forces> Wraith_Rebel, Universe_L_M65_PL8, Wraith_Rebel_Dart_Land_Company </Starting_Forces>
+    <Starting_Forces> Wraith_Rebel, Universe_L_M65_PL8, Wraith_Rebel_Dart_Land_Company </Starting_Forces>
+    <Starting_Forces> Wraith_Rebel, Universe_L_M65_PL8, Wraith_Rebel_Dart_Land_Company </Starting_Forces>
+
+
+    <Starting_Forces> Wraith_Rebel, Universe_L_M35_117, Wraith_Rebel_Cruiser </Starting_Forces>
+    <Starting_Forces> Wraith_Rebel, Universe_L_M35_117, Wraith_Rebel_Cruiser </Starting_Forces>
+    <Starting_Forces> Wraith_Rebel, Universe_L_M35_117, Wraith_Rebel_Cruiser </Starting_Forces>
+    <Starting_Forces> Wraith_Rebel, Universe_L_M35_117, Wraith_Rebel_Cruiser </Starting_Forces>
+    <Starting_Forces> Wraith_Rebel, Universe_L_M35_117, Wraith_Rebel_Destroyer </Starting_Forces>
+
+    <Starting_Forces> Wraith_Rebel, Universe_L_M35_117, Wraith_Rebels_Command_Center </Starting_Forces>
+    <Starting_Forces> Wraith_Rebel, Universe_L_M35_117, Wraith_Rebel_Warrior_Company </Starting_Forces>
+    <Starting_Forces> Wraith_Rebel, Universe_L_M35_117, Wraith_Rebel_Warrior_Company </Starting_Forces>
+    <Starting_Forces> Wraith_Rebel, Universe_L_M35_117, Wraith_Rebel_Warrior_Company </Starting_Forces>
+    <Starting_Forces> Wraith_Rebel, Universe_L_M35_117, Wraith_Rebel_Warrior_Company </Starting_Forces>
+
+
+    <Starting_Forces> Wraith_Rebel, Universe_L_Belkan, Wraith_Rebels_Command_Center </Starting_Forces>
+    <Starting_Forces> Wraith_Rebel, Universe_L_Belkan, Wraith_Rebels_Ground_Barracks </Starting_Forces>
+    <Starting_Forces> Wraith_Rebel, Universe_L_Belkan, Wraith_Rebels_Ground_Shipyard </Starting_Forces>
+    <Starting_Forces> Wraith_Rebel, Universe_L_Belkan, Wraith_Rebels_Ground_Barracks </Starting_Forces>
+    <Starting_Forces> Wraith_Rebel, Universe_L_Belkan, Wraith_Rebel_Elite_Soldier_Company </Starting_Forces>
+    <Starting_Forces> Wraith_Rebel, Universe_L_Belkan, Wraith_Rebel_Elite_Soldier_Company </Starting_Forces>
+    <Starting_Forces> Wraith_Rebel, Universe_L_Belkan, Wraith_Rebel_Elite_Soldier_Company </Starting_Forces>
+    <Starting_Forces> Wraith_Rebel, Universe_L_Belkan, Wraith_Rebel_Elite_Soldier_Company </Starting_Forces>
+    <Starting_Forces> Wraith_Rebel, Universe_L_Belkan, Wraith_Rebel_Commander_Company </Starting_Forces>
+    <Starting_Forces> Wraith_Rebel, Universe_L_Belkan, Wraith_Rebel_Commander_Company </Starting_Forces>
+    <Starting_Forces> Wraith_Rebel, Universe_L_Belkan, Wraith_Rebel_Commander_Company </Starting_Forces>
+    <Starting_Forces> Wraith_Rebel, Universe_L_Belkan, Wraith_Rebel_Commander_Company </Starting_Forces>
+
+
+    <Starting_Forces> Wraith_Rebel, Universe_L_M1K_177, Wraith_Rebel_Starbase </Starting_Forces>
+    <Starting_Forces> Wraith_Rebel, Universe_L_M1K_177, Wraith_Rebel_Corvette </Starting_Forces>
+    <Starting_Forces> Wraith_Rebel, Universe_L_M1K_177, Wraith_Rebel_Corvette </Starting_Forces>
+    <Starting_Forces> Wraith_Rebel, Universe_L_M1K_177, Wraith_Rebel_Artillery_Ship </Starting_Forces>
+    <Starting_Forces> Wraith_Rebel, Universe_L_M1K_177, Wraith_Rebel_Artillery_Ship </Starting_Forces>
+    <Starting_Forces> Wraith_Rebel, Universe_L_M1K_177, Wraith_Rebel_Artillery_Ship </Starting_Forces>
+    <Starting_Forces> Wraith_Rebel, Universe_L_M1K_177, Wraith_Rebel_Artillery_Ship </Starting_Forces>
+    <Starting_Forces> Wraith_Rebel, Universe_L_M1K_177, Wraith_Rebel_Cruiser </Starting_Forces>
+    <Starting_Forces> Wraith_Rebel, Universe_L_M1K_177, Wraith_Rebel_Cruiser </Starting_Forces>
+
+    <Starting_Forces> Wraith_Rebel, Universe_L_M1K_177, Wraith_Rebels_Command_Center </Starting_Forces>
+    <Starting_Forces> Wraith_Rebel, Universe_L_M1K_177, Wraith_Rebel_Elite_Soldier_Company </Starting_Forces>
+    <Starting_Forces> Wraith_Rebel, Universe_L_M1K_177, Wraith_Rebel_Elite_Soldier_Company </Starting_Forces>
+
+
+    <Starting_Forces> Wraith_Rebel, Universe_L_New_Athos, Wraith_Rebel_Hive </Starting_Forces>
+    <Starting_Forces> Wraith_Rebel, Universe_L_New_Athos, Wraith_Rebel_Hive </Starting_Forces>
+
+
+    <Starting_Forces> Wraith_Rebel, Universe_L_M56_768, Wraith_Rebel_Starbase </Starting_Forces>
+    <Starting_Forces> Wraith_Rebel, Universe_L_M56_768, Wraith_Rebel_Cruiser </Starting_Forces>
+    <Starting_Forces> Wraith_Rebel, Universe_L_M56_768, Wraith_Rebel_Cruiser </Starting_Forces>
+    <Starting_Forces> Wraith_Rebel, Universe_L_M56_768, Wraith_Rebel_Cruiser </Starting_Forces>
+    <Starting_Forces> Wraith_Rebel, Universe_L_M56_768, Wraith_Rebel_Cruiser </Starting_Forces>
+    <Starting_Forces> Wraith_Rebel, Universe_L_M56_768, Wraith_Rebel_Hive </Starting_Forces>
+
+    <Starting_Forces> Wraith_Rebel, Universe_L_M56_768, Wraith_Rebels_Command_Center </Starting_Forces>
+    <Starting_Forces> Wraith_Rebel, Universe_L_M56_768, Wraith_Rebels_Ground_GTSW </Starting_Forces>
+    <Starting_Forces> Wraith_Rebel, Universe_L_M56_768, Wraith_Rebel_Warrior_Company </Starting_Forces>
+    <Starting_Forces> Wraith_Rebel, Universe_L_M56_768, Wraith_Rebel_Elite_Soldier_Company </Starting_Forces>
+    <Starting_Forces> Wraith_Rebel, Universe_L_M56_768, Wraith_Rebel_Elite_Soldier_Company </Starting_Forces>
+    <Starting_Forces> Wraith_Rebel, Universe_L_M56_768, Wraith_Rebel_Elite_Soldier_Company </Starting_Forces>
+
+
+    <Starting_Forces> Wraith_Rebel, Universe_L_Asteroid_Field, Wraith_Rebel_Cruiser </Starting_Forces>
+    <Starting_Forces> Wraith_Rebel, Universe_L_Asteroid_Field, Wraith_Rebel_Cruiser </Starting_Forces>
+    <Starting_Forces> Wraith_Rebel, Universe_L_Asteroid_Field, Wraith_Rebel_Cruiser </Starting_Forces>
+    <Starting_Forces> Wraith_Rebel, Universe_L_Asteroid_Field, Wraith_Rebel_Cruiser </Starting_Forces>
+    <Starting_Forces> Wraith_Rebel, Universe_L_Asteroid_Field, Wraith_Rebel_Hive </Starting_Forces>
+
+
+    <Starting_Forces> Wraith_Rebel, Universe_L_M5S_224, Wraith_Rebels_Command_Center </Starting_Forces>
+    <Starting_Forces> Wraith_Rebel, Universe_L_M5S_224, Wraith_Rebel_Elite_Soldier_Company </Starting_Forces>
+    <Starting_Forces> Wraith_Rebel, Universe_L_M5S_224, Wraith_Rebel_Elite_Soldier_Company </Starting_Forces>
+    <Starting_Forces> Wraith_Rebel, Universe_L_M5S_224, Wraith_Rebel_Elite_Soldier_Company </Starting_Forces>
+
+
+    <Starting_Forces> Wraith_Rebel, Universe_L_Midway, Tartan_Patrol_Cruiser_PP </Starting_Forces>
+
+  </Campaign>
+
+</Campaigns>
