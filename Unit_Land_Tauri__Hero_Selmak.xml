@@ -1,0 +1,168 @@
+<?xml version="1.0"?>
+<Urai_Fen_Data>
+
+    <HeroUnit Name="Urai_Fen">
+        <Variant_Of_Existing_Type>Template_Ground_Infantry_Single_Hero_Goauld</Variant_Of_Existing_Type>
+        <Text_ID>TEXT_TAURI_SPACE_HERO_SELMAK</Text_ID>
+        <Encyclopedia_Text>TEXT_DESCRIPTION_TAURI_SELMAK_GROUND</Encyclopedia_Text>
+        <Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_SELMAK_GROUND</Encyclopedia_Unit_Class>
+        <Encyclopedia_Good_Against>Rebel_Trooper Goauld_Jackal_Guard Stormtrooper</Encyclopedia_Good_Against>
+        <Encyclopedia_Vulnerable_To>Snowspeeder AT_AT_Walker Empire_Anti_Infantry_Turret</Encyclopedia_Vulnerable_To>
+        <Icon_Name>TAURI_SPACE_HERO_SELMAK.TGA</Icon_Name>
+        <Land_Model_Name>Tauri_Land_Hero_Selmak.ALO</Land_Model_Name>
+        <Land_Model_Anim_Override_Name>Tauri_Land_Hero_Selmak.ALO</Land_Model_Anim_Override_Name>
+        <LandBehavior>ABILITY_COUNTDOWN, DAMAGE_TRACKING, GARRISON_UNIT, HIDE_WHEN_FOGGED, IDLE, IMPOSING_PRESENCE, REVEAL, SELECTABLE, SURFACE_FX, TARGETING, UNIT_AI, WALK_LOCOMOTOR, WEAPON</LandBehavior>
+        <Affiliation>Underworld</Affiliation>
+        <Selection_Blob_Material_Name>Highlight_Underworld_Hero</Selection_Blob_Material_Name>
+        <Always_Spawn_In_Orbit>Yes</Always_Spawn_In_Orbit>
+
+        <Scale_Factor>1</Scale_Factor>
+        <Movement_Animation_Speed> 1.0 </Movement_Animation_Speed>
+        <Rotation_Animation_Speed> 20.0 </Rotation_Animation_Speed>
+        <Walk_Animation_Speed> 1.0 </Walk_Animation_Speed>
+        <Crouch_Animation_Speed> .537 </Crouch_Animation_Speed>
+
+        <Tactical_Health>850</Tactical_Health>
+        <AI_Combat_Power>150</AI_Combat_Power>
+        <Neutralization_Cost>1300.0</Neutralization_Cost>
+        <Presence_Range>100.0</Presence_Range>
+        <Projectile_Types>Proj_Tauri_Hero_Selmak</Projectile_Types>
+        <Projectile_Fire_Pulse_Count>2</Projectile_Fire_Pulse_Count>
+        <Projectile_Fire_Pulse_Delay_Seconds>0.8</Projectile_Fire_Pulse_Delay_Seconds>
+        <Projectile_Fire_Recharge_Seconds>1.0</Projectile_Fire_Recharge_Seconds>
+        <Projectile_Appearance_Delay_Frames> 20 </Projectile_Appearance_Delay_Frames>
+        <CategoryMask> LandHero | SpaceHero </CategoryMask>
+        <Targeting_Priority_Set>SG_Infantry_AntiInfantry</Targeting_Priority_Set>
+        <Damage>67</Damage>
+        <Target_Stealth_Units>Yes</Target_Stealth_Units>
+
+        <SFXEvent_Select>Unit_Select_Selmak</SFXEvent_Select>
+        <SFXEvent_Move>Unit_Move_Selmak</SFXEvent_Move>
+        <SFXEvent_Fleet_Move>Unit_Move_Selmak</SFXEvent_Fleet_Move>
+        <SFXEvent_Attack>Unit_Attack_Selmak</SFXEvent_Attack>
+        <SFXEvent_Guard></SFXEvent_Guard>
+        <SFXEvent_Fire>Weapon_TER</SFXEvent_Fire>
+        <SFXEvent_Group_Move>Unit_Move_Selmak</SFXEvent_Group_Move>
+        <SFXEvent_Group_Attack>Unit_Attack_Selmak</SFXEvent_Group_Attack>
+        <Death_SFXEvent_Start_Die></Death_SFXEvent_Start_Die>
+        <SFXEvent_Health_Critical_Warning>Unit_CriticalHP_Selmak</SFXEvent_Health_Critical_Warning>
+        <SFXEvent_Health_Low_Warning>Unit_LOWHP_Selmak</SFXEvent_Health_Low_Warning>
+        <SFXEvent_Stop></SFXEvent_Stop>
+
+        <Unit_Abilities_Data SubObjectList="Yes">
+            <Unit_Ability>
+                <Type>STUN</Type>
+                <Alternate_Name_Text>TEXT_ABILITY_STUN</Alternate_Name_Text>
+                <Alternate_Description_Text>TEXT_DESCRIPTION_ABILITY_STUN_SELMAK_GROUND</Alternate_Description_Text>
+                <Recharge_Seconds>30.0</Recharge_Seconds>
+                <GUI_Activated_Ability_Name>Tauri_Land_Hero_Selmak_Stun</GUI_Activated_Ability_Name>
+                <Effective_Radius>500.0</Effective_Radius>
+                <Spawned_Object_Type>Stun_Ability_Particles</Spawned_Object_Type>
+                <SFXEvent_Target_Ability></SFXEvent_Target_Ability>
+                <Supports_Autofire>True</Supports_Autofire>
+            </Unit_Ability>
+            <Unit_Ability>
+                <Type>HARMONIC_BOMB</Type>
+                <Alternate_Name_Text>TEXT_ABILITY_CALL_REINFORCEMENT</Alternate_Name_Text>
+                <Alternate_Description_Text>TEXT_DESCRIPTION_ABILITY_REINFORCEMENT_BEACON_SELMAK_GROUND</Alternate_Description_Text>
+                <Alternate_Icon_Name>I_SA_BEACON.TGA</Alternate_Icon_Name>
+                <Recharge_Seconds>9999</Recharge_Seconds>
+                <Spawned_Object_Type>Tokra_Reinforcement_Beacon</Spawned_Object_Type>
+                <Supports_Autofire>False</Supports_Autofire>
+            </Unit_Ability>
+        </Unit_Abilities_Data>
+        <Abilities SubObjectList="Yes">
+            <Stun_Ability Name="Tauri_Land_Hero_Selmak_Stun">
+                <Activation_Style> User_Input </Activation_Style>
+                <Activation_Min_Range>0.0</Activation_Min_Range>
+                <Activation_Max_Range>75.0</Activation_Max_Range>
+                <Stun_Time_In_Secs>10.0</Stun_Time_In_Secs>
+                <Stun_Range>110.0</Stun_Range>
+                <Stun_Travel_Time_In_Secs>1.0</Stun_Travel_Time_In_Secs>
+                <Stunned_Effect> Stunned_Particle_Effect </Stunned_Effect>
+                <Applicable_Unit_Categories>Infantry</Applicable_Unit_Categories>
+                <Applicable_Unit_Types>Boba_Fett, Mara_Jade, Kyle_Katarn, Han_Solo, Chewbacca </Applicable_Unit_Types>
+                <SFXEvent_Activate></SFXEvent_Activate>
+                <Owner_Particle_Effect>Stun_Ability_Particles</Owner_Particle_Effect>
+                <Owner_Particle_Bone_Name />
+                <Owner_Light_Effect_Type>Color_Flash</Owner_Light_Effect_Type>
+                <Owner_Light_Effect_Color>2.0, 2.0, 2.0</Owner_Light_Effect_Color>
+                <Owner_Light_Effect_Color2 />
+                <Owner_Light_Effect_Duration>0.5</Owner_Light_Effect_Duration>
+                <Owner_Light_Effect_Pulse_Count />
+            </Stun_Ability>
+            <Force_Healing_Ability Name="Goauld_Infantry_Auto_Heal">
+               <Activation_Style>Ground_Automatic</Activation_Style>
+               <Heal_Percent>0.01</Heal_Percent>
+               <Heal_Interval_In_Secs>2.0</Heal_Interval_In_Secs>
+               <Single_Target_Heal>No</Single_Target_Heal>
+               <Owner_Particle_Bone_Name>ROOT</Owner_Particle_Bone_Name>
+               <Owner_Light_Effect_Duration>0.1</Owner_Light_Effect_Duration>
+               <Owner_Light_Effect_Pulse_Count>1</Owner_Light_Effect_Pulse_Count>
+            </Force_Healing_Ability>
+            <Galactic_Stealth_Ability Name="Selmak_Galactic_Stealth">
+                <Initially_Enabled>Yes</Initially_Enabled>
+                <Activation_Style>Galactic_Automatic</Activation_Style>
+                <Causes_Despawn>No</Causes_Despawn>
+                <Evade_Detection_Chance>0.0</Evade_Detection_Chance>
+            </Galactic_Stealth_Ability>
+            <Reduce_Production_Price_Ability Name="Tauri_Land_Hero_Selmak_Reduce_Production_Price_Tokra">
+               <Applicable_Unit_Types>Tokra_Soldier_Company, Tokra_Scientist_Company, Tokra_Galactic_Spy_Company, Tokra_Galactic_Infiltrator_Company, Tokra_Galactic_Assassin_Company, Tokra_Galactic_Smuggler_Company</Applicable_Unit_Types>
+               <Price_Reduction_Percentage>0.25</Price_Reduction_Percentage>
+               <Stacking_Category>0</Stacking_Category>
+            </Reduce_Production_Price_Ability>
+        </Abilities>
+
+        <Lua_Script>ObjectScript_Selmak_Ground_Reinforcement_Beacon</Lua_Script>
+    </HeroUnit>
+
+
+    <!-- Company Information -->
+    <HeroCompany Name="Urai_Fen_Team">
+        <Variant_Of_Existing_Type>Template_Ground_Hero_Company</Variant_Of_Existing_Type>
+        <Text_ID>TEXT_TAURI_SPACE_HERO_SELMAK</Text_ID>
+        <Encyclopedia_Text>TEXT_DESCRIPTION_TAURI_SELMAK_GROUND</Encyclopedia_Text>
+        <Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_SELMAK_GROUND</Encyclopedia_Unit_Class>
+        <Icon_Name>TAURI_SPACE_HERO_SELMAK.TGA</Icon_Name>
+        <Affiliation>Underworld</Affiliation>
+        <Company_Transport_Unit>Tauri_Hero_Selmak_Teltak</Company_Transport_Unit>
+        <Company_Units>Urai_Fen</Company_Units>
+        <Is_Stealth_Company>Yes</Is_Stealth_Company>
+        <Score_Cost_Credits>5000</Score_Cost_Credits>
+        <SFXEvent_Build_Started>Unit_Select_Selmak</SFXEvent_Build_Started>
+        <SFXEvent_Build_Complete>Unit_Select_Selmak</SFXEvent_Build_Complete>
+        <SFXEvent_Hero_Respawned>Unit_Spawn_Selmak</SFXEvent_Hero_Respawned>
+        <SFXEvent_Fleet_Move>Unit_Move_Selmak</SFXEvent_Fleet_Move>
+        <CategoryMask>LandHero | SpaceHero</CategoryMask>
+        <Tactical_Build_Cost_Multiplayer>1300</Tactical_Build_Cost_Multiplayer>
+        <Tactical_Build_Time_Seconds>13</Tactical_Build_Time_Seconds>
+    </HeroCompany>
+
+    <MiscObject Name="Tokra_Reinforcement_Beacon">
+        <Land_Model_Name>Map_Land_Reinforcement_Point_Tokra.ALO</Land_Model_Name>
+        <LandBehavior>IDLE, REVEAL, HIDE_WHEN_FOGGED</LandBehavior>
+        <Affiliation>Underworld</Affiliation>
+        <Scale_Factor>1</Scale_Factor>
+        <Radar_Icon_Size>0.075  0.075</Radar_Icon_Size>
+        <Land_FOW_Reveal_Range>100.0</Land_FOW_Reveal_Range>
+        <Victory_Relevant>No</Victory_Relevant>
+        <Influences_Capture_Point>False</Influences_Capture_Point>
+        <Collidable_By_Projectile_Living>Yes</Collidable_By_Projectile_Living>
+        <Collidable_By_Projectile_Dead>Yes</Collidable_By_Projectile_Dead>
+        <CategoryMask>Wall</CategoryMask>
+        <UnitCollisionClass> Infantry </UnitCollisionClass>
+        <Loop_Idle_Anim_00>Yes</Loop_Idle_Anim_00>
+        <SFXEvent_Engine_Cinematic_Focus_Loop> Structure_Sensor_Array_Loop </SFXEvent_Engine_Cinematic_Focus_Loop>      
+        <Death_Explosions>Small_Damage_Land</Death_Explosions>
+        <Death_SFXEvent_Start_Die>Unit_Turret_Death_SFX</Death_SFXEvent_Start_Die>
+        <Remove_Upon_Death>Yes</Remove_Upon_Death>
+    </MiscObject>
+
+
+    <Projectile Name="Proj_Tauri_Hero_Selmak">
+        <Variant_Of_Existing_Type>Proj_Goauld_TER</Variant_Of_Existing_Type>
+        <Damage_Type>Damage_Anti_Infantry</Damage_Type>
+        <Projectile_Damage>58.5</Projectile_Damage>
+    </Projectile>
+
+</Urai_Fen_Data>

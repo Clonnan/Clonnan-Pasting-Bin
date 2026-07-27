@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="utf-8"?>
+                                                                                              
+<GroundVehicles>
+
+   <GroundVehicle Name="AT_ST_Walker"> 
+      <Variant_Of_Existing_Type>Template_Ground_Walker</Variant_Of_Existing_Type>
+      <Text_ID>TEXT_WRAITH_GROUND_UNIT_CHIMERA</Text_ID>
+      <Encyclopedia_Text>TEXT_DESCRIPTION_WRAITH_CHIMERA_GROUND</Encyclopedia_Text>
+      <Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_WRAITH_CHIMERA</Encyclopedia_Unit_Class>
+      <Encyclopedia_Good_Against> Underworld_Merc, Rebel_Trooper Underworld_Saboteur </Encyclopedia_Good_Against>
+      <Encyclopedia_Vulnerable_To> Ewok_Handler Goauld_Jackal_Guard Rebel_Anti_Vehicle_Turret </Encyclopedia_Vulnerable_To>
+      <Icon_Name>WRAITH_GROUND_UNIT_CHIMERA.TGA</Icon_Name>
+      <Land_Model_Name>Wraith_Land_Unit_Chimera.alo</Land_Model_Name>
+      <Radar_Icon_Name>I_RADAR_CHIMERA.TGA</Radar_Icon_Name>
+      
+      <LandBehavior>
+         ABILITY_COUNTDOWN,
+         AFFECTED_BY_SHIELD,
+         DAMAGE_TRACKING,
+         HIDE_WHEN_FOGGED,
+         IDLE,
+         POWERED,
+         REVEAL,
+         STUNNABLE,
+         SURFACE_FX,
+         TARGETING,
+         TELEKINESIS_TARGET,
+         TURRET,
+         UNIT_AI,
+         WALK_LOCOMOTOR,
+         WEAPON,
+         WIND_DISTURBANCE
+      </LandBehavior>  
+
+      <Affiliation>Underworld</Affiliation>
+      <Scale_Factor>0.5</Scale_Factor>  
+      <Select_Box_Scale>140</Select_Box_Scale>
+      <Select_Box_Z_Adjust>3.0f</Select_Box_Z_Adjust>
+      <Ranged_Target_Z_Adjust>16.0</Ranged_Target_Z_Adjust> 
+      <HardPoints>
+         HP_Wraith_Chimera_01
+      </HardPoints>                         
+      <Overall_Length>40.0</Overall_Length> 
+      <Overall_Width>25.0</Overall_Width>  
+      <Targeting_Priority_Set>SG_Vehicle_AntiInfantry</Targeting_Priority_Set>
+      <Targeting_Max_Attack_Distance>250.0</Targeting_Max_Attack_Distance>
+      <Targeting_Min_Attack_Distance>60.0</Targeting_Min_Attack_Distance>  
+      <CategoryMask> Vehicle | AntiInfantry </CategoryMask>
+      
+      <Locomotor_Has_Animation_Priority>yes</Locomotor_Has_Animation_Priority>    
+      <Movement_Animation_Speed>0.16</Movement_Animation_Speed>
+      <Rotation_Animation_Speed>0.16</Rotation_Animation_Speed>
+      <Has_Pre_Turn_Anim>No</Has_Pre_Turn_Anim> <!-- If set to "Yes" it disables Jetpack Ability!-->
+      <Uses_Multiple_Locomotors> Yes </Uses_Multiple_Locomotors>
+      <Primary_Locomotor_Name>WALK_LOCOMOTOR</Primary_Locomotor_Name>
+      <Secondary_Locomotor_Name>JETPACK_LOCOMOTOR</Secondary_Locomotor_Name>
+      <Hover_Offset>35.0</Hover_Offset>
+      <Alternate_Max_Speed>4.0</Alternate_Max_Speed>
+      <Alternate_Max_Rate_Of_Turn>5.0</Alternate_Max_Rate_Of_Turn>
+    
+      <Tactical_Health>460</Tactical_Health>     
+      <AI_Combat_Power>100</AI_Combat_Power>
+      <Damage>41</Damage> 
+      <Score_Cost_Credits>300</Score_Cost_Credits>
+      <Max_Speed>0.8</Max_Speed>      
+      <Max_Rate_Of_Turn>3</Max_Rate_Of_Turn> 
+
+      <Projectile_Types>Proj_Fake_Land</Projectile_Types>
+      <Projectile_Fire_Recharge_Seconds>10.0</Projectile_Fire_Recharge_Seconds>
+      <Projectile_Fire_Pulse_Count>1</Projectile_Fire_Pulse_Count>
+      <Projectile_Fire_Pulse_Delay_Seconds>10.0</Projectile_Fire_Pulse_Delay_Seconds>
+      
+      <Death_Explosions>Large_Explosion_Land</Death_Explosions>   
+      <Death_Clone>Damage_Normal, AT_ST_Walker_Death_Clone</Death_Clone>  
+
+       <Unit_Abilities_Data SubObjectList="Yes">
+         <Unit_Ability>
+            <Type>FLAME_THROWER</Type>
+            <Alternate_Name_Text>TEXT_TOOLTIP_ABILITY_FLAME_THROWER_NAME</Alternate_Name_Text>
+            <Alternate_Description_Text>TEXT_DESCRIPTION_ABILITY_ACID_ATTACK_WRAITH_CHIMERA</Alternate_Description_Text>
+            <Alternate_Icon_Name>I_SA_BIOHAZARD.TGA</Alternate_Icon_Name>  
+            <Recharge_Seconds>60.0</Recharge_Seconds>
+            <GUI_Activated_Ability_Name>Chimera_Acid_Attack</GUI_Activated_Ability_Name>   
+         </Unit_Ability>
+         <Unit_Ability>
+            <Type>JET_PACK</Type>
+            <Alternate_Name_Text>TEXT_TOOLTIP_ABILITY_JET_PACK_NAME</Alternate_Name_Text>
+            <Alternate_Description_Text>TEXT_DESCRIPTION_ABILITY_JUMP_WRAITH_CHIMERA</Alternate_Description_Text>
+            <Alternate_Icon_Name>I_SA_FLY_CHIMERA.TGA</Alternate_Icon_Name>
+            <Recharge_Seconds>45.0</Recharge_Seconds>
+            <SFXEvent_Target_Ability></SFXEvent_Target_Ability>
+            <Effective_Radius>750.0</Effective_Radius>   
+         </Unit_Ability> 
+      </Unit_Abilities_Data>   
+      <Abilities SubObjectList="Yes">            
+         <Force_Healing_Ability Name="Wraith_Self_Repair">
+            <Activation_Style>Ground_Automatic</Activation_Style>
+            <Heal_Range>0.0</Heal_Range>
+            <Heal_Amount>0.0</Heal_Amount>
+            <Heal_Percent>0.003</Heal_Percent>         
+            <Heal_Interval_In_Secs>1.0</Heal_Interval_In_Secs>
+            <Single_Target_Heal>No</Single_Target_Heal>
+            <Owner_Particle_Bone_Name>ROOT</Owner_Particle_Bone_Name>
+            <Owner_Light_Effect_Duration>0.6</Owner_Light_Effect_Duration>
+            <Owner_Light_Effect_Pulse_Count>1</Owner_Light_Effect_Pulse_Count>
+         </Force_Healing_Ability>   
+         <Personal_Flame_Thrower_Ability Name="Chimera_Acid_Attack">
+            <Activation_Style> User_Input </Activation_Style>           
+            <Activation_Min_Range>0.0</Activation_Min_Range>
+            <Activation_Max_Range>110.0</Activation_Max_Range>
+            <Damage_Arc_In_Degrees>90.0</Damage_Arc_In_Degrees>
+            <Damage_Amount>200.0</Damage_Amount>
+            <Fire_Time_In_Secs>12.0</Fire_Time_In_Secs>
+            <Damage_Delay_In_Secs>0.75</Damage_Delay_In_Secs>           
+            <Applicable_Unit_Categories>Infantry | LandHero</Applicable_Unit_Categories>
+            <Applicable_Unit_Types />
+            <SFXEvent_Activate></SFXEvent_Activate>
+            <Flame_Emitter_Model_Name>p_flamethrower00</Flame_Emitter_Model_Name>
+         </Personal_Flame_Thrower_Ability>
+      </Abilities>           
+   </GroundVehicle>
+ 
+   <GroundVehicle Name="AT_ST_Walker_Captured">
+      <Variant_Of_Existing_Type>AT_ST_Walker</Variant_Of_Existing_Type>
+      <Icon_Name>i_button_chewbacca_atst.tga</Icon_Name>
+   </GroundVehicle>
+   
+   <GroundVehicle Name="AT_ST_Walker_Death_Clone">
+      <Variant_Of_Existing_Type>AT_ST_Walker</Variant_Of_Existing_Type>
+      <Specific_Death_Anim_Type />
+      <Specific_Death_Anim_Index> 0 </Specific_Death_Anim_Index>
+      <Death_Clone_Is_Obstacle>yes</Death_Clone_Is_Obstacle>
+      <IsDeathCloneObstacle>true</IsDeathCloneObstacle>
+      <LandBehavior>HIDE_WHEN_FOGGED</LandBehavior>
+      <Custom_Hard_XExtent_Offset> 15.0 </Custom_Hard_XExtent_Offset>
+      <Custom_Hard_XExtent> 47.0 </Custom_Hard_XExtent>
+      <Custom_Hard_YExtent> 10.0 </Custom_Hard_YExtent>     
+      <Death_Explosions>Medium_Explosion_Land</Death_Explosions>
+      <Death_Persistence_Duration>7</Death_Persistence_Duration>
+      <Death_Explosions_End>Medium_Explosion_Land</Death_Explosions_End>
+      <Death_SFXEvent_End_Die>Unit_Corvette_Death_SFX</Death_SFXEvent_End_Die>      
+  </GroundVehicle>
+   <GroundVehicle Name="AT_ST_Walker_Death_Clone_00">
+      <Variant_Of_Existing_Type>AT_ST_Walker_Death_Clone</Variant_Of_Existing_Type>
+      <Specific_Death_Anim_Index> 0 </Specific_Death_Anim_Index>
+   </GroundVehicle>
+   <GroundVehicle Name="AT_ST_Walker_Death_Clone_01">
+      <Variant_Of_Existing_Type>AT_ST_Walker_Death_Clone</Variant_Of_Existing_Type>
+      <Specific_Death_Anim_Index> 1 </Specific_Death_Anim_Index>
+   </GroundVehicle>
+   <GroundVehicle Name="AT_ST_Walker_Death_Clone_02">
+      <Variant_Of_Existing_Type>AT_ST_Walker_Death_Clone</Variant_Of_Existing_Type>
+      <Specific_Death_Anim_Index> 2 </Specific_Death_Anim_Index>
+   </GroundVehicle>
+  
+  
+   <GroundCompany Name="Imperial_Heavy_Scout_Squad_No_Prereq">
+      <Variant_Of_Existing_Type>Template_Ground_Company</Variant_Of_Existing_Type>
+      <Text_ID>TEXT_WRAITH_GROUND_UNIT_CHIMERA</Text_ID>
+      <Encyclopedia_Text>TEXT_DESCRIPTION_WRAITH_CHIMERA_GROUND</Encyclopedia_Text>
+      <Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_WRAITH_CHIMERA</Encyclopedia_Unit_Class>
+      <Encyclopedia_Good_Against> Underworld_Merc, Rebel_Trooper Underworld_Saboteur </Encyclopedia_Good_Against>
+      <Encyclopedia_Vulnerable_To> Ewok_Handler Goauld_Jackal_Guard Rebel_Anti_Vehicle_Turret </Encyclopedia_Vulnerable_To>
+      <Icon_Name>WRAITH_GROUND_UNIT_CHIMERA.TGA</Icon_Name>
+      <Build_Cost_Credits>300</Build_Cost_Credits>
+      <Build_Time_Seconds>46</Build_Time_Seconds>
+      <Score_Cost_Credits>300</Score_Cost_Credits>
+      <Ship_Class>walker</Ship_Class>
+      <Company_Transport_Unit>Imperial_Landing_Craft</Company_Transport_Unit>
+      <Company_Units>AT_ST_Walker</Company_Units>    
+      <Tactical_Build_Cost_Multiplayer>600</Tactical_Build_Cost_Multiplayer>
+      <Tactical_Build_Time_Seconds>9</Tactical_Build_Time_Seconds>
+      <Required_Ground_Base_Level>1</Required_Ground_Base_Level>
+   </GroundCompany>
+
+   <GroundCompany Name="Imperial_Heavy_Scout_Squad">
+      <Variant_Of_Existing_Type>Imperial_Heavy_Scout_Squad_No_Prereq</Variant_Of_Existing_Type>
+      <Affiliation>Empire</Affiliation>
+      <Tech_Level>4</Tech_Level>  
+      <Tactical_Build_Prerequisites>EC_Level_Two_Tech_Upgrade</Tactical_Build_Prerequisites>
+      <Required_Special_Structures>E_Ground_Light_Vehicle_Factory</Required_Special_Structures>
+      <Required_Ground_Base_Level>1</Required_Ground_Base_Level>
+   </GroundCompany>
+   <GroundCompany Name="Imperial_Heavy_Scout_Squad_Small">
+      <Variant_Of_Existing_Type>Imperial_Heavy_Scout_Squad_No_Prereq</Variant_Of_Existing_Type>
+      <Build_Tab_Land_Units>No</Build_Tab_Land_Units>
+      <Required_Ground_Base_Level>1</Required_Ground_Base_Level>
+   </GroundCompany>
+   
+   
+   <Projectile Name="Proj_Wraith_Land_Unit_Chimera">
+    <Variant_Of_Existing_Type>Proj_Wraith_Walker_AntiVehicle</Variant_Of_Existing_Type>
+    <Damage_Type>Damage_Anti_Infantry</Damage_Type>
+    <Projectile_Damage>23.5</Projectile_Damage>
+  </Projectile>
+         
+ 
+</GroundVehicles>

@@ -1,0 +1,141 @@
+<?xml version="1.0"?>
+<Kull_Warrior_Data>
+
+   <!--Anubis' super soldier
+   When ability is activated the Kull can use both arms and fires more salvos for a short amount of time:
+   TEXT_ABILITY_GOAULD_GROUND_KULLKRIEGER_VOLLE_SALVE
+   TEXT_DESCRIPTION_ABILITY_KULLKRIEGER_VOLLE_SALVE
+   not quite sure whats the best course of action. We could a simple power to weapon for his ability, or make him deploy with both arms up. 
+   alterantively we could give him some scripted self-heal ability as long as he is immobile/deployed. 
+   -->
+   <GroundVehicle Name="Rebel_Infiltrator">
+      <Variant_Of_Existing_Type>Template_Ground_Infantry_Single</Variant_Of_Existing_Type>
+      <Text_ID>TEXT_GOAULD_GROUND_UNIT_KULL_KRIEGER</Text_ID>
+      <Encyclopedia_Text>TEXT_DESCRIPTION_GOAULD_KULL_KRIEGER_GROUND</Encyclopedia_Text>
+      <Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_KULL_KRIEGER</Encyclopedia_Unit_Class>
+      <Encyclopedia_Good_Against>Underworld_Merc MZ8_Pulse_Cannon_Tank Dark_Trooper_PhaseI</Encyclopedia_Good_Against>
+      <Encyclopedia_Vulnerable_To>Underworld_Saboteur Tauri_B302_Land</Encyclopedia_Vulnerable_To>     
+      <Land_Model_Name>Goauld_Land_Unit_Kull_Warrior.ALO</Land_Model_Name>
+      <Icon_Name>GOAULD_GROUND_UNIT_KULL_WARRIOR.tga</Icon_Name>
+      <Scale_Factor>1.175</Scale_Factor>
+      <LandBehavior>WALK_LOCOMOTOR, DAMAGE_TRACKING, GARRISON_UNIT, HIDE_WHEN_FOGGED, IDLE, REVEAL, SELECTABLE, SURFACE_FX, TARGETING, UNIT_AI, WEAPON</LandBehavior>
+      <Movement_Animation_Speed> 1.5 </Movement_Animation_Speed>
+      <Rotation_Animation_Speed> 15.0 </Rotation_Animation_Speed>
+      <Walk_Animation_Speed> 0.45 </Walk_Animation_Speed>
+      <Crouch_Animation_Speed> 1.0 </Crouch_Animation_Speed>
+      <Affiliation>Rebel</Affiliation>
+      <FormationOrder>1</FormationOrder>
+      <Armor_Type>Armor_Kull</Armor_Type>   
+      <Damage>8</Damage>
+      <AI_Combat_Power>400</AI_Combat_Power>
+      <Targeting_Priority_Set>SG_Infantry_AntiInfantry</Targeting_Priority_Set>
+      <Tactical_Health>800</Tactical_Health>
+
+      <Projectile_Types>Proj_Goauld_Kull_Warrior</Projectile_Types>
+      <Projectile_Fire_Recharge_Seconds>0.1</Projectile_Fire_Recharge_Seconds>
+		<Projectile_Fire_Pulse_Count>3</Projectile_Fire_Pulse_Count>
+		<Projectile_Fire_Pulse_Delay_Seconds>0.25</Projectile_Fire_Pulse_Delay_Seconds>
+      <!--<HardPoints>
+		HP_Kull_Wrist_Gun
+      </HardPoints>-->
+      <CategoryMask> Infantry | AntiVehicle | AntiStructure </CategoryMask>
+      <Weather_Category>Walker</Weather_Category>
+      
+      <SFXEvent_Fire>Weapon_Goauld_Kull_Weapon</SFXEvent_Fire>
+      
+      <Abilities SubObjectList="Yes">
+        <Redirect_Blaster_Ability Name="Goauld_Unit_Kull_Redirect_Blaster">
+            <Initially_Enabled> Yes </Initially_Enabled>
+            <Activation_Style>Take_Damage</Activation_Style>
+            <Redirect_Chance>0.0</Redirect_Chance>
+            <Block_Chance>0.35</Block_Chance>
+            <Reaction_Arc_In_Degrees>180.0</Reaction_Arc_In_Degrees>
+            <Max_Projectile_Redirection_Angle_In_Degrees> 10.0 </Max_Projectile_Redirection_Angle_In_Degrees>
+            <Turn_To_Face_Unblockable_Shots>No</Turn_To_Face_Unblockable_Shots>
+            <Applicable_Unit_Categories>Infantry | LandHero | Vehicle | Air | Structure</Applicable_Unit_Categories>
+            <Applicable_Unit_Types />
+            <SFXEvent_Activate></SFXEvent_Activate>
+        </Redirect_Blaster_Ability>
+      </Abilities>
+   </GroundVehicle>
+
+   <GroundCompany Name="Rebel_Infiltrator_Team_No_Prereq">
+      <Variant_Of_Existing_Type>Template_Ground_Company</Variant_Of_Existing_Type>
+      <Text_ID>TEXT_GOAULD_GROUND_UNIT_KULL_KRIEGER</Text_ID>
+      <Encyclopedia_Text>TEXT_DESCRIPTION_GOAULD_KULL_KRIEGER_GROUND</Encyclopedia_Text>
+      <Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_KULL_KRIEGER</Encyclopedia_Unit_Class>
+      <Encyclopedia_Good_Against>Underworld_Merc MZ8_Pulse_Cannon_Tank Dark_Trooper_PhaseI</Encyclopedia_Good_Against>
+      <Encyclopedia_Vulnerable_To>Underworld_Saboteur Tauri_B302_Land</Encyclopedia_Vulnerable_To>      
+      <Icon_Name>GOAULD_GROUND_UNIT_KULL_WARRIOR.TGA</Icon_Name>
+      <Damage>60</Damage>
+      <Score_Cost_Credits>1000</Score_Cost_Credits>
+      <Build_Cost_Credits>750</Build_Cost_Credits>
+      <Build_Time_Seconds>94</Build_Time_Seconds>
+      <Company_Transport_Unit>Alliance_Shuttle</Company_Transport_Unit>
+      <Company_Units>Rebel_Infiltrator</Company_Units>
+      <Tactical_Build_Cost_Multiplayer>1500</Tactical_Build_Cost_Multiplayer>
+      <Tactical_Build_Time_Seconds>18</Tactical_Build_Time_Seconds>
+      <Required_Ground_Base_Level>1</Required_Ground_Base_Level>
+   </GroundCompany>
+  
+	<GroundCompany Name="Rebel_Infiltrator_Team">
+      <Variant_Of_Existing_Type>Rebel_Infiltrator_Team_No_Prereq</Variant_Of_Existing_Type>
+      <Affiliation>Rebel</Affiliation>
+      <Tech_Level>4</Tech_Level>
+      <Required_Timeline>0</Required_Timeline>
+      <Required_Ground_Base_Level>1</Required_Ground_Base_Level>
+      <Required_Star_Base_Level>0</Required_Star_Base_Level>
+      <Required_Special_Structures>R_Ground_Heavy_Vehicle_Factory</Required_Special_Structures>
+      <Required_Orbiting_Units/>
+      <Required_Planets />
+      <Tactical_Build_Prerequisites>G_Ground_Kull_Technology_Upgrade, RC_Level_Three_Tech_Upgrade</Tactical_Build_Prerequisites>
+	</GroundCompany>
+
+   <GroundInfantry Name="Rebel_Infiltrator_GC">
+      <Variant_Of_Existing_Type>Rebel_Infiltrator</Variant_Of_Existing_Type>
+      <Damage>15</Damage>
+      <AI_Combat_Power>400</AI_Combat_Power>
+      <Tactical_Health>2000</Tactical_Health>
+      <Projectile_Types>Proj_Goauld_Kull_Warrior_GC</Projectile_Types>
+		<Projectile_Fire_Pulse_Delay_Seconds>0.2</Projectile_Fire_Pulse_Delay_Seconds>
+      <Abilities SubObjectList="Yes">
+         <Redirect_Blaster_Ability Name="Goauld_Unit_Kull_Redirect_Blaster">
+            <Initially_Enabled> Yes </Initially_Enabled>
+            <Activation_Style>Take_Damage</Activation_Style>
+            <Redirect_Chance>0.0</Redirect_Chance>
+            <Block_Chance>0.35</Block_Chance>
+            <Reaction_Arc_In_Degrees>180.0</Reaction_Arc_In_Degrees>
+            <Max_Projectile_Redirection_Angle_In_Degrees> 10.0 </Max_Projectile_Redirection_Angle_In_Degrees>
+            <Turn_To_Face_Unblockable_Shots>No</Turn_To_Face_Unblockable_Shots>
+            <Applicable_Unit_Categories>Infantry | LandHero | Vehicle | Air | Structure</Applicable_Unit_Categories>
+            <Applicable_Unit_Types />
+            <SFXEvent_Activate></SFXEvent_Activate>
+        </Redirect_Blaster_Ability>
+		</Abilities>
+   </GroundInfantry>
+   <GroundCompany Name="Rebel_Infiltrator_Team_GC">
+      <Variant_Of_Existing_Type>Rebel_Infiltrator_Team_No_Prereq</Variant_Of_Existing_Type>
+      <Tech_Level>4</Tech_Level>
+      <Build_Limit_Current_Per_Player>10</Build_Limit_Current_Per_Player>
+      <Required_Ground_Base_Level>1</Required_Ground_Base_Level>
+      <Required_Star_Base_Level>0</Required_Star_Base_Level>
+      <Required_Special_Structures>R_Ground_Heavy_Vehicle_Factory_SP</Required_Special_Structures>
+      <Company_Units>Rebel_Infiltrator_GC</Company_Units>
+	</GroundCompany>
+	
+	
+	
+   <!-- Projectile Information Goauld Kull Warrior -->
+   <Projectile Name="Proj_Goauld_Kull_Warrior">
+      <Variant_Of_Existing_Type> Proj_Goauld_Kull_Blaster</Variant_Of_Existing_Type>
+      <Damage_Type>Damage_Normal</Damage_Type>
+      <Projectile_Damage>9.92</Projectile_Damage>
+   </Projectile>
+
+   <Projectile Name="Proj_Goauld_Kull_Warrior_GC">
+      <Variant_Of_Existing_Type> Proj_Goauld_Kull_Blaster</Variant_Of_Existing_Type>
+      <Damage_Type>Damage_Normal</Damage_Type>
+      <Projectile_Damage>25.0</Projectile_Damage>
+   </Projectile>
+  
+</Kull_Warrior_Data>

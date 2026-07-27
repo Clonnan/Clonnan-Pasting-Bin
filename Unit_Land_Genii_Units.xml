@@ -1,0 +1,327 @@
+<?xml version="1.0"?>
+<Genii_Units_Data>
+
+
+   <GroundInfantry Name="Genii_Soldier">
+      <Variant_Of_Existing_Type>Template_Ground_Infantry_Multi</Variant_Of_Existing_Type>
+      <Text_ID>TEXT_GENII_GROUND_UNIT_SOLDIER</Text_ID>
+      <Encyclopedia_Text>TEXT_DESCRIPTION_GENII_SOLDIER_GROUND</Encyclopedia_Text>
+      <Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_SPECIAL_FORCES</Encyclopedia_Unit_Class>
+      <Encyclopedia_Good_Against>Underworld_Saboteur Underworld_Merc Stormtrooper</Encyclopedia_Good_Against>
+      <Encyclopedia_Vulnerable_To>MZ8_Pulse_Cannon_Tank Tauri_F302_Land Empire_Anti_Infantry_Turret</Encyclopedia_Vulnerable_To>
+      <Icon_Name>GENII_GROUND_UNIT_SOLDIER.TGA</Icon_Name>
+      <Land_Model_Name>Wraith_Land_Unit_Worshipper_3.alo</Land_Model_Name>
+      <Land_Model_Anim_Override_Name>Wraith_Land_Unit_Worshipper_3.alo</Land_Model_Anim_Override_Name>
+      <Tactical_Health>65</Tactical_Health>
+      <Max_Speed>1.0</Max_Speed>
+      <AI_Combat_Power>20</AI_Combat_Power>
+      <Affiliation>Pirates</Affiliation>
+      <Tech_Level>99</Tech_Level>
+      <CategoryMask>Infantry</CategoryMask>
+      <FormationSpacing>0.5</FormationSpacing>
+      <Projectile_Types>Proj_Genii_Soldier</Projectile_Types>
+      <Projectile_Fire_Recharge_Seconds>2.8</Projectile_Fire_Recharge_Seconds>
+      <Projectile_Fire_Pulse_Count>20</Projectile_Fire_Pulse_Count>
+      <Projectile_Fire_Pulse_Delay_Seconds>0.09</Projectile_Fire_Pulse_Delay_Seconds>
+      <Targeting_Priority_Set>SG_Infantry_AntiInfantry</Targeting_Priority_Set>
+      <SFXEvent_Fire>Weapon_Tauri_P90</SFXEvent_Fire>
+      <Death_Clone>Damage_Hand_Device, Genii_Soldier_Hand_Device_Death_Clone</Death_Clone>
+      <Unit_Abilities_Data SubObjectList="Yes">
+         <Unit_Ability>
+            <Type>SPREAD_OUT</Type>
+            <Alternate_Name_Text>TEXT_TOOLTIP_ABILITY_SPREAD_OUT_NAME</Alternate_Name_Text>
+            <Alternate_Description_Text>TEXT_DESCRIPTION_ABILITY_GROUND_MARINES_DECKUNG</Alternate_Description_Text>
+            <Mod_Multiplier>SPEED_MULTIPLIER, 0.5f</Mod_Multiplier>
+            <Mod_Multiplier>TAKE_DAMAGE_MULTIPLIER, 0.7f</Mod_Multiplier>
+         </Unit_Ability>
+      </Unit_Abilities_Data>
+   </GroundInfantry>
+
+   <GroundInfantry Name="Genii_Soldier_Hand_Device_Death_Clone">
+      <Variant_Of_Existing_Type>Genii_Soldier</Variant_Of_Existing_Type>
+      <Specific_Death_Anim_Type>FW_DIE</Specific_Death_Anim_Type>
+   </GroundInfantry>
+
+   <GroundInfantry Name="Genii_Soldier_Indigenous">
+      <Variant_Of_Existing_Type>Genii_Soldier</Variant_Of_Existing_Type>
+      <LandBehavior>LAND_TEAM_INFANTRY_LOCOMOTOR, DAMAGE_TRACKING, HIDE_WHEN_FOGGED, IDLE, INDIGENOUS_UNIT, REVEAL, STUNNABLE, SURFACE_FX, UNIT_AI, WEAPON</LandBehavior>
+      <Victory_Relevant>No</Victory_Relevant>
+   </GroundInfantry>
+
+
+   <GroundCompany Name="Genii_Soldier_Company">
+      <Variant_Of_Existing_Type>Template_Ground_Company</Variant_Of_Existing_Type>
+      <Text_ID>TEXT_GENII_GROUND_UNIT_SOLDIER</Text_ID>
+      <Encyclopedia_Text>TEXT_DESCRIPTION_GENII_SOLDIER_GROUND</Encyclopedia_Text>
+      <Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_SPECIAL_FORCES</Encyclopedia_Unit_Class>
+      <Encyclopedia_Good_Against>Underworld_Saboteur Underworld_Merc Stormtrooper</Encyclopedia_Good_Against>
+      <Encyclopedia_Vulnerable_To>MZ8_Pulse_Cannon_Tank Tauri_F302_Land Empire_Anti_Infantry_Turret</Encyclopedia_Vulnerable_To>
+      <Icon_Name>GENII_GROUND_UNIT_SOLDIER.TGA</Icon_Name>
+      <Affiliation>Pirates</Affiliation>
+      <Damage>10</Damage>
+      <Score_Cost_Credits>250</Score_Cost_Credits>
+      <Build_Cost_Credits>300</Build_Cost_Credits>
+      <Build_Time_Seconds>10</Build_Time_Seconds>
+      <Company_Transport_Unit>Asuran_Jumper_Transport</Company_Transport_Unit>
+      <Create_Team_Type>Genii_Soldier_Team</Create_Team_Type>
+      <Company_Units>Genii_Soldier, Genii_Soldier, Genii_Soldier, Genii_Soldier, Genii_Soldier, Genii_Soldier</Company_Units>
+      <Max_Squad_Size>6</Max_Squad_Size>
+      <Tactical_Build_Cost_Multiplayer>600</Tactical_Build_Cost_Multiplayer>
+      <Tactical_Build_Time_Seconds>9</Tactical_Build_Time_Seconds>
+      <Required_Ground_Base_Level>1</Required_Ground_Base_Level>
+   </GroundCompany>
+
+   <GroundCompany Name="Genii_Soldier_Indigenous_Company">
+      <Variant_Of_Existing_Type>Genii_Soldier_Company</Variant_Of_Existing_Type>
+      <Company_Units>Genii_Soldier_Indigenous, Genii_Soldier_Indigenous, Genii_Soldier_Indigenous, Genii_Soldier_Indigenous, Genii_Soldier_Indigenous, Genii_Soldier_Indigenous</Company_Units>
+      <Create_Team_Type>Genii_Soldier_Indigenous_Team</Create_Team_Type>
+   </GroundCompany>
+
+
+   <Container Name="Genii_Soldier_Team">
+      <Variant_Of_Existing_Type>Template_Infantry_Container</Variant_Of_Existing_Type>
+      <Text_ID>TEXT_GENII_GROUND_UNIT_SOLDIER</Text_ID>
+      <Encyclopedia_Text>TEXT_DESCRIPTION_GENII_SOLDIER_GROUND</Encyclopedia_Text>
+      <Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_SPECIAL_FORCES</Encyclopedia_Unit_Class>
+      <Encyclopedia_Good_Against>Underworld_Saboteur Underworld_Merc Stormtrooper</Encyclopedia_Good_Against>
+      <Encyclopedia_Vulnerable_To>MZ8_Pulse_Cannon_Tank Tauri_F302_Land Empire_Anti_Infantry_Turret</Encyclopedia_Vulnerable_To>
+      <Icon_Name>GENII_GROUND_UNIT_SOLDIER.TGA</Icon_Name>
+      <ContainerArrangement>Rows</ContainerArrangement>
+      <Affiliation>Pirates</Affiliation>
+      <Max_Speed>1.0</Max_Speed>
+      <Unit_Abilities_Data SubObjectList="Yes">
+         <Unit_Ability>
+            <Type>SPREAD_OUT</Type>
+            <Alternate_Name_Text>TEXT_TOOLTIP_ABILITY_SPREAD_OUT_NAME</Alternate_Name_Text>
+            <Alternate_Description_Text>TEXT_DESCRIPTION_ABILITY_GROUND_MARINES_DECKUNG</Alternate_Description_Text>
+            <Mod_Multiplier>SPEED_MULTIPLIER, 0.5f</Mod_Multiplier>
+            <Mod_Multiplier>TAKE_DAMAGE_MULTIPLIER, 0.7f</Mod_Multiplier>
+         </Unit_Ability>
+      </Unit_Abilities_Data>
+   </Container>
+
+   <Container Name="Genii_Soldier_Indigenous_Team">
+      <Variant_Of_Existing_Type>Genii_Soldier_Team</Variant_Of_Existing_Type>
+      <LandBehavior>LAND_TEAM_CONTAINER_LOCOMOTOR, REVEAL, TEAM_TARGETING</LandBehavior>
+   </Container>
+
+
+   <!-- Shotgun Team -->
+   <GroundInfantry Name="Genii_Rifleman">
+      <Variant_Of_Existing_Type>Template_Ground_Infantry_Multi</Variant_Of_Existing_Type>
+      <Text_ID>TEXT_GENII_GROUND_UNIT_RIFLEMAN</Text_ID>
+      <Encyclopedia_Text>TEXT_DESCRIPTION_GENII_RIFLEMAN_GROUND</Encyclopedia_Text>
+      <Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_SPECIAL_FORCES</Encyclopedia_Unit_Class>
+      <Encyclopedia_Good_Against>Underworld_Saboteur Underworld_Merc Stormtrooper</Encyclopedia_Good_Against>
+      <Encyclopedia_Vulnerable_To>MZ8_Pulse_Cannon_Tank Tauri_F302_Land Empire_Anti_Infantry_Turret</Encyclopedia_Vulnerable_To>
+      <Icon_Name>GENII_GROUND_UNIT_RIFLEMAN.TGA</Icon_Name>
+      <Land_Model_Name>Wraith_Land_Unit_Worshipper_2.alo</Land_Model_Name>
+      <Land_Model_Anim_Override_Name>Wraith_Land_Unit_Worshipper_2.alo</Land_Model_Anim_Override_Name>
+      <Tactical_Health>65</Tactical_Health>
+      <Max_Speed>1.0</Max_Speed>
+      <AI_Combat_Power>20</AI_Combat_Power>
+      <Targeting_Priority_Set>SG_Infantry_AntiInfantry</Targeting_Priority_Set>
+      <Affiliation>Pirates</Affiliation>
+      <Tech_Level>99</Tech_Level>
+      <CategoryMask>Infantry</CategoryMask>
+      <FormationSpacing>0.5</FormationSpacing>
+      <Projectile_Types>Proj_Genii_Rifleman</Projectile_Types>
+      <Projectile_Fire_Recharge_Seconds>3</Projectile_Fire_Recharge_Seconds>
+      <Projectile_Fire_Pulse_Count>1</Projectile_Fire_Pulse_Count>
+      <Projectile_Fire_Pulse_Delay_Seconds>2</Projectile_Fire_Pulse_Delay_Seconds>
+      <SFXEvent_Fire>Weapon_Shotgun_Genii</SFXEvent_Fire>
+      <Death_Clone>Damage_Hand_Device, Genii_Rifleman_Hand_Device_Death_Clone</Death_Clone>
+      <Unit_Abilities_Data SubObjectList="Yes">
+         <Unit_Ability>
+            <Type>SPREAD_OUT</Type>
+            <Alternate_Name_Text>TEXT_TOOLTIP_ABILITY_SPREAD_OUT_NAME</Alternate_Name_Text>
+            <Alternate_Description_Text>TEXT_DESCRIPTION_ABILITY_GROUND_MARINES_DECKUNG</Alternate_Description_Text>
+            <Mod_Multiplier>SPEED_MULTIPLIER, 0.5f</Mod_Multiplier>
+            <Mod_Multiplier>TAKE_DAMAGE_MULTIPLIER, 0.7f</Mod_Multiplier>
+         </Unit_Ability>
+      </Unit_Abilities_Data>
+   </GroundInfantry>
+
+   <GroundInfantry Name="Genii_Rifleman_Hand_Device_Death_Clone">
+      <Variant_Of_Existing_Type>Genii_Rifleman</Variant_Of_Existing_Type>
+      <Specific_Death_Anim_Type>FW_DIE</Specific_Death_Anim_Type>
+   </GroundInfantry>
+
+
+   <GroundCompany Name="Genii_Rifleman_Company">
+      <Variant_Of_Existing_Type>Template_Ground_Company</Variant_Of_Existing_Type>
+      <Text_ID>TEXT_GENII_GROUND_UNIT_RIFLEMAN</Text_ID>
+      <Encyclopedia_Text>TEXT_DESCRIPTION_GENII_RIFLEMAN_GROUND</Encyclopedia_Text>
+      <Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_SPECIAL_FORCES</Encyclopedia_Unit_Class>
+      <Encyclopedia_Good_Against>Underworld_Saboteur Underworld_Merc Stormtrooper</Encyclopedia_Good_Against>
+      <Encyclopedia_Vulnerable_To>MZ8_Pulse_Cannon_Tank Tauri_F302_Land Empire_Anti_Infantry_Turret</Encyclopedia_Vulnerable_To>
+      <Icon_Name>GENII_GROUND_UNIT_RIFLEMAN.TGA</Icon_Name>
+      <Affiliation>Pirates</Affiliation>
+      <Damage>10</Damage>
+      <Score_Cost_Credits>250</Score_Cost_Credits>
+      <Build_Cost_Credits>300</Build_Cost_Credits>
+      <Build_Time_Seconds>10</Build_Time_Seconds>
+      <Company_Transport_Unit>Asuran_Jumper_Transport</Company_Transport_Unit>
+      <Create_Team_Type>Genii_Rifleman_Team</Create_Team_Type>
+      <Company_Units>Genii_Rifleman, Genii_Rifleman, Genii_Rifleman, Genii_Rifleman, Genii_Rifleman, Genii_Rifleman</Company_Units>
+      <Max_Squad_Size>6</Max_Squad_Size>
+      <Tactical_Build_Cost_Multiplayer>600</Tactical_Build_Cost_Multiplayer>
+      <Tactical_Build_Time_Seconds>9</Tactical_Build_Time_Seconds>
+      <Required_Ground_Base_Level>1</Required_Ground_Base_Level>
+   </GroundCompany>
+
+
+   <Container Name="Genii_Rifleman_Team">
+      <Variant_Of_Existing_Type>Template_Infantry_Container</Variant_Of_Existing_Type>
+      <Text_ID>TEXT_GENII_GROUND_UNIT_RIFLEMAN</Text_ID>
+      <Encyclopedia_Text>TEXT_DESCRIPTION_GENII_RIFLEMAN_GROUND</Encyclopedia_Text>
+      <Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_SPECIAL_FORCES</Encyclopedia_Unit_Class>
+      <Encyclopedia_Good_Against>Underworld_Saboteur Underworld_Merc Stormtrooper</Encyclopedia_Good_Against>
+      <Encyclopedia_Vulnerable_To>MZ8_Pulse_Cannon_Tank Tauri_F302_Land Empire_Anti_Infantry_Turret</Encyclopedia_Vulnerable_To>
+      <Icon_Name>GENII_GROUND_UNIT_SOLDIER.TGA</Icon_Name>
+      <ContainerArrangement>Rows</ContainerArrangement>
+      <Affiliation>Pirates</Affiliation>
+      <Max_Speed>1.0</Max_Speed>
+      <Unit_Abilities_Data SubObjectList="Yes">
+         <Unit_Ability>
+            <Type>SPREAD_OUT</Type>
+            <Alternate_Name_Text>TEXT_TOOLTIP_ABILITY_SPREAD_OUT_NAME</Alternate_Name_Text>
+            <Alternate_Description_Text>TEXT_DESCRIPTION_ABILITY_GROUND_MARINES_DECKUNG</Alternate_Description_Text>
+            <Mod_Multiplier>SPEED_MULTIPLIER, 0.5f</Mod_Multiplier>
+            <Mod_Multiplier>TAKE_DAMAGE_MULTIPLIER, 0.7f</Mod_Multiplier>
+         </Unit_Ability>
+      </Unit_Abilities_Data>
+   </Container>
+   
+   
+   <!-- Fighter Land -->
+   <GroundVehicle Name="Genii_Fighter_Land">
+      <Variant_Of_Existing_Type>Template_Ground_Flyer</Variant_Of_Existing_Type>
+      <Text_ID>TEXT_GENII_GROUND_UNIT_FIGHTER</Text_ID>
+      <Encyclopedia_Text>TEXT_DESCRIPTION_GENII_FIGHTER_GROUND</Encyclopedia_Text>
+      <Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_F_302_GROUND</Encyclopedia_Unit_Class>
+      <Encyclopedia_Good_Against>Scout_Trooper Goauld_Probe</Encyclopedia_Good_Against>
+      <Encyclopedia_Vulnerable_To>Goauld_Horus_Guard AT_AA_Walker</Encyclopedia_Vulnerable_To>
+      <Icon_Name>GENII_SPACE_UNIT_FIGHTER.TGA</Icon_Name>
+      <Land_Model_Name>Genii_Space_Unit_Fighter.ALO</Land_Model_Name>
+      <Radar_Icon_Name>I_RADAR_GENII_FIGHTER.TGA</Radar_Icon_Name>
+      <Scale_Factor>5</Scale_Factor>
+      <Select_Box_Scale>20</Select_Box_Scale>
+
+      <LandBehavior>
+        FLYING_LOCOMOTOR,
+        DAMAGE_TRACKING,
+        HIDE_WHEN_FOGGED,
+        REVEAL,
+        STUNNABLE,
+        TARGETING,
+        TELEKINESIS_TARGET,
+        UNIT_AI,
+        WIND_DISTURBANCE
+      </LandBehavior>
+	  
+      <Affiliation>Pirates</Affiliation>
+      <Damage>76</Damage>
+      <Score_Cost_Credits>600</Score_Cost_Credits>
+      <Tactical_Health>200</Tactical_Health>
+      <AI_Combat_Power>110</AI_Combat_Power>
+      <Size_Value>15</Size_Value>
+
+      <Max_Speed>5.5</Max_Speed>
+      <Min_Speed>5.0</Min_Speed>
+      <OverrideAcceleration>0.2</OverrideAcceleration>
+      <OverrideDeceleration>0.2</OverrideDeceleration>
+      <Max_Rate_Of_Turn>4.0</Max_Rate_Of_Turn>
+      <Max_Rate_Of_Roll>1.0</Max_Rate_Of_Roll>
+      <Max_Lift>2.5</Max_Lift>
+      <Bank_Turn_Angle>60</Bank_Turn_Angle>
+      <Prepare_Strafe_Height>150</Prepare_Strafe_Height>
+      
+      <Blob_Shadow_Scale>40.0, 40.0</Blob_Shadow_Scale>
+      <Ranged_Target_Z_Adjust>10.0</Ranged_Target_Z_Adjust>
+      <Spin_Away_On_Death>Yes</Spin_Away_On_Death>
+      <Targeting_Priority_Set>SG_Air_AntiAll</Targeting_Priority_Set>
+      
+      <HardPoints>
+         HP_Genii_Fighter_Railgun_1,
+         HP_Genii_Fighter_Railgun_2
+      </HardPoints>
+      
+      <SFXEvent_Select>Unit_Select_FB</SFXEvent_Select>
+      <SFXEvent_Move>Unit_Move_FB</SFXEvent_Move>
+      <SFXEvent_Fleet_Move>Unit_Move_FB</SFXEvent_Fleet_Move>
+       <SFXEvent_Stop></SFXEvent_Stop> 
+      <SFXEvent_Attack>Unit_Attack_FB</SFXEvent_Attack>
+      <SFXEvent_Guard>Unit_Guard_FB</SFXEvent_Guard>
+      <SFXEvent_Assist_Move>Unit_Move_FB</SFXEvent_Assist_Move>
+      <SFXEvent_Assist_Attack>Unit_Attack_FB</SFXEvent_Assist_Attack>
+      <Death_SFXEvent_Start_Die>Explosion_Figther</Death_SFXEvent_Start_Die>
+      <SFXEvent_Ambient_Moving> Engine_Tauri_F302 </SFXEvent_Ambient_Moving>
+      <SFXEvent_Ambient_Moving_Min_Delay_Seconds> 5 </SFXEvent_Ambient_Moving_Min_Delay_Seconds>
+      <SFXEvent_Ambient_Moving_Max_Delay_Seconds> 7 </SFXEvent_Ambient_Moving_Max_Delay_Seconds>
+      <SFXEvent_Engine_Cinematic_Focus_Loop> Engine_Tauri_F302 </SFXEvent_Engine_Cinematic_Focus_Loop>
+   </GroundVehicle>
+   
+   
+   <!-- COMPANY INFO -->
+   <GroundCompany Name="Genii_Fighter_Land_Company_No_Prereq">
+      <Variant_Of_Existing_Type>Template_Ground_Company</Variant_Of_Existing_Type>
+      <Text_ID>TEXT_GENII_GROUND_UNIT_FIGHTER</Text_ID>
+      <Encyclopedia_Text>TEXT_DESCRIPTION_GENII_FIGHTER_GROUND</Encyclopedia_Text>
+      <Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_F_302_GROUND</Encyclopedia_Unit_Class>
+      <Encyclopedia_Good_Against>Scout_Trooper Goauld_Probe</Encyclopedia_Good_Against>
+      <Encyclopedia_Vulnerable_To>Goauld_Horus_Guard AT_AA_Walker</Encyclopedia_Vulnerable_To>
+	  <Land_Model_Name>Genii_Space_Unit_Fighter.ALO</Land_Model_Name>
+      <Icon_Name>GENII_SPACE_UNIT_FIGHTER.TGA</Icon_Name>
+      <Damage>76</Damage>
+      <Build_Cost_Credits>800</Build_Cost_Credits>
+      <Build_Time_Seconds>70</Build_Time_Seconds>
+      <Ship_Class>walker</Ship_Class>
+      <Company_Transport_Unit>Asuran_Jumper_Transport</Company_Transport_Unit>
+      <Company_Units>Genii_Fighter_Land</Company_Units>     
+      <Score_Cost_Credits>600</Score_Cost_Credits>
+      <Tactical_Build_Cost_Multiplayer>1600</Tactical_Build_Cost_Multiplayer>
+      <Tactical_Build_Time_Seconds>15</Tactical_Build_Time_Seconds>
+      <Required_Ground_Base_Level>1</Required_Ground_Base_Level>
+   </GroundCompany>
+
+   <GroundCompany Name="Genii_Fighter_Land_Company">
+      <Variant_Of_Existing_Type>Genii_Fighter_Land_Company_No_Prereq</Variant_Of_Existing_Type>
+      <Affiliation>Pirates</Affiliation>
+      <Tech_Level>4</Tech_Level>
+      <Required_Special_Structures>Genii_Ground_Building_Hangar</Required_Special_Structures>
+   </GroundCompany>
+   
+   
+  <!-- PROJECTILE INFO -->
+  <Projectile Name="Proj_Genii_Railgun_Fighter_Land">
+    <Variant_Of_Existing_Type>Proj_Tauri_F302_Land_Railgun</Variant_Of_Existing_Type>
+    <Damage_Type>Damage_Normal</Damage_Type>
+    <Projectile_Damage>8.89</Projectile_Damage>
+  </Projectile>
+   
+  <Projectile Name="Proj_Genii_Missile_Fighter_Land">
+    <Variant_Of_Existing_Type>Proj_Tauri_F302_Land_Missile</Variant_Of_Existing_Type>
+    <Damage_Type>Damage_Anti_Air</Damage_Type>
+    <Projectile_Damage>70.0</Projectile_Damage>
+    <Projectile_Blast_Area_Range>10.0</Projectile_Blast_Area_Range>
+    <Projectile_Blast_Area_Damage>30.0</Projectile_Blast_Area_Damage>
+    <Max_Secs_For_AE_Delayed_Damage>0.0</Max_Secs_For_AE_Delayed_Damage>
+  </Projectile> 
+
+
+
+   <!-- PROJECTILE INFO -->
+   <Projectile Name="Proj_Genii_Soldier">
+      <Variant_Of_Existing_Type>Proj_Tauri_MP5</Variant_Of_Existing_Type>
+      <Damage_Type>Damage_Anti_Infantry</Damage_Type>
+      <Projectile_Damage>0.44</Projectile_Damage>
+   </Projectile>
+
+   <Projectile Name="Proj_Genii_Rifleman">
+      <Variant_Of_Existing_Type>Proj_Tauri_G3SG1</Variant_Of_Existing_Type>
+      <Damage_Type>Damage_Sniper</Damage_Type>
+      <Projectile_Damage>50.0</Projectile_Damage>
+   </Projectile>
+
+</Genii_Units_Data>

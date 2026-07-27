@@ -1,0 +1,172 @@
+<?xml version="1.0"?>
+<UniqueUnits>
+
+   <!-- Ground unit-->    
+   <HeroUnit Name="Adria">
+      <Variant_Of_Existing_Type>Template_Ground_Infantry_Single_Hero</Variant_Of_Existing_Type>
+      <Text_ID>TEXT_ORI_SPACE_HERO_ADRIA</Text_ID>
+      <Encyclopedia_Text>TEXT_DESCRIPTION_ORI_GC_ADRIA_GROUND</Encyclopedia_Text>
+      <Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_ADRIA_KRIEGSSCHIFF</Encyclopedia_Unit_Class>
+      <Encyclopedia_Good_Against></Encyclopedia_Good_Against>
+      <Encyclopedia_Vulnerable_To></Encyclopedia_Vulnerable_To>
+      <Icon_Name>ORI_SPACE_HERO_ADRIA.TGA</Icon_Name> 
+      <Land_Model_Name>Ori_Land_Hero_Adria.ALO</Land_Model_Name>
+      <Scale_Factor>0.9</Scale_Factor>
+	  <Tactical_Health>1200</Tactical_Health>
+      <Movement_Animation_Speed>0.6</Movement_Animation_Speed>
+      <Rotation_Animation_Speed>20.0</Rotation_Animation_Speed>
+      <Walk_Animation_Speed>0.6</Walk_Animation_Speed>
+      <Max_Speed>0.6</Max_Speed>
+      <!--Land_Model_Anim_Override_Name>Ori_Land_Hero_Adria.ALO</Land_Model_Anim_Override_Name-->
+      <LandBehavior>ABILITY_COUNTDOWN, DAMAGE_TRACKING, HIDE_WHEN_FOGGED, IDLE, REVEAL, SELECTABLE, SURFACE_FX, TARGETING, UNIT_AI, WALK_LOCOMOTOR, WEAPON</LandBehavior>  
+      <Affiliation>Ori</Affiliation>
+      <Always_Spawn_In_Orbit>Yes</Always_Spawn_In_Orbit>
+      
+      <Is_Named_Hero>No</Is_Named_Hero>
+      <Is_Generic_Hero>Yes</Is_Generic_Hero>
+      <Show_Hero_Head>Yes</Show_Hero_Head>
+      <Can_Be_Neutralized_By_Major_Heroes>No</Can_Be_Neutralized_By_Major_Heroes>
+      <Can_Be_Neutralized_By_Minor_Heroes>No</Can_Be_Neutralized_By_Minor_Heroes> 
+	  
+	  <Targeting_Max_Attack_Distance>160.0</Targeting_Max_Attack_Distance>
+	  <Attack_Move_Response_Range>140.0</Attack_Move_Response_Range>
+      
+      <Projectile_Types>Proj_Ori_Adria</Projectile_Types>
+      <Projectile_Fire_Recharge_Seconds>2</Projectile_Fire_Recharge_Seconds>
+      <Projectile_Fire_Pulse_Count>2</Projectile_Fire_Pulse_Count>
+	  <Projectile_Fire_Pulse_Delay_Seconds>0.75</Projectile_Fire_Pulse_Delay_Seconds>        
+      
+      <SFXEvent_Select>Unit_Select_Adria</SFXEvent_Select>
+      <SFXEvent_Move>Unit_Move_Adria</SFXEvent_Move>
+      <SFXEvent_Attack>Unit_Attack_Adria</SFXEvent_Attack>
+      <SFXEvent_Guard>Unit_Select_Adria</SFXEvent_Guard>
+      <SFXEvent_Group_Move>Unit_Move_Adria</SFXEvent_Group_Move>
+      <SFXEvent_Group_Attack>Unit_Attack_Adria</SFXEvent_Group_Attack>
+      <SFXEvent_Unit_Lost>Unit_Lost_Adria</SFXEvent_Unit_Lost>
+
+      <Abilities SubObjectList="Yes">
+         <Combat_Bonus_Ability Name="Ori_Hero_Adria_Land_Combat_Bonus">
+            <Activation_Style>Ground_Automatic</Activation_Style>
+            <Unit_Strength_Category>Vehicle | Infantry | Air</Unit_Strength_Category>
+            <Applicable_Unit_Categories>Vehicle | Infantry | Air</Applicable_Unit_Categories>
+            <Applicable_Unit_Types/>
+            <Health_Bonus_Percentage>0.15</Health_Bonus_Percentage>
+            <Damage_Bonus_Percentage>0.0</Damage_Bonus_Percentage>
+            <Energy_Pool_Bonus_Percentage>0.0</Energy_Pool_Bonus_Percentage>
+            <Shield_Bonus_Percentage>0.0</Shield_Bonus_Percentage>
+            <Defense_Bonus_Percentage>0.0</Defense_Bonus_Percentage>
+            <Movement_Speed_Bonus_Percentage>0.0</Movement_Speed_Bonus_Percentage>
+            <Stacking_Category>0</Stacking_Category>
+         </Combat_Bonus_Ability>
+		 <Absorb_Blaster_Ability Name="Ori_Hero_Adria_Absorb_Blaster">
+            <Activation_Style>Take_Damage</Activation_Style>
+            <Absorb_Chance>0.6</Absorb_Chance>
+            <Damage_Absorb_Percentage>0.2</Damage_Absorb_Percentage>
+            <Damage_Absorb_Amount>1</Damage_Absorb_Amount>
+            <Applicable_Unit_Categories>Vehicle | Infantry | Structure</Applicable_Unit_Categories>
+            <Applicable_Unit_Types/>
+            <SFXEvent_Activate></SFXEvent_Activate>
+            <Owner_Light_Effect_Type>Color_Flash</Owner_Light_Effect_Type>
+            <Owner_Light_Effect_Color>2.0, 0.4, 0.4</Owner_Light_Effect_Color>
+            <Owner_Light_Effect_Color2/>
+            <Owner_Light_Effect_Duration>0.5</Owner_Light_Effect_Duration>
+            <Owner_Light_Effect_Pulse_Count/>
+         </Absorb_Blaster_Ability>
+      </Abilities>
+   </HeroUnit>
+ 
+      
+   <!-- HeroCompany Information--> 
+   <HeroCompany Name="Adria_Company">
+      <Variant_Of_Existing_Type>Template_Ground_Hero_Company</Variant_Of_Existing_Type>
+      <Text_ID>TEXT_ORI_SPACE_HERO_ADRIA</Text_ID>
+      <Encyclopedia_Text>TEXT_DESCRIPTION_ORI_GC_ADRIA_GROUND</Encyclopedia_Text>
+      <Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_ADRIA_KRIEGSSCHIFF</Encyclopedia_Unit_Class>
+      <Encyclopedia_Good_Against></Encyclopedia_Good_Against>
+      <Encyclopedia_Vulnerable_To></Encyclopedia_Vulnerable_To>
+      <Icon_Name>ORI_SPACE_HERO_ADRIA.TGA</Icon_Name>                            
+      <Affiliation>Ori</Affiliation>
+      <Is_Named_Hero>No</Is_Named_Hero>
+      <Is_Generic_Hero>Yes</Is_Generic_Hero>
+      <Score_Cost_Credits>25000</Score_Cost_Credits>
+      <Ranking_In_Category>1</Ranking_In_Category>      
+      <Company_Transport_Unit>Ori_Hero_Adria</Company_Transport_Unit>
+      <Company_Units>Adria</Company_Units>
+      <SFXEvent_Build_Started>Unit_Select_Adria</SFXEvent_Build_Started>
+      <SFXEvent_Build_Complete>Unit_Select_Adria</SFXEvent_Build_Complete>					
+      <SFXEvent_Fleet_Move>Unit_Fleet_Move_Adria</SFXEvent_Fleet_Move>
+      <SFXEvent_Hero_Respawned>Unit_Select_Adria</SFXEvent_Hero_Respawned>       
+      <Tactical_Build_Cost_Multiplayer>3700</Tactical_Build_Cost_Multiplayer>
+      <Tactical_Build_Time_Seconds>27</Tactical_Build_Time_Seconds>         
+      <CategoryMask> LandHero | SpaceHero </CategoryMask>
+      <Abilities SubObjectList="Yes">
+          <Combat_Bonus_Ability Name="Ori_Hero_Adria_Land_Combat_Bonus">
+            <Activation_Style>Ground_Automatic</Activation_Style>
+            <Unit_Strength_Category>Vehicle | Infantry | Air</Unit_Strength_Category>
+            <Applicable_Unit_Categories>Vehicle | Infantry | Air</Applicable_Unit_Categories>
+            <Applicable_Unit_Types/>
+            <Health_Bonus_Percentage>0.15</Health_Bonus_Percentage>
+            <Damage_Bonus_Percentage>0.0</Damage_Bonus_Percentage>
+            <Energy_Pool_Bonus_Percentage>0.0</Energy_Pool_Bonus_Percentage>
+            <Shield_Bonus_Percentage>0.0</Shield_Bonus_Percentage>
+            <Defense_Bonus_Percentage>0.0</Defense_Bonus_Percentage>
+            <Movement_Speed_Bonus_Percentage>0.0</Movement_Speed_Bonus_Percentage>
+            <Stacking_Category>0</Stacking_Category>
+      </Combat_Bonus_Ability>
+      <Super_Laser_Ability Name="Adria_Super_Laser_Attack_Ability">
+        <Activation_Style> User_Input </Activation_Style>
+        <Applicable_Unit_Categories>Corvette | Frigate | Capital | Super | SpaceHero | Structure </Applicable_Unit_Categories>
+        <Applicable_Unit_Types />
+        <Owner_Particle_Bone_Name>MuzzleA_00</Owner_Particle_Bone_Name>
+        <Activation_Min_Range>2000</Activation_Min_Range>
+        <Activation_Max_Range>20000</Activation_Max_Range>
+        <Damage_Per_Frame>100</Damage_Per_Frame>
+        <Fire_Frame>106</Fire_Frame>
+        <Beam_Texture_Name>tractor_beam01.tga</Beam_Texture_Name>
+        <Num_Anim_Frames>1</Num_Anim_Frames>
+        <Line_Width>30</Line_Width>
+        <Line_Color>255 245 0 255</Line_Color>
+      </Super_Laser_Ability>    
+      <Combat_Bonus_Ability Name="Adria_Combat_Bonus">
+        <Activation_Style>Space_Automatic</Activation_Style>
+        <Unit_Strength_Category>Fighter | Bomber | Transport | Corvette | Frigate | Capital | Super</Unit_Strength_Category>
+        <Applicable_Unit_Categories>Fighter | Bomber | Transport | Corvette | Frigate | Capital | Super</Applicable_Unit_Categories>
+        <Applicable_Unit_Types/>
+        <Health_Bonus_Percentage>0.25</Health_Bonus_Percentage>
+        <Damage_Bonus_Percentage>0.0</Damage_Bonus_Percentage>
+        <Energy_Pool_Bonus_Percentage>0.0</Energy_Pool_Bonus_Percentage>
+        <Shield_Bonus_Percentage>0.0</Shield_Bonus_Percentage>
+        <Defense_Bonus_Percentage>0.0</Defense_Bonus_Percentage>
+        <Movement_Speed_Bonus_Percentage>0.0</Movement_Speed_Bonus_Percentage>
+        <Stacking_Category>0</Stacking_Category>
+      </Combat_Bonus_Ability>
+      </Abilities>
+   </HeroCompany>
+    
+   
+   <Projectile Name="Proj_Ori_Adria">
+      <Text_ID>TEXT_NONE</Text_ID>
+      <Land_Model_Name>Ori_Projectile_Adria_Fireball.ALO</Land_Model_Name>
+      <Damage_Type>Damage_Normal</Damage_Type>
+      <Scale_Factor>1.0</Scale_Factor>
+      <Max_Speed>5.0</Max_Speed>
+      <Max_Rate_Of_Turn>0.0</Max_Rate_Of_Turn>
+      <Behavior>PROJECTILE, HIDE_WHEN_FOGGED</Behavior>
+      <Projectile_Category>DEFAULT</Projectile_Category>
+      <Projectile_Max_Flight_Distance>35.0</Projectile_Max_Flight_Distance>
+      <Projectile_Damage>60.0</Projectile_Damage>
+      <Projectile_Does_Shield_Damage>No</Projectile_Does_Shield_Damage>
+      <Projectile_Does_Energy_Damage>No</Projectile_Does_Energy_Damage>
+      <Projectile_Does_Hitpoint_Damage>Yes</Projectile_Does_Hitpoint_Damage>
+      <Projectile_Energy_Per_Shot>0</Projectile_Energy_Per_Shot>
+	  <Projectile_Blast_Area_Range>5.0</Projectile_Blast_Area_Range>
+	  <Projectile_Blast_Area_Damage>17.0</Projectile_Blast_Area_Damage>
+      <Projectile_Object_Detonation_Particle >Particle_Ori_Adria_Impact</Projectile_Object_Detonation_Particle >
+      <Projectile_Ground_Detonation_Particle >Particle_Ori_Adria_Impact</Projectile_Ground_Detonation_Particle >
+      <Projectile_Lifetime_Detonation_Particle >Particle_Ori_Adria_Impact</Projectile_Lifetime_Detonation_Particle >
+      <Projectile_Absorbed_By_Shields_Particle>Projectile_Shield_Absorb_Medium</Projectile_Absorbed_By_Shields_Particle>
+      <AI_Combat_Power>100</AI_Combat_Power>
+   </Projectile>
+   
+   
+</UniqueUnits>

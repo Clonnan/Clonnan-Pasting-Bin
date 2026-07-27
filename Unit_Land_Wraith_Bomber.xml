@@ -1,0 +1,97 @@
+<?xml version="1.0"?>
+<Wraith_Bomber_Land_Data>
+
+    <GroundVehicle Name="Wraith_Bomber_Land">
+        <Variant_Of_Existing_Type>Template_Ground_Flyer</Variant_Of_Existing_Type>
+        <Text_ID>TEXT_WRAITH_GROUND_UNIT_BOMBER</Text_ID>
+        <Encyclopedia_Text>TEXT_DESCRIPTION_WRAITH_BOMBER_GROUND</Encyclopedia_Text>
+        <Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_BOMBER</Encyclopedia_Unit_Class>
+        <Encyclopedia_Good_Against>Underworld_Merc Rebel_Trooper</Encyclopedia_Good_Against>
+        <Encyclopedia_Vulnerable_To>Scavenger_Droid Goauld_Horus_Guard Rebel_Anti_Aircraft_Turret</Encyclopedia_Vulnerable_To>
+        <Icon_Name>WRAITH_SPACE_UNIT_BOMBER.TGA</Icon_Name>
+        <Land_Model_Name>Wraith_Land_Unit_Bomber.ALO</Land_Model_Name>
+        <Scale_Factor>4</Scale_Factor>
+        <Select_Box_Scale>40</Select_Box_Scale>
+        <Radar_Icon_Name>I_RADAR_WRAITHBOMBER.TGA</Radar_Icon_Name>
+        <Affiliation>Empire</Affiliation>
+        <LandBehavior>FLYING_LOCOMOTOR, AMBIENT_SFX, DAMAGE_TRACKING, HIDE_WHEN_FOGGED, REVEAL, STUNNABLE, TARGETING, TELEKINESIS_TARGET, UNIT_AI, WIND_DISTURBANCE</LandBehavior>
+        <Max_Speed>3.2</Max_Speed>
+        <Min_Speed>1.2</Min_Speed>
+        <Max_Rate_Of_Turn>5.0</Max_Rate_Of_Turn>
+        <Max_Rate_Of_Roll>4.5</Max_Rate_Of_Roll>
+        <Prepare_Strafe_Height>150.0</Prepare_Strafe_Height>
+        <AI_Combat_Power>130</AI_Combat_Power>
+        <Damage>53</Damage>
+        <Score_Cost_Credits>600</Score_Cost_Credits>
+        <Tactical_Health>250</Tactical_Health>
+        <Hardpoints>
+         HP_Wraith_Bomber_Land_Laser,
+         HP_Wraith_Bomber_Land_Bomb
+        </Hardpoints>
+        <Targeting_Priority_Set>SG_Air_AntiAll</Targeting_Priority_Set>
+
+        <SFXEvent_Select>Unit_Select_Wraith_FB</SFXEvent_Select>
+        <SFXEvent_Move>Unit_Move_Wraith_FB</SFXEvent_Move>
+        <SFXEvent_Fleet_Move></SFXEvent_Fleet_Move>
+        <SFXEvent_Attack>Unit_Attack_Wraith_FB</SFXEvent_Attack>
+        <SFXEvent_Guard>Unit_Guard_Wraith_FB</SFXEvent_Guard>
+        <SFXEvent_Assist_Move>Unit_Guard_Wraith_FB</SFXEvent_Assist_Move>
+        <SFXEvent_Assist_Attack>Unit_Attack_Wraith_FB</SFXEvent_Assist_Attack>
+        <Death_SFXEvent_Start_Die>Explosion_Figther</Death_SFXEvent_Start_Die>
+        <SFXEvent_Ambient_Moving>Engine_Wraith_Dart</SFXEvent_Ambient_Moving>
+        <SFXEvent_Ambient_Moving_Min_Delay_Seconds> 5 </SFXEvent_Ambient_Moving_Min_Delay_Seconds>
+        <SFXEvent_Ambient_Moving_Max_Delay_Seconds> 7 </SFXEvent_Ambient_Moving_Max_Delay_Seconds>
+        <SFXEvent_Engine_Cinematic_Focus_Loop>Engine_Wraith_Dart</SFXEvent_Engine_Cinematic_Focus_Loop>
+        <SFXEvent_Engine_Idle_Loop>Engine_Wraith_Dart_Idle</SFXEvent_Engine_Idle_Loop>
+        <SFXEvent_Engine_Moving_Loop>Engine_Wraith_Dart</SFXEvent_Engine_Moving_Loop>
+    </GroundVehicle>
+
+
+    <GroundCompany Name="Wraith_Bomber_Land_Company_No_Prereq">
+        <Variant_Of_Existing_Type>Template_Ground_Company</Variant_Of_Existing_Type>
+        <Text_ID>TEXT_WRAITH_GROUND_UNIT_BOMBER</Text_ID>
+        <Encyclopedia_Text>TEXT_DESCRIPTION_WRAITH_BOMBER_GROUND</Encyclopedia_Text>
+        <Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_BOMBER</Encyclopedia_Unit_Class>
+        <Encyclopedia_Good_Against>Underworld_Merc Rebel_Trooper</Encyclopedia_Good_Against>
+        <Encyclopedia_Vulnerable_To>Scavenger_Droid Goauld_Horus_Guard Rebel_Anti_Aircraft_Turret</Encyclopedia_Vulnerable_To>
+        <Icon_Name>WRAITH_SPACE_UNIT_BOMBER.TGA</Icon_Name>
+        <Build_Cost_Credits>800</Build_Cost_Credits>
+        <Build_Time_Seconds>100</Build_Time_Seconds>
+        <Score_Cost_Credits>600</Score_Cost_Credits>
+        <Company_Transport_Unit>Wraith_Transport_Bomber_Self</Company_Transport_Unit>
+        <Company_Units>Wraith_Bomber_Land</Company_Units>
+        <Tactical_Build_Cost_Multiplayer>1600</Tactical_Build_Cost_Multiplayer>
+        <Tactical_Build_Time_Seconds>15</Tactical_Build_Time_Seconds>
+        <Required_Ground_Base_Level>1</Required_Ground_Base_Level>
+    </GroundCompany>
+
+    <GroundCompany Name="Wraith_Bomber_Land_Company">
+        <Variant_Of_Existing_Type>Wraith_Bomber_Land_Company_No_Prereq</Variant_Of_Existing_Type>
+        <Affiliation>Empire</Affiliation>
+        <Tech_Level>5</Tech_Level>
+        <Required_Special_Structures>Wraith_Ground_Hangar</Required_Special_Structures>
+        <Tactical_Build_Prerequisites>EC_Level_Three_Tech_Upgrade</Tactical_Build_Prerequisites>
+        <Required_Ground_Base_Level>1</Required_Ground_Base_Level>
+    </GroundCompany>
+
+
+
+    <Projectile Name="Proj_Wraith_Bomber_Land_Laser">
+        <Variant_Of_Existing_Type>Proj_Wraith_Fighter_Ground</Variant_Of_Existing_Type>
+        <Damage_Type>Damage_Normal</Damage_Type>
+        <Projectile_Damage>10.0</Projectile_Damage>
+    </Projectile>
+
+    <Projectile Name="Proj_Wraith_Bomber_Land_Bomb">
+        <Variant_Of_Existing_Type>Proj_Wraith_Bomber_Ground</Variant_Of_Existing_Type>
+        <Damage_Type>Damage_Normal</Damage_Type>
+        <Projectile_Damage>0.0</Projectile_Damage>
+        <Projectile_Blast_Area_Range>33</Projectile_Blast_Area_Range>
+        <Projectile_Blast_Area_Damage>45.0</Projectile_Blast_Area_Damage>
+        <Max_Secs_For_AE_Delayed_Damage>0</Max_Secs_For_AE_Delayed_Damage>
+        <Projectile_Blast_Area_Dropoff>True</Projectile_Blast_Area_Dropoff>
+        <Projectile_Blast_Area_Dropoff_Tiers>4</Projectile_Blast_Area_Dropoff_Tiers>
+        <Max_Speed>5.0</Max_Speed>
+    </Projectile>
+
+</Wraith_Bomber_Land_Data>

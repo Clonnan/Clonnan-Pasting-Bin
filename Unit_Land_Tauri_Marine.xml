@@ -1,0 +1,139 @@
+<?xml version="1.0"?>
+<Underworld_Mercenary_Infantry_Data>
+
+
+
+   <!-- UNIT INFO -->
+   <GroundInfantry Name="Underworld_Merc">
+      <Variant_Of_Existing_Type>Template_Ground_Infantry_Multi_Tauri</Variant_Of_Existing_Type>
+      <Text_ID>TEXT_TAURI_GROUND_UNIT_MARINES</Text_ID>
+      <Encyclopedia_Text>TEXT_DESCRIPTION_TAURI_MARINES_GROUND</Encyclopedia_Text>
+      <Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_MARINES</Encyclopedia_Unit_Class>
+      <Encyclopedia_Good_Against> Rebel_Trooper Stormtrooper Goauld_Horus_Guard </Encyclopedia_Good_Against>
+      <Encyclopedia_Vulnerable_To> Plex_Soldier Dark_Trooper_PhaseI Goauld_Necropolis_Guard</Encyclopedia_Vulnerable_To>
+      <Icon_Name>TAURI_GROUND_UNIT_MARINES.TGA</Icon_Name>
+      <Land_Model_Name>Tauri_Land_Unit_Marine.alo</Land_Model_Name>
+      <Land_Terrain_Model_Mapping>
+         Temperate,  Tauri_Land_Unit_Marine.ALO,
+         Urban,      Tauri_Land_Unit_Marine_Black.ALO,
+         Arctic,     Tauri_Land_Unit_Marine_Snow.ALO,
+         Volcanic,   Tauri_Land_Unit_Marine_Pegasus.ALO,
+         Desert,     Tauri_Land_Unit_Marine_Desert.ALO,
+         Forest,     Tauri_Land_Unit_Marine_Camo.ALO,
+         Swamp,      Tauri_Land_Unit_Marine_Camo.ALO
+      </Land_Terrain_Model_Mapping>
+      <Land_Model_Anim_Override_Name>Tauri_Land_Unit_Marine.alo</Land_Model_Anim_Override_Name>
+
+      <Max_Speed>1.15</Max_Speed>
+      
+      <Tactical_Health>60</Tactical_Health>
+      <Property_Flags>Fodder</Property_Flags>
+      
+      <Damage>7</Damage>
+      <AI_Combat_Power>17</AI_Combat_Power>
+
+      <Projectile_Types>Proj_Tauri_Marines</Projectile_Types>
+      <Projectile_Fire_Recharge_Seconds>2.5</Projectile_Fire_Recharge_Seconds>
+      <Projectile_Fire_Pulse_Count>40</Projectile_Fire_Pulse_Count>
+      <Projectile_Fire_Pulse_Delay_Seconds>0.08</Projectile_Fire_Pulse_Delay_Seconds>
+      <Targeting_Priority_Set>SG_Infantry_AntiInfantry</Targeting_Priority_Set>
+
+      <SFXEvent_Fire>Weapon_Tauri_P90</SFXEvent_Fire>
+      <CategoryMask>Infantry | AntiInfantry</CategoryMask>
+      <SFXEvent_Select>Unit_Select_Marine</SFXEvent_Select>
+		<SFXEvent_Move>Unit_Move_Marine</SFXEvent_Move>
+		<SFXEvent_Attack>Unit_Attack_Marine</SFXEvent_Attack>
+      <Presence_Induced_Animations>
+         Attention, 
+            Urai_Fen,
+            Samantha_Carter, 
+            Jack_ONeill
+      </Presence_Induced_Animations> 
+      <Death_Clone>Damage_Hand_Device, Underworld_Merc_Hand_Device_Death_Clone</Death_Clone>
+      <Conversion_Ability_Changes_To_Enemy>Underworld_Merc_Converted_To_Enemy</Conversion_Ability_Changes_To_Enemy>
+      <Unit_Abilities_Data SubObjectList="Yes">
+         <Unit_Ability>
+            <Type>SPREAD_OUT</Type>
+            <Mod_Multiplier>SPEED_MULTIPLIER, 0.4f</Mod_Multiplier>
+            <Mod_Multiplier>TAKE_DAMAGE_MULTIPLIER, 0.85f</Mod_Multiplier>
+            <SFXEvent_GUI_Unit_Ability_Activated>Unit_Take_Cover_Marine</SFXEvent_GUI_Unit_Ability_Activated>
+            <Alternate_Name_Text>TEXT_TOOLTIP_ABILITY_SPREAD_OUT_NAME</Alternate_Name_Text>
+            <Alternate_Description_Text>TEXT_DESCRIPTION_ABILITY_GROUND_MARINES_DECKUNG</Alternate_Description_Text>
+         </Unit_Ability>
+      </Unit_Abilities_Data>
+   </GroundInfantry>
+   
+   <GroundInfantry Name="Underworld_Merc_Hand_Device_Death_Clone">
+      <Variant_Of_Existing_Type>Underworld_Merc</Variant_Of_Existing_Type>
+      <Specific_Death_Anim_Type>FW_DIE</Specific_Death_Anim_Type>
+   </GroundInfantry>
+
+   <GroundInfantry Name="Underworld_Merc_Converted_To_Enemy">
+      <Variant_Of_Existing_Type> Underworld_Merc </Variant_Of_Existing_Type>
+   </GroundInfantry>
+
+
+   <!-- COMPANY INFO -->
+   <GroundCompany Name="Underworld_Merc_Squad_No_Prereq">
+      <Variant_Of_Existing_Type>Template_Ground_Company</Variant_Of_Existing_Type>
+      <Text_ID>TEXT_TAURI_GROUND_UNIT_MARINES</Text_ID>
+      <Encyclopedia_Good_Against> Rebel_Trooper Stormtrooper Goauld_Horus_Guard </Encyclopedia_Good_Against>
+      <Encyclopedia_Vulnerable_To> Plex_Soldier Dark_Trooper_PhaseI Goauld_Necropolis_Guard</Encyclopedia_Vulnerable_To>
+      <Encyclopedia_Unit_Class> TEXT_ENCYCLOPEDIA_CLASS_MARINES </Encyclopedia_Unit_Class>
+      <Encyclopedia_Text> TEXT_DESCRIPTION_TAURI_MARINES_GROUND </Encyclopedia_Text>
+      <Icon_Name>TAURI_GROUND_UNIT_MARINES.TGA</Icon_Name>
+      <Damage>41</Damage>
+      <Score_Cost_Credits>200</Score_Cost_Credits>    
+      <Build_Cost_Credits>225</Build_Cost_Credits>
+      <Build_Time_Seconds>26</Build_Time_Seconds>
+      <Company_Transport_Unit>Underworld_Infantry_Droid_Shuttle</Company_Transport_Unit>
+      <Create_Team_Type>Underworld_Merc_Team</Create_Team_Type>
+      <Company_Units>Underworld_Merc, Underworld_Merc, Underworld_Merc, Underworld_Merc, Underworld_Merc, Underworld_Merc</Company_Units>
+      <Max_Squad_Size>6</Max_Squad_Size>    
+      <Tactical_Build_Cost_Multiplayer>450</Tactical_Build_Cost_Multiplayer>
+      <Tactical_Build_Time_Seconds>8</Tactical_Build_Time_Seconds>
+      <Required_Ground_Base_Level>1</Required_Ground_Base_Level>
+   </GroundCompany>
+
+   <GroundCompany Name="Underworld_Merc_Squad">
+      <Variant_Of_Existing_Type>Underworld_Merc_Squad_No_Prereq</Variant_Of_Existing_Type>
+      <Affiliation>Underworld</Affiliation>
+      <Tech_Level>1</Tech_Level>
+      <Required_Special_Structures>U_Ground_Barracks</Required_Special_Structures>
+      <Tactical_Build_Prerequisites></Tactical_Build_Prerequisites>
+   </GroundCompany>
+
+
+   <!-- CONTAINER INFO -->
+   <Container Name="Underworld_Merc_Team">
+      <Variant_Of_Existing_Type>Template_Infantry_Container</Variant_Of_Existing_Type>
+      <Text_ID>TEXT_TAURI_GROUND_UNIT_MARINES</Text_ID>
+      <Encyclopedia_Unit_Class> TEXT_ENCYCLOPEDIA_CLASS_MARINES </Encyclopedia_Unit_Class>
+      <Encyclopedia_Text> TEXT_DESCRIPTION_TAURI_MARINES_GROUND </Encyclopedia_Text>
+      <Encyclopedia_Good_Against> Rebel_Trooper Stormtrooper Goauld_Horus_Guard </Encyclopedia_Good_Against>
+      <Encyclopedia_Vulnerable_To> Plex_Soldier Dark_Trooper_PhaseI Goauld_Necropolis_Guard</Encyclopedia_Vulnerable_To>
+      <Icon_Name>TAURI_GROUND_UNIT_MARINES.TGA</Icon_Name>   
+      <ContainerArrangement>Rows</ContainerArrangement>
+      <Max_Speed>1.1</Max_Speed>
+      <Max_Rate_Of_Turn>12.0</Max_Rate_Of_Turn>
+      <Select_Box_Scale>60</Select_Box_Scale>
+      <Unit_Abilities_Data SubObjectList="Yes">
+         <Unit_Ability>
+            <Type>SPREAD_OUT</Type>            
+            <Alternate_Name_Text>TEXT_TOOLTIP_ABILITY_SPREAD_OUT_NAME</Alternate_Name_Text>
+            <Alternate_Description_Text>TEXT_DESCRIPTION_ABILITY_GROUND_MARINES_DECKUNG</Alternate_Description_Text>
+            <Mod_Multiplier>SPEED_MULTIPLIER, 0.5f</Mod_Multiplier>
+            <Mod_Multiplier>TAKE_DAMAGE_MULTIPLIER, 0.7f</Mod_Multiplier>
+         </Unit_Ability>
+      </Unit_Abilities_Data>   
+   </Container>
+
+
+   <!-- PROJECTILE INFO -->
+   <Projectile Name="Proj_Tauri_Marines">
+      <Variant_Of_Existing_Type>Proj_Tauri_MP5</Variant_Of_Existing_Type>
+      <Damage_Type>Damage_Anti_Infantry</Damage_Type>
+      <Projectile_Damage>0.59</Projectile_Damage>
+   </Projectile>
+   
+</Underworld_Mercenary_Infantry_Data>

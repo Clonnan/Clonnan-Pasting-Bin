@@ -1,0 +1,86 @@
+<?xml version="1.0"?>
+<Wraith_Dart_Land_Data>
+
+   <GroundVehicle Name="Wraith_Dart_Land">
+      <Variant_Of_Existing_Type>Template_Ground_Flyer</Variant_Of_Existing_Type>
+      <Text_ID>TEXT_WRAITH_GROUND_UNIT_DART</Text_ID>
+      <Encyclopedia_Text>TEXT_DESCRIPTION_WRAITH_DART_GROUND</Encyclopedia_Text>
+      <Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_DART_GROUND</Encyclopedia_Unit_Class>
+      <Encyclopedia_Good_Against>Underworld_Merc Rebel_Trooper MZ8_Pulse_Cannon_Tank</Encyclopedia_Good_Against>
+      <Encyclopedia_Vulnerable_To>Scavenger_Droid Goauld_Horus_Guard Rebel_Anti_Aircraft_Turret</Encyclopedia_Vulnerable_To>
+      <Icon_Name>WRAITH_SPACE_UNIT_DART.TGA</Icon_Name>
+      <Land_Model_Name>Wraith_Land_Unit_Dart.ALO</Land_Model_Name>
+      <Radar_Icon_Name>I_RADAR_DART.TGA</Radar_Icon_Name>      
+      <Scale_Factor>3.8</Scale_Factor>
+      <Select_Box_Scale>35</Select_Box_Scale>
+      <LandBehavior>FLYING_LOCOMOTOR, AMBIENT_SFX, DAMAGE_TRACKING, HIDE_WHEN_FOGGED, REVEAL, STUNNABLE, TARGETING, TELEKINESIS_TARGET, UNIT_AI, WIND_DISTURBANCE</LandBehavior>
+      <Affiliation>Empire</Affiliation>
+      <Damage>53</Damage>
+      <Score_Cost_Credits>475</Score_Cost_Credits>
+      <Tactical_Health>150</Tactical_Health>
+      <Targeting_Priority_Set>SG_Air_AntiInfantry</Targeting_Priority_Set>
+      <HardPoints>
+			HP_Wraith_Dart_Land_Laser
+		</HardPoints>   <!--Todo_ add beam-->
+      <Max_Speed>5.8</Max_Speed>
+      <Min_Speed>3.2</Min_Speed>
+      <Max_Rate_Of_Turn>4.5</Max_Rate_Of_Turn>
+      <Max_Rate_Of_Roll>5.0</Max_Rate_Of_Roll>
+      <Max_Lift>2.5</Max_Lift>
+      <Ranged_Target_Z_Adjust>10.0</Ranged_Target_Z_Adjust>
+      <SFXEvent_Select>Unit_Select_Wraith_FB</SFXEvent_Select>
+      <SFXEvent_Move>Unit_Move_Wraith_FB</SFXEvent_Move>
+      <SFXEvent_Fleet_Move></SFXEvent_Fleet_Move>
+      <SFXEvent_Attack>Unit_Attack_Wraith_FB</SFXEvent_Attack>
+      <SFXEvent_Guard>Unit_Guard_Wraith_FB</SFXEvent_Guard>
+      <SFXEvent_Assist_Move>Unit_Guard_Wraith_FB</SFXEvent_Assist_Move>
+      <SFXEvent_Assist_Attack>Unit_Attack_Wraith_FB</SFXEvent_Assist_Attack>
+      <Death_SFXEvent_Start_Die>Explosion_Figther</Death_SFXEvent_Start_Die>
+      <SFXEvent_Ambient_Moving>Engine_Wraith_Dart</SFXEvent_Ambient_Moving>
+      <SFXEvent_Ambient_Moving_Min_Delay_Seconds> 5 </SFXEvent_Ambient_Moving_Min_Delay_Seconds>
+      <SFXEvent_Ambient_Moving_Max_Delay_Seconds> 7 </SFXEvent_Ambient_Moving_Max_Delay_Seconds>
+      <SFXEvent_Engine_Cinematic_Focus_Loop>Engine_Wraith_Dart</SFXEvent_Engine_Cinematic_Focus_Loop>
+      <SFXEvent_Engine_Idle_Loop>Engine_Wraith_Dart_Idle</SFXEvent_Engine_Idle_Loop>
+      <SFXEvent_Engine_Moving_Loop>Engine_Wraith_Dart</SFXEvent_Engine_Moving_Loop>
+   </GroundVehicle>
+   
+   <GroundVehicle Name="Abandoned_Wraith_Dart">
+      <Variant_Of_Existing_Type>Wraith_Dart_Land</Variant_Of_Existing_Type>
+      <Affiliation>Neutral, Rebel, Empire, Underworld</Affiliation>
+   </GroundVehicle>
+
+
+   <GroundCompany Name="Wraith_Dart_Land_Company_No_Prereq">
+      <Variant_Of_Existing_Type>Template_Ground_Company</Variant_Of_Existing_Type>
+      <Text_ID>TEXT_WRAITH_GROUND_UNIT_DART</Text_ID>
+      <Encyclopedia_Text>TEXT_DESCRIPTION_WRAITH_DART_GROUND</Encyclopedia_Text>
+      <Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_DART_GROUND</Encyclopedia_Unit_Class>
+      <Encyclopedia_Good_Against>Underworld_Merc Rebel_Trooper MZ8_Pulse_Cannon_Tank</Encyclopedia_Good_Against>
+      <Encyclopedia_Vulnerable_To>Scavenger_Droid Goauld_Horus_Guard Rebel_Anti_Aircraft_Turret</Encyclopedia_Vulnerable_To>
+      <Icon_Name>WRAITH_SPACE_UNIT_DART.TGA</Icon_Name>
+      <Build_Cost_Credits>500</Build_Cost_Credits>
+      <Build_Time_Seconds>54</Build_Time_Seconds>
+      <Score_Cost_Credits>475</Score_Cost_Credits>
+      <Company_Transport_Unit>Wraith_Transport_Dart_Self</Company_Transport_Unit>
+      <Company_Units>Wraith_Dart_Land</Company_Units>
+      <Tactical_Build_Cost_Multiplayer>1000</Tactical_Build_Cost_Multiplayer>
+      <Tactical_Build_Time_Seconds>11</Tactical_Build_Time_Seconds>
+      <Required_Ground_Base_Level>1</Required_Ground_Base_Level>
+   </GroundCompany>
+   
+   <GroundCompany Name="Wraith_Dart_Land_Company">
+      <Variant_Of_Existing_Type>Wraith_Dart_Land_Company_No_Prereq</Variant_Of_Existing_Type>
+      <Affiliation>Empire</Affiliation>
+      <Tech_Level>3</Tech_Level>
+      <Required_Special_Structures>Wraith_Ground_Hangar</Required_Special_Structures>
+      <Tactical_Build_Prerequisites>EC_Level_Two_Tech_Upgrade</Tactical_Build_Prerequisites>
+   </GroundCompany>
+
+
+   <Projectile Name="Proj_Wraith_Dart_Land_Laser">
+      <Variant_Of_Existing_Type>Proj_Wraith_Fighter_Ground</Variant_Of_Existing_Type>
+      <Damage_Type>Damage_Normal</Damage_Type>
+      <Projectile_Damage>22.5</Projectile_Damage>
+   </Projectile>
+
+</Wraith_Dart_Land_Data>

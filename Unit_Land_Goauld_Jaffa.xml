@@ -1,0 +1,174 @@
+<?xml version="1.0"?>
+<Infantry_Data>
+
+   <GroundInfantry Name="Rebel_Trooper">      
+      <Variant_Of_Existing_Type>Template_Ground_Infantry_Multi_Goauld</Variant_Of_Existing_Type>
+      <Text_ID>TEXT_GOAULD_GROUND_UNIT_JAFFA</Text_ID>
+      <Encyclopedia_Text>TEXT_DESCRIPTION_GOAULD_JAFFA_GROUND</Encyclopedia_Text>
+      <Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_JAFFA</Encyclopedia_Unit_Class>
+      <Encyclopedia_Good_Against>Underworld_Saboteur Stormtrooper</Encyclopedia_Good_Against>
+      <Encyclopedia_Vulnerable_To>Underworld_Merc Tauri_F302_Land Empire_Anti_Infantry_Turret</Encyclopedia_Vulnerable_To> 
+      <Icon_Name>GOAULD_GROUND_UNIT_JAFFA.TGA</Icon_Name>
+      <Land_Model_Name>Goauld_Land_Unit_Jaffa.alo</Land_Model_Name>
+      <Land_Model_Anim_Override_Name>Goauld_Land_Unit_Jaffa.alo</Land_Model_Anim_Override_Name>
+      <Tactical_Health>65</Tactical_Health>
+      <Max_Speed>1.1</Max_Speed>
+      <AI_Combat_Power>17</AI_Combat_Power>
+      <Targeting_Priority_Set>SG_Infantry_AntiInfantry</Targeting_Priority_Set>
+      <!--Damage>8</Damage-->
+      <FormationSpacing>0.5</FormationSpacing>
+      <Property_Flags>Fodder</Property_Flags>
+      <Projectile_Types>Proj_Goauld_Jaffa</Projectile_Types>
+      <Projectile_Fire_Recharge_Seconds>1.0</Projectile_Fire_Recharge_Seconds>
+		<Projectile_Fire_Pulse_Count>5</Projectile_Fire_Pulse_Count>
+		<Projectile_Fire_Pulse_Delay_Seconds>0.8</Projectile_Fire_Pulse_Delay_Seconds>
+      <SFXEvent_Fire>Weapon_Goauld_Staff</SFXEvent_Fire>
+      <WaitsForFormationFormup>false</WaitsForFormationFormup>
+      <Presence_Induced_Animations>
+         Attention, 
+            Luke_Skywalker_Jedi,
+            Yoda, 
+            Commander_Akbar
+      </Presence_Induced_Animations>     
+      
+    <SFXEvent_Select>Unit_Select_Jaffa</SFXEvent_Select>
+		<SFXEvent_Move>Unit_Move_Jaffa</SFXEvent_Move>
+		<SFXEvent_Attack>Unit_Attack_Jaffa</SFXEvent_Attack>
+ 
+      
+      <Death_Clone>Damage_Hand_Device, Rebel_Trooper_Hand_Device_Death_Clone</Death_Clone>
+      <Conversion_Ability_Changes_To_Enemy>Rebel_Trooper_Converted_To_Enemy</Conversion_Ability_Changes_To_Enemy>
+      <Unit_Abilities_Data SubObjectList="Yes">
+         <Unit_Ability>
+            <Type>SPREAD_OUT</Type>            
+            <Alternate_Name_Text>TEXT_ABILITY_GOAULD_GROUND_JAFFA_DECKUNG</Alternate_Name_Text>
+            <Alternate_Description_Text>TEXT_DESCRIPTION_ABILITY_JAFFA_DECKUNG</Alternate_Description_Text>
+            <Mod_Multiplier>SPEED_MULTIPLIER, 0.5f</Mod_Multiplier>
+            <Mod_Multiplier>TAKE_DAMAGE_MULTIPLIER, 0.85f</Mod_Multiplier>
+            <SFXEvent_GUI_Unit_Ability_Activated></SFXEvent_GUI_Unit_Ability_Activated>
+         </Unit_Ability>
+      </Unit_Abilities_Data>      
+   </GroundInfantry>
+   
+   <GroundInfantry Name="Rebel_Trooper_Hand_Device_Death_Clone">
+      <Variant_Of_Existing_Type>Rebel_Trooper</Variant_Of_Existing_Type>
+      <Specific_Death_Anim_Type>FW_DIE</Specific_Death_Anim_Type>
+   </GroundInfantry>
+
+                                                                            
+   <GroundInfantry Name="Rebel_Trooper_Converted_To_Enemy">
+      <Variant_Of_Existing_Type>Rebel_Trooper</Variant_Of_Existing_Type>
+      <Text_ID>TEXT_NONE</Text_ID>
+   </GroundInfantry>
+   <GroundInfantry Name="Rebel_Trooper_Force_Whirlwind_Death_Clone">
+      <Variant_Of_Existing_Type>Rebel_Trooper</Variant_Of_Existing_Type>
+      <Specific_Death_Anim_Type>FW_DIE</Specific_Death_Anim_Type>
+      <Specific_Death_Anim_Index />
+   </GroundInfantry>
+   <GroundInfantry Name="Rebel_Trooper_Force_Lightning_Death_Clone">
+      <Variant_Of_Existing_Type>Rebel_Trooper</Variant_Of_Existing_Type>
+      <Specific_Death_Anim_Type>FL_DIE</Specific_Death_Anim_Type>
+      <Specific_Death_Anim_Index />
+   </GroundInfantry>
+   <GroundInfantry Name="Rebel_Trooper_Crush_Death_Clone">
+      <Variant_Of_Existing_Type>Rebel_Trooper</Variant_Of_Existing_Type>
+      <Specific_Death_Anim_Type>Crushed</Specific_Death_Anim_Type>
+      <Specific_Death_Anim_Index />
+   </GroundInfantry>
+   <GroundInfantry Name="Rebel_Trooper_Remote_Bomb_Death_Clone">
+      <Variant_Of_Existing_Type>Rebel_Trooper</Variant_Of_Existing_Type>
+      <Death_SFXEvent_Start_Die>Unit_Rebel_Soldier_Bomb_Death</Death_SFXEvent_Start_Die>
+   </GroundInfantry>
+   <GroundInfantry Name="Rebel_Trooper_NonVictroy">
+      <Variant_Of_Existing_Type>Rebel_Trooper</Variant_Of_Existing_Type>
+      <Victory_Relevant>no</Victory_Relevant>
+   </GroundInfantry>
+
+   <GroundInfantry Name="Squad_Rebel_Trooper">
+      <Variant_Of_Existing_Type>Rebel_Trooper</Variant_Of_Existing_Type>
+      <LandBehavior>LANDING, SURFACE_FX, LAND_TEAM_INFANTRY_LOCOMOTOR,IDLE,WEAPON, STUNNABLE, REVEAL,HIDE_WHEN_FOGGED,DAMAGE_TRACKING</LandBehavior>
+      <Custom_Soft_Footprint_Radius> 3.0 </Custom_Soft_Footprint_Radius>
+      <Max_Rate_Of_Turn>16.0</Max_Rate_Of_Turn>
+      <Conversion_Ability_Changes_To_Enemy>Squad_Rebel_Trooper_Converted_To_Enemy</Conversion_Ability_Changes_To_Enemy>
+   </GroundInfantry>                                                                  
+   <GroundInfantry Name="Squad_Rebel_Trooper_Converted_To_Enemy">
+      <Variant_Of_Existing_Type>Squad_Rebel_Trooper</Variant_Of_Existing_Type>
+      <Text_ID>TEXT_NONE</Text_ID>
+  </GroundInfantry>
+  
+   <!-- COMPANY INFO -->
+   <GroundCompany Name="Rebel_Infantry_Squad_No_Prereq">
+      <Variant_Of_Existing_Type>Template_Ground_Company</Variant_Of_Existing_Type>
+      <Text_ID>TEXT_GOAULD_GROUND_UNIT_JAFFA</Text_ID>
+      <Encyclopedia_Text>TEXT_DESCRIPTION_GOAULD_JAFFA_GROUND</Encyclopedia_Text>
+      <Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_JAFFA</Encyclopedia_Unit_Class>
+      <Encyclopedia_Good_Against>Underworld_Saboteur Stormtrooper</Encyclopedia_Good_Against>
+      <Encyclopedia_Vulnerable_To>Underworld_Merc Tauri_F302_Land Empire_Anti_Infantry_Turret</Encyclopedia_Vulnerable_To> 
+      <Icon_Name>GOAULD_GROUND_UNIT_JAFFA.TGA</Icon_Name>
+      <GUI_Model_Name>Goauld_Land_Unit_Jaffa.alo</GUI_Model_Name>
+      <Damage>49</Damage>
+      <Score_Cost_Credits>200</Score_Cost_Credits>    
+      <Build_Cost_Credits>215</Build_Cost_Credits>
+      <Build_Time_Seconds>22</Build_Time_Seconds>
+      <Company_Transport_Unit>Alliance_Shuttle</Company_Transport_Unit>
+      <Create_Team_Type>Rebel_Trooper_Team</Create_Team_Type>
+      <Company_Units>Squad_Rebel_Trooper, Squad_Rebel_Trooper, Squad_Rebel_Trooper, Squad_Rebel_Trooper, Squad_Rebel_Trooper, Squad_Rebel_Trooper</Company_Units>
+      <Max_Squad_Size>6</Max_Squad_Size>      
+      <Tactical_Build_Cost_Multiplayer>425</Tactical_Build_Cost_Multiplayer>
+      <Tactical_Build_Time_Seconds>6</Tactical_Build_Time_Seconds>  
+      <Required_Ground_Base_Level>1</Required_Ground_Base_Level>  
+   </GroundCompany>
+  
+   <GroundCompany Name="Rebel_Infantry_Squad">
+      <Variant_Of_Existing_Type>Rebel_Infantry_Squad_No_Prereq</Variant_Of_Existing_Type>
+      <Affiliation>Rebel</Affiliation>
+      <Tech_Level>0</Tech_Level>
+      <Required_Timeline>0</Required_Timeline>
+      <Required_Ground_Base_Level>1</Required_Ground_Base_Level>
+      <Required_Star_Base_Level>0</Required_Star_Base_Level>
+      <Required_Special_Structures>R_Ground_Barracks</Required_Special_Structures>
+      <Required_Planets />
+      <Tactical_Build_Prerequisites />
+   </GroundCompany> 
+   
+   <GroundCompany Name="Goauld_Teltak_Land_Deployed_Jaffa">
+		<Variant_Of_Existing_Type>Rebel_Infantry_Squad</Variant_Of_Existing_Type>
+		<Company_Units> Squad_Rebel_Trooper, Squad_Rebel_Trooper, Squad_Rebel_Trooper</Company_Units>
+		<Max_Squad_Size>3</Max_Squad_Size>
+		<Tech_Level>99</Tech_Level>
+		<Build_Tab_Land_Units>No</Build_Tab_Land_Units>
+		<Damage>9</Damage>
+	</GroundCompany>
+  
+   <!-- CONTAINER INFO -->
+   <Container Name="Rebel_Trooper_Team">
+      <Variant_Of_Existing_Type>Template_Infantry_Container</Variant_Of_Existing_Type>
+      <Text_ID>TEXT_GOAULD_GROUND_UNIT_JAFFA</Text_ID>
+      <Encyclopedia_Text>TEXT_DESCRIPTION_GOAULD_JAFFA_GROUND</Encyclopedia_Text>
+      <Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_JAFFA</Encyclopedia_Unit_Class>
+      <Encyclopedia_Good_Against>Underworld_Saboteur Stormtrooper</Encyclopedia_Good_Against>
+      <Encyclopedia_Vulnerable_To>Underworld_Merc Tauri_F302_Land Empire_Anti_Infantry_Turret</Encyclopedia_Vulnerable_To> 
+      <Icon_Name>GOAULD_GROUND_UNIT_JAFFA.TGA</Icon_Name>     
+      <ContainerArrangement>Rows</ContainerArrangement>
+      <Max_Speed>1.1</Max_Speed>
+      <Max_Rate_Of_Turn>12.0</Max_Rate_Of_Turn>
+      <Select_Box_Scale>55</Select_Box_Scale>
+      <Unit_Abilities_Data SubObjectList="Yes">
+         <Unit_Ability>
+            <Type>SPREAD_OUT</Type>            
+            <Alternate_Name_Text>TEXT_ABILITY_GOAULD_GROUND_JAFFA_DECKUNG</Alternate_Name_Text>
+            <Alternate_Description_Text>TEXT_DESCRIPTION_ABILITY_JAFFA_DECKUNG</Alternate_Description_Text>
+            <Mod_Multiplier>SPEED_MULTIPLIER, 0.5f</Mod_Multiplier>
+            <Mod_Multiplier>TAKE_DAMAGE_MULTIPLIER, 0.85f</Mod_Multiplier>
+         </Unit_Ability>
+      </Unit_Abilities_Data>   
+   </Container>
+  
+   <!-- Projectile Information Goauld Jaffa -->
+   <Projectile Name="Proj_Goauld_Jaffa">
+      <Variant_Of_Existing_Type>Proj_Goauld_Land_Staff_Weapon</Variant_Of_Existing_Type>
+      <Damage_Type>Damage_Normal</Damage_Type>
+      <Projectile_Damage>4.83</Projectile_Damage>
+   </Projectile>
+  
+</Infantry_Data>

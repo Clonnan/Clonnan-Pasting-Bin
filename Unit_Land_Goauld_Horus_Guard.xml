@@ -1,0 +1,201 @@
+<?xml version="1.0"?>
+<Goauld_Jaffa_Horus_Guard_Infantry_Data>
+
+   <GroundInfantry Name="Goauld_Horus_Guard">
+      <Variant_Of_Existing_Type>Template_Ground_Infantry_Multi_Goauld</Variant_Of_Existing_Type>
+      <Text_ID> TEXT_GOAULD_GROUND_UNIT_HORUSWACHE</Text_ID>
+      <Encyclopedia_Text> TEXT_DESCRIPTION_GOAULD_HORUSWACHE_GROUND</Encyclopedia_Text>
+      <Encyclopedia_Unit_Class> TEXT_ENCYCLOPEDIA_CLASS_HORUSWACHE</Encyclopedia_Unit_Class>
+      <Encyclopedia_Good_Against>Tauri_F302_Land Tauri_UAV Wraith_Dart_Land</Encyclopedia_Good_Against>
+      <Encyclopedia_Vulnerable_To>Underworld_Merc MZ8_Pulse_Cannon_Tank Empire_Anti_Infantry_Turret</Encyclopedia_Vulnerable_To>
+      <Icon_Name>GOAULD_GROUND_UNIT_HORUS_GUARD.TGA</Icon_Name>
+      <Land_Model_Name>Goauld_Land_Unit_Horus_Guard.alo</Land_Model_Name>
+      <Land_Model_Anim_Override_Name>Goauld_Land_Unit_Horus_Guard.alo</Land_Model_Anim_Override_Name>
+      <LandBehavior>ABILITY_COUNTDOWN, LAND_TEAM_INFANTRY_LOCOMOTOR, DAMAGE_TRACKING, HIDE_WHEN_FOGGED, IDLE, REVEAL, STUNNABLE, SURFACE_FX, TARGETING, UNIT_AI, WEAPON</LandBehavior>
+      <Tactical_Health>90</Tactical_Health>
+      <Max_Speed>0.95</Max_Speed>
+      <AI_Combat_Power>25</AI_Combat_Power>
+      <Targeting_Priority_Set>SG_Infantry_AntiAir</Targeting_Priority_Set>
+		<Attack_Category_Restrictions>Infantry | Vehicle | LandHero | Structure</Attack_Category_Restrictions>	
+      <!--Fire_Category_Restrictions>Infantry, Vehicle, LandHero, Structure</Fire_Category_Restrictions--> 
+      <CategoryMask>Infantry | AntiAir</CategoryMask>   
+      <Projectile_Types>Proj_Goauld_Horus_Guard</Projectile_Types>
+      <Projectile_Fire_Recharge_Seconds>1.0</Projectile_Fire_Recharge_Seconds>
+		<Projectile_Fire_Pulse_Count>10</Projectile_Fire_Pulse_Count>
+		<Projectile_Fire_Pulse_Delay_Seconds>0.3</Projectile_Fire_Pulse_Delay_Seconds>
+      <SFXEvent_Fire>Weapon_Goauld_Staff</SFXEvent_Fire>
+      <Targeting_Max_Attack_Distance>250</Targeting_Max_Attack_Distance>
+      <FormationSpacing>0.7</FormationSpacing>
+      <FormationOrder>6</FormationOrder>
+      <Max_Rate_Of_Turn>16.0</Max_Rate_Of_Turn>
+      <SFXEvent_Select>Unit_Select_Horus</SFXEvent_Select>
+		<SFXEvent_Move>Unit_Move_Horus</SFXEvent_Move>
+		<SFXEvent_Attack>Unit_Attack_Horus</SFXEvent_Attack>
+      <WaitsForFormationFormup>false</WaitsForFormationFormup>
+      <Presence_Induced_Animations>
+         Attention, 
+            Luke_Skywalker_Jedi,
+            Yoda, 
+            Commander_Akbar
+      </Presence_Induced_Animations>
+      <Death_Clone>Damage_Hand_Device, Goauld_Horus_Guard_Hand_Device_Death_Clone</Death_Clone>
+      <Conversion_Ability_Changes_To_Enemy>Goauld_Horus_Guard_Converted_To_Enemy</Conversion_Ability_Changes_To_Enemy>
+      <Unit_Abilities_Data SubObjectList="Yes">
+         <Unit_Ability>
+            <Type>SPREAD_OUT</Type>
+            <Alternate_Name_Text>TEXT_ABILITY_GOAULD_GROUND_HORUSWACHE_DECKUNG</Alternate_Name_Text>
+            <Alternate_Description_Text>TEXT_DESCRIPTION_ABILITY_HORUSWACHE_DECKUNG</Alternate_Description_Text>
+            <Mod_Multiplier>SPEED_MULTIPLIER, 0.5f</Mod_Multiplier>
+            <Mod_Multiplier>TAKE_DAMAGE_MULTIPLIER, 0.85f</Mod_Multiplier>
+            <SFXEvent_GUI_Unit_Ability_Activated></SFXEvent_GUI_Unit_Ability_Activated>
+         </Unit_Ability>
+         <!--Unit_Ability>
+            <Type>WEAKEN_ENEMY</Type>
+            <Alternate_Name_Text>TEXT_ABILITY_GOAULD_GROUND_ANUBISWACHE_BOMBE</Alternate_Name_Text>
+            <Alternate_Description_Text>TEXT_DESCRIPTION_ABILITY_ANUBISWACHE_BOMBE</Alternate_Description_Text>
+            <Recharge_Seconds>80</Recharge_Seconds>
+            <Effective_Radius>100.0</Effective_Radius>
+		      <Spawned_Object_Type>Goauld_Horus_Guard_Jamming_Device</Spawned_Object_Type>
+            <SFXEvent_Target_Ability></SFXEvent_Target_Ability> 
+            <SFXEvent_GUI_Unit_Ability_Activated></SFXEvent_GUI_Unit_Ability_Activated>
+            <SFXEvent_GUI_Unit_Ability_Deactivated />
+            <Area_Effect_Decal_Distance>25</Area_Effect_Decal_Distance>
+         </Unit_Ability-->
+      </Unit_Abilities_Data>
+  </GroundInfantry>
+                                       
+   <GroundInfantry Name="Goauld_Horus_Guard_Converted_To_Enemy">
+      <Variant_Of_Existing_Type>Goauld_Horus_Guard</Variant_Of_Existing_Type>
+      <Text_ID>TEXT_NONE</Text_ID>
+   </GroundInfantry>
+   
+   <GroundInfantry Name="Goauld_Horus_Guard_Hand_Device_Death_Clone">
+      <Variant_Of_Existing_Type>Goauld_Horus_Guard</Variant_Of_Existing_Type>
+      <Specific_Death_Anim_Type>FW_DIE</Specific_Death_Anim_Type>
+   </GroundInfantry>
+   
+
+   <GroundCompany Name="Goauld_Horus_Guard_Company_No_Prereq">
+      <Variant_Of_Existing_Type>Template_Ground_Company</Variant_Of_Existing_Type>
+      <Text_ID> TEXT_GOAULD_GROUND_UNIT_HORUSWACHE</Text_ID>
+      <Encyclopedia_Text> TEXT_DESCRIPTION_GOAULD_HORUSWACHE_GROUND</Encyclopedia_Text>
+      <Encyclopedia_Unit_Class> TEXT_ENCYCLOPEDIA_CLASS_HORUSWACHE</Encyclopedia_Unit_Class>
+      <Encyclopedia_Good_Against>Tauri_F302_Land Tauri_UAV Wraith_Dart_Land</Encyclopedia_Good_Against>
+      <Encyclopedia_Vulnerable_To>Underworld_Merc MZ8_Pulse_Cannon_Tank Empire_Anti_Infantry_Turret</Encyclopedia_Vulnerable_To>
+      <Icon_Name>GOAULD_GROUND_UNIT_HORUS_GUARD.TGA</Icon_Name>
+      <GUI_Model_Name>Goauld_Land_Unit_Horus_Guard.alo</GUI_Model_Name>
+      <Damage>6</Damage>
+      <Score_Cost_Credits>300</Score_Cost_Credits>
+      <Build_Cost_Credits>300</Build_Cost_Credits>
+      <Build_Time_Seconds>46</Build_Time_Seconds>
+      <Company_Transport_Unit>Alliance_Shuttle</Company_Transport_Unit>
+      <Create_Team_Type>Goauld_Horus_Guard_Team</Create_Team_Type>
+      <Company_Units>Goauld_Horus_Guard, Goauld_Horus_Guard, Goauld_Horus_Guard, Goauld_Horus_Guard</Company_Units>
+      <Max_Squad_Size>4</Max_Squad_Size>      
+      <Tactical_Build_Cost_Multiplayer>600</Tactical_Build_Cost_Multiplayer>
+      <Tactical_Build_Time_Seconds>9</Tactical_Build_Time_Seconds>
+      <Required_Ground_Base_Level>1</Required_Ground_Base_Level>
+      <Unit_Abilities_Data SubObjectList="Yes">
+         <Unit_Ability>
+            <Type>SPREAD_OUT</Type>
+            <Alternate_Name_Text>TEXT_ABILITY_GOAULD_GROUND_HORUSWACHE_DECKUNG</Alternate_Name_Text>
+            <Alternate_Description_Text>TEXT_DESCRIPTION_ABILITY_HORUSWACHE_DECKUNG</Alternate_Description_Text>
+            <Mod_Multiplier>SPEED_MULTIPLIER, 0.5f</Mod_Multiplier>
+            <Mod_Multiplier>TAKE_DAMAGE_MULTIPLIER, 0.85f</Mod_Multiplier>
+            <SFXEvent_GUI_Unit_Ability_Activated></SFXEvent_GUI_Unit_Ability_Activated>
+         </Unit_Ability>
+      </Unit_Abilities_Data>
+   </GroundCompany>
+  
+  
+   <GroundCompany Name="Goauld_Horus_Guard_Company">
+      <Variant_Of_Existing_Type>Goauld_Horus_Guard_Company_No_Prereq</Variant_Of_Existing_Type>
+      <Affiliation>Rebel</Affiliation>
+      <Tech_Level>1</Tech_Level>
+      <Required_Timeline>0</Required_Timeline>
+      <Required_Ground_Base_Level>1</Required_Ground_Base_Level>
+      <Required_Star_Base_Level>0</Required_Star_Base_Level>
+      <Required_Special_Structures>R_Ground_Barracks</Required_Special_Structures>
+      <Required_Planets />
+      <Tactical_Build_Prerequisites>RC_Level_Two_Tech_Upgrade</Tactical_Build_Prerequisites>
+   </GroundCompany>
+  
+  
+   <Container Name="Goauld_Horus_Guard_Team">
+      <Variant_Of_Existing_Type>Template_Infantry_Container</Variant_Of_Existing_Type>
+      <Text_ID> TEXT_GOAULD_GROUND_UNIT_HORUSWACHE</Text_ID>
+      <Encyclopedia_Text> TEXT_DESCRIPTION_GOAULD_HORUSWACHE_GROUND</Encyclopedia_Text>
+      <Encyclopedia_Unit_Class> TEXT_ENCYCLOPEDIA_CLASS_HORUSWACHE</Encyclopedia_Unit_Class>
+      <Encyclopedia_Good_Against>Tauri_F302_Land Tauri_UAV Wraith_Dart_Land</Encyclopedia_Good_Against>
+      <Encyclopedia_Vulnerable_To>Underworld_Merc MZ8_Pulse_Cannon_Tank Empire_Anti_Infantry_Turret</Encyclopedia_Vulnerable_To>
+      <Icon_Name>GOAULD_GROUND_UNIT_HORUS_GUARD.TGA</Icon_Name>
+      <LandBehavior>ABILITY_COUNTDOWN, GARRISON_UNIT, LAND_TEAM_CONTAINER_LOCOMOTOR, REVEAL, TEAM_TARGETING</LandBehavior>
+      <ContainerArrangement>Rows</ContainerArrangement>
+      <Max_Speed>0.95</Max_Speed>
+      <Max_Rate_Of_Turn>12.0</Max_Rate_Of_Turn>
+      <Select_Box_Scale>65</Select_Box_Scale>
+      <!--CategoryMask>Infantry | AntiVehicle</CategoryMask-->
+      <Targeting_Max_Attack_Distance>250</Targeting_Max_Attack_Distance>
+      <Unit_Abilities_Data SubObjectList="Yes">
+         <Unit_Ability>
+            <Type>SPREAD_OUT</Type>
+            <Alternate_Name_Text>TEXT_ABILITY_GOAULD_GROUND_HORUSWACHE_DECKUNG</Alternate_Name_Text>
+            <Alternate_Description_Text>TEXT_DESCRIPTION_ABILITY_HORUSWACHE_DECKUNG</Alternate_Description_Text>
+            <Mod_Multiplier>SPEED_MULTIPLIER, 0.5f</Mod_Multiplier>
+            <Mod_Multiplier>TAKE_DAMAGE_MULTIPLIER, 0.85f</Mod_Multiplier>
+            <SFXEvent_GUI_Unit_Ability_Activated></SFXEvent_GUI_Unit_Ability_Activated>
+         </Unit_Ability>
+      </Unit_Abilities_Data>
+  </Container>
+  
+  
+   <Projectile Name="Proj_Goauld_Horus_Guard">
+      <Variant_Of_Existing_Type>Proj_Goauld_Deathglider_Cannon</Variant_Of_Existing_Type>
+      <Damage_Type>Damage_Anti_Air</Damage_Type>
+      <Projectile_Damage>3.3</Projectile_Damage>
+      <Max_Speed>30.0</Max_Speed>
+      <Projectile_Max_Flight_Distance>800.0</Projectile_Max_Flight_Distance>
+      <Blob_Shadow_Material_Name>Blob_Invisible</Blob_Shadow_Material_Name> <!-- Disable terrain illumination since projs always go into sky -->
+   </Projectile>
+   
+  
+   <MiscObject Name="Goauld_Horus_Guard_Jamming_Device">
+      <Land_Model_Name>w_landmine.alo</Land_Model_Name>
+      <Scale_Factor>2.0</Scale_Factor>
+      <Behavior>SELECTABLE, PROXIMITY_MINE</Behavior>
+      <LandBehavior>ABILITY_COUNTDOWN, DAMAGE_TRACKING, HIDE_WHEN_FOGGED, IDLE, TARGETING, POWERED, REVEAL</LandBehavior>
+      <Is_Visible_On_Radar>No</Is_Visible_On_Radar>
+      <Is_Decoration>No</Is_Decoration>
+      <Remove_Upon_Death>Yes</Remove_Upon_Death>
+      <Death_Explosions> Proximity_Mine_Blast_Effect </Death_Explosions>
+      <Tactical_Health>20</Tactical_Health>
+      <Loop_Idle_Anim_00>No</Loop_Idle_Anim_00>
+      <Space_Layer> Land </Space_Layer>
+      <UnitCollisionClass> Infantry </UnitCollisionClass>
+      <CanCellStack>yes</CanCellStack>
+      <Mass>1.0</Mass>
+      <Mouse_Collide_Override_Sphere_Radius>5</Mouse_Collide_Override_Sphere_Radius>
+      <Collidable_By_Projectile_Living>Yes</Collidable_By_Projectile_Living>
+      <CategoryMask> Infantry </CategoryMask>
+      <Text_ID>TEXT_PROXIMITY_MINE</Text_ID>
+      <Encyclopedia_Text>TEXT_PROXIMITY_MINE_DESC</Encyclopedia_Text>
+      <Encyclopedia_Unit_Class>TEXT_BOMB_CLASS</Encyclopedia_Unit_Class>
+      <IsDeathCloneObstacle>Yes</IsDeathCloneObstacle>
+      <Avoidance_Disabled>Yes</Avoidance_Disabled>
+      <Influences_Capture_Point> False </Influences_Capture_Point>
+      <Not_Really_Selectable>false</Not_Really_Selectable>
+      <Lua_Script>ObjectScript_MissileShield</Lua_Script>
+      <Unit_Abilities_Data SubObjectList="Yes">
+         <Unit_Ability>
+            <Type>MISSILE_SHIELD</Type>
+            <Disable_Movement>Yes</Disable_Movement>   
+            <Effective_Radius>150</Effective_Radius>
+            <Recharge_Seconds>20</Recharge_Seconds>
+            <Expiration_Seconds>10</Expiration_Seconds>
+            <Supports_Autofire>True</Supports_Autofire>
+         </Unit_Ability>
+      </Unit_Abilities_Data>
+   </MiscObject>
+
+  
+</Goauld_Jaffa_Horus_Guard_Infantry_Data>

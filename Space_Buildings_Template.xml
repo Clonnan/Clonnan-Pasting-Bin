@@ -1,0 +1,78 @@
+<?xml version="1.0"?>
+<Template_Data>
+
+	<!--# This file contains basic template data for space units.-->
+	<!--It contains some assumptions about the game's xml tags: 1 = purpose known, 2 = purpose unsure, 3 = no clue-->
+	<!--For more info on most tags see space and ground unit templates-->
+
+
+	<Template Name="Template_Defense_Satellite_HP" Description="Regular small buildable defense satellite that uses hardpoints"><!--#-->
+
+		<Text_ID></Text_ID>
+		<Encyclopedia_Text></Encyclopedia_Text>
+		<MP_Encyclopedia_Text></MP_Encyclopedia_Text>
+		<Encyclopedia_Unit_Class></Encyclopedia_Unit_Class>
+		<Space_Model_Name></Space_Model_Name>
+		<GUI_Model_Name></GUI_Model_Name>
+		<Icon_Name></Icon_Name>
+		<Affiliation></Affiliation>
+		<SFXEvent_Fire></SFXEvent_Fire>
+
+		<Tactical_Health>1200</Tactical_Health>
+		<Shield_Points>1000</Shield_Points>
+		<Shield_Refresh_Rate>18</Shield_Refresh_Rate>
+		<!-- <Hardpoints></Hardpoints> -->
+
+		<SpaceBehavior>
+			DAMAGE_TRACKING,
+			DUMMY_ORBITAL_STRUCTURE,
+			HIDE_WHEN_FOGGED,
+			POWERED,
+			REVEAL,
+			SELECTABLE,
+			SHIELDED,
+			SPACE_OBSTACLE,
+			TACTICAL_SELL,
+			TARGETING,
+			UNIT_AI
+		</SpaceBehavior>
+
+		<Tech_Level>99</Tech_Level>
+		<Energy_Capacity>99999</Energy_Capacity>
+		<Energy_Refresh_Rate>9999</Energy_Refresh_Rate>
+		<Scale_Factor>0.8</Scale_Factor>
+		<GUI_Row>0</GUI_Row>
+		<Is_Dummy>Yes</Is_Dummy>
+		<Select_Box_Scale>200</Select_Box_Scale>
+		<Select_Box_Z_Adjust>-30</Select_Box_Z_Adjust>
+		<Size_Value>30</Size_Value>
+		<Armor_Type>Armor_Normal</Armor_Type>
+		<Shield_Armor_Type>Shield_Default</Shield_Armor_Type>
+		<Space_FOW_Reveal_Range>1400.0</Space_FOW_Reveal_Range>
+		<Targeting_Max_Attack_Distance>1400.0</Targeting_Max_Attack_Distance>
+		<Collidable_By_Projectile_Living>Yes</Collidable_By_Projectile_Living>
+		<Death_Explosions>Large_Explosion_Space</Death_Explosions>
+		<GUI_Distance>1000</GUI_Distance>
+		<GUI_Velocity>45</GUI_Velocity>
+		<No_Reflection_Below_Detail_Level>1</No_Reflection_Below_Detail_Level>
+		<Death_SFXEvent_Start_Die>Unit_Generic_Building_Death_SFX</Death_SFXEvent_Start_Die>
+		<Remove_Upon_Death>true</Remove_Upon_Death>
+		<CategoryMask>Structure</CategoryMask>
+		<Radar_Icon_Name>I_RADAR_SATELLITE.TGA</Radar_Icon_Name>
+		<Is_Visible_On_Radar>Yes</Is_Visible_On_Radar>
+		<Radar_Icon_Size>0.05  0.05</Radar_Icon_Size>
+		<GUI_Bracket_Size>1</GUI_Bracket_Size>
+		<Custom_Soft_Footprint_Radius>100</Custom_Soft_Footprint_Radius>
+		<Space_Obstacle_Offset>0 0 0</Space_Obstacle_Offset>
+		<Score_Cost_Credits>25000</Score_Cost_Credits>
+		<Space_Layer>StaticObject</Space_Layer>
+		<Has_Space_Evaluator>True</Has_Space_Evaluator>
+		<Targeting_Priority_Set>Frigate</Targeting_Priority_Set>
+		<Last_State_Visible_Under_FOW>True</Last_State_Visible_Under_FOW>
+		<Initial_State_Visible_Under_FOW>False</Initial_State_Visible_Under_FOW>
+		<Influences_Capture_Point>False</Influences_Capture_Point>
+		<Victory_Relevant>No</Victory_Relevant>
+	</Template>
+
+
+</Template_Data>

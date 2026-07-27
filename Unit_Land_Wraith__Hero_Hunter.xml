@@ -1,0 +1,295 @@
+<?xml version="1.0"?>
+ <Wraith_Hunter_Infantry_Data>
+
+   <HeroUnit Name="Boba_Fett">
+      <Variant_Of_Existing_Type>Template_Ground_Infantry_Single_Hero_Wraith</Variant_Of_Existing_Type>
+      <Text_ID>TEXT_WRAITH_GROUND_HERO_WRAITH_HUNTER</Text_ID>
+      <Encyclopedia_Text>TEXT_DESCRIPTION_WRAITH_HUNTER_GROUND</Encyclopedia_Text>
+      <Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_WRAITH_HUNTER_GROUND</Encyclopedia_Unit_Class>
+      <Encyclopedia_Good_Against>Rebel_Trooper Goauld_Jackal_Guard Underworld_Merc</Encyclopedia_Good_Against>
+      <Encyclopedia_Vulnerable_To>Snowspeeder Tauri_B302_Land Rebel_Anti_Infantry_Turret</Encyclopedia_Vulnerable_To>
+      <Icon_Name>WRAITH_SPACE_HERO_HUNTER.TGA</Icon_Name>
+      <Land_Model_Name>Wraith_Land_Hero_Hunter.ALO</Land_Model_Name>
+      <Land_Model_Anim_Override_Name>Wraith_Land_Hero_Hunter.ALO</Land_Model_Anim_Override_Name>
+
+      <LandBehavior>
+         ABILITY_COUNTDOWN,
+         DAMAGE_TRACKING,
+         GARRISON_UNIT,
+         HIDE_WHEN_FOGGED,
+         IDLE,
+         REVEAL,
+         SELECTABLE,
+         SPAWN_SQUADRON,
+         SURFACE_FX,
+         TARGETING,
+         UNIT_AI,
+         WALK_LOCOMOTOR,
+         WEAPON
+      </LandBehavior>
+      
+      <Affiliation>Empire</Affiliation> 
+      <Max_Speed>1.4</Max_Speed>  
+      <Tactical_Health>850</Tactical_Health>
+      <AI_Combat_Power>120</AI_Combat_Power>
+      <Neutralization_Cost>4000.0</Neutralization_Cost>
+      
+      <SFXEvent_Select>Unit_Select_Hunter</SFXEvent_Select>
+      <SFXEvent_Move>Unit_Move_Hunter</SFXEvent_Move>
+      <SFXEvent_Attack>Unit_Attack_Hunter</SFXEvent_Attack>
+     
+      <Projectile_Types>Proj_Wraith_Hero_Hunter_Land</Projectile_Types>
+      <Projectile_Fire_Recharge_Seconds>1.7</Projectile_Fire_Recharge_Seconds>
+      <Projectile_Fire_Pulse_Count>2</Projectile_Fire_Pulse_Count>
+      <Projectile_Fire_Pulse_Delay_Seconds>1.5</Projectile_Fire_Pulse_Delay_Seconds>
+      <Targeting_Priority_Set>SG_Infantry_AntiInfantry</Targeting_Priority_Set>
+      <SFXEvent_Fire>Weapon_Pistol_Wraith</SFXEvent_Fire>
+      
+      <Always_Spawn_In_Orbit>No</Always_Spawn_In_Orbit>
+      <Damage>45</Damage>
+      <CategoryMask> LandHero | SpaceHero </CategoryMask>
+      <Death_Clone>Damage_Hand_Device, Boba_Fett_Hand_Device_Death_Clone</Death_Clone>
+      <Unique_Space_Unit>Wraith_Hero_Hunter_Fighter</Unique_Space_Unit>
+
+      <Starting_Spawned_Units_Tech_0>Wraith_Tracking_Drone, 1</Starting_Spawned_Units_Tech_0>
+      <Reserve_Spawned_Units_Tech_0>Wraith_Tracking_Drone, -1</Reserve_Spawned_Units_Tech_0>
+
+      <!--Unit_Abilities_Data SubObjectList="Yes">
+        <Unit_Ability>
+            <Type>SABER_THROW</Type>
+            <Alternate_Name_Text>TEXT_ABILITY_INFECT</Alternate_Name_Text>
+            <Alternate_Description_Text></Alternate_Description_Text>
+            <Recharge_Seconds>40.0</Recharge_Seconds>
+            <GUI_Activated_Ability_Name>Wraith_Hunter_Weaken_Ability</GUI_Activated_Ability_Name>
+            <Effective_Radius>100.0</Effective_Radius>
+            <Supports_Autofire>True</Supports_Autofire>
+         </Unit_Ability>
+      </Unit_Abilities_Data-->
+      <Abilities SubObjectList="Yes">
+         <!--Saber_Throw_Ability Name="Wraith_Hunter_Weaken_Ability">
+            <Activation_Style> User_Input </Activation_Style>
+            <Activation_Min_Range>5.0</Activation_Min_Range>
+            <Activation_Max_Range>200.0</Activation_Max_Range>
+            <Saber_Name>Proj_Wraith_Hunter_Virus</Saber_Name>
+            <Catch_Dist>15.0</Catch_Dist>
+         </Saber_Throw_Ability-->
+        <Galactic_Stealth_Ability Name="Boba_Fett_Galactic_Stealth">
+            <Evade_Detection_Chance>0.0</Evade_Detection_Chance>
+         </Galactic_Stealth_Ability>
+         <System_Spy_Ability Name="Boba_Fett_Limited_Spy">
+            <Initially_Enabled>Yes</Initially_Enabled>
+            <Activation_Style>Galactic_Automatic</Activation_Style>
+            <Causes_Despawn>No</Causes_Despawn>
+            <Duration_In_Secs>-1.0</Duration_In_Secs>
+            <See_Num_Fleets>Yes</See_Num_Fleets>
+            <See_Minor_Stealth_Heroes>Yes</See_Minor_Stealth_Heroes>
+            <See_Major_Stealth_Heroes>Yes</See_Major_Stealth_Heroes>
+         </System_Spy_Ability>
+         <Neutralize_Hero_Ability Name="Boba_Fett_Neutralize_Hero">
+            <Cost_Mod_By_Base_Level>0.0,0.0, 5.0,1.0</Cost_Mod_By_Base_Level>
+            <Cost_Mod_By_Previous_Neutralizations>0.0,0.0, 1000.0,750.0</Cost_Mod_By_Previous_Neutralizations>
+            <Cost_Mod_By_Planetary_Corruption_Level>0.0,0.0, 1.0,0.25</Cost_Mod_By_Planetary_Corruption_Level>
+            <General_Minor_Hero_Cost_Mod>1.0</General_Minor_Hero_Cost_Mod>
+            <General_Major_Hero_Cost_Mod>1.0</General_Major_Hero_Cost_Mod>
+            <Owner_Respawn_Time_In_Secs>120.0, 150.0</Owner_Respawn_Time_In_Secs>
+            <Target_Respawn_Time_In_Secs>240.0, 300.0</Target_Respawn_Time_In_Secs>
+            <Can_Neutralize_Minor_Heroes>Yes</Can_Neutralize_Minor_Heroes>
+            <Can_Neutralize_Major_Heroes>Yes</Can_Neutralize_Major_Heroes>
+         </Neutralize_Hero_Ability>
+      </Abilities>
+   </HeroUnit>
+   
+   <GroundInfantry Name="Boba_Fett_Hand_Device_Death_Clone">
+      <Variant_Of_Existing_Type>Boba_Fett</Variant_Of_Existing_Type>
+      <Specific_Death_Anim_Type>FW_DIE</Specific_Death_Anim_Type>
+   </GroundInfantry>
+   
+   <GroundVehicle Name="Wraith_Tracking_Drone">
+      <Variant_Of_Existing_Type>Template_Ground_Hover</Variant_Of_Existing_Type>
+      <Text_ID>TEXT_WRAITH_GROUND_UNIT_TRACKING_DRONE</Text_ID>
+      <Encyclopedia_Text>TEXT_DESCRIPTION_WRAITH_TRACKING_DRONE_GROUND</Encyclopedia_Text>
+      <Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_SCOUTUNIT</Encyclopedia_Unit_Class>
+      <Encyclopedia_Good_Against></Encyclopedia_Good_Against>
+      <Encyclopedia_Vulnerable_To></Encyclopedia_Vulnerable_To>
+      <Icon_Name>WRAITH_GROUND_UNIT_TRACKING_DRONE.TGA</Icon_Name>
+      <Land_Model_Name>Wraith_Land_Unit_Tracking_Drone.ALO</Land_Model_Name>
+      
+      <LandBehavior>
+         ABILITY_COUNTDOWN,
+         AFFECTED_BY_SHIELD,
+         DAMAGE_TRACKING,
+         HIDE_WHEN_FOGGED,
+         HUNT,
+         IDLE,
+         POWERED,
+         REVEAL,
+         STUNNABLE,
+         SURFACE_FX,
+         TARGETING,
+         UNIT_AI,
+         WALK_LOCOMOTOR,
+         WIND_DISTURBANCE
+      </LandBehavior>
+
+      <Weather_Category>Infantry</Weather_Category>
+      <SurfaceFX_Name>Hover_Small</SurfaceFX_Name>
+      <Hover_Height>9.5</Hover_Height>
+      <GUI_Bracket_Size>0</GUI_Bracket_Size>
+      <Max_Speed>1.8</Max_Speed>
+      <Max_Rate_Of_Turn>15</Max_Rate_Of_Turn>
+      <LateralAcceleration>0.15</LateralAcceleration>
+      <Scale_Factor>0.4</Scale_Factor>
+      <Affiliation>Empire</Affiliation>
+      <Size_Value>25</Size_Value>
+      <Select_Box_Scale>45</Select_Box_Scale>
+      <Select_Box_Z_Adjust>3.0f</Select_Box_Z_Adjust>
+      <Land_FOW_Reveal_Range>600.0</Land_FOW_Reveal_Range>
+      <Blob_Shadow_Scale>7.0, 7.0</Blob_Shadow_Scale>
+      <AI_Combat_Power>50</AI_Combat_Power> 
+      <Tactical_Health>80</Tactical_Health>
+      <Projectile_Types>Proj_Fake_Land</Projectile_Types>
+      <Projectile_Fire_Recharge_Seconds>100.0</Projectile_Fire_Recharge_Seconds>
+      <Projectile_Fire_Pulse_Count>1</Projectile_Fire_Pulse_Count>
+      <Projectile_Fire_Pulse_Delay_Seconds>1.0</Projectile_Fire_Pulse_Delay_Seconds>
+      <Turret_Rotate_Extent_Degrees> 20.0 </Turret_Rotate_Extent_Degrees>
+      <Turret_Elevate_Extent_Degrees> 60.0 </Turret_Elevate_Extent_Degrees>
+      <Overall_Length>0</Overall_Length>
+      <Overall_Width>0</Overall_Width>
+      <Death_Explosions>Projectile_Dirt_Collide</Death_Explosions>
+      <Victory_Relevant>no</Victory_Relevant>
+      <Target_Bones>PROBE</Target_Bones> 
+      
+      <!-- Special: Tracking drones don't show up on the enemy's radar map, but they do for allies. -->
+      <Is_Visible_On_Radar>Yes</Is_Visible_On_Radar>
+      <Is_Visible_On_Enemy_Radar>No</Is_Visible_On_Enemy_Radar>
+      <Target_Stealth_Units>Yes</Target_Stealth_Units>
+      
+      <Unit_Abilities_Data SubObjectList="Yes">
+         <Unit_Ability>
+            <Type>HUNT</Type>
+            <Alternate_Name_Text>TEXT_ABILITY_RECONNAISSANCE</Alternate_Name_Text>
+            <Alternate_Description_Text>TEXT_DESCRIPTION_ABILITY_RECONNAISSANCE_WRAITH_TRACKING_DRONE_GROUND</Alternate_Description_Text>
+         </Unit_Ability>
+         <Unit_Ability>
+            <Type>STEALTH</Type>
+            <Alternate_Icon_Name>I_SA_STEALTH_TRACKING_DRONE.TGA</Alternate_Icon_Name>
+            <Recharge_Seconds>10.0</Recharge_Seconds>
+            <Expiration_Seconds>35.0</Expiration_Seconds>
+            <GUI_Activated_Ability_Name>Wraith_Tracking_Drone_Stealth</GUI_Activated_Ability_Name>
+         </Unit_Ability>
+      </Unit_Abilities_Data>
+      <Abilities SubObjectList="Yes">
+         <Battlefield_Modifier_Ability Name="Wraith_Tracking_Drone_FOW_Increase">
+            <Initially_Enabled>Yes</Initially_Enabled>
+            <Activation_Style>Ground_Automatic</Activation_Style>
+            <FOW_Reveal_Range_Multiplier>1.5</FOW_Reveal_Range_Multiplier>
+            <Apply_To_All_Allies>Yes</Apply_To_All_Allies>
+            <Stacking_Category>0</Stacking_Category>
+         </Battlefield_Modifier_Ability>
+         <Stealth_Ability Name="Wraith_Tracking_Drone_Stealth">
+            <Activation_Style> User_Input </Activation_Style>
+            <Stealth_Color>255, 255, 255, 255</Stealth_Color>
+            <Stealth_Transition_Time>.6</Stealth_Transition_Time>
+        </Stealth_Ability>
+
+      </Abilities>
+   </GroundVehicle>
+
+   <HeroCompany Name="Boba_Fett_Team">
+      <Variant_Of_Existing_Type>Template_Ground_Hero_Company</Variant_Of_Existing_Type>
+      <Text_ID>TEXT_WRAITH_SPACE_HERO_HUNTER</Text_ID>
+      <Encyclopedia_Text>TEXT_DESCRIPTION_WRAITH_SK_HUNTER_SPACE</Encyclopedia_Text>
+      <Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_WRAITH_HUNTER</Encyclopedia_Unit_Class>
+      <Encyclopedia_Good_Against> Starviper_Fighter X-wing </Encyclopedia_Good_Against>
+      <Encyclopedia_Vulnerable_To> Corellian_Corvette Crusader_Gunship </Encyclopedia_Vulnerable_To>
+      <Icon_Name>WRAITH_SPACE_HERO_HUNTER.TGA</Icon_Name>
+      <Affiliation>Empire</Affiliation>
+      <Score_Cost_Credits>5000</Score_Cost_Credits>
+      <Tactical_Build_Cost_Multiplayer>1100</Tactical_Build_Cost_Multiplayer>
+      <Tactical_Build_Time_Seconds>12</Tactical_Build_Time_Seconds>
+      <Company_Transport_Unit>Wraith_Transport_Shuttle_Experimental_Dart_Landing</Company_Transport_Unit>
+      <Company_Units>Boba_Fett</Company_Units>
+      <Is_Stealth_Company>Yes</Is_Stealth_Company>     
+      <CategoryMask>LandHero | SpaceHero</CategoryMask>
+      <Unit_Abilities_Data SubObjectList="Yes">
+         <Unit_Ability>
+            <Type>ION_CANNON_SHOT</Type>
+            <Alternate_Name_Text>TEXT_ABILITY_WRAITH_SPACE_HUNTER_IONENSCHUSS</Alternate_Name_Text>
+            <Alternate_Description_Text>TEXT_DESCRIPTION_ABILITY_SPACE_HUNTER_IONENSCHUSS</Alternate_Description_Text>
+            <Alternate_Icon_Name>I_SA_ION_STUN_HUNTER.TGA</Alternate_Icon_Name>
+         </Unit_Ability>
+         <Unit_Ability>
+            <Type>HUNT</Type>
+            <Alternate_Name_Text>TEXT_ABILITY_WRAITH_SPACE_HUNTER_GEGNER_JAGEN</Alternate_Name_Text>
+            <Alternate_Description_Text>TEXT_DESCRIPTION_ABILITY_SPACE_HUNTER_GEGNER_JAGEN</Alternate_Description_Text>
+         </Unit_Ability>
+      </Unit_Abilities_Data>
+   </HeroCompany>
+   
+   <HeroCompany Name="Boba_Fett_Team_Land_MP"><!--do not delete this unit! just keep it as ref, even its its a plain variant-->
+      <Variant_Of_Existing_Type>Boba_Fett_Team</Variant_Of_Existing_Type>
+      <Text_ID>TEXT_WRAITH_GROUND_HERO_WRAITH_HUNTER</Text_ID>
+      <Encyclopedia_Text>TEXT_DESCRIPTION_WRAITH_HUNTER_GROUND</Encyclopedia_Text>
+      <Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_WRAITH_HUNTER_GROUND</Encyclopedia_Unit_Class>
+      <Encyclopedia_Good_Against>Rebel_Trooper Goauld_Jackal_Guard Underworld_Merc</Encyclopedia_Good_Against>
+      <Encyclopedia_Vulnerable_To>Snowspeeder Tauri_B302_Land Rebel_Anti_Infantry_Turret</Encyclopedia_Vulnerable_To>
+      <Unit_Abilities_Data SubObjectList="No"></Unit_Abilities_Data>
+   </HeroCompany>
+
+   <Projectile Name="Proj_Wraith_Hero_Hunter_Land">
+      <Variant_Of_Existing_Type>Proj_Wraith_Stun_Pistol</Variant_Of_Existing_Type>
+      <Damage_Type>Damage_Anti_Infantry</Damage_Type>
+      <Projectile_Damage>101.05</Projectile_Damage>
+   </Projectile>
+
+   <Projectile Name="Proj_Wraith_Hunter_Virus">
+      <Damage_Type>Damage_Normal</Damage_Type>
+      <Text_ID>TEXT_NONE</Text_ID>
+      <Scale_Factor>1.0</Scale_Factor>
+      <Max_Speed>7.0</Max_Speed>
+      <Max_Rate_Of_Turn>0.0</Max_Rate_Of_Turn>
+      <Behavior>PROJECTILE, HIDE_WHEN_FOGGED</Behavior>
+      <Land_Model_Name>p_disruptor_projectile.alo</Land_Model_Name>
+      <Projectile_Category>LIGHT_SABER</Projectile_Category>
+      <Projectile_Max_Flight_Distance>300.0</Projectile_Max_Flight_Distance>
+      <Projectile_Max_Scan_Range>0.0</Projectile_Max_Scan_Range>
+      <Projectile_Damage>0.0</Projectile_Damage>
+      <Projectile_Fire_Pulse_Count>1</Projectile_Fire_Pulse_Count>
+      <Projectile_Fire_Pulse_Delay_Seconds>1</Projectile_Fire_Pulse_Delay_Seconds>
+      <Projectile_Fire_Recharge_Seconds>10</Projectile_Fire_Recharge_Seconds>
+      <Projectile_Does_Shield_Damage>No</Projectile_Does_Shield_Damage>
+      <Projectile_Does_Energy_Damage>No</Projectile_Does_Energy_Damage>
+      <Projectile_Does_Hitpoint_Damage>No</Projectile_Does_Hitpoint_Damage>
+      <Projectile_Energy_Per_Shot>0</Projectile_Energy_Per_Shot>
+      <Projectile_Object_Detonation_Particle>FOW_Ping_Blast_Particles</Projectile_Object_Detonation_Particle>
+      <Projectile_Ground_Detonation_Particle></Projectile_Ground_Detonation_Particle>
+      <AI_Combat_Power>40</AI_Combat_Power>
+      <Projectile_SFXEvent_Detonate>SFX_Infantry_Blaster_Detonation</Projectile_SFXEvent_Detonate>
+      <SFXEvent_Fire>Unit_Disruptor_Fire</SFXEvent_Fire>
+
+      <Projectile_Weaken_Enemy_On_Detonation>Yes</Projectile_Weaken_Enemy_On_Detonation>
+      <Projectile_Weaken_Enemy_Duration_Seconds>15.0</Projectile_Weaken_Enemy_Duration_Seconds>
+      <Projectile_Weaken_Enemy_Radius>100</Projectile_Weaken_Enemy_Radius>
+      <Projectile_Weaken_Enemy_Spawn_Effect>Lure_Ability_Particle</Projectile_Weaken_Enemy_Spawn_Effect>
+
+      <!-- When the weakened unit takes damage x, it'll be multiplied by (1.0f + Projectile_Weaken_Enemy_Vulnerability_Percent) -->
+      <Projectile_Weaken_Enemy_Take_Damage_Increase_Percent>10.3</Projectile_Weaken_Enemy_Take_Damage_Increase_Percent>
+
+      <!-- When the weakened unit causes damage x, it'll be multiplied by (1.0f - Projectile_Weaken_Enemy_Damage_Reduction_Percent) -->
+      <Projectile_Weaken_Enemy_Cause_Damage_Reduction_Percent>0.0</Projectile_Weaken_Enemy_Cause_Damage_Reduction_Percent>
+
+      <!-- Types of the units that can be weakened (enemies only) -->
+      <Projectile_Weaken_Enemy_Targets_Category_Mask>Infantry</Projectile_Weaken_Enemy_Targets_Category_Mask>
+
+      <Projectile_SFXEvent_Detonate>SFX_Weaken_Detonation</Projectile_SFXEvent_Detonate>
+      <Projectile_Lifetime_Detonation_Particle>Lure_Ability_Particle</Projectile_Lifetime_Detonation_Particle>
+
+      <!-- CAN'T have acceleration on projectile - will not work with INTERCEPT CODE!!!! -->
+      <Projectile_Acceleration_Per_Frame>0.0</Projectile_Acceleration_Per_Frame>
+    </Projectile>
+
+
+
+
+  
+ </Wraith_Hunter_Infantry_Data>

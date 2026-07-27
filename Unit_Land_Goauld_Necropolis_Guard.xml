@@ -1,0 +1,133 @@
+<?xml version="1.0"?>
+<Goauld_Necropolis_Guard_Data>
+   <GroundInfantry Name="Goauld_Necropolis_Guard">
+      <Variant_Of_Existing_Type>Template_Ground_Infantry_Single</Variant_Of_Existing_Type>
+      <Text_ID>TEXT_GOAULD_GROUND_UNIT_MOBILE_STAFF_CANNON</Text_ID>
+      <Encyclopedia_Text>TEXT_DESCRIPTION_GOAULD_MOBILE_STAFF_CANNON_GROUND</Encyclopedia_Text>
+      <Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_MOBILE_MG</Encyclopedia_Unit_Class>      
+      <Encyclopedia_Good_Against>Underworld_Merc MZ8_Pulse_Cannon_Tank Dark_Trooper_PhaseI</Encyclopedia_Good_Against>
+      <Encyclopedia_Vulnerable_To>Tauri_B302_Land Wraith_Dart_Land Wraith_Bomber_Land</Encyclopedia_Vulnerable_To>
+      <Icon_Name>GOAULD_GROUND_UNIT_MOBILE_STAFF_CANNON.tga</Icon_Name>
+      <Land_Model_Name>Goauld_Land_Unit_Necropolis_Guard.ALO</Land_Model_Name>
+      <Land_Model_Anim_Override_Name>Goauld_Land_Unit_Necropolis_Guard.alo</Land_Model_Anim_Override_Name>
+      <LandBehavior>WALK_LOCOMOTOR, DAMAGE_TRACKING, GARRISON_UNIT, HIDE_WHEN_FOGGED, IDLE, REVEAL, SELECTABLE, STUNNABLE, SURFACE_FX, TARGETING, TURRET, UNIT_AI, WEAPON</LandBehavior>
+      <Scale_Factor>1.25</Scale_Factor>
+      <Movement_Animation_Speed>1.5</Movement_Animation_Speed>
+      <Rotation_Animation_Speed>20.0</Rotation_Animation_Speed>
+      <Walk_Animation_Speed>0.45</Walk_Animation_Speed>
+      <Crouch_Animation_Speed>0.537</Crouch_Animation_Speed>
+      <Max_Speed>0.7</Max_Speed>
+      <Max_Rate_Of_Turn>12.0</Max_Rate_Of_Turn>
+      <Custom_Soft_Footprint_Radius>5.0</Custom_Soft_Footprint_Radius>
+      <Custom_Hard_XExtent>5.0</Custom_Hard_XExtent>
+      <Custom_Hard_YExtent>5.0</Custom_Hard_YExtent>
+      <FormationSpacing>0.5</FormationSpacing>
+      <OverrideAcceleration>0.05</OverrideAcceleration>
+      <OverrideDeceleration>0.05</OverrideDeceleration>
+      <FormationOrder>6</FormationOrder>
+      <Size_Value>10</Size_Value>
+      <Damage>20</Damage>     
+      <Tactical_Health>100</Tactical_Health>
+      <AI_Combat_Power>50</AI_Combat_Power>
+      <Targeting_Priority_Set>SG_Infantry_AntiVehicle</Targeting_Priority_Set>
+      <SFXEvent_Select>Unit_Select_Guard</SFXEvent_Select>
+		<SFXEvent_Move>Unit_Move_Guard</SFXEvent_Move>
+		<SFXEvent_Attack>Unit_Attack_Guard</SFXEvent_Attack>
+      <Projectile_Types>Proj_Goauld_Necropolis_Guard</Projectile_Types>
+      <Projectile_Fire_Recharge_Seconds>2.5</Projectile_Fire_Recharge_Seconds>
+		<Projectile_Fire_Pulse_Count>1</Projectile_Fire_Pulse_Count>
+		<Projectile_Fire_Pulse_Delay_Seconds>2.5</Projectile_Fire_Pulse_Delay_Seconds>
+      <Fire_Category_Restrictions>Air</Fire_Category_Restrictions>
+      
+      <Deploys>Yes</Deploys>
+      <Is_Turret>Yes</Is_Turret>
+      <Turret_Rest_Angle>0.0, 0.0, 0.0</Turret_Rest_Angle>
+      <Turret_Rotation_Offset>0.0, 0.0, 0.0</Turret_Rotation_Offset>
+      <Turret_Rotate_Speed>5.0</Turret_Rotate_Speed>
+      <Turret_Rotate_Extent_Degrees>60</Turret_Rotate_Extent_Degrees>
+      <Turret_Elevate_Extent_Degrees>45</Turret_Elevate_Extent_Degrees>
+      <Deployed_Turret_Rotate_Extent_Degrees>60</Deployed_Turret_Rotate_Extent_Degrees>
+      <Deployed_Turret_Elevate_Extent_Degrees>45</Deployed_Turret_Elevate_Extent_Degrees>      
+      <Turret_Bone_Name>B_TURRET</Turret_Bone_Name>
+      <Barrel_Bone_Name>B_BARREL</Barrel_Bone_Name>
+      <Apply_Z_Turret_Rotate_To_Axis>2</Apply_Z_Turret_Rotate_To_Axis>
+      <Apply_Y_Turret_Rotate_To_Axis>1</Apply_Y_Turret_Rotate_To_Axis>
+      <Turret_Targets_Anything_Else>3</Turret_Targets_Anything_Else>
+      <Turret_Targets_Air_Vehicles>4</Turret_Targets_Air_Vehicles>
+      <Turret_Targets_Ground_Vehicles>1</Turret_Targets_Ground_Vehicles>
+      <Turret_Targets_Ground_Infantry>2</Turret_Targets_Ground_Infantry>
+      <Fire_Weapon_When_Undeployed>No</Fire_Weapon_When_Undeployed>
+      <Fire_Weapon_When_Deployed>Yes</Fire_Weapon_When_Deployed>
+      <Deployment_Anim_Rate>1.0</Deployment_Anim_Rate>
+      <Must_Face_Target_To_Attack_When_Deployed>Yes</Must_Face_Target_To_Attack_When_Deployed>
+      
+      <!--Death_Explosions>Small_Explosion_Land</Death_Explosions-->
+      
+      <CategoryMask> Infantry | AntiInfantry | AntiVehicle | AntiStructure </CategoryMask>
+      
+      <Targeting_Max_Attack_Distance>320.0</Targeting_Max_Attack_Distance>
+      <Land_FOW_Reveal_Range>300.0</Land_FOW_Reveal_Range>
+      <Idle_Chase_Range>0.0</Idle_Chase_Range>
+      
+      <SFXEvent_Fire>Weapon_Goauld_Tripod</SFXEvent_Fire>
+      
+      <Conversion_Ability_Changes_To_Enemy>Goauld_Necropolis_Guard_Converted_To_Enemy</Conversion_Ability_Changes_To_Enemy>
+      <Unit_Abilities_Data SubObjectList="Yes">
+         <Unit_Ability>
+            <Type>DEPLOY</Type>
+            <Alternate_Name_Text>TEXT_ABILITY_DEPLOY</Alternate_Name_Text>
+            <Alternate_Description_Text>TEXT_DESCRIPTION_ABILITY_DEPLOY_STAFF_CANNON_GROUND</Alternate_Description_Text>
+         </Unit_Ability>
+      </Unit_Abilities_Data>
+      
+      <Lua_Script>ObjectScript_Ground_Infantry_Face_Target</Lua_Script>	
+   </GroundInfantry>
+   
+   <GroundInfantry Name="Goauld_Necropolis_Guard_Converted_To_Enemy">
+      <Variant_Of_Existing_Type> Goauld_Necropolis_Guard </Variant_Of_Existing_Type>
+      <Text_ID>TEXT_NONE</Text_ID>
+   </GroundInfantry> 
+
+   <GroundCompany Name="Goauld_Necropolis_Guard_Company_No_Prereq">
+      <Variant_Of_Existing_Type>Template_Ground_Company</Variant_Of_Existing_Type>
+      <Text_ID>TEXT_GOAULD_GROUND_UNIT_MOBILE_STAFF_CANNON</Text_ID>
+      <Encyclopedia_Text>TEXT_DESCRIPTION_GOAULD_MOBILE_STAFF_CANNON_GROUND</Encyclopedia_Text>
+      <Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_MOBILE_MG</Encyclopedia_Unit_Class>      
+      <Encyclopedia_Good_Against>Underworld_Merc MZ8_Pulse_Cannon_Tank Dark_Trooper_PhaseI</Encyclopedia_Good_Against>
+      <Encyclopedia_Vulnerable_To>Tauri_B302_Land Wraith_Dart_Land Wraith_Bomber_Land</Encyclopedia_Vulnerable_To>
+      <Icon_Name>GOAULD_GROUND_UNIT_MOBILE_STAFF_CANNON.tga</Icon_Name>
+      <Damage>50</Damage>
+      <Score_Cost_Credits>300</Score_Cost_Credits>
+      <Build_Cost_Credits>400</Build_Cost_Credits>
+      <Build_Time_Seconds>50</Build_Time_Seconds>
+      <Company_Transport_Unit>Alliance_Shuttle</Company_Transport_Unit>
+      <Company_Units>Goauld_Necropolis_Guard, Goauld_Necropolis_Guard</Company_Units>      
+      <Tactical_Build_Cost_Multiplayer>800</Tactical_Build_Cost_Multiplayer>
+      <Tactical_Build_Time_Seconds>10</Tactical_Build_Time_Seconds>   
+      <Required_Ground_Base_Level>1</Required_Ground_Base_Level> 
+   </GroundCompany>
+   
+   <GroundCompany Name="Goauld_Necropolis_Guard_Company">
+      <Variant_Of_Existing_Type>Goauld_Necropolis_Guard_Company_No_Prereq</Variant_Of_Existing_Type>
+      <Affiliation>Rebel</Affiliation>
+      <Tech_Level>3</Tech_Level>
+      <Required_Timeline>0</Required_Timeline>
+      <Required_Ground_Base_Level>1</Required_Ground_Base_Level>
+      <Required_Star_Base_Level>0</Required_Star_Base_Level>
+      <Required_Special_Structures>R_Ground_Academy</Required_Special_Structures>
+      <Required_Planets/>
+      <Tactical_Build_Prerequisites>RC_Level_Two_Tech_Upgrade</Tactical_Build_Prerequisites>
+   </GroundCompany>
+   
+   
+   <Projectile Name="Proj_Goauld_Necropolis_Guard">
+      <Variant_Of_Existing_Type>Proj_Goauld_Tripod_Staff</Variant_Of_Existing_Type>
+      <Damage_Type>Damage_Normal</Damage_Type>
+      <Projectile_Damage>90</Projectile_Damage>
+      <Projectile_Blast_Area_Range>10.0</Projectile_Blast_Area_Range>
+		<Projectile_Blast_Area_Damage>15.0</Projectile_Blast_Area_Damage>
+		<Max_Secs_For_AE_Delayed_Damage>0.0</Max_Secs_For_AE_Delayed_Damage>
+   </Projectile>
+
+
+</Goauld_Necropolis_Guard_Data>

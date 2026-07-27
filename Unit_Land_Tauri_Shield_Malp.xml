@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Canderous_Tank_Data>
+
+   <!-- UNIT INFO -->
+   <GroundVehicle Name="Canderous_Assault_Tank">
+      <Variant_Of_Existing_Type>Template_Ground_Wheeled</Variant_Of_Existing_Type>
+      
+      <Text_ID>TEXT_TAURI_GROUND_UNIT_SHIELD_MALP</Text_ID>
+      <Encyclopedia_Text>TEXT_DESCRIPTION_TAURI_SHIELD_MALP_GROUND</Encyclopedia_Text>
+      <Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_SHIELD_MALP</Encyclopedia_Unit_Class>
+      <Encyclopedia_Good_Against></Encyclopedia_Good_Against>
+      <Encyclopedia_Vulnerable_To> Goauld_Land_Alkesh SPMAT_Walker Wraith_Bomber_Land </Encyclopedia_Vulnerable_To>
+      <Icon_Name>TAURI_GROUND_UNIT_SHIELD_MALP.tga</Icon_Name>
+      <Land_Model_Name>Tauri_Land_Unit_Shield_Malp.ALO</Land_Model_Name>
+      <Radar_Icon_Name>I_RADAR_FRED.TGA</Radar_Icon_Name>
+      <Radar_Icon_Size>0.03 0.03</Radar_Icon_Size>
+      <GUI_Bounds_Scale>0.6</GUI_Bounds_Scale>
+      <!-- Select_Box_Scale is too big on purpose to show the shield radius -->
+      <Select_Box_Scale>180</Select_Box_Scale>
+      <Custom_Hard_XExtent> 10.0 </Custom_Hard_XExtent>
+      <Custom_Hard_YExtent> 10.0 </Custom_Hard_YExtent>
+      <!-- Exclude_From_Distance_Fade, otherwise the unit will get transparent when camera too close -->
+      <Exclude_From_Distance_Fade>true</Exclude_From_Distance_Fade>
+
+      <LandBehavior>WALK_LOCOMOTOR, AFFECTED_BY_SHIELD, SHIELDED, DAMAGE_TRACKING, HIDE_WHEN_FOGGED, IDLE, POWERED, REVEAL, STUNNABLE, SURFACE_FX, TREAD_SCROLL, UNIT_AI, WIND_DISTURBANCE</LandBehavior>
+      <Affiliation>Underworld</Affiliation>
+      <Max_Speed>0.6</Max_Speed>
+      <Max_Rate_Of_Turn>4.5</Max_Rate_Of_Turn>
+      <Movement_Animation_Speed>2.3</Movement_Animation_Speed>
+      <Deployment_Anim_Rate>2</Deployment_Anim_Rate>
+      
+      <Damage>0</Damage>
+      <AI_Combat_Power>100</AI_Combat_Power>
+      <Score_Cost_Credits>400</Score_Cost_Credits>
+      <Tactical_Health>300</Tactical_Health>
+      <Shield_Points>500</Shield_Points>
+      <Shield_Refresh_Rate>10</Shield_Refresh_Rate>
+      <Blob_Shadow_Scale>45.0, 35.0</Blob_Shadow_Scale>
+      <Overall_Length>20.0</Overall_Length>
+      <Overall_Width>10.0</Overall_Width> 
+      <FormationOrder>3</FormationOrder>
+      
+      <Deploys>Yes</Deploys>
+      <Shielded_Only_When_Deployed>Yes</Shielded_Only_When_Deployed>
+		<Shield_Sub_Mesh>Shield</Shield_Sub_Mesh>
+
+      <Death_Explosions>Large_Explosion_Land</Death_Explosions>
+      <SFXEvent_Turret_Rotating_Loop>Vehicle_Turret_Motor</SFXEvent_Turret_Rotating_Loop>
+      <SFXEvent_Engine_Idle_Loop>Unit_T2B_Idle_Engine_Loop</SFXEvent_Engine_Idle_Loop>
+      <SFXEvent_Engine_Moving_Loop>Unit_T2B_Moving_Engine_Loop</SFXEvent_Engine_Moving_Loop>
+      <SFXEvent_Shields_Go_Down>Effect_Tauri_Shield_Down</SFXEvent_Shields_Go_Down>
+      <SFXEvent_Shields_Go_Back_Up>Effect_Tauri_Shield_Up</SFXEvent_Shields_Go_Back_Up>
+      
+      <Unit_Abilities_Data SubObjectList="Yes">
+         <Unit_Ability>
+            <Type>DEPLOY</Type>
+            <Alternate_Name_Text>TEXT_ABILITY_DEPLOY</Alternate_Name_Text>
+            <Alternate_Description_Text>TEXT_DESCRIPTION_ABILITY_DEPLOY_SHIELD_MALP_GROUND</Alternate_Description_Text>
+            <Alternate_Icon_Name>I_SA_DEPLOYABLE_SHIELD_MALP.TGA</Alternate_Icon_Name>
+            <!-- <SFXEvent_GUI_Unit_Ability_Activated>Effect_Tauri_Shield_Up</SFXEvent_GUI_Unit_Ability_Activated> --> <!-- the activation is played through animationsfxmaps since the shield only appears at the end of the quite long animation-->
+            <SFXEvent_GUI_Unit_Ability_Deactivated>Effect_Tauri_Shield_Down</SFXEvent_GUI_Unit_Ability_Deactivated>
+          </Unit_Ability>
+      </Unit_Abilities_Data>
+   </GroundVehicle>
+
+   <!-- COMPANY INFO -->
+   <GroundCompany Name="Canderous_Assault_Tank_Company_No_Prereq">
+      <Variant_Of_Existing_Type>Template_Ground_Company</Variant_Of_Existing_Type>
+      <Text_ID>TEXT_TAURI_GROUND_UNIT_SHIELD_MALP</Text_ID>
+      <Encyclopedia_Text>TEXT_DESCRIPTION_TAURI_SHIELD_MALP_GROUND</Encyclopedia_Text>
+      <Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_SHIELD_MALP</Encyclopedia_Unit_Class>
+      <Encyclopedia_Good_Against></Encyclopedia_Good_Against>
+      <Encyclopedia_Vulnerable_To> Goauld_Land_Alkesh SPMAT_Walker Wraith_Bomber_Land </Encyclopedia_Vulnerable_To>
+      <Icon_Name>TAURI_GROUND_UNIT_SHIELD_MALP.tga</Icon_Name>
+      <Score_Cost_Credits>400</Score_Cost_Credits>
+      <Build_Cost_Credits>450</Build_Cost_Credits>
+      <Build_Time_Seconds>70</Build_Time_Seconds>
+      <Ship_Class>tank</Ship_Class>
+      <Company_Transport_Unit>Underworld_Vehicle_Transport</Company_Transport_Unit>
+      <Company_Units>Canderous_Assault_Tank</Company_Units>
+      <Tactical_Build_Cost_Multiplayer>900</Tactical_Build_Cost_Multiplayer>
+      <Tactical_Build_Time_Seconds>10</Tactical_Build_Time_Seconds>
+      <Required_Ground_Base_Level>1</Required_Ground_Base_Level>
+   </GroundCompany>
+
+   <GroundCompany Name="Canderous_Assault_Tank_Company">
+      <Variant_Of_Existing_Type>Canderous_Assault_Tank_Company_No_Prereq</Variant_Of_Existing_Type>
+      <Affiliation>Underworld</Affiliation>
+      <Tech_Level>4</Tech_Level>
+      <Required_Timeline>0</Required_Timeline>
+      <Required_Ground_Base_Level>1</Required_Ground_Base_Level>
+      <Required_Star_Base_Level>0</Required_Star_Base_Level>
+      <Required_Special_Structures>U_Ground_Vehicle_Factory</Required_Special_Structures>
+      <Required_Planets />
+      <Tactical_Build_Prerequisites>UC_Level_Three_Tech_Upgrade</Tactical_Build_Prerequisites>
+   </GroundCompany>
+
+</Canderous_Tank_Data>

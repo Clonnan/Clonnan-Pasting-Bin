@@ -1,0 +1,182 @@
+<?xml version="1.0"?>
+<Alkesh_Data>
+
+   <GroundVehicle Name="Goauld_Land_Alkesh">
+      <Variant_Of_Existing_Type>Template_Ground_Hover</Variant_Of_Existing_Type>
+      <Text_ID>TEXT_GOAULD_GROUND_UNIT_ALKESH</Text_ID>
+      <Encyclopedia_Text>TEXT_DESCRIPTION_GOAULD_ALKESH_GROUND</Encyclopedia_Text>
+      <Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_BOMBER</Encyclopedia_Unit_Class>
+      <Encyclopedia_Good_Against>Underworld_Merc AT_AT_Walker U_Ground_Palace</Encyclopedia_Good_Against>
+      <Encyclopedia_Vulnerable_To>Scavenger_Droid AT_AA_Walker Underworld_Mass_Driver_Turret</Encyclopedia_Vulnerable_To>
+      <Icon_Name>GOAULD_SPACE_UNIT_ALKESH.TGA</Icon_Name>
+      <Land_Model_Name>Goauld_Land_Unit_Alkesh.ALO</Land_Model_Name>
+      <Radar_Icon_Name>I_RADAR_ALKESH.TGA</Radar_Icon_Name>
+      <LandBehavior>WALK_LOCOMOTOR, ABILITY_COUNTDOWN, BARRAGE, DAMAGE_TRACKING, HIDE_WHEN_FOGGED, IDLE, REVEAL, SHIELDED, STUNNABLE, TARGETING, TELEKINESIS_TARGET, WEAPON</LandBehavior>
+      <Affiliation>Rebel</Affiliation>
+      <Scale_Factor>0.6</Scale_Factor>
+      <Select_Box_Scale>250</Select_Box_Scale>
+      <Loop_Idle_Anim_00>Yes</Loop_Idle_Anim_00>
+      <Idle_Anim_00_Rate_Mod>0.25</Idle_Anim_00_Rate_Mod>
+      <MovementClass>Flying</MovementClass>
+      <Armor_Type>Armor_Air</Armor_Type>
+      <Shield_Armor_Type>Armor_Air</Shield_Armor_Type>
+
+      <GUI_Bracket_Size>2</GUI_Bracket_Size>
+      <GUI_Bounds_Scale>0.3</GUI_Bounds_Scale>
+      <Blob_Shadow_Scale>120.0, 120.0</Blob_Shadow_Scale>
+
+      <Max_Speed>3.0</Max_Speed>
+      <OverrideAcceleration>0.2</OverrideAcceleration>
+      <OverrideDeceleration>0.2</OverrideDeceleration>
+      <Max_Rate_Of_Turn>3.0</Max_Rate_Of_Turn>
+      <Hover_Height>80</Hover_Height>
+
+      <Damage>8</Damage>
+      <Score_Cost_Credits>1000</Score_Cost_Credits>
+      <Shield_Points>450</Shield_Points>
+      <Tactical_Health>550</Tactical_Health>
+      <Shield_Refresh_Rate>10</Shield_Refresh_Rate>
+      <AI_Combat_Power>150</AI_Combat_Power>
+
+      <Land_FOW_Reveal_Range>360.0</Land_FOW_Reveal_Range>
+      <Targeting_Max_Attack_Distance>300.0</Targeting_Max_Attack_Distance>
+      <Ranged_Target_Z_Adjust>20.0</Ranged_Target_Z_Adjust> <!--Required for missiles to hit, which will otherwise always target root despite having target bones-->
+      <Target_Bones>ALKESH, COLLISION</Target_Bones>
+
+      <Hardpoints>
+            HP_Goauld_Alkesh_Laser
+            <!--HP_Goauld_Alkesh_Bomb-->
+      </Hardpoints>
+
+      <Spin_Away_On_Death>No</Spin_Away_On_Death>
+      <Death_Clone>Damage_Anti_Air, Goauld_Land_Alkesh_Death_Clone</Death_Clone>
+
+      <Projectile_Types>Proj_Fake_Land</Projectile_Types>
+      <Projectile_Fire_Recharge_Seconds>0.65</Projectile_Fire_Recharge_Seconds>
+      <Projectile_Fire_Pulse_Count>1</Projectile_Fire_Pulse_Count>
+      <Projectile_Fire_Pulse_Delay_Seconds>1.0</Projectile_Fire_Pulse_Delay_Seconds>
+      <Turret_Rotate_Extent_Degrees> 120.0 </Turret_Rotate_Extent_Degrees>
+      <Turret_Elevate_Extent_Degrees> 90.0 </Turret_Elevate_Extent_Degrees>
+      <Targeting_Fire_Inaccuracy>Corvette, 45.0</Targeting_Fire_Inaccuracy> <!-- LEAVE THIS FOR BARRAGE ABILITY -->
+
+      <SFXEvent_Fire></SFXEvent_Fire>
+      <SFXEvent_Attack>Unit_Attack_GFB</SFXEvent_Attack>
+      <SFXEvent_Fleet_Move>Unit_Move_GFB</SFXEvent_Fleet_Move>
+      <SFXEvent_Guard></SFXEvent_Guard>
+      <SFXEvent_Health_Critical_Warning></SFXEvent_Health_Critical_Warning>
+      <SFXEvent_Health_Low_Warning></SFXEvent_Health_Low_Warning>
+      <SFXEvent_Move>Unit_Move_GFB</SFXEvent_Move>
+      <SFXEvent_Move_Into_Asteroid_Field></SFXEvent_Move_Into_Asteroid_Field>
+      <SFXEvent_Move_Into_Nebula></SFXEvent_Move_Into_Nebula>
+      <SFXEvent_Select>Unit_Select_GFB</SFXEvent_Select>
+      <SFXEvent_Stop></SFXEvent_Stop>
+      <SFXEvent_Engine_Idle_Loop>Engine_Goauld_Alkesh_Land_Idle</SFXEvent_Engine_Idle_Loop>
+      <SFXEvent_Engine_Moving_Loop>Engine_Goauld_Alkesh_Land_Moving</SFXEvent_Engine_Moving_Loop>
+
+      <CategoryMask>Air | AntiStructure</CategoryMask>
+      <Targeting_Priority_Set>SG_Air_AntiVehicle</Targeting_Priority_Set>
+
+      <Unit_Abilities_Data SubObjectList="Yes">
+         <!--Unit_Ability>
+            <Type>MAXIMUM_FIREPOWER</Type>
+            <Alternate_Icon_Name>I_SA_ALKESH_BOMBARDMENT.TGA</Alternate_Icon_Name>
+            <Alternate_Name_Text>TEXT_ABILITY_BOMBARDMENT</Alternate_Name_Text>
+            <Alternate_Description_Text>TEXT_DESCRIPTION_ABILITY_DROP_BOMBS_ALKESH_GROUND</Alternate_Description_Text>
+            <Expiration_Seconds>6</Expiration_Seconds>
+            <Recharge_Seconds>50</Recharge_Seconds>
+            <Mod_Multiplier>WEAPON_DELAY_MULTIPLIER,  0.7f</Mod_Multiplier>
+            <GUI_Activated_Ability_Name>Alkesh_Maximum_Firepower_Attack</GUI_Activated_Ability_Name>
+            <Projectile_Types_Override>Proj_Alkesh_Bomb_Land</Projectile_Types_Override>
+            <Mod_Flag>ALLOW_TARGET_DIMINISHING_FIREPOWER, false</Mod_Flag>
+            <SFXEvent_GUI_Unit_Ability_Activated></SFXEvent_GUI_Unit_Ability_Activated>
+            <SFXEvent_Target_Ability></SFXEvent_Target_Ability>
+            <Supports_Autofire>False</Supports_Autofire>
+         </Unit_Ability-->
+         <Unit_Ability>
+            <Type>BARRAGE</Type>
+            <Alternate_Icon_Name>I_SA_ALKESH_BOMBARDMENT.TGA</Alternate_Icon_Name>
+            <Alternate_Name_Text>TEXT_ABILITY_BOMBARDMENT</Alternate_Name_Text>
+            <Alternate_Description_Text>TEXT_DESCRIPTION_ABILITY_DROP_BOMBS_ALKESH_GROUND</Alternate_Description_Text>
+            <Expiration_Seconds>7</Expiration_Seconds>
+            <Recharge_Seconds>40</Recharge_Seconds>
+            <SFXEvent_Target_Ability></SFXEvent_Target_Ability>
+            <Projectile_Types_Override>Proj_Alkesh_Bomb_Land</Projectile_Types_Override>
+            <Area_Effect_Decal_Distance>75.0</Area_Effect_Decal_Distance>
+            <Targeting_Fire_Inaccuracy_Fixed_Radius_Override>75</Targeting_Fire_Inaccuracy_Fixed_Radius_Override>
+            <Target_Position_Z_Offset>0</Target_Position_Z_Offset>
+         </Unit_Ability>
+      </Unit_Abilities_Data>
+      <!--Abilities SubObjectList="Yes">
+         <Maximum_Firepower_Attack_Ability Name="Alkesh_Maximum_Firepower_Attack">
+            <Activation_Style> User_Input </Activation_Style>
+            <Applicable_Unit_Categories>All</Applicable_Unit_Categories>
+            <Applicable_Unit_Types />
+            <Owner_Particle_Effect>Veers_Powerup_Particle_Effect</Owner_Particle_Effect>
+            <Owner_Particle_Bone_Name>SHIELD</Owner_Particle_Bone_Name>
+            <SFXEvent_Activate></SFXEvent_Activate>
+         </Maximum_Firepower_Attack_Ability>
+      </Abilities-->
+   </GroundVehicle>
+   <GroundVehicle Name="Goauld_Land_Alkesh_Death_Clone">
+      <Land_Model_Name>Goauld_Land_Unit_Alkesh_D.ALO</Land_Model_Name>
+      <Scale_Factor>0.6</Scale_Factor>
+   </GroundVehicle>
+
+   <GroundVehicle Name="Abandoned_Goauld_Alkesh">
+      <Variant_Of_Existing_Type>Goauld_Land_Alkesh</Variant_Of_Existing_Type>
+      <Affiliation>Neutral, Rebel, Empire, Underworld</Affiliation>
+   </GroundVehicle>
+
+   <GroundCompany Name="Goauld_Land_Alkesh_Company_No_Prereq">
+      <Variant_Of_Existing_Type>Template_Ground_Company</Variant_Of_Existing_Type>
+      <Text_ID>TEXT_GOAULD_GROUND_UNIT_ALKESH</Text_ID>
+      <Encyclopedia_Text>TEXT_DESCRIPTION_GOAULD_ALKESH_GROUND</Encyclopedia_Text>
+      <Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_BOMBER</Encyclopedia_Unit_Class>
+      <Encyclopedia_Good_Against>Underworld_Merc AT_AT_Walker U_Ground_Palace</Encyclopedia_Good_Against>
+      <Encyclopedia_Vulnerable_To>Scavenger_Droid AT_AA_Walker Underworld_Mass_Driver_Turret</Encyclopedia_Vulnerable_To>
+      <Icon_Name>GOAULD_SPACE_UNIT_ALKESH.TGA</Icon_Name>
+      <Build_Cost_Credits>800</Build_Cost_Credits>
+      <Build_Time_Seconds>130</Build_Time_Seconds>
+      <Ship_Class>walker</Ship_Class>
+      <Company_Transport_Unit>Goauld_Transport_Alkesh_Self</Company_Transport_Unit>
+      <Company_Units>Goauld_Land_Alkesh</Company_Units>
+      <Score_Cost_Credits>1000</Score_Cost_Credits>
+      <Tactical_Build_Cost_Multiplayer>2500</Tactical_Build_Cost_Multiplayer>
+      <Tactical_Build_Time_Seconds>20</Tactical_Build_Time_Seconds>
+      <Required_Ground_Base_Level>1</Required_Ground_Base_Level>
+   </GroundCompany>
+
+   <GroundCompany Name="Goauld_Land_Alkesh_Company">
+      <Variant_Of_Existing_Type>Goauld_Land_Alkesh_Company_No_Prereq</Variant_Of_Existing_Type>
+      <Affiliation>Rebel</Affiliation>
+      <Tech_Level>4</Tech_Level>
+      <Required_Timeline>0</Required_Timeline>
+      <Required_Ground_Base_Level>1</Required_Ground_Base_Level>
+      <Required_Star_Base_Level>0</Required_Star_Base_Level>
+      <Required_Special_Structures>R_Ground_Hangar</Required_Special_Structures>
+      <Required_Planets/>
+      <Tactical_Build_Prerequisites>RC_Level_Three_Tech_Upgrade</Tactical_Build_Prerequisites>
+   </GroundCompany>
+
+
+  <Projectile Name="Proj_Alkesh_Dual_Laser_Land">
+      <Variant_Of_Existing_Type>Proj_Goauld_Alkesh</Variant_Of_Existing_Type>
+      <Damage_Type>Damage_Normal</Damage_Type>
+      <Projectile_Damage>40.4</Projectile_Damage>
+      <Projectile_Blast_Area_Range>15.0</Projectile_Blast_Area_Range>
+      <Projectile_Blast_Area_Damage>15.0</Projectile_Blast_Area_Damage>
+      <Max_Secs_For_AE_Delayed_Damage>0.0</Max_Secs_For_AE_Delayed_Damage>
+  </Projectile>
+
+  <Projectile Name="Proj_Alkesh_Bomb_Land">
+      <Variant_Of_Existing_Type>Proj_Goauld_Alkesh_Bomb_Land</Variant_Of_Existing_Type>
+      <Damage_Type>Damage_Anti_Structure</Damage_Type>
+      <Max_Speed>8.0</Max_Speed>
+      <Projectile_Max_Flight_Distance>700.0</Projectile_Max_Flight_Distance>
+      <Projectile_Damage>50.0</Projectile_Damage>
+      <Projectile_Blast_Area_Damage>40</Projectile_Blast_Area_Damage>
+      <Projectile_Blast_Area_Range>40</Projectile_Blast_Area_Range>
+      <Max_Secs_For_AE_Delayed_Damage>0</Max_Secs_For_AE_Delayed_Damage>
+   </Projectile>
+
+</Alkesh_Data>

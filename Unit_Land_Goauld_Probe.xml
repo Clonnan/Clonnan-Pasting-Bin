@@ -1,0 +1,96 @@
+<?xml version="1.0"?>
+<Goauld_Probe_Data>
+
+   <GroundVehicle Name="Goauld_Probe">
+      <Variant_Of_Existing_Type>Template_Ground_Hover</Variant_Of_Existing_Type>
+      <Text_ID>TEXT_GOAULD_GROUND_UNIT_PROBE</Text_ID>
+      <Encyclopedia_Text>TEXT_DESCRIPTION_GOAULD_PROBE_GROUND</Encyclopedia_Text>
+      <Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_SCOUTUNIT</Encyclopedia_Unit_Class>
+      <Encyclopedia_Good_Against>Underworld_Saboteur Underworld_Merc Stormtrooper</Encyclopedia_Good_Against>
+      <Encyclopedia_Vulnerable_To>Ewok_Handler Tauri_B302_Land Empire_Anti_Vehicle_Turret</Encyclopedia_Vulnerable_To>
+      <Icon_Name>GOAULD_GROUND_UNIT_PROBE.TGA</Icon_Name>
+      <Land_Model_Name>Goauld_Land_Unit_Reconnaissance_Probe.ALO</Land_Model_Name>      
+      <LandBehavior>WALK_LOCOMOTOR, AFFECTED_BY_SHIELD, DAMAGE_TRACKING, HIDE_WHEN_FOGGED, HUNT, IDLE, POWERED, REVEAL, SHIELDED, STUNNABLE, SURFACE_FX, TARGETING, UNIT_AI, WEAPON, WIND_DISTURBANCE</LandBehavior>
+      <Weather_Category>Infantry</Weather_Category>
+      <Max_Speed>1.5</Max_Speed>
+      <Max_Rate_Of_Turn>10</Max_Rate_Of_Turn>
+      <LateralAcceleration>0.15</LateralAcceleration>      
+      <Scale_Factor>0.2</Scale_Factor>
+      <Affiliation>Rebel</Affiliation>
+      <Size_Value>25</Size_Value>
+      <Select_Box_Scale>75</Select_Box_Scale>
+      <Select_Box_Z_Adjust>3.0f</Select_Box_Z_Adjust>
+      <Land_FOW_Reveal_Range>320.0</Land_FOW_Reveal_Range>
+      <Blob_Shadow_Scale>7.0, 7.0</Blob_Shadow_Scale>
+      <Targeting_Priority_Set>SG_Vehicle_AntiInfantry</Targeting_Priority_Set>
+      <Damage>5</Damage>
+      <Score_Cost_Credits>60</Score_Cost_Credits>
+      <AI_Combat_Power>50</AI_Combat_Power> 
+      <Tactical_Health>80</Tactical_Health>
+      <Shield_Points>150</Shield_Points>
+      <Shield_Refresh_Rate>2</Shield_Refresh_Rate>
+      <HardPoints>
+			HP_Goauld_Probe_Staff_Weapon
+		</HardPoints>
+      <Projectile_Types>Proj_Fake_Land</Projectile_Types>
+      <Projectile_Fire_Recharge_Seconds>100.0</Projectile_Fire_Recharge_Seconds>
+      <Projectile_Fire_Pulse_Count>1</Projectile_Fire_Pulse_Count>
+      <Projectile_Fire_Pulse_Delay_Seconds>1.0</Projectile_Fire_Pulse_Delay_Seconds>
+      <Turret_Rotate_Extent_Degrees> 20.0 </Turret_Rotate_Extent_Degrees>
+      <Turret_Elevate_Extent_Degrees> 60.0 </Turret_Elevate_Extent_Degrees>
+      <Overall_Length>0</Overall_Length>
+      <Overall_Width>0</Overall_Width>
+      <Target_Stealth_Units>Yes</Target_Stealth_Units>
+      <Death_Explosions>Small_Explosion_Land</Death_Explosions>
+      <SFXEvent_Engine_Idle_Loop>Engine_Goauld_Probe_Idle</SFXEvent_Engine_Idle_Loop>
+      <SFXEvent_Engine_Moving_Loop>Engine_Goauld_Probe_Moving</SFXEvent_Engine_Moving_Loop>
+      <Unit_Abilities_Data SubObjectList="Yes">
+         <Unit_Ability>
+            <Type>HUNT</Type>
+            <Alternate_Name_Text>TEXT_ABILITY_RECONNAISSANCE</Alternate_Name_Text>
+            <Alternate_Description_Text> TEXT_DESCRIPTION_ABILITY_RECONNAISSANCE_GOAULD_PROBE_GROUND</Alternate_Description_Text>
+         </Unit_Ability>
+      </Unit_Abilities_Data>
+   </GroundVehicle>
+
+
+   <GroundCompany Name="Goauld_Probe_Company_No_Prereq">
+      <Variant_Of_Existing_Type>Template_Ground_Company</Variant_Of_Existing_Type>
+      <Text_ID>TEXT_GOAULD_GROUND_UNIT_PROBE</Text_ID>
+      <Encyclopedia_Text>TEXT_DESCRIPTION_GOAULD_PROBE_GROUND</Encyclopedia_Text>
+      <Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_SCOUTUNIT</Encyclopedia_Unit_Class>
+      <Encyclopedia_Good_Against>Underworld_Saboteur Underworld_Merc Stormtrooper</Encyclopedia_Good_Against>
+      <Encyclopedia_Vulnerable_To>Ewok_Handler Tauri_B302_Land Empire_Anti_Vehicle_Turret</Encyclopedia_Vulnerable_To>
+      <Icon_Name>GOAULD_GROUND_UNIT_PROBE.TGA</Icon_Name>
+      <Damage>10</Damage>
+      <Score_Cost_Credits>120</Score_Cost_Credits>
+      <Build_Cost_Credits>275</Build_Cost_Credits>
+      <Build_Time_Seconds>35</Build_Time_Seconds>
+      <Ship_Class>tank</Ship_Class>
+      <Company_Transport_Unit>Gallofree_Transport</Company_Transport_Unit>
+      <Company_Units>Goauld_Probe, Goauld_Probe</Company_Units>
+      <Tactical_Build_Cost_Multiplayer>550</Tactical_Build_Cost_Multiplayer>
+      <Tactical_Build_Time_Seconds>8</Tactical_Build_Time_Seconds>
+      <Required_Ground_Base_Level>1</Required_Ground_Base_Level>
+   </GroundCompany>
+  
+   <GroundCompany Name="Goauld_Probe_Company">
+      <Variant_Of_Existing_Type>Goauld_Probe_Company_No_Prereq</Variant_Of_Existing_Type>
+      <Affiliation>Rebel</Affiliation>
+      <Tech_Level>1</Tech_Level>
+      <Required_Timeline>0</Required_Timeline>
+      <Required_Ground_Base_Level>1</Required_Ground_Base_Level>
+      <Required_Star_Base_Level>0</Required_Star_Base_Level>
+      <Required_Special_Structures>R_Ground_Light_Vehicle_Factory</Required_Special_Structures>
+      <Required_Planets />
+      <Tactical_Build_Prerequisites />
+   </GroundCompany>
+  
+  
+   <Projectile Name="Proj_Goauld_Unit_Probe">
+      <Variant_Of_Existing_Type>Proj_Goauld_Probe</Variant_Of_Existing_Type>
+      <Damage_Type>Damage_Anti_Infantry</Damage_Type>
+      <Projectile_Damage>7.0</Projectile_Damage>
+   </Projectile>      
+   
+</Goauld_Probe_Data>

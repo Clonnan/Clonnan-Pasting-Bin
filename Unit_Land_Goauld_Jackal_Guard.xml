@@ -1,0 +1,179 @@
+<?xml version="1.0"?>
+<Goauld_Jaffa_Jackal_Guard_Infantry_Data>
+
+   <GroundInfantry Name="Goauld_Jackal_Guard">
+      <Variant_Of_Existing_Type>Template_Ground_Infantry_Multi_Goauld</Variant_Of_Existing_Type>
+      <Text_ID>TEXT_GOAULD_GROUND_UNIT_ANUBISWACHE</Text_ID>
+      <Encyclopedia_Text>TEXT_DESCRIPTION_GOAULD_ANUBISWACHE_GROUND</Encyclopedia_Text>
+      <Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_ANUBISWACHE</Encyclopedia_Unit_Class>
+      <Encyclopedia_Good_Against>MZ8_Pulse_Cannon_Tank AT_AA_Walker SPMAT_Walker</Encyclopedia_Good_Against>
+      <Encyclopedia_Vulnerable_To>Underworld_Merc Tauri_F302_Land Empire_Anti_Infantry_Turret</Encyclopedia_Vulnerable_To> 
+      <Icon_Name>GOAULD_GROUND_UNIT_ANUBIS_GUARD.TGA</Icon_Name>
+      <Land_Model_Name>Goauld_Land_Unit_Anubis_Guard.alo</Land_Model_Name>
+      <LandBehavior>ABILITY_COUNTDOWN, LAND_TEAM_INFANTRY_LOCOMOTOR, DAMAGE_TRACKING, HIDE_WHEN_FOGGED, IDLE, REVEAL, STUNNABLE, SURFACE_FX, TARGETING, UNIT_AI, WEAPON</LandBehavior>
+      <Tactical_Health>100</Tactical_Health>
+      <AI_Combat_Power>25</AI_Combat_Power>
+      <Targeting_Priority_Set>SG_Infantry_AntiVehicle</Targeting_Priority_Set>
+      <FormationSpacing>0.5</FormationSpacing>
+      <OverrideAcceleration>0.05</OverrideAcceleration>
+      <CategoryMask>Infantry | AntiVehicle</CategoryMask>
+      <Projectile_Types>Proj_Goauld_Jackal_Guard</Projectile_Types>
+      <Projectile_Fire_Recharge_Seconds>2</Projectile_Fire_Recharge_Seconds>
+		<Projectile_Fire_Pulse_Count>5</Projectile_Fire_Pulse_Count>
+		<Projectile_Fire_Pulse_Delay_Seconds>2</Projectile_Fire_Pulse_Delay_Seconds>
+      <Targeting_Max_Attack_Distance>260.0</Targeting_Max_Attack_Distance>      
+      <SFXEvent_Fire>Weapon_Goauld_Staff</SFXEvent_Fire>
+    <SFXEvent_Select>Unit_Select_Guard</SFXEvent_Select>
+		<SFXEvent_Move>Unit_Move_Guard</SFXEvent_Move>
+		<SFXEvent_Attack>Unit_Attack_Guard</SFXEvent_Attack>
+      <Presence_Induced_Animations>
+         Attention, 
+            Luke_Skywalker_Jedi,
+            Yoda, 
+            Commander_Akbar
+      </Presence_Induced_Animations>
+      <Death_Clone>Damage_Hand_Device, Goauld_Jackal_Guard_Hand_Device_Death_Clone</Death_Clone>
+      <Conversion_Ability_Changes_To_Enemy>Goauld_Jackal_Guard_Converted_To_Enemy</Conversion_Ability_Changes_To_Enemy>
+      <Unit_Abilities_Data SubObjectList="Yes">
+         <Unit_Ability>
+            <Type>SPREAD_OUT</Type>
+            <Alternate_Name_Text>TEXT_ABILITY_GOAULD_GROUND_ANUBISWACHE_DECKUNG</Alternate_Name_Text>
+            <Alternate_Description_Text>TEXT_DESCRIPTION_ABILITY_ANUBISWACHE_DECKUNG</Alternate_Description_Text>
+            <Mod_Multiplier>SPEED_MULTIPLIER, 0.5f</Mod_Multiplier>
+            <Mod_Multiplier>TAKE_DAMAGE_MULTIPLIER, 0.85f</Mod_Multiplier>
+            <SFXEvent_GUI_Unit_Ability_Activated></SFXEvent_GUI_Unit_Ability_Activated>
+         </Unit_Ability>
+         <!--Unit_Ability>
+            <Type>PROXIMITY_MINES</Type>
+            <Alternate_Name_Text>TEXT_ABILITY_GOAULD_GROUND_ANUBISWACHE_BOMBE</Alternate_Name_Text>
+            <Alternate_Description_Text>TEXT_DESCRIPTION_ABILITY_ANUBISWACHE_BOMBE</Alternate_Description_Text>
+            <Recharge_Seconds>80.0</Recharge_Seconds>
+            <GUI_Activated_Ability_Name>Goauld_Jackal_Guard_Proximity_Mine_Ability</GUI_Activated_Ability_Name> 
+            <Effective_Radius>500.0</Effective_Radius>
+            <SFXEvent_Target_Ability />  
+            <Area_Effect_Decal_Distance>50.0</Area_Effect_Decal_Distance>
+            <Must_Be_Bought_On_Black_Market>no</Must_Be_Bought_On_Black_Market>
+         </Unit_Ability-->
+      </Unit_Abilities_Data>   
+      <!--Abilities SubObjectList="Yes">
+         <Proximity_Mines_Ability Name="Goauld_Jackal_Guard_Proximity_Mine_Ability">
+            <Activation_Style>User_Input</Activation_Style>
+            <Activation_Min_Range>0.0</Activation_Min_Range>
+            <Activation_Max_Range>70.0</Activation_Max_Range>
+            <Mine_Type>Goauld_Jackal_Guard_Proximity_Mine</Mine_Type>
+            <Trigger_Radius>50</Trigger_Radius>
+            <Number_Of_Mines>1</Number_Of_Mines>
+            <Activation_Time_In_Seconds>3</Activation_Time_In_Seconds>
+            <Activate_SFX>Unit_Lightsaber_Projectile_Block</Activate_SFX>
+            <Must_Be_Bought_On_Black_Market>no</Must_Be_Bought_On_Black_Market>
+         </Proximity_Mines_Ability>
+      </Abilities-->
+  </GroundInfantry>
+
+  <GroundInfantry Name="Goauld_Jackal_Guard_Converted_To_Enemy">
+      <Variant_Of_Existing_Type>Goauld_Jackal_Guard</Variant_Of_Existing_Type>
+      <Text_ID>TEXT_NONE</Text_ID>
+  </GroundInfantry>
+  <GroundInfantry Name="Goauld_Jackal_Guard_Hand_Device_Death_Clone">
+      <Variant_Of_Existing_Type>Goauld_Jackal_Guard</Variant_Of_Existing_Type>
+      <Specific_Death_Anim_Type>FW_DIE</Specific_Death_Anim_Type>
+      <Specific_Death_Anim_Index />
+   </GroundInfantry>
+
+  
+   <!-- COMPANY INFO -->
+   <GroundCompany Name="Goauld_Jackal_Guard_Company_No_Prereq">
+      <Variant_Of_Existing_Type>Template_Ground_Company</Variant_Of_Existing_Type>
+      <Text_ID>TEXT_GOAULD_GROUND_UNIT_ANUBISWACHE</Text_ID>
+      <Encyclopedia_Text>TEXT_DESCRIPTION_GOAULD_ANUBISWACHE_GROUND</Encyclopedia_Text>
+      <Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_ANUBISWACHE</Encyclopedia_Unit_Class>
+      <Encyclopedia_Good_Against>MZ8_Pulse_Cannon_Tank AT_AA_Walker SPMAT_Walker</Encyclopedia_Good_Against>
+      <Encyclopedia_Vulnerable_To>Underworld_Merc Tauri_F302_Land Empire_Anti_Infantry_Turret</Encyclopedia_Vulnerable_To> 
+      <Icon_Name>GOAULD_GROUND_UNIT_ANUBIS_GUARD.TGA</Icon_Name>
+      <Score_Cost_Credits>300</Score_Cost_Credits>
+      <Build_Cost_Credits>300</Build_Cost_Credits>
+      <Build_Time_Seconds>46</Build_Time_Seconds>
+      <Company_Transport_Unit>Alliance_Shuttle</Company_Transport_Unit>
+      <Create_Team_Type>Goauld_Jackal_Guard_Team</Create_Team_Type>
+      <Company_Units>Goauld_Jackal_Guard, Goauld_Jackal_Guard, Goauld_Jackal_Guard, Goauld_Jackal_Guard</Company_Units>
+      <Max_Squad_Size>4</Max_Squad_Size>
+      <Tactical_Build_Cost_Multiplayer>600</Tactical_Build_Cost_Multiplayer>
+      <Tactical_Build_Time_Seconds>9</Tactical_Build_Time_Seconds>
+      <Required_Ground_Base_Level>1</Required_Ground_Base_Level>
+   </GroundCompany>
+  
+   <GroundCompany Name="Goauld_Jackal_Guard_Company">
+      <Variant_Of_Existing_Type>Goauld_Jackal_Guard_Company_No_Prereq</Variant_Of_Existing_Type>
+      <Affiliation>Rebel</Affiliation>
+      <Tech_Level>1</Tech_Level>
+      <Required_Timeline>0</Required_Timeline>
+      <Required_Ground_Base_Level>1</Required_Ground_Base_Level>
+      <Required_Star_Base_Level>0</Required_Star_Base_Level>
+      <Required_Special_Structures>R_Ground_Barracks</Required_Special_Structures>
+      <Required_Planets />
+      <Tactical_Build_Prerequisites>RC_Level_Two_Tech_Upgrade</Tactical_Build_Prerequisites>
+   </GroundCompany>
+  
+  <!-- CONTAINER INFO -->
+  <Container Name="Goauld_Jackal_Guard_Team">
+      <Variant_Of_Existing_Type>Template_Infantry_Container</Variant_Of_Existing_Type>
+      <Text_ID>TEXT_GOAULD_GROUND_UNIT_ANUBISWACHE</Text_ID>
+      <Encyclopedia_Text>TEXT_DESCRIPTION_GOAULD_ANUBISWACHE_GROUND</Encyclopedia_Text>
+      <Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_ANUBISWACHE</Encyclopedia_Unit_Class>
+      <Encyclopedia_Good_Against>MZ8_Pulse_Cannon_Tank AT_AA_Walker SPMAT_Walker</Encyclopedia_Good_Against>
+      <Encyclopedia_Vulnerable_To>Underworld_Merc Tauri_F302_Land Empire_Anti_Infantry_Turret</Encyclopedia_Vulnerable_To> 
+      <Icon_Name>GOAULD_GROUND_UNIT_ANUBIS_GUARD.TGA</Icon_Name>
+      <ContainerArrangement>Rows</ContainerArrangement>
+      <Max_Speed>0.8</Max_Speed>
+      <Max_Rate_Of_Turn>12.0</Max_Rate_Of_Turn>
+      <Select_Box_Scale>65</Select_Box_Scale>
+      <Targeting_Max_Attack_Distance>260.0</Targeting_Max_Attack_Distance>
+      <Unit_Abilities_Data SubObjectList="Yes">
+         <Unit_Ability>
+            <Type>SPREAD_OUT</Type>
+            <Alternate_Name_Text>TEXT_ABILITY_GOAULD_GROUND_ANUBISWACHE_DECKUNG</Alternate_Name_Text>
+            <Alternate_Description_Text>TEXT_DESCRIPTION_ABILITY_ANUBISWACHE_DECKUNG</Alternate_Description_Text>
+            <Mod_Multiplier>SPEED_MULTIPLIER, 0.5f</Mod_Multiplier>
+            <Mod_Multiplier>TAKE_DAMAGE_MULTIPLIER, 0.85f</Mod_Multiplier>
+            <SFXEvent_GUI_Unit_Ability_Activated></SFXEvent_GUI_Unit_Ability_Activated>
+         </Unit_Ability>
+      </Unit_Abilities_Data>   
+   </Container>
+   
+   <!--MiscObject Name="Goauld_Jackal_Guard_Proximity_Mine">
+      <Land_Model_Name>Goauld_Land_Weapon_Shock_Grenade.ALO</Land_Model_Name>
+      <Scale_Factor>3.5</Scale_Factor>
+      <Text_ID>TEXT_PROXIMITY_MINE</Text_ID>
+      <Encyclopedia_Text>TEXT_PROXIMITY_MINE_DESC</Encyclopedia_Text>
+      <Encyclopedia_Unit_Class>TEXT_BOMB_CLASS</Encyclopedia_Unit_Class>
+      <Behavior>SELECTABLE, PROXIMITY_MINE</Behavior>
+      <LandBehavior>DAMAGE_TRACKING, HIDE_WHEN_FOGGED</LandBehavior>
+      <Is_Visible_On_Radar>No</Is_Visible_On_Radar>
+      <Is_Decoration>No</Is_Decoration>
+      <Remove_Upon_Death>Yes</Remove_Upon_Death>
+      <Death_Explosions> Proximity_Mine_Blast_Effect </Death_Explosions>
+      <Tactical_Health>1</Tactical_Health>
+      <Loop_Idle_Anim_00>No</Loop_Idle_Anim_00>
+      <Space_Layer> Land </Space_Layer>
+      <UnitCollisionClass> Infantry </UnitCollisionClass>
+      <CanCellStack>yes</CanCellStack>
+      <Mass>1.0</Mass>
+      <Mouse_Collide_Override_Sphere_Radius>5</Mouse_Collide_Override_Sphere_Radius>
+      <Collidable_By_Projectile_Living>Yes</Collidable_By_Projectile_Living>
+      <CategoryMask> Infantry </CategoryMask>      
+      <IsDeathCloneObstacle>Yes</IsDeathCloneObstacle>
+      <Avoidance_Disabled>Yes</Avoidance_Disabled>
+      <Influences_Capture_Point> False </Influences_Capture_Point>
+      <Not_Really_Selectable>True</Not_Really_Selectable>
+    </MiscObject-->
+  
+  
+   <!--Projectile Information-->
+   <Projectile Name="Proj_Goauld_Jackal_Guard">
+      <Variant_Of_Existing_Type>Proj_Goauld_Deathglider_Cannon</Variant_Of_Existing_Type>
+      <Damage_Type>Damage_Anti_Vehicle</Damage_Type>
+      <Projectile_Damage>16.8</Projectile_Damage>
+   </Projectile>
+  
+
+</Goauld_Jaffa_Jackal_Guard_Infantry_Data>

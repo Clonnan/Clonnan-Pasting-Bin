@@ -1,0 +1,887 @@
+<?xml version="1.0"?>
+<GroundUnitsStarWars>
+
+  <!--In order to keep the game from suffering instability issues we keep all Star Wars units that have not been replaced by us in this file-->
+  
+  <!--# Templates-->
+  <Template Name="Template_SW_Dummy_Ground_Unit">
+      <Variant_Of_Existing_Type>Template_Ground_Infantry_Multi</Variant_Of_Existing_Type>
+      <Text_ID>TEXT_NONE</Text_ID>
+      <Tech_Level>99</Tech_Level>
+      <Affiliation>Neutral</Affiliation>
+      <Tactical_Health>1</Tactical_Health>
+      <AI_Combat_Power>0</AI_Combat_Power>
+      <Damage>1</Damage>
+      <Score_Cost_Credits>1</Score_Cost_Credits>
+   </Template>
+   
+   <Template Name="Template_SW_Dummy_Ground_Company">
+      <Variant_Of_Existing_Type>Template_Ground_Company</Variant_Of_Existing_Type>
+      <Text_ID>TEXT_NONE</Text_ID>
+      <Tech_Level>99</Tech_Level>
+      <Affiliation>Neutral</Affiliation>
+      <Tactical_Health>1</Tactical_Health>
+      <AI_Combat_Power>0</AI_Combat_Power>
+      <Damage>1</Damage>
+      <Score_Cost_Credits>1</Score_Cost_Credits>       
+   </Template>
+   
+   <Template Name="Template_SW_Dummy_Ground_Container">
+      <Variant_Of_Existing_Type>Template_Infantry_Container</Variant_Of_Existing_Type>
+      <Text_ID>TEXT_NONE</Text_ID>
+      <Tech_Level>99</Tech_Level>
+      <Affiliation>Neutral</Affiliation>
+      <Tactical_Health>1</Tactical_Health>
+      <AI_Combat_Power>0</AI_Combat_Power>
+      <Damage>1</Damage>
+      <Score_Cost_Credits>1</Score_Cost_Credits>       
+   </Template>
+   
+   
+   <!--# Units from single files-->
+   
+   <HeroUnit Name="Silri">
+	  <Variant_Of_Existing_Type>Template_SW_Dummy_Ground_Unit</Variant_Of_Existing_Type>
+	</HeroUnit>
+   <HeroCompany Name="Silri_Team">
+      <Variant_Of_Existing_Type>Template_SW_Dummy_Ground_Company</Variant_Of_Existing_Type>
+		<Company_Transport_Unit>Gallofree_Transport</Company_Transport_Unit>
+		<Company_Units>Silri</Company_Units>
+	</HeroCompany>
+   
+   <GroundVehicle Name="HAV_Juggernaut">
+      <Variant_Of_Existing_Type>Template_SW_Dummy_Ground_Unit</Variant_Of_Existing_Type>
+   </GroundVehicle>
+   
+   <GroundCompany Name="HAV_Juggernaut_Company">
+      <Variant_Of_Existing_Type>Template_SW_Dummy_Ground_Company</Variant_Of_Existing_Type>
+		<Company_Transport_Unit>Gallofree_Transport</Company_Transport_Unit>
+		<Company_Units>HAV_Juggernaut</Company_Units>
+   </GroundCompany>
+  
+  	<HeroUnit Name="Tyber_Zann">
+	  <Variant_Of_Existing_Type>Template_SW_Dummy_Ground_Unit</Variant_Of_Existing_Type>
+	</HeroUnit>
+   
+   <HeroCompany Name="Tyber_Zann_Team">
+		<Variant_Of_Existing_Type>Template_SW_Dummy_Ground_Company</Variant_Of_Existing_Type>
+		<Company_Transport_Unit>The_Peacebringer</Company_Transport_Unit>
+		<Company_Units>Tyber_Zann</Company_Units>
+	</HeroCompany>
+   
+   <HeroCompany Name="Grand_Admiral_Thrawn_Team">
+		<Variant_Of_Existing_Type>Template_SW_Dummy_Ground_Company</Variant_Of_Existing_Type>
+		<Company_Transport_Unit>Shuttle_Tyderium</Company_Transport_Unit>
+		<Company_Units>Grand_Moff_Tarkin</Company_Units>
+	</HeroCompany>
+  
+   <HeroUnit Name="Obi_Wan_Kenobi">
+	  <Variant_Of_Existing_Type>Template_SW_Dummy_Ground_Unit</Variant_Of_Existing_Type>
+	</HeroUnit>
+   <HeroCompany Name="Obi_Wan_Team">
+		<Variant_Of_Existing_Type>Template_SW_Dummy_Ground_Company</Variant_Of_Existing_Type>
+	</HeroCompany>
+
+   
+   
+
+   
+   
+   <!--#BIRDS-->
+   	<Indigenous_Unit Name="Desert_Sketto">
+		<Text_ID>TEXT_NONE</Text_ID>
+		<Encyclopedia_Unit_Class> TEXT_NONE </Encyclopedia_Unit_Class>
+		<Land_Model_Name>AI_SKETTO.ALO</Land_Model_Name>
+		<Mass>0.985</Mass>
+
+		<Scale_Factor>1.0</Scale_Factor>
+		<!--<Is_Sprite>No</Is_Sprite>-->
+		<Size_Value>15</Size_Value>
+
+		<Max_Speed>1.0</Max_Speed>
+		<Min_Speed> 1.0 </Min_Speed>
+		<Max_Rate_Of_Turn>1.0</Max_Rate_Of_Turn>
+		<Max_Thrust>0.1</Max_Thrust>
+		<Max_Rate_Of_Roll>1.5</Max_Rate_Of_Roll>
+		<Max_Lift>0</Max_Lift>
+		<Bank_Turn_Angle>60</Bank_Turn_Angle>
+
+		<LandBehavior>IDLE, FIGHTER_LOCOMOTOR,INDIGENOUS_UNIT</LandBehavior>
+		<Allow_Idle_When_Moving>Yes</Allow_Idle_When_Moving>
+
+
+		<Affiliation>Neutral</Affiliation>
+		<Influences_Capture_Point> False </Influences_Capture_Point>
+		<Political_Control>0</Political_Control>
+
+
+		<Wind_Disturbance_Radius>100</Wind_Disturbance_Radius>
+		<Wind_Disturbance_Strength>5</Wind_Disturbance_Strength>
+		<Wind_Disturbance_Sphere_Alpha>0.1</Wind_Disturbance_Sphere_Alpha>
+
+
+		<SFXEvent_Ambient_Moving />
+		<SFXEvent_Ambient_Moving_Min_Delay_Seconds> 5 </SFXEvent_Ambient_Moving_Min_Delay_Seconds>
+		<SFXEvent_Ambient_Moving_Max_Delay_Seconds> 10 </SFXEvent_Ambient_Moving_Max_Delay_Seconds>
+
+		<Icon_Name>TAURI_SPACE_UNIT_X-301.tga</Icon_Name>
+		<MovementClass> Flying </MovementClass>
+		<OccupationStyle>1x1</OccupationStyle>
+		<Victory_Relevant>no</Victory_Relevant>
+		<No_Reflection_Below_Detail_Level>1</No_Reflection_Below_Detail_Level>
+		<No_Refraction_Below_Detail_Level>1</No_Refraction_Below_Detail_Level>
+		<Blob_Shadow_Below_Detail_Level>2</Blob_Shadow_Below_Detail_Level>
+		<Blob_Shadow_Scale>5.0, 5.0</Blob_Shadow_Scale>
+		<Blob_Shadow_Material_Name>Generic_Shadow</Blob_Shadow_Material_Name>
+		<Occlusion_Silhouette_Enabled>0</Occlusion_Silhouette_Enabled>
+
+		<Air_Vehicle_Turret_Target> No </Air_Vehicle_Turret_Target>
+		<Is_Visible_On_Radar>No</Is_Visible_On_Radar>
+		<Is_Valid_Target>False</Is_Valid_Target>
+		
+		<Space_Layer> Frigate </Space_Layer>
+		<Layer_Z_Adjust>50.0</Layer_Z_Adjust>
+		<Min_Speed>1.0</Min_Speed>
+		<Hover_Offset>50.0</Hover_Offset>
+		<Prepare_Strafe_Height>75.0</Prepare_Strafe_Height>
+		<MaxFacingLookAheadFrames>5.0</MaxFacingLookAheadFrames>
+		<Weather_Category>Flying</Weather_Category>
+		
+		<Can_Indigenous_Unit_Stop>No</Can_Indigenous_Unit_Stop>
+		
+		<Movie_Object>false</Movie_Object>
+		<Is_Indigenous_Unit_Corruptible>False</Is_Indigenous_Unit_Corruptible>
+		
+	</Indigenous_Unit>
+
+
+
+
+	<Indigenous_Unit Name="Dust_Devil">
+		<Text_ID>TEXT_NONE</Text_ID>
+		<Encyclopedia_Unit_Class> TEXT_NONE </Encyclopedia_Unit_Class>
+		<Land_Model_Name>W_Dustdevil.alo</Land_Model_Name>
+		<Mass>0.985</Mass>
+
+		<Scale_Factor>1.0</Scale_Factor>
+		<!--<Is_Sprite>No</Is_Sprite>-->
+		<Size_Value>15</Size_Value>
+
+		<Max_Speed>0.7</Max_Speed>
+		<Movement_Animation_Speed> .95 </Movement_Animation_Speed>
+		<Max_Rate_Of_Turn>1.0</Max_Rate_Of_Turn>
+		<Space_Layer> Land </Space_Layer>
+		<UnitCollisionClass> Vehicle </UnitCollisionClass>
+		<FormationRaggedness> .6 </FormationRaggedness>
+		<MaxJiggleDistance> 5 </MaxJiggleDistance>
+		<Custom_Hard_XExtent> 10.0 </Custom_Hard_XExtent>
+		<Custom_Hard_YExtent> 10.0 </Custom_Hard_YExtent>
+		<MovementClass> Infantry </MovementClass>
+		<Avoidance_Disabled> true </Avoidance_Disabled>
+		<OccupationStyle>1x1</OccupationStyle>
+		<Close_Enough_Angle_For_Move_Start> 180.0 </Close_Enough_Angle_For_Move_Start>
+		
+		<LandBehavior>WALK_LOCOMOTOR,IDLE,SQUASH,WIND_DISTURBANCE, INDIGENOUS_UNIT</LandBehavior>
+		<Allow_Idle_When_Moving>Yes</Allow_Idle_When_Moving>
+
+		<Affiliation>Hostile</Affiliation>
+		<Influences_Capture_Point> False </Influences_Capture_Point>
+		<Political_Control>0</Political_Control>
+
+		<Wind_Disturbance_Radius>150</Wind_Disturbance_Radius>
+		<Wind_Disturbance_Strength>100</Wind_Disturbance_Strength>
+		<Wind_Disturbance_Sphere_Alpha>0.5</Wind_Disturbance_Sphere_Alpha>
+		
+		<Collidable_By_Projectile_Living> No </Collidable_By_Projectile_Living>
+		<Collidable_By_Projectile_Dead> No </Collidable_By_Projectile_Dead>
+
+		<SFXEvent_Ambient_Moving />
+		<SFXEvent_Ambient_Moving_Min_Delay_Seconds> 5 </SFXEvent_Ambient_Moving_Min_Delay_Seconds>
+		<SFXEvent_Ambient_Moving_Max_Delay_Seconds> 10 </SFXEvent_Ambient_Moving_Max_Delay_Seconds>
+
+		<Icon_Name>TAURI_SPACE_UNIT_X-301.tga</Icon_Name>
+		<Victory_Relevant>no</Victory_Relevant>
+		<No_Reflection_Below_Detail_Level>1</No_Reflection_Below_Detail_Level>
+		<No_Refraction_Below_Detail_Level>1</No_Refraction_Below_Detail_Level>
+		<Blob_Shadow_Below_Detail_Level>2</Blob_Shadow_Below_Detail_Level>
+		<Blob_Shadow_Scale>5.0, 5.0</Blob_Shadow_Scale>
+		<Blob_Shadow_Material_Name>Generic_Shadow</Blob_Shadow_Material_Name>
+		<Occlusion_Silhouette_Enabled>0</Occlusion_Silhouette_Enabled>
+
+		<Air_Vehicle_Turret_Target> No </Air_Vehicle_Turret_Target>
+		<Is_Visible_On_Radar>No</Is_Visible_On_Radar>
+		<Is_Valid_Target>False</Is_Valid_Target>
+		
+		<Is_Squashable> No </Is_Squashable>
+		<Squash_Damage_Type> Damage_Force_Whirlwind </Squash_Damage_Type>
+		
+		<Can_Indigenous_Unit_Stop>No</Can_Indigenous_Unit_Stop>
+		
+		<Movie_Object>false</Movie_Object>
+		<Is_Indigenous_Unit_Corruptible>False</Is_Indigenous_Unit_Corruptible>
+	</Indigenous_Unit>
+
+	<Indigenous_Unit Name="Bugs Swamp">
+		<Text_ID>TEXT_NONE</Text_ID>
+		<Encyclopedia_Unit_Class>  TEXT_NONE</Encyclopedia_Unit_Class>
+		<Land_Model_Name>W_bugs.alo</Land_Model_Name>
+		<Mass>0.985</Mass>
+
+		<Scale_Factor>1.0</Scale_Factor>
+		<!--<Is_Sprite>No</Is_Sprite>-->
+		<Size_Value>15</Size_Value>
+
+		<Max_Speed>0.7</Max_Speed>
+		<Movement_Animation_Speed> .95 </Movement_Animation_Speed>
+		<Max_Rate_Of_Turn>1.0</Max_Rate_Of_Turn>
+		<Space_Layer> Land </Space_Layer>
+		<UnitCollisionClass> Vehicle </UnitCollisionClass>
+		<FormationRaggedness> .6 </FormationRaggedness>
+		<MaxJiggleDistance> 5 </MaxJiggleDistance>
+		<Custom_Hard_XExtent> 10.0 </Custom_Hard_XExtent>
+		<Custom_Hard_YExtent> 10.0 </Custom_Hard_YExtent>
+		<MovementClass> Infantry </MovementClass>
+		<Avoidance_Disabled> true </Avoidance_Disabled>
+		<OccupationStyle>1x1</OccupationStyle>
+		<Close_Enough_Angle_For_Move_Start> 180.0 </Close_Enough_Angle_For_Move_Start>
+		
+		<LandBehavior>WALK_LOCOMOTOR,IDLE,WIND_DISTURBANCE, INDIGENOUS_UNIT,TARGETING,WEAPON</LandBehavior>
+		<Allow_Idle_When_Moving>Yes</Allow_Idle_When_Moving>
+
+		<Affiliation>Hostile</Affiliation>
+		<Influences_Capture_Point> False </Influences_Capture_Point>
+		<Political_Control>0</Political_Control>
+
+		<Wind_Disturbance_Radius>150</Wind_Disturbance_Radius>
+		<Wind_Disturbance_Strength>100</Wind_Disturbance_Strength>
+		<Wind_Disturbance_Sphere_Alpha>0.5</Wind_Disturbance_Sphere_Alpha>
+		
+		<Collidable_By_Projectile_Living> No </Collidable_By_Projectile_Living>
+		<Collidable_By_Projectile_Dead> No </Collidable_By_Projectile_Dead>
+
+
+		<Projectile_Types>Proj_Swamp_Bug_Bite</Projectile_Types>
+		<Projectile_Fire_Recharge_Seconds>2</Projectile_Fire_Recharge_Seconds>
+		<Projectile_Fire_Pulse_Count>1</Projectile_Fire_Pulse_Count>
+		<Projectile_Fire_Pulse_Delay_Seconds>0.2</Projectile_Fire_Pulse_Delay_Seconds>
+
+		<Targeting_Fire_Inaccuracy> Infantry, 1.0 </Targeting_Fire_Inaccuracy>
+		<Targeting_Fire_Inaccuracy> Vehicle, 70.0 </Targeting_Fire_Inaccuracy>
+		<Targeting_Fire_Inaccuracy> Air, 70.0 </Targeting_Fire_Inaccuracy>
+		<Targeting_Fire_Inaccuracy> Structure, 70.0 </Targeting_Fire_Inaccuracy>
+		
+		<Land_FOW_Reveal_Range>150.0</Land_FOW_Reveal_Range>
+		<Dense_FOW_Reveal_Range_Multiplier>1.0</Dense_FOW_Reveal_Range_Multiplier>
+		<Targeting_Max_Attack_Distance>10.0</Targeting_Max_Attack_Distance>
+		<Ranged_Target_Z_Adjust>7.0</Ranged_Target_Z_Adjust>
+		
+		<Idle_Chase_Range>500.0</Idle_Chase_Range>
+		<Guard_Chase_Range>500.0</Guard_Chase_Range>
+		<Attack_Move_Response_Range>500.0</Attack_Move_Response_Range>
+		<Targeting_Priority_Set>AntiInfantry</Targeting_Priority_Set>
+
+		<SFXEvent_Ambient_Moving />
+		<SFXEvent_Ambient_Moving_Min_Delay_Seconds> 5 </SFXEvent_Ambient_Moving_Min_Delay_Seconds>
+		<SFXEvent_Ambient_Moving_Max_Delay_Seconds> 10 </SFXEvent_Ambient_Moving_Max_Delay_Seconds>
+
+		<Icon_Name>TAURI_SPACE_UNIT_X-301.tga</Icon_Name>
+		<Victory_Relevant>no</Victory_Relevant>
+		<No_Reflection_Below_Detail_Level>1</No_Reflection_Below_Detail_Level>
+		<No_Refraction_Below_Detail_Level>1</No_Refraction_Below_Detail_Level>
+		<Occlusion_Silhouette_Enabled>0</Occlusion_Silhouette_Enabled>
+
+		<Air_Vehicle_Turret_Target> No </Air_Vehicle_Turret_Target>
+		<Is_Visible_On_Radar>No</Is_Visible_On_Radar>
+		<Is_Valid_Target>False</Is_Valid_Target>
+		
+		<Is_Squashable> No </Is_Squashable>		
+		<Can_Indigenous_Unit_Stop>No</Can_Indigenous_Unit_Stop>
+		
+		<Movie_Object>false</Movie_Object>
+		<Is_Indigenous_Unit_Corruptible>False</Is_Indigenous_Unit_Corruptible>
+	</Indigenous_Unit>
+   
+   	<Indigenous_Unit Name="Bird_Black_Color">
+		<Text_ID>TEXT_NONE</Text_ID>
+		<Land_Model_Name>W_Bird.ALO</Land_Model_Name>
+        <Movie_Object>false</Movie_Object>
+		<Mass>0.985</Mass>
+
+		<Scale_Factor>1.0</Scale_Factor>
+		<!--<Is_Sprite>No</Is_Sprite>-->
+		<Size_Value>15</Size_Value>
+
+		<Mass> 1.0 </Mass>
+		<Max_Speed>1.0</Max_Speed>
+		<Min_Speed> 1.0 </Min_Speed>
+		<Max_Rate_Of_Turn>1.0</Max_Rate_Of_Turn>
+		<Max_Thrust>0.1</Max_Thrust>
+		<Max_Rate_Of_Roll>1.5</Max_Rate_Of_Roll>
+		<Max_Lift>0.0</Max_Lift>
+		<Bank_Turn_Angle>60</Bank_Turn_Angle>
+		<Begin_Turn_Towards_Distance>100.0</Begin_Turn_Towards_Distance>
+
+		<LandBehavior>FIGHTER_LOCOMOTOR,IDLE,INDIGENOUS_UNIT</LandBehavior>
+		<Allow_Idle_When_Moving>Yes</Allow_Idle_When_Moving>
+
+
+		<Affiliation>Neutral</Affiliation>
+		<Influences_Capture_Point> False </Influences_Capture_Point>
+		<Political_Control>0</Political_Control>
+
+
+		<Wind_Disturbance_Radius>100</Wind_Disturbance_Radius>
+		<Wind_Disturbance_Strength>5</Wind_Disturbance_Strength>
+		<Wind_Disturbance_Sphere_Alpha>0.1</Wind_Disturbance_Sphere_Alpha>
+
+
+		<SFXEvent_Ambient_Moving />
+		<SFXEvent_Ambient_Moving_Min_Delay_Seconds> 5 </SFXEvent_Ambient_Moving_Min_Delay_Seconds>
+		<SFXEvent_Ambient_Moving_Max_Delay_Seconds> 10 </SFXEvent_Ambient_Moving_Max_Delay_Seconds>
+
+		<Icon_Name>TAURI_SPACE_UNIT_X-301.tga</Icon_Name>
+		<MovementClass> Flying </MovementClass>
+		<OccupationStyle>1x1</OccupationStyle>
+		<Victory_Relevant>no</Victory_Relevant>
+		<No_Reflection_Below_Detail_Level>1</No_Reflection_Below_Detail_Level>
+		<No_Refraction_Below_Detail_Level>1</No_Refraction_Below_Detail_Level>
+		<Blob_Shadow_Below_Detail_Level>2</Blob_Shadow_Below_Detail_Level>
+		<Blob_Shadow_Scale>5.0, 5.0</Blob_Shadow_Scale>
+		<Blob_Shadow_Material_Name>Generic_Shadow</Blob_Shadow_Material_Name>
+		<Occlusion_Silhouette_Enabled>0</Occlusion_Silhouette_Enabled>
+
+		<Air_Vehicle_Turret_Target> No </Air_Vehicle_Turret_Target>
+		<Is_Visible_On_Radar>No</Is_Visible_On_Radar>
+		<Is_Valid_Target>False</Is_Valid_Target>
+		
+		<Layer_Z_Adjust>50.0</Layer_Z_Adjust>
+		<Hover_Offset>50.0</Hover_Offset>
+		<Prepare_Strafe_Height>75.0</Prepare_Strafe_Height>
+		<MaxFacingLookAheadFrames>5.0</MaxFacingLookAheadFrames>
+		<Weather_Category>Flying</Weather_Category>
+		<Can_Indigenous_Unit_Stop>No</Can_Indigenous_Unit_Stop>
+		<Is_Indigenous_Unit_Corruptible>False</Is_Indigenous_Unit_Corruptible>
+	</Indigenous_Unit>
+
+
+
+
+	<Indigenous_Unit Name="Bird_Medium_Color">
+		<Text_ID>TEXT_NONE</Text_ID>
+		<Land_Model_Name>W_Bird_medium.ALO</Land_Model_Name>
+        <Movie_Object>false</Movie_Object>
+		<Mass>0.985</Mass>
+
+		<Scale_Factor>1.0</Scale_Factor>
+		<!--<Is_Sprite>No</Is_Sprite>-->
+		<Size_Value>15</Size_Value>
+
+		<Mass> 1.0 </Mass>
+		<Max_Speed>1.0</Max_Speed>
+		<Min_Speed> 1.0 </Min_Speed>
+		<Max_Rate_Of_Turn>1.0</Max_Rate_Of_Turn>
+		<Max_Thrust>0.1</Max_Thrust>
+		<Max_Rate_Of_Roll>1.5</Max_Rate_Of_Roll>
+		<Max_Lift>0.0</Max_Lift>
+		<Bank_Turn_Angle>60</Bank_Turn_Angle>
+		<Begin_Turn_Towards_Distance>100.0</Begin_Turn_Towards_Distance>
+
+		<LandBehavior>FIGHTER_LOCOMOTOR,IDLE,INDIGENOUS_UNIT</LandBehavior>
+		<Allow_Idle_When_Moving>Yes</Allow_Idle_When_Moving>
+
+
+		<Affiliation>Neutral</Affiliation>
+		<Influences_Capture_Point> False </Influences_Capture_Point>
+		<Political_Control>0</Political_Control>
+
+
+		<Wind_Disturbance_Radius>100</Wind_Disturbance_Radius>
+		<Wind_Disturbance_Strength>5</Wind_Disturbance_Strength>
+		<Wind_Disturbance_Sphere_Alpha>0.1</Wind_Disturbance_Sphere_Alpha>
+
+
+		<SFXEvent_Ambient_Moving />
+		<SFXEvent_Ambient_Moving_Min_Delay_Seconds> 5 </SFXEvent_Ambient_Moving_Min_Delay_Seconds>
+		<SFXEvent_Ambient_Moving_Max_Delay_Seconds> 10 </SFXEvent_Ambient_Moving_Max_Delay_Seconds>
+
+		<Icon_Name>TAURI_SPACE_UNIT_X-301.tga</Icon_Name>
+		<MovementClass> Flying </MovementClass>
+		<OccupationStyle>1x1</OccupationStyle>
+		<Victory_Relevant>no</Victory_Relevant>
+		<No_Reflection_Below_Detail_Level>1</No_Reflection_Below_Detail_Level>
+		<No_Refraction_Below_Detail_Level>1</No_Refraction_Below_Detail_Level>
+		<Blob_Shadow_Below_Detail_Level>2</Blob_Shadow_Below_Detail_Level>
+		<Blob_Shadow_Scale>5.0, 5.0</Blob_Shadow_Scale>
+		<Blob_Shadow_Material_Name>Generic_Shadow</Blob_Shadow_Material_Name>
+		<Occlusion_Silhouette_Enabled>0</Occlusion_Silhouette_Enabled>
+
+		<Air_Vehicle_Turret_Target> No </Air_Vehicle_Turret_Target>
+		<Is_Visible_On_Radar>No</Is_Visible_On_Radar>
+		<Is_Valid_Target>False</Is_Valid_Target>
+		
+		<Layer_Z_Adjust>50.0</Layer_Z_Adjust>
+		<Hover_Offset>50.0</Hover_Offset>
+		<Prepare_Strafe_Height>75.0</Prepare_Strafe_Height>
+		<MaxFacingLookAheadFrames>5.0</MaxFacingLookAheadFrames>
+		<Weather_Category>Flying</Weather_Category>
+		
+		<Can_Indigenous_Unit_Stop>No</Can_Indigenous_Unit_Stop>
+		<Is_Indigenous_Unit_Corruptible>False</Is_Indigenous_Unit_Corruptible>
+	</Indigenous_Unit>
+
+
+
+
+	<Indigenous_Unit Name="Bird_Light_Color">
+		<Text_ID>TEXT_NONE</Text_ID>
+		<Land_Model_Name>W_Bird_light.ALO</Land_Model_Name>
+        <Movie_Object>false</Movie_Object>
+		<Mass>0.985</Mass>
+
+		<Scale_Factor>1.0</Scale_Factor>
+		<!--<Is_Sprite>No</Is_Sprite>-->
+		<Size_Value>15</Size_Value>
+
+		<Mass> 1.0 </Mass>
+		<Max_Speed>1.0</Max_Speed>
+		<Min_Speed> 1.0 </Min_Speed>
+		<Max_Rate_Of_Turn>1.0</Max_Rate_Of_Turn>
+		<Max_Thrust>0.1</Max_Thrust>
+		<Max_Rate_Of_Roll>1.5</Max_Rate_Of_Roll>
+		<Max_Lift>0.0</Max_Lift>
+		<Bank_Turn_Angle>60</Bank_Turn_Angle>
+		<Begin_Turn_Towards_Distance>100.0</Begin_Turn_Towards_Distance>
+
+		<LandBehavior>FIGHTER_LOCOMOTOR,IDLE,INDIGENOUS_UNIT</LandBehavior>
+		<Allow_Idle_When_Moving>Yes</Allow_Idle_When_Moving>
+
+
+		<Affiliation>Neutral</Affiliation>
+		<Influences_Capture_Point> False </Influences_Capture_Point>
+		<Political_Control>0</Political_Control>
+
+
+		<Wind_Disturbance_Radius>100</Wind_Disturbance_Radius>
+		<Wind_Disturbance_Strength>5</Wind_Disturbance_Strength>
+		<Wind_Disturbance_Sphere_Alpha>0.1</Wind_Disturbance_Sphere_Alpha>
+
+
+		<SFXEvent_Ambient_Moving />
+		<SFXEvent_Ambient_Moving_Min_Delay_Seconds> 5 </SFXEvent_Ambient_Moving_Min_Delay_Seconds>
+		<SFXEvent_Ambient_Moving_Max_Delay_Seconds> 10 </SFXEvent_Ambient_Moving_Max_Delay_Seconds>
+
+		<Icon_Name>TAURI_SPACE_UNIT_X-301.tga</Icon_Name>
+		<MovementClass> Flying </MovementClass>
+		<OccupationStyle>1x1</OccupationStyle>
+		<Victory_Relevant>no</Victory_Relevant>
+		<No_Reflection_Below_Detail_Level>1</No_Reflection_Below_Detail_Level>
+		<No_Refraction_Below_Detail_Level>1</No_Refraction_Below_Detail_Level>
+		<Blob_Shadow_Below_Detail_Level>2</Blob_Shadow_Below_Detail_Level>
+		<Blob_Shadow_Scale>5.0, 5.0</Blob_Shadow_Scale>
+		<Blob_Shadow_Material_Name>Generic_Shadow</Blob_Shadow_Material_Name>
+		<Occlusion_Silhouette_Enabled>0</Occlusion_Silhouette_Enabled>
+
+		<Air_Vehicle_Turret_Target> No </Air_Vehicle_Turret_Target>
+		<Is_Visible_On_Radar>No</Is_Visible_On_Radar>
+		<Is_Valid_Target>False</Is_Valid_Target>
+		
+		<Layer_Z_Adjust>50.0</Layer_Z_Adjust>
+		<Hover_Offset>50.0</Hover_Offset>
+		<Prepare_Strafe_Height>75.0</Prepare_Strafe_Height>
+		<MaxFacingLookAheadFrames>5.0</MaxFacingLookAheadFrames>
+		<Weather_Category>Flying</Weather_Category>
+		
+		<Can_Indigenous_Unit_Stop>No</Can_Indigenous_Unit_Stop>
+		<Is_Indigenous_Unit_Corruptible>False</Is_Indigenous_Unit_Corruptible>
+	</Indigenous_Unit>
+   
+                                         
+                                                         
+  <!--# Containers-->
+
+	<Container Name="Tactical_R2_3PO_Team">
+		<Variant_Of_Existing_Type>Template_SW_Dummy_Ground_Container</Variant_Of_Existing_Type>
+	</Container>
+  
+  <!--# CorruptionSpecialUnits-->
+  <!--vanilla file not modified--> 
+  
+  <!--# GenericHeroUnits-->
+
+  <!--# GroundCompaniesRebel-->
+
+  <!--# GroundCompaniesIndigenous-->
+
+<GroundCompany Name="Pirate_Soldier_Squad">
+		<Variant_Of_Existing_Type>Template_SW_Dummy_Ground_Company</Variant_Of_Existing_Type>
+		<Company_Transport_Unit>Gallofree_Transport</Company_Transport_Unit>
+		<Company_Units>Pirate_Soldier, Pirate_Soldier, Pirate_Soldier, Pirate_Soldier, Pirate_Soldier, Pirate_Soldier, Pirate_Soldier, Pirate_Soldier, Pirate_Soldier, Pirate_Soldier, Pirate_Soldier, Pirate_Soldier, Pirate_Soldier, Pirate_Soldier, Pirate_Soldier</Company_Units>
+	</GroundCompany>
+
+	<GroundCompany Name="Pirate_PLEX_Squad">
+	<Variant_Of_Existing_Type>Template_SW_Dummy_Ground_Company</Variant_Of_Existing_Type>
+		<Company_Transport_Unit>Gallofree_Transport</Company_Transport_Unit>
+	</GroundCompany>
+	
+	<GroundCompany Name="Pirate_Skiff_Team">
+		<Variant_Of_Existing_Type>Template_SW_Dummy_Ground_Company</Variant_Of_Existing_Type>
+		<Company_Transport_Unit>Gallofree_Transport</Company_Transport_Unit>
+		<Company_Units>Pirate_Skiff, Pirate_Skiff, Pirate_Skiff</Company_Units>
+ 	</GroundCompany>
+	
+	
+	<GroundCompany Name="Pirate_Swamp_Speeder_Team">
+		<Variant_Of_Existing_Type>Template_SW_Dummy_Ground_Company</Variant_Of_Existing_Type>
+		<Company_Transport_Unit>Gallofree_Transport</Company_Transport_Unit>
+		<Company_Units>Swamp_Speeder_P, Swamp_Speeder_P, Swamp_Speeder_P</Company_Units>
+	</GroundCompany>
+
+
+	<GroundCompany Name="Pirate_Pod_Walker_Team">
+		<Variant_Of_Existing_Type>Template_SW_Dummy_Ground_Company</Variant_Of_Existing_Type>
+		<Company_Transport_Unit>Gallofree_Transport</Company_Transport_Unit>
+		<Company_Units>Pod_Walker_Pirate, Pod_Walker_Pirate, Pod_Walker_Pirate</Company_Units>
+	</GroundCompany>
+
+  
+  <!--# GroundIndigenous-->
+  <!--vanilla file not modified--> 
+  
+  <!--# GroundInfantry-->
+
+	<GroundInfantry Name="Pirate_Soldier">
+		<Variant_Of_Existing_Type>Template_SW_Dummy_Ground_Unit</Variant_Of_Existing_Type>
+	</GroundInfantry>
+
+	<GroundInfantry Name="Pirate_Plex">
+		<Variant_Of_Existing_Type>Template_SW_Dummy_Ground_Unit</Variant_Of_Existing_Type>
+	</GroundInfantry>
+
+
+
+
+	<!-- used for underworld radioactive contamination kills -->
+
+	<GroundInfantry Name="Infantry_Melt_Death_Clone_00">
+		<Land_Model_Name>w_infect.alo</Land_Model_Name>
+		<Specific_Death_Anim_Type>DIE</Specific_Death_Anim_Type>
+		<Specific_Death_Anim_Index>0</Specific_Death_Anim_Index>
+		<Death_SFXEvent_Start_Die>Unit_Infantry_Infected_Death</Death_SFXEvent_Start_Die>
+	</GroundInfantry>
+
+	<GroundInfantry Name="Infantry_Short_Melt_Death_Clone_00">
+		<Land_Model_Name>w_infect.alo</Land_Model_Name>
+		<Scale_Factor>0.75</Scale_Factor>
+		<Specific_Death_Anim_Type>DIE</Specific_Death_Anim_Type>
+		<Specific_Death_Anim_Index>0</Specific_Death_Anim_Index>
+		<Death_SFXEvent_Start_Die>Unit_Infantry_Infected_Death</Death_SFXEvent_Start_Die>
+	</GroundInfantry>
+
+	<GroundInfantry Name="Infantry_Tall_Melt_Death_Clone_00">
+		<Land_Model_Name>w_infect.alo</Land_Model_Name>
+		<Scale_Factor>1.5</Scale_Factor>
+		<Specific_Death_Anim_Type>DIE</Specific_Death_Anim_Type>
+		<Specific_Death_Anim_Index>0</Specific_Death_Anim_Index>
+		<Death_SFXEvent_Start_Die>Unit_Infantry_Infected_Death</Death_SFXEvent_Start_Die>
+	</GroundInfantry>
+  
+  <!--# GroundVehicles-->
+
+	<GroundVehicle Name="MPTL">
+		<Variant_Of_Existing_Type>Template_Ground_Infantry_Multi</Variant_Of_Existing_Type>
+	</GroundVehicle>
+
+	<GroundVehicle Name="MPTL_Spotter">
+		<Variant_Of_Existing_Type>Template_Ground_Infantry_Multi</Variant_Of_Existing_Type>
+	</GroundVehicle>
+
+
+	<GroundVehicle Name="T4B_Tank">
+		<Variant_Of_Existing_Type>Template_Ground_Infantry_Multi</Variant_Of_Existing_Type>
+	</GroundVehicle>
+
+	<GroundVehicle Name="TIE_Crawler">
+		<Variant_Of_Existing_Type>Template_Ground_Infantry_Multi</Variant_Of_Existing_Type>
+	</GroundVehicle>
+  
+  
+	<GroundVehicle Name="Skiff">
+		<Variant_Of_Existing_Type>Template_Ground_Infantry_Multi</Variant_Of_Existing_Type>
+	</GroundVehicle>
+	
+	<GroundVehicle Name="Pirate_Skiff">
+		<Variant_Of_Existing_Type>Skiff</Variant_Of_Existing_Type>
+	</GroundVehicle>
+
+
+<!--											-->
+<!--	Test case for fighters in ground mode	-->
+<!--											-->
+
+
+	<GroundVehicle Name="Y-Wing_Bombing">
+		<Blob_Shadow_Below_Detail_Level>2</Blob_Shadow_Below_Detail_Level>
+		<Blob_Shadow_Scale>25.0, 20.0</Blob_Shadow_Scale>
+		<Blob_Shadow_Material_Name>Generic_Shadow</Blob_Shadow_Material_Name>
+		<Text_ID>TEXT_NONE</Text_ID>
+		<Land_Model_Name>rv_ywing.alo</Land_Model_Name>
+		<Mass>0.985</Mass>
+		
+		<Max_Speed>4.0</Max_Speed>
+		<Max_Rate_Of_Turn>1.5</Max_Rate_Of_Turn>
+		<Max_Thrust>0.1</Max_Thrust>
+		<Max_Rate_Of_Roll>3.0</Max_Rate_Of_Roll>
+		<Max_Lift>2.0</Max_Lift>
+		<Bank_Turn_Angle>40</Bank_Turn_Angle>
+		<MovementClass> Space </MovementClass>
+		<Space_Layer> Frigate </Space_Layer>
+		<Layer_Z_Adjust>40.0</Layer_Z_Adjust>
+		<Min_Speed>2.0</Min_Speed>
+		<Hover_Offset>100.0</Hover_Offset>
+		<Prepare_Strafe_Height>100.0</Prepare_Strafe_Height>
+		<MaxFacingLookAheadFrames>30.0</MaxFacingLookAheadFrames>
+		
+		<Behavior>SELECTABLE, POWERED</Behavior>
+		<LandBehavior>FLYING_LOCOMOTOR,REVEAL,HIDE_WHEN_FOGGED, SHIELDED, POWERED, AMBIENT_SFX,UNIT_AI,TARGETING,WEAPON,STUNNABLE</LandBehavior>
+		<Collidable_By_Projectile_Living>Yes</Collidable_By_Projectile_Living>
+		<Select_Box_Scale>43</Select_Box_Scale>
+		<Select_Box_Z_Adjust>1.0f</Select_Box_Z_Adjust>
+		<Scale_Factor>1.0</Scale_Factor>
+		<!--<Is_Sprite>No</Is_Sprite>-->
+		<Type>Fly</Type>
+		<Deploys>No</Deploys>
+		<Affiliation>Rebel</Affiliation>
+		<Size_Value>15</Size_Value>
+
+		<Damage>25</Damage>
+		<Shield_Points>50</Shield_Points>
+		<Tactical_Health>75</Tactical_Health>
+		<Shield_Refresh_Rate>5</Shield_Refresh_Rate>
+		<Energy_Capacity>500</Energy_Capacity>
+		<Energy_Refresh_Rate>999</Energy_Refresh_Rate>
+
+		<Ranged_Target_Z_Adjust>0.0</Ranged_Target_Z_Adjust>
+		<Fires_Forward>no</Fires_Forward>
+		<Turret_Rotate_Extent_Degrees>20</Turret_Rotate_Extent_Degrees>
+		<Turret_Elevate_Extent_Degrees>20</Turret_Elevate_Extent_Degrees>
+		<Land_FOW_Reveal_Range>220.0</Land_FOW_Reveal_Range>
+		<Targeting_Max_Attack_Distance>200.0</Targeting_Max_Attack_Distance>
+		<Projectile_Types>Proj_Ground_Proton_Torpedo</Projectile_Types>
+		<Projectile_Fire_Pulse_Count>2</Projectile_Fire_Pulse_Count>
+		<Projectile_Fire_Pulse_Delay_Seconds>0.2</Projectile_Fire_Pulse_Delay_Seconds>
+		<Projectile_Fire_Recharge_Seconds>1.5</Projectile_Fire_Recharge_Seconds>
+
+		<Damaged_Smoke_Asset_Name>P_Smoke_Small02.alo</Damaged_Smoke_Asset_Name>
+		<Death_Explosions>Medium_Explosion_Land</Death_Explosions>
+		<Icon_Name>TAURI_SPACE_UNIT_X-301.tga</Icon_Name>
+		<CategoryMask> Air </CategoryMask>
+		<MovementClass> Flying </MovementClass>
+		<OccupationStyle>1x1</OccupationStyle>
+		<Victory_Relevant>yes</Victory_Relevant>
+		<No_Reflection_Below_Detail_Level>99</No_Reflection_Below_Detail_Level>
+		<No_Refraction_Below_Detail_Level>3</No_Refraction_Below_Detail_Level>
+
+		<Air_Vehicle_Turret_Target> Yes </Air_Vehicle_Turret_Target>
+		<Is_Visible_On_Radar>Yes</Is_Visible_On_Radar>
+		
+	</GroundVehicle>
+  
+  
+  <!--# HeroCompanies-->  
+  <HeroCompany Name="Smuggler_Team_E">
+		<Variant_Of_Existing_Type>Template_SW_Dummy_Ground_Company</Variant_Of_Existing_Type>
+		<Company_Transport_Unit>Shuttle_Tyderium</Company_Transport_Unit>
+		<Company_Units>Generic_Smuggler_E</Company_Units>
+	</HeroCompany>
+
+	<HeroCompany Name="Smuggler_Team_R">
+		<Variant_Of_Existing_Type>Template_SW_Dummy_Ground_Company</Variant_Of_Existing_Type>
+		<Company_Transport_Unit>Alliance_Shuttle</Company_Transport_Unit>
+		<Company_Units>Generic_Smuggler_R</Company_Units>
+	</HeroCompany>
+  
+	<HeroCompany Name="Darth_Team">
+		<Variant_Of_Existing_Type>Template_SW_Dummy_Ground_Company</Variant_Of_Existing_Type>
+		<Company_Transport_Unit>Shuttle_Tyderium</Company_Transport_Unit>
+		<Company_Units>Darth_Vader</Company_Units>
+	</HeroCompany>
+		
+	<HeroCompany Name="Darth_Team_Land_MP">
+		<Variant_Of_Existing_Type>Darth_Team</Variant_Of_Existing_Type>
+		<Tactical_Build_Cost_Multiplayer>2500</Tactical_Build_Cost_Multiplayer>
+		<Tactical_Build_Time_Seconds>33</Tactical_Build_Time_Seconds>
+		<Tactical_Build_Prerequisites>EC_Level_Three_Tech_Upgrade</Tactical_Build_Prerequisites>
+		<Tactical_Production_Queue>Tactical_Units</Tactical_Production_Queue>
+		<Build_Limit_Current_Per_Player>1</Build_Limit_Current_Per_Player>
+		<Build_Limit_Lifetime_For_All_Allies>-1</Build_Limit_Lifetime_For_All_Allies>
+	</HeroCompany>
+
+	<HeroCompany Name="Darth_Team_Space_MP">
+		<Variant_Of_Existing_Type>Darth_Team</Variant_Of_Existing_Type>
+		<Encyclopedia_Vulnerable_To> Corellian_Corvette X-wing A-Wing </Encyclopedia_Vulnerable_To>
+		<Encyclopedia_Unit_Class> TEXT_ENCYCLOPEDIA_CLASS_HERO_MAJOR </Encyclopedia_Unit_Class>
+		<Tactical_Build_Cost_Multiplayer>2500</Tactical_Build_Cost_Multiplayer>
+		<Tactical_Build_Time_Seconds>38</Tactical_Build_Time_Seconds>
+		<Tactical_Build_Prerequisites />
+		<Tactical_Production_Queue>Tactical_Units</Tactical_Production_Queue>
+      <Build_Limit_Current_Per_Player>1</Build_Limit_Current_Per_Player>
+		<Build_Limit_Lifetime_For_All_Allies>-1</Build_Limit_Lifetime_For_All_Allies>
+	</HeroCompany>
+	
+	<HeroCompany Name="General_Veers_Team">
+		<Variant_Of_Existing_Type>Template_SW_Dummy_Ground_Company</Variant_Of_Existing_Type>
+		<Company_Transport_Unit>Imperial_ATAT_Barge</Company_Transport_Unit>
+	</HeroCompany>
+	
+	
+	<HeroCompany Name="Grand_Moff_Tarkin_Team">
+	<Variant_Of_Existing_Type>Template_SW_Dummy_Ground_Company</Variant_Of_Existing_Type>
+		<Company_Transport_Unit>Shuttle_Tyderium</Company_Transport_Unit>
+		<Company_Units>Grand_Moff_Tarkin</Company_Units>
+	</HeroCompany>
+	
+	
+	<HeroCompany Name="Mara_Jade_Team">
+		<Variant_Of_Existing_Type>Template_SW_Dummy_Ground_Company</Variant_Of_Existing_Type>
+		<Company_Transport_Unit>Shuttle_Tyderium</Company_Transport_Unit>
+	</HeroCompany>
+
+	
+	<HeroCompany Name="Luke_Team">
+		<Variant_Of_Existing_Type>Template_SW_Dummy_Ground_Company</Variant_Of_Existing_Type>
+      <Tactical_Build_Time_Seconds>1</Tactical_Build_Time_Seconds>
+	</HeroCompany>
+
+
+	<HeroCompany Name="Droids_Team">
+		<Variant_Of_Existing_Type>Template_SW_Dummy_Ground_Company</Variant_Of_Existing_Type>
+		<Company_Units> Droid_R2D2, Droid_C3P0 </Company_Units>
+		<Company_Transport_Unit>Non_Combat_Gallofree</Company_Transport_Unit>
+	</HeroCompany>
+
+  
+  <!--# HuttFactionUnits-->
+  <!--vanilla file not modified-->
+  
+  <!--# MinorHeroesExpansion-->
+  <!--//none-->
+  
+  <!--# MobileDefenseUnits-->
+
+	<Mobile_Defense_Unit Name="Underworld_Mobile_Defense_Unit">
+   <Variant_Of_Existing_Type>Template_SW_Dummy_Ground_Unit</Variant_Of_Existing_Type>
+	</Mobile_Defense_Unit>
+
+
+			<!-- Underworld MDU Company -->
+			<GroundCompany Name="Underworld_MDU_Company">
+				<Variant_Of_Existing_Type>Template_SW_Dummy_Ground_Company</Variant_Of_Existing_Type>
+				<Company_Transport_Unit>Underworld_Vehicle_Transport</Company_Transport_Unit>
+				<Company_Units>Underworld_Mobile_Defense_Unit, Underworld_Mobile_Defense_Unit</Company_Units>
+			</GroundCompany>
+
+	<Mobile_Defense_Unit Name="Empire_Mobile_Defense_Unit">
+	<Variant_Of_Existing_Type>Template_SW_Dummy_Ground_Unit</Variant_Of_Existing_Type>
+	</Mobile_Defense_Unit>
+
+			<!-- Empire MDU Company -->
+			<GroundCompany Name="Empire_MDU_Company">
+				<Variant_Of_Existing_Type>Template_SW_Dummy_Ground_Company</Variant_Of_Existing_Type>
+				<Company_Transport_Unit>Imperial_Landing_Craft</Company_Transport_Unit>
+				<Company_Units>Empire_Mobile_Defense_Unit, Empire_Mobile_Defense_Unit</Company_Units>
+			</GroundCompany>
+
+
+
+	<Mobile_Defense_Unit Name="Rebel_Mobile_Defense_Unit">
+	<Variant_Of_Existing_Type>Template_SW_Dummy_Ground_Unit</Variant_Of_Existing_Type>
+	</Mobile_Defense_Unit>
+
+			<!-- Rebel MDU Company -->
+			<GroundCompany Name="Rebel_MDU_Company">
+				<Variant_Of_Existing_Type>Template_SW_Dummy_Ground_Company</Variant_Of_Existing_Type>
+				<Company_Transport_Unit>Gallofree_Transport</Company_Transport_Unit>
+				<Company_Units>Rebel_Mobile_Defense_Unit, Rebel_Mobile_Defense_Unit</Company_Units>
+			</GroundCompany>
+
+
+   <GroundVehicle Name="Dark_Trooper_PhaseII">
+		<Variant_Of_Existing_Type>Template_SW_Dummy_Ground_Unit</Variant_Of_Existing_Type>
+	</GroundVehicle>
+  <GroundCompany Name="DarkTrooper_P2_Company">
+    <Variant_Of_Existing_Type>Template_SW_Dummy_Ground_Company</Variant_Of_Existing_Type>
+    <Tech_Level>99</Tech_Level>
+  </GroundCompany>
+  
+  <HeroUnit Name="General_Veers">
+		<Variant_Of_Existing_Type>Template_SW_Dummy_Ground_Unit</Variant_Of_Existing_Type>
+	</HeroUnit>
+
+  <HeroUnit Name="Grand_Moff_Tarkin">
+		<Variant_Of_Existing_Type>Template_SW_Dummy_Ground_Unit</Variant_Of_Existing_Type>
+	</HeroUnit>
+
+	<HeroUnit Name="Chewbacca">
+		<Variant_Of_Existing_Type>Template_SW_Dummy_Ground_Unit</Variant_Of_Existing_Type>
+	</HeroUnit>
+	
+
+
+	<HeroUnit Name="Mara_Jade">
+		<Variant_Of_Existing_Type>Template_SW_Dummy_Ground_Unit</Variant_Of_Existing_Type>
+	</HeroUnit>
+	
+	<HeroUnit Name="Darth_Vader">
+		<Variant_Of_Existing_Type>Template_SW_Dummy_Ground_Unit</Variant_Of_Existing_Type>
+	</HeroUnit>
+
+	<HeroUnit Name="Darth_Vader_Expansion">
+		<Variant_Of_Existing_Type>Template_SW_Dummy_Ground_Unit</Variant_Of_Existing_Type>
+	</HeroUnit>
+
+	<HeroUnit Name="Bossk">
+		<Variant_Of_Existing_Type>Template_SW_Dummy_Ground_Unit</Variant_Of_Existing_Type>
+	</HeroUnit>
+
+	<HeroUnit Name="Droid_R2D2">
+		<Variant_Of_Existing_Type>Template_SW_Dummy_Ground_Unit</Variant_Of_Existing_Type>
+	</HeroUnit>
+
+	<HeroUnit Name="Droid_C3P0">
+		<Variant_Of_Existing_Type>Template_SW_Dummy_Ground_Unit</Variant_Of_Existing_Type>
+	</HeroUnit>
+
+
+	<HeroUnit Name="Luke_Skywalker">
+		<Variant_Of_Existing_Type>Template_SW_Dummy_Ground_Unit</Variant_Of_Existing_Type>
+	</HeroUnit>
+	
+	<HeroUnit Name="General_Dodonna">
+		<Variant_Of_Existing_Type>Template_SW_Dummy_Ground_Unit</Variant_Of_Existing_Type>
+	</HeroUnit>
+
+  
+  <!--# UniqueUnits-->
+  <!-- This special AT-AT is used by General Maximillian Veers (Empire Major Hero) during ground battles -->
+	<UniqueUnit Name="Veers_AT_AT_Walker">
+		<Variant_Of_Existing_Type>Template_SW_Dummy_Ground_Unit</Variant_Of_Existing_Type>
+	</UniqueUnit>
+  
+	<GroundVehicle Name="Swamp_Speeder">
+		<Variant_Of_Existing_Type>Template_SW_Dummy_Ground_Unit</Variant_Of_Existing_Type>
+	</GroundVehicle>
+	<GroundVehicle Name="Swamp_Speeder_P">
+		<Variant_Of_Existing_Type>Swamp_Speeder</Variant_Of_Existing_Type>
+		<Land_Model_Name>NV_SwampSpeeder_P.alo</Land_Model_Name>
+		<Affiliation>Pirates</Affiliation>
+	</GroundVehicle>
+
+	<GroundVehicle Name="Pod_Walker">
+		<Variant_Of_Existing_Type>Template_SW_Dummy_Ground_Unit</Variant_Of_Existing_Type>
+	</GroundVehicle>
+	<UniqueUnit Name="Pod_Walker_Pirate">
+		<Variant_Of_Existing_Type>Template_SW_Dummy_Ground_Unit</Variant_Of_Existing_Type>
+		<Affiliation>Pirates</Affiliation>
+	</UniqueUnit>
+
+</GroundUnitsStarWars>  

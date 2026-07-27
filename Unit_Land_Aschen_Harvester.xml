@@ -1,0 +1,88 @@
+<?xml version="1.0"?>
+<Unit_Land_Aschen_Harvester_Data>
+  
+   <GroundVehicle Name="Aschen_Harvester">
+      <Variant_Of_Existing_Type>Template_Ground_Vehicle</Variant_Of_Existing_Type>
+      <Text_ID>TEXT_ASCHEN_GROUND_UNIT_HARVESTER</Text_ID>
+      <Encyclopedia_Text>TEXT_DESCRIPTION_ASCHEN_HARVESTER_GROUND</Encyclopedia_Text>
+      <Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_TRANSPORT</Encyclopedia_Unit_Class>
+      <Encyclopedia_Good_Against></Encyclopedia_Good_Against>
+      <Encyclopedia_Vulnerable_To>Scavenger_Droid AT_AA_Walker Underworld_Mass_Driver_Turret</Encyclopedia_Vulnerable_To>
+      <Icon_Name>ASCHEN_GROUND_UNIT_HARVESTER.tga</Icon_Name>
+      <Land_Model_Name>aschen_land_unit_harvester.ALO</Land_Model_Name>
+      <Radar_Icon_Name>I_RADAR_TELTAK.TGA</Radar_Icon_Name>
+      <LandBehavior>WALK_LOCOMOTOR, ABILITY_COUNTDOWN, AFFECTED_BY_SHIELD, DAMAGE_TRACKING, GARRISON_HOVER, HIDE_WHEN_FOGGED, IDLE, POWERED, REVEAL, SHIELDED, STUNNABLE, TARGETING, TELEKINESIS_TARGET, UNIT_AI, WEAPON</LandBehavior>
+      <Affiliation>Aschen</Affiliation>
+      <Scale_Factor>3.0</Scale_Factor>
+      <Select_Box_Scale>150</Select_Box_Scale>
+      <Select_Box_Z_Adjust>3.0f</Select_Box_Z_Adjust>
+
+      <Ranged_Target_Z_Adjust>60.0</Ranged_Target_Z_Adjust>
+      <Max_Speed>1.5</Max_Speed>
+      <OverrideAcceleration>0.05</OverrideAcceleration>
+      <OverrideDeceleration>0.05</OverrideDeceleration>
+      <Max_Rate_Of_Turn>1.0</Max_Rate_Of_Turn>
+      <Hover_Height>30.0</Hover_Height>
+      <Loop_Idle_Anim_00>Yes</Loop_Idle_Anim_00>
+      <GUI_Bracket_Size>2</GUI_Bracket_Size>
+      <Overall_Length>20.0</Overall_Length>
+      <Overall_Width>20.0</Overall_Width>
+
+      <Shield_Points>1600</Shield_Points>
+      <Tactical_Health>800</Tactical_Health>
+      <Shield_Refresh_Rate>10</Shield_Refresh_Rate>
+      <Targeting_Priority_Set>SG_Vehicle_AntiInfantry</Targeting_Priority_Set>
+      <Targeting_Min_Attack_Distance>20.0</Targeting_Min_Attack_Distance>
+      <Targeting_Max_Attack_Distance>400.0</Targeting_Max_Attack_Distance>
+      <Blob_Shadow_Scale>50.0, 80.0</Blob_Shadow_Scale>
+
+      <Projectile_Types>Proj_Aschen_Harvester</Projectile_Types>
+      <Projectile_Fire_Recharge_Seconds>15.0</Projectile_Fire_Recharge_Seconds>
+      <Projectile_Fire_Pulse_Count>2</Projectile_Fire_Pulse_Count>
+      <Projectile_Fire_Pulse_Delay_Seconds>7</Projectile_Fire_Pulse_Delay_Seconds>
+      <Turret_Rotate_Extent_Degrees> 20.0 </Turret_Rotate_Extent_Degrees>
+      <Turret_Elevate_Extent_Degrees> 60.0 </Turret_Elevate_Extent_Degrees>
+      <Fire_Category_Restrictions>Vehicle, Structure</Fire_Category_Restrictions>
+      <Attack_Category_Restrictions>Air</Attack_Category_Restrictions>
+
+      <Deploys>Yes</Deploys>
+      <Garrison_Category>Infantry</Garrison_Category>
+      <Num_Garrison_Slots>8</Num_Garrison_Slots>
+      <Garrison_Bone_Names>ROOT</Garrison_Bone_Names>
+      <Garrison_Exit_Dist>40</Garrison_Exit_Dist>
+      <Garrison_Enter_Dist>40</Garrison_Enter_Dist>
+      <Garrison_Radius>31</Garrison_Radius>
+      <Property_Flags>CanContainGarrison</Property_Flags>
+
+      <Death_Explosions>Huge_Explosion_Land</Death_Explosions>
+      <Spin_Away_On_Death>No</Spin_Away_On_Death>
+   </GroundVehicle>
+
+   <Projectile Name="Proj_Aschen_Harvester">
+		<Variant_Of_Existing_Type>Proj_Aschen_Harvester_Bio_Weapon</Variant_Of_Existing_Type>
+      <Damage_Type>Damage_Anti_Infantry_Only</Damage_Type>
+		<Projectile_Damage>100.0</Projectile_Damage>
+      <Projectile_Blast_Area_Damage>80</Projectile_Blast_Area_Damage>
+      <Projectile_Blast_Area_Range>50</Projectile_Blast_Area_Range>
+      <Max_Secs_For_AE_Delayed_Damage>5</Max_Secs_For_AE_Delayed_Damage>
+   </Projectile>
+
+
+   <GroundCompany Name="Aschen_Harvester_Company">
+      <Variant_Of_Existing_Type>Template_Ground_Company</Variant_Of_Existing_Type>
+      <Text_ID>TEXT_ASCHEN_GROUND_UNIT_HARVESTER</Text_ID>
+      <Encyclopedia_Text>TEXT_DESCRIPTION_ASCHEN_HARVESTER_GROUND</Encyclopedia_Text>
+      <Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_TRANSPORT</Encyclopedia_Unit_Class>
+      <Encyclopedia_Good_Against></Encyclopedia_Good_Against>
+      <Encyclopedia_Vulnerable_To>Scavenger_Droid AT_AA_Walker Underworld_Mass_Driver_Turret</Encyclopedia_Vulnerable_To>
+      <Icon_Name>ASCHEN_GROUND_UNIT_HARVESTER.tga</Icon_Name>
+      <Affiliation>Aschen</Affiliation>
+      <Build_Cost_Credits>600</Build_Cost_Credits>
+      <Build_Time_Seconds>82</Build_Time_Seconds>
+      <Ship_Class>walker</Ship_Class>
+      <Company_Transport_Unit>Goauld_Land_Unit_Teltak_Self</Company_Transport_Unit> <!--for the transport: w_planet_fleet_aschenharvester.alo-->
+      <Company_Units>Aschen_Harvester</Company_Units>
+      <Required_Ground_Base_Level>1</Required_Ground_Base_Level>
+   </GroundCompany>
+   
+</Unit_Land_Aschen_Harvester_Data>

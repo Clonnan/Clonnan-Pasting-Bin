@@ -1,0 +1,201 @@
+<?xml version="1.0"?>
+<UniqueUnits>  
+
+   <HeroUnit Name="Han_Solo">
+      <Variant_Of_Existing_Type>Template_Ground_Infantry_Single_Hero_Goauld</Variant_Of_Existing_Type>
+      <Text_ID>TEXT_GOAULD_GROUND_HERO_ARIS_BOCH</Text_ID>
+      <Encyclopedia_Text>TEXT_DESCRIPTION_GOAULD_ARIS_BOCH_GROUND</Encyclopedia_Text>
+      <Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_ARIS_BOCH_GROUND</Encyclopedia_Unit_Class>
+      <Encyclopedia_Good_Against>Underworld_Saboteur Underworld_Merc Stormtrooper</Encyclopedia_Good_Against>
+      <Encyclopedia_Vulnerable_To>MZ8_Pulse_Cannon_Tank Tauri_F302_Land Empire_Anti_Infantry_Turret</Encyclopedia_Vulnerable_To>
+      <Icon_Name>GOAULD_SPACE_HERO_ARISBOCH.TGA</Icon_Name>
+      <Land_Model_Name>Goauld_Land_Hero_Aris_Boch.ALO</Land_Model_Name>
+      <Land_Model_Anim_Override_Name>Goauld_Land_Hero_Aris_Boch.ALO</Land_Model_Anim_Override_Name>
+      <LandBehavior>ABILITY_COUNTDOWN, DAMAGE_TRACKING, GARRISON_UNIT, HIDE_WHEN_FOGGED, IDLE, REVEAL, SELECTABLE, SURFACE_FX, TARGETING, UNIT_AI, WALK_LOCOMOTOR, WEAPON</LandBehavior>
+      <Affiliation>Rebel</Affiliation> 
+      <Scale_Factor>0.71</Scale_Factor>      
+      <Movement_Animation_Speed>1</Movement_Animation_Speed>
+      <Rotation_Animation_Speed>2</Rotation_Animation_Speed>
+      <Walk_Animation_Speed>1</Walk_Animation_Speed>
+      <Crouch_Animation_Speed>.50</Crouch_Animation_Speed>
+      <Tactical_Health>900</Tactical_Health>
+      <AI_Combat_Power>150</AI_Combat_Power>
+      <Neutralization_Cost>1700.0</Neutralization_Cost>
+      <Projectile_Types>Proj_Goauld_Hero_Aris_Boch_Land, Proj_Goauld_Hero_Aris_Boch_Land_Stun</Projectile_Types>
+      <Projectile_Fire_Recharge_Seconds>1</Projectile_Fire_Recharge_Seconds>
+      <Projectile_Fire_Pulse_Count>1</Projectile_Fire_Pulse_Count>
+      <Projectile_Fire_Pulse_Delay_Seconds>1</Projectile_Fire_Pulse_Delay_Seconds>
+      <Targeting_Priority_Set>SG_Infantry_AntiInfantry</Targeting_Priority_Set>
+      <SFXEvent_Fire>Weapon_TER</SFXEvent_Fire>
+
+      <Always_Spawn_In_Orbit>Yes</Always_Spawn_In_Orbit>
+      <Damage>50</Damage>
+      <SFXEvent_Select>Unit_Select_ABoch</SFXEvent_Select>
+      <SFXEvent_Move>Unit_Move_ABoch</SFXEvent_Move>
+      <SFXEvent_Fleet_Move>Unit_Move_ABoch</SFXEvent_Fleet_Move>
+      <SFXEvent_Attack>Unit_Attack_ABoch</SFXEvent_Attack>
+      <SFXEvent_Health_Low_Warning>Unit_LOWHP_ABoch</SFXEvent_Health_Low_Warning>
+      <SFXEvent_Health_Critical_Warning>Unit_CriticalHP_ABoch</SFXEvent_Health_Critical_Warning>
+      <SFXEvent_Guard>Unit_Select_ABoch</SFXEvent_Guard>
+      <SFXEvent_Build_Complete>Unit_Select_ABoch</SFXEvent_Build_Complete>
+      <SFXEvent_Hero_Respawned>Unit_Select_ABoch</SFXEvent_Hero_Respawned>
+      <Unit_Abilities_Data SubObjectList="Yes">
+         <Unit_Ability>
+            <Type>SWAP_WEAPONS</Type>
+            <Alternate_Name_Text>TEXT_ABILITY_STUN</Alternate_Name_Text>
+            <Alternate_Description_Text>TEXT_DESCRIPTION_ABILITY_STUN_ARIS_BOCH_GROUND</Alternate_Description_Text>
+            <GUI_Activated_Ability_Name>Disruptor_Swap_Weapon</GUI_Activated_Ability_Name> 
+            <SFXEvent_GUI_Unit_Ability_Activated>Unit_Attack_ABoch</SFXEvent_GUI_Unit_Ability_Activated> 
+         </Unit_Ability>
+         <Unit_Ability>
+            <Type>WEAKEN_ENEMY</Type>
+            <Alternate_Name_Text>TEXT_ABILITY_TAC</Alternate_Name_Text>
+            <Alternate_Description_Text>TEXT_DESCRIPTION_ABILITY_TAC_ARIS_BOCH_GROUND</Alternate_Description_Text>
+            <Alternate_Icon_Name>I_SA_TAC.TGA</Alternate_Icon_Name>
+            <Recharge_Seconds>40</Recharge_Seconds>
+            <Effective_Radius>100.0</Effective_Radius>
+            <Spawned_Object_Type>Tacluchnatagamuntoron</Spawned_Object_Type>
+            <SFXEvent_Target_Ability></SFXEvent_Target_Ability> 
+            <SFXEvent_GUI_Unit_Ability_Activated></SFXEvent_GUI_Unit_Ability_Activated>
+            <SFXEvent_GUI_Unit_Ability_Deactivated />
+            <Area_Effect_Decal_Distance>25</Area_Effect_Decal_Distance>
+         </Unit_Ability>
+      </Unit_Abilities_Data> 
+      <Abilities SubObjectList="Yes">
+         <Force_Healing_Ability Name="Goauld_Infantry_Auto_Heal">
+            <Activation_Style>Ground_Automatic</Activation_Style>
+            <Heal_Range>0.0</Heal_Range>
+            <Heal_Percent>0.0</Heal_Percent>
+            <Heal_Amount>0.1</Heal_Amount>
+            <Heal_Interval_In_Secs>100.0</Heal_Interval_In_Secs>
+            <Single_Target_Heal>No</Single_Target_Heal>
+            <Owner_Particle_Bone_Name>ROOT</Owner_Particle_Bone_Name>
+            <Owner_Light_Effect_Duration>0.1</Owner_Light_Effect_Duration>
+            <Owner_Light_Effect_Pulse_Count>1</Owner_Light_Effect_Pulse_Count>
+         </Force_Healing_Ability>
+         <Galactic_Stealth_Ability Name="Aris_Boch_Galactic_Stealth">
+            <Evade_Detection_Chance>0.0</Evade_Detection_Chance>
+         </Galactic_Stealth_Ability>
+         <System_Spy_Ability Name="Aris_Boch_Limited_Spy">
+            <Initially_Enabled>Yes</Initially_Enabled>
+            <Activation_Style>Galactic_Automatic</Activation_Style>
+            <Causes_Despawn>No</Causes_Despawn>
+            <Duration_In_Secs>-1.0</Duration_In_Secs>
+            <See_Num_Fleets>Yes</See_Num_Fleets>
+            <See_Minor_Stealth_Heroes>Yes</See_Minor_Stealth_Heroes>
+            <See_Major_Stealth_Heroes>Yes</See_Major_Stealth_Heroes>
+         </System_Spy_Ability> 
+         <Neutralize_Hero_Ability Name="Aris_Boch_Neutralize_Hero">
+            <Cost_Mod_By_Base_Level>0.0,0.0, 5.0,1.0</Cost_Mod_By_Base_Level>
+            <Cost_Mod_By_Previous_Neutralizations>0.0,0.0, 1000.0,750.0</Cost_Mod_By_Previous_Neutralizations>
+            <Cost_Mod_By_Planetary_Corruption_Level>0.0,0.0, 1.0,0.25</Cost_Mod_By_Planetary_Corruption_Level>
+            <General_Minor_Hero_Cost_Mod>1.5</General_Minor_Hero_Cost_Mod>
+            <General_Major_Hero_Cost_Mod>1.5</General_Major_Hero_Cost_Mod>
+            <Owner_Respawn_Time_In_Secs>120.0, 150.0</Owner_Respawn_Time_In_Secs>
+            <Target_Respawn_Time_In_Secs>240.0, 300.0</Target_Respawn_Time_In_Secs>
+            <Can_Neutralize_Minor_Heroes>Yes</Can_Neutralize_Minor_Heroes>
+            <Can_Neutralize_Major_Heroes>Yes</Can_Neutralize_Major_Heroes>
+         </Neutralize_Hero_Ability>
+      </Abilities> 
+   </HeroUnit>
+   
+   <MiscObject Name="Tacluchnatagamuntoron">
+      <Text_ID>TEXT_ABILITY_TAC</Text_ID>                   
+      <Encyclopedia_Text>TEXT_DESCRIPTION_GC_TAC</Encyclopedia_Text>
+      <Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_TURRET</Encyclopedia_Unit_Class>
+      <Icon_Name>GOAULD_GROUND_WEAPON_TAC.TGA</Icon_Name>
+      <Land_Model_Name>Goauld_Land_Weapon_Shock_Grenade.ALO</Land_Model_Name>
+      <Scale_Factor>1.0</Scale_Factor>
+      <Behavior>SELECTABLE</Behavior>
+      <LandBehavior>DAMAGE_TRACKING, HIDE_WHEN_FOGGED, REVEAL, UNIT_AI</LandBehavior>
+      <Multisample_FOW_Check>Yes</Multisample_FOW_Check>
+      <Land_FOW_Reveal_Range>80.0</Land_FOW_Reveal_Range>
+      <Targeting_Max_Attack_Distance>200.0</Targeting_Max_Attack_Distance>
+      <Is_Visible_On_Radar>No</Is_Visible_On_Radar>
+      <Is_Decoration>No</Is_Decoration>
+      <Remove_Upon_Death>Yes</Remove_Upon_Death>
+      <Death_Explosions>Projectile_Dirt_Collide</Death_Explosions>
+      <SFXEvent_Fire>Weapon_Tac_Laser_Goauld</SFXEvent_Fire>
+      <Tactical_Health>1</Tactical_Health>
+      <Ranged_Target_Z_Adjust>0.5</Ranged_Target_Z_Adjust>
+      <Loop_Idle_Anim_00>No</Loop_Idle_Anim_00>
+      <Space_Layer> Land </Space_Layer>
+      <UnitCollisionClass> Infantry </UnitCollisionClass>
+      <CanCellStack>yes</CanCellStack>
+      <Mass>1.0</Mass>
+      <Mouse_Collide_Override_Sphere_Radius>1</Mouse_Collide_Override_Sphere_Radius>
+      <Collidable_By_Projectile_Living>Yes</Collidable_By_Projectile_Living>
+      <CategoryMask>Infantry</CategoryMask>
+      <IsDeathCloneObstacle>Yes</IsDeathCloneObstacle>
+      <Avoidance_Disabled>Yes</Avoidance_Disabled>
+      <Influences_Capture_Point> False </Influences_Capture_Point>
+      <Not_Really_Selectable>True</Not_Really_Selectable>
+      <HardPoints>
+         HP_TAC_1    
+      </HardPoints>     
+   </MiscObject>
+   
+   <!-- Company Information -->
+   <HeroCompany Name="Han_Solo_Team">
+      <Variant_Of_Existing_Type>Template_Ground_Hero_Company</Variant_Of_Existing_Type>
+      <Text_ID>TEXT_GOAULD_SPACE_HERO_ARIS_BOCH</Text_ID>
+      <Encyclopedia_Text>TEXT_DESCRIPTION_GOAULD_SK_ARIS_BOCH_SPACE</Encyclopedia_Text>
+      <Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_ARIS_BOCH_TELTAK</Encyclopedia_Unit_Class>
+      <Icon_Name>GOAULD_SPACE_HERO_ARISBOCH.TGA</Icon_Name>
+      <Affiliation>Rebel</Affiliation>
+      <Company_Transport_Unit>Millennium_Falcon</Company_Transport_Unit>
+      <Company_Units>Han_Solo</Company_Units>
+      <Is_Stealth_Company>Yes</Is_Stealth_Company>
+      <Score_Cost_Credits>10000</Score_Cost_Credits>
+      <SFXEvent_Build_Started>Unit_Select_ABoch</SFXEvent_Build_Started>
+      <SFXEvent_Build_Complete>Unit_Select_ABoch</SFXEvent_Build_Complete>
+      <SFXEvent_Hero_Respawned>Unit_Select_ABoch</SFXEvent_Hero_Respawned>
+      <SFXEvent_Fleet_Move>Unit_Move_ABoch</SFXEvent_Fleet_Move>
+      <CategoryMask>LandHero | SpaceHero</CategoryMask>
+      <Unit_Abilities_Data SubObjectList="No"> </Unit_Abilities_Data>
+  </HeroCompany>
+  
+  <HeroCompany Name="Han_Solo_Team_Land_MP">
+    <Variant_Of_Existing_Type>Han_Solo_Team</Variant_Of_Existing_Type>
+    <Tactical_Build_Cost_Multiplayer>1600</Tactical_Build_Cost_Multiplayer>
+    <Tactical_Build_Time_Seconds>15</Tactical_Build_Time_Seconds>
+    <Tactical_Build_Prerequisites>RC_Level_Two_Tech_Upgrade</Tactical_Build_Prerequisites>
+    <Tactical_Production_Queue>Tactical_Units</Tactical_Production_Queue>
+    <Build_Limit_Current_Per_Player>1</Build_Limit_Current_Per_Player>
+    <Is_Stealth_Company>No</Is_Stealth_Company>
+    <Tech_Level>99</Tech_Level>
+  </HeroCompany>
+  
+  
+   
+   <!--Projectile Information Boch-->
+   <Projectile Name="Proj_Goauld_Hero_Aris_Boch_Land">
+      <Variant_Of_Existing_Type>Proj_Goauld_TER</Variant_Of_Existing_Type>
+      <Damage_Type>Damage_Anti_Infantry</Damage_Type>
+      <Projectile_Damage>50.0</Projectile_Damage>
+      <Projectile_Types>Proj_Goauld_Hero_Aris_Boch_Land, Proj_Goauld_Hero_Aris_Boch_Land_Stun</Projectile_Types>
+      <Projectile_Fire_Recharge_Seconds>1</Projectile_Fire_Recharge_Seconds>
+      <Projectile_Fire_Pulse_Count>1</Projectile_Fire_Pulse_Count>
+      <Projectile_Fire_Pulse_Delay_Seconds>1</Projectile_Fire_Pulse_Delay_Seconds>
+   </Projectile>   
+   <Projectile Name="Proj_Goauld_Hero_Aris_Boch_Land_Stun">
+      <Variant_Of_Existing_Type>Proj_Goauld_TER_Stun</Variant_Of_Existing_Type>
+      <Damage_Type>Damage_Normal</Damage_Type>
+      <Projectile_Damage>1.0</Projectile_Damage>
+      <Projectile_Types>Proj_Goauld_Hero_Aris_Boch_Land, Proj_Goauld_Hero_Aris_Boch_Land_Stun</Projectile_Types>
+      <Projectile_Fire_Recharge_Seconds>1</Projectile_Fire_Recharge_Seconds>
+      <Projectile_Fire_Pulse_Count>1</Projectile_Fire_Pulse_Count>
+      <Projectile_Fire_Pulse_Delay_Seconds>1</Projectile_Fire_Pulse_Delay_Seconds>
+      <Projectile_Stun_On_Detonation>yes</Projectile_Stun_On_Detonation>
+      <Projectile_Stun_Duration_Frames>300</Projectile_Stun_Duration_Frames>
+      <Projectile_Stun_Radius>18</Projectile_Stun_Radius>
+      <Projectile_Stun_Spawn_Effect>Particle_Stunned_Units_Ground</Projectile_Stun_Spawn_Effect>
+      <Projectile_Stun_Victims_Category_Mask> Vehicle | Infantry </Projectile_Stun_Victims_Category_Mask>
+   </Projectile>   
+   <Projectile Name="Proj_Boch_Tac">
+      <Variant_Of_Existing_Type>Proj_Goauld_TAC</Variant_Of_Existing_Type>
+      <Damage_Type>Damage_Anti_Infantry</Damage_Type>
+      <Projectile_Damage>14.4</Projectile_Damage> 
+   </Projectile>
+  
+</UniqueUnits>

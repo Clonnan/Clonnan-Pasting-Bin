@@ -1,0 +1,107 @@
+<?xml version="1.0"?>
+<Infantry_Data>
+
+   <GroundInfantry Name="Goauld_Priest">
+      <Variant_Of_Existing_Type>Template_Ground_Infantry_Single</Variant_Of_Existing_Type>
+      <Text_ID>TEXT_GOAULD_GROUND_UNIT_PRIEST</Text_ID>
+      <Encyclopedia_Text>TEXT_DESCRIPTION_GOAULD_PRIEST_GROUND</Encyclopedia_Text>
+      <Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_TAURI_SANITAETER</Encyclopedia_Unit_Class>
+      <Encyclopedia_Good_Against>Destroyer_Droid Tauri_Mobile_MG Dark_Trooper_PhaseIII</Encyclopedia_Good_Against>
+      <Encyclopedia_Vulnerable_To>Underworld_Merc Tauri_F302_Land Empire_Anti_Infantry_Turret</Encyclopedia_Vulnerable_To>
+      <Icon_Name>GOAULD_GROUND_UNIT_PRIEST.TGA</Icon_Name>
+      <Land_Model_Name>Goauld_Land_Unit_Priest.ALO</Land_Model_Name>
+      <Land_Model_Anim_Override_Name>Goauld_Land_Unit_Priest.ALO</Land_Model_Anim_Override_Name>
+      <Scale_Factor>1.258</Scale_Factor>
+      <Affiliation>Rebel</Affiliation>
+      <Tactical_Health>200</Tactical_Health>
+      <AI_Combat_Power>50</AI_Combat_Power>
+      <Targeting_Priority_Set>SG_Infantry_AntiInfantry</Targeting_Priority_Set>
+      <Movement_Animation_Speed> 0.8 </Movement_Animation_Speed>
+      <Projectile_Types>Proj_Goauld_Priest_Stick</Projectile_Types>
+      <Projectile_Fire_Recharge_Seconds>1.5</Projectile_Fire_Recharge_Seconds>
+      <Projectile_Fire_Pulse_Count>1</Projectile_Fire_Pulse_Count>
+      <Projectile_Fire_Pulse_Delay_Seconds>1.0</Projectile_Fire_Pulse_Delay_Seconds>
+      <Projectile_Appearance_Delay_Frames>20</Projectile_Appearance_Delay_Frames>
+      <Targeting_Max_Attack_Distance>5.0</Targeting_Max_Attack_Distance>
+      <Custom_Hard_XExtent>0.7</Custom_Hard_XExtent>
+      <Custom_Hard_YExtent>0.7</Custom_Hard_YExtent>
+      <FormationOrder>6</FormationOrder>
+      <SFXEvent_Select>Unit_Select_Priest</SFXEvent_Select>
+		<SFXEvent_Move>Unit_Move_Priest</SFXEvent_Move>
+		<SFXEvent_Attack>Unit_Attack_Priest</SFXEvent_Attack>
+      <Abilities SubObjectList="Yes">
+         <Force_Healing_Ability Name="Goauld_Priest_Ranged_Healing">
+            <Activation_Style>Ground_Automatic</Activation_Style>
+            <Heal_Range>150.0</Heal_Range>
+            <Heal_Amount> 20.0 </Heal_Amount>
+            <Heal_Percent> 0.02 </Heal_Percent>
+            <Heal_Interval_In_Secs>1.0</Heal_Interval_In_Secs>
+            <Single_Target_Heal>Yes</Single_Target_Heal>
+            <Heal_Range_Blob_Material>Reinforcement_Point_Radius_Overlay</Heal_Range_Blob_Material>
+            <Applicable_Unit_Categories>Infantry | LandHero </Applicable_Unit_Categories>
+            <Applicable_Unit_Types />
+            <SFXEvent_Target_Affected></SFXEvent_Target_Affected>
+            <Target_Particle_Effect>Unit_Healed_Particles</Target_Particle_Effect>
+				<Target_Particle_Bone_Name>root</Target_Particle_Bone_Name>
+				<Target_Light_Effect_Type>Smooth_Pulse</Target_Light_Effect_Type>
+				<Target_Light_Effect_Color>1.2, 1.2, 2.0</Target_Light_Effect_Color>
+				<Target_Light_Effect_Color2 />
+				<Target_Light_Effect_Duration>0.6</Target_Light_Effect_Duration>
+				<Target_Light_Effect_Pulse_Count>1</Target_Light_Effect_Pulse_Count>
+         </Force_Healing_Ability>
+      </Abilities>
+   </GroundInfantry>
+
+
+   <!-- COMPANY INFO -->
+   <GroundCompany Name="Goauld_Priest_Company">
+      <Variant_Of_Existing_Type>Template_Ground_Company</Variant_Of_Existing_Type>
+      <Text_ID>TEXT_GOAULD_GROUND_UNIT_PRIEST</Text_ID>
+      <Encyclopedia_Text>TEXT_DESCRIPTION_GOAULD_PRIEST_GROUND</Encyclopedia_Text>
+      <Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_TAURI_SANITAETER</Encyclopedia_Unit_Class>
+      <Encyclopedia_Good_Against>Destroyer_Droid Tauri_Mobile_MG Dark_Trooper_PhaseIII</Encyclopedia_Good_Against>
+      <Encyclopedia_Vulnerable_To>Underworld_Merc Tauri_F302_Land Empire_Anti_Infantry_Turret</Encyclopedia_Vulnerable_To>
+      <Icon_Name>GOAULD_GROUND_UNIT_PRIEST.TGA</Icon_Name>
+      <Affiliation>Rebel</Affiliation>
+      <Damage>15</Damage>
+      <Build_Cost_Credits>1000</Build_Cost_Credits>
+      <Build_Time_Seconds>90</Build_Time_Seconds>
+      <FormationOrder>6</FormationOrder>
+      <Company_Transport_Unit>Alliance_Shuttle</Company_Transport_Unit>
+      <Company_Units>Goauld_Priest</Company_Units>
+      <Tactical_Build_Cost_Multiplayer>700</Tactical_Build_Cost_Multiplayer>
+      <Tactical_Build_Time_Seconds>9</Tactical_Build_Time_Seconds>
+      <Required_Ground_Base_Level>1</Required_Ground_Base_Level>
+      <Required_Special_Structures>Ground_Infiltrator_Facility</Required_Special_Structures>
+      <Tech_Level>0</Tech_Level>
+      <Unit_Abilities_Data SubObjectList="Yes"> </Unit_Abilities_Data>
+   </GroundCompany>
+
+
+   <Projectile Name="Proj_Goauld_Priest_Stick"> <!--Extremely powerful stickOnHead attack :D-->
+      <Text_ID>TEXT_NONE</Text_ID>
+      <Land_Model_Name>W_LASER_INVISIBLE.ALO</Land_Model_Name>
+      <Damage_Type>Damage_Anti_Infantry</Damage_Type>
+      <Scale_Factor>1.0</Scale_Factor>
+      <Max_Speed>12.0</Max_Speed>
+      <Max_Rate_Of_Turn>0.0</Max_Rate_Of_Turn>
+      <Behavior>PROJECTILE, HIDE_WHEN_FOGGED</Behavior>
+      <Projectile_Category>DEFAULT</Projectile_Category>
+      <Projectile_Max_Flight_Distance>35.0</Projectile_Max_Flight_Distance>
+      <Projectile_Damage>0.0</Projectile_Damage>
+      <Projectile_Blast_Area_Range>3.0</Projectile_Blast_Area_Range>
+      <Projectile_Blast_Area_Damage>20.0</Projectile_Blast_Area_Damage>
+      <Max_Secs_For_AE_Delayed_Damage>0</Max_Secs_For_AE_Delayed_Damage>
+      <Projectile_Does_Shield_Damage>No</Projectile_Does_Shield_Damage>
+      <Projectile_Does_Energy_Damage>No</Projectile_Does_Energy_Damage>
+      <Projectile_Does_Hitpoint_Damage>Yes</Projectile_Does_Hitpoint_Damage>
+      <Projectile_Energy_Per_Shot>0</Projectile_Energy_Per_Shot>
+      <Projectile_Object_Detonation_Particle />
+      <Projectile_Ground_Detonation_Particle />
+      <Projectile_Lifetime_Detonation_Particle />
+      <Projectile_Absorbed_By_Shields_Particle>Projectile_Shield_Absorb_Small</Projectile_Absorbed_By_Shields_Particle>
+      <AI_Combat_Power>100</AI_Combat_Power>
+   </Projectile>
+
+
+</Infantry_Data>

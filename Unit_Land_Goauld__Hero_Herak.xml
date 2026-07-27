@@ -1,0 +1,249 @@
+<?xml version="1.0"?>
+<UniqueUnits>
+
+   <HeroUnit Name="Kyle_Katarn">
+      <Variant_Of_Existing_Type>Template_Ground_Infantry_Single_Hero_Goauld</Variant_Of_Existing_Type>
+      <Text_ID>TEXT_GOAULD_GROUND_HERO_HERAK</Text_ID>
+      <Encyclopedia_Text>TEXT_DESCRIPTION_GOAULD_HERAK_GROUND</Encyclopedia_Text>
+      <Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_HERAK_GROUND</Encyclopedia_Unit_Class>
+      <Encyclopedia_Good_Against>Underworld_Saboteur Underworld_Merc Stormtrooper</Encyclopedia_Good_Against>
+      <Encyclopedia_Vulnerable_To>MZ8_Pulse_Cannon_Tank Tauri_F302_Land Empire_Anti_Infantry_Turret</Encyclopedia_Vulnerable_To>
+      <Icon_Name>GOAULD_SPACE_HERO_HERAK.TGA</Icon_Name>
+      <Land_Model_Name>Goauld_Land_Hero_Herak.ALO</Land_Model_Name>
+      <Land_Model_Anim_Override_Name>Goauld_Land_Hero_Herak.ALO</Land_Model_Anim_Override_Name>
+      <LandBehavior>WALK_LOCOMOTOR, ABILITY_COUNTDOWN, DAMAGE_TRACKING, GARRISON_UNIT, HIDE_WHEN_FOGGED, IDLE, REVEAL, SELECTABLE, STUNNABLE, SURFACE_FX, TARGETING, UNIT_AI, WEAPON</LandBehavior>
+      <Affiliation>Rebel</Affiliation>
+      <Tactical_Health>850</Tactical_Health>
+      <AI_Combat_Power>120</AI_Combat_Power>
+      <Neutralization_Cost>1200.0</Neutralization_Cost>
+      <Projectile_Types>Proj_Goauld_Hero_Herak_Land</Projectile_Types>
+      <Projectile_Fire_Recharge_Seconds>1.0</Projectile_Fire_Recharge_Seconds>
+      <Projectile_Fire_Pulse_Count>5</Projectile_Fire_Pulse_Count>
+      <Projectile_Fire_Pulse_Delay_Seconds>0.8</Projectile_Fire_Pulse_Delay_Seconds>
+      <Targeting_Priority_Set>SG_Infantry_AntiInfantry</Targeting_Priority_Set>
+
+      <Damage>71</Damage>
+      <SFXEvent_Attack>Unit_Attack_Herak</SFXEvent_Attack>
+      <SFXEvent_Guard></SFXEvent_Guard>
+      <SFXEvent_Health_Critical_Warning></SFXEvent_Health_Critical_Warning>
+      <SFXEvent_Health_Low_Warning></SFXEvent_Health_Low_Warning>
+      <SFXEvent_Move>Unit_Move_Herak</SFXEvent_Move>
+      <SFXEvent_Select>Unit_Select_Herak</SFXEvent_Select>
+      <SFXEvent_Stop></SFXEvent_Stop>
+      <SFXEvent_Build_Started></SFXEvent_Build_Started>
+      <SFXEvent_Build_Cancelled></SFXEvent_Build_Cancelled>
+      <SFXEvent_Build_Complete>Unit_Spawn_Herak</SFXEvent_Build_Complete>
+      <Death_SFXEvent_Start_Die></Death_SFXEvent_Start_Die>
+      <SFXEvent_Hero_Respawned>Unit_Spawn_Herak</SFXEvent_Hero_Respawned>
+      <Ranking_In_Category> 3 </Ranking_In_Category>
+      <Attach_To_Flagship_During_Space_Battle>No</Attach_To_Flagship_During_Space_Battle>
+      <Stay_In_Transport_During_Ground_Battle>No</Stay_In_Transport_During_Ground_Battle>
+      <Presence_Induced_Animations>
+         Attention,
+            Luke_Skywalker_Jedi,
+            Yoda,
+            Commander_Akbar
+      </Presence_Induced_Animations>
+      <Death_Clone>Damage_Hand_Device, Kyle_Katarn_Hand_Device_Death_Clone</Death_Clone>
+      <Unit_Abilities_Data SubObjectList="Yes">
+         <Unit_Ability>
+            <Type>STICKY_BOMB</Type>
+            <Alternate_Name_Text>TEXT_ABILITY_GOAULD_GROUND_HERAK_SCHOCKGRANATE</Alternate_Name_Text>
+            <Alternate_Description_Text>TEXT_DESCRIPTION_ABILITY_HERAK_GROUND_SCHOCKGRANATE</Alternate_Description_Text>
+            <Alternate_Icon_Name>I_SA_SHOCK_GRENADE.TGA</Alternate_Icon_Name>
+            <Recharge_Seconds>35.0f</Recharge_Seconds>
+            <GUI_Activated_Ability_Name>Kyle_Katarn_Grenade_Attack</GUI_Activated_Ability_Name>
+            <SFXEvent_Target_Ability>Effect_Tauri_Grenade_Throw</SFXEvent_Target_Ability>
+            <Supports_Autofire>True</Supports_Autofire>
+         </Unit_Ability>
+         <Unit_Ability>
+            <Type>POWER_TO_WEAPONS</Type>
+            <Alternate_Name_Text>TEXT_ABILITY_RAPID_FIRE_MODE</Alternate_Name_Text>
+            <Alternate_Description_Text>TEXT_DESCRIPTION_ABILITY_RAPID_FIRE_HERAK_GROUND</Alternate_Description_Text>
+            <Alternate_Icon_Name>I_SA_STAFF_WEAPON.TGA</Alternate_Icon_Name>
+            <Mod_Multiplier>WEAPON_DELAY_MULTIPLIER,	0.6f</Mod_Multiplier>
+            <Mod_Multiplier>CAUSE_DAMAGE_MULTIPLIER ,	0.85f</Mod_Multiplier>
+            <Mod_Multiplier>SPEED_MULTIPLIER,      0.8f</Mod_Multiplier>
+            <Recharge_Seconds>60</Recharge_Seconds>
+            <Expiration_Seconds>8</Expiration_Seconds>
+            <SFXEvent_GUI_Unit_Ability_Activated/>
+            <SFXEvent_GUI_Unit_Ability_Deactivated />
+         </Unit_Ability>
+      </Unit_Abilities_Data>
+      <Abilities SubObjectList="Yes">
+         <Grenade_Attack_Ability Name="Kyle_Katarn_Grenade_Attack">
+            <Activation_Style>User_Input</Activation_Style>
+            <Activation_Min_Range>5.0</Activation_Min_Range>
+            <Activation_Max_Range>100.0</Activation_Max_Range>
+            <Requires_Direct_Player_Command> No </Requires_Direct_Player_Command>
+            <Grenade_Type>Proj_Goauld_Land_Hero_Herak_Shock_Grenade</Grenade_Type>
+            <Grenade_Toss_Anim>BOMBTOSS</Grenade_Toss_Anim>
+            <Grenade_Spawn_Frame>33.0</Grenade_Spawn_Frame>
+            <Grenade_Spawn_Bone>MuzzleB_00</Grenade_Spawn_Bone>
+            <Grenade_Explode_Timer_In_Secs>2.1</Grenade_Explode_Timer_In_Secs>
+            <Activation_Chance>0,0.0, 1,1.0, 5,1.0, 500,1.0</Activation_Chance>
+            <Applicable_Unit_Categories>Infantry | LandHero</Applicable_Unit_Categories>
+            <Applicable_Unit_Types />
+            <SFXEvent_Activate></SFXEvent_Activate>
+         </Grenade_Attack_Ability>
+         <Force_Healing_Ability Name="Goauld_Infantry_Auto_Heal">
+            <Activation_Style>Ground_Automatic</Activation_Style>
+            <Heal_Percent>0.01</Heal_Percent>
+            <Heal_Interval_In_Secs>2.0</Heal_Interval_In_Secs>
+            <Single_Target_Heal>No</Single_Target_Heal>
+            <Owner_Particle_Bone_Name>ROOT</Owner_Particle_Bone_Name>
+            <Owner_Light_Effect_Duration>0.1</Owner_Light_Effect_Duration>
+            <Owner_Light_Effect_Pulse_Count>1</Owner_Light_Effect_Pulse_Count>
+         </Force_Healing_Ability>
+      </Abilities>
+
+      <Unique_Space_Unit>Goauld_Hero_Herak_Fighter</Unique_Space_Unit>
+
+   </HeroUnit>
+
+   <GroundInfantry Name="Kyle_Katarn_Hand_Device_Death_Clone">
+      <Variant_Of_Existing_Type>Kyle_Katarn</Variant_Of_Existing_Type>
+      <Specific_Death_Anim_Type>FW_DIE</Specific_Death_Anim_Type>
+   </GroundInfantry>
+
+
+   <HeroCompany Name="Katarn_Team">
+      <Variant_Of_Existing_Type>Template_Ground_Hero_Company</Variant_Of_Existing_Type>
+      <Text_ID>TEXT_GOAULD_GROUND_HERO_HERAK</Text_ID>
+      <Encyclopedia_Text>TEXT_DESCRIPTION_GOAULD_HERAK_GROUND</Encyclopedia_Text>
+      <Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_HERAK_GROUND</Encyclopedia_Unit_Class>
+      <Icon_Name>GOAULD_SPACE_HERO_HERAK.TGA</Icon_Name>
+      <Affiliation>Rebel</Affiliation>
+      <Ranking_In_Category>3</Ranking_In_Category>
+      <Company_Transport_Unit>Alliance_Shuttle</Company_Transport_Unit>
+      <Company_Units>Kyle_Katarn</Company_Units>
+      <SFXEvent_Build_Started>Unit_Select_Herak</SFXEvent_Build_Started>
+      <SFXEvent_Build_Complete>Unit_Spawn_Herak</SFXEvent_Build_Complete>
+      <SFXEvent_Fleet_Move>Unit_Move_Herak</SFXEvent_Fleet_Move>
+      <SFXEvent_Hero_Respawned>Unit_Spawn_Herak</SFXEvent_Hero_Respawned>
+      <Tactical_Build_Cost_Multiplayer>1200</Tactical_Build_Cost_Multiplayer>
+      <Tactical_Build_Time_Seconds>12</Tactical_Build_Time_Seconds>
+      <CategoryMask> LandHero | SpaceHero </CategoryMask>
+      <Unit_Abilities_Data SubObjectList="Yes">
+         <Unit_Ability>
+            <Type>STICKY_BOMB</Type>
+            <Alternate_Name_Text>TEXT_ABILITY_GOAULD_GROUND_HERAK_SCHOCKGRANATE</Alternate_Name_Text>
+            <Alternate_Description_Text>TEXT_DESCRIPTION_ABILITY_HERAK_GROUND_SCHOCKGRANATE</Alternate_Description_Text>
+            <Alternate_Icon_Name>I_SA_SHOCK_GRENADE.TGA</Alternate_Icon_Name>
+            <Recharge_Seconds>35.0f</Recharge_Seconds>
+            <GUI_Activated_Ability_Name>Kyle_Katarn_Grenade_Attack</GUI_Activated_Ability_Name>
+            <SFXEvent_Target_Ability>Effect_Tauri_Grenade_Throw</SFXEvent_Target_Ability>
+            <Supports_Autofire>True</Supports_Autofire>
+         </Unit_Ability>
+         <Unit_Ability>
+            <Type>POWER_TO_WEAPONS</Type>
+            <Alternate_Name_Text>TEXT_ABILITY_RAPID_FIRE_MODE</Alternate_Name_Text>
+            <Alternate_Description_Text>TEXT_DESCRIPTION_ABILITY_RAPID_FIRE_HERAK_GROUND</Alternate_Description_Text>
+            <Alternate_Icon_Name>I_SA_STAFF_WEAPON.TGA</Alternate_Icon_Name>
+            <Mod_Multiplier>WEAPON_DELAY_MULTIPLIER,	0.6f</Mod_Multiplier>
+            <Mod_Multiplier>CAUSE_DAMAGE_MULTIPLIER ,	0.85f</Mod_Multiplier>
+            <Mod_Multiplier>SPEED_MULTIPLIER,      0.8f</Mod_Multiplier>
+            <Recharge_Seconds>60</Recharge_Seconds>
+            <Expiration_Seconds>8</Expiration_Seconds>
+            <SFXEvent_GUI_Unit_Ability_Activated/>
+            <SFXEvent_GUI_Unit_Ability_Deactivated />
+         </Unit_Ability>
+         <Unit_Ability>
+            <Type>HARMONIC_BOMB</Type>
+            <Recharge_Seconds>40</Recharge_Seconds>
+            <Spawned_Object_Type>Proj_Goauld_Herak_Stun_Blast</Spawned_Object_Type>
+            <Bomb_Countdown_Seconds>1.5</Bomb_Countdown_Seconds>
+            <SFXEvent_GUI_Unit_Ability_Activated/>
+            <Supports_Autofire>True</Supports_Autofire>
+            <Alternate_Name_Text>TEXT_ABILITY_GOAULD_SPACE_HERAK_STUN</Alternate_Name_Text>
+            <Alternate_Description_Text>TEXT_DESCRIPTION_ABILITY_SPACE_HERAK_STUN</Alternate_Description_Text>
+            <Alternate_Icon_Name>I_SA_STUN_BOMB.TGA</Alternate_Icon_Name>
+         </Unit_Ability>
+         <!--Unit_Ability>
+            <Type>HUNT</Type>
+            <Alternate_Name_Text>TEXT_ABILITY_GOAULD_SPACE_HERAK_SK_GEGNER_JAGEN</Alternate_Name_Text>
+            <Alternate_Description_Text>TEXT_DESCRIPTION_ABILITY_SPACE_HERAK_SK_GEGNER_JAGEN</Alternate_Description_Text>
+         </Unit_Ability-->
+         <Unit_Ability>
+            <Type>REPLENISH_WINGMEN</Type>
+            <Alternate_Description_Text>TEXT_DESCRIPTION_ABILITY_REPLENISH_WINGMEN_HERAK_SPACE</Alternate_Description_Text>
+            <Alternate_Icon_Name>I_SA_REPLENISH_WINGMEN.TGA</Alternate_Icon_Name>
+            <Particle_Effect>Replenish_Wingmen_Particle_Effect</Particle_Effect>
+            <Recharge_Seconds>60</Recharge_Seconds>
+            <Active_By_Default>Yes</Active_By_Default>
+            <SFXEvent_GUI_Unit_Ability_Activated></SFXEvent_GUI_Unit_Ability_Activated>
+            <Supports_Autofire>True</Supports_Autofire>
+         </Unit_Ability>
+      </Unit_Abilities_Data>
+   </HeroCompany>
+
+   <HeroCompany Name="Katarn_Team_Space_MP">
+      <Variant_Of_Existing_Type>Katarn_Team</Variant_Of_Existing_Type>
+      <Text_ID>TEXT_GOAULD_SPACE_HERO_HERAK</Text_ID>
+      <Encyclopedia_Text>TEXT_DESCRIPTION_GOAULD_SK_HERAK_SPACE</Encyclopedia_Text>
+      <Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_HERAK_ANUBIS_GLEITER</Encyclopedia_Unit_Class>
+      <Encyclopedia_Good_Against> TIE_Fighter TIE_Bomber </Encyclopedia_Good_Against>
+      <Encyclopedia_Vulnerable_To> Tartan_Patrol_Cruiser </Encyclopedia_Vulnerable_To>
+      <Tactical_Build_Cost_Multiplayer>1800</Tactical_Build_Cost_Multiplayer>
+      <Tactical_Build_Time_Seconds>20</Tactical_Build_Time_Seconds>
+      <Tech_Level>99</Tech_Level>
+      <Unit_Abilities_Data SubObjectList="Yes">
+         <Unit_Ability>
+            <Type>HARMONIC_BOMB</Type>
+            <Alternate_Name_Text>TEXT_ABILITY_GOAULD_SPACE_HERAK_STUN</Alternate_Name_Text>
+            <Alternate_Description_Text>TEXT_DESCRIPTION_ABILITY_SPACE_HERAK_STUN</Alternate_Description_Text>
+            <Alternate_Icon_Name>I_SA_STUN_BOMB.TGA</Alternate_Icon_Name>
+            <Recharge_Seconds>40</Recharge_Seconds>
+            <Spawned_Object_Type>Proj_Goauld_Herak_Stun_Blast</Spawned_Object_Type>
+            <Bomb_Countdown_Seconds>1.5</Bomb_Countdown_Seconds>
+            <SFXEvent_GUI_Unit_Ability_Activated/>
+            <Supports_Autofire>True</Supports_Autofire>
+         </Unit_Ability>
+         <Unit_Ability>
+            <Type>REPLENISH_WINGMEN</Type>
+            <Alternate_Description_Text>TEXT_DESCRIPTION_ABILITY_REPLENISH_WINGMEN_HERAK_SPACE</Alternate_Description_Text>
+            <Alternate_Icon_Name>I_SA_REPLENISH_WINGMEN.TGA</Alternate_Icon_Name>
+            <Supports_Autofire>True</Supports_Autofire>
+         </Unit_Ability>
+      </Unit_Abilities_Data>
+   </HeroCompany>
+
+   <HeroCompany Name="Goauld_Hero_Herak_GC">
+      <Variant_Of_Existing_Type>Template_Ground_Hero_Company</Variant_Of_Existing_Type>
+      <Text_ID>TEXT_GOAULD_SPACE_HERO_HERAK</Text_ID>
+      <Encyclopedia_Text>TEXT_DESCRIPTION_GOAULD_GC_HERAK_SPACE</Encyclopedia_Text>
+      <Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_HERAK_SUPER_HATAK</Encyclopedia_Unit_Class>
+      <Icon_Name>GOAULD_SPACE_HERO_HERAK.TGA</Icon_Name>
+      <Affiliation>Rebel</Affiliation>
+      <Company_Transport_Unit>Alliance_Shuttle</Company_Transport_Unit>
+      <Space_Override_Population_Value>10</Space_Override_Population_Value>
+      <Company_Units>Goauld_Hero_Herak_Syslord_Land</Company_Units>
+      <Ranking_In_Category>3</Ranking_In_Category>
+      <Score_Cost_Credits>5000</Score_Cost_Credits>
+      <SFXEvent_Build_Started>Unit_Select_Herak</SFXEvent_Build_Started>
+      <SFXEvent_Build_Complete>Unit_Spawn_Herak</SFXEvent_Build_Complete>
+      <SFXEvent_Fleet_Move>Unit_Move_Herak</SFXEvent_Fleet_Move>
+      <SFXEvent_Hero_Respawned>Unit_Spawn_Herak</SFXEvent_Hero_Respawned>
+      <CategoryMask> LandHero | SpaceHero </CategoryMask>
+   </HeroCompany>
+   <HeroUnit Name="Goauld_Hero_Herak_Syslord_Land">
+      <Variant_Of_Existing_Type>Kyle_Katarn</Variant_Of_Existing_Type>
+      <Unique_Space_Unit>Goauld_Hero_Herak_Syslord_Space</Unique_Space_Unit>
+   </HeroUnit>
+
+   <!-- Projectile Information Goauld Jaffa -->
+   <Projectile Name="Proj_Goauld_Hero_Herak_Land">
+      <Variant_Of_Existing_Type>Proj_Goauld_Land_Staff_Weapon</Variant_Of_Existing_Type>
+      <Damage_Type>Damage_Normal</Damage_Type>
+      <Projectile_Damage>42.0</Projectile_Damage>
+   </Projectile>
+
+   <Projectile Name="Proj_Goauld_Land_Hero_Herak_Shock_Grenade">
+      <Variant_Of_Existing_Type>Proj_Goauld_Shock_Grenade</Variant_Of_Existing_Type>
+      <Projectile_Stun_On_Detonation>Yes</Projectile_Stun_On_Detonation>
+      <!-- If you adjust the duration here, do also adjust the Particle_Lifetime_Frames for "Particle_Stunned_Units_Ground" -->
+      <Projectile_Stun_Duration_Frames>300</Projectile_Stun_Duration_Frames>
+      <Projectile_Stun_Radius>35</Projectile_Stun_Radius>
+   </Projectile>
+
+</UniqueUnits>

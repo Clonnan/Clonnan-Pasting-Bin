@@ -1,0 +1,93 @@
+<?xml version="1.0"?>
+<MG_Malp_Data>
+
+    <!-- UNIT INFO -->
+    <GroundVehicle Name="MZ8_Pulse_Cannon_Tank">
+        <Variant_Of_Existing_Type>Template_Ground_Wheeled</Variant_Of_Existing_Type>
+        <Text_ID>TEXT_TAURI_GROUND_UNIT_MG_MALP</Text_ID>
+        <Encyclopedia_Text>TEXT_DESCRIPTION_TAURI_MG_MALP_GROUND</Encyclopedia_Text>
+        <Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_MG_MALP</Encyclopedia_Unit_Class>
+        <Encyclopedia_Good_Against> Rebel_Trooper Stormtrooper </Encyclopedia_Good_Against>
+        <Encyclopedia_Vulnerable_To> Goauld_Jackal_Guard Rebel_Anti_Vehicle_Turret Empire_Anti_Vehicle_Turret </Encyclopedia_Vulnerable_To>
+        <Icon_Name>TAURI_GROUND_UNIT_MG_MALP.TGA</Icon_Name>
+        <Land_Model_Name>Tauri_Land_Unit_MG_Malp.alo</Land_Model_Name>
+        <Radar_Icon_Name>I_RADAR_MG_MALP.TGA</Radar_Icon_Name>
+        <LandBehavior>WALK_LOCOMOTOR, AFFECTED_BY_SHIELD, DAMAGE_TRACKING, HIDE_WHEN_FOGGED, IDLE, POWERED, REVEAL, STUNNABLE, SURFACE_FX, TARGETING, TREAD_SCROLL, UNIT_AI, WIND_DISTURBANCE</LandBehavior>
+        <Affiliation>Underworld</Affiliation>
+        <Scale_Factor>0.65</Scale_Factor>
+        <Max_Speed>0.8</Max_Speed>
+        <Movement_Animation_Speed> 0.55 </Movement_Animation_Speed>
+
+        <Max_Rate_Of_Turn>12.0</Max_Rate_Of_Turn>
+        <Select_Box_Scale>52</Select_Box_Scale>
+        <Select_Box_Z_Adjust>3.0f</Select_Box_Z_Adjust>
+        <Damage>59</Damage>
+        <AI_Combat_Power>100</AI_Combat_Power>
+        <Score_Cost_Credits>400</Score_Cost_Credits>
+        <Tactical_Health>300</Tactical_Health>
+        <Blob_Shadow_Scale>40.0, 30.0</Blob_Shadow_Scale>
+        <Overall_Length>20.0</Overall_Length>
+        <Overall_Width>10.0</Overall_Width>
+        <HardPoints>
+         HP_MG_Malp_Turret
+        </HardPoints>
+        <Targeting_Priority_Set>SG_Vehicle_AntiInfantry</Targeting_Priority_Set>
+
+        <Death_Explosions>Large_Explosion_Land</Death_Explosions>
+
+        <SFXEvent_Turret_Rotating_Loop>Vehicle_Turret_Motor</SFXEvent_Turret_Rotating_Loop>
+        <SFXEvent_Engine_Idle_Loop>Unit_T2B_Idle_Engine_Loop</SFXEvent_Engine_Idle_Loop>
+        <SFXEvent_Engine_Moving_Loop>Unit_T2B_Moving_Engine_Loop</SFXEvent_Engine_Moving_Loop>
+        <!--Unit_Abilities_Data SubObjectList="Yes">
+         <Unit_Ability>
+            <Type>HUNT</Type>
+         </Unit_Ability>
+      </Unit_Abilities_Data-->
+      <!-- TEXT_ABILITY_TAURI_GROUND_MG_MALP_WAFFENBOOST
+      TEXT_DESCRIPTION_ABILITY_GROUND_MG_MALP_WAFFENBOOST-->
+    </GroundVehicle>
+
+    <GroundVehicle Name="MZ8_Pulse_Cannon_Tank_Captured">
+        <Variant_Of_Existing_Type>MZ8_Pulse_Cannon_Tank</Variant_Of_Existing_Type>
+    </GroundVehicle>
+
+
+    <!-- COMPANY INFO -->
+    <GroundCompany Name="MZ8_Pulse_Cannon_Tank_Company_No_Prereq">
+        <Variant_Of_Existing_Type>Template_Ground_Company</Variant_Of_Existing_Type>
+        <Text_ID>TEXT_TAURI_GROUND_UNIT_MG_MALP</Text_ID>
+        <Encyclopedia_Text>TEXT_DESCRIPTION_TAURI_MG_MALP_GROUND</Encyclopedia_Text>
+        <Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_MG_MALP</Encyclopedia_Unit_Class>
+        <Encyclopedia_Good_Against> Rebel_Trooper Stormtrooper </Encyclopedia_Good_Against>
+        <Encyclopedia_Vulnerable_To> Goauld_Jackal_Guard Rebel_Anti_Vehicle_Turret Empire_Anti_Vehicle_Turret </Encyclopedia_Vulnerable_To>
+        <Icon_Name>TAURI_GROUND_UNIT_MG_MALP.TGA</Icon_Name>
+        <Damage>59</Damage>
+        <Score_Cost_Credits>400</Score_Cost_Credits>
+        <Build_Cost_Credits>350</Build_Cost_Credits>
+        <Build_Time_Seconds>46</Build_Time_Seconds>
+        <Ship_Class>tank</Ship_Class>
+        <Company_Transport_Unit>Underworld_Vehicle_Transport</Company_Transport_Unit>
+        <Company_Units>MZ8_Pulse_Cannon_Tank</Company_Units>
+        <Tactical_Build_Cost_Multiplayer>700</Tactical_Build_Cost_Multiplayer>
+        <Tactical_Build_Time_Seconds>9</Tactical_Build_Time_Seconds>
+        <Required_Ground_Base_Level>1</Required_Ground_Base_Level>
+    </GroundCompany>
+
+    <GroundCompany Name="MZ8_Pulse_Cannon_Tank_Company">
+        <Variant_Of_Existing_Type>MZ8_Pulse_Cannon_Tank_Company_No_Prereq</Variant_Of_Existing_Type>
+        <Affiliation>Underworld</Affiliation>
+        <Tech_Level>2</Tech_Level>
+        <Required_Special_Structures>U_Ground_Vehicle_Factory</Required_Special_Structures>
+        <Tactical_Build_Prerequisites>UC_Level_Two_Tech_Upgrade</Tactical_Build_Prerequisites>
+    </GroundCompany>
+
+
+    <!-- PROJECTILE INFO -->
+    <Projectile Name="Proj_MG_Malp_Bullet">
+        <Variant_Of_Existing_Type>Proj_Tauri_MALP_MG</Variant_Of_Existing_Type>
+        <Damage_Type>Damage_Anti_Infantry</Damage_Type>
+        <Projectile_Damage>7.58</Projectile_Damage>
+    </Projectile>
+
+
+</MG_Malp_Data>

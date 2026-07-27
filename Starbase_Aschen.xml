@@ -1,0 +1,222 @@
+<?xml version="1.0"?>
+<Aschen_Space_Station>
+
+	<StarBase Name="Aschen_Starbase_GC1">
+		<Text_ID>TEXT_ASCHEN_SPACE_BUILDING_SPACE_STATION</Text_ID>
+		<Encyclopedia_Text>TEXT_DESCRIPTION_ASCHEN_GC_SPACE_STATION</Encyclopedia_Text>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_ASCHEN_SPACE_STATION</Encyclopedia_Unit_Class>
+		<GUI_Row> 0 </GUI_Row>
+		<Space_Model_Name>Aschen_Space_Building_Station.ALO</Space_Model_Name>
+		<Galactic_Model_Name>Aschen_Space_Building_Station.ALO</Galactic_Model_Name>
+		<Icon_Name>ASCHEN_SPACE_BUILDING_STATION.TGA</Icon_Name>
+		<Scale_Factor>1.0</Scale_Factor>
+		<Select_Box_Scale>1200</Select_Box_Scale>
+		<Select_Box_Z_Adjust>-50</Select_Box_Z_Adjust>
+		<Is_Dummy>No</Is_Dummy>   
+		<Affiliation>Aschen</Affiliation>
+		<AI_Combat_Power>3200</AI_Combat_Power>
+		<Size_Value>10</Size_Value>
+		<Tech_Level>0</Tech_Level>
+		<Base_Level>1</Base_Level>
+		<CategoryMask> Capital </CategoryMask>
+		<GUI_Bracket_Size>2</GUI_Bracket_Size>
+      <Damage>50</Damage>
+		<Reinforcement_Prevention_Radius> 2000 </Reinforcement_Prevention_Radius>
+		<Behavior>DUMMY_STAR_BASE, SELECTABLE, SHIELDED, POWERED</Behavior>
+		<SpaceBehavior> SPACE_OBSTACLE, POWERED, SHIELDED, SPAWN_SQUADRON, HIDE_WHEN_FOGGED, REVEAL, UNIT_AI, ION_STUN_EFFECT</SpaceBehavior>
+		<Multisample_FOW_Check>Yes</Multisample_FOW_Check>
+		<Starting_Spawned_Units_Tech_0>Aschen_Drone_Squadron, 4</Starting_Spawned_Units_Tech_0>
+		<Reserve_Spawned_Units_Tech_0>Aschen_Drone_Squadron, -1</Reserve_Spawned_Units_Tech_0>
+		<Starting_Spawned_Units_Tech_0>Aschen_Fighter_Squadron, 4</Starting_Spawned_Units_Tech_0>
+		<Reserve_Spawned_Units_Tech_0>Aschen_Fighter_Squadron, -1</Reserve_Spawned_Units_Tech_0>
+		<Spawned_Squadron_Delay_Seconds>20</Spawned_Squadron_Delay_Seconds>
+		<Shield_Points>4000</Shield_Points>
+		<Shield_Refresh_Rate>80</Shield_Refresh_Rate>
+		<Energy_Capacity>5000</Energy_Capacity>
+		<Energy_Refresh_Rate>1000</Energy_Refresh_Rate>
+    <Armor_Type> Armor_Station </Armor_Type>
+    <Shield_Armor_Type>Armor_Station</Shield_Armor_Type>  
+		<Collidable_By_Projectile_Living>Yes</Collidable_By_Projectile_Living>
+		<Death_Explosions>Huge_Explosion_Space</Death_Explosions>
+		<Dense_FOW_Reveal_Range_Multiplier>0.2</Dense_FOW_Reveal_Range_Multiplier>
+		<Space_FOW_Reveal_Range>2200.0</Space_FOW_Reveal_Range>
+		<Targeting_Max_Attack_Distance>1900.0</Targeting_Max_Attack_Distance>
+		<HardPoints>
+      HP_Aschen_Station_1,
+      HP_Aschen_Station_2,
+      HP_Aschen_Station_3,
+      HP_Aschen_Station_4,
+      HP_Aschen_Station_5,
+      HP_Aschen_Station_6,
+      HP_Aschen_Station_7,
+      HP_Aschen_Hangar,
+      HP_Aschen_SupplyDock_Dummy,
+      HP_Aschen_Sensor_Dummy
+		</HardPoints>
+		<Death_SFXEvent_Start_Die>Unit_Space_Station_Death_SFX</Death_SFXEvent_Start_Die>
+		<Death_Clone>Damage_Normal, Death_Clone_StarBase_Aschen</Death_Clone>
+      <SFXEvent_Select>Effect_Empty_Sound</SFXEvent_Select>
+      <SFXEvent_Hardpoint_Destroyed> HARD_POINT_DUMMY_ART,  Effect_Empty_Sound</SFXEvent_Hardpoint_Destroyed>
+      <SFXEvent_Hardpoint_Destroyed> HARD_POINT_ENABLE_SPECIAL_ABILITY, Effect_Empty_Sound</SFXEvent_Hardpoint_Destroyed>
+      <SFXEvent_Hardpoint_Destroyed> HARD_POINT_ENGINE,  Effect_Empty_Sound</SFXEvent_Hardpoint_Destroyed>
+      <SFXEvent_Hardpoint_Destroyed> HARD_POINT_FIGHTER_BAY, Effect_Empty_Sound</SFXEvent_Hardpoint_Destroyed>
+      <SFXEvent_Hardpoint_Destroyed> HARD_POINT_GRAVITY_WELL,  Effect_Empty_Sound</SFXEvent_Hardpoint_Destroyed>
+      <SFXEvent_Hardpoint_Destroyed> HARD_POINT_SHIELD_GENERATOR, Effect_Empty_Sound</SFXEvent_Hardpoint_Destroyed>
+      <SFXEvent_Hardpoint_Destroyed> HARD_POINT_TRACTOR_BEAM, Effect_Empty_Sound</SFXEvent_Hardpoint_Destroyed>
+      <SFXEvent_Hardpoint_Destroyed> HARD_POINT_WEAPON_ION_CANNON, Effect_Empty_Sound</SFXEvent_Hardpoint_Destroyed>
+      <SFXEvent_Hardpoint_Destroyed> HARD_POINT_WEAPON_LASER, Effect_Empty_Sound</SFXEvent_Hardpoint_Destroyed>
+      <SFXEvent_Hardpoint_Destroyed> HARD_POINT_WEAPON_MASS_DRIVER,  Effect_Empty_Sound</SFXEvent_Hardpoint_Destroyed>
+      <SFXEvent_Hardpoint_Destroyed> HARD_POINT_WEAPON_MISSILE,  Effect_Empty_Sound</SFXEvent_Hardpoint_Destroyed>
+      <SFXEvent_Hardpoint_Destroyed> HARD_POINT_WEAPON_SPECIAL,  Effect_Empty_Sound</SFXEvent_Hardpoint_Destroyed>
+      <SFXEvent_Hardpoint_Destroyed> HARD_POINT_WEAPON_TORPEDO,  Effect_Empty_Sound</SFXEvent_Hardpoint_Destroyed>
+		<Has_Space_Evaluator>True</Has_Space_Evaluator>
+		<Victory_Relevant>yes</Victory_Relevant>
+		<Custom_Soft_Footprint_Radius> 300 </Custom_Soft_Footprint_Radius>
+		<Space_Obstacle_Offset> 0 0 0 </Space_Obstacle_Offset>
+		<Space_Layer> StaticObject </Space_Layer>
+		<Is_Visible_On_Radar>Yes</Is_Visible_On_Radar>
+		<Visible_On_Radar_When_Fogged>true</Visible_On_Radar_When_Fogged>
+		<Radar_Icon_Size>0.12  0.12</Radar_Icon_Size>
+		<Radar_Icon_Name>i_radar_station1_p.tga</Radar_Icon_Name>
+		<Score_Cost_Credits>65000</Score_Cost_Credits>
+	</StarBase>
+
+  <StarBase Name="Death_Clone_StarBase_Aschen">
+    <Text_ID>TEXT_REBEL_STAR_BASE_1</Text_ID>
+    <Space_Model_Name>Aschen_Space_Building_Station_D.ALO</Space_Model_Name>
+    <Death_SFXEvent_Start_Die></Death_SFXEvent_Start_Die>
+    <Layer_Z_Adjust>0.0</Layer_Z_Adjust>
+    <CategoryMask> Capital </CategoryMask>
+    <Death_Persistence_Duration> 34 </Death_Persistence_Duration>
+    <Should_Death_Clone_Play_Idle> true </Should_Death_Clone_Play_Idle>
+  </StarBase>
+
+  <StarBase Name="Aschen_Starbase_Skirmish">
+		<Text_ID> TEXT_ASCHEN_SPACE_BUILDING_SPACE_STATION </Text_ID>
+    <Encyclopedia_Text>TEXT_DESCRIPTION_ASCHEN_SK_SPACE_STATION</Encyclopedia_Text>
+    <MP_Encyclopedia_Text>TEXT_DESCRIPTION_ASCHEN_SK_SPACE_STATION</MP_Encyclopedia_Text>
+    <Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_ASCHEN_SPACE_STATION</Encyclopedia_Unit_Class>
+    <Icon_Name>ASCHEN_SPACE_BUILDING_STATION.TGA</Icon_Name>
+		<Space_Model_Name>Aschen_Space_Building_Station.ALO</Space_Model_Name>
+		<Galactic_Model_Name>Aschen_Space_Building_Station.ALO</Galactic_Model_Name>
+		<Select_Box_Scale>1200</Select_Box_Scale>
+		<Select_Box_Z_Adjust>-50</Select_Box_Z_Adjust>
+		<GUI_Row> 0 </GUI_Row>
+		<Is_Dummy>No</Is_Dummy>
+		<Affiliation>Rebel, Empire, Neutral, Underworld, Asuran</Affiliation>
+		<AI_Combat_Power>6000</AI_Combat_Power>
+		<Size_Value>10</Size_Value>
+		<Tech_Level>0</Tech_Level>
+		<Base_Level>6</Base_Level>
+		<Prev_Level_Base />
+		<Next_Level_Base />
+		<CategoryMask> Capital </CategoryMask>
+		<Behavior>CAPTURE_POINT, DUMMY_STAR_BASE, SELECTABLE</Behavior>
+		<SpaceBehavior> SPACE_OBSTACLE, POWERED, HIDE_WHEN_FOGGED, REVEAL, SHIELDED, UNIT_AI, ION_STUN_EFFECT</SpaceBehavior>		
+		<Multisample_FOW_Check>Yes</Multisample_FOW_Check>
+		<Armor_Type> Armor_Station </Armor_Type>
+		<Shield_Armor_Type>Armor_Station</Shield_Armor_Type>
+		<Starting_Spawned_Units_Tech_0></Starting_Spawned_Units_Tech_0>
+		<Reserve_Spawned_Units_Tech_0></Reserve_Spawned_Units_Tech_0>
+		<Spawned_Squadron_Delay_Seconds>20</Spawned_Squadron_Delay_Seconds>
+		<Tactical_Health>3250</Tactical_Health>
+		<Shield_Points>1000</Shield_Points>
+		<Shield_Refresh_Rate>10</Shield_Refresh_Rate>
+		<Energy_Capacity>2000</Energy_Capacity>
+		<Energy_Refresh_Rate>1000</Energy_Refresh_Rate>
+		<Damage>50</Damage>
+		<Collidable_By_Projectile_Living>Yes</Collidable_By_Projectile_Living>
+		<Dense_FOW_Reveal_Range_Multiplier>0.2</Dense_FOW_Reveal_Range_Multiplier>
+		<Targeting_Max_Attack_Distance>1900.0</Targeting_Max_Attack_Distance>		
+		<Capture_Point_Transition_Time_Seconds>20</Capture_Point_Transition_Time_Seconds>
+		<Capture_Point_Radius>800</Capture_Point_Radius>
+		<Ownership_Sticks>Yes</Ownership_Sticks>
+		<Tactical_Respawn_Time_In_Secs>120</Tactical_Respawn_Time_In_Secs>
+		<Space_FOW_Reveal_Range>1000.0</Space_FOW_Reveal_Range>
+		<Is_Community_Property>Yes</Is_Community_Property>
+		<Build_Initially_Locked>Yes</Build_Initially_Locked>
+		<Build_Can_Be_Unlocked_By_Slicer>No</Build_Can_Be_Unlocked_By_Slicer>
+		<Has_Space_Evaluator>True</Has_Space_Evaluator>
+		<Reinforcement_Prevention_Radius> 1000 </Reinforcement_Prevention_Radius>
+		<Last_State_Visible_Under_FOW> True </Last_State_Visible_Under_FOW>
+		<Initial_State_Visible_Under_FOW>Yes</Initial_State_Visible_Under_FOW>
+	<Tactical_Buildable_Objects_Multiplayer>
+      Empire,
+      Aschen_Corvette,
+      Aschen_Cruiser,
+      Aschen_Fighter_Squadron,
+      Aschen_Drone_Squadron,
+      Aschen_Battleship_SK,
+      Rebel,
+      Aschen_Corvette,
+      Aschen_Cruiser,
+      Aschen_Fighter_Squadron,
+      Aschen_Drone_Squadron,
+      Aschen_Battleship_SK,
+      Underworld,
+      Aschen_Corvette,
+      Aschen_Cruiser,
+      Aschen_Fighter_Squadron,
+      Aschen_Drone_Squadron,
+      Aschen_Battleship_SK,
+      Asuran,
+      Aschen_Corvette,
+      Aschen_Cruiser,
+      Aschen_Fighter_Squadron,
+      Aschen_Drone_Squadron,
+      Aschen_Battleship_SK,
+    </Tactical_Buildable_Objects_Multiplayer>
+	
+    <HardPoints>
+		HP_Aschen_Station_1,
+      HP_Aschen_Station_2,
+      HP_Aschen_Station_3,
+      HP_Aschen_Station_4,
+      HP_Aschen_Station_5,
+      HP_Aschen_Station_6,
+      HP_Aschen_Station_7,
+      HP_Aschen_Hangar,
+      HP_Aschen_SupplyDock_Dummy,
+      HP_Aschen_Sensor_Dummy
+		</HardPoints>
+		<SFXEvent_Ambient_Loop>Unit_Starbase_Engine_Loop</SFXEvent_Ambient_Loop>
+		<SFXEvent_Select>Effect_Empty_Sound</SFXEvent_Select>
+      <SFXEvent_Hardpoint_Destroyed> HARD_POINT_DUMMY_ART,  Effect_Empty_Sound</SFXEvent_Hardpoint_Destroyed>
+      <SFXEvent_Hardpoint_Destroyed> HARD_POINT_ENABLE_SPECIAL_ABILITY, Effect_Empty_Sound</SFXEvent_Hardpoint_Destroyed>
+      <SFXEvent_Hardpoint_Destroyed> HARD_POINT_ENGINE,  Effect_Empty_Sound</SFXEvent_Hardpoint_Destroyed>
+      <SFXEvent_Hardpoint_Destroyed> HARD_POINT_FIGHTER_BAY, Effect_Empty_Sound</SFXEvent_Hardpoint_Destroyed>
+      <SFXEvent_Hardpoint_Destroyed> HARD_POINT_GRAVITY_WELL,  Effect_Empty_Sound</SFXEvent_Hardpoint_Destroyed>
+      <SFXEvent_Hardpoint_Destroyed> HARD_POINT_SHIELD_GENERATOR, Effect_Empty_Sound</SFXEvent_Hardpoint_Destroyed>
+      <SFXEvent_Hardpoint_Destroyed> HARD_POINT_TRACTOR_BEAM, Effect_Empty_Sound</SFXEvent_Hardpoint_Destroyed>
+      <SFXEvent_Hardpoint_Destroyed> HARD_POINT_WEAPON_ION_CANNON, Effect_Empty_Sound</SFXEvent_Hardpoint_Destroyed>
+      <SFXEvent_Hardpoint_Destroyed> HARD_POINT_WEAPON_LASER, Effect_Empty_Sound</SFXEvent_Hardpoint_Destroyed>
+      <SFXEvent_Hardpoint_Destroyed> HARD_POINT_WEAPON_MASS_DRIVER,  Effect_Empty_Sound</SFXEvent_Hardpoint_Destroyed>
+      <SFXEvent_Hardpoint_Destroyed> HARD_POINT_WEAPON_MISSILE,  Effect_Empty_Sound</SFXEvent_Hardpoint_Destroyed>
+      <SFXEvent_Hardpoint_Destroyed> HARD_POINT_WEAPON_SPECIAL,  Effect_Empty_Sound</SFXEvent_Hardpoint_Destroyed>
+      <SFXEvent_Hardpoint_Destroyed> HARD_POINT_WEAPON_TORPEDO,  Effect_Empty_Sound</SFXEvent_Hardpoint_Destroyed>
+		<Death_SFXEvent_Start_Die>Unit_Space_Station_Death_SFX</Death_SFXEvent_Start_Die>
+		<Death_Clone>Damage_Normal, Death_Clone_StarBase_Aschen</Death_Clone>
+		<Death_Explosions>Huge_Explosion_Space</Death_Explosions>
+		<Victory_Relevant>no</Victory_Relevant>
+		<Custom_Soft_Footprint_Radius> 300 </Custom_Soft_Footprint_Radius>
+		<Space_Obstacle_Offset> 0 0 0 </Space_Obstacle_Offset> 
+		<Space_Layer> StaticObject </Space_Layer>
+		<Is_Visible_On_Radar>Yes</Is_Visible_On_Radar>
+    <Visible_On_Radar_When_Fogged>true</Visible_On_Radar_When_Fogged>
+		<Radar_Icon_Size>0.12  0.12</Radar_Icon_Size>
+		<Radar_Icon_Name>i_radar_station1_p.tga</Radar_Icon_Name>
+		<Score_Cost_Credits> 1500</Score_Cost_Credits>
+	</StarBase>
+
+
+	<!--Projectile-->
+	<Projectile Name="Proj_Aschen_Laser_Middle_Station">
+		<Variant_Of_Existing_Type>Proj_Aschen_Laser_Middle</Variant_Of_Existing_Type>
+		<Projectile_Damage>24.0</Projectile_Damage>
+	</Projectile>
+	<Projectile Name="Proj_Aschen_Laser_Heavy_Station">
+		<Variant_Of_Existing_Type>Proj_Aschen_Laser_Heavy</Variant_Of_Existing_Type>
+		<Projectile_Damage>38.0</Projectile_Damage>
+	</Projectile>
+	
+</Aschen_Space_Station>

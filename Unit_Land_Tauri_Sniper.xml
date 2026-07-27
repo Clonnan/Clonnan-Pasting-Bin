@@ -1,0 +1,101 @@
+<?xml version="1.0"?>
+<Underworld_Mercenary_Infantry_Data>
+
+   <!-- UNIT INFO -->
+   <GroundInfantry Name="Night_Sister">
+      <Variant_Of_Existing_Type>Template_Ground_Infantry_Single_Tauri</Variant_Of_Existing_Type>
+      <Text_ID>TEXT_TAURI_GROUND_UNIT_SCHARFSCHUETZE</Text_ID>
+      <Encyclopedia_Text>TEXT_DESCRIPTION_TAURI_SK_SNIPER_GROUND</Encyclopedia_Text>
+      <Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_TAURI_SCHARFSCHUETZE</Encyclopedia_Unit_Class>
+      <Encyclopedia_Good_Against> Rebel_Trooper Stormtrooper</Encyclopedia_Good_Against>
+      <Encyclopedia_Vulnerable_To> T2B_Tank Plex_Soldier AT_ST_Walker </Encyclopedia_Vulnerable_To>
+      <Icon_Name>TAURI_GROUND_UNIT_SNIPER.TGA</Icon_Name>
+      <Land_Model_Name>Tauri_Land_Unit_Sniper.ALO</Land_Model_Name>
+
+      <Max_Speed>0.95</Max_Speed>
+      <Tactical_Health>70</Tactical_Health>
+      
+      <Damage>21</Damage>
+      <AI_Combat_Power>50</AI_Combat_Power>
+
+      <Projectile_Types>Proj_Tauri_Sniper_G3SG1</Projectile_Types>
+      <Projectile_Fire_Recharge_Seconds>3</Projectile_Fire_Recharge_Seconds>
+      <Projectile_Fire_Pulse_Count>1</Projectile_Fire_Pulse_Count>
+      <Projectile_Fire_Pulse_Delay_Seconds>3</Projectile_Fire_Pulse_Delay_Seconds>
+      <SFXEvent_Fire>Weapon_Tauri_Sniper</SFXEvent_Fire>
+      <CategoryMask>Infantry | AntiInfantry</CategoryMask>
+      <Targeting_Priority_Set>SG_Infantry_AntiInfantry</Targeting_Priority_Set>
+      <Targeting_Max_Attack_Distance>290.0</Targeting_Max_Attack_Distance>
+      <FormationOrder>5</FormationOrder>
+
+      <SFXEvent_Select>Unit_Select_Marine</SFXEvent_Select>
+		<SFXEvent_Move>Unit_Move_Marine</SFXEvent_Move>
+		<SFXEvent_Attack>Unit_Attack_Marine</SFXEvent_Attack>
+
+      <!-- Special: Snipers don't show up on enemy's radar map, but they do for allies. -->
+      <Is_Visible_On_Radar>Yes</Is_Visible_On_Radar>
+      <Is_Visible_On_Enemy_Radar>No</Is_Visible_On_Enemy_Radar>
+      <Stealth_Capable>Yes</Stealth_Capable>
+      <Presence_Induced_Animations>
+         Attention, 
+            Urai_Fen,
+            Samantha_Carter, 
+            Jack_ONeill
+      </Presence_Induced_Animations> 
+      <Death_Clone>Damage_Hand_Device, Night_Sister_Hand_Device_Death_Clone</Death_Clone>
+      <Conversion_Ability_Changes_To_Enemy>Night_Sister_Converted_To_Enemy</Conversion_Ability_Changes_To_Enemy>
+   </GroundInfantry>
+   
+   <GroundInfantry Name="Night_Sister_Hand_Device_Death_Clone">
+      <Variant_Of_Existing_Type>Night_Sister</Variant_Of_Existing_Type>
+      <Specific_Death_Anim_Type>FW_DIE</Specific_Death_Anim_Type>
+   </GroundInfantry>
+
+   <GroundInfantry Name="Night_Sister_Converted_To_Enemy">
+      <Variant_Of_Existing_Type>Night_Sister</Variant_Of_Existing_Type>
+   </GroundInfantry>
+   
+
+   <!-- COMPANY INFO -->
+   <GroundCompany Name="Night_Sister_Company_No_Prereq">
+      <Variant_Of_Existing_Type>Template_Ground_Company</Variant_Of_Existing_Type>
+      <Text_ID>TEXT_TAURI_GROUND_UNIT_SCHARFSCHUETZE</Text_ID>
+      <Encyclopedia_Text>TEXT_DESCRIPTION_TAURI_SCHARFSCHUETZE_GROUND</Encyclopedia_Text>
+      <Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_TAURI_SCHARFSCHUETZE</Encyclopedia_Unit_Class>
+      <Encyclopedia_Good_Against> Rebel_Trooper Stormtrooper</Encyclopedia_Good_Against>
+      <Encyclopedia_Vulnerable_To> T2B_Tank Plex_Soldier AT_ST_Walker </Encyclopedia_Vulnerable_To>
+      <Icon_Name>TAURI_GROUND_UNIT_SNIPER.TGA</Icon_Name>
+      <Damage>42</Damage>
+      <Score_Cost_Credits>400</Score_Cost_Credits>
+      <Build_Cost_Credits>400</Build_Cost_Credits>
+      <Build_Time_Seconds>64</Build_Time_Seconds>
+      <Company_Transport_Unit>Underworld_Infantry_Droid_Shuttle</Company_Transport_Unit>
+      <Company_Units>Night_Sister, Night_Sister</Company_Units>
+      <Max_Squad_Size>1</Max_Squad_Size>    
+      <Tactical_Build_Cost_Multiplayer>700</Tactical_Build_Cost_Multiplayer>
+      <Tactical_Build_Time_Seconds>15</Tactical_Build_Time_Seconds>
+      <Required_Ground_Base_Level>1</Required_Ground_Base_Level>
+      <Lua_Script>GenericBountyHunter</Lua_Script>
+   </GroundCompany>
+
+   <GroundCompany Name="Night_Sister_Company">
+      <Variant_Of_Existing_Type>Night_Sister_Company_No_Prereq</Variant_Of_Existing_Type>
+      <Affiliation>Underworld</Affiliation>
+      <Tech_Level>4</Tech_Level>
+      <Required_Timeline>0</Required_Timeline>
+      <Required_Ground_Base_Level>1</Required_Ground_Base_Level>
+      <Required_Star_Base_Level>0</Required_Star_Base_Level>
+      <Required_Special_Structures>U_Ground_Academy</Required_Special_Structures>
+      <Required_Planets></Required_Planets>
+      <Tactical_Build_Prerequisites>UC_Level_Three_Tech_Upgrade</Tactical_Build_Prerequisites>
+   </GroundCompany>
+
+   
+   <!-- PROJECTILE INFO -->
+   <Projectile Name="Proj_Tauri_Sniper_G3SG1">
+      <Variant_Of_Existing_Type>Proj_Tauri_G3SG1</Variant_Of_Existing_Type>
+      <Damage_Type>Damage_Sniper</Damage_Type>
+      <Projectile_Damage>100.0</Projectile_Damage>
+   </Projectile>
+   
+</Underworld_Mercenary_Infantry_Data>

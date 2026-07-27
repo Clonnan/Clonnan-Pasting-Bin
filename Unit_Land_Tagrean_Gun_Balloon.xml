@@ -1,0 +1,94 @@
+<?xml version="1.0"?>
+<Unit_Land_Tagrean_Gun_Balloon>
+
+  <GroundStructure Name="Tagrean_Gun_Balloon">
+    <Variant_Of_Existing_Type> Abstract_Anti_Vehicle_Turret </Variant_Of_Existing_Type>
+
+    <Text_ID>TEXT_NEUTRAL_UNIT_TAGREAN_BALLOON</Text_ID>
+    <Encyclopedia_Text>TEXT_DESCRIPTION_TAGREAN_BALLOON</Encyclopedia_Text>
+    <Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_TAGREAN_BALLOON</Encyclopedia_Unit_Class>
+    <Encyclopedia_Good_Against> MZ8_Pulse_Cannon_Tank T2B_Tank AT_ST_Walker </Encyclopedia_Good_Against>
+    <Encyclopedia_Vulnerable_To> Scavenger_Droid Goauld_Horus_Guard AT_AA_Walker </Encyclopedia_Vulnerable_To>
+    <Land_Model_Name>Tagrea_Land_Unit_Gun_Balloon.ALO</Land_Model_Name>
+    <Icon_Name>TAGREAN_LAND_UNIT_BALLOON.TGA</Icon_Name>
+    <Affiliation>Empire, Rebel, Underworld, Hostile</Affiliation>
+    <Tech_Level>99</Tech_Level>
+    <Scale_Factor>0.7</Scale_Factor>
+    <GUI_Bracket_Size>2</GUI_Bracket_Size>
+    <Select_Box_Scale>120</Select_Box_Scale>
+
+    <Behavior> SELECTABLE </Behavior>
+    <LandBehavior> TURRET, TARGETING, WEAPON, UNIT_AI, REVEAL, HIDE_WHEN_FOGGED, DAMAGE_TRACKING, STUNNABLE, EARTHQUAKE_TARGET, IDLE </LandBehavior>
+    <CategoryMask> Air | AntiVehicle </CategoryMask>
+    <Loop_Idle_Anim_00>Yes</Loop_Idle_Anim_00>
+
+    <Tactical_Health>500</Tactical_Health>
+    <Damage>20</Damage>
+    <AI_Combat_Power>175</AI_Combat_Power>
+    <Score_Cost_Credits> 1300 </Score_Cost_Credits>
+    <Land_FOW_Reveal_Range>330.0</Land_FOW_Reveal_Range>
+    <Targeting_Min_Attack_Distance>30.0</Targeting_Min_Attack_Distance>
+    <Targeting_Max_Attack_Distance>500.0</Targeting_Max_Attack_Distance>
+    <Ranged_Target_Z_Adjust>80.0</Ranged_Target_Z_Adjust>
+    <Last_State_Visible_Under_FOW>Yes</Last_State_Visible_Under_FOW>
+
+    <HardPoints>
+        HP_Tagrean_Gun_Balloon
+    </HardPoints>
+    <Projectile_Types>Proj_Fake_Land</Projectile_Types>
+    <Projectile_Fire_Recharge_Seconds>2.0</Projectile_Fire_Recharge_Seconds>
+    <Projectile_Fire_Pulse_Count>2</Projectile_Fire_Pulse_Count>
+    <Projectile_Fire_Pulse_Delay_Seconds>1.0</Projectile_Fire_Pulse_Delay_Seconds>
+    <Turret_Rotate_Extent_Degrees>360</Turret_Rotate_Extent_Degrees>
+    <Turret_Elevate_Extent_Degrees>75</Turret_Elevate_Extent_Degrees>
+    <Turret_Rotate_Speed>5.0</Turret_Rotate_Speed>
+    <Turret_Bone_Name>B_Turret</Turret_Bone_Name>
+    <Barrel_Bone_Name>B_Barrel</Barrel_Bone_Name>
+    <Apply_Z_Turret_Rotate_To_Axis>2</Apply_Z_Turret_Rotate_To_Axis>
+    <Apply_Y_Turret_Rotate_To_Axis>1</Apply_Y_Turret_Rotate_To_Axis>
+    <Turret_Targets_Ground_Infantry> 2 </Turret_Targets_Ground_Infantry>
+    <Turret_Targets_Ground_Vehicles> 1 </Turret_Targets_Ground_Vehicles>
+    <Turret_Targets_Air_Vehicles> 9999 </Turret_Targets_Air_Vehicles>
+    <Turret_Targets_Anything_Else> 3 </Turret_Targets_Anything_Else>
+
+    <Death_Explosions>Huge_Explosion_Land</Death_Explosions>
+    <Death_SFXEvent_Start_Die>Unit_Generic_Building_Death_SFX</Death_SFXEvent_Start_Die>
+    <Property_Flags>InBase | Turret</Property_Flags>
+  </GroundStructure>
+
+  <SpecialStructure Name="Tagrean_Gun_Balloon_SS">
+    <Variant_Of_Existing_Type>Tagrean_Gun_Balloon</Variant_Of_Existing_Type>
+    <Text_ID>TEXT_NEUTRAL_TAGREAN_BALLOON_DEFENCE</Text_ID>
+    <Encyclopedia_Text>TEXT_DESCRIPTION_TAGREAN_BALLOON_STATIONARY</Encyclopedia_Text>
+    <Behavior>SELECTABLE, DUMMY_GROUND_STRUCTURE</Behavior>
+    <Build_Cost_Credits>1800</Build_Cost_Credits>
+    <Build_Time_Seconds>55</Build_Time_Seconds>
+    <Build_Tab_Special_Structures>Yes</Build_Tab_Special_Structures>
+    <Build_Max_Instances_Per_Planet>1</Build_Max_Instances_Per_Planet>
+    <Build_Initially_Locked>No</Build_Initially_Locked>
+    <Build_Can_Be_Unlocked_By_Slicer>No</Build_Can_Be_Unlocked_By_Slicer>
+    <Base_Position>In_Base</Base_Position>
+    <GUI_Row>0</GUI_Row>
+    <Tech_Level>0</Tech_Level>
+    <Required_Timeline>0</Required_Timeline>
+    <Required_Ground_Base_Level>0</Required_Ground_Base_Level>
+    <Required_Star_Base_Level>0</Required_Star_Base_Level>
+    <Required_Special_Structures></Required_Special_Structures>
+    <Required_Planets>Tagrea</Required_Planets>
+    <Required_Planets>Allianz_Tagrea</Required_Planets>
+    <Place_At_Every_Specific_Marker_Position>True</Place_At_Every_Specific_Marker_Position>
+    <Place_Other_Type_At_Every_Specific_Marker_Position>Tagrean_Gun_Balloon_SS</Place_Other_Type_At_Every_Specific_Marker_Position>
+  </SpecialStructure>
+
+  <Projectile Name="Proj_Tagrea_Gun_Balloon">
+    <Variant_Of_Existing_Type>Proj_Tagrea_Gun_Balloon_Projectile</Variant_Of_Existing_Type>
+    <Damage_Type>Damage_Normal</Damage_Type>
+    <Max_Speed>18.0</Max_Speed>
+    <Max_Rate_Of_Turn>0.0</Max_Rate_Of_Turn>
+    <Projectile_Max_Flight_Distance>900.0</Projectile_Max_Flight_Distance>
+    <Projectile_Damage>66.67</Projectile_Damage>
+    <Projectile_Blast_Area_Range>10.0</Projectile_Blast_Area_Range>
+    <Projectile_Blast_Area_Damage>20.0</Projectile_Blast_Area_Damage>
+  </Projectile>
+
+</Unit_Land_Tagrean_Gun_Balloon>

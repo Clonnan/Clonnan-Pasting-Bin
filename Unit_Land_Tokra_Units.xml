@@ -1,0 +1,456 @@
+<?xml version="1.0"?>
+<Tokra_Units>
+
+   <HeroUnit Name="Tokra_Selmak_Ground">
+      <Variant_Of_Existing_Type>Urai_Fen</Variant_Of_Existing_Type>
+      <Affiliation>Traveler</Affiliation>
+   </HeroUnit>
+
+   <HeroCompany Name="Tokra_Selmak_Ground_Company">
+      <Variant_Of_Existing_Type>Urai_Fen_Team</Variant_Of_Existing_Type>
+      <Company_Units>Tokra_Selmak_Ground</Company_Units>
+      <Affiliation>Traveler</Affiliation>
+   </HeroCompany>
+
+   <GroundInfantry Name="Tokra_Soldier_Single">
+      <Variant_Of_Existing_Type>Template_Ground_Infantry_Single</Variant_Of_Existing_Type>
+      <Text_ID>TEXT_TOKRA_GROUND_UNIT_SOLDIER</Text_ID>
+      <Encyclopedia_Text>TEXT_DESCRIPTION_TOKRA_SOLDIER_GROUND</Encyclopedia_Text>
+      <Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_INFANTRY</Encyclopedia_Unit_Class>
+      <Encyclopedia_Good_Against>Underworld_Saboteur Stormtrooper</Encyclopedia_Good_Against>
+      <Encyclopedia_Vulnerable_To>Underworld_Merc Tauri_F302_Land Empire_Anti_Infantry_Turret</Encyclopedia_Vulnerable_To>
+      <Icon_Name>TOKRA_GROUND_UNIT_SOLDIER.TGA</Icon_Name>
+      <Land_Model_Name>Tokra_Land_Unit_Soldier.alo</Land_Model_Name>
+      <Land_Model_Anim_Override_Name>Tokra_Land_Unit_Soldier.alo</Land_Model_Anim_Override_Name>
+      <Affiliation>Traveler</Affiliation>
+      <Max_Speed>0.92</Max_Speed>
+      <Guard_Chase_Range>50.0</Guard_Chase_Range>
+      <Tactical_Health>70</Tactical_Health>
+      <Projectile_Types>Proj_Tokra_Staff_Weapon_Revanna_Mission</Projectile_Types>
+      <Projectile_Fire_Recharge_Seconds>1.0</Projectile_Fire_Recharge_Seconds>
+      <Projectile_Fire_Pulse_Count>5</Projectile_Fire_Pulse_Count>
+      <Projectile_Fire_Pulse_Delay_Seconds>0.8</Projectile_Fire_Pulse_Delay_Seconds>
+      <Targeting_Priority_Set>SG_Infantry_AntiInfantry</Targeting_Priority_Set>
+      <SFXEvent_Fire>Weapon_Goauld_Staff</SFXEvent_Fire>
+      <Death_Clone>Damage_Hand_Device, Tokra_Soldier_Single_Hand_Device_Death_Clone</Death_Clone>
+   </GroundInfantry>
+
+   <GroundInfantry Name="Tokra_Soldier">
+      <Variant_Of_Existing_Type>Template_Ground_Infantry_Multi</Variant_Of_Existing_Type>
+      <Text_ID>TEXT_TOKRA_GROUND_UNIT_SOLDIER</Text_ID>
+      <Encyclopedia_Text>TEXT_DESCRIPTION_TOKRA_SOLDIER_GROUND</Encyclopedia_Text>
+      <Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_MARINES</Encyclopedia_Unit_Class>
+      <Encyclopedia_Good_Against>Underworld_Saboteur Stormtrooper</Encyclopedia_Good_Against>
+      <Encyclopedia_Vulnerable_To>Underworld_Merc Tauri_F302_Land Empire_Anti_Infantry_Turret</Encyclopedia_Vulnerable_To>
+      <Icon_Name>TOKRA_GROUND_UNIT_SOLDIER.TGA</Icon_Name>
+      <Land_Model_Name>Tokra_Land_Unit_Soldier.alo</Land_Model_Name>
+      <Land_Model_Anim_Override_Name>Tokra_Land_Unit_Soldier.alo</Land_Model_Anim_Override_Name>
+      <Affiliation>Traveler</Affiliation>
+      
+      <SFXEvent_Attack>Unit_Attack_Tokra</SFXEvent_Attack>
+      <SFXEvent_Move>Unit_Move_Tokra</SFXEvent_Move>
+      <SFXEvent_Select>Unit_Select_Tokra</SFXEvent_Select>
+      
+      <Tactical_Health>70</Tactical_Health>
+      <Projectile_Types>Proj_Tokra_Staff_Weapon</Projectile_Types>
+      <Projectile_Fire_Recharge_Seconds>1.0</Projectile_Fire_Recharge_Seconds>
+      <Projectile_Fire_Pulse_Count>5</Projectile_Fire_Pulse_Count>
+      <Projectile_Fire_Pulse_Delay_Seconds>0.8</Projectile_Fire_Pulse_Delay_Seconds>
+      <Targeting_Priority_Set>SG_Infantry_AntiInfantry</Targeting_Priority_Set>
+      <SFXEvent_Fire>Weapon_Goauld_Staff</SFXEvent_Fire>
+      <Death_Clone>Damage_Hand_Device, Tokra_Soldier_Single_Hand_Device_Death_Clone</Death_Clone>
+      <Abilities SubObjectList="Yes">
+         <Force_Healing_Ability Name="Goauld_Infantry_Auto_Heal">
+            <Activation_Style>Ground_Automatic</Activation_Style>
+            <Heal_Range>0.0</Heal_Range>
+            <Heal_Percent>0.01</Heal_Percent>
+            <Heal_Amount>0.0</Heal_Amount>
+            <Heal_Interval_In_Secs>2.0</Heal_Interval_In_Secs>
+            <Single_Target_Heal>No</Single_Target_Heal>
+            <Applicable_Unit_Categories/>
+            <Applicable_Unit_Types/>
+            <SFXEvent_Target_Affected/>
+            <Owner_Particle_Bone_Name>ROOT</Owner_Particle_Bone_Name>
+            <Owner_Light_Effect_Type></Owner_Light_Effect_Type>
+            <Owner_Light_Effect_Color></Owner_Light_Effect_Color>
+            <Owner_Light_Effect_Color2/>
+            <Owner_Light_Effect_Duration>0.1</Owner_Light_Effect_Duration>
+            <Owner_Light_Effect_Pulse_Count>1</Owner_Light_Effect_Pulse_Count>
+         </Force_Healing_Ability>
+      </Abilities>
+   </GroundInfantry>
+
+   <GroundInfantry Name="Tokra_Soldier_Rings">
+      <Variant_Of_Existing_Type>Tokra_Soldier</Variant_Of_Existing_Type>
+      <LandBehavior>LANDING, SURFACE_FX, LAND_TEAM_INFANTRY_LOCOMOTOR,IDLE,WEAPON, STUNNABLE, REVEAL,HIDE_WHEN_FOGGED,DAMAGE_TRACKING</LandBehavior>
+   </GroundInfantry>
+
+   <GroundInfantry Name="Tokra_Soldier_Indigenous">
+      <Variant_Of_Existing_Type>Tokra_Soldier</Variant_Of_Existing_Type>
+      <LandBehavior>LAND_TEAM_INFANTRY_LOCOMOTOR, DAMAGE_TRACKING, HIDE_WHEN_FOGGED, IDLE, INDIGENOUS_UNIT, REVEAL, STUNNABLE, SURFACE_FX, UNIT_AI, WEAPON</LandBehavior>
+      <Victory_Relevant>No</Victory_Relevant>
+   </GroundInfantry>
+
+   <GroundInfantry Name="Tokra_Soldier_Tauri">
+      <Variant_Of_Existing_Type>Tokra_Soldier</Variant_Of_Existing_Type>
+      <Affiliation>Underworld</Affiliation>
+      <LandBehavior>ABILITY_COUNTDOWN, LAND_TEAM_INFANTRY_LOCOMOTOR, DAMAGE_TRACKING, HIDE_WHEN_FOGGED, IDLE, REVEAL, STUNNABLE, SURFACE_FX, UNIT_AI, WEAPON</LandBehavior>
+      <Unit_Abilities_Data SubObjectList="Yes">
+         <Unit_Ability>
+            <Type>STEALTH</Type>
+            <Mod_Flag>WEAPONS_ENABLED_FLAG, false</Mod_Flag>
+            <Alternate_Name_Text>TEXT_ABILITY_BLEND_WITH_TERRAIN</Alternate_Name_Text>
+            <Alternate_Icon_Name>I_SA_CAMOUFLAGE.TGA</Alternate_Icon_Name>
+            <Alternate_Description_Text>TEXT_DESCRIPTION_ABILITY_CAMOUFLAGE_TOKRA_COMMANDO_GROUND</Alternate_Description_Text>
+            <Recharge_Seconds>0.1</Recharge_Seconds>
+            <Expiration_Seconds>3600</Expiration_Seconds>
+            <GUI_Activated_Ability_Name>Tokra_Blend_In</GUI_Activated_Ability_Name>
+            <SFXEvent_GUI_Unit_Ability_Activated></SFXEvent_GUI_Unit_Ability_Activated>
+            <SFXEvent_GUI_Unit_Ability_Deactivated></SFXEvent_GUI_Unit_Ability_Deactivated>
+         </Unit_Ability>
+      </Unit_Abilities_Data>
+      <Abilities SubObjectList="Yes">
+         <Stealth_Ability Name="Tokra_Blend_In">
+            <Activation_Style> User_Input </Activation_Style>
+            <Stealth_Color>255, 255, 255, 120</Stealth_Color>
+            <Stealth_Transition_Time>.6</Stealth_Transition_Time>
+         </Stealth_Ability>
+      </Abilities>
+   </GroundInfantry>
+
+   <GroundInfantry Name="Tokra_Scientist_Single">
+      <Variant_Of_Existing_Type>Template_Ground_Infantry_Single</Variant_Of_Existing_Type>
+      <Text_ID>TEXT_TOKRA_GROUND_UNIT_COMMANDER</Text_ID>
+      <Encyclopedia_Text>TEXT_DESCRIPTION_TOKRA_COMMANDER_GROUND</Encyclopedia_Text>
+      <Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_FIELD_COMMANDER</Encyclopedia_Unit_Class>
+      <Encyclopedia_Good_Against>Underworld_Saboteur Stormtrooper</Encyclopedia_Good_Against>
+      <Encyclopedia_Vulnerable_To>Underworld_Merc Tauri_F302_Land Empire_Anti_Infantry_Turret</Encyclopedia_Vulnerable_To>
+      <Icon_Name>TOKRA_GROUND_UNIT_COMMANDER.TGA</Icon_Name>
+      <Land_Model_Name>Tokra_Land_Unit_Scientist.alo</Land_Model_Name>
+      <Land_Model_Anim_Override_Name>Tokra_Land_Unit_Scientist.alo</Land_Model_Anim_Override_Name>
+      <Affiliation>Traveler</Affiliation>
+      <Max_Speed>0.85</Max_Speed>
+      <Tactical_Health>49</Tactical_Health>
+      <Guard_Chase_Range>50.0</Guard_Chase_Range>
+      
+      <SFXEvent_Attack>Unit_Attack_Tokra</SFXEvent_Attack>
+      <SFXEvent_Move>Unit_Move_Tokra</SFXEvent_Move>
+      <SFXEvent_Select>Unit_Select_Tokra</SFXEvent_Select>
+      
+      <Projectile_Types>Proj_Tokra_Zat_Revanna_Mission</Projectile_Types>
+      <Projectile_Fire_Recharge_Seconds>1.0</Projectile_Fire_Recharge_Seconds>
+      <Projectile_Fire_Pulse_Count>5</Projectile_Fire_Pulse_Count>
+      <Projectile_Fire_Pulse_Delay_Seconds>1.0</Projectile_Fire_Pulse_Delay_Seconds>
+      <Targeting_Priority_Set>SG_Infantry_AntiInfantry</Targeting_Priority_Set>
+      <SFXEvent_Fire>Weapon_Goauld_Zat</SFXEvent_Fire>
+      <Death_Clone>Damage_Hand_Device, Tokra_Soldier_Single_Hand_Device_Death_Clone</Death_Clone>
+   </GroundInfantry>
+
+   <!--This unit is used for the tactical mission on Revanna-->
+   <GroundInfantry Name="Tokra_Scientist_Single_Poison">
+      <Variant_Of_Existing_Type>Tokra_Scientist_Single</Variant_Of_Existing_Type>
+      <Tactical_Health>10</Tactical_Health>
+      <Max_Speed>0.65</Max_Speed>
+   </GroundInfantry>
+
+
+   <GroundInfantry Name="Tokra_Scientist">
+      <Variant_Of_Existing_Type>Template_Ground_Infantry_Multi</Variant_Of_Existing_Type>
+      <Text_ID>TEXT_TOKRA_GROUND_UNIT_COMMANDER</Text_ID>
+      <Encyclopedia_Text>TEXT_DESCRIPTION_TOKRA_COMMANDER_GROUND</Encyclopedia_Text>
+      <Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_FIELD_COMMANDER</Encyclopedia_Unit_Class>
+      <Encyclopedia_Good_Against>Underworld_Saboteur Stormtrooper</Encyclopedia_Good_Against>
+      <Encyclopedia_Vulnerable_To>Underworld_Merc Tauri_F302_Land Empire_Anti_Infantry_Turret</Encyclopedia_Vulnerable_To>
+      <Icon_Name>TOKRA_GROUND_UNIT_COMMANDER.TGA</Icon_Name>
+      <Land_Model_Name>Tokra_Land_Unit_Scientist.alo</Land_Model_Name>
+      <Land_Model_Anim_Override_Name>Tokra_Land_Unit_Scientist.alo</Land_Model_Anim_Override_Name>
+      <Affiliation>Traveler</Affiliation>
+      <Tactical_Health>70</Tactical_Health>
+      
+      <SFXEvent_Attack>Unit_Attack_Tokra</SFXEvent_Attack>
+      <SFXEvent_Move>Unit_Move_Tokra</SFXEvent_Move>
+      <SFXEvent_Select>Unit_Select_Tokra</SFXEvent_Select>
+      
+      <Projectile_Types>Proj_Tokra_Zat</Projectile_Types>
+      <Projectile_Fire_Recharge_Seconds>1.0</Projectile_Fire_Recharge_Seconds>
+      <Projectile_Fire_Pulse_Count>5</Projectile_Fire_Pulse_Count>
+      <Projectile_Fire_Pulse_Delay_Seconds>1.0</Projectile_Fire_Pulse_Delay_Seconds>
+      <Targeting_Priority_Set>SG_Infantry_AntiInfantry</Targeting_Priority_Set>
+      <SFXEvent_Fire>Weapon_Goauld_Zat</SFXEvent_Fire>
+      <Death_Clone>Damage_Hand_Device, Tokra_Scientist_Single_Hand_Device_Death_Clone</Death_Clone>
+      <Abilities SubObjectList="Yes">
+         <Force_Healing_Ability Name="Goauld_Infantry_Auto_Heal">
+            <Activation_Style>Ground_Automatic</Activation_Style>
+            <Heal_Range>0.0</Heal_Range>
+            <Heal_Percent>0.01</Heal_Percent>
+            <Heal_Amount>0.0</Heal_Amount>
+            <Heal_Interval_In_Secs>2.0</Heal_Interval_In_Secs>
+            <Single_Target_Heal>No</Single_Target_Heal>
+            <Applicable_Unit_Categories/>
+            <Applicable_Unit_Types/>
+            <SFXEvent_Target_Affected/>
+            <Owner_Particle_Bone_Name>ROOT</Owner_Particle_Bone_Name>
+            <Owner_Light_Effect_Type></Owner_Light_Effect_Type>
+            <Owner_Light_Effect_Color></Owner_Light_Effect_Color>
+            <Owner_Light_Effect_Color2/>
+            <Owner_Light_Effect_Duration>0.1</Owner_Light_Effect_Duration>
+            <Owner_Light_Effect_Pulse_Count>1</Owner_Light_Effect_Pulse_Count>
+         </Force_Healing_Ability>
+      </Abilities>
+   </GroundInfantry>
+
+   <GroundInfantry Name="Tokra_Scientist_Rings">
+      <Variant_Of_Existing_Type>Tokra_Scientist</Variant_Of_Existing_Type>
+      <LandBehavior>LANDING, SURFACE_FX, LAND_TEAM_INFANTRY_LOCOMOTOR,IDLE,WEAPON, STUNNABLE, REVEAL,HIDE_WHEN_FOGGED,DAMAGE_TRACKING</LandBehavior>
+   </GroundInfantry>
+
+   <GroundInfantry Name="Tokra_Scientist_Tauri">
+      <Variant_Of_Existing_Type>Tokra_Scientist</Variant_Of_Existing_Type>
+      <Affiliation>Underworld</Affiliation>
+      <LandBehavior>ABILITY_COUNTDOWN, LAND_TEAM_INFANTRY_LOCOMOTOR, DAMAGE_TRACKING, HIDE_WHEN_FOGGED, IDLE, REVEAL, STUNNABLE, SURFACE_FX, UNIT_AI, WEAPON</LandBehavior>
+      <Unit_Abilities_Data SubObjectList="Yes">
+         <Unit_Ability>
+            <Type>STEALTH</Type>
+            <Mod_Flag>WEAPONS_ENABLED_FLAG, false</Mod_Flag>
+            <Alternate_Name_Text>TEXT_ABILITY_BLEND_WITH_TERRAIN</Alternate_Name_Text>
+            <Alternate_Icon_Name>I_SA_CAMOUFLAGE.TGA</Alternate_Icon_Name>
+            <Alternate_Description_Text>TEXT_DESCRIPTION_ABILITY_CAMOUFLAGE_TOKRA_COMMANDO_GROUND</Alternate_Description_Text>
+            <Recharge_Seconds>0.1</Recharge_Seconds>
+            <Expiration_Seconds>3600</Expiration_Seconds>
+            <GUI_Activated_Ability_Name>Tokra_Blend_In</GUI_Activated_Ability_Name>
+            <SFXEvent_GUI_Unit_Ability_Activated></SFXEvent_GUI_Unit_Ability_Activated>
+            <SFXEvent_GUI_Unit_Ability_Deactivated></SFXEvent_GUI_Unit_Ability_Deactivated>
+         </Unit_Ability>
+      </Unit_Abilities_Data>
+      <Abilities SubObjectList="Yes">
+         <Stealth_Ability Name="Tokra_Blend_In">
+            <Activation_Style> User_Input </Activation_Style>
+            <Stealth_Color>255, 255, 255, 120</Stealth_Color>
+            <Stealth_Transition_Time>.6</Stealth_Transition_Time>
+         </Stealth_Ability>
+      </Abilities>
+   </GroundInfantry>
+
+   <GroundInfantry Name="Tokra_Soldier_Single_Hand_Device_Death_Clone">
+      <Variant_Of_Existing_Type>Tokra_Soldier_Single</Variant_Of_Existing_Type>
+      <Specific_Death_Anim_Type>FW_DIE</Specific_Death_Anim_Type>
+   </GroundInfantry>
+   <GroundInfantry Name="Tokra_Scientist_Single_Hand_Device_Death_Clone">
+      <Variant_Of_Existing_Type>Tokra_Scientist_Single</Variant_Of_Existing_Type>
+      <Specific_Death_Anim_Type>FW_DIE</Specific_Death_Anim_Type>
+   </GroundInfantry>
+
+
+   <!-- COMPANY INFO -->
+   <GroundCompany Name="Tokra_Soldier_Company">
+      <Variant_Of_Existing_Type>Template_Ground_Company</Variant_Of_Existing_Type>
+      <Text_ID>TEXT_TOKRA_GROUND_UNIT_SOLDIER</Text_ID>
+      <Encyclopedia_Text>TEXT_DESCRIPTION_TOKRA_SOLDIER_GROUND</Encyclopedia_Text>
+      <Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_INFANTRY</Encyclopedia_Unit_Class>
+      <Encyclopedia_Good_Against>Underworld_Saboteur Stormtrooper</Encyclopedia_Good_Against>
+      <Encyclopedia_Vulnerable_To>Underworld_Merc Tauri_F302_Land Empire_Anti_Infantry_Turret</Encyclopedia_Vulnerable_To>
+      <Icon_Name>TOKRA_GROUND_UNIT_SOLDIER.TGA</Icon_Name>
+      <Affiliation>Traveler</Affiliation>
+      <Damage>49</Damage>
+      <Score_Cost_Credits>200</Score_Cost_Credits>
+      <Build_Cost_Credits>125</Build_Cost_Credits>
+      <Build_Time_Seconds>24</Build_Time_Seconds>
+      <Company_Transport_Unit>Alliance_Shuttle</Company_Transport_Unit>
+      <Create_Team_Type>Tokra_Soldier_Team</Create_Team_Type>
+      <Company_Units>Tokra_Soldier, Tokra_Soldier, Tokra_Soldier, Tokra_Soldier, Tokra_Soldier, Tokra_Soldier</Company_Units>
+      <Max_Squad_Size>6</Max_Squad_Size>
+      <Tactical_Build_Cost_Multiplayer>425</Tactical_Build_Cost_Multiplayer>
+      <Tactical_Build_Time_Seconds>7</Tactical_Build_Time_Seconds>
+      <Required_Ground_Base_Level>1</Required_Ground_Base_Level>
+   </GroundCompany>
+
+   <GroundCompany Name="Tokra_Soldier_Company_Tauri_No_Popcap">
+      <Variant_Of_Existing_Type>Tokra_Soldier_Company</Variant_Of_Existing_Type>
+      <Text_ID>TEXT_TOKRA_GROUND_UNIT_COMMANDO</Text_ID>
+      <Encyclopedia_Text>TEXT_DESCRIPTION_TOKRA_COMMANDO_GROUND</Encyclopedia_Text>
+      <Icon_Name>TOKRA_GROUND_UNIT_COMMANDO.TGA</Icon_Name>
+      <Affiliation>Underworld</Affiliation>
+      <Tech_Level>99</Tech_Level>
+      <LandBehavior>ABILITY_COUNTDOWN</LandBehavior>
+      <Population_Value>0</Population_Value>
+      <Required_Ground_Base_Level>1</Required_Ground_Base_Level>
+      <Create_Team_Type>Tokra_Soldier_Team_Tauri</Create_Team_Type>
+      <Company_Units>Tokra_Soldier_Tauri, Tokra_Soldier_Tauri, Tokra_Soldier_Tauri, Tokra_Scientist_Tauri, Tokra_Soldier_Tauri, Tokra_Scientist_Tauri</Company_Units>
+      <Unit_Abilities_Data SubObjectList="Yes">
+         <Unit_Ability>
+            <Type>STEALTH</Type>
+            <Mod_Flag>WEAPONS_ENABLED_FLAG, false</Mod_Flag>
+            <Alternate_Name_Text>TEXT_ABILITY_BLEND_WITH_TERRAIN</Alternate_Name_Text>
+            <Alternate_Icon_Name>I_SA_CAMOUFLAGE.TGA</Alternate_Icon_Name>
+            <Alternate_Description_Text>TEXT_DESCRIPTION_ABILITY_CAMOUFLAGE_TOKRA_COMMANDO_GROUND</Alternate_Description_Text>
+            <Recharge_Seconds>0.1</Recharge_Seconds>
+            <Expiration_Seconds>3600</Expiration_Seconds>
+            <GUI_Activated_Ability_Name>Tokra_Blend_In</GUI_Activated_Ability_Name>
+            <SFXEvent_GUI_Unit_Ability_Activated></SFXEvent_GUI_Unit_Ability_Activated>
+            <SFXEvent_GUI_Unit_Ability_Deactivated></SFXEvent_GUI_Unit_Ability_Deactivated>
+         </Unit_Ability>
+      </Unit_Abilities_Data>
+      <Abilities SubObjectList="Yes">
+         <Stealth_Ability Name="Tokra_Blend_In">
+            <Activation_Style> User_Input </Activation_Style>
+            <Stealth_Color>255, 255, 255, 120</Stealth_Color>
+            <Stealth_Transition_Time>.6</Stealth_Transition_Time>
+         </Stealth_Ability>
+      </Abilities>
+   </GroundCompany>
+
+   <GroundCompany Name="Tokra_Soldier_Company_Teltak">
+      <Variant_Of_Existing_Type>Tokra_Soldier_Company</Variant_Of_Existing_Type>
+      <Text_ID>TEXT_TOKRA_GROUND_UNIT_COMMANDO</Text_ID>
+      <Encyclopedia_Text>TEXT_DESCRIPTION_TOKRA_COMMANDO_GROUND</Encyclopedia_Text>
+      <Icon_Name>TOKRA_GROUND_UNIT_COMMANDO.TGA</Icon_Name>
+      <Tech_Level>99</Tech_Level>
+      <Population_Value>0</Population_Value>
+      <Required_Ground_Base_Level>1</Required_Ground_Base_Level>
+      <Company_Units>Tokra_Soldier_Rings, Tokra_Soldier_Rings, Tokra_Scientist_Rings</Company_Units>
+      <Max_Squad_Size>3</Max_Squad_Size>
+   </GroundCompany>
+
+   <GroundCompany Name="Tokra_Soldier_Indigenous_Company">
+      <Variant_Of_Existing_Type>Tokra_Soldier_Company</Variant_Of_Existing_Type>
+      <Company_Units>Tokra_Soldier_Indigenous, Tokra_Soldier_Indigenous, Tokra_Soldier_Indigenous, Tokra_Soldier_Indigenous, Tokra_Soldier_Indigenous, Tokra_Soldier_Indigenous</Company_Units>
+   </GroundCompany>
+
+   <GroundCompany Name="Tokra_Scientist_Company">
+      <Variant_Of_Existing_Type>Template_Ground_Company</Variant_Of_Existing_Type>
+      <Text_ID>TEXT_TOKRA_GROUND_UNIT_COMMANDER</Text_ID>
+      <Encyclopedia_Text>TEXT_DESCRIPTION_TOKRA_COMMANDER_GROUND</Encyclopedia_Text>
+      <Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_FIELD_COMMANDER</Encyclopedia_Unit_Class>
+      <Encyclopedia_Good_Against>Underworld_Saboteur Stormtrooper</Encyclopedia_Good_Against>
+      <Encyclopedia_Vulnerable_To>Underworld_Merc Tauri_F302_Land Empire_Anti_Infantry_Turret</Encyclopedia_Vulnerable_To>
+      <Icon_Name>TOKRA_GROUND_UNIT_COMMANDER.TGA</Icon_Name>
+      <Affiliation>Traveler</Affiliation>
+      <Damage>49</Damage>
+      <Score_Cost_Credits>200</Score_Cost_Credits>
+      <Build_Cost_Credits>125</Build_Cost_Credits>
+      <Build_Time_Seconds>24</Build_Time_Seconds>
+      <Company_Transport_Unit>Alliance_Shuttle</Company_Transport_Unit>
+      <Create_Team_Type>Tokra_Scientist_Team</Create_Team_Type>
+      <Company_Units>Tokra_Scientist, Tokra_Scientist, Tokra_Scientist, Tokra_Scientist</Company_Units>
+      <Max_Squad_Size>4</Max_Squad_Size>
+      <Tactical_Build_Cost_Multiplayer>425</Tactical_Build_Cost_Multiplayer>
+      <Tactical_Build_Time_Seconds>7</Tactical_Build_Time_Seconds>
+      <Required_Ground_Base_Level>1</Required_Ground_Base_Level>
+   </GroundCompany>
+
+
+   <!-- CONTAINER INFO -->
+   <Container Name="Tokra_Soldier_Team">
+      <Variant_Of_Existing_Type>Template_Infantry_Container</Variant_Of_Existing_Type>
+      <Text_ID>TEXT_TOKRA_GROUND_UNIT_SOLDIER</Text_ID>
+      <Encyclopedia_Text>TEXT_DESCRIPTION_TOKRA_SOLDIER_GROUND</Encyclopedia_Text>
+      <Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_INFANTRY</Encyclopedia_Unit_Class>
+      <Encyclopedia_Good_Against>Underworld_Saboteur Stormtrooper</Encyclopedia_Good_Against>
+      <Encyclopedia_Vulnerable_To>Underworld_Merc Tauri_F302_Land Empire_Anti_Infantry_Turret</Encyclopedia_Vulnerable_To>
+      <Icon_Name>TOKRA_GROUND_UNIT_SOLDIER.TGA</Icon_Name>
+      <Select_Box_Scale>55</Select_Box_Scale>
+   </Container>
+
+   <Container Name="Tokra_Soldier_Team_Tauri">
+      <Variant_Of_Existing_Type>Tokra_Soldier_Team</Variant_Of_Existing_Type>
+      <Text_ID>TEXT_TOKRA_GROUND_UNIT_COMMANDO</Text_ID>
+      <Encyclopedia_Text>TEXT_DESCRIPTION_TOKRA_COMMANDO_GROUND</Encyclopedia_Text>
+      <Icon_Name>TOKRA_GROUND_UNIT_COMMANDO.TGA</Icon_Name>
+      <Affiliation>Underworld</Affiliation>
+      <LandBehavior>ABILITY_COUNTDOWN, GARRISON_UNIT, LAND_TEAM_CONTAINER_LOCOMOTOR, REVEAL, TEAM_TARGETING</LandBehavior>
+      <Lua_Script>ObjectScript_Ability_Blend_With_Terrain</Lua_Script>
+      <Unit_Abilities_Data SubObjectList="Yes">
+         <Unit_Ability>
+            <Type>STEALTH</Type>
+            <Mod_Flag>WEAPONS_ENABLED_FLAG, false</Mod_Flag>
+            <Alternate_Name_Text>TEXT_ABILITY_BLEND_WITH_TERRAIN</Alternate_Name_Text>
+            <Alternate_Icon_Name>I_SA_CAMOUFLAGE.TGA</Alternate_Icon_Name>
+            <Alternate_Description_Text>TEXT_DESCRIPTION_ABILITY_CAMOUFLAGE_TOKRA_COMMANDO_GROUND</Alternate_Description_Text>
+            <Recharge_Seconds>0.1</Recharge_Seconds>
+            <Expiration_Seconds>3600</Expiration_Seconds>
+            <GUI_Activated_Ability_Name>Tokra_Blend_In</GUI_Activated_Ability_Name>
+            <SFXEvent_GUI_Unit_Ability_Activated></SFXEvent_GUI_Unit_Ability_Activated>
+            <SFXEvent_GUI_Unit_Ability_Deactivated></SFXEvent_GUI_Unit_Ability_Deactivated>
+         </Unit_Ability>
+      </Unit_Abilities_Data>
+      <Abilities SubObjectList="Yes">
+         <Stealth_Ability Name="Tokra_Blend_In">
+            <Activation_Style> User_Input </Activation_Style>
+            <Stealth_Color>255, 255, 255, 120</Stealth_Color>
+            <Stealth_Transition_Time>.6</Stealth_Transition_Time>
+         </Stealth_Ability>
+      </Abilities>
+   </Container>
+
+   <Container Name="Tokra_Scientist_Team">
+      <Variant_Of_Existing_Type>Template_Infantry_Container</Variant_Of_Existing_Type>
+      <Text_ID>TEXT_TOKRA_GROUND_UNIT_COMMANDER</Text_ID>
+      <Encyclopedia_Text>TEXT_DESCRIPTION_TOKRA_COMMANDER_GROUND</Encyclopedia_Text>
+      <Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_FIELD_COMMANDER</Encyclopedia_Unit_Class>
+      <Encyclopedia_Good_Against>Underworld_Saboteur Stormtrooper</Encyclopedia_Good_Against>
+      <Encyclopedia_Vulnerable_To>Underworld_Merc Tauri_F302_Land Empire_Anti_Infantry_Turret</Encyclopedia_Vulnerable_To>
+      <Icon_Name>TOKRA_GROUND_UNIT_COMMANDER.TGA</Icon_Name>
+      <Select_Box_Scale>55</Select_Box_Scale>
+   </Container>
+
+
+   <Projectile Name="Proj_Tokra_Zat">
+      <Variant_Of_Existing_Type>Proj_Goauld_Zat</Variant_Of_Existing_Type>
+      <Damage_Type>Damage_Anti_Infantry_Only</Damage_Type>
+      <Projectile_Damage>5.0</Projectile_Damage>
+   </Projectile>
+
+   <Projectile Name="Proj_Tokra_Staff_Weapon">
+      <Variant_Of_Existing_Type>Proj_Goauld_Land_Staff_Weapon</Variant_Of_Existing_Type>
+      <Damage_Type>Damage_Normal</Damage_Type>
+      <Projectile_Damage>4.83</Projectile_Damage>
+   </Projectile>
+
+   <Projectile Name="Proj_Tokra_Zat_Revanna_Mission">
+      <Variant_Of_Existing_Type>Proj_Goauld_Zat</Variant_Of_Existing_Type>
+      <Damage_Type>Damage_Anti_Infantry_Only</Damage_Type>
+      <Projectile_Damage>25.0</Projectile_Damage>
+   </Projectile>
+
+   <Projectile Name="Proj_Tokra_Staff_Weapon_Revanna_Mission">
+      <Variant_Of_Existing_Type>Proj_Goauld_Land_Staff_Weapon</Variant_Of_Existing_Type>
+      <Damage_Type>Damage_Anti_Infantry_Only</Damage_Type>
+      <Projectile_Damage>25.0</Projectile_Damage>
+   </Projectile>
+
+
+   <GroundVehicle Name="Tokra_Teltak_Land">
+      <Variant_Of_Existing_Type>Gallofree_HTT_Transport</Variant_Of_Existing_Type>
+      <Text_ID>TEXT_TOKRA_GROUND_UNIT_TELTAK</Text_ID>
+      <Encyclopedia_Text>TEXT_DESCRIPTION_TOKRA_TELTAK_GROUND</Encyclopedia_Text>
+      <Affiliation>Traveler</Affiliation>
+      <Tech_Level>99</Tech_Level>
+      <Build_Initially_Locked>Yes</Build_Initially_Locked>
+      <Build_Can_Be_Unlocked_By_Slicer>No</Build_Can_Be_Unlocked_By_Slicer>
+      <Build_Tab_Space_Units>No</Build_Tab_Space_Units>
+      <Required_Star_Base_Level>1</Required_Star_Base_Level>
+      <Unit_Abilities_Data SubObjectList="Yes">
+         <Unit_Ability>
+            <Type>DEPLOY_TROOPERS</Type>
+            <Alternate_Icon_Name>I_SA_TRANSPORTRINGS.TGA</Alternate_Icon_Name>
+            <Alternate_Name_Text>TEXT_TOOLTIP_ABILITY_DEPLOY_TROOPERS_NAME</Alternate_Name_Text>
+            <Alternate_Description_Text>TEXT_DESCRIPTION_ABILITY_DEPLOY_TROOPERS_TELTAK_GROUND</Alternate_Description_Text>
+            <Recharge_Seconds>35</Recharge_Seconds>
+            <Spawned_Object_Type>Tokra_Soldier_Company_Teltak</Spawned_Object_Type>
+            <Max_Num_Spawned_Objects>3</Max_Num_Spawned_Objects>
+            <Owner_Attachment_Bone>B_Trooper_00, B_Trooper_01, B_Trooper_02,</Owner_Attachment_Bone>
+            <SFXEvent_GUI_Unit_Ability_Activated></SFXEvent_GUI_Unit_Ability_Activated>
+         </Unit_Ability>
+      </Unit_Abilities_Data>
+   </GroundVehicle>
+
+   <GroundCompany Name="Tokra_Teltak_Land_Company">
+      <Variant_Of_Existing_Type>Gallofree_HTT_Company_No_Prereq</Variant_Of_Existing_Type>
+      <Text_ID>TEXT_TOKRA_GROUND_UNIT_TELTAK</Text_ID>
+      <Encyclopedia_Text>TEXT_DESCRIPTION_TOKRA_TELTAK_GROUND</Encyclopedia_Text>
+      <Tech_Level>99</Tech_Level>
+      <Affiliation>Traveler</Affiliation>
+      <Company_Units>Tokra_Teltak_Land</Company_Units>
+   </GroundCompany>
+
+</Tokra_Units>

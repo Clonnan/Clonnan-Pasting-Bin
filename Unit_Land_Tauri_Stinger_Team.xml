@@ -1,0 +1,139 @@
+<?xml version="1.0"?>
+<Scavenger_Droids_Data>
+
+    <!-- UNIT INFO -->
+    <GroundInfantry Name="Scavenger_Droid">
+        <Variant_Of_Existing_Type>Template_Ground_Infantry_Multi_Tauri</Variant_Of_Existing_Type>
+        <Text_ID>TEXT_TAURI_GROUND_UNIT_MISSILE_TEAM</Text_ID>
+        <Encyclopedia_Text>TEXT_DESCRIPTION_TAURI_MISSILE_TEAM_GROUND</Encyclopedia_Text>
+        <Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_MISSILE_TEAM</Encyclopedia_Unit_Class>
+        <Encyclopedia_Good_Against> Snowspeeder Wraith_Dart_Land </Encyclopedia_Good_Against>
+        <Encyclopedia_Vulnerable_To> Plex_Soldier Dark_Trooper_PhaseI </Encyclopedia_Vulnerable_To>
+        <Icon_Name>TAURI_GROUND_UNIT_MISSILE_TEAM.tga</Icon_Name>
+        <Land_Model_Name>Tauri_Land_Unit_Stinger.alo</Land_Model_Name>
+        <Land_Terrain_Model_Mapping>
+            Temperate,  Tauri_Land_Unit_Stinger.ALO,
+            Urban,      Tauri_Land_Unit_Stinger_Black.ALO,
+            Arctic,     Tauri_Land_Unit_Stinger_Snow.ALO,
+            Volcanic,   Tauri_Land_Unit_Stinger_Pegasus.ALO,
+            Desert,     Tauri_Land_Unit_Stinger_Desert.ALO,
+            Forest,     Tauri_Land_Unit_Stinger_Camo.ALO,
+            Swamp,      Tauri_Land_Unit_Stinger_Camo.ALO
+        </Land_Terrain_Model_Mapping>
+        <Land_Model_Anim_Override_Name>Tauri_Land_Unit_Stinger.alo</Land_Model_Anim_Override_Name>
+
+        <Max_Speed>0.85</Max_Speed>
+        <Tactical_Health>90</Tactical_Health>
+
+        <Damage>13</Damage>
+        <AI_Combat_Power>25</AI_Combat_Power>
+        <FormationOrder>6</FormationOrder>
+
+        <!-- Re-Add targeting behavior (see comment on Template_Ground_Infantry_Multi), since AA unit cannot attack buildings anyway -->
+        <LandBehavior>LAND_TEAM_INFANTRY_LOCOMOTOR, DAMAGE_TRACKING, HIDE_WHEN_FOGGED, IDLE, REVEAL, STUNNABLE, SURFACE_FX, TARGETING UNIT_AI, WEAPON</LandBehavior>
+
+        <Projectile_Types>Proj_Tauri_Missile</Projectile_Types>
+        <Projectile_Fire_Recharge_Seconds>3.0</Projectile_Fire_Recharge_Seconds>
+        <Projectile_Fire_Pulse_Count>1</Projectile_Fire_Pulse_Count>
+        <Projectile_Fire_Pulse_Delay_Seconds>3.0</Projectile_Fire_Pulse_Delay_Seconds>
+        <Targeting_Max_Attack_Distance>250</Targeting_Max_Attack_Distance>
+        <SFXEvent_Fire>Weapon_Tauri_Rocketlauncher</SFXEvent_Fire>
+        <Targeting_Priority_Set>SG_Infantry_AntiAir</Targeting_Priority_Set>
+        <Attack_Category_Restrictions>Infantry | Vehicle | LandHero | Structure</Attack_Category_Restrictions>
+        <CategoryMask>Infantry | AntiAir</CategoryMask>
+        <SFXEvent_Select>Unit_Select_Marine</SFXEvent_Select>
+        <SFXEvent_Move>Unit_Move_Marine</SFXEvent_Move>
+        <SFXEvent_Attack>Unit_Attack_Marine</SFXEvent_Attack>
+
+        <Presence_Induced_Animations>
+         Attention, 
+            Urai_Fen,
+            Samantha_Carter, 
+            Jack_ONeill
+        </Presence_Induced_Animations>
+        <Death_Clone>Damage_Hand_Device, Scavenger_Droid_Hand_Device_Death_Clone</Death_Clone>
+        <Conversion_Ability_Changes_To_Enemy>Scavenger_Droid_Converted_To_Enemy</Conversion_Ability_Changes_To_Enemy>
+        <Unit_Abilities_Data SubObjectList="Yes">
+            <Unit_Ability>
+                <Type>SPREAD_OUT</Type>
+                <Alternate_Name_Text>TEXT_TOOLTIP_ABILITY_SPREAD_OUT_NAME</Alternate_Name_Text>
+                <Alternate_Description_Text> TEXT_DESCRIPTION_ABILITY_COVER_MISSILE_TEAM_GROUND</Alternate_Description_Text>
+                <Mod_Multiplier>SPEED_MULTIPLIER,    0.4f</Mod_Multiplier>
+                <Mod_Multiplier>TAKE_DAMAGE_MULTIPLIER, 0.85f</Mod_Multiplier>
+            </Unit_Ability>
+        </Unit_Abilities_Data>
+    </GroundInfantry>
+
+    <GroundInfantry Name="Scavenger_Droid_Hand_Device_Death_Clone">
+        <Variant_Of_Existing_Type>Scavenger_Droid</Variant_Of_Existing_Type>
+        <Specific_Death_Anim_Type>FW_DIE</Specific_Death_Anim_Type>
+    </GroundInfantry>
+
+    <GroundInfantry Name="Scavenger_Droid_Converted_To_Enemy">
+        <Variant_Of_Existing_Type>Scavenger_Droid</Variant_Of_Existing_Type>
+    </GroundInfantry>
+
+
+    <!-- COMPANY INFO -->
+    <GroundCompany Name="Scavenger_Droid_Company_No_Prereq">
+        <Variant_Of_Existing_Type>Template_Ground_Company</Variant_Of_Existing_Type>
+        <Text_ID>TEXT_TAURI_GROUND_UNIT_MISSILE_TEAM</Text_ID>
+        <Encyclopedia_Text>TEXT_DESCRIPTION_TAURI_MISSILE_TEAM_GROUND</Encyclopedia_Text>
+        <Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_MISSILE_TEAM</Encyclopedia_Unit_Class>
+        <Encyclopedia_Good_Against> Snowspeeder Wraith_Dart_Land </Encyclopedia_Good_Against>
+        <Encyclopedia_Vulnerable_To> Plex_Soldier Dark_Trooper_PhaseI </Encyclopedia_Vulnerable_To>
+        <Icon_Name>TAURI_GROUND_UNIT_MISSILE_TEAM.tga</Icon_Name>
+        <Damage>51</Damage>
+        <Build_Cost_Credits>400</Build_Cost_Credits>
+        <Build_Time_Seconds>50</Build_Time_Seconds>
+        <Create_Team_Type>Scavenger_Droid_Team</Create_Team_Type>
+        <Company_Transport_Unit>Underworld_Infantry_Droid_Shuttle</Company_Transport_Unit>
+        <Company_Units> Scavenger_Droid, Scavenger_Droid, Scavenger_Droid, Scavenger_Droid </Company_Units>
+        <Max_Squad_Size>4</Max_Squad_Size>
+        <Score_Cost_Credits>300</Score_Cost_Credits>
+        <Tactical_Build_Cost_Multiplayer>800</Tactical_Build_Cost_Multiplayer>
+        <Tactical_Build_Time_Seconds>10</Tactical_Build_Time_Seconds>
+        <Required_Ground_Base_Level>1</Required_Ground_Base_Level>
+    </GroundCompany>
+
+    <GroundCompany Name="Scavenger_Droid_Company">
+        <Variant_Of_Existing_Type>Scavenger_Droid_Company_No_Prereq</Variant_Of_Existing_Type>
+        <Affiliation>Underworld</Affiliation>
+        <Tech_Level>2</Tech_Level>
+        <Required_Special_Structures>U_Ground_Barracks</Required_Special_Structures>
+        <Tactical_Build_Prerequisites>UC_Level_Two_Tech_Upgrade</Tactical_Build_Prerequisites>
+    </GroundCompany>
+
+
+    <!-- CONTAINER INFO -->
+    <Container Name="Scavenger_Droid_Team">
+        <Variant_Of_Existing_Type>Template_Infantry_Container</Variant_Of_Existing_Type>
+        <Text_ID>TEXT_TAURI_GROUND_UNIT_MISSILE_TEAM</Text_ID>
+        <Encyclopedia_Text>TEXT_DESCRIPTION_TAURI_MISSILE_TEAM_GROUND</Encyclopedia_Text>
+        <Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_MISSILE_TEAM</Encyclopedia_Unit_Class>
+        <Encyclopedia_Good_Against> Snowspeeder Wraith_Dart_Land </Encyclopedia_Good_Against>
+        <Encyclopedia_Vulnerable_To> Plex_Soldier Dark_Trooper_PhaseI </Encyclopedia_Vulnerable_To>
+        <Icon_Name>TAURI_GROUND_UNIT_MISSILE_TEAM.tga</Icon_Name>
+        <FormationSpacing> 0.5 </FormationSpacing>
+        <Targeting_Max_Attack_Distance>250</Targeting_Max_Attack_Distance>
+        <Unit_Abilities_Data SubObjectList="Yes">
+            <Unit_Ability>
+                <Type>SPREAD_OUT</Type>
+                <Mod_Multiplier>SPEED_MULTIPLIER, 0.4f</Mod_Multiplier>
+                <Mod_Multiplier>TAKE_DAMAGE_MULTIPLIER, 0.85f</Mod_Multiplier>
+                <SFXEvent_GUI_Unit_Ability_Activated></SFXEvent_GUI_Unit_Ability_Activated>
+                <Alternate_Name_Text>TEXT_TOOLTIP_ABILITY_SPREAD_OUT_NAME</Alternate_Name_Text>
+                <Alternate_Description_Text> TEXT_DESCRIPTION_ABILITY_COVER_MISSILE_TEAM_GROUND</Alternate_Description_Text>
+            </Unit_Ability>
+        </Unit_Abilities_Data>
+    </Container>
+
+
+    <!-- PROJECTILE INFO -->
+    <Projectile Name="Proj_Tauri_Missile">
+        <Variant_Of_Existing_Type>Proj_Tauri_AA_Missile</Variant_Of_Existing_Type>
+        <Damage_Type>Damage_Anti_Air_Tauri</Damage_Type>
+        <Projectile_Damage>45.0</Projectile_Damage>
+    </Projectile>
+
+</Scavenger_Droids_Data>

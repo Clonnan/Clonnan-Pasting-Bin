@@ -1,0 +1,106 @@
+<?xml version="1.0"?>
+<Goauld_Hover_Tank_Data>
+
+   <GroundVehicle Name="T2B_Tank">
+      <Variant_Of_Existing_Type>Template_Ground_Hover</Variant_Of_Existing_Type>      
+      <Text_ID>TEXT_GOAULD_GROUND_UNIT_HOVERTANK</Text_ID>
+      <Encyclopedia_Text>TEXT_DESCRIPTION_GOAULD_HOVERTANK_GROUND</Encyclopedia_Text>
+      <Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_HEAVY_VEHICLE</Encyclopedia_Unit_Class>
+      <Encyclopedia_Good_Against>Underworld_Saboteur Stormtrooper Scout_Trooper</Encyclopedia_Good_Against>
+      <Encyclopedia_Vulnerable_To>Ewok_Handler Tauri_B302_Land Empire_Anti_Vehicle_Turret</Encyclopedia_Vulnerable_To>
+      <Icon_Name>GOAULD_GROUND_UNIT_HOVERTANK.TGA</Icon_Name>
+      <Land_Model_Name>Goauld_Land_Unit_Hover_Tank.alo</Land_Model_Name>
+      <LandBehavior>WALK_LOCOMOTOR, AFFECTED_BY_SHIELD, DAMAGE_TRACKING, HIDE_WHEN_FOGGED, IDLE, POWERED, REVEAL, SHIELDED, STUNNABLE, SURFACE_FX, TARGETING, UNIT_AI, WEAPON, WIND_DISTURBANCE</LandBehavior>
+      
+      <Affiliation>Rebel</Affiliation>
+      <Scale_Factor>4.5</Scale_Factor>
+      <Overall_Length>45.0</Overall_Length> 
+      <Overall_Width>20.0</Overall_Width> 
+      <Max_Speed>1</Max_Speed>
+      <Max_Rate_Of_Turn>5.0</Max_Rate_Of_Turn>
+      <Radar_Icon_Name>I_RADAR_GOAULD_HOVERTANK.TGA</Radar_Icon_Name>
+      <Select_Box_Scale>20</Select_Box_Scale>
+      <Select_Box_Z_Adjust>3.0f</Select_Box_Z_Adjust>
+      <Damage>6</Damage>
+      <AI_Combat_Power>100</AI_Combat_Power>
+      <Targeting_Priority_Set>SG_Vehicle_AntiVehicle</Targeting_Priority_Set>
+      <Score_Cost_Credits>200</Score_Cost_Credits>
+      <Tactical_Health>300</Tactical_Health>
+      <Shield_Points>250</Shield_Points>
+      <Shield_Refresh_Rate>8</Shield_Refresh_Rate>
+      <Targeting_Min_Attack_Distance>50</Targeting_Min_Attack_Distance>
+      <Blob_Shadow_Scale>65.0, 50.0</Blob_Shadow_Scale>
+      
+      <Projectile_Types>Proj_Fake_Land</Projectile_Types>
+      <Projectile_Fire_Recharge_Seconds>100.0</Projectile_Fire_Recharge_Seconds>
+      <Projectile_Fire_Pulse_Count>1</Projectile_Fire_Pulse_Count>
+      <Projectile_Fire_Pulse_Delay_Seconds>1</Projectile_Fire_Pulse_Delay_Seconds>
+      <Turret_Rotate_Extent_Degrees> 20.0 </Turret_Rotate_Extent_Degrees>
+      <Turret_Elevate_Extent_Degrees> 60.0 </Turret_Elevate_Extent_Degrees>
+
+      <HardPoints>
+         HP_Hover_Tank_Staff_Cannon,
+         HP_Hover_Tank_Staff_Turret
+      </HardPoints>
+   
+      <Death_Explosions>Large_Explosion_Land</Death_Explosions>
+      
+      <SFXEvent_Turret_Rotating_Loop> Vehicle_Turret_Motor </SFXEvent_Turret_Rotating_Loop>
+      <SFXEvent_Engine_Idle_Loop>Unit_T2B_Idle_Engine_Loop</SFXEvent_Engine_Idle_Loop>
+      <SFXEvent_Engine_Moving_Loop>Unit_T2B_Moving_Engine_Loop</SFXEvent_Engine_Moving_Loop>
+      <!--Unit_Abilities_Data SubObjectList="Yes">
+         <Unit_Ability>
+            <Type>HUNT</Type>
+         </Unit_Ability>
+      </Unit_Abilities_Data-->
+   </GroundVehicle>
+
+
+   <GroundCompany Name="Rebel_Light_Tank_Brigade_No_Prereq">
+      <Variant_Of_Existing_Type>Template_Ground_Company</Variant_Of_Existing_Type>
+      <Text_ID>TEXT_GOAULD_GROUND_UNIT_HOVERTANK</Text_ID>
+      <Encyclopedia_Text>TEXT_DESCRIPTION_GOAULD_HOVERTANK_GROUND</Encyclopedia_Text>
+      <Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_HEAVY_VEHICLE</Encyclopedia_Unit_Class>
+      <Encyclopedia_Good_Against>Underworld_Saboteur Stormtrooper Scout_Trooper</Encyclopedia_Good_Against>
+      <Encyclopedia_Vulnerable_To>Ewok_Handler Tauri_B302_Land Empire_Anti_Vehicle_Turret</Encyclopedia_Vulnerable_To>
+      <Icon_Name>GOAULD_GROUND_UNIT_HOVERTANK.TGA</Icon_Name>
+      <Score_Cost_Credits>400</Score_Cost_Credits>
+      <Build_Cost_Credits>350</Build_Cost_Credits>
+      <Build_Time_Seconds>46</Build_Time_Seconds>
+      <Ship_Class>tank</Ship_Class>
+      <Company_Transport_Unit>Gallofree_Transport</Company_Transport_Unit>
+      <Company_Units>T2B_Tank</Company_Units>    
+      <Tactical_Build_Cost_Multiplayer>700</Tactical_Build_Cost_Multiplayer>
+      <Tactical_Build_Time_Seconds>9</Tactical_Build_Time_Seconds>
+      <Required_Ground_Base_Level>1</Required_Ground_Base_Level>
+   </GroundCompany>
+   
+   <GroundCompany Name="Rebel_Light_Tank_Brigade">
+      <Variant_Of_Existing_Type>Rebel_Light_Tank_Brigade_No_Prereq</Variant_Of_Existing_Type>
+      <Affiliation>Rebel</Affiliation>
+      <Tech_Level>2</Tech_Level>
+      <Required_Timeline>0</Required_Timeline>
+      <Required_Ground_Base_Level>1</Required_Ground_Base_Level>
+      <Required_Star_Base_Level>0</Required_Star_Base_Level>
+      <Required_Special_Structures>R_Ground_Light_Vehicle_Factory</Required_Special_Structures>
+      <Required_Planets />
+      <Tactical_Build_Prerequisites> RC_Level_Two_Tech_Upgrade </Tactical_Build_Prerequisites>
+   </GroundCompany>
+   
+   
+
+   <Projectile Name="Proj_Deathtank_Laser_Land">
+      <Variant_Of_Existing_Type>Proj_Goauld_Tank</Variant_Of_Existing_Type>
+      <Damage_Type>Damage_Anti_Vehicle</Damage_Type>
+      <Projectile_Damage>30.55</Projectile_Damage>
+      <Projectile_Blast_Area_Range>10.0</Projectile_Blast_Area_Range>
+      <Projectile_Blast_Area_Damage>15.0</Projectile_Blast_Area_Damage>
+   </Projectile>
+
+   <Projectile Name="Proj_Deathtank_Dual_Laser_Land">
+      <Variant_Of_Existing_Type>Proj_Goauld_Tank_Turret</Variant_Of_Existing_Type>
+      <Damage_Type>Damage_Normal</Damage_Type>
+      <Projectile_Damage>21.6</Projectile_Damage>
+   </Projectile>
+   
+</Goauld_Hover_Tank_Data>

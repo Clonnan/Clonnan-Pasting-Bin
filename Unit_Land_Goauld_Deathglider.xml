@@ -1,0 +1,111 @@
+<?xml version="1.0"?>
+<Deathglider_Data>
+
+   <GroundVehicle Name="Snowspeeder">
+      <Variant_Of_Existing_Type>Template_Ground_Flyer</Variant_Of_Existing_Type>
+      <Text_ID>TEXT_GOAULD_GROUND_UNIT_TODESGLEITER</Text_ID>
+      <Encyclopedia_Text>TEXT_DESCRIPTION_GOAULD_TODESGLEITER_GROUND</Encyclopedia_Text>
+      <Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_TODESGLEITER_GROUND</Encyclopedia_Unit_Class>
+      <Encyclopedia_Good_Against>Ewok_Handler F9TZ_Cloaking_Transport Scout_Trooper</Encyclopedia_Good_Against>
+      <Encyclopedia_Vulnerable_To>Scavenger_Droid AT_AA_Walker Underworld_Mass_Driver_Turret</Encyclopedia_Vulnerable_To>
+      <Icon_Name>GOAULD_SPACE_UNIT_DEATHGLIDER.TGA</Icon_Name>
+      <Radar_Icon_Name>I_RADAR_DEATHGLIDER.TGA</Radar_Icon_Name>
+      <Land_Model_Name>Goauld_Space_Unit_Deathglider.ALO</Land_Model_Name>
+      <LandBehavior>FLYING_LOCOMOTOR, AMBIENT_SFX, DAMAGE_TRACKING, HIDE_WHEN_FOGGED, REVEAL, STUNNABLE, TARGETING, TELEKINESIS_TARGET, UNIT_AI, WIND_DISTURBANCE</LandBehavior>
+      <Affiliation>Rebel</Affiliation>
+      <Select_Box_Scale>25</Select_Box_Scale>
+      <Damage>8</Damage>
+      <Score_Cost_Credits>600</Score_Cost_Credits>
+      <Tactical_Health>190</Tactical_Health>
+      <AI_Combat_Power>100</AI_Combat_Power>
+      <Targeting_Priority_Set>SG_Air_AntiAll</Targeting_Priority_Set>
+      <Scale_Factor>4.5</Scale_Factor>
+      <Size_Value>15</Size_Value>
+      <Max_Speed>5.0</Max_Speed>
+      <Min_Speed>2.0</Min_Speed>
+      <OverrideAcceleration>0.2</OverrideAcceleration>
+      <OverrideDeceleration>0.2</OverrideDeceleration>
+      <Max_Rate_Of_Turn>3.0</Max_Rate_Of_Turn>
+      <Max_Rate_Of_Roll>2.5</Max_Rate_Of_Roll>
+      <Max_Lift>2.5</Max_Lift>
+      <Bank_Turn_Angle>20</Bank_Turn_Angle>
+      <Strafe_Distance>1200.0</Strafe_Distance>
+      <Prepare_Strafe_Height>500.0</Prepare_Strafe_Height>
+      <Begin_Turn_Towards_Distance>800.0</Begin_Turn_Towards_Distance>
+      <Blob_Shadow_Scale>40.0, 40.0</Blob_Shadow_Scale>
+      <Spin_Away_On_Death>No</Spin_Away_On_Death> 
+      <GUI_Bracket_Size>1</GUI_Bracket_Size>
+      <GUI_Bounds_Scale>0.6</GUI_Bounds_Scale>
+      <Ranged_Target_Z_Adjust>10.0</Ranged_Target_Z_Adjust>
+      
+      <HardPoints>
+			HP_Goauld_Deathglider_Land_Staff_Weapon
+		</HardPoints>
+      
+      <SFXEvent_Fire>Weapon_Goauld_Staff</SFXEvent_Fire>
+      <SFXEvent_Attack>Unit_Attack_GFB</SFXEvent_Attack>
+      <SFXEvent_Fleet_Move>Unit_Move_GFB</SFXEvent_Fleet_Move>
+      <SFXEvent_Guard></SFXEvent_Guard>
+      <SFXEvent_Health_Critical_Warning></SFXEvent_Health_Critical_Warning> 
+      <SFXEvent_Health_Low_Warning></SFXEvent_Health_Low_Warning>
+      <SFXEvent_Move>Unit_Move_GFB</SFXEvent_Move>
+      <SFXEvent_Move_Into_Asteroid_Field></SFXEvent_Move_Into_Asteroid_Field>
+      <SFXEvent_Move_Into_Nebula></SFXEvent_Move_Into_Nebula>
+      <SFXEvent_Select>Unit_Select_GFB</SFXEvent_Select>
+      <SFXEvent_Stop></SFXEvent_Stop>
+      
+      <SFXEvent_Ambient_Moving> Engine_Goauld_Deathglider_Land </SFXEvent_Ambient_Moving>
+      <SFXEvent_Ambient_Moving_Min_Delay_Seconds> 5 </SFXEvent_Ambient_Moving_Min_Delay_Seconds>
+      <SFXEvent_Ambient_Moving_Max_Delay_Seconds> 10 </SFXEvent_Ambient_Moving_Max_Delay_Seconds>
+      <SFXEvent_Engine_Cinematic_Focus_Loop> Engine_Goauld_Deathglider_Land_Cinematic </SFXEvent_Engine_Cinematic_Focus_Loop>
+   </GroundVehicle>
+
+   <GroundVehicle Name="Abandoned_Goauld_Deathglider">
+      <Variant_Of_Existing_Type>Snowspeeder</Variant_Of_Existing_Type>
+      <Affiliation>Neutral, Rebel, Empire, Underworld</Affiliation>
+   </GroundVehicle>
+
+   <GroundCompany Name="Rebel_Speeder_Wing_No_Prereq">
+      <Variant_Of_Existing_Type>Template_Ground_Company</Variant_Of_Existing_Type>
+      <Text_ID>TEXT_GOAULD_GROUND_UNIT_TODESGLEITER</Text_ID>
+      <Encyclopedia_Text> TEXT_DESCRIPTION_GOAULD_TODESGLEITER_GROUND</Encyclopedia_Text>
+      <Encyclopedia_Unit_Class> TEXT_ENCYCLOPEDIA_CLASS_TODESGLEITER_GROUND</Encyclopedia_Unit_Class>
+      <Encyclopedia_Good_Against>Ewok_Handler F9TZ_Cloaking_Transport Scout_Trooper</Encyclopedia_Good_Against>
+      <Encyclopedia_Vulnerable_To>Scavenger_Droid AT_AA_Walker Underworld_Mass_Driver_Turret</Encyclopedia_Vulnerable_To>
+      <Icon_Name>GOAULD_SPACE_UNIT_DEATHGLIDER.TGA</Icon_Name>
+      <Damage>24</Damage>
+      <Build_Cost_Credits>600</Build_Cost_Credits>
+      <Build_Time_Seconds>58</Build_Time_Seconds>
+      <Ship_Class>walker</Ship_Class>
+      <Company_Transport_Unit>Goauld_Transport_Deathglider_Self</Company_Transport_Unit>
+      <Company_Units>Snowspeeder</Company_Units>      
+      <Score_Cost_Credits>600</Score_Cost_Credits>
+      <Tactical_Build_Cost_Multiplayer>1200</Tactical_Build_Cost_Multiplayer>
+      <Tactical_Build_Time_Seconds>12</Tactical_Build_Time_Seconds>
+      <Required_Ground_Base_Level>1</Required_Ground_Base_Level>   
+   </GroundCompany>
+   
+   
+   <GroundCompany Name="Rebel_Speeder_Wing">
+      <Variant_Of_Existing_Type>Rebel_Speeder_Wing_No_Prereq</Variant_Of_Existing_Type>
+      <Affiliation>Rebel</Affiliation>
+      <Tech_Level>2</Tech_Level>
+      <Required_Timeline>0</Required_Timeline>
+      <Required_Ground_Base_Level>1</Required_Ground_Base_Level>
+      <Required_Star_Base_Level>0</Required_Star_Base_Level>
+      <Required_Planets/>
+      <Required_Special_Structures>R_Ground_Hangar</Required_Special_Structures>
+      <Tactical_Build_Prerequisites>RC_Level_Two_Tech_Upgrade</Tactical_Build_Prerequisites>
+   </GroundCompany>
+   
+
+   <Projectile Name="Proj_Deathglider_Laser_Land">
+      <Variant_Of_Existing_Type>Proj_Goauld_Deathglider</Variant_Of_Existing_Type>
+      <Damage_Type>Damage_Normal</Damage_Type>
+      <Projectile_Damage>50.0</Projectile_Damage>
+      <Projectile_Blast_Area_Range>10.0</Projectile_Blast_Area_Range>
+		<Projectile_Blast_Area_Damage>55.0</Projectile_Blast_Area_Damage>
+		<Max_Secs_For_AE_Delayed_Damage>0.0</Max_Secs_For_AE_Delayed_Damage>
+   </Projectile>  
+  
+</Deathglider_Data>

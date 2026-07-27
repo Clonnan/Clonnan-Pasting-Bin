@@ -1,0 +1,205 @@
+<?xml version="1.0"?>
+<Rebel_Jaffa_Units_Data>
+
+
+
+   <!-- UNIT INFO -->
+   <GroundInfantry Name="Rebel_Jaffa_Staff_Weapon">
+      <Variant_Of_Existing_Type>Systemlord_Alliance_Jaffa</Variant_Of_Existing_Type>
+      <Text_ID>TEXT_JAFFA_GROUND_UNIT_WARRIOR</Text_ID>      
+      <Encyclopedia_Text>TEXT_DESCRIPTION_JAFFA_REBELS_WARRIOR_GROUND</Encyclopedia_Text>
+      <Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_JAFFA</Encyclopedia_Unit_Class>
+      <Icon_Name>REBEL_JAFFA_LAND_UNIT_JAFFA.TGA</Icon_Name>
+      <Land_Model_Name>Rebel_Jaffa_Land_Unit_Jaffa.alo</Land_Model_Name>
+      <Affiliation>Jaffa_Rebels</Affiliation>
+	  <Tech_Level>99</Tech_Level>
+      <Death_Clone>Damage_Hand_Device, Rebel_Jaffa_Staff_Hand_Device_Death_Clone</Death_Clone> 
+	  <FormationSpacing>0.5</FormationSpacing>
+	  
+	  <SFXEvent_Select>Unit_Select_Jaffa_Rebel</SFXEvent_Select>
+      <SFXEvent_Move>Unit_Move_Jaffa_Rebel</SFXEvent_Move>
+      <SFXEvent_Attack>Unit_Attack_Jaffa_Rebel</SFXEvent_Attack>
+      <Death_SFXEvent_Start_Die>Unit_Defeat_Jaffa_Rebel</Death_SFXEvent_Start_Die>
+	  
+	  <Unit_Abilities_Data SubObjectList="Yes">
+         <Unit_Ability>
+            <Type>SPREAD_OUT</Type>            
+            <Alternate_Name_Text>TEXT_ABILITY_GOAULD_GROUND_JAFFA_DECKUNG</Alternate_Name_Text>
+            <Alternate_Description_Text>TEXT_DESCRIPTION_ABILITY_JAFFA_DECKUNG</Alternate_Description_Text>
+            <Mod_Multiplier>SPEED_MULTIPLIER, 0.5f</Mod_Multiplier>
+            <Mod_Multiplier>TAKE_DAMAGE_MULTIPLIER, 0.85f</Mod_Multiplier>
+         </Unit_Ability>
+      </Unit_Abilities_Data>
+   </GroundInfantry>
+ 
+   
+   <GroundInfantry Name="Rebel_Jaffa_Staff_Hand_Device_Death_Clone">
+      <Variant_Of_Existing_Type>Rebel_Jaffa_Staff_Weapon</Variant_Of_Existing_Type>
+      <Specific_Death_Anim_Type>FW_DIE</Specific_Death_Anim_Type>
+   </GroundInfantry>
+
+   <GroundInfantry Name="Rebel_Jaffa_Staff_Converted_To_Enemy">
+      <Variant_Of_Existing_Type> Rebel_Jaffa_Staff_Weapon </Variant_Of_Existing_Type>
+   </GroundInfantry>
+   
+   <GroundInfantry Name="Rebel_Jaffa_Staff_Weapon_Indigenous">
+      <Variant_Of_Existing_Type>Rebel_Jaffa_Staff_Weapon</Variant_Of_Existing_Type>
+      <LandBehavior>LAND_TEAM_INFANTRY_LOCOMOTOR, DAMAGE_TRACKING, HIDE_WHEN_FOGGED, IDLE, INDIGENOUS_UNIT, REVEAL, STUNNABLE, SURFACE_FX, UNIT_AI, WEAPON</LandBehavior>
+      <Victory_Relevant>No</Victory_Relevant>
+   </GroundInfantry>
+   
+   <!-- Use separate units for Sodan and Haktyl in case we ever get unique models for them -->
+   <GroundInfantry Name="Rebel_Jaffa_Sodan_Indigenous">
+      <Variant_Of_Existing_Type>Rebel_Jaffa_Staff_Weapon</Variant_Of_Existing_Type>
+      <Text_ID>TEXT_JAFFA_GROUND_UNIT_SODAN</Text_ID>
+      <Encyclopedia_Text>TEXT_DESCRIPTION_JAFFA_REBELS_SODAN_GROUND</Encyclopedia_Text>
+      <Icon_Name>REBEL_JAFFA_LAND_UNIT_SODAN.TGA</Icon_Name>
+      <LandBehavior>LAND_TEAM_INFANTRY_LOCOMOTOR, DAMAGE_TRACKING, HIDE_WHEN_FOGGED, IDLE, INDIGENOUS_UNIT, REVEAL, STUNNABLE, SURFACE_FX, UNIT_AI, WEAPON</LandBehavior>
+      <Victory_Relevant>No</Victory_Relevant>
+   </GroundInfantry>
+   
+   <!-- Use separate units for Sodan and Haktyl in case we ever get unique models for them -->
+   <GroundInfantry Name="Rebel_Jaffa_Haktyl_Indigenous">
+      <Variant_Of_Existing_Type>Rebel_Jaffa_Staff_Weapon</Variant_Of_Existing_Type>
+      <Text_ID>TEXT_JAFFA_GROUND_UNIT_HAKTYL</Text_ID>
+      <Encyclopedia_Text>TEXT_DESCRIPTION_JAFFA_REBELS_HAKTYL_GROUND</Encyclopedia_Text>
+      <Icon_Name>REBEL_JAFFA_LAND_UNIT_HAKTYL.TGA</Icon_Name>
+      <LandBehavior>LAND_TEAM_INFANTRY_LOCOMOTOR, DAMAGE_TRACKING, HIDE_WHEN_FOGGED, IDLE, INDIGENOUS_UNIT, REVEAL, STUNNABLE, SURFACE_FX, UNIT_AI, WEAPON</LandBehavior>
+      <Victory_Relevant>No</Victory_Relevant>
+   </GroundInfantry>
+
+   
+   <GroundInfantry Name="Rebel_Jaffa_MG">
+      <Variant_Of_Existing_Type>Template_Ground_Infantry_Multi_Tauri</Variant_Of_Existing_Type>
+      <Text_ID>TEXT_JAFFA_GROUND_UNIT_WARRIOR</Text_ID>      
+      <Encyclopedia_Text>TEXT_DESCRIPTION_JAFFA_REBELS_WARRIOR_GROUND</Encyclopedia_Text>
+      <Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_JAFFA</Encyclopedia_Unit_Class>
+      <Icon_Name>REBEL_JAFFA_LAND_UNIT_JAFFA.TGA</Icon_Name>
+      <Land_Model_Name>Rebel_Jaffa_Land_Unit_Gun_Jaffa.alo</Land_Model_Name>
+      <Affiliation>Jaffa_Rebels</Affiliation>
+	  <Tech_Level>99</Tech_Level>
+	  <Scale_Factor>1.25</Scale_Factor>
+	  <Projectile_Types>Proj_Rebel_Jaffa_P90</Projectile_Types>
+      <Projectile_Fire_Recharge_Seconds>2.5</Projectile_Fire_Recharge_Seconds>
+      <Projectile_Fire_Pulse_Count>40</Projectile_Fire_Pulse_Count>
+      <Projectile_Fire_Pulse_Delay_Seconds>0.08</Projectile_Fire_Pulse_Delay_Seconds>
+      <Targeting_Priority_Set>SG_Infantry_AntiInfantry</Targeting_Priority_Set>
+      <SFXEvent_Fire>Weapon_Tauri_P90</SFXEvent_Fire>
+      <Death_Clone>Damage_Hand_Device, Rebel_Jaffa_MG_Hand_Device_Death_Clone</Death_Clone> 
+	  <FormationSpacing>0.5</FormationSpacing>
+	  
+	  <SFXEvent_Select>Unit_Select_Jaffa_Rebel</SFXEvent_Select>
+      <SFXEvent_Move>Unit_Move_Jaffa_Rebel</SFXEvent_Move>
+      <SFXEvent_Attack>Unit_Attack_Jaffa_Rebel</SFXEvent_Attack>
+      <Death_SFXEvent_Start_Die>Unit_Defeat_Jaffa_Rebel</Death_SFXEvent_Start_Die>
+	  
+	  <Unit_Abilities_Data SubObjectList="Yes">
+         <Unit_Ability>
+            <Type>SPREAD_OUT</Type>            
+            <Alternate_Name_Text>TEXT_ABILITY_GOAULD_GROUND_JAFFA_DECKUNG</Alternate_Name_Text>
+            <Alternate_Description_Text>TEXT_DESCRIPTION_ABILITY_JAFFA_DECKUNG</Alternate_Description_Text>
+            <Mod_Multiplier>SPEED_MULTIPLIER, 0.5f</Mod_Multiplier>
+            <Mod_Multiplier>TAKE_DAMAGE_MULTIPLIER, 0.85f</Mod_Multiplier>
+         </Unit_Ability>
+      </Unit_Abilities_Data>
+	  
+   </GroundInfantry>
+   
+   <GroundInfantry Name="Rebel_Jaffa_MG_Hand_Device_Death_Clone">
+      <Variant_Of_Existing_Type>Rebel_Jaffa_MG</Variant_Of_Existing_Type>
+      <Specific_Death_Anim_Type>FW_DIE</Specific_Death_Anim_Type>
+   </GroundInfantry>
+
+   <GroundInfantry Name="Rebel_Jaffa_MG_Converted_To_Enemy">
+      <Variant_Of_Existing_Type> Rebel_Jaffa_MG </Variant_Of_Existing_Type>
+   </GroundInfantry>
+   
+   <GroundInfantry Name="Rebel_Jaffa_MG_Indigenous">
+      <Variant_Of_Existing_Type>Rebel_Jaffa_MG</Variant_Of_Existing_Type>
+      <LandBehavior>LAND_TEAM_INFANTRY_LOCOMOTOR, DAMAGE_TRACKING, HIDE_WHEN_FOGGED, IDLE, INDIGENOUS_UNIT, REVEAL, STUNNABLE, SURFACE_FX, UNIT_AI, WEAPON</LandBehavior>
+      <Victory_Relevant>No</Victory_Relevant>
+   </GroundInfantry>
+
+   <!-- COMPANY INFO -->
+   <GroundCompany Name="Rebel_Jaffa_Squad">
+      <Variant_Of_Existing_Type>Template_Ground_Company</Variant_Of_Existing_Type>
+      <Text_ID>TEXT_JAFFA_GROUND_UNIT_WARRIOR</Text_ID>
+      <Encyclopedia_Good_Against> Rebel_Trooper Stormtrooper Goauld_Horus_Guard </Encyclopedia_Good_Against>
+      <Encyclopedia_Vulnerable_To> Plex_Soldier Dark_Trooper_PhaseI Goauld_Necropolis_Guard</Encyclopedia_Vulnerable_To>
+      <Encyclopedia_Text>TEXT_DESCRIPTION_JAFFA_REBELS_WARRIOR_GROUND</Encyclopedia_Text>
+      <Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_JAFFA</Encyclopedia_Unit_Class>
+      <Icon_Name>REBEL_JAFFA_LAND_UNIT_JAFFA.TGA</Icon_Name>
+      <Affiliation>Jaffa_Rebels</Affiliation>
+      <Damage>49</Damage>
+      <Score_Cost_Credits>200</Score_Cost_Credits>    
+      <Build_Cost_Credits>215</Build_Cost_Credits>
+      <Build_Time_Seconds>22</Build_Time_Seconds>
+      <Company_Transport_Unit>Alliance_Shuttle</Company_Transport_Unit>
+      <Create_Team_Type>Rebel_Jaffa_Team</Create_Team_Type>
+      <Company_Units>Rebel_Jaffa_Staff_Weapon, Rebel_Jaffa_Staff_Weapon, Rebel_Jaffa_Staff_Weapon, Rebel_Jaffa_MG, Rebel_Jaffa_MG, Rebel_Jaffa_MG</Company_Units>
+      <Max_Squad_Size>6</Max_Squad_Size>    
+      <Tactical_Build_Cost_Multiplayer>450</Tactical_Build_Cost_Multiplayer>
+      <Tactical_Build_Time_Seconds>8</Tactical_Build_Time_Seconds>
+      <Required_Ground_Base_Level>1</Required_Ground_Base_Level>
+   </GroundCompany>
+
+   <GroundCompany Name="Rebel_Jaffa_Indigenous_Company">
+      <Variant_Of_Existing_Type>Rebel_Jaffa_Squad</Variant_Of_Existing_Type>
+      <Create_Team_Type>Rebel_Jaffa_Team_Indigenous</Create_Team_Type>
+      <Company_Units>Rebel_Jaffa_Staff_Weapon_Indigenous, Rebel_Jaffa_Staff_Weapon_Indigenous, Rebel_Jaffa_Staff_Weapon_Indigenous, Rebel_Jaffa_MG_Indigenous, Rebel_Jaffa_MG_Indigenous, Rebel_Jaffa_MG_Indigenous</Company_Units>
+   </GroundCompany>
+   <GroundCompany Name="Rebel_Jaffa_Sodan_Indigenous_Company">
+      <Variant_Of_Existing_Type>Rebel_Jaffa_Squad</Variant_Of_Existing_Type>
+      <Text_ID>TEXT_JAFFA_GROUND_UNIT_SODAN</Text_ID>
+      <Encyclopedia_Text>TEXT_DESCRIPTION_JAFFA_REBELS_SODAN_GROUND</Encyclopedia_Text>
+      <Icon_Name>REBEL_JAFFA_LAND_UNIT_SODAN.TGA</Icon_Name>
+      <Create_Team_Type>Rebel_Jaffa_Team_Indigenous</Create_Team_Type>
+      <Company_Units>Rebel_Jaffa_Sodan_Indigenous, Rebel_Jaffa_Sodan_Indigenous, Rebel_Jaffa_Sodan_Indigenous, Rebel_Jaffa_Sodan_Indigenous, Rebel_Jaffa_Sodan_Indigenous, Rebel_Jaffa_Sodan_Indigenous</Company_Units>
+   </GroundCompany>
+   <GroundCompany Name="Rebel_Jaffa_Haktyl_Indigenous_Company">
+      <Variant_Of_Existing_Type>Rebel_Jaffa_Squad</Variant_Of_Existing_Type>
+      <Text_ID>TEXT_JAFFA_GROUND_UNIT_HAKTYL</Text_ID>
+      <Encyclopedia_Text>TEXT_DESCRIPTION_JAFFA_REBELS_HAKTYL_GROUND</Encyclopedia_Text>
+      <Icon_Name>REBEL_JAFFA_LAND_UNIT_HAKTYL.TGA</Icon_Name>
+      <Create_Team_Type>Rebel_Jaffa_Team_Indigenous</Create_Team_Type>
+      <Company_Units>Rebel_Jaffa_Haktyl_Indigenous, Rebel_Jaffa_Haktyl_Indigenous, Rebel_Jaffa_Haktyl_Indigenous, Rebel_Jaffa_Haktyl_Indigenous, Rebel_Jaffa_Haktyl_Indigenous, Rebel_Jaffa_Haktyl_Indigenous</Company_Units>
+   </GroundCompany>
+
+   <!-- CONTAINER INFO -->
+   <Container Name="Rebel_Jaffa_Team">
+      <Variant_Of_Existing_Type>Template_Infantry_Container</Variant_Of_Existing_Type>
+      <Text_ID>TEXT_JAFFA_GROUND_UNIT_WARRIOR</Text_ID>
+      <Encyclopedia_Text>TEXT_DESCRIPTION_JAFFA_REBELS_WARRIOR_GROUND</Encyclopedia_Text>
+      <Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_JAFFA</Encyclopedia_Unit_Class>
+      <Encyclopedia_Good_Against> Rebel_Trooper Stormtrooper Goauld_Horus_Guard </Encyclopedia_Good_Against>
+      <Encyclopedia_Vulnerable_To> Plex_Soldier Dark_Trooper_PhaseI Goauld_Necropolis_Guard</Encyclopedia_Vulnerable_To>
+      <Icon_Name>REBEL_JAFFA_LAND_UNIT_JAFFA.TGA</Icon_Name>   
+      <ContainerArrangement>Rows</ContainerArrangement>
+      <Max_Speed>1.1</Max_Speed>
+      <Max_Rate_Of_Turn>12.0</Max_Rate_Of_Turn>
+      <Select_Box_Scale>55</Select_Box_Scale>
+      <Unit_Abilities_Data SubObjectList="Yes">
+         <Unit_Ability>
+            <Type>SPREAD_OUT</Type>            
+            <Alternate_Name_Text>TEXT_ABILITY_GOAULD_GROUND_JAFFA_DECKUNG</Alternate_Name_Text>
+            <Alternate_Description_Text>TEXT_DESCRIPTION_ABILITY_JAFFA_DECKUNG</Alternate_Description_Text>
+            <Mod_Multiplier>SPEED_MULTIPLIER, 0.5f</Mod_Multiplier>
+            <Mod_Multiplier>TAKE_DAMAGE_MULTIPLIER, 0.85f</Mod_Multiplier>
+         </Unit_Ability>
+      </Unit_Abilities_Data>  
+   </Container>
+
+   <GroundCompany Name="Rebel_Jaffa_Team_Indigenous">
+      <Variant_Of_Existing_Type>Rebel_Jaffa_Team</Variant_Of_Existing_Type>
+      <ContainerArrangement>Dartboard</ContainerArrangement>
+   </GroundCompany>
+
+
+   <!-- PROJECTILE INFO -->
+   <Projectile Name="Proj_Rebel_Jaffa_P90">
+      <Variant_Of_Existing_Type>Proj_Tauri_P90</Variant_Of_Existing_Type>
+      <Damage_Type>Damage_Anti_Infantry</Damage_Type>
+      <Projectile_Damage>0.94</Projectile_Damage>
+   </Projectile>
+   
+</Rebel_Jaffa_Units_Data>

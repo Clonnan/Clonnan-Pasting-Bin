@@ -1,0 +1,265 @@
+<?xml version="1.0"?>
+<GenericHeroUnits>
+    <GenericHeroUnit Name="Underworld_Saboteur">
+        <Variant_Of_Existing_Type>Template_Ground_Infantry_Multi_Tauri</Variant_Of_Existing_Type>
+
+        <Text_ID>TEXT_TAURI_GROUND_UNIT_SG_TEAM</Text_ID>
+        <Encyclopedia_Text>TEXT_DESCRIPTION_TAURI_SG_TEAM_GROUND</Encyclopedia_Text>
+        <Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_SG_TEAM</Encyclopedia_Unit_Class>
+        <Encyclopedia_Good_Against> Rebel_Trooper Stormtrooper </Encyclopedia_Good_Against>
+        <Encyclopedia_Vulnerable_To> Plex_Soldier Dark_Trooper_PhaseI </Encyclopedia_Vulnerable_To>
+        <Icon_Name>TAURI_GROUND_UNIT_SG_TEAM.tga</Icon_Name>
+        <Land_Model_Name>Tauri_Land_Unit_SG_Team_1.alo</Land_Model_Name>
+
+        <LandBehavior>LAND_TEAM_INFANTRY_LOCOMOTOR, ABILITY_COUNTDOWN, DAMAGE_TRACKING, HIDE_WHEN_FOGGED, IDLE, REVEAL, STUNNABLE, SURFACE_FX, UNIT_AI, WEAPON</LandBehavior>
+
+        <SFXEvent_Select>Unit_Select_SG_Team</SFXEvent_Select>
+        <SFXEvent_Move>Unit_Move_SG_Team</SFXEvent_Move>
+        <SFXEvent_Attack>Unit_Attack_SG_Team</SFXEvent_Attack>
+        <SFXEvent_Guard></SFXEvent_Guard>
+        <SFXEvent_Group_Move></SFXEvent_Group_Move>
+        <SFXEvent_Group_Attack></SFXEvent_Group_Attack>
+        <SFXEvent_Fire>Weapon_Tauri_P90</SFXEvent_Fire>
+        <SFXEvent_Fleet_Move></SFXEvent_Fleet_Move>
+        <Death_SFXEvent_Start_Die>Unit_Rebel_Soldier_2_Death</Death_SFXEvent_Start_Die>
+
+        <Projectile_Types>Proj_Tauri_SG_Team_MP5</Projectile_Types>
+        <Projectile_Fire_Recharge_Seconds>2</Projectile_Fire_Recharge_Seconds>
+        <Projectile_Fire_Pulse_Count>15</Projectile_Fire_Pulse_Count>
+        <Projectile_Fire_Pulse_Delay_Seconds>0.1</Projectile_Fire_Pulse_Delay_Seconds>
+        <Targeting_Priority_Set>SG_Infantry_AntiKull</Targeting_Priority_Set>
+
+        <Tactical_Health>100</Tactical_Health>
+        <AI_Combat_Power>25</AI_Combat_Power>
+        <Damage>15</Damage>
+        <Land_FOW_Reveal_Range>330.0</Land_FOW_Reveal_Range>
+
+        <Presence_Induced_Animations>
+         Attention,
+            Urai_Fen,
+            Samantha_Carter,
+            Jack_ONeill
+        </Presence_Induced_Animations>
+
+        <Death_Clone>Damage_Hand_Device, Underworld_Saboteur_Hand_Device_Death_Clone</Death_Clone>
+
+        <Unit_Abilities_Data SubObjectList="Yes">
+            <Unit_Ability>
+                <Type>SPREAD_OUT</Type>
+                <Alternate_Name_Text>TEXT_TOOLTIP_ABILITY_SPREAD_OUT_NAME</Alternate_Name_Text>
+                <Alternate_Description_Text>TEXT_DESCRIPTION_ABILITY_COVER_SG_TEAM_GROUND</Alternate_Description_Text>
+                <Mod_Multiplier>SPEED_MULTIPLIER, 0.4f</Mod_Multiplier>
+                <Mod_Multiplier>TAKE_DAMAGE_MULTIPLIER, 0.85f</Mod_Multiplier>
+                <SFXEvent_GUI_Unit_Ability_Activated></SFXEvent_GUI_Unit_Ability_Activated>
+            </Unit_Ability>
+        </Unit_Abilities_Data>
+    </GenericHeroUnit>
+
+    <GroundInfantry Name="Underworld_Saboteur_Hand_Device_Death_Clone">
+        <Variant_Of_Existing_Type>Underworld_Saboteur</Variant_Of_Existing_Type>
+        <Specific_Death_Anim_Type>FW_DIE</Specific_Death_Anim_Type>
+    </GroundInfantry>
+
+    <GenericHeroUnit Name="Tauri_SG_Team_Unit_1">
+        <Variant_Of_Existing_Type> Underworld_Saboteur </Variant_Of_Existing_Type>
+        <Land_Model_Name>Tauri_Land_Unit_SG_Team_1.ALO</Land_Model_Name>
+        <Land_Terrain_Model_Mapping>
+            Temperate,  Tauri_Land_Unit_SG_Team_1.ALO,
+            Urban,      Tauri_Land_Unit_SG_Team_1_Black.ALO,
+            Arctic,     Tauri_Land_Unit_SG_Team_1_Snow.ALO,
+            Volcanic,   Tauri_Land_Unit_SG_Team_1_Pegasus.ALO,
+            Desert,     Tauri_Land_Unit_SG_Team_1_Desert.ALO,
+            Forest,     Tauri_Land_Unit_SG_Team_1_Camo.ALO,
+            Swamp,      Tauri_Land_Unit_SG_Team_1_Camo.ALO
+        </Land_Terrain_Model_Mapping>
+        <Land_Model_Anim_Override_Name>Tauri_Land_Unit_SG_Team_1.alo</Land_Model_Anim_Override_Name>
+
+        <Redirect_Damage_To_Teammates>Yes</Redirect_Damage_To_Teammates>
+
+        <LandBehavior>
+            ABILITY_COUNTDOWN,
+            DAMAGE_TRACKING,
+            HIDE_WHEN_FOGGED,
+            IDLE,
+            LAND_TEAM_INFANTRY_LOCOMOTOR,
+            REVEAL,
+            SPAWN_SQUADRON,
+            STUNNABLE,
+            SURFACE_FX,
+            UNIT_AI,
+            WEAPON
+        </LandBehavior>
+        <Starting_Spawned_Units_Tech_0>Tauri_Field_Commander_Buff_Emitter, 1</Starting_Spawned_Units_Tech_0>
+    </GenericHeroUnit>
+
+    <GenericHeroUnit Name="Tauri_SG_Team_Unit_2">
+        <Variant_Of_Existing_Type> Underworld_Saboteur </Variant_Of_Existing_Type>
+        <Land_Model_Name>Tauri_Land_Unit_SG_Team_2.ALO</Land_Model_Name>
+        <Land_Terrain_Model_Mapping>
+            Temperate,  Tauri_Land_Unit_SG_Team_2.ALO,
+            Urban,      Tauri_Land_Unit_SG_Team_2_Black.ALO,
+            Arctic,     Tauri_Land_Unit_SG_Team_2_Snow.ALO,
+            Volcanic,   Tauri_Land_Unit_SG_Team_2_Pegasus.ALO,
+            Desert,     Tauri_Land_Unit_SG_Team_2_Desert.ALO,
+            Forest,     Tauri_Land_Unit_SG_Team_2_Camo.ALO,
+            Swamp,      Tauri_Land_Unit_SG_Team_2_Camo.ALO
+        </Land_Terrain_Model_Mapping>
+        <Land_Model_Anim_Override_Name>Tauri_Land_Unit_SG_Team_2.alo</Land_Model_Anim_Override_Name>
+    </GenericHeroUnit>
+    
+    <GenericHeroUnit Name="Tauri_SG_Team_Unit_3">
+        <Variant_Of_Existing_Type> Underworld_Saboteur </Variant_Of_Existing_Type>
+        <Land_Model_Name>Tauri_Land_Unit_SG_Team_3.ALO</Land_Model_Name>
+        <Land_Terrain_Model_Mapping>
+            Temperate,  Tauri_Land_Unit_SG_Team_3.ALO,
+            Urban,      Tauri_Land_Unit_SG_Team_3_Black.ALO,
+            Arctic,     Tauri_Land_Unit_SG_Team_3_Snow.ALO,
+            Volcanic,   Tauri_Land_Unit_SG_Team_3_Pegasus.ALO,
+            Desert,     Tauri_Land_Unit_SG_Team_3_Desert.ALO,
+            Forest,     Tauri_Land_Unit_SG_Team_3_Camo.ALO,
+            Swamp,      Tauri_Land_Unit_SG_Team_3_Camo.ALO
+        </Land_Terrain_Model_Mapping>
+        <Land_Model_Anim_Override_Name>Tauri_Land_Unit_SG_Team_3.alo</Land_Model_Anim_Override_Name>
+    </GenericHeroUnit>
+
+    <GenericHeroUnit Name="Tauri_SG_Team_Unit_4">
+        <Variant_Of_Existing_Type> Underworld_Saboteur </Variant_Of_Existing_Type>
+        <Land_Model_Name>Tauri_Land_Unit_SG_Team_4.ALO</Land_Model_Name>
+        <Land_Terrain_Model_Mapping>
+            Temperate,  Tauri_Land_Unit_SG_Team_4.ALO,
+            Urban,      Tauri_Land_Unit_SG_Team_4_Black.ALO,
+            Arctic,     Tauri_Land_Unit_SG_Team_4_Snow.ALO,
+            Volcanic,   Tauri_Land_Unit_SG_Team_4_Pegasus.ALO,
+            Desert,     Tauri_Land_Unit_SG_Team_4_Desert.ALO,
+            Forest,     Tauri_Land_Unit_SG_Team_4_Camo.ALO,
+            Swamp,      Tauri_Land_Unit_SG_Team_4_Camo.ALO
+        </Land_Terrain_Model_Mapping>
+        <Land_Model_Anim_Override_Name>Tauri_Land_Unit_SG_Team_4.alo</Land_Model_Anim_Override_Name>
+    </GenericHeroUnit>
+
+
+    <HeroCompany Name="Underworld_Saboteur_Team_No_Prereq">
+        <Variant_Of_Existing_Type>Template_Ground_Company</Variant_Of_Existing_Type>
+
+        <Text_ID>TEXT_TAURI_GROUND_UNIT_SG_TEAM</Text_ID>
+        <Encyclopedia_Text>TEXT_DESCRIPTION_TAURI_SG_TEAM_SPECIAL</Encyclopedia_Text>
+        <Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_SG_TEAM</Encyclopedia_Unit_Class>
+        <Encyclopedia_Good_Against> Rebel_Trooper Stormtrooper </Encyclopedia_Good_Against>
+        <Encyclopedia_Vulnerable_To> Plex_Soldier Rebel_Infiltrator Dark_Trooper_PhaseI </Encyclopedia_Vulnerable_To>
+        <Icon_Name>TAURI_GROUND_UNIT_SG_TEAM.tga</Icon_Name>
+        <Show_Hero_Head>No</Show_Hero_Head>
+
+        <Build_Tab_Land_Units>Yes</Build_Tab_Land_Units>
+        <GUI_Row>0</GUI_Row><!--We have too many units in row 1 in GC, so SG teams got moved into building slot-->
+        <Is_Named_Hero>No</Is_Named_Hero>
+        <Is_Generic_Hero>No</Is_Generic_Hero>
+        <CategoryMask>Infantry</CategoryMask>
+
+        <Company_Units> Tauri_SG_Team_Unit_1, Tauri_SG_Team_Unit_2, Tauri_SG_Team_Unit_3, Tauri_SG_Team_Unit_4 </Company_Units>
+        <Company_Transport_Unit>Underworld_Infantry_Droid_Shuttle</Company_Transport_Unit>
+        <Max_Squad_Size>4</Max_Squad_Size>
+        <Create_Team_Type> Underworld_Saboteur_Team_Container </Create_Team_Type>
+        <Always_Spawn_In_Orbit>No</Always_Spawn_In_Orbit>
+
+        <Damage>59</Damage>
+    </HeroCompany>
+
+    <HeroCompany Name="Underworld_Saboteur_Team">
+        <Variant_Of_Existing_Type>Underworld_Saboteur_Team_No_Prereq</Variant_Of_Existing_Type>
+        <Affiliation>Underworld</Affiliation>
+        <Tech_Level>1</Tech_Level>
+        <Required_Timeline>0</Required_Timeline>
+        <Required_Ground_Base_Level>1</Required_Ground_Base_Level>
+        <Required_Star_Base_Level>0</Required_Star_Base_Level>
+        <Required_Special_Structures>U_Ground_Palace</Required_Special_Structures>
+        <Required_Planets>Universe_L_Earth, Universe_L_Alpha_Site, Universe_L_Gamma_Site, Universe_L_Icarus_Base, Universe_L_Lantea, Universe_L_Alpha_Site_P</Required_Planets>
+        <Required_Planets>Universe_S_Earth, Pegasus_K_Lantea, Pegasus_G_Lantea, Allianz_Erde</Required_Planets>
+        <Build_Cost_Credits>500</Build_Cost_Credits>
+        <Score_Cost_Credits>350</Score_Cost_Credits>
+        <Build_Time_Seconds>50</Build_Time_Seconds>
+        <Tactical_Build_Prerequisites></Tactical_Build_Prerequisites>
+        <Tactical_Build_Cost_Multiplayer>700</Tactical_Build_Cost_Multiplayer>
+        <Tactical_Build_Time_Seconds>9</Tactical_Build_Time_Seconds>
+    </HeroCompany>
+
+    <!-- CONTAINER INFO -->
+    <Container Name="Underworld_Saboteur_Team_Container">
+        <Variant_Of_Existing_Type>Template_Infantry_Container</Variant_Of_Existing_Type>
+        <Text_ID>TEXT_TAURI_GROUND_UNIT_SG_TEAM</Text_ID>
+        <Encyclopedia_Text>TEXT_DESCRIPTION_TAURI_SG_TEAM_GROUND</Encyclopedia_Text>
+        <Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_SG_TEAM</Encyclopedia_Unit_Class>
+        <Encyclopedia_Good_Against> Rebel_Trooper Stormtrooper </Encyclopedia_Good_Against>
+        <Encyclopedia_Vulnerable_To> Plex_Soldier Rebel_Infiltrator Dark_Trooper_PhaseI </Encyclopedia_Vulnerable_To>
+        <Icon_Name>TAURI_GROUND_UNIT_SG_TEAM.tga</Icon_Name>
+        <Max_Speed>1</Max_Speed>
+        <Max_Rate_Of_Turn>12.0</Max_Rate_Of_Turn>
+        <Select_Box_Scale>55</Select_Box_Scale>
+        <Selection_Blob_Material_Name>Highlight_Underworld_Hero</Selection_Blob_Material_Name>
+
+        <Is_Generic_Hero>No</Is_Generic_Hero>
+        <CategoryMask>Infantry</CategoryMask>
+        <Unit_Abilities_Data SubObjectList="Yes">
+            <Unit_Ability>
+                <Type>SPREAD_OUT</Type>
+                <Mod_Multiplier>SPEED_MULTIPLIER, 0.4f</Mod_Multiplier>
+                <Mod_Multiplier>TAKE_DAMAGE_MULTIPLIER, 0.85f</Mod_Multiplier>
+                <SFXEvent_GUI_Unit_Ability_Activated></SFXEvent_GUI_Unit_Ability_Activated>
+                <Alternate_Name_Text>TEXT_TOOLTIP_ABILITY_SPREAD_OUT_NAME</Alternate_Name_Text>
+                <Alternate_Description_Text>TEXT_DESCRIPTION_ABILITY_COVER_SG_TEAM_GROUND</Alternate_Description_Text>
+            </Unit_Ability>
+        </Unit_Abilities_Data>
+    </Container>
+
+    <MiscObject Name="Tauri_Field_Commander_Buff_Emitter">
+        <Land_Model_Name>W_LASER_INVISIBLE.ALO</Land_Model_Name>
+        <Is_Visible_On_Radar>No</Is_Visible_On_Radar>
+        <Space_Layer>Land</Space_Layer>
+        <UnitCollisionClass>Infantry</UnitCollisionClass>
+        <CanCellStack>yes</CanCellStack>
+        <Avoidance_Disabled>Yes</Avoidance_Disabled>
+        <Influences_Capture_Point> False </Influences_Capture_Point>
+        <Lua_Script>ObjectScript_Field_Commander</Lua_Script>
+    </MiscObject>
+
+    <!-- PROJECTILES -->
+    <Projectile Name="Proj_Tauri_SG_Team_MP5">
+        <Variant_Of_Existing_Type>Proj_Tauri_MP5</Variant_Of_Existing_Type>
+        <Damage_Type>Damage_Normal</Damage_Type>
+        <Max_Speed>11.0</Max_Speed>
+        <Projectile_Max_Flight_Distance>400.0</Projectile_Max_Flight_Distance>
+        <Projectile_Damage>2.04</Projectile_Damage>
+    </Projectile>
+
+    <Projectile Name="Proj_Tauri_SG_Team_Field_Commander_Bonus">
+        <Text_ID>TEXT_NONE</Text_ID>
+        <Land_Model_Name>W_LASER_INVISIBLE.ALO</Land_Model_Name>
+        <Scale_Factor>1.0</Scale_Factor>
+        <Max_Speed>15.0</Max_Speed>
+        <Max_Rate_Of_Turn>1</Max_Rate_Of_Turn>
+        <Behavior>PROJECTILE, HIDE_WHEN_FOGGED</Behavior>
+        <Projectile_Category>DEFAULT</Projectile_Category>
+        <Projectile_Ground_Detonation_SurfaceFX>Hover_No_Particles</Projectile_Ground_Detonation_SurfaceFX>
+
+        <Projectile_Max_Flight_Distance>10.0</Projectile_Max_Flight_Distance>
+        <Projectile_Max_Lifetime>5.0</Projectile_Max_Lifetime>
+        <Projectile_Damage>0.0</Projectile_Damage>
+        <Projectile_Blast_Area_Damage> 0 </Projectile_Blast_Area_Damage>
+        <Projectile_Blast_Area_Range> 5 </Projectile_Blast_Area_Range>
+        <Max_Secs_For_AE_Delayed_Damage>5</Max_Secs_For_AE_Delayed_Damage>
+        <Projectile_Does_Shield_Damage>No</Projectile_Does_Shield_Damage>
+        <Projectile_Does_Energy_Damage>No</Projectile_Does_Energy_Damage>
+        <Projectile_Does_Hitpoint_Damage>No</Projectile_Does_Hitpoint_Damage>
+        <Projectile_Energy_Per_Shot>0</Projectile_Energy_Per_Shot>
+        <Projectile_Object_Detonation_Particle/>
+        <Projectile_Ground_Detonation_Particle/>
+        <Projectile_Lifetime_Detonation_Particle/>
+        <AI_Combat_Power>40</AI_Combat_Power>
+
+        <Projectile_Combat_Mod>COMBAT_MOD_DAMAGE</Projectile_Combat_Mod>
+        <Projectile_Combat_Mod_Duration>1.0</Projectile_Combat_Mod_Duration>
+        <Projectile_Combat_Mod_Value>0.15</Projectile_Combat_Mod_Value>
+        <Projectile_Combat_Mod_Effect>Particle_Tauri_Commander_Buff</Projectile_Combat_Mod_Effect>
+        <Projectile_Combat_Mod_Category_Mask>Infantry | LandHero | Vehicle</Projectile_Combat_Mod_Category_Mask>
+    </Projectile>
+
+</GenericHeroUnits>

@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Udajeet>
+
+   <!--This is the special deathglider from the original Emmerich movie-->
+   <GroundVehicle Name="Goauld_Udajeet">
+      <Variant_Of_Existing_Type>Template_Ground_Flyer</Variant_Of_Existing_Type>
+      <Text_ID>TEXT_GOAULD_GROUND_UNIT_UDAJEET</Text_ID>
+      <Encyclopedia_Text>TEXT_DESCRIPTION_GOAULD_UDAJEET_GROUND</Encyclopedia_Text>
+      <Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_AIRCRAFT</Encyclopedia_Unit_Class>
+      <Encyclopedia_Good_Against>Ewok_Handler F9TZ_Cloaking_Transport Scout_Trooper</Encyclopedia_Good_Against>
+      <Encyclopedia_Vulnerable_To>Scavenger_Droid AT_AA_Walker Underworld_Mass_Driver_Turret</Encyclopedia_Vulnerable_To>
+      <Icon_Name>GOAULD_GROUND_UNIT_UDAJEET.TGA</Icon_Name>
+      <Radar_Icon_Name>I_RADAR_DEATHGLIDER.TGA</Radar_Icon_Name>
+      <Land_Model_Name>Goauld_Land_Unit_Udajeet_Blue.ALO</Land_Model_Name>
+      <LandBehavior>FLYING_LOCOMOTOR, AMBIENT_SFX, DAMAGE_TRACKING, HIDE_WHEN_FOGGED, REVEAL, STUNNABLE, TARGETING, TELEKINESIS_TARGET, UNIT_AI, WIND_DISTURBANCE</LandBehavior>
+      <Affiliation>Neutral</Affiliation>
+      <Select_Box_Scale>114</Select_Box_Scale>
+      <Tactical_Health>190</Tactical_Health>
+      <AI_Combat_Power>100</AI_Combat_Power>
+      <Targeting_Priority_Set>SG_Air_AntiAll</Targeting_Priority_Set>
+      <Scale_Factor>0.8</Scale_Factor>
+      <Size_Value>15</Size_Value>
+      <Max_Speed>5.5</Max_Speed>
+      <Min_Speed>2.0</Min_Speed>
+      <OverrideAcceleration>0.2</OverrideAcceleration>
+      <OverrideDeceleration>0.2</OverrideDeceleration>
+      <Max_Rate_Of_Turn>3.0</Max_Rate_Of_Turn>
+      <Max_Rate_Of_Roll>2.5</Max_Rate_Of_Roll>
+      <Max_Lift>2.5</Max_Lift>
+      <Bank_Turn_Angle>20</Bank_Turn_Angle>
+      <Strafe_Distance>1200.0</Strafe_Distance>
+      <Prepare_Strafe_Height>500.0</Prepare_Strafe_Height>
+      <Begin_Turn_Towards_Distance>800.0</Begin_Turn_Towards_Distance>
+      <Blob_Shadow_Scale>40.0, 40.0</Blob_Shadow_Scale>
+      <Spin_Away_On_Death>Yes</Spin_Away_On_Death>
+      <GUI_Bracket_Size>1</GUI_Bracket_Size>
+      <GUI_Bounds_Scale>0.6</GUI_Bounds_Scale>
+	  <SFXEvent_Fire>Weapon_Goauld_Staff</SFXEvent_Fire>
+      
+      <HardPoints>
+			HP_Udajeet_Staff_01, 
+         HP_Udajeet_Staff_02  
+		</HardPoints>
+      
+      <SFXEvent_Fire>Weapon_Goauld_Staff</SFXEvent_Fire>
+      <SFXEvent_Attack>Unit_Attack_GFB</SFXEvent_Attack>
+      <SFXEvent_Fleet_Move>Unit_Move_GFB</SFXEvent_Fleet_Move>
+      <SFXEvent_Select>Unit_Select_GFB</SFXEvent_Select>
+      
+      <SFXEvent_Ambient_Moving> Engine_Goauld_Deathglider_Land </SFXEvent_Ambient_Moving>
+		<SFXEvent_Ambient_Moving_Min_Delay_Seconds> 5 </SFXEvent_Ambient_Moving_Min_Delay_Seconds>
+		<SFXEvent_Ambient_Moving_Max_Delay_Seconds> 10 </SFXEvent_Ambient_Moving_Max_Delay_Seconds>
+		<SFXEvent_Engine_Cinematic_Focus_Loop> Engine_Goauld_Deathglider_Land_Cinematic </SFXEvent_Engine_Cinematic_Focus_Loop>
+   </GroundVehicle>
+   
+   <!--GroundVehicle Name="Goauld_Udajeet_Dark">
+      <Variant_Of_Existing_Type>Goauld_Udajeet</Variant_Of_Existing_Type>
+      <Land_Model_Name>Goauld_Land_Unit_Udajeet_Dark.alo</Land_Model_Name>
+   </GroundVehicle>
+  
+   <GroundVehicle Name="Goauld_Udajeet_Golden">
+      <Variant_Of_Existing_Type>Goauld_Udajeet</Variant_Of_Existing_Type>
+      <Land_Model_Name>Goauld_Land_Unit_Udajeet_Golden.alo</Land_Model_Name>
+   </GroundVehicle-->
+
+   <GroundVehicle Name="Abandoned_Goauld_Udajeet">
+      <Variant_Of_Existing_Type>Goauld_Udajeet</Variant_Of_Existing_Type>
+      <Affiliation>Neutral, Rebel, Empire, Underworld</Affiliation>
+   </GroundVehicle>
+   
+   
+   <GroundCompany Name="Goauld_Udajeet_Company">
+      <Variant_Of_Existing_Type>Template_Ground_Company</Variant_Of_Existing_Type>
+      <Text_ID>TEXT_GOAULD_GROUND_UNIT_UDAJEET</Text_ID>
+      <Encyclopedia_Text>TEXT_DESCRIPTION_GOAULD_UDAJEET_GROUND</Encyclopedia_Text>
+      <Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_AIRCRAFT</Encyclopedia_Unit_Class>
+      <Encyclopedia_Good_Against>Ewok_Handler F9TZ_Cloaking_Transport Scout_Trooper</Encyclopedia_Good_Against>
+      <Encyclopedia_Vulnerable_To>Scavenger_Droid AT_AA_Walker Underworld_Mass_Driver_Turret</Encyclopedia_Vulnerable_To>
+      <Icon_Name>GOAULD_GROUND_UNIT_UDAJEET.TGA</Icon_Name>
+      <Affiliation>Rebel</Affiliation>
+      <Build_Cost_Credits>480</Build_Cost_Credits>
+      <Build_Time_Seconds>54</Build_Time_Seconds>
+      <Company_Transport_Unit>Gallofree_Transport</Company_Transport_Unit>
+      <Company_Units>Goauld_Udajeet</Company_Units>      
+      <Score_Cost_Credits>600</Score_Cost_Credits>
+      <Tactical_Build_Cost_Multiplayer>1000</Tactical_Build_Cost_Multiplayer>
+      <Tactical_Build_Time_Seconds>11</Tactical_Build_Time_Seconds> 
+      <Required_Ground_Base_Level>1</Required_Ground_Base_Level>   
+   </GroundCompany>
+   
+   <!--GroundCompany Name="Goauld_Udajeet_Squad_Dark">
+      <Variant_Of_Existing_Type>Goauld_Udajeet_Squad</Variant_Of_Existing_Type>
+      <Company_Units>Goauld_Udajeet_Dark</Company_Units>
+   </GroundCompany>
+
+   <GroundCompany Name="Goauld_Udajeet_Squad_Golden">
+      <Variant_Of_Existing_Type>Goauld_Udajeet_Squad</Variant_Of_Existing_Type>
+      <Company_Units>Goauld_Udajeet_Golden</Company_Units>
+   </GroundCompany-->
+   
+
+   <Projectile Name="Proj_Udajeet_Laser_Land">
+      <Variant_Of_Existing_Type>Proj_Goauld_Land_Staff_Weapon</Variant_Of_Existing_Type>
+      <Damage_Type>Damage_Normal</Damage_Type>
+      <Projectile_Damage>40.0</Projectile_Damage>
+      <Projectile_Blast_Area_Range>10.0</Projectile_Blast_Area_Range>
+		<Projectile_Blast_Area_Damage>35.0</Projectile_Blast_Area_Damage>
+		<Max_Secs_For_AE_Delayed_Damage>0.0</Max_Secs_For_AE_Delayed_Damage>
+   </Projectile> 
+   
+</Udajeet>

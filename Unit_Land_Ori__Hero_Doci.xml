@@ -1,0 +1,89 @@
+<?xml version="1.0"?>
+<UniqueUnits>
+
+   <!-- Ground unit-->    
+   <HeroUnit Name="Doci">
+      <Variant_Of_Existing_Type>Template_Ground_Infantry_Single_Hero</Variant_Of_Existing_Type>
+      <Text_ID>TEXT_ORI_SPACE_HERO_DOCI</Text_ID>
+      <Encyclopedia_Text>TEXT_DESCRIPTION_ORI_GC_DOCI_GROUND</Encyclopedia_Text>
+      <Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_DOCI_KREUZER</Encyclopedia_Unit_Class>
+      <Encyclopedia_Good_Against></Encyclopedia_Good_Against>
+      <Encyclopedia_Vulnerable_To></Encyclopedia_Vulnerable_To>
+      <Icon_Name>ORI_SPACE_HERO_DOCI.TGA</Icon_Name> 
+      <Land_Model_Name>Ori_Land_Hero_Doci.ALO</Land_Model_Name>
+      <Scale_Factor>1.3</Scale_Factor>
+      <Movement_Animation_Speed>1</Movement_Animation_Speed>
+      <Rotation_Animation_Speed>20.0</Rotation_Animation_Speed>
+      <Walk_Animation_Speed>0.5</Walk_Animation_Speed>
+      <Max_Speed>0.6</Max_Speed>
+	  <Tactical_Health>1000</Tactical_Health>
+      <!--Land_Model_Anim_Override_Name>Ori_Land_Hero_Doci.ALO</Land_Model_Anim_Override_Name-->
+      <LandBehavior>ABILITY_COUNTDOWN, DAMAGE_TRACKING, HIDE_WHEN_FOGGED, IDLE, REVEAL, SELECTABLE, SURFACE_FX, TARGETING, UNIT_AI, WALK_LOCOMOTOR, WEAPON</LandBehavior>  
+      <Affiliation>Ori</Affiliation>
+      
+      <Is_Named_Hero>No</Is_Named_Hero>
+      <Is_Generic_Hero>Yes</Is_Generic_Hero>
+      <Show_Hero_Head>Yes</Show_Hero_Head>
+      <Can_Be_Neutralized_By_Major_Heroes>No</Can_Be_Neutralized_By_Major_Heroes>
+      <Can_Be_Neutralized_By_Minor_Heroes>No</Can_Be_Neutralized_By_Minor_Heroes> 
+      
+      <Projectile_Types>Proj_Ori_Doci</Projectile_Types>
+      <Projectile_Fire_Recharge_Seconds>2.5</Projectile_Fire_Recharge_Seconds>
+	  <Projectile_Fire_Pulse_Count>1</Projectile_Fire_Pulse_Count>
+	  <Projectile_Fire_Pulse_Delay_Seconds>2.0</Projectile_Fire_Pulse_Delay_Seconds>  
+      <SFXEvent_Fire>Weapon_Hand_Device_Goauld</SFXEvent_Fire>	  
+		
+		<Abilities SubObjectList="Yes">
+         <Absorb_Blaster_Ability Name="Ori_Hero_Doci_Absorb_Blaster">
+            <Activation_Style>Take_Damage</Activation_Style>
+            <Absorb_Chance>0.6</Absorb_Chance>
+            <Damage_Absorb_Percentage>0.2</Damage_Absorb_Percentage>
+            <Damage_Absorb_Amount>1</Damage_Absorb_Amount>
+            <Applicable_Unit_Categories>Vehicle | Infantry | Structure</Applicable_Unit_Categories>
+            <Applicable_Unit_Types/>
+            <SFXEvent_Activate></SFXEvent_Activate>
+            <Owner_Light_Effect_Type>Color_Flash</Owner_Light_Effect_Type>
+            <Owner_Light_Effect_Color>2.0, 0.4, 0.4</Owner_Light_Effect_Color>
+            <Owner_Light_Effect_Color2/>
+            <Owner_Light_Effect_Duration>0.5</Owner_Light_Effect_Duration>
+            <Owner_Light_Effect_Pulse_Count/>
+         </Absorb_Blaster_Ability>
+      </Abilities>
+		
+		
+   </HeroUnit>
+ 
+      
+   <!-- HeroCompany Information--> 
+   <HeroCompany Name="Doci_Company">
+      <Variant_Of_Existing_Type>Template_Ground_Hero_Company</Variant_Of_Existing_Type>
+      <Text_ID>TEXT_ORI_SPACE_HERO_DOCI</Text_ID>
+      <Encyclopedia_Text>TEXT_DESCRIPTION_ORI_GC_DOCI_GROUND</Encyclopedia_Text>
+      <Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_DOCI_KREUZER</Encyclopedia_Unit_Class>
+      <Encyclopedia_Good_Against></Encyclopedia_Good_Against>
+      <Encyclopedia_Vulnerable_To></Encyclopedia_Vulnerable_To>
+      <Icon_Name>ORI_SPACE_HERO_DOCI.TGA</Icon_Name>                             
+      <Affiliation>Ori</Affiliation>
+      <Is_Named_Hero>No</Is_Named_Hero>
+      <Is_Generic_Hero>Yes</Is_Generic_Hero>
+      <Score_Cost_Credits>25000</Score_Cost_Credits>
+      <Ranking_In_Category>1</Ranking_In_Category>      
+      <Company_Transport_Unit>Ori_Hero_Doci</Company_Transport_Unit>
+      <Company_Units>Doci</Company_Units>        
+      <Tactical_Build_Cost_Multiplayer>3700</Tactical_Build_Cost_Multiplayer>
+      <Tactical_Build_Time_Seconds>27</Tactical_Build_Time_Seconds>         
+      <CategoryMask> LandHero | SpaceHero </CategoryMask>
+   </HeroCompany>
+    
+   
+   <Projectile Name="Proj_Ori_Doci">
+      <Variant_Of_Existing_Type>Proj_Goauld_Hand_Device</Variant_Of_Existing_Type>
+      <Damage_Type>Damage_Normal</Damage_Type>
+      <Projectile_Damage>171.1</Projectile_Damage>
+      <Max_Speed>5.0</Max_Speed>
+      <Projectile_Blast_Area_Range>17.0</Projectile_Blast_Area_Range>
+	  <Projectile_Blast_Area_Damage>171.1</Projectile_Blast_Area_Damage>
+   </Projectile>
+   
+   
+</UniqueUnits>

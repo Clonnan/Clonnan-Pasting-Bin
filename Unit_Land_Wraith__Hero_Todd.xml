@@ -1,0 +1,125 @@
+<?xml version="1.0"?>
+ <Todd_Data>
+  
+  
+   <HeroUnit Name="Captain_Piet">
+      <Variant_Of_Existing_Type>Template_Ground_Infantry_Single_Hero_Wraith</Variant_Of_Existing_Type>
+      <Text_ID>TEXT_WRAITH_GROUND_HERO_TODD</Text_ID>
+      <Encyclopedia_Text>TEXT_DESCRIPTION_WRAITH_TODD_GROUND</Encyclopedia_Text>
+      <Encyclopedia_Unit_Class> TEXT_ENCYCLOPEDIA_CLASS_TODD_GROUND</Encyclopedia_Unit_Class>
+      <Encyclopedia_Good_Against>Rebel_Trooper Goauld_Jackal_Guard Underworld_Merc</Encyclopedia_Good_Against>
+      <Encyclopedia_Vulnerable_To>Snowspeeder Tauri_B302_Land Rebel_Anti_Infantry_Turret</Encyclopedia_Vulnerable_To>
+      <Icon_Name>WRAITH_SPACE_HERO_TODD.TGA</Icon_Name>
+      <Land_Model_Name>Wraith_Land_Hero_Todd.ALO</Land_Model_Name>
+      <LandBehavior>ABILITY_COUNTDOWN, DAMAGE_TRACKING, GARRISON_UNIT, HIDE_WHEN_FOGGED, IDLE, REVEAL, SELECTABLE, TARGETING, UNIT_AI, WALK_LOCOMOTOR, WEAPON</LandBehavior>  
+      <Affiliation>Empire</Affiliation>
+      <Tactical_Health>900</Tactical_Health>
+      <AI_Combat_Power>150</AI_Combat_Power>
+      <Neutralization_Cost>4150.0</Neutralization_Cost>
+      <Projectile_Types>Proj_Wraith_Land_Hero_Todd_Blaster</Projectile_Types>
+      <Projectile_Fire_Recharge_Seconds>1.7</Projectile_Fire_Recharge_Seconds>
+      <Projectile_Fire_Pulse_Count>2</Projectile_Fire_Pulse_Count>
+      <Projectile_Fire_Pulse_Delay_Seconds>1.5</Projectile_Fire_Pulse_Delay_Seconds>
+      <Targeting_Priority_Set>SG_Infantry_AntiInfantry</Targeting_Priority_Set>
+      <SFXEvent_Fire>Weapon_Stunner_New_Wraith</SFXEvent_Fire>
+      <Damage>50</Damage>
+
+      <SFXEvent_Attack>Unit_Attack_Todd</SFXEvent_Attack>
+      <SFXEvent_Guard></SFXEvent_Guard>
+      <SFXEvent_Health_Critical_Warning>Unit_CriticalHP_Todd</SFXEvent_Health_Critical_Warning> 
+      <SFXEvent_Health_Low_Warning>Unit_LOWHP_Todd</SFXEvent_Health_Low_Warning>
+      <SFXEvent_Move>Unit_Move_Todd</SFXEvent_Move>
+      <SFXEvent_Select>Unit_Select_Todd</SFXEvent_Select>
+      <SFXEvent_Stop></SFXEvent_Stop>  
+      <Death_SFXEvent_Start_Die>Unit_Defeat_Todd</Death_SFXEvent_Start_Die> 
+      <Unit_Abilities_Data SubObjectList="Yes">        
+         <Unit_Ability>
+            <Type>WEAKEN_ENEMY</Type>
+            <Alternate_Name_Text>TEXT_ABILITY_REINFORCEMENT_BEACON</Alternate_Name_Text>
+            <Alternate_Description_Text>TEXT_DESCRIPTION_ABILITY_REINFORCEMENT_BEACON_TODD_GROUND</Alternate_Description_Text>
+            <Alternate_Icon_Name>I_SA_REINFORCEMENT_BEACON.TGA</Alternate_Icon_Name>
+            <Recharge_Seconds>90</Recharge_Seconds>
+            <Effective_Radius>100.0</Effective_Radius>
+		      <Spawned_Object_Type>Wraith_Reinforcement_Beacon</Spawned_Object_Type>
+            <SFXEvent_Target_Ability></SFXEvent_Target_Ability>
+            <SFXEvent_GUI_Unit_Ability_Activated></SFXEvent_GUI_Unit_Ability_Activated>
+            <SFXEvent_GUI_Unit_Ability_Deactivated />
+            <Area_Effect_Decal_Distance>25</Area_Effect_Decal_Distance>
+         </Unit_Ability>
+      </Unit_Abilities_Data>
+   </HeroUnit>
+  
+  
+   <HeroCompany Name="Piet_Team">
+      <Variant_Of_Existing_Type>Template_Ground_Hero_Company</Variant_Of_Existing_Type>
+      <Text_ID>TEXT_WRAITH_GROUND_HERO_TODD</Text_ID>
+      <Encyclopedia_Text>TEXT_DESCRIPTION_WRAITH_TODD_GROUND</Encyclopedia_Text>
+      <Encyclopedia_Unit_Class> TEXT_ENCYCLOPEDIA_CLASS_TODD_GROUND</Encyclopedia_Unit_Class>
+      <Icon_Name>WRAITH_SPACE_HERO_TODD.TGA</Icon_Name>
+      <Affiliation>Empire</Affiliation>
+      <Score_Cost_Credits>18000</Score_Cost_Credits>
+      <Company_Transport_Unit>Accuser_Star_Destroyer</Company_Transport_Unit>
+      <Company_Units>Captain_Piet</Company_Units>   
+      <SFXEvent_Build_Started></SFXEvent_Build_Started>
+      <SFXEvent_Build_Complete>Unit_Select_Todd</SFXEvent_Build_Complete>              
+      <SFXEvent_Fleet_Move>Unit_Move_Todd</SFXEvent_Fleet_Move>
+      <SFXEvent_Hero_Respawned>Unit_Select_Todd</SFXEvent_Hero_Respawned>
+      <CategoryMask> LandHero | SpaceHero </CategoryMask>
+      <Tactical_Build_Cost_Multiplayer>4150</Tactical_Build_Cost_Multiplayer>
+      <Tactical_Build_Time_Seconds>30</Tactical_Build_Time_Seconds>
+      <Tactical_Build_Prerequisites>EC_Level_Three_Tech_Upgrade</Tactical_Build_Prerequisites>
+   </HeroCompany>
+   
+   
+   <!-- As long as this structure is on the field, it will constantly provide reinforcements -->
+   <GroundStructure Name="Wraith_Reinforcement_Beacon">
+      <Text_ID>TEXT_WRAITH_GROUND_ITEM_RADIO_BEACON</Text_ID>
+      <Encyclopedia_Text>TEXT_DESCRIPTION_GC_WRAITH_RADIO_BEACON</Encyclopedia_Text>   
+      <Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_ITEM</Encyclopedia_Unit_Class>
+      <Icon_Name>WRAITH_GROUND_BUILDING_DETECTOR.TGA</Icon_Name>  
+      <Land_Model_Name>Wraith_Land_Building_Buildpad_Detector.ALO</Land_Model_Name>
+      <Behavior>SELECTABLE</Behavior>
+      <LandBehavior>IDLE, REVEAL, HIDE_WHEN_FOGGED, DAMAGE_TRACKING</LandBehavior>
+      <Affiliation>Empire</Affiliation>
+      <Scale_Factor>0.35</Scale_Factor>
+      <Select_Box_Scale>60</Select_Box_Scale>
+      <Tactical_Health>100</Tactical_Health>
+      <Mass>1.0</Mass>
+      <GUI_Bracket_Size>0</GUI_Bracket_Size>
+      <Ranged_Target_Z_Adjust>2.0</Ranged_Target_Z_Adjust>  
+      <Is_Visible_On_Radar>Yes</Is_Visible_On_Radar>
+      <Radar_Icon_Size>0.075  0.075</Radar_Icon_Size>     
+      <Land_FOW_Reveal_Range>100.0</Land_FOW_Reveal_Range>
+      <Dense_FOW_Reveal_Range_Multiplier>1.0</Dense_FOW_Reveal_Range_Multiplier>
+      <Armor_Type> Armor_Structure </Armor_Type>
+      <Victory_Relevant>No</Victory_Relevant>  
+      <Influences_Capture_Point>False</Influences_Capture_Point>
+      <Is_Valid_Target>Yes</Is_Valid_Target>
+      <Is_Squashable>Yes</Is_Squashable>
+      <Ground_Infantry_Turret_Target>Yes</Ground_Infantry_Turret_Target>
+      <Ground_Vehicle_Turret_Target>Yes</Ground_Vehicle_Turret_Target>
+      <Collidable_By_Projectile_Living>Yes</Collidable_By_Projectile_Living>
+      <Collidable_By_Projectile_Dead>Yes</Collidable_By_Projectile_Dead>  
+      <CategoryMask>Structure</CategoryMask> 
+      <Has_Land_Evaluator>True</Has_Land_Evaluator>
+      <UnitCollisionClass> Infantry </UnitCollisionClass>
+      <CanCellStack>yes</CanCellStack>
+      <Loop_Idle_Anim_00>Yes</Loop_Idle_Anim_00>      
+      <SFXEvent_Select>Structure_Sensor_Select_SFX</SFXEvent_Select>
+      <SFXEvent_Engine_Cinematic_Focus_Loop> Structure_Sensor_Array_Loop </SFXEvent_Engine_Cinematic_Focus_Loop>      
+      <Collidable_By_Projectile_Living>Yes</Collidable_By_Projectile_Living>
+      <Death_Explosions>Medium_Explosion_Land</Death_Explosions>
+      <Death_SFXEvent_Start_Die>Unit_Turret_Death_SFX</Death_SFXEvent_Start_Die>
+      <Remove_Upon_Death>Yes</Remove_Upon_Death>
+      <Lua_Script>ObjectScript_Wraith_Reinforcement_Beacon</Lua_Script>
+   </GroundStructure>
+
+
+   <!-- Projectile Information Wraith Soldier -->
+   <Projectile Name="Proj_Wraith_Land_Hero_Todd_Blaster">
+      <Variant_Of_Existing_Type>Proj_Wraith_New_Stunner</Variant_Of_Existing_Type>
+      <Damage_Type>Damage_Normal</Damage_Type>
+      <Projectile_Damage>108.17</Projectile_Damage>
+   </Projectile>
+  
+ </Todd_Data>

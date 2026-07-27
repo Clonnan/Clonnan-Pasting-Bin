@@ -1,0 +1,102 @@
+<?xml version="1.0"?>
+<Asuran_Soldier_Infantry_Data>
+
+   <GroundInfantry Name="Asuran_Soldier">
+      <Variant_Of_Existing_Type>Template_Ground_Infantry_Multi</Variant_Of_Existing_Type>
+      <Text_ID>TEXT_ASURANS_GROUND_UNIT_SOLDIER</Text_ID>
+      <Encyclopedia_Text>TEXT_DESCRIPTION_ASURANS_SOLDIER_GROUND</Encyclopedia_Text>
+      <Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_SPECIAL_FORCES</Encyclopedia_Unit_Class>
+      <Encyclopedia_Good_Against>Underworld_Saboteur Underworld_Merc Stormtrooper</Encyclopedia_Good_Against>
+      <Encyclopedia_Vulnerable_To>MZ8_Pulse_Cannon_Tank Tauri_F302_Land Empire_Anti_Infantry_Turret</Encyclopedia_Vulnerable_To>    
+	  <LandBehavior>LAND_TEAM_INFANTRY_LOCOMOTOR, DAMAGE_TRACKING, HIDE_WHEN_FOGGED, IDLE, REVEAL, SURFACE_FX, UNIT_AI, WEAPON</LandBehavior>
+      <Icon_Name>ASURAN_GROUND_UNIT_SOLDIER.TGA</Icon_Name>
+      <Land_Model_Name>Asuran_Land_Unit_Soldier.alo</Land_Model_Name>
+      <Land_Model_Anim_Override_Name>Asuran_Land_Unit_Soldier.alo</Land_Model_Anim_Override_Name>
+      <Tactical_Health>80</Tactical_Health>
+      <Max_Speed>1.0</Max_Speed>
+      <AI_Combat_Power>20</AI_Combat_Power>
+      <Targeting_Priority_Set>SG_Infantry_AntiInfantry</Targeting_Priority_Set>
+      <CategoryMask>Infantry</CategoryMask> 
+      <FormationSpacing>0.5</FormationSpacing>	  
+      <Projectile_Types>Proj_Asuran_Soldier</Projectile_Types>
+      <Projectile_Fire_Recharge_Seconds>1.2</Projectile_Fire_Recharge_Seconds>
+	  <Projectile_Fire_Pulse_Count>3</Projectile_Fire_Pulse_Count>
+	  <Projectile_Fire_Pulse_Delay_Seconds>0.9</Projectile_Fire_Pulse_Delay_Seconds>
+      <SFXEvent_Fire>Weapon_Asuran_Hand_Blaster</SFXEvent_Fire>
+      <Death_Clone>Damage_Hand_Device, Asuran_Soldier_Hand_Device_Death_Clone</Death_Clone>
+  </GroundInfantry>
+   
+   <GroundInfantry Name="Asuran_Soldier_Hand_Device_Death_Clone">
+      <Variant_Of_Existing_Type>Asuran_Soldier</Variant_Of_Existing_Type>
+      <Specific_Death_Anim_Type>FW_DIE</Specific_Death_Anim_Type>
+   </GroundInfantry>
+   
+
+   <GroundCompany Name="Asuran_Soldier_Company">     
+      <Variant_Of_Existing_Type>Template_Ground_Company</Variant_Of_Existing_Type>
+      <Text_ID>TEXT_ASURANS_GROUND_UNIT_SOLDIER</Text_ID>
+      <Encyclopedia_Text>TEXT_DESCRIPTION_ASURANS_SOLDIER_GROUND</Encyclopedia_Text>
+      <Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_SPECIAL_FORCES</Encyclopedia_Unit_Class>
+      <Encyclopedia_Good_Against>Underworld_Saboteur Underworld_Merc Stormtrooper</Encyclopedia_Good_Against>
+      <Encyclopedia_Vulnerable_To>MZ8_Pulse_Cannon_Tank Tauri_F302_Land Empire_Anti_Infantry_Turret</Encyclopedia_Vulnerable_To>    
+      <Icon_Name>ASURAN_GROUND_UNIT_SOLDIER.TGA</Icon_Name>
+      <Affiliation>Asuran</Affiliation>
+      <Damage>10</Damage>
+      <Score_Cost_Credits>250</Score_Cost_Credits>
+      <Tech_Level>1</Tech_Level>	
+      <Required_Special_Structures>Asuran_Ground_Building_Barracks</Required_Special_Structures>	  
+      <Build_Cost_Credits>1200</Build_Cost_Credits>
+      <Build_Time_Seconds>35</Build_Time_Seconds>
+      <Company_Transport_Unit>Asuran_Jumper_Transport</Company_Transport_Unit>
+      <Create_Team_Type>Asuran_Soldier_Team</Create_Team_Type>
+      <Company_Units>Asuran_Soldier, Asuran_Soldier, Asuran_Soldier, Asuran_Soldier, Asuran_Soldier, Asuran_Soldier</Company_Units>
+      <Max_Squad_Size>6</Max_Squad_Size>      
+      <Tactical_Build_Cost_Multiplayer>600</Tactical_Build_Cost_Multiplayer>
+      <Tactical_Build_Time_Seconds>9</Tactical_Build_Time_Seconds>
+      <Required_Ground_Base_Level>1</Required_Ground_Base_Level>
+   </GroundCompany>
+  
+  
+   <Container Name="Asuran_Soldier_Team">
+      <Variant_Of_Existing_Type>Template_Infantry_Container</Variant_Of_Existing_Type>
+      <Text_ID>TEXT_ASURANS_GROUND_UNIT_SOLDIER</Text_ID>
+      <Encyclopedia_Text>TEXT_DESCRIPTION_ASURANS_SOLDIER_GROUND</Encyclopedia_Text>
+      <Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_SPECIAL_FORCES</Encyclopedia_Unit_Class>
+      <Encyclopedia_Good_Against>Underworld_Saboteur Underworld_Merc Stormtrooper</Encyclopedia_Good_Against>
+      <Encyclopedia_Vulnerable_To>MZ8_Pulse_Cannon_Tank Tauri_F302_Land Empire_Anti_Infantry_Turret</Encyclopedia_Vulnerable_To>    
+      <Icon_Name>ASURAN_GROUND_UNIT_SOLDIER.TGA</Icon_Name>
+      <ContainerArrangement>Rows</ContainerArrangement>
+      <Max_Speed>1.0</Max_Speed>
+   </Container>
+  
+  
+   <Projectile Name="Proj_Asuran_Soldier">
+      <Text_ID>TEXT_NONE</Text_ID>
+      <Land_Model_Name>Wraith_Projectile_AntiVehicle.ALO</Land_Model_Name>
+      <Scale_Factor>0.5</Scale_Factor>
+      <Projectile_Category>Laser</Projectile_Category>
+      <Max_Speed>20.0</Max_Speed>
+      <Max_Rate_Of_Turn>0.0</Max_Rate_Of_Turn>
+      <Behavior>PROJECTILE, HIDE_WHEN_FOGGED</Behavior>
+      <Projectile_Fire_Recharge_Seconds>1.0</Projectile_Fire_Recharge_Seconds>
+      <Projectile_Fire_Pulse_Count>5</Projectile_Fire_Pulse_Count>
+      <Projectile_Fire_Pulse_Delay_Seconds>0.1</Projectile_Fire_Pulse_Delay_Seconds>
+      <Projectile_Max_Flight_Distance>400.0</Projectile_Max_Flight_Distance>
+      <Projectile_Damage>4.0</Projectile_Damage>
+      <Projectile_Does_Shield_Damage>Yes</Projectile_Does_Shield_Damage>
+      <Projectile_Does_Energy_Damage>No</Projectile_Does_Energy_Damage>
+      <Projectile_Does_Hitpoint_Damage>Yes</Projectile_Does_Hitpoint_Damage>
+      <Projectile_Energy_Per_Shot>0</Projectile_Energy_Per_Shot>
+      <Projectile_Object_Detonation_Particle>Particle_General_Hit_Small</Projectile_Object_Detonation_Particle>
+      <Projectile_Object_Armor_Reduced_Detonation_Particle>Particle_General_Hit_Small</Projectile_Object_Armor_Reduced_Detonation_Particle>
+      <Projectile_Ground_Detonation_Particle/>
+      <Projectile_Lifetime_Detonation_Particle/>
+      <Projectile_Absorbed_By_Shields_Particle>Particle_Wraith_Fighter_Shield_Hit</Projectile_Absorbed_By_Shields_Particle>
+      <AI_Combat_Power>50</AI_Combat_Power>
+      <Projectile_SFXEvent_Detonate_Reduced_By_Armor>Effect_Shield_Absorb_Light</Projectile_SFXEvent_Detonate_Reduced_By_Armor>
+      <Projectile_Blast_Area_Damage>2</Projectile_Blast_Area_Damage>
+	  <Projectile_Blast_Area_Range>4</Projectile_Blast_Area_Range>
+	  <Max_Secs_For_AE_Delayed_Damage>0</Max_Secs_For_AE_Delayed_Damage>
+   </Projectile>
+   
+</Asuran_Soldier_Infantry_Data>

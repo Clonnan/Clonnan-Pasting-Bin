@@ -1,0 +1,1845 @@
+<?xml version="1.0"?>
+<Wraith_Ground_Buildings>
+
+<!--========================================================================================================
+#    Wraith Ground Buildings
+========================================================================================================-->
+
+   <!-- Command Center -->
+   <Ground_Structure_Wraith Name="Imperial_Command_Center">
+      <Variant_Of_Existing_Type>Template_Ground_Structure_Big_Base_Building_Spawn_HQ</Variant_Of_Existing_Type>
+      <Text_ID>TEXT_WRAITH_GROUND_BUILDING_OUTPOST</Text_ID>
+      <Encyclopedia_Text>TEXT_DESCRIPTION_WRAITH_OUTPOST_GC_GROUND</Encyclopedia_Text>
+      <MP_Encyclopedia_Text>TEXT_DESCRIPTION_WRAITH_OUTPOST_SK_GROUND</MP_Encyclopedia_Text>
+      <Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_WRAITH_OUTPOST</Encyclopedia_Unit_Class>
+      <Icon_Name>WRAITH_GROUND_BUILDING_COMMAND_CENTER.TGA</Icon_Name>
+      <Land_Model_Name>Wraith_Land_Building_Command_Center.alo</Land_Model_Name>
+      <Radar_Icon_Name>I_RADAR_WRAITH_COMMAND_CENTER.TGA</Radar_Icon_Name>
+      <Radar_Icon_Size>0.1  0.1</Radar_Icon_Size>
+      <Scale_Factor>1.3</Scale_Factor>
+      <Loop_Idle_Anim_00>Yes</Loop_Idle_Anim_00>
+      <Select_Box_Scale>150</Select_Box_Scale>
+      <Layer_Z_Adjust>-10.0</Layer_Z_Adjust>
+
+      <Affiliation>Empire</Affiliation>
+      <Tech_Level>0</Tech_Level>
+      <SFXEvent_Select>Structure_Command_Center_Select_SFX</SFXEvent_Select>
+      <SFXEvent_Ambient_Loop>Structure_Communications_Array_Loop</SFXEvent_Ambient_Loop>
+
+      <Tactical_Buildable_Objects_Multiplayer>
+         Empire,
+            Boba_Fett_Team_Land_MP, <!-- Hunter -->
+            <!-- Darth_Team_Land_MP, -->
+            <!-- General_Veers_Team, -->
+            Emperor_Palpatine_Team, <!-- Queen -->
+            <!-- Mara_Jade_Team, -->
+            Piet_Team, <!-- Todd -->
+            Wraith_Hero_Michael_Land_Company, <!-- Michael -->
+            EC_Level_Two_Tech_Upgrade,
+            EC_Level_Three_Tech_Upgrade,
+      </Tactical_Buildable_Objects_Multiplayer>
+	  
+	  <Tactical_Buildable_Objects_Campaign>
+			Empire,
+				W_Ground_Building_Structure_Upgrade_1,
+                W_Ground_Building_Structure_Upgrade_2,
+                W_Ground_Building_Structure_Upgrade_3,
+				W_Ground_Reinforced_Turrets_Upgrade,
+				W_Ground_Increased_Hero_Health_Upgrade,
+				W_Ground_Deployment_Protection_Upgrade
+	  </Tactical_Buildable_Objects_Campaign>
+
+      <Destruction_Survivors>
+         Imperial_Stormtrooper_Squad, 1.0
+         DarkTrooper_P1_Company, 1.0
+         Field_Com_Empire_Team, 1.0
+      </Destruction_Survivors>
+
+      <Land_Damage_Thresholds>1, 0.66, 0.33, 0</Land_Damage_Thresholds>
+      <Land_Damage_Alternates>0, 1, 2, 3</Land_Damage_Alternates>
+      <Land_Damage_SFX>null,SFX_Grenade_Detonation, SFX_Grenade_Detonation,null</Land_Damage_SFX>
+
+      <Starting_Spawned_Units_Tech_0>Imperial_Stormtrooper_Squad, 2</Starting_Spawned_Units_Tech_0>
+      <Reserve_Spawned_Units_Tech_0>Imperial_Stormtrooper_Squad, -1</Reserve_Spawned_Units_Tech_0>
+      <Starting_Spawned_Units_Tech_0>DarkTrooper_P1_Company, 2</Starting_Spawned_Units_Tech_0>
+      <Reserve_Spawned_Units_Tech_0>DarkTrooper_P1_Company, -1</Reserve_Spawned_Units_Tech_0>
+      <Starting_Spawned_Units_Tech_0>Field_Com_Empire_Team, 1</Starting_Spawned_Units_Tech_0>
+      <Reserve_Spawned_Units_Tech_0>Field_Com_Empire_Team, -1</Reserve_Spawned_Units_Tech_0>
+      <Spawned_Squadron_Location_Bones>SPAWN_00</Spawned_Squadron_Location_Bones>
+
+      <Required_Ground_Base_Level>0</Required_Ground_Base_Level>
+      <Abilities SubObjectList="Yes">
+         <Force_Healing_Ability Name="E_Command_Center_Self_Repair">
+            <Activation_Style>Skirmish_Automatic</Activation_Style>
+            <Heal_Percent>0.015</Heal_Percent>
+            <Heal_Interval_In_Secs>5.0</Heal_Interval_In_Secs>
+            <Single_Target_Heal>Yes</Single_Target_Heal>
+            <Owner_Particle_Bone_Name>ROOT</Owner_Particle_Bone_Name>
+            <Owner_Light_Effect_Type>Color_Flash</Owner_Light_Effect_Type>
+            <Owner_Light_Effect_Color>1.8, 1.8, 1.8</Owner_Light_Effect_Color>
+            <Owner_Light_Effect_Duration>0.6</Owner_Light_Effect_Duration>
+            <Owner_Light_Effect_Pulse_Count>1</Owner_Light_Effect_Pulse_Count>
+         </Force_Healing_Ability>
+         <Income_Stream_Ability Name="Empire_Command_Center_Income_Stream">
+            <Base_Income_Value>45</Base_Income_Value>
+            <Base_Interval_In_Secs>5</Base_Interval_In_Secs>
+            <Split_Income_With_Allies>Yes</Split_Income_With_Allies>
+            <Split_Favors_Owner>No</Split_Favors_Owner>
+            <Full_Amount_To_Everyone>Yes</Full_Amount_To_Everyone>
+         </Income_Stream_Ability>
+      </Abilities>
+   </Ground_Structure_Wraith>
+
+   <Ground_Structure_Wraith Name="Civilian_Command_Center">
+      <Variant_Of_Existing_Type>Imperial_Command_Center</Variant_Of_Existing_Type>
+      <Tactical_Health>100</Tactical_Health>
+      <Affiliation>Neutral</Affiliation>
+      <Tech_Level>99</Tech_Level>
+   </Ground_Structure_Wraith>
+
+   <Ground_Structure_Wraith Name="Imperial_Command_Center_Build_Pad">
+      <Variant_Of_Existing_Type>Template_Ground_Structure_Build_Pad</Variant_Of_Existing_Type>
+      <Land_Model_Name>Wraith_Land_Building_Command_Center_BP.alo</Land_Model_Name>
+      <Scale_Factor>1.3</Scale_Factor>
+      <Affiliation>Empire</Affiliation>
+      <Tactical_Buildable_Objects_Multiplayer>Empire, UC_Imperial_Command_Center</Tactical_Buildable_Objects_Multiplayer>
+      <Layer_Z_Adjust>10.0</Layer_Z_Adjust>
+      <Lua_Script>ObjectScript_BBS_Enabler</Lua_Script>
+   </Ground_Structure_Wraith>
+   <Ground_Structure_Wraith Name="UC_Imperial_Command_Center">
+      <Variant_Of_Existing_Type>Template_Ground_Structure_UC</Variant_Of_Existing_Type>
+      <Text_ID>TEXT_WRAITH_GROUND_BUILDING_OUTPOST</Text_ID>
+      <Encyclopedia_Text>TEXT_DESCRIPTION_WRAITH_OUTPOST_GC_GROUND</Encyclopedia_Text>
+      <MP_Encyclopedia_Text>TEXT_DESCRIPTION_WRAITH_OUTPOST_SK_GROUND</MP_Encyclopedia_Text>
+      <Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_WRAITH_OUTPOST</Encyclopedia_Unit_Class>
+      <Icon_Name>WRAITH_GROUND_BUILDING_COMMAND_CENTER.TGA</Icon_Name>
+      <Land_Model_Name>Wraith_Land_Building_Command_Center_UC.alo</Land_Model_Name>
+      <Scale_Factor>1.3</Scale_Factor>
+      <Affiliation>Empire</Affiliation>
+      <Tactical_Buildable_Constructed>Imperial_Command_Center</Tactical_Buildable_Constructed>
+      <Tactical_Build_Start_Lower_Z>0</Tactical_Build_Start_Lower_Z>
+      <Tactical_Health>4000</Tactical_Health>
+      <Tactical_Build_Cost_Multiplayer>2200</Tactical_Build_Cost_Multiplayer>
+      <Tactical_Build_Time_Seconds>45</Tactical_Build_Time_Seconds>
+   </Ground_Structure_Wraith>
+
+
+   <!-- Hangar -->
+   <Ground_Structure_Wraith Name="Wraith_Ground_Hangar">
+      <Variant_Of_Existing_Type>Template_Ground_Structure_Big_Base_Building_Spawn</Variant_Of_Existing_Type>
+      <Text_ID>TEXT_WRAITH_GROUND_BUILDING_HANGAR</Text_ID>
+      <Encyclopedia_Text>TEXT_DESCRIPTION_WRAITH_HANGAR_GC_GROUND</Encyclopedia_Text>
+      <MP_Encyclopedia_Text>TEXT_DESCRIPTION_WRAITH_HANGAR_SK_GROUND</MP_Encyclopedia_Text>
+      <Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_WRAITH_HANGAR</Encyclopedia_Unit_Class>
+      <Icon_Name>WRAITH_GROUND_BUILDING_HANGAR.TGA</Icon_Name>
+      <Land_Model_Name>Wraith_Land_Building_Hangar.alo </Land_Model_Name>
+      <Radar_Icon_Name>I_RADAR_WRAITH_HANGAR.TGA</Radar_Icon_Name>
+      <Radar_Icon_Size>0.075  0.075</Radar_Icon_Size>
+      <Loop_Idle_Anim_00>Yes</Loop_Idle_Anim_00>
+      <Select_Box_Scale>170</Select_Box_Scale>
+      <Scale_Factor>1.65</Scale_Factor>
+      <GUI_Bounds_Scale>0.5</GUI_Bounds_Scale>
+      <Layer_Z_Adjust>-3.0</Layer_Z_Adjust>
+
+      <Land_Damage_Thresholds>1, 0.66, 0.33, 0</Land_Damage_Thresholds>
+      <Land_Damage_Alternates>0, 1, 2, 3</Land_Damage_Alternates>
+      <Land_Damage_SFX>null,SFX_Grenade_Detonation,SFX_Grenade_Detonation,null</Land_Damage_SFX>
+
+      <Starting_Spawned_Units_Tech_0>Wraith_Dart_Land, 1</Starting_Spawned_Units_Tech_0>
+      <Reserve_Spawned_Units_Tech_0>Wraith_Dart_Land, -1</Reserve_Spawned_Units_Tech_0>
+      <Spawned_Squadron_Delay_Seconds>60</Spawned_Squadron_Delay_Seconds>
+
+      <Affiliation>Empire</Affiliation>
+      <Tech_Level>1</Tech_Level>
+      <Required_Ground_Base_Level>0</Required_Ground_Base_Level>
+      <Required_Special_Structures>Imperial_Command_Center</Required_Special_Structures>
+      <Required_Planets>Universe_L_Anubis_Homeworld, Universe_L_Asuras, Universe_L_Celestis, Universe_L_Doranda, Universe_L_Genii, Universe_L_Hebridan, Universe_L_Juna, Universe_L_Langara, Universe_L_Lantea, Universe_L_Oran, Universe_L_Othala, Universe_L_Sateda, Universe_L_Tegalus, Universe_L_Tollana, Universe_L_Taranis, Universe_L_Wraith_Homeworld</Required_Planets>
+      <Required_Planets>Universe_S_Anubis_Homeworld, Universe_S_Genii, Universe_S_Juna, Universe_S_Langara, Universe_S_Lantea, Universe_S_Sateda, Universe_S_Revanna, Universe_S_Tollana, Universe_S_Wraith_Homeworld</Required_Planets>
+      <Required_Planets>Allianz_Anubis_Heimatwelt, Allianz_Juna, Allianz_Langara, Allianz_Latona, Allianz_P3S_114, Allianz_Revanna, Allianz_Tagrea, Allianz_Tollana</Required_Planets>
+      <Required_Planets>Pegasus_G_AlphaBasis_P, Pegasus_G_Asuras, Pegasus_G_Doronda, Pegasus_G_Erde, Pegasus_G_Genii, Pegasus_G_Lantea, Pegasus_G_M35_117, Pegasus_G_Sateda, Pegasus_G_Taranis</Required_Planets>
+      <Required_Planets>Pegasus_K_Asuras, Pegasus_K_Genii, Pegasus_K_Sateda, Pegasus_K_Taranis</Required_Planets>
+      <Required_Planets>RepliOri_AlphaBasis, RepliOri_Celestis, RepliOri_DarEshkalon, RepliOri_Earth, RepliOri_Oran, RepliOri_Othalla, RepliOri_Tegalus</Required_Planets>
+
+      <Destruction_Survivors>
+         Imperial_Stormtrooper_Squad, 1.0
+         DarkTrooper_P1_Company, 1.0
+         Field_Com_Empire_Team, 1.0
+      </Destruction_Survivors>
+
+      <Tactical_Buildable_Objects_Multiplayer>
+         Empire,
+            Wraith_Dart_Land_Company,
+            Wraith_Bomber_Land_Company,
+            Wraith_Shuttle_Land_Company,
+      </Tactical_Buildable_Objects_Multiplayer>
+	  
+	  <Tactical_Buildable_Objects_Campaign>
+			Empire,
+				W_Ground_Reinforced_Shuttle_Armor_Upgrade,
+	  </Tactical_Buildable_Objects_Campaign>
+
+      <Lua_Script>ObjectScript_Building_Unit_Animation</Lua_Script>
+
+      <Abilities SubObjectList="Yes">
+         <Force_Healing_Ability Name="E_Heavy_Vehicle_Factory_Self_Repair">
+            <Activation_Style>Skirmish_Automatic</Activation_Style>
+            <Heal_Percent>0.025</Heal_Percent>
+            <Heal_Interval_In_Secs>5.0</Heal_Interval_In_Secs>
+            <Single_Target_Heal>Yes</Single_Target_Heal>
+            <Owner_Particle_Bone_Name>ROOT</Owner_Particle_Bone_Name>
+            <Owner_Light_Effect_Type>Color_Flash</Owner_Light_Effect_Type>
+            <Owner_Light_Effect_Color>1.8, 1.8, 1.8</Owner_Light_Effect_Color>
+            <Owner_Light_Effect_Duration>0.6</Owner_Light_Effect_Duration>
+            <Owner_Light_Effect_Pulse_Count>1</Owner_Light_Effect_Pulse_Count>
+         </Force_Healing_Ability>
+         <Income_Stream_Ability Name="E_Heavy_Vehicle_Factory_Income_Stream">
+            <Base_Income_Value>5</Base_Income_Value>
+            <Base_Interval_In_Secs>5</Base_Interval_In_Secs>
+            <Split_Income_With_Allies>Yes</Split_Income_With_Allies>
+            <Split_Favors_Owner>No</Split_Favors_Owner>
+            <Full_Amount_To_Everyone>Yes</Full_Amount_To_Everyone>
+         </Income_Stream_Ability>
+      </Abilities>
+   </Ground_Structure_Wraith>
+
+   <Ground_Structure_Wraith Name="E_Ground_Heavy_Vehicle_Factory_Build_Pad">
+      <Variant_Of_Existing_Type>Template_Ground_Structure_Build_Pad</Variant_Of_Existing_Type>
+      <Land_Model_Name>Wraith_Land_Building_Hangar_BP.alo</Land_Model_Name>
+      <Scale_Factor>1.65</Scale_Factor>
+      <Affiliation>Empire</Affiliation>
+      <Tactical_Buildable_Objects_Multiplayer>Empire, UC_E_Ground_Heavy_Vehicle_Factory</Tactical_Buildable_Objects_Multiplayer>
+      <Layer_Z_Adjust>3.0</Layer_Z_Adjust>
+   </Ground_Structure_Wraith>
+   <Ground_Structure_Wraith Name="UC_E_Ground_Heavy_Vehicle_Factory">
+      <Variant_Of_Existing_Type>Template_Ground_Structure_UC</Variant_Of_Existing_Type>
+      <Text_ID>TEXT_WRAITH_GROUND_BUILDING_HANGAR</Text_ID>
+      <Encyclopedia_Text>TEXT_DESCRIPTION_WRAITH_HANGAR_GC_GROUND</Encyclopedia_Text>
+      <MP_Encyclopedia_Text>TEXT_DESCRIPTION_WRAITH_HANGAR_SK_GROUND</MP_Encyclopedia_Text>
+      <Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_WRAITH_HANGAR</Encyclopedia_Unit_Class>
+      <Icon_Name>WRAITH_GROUND_BUILDING_HANGAR.TGA</Icon_Name>
+      <Land_Model_Name>Wraith_Land_Building_Hangar_UC.alo</Land_Model_Name>
+      <Scale_Factor>1.65</Scale_Factor>
+      <Affiliation>Empire</Affiliation>
+      <Tactical_Buildable_Constructed>Wraith_Ground_Hangar</Tactical_Buildable_Constructed>
+      <Tactical_Build_Start_Lower_Z>50.0</Tactical_Build_Start_Lower_Z>
+      <Tactical_Health>1000</Tactical_Health>
+      <Tactical_Build_Cost_Multiplayer>1400</Tactical_Build_Cost_Multiplayer>
+      <Tactical_Build_Time_Seconds>40</Tactical_Build_Time_Seconds>
+   </Ground_Structure_Wraith>
+
+    <!-- === Used to prevent multiple usage of the lua code === -->
+    <!-- Imperial 11.11.15: I'd need this dummy to run the code for Hangar Doors and Shipyard Animation of the Wraith. Please paste it anywhere, I'd suggest into Ground_Buildings_Wraith.xml -->
+    <MiscObject Name="Run_Once_Dummy">
+      <Text_ID/>
+      <Space_Model_Name>W_LASER_INVISIBLE.alo</Space_Model_Name>
+      <Land_Model_Name>W_LASER_INVISIBLE.alo</Land_Model_Name>
+      <Scale_Factor>1.0</Scale_Factor>
+      <Behavior>DUMMY_ORBITAL_STRUCTURE, SPACE_OBSTACLE, IDLE</Behavior>
+      <Layer_Z_Adjust>0.0</Layer_Z_Adjust>
+      <Sort_Order_Adjust>-1</Sort_Order_Adjust>
+      <Remove_Upon_Death>true</Remove_Upon_Death>
+      <Space_Layer> StaticObject </Space_Layer>
+      <Target_Stealth_Units>Yes</Target_Stealth_Units>
+      <Victory_Relevant>No</Victory_Relevant>
+      <Lua_Script>ObjectScript_Building_Unit_Animation</Lua_Script>
+    </MiscObject>
+
+
+   <!-- Vehicle Factory -->
+   <Ground_Structure_Wraith Name="E_Ground_Light_Vehicle_Factory">
+      <Variant_Of_Existing_Type>Template_Ground_Structure_Big_Base_Building_Spawn</Variant_Of_Existing_Type>
+      <Text_ID>TEXT_WRAITH_GROUND_BUILDING_VEHICLE_FACTORY</Text_ID>
+      <Encyclopedia_Text>TEXT_DESCRIPTION_WRAITH_VEHICLE_FACTORY_GC_GROUND</Encyclopedia_Text>
+      <MP_Encyclopedia_Text>TEXT_DESCRIPTION_WRAITH_VEHICLE_FACTORY_SK_GROUND</MP_Encyclopedia_Text>
+      <Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_WRAITH_VEHICLE_FACTORY</Encyclopedia_Unit_Class>
+      <Icon_Name>WRAITH_GROUND_BUILDING_VEHICLE_FACTORY.tga</Icon_Name>
+      <Land_Model_Name>Wraith_Land_Building_Vehicle_Factory.alo</Land_Model_Name>
+      <Radar_Icon_Name>I_RADAR_WRAITH_VEHICLE_FACTORY.TGA</Radar_Icon_Name>
+      <Radar_Icon_Size>0.075  0.075</Radar_Icon_Size>
+      <Select_Box_Scale>200</Select_Box_Scale>
+      <Scale_Factor>1.35</Scale_Factor>
+      <Loop_Idle_Anim_00>Yes</Loop_Idle_Anim_00>
+      <Layer_Z_Adjust>-8.0</Layer_Z_Adjust>
+      <GUI_Bounds_Scale>0.45</GUI_Bounds_Scale>
+
+      <Destruction_Survivors>
+         Imperial_Stormtrooper_Squad, 1.0
+         DarkTrooper_P1_Company, 1.0
+         Field_Com_Empire_Team, 1.0
+      </Destruction_Survivors>
+
+      <Land_Damage_Thresholds>1, 0.66, 0.33, 0</Land_Damage_Thresholds>
+      <Land_Damage_Alternates>0, 1, 2, 3</Land_Damage_Alternates>
+      <Land_Damage_SFX>null,SFX_Grenade_Detonation, SFX_Grenade_Detonation,null</Land_Damage_SFX>
+
+      <Affiliation>Empire</Affiliation>
+      <Tech_Level>2</Tech_Level>
+      <Required_Ground_Base_Level>0</Required_Ground_Base_Level>
+      <Required_Special_Structures>Imperial_Command_Center</Required_Special_Structures>
+      <SFXEvent_Select>Structure_Light_Factory_Select_SFX</SFXEvent_Select>
+
+      <Starting_Spawned_Units_Tech_0>Imperial_Light_Scout_Squad, 1</Starting_Spawned_Units_Tech_0>
+      <Reserve_Spawned_Units_Tech_0>Imperial_Light_Scout_Squad, -1</Reserve_Spawned_Units_Tech_0>
+      <Spawned_Squadron_Delay_Seconds>40</Spawned_Squadron_Delay_Seconds>
+
+      <Tactical_Buildable_Objects_Multiplayer>
+            Empire,
+            Imperial_Light_Scout_Squad, <!-- Seeker -->
+            <!-- Imperial_Anti_Infantry_Brigade, -->
+            Imperial_Heavy_Scout_Squad, <!-- Chimera -->
+            Imperial_Anti_Aircraft_Company, <!-- Mantis -->
+            Imperial_Heavy_Assault_Company, <!-- Harvester -->
+            Imperial_Artillery_Corp, <!-- Scorpion -->
+            <!-- Empire_MDU_Company, -->
+      </Tactical_Buildable_Objects_Multiplayer>
+	  
+	  <Tactical_Buildable_Objects_Campaign>
+			Empire,
+				W_Ground_Vehicle_Damage_Upgrade,
+                W_Ground_Mantis_Reflective_Armor_Upgrade,
+                W_Ground_Walker_Speed_Boost_Upgrade,
+                W_Ground_Enhanced_Seeker_Upgrade
+	  </Tactical_Buildable_Objects_Campaign>
+
+      <Lua_Script>ObjectScript_Building_Unit_Animation</Lua_Script>
+
+      <Abilities SubObjectList="Yes">
+         <Force_Healing_Ability Name="E_Light_Vehicle_Factory_Self_Repair">
+            <Activation_Style>Skirmish_Automatic</Activation_Style>
+            <Heal_Percent>0.025</Heal_Percent>
+            <Heal_Interval_In_Secs>5.0</Heal_Interval_In_Secs>
+            <Single_Target_Heal>Yes</Single_Target_Heal>
+            <Owner_Particle_Bone_Name>ROOT</Owner_Particle_Bone_Name>
+            <Owner_Light_Effect_Type>Color_Flash</Owner_Light_Effect_Type>
+            <Owner_Light_Effect_Color>1.8, 1.8, 1.8</Owner_Light_Effect_Color>
+            <Owner_Light_Effect_Duration>0.6</Owner_Light_Effect_Duration>
+            <Owner_Light_Effect_Pulse_Count>1</Owner_Light_Effect_Pulse_Count>
+         </Force_Healing_Ability>
+         <Income_Stream_Ability Name="E_Light_Vehicle_Factory_Income_Stream">
+            <Base_Income_Value>5</Base_Income_Value>
+            <Base_Interval_In_Secs>5</Base_Interval_In_Secs>
+            <Split_Income_With_Allies>Yes</Split_Income_With_Allies>
+            <Split_Favors_Owner>No</Split_Favors_Owner>
+            <Full_Amount_To_Everyone>Yes</Full_Amount_To_Everyone>
+         </Income_Stream_Ability>
+      </Abilities>
+   </Ground_Structure_Wraith>
+
+   <Ground_Structure_Wraith Name="E_Ground_Light_Vehicle_Factory_Build_Pad">
+      <Variant_Of_Existing_Type>Template_Ground_Structure_Build_Pad</Variant_Of_Existing_Type>
+      <Land_Model_Name>Wraith_Land_Building_Vehicle_Factory_BP.alo</Land_Model_Name>
+      <Scale_Factor>1.35</Scale_Factor>
+      <Affiliation>Empire</Affiliation>
+      <Tactical_Buildable_Objects_Multiplayer>Empire, UC_E_Ground_Light_Vehicle_Factory</Tactical_Buildable_Objects_Multiplayer>
+      <Layer_Z_Adjust>9.0</Layer_Z_Adjust>
+   </Ground_Structure_Wraith>
+   <Ground_Structure_Wraith Name="UC_E_Ground_Light_Vehicle_Factory">
+      <Variant_Of_Existing_Type>Template_Ground_Structure_UC</Variant_Of_Existing_Type>
+      <Text_ID>TEXT_WRAITH_GROUND_BUILDING_VEHICLE_FACTORY</Text_ID>
+      <Encyclopedia_Text>TEXT_DESCRIPTION_WRAITH_VEHICLE_FACTORY_GC_GROUND</Encyclopedia_Text>
+      <MP_Encyclopedia_Text>TEXT_DESCRIPTION_WRAITH_VEHICLE_FACTORY_SK_GROUND</MP_Encyclopedia_Text>
+      <Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_WRAITH_VEHICLE_FACTORY</Encyclopedia_Unit_Class>
+      <Icon_Name>WRAITH_GROUND_BUILDING_VEHICLE_FACTORY.tga</Icon_Name>
+      <Land_Model_Name>Wraith_Land_Building_Vehicle_Factory_UC.alo</Land_Model_Name>
+      <Scale_Factor>1.35</Scale_Factor>
+      <Affiliation>Empire</Affiliation>
+      <Tactical_Buildable_Constructed>E_Ground_Light_Vehicle_Factory</Tactical_Buildable_Constructed>
+      <Tactical_Build_Start_Lower_Z>50.0</Tactical_Build_Start_Lower_Z>
+      <Tactical_Health>800</Tactical_Health>
+      <Tactical_Build_Cost_Multiplayer>1200</Tactical_Build_Cost_Multiplayer>
+      <Tactical_Build_Time_Seconds>30</Tactical_Build_Time_Seconds>
+      <Layer_Z_Adjust>-8.0</Layer_Z_Adjust>
+   </Ground_Structure_Wraith>
+
+
+   <!-- Barracks -->
+   <Ground_Structure_Wraith Name="E_Ground_Barracks">
+      <Variant_Of_Existing_Type>Template_Ground_Structure_Big_Base_Building_Spawn</Variant_Of_Existing_Type>
+      <Text_ID>TEXT_WRAITH_GROUND_BUILDING_CLONING_FACTORY</Text_ID>
+      <Encyclopedia_Text>TEXT_DESCRIPTION_WRAITH_CLONE_FACTORY_GC_GROUND</Encyclopedia_Text>
+      <MP_Encyclopedia_Text>TEXT_DESCRIPTION_WRAITH_CLONE_FACTORY_SK_GROUND</MP_Encyclopedia_Text>
+      <Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_WRAITH_CLONING_FACTORY</Encyclopedia_Unit_Class>
+      <Icon_Name>WRAITH_GROUND_BUILDING_BARRACKS.TGA</Icon_Name>
+      <Land_Model_Name>Wraith_Land_Building_Barracks.alo</Land_Model_Name>
+      <Radar_Icon_Name>I_RADAR_WRAITH_BARRACKS.TGA</Radar_Icon_Name>
+      <Radar_Icon_Size>0.1  0.1</Radar_Icon_Size>
+      <Loop_Idle_Anim_00>Yes</Loop_Idle_Anim_00>
+      <Select_Box_Scale>100</Select_Box_Scale>
+      <Scale_Factor>2.2</Scale_Factor>
+
+      <Affiliation>Empire</Affiliation>
+      <Tech_Level>1</Tech_Level>
+      <Required_Ground_Base_Level>0</Required_Ground_Base_Level>
+      <Required_Special_Structures>Imperial_Command_Center</Required_Special_Structures>
+      <SFXEvent_Select>Structure_Barracks_Select_SFX</SFXEvent_Select>
+      <SFXEvent_Ambient_Loop>Structure_Barracks_Loop</SFXEvent_Ambient_Loop>
+
+      <Destruction_Survivors>
+         Imperial_Stormtrooper_Squad, 1.0
+         DarkTrooper_P1_Company, 1.0
+         Field_Com_Empire_Team, 1.0
+      </Destruction_Survivors>
+
+      <Land_Damage_Thresholds>1, 0.66, 0.33, 0</Land_Damage_Thresholds>
+      <Land_Damage_Alternates>0, 1, 2, 3</Land_Damage_Alternates>
+      <Land_Damage_SFX>null,SFX_Grenade_Detonation, SFX_Grenade_Detonation,null</Land_Damage_SFX>
+
+      <Starting_Spawned_Units_Tech_0>Imperial_Stormtrooper_Squad, 1</Starting_Spawned_Units_Tech_0>
+      <Reserve_Spawned_Units_Tech_0>Imperial_Stormtrooper_Squad, -1</Reserve_Spawned_Units_Tech_0>
+      <Spawned_Squadron_Delay_Seconds>50</Spawned_Squadron_Delay_Seconds>
+
+      <Tactical_Buildable_Objects_Multiplayer>
+         Empire,
+            Imperial_Stormtrooper_Squad, <!-- Light Soldier -->
+            Field_Com_Empire_Team, <!-- Field Commander -->
+            DarkTrooper_P1_Company, <!-- Heavy Soldier -->
+            <!-- DarkTrooper_P2_Company, -->
+            DarkTrooper_P3_Company, <!-- Brute -->
+      </Tactical_Buildable_Objects_Multiplayer>
+	  
+	  <Tactical_Buildable_Objects_Campaign>
+			Empire,
+				W_Ground_Wraith_Commander_Ability_Upgrade,
+                W_Ground_Brute_Health_Upgrade,
+                W_Ground_Self_Healing_Upgrade,
+                W_Ground_Weatherproof_Upgrade,
+                W_Ground_Infantry_Movement_Speed_Upgrade
+	  </Tactical_Buildable_Objects_Campaign>
+
+      <Abilities SubObjectList="Yes">
+         <Force_Healing_Ability Name="E_Barracks_Self_Repair">
+            <Activation_Style>Skirmish_Automatic</Activation_Style>
+            <Heal_Percent>0.025</Heal_Percent>
+            <Heal_Interval_In_Secs>5.0</Heal_Interval_In_Secs>
+            <Single_Target_Heal>Yes</Single_Target_Heal>
+            <Owner_Particle_Bone_Name>ROOT</Owner_Particle_Bone_Name>
+            <Owner_Light_Effect_Type>Color_Flash</Owner_Light_Effect_Type>
+            <Owner_Light_Effect_Color>1.8, 1.8, 1.8</Owner_Light_Effect_Color>
+            <Owner_Light_Effect_Duration>0.6</Owner_Light_Effect_Duration>
+            <Owner_Light_Effect_Pulse_Count>1</Owner_Light_Effect_Pulse_Count>
+         </Force_Healing_Ability>
+         <Income_Stream_Ability Name="E_Barracks_Income_Stream">
+            <Base_Income_Value>5</Base_Income_Value>
+            <Base_Interval_In_Secs>5</Base_Interval_In_Secs>
+            <Split_Income_With_Allies>Yes</Split_Income_With_Allies>
+            <Split_Favors_Owner>No</Split_Favors_Owner>
+            <Full_Amount_To_Everyone>Yes</Full_Amount_To_Everyone>
+         </Income_Stream_Ability>
+      </Abilities>
+   </Ground_Structure_Wraith>
+
+   <Ground_Structure_Wraith Name="E_Ground_Barracks_Build_Pad">
+      <Variant_Of_Existing_Type>Template_Ground_Structure_Build_Pad</Variant_Of_Existing_Type>
+      <Land_Model_Name>Wraith_Land_Building_Barracks_BP.alo</Land_Model_Name>
+      <Scale_Factor>2.2</Scale_Factor>
+      <Affiliation>Empire</Affiliation>
+      <Tactical_Buildable_Objects_Multiplayer>Empire, UC_E_Ground_Barracks</Tactical_Buildable_Objects_Multiplayer>
+   </Ground_Structure_Wraith>
+   <Ground_Structure_Wraith Name="UC_E_Ground_Barracks">
+      <Variant_Of_Existing_Type>Template_Ground_Structure_UC</Variant_Of_Existing_Type>
+      <Text_ID>TEXT_WRAITH_GROUND_BUILDING_CLONING_FACTORY</Text_ID>
+      <Encyclopedia_Text>TEXT_DESCRIPTION_WRAITH_CLONE_FACTORY_GC_GROUND</Encyclopedia_Text>
+      <MP_Encyclopedia_Text>TEXT_DESCRIPTION_WRAITH_CLONE_FACTORY_SK_GROUND</MP_Encyclopedia_Text>
+      <Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_WRAITH_CLONING_FACTORY</Encyclopedia_Unit_Class>
+      <Icon_Name>WRAITH_GROUND_BUILDING_BARRACKS.TGA</Icon_Name>
+      <Land_Model_Name>Wraith_Land_Building_Barracks_UC.alo</Land_Model_Name>
+      <Scale_Factor>2.2</Scale_Factor>
+      <Affiliation>Empire</Affiliation>
+      <Tactical_Buildable_Constructed>E_Ground_Barracks</Tactical_Buildable_Constructed>
+      <Tactical_Build_Start_Lower_Z>50.0</Tactical_Build_Start_Lower_Z>
+      <Tactical_Health>500</Tactical_Health>
+      <Tactical_Build_Cost_Multiplayer>600</Tactical_Build_Cost_Multiplayer>
+      <Tactical_Build_Time_Seconds>25</Tactical_Build_Time_Seconds>
+   </Ground_Structure_Wraith>
+
+
+   <!-- Research Center -->
+   <Ground_Structure_Wraith Name="E_Ground_Research_Facility">
+      <Variant_Of_Existing_Type>Template_Ground_Structure_Big_Base_Building</Variant_Of_Existing_Type>
+      <Text_ID>TEXT_WRAITH_GROUND_BUILDING_RESEARCH_CENTER</Text_ID>
+      <Encyclopedia_Text>TEXT_DESCRIPTION_WRAITH_RESEARCH_CENTER_GC_GROUND</Encyclopedia_Text>
+      <MP_Encyclopedia_Text>TEXT_DESCRIPTION_WRAITH_RESEARCH_CENTER_SK_GROUND</MP_Encyclopedia_Text>
+      <Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_WRAITH_RESEARCH_CENTER</Encyclopedia_Unit_Class>
+      <Icon_Name>WRAITH_GROUND_BUILDING_RESEARCH_CENTER.TGA</Icon_Name>
+      <Land_Model_Name>Wraith_Land_Building_Research_Facility.alo</Land_Model_Name>
+      <Radar_Icon_Name>I_RADAR_WRAITH_RESEARCH_CENTER.TGA</Radar_Icon_Name>
+      <Radar_Icon_Size>0.1  0.1</Radar_Icon_Size>
+      <Scale_Factor>0.3</Scale_Factor>
+      <Select_Box_Scale>950</Select_Box_Scale>
+      <Loop_Idle_Anim_00>Yes</Loop_Idle_Anim_00>
+
+      <Tech_Level>1</Tech_Level>
+      <Affiliation>Empire</Affiliation>
+      <Build_Max_Instances_Per_Planet>1</Build_Max_Instances_Per_Planet>
+      <Base_Position>Out_Base</Base_Position>
+      <SFXEvent_Select>Structure_Barracks_Select_SFX</SFXEvent_Select>
+      <SFXEvent_Ambient_Loop>Structure_Barracks_Loop</SFXEvent_Ambient_Loop>
+
+      <Destruction_Survivors>
+         Imperial_Stormtrooper_Squad, 1.0
+         DarkTrooper_P1_Company, 1.0
+         Field_Com_Empire_Team, 1.0
+      </Destruction_Survivors>
+
+      <Land_Damage_Thresholds>1, 0.66, 0.33, 0</Land_Damage_Thresholds>
+      <Land_Damage_Alternates>0, 1, 2, 3</Land_Damage_Alternates>
+      <Land_Damage_SFX>null,SFX_Grenade_Detonation, SFX_Grenade_Detonation,null</Land_Damage_SFX>
+
+      <Required_Ground_Base_Level>0</Required_Ground_Base_Level>
+      <Required_Special_Structures>Imperial_Command_Center</Required_Special_Structures>
+      <Required_Planets>Pegasus_K_Wraith_Homeworld, Universe_S_Wraith_Homeworld, Universe_L_Wraith_Homeworld</Required_Planets>
+
+      <Tactical_Buildable_Objects_Multiplayer>
+         Empire,
+            W_Ground_Building_Structure_Upgrade_1,
+            W_Ground_Building_Structure_Upgrade_2,
+            W_Ground_Building_Structure_Upgrade_3,
+            W_Ground_Vehicle_Damage_Upgrade_1,
+            W_Ground_Vehicle_Damage_Upgrade_2,
+            W_Ground_Vehicle_Damage_Upgrade_3,
+            W_Ground_Wraith_Commander_Ability_Upgrade,
+            W_Ground_Brute_Health_Upgrade,
+            W_Ground_Self_Healing_Upgrade,
+            W_Ground_Weatherproof_Upgrade,
+            W_Ground_Deployment_Protection_Upgrade,
+            W_Ground_More_Garrisons_Upgrade,
+			W_Ground_Clone_Tanks_Upgrade,
+			W_Ground_Increased_Hero_Health_Upgrade
+      </Tactical_Buildable_Objects_Multiplayer>
+
+      <Abilities SubObjectList="Yes">
+         <Force_Healing_Ability Name="E_Research_Facility_Self_Repair">
+            <Activation_Style>Skirmish_Automatic</Activation_Style>
+            <Heal_Percent>0.025</Heal_Percent>
+            <Heal_Interval_In_Secs>5.0</Heal_Interval_In_Secs>
+            <Single_Target_Heal>Yes</Single_Target_Heal>
+            <Owner_Particle_Bone_Name>ROOT</Owner_Particle_Bone_Name>
+            <Owner_Light_Effect_Type>Color_Flash</Owner_Light_Effect_Type>
+            <Owner_Light_Effect_Color>1.8, 1.8, 1.8</Owner_Light_Effect_Color>
+            <Owner_Light_Effect_Duration>0.6</Owner_Light_Effect_Duration>
+            <Owner_Light_Effect_Pulse_Count>1</Owner_Light_Effect_Pulse_Count>
+         </Force_Healing_Ability>
+         <Income_Stream_Ability Name="E_Research_Facility_Income_Stream">
+            <Base_Income_Value>5</Base_Income_Value>
+            <Base_Interval_In_Secs>5</Base_Interval_In_Secs>
+            <Split_Income_With_Allies>Yes</Split_Income_With_Allies>
+            <Split_Favors_Owner>No</Split_Favors_Owner>
+            <Full_Amount_To_Everyone>Yes</Full_Amount_To_Everyone>
+         </Income_Stream_Ability>
+      </Abilities>
+   </Ground_Structure_Wraith>
+
+   <Ground_Structure_Wraith Name="E_Ground_Research_Facility_Build_Pad">
+      <Variant_Of_Existing_Type>Template_Ground_Structure_Build_Pad</Variant_Of_Existing_Type>
+      <Land_Model_Name>Wraith_Land_Building_Research_Facility_BP.alo</Land_Model_Name>
+      <Scale_Factor>0.3</Scale_Factor>
+      <Affiliation>Empire</Affiliation>
+      <Tactical_Buildable_Objects_Multiplayer>Empire, UC_E_Ground_Research_Facility</Tactical_Buildable_Objects_Multiplayer>
+   </Ground_Structure_Wraith>
+   <Ground_Structure_Wraith Name="UC_E_Ground_Research_Facility">
+      <Variant_Of_Existing_Type>Template_Ground_Structure_UC</Variant_Of_Existing_Type>
+      <Text_ID>TEXT_WRAITH_GROUND_BUILDING_RESEARCH_CENTER</Text_ID>
+      <Encyclopedia_Text>TEXT_DESCRIPTION_WRAITH_RESEARCH_CENTER_GC_GROUND</Encyclopedia_Text>
+      <MP_Encyclopedia_Text>TEXT_DESCRIPTION_WRAITH_RESEARCH_CENTER_SK_GROUND</MP_Encyclopedia_Text>
+      <Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_WRAITH_RESEARCH_CENTER</Encyclopedia_Unit_Class>
+      <Icon_Name>WRAITH_GROUND_BUILDING_RESEARCH_CENTER.TGA</Icon_Name>
+      <Land_Model_Name>Wraith_Land_Building_Research_Facility_UC.alo</Land_Model_Name>
+      <Scale_Factor>0.3</Scale_Factor>
+      <Affiliation>Empire</Affiliation>
+      <Tactical_Buildable_Constructed>E_Ground_Research_Facility</Tactical_Buildable_Constructed>
+      <Tactical_Build_Start_Lower_Z>50.0</Tactical_Build_Start_Lower_Z>
+      <Tactical_Health>800</Tactical_Health>
+      <Tactical_Build_Cost_Multiplayer>500</Tactical_Build_Cost_Multiplayer>
+      <Tactical_Build_Time_Seconds>35</Tactical_Build_Time_Seconds>
+   </Ground_Structure_Wraith>
+
+
+   <!-- Jammer (not a Base Shield) -->
+   <Ground_Structure_Wraith Name="E_Ground_Base_Shield">
+      <Variant_Of_Existing_Type>Template_Ground_Structure_Big_Base_Building</Variant_Of_Existing_Type>
+      <Text_ID>TEXT_WRAITH_GROUND_BUILDING_JAMMING_GENERATOR</Text_ID>
+      <Encyclopedia_Text>TEXT_DESCRIPTION_WRAITH_JAMMING_GENERATOR_GROUND</Encyclopedia_Text>
+      <Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_WRAITH_REGENERATIONSALCOVE</Encyclopedia_Unit_Class>
+      <Icon_Name>WRAITH_GROUND_BUILDING_JAMMING_GENERATOR.tga</Icon_Name>
+      <Land_Model_Name>Wraith_Land_Building_Jammer.alo</Land_Model_Name>
+      <Radar_Icon_Name>I_RADAR_WRAITH_JAMMER.TGA</Radar_Icon_Name>
+      <Radar_Range_Icon_Name>i_radar_shield.tga</Radar_Range_Icon_Name>
+      <Radar_Icon_Size>0.075  0.075</Radar_Icon_Size>
+      <Select_Box_Scale>50</Select_Box_Scale>
+      <Scale_Factor>2.5</Scale_Factor>
+      <Loop_Idle_Anim_00>Yes</Loop_Idle_Anim_00>
+      <Layer_Z_Adjust>-5.0</Layer_Z_Adjust>
+
+      <Affiliation>Empire</Affiliation>
+      <Build_Cost_Credits>2000</Build_Cost_Credits>
+      <Build_Time_Seconds>60</Build_Time_Seconds>
+      <Build_Max_Instances_Per_Planet>1</Build_Max_Instances_Per_Planet>
+      <Tech_Level>4</Tech_Level>
+      <Required_Ground_Base_Level>1</Required_Ground_Base_Level>
+      <Required_Special_Structures>Imperial_Command_Center</Required_Special_Structures>
+      <Tactical_Health>1000</Tactical_Health>
+      <Ranged_Target_Z_Adjust>30.0</Ranged_Target_Z_Adjust>
+
+      <SFXEvent_Select>Structure_Barracks_Select_SFX</SFXEvent_Select>
+      <SFXEvent_Ambient_Loop>Structure_Barracks_Loop</SFXEvent_Ambient_Loop>
+
+      <Base_Shield_Radius>600</Base_Shield_Radius>
+      <GUI_Bounds_Scale>0.05</GUI_Bounds_Scale>
+      <Can_Contain_Heroes_During_Ground_Battle>No</Can_Contain_Heroes_During_Ground_Battle>
+      <Reinforcement_Prevention_Radius>600</Reinforcement_Prevention_Radius>
+      <Bombing_Run_Prevention_Radius>1000</Bombing_Run_Prevention_Radius>
+      <Exclude_From_Distance_Fade>true</Exclude_From_Distance_Fade>
+
+      <Land_Damage_Thresholds>1, 0.5, 0</Land_Damage_Thresholds>
+      <Land_Damage_Alternates>0, 1, 2</Land_Damage_Alternates>
+      <Land_Damage_SFX>null,SFX_Grenade_Detonation, SFX_Grenade_Detonation,null</Land_Damage_SFX>
+
+      <Abilities SubObjectList="Yes">
+         <Force_Healing_Ability Name="E_Base_Shield_Self_Repair">
+            <Activation_Style>Skirmish_Automatic</Activation_Style>
+            <Heal_Percent>0.025</Heal_Percent>
+            <Heal_Interval_In_Secs>5.0</Heal_Interval_In_Secs>
+            <Single_Target_Heal>Yes</Single_Target_Heal>
+            <Owner_Particle_Bone_Name>ROOT</Owner_Particle_Bone_Name>
+            <Owner_Light_Effect_Type>Color_Flash</Owner_Light_Effect_Type>
+            <Owner_Light_Effect_Color>1.8, 1.8, 1.8</Owner_Light_Effect_Color>
+            <Owner_Light_Effect_Duration>0.6</Owner_Light_Effect_Duration>
+            <Owner_Light_Effect_Pulse_Count>1</Owner_Light_Effect_Pulse_Count>
+         </Force_Healing_Ability>
+         <Sensor_Jamming_Ability Name="E_Base_Shield_Sensor_Scrambling">
+            <Activation_Style> COMBAT_AUTOMATIC </Activation_Style>
+            <Duration_In_Secs>15.0</Duration_In_Secs>
+            <Show_Blob_To_Enemies>Yes</Show_Blob_To_Enemies>
+         </Sensor_Jamming_Ability>
+      </Abilities>
+   </Ground_Structure_Wraith>
+
+   <Ground_Structure_Wraith Name="E_Ground_Base_Shield_Small">
+      <Variant_Of_Existing_Type>E_Ground_Base_Shield</Variant_Of_Existing_Type>
+      <Land_Model_Name>NB_BASESHIELDGEN_small.alo</Land_Model_Name>
+      <Tactical_Health>500</Tactical_Health>
+      <Reinforcement_Prevention_Radius>370</Reinforcement_Prevention_Radius>
+      <Base_Shield_Radius>370</Base_Shield_Radius>
+      <Tech_Level>99</Tech_Level>
+   </Ground_Structure_Wraith>
+
+   <!-- To make the base shield depend on T3 in skirmish, the regular buildpad will can only build UC_U_Ground_Base_Shield_Dummy.
+    The T3 upgrade has a script attached, which will exchange the buildpad with the Working version, which can then build the acutal UC_U_Ground_Base_Shield -->
+   <Ground_Structure_Wraith Name="E_Ground_Base_Shield_Build_Pad">
+      <Variant_Of_Existing_Type>Template_Ground_Structure_Build_Pad</Variant_Of_Existing_Type>
+      <Land_Model_Name>Wraith_Land_Building_Jammer_BP.alo</Land_Model_Name>
+      <Scale_Factor>2.5</Scale_Factor>
+      <Affiliation>Empire</Affiliation>
+      <Tactical_Buildable_Objects_Multiplayer>Empire, UC_E_Ground_Base_Shield_Dummy</Tactical_Buildable_Objects_Multiplayer>
+      <Layer_Z_Adjust>5.0</Layer_Z_Adjust>
+   </Ground_Structure_Wraith>
+   <Ground_Structure_Wraith Name="E_Ground_Base_Shield_Build_Pad_Working">
+      <Variant_Of_Existing_Type>E_Ground_Base_Shield_Build_Pad</Variant_Of_Existing_Type>
+      <Tactical_Buildable_Objects_Multiplayer>Empire, UC_E_Ground_Base_Shield</Tactical_Buildable_Objects_Multiplayer>
+   </Ground_Structure_Wraith>
+   <Ground_Structure_Wraith Name="UC_E_Ground_Base_Shield">
+      <Variant_Of_Existing_Type>Template_Ground_Structure_UC</Variant_Of_Existing_Type>
+      <Text_ID>TEXT_WRAITH_GROUND_BUILDING_JAMMING_GENERATOR</Text_ID>
+      <Encyclopedia_Text>MP_TEXT_ENCYCLOPEDIA_BASE_SHIELD_EMPIRE_00</Encyclopedia_Text>
+      <Encyclopedia_Unit_Class>TEXT_EMPIRE_BUILD_PAD</Encyclopedia_Unit_Class>
+      <Icon_Name>WRAITH_GROUND_BUILDING_JAMMING_GENERATOR.tga</Icon_Name>
+      <Land_Model_Name>Wraith_Land_Building_Jammer_UC.alo</Land_Model_Name>
+      <Scale_Factor>2.5</Scale_Factor>
+      <Affiliation>Empire</Affiliation>
+      <Tactical_Buildable_Constructed>E_Ground_Base_Shield</Tactical_Buildable_Constructed>
+      <Tactical_Build_Start_Lower_Z>50.0</Tactical_Build_Start_Lower_Z>
+      <Tactical_Health>650</Tactical_Health>
+      <Tactical_Build_Cost_Multiplayer>1600</Tactical_Build_Cost_Multiplayer>
+      <Tactical_Build_Time_Seconds>35</Tactical_Build_Time_Seconds>
+   </Ground_Structure_Wraith>
+   <Ground_Structure_Wraith Name="UC_E_Ground_Base_Shield_Dummy">
+      <Variant_Of_Existing_Type>UC_E_Ground_Base_Shield</Variant_Of_Existing_Type>
+      <Tactical_Build_Cost_Multiplayer> 999999 </Tactical_Build_Cost_Multiplayer>
+      <Encyclopedia_Text>TEXT_TECH_3_REQUIRED TEXT_NONE MP_TEXT_ENCYCLOPEDIA_BASE_SHIELD_EMPIRE_00</Encyclopedia_Text>
+      <Icon_Name>BUILD_LOCKED_T3.tga</Icon_Name>
+   </Ground_Structure_Wraith>
+
+
+   <!-- Big Resource Mine -->
+   <Ground_Structure_Wraith Name="Empire_Ground_Mining_Facility">
+      <Variant_Of_Existing_Type>Template_Ground_Structure_Big</Variant_Of_Existing_Type>
+      <Text_ID>TEXT_WRAITH_GROUND_BUILDING_MINING_FACILITY</Text_ID>
+      <Encyclopedia_Text>TEXT_DESCRIPTION_WRAITH_MINING_FACILITY_GROUND</Encyclopedia_Text>
+      <Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_WRAITH_MINING_FACILITY</Encyclopedia_Unit_Class>
+      <Icon_Name>WRAITH_GROUND_BUILDING_MINING_FACILITY.tga</Icon_Name>
+      <Land_Model_Name>Wraith_Land_Building_Resource_Mine_Big.alo</Land_Model_Name>
+      <Radar_Icon_Name>mini_map_mining_facilities.tga</Radar_Icon_Name>
+      <Radar_Icon_Size>0.1  0.1</Radar_Icon_Size>
+      <Radar_Show_Facing>No</Radar_Show_Facing>
+      <Scale_Factor>0.7</Scale_Factor>
+      <Select_Box_Scale>300</Select_Box_Scale>
+      <Loop_Idle_Anim_00>Yes</Loop_Idle_Anim_00>
+
+      <Affiliation>Empire</Affiliation>
+      <Base_Position>Out_Base</Base_Position>
+      <Tech_Level>1</Tech_Level>
+      <Tactical_Health>1500</Tactical_Health>
+      <Score_Cost_Credits>5000</Score_Cost_Credits>
+      <Required_Ground_Base_Level>0</Required_Ground_Base_Level>
+      <Required_Special_Structures>Imperial_Command_Center</Required_Special_Structures>
+      <Required_Planets>Universe_L_Abydos, Universe_L_Erebus, Universe_L_Juna, Universe_L_Jenev, Universe_L_M4X_337, Universe_L_M5R_179, Universe_L_M5V_801, Universe_L_Lucian_Base,
+	  Universe_L_Olesia, Universe_L_Orilla, Universe_L_Langara, Universe_L_P3R_636, Universe_L_P3X_403, Universe_L_P4S_237, Universe_L_P5S_117, Universe_L_P8X_412, Universe_L_Tollana, Universe_L_Vis_Deorum</Required_Planets>
+      <Required_Planets>Pegasus_G_M4X_337, Pegasus_G_M5R_179, Pegasus_G_M5V_801</Required_Planets>
+      <Required_Planets>Pegasus_K_M4X_337, Pegasus_K_M5R_179</Required_Planets>
+      <Required_Planets>Universe_S_Abydos, Universe_S_Juna, Universe_S_P3R_636, Universe_S_P5S_117, Universe_S_Tollana</Required_Planets>
+      <SFXEvent_Select>Structure_Mining_Select_SFX</SFXEvent_Select>
+
+      <Land_Damage_Thresholds>1, 0.66, 0.33, 0</Land_Damage_Thresholds>
+      <Land_Damage_Alternates>0, 1, 2, 3</Land_Damage_Alternates>
+      <Land_Damage_SFX>null,SFX_Grenade_Detonation, SFX_Grenade_Detonation,null</Land_Damage_SFX>
+
+      <Tactical_Buildable_Objects_Multiplayer>
+         Empire,
+            EL_Increased_Production_L1_Upgrade,
+            EL_Increased_Production_L2_Upgrade,
+            EL_Increased_Production_L3_Upgrade,
+      </Tactical_Buildable_Objects_Multiplayer>
+
+      <Abilities SubObjectList="Yes">
+         <Planet_Income_Bonus_Ability Name="Empire_Mining_Income_Bonus">
+            <Specific_Mod_Source_Text>TEXT_ECONOMY_MINING_FACILITIES</Specific_Mod_Source_Text>
+            <Percentage_Income_Modifier>0</Percentage_Income_Modifier>
+            <Absolute_Income_Modifier>100</Absolute_Income_Modifier>
+            <Additional_Multiplier_On_Mining_Colonies>1.5</Additional_Multiplier_On_Mining_Colonies>
+         </Planet_Income_Bonus_Ability>
+         <Income_Stream_Ability Name="Empire_Mining_Income_Stream">
+            <Base_Income_Value>80</Base_Income_Value>
+            <Base_Interval_In_Secs>5</Base_Interval_In_Secs>
+            <Split_Income_With_Allies>Yes</Split_Income_With_Allies>
+            <Split_Favors_Owner>No</Split_Favors_Owner>
+            <Full_Amount_To_Everyone>Yes</Full_Amount_To_Everyone>
+         </Income_Stream_Ability>
+         <Force_Healing_Ability Name="E_Mining_Facility_Self_Repair">
+            <Activation_Style>Skirmish_Automatic</Activation_Style>
+            <Heal_Percent>0.003</Heal_Percent>
+            <Heal_Interval_In_Secs>2.0</Heal_Interval_In_Secs>
+            <Single_Target_Heal>Yes</Single_Target_Heal>
+            <Owner_Particle_Bone_Name>ROOT</Owner_Particle_Bone_Name>
+            <Owner_Light_Effect_Type>Color_Flash</Owner_Light_Effect_Type>
+            <Owner_Light_Effect_Color>1.2, 1.2, 1.2</Owner_Light_Effect_Color>
+            <Owner_Light_Effect_Duration>0.6</Owner_Light_Effect_Duration>
+            <Owner_Light_Effect_Pulse_Count>1</Owner_Light_Effect_Pulse_Count>
+         </Force_Healing_Ability>
+      </Abilities>
+   </Ground_Structure_Wraith>
+
+   <Ground_Structure_Wraith Name="Skirmish_Ground_Mining_Facility_E">
+      <Variant_Of_Existing_Type>Empire_Ground_Mining_Facility</Variant_Of_Existing_Type>
+      <Tech_Level>99</Tech_Level>
+      <Behavior>TACTICAL_SELL, SELECTABLE, DUMMY_GROUND_STRUCTURE</Behavior>
+      <Tactical_Sell_Credits>600</Tactical_Sell_Credits>
+      <Victory_Relevant>No</Victory_Relevant>
+   </Ground_Structure_Wraith>
+
+   <Ground_Structure_Wraith Name="Empire_Ground_Mining_Facility_Build_Pad">
+      <Variant_Of_Existing_Type>Template_Ground_Structure_Build_Pad</Variant_Of_Existing_Type>
+      <Land_Model_Name>Wraith_Land_Building_Resource_Mine_Big.alo</Land_Model_Name>
+      <Scale_Factor>0.7</Scale_Factor>
+      <Affiliation>Empire</Affiliation>
+      <Tactical_Buildable_Objects_Multiplayer>Empire, UC_Empire_Ground_Mining_Facility</Tactical_Buildable_Objects_Multiplayer>
+      <Visible_On_Radar_When_Fogged>true</Visible_On_Radar_When_Fogged>
+      <Hides_When_Built_On>False</Hides_When_Built_On>
+      <Radar_Show_Facing>No</Radar_Show_Facing>
+      <Radar_Icon_Name>mini_map_mining_facilities.tga</Radar_Icon_Name>
+      <Radar_Icon_Size>0.01  0.01</Radar_Icon_Size>
+      <Layer_Z_Adjust>3</Layer_Z_Adjust>
+   </Ground_Structure_Wraith>
+   <Ground_Structure_Wraith Name="UC_Empire_Ground_Mining_Facility">
+      <Variant_Of_Existing_Type>Template_Ground_Structure_UC</Variant_Of_Existing_Type>
+      <Text_ID>TEXT_WRAITH_GROUND_BUILDING_MINING_FACILITY</Text_ID>
+      <Encyclopedia_Text>TEXT_DESCRIPTION_WRAITH_MINING_FACILITY_GROUND</Encyclopedia_Text>
+      <Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_WRAITH_MINING_FACILITY</Encyclopedia_Unit_Class>
+      <Icon_Name>WRAITH_GROUND_BUILDING_MINING_FACILITY.tga</Icon_Name>
+      <Land_Model_Name>Wraith_Land_Building_Resource_Mine_Big_UC.alo</Land_Model_Name>
+      <Scale_Factor>0.7</Scale_Factor>
+      <Affiliation>Empire</Affiliation>
+      <Tactical_Buildable_Constructed>Skirmish_Ground_Mining_Facility_E</Tactical_Buildable_Constructed>
+      <Tactical_Build_Start_Lower_Z>50.0</Tactical_Build_Start_Lower_Z>
+      <Tactical_Health>800</Tactical_Health>
+      <Tactical_Build_Cost_Multiplayer>1200</Tactical_Build_Cost_Multiplayer>
+      <Tactical_Build_Time_Seconds>35</Tactical_Build_Time_Seconds>
+      <Layer_Z_Adjust>3</Layer_Z_Adjust>
+   </Ground_Structure_Wraith>
+
+
+   <!-- Guard Tower -->
+   <Ground_Structure_Wraith Name="E_Ground_Turbolaser_Tower">
+        <Variant_Of_Existing_Type>Template_Ground_Turbolaser_Tower</Variant_Of_Existing_Type>
+        <Text_ID>TEXT_GOAULD_GROUND_BUILDING_GUARD_TOWER</Text_ID>
+        <Encyclopedia_Text>TEXT_DESCRIPTION_GOAULD_GUARD_TOWER_GROUND</Encyclopedia_Text>
+        <Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_TURRET</Encyclopedia_Unit_Class>
+        <Icon_Name>GOAULD_GROUND_BUILDING_GUARD_TOWER.TGA</Icon_Name>
+        <Land_Model_Name>Wraith_Land_Building_Tower.ALO</Land_Model_Name>
+        <Obstacle_Proxy_Type>E_Ground_Turbolaser_Tower_Build_Pad</Obstacle_Proxy_Type>
+        <Affiliation>Empire</Affiliation>
+    </Ground_Structure_Wraith>
+    <Ground_Structure_Wraith Name="E_Ground_Turbolaser_Tower_Build_Pad">
+      <Variant_Of_Existing_Type>Template_Ground_Structure_Build_Pad</Variant_Of_Existing_Type>
+      <Land_Model_Name>Wraith_Land_Building_Tower_BP.alo</Land_Model_Name>
+      <Scale_Factor>1.0</Scale_Factor>
+      <Affiliation>Empire</Affiliation>
+      <Tactical_Buildable_Objects_Multiplayer>Empire, UC_E_Ground_Turbolaser_Tower</Tactical_Buildable_Objects_Multiplayer>
+   </Ground_Structure_Wraith>
+   <Ground_Structure_Wraith Name="UC_E_Ground_Turbolaser_Tower">
+      <Variant_Of_Existing_Type>Template_Ground_Structure_UC</Variant_Of_Existing_Type>
+      <Text_ID>TEXT_GOAULD_GROUND_BUILDING_GUARD_TOWER</Text_ID>
+      <Encyclopedia_Text>TEXT_DESCRIPTION_GOAULD_GUARD_TOWER_GROUND</Encyclopedia_Text>
+      <Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_TURRET</Encyclopedia_Unit_Class>
+      <Icon_Name>GOAULD_GROUND_BUILDING_GUARD_TOWER.tga</Icon_Name>
+      <Land_Model_Name>Wraith_Land_Building_Tower_UC.alo</Land_Model_Name>
+      <Scale_Factor>1.0</Scale_Factor>
+      <Affiliation>Empire</Affiliation>
+      <Tactical_Buildable_Constructed>E_Ground_Turbolaser_Tower</Tactical_Buildable_Constructed>
+      <Tactical_Build_Start_Lower_Z>50.0</Tactical_Build_Start_Lower_Z>
+      <Tactical_Health>500</Tactical_Health>
+      <Tactical_Build_Cost_Multiplayer>500</Tactical_Build_Cost_Multiplayer>
+      <Tactical_Build_Time_Seconds>28</Tactical_Build_Time_Seconds>
+   </Ground_Structure_Wraith>
+   <Ground_Structure_Wraith Name="E_Galactic_Turbolaser_Tower_Defenses">
+      <Variant_Of_Existing_Type>Template_Galactic_Turbolaser_Tower_Defenses</Variant_Of_Existing_Type>
+      <Affiliation>Empire</Affiliation>
+      <Tech_Level>99</Tech_Level>
+      <Required_Ground_Base_Level>0</Required_Ground_Base_Level>
+      <Place_Other_Type_At_Every_Specific_Marker_Position>E_Ground_Turbolaser_Tower</Place_Other_Type_At_Every_Specific_Marker_Position>
+   </Ground_Structure_Wraith>
+
+
+   <!-- Bunker -->
+   <Ground_Structure_Wraith Name="Garrison_Bunker_Empire">
+      <Variant_Of_Existing_Type>Garrison_Bunker_Template</Variant_Of_Existing_Type>
+      <Icon_Name>i_button_bunker.tga</Icon_Name>
+      <Land_Model_Name>EB_TestBunker.alo</Land_Model_Name>
+      <Affiliation>Empire</Affiliation>
+      <Garrison_Radius>10</Garrison_Radius>
+   </Ground_Structure_Wraith>
+   <Ground_Structure_Wraith Name="UC_Empire_Bunker">
+      <Variant_Of_Existing_Type>UC_Rebel_Bunker</Variant_Of_Existing_Type>
+      <Affiliation>Empire</Affiliation>
+      <Tactical_Buildable_Constructed>Garrison_Bunker_Empire</Tactical_Buildable_Constructed>
+      <Land_Model_Name>EB_TestBunker.alo</Land_Model_Name>
+      <Icon_Name>i_button_bunker.tga</Icon_Name>
+   </Ground_Structure_Wraith>
+
+
+<!--========================================================================================================
+#    Skirmish only buildings
+========================================================================================================-->
+
+
+
+   <!-- Small Resource Mine -->
+   <Ground_Structure_Wraith Name="Empire_Mineral_Processor">
+      <Variant_Of_Existing_Type>Rebel_Mineral_Processor</Variant_Of_Existing_Type>
+      <Text_ID>TEXT_WRAITH_GROUND_BUILDING_MINERAL_PROCESSOR</Text_ID>
+      <Encyclopedia_Text>TEXT_DESCRIPTION_WRAITH_MINERAL_PROCESSOR_GROUND</Encyclopedia_Text>
+      <Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_MINING_FACILITY</Encyclopedia_Unit_Class>
+      <Icon_Name>WRAITH_GROUND_BUILDING_MINERAL_PROCESSOR.tga</Icon_Name>
+      <Land_Model_Name>Wraith_Land_Building_Small_Resource_Mine.alo</Land_Model_Name>
+      <Scale_Factor>1.2</Scale_Factor>
+      <Select_Box_Scale>60</Select_Box_Scale>
+      <Affiliation>Empire</Affiliation>
+
+      <Land_Damage_Thresholds>1, 0.5, 0</Land_Damage_Thresholds>
+      <Land_Damage_Alternates>0, 1, 2</Land_Damage_Alternates>
+      <Land_Damage_SFX>null,SFX_Grenade_Detonation, SFX_Grenade_Detonation</Land_Damage_SFX>
+
+      <Required_Ground_Base_Level>1</Required_Ground_Base_Level>
+      <Abilities SubObjectList="Yes">
+         <Force_Healing_Ability Name="E_Mineral_Processor_Self_Repair">
+            <Activation_Style>Skirmish_Automatic</Activation_Style>
+            <Heal_Percent>0.003</Heal_Percent>
+            <Heal_Interval_In_Secs>2.0</Heal_Interval_In_Secs>
+            <Single_Target_Heal>Yes</Single_Target_Heal>
+            <Owner_Particle_Bone_Name>ROOT</Owner_Particle_Bone_Name>
+            <Owner_Light_Effect_Type>Color_Flash</Owner_Light_Effect_Type>
+            <Owner_Light_Effect_Color>1.2, 1.2, 1.2</Owner_Light_Effect_Color>
+            <Owner_Light_Effect_Duration>0.6</Owner_Light_Effect_Duration>
+            <Owner_Light_Effect_Pulse_Count>1</Owner_Light_Effect_Pulse_Count>
+         </Force_Healing_Ability>
+         <Income_Stream_Ability Name="E_Mineral_Processor_Income_Stream">
+            <Base_Income_Value>45</Base_Income_Value>
+            <Base_Interval_In_Secs>5.0</Base_Interval_In_Secs>
+            <Split_Income_With_Allies>Yes</Split_Income_With_Allies>
+            <Split_Favors_Owner>No</Split_Favors_Owner>
+            <Full_Amount_To_Everyone>Yes</Full_Amount_To_Everyone>
+         </Income_Stream_Ability>
+      </Abilities>
+   </Ground_Structure_Wraith>
+
+   <Ground_Structure_Wraith Name="UC_Empire_Mineral_Processor">
+      <Variant_Of_Existing_Type>UC_Rebel_Mineral_Processor</Variant_Of_Existing_Type>
+      <Text_ID>TEXT_WRAITH_GROUND_BUILDING_MINERAL_PROCESSOR</Text_ID>
+      <Encyclopedia_Text>TEXT_DESCRIPTION_WRAITH_MINERAL_PROCESSOR_GROUND</Encyclopedia_Text>
+      <Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_MINING_FACILITY</Encyclopedia_Unit_Class>
+      <Icon_Name>WRAITH_GROUND_BUILDING_MINERAL_PROCESSOR.tga</Icon_Name>
+      <Land_Model_Name>Wraith_Land_Building_Small_Resource_Mine_UC.alo</Land_Model_Name>
+      <Scale_Factor>1.2</Scale_Factor>
+      <Affiliation>Empire</Affiliation>
+      <Tactical_Buildable_Constructed>Empire_Mineral_Processor</Tactical_Buildable_Constructed>
+   </Ground_Structure_Wraith>
+
+
+  <!-- Sensor Array -->
+    <Ground_Structure_Wraith Name="Communications_Array_E">
+      <Variant_Of_Existing_Type>Template_Ground_Structure_Big</Variant_Of_Existing_Type>
+      <Text_ID>TEXT_WRAITH_GROUND_BUILDING_SENSOR_ARRAY</Text_ID>
+      <Encyclopedia_Text>TEXT_DESCRIPTION_WRAITH_SENSOR_ARRAY_GROUND</Encyclopedia_Text>
+      <Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_SPECIAL_STRUCTURE</Encyclopedia_Unit_Class>
+      <Icon_Name>WRAITH_GROUND_BUILDING_SENSOR_ARRAY.tga</Icon_Name>
+      <Land_Model_Name>Wraith_Land_Building_Sensor_Station.alo</Land_Model_Name>
+      <Radar_Icon_Name>I_RADAR_WRAITH_SENSOR_ARRAY.tga</Radar_Icon_Name>
+      <Radar_Icon_Size>0.1  0.1</Radar_Icon_Size>
+      <Loop_Idle_Anim_00>Yes</Loop_Idle_Anim_00>
+      <Select_Box_Scale>80</Select_Box_Scale>
+
+      <Affiliation>Empire</Affiliation>
+      <Tactical_Health>800</Tactical_Health>
+      <Base_Position>Out_Base</Base_Position>
+      <GUI_Bounds_Scale>0.25</GUI_Bounds_Scale>
+      <SFXEvent_Select> Structure_Comm_Array_Select_SFX </SFXEvent_Select>
+      <SFXEvent_Ambient_Loop>Structure_Communications_Array_Loop</SFXEvent_Ambient_Loop>
+
+      <Tech_Level>99</Tech_Level>
+      <Required_Ground_Base_Level>0</Required_Ground_Base_Level>
+      <Required_Special_Structures>Imperial_Command_Center</Required_Special_Structures>
+
+      <Land_Damage_Thresholds>1, 0.66, 0.33, 0</Land_Damage_Thresholds>
+      <Land_Damage_Alternates>0, 1, 2, 3</Land_Damage_Alternates>
+      <Land_Damage_SFX>null,SFX_Grenade_Detonation, SFX_Grenade_Detonation,null</Land_Damage_SFX>
+
+      <Tactical_Buildable_Objects_Multiplayer>
+         Empire,
+            EL_Bombing_Run_Use_Upgrade,
+            EL_Planetary_Bombard_Use_Upgrade,
+      </Tactical_Buildable_Objects_Multiplayer>
+
+      <Abilities SubObjectList="Yes">
+         <Enable_Radar_Ability Name="E_Comm_Array_Enable_Radar">
+            <Activation_Style>Skirmish_Automatic</Activation_Style>
+            <Affects_All_Allies>True</Affects_All_Allies>
+         </Enable_Radar_Ability>
+         <Force_Healing_Ability Name="E_Comm_Array_Self_Repair">
+            <Activation_Style>Skirmish_Automatic</Activation_Style>
+            <Heal_Percent>0.025</Heal_Percent>
+            <Heal_Interval_In_Secs>5.0</Heal_Interval_In_Secs>
+            <Single_Target_Heal>Yes</Single_Target_Heal>
+            <Owner_Particle_Bone_Name>ROOT</Owner_Particle_Bone_Name>
+            <Owner_Light_Effect_Type>Color_Flash</Owner_Light_Effect_Type>
+            <Owner_Light_Effect_Color>1.2, 1.2, 1.2</Owner_Light_Effect_Color>
+            <Owner_Light_Effect_Duration>0.6</Owner_Light_Effect_Duration>
+            <Owner_Light_Effect_Pulse_Count>1</Owner_Light_Effect_Pulse_Count>
+         </Force_Healing_Ability>
+         <Income_Stream_Ability Name="Communications_Array_E_Income_Stream">
+            <Base_Income_Value>5</Base_Income_Value>
+            <Base_Interval_In_Secs>5</Base_Interval_In_Secs>
+            <Split_Income_With_Allies>Yes</Split_Income_With_Allies>
+            <Split_Favors_Owner>No</Split_Favors_Owner>
+            <Full_Amount_To_Everyone>Yes</Full_Amount_To_Everyone>
+         </Income_Stream_Ability>
+      </Abilities>
+   </Ground_Structure_Wraith>
+
+   <Ground_Structure_Wraith Name="Communications_Array_E_Build_Pad">
+      <Variant_Of_Existing_Type>Template_Ground_Structure_Build_Pad</Variant_Of_Existing_Type>
+      <Land_Model_Name>Wraith_Land_Building_Sensor_Station_BP.alo</Land_Model_Name>
+      <Scale_Factor>1.0</Scale_Factor>
+      <Affiliation>Empire</Affiliation>
+      <Tactical_Buildable_Objects_Multiplayer>Empire, UC_Communications_Array_E</Tactical_Buildable_Objects_Multiplayer>
+      <Layer_Z_Adjust>5.0</Layer_Z_Adjust>
+   </Ground_Structure_Wraith>
+   <Ground_Structure_Wraith Name="UC_Communications_Array_E">
+      <Variant_Of_Existing_Type>Template_Ground_Structure_UC</Variant_Of_Existing_Type>
+      <Text_ID>TEXT_WRAITH_GROUND_BUILDING_SENSOR_ARRAY</Text_ID>
+      <Encyclopedia_Text>TEXT_DESCRIPTION_WRAITH_SENSOR_ARRAY_GROUND</Encyclopedia_Text>
+      <Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_SPECIAL_STRUCTURE</Encyclopedia_Unit_Class>
+      <Icon_Name>WRAITH_GROUND_BUILDING_SENSOR_ARRAY.tga</Icon_Name>
+      <Land_Model_Name>Wraith_Land_Building_Sensor_Station_UC.alo</Land_Model_Name>
+      <Scale_Factor>1.0</Scale_Factor>
+      <Affiliation>Empire</Affiliation>
+      <Tactical_Buildable_Constructed>Communications_Array_E</Tactical_Buildable_Constructed>
+      <Tactical_Build_Start_Lower_Z>50.0</Tactical_Build_Start_Lower_Z>
+      <Tactical_Health>500</Tactical_Health>
+      <Tactical_Build_Cost_Multiplayer>800</Tactical_Build_Cost_Multiplayer>
+      <Tactical_Build_Time_Seconds>25</Tactical_Build_Time_Seconds>
+   </Ground_Structure_Wraith>
+
+
+<!--========================================================================================================
+#    GC Only Buildings
+========================================================================================================-->
+
+   <!-- Wraith Academy -->
+   <Ground_Structure_Wraith Name="E_Ground_Officer_Academy">
+      <Variant_Of_Existing_Type>Template_Ground_Structure_Big_Base_Building</Variant_Of_Existing_Type>
+      <Text_ID>TEXT_WRAITH_GROUND_BUILDING_BREEDING_STATION</Text_ID>
+      <Encyclopedia_Text>TEXT_DESCRIPTION_WRAITH_BREEDING_STATION_GC_GROUND</Encyclopedia_Text>
+      <Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_WRAITH_BREEDING_STATION</Encyclopedia_Unit_Class>
+      <Icon_Name>WRAITH_GROUND_BUILDING_ACADEMY.TGA</Icon_Name>
+      <Land_Model_Name>Wraith_Land_Building_Academy.alo</Land_Model_Name>
+      <Radar_Icon_Name>I_RADAR_WRAITH_ACADEMY.TGA</Radar_Icon_Name>
+      <Radar_Icon_Size>0.1  0.1</Radar_Icon_Size>
+      <Select_Box_Scale>180</Select_Box_Scale>
+      <Loop_Idle_Anim_00>Yes</Loop_Idle_Anim_00>
+      <Scale_Factor>1.2</Scale_Factor>
+
+      <Affiliation>Empire</Affiliation>
+      <Build_Cost_Credits>1000</Build_Cost_Credits>
+      <Build_Time_Seconds>25</Build_Time_Seconds>
+      <Build_Max_Instances_Per_Planet>1</Build_Max_Instances_Per_Planet>
+      <Base_Position>In_Base</Base_Position>
+      <Tech_Level>3</Tech_Level>
+      <GUI_Bounds_Scale>0.4</GUI_Bounds_Scale>
+      <Tactical_Health>1500</Tactical_Health>
+      <SFXEvent_Select>Structure_Barracks_Select_SFX</SFXEvent_Select>
+
+      <Destruction_Survivors>
+         Imperial_Stormtrooper_Squad, 1.0
+         DarkTrooper_P1_Company, 1.0
+         Field_Com_Empire_Team, 1.0
+      </Destruction_Survivors>
+
+      <Land_Damage_Thresholds>1, 0.66, 0.33, 0</Land_Damage_Thresholds>
+      <Land_Damage_Alternates>0, 1, 2, 3</Land_Damage_Alternates>
+      <Land_Damage_SFX>null,SFX_Grenade_Detonation, SFX_Grenade_Detonation,null</Land_Damage_SFX>
+
+      <Required_Ground_Base_Level>1</Required_Ground_Base_Level>
+      <Required_Special_Structures>Imperial_Command_Center</Required_Special_Structures>
+      <Required_Planets>Universe_L_Dagan, Universe_L_Wraith_Homeworld, Universe_L_Orban, Universe_L_P3X_439, Universe_L_Pangar</Required_Planets>
+      <Required_Planets>Pegasus_G_Dagan, Pegasus_G_M1B_129, Pegasus_G_Vadena</Required_Planets>
+      <Required_Planets>Pegasus_K_Dagan</Required_Planets>
+      <Required_Planets>Universe_S_Dagan, Universe_S_Wraith_Homeworld, Universe_S_Orban, Universe_S_Pangar</Required_Planets>
+   </Ground_Structure_Wraith>
+
+   <Ground_Structure_Wraith Name="E_Ground_Officer_Academy_Build_Pad"><!--unused-->
+      <Variant_Of_Existing_Type>Template_Ground_Structure_Build_Pad</Variant_Of_Existing_Type>
+      <Land_Model_Name>Wraith_Land_Building_Academy.alo</Land_Model_Name>
+      <Scale_Factor>1.2</Scale_Factor>
+      <Affiliation>Empire</Affiliation>
+      <Tactical_Buildable_Objects_Multiplayer>Empire, UC_E_Ground_Officer_Academy</Tactical_Buildable_Objects_Multiplayer>
+   </Ground_Structure_Wraith>
+   <Ground_Structure_Wraith Name="UC_E_Ground_Officer_Academy"><!--unused-->
+      <Variant_Of_Existing_Type>Template_Ground_Structure_UC</Variant_Of_Existing_Type>
+      <Text_ID>TEXT_WRAITH_GROUND_BUILDING_BREEDING_STATION</Text_ID>
+      <Encyclopedia_Text>TEXT_DESCRIPTION_WRAITH_BREEDING_STATION_GC_GROUND</Encyclopedia_Text>
+      <Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_WRAITH_BREEDING_STATION</Encyclopedia_Unit_Class>
+      <Icon_Name>WRAITH_GROUND_BUILDING_ACADEMY.TGA</Icon_Name>
+      <Land_Model_Name>Wraith_Land_Building_Academy.alo</Land_Model_Name>
+      <Scale_Factor>1.2</Scale_Factor>
+      <Affiliation>Empire</Affiliation>
+      <Tactical_Buildable_Constructed>E_Ground_Officer_Academy</Tactical_Buildable_Constructed>
+      <Tactical_Build_Start_Lower_Z>50.0</Tactical_Build_Start_Lower_Z>
+      <Tactical_Health>400</Tactical_Health>
+      <Tactical_Build_Cost_Multiplayer>1000</Tactical_Build_Cost_Multiplayer>
+      <Tactical_Build_Time_Seconds>35</Tactical_Build_Time_Seconds>
+   </Ground_Structure_Wraith>
+
+
+   <!-- Small Shipyard -->
+   <Ground_Structure_Wraith Name="Wraith_Small_Shipyard">
+      <Variant_Of_Existing_Type>Template_Ground_Structure_Big_Base_Building</Variant_Of_Existing_Type>
+      <Text_ID>TEXT_WRAITH_GROUND_BUILDING_SMALL_SHIPYARD</Text_ID>
+      <Encyclopedia_Text>TEXT_DESCRIPTION_WRAITH_SMALL_SHIPYARD_GROUND</Encyclopedia_Text>
+      <Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_WRAITH_SMALL_SHIPYARD</Encyclopedia_Unit_Class>
+      <Icon_Name>WRAITH_GROUND_BUILDING_SMALL_SHIPYARD.TGA</Icon_Name>
+      <Land_Model_Name>Wraith_Land_Building_ShipYard.alo</Land_Model_Name>
+      <Radar_Icon_Name>I_RADAR_WRAITH_SMALL_SHIPYARD.TGA</Radar_Icon_Name>
+      <Radar_Icon_Size>0.1  0.1</Radar_Icon_Size>
+      <Scale_Factor>1.75</Scale_Factor>
+      <Loop_Idle_Anim_00>Yes</Loop_Idle_Anim_00>
+      <Select_Box_Scale>180</Select_Box_Scale>
+
+      <Affiliation>Empire</Affiliation>
+      <Build_Cost_Credits>2000</Build_Cost_Credits>
+      <Build_Time_Seconds>30</Build_Time_Seconds>
+      <Tactical_Health>1500</Tactical_Health>
+      <Tech_Level>1</Tech_Level>
+      <Exclude_From_Distance_Fade>true</Exclude_From_Distance_Fade>
+      <Base_Position>Out_Base</Base_Position>
+
+      <Land_Damage_Thresholds>1, 0.66, 0.33, 0</Land_Damage_Thresholds>
+      <Land_Damage_Alternates>0, 1, 2, 3</Land_Damage_Alternates>
+      <Land_Damage_SFX>null,SFX_Grenade_Detonation, SFX_Grenade_Detonation,null</Land_Damage_SFX>
+
+      <Required_Ground_Base_Level>1</Required_Ground_Base_Level>
+      <Required_Special_Structures>Imperial_Command_Center</Required_Special_Structures>
+      <Required_Planets>Pegasus_G_Asuras, Pegasus_G_Taranis</Required_Planets>
+      <Required_Planets>Pegasus_K_Asuras, Pegasus_K_Taranis</Required_Planets>
+      <Required_Planets>Universe_L_Wraith_Homeworld, Universe_L_Asuras, Universe_L_Celestis, Universe_L_Erebus, Universe_L_Hebridan, Universe_L_Juna, Universe_L_Tegalus, Universe_L_Tollana, Universe_L_Taranis, Universe_L_Vanir</Required_Planets>
+      <Required_Planets>Universe_S_Wraith_Homeworld, Universe_S_Erebus, Universe_S_Juna, Universe_S_Tollana</Required_Planets>
+
+      <Lua_Script>ObjectScript_Building_Unit_Animation</Lua_Script>
+   </Ground_Structure_Wraith>
+   
+   
+   <!-- Planetary Plasma Gun -->
+    <SpecialStructure Name="Ground_Empire_Hypervelocity_Gun">
+	    <Loop_Idle_Anim_00>Yes</Loop_Idle_Anim_00>
+        <GUI_Bounds_Scale>0.4</GUI_Bounds_Scale>
+        <Text_ID>TEXT_WRAITH_GROUND_BUILDING_PLANETARY_IONCANNON</Text_ID>
+        <Encyclopedia_Text>TEXT_DESCRIPTION_WRAITH_PLANETARY_IONCANNON_GC_GROUND</Encyclopedia_Text>
+        <Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_WRAITH_PLANETARY_IONCANNON</Encyclopedia_Unit_Class>
+        <GUI_Row> 0 </GUI_Row>
+
+        <Land_Model_Name>Wraith_Land_Building_GTSW.ALO</Land_Model_Name>
+        <Radar_Icon_Name>I_RADAR_WRAITH_GTSW.TGA</Radar_Icon_Name>
+        <Icon_Name>WRAITH_GROUND_BUILDING_GROUNDTOSPACE_WEAPON.TGA</Icon_Name>
+
+        <Scale_Factor>0.6</Scale_Factor>
+		<Select_Box_Scale>400</Select_Box_Scale>
+        <Is_Dummy>Yes</Is_Dummy>
+        <Affiliation>Empire</Affiliation>
+        <Political_Control>0</Political_Control>
+        <Build_Cost_Credits>3500</Build_Cost_Credits>
+        <Build_Time_Seconds>25</Build_Time_Seconds>
+        <Build_Tab_Special_Structures>Yes</Build_Tab_Special_Structures>
+        <Build_Max_Instances_Per_Planet>2</Build_Max_Instances_Per_Planet>
+        <Size_Value>50</Size_Value>
+        <Build_Initially_Locked>No</Build_Initially_Locked>
+        <Build_Can_Be_Unlocked_By_Slicer>No</Build_Can_Be_Unlocked_By_Slicer>
+        <Base_Position>Out_Base</Base_Position>
+        <Tech_Level>5</Tech_Level>
+        <SpaceAutoResolveHitRate>3</SpaceAutoResolveHitRate>
+        <Damage>50</Damage>
+        <Required_Timeline>0</Required_Timeline>
+        <Required_Ground_Base_Level>0</Required_Ground_Base_Level>
+        <Required_Star_Base_Level>0</Required_Star_Base_Level>
+        <Required_Special_Structures>Imperial_Command_Center</Required_Special_Structures>
+        <Required_Planets />
+        <Shield_Points>0</Shield_Points>
+        <Tactical_Health>800</Tactical_Health>
+        <Shield_Refresh_Rate>0</Shield_Refresh_Rate>
+        <Energy_Capacity>0</Energy_Capacity>
+        <Energy_Refresh_Rate>0</Energy_Refresh_Rate>
+        <Behavior>SELECTABLE, DUMMY_GROUND_STRUCTURE</Behavior>
+        <LandBehavior>SPACE_OBSTACLE, LAND_OBSTACLE, POWERED, REVEAL, HIDE_WHEN_FOGGED,DAMAGE_TRACKING,DUMMY_LAND_BASE_LEVEL_COMPONENT,UNIT_AI,EARTHQUAKE_TARGET,ION_STUN_EFFECT, STUNNABLE</LandBehavior>
+        <SpaceBehavior>SPECIAL_WEAPON</SpaceBehavior>
+        <Multisample_FOW_Check>Yes</Multisample_FOW_Check>
+        <Last_State_Visible_Under_FOW> Yes </Last_State_Visible_Under_FOW>
+        <Is_Special_Weapon_In_Space>Yes</Is_Special_Weapon_In_Space>
+        <Special_Weapon_Index>1</Special_Weapon_Index>
+        <Special_Weapon_Target_Action_Index> 0 </Special_Weapon_Target_Action_Index> <!-- HV Gun = 0, Ion Cannon = 1, Magnepulse Cannon = 2 -->
+        <Special_Weapon_Valid_Targets>Transport | Corvette | Frigate | Capital | Super</Special_Weapon_Valid_Targets>
+
+        <Projectile_Fire_Recharge_Seconds>45.0</Projectile_Fire_Recharge_Seconds>
+        <Projectile_Fire_Pulse_Count>15</Projectile_Fire_Pulse_Count>
+        <Projectile_Fire_Pulse_Delay_Seconds>0.7</Projectile_Fire_Pulse_Delay_Seconds>
+        <Projectile_Types>Proj_Wraith_Orbital_Plasma_Heavy</Projectile_Types>
+
+        <Space_Victory_Relevant>No</Space_Victory_Relevant>
+        <Land_Victory_Relevant>Yes</Land_Victory_Relevant>
+        <No_Reflection_Below_Detail_Level>1</No_Reflection_Below_Detail_Level>
+        <No_Refraction_Below_Detail_Level>1</No_Refraction_Below_Detail_Level>
+        <Land_FOW_Reveal_Range>300.0</Land_FOW_Reveal_Range>
+        <GUI_Bracket_Size>2</GUI_Bracket_Size>
+        <Armor_Type> Armor_Structure </Armor_Type>
+        <Reveal_During_Setup_Phase> true </Reveal_During_Setup_Phase>
+        <Death_Clone_Is_Obstacle> true </Death_Clone_Is_Obstacle>
+
+        <Sabotage_Cost_Credits>6000</Sabotage_Cost_Credits>
+		<Exclude_From_Distance_Fade>true</Exclude_From_Distance_Fade>
+
+        <Destruction_Survivors> 
+        </Destruction_Survivors>
+
+        <Is_Visible_On_Radar>Yes</Is_Visible_On_Radar>
+        <Radar_Icon_Size>0.1  0.1</Radar_Icon_Size>
+        <Influences_Capture_Point>False</Influences_Capture_Point>
+		<!--
+		  <Obstacle_Width>140.0</Obstacle_Width>
+		  <Obstacle_Height>80.0</Obstacle_Height>
+		  <Obstacle_X_Offset>-70.0</Obstacle_X_Offset>
+		  <Obstacle_Y_Offset>-40.0</Obstacle_Y_Offset>
+        -->	
+
+        <Land_Damage_Thresholds>1, 0.66, 0.33, 0</Land_Damage_Thresholds>
+        <Land_Damage_Alternates>0, 1, 2, 3</Land_Damage_Alternates>
+        <Land_Damage_SFX>null,SFX_Grenade_Detonation, SFX_Grenade_Detonation,null</Land_Damage_SFX>
+
+        <SFXEvent_Build_Started></SFXEvent_Build_Started>
+        <SFXEvent_Build_Cancelled></SFXEvent_Build_Cancelled>
+        <SFXEvent_Build_Complete></SFXEvent_Build_Complete>
+        <SFXEvent_Fire></SFXEvent_Fire>
+        <SFXEvent_Special_Weapon_Ready></SFXEvent_Special_Weapon_Ready>
+        <Death_SFXEvent_Start_Die>Unit_Generic_Building_Death_SFX</Death_SFXEvent_Start_Die>
+        <SFXEvent_Unit_Under_Attack></SFXEvent_Unit_Under_Attack>
+        <SFXEvent_Unit_Lost></SFXEvent_Unit_Lost>
+        <SFXEvent_Select>Structure_Hyper_Select_SFX</SFXEvent_Select>
+
+
+        <Death_Explosions>Huge_Explosion_Land</Death_Explosions>
+        <CategoryMask> Structure </CategoryMask>
+        <Is_Community_Property>Yes</Is_Community_Property>
+        <Collidable_By_Projectile_Living>Yes</Collidable_By_Projectile_Living>
+
+		<!-- The ground structures have this data which looks like it's space only because the
+		snowspeeders are using space style pathfinding which needs this information so that we won't
+		path speeders through structures -->
+		<Space_Obstacle_Offset> 0 0 0 </Space_Obstacle_Offset> 
+		<Space_Layer> Corvette </Space_Layer>
+		<Has_Land_Evaluator>True</Has_Land_Evaluator>
+		
+        <Score_Cost_Credits> 30000 </Score_Cost_Credits>
+        <Abilities SubObjectList="Yes">
+            <Force_Healing_Ability Name="E_Hypervelocity_Gun_Self_Repair">
+                <Activation_Style>Skirmish_Automatic</Activation_Style>
+                <Heal_Range>0.0</Heal_Range>
+                <Heal_Percent>0.025</Heal_Percent>
+                <Heal_Amount>0.0</Heal_Amount>
+                <Heal_Interval_In_Secs>5.0</Heal_Interval_In_Secs>
+                <Single_Target_Heal>Yes</Single_Target_Heal>
+                <Applicable_Unit_Categories />
+                <Applicable_Unit_Types />
+                <SFXEvent_Target_Affected />
+                <Owner_Particle_Bone_Name>ROOT</Owner_Particle_Bone_Name>
+                <Owner_Light_Effect_Type>Color_Flash</Owner_Light_Effect_Type>
+                <Owner_Light_Effect_Color>1.2, 1.2, 1.2</Owner_Light_Effect_Color>
+                <Owner_Light_Effect_Color2 />
+                <Owner_Light_Effect_Duration>0.6</Owner_Light_Effect_Duration>
+                <Owner_Light_Effect_Pulse_Count>1</Owner_Light_Effect_Pulse_Count>
+            </Force_Healing_Ability>
+        </Abilities>
+    </SpecialStructure>
+
+
+   <!-- Indoctrination Camp-->
+   <Ground_Structure_Wraith Name="E_Ground_Indoctrination_Camp">
+      <Variant_Of_Existing_Type>Template_Ground_Structure_Big_Base_Building_Spawn</Variant_Of_Existing_Type>
+      <Text_ID>TEXT_WRAITH_GROUND_BUILDING_INDOCTRINATION_CAMP</Text_ID>
+      <Encyclopedia_Text>TEXT_DESCRIPTION_WRAITH_SK_INDOCTRINATION_CAMP_GROUND</Encyclopedia_Text>
+      <Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_SPECIAL_STRUCTURE</Encyclopedia_Unit_Class>
+      <Icon_Name>WRAITH_GROUND_BUILDING_INDOCTRINATION_CAMP.tga</Icon_Name>
+      <Land_Model_Name>Wraith_Land_Building_Indoctrination_Camp.alo</Land_Model_Name>
+      <Radar_Icon_Name>mini_map_structure.tga</Radar_Icon_Name>
+      <Radar_Icon_Size>0.1  0.1</Radar_Icon_Size>
+      <Loop_Idle_Anim_00>Yes</Loop_Idle_Anim_00>
+      <Ranged_Target_Z_Adjust>5.0</Ranged_Target_Z_Adjust>
+      <Select_Box_Scale>300</Select_Box_Scale>
+
+      <Behavior>TACTICAL_SELL, SELECTABLE, DUMMY_GROUND_STRUCTURE</Behavior>
+      <Tactical_Sell_Credits>600</Tactical_Sell_Credits>
+      <Can_Contain_Heroes_During_Ground_Battle>No</Can_Contain_Heroes_During_Ground_Battle>
+      <Additional_Population_Capacity>5</Additional_Population_Capacity>
+
+      <Starting_Spawned_Units_Tech_0>Wraith_Worshippers_Team, 1</Starting_Spawned_Units_Tech_0>
+      <Reserve_Spawned_Units_Tech_0>Wraith_Worshippers_Team, -1</Reserve_Spawned_Units_Tech_0>
+	  <Spawned_Squadron_Location_Bones>ROOT</Spawned_Squadron_Location_Bones>
+
+      <Tactical_Buildable_Objects_Multiplayer>
+         Empire,
+            Wraith_Worshippers_Squad,
+      </Tactical_Buildable_Objects_Multiplayer>
+
+      <Affiliation>Empire</Affiliation>
+      <Build_Cost_Credits>2000</Build_Cost_Credits>
+      <Build_Time_Seconds>60</Build_Time_Seconds>
+      <Build_Max_Instances_Per_Planet>1</Build_Max_Instances_Per_Planet>
+      <Base_Position>Out_Base</Base_Position>
+      <Tech_Level>1</Tech_Level>
+      <Tactical_Health>1500</Tactical_Health>
+
+      <Required_Ground_Base_Level>1</Required_Ground_Base_Level>
+      <Required_Special_Structures>Imperial_Command_Center</Required_Special_Structures>
+      <Required_Planets>Pegasus_G_Athos, Pegasus_G_Genii, Pegasus_G_Orlan, Pegasus_G_Hoff, Pegasus_G_Dagan, Pegasus_G_Proculis, Pegasus_G_Olesia, Pegasus_G_Sateda, Pegasus_G_Edowin, Pegasus_G_Gonta, Pegasus_G_Gelda, Pegasus_G_Belkan, Pegasus_G_Erde, Pegasus_G_Jenev, Pegasus_G_Manaria, Pegasus_G_Vadena, Pegasus_G_Sagon, Pegasus_G_Laros</Required_Planets>
+      <Required_Planets>Pegasus_K_Athos, Pegasus_K_Dagan, Pegasus_K_Gelda, Pegasus_K_Genii, Pegasus_K_Hoff, Pegasus_K_M7G_677, Pegasus_K_Olesia, Pegasus_K_Proculis, Pegasus_K_Sateda</Required_Planets>
+      <Required_Planets>Universe_S_Abydos, Universe_S_Cimmeria, Universe_S_Dagan, Universe_S_Earth, Universe_S_Genii, Universe_S_Juna, Universe_S_Langara, Universe_S_Orban, Universe_S_P3R_636, Universe_S_Pangar, Universe_S_Proculis, Universe_S_Sateda, Universe_S_Tollana</Required_Planets>
+      <Required_Planets>Universe_L_Abydos, Universe_L_Athos, Universe_L_Celestis, Universe_L_Cimmeria, Universe_L_Dagan, Universe_L_Earth, Universe_L_Entac, Universe_L_Gelda, Universe_L_Genii, Universe_L_Hebridan, Universe_L_Hoff, Universe_L_Juna, Universe_L_Ktau, Universe_L_Langara, Universe_L_Olesia, Universe_L_Orban, Universe_L_P3R_636, Universe_L_Pangar, Universe_L_Proculis, Universe_L_Sateda, Universe_L_Tegalus, Universe_L_Tollana, Universe_L_Via_Caelum, Universe_L_Vis_Deorum, Universe_L_Volian</Required_Planets>
+
+      <Land_Damage_Thresholds>1, 0.66, 0.33, 0</Land_Damage_Thresholds>
+      <Land_Damage_Alternates>0, 1, 2, 3</Land_Damage_Alternates>
+      <Land_Damage_SFX>null,SFX_Grenade_Detonation, SFX_Grenade_Detonation,null</Land_Damage_SFX>
+
+      <Abilities SubObjectList="Yes">
+         <Force_Healing_Ability Name="E_Indoctrination_Camp_Self_Repair">
+            <Activation_Style>Skirmish_Automatic</Activation_Style>
+            <Heal_Percent>0.025</Heal_Percent>
+            <Heal_Interval_In_Secs>5.0</Heal_Interval_In_Secs>
+            <Single_Target_Heal>Yes</Single_Target_Heal>
+            <Owner_Particle_Bone_Name>ROOT</Owner_Particle_Bone_Name>
+            <Owner_Light_Effect_Type>Color_Flash</Owner_Light_Effect_Type>
+            <Owner_Light_Effect_Color>1.2, 1.2, 1.2</Owner_Light_Effect_Color>
+            <Owner_Light_Effect_Duration>0.6</Owner_Light_Effect_Duration>
+            <Owner_Light_Effect_Pulse_Count>1</Owner_Light_Effect_Pulse_Count>
+         </Force_Healing_Ability>
+		 <Planet_Income_Bonus_Ability Name="Indoctrination_Camp_Income_Bonus">
+            <Specific_Mod_Source_Text>TEXT_ECONOMY_MINING_FACILITIES</Specific_Mod_Source_Text>
+            <Percentage_Income_Modifier>0</Percentage_Income_Modifier>
+            <Absolute_Income_Modifier>50</Absolute_Income_Modifier>
+            <Additional_Multiplier_On_Mining_Colonies>1</Additional_Multiplier_On_Mining_Colonies>
+         </Planet_Income_Bonus_Ability>
+         <Income_Stream_Ability Name="Indoctrination_Camp_Income_Stream">
+            <Base_Income_Value>45</Base_Income_Value>
+            <Base_Interval_In_Secs>5</Base_Interval_In_Secs>
+            <Split_Income_With_Allies>Yes</Split_Income_With_Allies>
+            <Split_Favors_Owner>No</Split_Favors_Owner>
+            <Full_Amount_To_Everyone>Yes</Full_Amount_To_Everyone>
+         </Income_Stream_Ability>
+      </Abilities>
+   </Ground_Structure_Wraith>
+
+   <Ground_Structure_Wraith Name="UC_Empire_Indoctrination_Camp">
+      <Variant_Of_Existing_Type>Template_Ground_Structure_UC</Variant_Of_Existing_Type>
+      <Text_ID>TEXT_WRAITH_GROUND_BUILDING_INDOCTRINATION_CAMP</Text_ID>
+      <Encyclopedia_Text>TEXT_DESCRIPTION_WRAITH_SK_INDOCTRINATION_CAMP_GROUND</Encyclopedia_Text>
+      <Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_SPECIAL_STRUCTURE</Encyclopedia_Unit_Class>
+      <Icon_Name>WRAITH_GROUND_BUILDING_INDOCTRINATION_CAMP.tga</Icon_Name>
+      <Land_Model_Name>Wraith_Land_Building_Indoctrination_Camp_UC.alo</Land_Model_Name>
+      <Scale_Factor>1.0</Scale_Factor>
+      <Affiliation>Empire</Affiliation>
+      <Tactical_Buildable_Constructed>E_Ground_Indoctrination_Camp</Tactical_Buildable_Constructed>
+      <Tactical_Build_Start_Lower_Z>0</Tactical_Build_Start_Lower_Z>
+      <Tactical_Health>800</Tactical_Health>
+      <Tactical_Build_Cost_Multiplayer>1200</Tactical_Build_Cost_Multiplayer>
+      <Tactical_Build_Time_Seconds>12</Tactical_Build_Time_Seconds>
+   </Ground_Structure_Wraith>
+   
+
+<!--========================================================================================================
+#    Wraith Ground Turrets
+========================================================================================================-->
+
+   <Ground_Structure_Wraith Name="Empire_Anti_Infantry_Turret">
+      <Variant_Of_Existing_Type> Abstract_Anti_Infantry_Turret </Variant_Of_Existing_Type>
+      <Text_ID>TEXT_WRAITH_GROUND_BUILDING_ANTI_INFANTRY_TURRET</Text_ID>
+      <Encyclopedia_Text>TEXT_DESCRIPTION_WRAITH_ANTI_INFANTRY_TURRET_GROUND</Encyclopedia_Text>
+      <Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_WRAITH_PLASMAGUN_LIGHT</Encyclopedia_Unit_Class>
+      <Icon_Name>WRAITH_GROUND_BUILDING_AI_TURRET.TGA</Icon_Name>
+      <Land_Model_Name>Wraith_Land_Building_Turret_AI.alo</Land_Model_Name>
+      <Affiliation>Empire</Affiliation>
+      <Scale_Factor>1.8</Scale_Factor>
+      <Select_Box_Scale>20</Select_Box_Scale>
+      <Projectile_Types>Proj_Empire_Anti_Infantry_Turret</Projectile_Types>
+      <Projectile_Fire_Recharge_Seconds>1</Projectile_Fire_Recharge_Seconds>
+      <Projectile_Fire_Pulse_Count>5</Projectile_Fire_Pulse_Count>
+      <Projectile_Fire_Pulse_Delay_Seconds>0.02</Projectile_Fire_Pulse_Delay_Seconds>
+      <SFXEvent_Fire>Weapon_Cull_Beam_Wraith</SFXEvent_Fire>
+    </Ground_Structure_Wraith>
+
+   <Projectile Name="Proj_Empire_Anti_Infantry_Turret">
+      <Variant_Of_Existing_Type>Proj_Wraith_AntiInfantry_Turret</Variant_Of_Existing_Type>
+      <Damage_Type>Damage_Anti_Infantry_Only</Damage_Type>
+      <Projectile_Damage>20.01</Projectile_Damage>
+   </Projectile>
+
+   <Ground_Structure_Wraith Name="Empire_Anti_Vehicle_Turret">
+      <Variant_Of_Existing_Type> Abstract_Anti_Vehicle_Turret </Variant_Of_Existing_Type>
+      <Text_ID>TEXT_WRAITH_GROUND_BUILDING_ANTI_VEHICLE_TURRET</Text_ID>
+      <Encyclopedia_Text>TEXT_DESCRIPTION_WRAITH_ANTI_VEHICLE_TURRET_GROUND</Encyclopedia_Text>
+      <Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_WRAITH_PLASMAGUN_HEAVY</Encyclopedia_Unit_Class>
+      <Icon_Name>WRAITH_GROUND_BUILDING_AV_TURRET.TGA</Icon_Name>
+      <Land_Model_Name>Wraith_Land_Building_Turret_AV.alo</Land_Model_Name>
+      <Affiliation>Empire</Affiliation>
+      <Scale_Factor>1.6</Scale_Factor>
+     <Select_Box_Scale>20</Select_Box_Scale>
+      <Projectile_Types>Proj_Empire_Anti_Vehicle_Turret</Projectile_Types>
+      <Projectile_Fire_Recharge_Seconds>3.5</Projectile_Fire_Recharge_Seconds>
+      <Projectile_Fire_Pulse_Count>3</Projectile_Fire_Pulse_Count>
+      <Projectile_Fire_Pulse_Delay_Seconds>1</Projectile_Fire_Pulse_Delay_Seconds>
+      <SFXEvent_Fire>Weapon_Plasma_AV_Wraith</SFXEvent_Fire>
+    </Ground_Structure_Wraith>
+
+   <Projectile Name="Proj_Empire_Anti_Vehicle_Turret">
+      <Variant_Of_Existing_Type>Proj_Wraith_AntiVehicle_Turret</Variant_Of_Existing_Type>
+      <Damage_Type>Damage_Anti_Vehicle</Damage_Type>
+      <Projectile_Damage>45.00</Projectile_Damage>
+   </Projectile>
+
+   <Ground_Structure_Wraith Name="Empire_Anti_Aircraft_Turret">
+      <Variant_Of_Existing_Type> Abstract_Anti_Aircraft_Turret </Variant_Of_Existing_Type>
+      <Text_ID>TEXT_WRAITH_GROUND_BUILDING_ANTI_AIR_TURRET</Text_ID>
+      <Encyclopedia_Text>TEXT_DESCRIPTION_WRAITH_ANTI_AIR_TURRET_GROUND</Encyclopedia_Text>
+      <Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_TURRET_AA</Encyclopedia_Unit_Class>
+      <Icon_Name>WRAITH_GROUND_BUILDING_AA_TURRET.TGA</Icon_Name>
+      <Land_Model_Name>Wraith_Land_Building_Turret_AA.alo</Land_Model_Name>
+      <Affiliation>Empire</Affiliation>
+      <Scale_Factor>1.8</Scale_Factor>
+     <Select_Box_Scale>20</Select_Box_Scale>
+     <Projectile_Types>Proj_Empire_Anti_Aircraft_Turret</Projectile_Types>
+      <Projectile_Fire_Recharge_Seconds>1.8</Projectile_Fire_Recharge_Seconds>
+      <Projectile_Fire_Pulse_Count>7</Projectile_Fire_Pulse_Count>
+      <Projectile_Fire_Pulse_Delay_Seconds>0.65</Projectile_Fire_Pulse_Delay_Seconds>
+      <SFXEvent_Fire>Weapon_Plasma_AA_Wraith</SFXEvent_Fire>
+      <Turret_Rest_Angle> 0.0, -45.0, 0.0 </Turret_Rest_Angle>
+      <Turret_Bone_Name>B_Turret</Turret_Bone_Name>
+      <Barrel_Bone_Name>B_Barrel</Barrel_Bone_Name>
+    </Ground_Structure_Wraith>
+
+   <Projectile Name="Proj_Empire_Anti_Aircraft_Turret">
+      <Variant_Of_Existing_Type>Proj_Wraith_AntiAir_Turret</Variant_Of_Existing_Type>
+      <Damage_Type>Damage_Anti_Air</Damage_Type>
+      <Projectile_Damage>22.68</Projectile_Damage>
+   </Projectile>
+
+
+
+
+
+   <!-- Psionic Beamer -->
+   <Ground_Structure_Wraith Name="Empire_Buildable_Repair_Facility">
+
+      <Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_SPECIAL_STRUCTURE</Encyclopedia_Unit_Class>
+      <Encyclopedia_Text>TEXT_DESCRIPTION_WRAITH_PSIONIC_PROJECTOR_GROUND</Encyclopedia_Text>
+      <Text_ID>TEXT_WRAITH_GROUND_BUILDING_PSIONIC_PROJECTOR</Text_ID>
+      <Land_Model_Name>Wraith_Land_Building_Buildpad_Psi_Tower.alo</Land_Model_Name>
+      <Icon_Name>WRAITH_GROUND_BUILDING_PSIONIC_PROJECTOR.TGA</Icon_Name>
+
+      <Scale_Factor>2.2</Scale_Factor>
+      <Select_Box_Scale>20</Select_Box_Scale>
+      <Tactical_Health> 450 </Tactical_Health>
+      <Loop_Idle_Anim_00> Yes </Loop_Idle_Anim_00>
+
+      <Collidable_By_Projectile_Living> Yes </Collidable_By_Projectile_Living>
+      <Death_Explosions>Large_Explosion_Land</Death_Explosions>
+      <Ranged_Target_Z_Adjust> 10.0 </Ranged_Target_Z_Adjust>
+      <Radar_Icon_Name>I_RADAR_TURRET_DEFENSIVE.TGA</Radar_Icon_Name>
+       <Is_Visible_On_Radar>Yes</Is_Visible_On_Radar>
+       <Radar_Icon_Size>0.05  0.05</Radar_Icon_Size>
+       <Radar_Show_Facing>No</Radar_Show_Facing>
+
+      <Space_Layer> Land </Space_Layer>
+      <UnitCollisionClass> Vehicle </UnitCollisionClass>
+      <Custom_Hard_XExtent> 13.0 </Custom_Hard_XExtent>
+      <Custom_Hard_YExtent> 13.0 </Custom_Hard_YExtent>
+
+      <Base_Level_Available> 1 </Base_Level_Available>
+      <Required_Ground_Base_Level> 0 </Required_Ground_Base_Level>
+      <Armor_Type> Armor_Structure </Armor_Type>
+      <Reveal_During_Setup_Phase> False </Reveal_During_Setup_Phase>
+      <Victory_Relevant> No </Victory_Relevant>
+      <No_Reflection_Below_Detail_Level> 1 </No_Reflection_Below_Detail_Level>
+      <No_Refraction_Below_Detail_Level> 1 </No_Refraction_Below_Detail_Level>
+      <CategoryMask> Structure </CategoryMask>
+      <GUI_Bracket_Width> 20 </GUI_Bracket_Width>
+      <GUI_Bracket_Height> 0 </GUI_Bracket_Height>
+      <GUI_Bracket_Size> 0 </GUI_Bracket_Size>
+      <Score_Cost_Credits> 1500 </Score_Cost_Credits>
+      <Influences_Capture_Point> False </Influences_Capture_Point>
+
+      <Behavior>DUMMY_GROUND_STRUCTURE, SELECTABLE, TACTICAL_SELL</Behavior>
+      <LandBehavior>TARGETING, UNIT_AI, REVEAL, HIDE_WHEN_FOGGED, DAMAGE_TRACKING, STUNNABLE, POWERED, EARTHQUAKE_TARGET, WEAPON, IDLE, ABILITY_COUNTDOWN </LandBehavior>
+
+      <Unit_Abilities_Data SubObjectList="Yes">
+          <Unit_Ability>
+          <Type>DRAIN_LIFE</Type>
+          <Recharge_Seconds>25.0</Recharge_Seconds>
+          <GUI_Activated_Ability_Name> Psionic_Beamer_Drain_Life </GUI_Activated_Ability_Name>
+          <Alternate_Description_Text>TEXT_DESCRIPTION_ABILITY_DRAIN_LIFE_PSIONIC_BEAMER</Alternate_Description_Text>
+          <Supports_Autofire>True</Supports_Autofire>
+          </Unit_Ability>
+      </Unit_Abilities_Data>
+      <Abilities SubObjectList="Yes">
+      <Drain_Life_Ability Name="Psionic_Beamer_Drain_Life">
+              <Activation_Style> Ground_Automatic </Activation_Style>
+              <Applicable_Unit_Categories>Infantry | LandHero</Applicable_Unit_Categories>
+
+          <Excluded_Unit_Types>
+               Droid_R2D2,
+               Droid_C3P0,
+               MPTL_Spotter,
+               IG-88,
+               Dark_Trooper_PhaseI,
+               Dark_Trooper_PhaseII,
+               Dark_Trooper_PhaseIII,
+               Demolition_Bomb,
+               Proximity_Mine
+          </Excluded_Unit_Types>
+              <Duration_In_Seconds>5</Duration_In_Seconds>
+              <Damage_Per_Second>30</Damage_Per_Second>
+              <Drain_Effect_Name>Drain_Life_Effect</Drain_Effect_Name>
+              <Drain_Source_Bone_Name>B_CRYSTAL</Drain_Source_Bone_Name>
+              <Drain_Target_Bone_Name>B_PELVIS</Drain_Target_Bone_Name>
+              <Drain_Radius> 280.0 </Drain_Radius>
+              <SFXEvent_Activate></SFXEvent_Activate>
+              <SFXEvent_Target_Affected></SFXEvent_Target_Affected>
+              <Should_Heal>Yes</Should_Heal>
+        </Drain_Life_Ability>
+      <Force_Healing_Ability Name="E_Psionic_Beamer_Self_Repair">
+              <Activation_Style>Skirmish_Automatic</Activation_Style>
+
+              <Heal_Percent>0.010</Heal_Percent>
+
+              <Heal_Interval_In_Secs>5.0</Heal_Interval_In_Secs>
+              <Single_Target_Heal>Yes</Single_Target_Heal>
+
+
+
+              <Owner_Particle_Bone_Name>ROOT</Owner_Particle_Bone_Name>
+              <Owner_Light_Effect_Type>Color_Flash</Owner_Light_Effect_Type>
+              <Owner_Light_Effect_Color>1.2, 1.2, 1.2</Owner_Light_Effect_Color>
+
+              <Owner_Light_Effect_Duration>0.6</Owner_Light_Effect_Duration>
+              <Owner_Light_Effect_Pulse_Count>1</Owner_Light_Effect_Pulse_Count>
+          </Force_Healing_Ability>
+      </Abilities>
+
+      <Additional_Population_Capacity>1</Additional_Population_Capacity>
+      <Land_FOW_Reveal_Range> 200.0 </Land_FOW_Reveal_Range>
+      <Dense_FOW_Reveal_Range_Multiplier> 0.0 </Dense_FOW_Reveal_Range_Multiplier>
+      <SFXEvent_Sold_Tactical></SFXEvent_Sold_Tactical>
+      <Lua_Script>ObjectScript_Ground_Turret</Lua_Script>
+      <Affiliation> Empire </Affiliation>
+
+   </Ground_Structure_Wraith>
+
+
+   <!-- Alcove -->
+   <Ground_Structure_Wraith Name="Empire_Buildable_Bacta_Tank">
+
+      <Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_SPECIAL_STRUCTURE</Encyclopedia_Unit_Class>
+      <Encyclopedia_Text>TEXT_DESCRIPTION_WRAITH_REGENERATIONS_ALCOVE_GROUND</Encyclopedia_Text>
+      <Text_ID>TEXT_WRAITH_GROUND_BUILDING_REGENERATIONS_ALCOVE</Text_ID>
+      <Land_Model_Name>Wraith_Land_Building_Buildpad_Alcove.alo</Land_Model_Name>
+      <Icon_Name>WRAITH_GROUND_BUILDING_ALCOVE.TGA</Icon_Name>
+
+      <Scale_Factor>2</Scale_Factor>
+      <Select_Box_Scale>20</Select_Box_Scale>
+      <Tactical_Health> 450 </Tactical_Health>
+      <Loop_Idle_Anim_00> Yes </Loop_Idle_Anim_00>
+
+      <Land_FOW_Reveal_Range> 200.0 </Land_FOW_Reveal_Range>
+      <Dense_FOW_Reveal_Range_Multiplier> 0.0 </Dense_FOW_Reveal_Range_Multiplier>
+      <SFXEvent_Sold_Tactical></SFXEvent_Sold_Tactical>
+      <Affiliation> Empire </Affiliation>
+
+      <Behavior> TACTICAL_SELL, SELECTABLE, IDLE, REVEAL,DAMAGE_TRACKING, HIDE_WHEN_FOGGED,UNIT_AI </Behavior>
+      <LandBehavior> EARTHQUAKE_TARGET </LandBehavior>
+      <Has_Land_Evaluator>True</Has_Land_Evaluator>
+      <Tactical_Sell_Credits> 750 </Tactical_Sell_Credits>
+      <Tactical_Health> 100 </Tactical_Health>
+      <Collidable_By_Projectile_Living> Yes </Collidable_By_Projectile_Living>
+      <Death_Explosions>Large_Explosion_Land</Death_Explosions>
+      <Death_SFXEvent_Start_Die> Unit_Generic_Building_Death_SFX </Death_SFXEvent_Start_Die>
+      <SFXEvent_Select>Structure_Bacta_Select_SFX</SFXEvent_Select>
+      <Ranged_Target_Z_Adjust> 10.0 </Ranged_Target_Z_Adjust>
+      <Radar_Icon_Name>I_RADAR_TURRET_DEFENSIVE.TGA</Radar_Icon_Name>
+     <Is_Visible_On_Radar>Yes</Is_Visible_On_Radar>
+     <Radar_Icon_Size>0.05  0.05</Radar_Icon_Size>
+     <Radar_Show_Facing>No</Radar_Show_Facing>
+      <Space_Layer> Land </Space_Layer>
+      <UnitCollisionClass> Vehicle </UnitCollisionClass>
+      <Custom_Hard_XExtent> 13.0 </Custom_Hard_XExtent>
+      <Custom_Hard_YExtent> 13.0 </Custom_Hard_YExtent>
+      <Shield_Points> 0 </Shield_Points>
+      <Base_Level_Available> 1 </Base_Level_Available>
+      <Required_Ground_Base_Level> 0 </Required_Ground_Base_Level>
+      <Armor_Type> Armor_Structure </Armor_Type>
+      <Reveal_During_Setup_Phase> False </Reveal_During_Setup_Phase>
+      <Victory_Relevant> No </Victory_Relevant>
+      <No_Reflection_Below_Detail_Level> 1 </No_Reflection_Below_Detail_Level>
+      <No_Refraction_Below_Detail_Level> 1 </No_Refraction_Below_Detail_Level>
+      <CategoryMask> Structure </CategoryMask>
+      <GUI_Bracket_Width> 20 </GUI_Bracket_Width>
+      <GUI_Bracket_Height> 0 </GUI_Bracket_Height>
+      <GUI_Bracket_Size> 0 </GUI_Bracket_Size>
+      <Score_Cost_Credits> 1500 </Score_Cost_Credits>
+      <Influences_Capture_Point> False </Influences_Capture_Point>
+      <Property_Flags> TacticalStructure | HealsInfantry </Property_Flags>
+
+      <Abilities SubObjectList="Yes">
+       <Force_Healing_Ability Name="Bacta_Tank_Healing">
+          <Activation_Style>Ground_Automatic</Activation_Style>
+          <Heal_Range>150.0</Heal_Range>
+          <Heal_Amount> 0.0 </Heal_Amount>
+          <Heal_Percent> 0.20 </Heal_Percent>
+          <Heal_Interval_In_Secs>1.0</Heal_Interval_In_Secs>
+          <Single_Target_Heal>Yes</Single_Target_Heal>
+          <Heal_Range_Blob_Material>Reinforcement_Point_Radius_Overlay</Heal_Range_Blob_Material>
+          <!-- We can heal the following unit types: -->
+          <Applicable_Unit_Categories>Infantry | LandHero | Vehicle | Structure</Applicable_Unit_Categories>
+
+          <SFXEvent_Target_Affected></SFXEvent_Target_Affected>
+          <Target_Particle_Effect>Unit_Healed_Particles</Target_Particle_Effect>
+          <Target_Particle_Bone_Name>B_HEAD</Target_Particle_Bone_Name>
+          <Target_Light_Effect_Type>Color_Flash</Target_Light_Effect_Type>
+          <Target_Light_Effect_Color>1.2, 2.0, 1.2</Target_Light_Effect_Color>
+          <Target_Light_Effect_Color2 />
+          <Target_Light_Effect_Duration>0.6</Target_Light_Effect_Duration>
+          <Target_Light_Effect_Pulse_Count>1</Target_Light_Effect_Pulse_Count>
+          <Owner_Light_Effect_Type>Color_Flash</Owner_Light_Effect_Type>
+          <Owner_Light_Effect_Color>1.2, 2.0, 1.2</Owner_Light_Effect_Color>
+
+          <Owner_Light_Effect_Duration>0.6</Owner_Light_Effect_Duration>
+          <Owner_Light_Effect_Pulse_Count>1</Owner_Light_Effect_Pulse_Count>
+       </Force_Healing_Ability>
+      </Abilities>
+
+   </Ground_Structure_Wraith>
+
+
+   <!-- Detector -->
+   <Ground_Structure_Wraith Name="Sensor_Node_Empire">
+
+      <Variant_Of_Existing_Type> Abstract_Sensor_Node </Variant_Of_Existing_Type>
+
+      <Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_SPECIAL_STRUCTURE</Encyclopedia_Unit_Class>
+      <Encyclopedia_Text>TEXT_DESCRIPTION_WRAITH_DETECTOR_GROUND</Encyclopedia_Text>
+      <Text_ID>TEXT_WRAITH_GROUND_BUILDING_DETECTOR</Text_ID>
+      <Land_Model_Name>Wraith_Land_Building_Buildpad_Detector.alo</Land_Model_Name>
+      <Icon_Name>WRAITH_GROUND_BUILDING_DETECTOR.TGA</Icon_Name>
+
+      <Scale_Factor>2</Scale_Factor>
+      <Select_Box_Scale>20</Select_Box_Scale>
+      <Radar_Icon_Name>I_RADAR_TURRET_DEFENSIVE.TGA</Radar_Icon_Name>
+       <Is_Visible_On_Radar>Yes</Is_Visible_On_Radar>
+       <Radar_Icon_Size>0.05  0.05</Radar_Icon_Size>
+       <Radar_Show_Facing>No</Radar_Show_Facing>
+
+      <Tactical_Health> 400 </Tactical_Health>
+      <Tactical_Sell_Credits> 250 </Tactical_Sell_Credits>
+      <SFXEvent_Sold_Tactical></SFXEvent_Sold_Tactical>
+
+      <Target_Stealth_Units>Yes</Target_Stealth_Units>
+      <Loop_Idle_Anim_00> Yes </Loop_Idle_Anim_00>
+      <Land_FOW_Reveal_Range>750.0</Land_FOW_Reveal_Range>
+
+      <Affiliation>Empire</Affiliation>
+
+      <Obstacle_Proxy_Type> Empire_Build_Pad </Obstacle_Proxy_Type>
+
+      <Abilities SubObjectList="Yes">
+          <Force_Healing_Ability Name="E_Detector_Self_Repair">
+              <Activation_Style>Skirmish_Automatic</Activation_Style>
+
+              <Heal_Percent>0.010</Heal_Percent>
+
+              <Heal_Interval_In_Secs>5.0</Heal_Interval_In_Secs>
+              <Single_Target_Heal>Yes</Single_Target_Heal>
+
+
+
+              <Owner_Particle_Bone_Name>ROOT</Owner_Particle_Bone_Name>
+              <Owner_Light_Effect_Type>Color_Flash</Owner_Light_Effect_Type>
+              <Owner_Light_Effect_Color>1.2, 1.2, 1.2</Owner_Light_Effect_Color>
+
+              <Owner_Light_Effect_Duration>0.6</Owner_Light_Effect_Duration>
+              <Owner_Light_Effect_Pulse_Count>1</Owner_Light_Effect_Pulse_Count>
+          </Force_Healing_Ability>
+      </Abilities>
+
+   </Ground_Structure_Wraith>
+
+
+    <!-- ========================================== -->
+    <!-- GROUND-BASED TACTICAL BUILD PADS - EMPIRE  -->
+    <!-- ========================================== -->
+
+    <Ground_Structure_Wraith Name="Empire_Build_Pad">
+
+      <Behavior> TACTICAL_BUILD_OBJECTS, REVEAL, HIDE_WHEN_FOGGED </Behavior>
+      <!-- This is a list of the buildable objects at this pad (defined below) - that will be under construction -->
+      <Tactical_Buildable_Objects_Campaign> Empire, UC_Empire_Buildable_Anti_Infantry_Turret, UC_Empire_Buildable_Anti_Vehicle_Turret, UC_Empire_Buildable_Anti_Aircraft_Turret, UC_Empire_Buildable_Bacta_Tank, UC_Empire_Buildable_Repair_Facility, UC_Empire_Buildable_Sensor_Node </Tactical_Buildable_Objects_Campaign>
+      <Tactical_Buildable_Objects_Multiplayer> Empire, UC_Empire_Buildable_Anti_Infantry_Turret, UC_Empire_Buildable_Anti_Vehicle_Turret, UC_Empire_Buildable_Anti_Aircraft_Turret, UC_Empire_Buildable_Sensor_Node </Tactical_Buildable_Objects_Multiplayer>
+
+      <Text_ID> TEXT_EMPIRE_BUILD_PAD </Text_ID>
+      <Land_Model_Name> Wraith_Land_Building_Buildpad.alo </Land_Model_Name>
+      <Capture_Point_Radius>0</Capture_Point_Radius>
+      <Loop_Idle_Anim_00> No </Loop_Idle_Anim_00>
+      <Collidable_By_Projectile_Living> No </Collidable_By_Projectile_Living>
+      <Is_Visible_On_Radar>No</Is_Visible_On_Radar>
+      <Radar_Icon_Size>0.075  0.075</Radar_Icon_Size>
+      <Select_Box_Scale> 50 </Select_Box_Scale>
+      <Respects_Skirmish_Pre_Build_Bases_Option> false </Respects_Skirmish_Pre_Build_Bases_Option>
+
+      <Size_Value>0.2</Size_Value>
+
+      <Space_Layer> Land </Space_Layer>
+      <UnitCollisionClass> Build Pad </UnitCollisionClass>
+      <Custom_Hard_XExtent> 10.0 </Custom_Hard_XExtent>
+      <Custom_Hard_YExtent> 10.0 </Custom_Hard_YExtent>
+
+      <Scale_Factor> 0.6 </Scale_Factor>
+      <Shield_Points> 0 </Shield_Points>
+      <Tactical_Health> 10000 </Tactical_Health>
+      <Affiliation> Empire </Affiliation>
+      <Base_Level_Available> 1 </Base_Level_Available>
+      <Required_Ground_Base_Level> 0 </Required_Ground_Base_Level>
+      <Reveal_During_Setup_Phase> False </Reveal_During_Setup_Phase>
+      <Reveal_During_Setup_Phase_Only> False </Reveal_During_Setup_Phase_Only>
+      <Land_FOW_Reveal_Range>100.0</Land_FOW_Reveal_Range>
+      <Victory_Relevant> No </Victory_Relevant>
+      <No_Reflection_Below_Detail_Level> 1 </No_Reflection_Below_Detail_Level>
+      <No_Refraction_Below_Detail_Level> 1 </No_Refraction_Below_Detail_Level>
+      <CategoryMask> Structure </CategoryMask>
+      <GUI_Bracket_Width> 20 </GUI_Bracket_Width>
+      <GUI_Bracket_Height> 0 </GUI_Bracket_Height>
+      <GUI_Bracket_Size> 1 </GUI_Bracket_Size>
+      <Has_Land_Evaluator>True</Has_Land_Evaluator>
+
+      <Influences_Capture_Point> False </Influences_Capture_Point>
+
+      <Visible_To_Enemies_When_Empty>True</Visible_To_Enemies_When_Empty>
+      <Immune_To_Damage>True</Immune_To_Damage>
+      <Minimum_Time_Before_Pad_Can_Build_Again> 15 </Minimum_Time_Before_Pad_Can_Build_Again>
+
+    </Ground_Structure_Wraith>
+
+    <Ground_Structure_Wraith Name="Empire_Build_Pad_Offensive">
+
+      <Variant_Of_Existing_Type> Empire_Build_Pad </Variant_Of_Existing_Type>
+
+      <!-- This is a list of the buildable objects at this pad (defined below) - that will be under construction -->
+      <Tactical_Buildable_Objects_Campaign> Empire, UC_Empire_Buildable_Anti_Vehicle_Turret, UC_Empire_Buildable_Anti_Infantry_Turret, UC_Empire_Buildable_Anti_Aircraft_Turret </Tactical_Buildable_Objects_Campaign>
+      <Tactical_Buildable_Objects_Multiplayer> Empire, UC_Empire_Buildable_Anti_Vehicle_Turret, UC_Empire_Buildable_Anti_Infantry_Turret, UC_Empire_Buildable_Anti_Aircraft_Turret </Tactical_Buildable_Objects_Multiplayer>
+
+    </Ground_Structure_Wraith>
+
+    <Ground_Structure_Wraith Name="Empire_Build_Pad_Defensive">
+
+      <Variant_Of_Existing_Type> Empire_Build_Pad </Variant_Of_Existing_Type>
+
+      <!-- This is a list of the buildable objects at this pad (defined below) - that will be under construction -->
+      <Tactical_Buildable_Objects_Campaign> Empire, UC_Empire_Buildable_Bacta_Tank, UC_Empire_Buildable_Repair_Facility, UC_Empire_Buildable_Sensor_Node </Tactical_Buildable_Objects_Campaign>
+      <Tactical_Buildable_Objects_Multiplayer> Empire, UC_Empire_Buildable_Bacta_Tank, UC_Empire_Buildable_Repair_Facility, UC_Empire_Buildable_Sensor_Node </Tactical_Buildable_Objects_Multiplayer>
+
+    </Ground_Structure_Wraith>
+
+
+    <!-- ============================================================================ -->
+    <!-- UNDER CONSTRUCTION GROUND-BASED BUILDABLE TACTICAL BASE STRUCTURES - WRAITH  -->
+    <!-- ============================================================================ -->
+
+
+   <!-- Psionic Beamer UC -->
+   <Ground_Structure_Wraith Name="UC_Empire_Buildable_Repair_Facility">
+      <Variant_Of_Existing_Type>Template_Ground_Turret_UC</Variant_Of_Existing_Type>
+      <Text_ID>TEXT_WRAITH_GROUND_BUILDING_PSIONIC_PROJECTOR</Text_ID>
+      <Encyclopedia_Text>TEXT_DESCRIPTION_WRAITH_PSIONIC_PROJECTOR_GROUND</Encyclopedia_Text>
+      <Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_DEFENSIVE_STRUCTURE</Encyclopedia_Unit_Class>
+      <Icon_Name>WRAITH_GROUND_BUILDING_PSIONIC_PROJECTOR.TGA</Icon_Name>
+      <Land_Model_Name>Wraith_Land_Building_Buildpad_Psi_Tower_UC.alo</Land_Model_Name>
+      <Scale_Factor>2.2</Scale_Factor>
+      <Affiliation>Empire</Affiliation>
+      <SFXEvent_Select>Structure_Repair_Select_SFX</SFXEvent_Select>
+
+      <Tactical_Buildable_Constructed> Empire_Buildable_Repair_Facility </Tactical_Buildable_Constructed>
+      <Tactical_Build_Cost_Multiplayer> 600 </Tactical_Build_Cost_Multiplayer>
+      <Tactical_Build_Cost_Campaign>50</Tactical_Build_Cost_Campaign>
+      <Tactical_Build_Time_Seconds> 20 </Tactical_Build_Time_Seconds>
+      <Tactical_Build_Start_Lower_Z> 0 </Tactical_Build_Start_Lower_Z>
+      <Tactical_Health> 250 </Tactical_Health>
+    </Ground_Structure_Wraith>
+
+
+    <!-- Alcove UC -->
+    <Ground_Structure_Wraith Name="UC_Empire_Buildable_Bacta_Tank">
+      <Variant_Of_Existing_Type>Template_Ground_Turret_UC</Variant_Of_Existing_Type>
+      <Text_ID>TEXT_WRAITH_GROUND_BUILDING_REGENERATIONS_ALCOVE</Text_ID>
+      <Encyclopedia_Text>TEXT_DESCRIPTION_WRAITH_REGENERATIONS_ALCOVE_GROUND</Encyclopedia_Text>
+      <Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_DEFENSIVE_STRUCTURE</Encyclopedia_Unit_Class>
+      <Icon_Name>WRAITH_GROUND_BUILDING_ALCOVE.TGA</Icon_Name>
+      <Land_Model_Name>Wraith_Land_Building_Buildpad_Alcove_UC.alo</Land_Model_Name>
+      <Scale_Factor>2.0</Scale_Factor>
+      <Affiliation>Empire</Affiliation>
+      <SFXEvent_Select>Structure_Bacta_Select_SFX</SFXEvent_Select>
+
+      <Tactical_Buildable_Constructed> Empire_Buildable_Bacta_Tank </Tactical_Buildable_Constructed>
+      <Tactical_Build_Cost_Multiplayer> 600 </Tactical_Build_Cost_Multiplayer>
+      <Tactical_Build_Cost_Campaign>30</Tactical_Build_Cost_Campaign>
+      <Tactical_Build_Time_Seconds> 15 </Tactical_Build_Time_Seconds>
+      <Tactical_Build_Start_Lower_Z> 0 </Tactical_Build_Start_Lower_Z>
+      <Tactical_Health> 250 </Tactical_Health>
+    </Ground_Structure_Wraith>
+
+
+    <Ground_Structure_Wraith Name="UC_Empire_Buildable_Anti_Aircraft_Turret">
+      <Variant_Of_Existing_Type>Template_Ground_Turret_UC</Variant_Of_Existing_Type>
+      <Text_ID>TEXT_WRAITH_GROUND_BUILDING_ANTI_AIR_TURRET</Text_ID>
+      <Encyclopedia_Text>TEXT_DESCRIPTION_WRAITH_ANTI_AIR_TURRET_GROUND</Encyclopedia_Text>
+      <Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_TURRET_AA</Encyclopedia_Unit_Class>
+      <Icon_Name>WRAITH_GROUND_BUILDING_AA_TURRET.TGA</Icon_Name>
+      <Land_Model_Name> Wraith_Land_Building_Turret_AA_UC.alo </Land_Model_Name>
+      <Scale_Factor>1.8</Scale_Factor>
+      <Affiliation>Empire</Affiliation>
+
+      <Tactical_Buildable_Constructed> Empire_Anti_Aircraft_Turret </Tactical_Buildable_Constructed>
+      <Tactical_Build_Cost_Multiplayer> 600 </Tactical_Build_Cost_Multiplayer>
+      <Tactical_Build_Cost_Campaign>20</Tactical_Build_Cost_Campaign>
+      <Tactical_Build_Time_Seconds> 18 </Tactical_Build_Time_Seconds>
+      <Tactical_Build_Start_Lower_Z> 0 </Tactical_Build_Start_Lower_Z>
+      <Tactical_Health> 250 </Tactical_Health>
+    </Ground_Structure_Wraith>
+
+
+    <Ground_Structure_Wraith Name="UC_Empire_Buildable_Anti_Infantry_Turret">
+      <Variant_Of_Existing_Type>Template_Ground_Turret_UC</Variant_Of_Existing_Type>
+      <Text_ID>TEXT_WRAITH_GROUND_BUILDING_ANTI_INFANTRY_TURRET_UC</Text_ID>
+      <Encyclopedia_Text>TEXT_DESCRIPTION_WRAITH_ANTI_INFANTRY_TURRET_GROUND</Encyclopedia_Text>
+      <Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_WRAITH_PLASMAGUN_LIGHT</Encyclopedia_Unit_Class>
+      <Icon_Name>WRAITH_GROUND_BUILDING_AI_TURRET.TGA</Icon_Name>
+      <Land_Model_Name> Wraith_Land_Building_Turret_AI_UC.alo </Land_Model_Name>
+      <Scale_Factor>1.8</Scale_Factor>
+      <Affiliation>Empire</Affiliation>
+
+      <Tactical_Buildable_Constructed> Empire_Anti_Infantry_Turret </Tactical_Buildable_Constructed>
+      <Tactical_Build_Cost_Multiplayer> 500 </Tactical_Build_Cost_Multiplayer>
+      <Tactical_Build_Cost_Campaign>20</Tactical_Build_Cost_Campaign>
+      <Tactical_Build_Time_Seconds> 15 </Tactical_Build_Time_Seconds>
+      <Tactical_Build_Start_Lower_Z> 0 </Tactical_Build_Start_Lower_Z>
+      <Tactical_Health> 250 </Tactical_Health>
+    </Ground_Structure_Wraith>
+
+
+    <Ground_Structure_Wraith Name="UC_Empire_Buildable_Anti_Vehicle_Turret">
+      <Variant_Of_Existing_Type>Template_Ground_Turret_UC</Variant_Of_Existing_Type>
+      <Text_ID>TEXT_WRAITH_GROUND_BUILDING_ANTI_VEHICLE_TURRET</Text_ID>
+      <Encyclopedia_Text>TEXT_DESCRIPTION_WRAITH_ANTI_VEHICLE_TURRET_GROUND</Encyclopedia_Text>
+      <Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_WRAITH_PLASMAGUN_HEAVY</Encyclopedia_Unit_Class>
+      <Icon_Name>WRAITH_GROUND_BUILDING_AV_TURRET.TGA</Icon_Name>
+      <Land_Model_Name> Wraith_Land_Building_Turret_AV_UC.alo </Land_Model_Name>
+      <Scale_Factor>1.6</Scale_Factor>
+      <Affiliation>Empire</Affiliation>
+      <Target_Bones>B_TURRET0_COLLISION</Target_Bones>
+
+      <Tactical_Buildable_Constructed> Empire_Anti_Vehicle_Turret </Tactical_Buildable_Constructed>
+      <Tactical_Build_Cost_Multiplayer> 600 </Tactical_Build_Cost_Multiplayer>
+      <Tactical_Build_Cost_Campaign>20</Tactical_Build_Cost_Campaign>
+      <Tactical_Build_Time_Seconds> 23 </Tactical_Build_Time_Seconds>
+      <Tactical_Build_Start_Lower_Z> 0 </Tactical_Build_Start_Lower_Z>
+      <Tactical_Health> 250 </Tactical_Health>
+    </Ground_Structure_Wraith>
+
+
+    <!-- Detector UC -->
+    <Ground_Structure_Wraith Name="UC_Empire_Buildable_Sensor_Node">
+      <Variant_Of_Existing_Type>Template_Ground_Turret_UC</Variant_Of_Existing_Type>
+      <Text_ID>TEXT_WRAITH_GROUND_BUILDING_DETECTOR</Text_ID>
+      <Encyclopedia_Text>TEXT_DESCRIPTION_WRAITH_DETECTOR_GROUND</Encyclopedia_Text>
+      <Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_DEFENSIVE_STRUCTURE</Encyclopedia_Unit_Class>
+      <Icon_Name>WRAITH_GROUND_BUILDING_DETECTOR.TGA</Icon_Name>
+      <Land_Model_Name>Wraith_Land_Building_Buildpad_Detector_UC.alo</Land_Model_Name>
+      <Scale_Factor>2</Scale_Factor>
+      <Affiliation>Empire</Affiliation>
+      <SFXEvent_Select>Structure_Sensor_Select_SFX</SFXEvent_Select>
+
+      <Tactical_Buildable_Constructed> Sensor_Node_Empire </Tactical_Buildable_Constructed>
+      <Tactical_Build_Cost_Multiplayer> 450 </Tactical_Build_Cost_Multiplayer>
+      <Tactical_Build_Cost_Campaign>10</Tactical_Build_Cost_Campaign>
+      <Tactical_Build_Time_Seconds> 10 </Tactical_Build_Time_Seconds>
+      <Tactical_Build_Start_Lower_Z> 0 </Tactical_Build_Start_Lower_Z>
+      <Tactical_Health> 250 </Tactical_Health>
+    </Ground_Structure_Wraith>
+
+
+   <!-- Special Variant for Tartarus Ground Map -->
+   <Ground_Structure_Wraith Name="Empire_Anti_Infantry_Turret_Tartarus">
+      <Variant_Of_Existing_Type> Empire_Anti_Infantry_Turret </Variant_Of_Existing_Type>
+      <Targeting_Max_Attack_Distance>110.0</Targeting_Max_Attack_Distance>
+   </Ground_Structure_Wraith>
+   <Ground_Structure_Wraith Name="UC_Empire_Buildable_Anti_Infantry_Turret_Tartarus">
+      <Variant_Of_Existing_Type> UC_Empire_Buildable_Anti_Infantry_Turret </Variant_Of_Existing_Type>
+      <Tactical_Buildable_Constructed> Empire_Anti_Infantry_Turret_Tartarus </Tactical_Buildable_Constructed>
+   </Ground_Structure_Wraith>
+   <Ground_Structure_Wraith Name="Empire_Build_Pad_Tartarus">
+      <Variant_Of_Existing_Type> Empire_Build_Pad </Variant_Of_Existing_Type>
+      <Tactical_Buildable_Objects_Campaign> Empire, UC_Empire_Buildable_Anti_Infantry_Turret_Tartarus, UC_Empire_Buildable_Bacta_Tank, UC_Empire_Buildable_Repair_Facility, UC_Empire_Buildable_Sensor_Node </Tactical_Buildable_Objects_Campaign>
+      </Ground_Structure_Wraith>
+   <Ground_Structure_Wraith Name="Empire_Build_Pad_Offensive_Tartarus">
+      <Variant_Of_Existing_Type> Empire_Build_Pad_Offensive </Variant_Of_Existing_Type>
+      <Tactical_Buildable_Objects_Campaign> Empire, UC_Empire_Buildable_Anti_Infantry_Turret_Tartarus </Tactical_Buildable_Objects_Campaign>
+   </Ground_Structure_Wraith>
+
+</Wraith_Ground_Buildings>

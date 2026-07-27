@@ -1,0 +1,123 @@
+<?xml version="1.0"?>
+<F302_Data>
+
+   <!--TEXT_ABILITY_TAURI_GROUND_F_302_GEGNER_JAGEN
+ TEXT_DESCRIPTION_ABILITY_GROUND_F_302_GEGNER_JAGEN-->
+   
+   <!-- UNIT INFO -->
+   <GroundVehicle Name="Tauri_F302_Land">
+      <Variant_Of_Existing_Type>Template_Ground_Flyer</Variant_Of_Existing_Type>
+      <Text_ID>TEXT_TAURI_GROUND_UNIT_F_302</Text_ID>
+      <Encyclopedia_Text>TEXT_DESCRIPTION_TAURI_F_302_GROUND</Encyclopedia_Text>
+      <Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_F_302_GROUND</Encyclopedia_Unit_Class>
+      <Encyclopedia_Good_Against>Scout_Trooper Goauld_Probe</Encyclopedia_Good_Against>
+      <Encyclopedia_Vulnerable_To>Goauld_Horus_Guard AT_AA_Walker</Encyclopedia_Vulnerable_To>
+      <Icon_Name>TAURI_SPACE_UNIT_F-302.TGA</Icon_Name>
+      <Radar_Icon_Name>I_RADAR_F302.TGA</Radar_Icon_Name>
+      <Land_Model_Name>Tauri_Land_Unit_F-302.ALO</Land_Model_Name>
+      <Scale_Factor>4.5</Scale_Factor>
+      <Select_Box_Scale>20</Select_Box_Scale>
+
+      <LandBehavior>
+        FLYING_LOCOMOTOR,
+        DAMAGE_TRACKING,
+        HIDE_WHEN_FOGGED,
+        REVEAL,
+        STUNNABLE,
+        TARGETING,
+        TELEKINESIS_TARGET,
+        UNIT_AI,
+        WIND_DISTURBANCE
+      </LandBehavior>
+      <Affiliation>Underworld</Affiliation>
+      <Damage>76</Damage>
+      <Score_Cost_Credits>600</Score_Cost_Credits>
+      <Tactical_Health>200</Tactical_Health>
+      <AI_Combat_Power>110</AI_Combat_Power>
+      <Size_Value>15</Size_Value>
+
+      <Max_Speed>5.5</Max_Speed>
+      <Min_Speed>5.0</Min_Speed>
+      <OverrideAcceleration>0.2</OverrideAcceleration>
+      <OverrideDeceleration>0.2</OverrideDeceleration>
+      <Max_Rate_Of_Turn>4.0</Max_Rate_Of_Turn>
+      <Max_Rate_Of_Roll>1.0</Max_Rate_Of_Roll>
+      <Max_Lift>2.5</Max_Lift>
+      <Bank_Turn_Angle>60</Bank_Turn_Angle>
+      <Prepare_Strafe_Height>150</Prepare_Strafe_Height>
+      
+      <Blob_Shadow_Scale>40.0, 40.0</Blob_Shadow_Scale>
+      <Ranged_Target_Z_Adjust>10.0</Ranged_Target_Z_Adjust>
+      <Spin_Away_On_Death>Yes</Spin_Away_On_Death>
+      <Targeting_Priority_Set>SG_Air_AntiAll</Targeting_Priority_Set>
+      
+      <HardPoints>
+         HP_F302_Land_Missile,
+         HP_F302_Land_Railgun
+      </HardPoints>
+      
+      <SFXEvent_Select>Unit_Select_FB</SFXEvent_Select>
+      <SFXEvent_Move>Unit_Move_FB</SFXEvent_Move>
+      <SFXEvent_Fleet_Move>Unit_Move_FB</SFXEvent_Fleet_Move>
+       <SFXEvent_Stop></SFXEvent_Stop> 
+      <SFXEvent_Attack>Unit_Attack_FB</SFXEvent_Attack>
+      <SFXEvent_Guard>Unit_Guard_FB</SFXEvent_Guard>
+      <SFXEvent_Assist_Move>Unit_Move_FB</SFXEvent_Assist_Move>
+      <SFXEvent_Assist_Attack>Unit_Attack_FB</SFXEvent_Assist_Attack>
+      <Death_SFXEvent_Start_Die>Explosion_Figther</Death_SFXEvent_Start_Die>
+      <SFXEvent_Ambient_Moving> Engine_Tauri_F302 </SFXEvent_Ambient_Moving>
+      <SFXEvent_Ambient_Moving_Min_Delay_Seconds> 5 </SFXEvent_Ambient_Moving_Min_Delay_Seconds>
+      <SFXEvent_Ambient_Moving_Max_Delay_Seconds> 7 </SFXEvent_Ambient_Moving_Max_Delay_Seconds>
+      <SFXEvent_Engine_Cinematic_Focus_Loop> Engine_Tauri_F302 </SFXEvent_Engine_Cinematic_Focus_Loop>
+   </GroundVehicle>
+   
+   
+   <!-- COMPANY INFO -->
+   <GroundCompany Name="Tauri_F302_Land_Company_No_Prereq">
+      <Variant_Of_Existing_Type>Template_Ground_Company</Variant_Of_Existing_Type>
+      <Text_ID>TEXT_TAURI_GROUND_UNIT_F_302</Text_ID>
+      <Encyclopedia_Text>TEXT_DESCRIPTION_TAURI_F_302_GROUND</Encyclopedia_Text>
+      <Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_F_302_GROUND</Encyclopedia_Unit_Class>
+      <Encyclopedia_Good_Against>Scout_Trooper Goauld_Probe</Encyclopedia_Good_Against>
+      <Encyclopedia_Vulnerable_To>Goauld_Horus_Guard AT_AA_Walker</Encyclopedia_Vulnerable_To>
+      <Icon_Name>TAURI_SPACE_UNIT_F-302.TGA</Icon_Name>
+      <Damage>76</Damage>
+      <Build_Cost_Credits>800</Build_Cost_Credits>
+      <Build_Time_Seconds>70</Build_Time_Seconds>
+      <Ship_Class>walker</Ship_Class>
+      <Company_Transport_Unit>Tauri_Transport_F_302_Self</Company_Transport_Unit>
+      <Company_Units>Tauri_F302_Land</Company_Units>      
+      <Score_Cost_Credits>600</Score_Cost_Credits>
+      <Tactical_Build_Cost_Multiplayer>1600</Tactical_Build_Cost_Multiplayer>
+      <Tactical_Build_Time_Seconds>15</Tactical_Build_Time_Seconds>
+      <Required_Ground_Base_Level>1</Required_Ground_Base_Level>
+   </GroundCompany>
+
+   <GroundCompany Name="Tauri_F302_Land_Company">
+      <Variant_Of_Existing_Type>Tauri_F302_Land_Company_No_Prereq</Variant_Of_Existing_Type>
+      <Affiliation>Underworld</Affiliation>
+      <Tech_Level>4</Tech_Level>
+      <Required_Special_Structures>U_Ground_Droid_Works</Required_Special_Structures>
+      <Tactical_Build_Prerequisites>UC_Level_Two_Tech_Upgrade</Tactical_Build_Prerequisites>
+   </GroundCompany>
+   
+   
+  <!-- PROJECTILE INFO -->
+  <Projectile Name="Proj_Tauri_Railgun_F302_Land">
+    <Variant_Of_Existing_Type>Proj_Tauri_F302_Land_Railgun</Variant_Of_Existing_Type>
+    <Damage_Type>Damage_Normal</Damage_Type>
+    <Projectile_Damage>8.89</Projectile_Damage>
+  </Projectile>
+   
+  <Projectile Name="Proj_Tauri_Missile_F302_Land">
+    <Variant_Of_Existing_Type>Proj_Tauri_F302_Land_Missile</Variant_Of_Existing_Type>
+    <Damage_Type>Damage_Anti_Air</Damage_Type>
+    <Projectile_Damage>70.0</Projectile_Damage>
+    <Projectile_Blast_Area_Range>10.0</Projectile_Blast_Area_Range>
+    <Projectile_Blast_Area_Damage>30.0</Projectile_Blast_Area_Damage>
+    <Max_Secs_For_AE_Delayed_Damage>0.0</Max_Secs_For_AE_Delayed_Damage>
+    <!--TODO: The missile needs a lot better air target tracking-->
+  </Projectile> 
+
+
+</F302_Data>

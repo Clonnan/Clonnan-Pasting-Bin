@@ -1,0 +1,293 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Queen>
+
+   <HeroUnit Name="Emperor_Palpatine">
+      <Variant_Of_Existing_Type>Template_Ground_Infantry_Single_Hero_Wraith</Variant_Of_Existing_Type>
+      <Text_ID>TEXT_WRAITH_SPECIAL_HERO_QUEEN</Text_ID>
+      <Encyclopedia_Text>TEXT_DESCRIPTION_WRAITH_QUEEN_GC_GROUND</Encyclopedia_Text>
+      <MP_Encyclopedia_Text>TEXT_DESCRIPTION_WRAITH_QUEEN_SK_GROUND</MP_Encyclopedia_Text>
+      <Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_WRAITH_QUEEN_GROUND</Encyclopedia_Unit_Class>
+      <Encyclopedia_Good_Against>Rebel_Trooper Goauld_Jackal_Guard Underworld_Merc</Encyclopedia_Good_Against>
+      <Encyclopedia_Vulnerable_To>Snowspeeder Tauri_B302_Land Rebel_Anti_Infantry_Turret</Encyclopedia_Vulnerable_To>
+      <Land_Model_Name>Wraith_Land_Hero_Queen.ALO</Land_Model_Name>     
+      <Icon_Name>WRAITH_SPACE_HERO_QUEEN.TGA</Icon_Name>
+      <LandBehavior>WALK_LOCOMOTOR, ABILITY_COUNTDOWN, DAMAGE_TRACKING, GARRISON_UNIT, HIDE_WHEN_FOGGED, IDLE, IMPOSING_PRESENCE, REVEAL, SELECTABLE, STUNNABLE, SURFACE_FX, TARGETING, UNIT_AI</LandBehavior>
+      <Scale_Factor>0.9</Scale_Factor>
+      <Movement_Animation_Speed>0.6</Movement_Animation_Speed>
+      <Rotation_Animation_Speed>20.0</Rotation_Animation_Speed>
+      <Walk_Animation_Speed>0.6</Walk_Animation_Speed>
+      <Max_Speed>0.6</Max_Speed>
+      <Size_Value>75</Size_Value>
+      <Damage>100</Damage>
+      <Tactical_Health>1000</Tactical_Health>
+      <AI_Combat_Power>200</AI_Combat_Power>
+      <Targeting_Priority_Set>SG_Infantry_AntiInfantry</Targeting_Priority_Set>
+      <Target_Stealth_Units>Yes</Target_Stealth_Units>
+
+      <SFXEvent_Select>Unit_Select_Queen</SFXEvent_Select>
+      <SFXEvent_Move>Unit_Move_Queen</SFXEvent_Move>
+      <SFXEvent_Fleet_Move></SFXEvent_Fleet_Move>
+      <SFXEvent_Attack>Unit_Attack_Queen</SFXEvent_Attack>
+      <SFXEvent_Guard></SFXEvent_Guard>
+      <SFXEvent_Stop></SFXEvent_Stop>  
+      <SFXEvent_Build_Started></SFXEvent_Build_Started>
+      <SFXEvent_Build_Cancelled></SFXEvent_Build_Cancelled>
+      <SFXEvent_Build_Complete>Unit_Spawn_Queen</SFXEvent_Build_Complete>
+      <SFXEvent_Hero_Respawned>Unit_Spawn_Queen</SFXEvent_Hero_Respawned>
+      <SFXEvent_Group_Move></SFXEvent_Group_Move>
+      <SFXEvent_Group_Attack></SFXEvent_Group_Attack>
+      <SFXEvent_Health_Low_Warning></SFXEvent_Health_Low_Warning>
+      <SFXEvent_Health_Critical_Warning></SFXEvent_Health_Critical_Warning>
+      <Death_SFXEvent_Start_Die>Unit_Defeat_Wraith_Queen</Death_SFXEvent_Start_Die>
+
+      <Can_Be_Neutralized_By_Major_Heroes>No</Can_Be_Neutralized_By_Major_Heroes>
+	   <Can_Be_Neutralized_By_Minor_Heroes>No</Can_Be_Neutralized_By_Minor_Heroes>
+      <Score_Cost_Credits> 25000 </Score_Cost_Credits>
+      <Presence_Range>100.0</Presence_Range>
+      <Lua_Script>ObjectScript_Wraith_Queen</Lua_Script>
+      <Unit_Abilities_Data SubObjectList="Yes">
+         <Unit_Ability>
+            <Type>POWER_TO_WEAPONS</Type>
+            <Alternate_Name_Text>TEXT_ABILITY_GHOTS</Alternate_Name_Text>
+            <Alternate_Description_Text>TEXT_DESCRIPTION_ABILITY_GHOSTS_WRAITH_QUEEN_GROUND</Alternate_Description_Text>
+            <Alternate_Icon_Name>I_SA_GHOSTS.TGA</Alternate_Icon_Name>
+            <Recharge_Seconds>38</Recharge_Seconds>
+            <Expiration_Seconds>0.8</Expiration_Seconds>
+         </Unit_Ability>
+         <Unit_Ability>
+            <Type>WEAKEN_ENEMY</Type>
+            <Alternate_Name_Text>TEXT_ABILITY_BOMBARDMENT</Alternate_Name_Text>
+            <Alternate_Description_Text>TEXT_DESCRIPTION_ABILITY_BOMBARDMENT_WRAITH_QUEEN_GROUND</Alternate_Description_Text>
+            <Alternate_Icon_Name>I_SA_CRUISER_BOMBARDMENT.TGA</Alternate_Icon_Name>
+            <Recharge_Seconds>45</Recharge_Seconds>
+            <Effective_Radius>250.0</Effective_Radius>
+            <Spawned_Object_Type>Wraith_Cruiser_Bombardment</Spawned_Object_Type>
+            <SFXEvent_Target_Ability>Unit_Attack_Queen</SFXEvent_Target_Ability>
+            <SFXEvent_GUI_Unit_Ability_Activated></SFXEvent_GUI_Unit_Ability_Activated>
+            <SFXEvent_GUI_Unit_Ability_Deactivated />
+            <Area_Effect_Decal_Distance>45</Area_Effect_Decal_Distance>
+         </Unit_Ability>
+      </Unit_Abilities_Data>
+        <Abilities SubObjectList="Yes">
+            <Combat_Bonus_Ability Name="Wraith_Queen_Land_Combat_Bonus">
+                <Activation_Style>Ground_Automatic</Activation_Style>
+                <Unit_Strength_Category>Vehicle | Infantry | Air</Unit_Strength_Category>
+                <Applicable_Unit_Categories>Vehicle | Infantry | Air</Applicable_Unit_Categories>
+                <Applicable_Unit_Types />
+                <Health_Bonus_Percentage>0.25</Health_Bonus_Percentage>
+                <Damage_Bonus_Percentage>0.0</Damage_Bonus_Percentage>
+                <Energy_Pool_Bonus_Percentage>0.0</Energy_Pool_Bonus_Percentage>
+                <Shield_Bonus_Percentage>0.0</Shield_Bonus_Percentage>
+                <Defense_Bonus_Percentage>0.0</Defense_Bonus_Percentage>
+                <Movement_Speed_Bonus_Percentage>0.0</Movement_Speed_Bonus_Percentage>
+                <Stacking_Category>0</Stacking_Category>
+            </Combat_Bonus_Ability>
+            <Reduce_Production_Price_Ability Name="Wraith_Queen_Reduce_Production_Price">
+                <Applicable_Unit_Categories>All</Applicable_Unit_Categories>
+                <Price_Reduction_Percentage>0.25</Price_Reduction_Percentage>
+                <Stacking_Category>0</Stacking_Category>
+            </Reduce_Production_Price_Ability>
+        </Abilities>
+    </HeroUnit>
+
+
+    <HeroCompany Name="Emperor_Palpatine_Team">
+        <Variant_Of_Existing_Type>Template_Ground_Hero_Company</Variant_Of_Existing_Type>
+        <Text_ID>TEXT_WRAITH_GROUND_HERO_WRAITH_QUEEN</Text_ID>
+        <Encyclopedia_Text>TEXT_DESCRIPTION_WRAITH_QUEEN_GC_GROUND</Encyclopedia_Text>
+        <MP_Encyclopedia_Text>TEXT_DESCRIPTION_WRAITH_QUEEN_SK_GROUND</MP_Encyclopedia_Text>
+        <Encyclopedia_Unit_Class> TEXT_ENCYCLOPEDIA_CLASS_WRAITH_QUEEN </Encyclopedia_Unit_Class>
+        <Icon_Name>WRAITH_SPACE_HERO_QUEEN.tga</Icon_Name>
+        <Affiliation>Empire</Affiliation>
+        <Company_Transport_Unit>Wraith_Hero_Queen</Company_Transport_Unit>
+        <Company_Units>Emperor_Palpatine</Company_Units>
+        <Is_Force_Sensitive>Yes</Is_Force_Sensitive>
+        <Score_Cost_Credits> 25000 </Score_Cost_Credits>
+        <SFXEvent_Build_Started></SFXEvent_Build_Started>
+        <SFXEvent_Build_Cancelled></SFXEvent_Build_Cancelled>
+        <SFXEvent_Build_Complete></SFXEvent_Build_Complete>
+        <SFXEvent_Hero_Respawned></SFXEvent_Hero_Respawned>
+        <SFXEvent_Fleet_Move></SFXEvent_Fleet_Move>
+        <Tactical_Build_Cost_Multiplayer>3700</Tactical_Build_Cost_Multiplayer>
+        <Tactical_Build_Time_Seconds>27</Tactical_Build_Time_Seconds>
+        <Tactical_Build_Prerequisites>EC_Level_Three_Tech_Upgrade</Tactical_Build_Prerequisites>
+        <Required_Ground_Base_Level>0</Required_Ground_Base_Level>
+    </HeroCompany>
+
+
+    <MiscObject Name="Wraith_Ghost">
+      <Variant_Of_Existing_Type>Template_Ground_Unit</Variant_Of_Existing_Type>
+      <Text_ID>TEXT_WRAITH_GROUND_UNIT_GHOST</Text_ID>
+      <Encyclopedia_Text>TEXT_DESCRIPTION_WRAITH_GHOST_GROUND</Encyclopedia_Text>
+      <Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_GHOST</Encyclopedia_Unit_Class>
+      <Icon_Name>WRAITH_GROUND_UNIT_GHOST.TGA</Icon_Name>
+      <Land_Model_Name>Wraith_Land_Unit_Ghost.ALO</Land_Model_Name>
+      <Scale_Factor>1.0</Scale_Factor>
+      <Behavior>SELECTABLE</Behavior>
+      <LandBehavior>WALK_LOCOMOTOR, ABILITY_COUNTDOWN, DAMAGE_TRACKING, HUNT, LURE, SELECTABLE, SELF_DESTRUCT</LandBehavior>
+      <Is_Visible_On_Radar>No</Is_Visible_On_Radar>
+      <Space_Layer>None</Space_Layer>
+      <Max_Speed>0.5</Max_Speed>
+      <Max_Rate_Of_Turn>50.0</Max_Rate_Of_Turn>
+      <CategoryMask>Infantry</CategoryMask>
+      <MovementClass>Hover</MovementClass>
+      <Weather_Category>Default</Weather_Category>
+      <Affiliation>Empire</Affiliation>
+      <Victory_Relevant>no</Victory_Relevant>
+      <Blob_Shadow_Scale>0.1, 0.1</Blob_Shadow_Scale>
+      <Is_Squashable>No</Is_Squashable>
+      <Ground_Infantry_Turret_Target>Yes</Ground_Infantry_Turret_Target>
+      <Ground_Vehicle_Turret_Target>Yes</Ground_Vehicle_Turret_Target>
+      <Influences_Capture_Point> False </Influences_Capture_Point>
+      <Not_Really_Selectable>True</Not_Really_Selectable>
+      <GUI_Hide_Health_Bar>true</GUI_Hide_Health_Bar>
+      <Selt_Destruct_SFXEvent_Start_Die>Effect_Empty_Sound</Selt_Destruct_SFXEvent_Start_Die>
+      <Unit_Abilities_Data SubObjectList="Yes">
+         <Unit_Ability>
+            <Type>HUNT</Type>
+         </Unit_Ability>
+         <Unit_Ability>
+            <Type>LURE</Type>
+            <Effective_Radius>350</Effective_Radius>
+            <Target_Types>
+               Commander_Akbar, Mon_Mothma, Yoda, Han_Solo, Luke_Skywalker_Jedi, Kyle_Katarn, Goauld_Hero_Herak_Syslord_Land,
+               Rebel_Trooper_Team, Goauld_Horus_Guard, Goauld_Jackal_Guard, Squad_Generic_Field_Commander_Rebel, Squad_R_Field_Commander_Guard, Rebel_Infiltrator, Goauld_Necropolis_Guard, Squad_Plex_Soldier, Generic_Bounty_Hunter_R,
+               Goauld_Advanced_Probe, T2B_Tank, Goauld_Probe, Goauld_Land_Alkesh, Snowspeeder, Gallofree_HTT_Transport, Goauld_Udajeet,
+               Rebel_Anti_Infantry_Turret, Rebel_Anti_Vehicle_Turret,
+
+               IG-88, Urai_Fen, Jack_ONeill, Samantha_Carter, Daniel_Jackson, Tealc, John_Sheppard, Rodney_McKay, Teyla_Emmagan, Ronon_Dex,
+               Underworld_Merc, Vornskr_Wolf, Tauri_Mobile_MG, Destroyer_Droid, Ewok_Handler, Tauri_SG_Team_Unit_1, Tauri_SG_Team_Unit_2, Tauri_SG_Team_Unit_3, Tauri_SG_Team_Unit_4, Night_Sister, Underworld_Disruptor_Merc, Scavenger_Droid,
+               MAL_Rocket_Vehicle, Tauri_B302_Land, Tauri_F302_Land, F9TZ_Cloaking_Transport, MZ8_Pulse_Cannon_Tank, Canderous_Assault_Tank, Tauri_UAV,
+               Underworld_Mass_Driver_Turret, Underworld_Torpedo_Turret,
+
+               Boba_Fett, Wraith_Hero_Michael_Land, Emperor_Palpatine, Captain_Piet,
+               Squad_Generic_Field_Commander_Empire, Squad_E_Field_Commander_Guard, Dark_Trooper_PhaseIII, Squad_Stormtrooper,
+               Wraith_Bomber_Land, AT_ST_Walker, Wraith_Dart_Land, AT_AT_Walker, AT_AA_Walker, SPMAT_Walker, Scout_Trooper, Wraith_Shuttle_Land,
+               Empire_Anti_Infantry_Turret, Empire_Anti_Vehicle_Turret,
+
+               Adria, Doci, Ori_Commander, Ori_Soldier, Ori_Land_Fighter, Ori_Prior, Ori_Land_Transporter,
+               Replicator_Bug, Replicator_Warrior,
+               Systemlord_Alliance_Jaffa, Systemlord_Alliance_Serpent_Guard, Systemlord_Alliance_Horus_Guard, Systemlord_Alliance_Jackal_Guard, Systemlord_Alliance_Necropolis_Guard, Systemlord_Alliance_Bastet_Guard, Systemlord_Alliance_Deathglider, Systemlord_Alliance_Hero_Heruur_Land, Systemlord_Alliance_Hero_Sokar_Land,
+               Tokra_Soldier, Tokra_Scientist,
+               Pirate_Anti_Infantry_Turret, Pirate_Anti_Vehicle_Turret
+            </Target_Types>
+            <Recharge_Seconds>1</Recharge_Seconds>
+            <Expiration_Seconds>10</Expiration_Seconds>
+            <Is_Pulsing>Yes</Is_Pulsing>
+            <Pulse_Frequency_Secs>0.5</Pulse_Frequency_Secs>
+            <Max_Number_Of_Pulses>40</Max_Number_Of_Pulses>
+            <Particle_Effect></Particle_Effect>
+         </Unit_Ability>
+         <Unit_Ability>
+            <Type>SELF_DESTRUCT</Type>
+            <Expiration_Seconds>15</Expiration_Seconds>
+            <Stop_When_Activated>No</Stop_When_Activated>
+            <Supports_Autofire>False</Supports_Autofire>
+         </Unit_Ability>
+      </Unit_Abilities_Data>
+   </MiscObject>
+
+   <MiscObject Name="Wraith_Cruiser_Bombardment">
+      <Text_ID>TEXT_WRAITH_SPACE_UNIT_KREUZER</Text_ID>
+      <Encyclopedia_Text>TEXT_DESCRIPTION_WRAITH_KREUZER</Encyclopedia_Text>
+		<Encyclopedia_Unit_Class> TEXT_ENCYCLOPEDIA_CLASS_WRAITH_KREUZER </Encyclopedia_Unit_Class>
+      <Icon_Name>WRAITH_SPACE_UNIT_CRUISER.TGA</Icon_Name>
+      <Land_Model_Name>Wraith_Land_Unit_Cruiser.ALO</Land_Model_Name>
+      <Scale_Factor>1.0</Scale_Factor>
+      <Behavior>SELECTABLE</Behavior>
+      <LandBehavior>DAMAGE_TRACKING, HIDE_WHEN_FOGGED, REVEAL, UNIT_AI, POWERED</LandBehavior>
+      <!--SFXEvent_Ambient_Loop>Engine_Wraith_Cruiser_Land_Idle</SFXEvent_Ambient_Loop> 
+      <SFXEvent_Engine_Idle_Loop>Engine_Wraith_Cruiser_Land_Idle</SFXEvent_Engine_Idle_Loop>
+      <SFXEvent_Engine_Moving_Loop>Engine_Wraith_Cruiser_Land_Idle</SFXEvent_Engine_Moving_Loop>
+      <SFXEvent_Engine_Cinematic_Focus_Loop>Engine_Wraith_Cruiser_Land_Idle</SFXEvent_Engine_Cinematic_Focus_Loop>
+      <SFXEvent_Powered_Active_Loop>Engine_Wraith_Cruiser_Land_Idle</SFXEvent_Powered_Active_Loop-->
+      <Multisample_FOW_Check>Yes</Multisample_FOW_Check>
+      <Land_FOW_Reveal_Range>250.0</Land_FOW_Reveal_Range>
+      <Targeting_Max_Attack_Distance>600.0</Targeting_Max_Attack_Distance>
+      <Is_Visible_On_Radar>No</Is_Visible_On_Radar>
+      <Is_Decoration>No</Is_Decoration>
+      <Remove_Upon_Death>Yes</Remove_Upon_Death>
+      <Tactical_Health>9999</Tactical_Health>
+      <Ranged_Target_Z_Adjust>0.5</Ranged_Target_Z_Adjust>
+      <Loop_Idle_Anim_00>No</Loop_Idle_Anim_00>
+      <Space_Layer> Land </Space_Layer>
+      <UnitCollisionClass> Infantry </UnitCollisionClass>
+      <CanCellStack>yes</CanCellStack>
+      <Mass>1.0</Mass>
+      <Mouse_Collide_Override_Sphere_Radius>1</Mouse_Collide_Override_Sphere_Radius>
+      <Collidable_By_Projectile_Living>Yes</Collidable_By_Projectile_Living>
+      <CategoryMask>Infantry</CategoryMask>
+      <IsDeathCloneObstacle>Yes</IsDeathCloneObstacle>
+      <Avoidance_Disabled>Yes</Avoidance_Disabled>
+      <Influences_Capture_Point> False </Influences_Capture_Point>
+      <Not_Really_Selectable>True</Not_Really_Selectable>
+      <Is_Valid_Target>No</Is_Valid_Target>
+      <Immune_To_Damage>True</Immune_To_Damage>
+      <HardPoints>
+         HP_WRAITH_CRUISER_LAND_F_WPM,
+         HP_WRAITH_CRUISER_LAND_MR_WPM,
+         HP_WRAITH_CRUISER_LAND_ML_WPM
+      </HardPoints>
+      <Lua_Script>ObjectScript_Wraith_Cruiser_Bombardment</Lua_Script>
+      <!--Abilities SubObjectList="Yes">       
+          <Force_Healing_Ability Name="Wraith_Cruiser_Bombardment_Area_Damage">
+              <Activation_Style>Ground_Automatic</Activation_Style>
+              <Heal_Range>500.0</Heal_Range>
+              <Heal_Amount>-5.0</Heal_Amount>
+              <Heal_Interval_In_Secs>.2</Heal_Interval_In_Secs>
+              <Applicable_Unit_Categories>All</Applicable_Unit_Categories>
+              <Excluded_Unit_Types></Excluded_Unit_Types>
+          </Force_Healing_Ability>
+		</Abilities-->
+   </MiscObject>
+   
+   <!-- Invisible dummy whose only purpose is to have sth. units can shoot at-->
+   <MiscObject Name="Dummy_Target_Land">
+      <Variant_Of_Existing_Type>Template_Ground_Unit</Variant_Of_Existing_Type>
+      <Land_Model_Name>W_LASER_INVISIBLE.ALO</Land_Model_Name>
+      <Max_Speed>0.25</Max_Speed>
+      <Tactical_Health>999999</Tactical_Health>
+      <Behavior>HIDE_WHEN_FOGGED</Behavior>
+      <LandBehavior>WALK_LOCOMOTOR, HIDE_WHEN_FOGGED, HUNT</LandBehavior>
+      <Is_Visible_On_Radar>No</Is_Visible_On_Radar>
+      <Is_Visible_On_Enemy_Radar>No</Is_Visible_On_Enemy_Radar>
+      <Remove_Upon_Death>true</Remove_Upon_Death>
+      <Victory_Relevant>No</Victory_Relevant>    
+      <Is_Squashable>No</Is_Squashable>
+      <Movie_Object>false</Movie_Object>
+      <AI_Combat_Power>0</AI_Combat_Power>
+      <Ground_Infantry_Turret_Target>No</Ground_Infantry_Turret_Target>
+      <Influences_Capture_Point>False</Influences_Capture_Point>
+      <Collidable_By_Projectile_Living>No</Collidable_By_Projectile_Living>
+      <Collidable_By_Projectile_Dead>No</Collidable_By_Projectile_Dead>
+      <Is_Valid_Target>No</Is_Valid_Target>
+      <Immune_To_Damage>True</Immune_To_Damage>
+       <Unit_Abilities_Data SubObjectList="Yes">
+         <Unit_Ability>
+            <Type>HUNT</Type>
+         </Unit_Ability>
+      </Unit_Abilities_Data>
+   </MiscObject>
+
+
+    <Projectile Name="Proj_Wraith_Land_Unit_Cruiser_Plasma">
+      <Variant_Of_Existing_Type>Proj_Wraith_Walker_AntiVehicle</Variant_Of_Existing_Type>
+      <Land_Model_Name>Wraith_Projectile_Plasma_Heavy.ALO</Land_Model_Name>
+      <Damage_Type>Damage_Normal</Damage_Type>
+      <Projectile_Damage>0.0</Projectile_Damage>
+      <Projectile_Blast_Area_Range>80.0</Projectile_Blast_Area_Range>
+		<Projectile_Blast_Area_Damage>99.0</Projectile_Blast_Area_Damage>
+      <Projectile_Blast_Area_Dropoff>True</Projectile_Blast_Area_Dropoff>
+      <Projectile_Blast_Area_Dropoff_Tiers>3</Projectile_Blast_Area_Dropoff_Tiers>
+      <Max_Secs_For_AE_Delayed_Damage>0</Max_Secs_For_AE_Delayed_Damage> 
+      <Max_Speed>10.0</Max_Speed>   
+      <Projectile_Object_Detonation_Particle>Particle_SG_Medium_Explosion_Land</Projectile_Object_Detonation_Particle>
+      <Projectile_Object_Armor_Reduced_Detonation_Particle>Particle_SG_Medium_Explosion_Land</Projectile_Object_Armor_Reduced_Detonation_Particle>
+      <Projectile_Ground_Detonation_Particle>Particle_SG_Medium_Explosion_Land</Projectile_Ground_Detonation_Particle>
+      <Projectile_Lifetime_Detonation_Particle>Particle_SG_Medium_Explosion_Land</Projectile_Lifetime_Detonation_Particle>
+      <Projectile_Absorbed_By_Shields_Particle>Particle_SG_Medium_Explosion_Land</Projectile_Absorbed_By_Shields_Particle>
+      <Projectile_SFXEvent_Detonate>Wraith_Land_Unit_Plasma_Explosion_Huge</Projectile_SFXEvent_Detonate>
+   </Projectile>
+
+
+</Queen>

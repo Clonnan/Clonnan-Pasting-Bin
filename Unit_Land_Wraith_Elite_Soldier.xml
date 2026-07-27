@@ -1,0 +1,121 @@
+<?xml version="1.0"?>
+ <Wraith_Elite_Soldier_Infantry_Data>
+  
+   <GroundInfantry Name="Dark_Trooper_PhaseI">
+      <Variant_Of_Existing_Type>Template_Ground_Infantry_Multi_Wraith</Variant_Of_Existing_Type>
+      <Text_ID>TEXT_WRAITH_GROUND_UNIT_HEAVY_INFANTRY</Text_ID>
+      <Encyclopedia_Text>TEXT_DESCRIPTION_WRAITH_HEAVY_INFANTRY_GROUND</Encyclopedia_Text>
+      <Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_WRAITH_HEAVY_INFANTRY</Encyclopedia_Unit_Class>
+      <Encyclopedia_Good_Against> Rebel_Trooper Underworld_Merc Vornskr_Wolf </Encyclopedia_Good_Against>
+      <Encyclopedia_Vulnerable_To> Plex_Soldier Underworld_Disruptor_Merc Rebel_Anti_Infantry_Turret</Encyclopedia_Vulnerable_To>
+      <Icon_Name>WRAITH_GROUND_UNIT_HEAVY_INFANTRY.TGA</Icon_Name>
+      <Land_Model_Name>Wraith_Land_Unit_Elite_Soldier.ALO</Land_Model_Name>  
+      <LandBehavior>LAND_TEAM_INFANTRY_LOCOMOTOR, ABILITY_COUNTDOWN, DAMAGE_TRACKING, HIDE_WHEN_FOGGED, IDLE, REVEAL, STUNNABLE, SURFACE_FX, UNIT_AI, WEAPON</LandBehavior>
+
+      <Damage>8</Damage>
+      <Tactical_Health>70</Tactical_Health>
+      <AI_Combat_Power>17</AI_Combat_Power>
+      <Max_Rate_Of_Turn>22.0</Max_Rate_Of_Turn>
+      <Max_Speed>1.1</Max_Speed>
+
+      <Projectile_Types>Proj_Wraith_Land_Unit_Elite_Soldier_Plasma</Projectile_Types>
+      <Projectile_Fire_Recharge_Seconds>1.6</Projectile_Fire_Recharge_Seconds>
+      <Projectile_Fire_Pulse_Count>3</Projectile_Fire_Pulse_Count>
+      <Projectile_Fire_Pulse_Delay_Seconds>0.7</Projectile_Fire_Pulse_Delay_Seconds>      
+      <Targeting_Priority_Set>SG_Infantry_AntiInfantry</Targeting_Priority_Set>
+      <SFXEvent_Fire>Weapon_Stunner_New_Wraith</SFXEvent_Fire>
+
+      <!--TEXT_ABILITY_WRAITH_GROUND_SOLDATEN_BETAEUBUNGSGRANATE
+      TEXT_DESCRIPTION_ABILITY_GROUND_SOLDATEN_GRANATE-->
+      <Unit_Abilities_Data SubObjectList="Yes">
+         <Unit_Ability>
+            <Type>SPREAD_OUT</Type>
+            <Alternate_Name_Text>TEXT_ABILITY_WRAITH_GROUND_SOLDATEN_DECKUNG</Alternate_Name_Text>
+            <Alternate_Description_Text>TEXT_DESCRIPTION_ABILITY_GROUND_WRAITH_ELITE_SOLDATEN_DECKUNG</Alternate_Description_Text>            
+            <Mod_Multiplier>SPEED_MULTIPLIER, 0.4f</Mod_Multiplier>
+            <Mod_Multiplier>TAKE_DAMAGE_MULTIPLIER, 0.85f</Mod_Multiplier>
+         </Unit_Ability>
+         <Unit_Ability>
+            <Type>SPRINT</Type>
+            <Expiration_Seconds> 8.0 </Expiration_Seconds>
+            <Recharge_Seconds> 35.0 </Recharge_Seconds>
+            <Mod_Multiplier>SPEED_MULTIPLIER,    2.0f</Mod_Multiplier>
+            <Mod_Multiplier>TAKE_DAMAGE_MULTIPLIER, 0.75f</Mod_Multiplier>
+            <SFXEvent_GUI_Unit_Ability_Activated></SFXEvent_GUI_Unit_Ability_Activated>
+         </Unit_Ability>
+      </Unit_Abilities_Data>                          
+   </GroundInfantry>
+
+   <!-- COMPANY INFO -->
+   <GroundCompany Name="DarkTrooper_P1_Company_No_Prereq">
+      <Variant_Of_Existing_Type>Template_Ground_Company</Variant_Of_Existing_Type>
+      <Text_ID>TEXT_WRAITH_GROUND_UNIT_HEAVY_INFANTRY</Text_ID>
+      <Encyclopedia_Good_Against> Rebel_Trooper Underworld_Merc Vornskr_Wolf </Encyclopedia_Good_Against>
+      <Encyclopedia_Vulnerable_To> Plex_Soldier Underworld_Disruptor_Merc Rebel_Anti_Infantry_Turret</Encyclopedia_Vulnerable_To>
+      <Encyclopedia_Text>TEXT_DESCRIPTION_WRAITH_HEAVY_INFANTRY_GROUND</Encyclopedia_Text>
+      <Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_WRAITH_HEAVY_INFANTRY</Encyclopedia_Unit_Class>
+      <Icon_Name>WRAITH_GROUND_UNIT_HEAVY_INFANTRY.TGA</Icon_Name>
+      <GUI_Model_Name>Wraith_Land_Unit_Elite_Soldier.alo</GUI_Model_Name>
+      <Damage>60</Damage>
+      <Score_Cost_Credits>250</Score_Cost_Credits>
+      <Build_Cost_Credits>300</Build_Cost_Credits>
+      <Build_Time_Seconds>46</Build_Time_Seconds>
+      <Required_Ground_Base_Level>1</Required_Ground_Base_Level>
+      <Tactical_Build_Cost_Multiplayer>600</Tactical_Build_Cost_Multiplayer>
+      <Tactical_Build_Time_Seconds>9</Tactical_Build_Time_Seconds>
+      <Company_Transport_Unit>Wraith_Transport_Shuttle_Dart_Landing</Company_Transport_Unit>
+      <Create_Team_Type>DarkTrooper_P1_Team</Create_Team_Type>
+      <Company_Units>
+         Dark_Trooper_PhaseI, Dark_Trooper_PhaseI, Dark_Trooper_PhaseI, Dark_Trooper_PhaseI, Dark_Trooper_PhaseI, Dark_Trooper_PhaseI
+      </Company_Units>
+      <Max_Squad_Size>6</Max_Squad_Size>
+   </GroundCompany>
+
+   <GroundCompany Name="DarkTrooper_P1_Company">
+      <Variant_Of_Existing_Type>DarkTrooper_P1_Company_No_Prereq</Variant_Of_Existing_Type>
+      <Affiliation>Empire</Affiliation>
+      <Tech_Level>3</Tech_Level>
+      <Required_Timeline>0</Required_Timeline>
+      <Required_Ground_Base_Level>1</Required_Ground_Base_Level>
+      <Required_Star_Base_Level>0</Required_Star_Base_Level>
+      <Required_Special_Structures>E_Ground_Barracks</Required_Special_Structures>
+      <Tactical_Build_Prerequisites>EC_Level_Two_Tech_Upgrade</Tactical_Build_Prerequisites>
+   </GroundCompany>
+
+   <!-- CONTAINER INFO -->
+   <Container Name="DarkTrooper_P1_Team">
+      <Variant_Of_Existing_Type>Template_Infantry_Container</Variant_Of_Existing_Type>
+      <Text_ID>TEXT_WRAITH_GROUND_UNIT_HEAVY_INFANTRY</Text_ID>
+      <Encyclopedia_Good_Against> Rebel_Trooper Underworld_Merc Vornskr_Wolf </Encyclopedia_Good_Against>
+      <Encyclopedia_Vulnerable_To> Plex_Soldier Underworld_Disruptor_Merc Rebel_Anti_Infantry_Turret</Encyclopedia_Vulnerable_To>
+      <Encyclopedia_Text>TEXT_DESCRIPTION_WRAITH_HEAVY_INFANTRY_GROUND</Encyclopedia_Text>
+      <Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_WRAITH_HEAVY_INFANTRY</Encyclopedia_Unit_Class>
+      <Icon_Name>WRAITH_GROUND_UNIT_HEAVY_INFANTRY.TGA</Icon_Name>
+      <ContainerArrangement>Rows</ContainerArrangement>
+      <Unit_Abilities_Data SubObjectList="Yes">
+         <Unit_Ability>
+            <Type>SPREAD_OUT</Type>
+            <Alternate_Name_Text>TEXT_ABILITY_WRAITH_GROUND_SOLDATEN_DECKUNG</Alternate_Name_Text>
+            <Alternate_Description_Text>TEXT_DESCRIPTION_ABILITY_GROUND_WRAITH_ELITE_SOLDATEN_DECKUNG</Alternate_Description_Text>            
+            <Mod_Multiplier>SPEED_MULTIPLIER, 0.4f</Mod_Multiplier>
+            <Mod_Multiplier>TAKE_DAMAGE_MULTIPLIER, 0.85f</Mod_Multiplier>
+         </Unit_Ability>      
+         <Unit_Ability>
+            <Type>SPRINT</Type>
+            <Expiration_Seconds> 12.0 </Expiration_Seconds>
+            <Recharge_Seconds> 35.0 </Recharge_Seconds>
+            <Mod_Multiplier>SPEED_MULTIPLIER,    2.0f</Mod_Multiplier>
+            <Mod_Multiplier>TAKE_DAMAGE_MULTIPLIER, 0.75f</Mod_Multiplier>
+            <SFXEvent_GUI_Unit_Ability_Activated></SFXEvent_GUI_Unit_Ability_Activated>
+         </Unit_Ability>
+      </Unit_Abilities_Data>   
+   </Container>
+
+   <!-- Projectile Information Wraith Soldier -->
+   <Projectile Name="Proj_Wraith_Land_Unit_Elite_Soldier_Plasma">
+      <Variant_Of_Existing_Type>Proj_Wraith_New_Stunner</Variant_Of_Existing_Type>
+      <Damage_Type>Damage_Normal</Damage_Type>
+      <Projectile_Damage>5.96</Projectile_Damage>
+   </Projectile>
+  
+ </Wraith_Elite_Soldier_Infantry_Data>

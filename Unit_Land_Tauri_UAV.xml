@@ -1,0 +1,114 @@
+<?xml version="1.0"?>
+<UAV_Data>
+
+    <!-- UNIT INFO -->
+    <GroundVehicle Name="Tauri_UAV">
+        <Variant_Of_Existing_Type>Template_Ground_Flyer</Variant_Of_Existing_Type>
+        <Text_ID>TEXT_TAURI_SPACE_UNIT_GC_UAV</Text_ID>
+        <Encyclopedia_Text>TEXT_DESCRIPTION_TAURI_UAV_GROUND</Encyclopedia_Text>
+        <Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_GC_UAV</Encyclopedia_Unit_Class>
+        <Encyclopedia_Good_Against></Encyclopedia_Good_Against>
+        <Encyclopedia_Vulnerable_To> Goauld_Horus_Guard AT_AA_Walker </Encyclopedia_Vulnerable_To>
+        <Icon_Name>TAURI_GROUND_UNIT_UAV.TGA</Icon_Name>
+        <Radar_Icon_Name>I_RADAR_UAV.TGA</Radar_Icon_Name>
+        <Land_Model_Name>Tauri_Land_Unit_UAV.ALO</Land_Model_Name>
+        <LandBehavior>FLYING_LOCOMOTOR, AVOID_DANGER, DAMAGE_TRACKING, HIDE_WHEN_FOGGED, REVEAL, TELEKINESIS_TARGET, UNIT_AI, WIND_DISTURBANCE</LandBehavior>
+        <Affiliation>Underworld</Affiliation>
+        <Select_Box_Scale>40</Select_Box_Scale>
+        <Damage>2</Damage>
+        <Score_Cost_Credits>50</Score_Cost_Credits>
+        <Tactical_Health>80</Tactical_Health>
+        <AI_Combat_Power>10</AI_Combat_Power>
+        <Size_Value>8</Size_Value>
+        <Max_Speed>4.0</Max_Speed>
+        <Min_Speed>3.0</Min_Speed>
+        <OverrideAcceleration>0.75</OverrideAcceleration>
+        <OverrideDeceleration>0.5</OverrideDeceleration>
+        <Max_Rate_Of_Turn>5.0</Max_Rate_Of_Turn>
+        <Max_Rate_Of_Roll>1.5</Max_Rate_Of_Roll>
+        <Blob_Shadow_Scale>10.0, 10.0</Blob_Shadow_Scale>
+        <Spin_Away_On_Death>Yes</Spin_Away_On_Death>
+        <CategoryMask>Air</CategoryMask>
+        <Always_Spawn_In_Orbit>Yes</Always_Spawn_In_Orbit>
+        <Collidable_By_Projectile_Dead>No</Collidable_By_Projectile_Dead>
+
+        <Loop_Idle_Anim_00>Yes</Loop_Idle_Anim_00>
+        <Death_Explosions>Small_Explosion_Land</Death_Explosions>
+
+        <Target_Stealth_Units>Yes</Target_Stealth_Units>
+        <Land_FOW_Reveal_Range>500.0</Land_FOW_Reveal_Range>
+
+        <Death_SFXEvent_Start_Die>Unit_Snow_Speeder_Death_SFX</Death_SFXEvent_Start_Die>
+        <SFXEvent_Ambient_Moving> Engine_Tauri_UAV </SFXEvent_Ambient_Moving>
+        <SFXEvent_Engine_Cinematic_Focus_Loop> Engine_Tauri_UAV </SFXEvent_Engine_Cinematic_Focus_Loop>
+
+        <Can_Hyperspace_Without_Activating_Ability>No</Can_Hyperspace_Without_Activating_Ability>
+        <Neutralization_Cost>10.0</Neutralization_Cost>
+        <Can_Be_Neutralized_By_Major_Heroes>Yes</Can_Be_Neutralized_By_Major_Heroes>
+        <Can_Be_Neutralized_By_Minor_Heroes>Yes</Can_Be_Neutralized_By_Minor_Heroes>
+
+        <Abilities SubObjectList="Yes">
+            <Galactic_Stealth_Ability Name="UAV_Galactic_Stealth">
+                <Evade_Detection_Chance>0.0</Evade_Detection_Chance>
+            </Galactic_Stealth_Ability>
+            <System_Spy_Ability Name="UAV_System_Spy">
+                <Initially_Enabled>Yes</Initially_Enabled>
+                <Activation_Style>Ground_Activated</Activation_Style>
+                <Causes_Despawn>Yes</Causes_Despawn>
+                <Duration_In_Secs>100.0</Duration_In_Secs>
+                <See_Base_Levels>Yes</See_Base_Levels>
+                <See_Credit_Income>No</See_Credit_Income>
+                <See_Credit_Income_Breakdown>No</See_Credit_Income_Breakdown>
+                <See_Num_Fleets>No</See_Num_Fleets>
+                <See_Fleet_Contents>No</See_Fleet_Contents>
+                <See_Num_Ground_Companies>Yes</See_Num_Ground_Companies>
+                <See_Ground_Company_Contents>Yes</See_Ground_Company_Contents>
+                <See_Special_Structures>Yes</See_Special_Structures>
+                <See_Political_Control>Yes</See_Political_Control>
+                <See_Political_Control_Breakdown>No</See_Political_Control_Breakdown>
+                <See_Current_Production>No</See_Current_Production>
+                <See_Minor_Stealth_Heroes>No</See_Minor_Stealth_Heroes>
+                <See_Major_Stealth_Heroes>No</See_Major_Stealth_Heroes>
+            </System_Spy_Ability>
+        </Abilities>
+
+    </GroundVehicle>
+
+
+    <!-- COMPANY INFO -->
+    <GroundCompany Name="Tauri_UAV_Company_No_Prereq">
+        <Variant_Of_Existing_Type>Template_Ground_Company</Variant_Of_Existing_Type>
+        <Text_ID>TEXT_TAURI_SPACE_UNIT_GC_UAV</Text_ID>
+        <Encyclopedia_Text>TEXT_DESCRIPTION_TAURI_GC_UAV</Encyclopedia_Text>
+        <Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_GC_UAV</Encyclopedia_Unit_Class>
+        <Encyclopedia_Good_Against></Encyclopedia_Good_Against>
+        <Encyclopedia_Vulnerable_To> Goauld_Horus_Guard AT_AA_Walker </Encyclopedia_Vulnerable_To>
+        <Icon_Name>TAURI_GROUND_UNIT_UAV.TGA</Icon_Name>
+        <Damage>1</Damage>
+        <Build_Cost_Credits>100</Build_Cost_Credits>
+        <Build_Time_Seconds>22</Build_Time_Seconds>
+        <Company_Transport_Unit>Underworld_Vehicle_Transport</Company_Transport_Unit>
+        <Company_Units>Tauri_UAV</Company_Units>
+        <Score_Cost_Credits>50</Score_Cost_Credits>
+        <Tactical_Build_Cost_Multiplayer>200</Tactical_Build_Cost_Multiplayer>
+        <Tactical_Build_Time_Seconds>6</Tactical_Build_Time_Seconds>
+        <Required_Ground_Base_Level>1</Required_Ground_Base_Level>
+        <Build_Tab_Space_Units>Yes</Build_Tab_Space_Units>
+        <Is_Generic_Hero>No</Is_Generic_Hero>
+        <Is_Stealth_Company>Yes</Is_Stealth_Company>
+        <Show_Hero_Head>No</Show_Hero_Head>
+    </GroundCompany>
+
+    <GroundCompany Name="Tauri_UAV_Company">
+        <Variant_Of_Existing_Type>Tauri_UAV_Company_No_Prereq</Variant_Of_Existing_Type>
+        <Affiliation>Underworld</Affiliation>
+        <Tech_Level>1</Tech_Level>
+        <Required_Timeline>0</Required_Timeline>
+        <Required_Ground_Base_Level>0</Required_Ground_Base_Level>
+        <Required_Star_Base_Level>1</Required_Star_Base_Level>
+        <Required_Special_Structures>U_Ground_Droid_Works</Required_Special_Structures>
+        <Required_Planets/>
+        <Tactical_Build_Prerequisites/>
+    </GroundCompany>
+
+</UAV_Data>

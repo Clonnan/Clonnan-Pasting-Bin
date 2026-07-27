@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ORI_STARBASE>
+  <StarBase Name="Ori_Starbase">
+    <Text_ID>TEXT_ORI_SPACE_BUILDING_SPACE_STATION</Text_ID>
+    <Encyclopedia_Text>TEXT_DESCRIPTION_ORI_GC_SPACE_STATION</Encyclopedia_Text>
+    <Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_ORI_SPACE_STATION</Encyclopedia_Unit_Class>
+    <GUI_Row> 0 </GUI_Row>
+    <Space_Model_Name>Ori_Space_Building_Station.ALO</Space_Model_Name>
+    <Galactic_Model_Name>Ori_Space_Building_Station.ALO</Galactic_Model_Name>
+    <Icon_Name>ORI_SPACE_BUILDING_STATION.TGA</Icon_Name>
+    <Damage>100</Damage>
+    <Scale_Factor>1.0</Scale_Factor>
+
+    <Select_Box_Scale>1200</Select_Box_Scale>
+    <Select_Box_Z_Adjust>-50</Select_Box_Z_Adjust>
+    <Is_Dummy>No</Is_Dummy>
+    <Affiliation>Ori, Hostile</Affiliation>
+    <AI_Combat_Power>4000</AI_Combat_Power>
+    <Size_Value>10</Size_Value>
+    <Tech_Level>0</Tech_Level>
+    <Base_Level>1</Base_Level>
+    <Prev_Level_Base />
+		<Next_Level_Base />
+		<Required_Ground_Base_Level>0</Required_Ground_Base_Level>
+		<Required_Star_Base_Level>0</Required_Star_Base_Level>
+    <CategoryMask> Capital </CategoryMask>
+	<GUI_Bracket_Size>2</GUI_Bracket_Size>
+    <Reinforcement_Prevention_Radius> 2000 </Reinforcement_Prevention_Radius>
+    <Behavior>DUMMY_STAR_BASE, SELECTABLE, SHIELDED, POWERED</Behavior>
+    <SpaceBehavior> SPACE_OBSTACLE, POWERED, SHIELDED, SPAWN_SQUADRON, HIDE_WHEN_FOGGED, REVEAL, UNIT_AI, ION_STUN_EFFECT</SpaceBehavior>
+    <Multisample_FOW_Check>Yes</Multisample_FOW_Check>
+    <Starting_Spawned_Units_Tech_0>Ori_Fighter_Squadron, 6</Starting_Spawned_Units_Tech_0>
+    <Reserve_Spawned_Units_Tech_0>Ori_Fighter_Squadron, -1</Reserve_Spawned_Units_Tech_0>
+    <Spawned_Squadron_Delay_Seconds>20</Spawned_Squadron_Delay_Seconds>
+
+    <Build_Cost_Credits>2000</Build_Cost_Credits>
+    <Score_Cost_Credits>2500</Score_Cost_Credits>
+    <Build_Time_Seconds>35</Build_Time_Seconds>
+		<Build_Tab_Space_Station>Yes</Build_Tab_Space_Station>
+    <Build_Initially_Locked>No</Build_Initially_Locked>
+		<Build_Can_Be_Unlocked_By_Slicer>No</Build_Can_Be_Unlocked_By_Slicer>
+
+    <Shield_Points>4000</Shield_Points>
+    <Shield_Refresh_Rate>100</Shield_Refresh_Rate>
+    <Energy_Capacity>5000</Energy_Capacity>
+    <Energy_Refresh_Rate>1000</Energy_Refresh_Rate>
+    <Armor_Type> Armor_Station </Armor_Type>
+    <Shield_Armor_Type>Armor_Station</Shield_Armor_Type>
+    <Tactical_Health>3225</Tactical_Health>
+    
+    <Collidable_By_Projectile_Living>Yes</Collidable_By_Projectile_Living>
+
+    <Dense_FOW_Reveal_Range_Multiplier>0.2</Dense_FOW_Reveal_Range_Multiplier>
+    <Space_FOW_Reveal_Range>2200.0</Space_FOW_Reveal_Range>
+    <Targeting_Max_Attack_Distance>1900.0</Targeting_Max_Attack_Distance>
+    <HardPoints>
+      HP_Ori_superlaser_starbase_F_SL,
+      HP_Ori_superlaser_starbase_M_SL_00,
+      HP_Ori_superlaser_starbase_M_SL_01,
+      HP_Ori_starbase_M_OPB_00,
+      HP_Ori_starbase_M_OPB_01,
+      HP_Ori_starbase_R_OPB,
+      HP_Ori_starbase_Shield_Generator,
+      HP_Ori_starbase_Fighter_Bay
+    </HardPoints>
+
+    <SFXEvent_Select>Effect_Empty_Sound</SFXEvent_Select>
+    <SFXEvent_Hardpoint_Destroyed> HARD_POINT_WEAPON_SPECIAL,  Effect_Empty_Sound</SFXEvent_Hardpoint_Destroyed>
+    <SFXEvent_Hardpoint_Destroyed> HARD_POINT_WEAPON_MASS_DRIVER,  Effect_Empty_Sound</SFXEvent_Hardpoint_Destroyed>
+    <SFXEvent_Hardpoint_Destroyed> HARD_POINT_FIGHTER_BAY, Effect_Empty_Sound</SFXEvent_Hardpoint_Destroyed>
+    <SFXEvent_Hardpoint_Destroyed> HARD_POINT_SHIELD_GENERATOR,  Effect_Empty_Sound</SFXEvent_Hardpoint_Destroyed>
+    <Death_SFXEvent_Start_Die>Unit_Space_Station_Death_SFX</Death_SFXEvent_Start_Die>
+    <Death_Clone>Damage_Normal, Ori_Base_Death_Clone</Death_Clone>
+    <Has_Space_Evaluator>True</Has_Space_Evaluator>
+    <Victory_Relevant>yes</Victory_Relevant>
+    <Custom_Soft_Footprint_Radius> 300 </Custom_Soft_Footprint_Radius>
+    <Space_Obstacle_Offset> 0 0 0 </Space_Obstacle_Offset>
+    <Space_Layer> StaticObject </Space_Layer>
+    <Is_Visible_On_Radar>Yes</Is_Visible_On_Radar>
+    <Visible_On_Radar_When_Fogged>true</Visible_On_Radar_When_Fogged>
+    <Radar_Icon_Size>0.12  0.12</Radar_Icon_Size>
+    <Radar_Icon_Name>I_RADAR_ORISTATION.TGA</Radar_Icon_Name>
+    <Score_Cost_Credits> 65000</Score_Cost_Credits>
+  </StarBase>
+
+  <StarBase Name="Ori_Base_Death_Clone">
+    <Text_ID>TEXT_PIRATE_STAR_BASE_1</Text_ID>
+    <Space_Model_Name>Ori_Space_Building_Station_D.alo</Space_Model_Name>
+    <Scale_Factor>1.0</Scale_Factor>
+    <Death_Explosions>Huge_Explosion_Space</Death_Explosions>
+    <Space_Model_Name></Space_Model_Name>
+    <Death_SFXEvent_Start_Die>Unit_Star_Destroyer_Death_SFX</Death_SFXEvent_Start_Die>
+    <Layer_Z_Adjust>-330.0</Layer_Z_Adjust>
+    <CategoryMask> Capital </CategoryMask>
+    <Death_Persistence_Duration> 40 </Death_Persistence_Duration>
+    <Should_Death_Clone_Play_Idle> true </Should_Death_Clone_Play_Idle>
+  </StarBase>
+
+
+  <Projectile Name="Proj_Ori_StarBase_Superlaser">
+    <Variant_Of_Existing_Type>Proj_Ori_Space_Superlaser_Heavy</Variant_Of_Existing_Type>
+    <Projectile_Damage>550.0</Projectile_Damage>
+  </Projectile>
+
+  <Projectile Name="Proj_Ori_StarBase_Plasma">
+    <Variant_Of_Existing_Type>Proj_Ori_Space_Plasma</Variant_Of_Existing_Type>
+    <Projectile_Damage>50.0</Projectile_Damage>
+  </Projectile>
+  
+</ORI_STARBASE>

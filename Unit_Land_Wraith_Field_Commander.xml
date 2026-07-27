@@ -1,0 +1,344 @@
+<?xml version="1.0"?>
+<Wraith_Field_Commander_Infantry_Data>
+
+   <GenericHeroUnit Name="Generic_Field_Commander_Empire">
+      <Variant_Of_Existing_Type>Template_Ground_Infantry_Single_Hero_Wraith</Variant_Of_Existing_Type>
+      <Text_ID>TEXT_WRAITH_GROUND_UNIT_COMMANDER</Text_ID>
+
+      <Encyclopedia_Text>TEXT_DESCRIPTION_WRAITH_COMMANDER_GROUND</Encyclopedia_Text>
+      <LandBehavior>LAND_TEAM_INFANTRY_LOCOMOTOR, DAMAGE_TRACKING, HIDE_WHEN_FOGGED, IDLE, REVEAL, STUNNABLE, SURFACE_FX, TARGETING, UNIT_AI, WEAPON, ABILITY_COUNTDOWN</LandBehavior>
+      <Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_WRAITH_COMMANDER</Encyclopedia_Unit_Class>
+      <Encyclopedia_Good_Against> Underworld_Merc Rebel_Trooper </Encyclopedia_Good_Against>
+      <Encyclopedia_Vulnerable_To> Tauri_Mobile_MG Plex_Soldier Rebel_Anti_Infantry_Turret </Encyclopedia_Vulnerable_To>
+      <Icon_Name>WRAITH_GROUND_UNIT_COMMANDER.TGA</Icon_Name>
+      <Land_Model_Name>Wraith_Land_Unit_Officer.ALO</Land_Model_Name>
+      <Land_Model_Anim_Override_Name>Wraith_Land_Unit_Officer.ALO</Land_Model_Anim_Override_Name>
+      <Affiliation>Empire</Affiliation>
+      <Tactical_Health>100</Tactical_Health>
+      <Damage>11</Damage>
+      <AI_Combat_Power>100</AI_Combat_Power>
+      <Targeting_Priority_Set>SG_Infantry_AntiKull</Targeting_Priority_Set>
+
+      <SFXEvent_Select>Unit_Select_Officer</SFXEvent_Select>
+      <SFXEvent_Move>Unit_Move_Officer</SFXEvent_Move>
+      <SFXEvent_Attack>Unit_Attack_Officer</SFXEvent_Attack>
+
+      <FormationOrder>2</FormationOrder>
+      <FormationSpacing>1.3</FormationSpacing>
+      <MaxJiggleDistance>0</MaxJiggleDistance>
+
+      <CategoryMask>LandHero</CategoryMask>
+      <Is_Named_Hero>No</Is_Named_Hero>
+      <Is_Generic_Hero>Yes</Is_Generic_Hero>
+      <Show_Hero_Head>No</Show_Hero_Head>
+      <Is_Force_Sensitive>No</Is_Force_Sensitive>
+      <Ranking_In_Category>21</Ranking_In_Category>
+      <Neutralization_Cost>300.0</Neutralization_Cost>
+      <Can_Be_Neutralized_By_Major_Heroes>Yes</Can_Be_Neutralized_By_Major_Heroes>
+      <Can_Be_Neutralized_By_Minor_Heroes>Yes</Can_Be_Neutralized_By_Minor_Heroes>
+      <Score_Cost_Credits>400</Score_Cost_Credits>
+
+      <Projectile_Types>Proj_Wraith_Field_Commander</Projectile_Types>
+      <Projectile_Fire_Recharge_Seconds>1.6</Projectile_Fire_Recharge_Seconds>
+      <Projectile_Fire_Pulse_Count>3</Projectile_Fire_Pulse_Count>
+      <Projectile_Fire_Pulse_Delay_Seconds>0.7</Projectile_Fire_Pulse_Delay_Seconds>
+      <SFXEvent_Fire>Weapon_Stunner_New_Wraith</SFXEvent_Fire>
+      <Death_Clone>Damage_Hand_Device, Generic_Field_Commander_Empire_Hand_Device_Death_Clone</Death_Clone>
+
+      <Unit_Abilities_Data SubObjectList="Yes">
+         <Unit_Ability>
+            <Type>WEAKEN_ENEMY</Type>
+            <Alternate_Name_Text>TEXT_WRAITH_GROUND_ITEM_STUN_BOMB</Alternate_Name_Text>
+            <Alternate_Description_Text>TEXT_DESCRIPTION_ABILITY_STUN_BOMB_WRAITH_COMMANDER_GROUND</Alternate_Description_Text>
+            <Alternate_Icon_Name>I_SA_SHOCK_GRENADE.TGA</Alternate_Icon_Name>
+            <Recharge_Seconds>60</Recharge_Seconds>
+            <Effective_Radius>100.0</Effective_Radius>
+            <Spawned_Object_Type>Wraith_Stun_Bomb</Spawned_Object_Type>
+            <SFXEvent_Target_Ability>Unit_Device_Officer</SFXEvent_Target_Ability>
+            <SFXEvent_GUI_Unit_Ability_Activated>Unit_Device_Officer</SFXEvent_GUI_Unit_Ability_Activated>
+            <SFXEvent_GUI_Unit_Ability_Deactivated>Unit_Device_Officer</SFXEvent_GUI_Unit_Ability_Deactivated>
+            <Area_Effect_Decal_Distance>25</Area_Effect_Decal_Distance>
+         </Unit_Ability>
+      </Unit_Abilities_Data>
+   </GenericHeroUnit>
+
+   <GroundInfantry Name="Generic_Field_Commander_Empire_Hand_Device_Death_Clone">
+      <Variant_Of_Existing_Type>Generic_Field_Commander_Empire</Variant_Of_Existing_Type>
+      <Specific_Death_Anim_Type>FW_DIE</Specific_Death_Anim_Type>
+   </GroundInfantry>
+
+   <GenericHeroUnit Name="Squad_Generic_Field_Commander_Empire">
+      <Variant_Of_Existing_Type>Generic_Field_Commander_Empire</Variant_Of_Existing_Type>
+      <LandBehavior>
+         ABILITY_COUNTDOWN,
+         DAMAGE_TRACKING,
+         HIDE_WHEN_FOGGED,
+         IDLE,
+         LAND_TEAM_INFANTRY_LOCOMOTOR,
+         REVEAL,
+         SPAWN_SQUADRON,
+         STUNNABLE,
+         SURFACE_FX,
+         TARGETING,
+         UNIT_AI,
+         WEAPON
+      </LandBehavior>
+      <Create_Team>Yes</Create_Team>
+      <Select_Box_Scale>0</Select_Box_Scale>
+      <Redirect_Damage_To_Teammates>Yes</Redirect_Damage_To_Teammates>
+      <Execute_Script_On_Type>true</Execute_Script_On_Type>
+      <Starting_Spawned_Units_Tech_0>Wraith_Field_Commander_Buff_Emitter, 1</Starting_Spawned_Units_Tech_0>
+   </GenericHeroUnit>
+
+   <GroundInfantry Name="Squad_E_Field_Commander_Guard">
+      <Variant_Of_Existing_Type>Squad_Stormtrooper</Variant_Of_Existing_Type>
+      <Encyclopedia_Good_Against></Encyclopedia_Good_Against>
+      <LandBehavior>LAND_TEAM_INFANTRY_LOCOMOTOR, DAMAGE_TRACKING, HIDE_WHEN_FOGGED, IDLE, REVEAL, STUNNABLE, SURFACE_FX, TARGETING, UNIT_AI, WEAPON, ABILITY_COUNTDOWN</LandBehavior>
+      <Encyclopedia_Vulnerable_To></Encyclopedia_Vulnerable_To>
+      <Tactical_Health>100</Tactical_Health>
+      <Score_Cost_Credits>250</Score_Cost_Credits>
+      <Targeting_Priority_Set>SG_Infantry_AntiKull</Targeting_Priority_Set>
+      <Projectile_Types>Proj_Wraith_Field_Commander</Projectile_Types>
+      <Unit_Abilities_Data SubObjectList="Yes">
+         <Unit_Ability>
+            <Type>WEAKEN_ENEMY</Type>
+            <Alternate_Name_Text>TEXT_WRAITH_GROUND_ITEM_STUN_BOMB</Alternate_Name_Text>
+            <Alternate_Description_Text>TEXT_DESCRIPTION_ABILITY_STUN_BOMB_WRAITH_COMMANDER_GROUND</Alternate_Description_Text>
+            <Alternate_Icon_Name>I_SA_SHOCK_GRENADE.TGA</Alternate_Icon_Name>
+            <Recharge_Seconds>60</Recharge_Seconds>
+            <Effective_Radius>100.0</Effective_Radius>
+            <Spawned_Object_Type></Spawned_Object_Type>
+            <SFXEvent_Target_Ability></SFXEvent_Target_Ability>
+            <SFXEvent_GUI_Unit_Ability_Activated></SFXEvent_GUI_Unit_Ability_Activated>
+            <SFXEvent_GUI_Unit_Ability_Deactivated />
+            <Area_Effect_Decal_Distance>25</Area_Effect_Decal_Distance>
+         </Unit_Ability>
+      </Unit_Abilities_Data>
+   </GroundInfantry>
+
+   <MiscObject Name="Wraith_Stun_Bomb">
+      <Text_ID>TEXT_WRAITH_GROUND_ITEM_STUN_BOMB</Text_ID>
+      <Encyclopedia_Text>TEXT_DESCRIPTION_GC_WRAITH_STUN_BOMB</Encyclopedia_Text>
+      <Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_ITEM</Encyclopedia_Unit_Class>
+      <Icon_Name>WRAITH_GROUND_ITEM_STUN_BOMB.TGA</Icon_Name>
+      <Land_Model_Name>Wraith_Land_Weapon_Stun_Bomb.ALO</Land_Model_Name>
+      <Scale_Factor>0.45</Scale_Factor>
+      <Behavior>SELECTABLE</Behavior>
+      <LandBehavior>ABILITY_COUNTDOWN, DAMAGE_TRACKING, HIDE_WHEN_FOGGED, REVEAL, SELF_DESTRUCT</LandBehavior>
+      <Multisample_FOW_Check>Yes</Multisample_FOW_Check>
+      <Land_FOW_Reveal_Range>80.0</Land_FOW_Reveal_Range>
+      <Is_Visible_On_Radar>No</Is_Visible_On_Radar>
+      <!--Is_Decoration>No</Is_Decoration-->
+      <Remove_Upon_Death>Yes</Remove_Upon_Death>
+      <Death_Explosions>Small_Explosion_Land</Death_Explosions>
+      <Tactical_Health>250</Tactical_Health>
+      <Ranged_Target_Z_Adjust>0.5</Ranged_Target_Z_Adjust>
+      <Loop_Idle_Anim_00>No</Loop_Idle_Anim_00>
+      <Space_Layer>Land</Space_Layer>
+      <UnitCollisionClass>Infantry</UnitCollisionClass>
+      <CanCellStack>yes</CanCellStack>
+      <Mass>1.0</Mass>
+      <Mouse_Collide_Override_Sphere_Radius>1</Mouse_Collide_Override_Sphere_Radius>
+      <Collidable_By_Projectile_Living>Yes</Collidable_By_Projectile_Living>
+      <CategoryMask>Infantry</CategoryMask>
+      <Influences_Capture_Point> False </Influences_Capture_Point>
+      <Selt_Destruct_SFXEvent_Start_Die>Effect_Empty_Sound</Selt_Destruct_SFXEvent_Start_Die>
+      <Unit_Abilities_Data SubObjectList="Yes">
+         <Unit_Ability>
+            <Type>SELF_DESTRUCT</Type>
+            <Alternate_Icon_Name>I_SA_CORE_OVERLOAD.TGA</Alternate_Icon_Name>
+            <Alternate_Name_Text>TEXT_TOOLTIP_ABILITY_SELF_DESTRUCT_NAME</Alternate_Name_Text>
+            <Alternate_Description_Text>TEXT_DESCRIPTION_ABILITY_SELF_DESTRUCTION_WRAITH_STUN_BOMB</Alternate_Description_Text>
+            <Expiration_Seconds>3.5</Expiration_Seconds>
+            <Recharge_Seconds>10</Recharge_Seconds>
+            <Spawned_Object_Type>Wraith_Stun_Bomb_Projectile</Spawned_Object_Type>
+            <Stop_When_Activated>No</Stop_When_Activated>
+            <Supports_Autofire>False</Supports_Autofire>
+            <Owner_Attachment_Bone>root</Owner_Attachment_Bone>
+            <Particle_Effect>Pulse_Cannon_Tank_Overheat</Particle_Effect>
+            <Max_Secs_For_AE_Delayed_Damage>0</Max_Secs_For_AE_Delayed_Damage>
+         </Unit_Ability>
+      </Unit_Abilities_Data>
+   </MiscObject>
+
+
+   <HeroCompany Name="Field_Com_Empire_Team_No_Prereq">
+      <Variant_Of_Existing_Type>Template_Ground_Company</Variant_Of_Existing_Type>
+      <Text_ID>TEXT_WRAITH_GROUND_UNIT_COMMANDER</Text_ID>
+      <Encyclopedia_Text>TEXT_DESCRIPTION_WRAITH_COMMANDER_GROUND</Encyclopedia_Text>
+      <Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_WRAITH_COMMANDER</Encyclopedia_Unit_Class>
+      <Encyclopedia_Good_Against>Underworld_Saboteur Scavenger_Droid Rebel_Infiltrator</Encyclopedia_Good_Against>
+      <Encyclopedia_Vulnerable_To>Underworld_Merc Tauri_F302_Land Rebel_Anti_Infantry_Turret</Encyclopedia_Vulnerable_To>
+      <Icon_Name>WRAITH_GROUND_UNIT_COMMANDER.TGA</Icon_Name>
+      <Build_Cost_Credits>1000</Build_Cost_Credits>
+      <Build_Time_Seconds>90</Build_Time_Seconds>
+      <Create_Team_Type>Empire_Field_Commander_Team</Create_Team_Type>
+      <Company_Transport_Unit>Wraith_Transport_Shuttle_Dart_Landing</Company_Transport_Unit>
+      <Company_Units>Squad_Generic_Field_Commander_Empire, Squad_E_Field_Commander_Guard, Squad_E_Field_Commander_Guard</Company_Units>
+      <Max_Squad_Size>3</Max_Squad_Size>
+      <Is_Homogeneous>No</Is_Homogeneous>
+      <Is_Generic_Hero>Yes</Is_Generic_Hero>
+      <Build_Tab_Heroes>Yes</Build_Tab_Heroes>
+      <CategoryMask>LandHero</CategoryMask>
+      <Score_Cost_Credits>400</Score_Cost_Credits>
+      <Tactical_Build_Cost_Multiplayer>500</Tactical_Build_Cost_Multiplayer>
+      <Tactical_Build_Time_Seconds>76</Tactical_Build_Time_Seconds>
+      <Required_Ground_Base_Level>1</Required_Ground_Base_Level>
+      <Formation_Priority>1</Formation_Priority>
+      <Unit_Abilities_Data SubObjectList="Yes">
+         <Unit_Ability>
+            <Type>WEAKEN_ENEMY</Type>
+            <Alternate_Name_Text>TEXT_WRAITH_GROUND_ITEM_STUN_BOMB</Alternate_Name_Text>
+            <Alternate_Description_Text>TEXT_DESCRIPTION_ABILITY_STUN_BOMB_WRAITH_COMMANDER_GROUND</Alternate_Description_Text>
+            <Alternate_Icon_Name>I_SA_SHOCK_GRENADE.TGA</Alternate_Icon_Name>
+            <Recharge_Seconds>60</Recharge_Seconds>
+            <Effective_Radius>100.0</Effective_Radius>
+            <Spawned_Object_Type>Wraith_Stun_Bomb</Spawned_Object_Type>
+            <SFXEvent_Target_Ability></SFXEvent_Target_Ability>
+            <SFXEvent_GUI_Unit_Ability_Activated></SFXEvent_GUI_Unit_Ability_Activated>
+            <SFXEvent_GUI_Unit_Ability_Deactivated />
+            <Area_Effect_Decal_Distance>25</Area_Effect_Decal_Distance>
+         </Unit_Ability>
+      </Unit_Abilities_Data>
+   </HeroCompany>
+
+   <HeroCompany Name="Field_Com_Empire_Team">
+      <Variant_Of_Existing_Type>Field_Com_Empire_Team_No_Prereq</Variant_Of_Existing_Type>
+      <Affiliation>Empire</Affiliation>
+      <Tech_Level>5</Tech_Level>
+      <Required_Timeline>0</Required_Timeline>
+      <Required_Ground_Base_Level>1</Required_Ground_Base_Level>
+      <Required_Star_Base_Level>0</Required_Star_Base_Level>
+      <Required_Special_Structures>E_Ground_Officer_Academy, E_Ground_Barracks</Required_Special_Structures>
+      <Required_Planets></Required_Planets>
+      <Tactical_Build_Prerequisites>EC_Level_Three_Tech_Upgrade</Tactical_Build_Prerequisites>
+   </HeroCompany>
+
+
+   <Container Name="Empire_Field_Commander_Team">
+      <Variant_Of_Existing_Type>Template_Infantry_Container</Variant_Of_Existing_Type>
+      <Text_ID>TEXT_WRAITH_GROUND_UNIT_COMMANDER</Text_ID>
+      <Encyclopedia_Text>TEXT_DESCRIPTION_WRAITH_COMMANDER_GROUND</Encyclopedia_Text>
+      <Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_WRAITH_COMMANDER</Encyclopedia_Unit_Class>
+      <Encyclopedia_Good_Against></Encyclopedia_Good_Against>
+      <Encyclopedia_Vulnerable_To></Encyclopedia_Vulnerable_To>
+      <Icon_Name>WRAITH_GROUND_UNIT_COMMANDER.TGA</Icon_Name>
+      <FormationOrder>2</FormationOrder>
+      <FormationSpacing>1.3</FormationSpacing>
+      <Selection_Blob_Material_Name>Highlight_Empire_Hero</Selection_Blob_Material_Name>
+      <Unit_Abilities_Data SubObjectList="Yes">
+         <Unit_Ability>
+            <Type>WEAKEN_ENEMY</Type>
+            <Alternate_Name_Text>TEXT_WRAITH_GROUND_ITEM_STUN_BOMB</Alternate_Name_Text>
+            <Alternate_Description_Text>TEXT_DESCRIPTION_ABILITY_STUN_BOMB_WRAITH_COMMANDER_GROUND</Alternate_Description_Text>
+            <Alternate_Icon_Name>I_SA_SHOCK_GRENADE.TGA</Alternate_Icon_Name>
+            <Recharge_Seconds>60</Recharge_Seconds>
+            <Effective_Radius>100.0</Effective_Radius>
+            <Spawned_Object_Type>Wraith_Stun_Bomb</Spawned_Object_Type>
+            <SFXEvent_Target_Ability></SFXEvent_Target_Ability>
+            <SFXEvent_GUI_Unit_Ability_Activated></SFXEvent_GUI_Unit_Ability_Activated>
+            <SFXEvent_GUI_Unit_Ability_Deactivated />
+            <Area_Effect_Decal_Distance>25</Area_Effect_Decal_Distance>
+         </Unit_Ability>
+      </Unit_Abilities_Data>
+   </Container>
+
+
+   <MiscObject Name="Wraith_Field_Commander_Buff_Emitter">
+      <Land_Model_Name>W_LASER_INVISIBLE.ALO</Land_Model_Name>
+      <Is_Visible_On_Radar>No</Is_Visible_On_Radar>
+      <Space_Layer>Land</Space_Layer>
+      <UnitCollisionClass>Infantry</UnitCollisionClass>
+      <CanCellStack>yes</CanCellStack>
+      <Avoidance_Disabled>Yes</Avoidance_Disabled>
+      <Influences_Capture_Point> False </Influences_Capture_Point>
+      <Lua_Script>ObjectScript_Field_Commander</Lua_Script>
+   </MiscObject>
+
+   <Projectile Name="Proj_Wraith_Field_Commander">
+      <Variant_Of_Existing_Type>Proj_Wraith_New_Stunner</Variant_Of_Existing_Type>
+      <Damage_Type>Damage_Anti_Infantry</Damage_Type>
+      <Projectile_Damage>12.33</Projectile_Damage>
+   </Projectile>
+
+   <Projectile Name="Wraith_Stun_Bomb_Projectile">
+      <Text_ID>TEXT_NONE</Text_ID>
+      <Land_Model_Name>W_LASER_INVISIBLE.ALO</Land_Model_Name>
+      <Damage_Type> Damage_Default </Damage_Type>
+      <Scale_Factor>1.0</Scale_Factor>
+      <Max_Speed>0.01</Max_Speed>
+      <Max_Rate_Of_Turn>0.0</Max_Rate_Of_Turn>
+      <Behavior>PROJECTILE</Behavior>
+      <Projectile_Category>DEFAULT</Projectile_Category>
+      <Projectile_Max_Flight_Distance>0.01</Projectile_Max_Flight_Distance>
+      <Projectile_Damage>0.0</Projectile_Damage>
+      <Projectile_Does_Shield_Damage>No</Projectile_Does_Shield_Damage>
+      <Projectile_Does_Energy_Damage>No</Projectile_Does_Energy_Damage>
+      <Projectile_Does_Hitpoint_Damage>No</Projectile_Does_Hitpoint_Damage>
+      <Projectile_Energy_Per_Shot>0</Projectile_Energy_Per_Shot>
+      <Projectile_SFXEvent_Detonate>SFX_Stun_Grenade_Detonation</Projectile_SFXEvent_Detonate>
+      <Projectile_SFXEvent_Detonate_Reduced_By_Armor> SFX_Small_Damage_Detonation </Projectile_SFXEvent_Detonate_Reduced_By_Armor>
+      <Projectile_Object_Detonation_Particle>Particle_Wraith_Stun_Bomb</Projectile_Object_Detonation_Particle>
+      <Projectile_Ground_Detonation_Particle>Particle_Wraith_Stun_Bomb</Projectile_Ground_Detonation_Particle>
+      <Projectile_Lifetime_Detonation_Particle>Particle_Wraith_Stun_Bomb</Projectile_Lifetime_Detonation_Particle>
+      <Projectile_Absorbed_By_Shields_Particle />
+      <AI_Combat_Power>0</AI_Combat_Power>
+      <Projectile_Stun_On_Detonation>Yes</Projectile_Stun_On_Detonation>
+      <Projectile_Stun_Duration_Frames>600</Projectile_Stun_Duration_Frames>
+      <Projectile_Stun_Radius>150</Projectile_Stun_Radius>
+      <Projectile_Stun_Spawn_Effect> Han_Solo_Target_Stun_Effect </Projectile_Stun_Spawn_Effect>
+      <Projectile_Stun_Victims_Category_Mask> Infantry | LandHero | Vehicle | Structure </Projectile_Stun_Victims_Category_Mask>
+      <Projectile_Stun_Victims_Unit_Types>
+               Commander_Akbar, Mon_Mothma, Yoda, Han_Solo, Luke_Skywalker_Jedi, Kyle_Katarn, Goauld_Hero_Herak_Syslord_Land,
+               Rebel_Trooper_Team, Goauld_Horus_Guard, Goauld_Jackal_Guard, Squad_Generic_Field_Commander_Rebel, Squad_R_Field_Commander_Guard, Rebel_Infiltrator, Goauld_Necropolis_Guard, Squad_Plex_Soldier, Generic_Bounty_Hunter_R,
+               Goauld_Advanced_Probe, T2B_Tank, Goauld_Probe, Goauld_Land_Alkesh, Snowspeeder, Gallofree_HTT_Transport, Goauld_Udajeet,
+
+               IG-88, Urai_Fen, Jack_ONeill, Samantha_Carter, Daniel_Jackson, Tealc, John_Sheppard, Rodney_McKay, Teyla_Emmagan, Ronon_Dex,
+               Underworld_Merc, Vornskr_Wolf, Tauri_Mobile_MG, Destroyer_Droid, Ewok_Handler, Tauri_SG_Team_Unit_1, Tauri_SG_Team_Unit_2, Tauri_SG_Team_Unit_3, Tauri_SG_Team_Unit_4, Night_Sister, Underworld_Disruptor_Merc, Scavenger_Droid,
+               MAL_Rocket_Vehicle, Tauri_B302_Land, Tauri_F302_Land, F9TZ_Cloaking_Transport, MZ8_Pulse_Cannon_Tank, Canderous_Assault_Tank, Tauri_UAV,
+
+               Boba_Fett, Wraith_Hero_Michael_Land, Emperor_Palpatine, Captain_Piet,
+               Squad_Generic_Field_Commander_Empire, Squad_E_Field_Commander_Guard, Dark_Trooper_PhaseIII, Squad_Stormtrooper,
+               Wraith_Bomber_Land, AT_ST_Walker, Wraith_Dart_Land, AT_AT_Walker, AT_AA_Walker, SPMAT_Walker, Scout_Trooper, Wraith_Shuttle_Land,
+
+               Adria, Doci, Ori_Commander, Ori_Soldier, Ori_Land_Fighter, Ori_Prior, Ori_Land_Transporter,
+               Replicator_Bug, Replicator_Warrior,
+               Systemlord_Alliance_Jaffa, Systemlord_Alliance_Serpent_Guard, Systemlord_Alliance_Horus_Guard, Systemlord_Alliance_Jackal_Guard, Systemlord_Alliance_Necropolis_Guard, Systemlord_Alliance_Bastet_Guard, Systemlord_Alliance_Deathglider, Systemlord_Alliance_Hero_Heruur_Land, Systemlord_Alliance_Hero_Sokar_Land,
+               Tokra_Soldier, Tokra_Scientist,
+      </Projectile_Stun_Victims_Unit_Types>
+   </Projectile>
+
+   <Projectile Name="Proj_Wraith_Field_Commander_Bonus">
+      <Text_ID>TEXT_NONE</Text_ID>
+      <Land_Model_Name>W_LASER_INVISIBLE.ALO</Land_Model_Name>
+      <Scale_Factor>1.0</Scale_Factor>
+      <Max_Speed>15.0</Max_Speed>
+      <Max_Rate_Of_Turn>1</Max_Rate_Of_Turn>
+      <Behavior>PROJECTILE, HIDE_WHEN_FOGGED</Behavior>
+      <Projectile_Category>DEFAULT</Projectile_Category>
+      <Projectile_Ground_Detonation_SurfaceFX>Hover_No_Particles</Projectile_Ground_Detonation_SurfaceFX>
+
+      <Projectile_Max_Flight_Distance>10.0</Projectile_Max_Flight_Distance>
+      <Projectile_Max_Lifetime>5.0</Projectile_Max_Lifetime>
+      <Projectile_Damage>0.0</Projectile_Damage>
+      <Projectile_Blast_Area_Damage> 0 </Projectile_Blast_Area_Damage>
+      <Projectile_Blast_Area_Range> 5 </Projectile_Blast_Area_Range>
+      <Max_Secs_For_AE_Delayed_Damage>5</Max_Secs_For_AE_Delayed_Damage>
+      <Projectile_Does_Shield_Damage>No</Projectile_Does_Shield_Damage>
+      <Projectile_Does_Energy_Damage>No</Projectile_Does_Energy_Damage>
+      <Projectile_Does_Hitpoint_Damage>No</Projectile_Does_Hitpoint_Damage>
+      <Projectile_Energy_Per_Shot>0</Projectile_Energy_Per_Shot>
+      <Projectile_Object_Detonation_Particle/>
+      <Projectile_Ground_Detonation_Particle/>
+      <Projectile_Lifetime_Detonation_Particle/>
+      <AI_Combat_Power>40</AI_Combat_Power>
+
+      <Projectile_Combat_Mod>COMBAT_MOD_DEFENSE</Projectile_Combat_Mod>
+      <Projectile_Combat_Mod_Duration>5</Projectile_Combat_Mod_Duration>
+      <Projectile_Combat_Mod_Value>5.0</Projectile_Combat_Mod_Value>
+      <Projectile_Combat_Mod_Effect>Particle_Wraith_Commander_Buff</Projectile_Combat_Mod_Effect>
+      <Projectile_Combat_Mod_Category_Mask>Infantry | LandHero | Vehicle</Projectile_Combat_Mod_Category_Mask>
+   </Projectile>
+
+
+</Wraith_Field_Commander_Infantry_Data>

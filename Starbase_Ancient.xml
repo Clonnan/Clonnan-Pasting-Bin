@@ -1,0 +1,1347 @@
+<?xml version="1.0" encoding="utf-8"?>
+<StarBases>
+    <!--================================ Level 1 ================================-->
+    <StarBase Name="Ancient_Star_Base_1">
+        <Text_ID>TEXT_ANCIENTS_SPACE_BUILDING_STATION_T1</Text_ID>
+        <Encyclopedia_Text>TEXT_DESCRIPTION_ANCIENTS_GC_SPACE_STATION_T1</Encyclopedia_Text>
+        <Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_TAURI_STATION_TECH_1</Encyclopedia_Unit_Class>
+        <Space_Model_Name>Ancient_Space_Building_Station_Tech_1.alo</Space_Model_Name>
+        <Galactic_Model_Name>Ancient_Space_Building_Station_Tech1_Galactic.ALO</Galactic_Model_Name>
+        <Damage>45</Damage>
+        <Scale_Factor>1.0</Scale_Factor>
+        <Layer_Z_Adjust>0.0</Layer_Z_Adjust>
+        <Select_Box_Scale>340</Select_Box_Scale>
+        <Select_Box_Z_Adjust>-20</Select_Box_Z_Adjust>
+        <Icon_Name>ANCIENT_SPACE_BUILDING_STATION_T1.TGA</Icon_Name>
+        <Radar_Icon_Name>I_RADAR_STATION1_A.TGA</Radar_Icon_Name>
+        <Radar_Icon_Size>0.08  0.08</Radar_Icon_Size>
+        <Is_Visible_On_Radar>Yes</Is_Visible_On_Radar>
+        <Visible_On_Radar_When_Fogged>true</Visible_On_Radar_When_Fogged>
+        <!--===== Power Values =====-->
+        <Tactical_Health>4280</Tactical_Health>
+        <Shield_Points>2100</Shield_Points>
+        <Shield_Refresh_Rate>40</Shield_Refresh_Rate>
+        <Energy_Capacity>5000</Energy_Capacity>
+        <Energy_Refresh_Rate>1000</Energy_Refresh_Rate>
+        <AI_Combat_Power>5000</AI_Combat_Power>
+        <Armor_Type> Armor_Station </Armor_Type>
+        <Shield_Armor_Type>Armor_Station</Shield_Armor_Type>
+        <CategoryMask> Capital </CategoryMask>
+        <!--===== Need Ship Class in order to increase size of Healthbar =====-->
+        <GUI_Bracket_Size>2</GUI_Bracket_Size>
+        <Additional_Population_Capacity>10</Additional_Population_Capacity>
+        <!--===== Build Dependencies =====-->
+        <Affiliation>Underworld</Affiliation>
+        <Build_Tab_Space_Station>Yes</Build_Tab_Space_Station>
+        <Build_Initially_Locked>No</Build_Initially_Locked>
+        <Build_Can_Be_Unlocked_By_Slicer>Yes</Build_Can_Be_Unlocked_By_Slicer>
+        <Build_Cost_Credits>1500</Build_Cost_Credits>
+        <Build_Time_Seconds>15</Build_Time_Seconds>
+        <Tech_Level>1</Tech_Level>
+        <Base_Level>1</Base_Level>
+        <Prev_Level_Base />
+        <Next_Level_Base>Ancient_Star_Base_2</Next_Level_Base>
+        <Required_Ground_Base_Level>0</Required_Ground_Base_Level>
+        <Required_Star_Base_Level>0</Required_Star_Base_Level>
+        <Required_Planets>
+      Pegasus_Prelude_Planet_Ascension,
+      Pegasus_Prelude_Planet_Asteroid_Field,
+      Pegasus_Prelude_Planet_Asuras,
+      Pegasus_Prelude_Planet_Athos,
+      Pegasus_Prelude_Planet_Aurora,
+      Pegasus_Prelude_Planet_Belkan,
+      Pegasus_Prelude_Planet_Dagan,
+      Pegasus_Prelude_Planet_Doranda,
+      Pegasus_Prelude_Planet_Edowin,
+      Pegasus_Prelude_Planet_Gas_Nebula,
+      Pegasus_Prelude_Planet_Gelda,
+      Pegasus_Prelude_Planet_Gonta,
+      Pegasus_Prelude_Planet_Hoff,
+      Pegasus_Prelude_Planet_Iratus_Bestiola,
+      Pegasus_Prelude_Planet_Jenev,
+      Pegasus_Prelude_Planet_Kohal,
+      Pegasus_Prelude_Planet_Lantea,
+      Pegasus_Prelude_Planet_Laros,
+      Pegasus_Prelude_Planet_M6H_987,
+      Pegasus_Prelude_Planet_Manaria,
+      Pegasus_Prelude_Planet_Olesia,
+      Pegasus_Prelude_Planet_Orakis,
+      Pegasus_Prelude_Planet_Orlan,
+      Pegasus_Prelude_Planet_Proculis,
+      Pegasus_Prelude_Planet_Rasputin,
+      Pegasus_Prelude_Planet_Sagon,
+      Pegasus_Prelude_Planet_Sun,
+      Pegasus_Prelude_Planet_Taranis,
+      Pegasus_Prelude_Planet_Vadena,
+      Pegasus_Prelude_Planet_Wraith_Homeworld,
+      Pegasus_Prelude_Planet_Wraith_ZPM_Base
+        </Required_Planets>
+        <Behavior>DUMMY_STAR_BASE, SELECTABLE</Behavior>
+        <SpaceBehavior> SPACE_OBSTACLE, ABILITY_COUNTDOWN, POWERED, SHIELDED, SPAWN_SQUADRON, HIDE_WHEN_FOGGED, REVEAL, UNIT_AI, ION_STUN_EFFECT</SpaceBehavior>
+        <Reinforcement_Prevention_Radius> 2000 </Reinforcement_Prevention_Radius>
+        <Targeting_Max_Attack_Distance>2200.0</Targeting_Max_Attack_Distance>
+        <Dense_FOW_Reveal_Range_Multiplier>0.2</Dense_FOW_Reveal_Range_Multiplier>
+        <Space_FOW_Reveal_Range>1300.0</Space_FOW_Reveal_Range>
+        <Death_Explosions>Huge_Explosion_Space</Death_Explosions>
+        <!-- Set to contuously spawn until fighter bay hard point is destroyed -->
+        <Starting_Spawned_Units_Tech_0>Ancient_Drone_Squadron, 3</Starting_Spawned_Units_Tech_0>
+        <Reserve_Spawned_Units_Tech_0>Ancient_Drone_Squadron, -1</Reserve_Spawned_Units_Tech_0>
+        <Spawned_Squadron_Delay_Seconds>10</Spawned_Squadron_Delay_Seconds>
+        <Tactical_Buildable_Objects_Campaign>
+        </Tactical_Buildable_Objects_Campaign>
+        <HardPoints>
+      HP_Ancient_Station_Shield_00,
+	  HP_Ancient_Station_Supply_Dock_Dummy,
+	  HP_Ancient_Station_Hangar_08,
+      HP_Ancient_Station_Medium_Laser_13,
+	  HP_Ancient_Station_Medium_Laser_14,
+	  HP_Ancient_Station_Medium_Laser_15,
+      HP_Ancient_Station_Sensor_Dummy
+        </HardPoints>
+        <Death_Clone>Damage_Normal, Ancient_Star_Base_1_Death_Clone</Death_Clone>
+        <Space_Layer> StaticObject </Space_Layer>
+        <Space_Obstacle_Offset> 0 0 0 </Space_Obstacle_Offset>
+        <Is_Dummy>No</Is_Dummy>
+        <Size_Value>10</Size_Value>
+        <GUI_Bounds_Scale>0.7</GUI_Bounds_Scale>
+        <GUI_Row>0</GUI_Row>
+        <Multisample_FOW_Check>Yes</Multisample_FOW_Check>
+        <Collidable_By_Projectile_Living>Yes</Collidable_By_Projectile_Living>
+        <Has_Space_Evaluator>True</Has_Space_Evaluator>
+        <Custom_Soft_Footprint_Radius> 300 </Custom_Soft_Footprint_Radius>
+        <Score_Cost_Credits> 1500</Score_Cost_Credits>
+        <Victory_Relevant>yes</Victory_Relevant>
+        <Retreat_Self_Destruct_Explosion>Self_Destruct_Star_Base_Level_1_Rebel</Retreat_Self_Destruct_Explosion>
+        <SFXEvent_Hardpoint_Destroyed> HARD_POINT_DUMMY_ART,  Effect_Empty_Sound</SFXEvent_Hardpoint_Destroyed>
+        <SFXEvent_Hardpoint_Destroyed> HARD_POINT_ENABLE_SPECIAL_ABILITY, Effect_Empty_Sound</SFXEvent_Hardpoint_Destroyed>
+        <SFXEvent_Hardpoint_Destroyed> HARD_POINT_ENGINE,  Effect_Empty_Sound</SFXEvent_Hardpoint_Destroyed>
+        <SFXEvent_Hardpoint_Destroyed> HARD_POINT_FIGHTER_BAY, Effect_Empty_Sound</SFXEvent_Hardpoint_Destroyed>
+        <SFXEvent_Hardpoint_Destroyed> HARD_POINT_GRAVITY_WELL,  Effect_Empty_Sound</SFXEvent_Hardpoint_Destroyed>
+        <SFXEvent_Hardpoint_Destroyed> HARD_POINT_SHIELD_GENERATOR, Effect_Empty_Sound</SFXEvent_Hardpoint_Destroyed>
+        <SFXEvent_Hardpoint_Destroyed> HARD_POINT_TRACTOR_BEAM, Effect_Empty_Sound</SFXEvent_Hardpoint_Destroyed>
+        <SFXEvent_Hardpoint_Destroyed> HARD_POINT_WEAPON_ION_CANNON, Effect_Empty_Sound</SFXEvent_Hardpoint_Destroyed>
+        <SFXEvent_Hardpoint_Destroyed> HARD_POINT_WEAPON_LASER, Effect_Empty_Sound</SFXEvent_Hardpoint_Destroyed>
+        <SFXEvent_Hardpoint_Destroyed> HARD_POINT_WEAPON_MASS_DRIVER,  Effect_Empty_Sound</SFXEvent_Hardpoint_Destroyed>
+        <SFXEvent_Hardpoint_Destroyed> HARD_POINT_WEAPON_MISSILE,  Effect_Empty_Sound</SFXEvent_Hardpoint_Destroyed>
+        <SFXEvent_Hardpoint_Destroyed> HARD_POINT_WEAPON_SPECIAL,  Effect_Empty_Sound</SFXEvent_Hardpoint_Destroyed>
+        <SFXEvent_Hardpoint_Destroyed> HARD_POINT_WEAPON_TORPEDO,  Effect_Empty_Sound</SFXEvent_Hardpoint_Destroyed>
+        <SFXEvent_Select>Unit_Select_Trebal</SFXEvent_Select>
+        <SFXEvent_Move_Into_Nebula></SFXEvent_Move_Into_Nebula>
+        <SFXEvent_Fleet_Move>Unit_Move_Trebal</SFXEvent_Fleet_Move>
+        <SFXEvent_Attack>Unit_Attack_Trebal</SFXEvent_Attack>
+        <SFXEvent_Guard>Unit_Move_Trebal</SFXEvent_Guard>
+        <SFXEvent_Stop></SFXEvent_Stop>
+        <SFXEvent_Health_Critical_Warning></SFXEvent_Health_Critical_Warning>
+        <SFXEvent_Health_Low_Warning></SFXEvent_Health_Low_Warning>
+        <SFXEvent_Build_Complete></SFXEvent_Build_Complete>
+        <Death_SFXEvent_Start_Die></Death_SFXEvent_Start_Die>
+        <SFXEvent_Ambient_Loop>Engine_Ancient_Low</SFXEvent_Ambient_Loop>
+        <Death_SFXEvent_Start_Die>Explosion_Aurora_Class</Death_SFXEvent_Start_Die>
+    </StarBase>
+    <StarBase Name="Ancient_Star_Base_1_Death_Clone">
+        <Text_ID>TEXT_REBEL_STAR_BASE_1</Text_ID>
+        <Space_Model_Name>Ancient_Space_Building_Station_Tech_1_D.alo</Space_Model_Name>
+        <Death_SFXEvent_Start_Die>Unit_Star_Destroyer_Death_SFX</Death_SFXEvent_Start_Die>
+        <Layer_Z_Adjust>0.0</Layer_Z_Adjust>
+        <CategoryMask> Capital </CategoryMask>
+        <Death_Persistence_Duration>0</Death_Persistence_Duration>
+        <Should_Death_Clone_Play_Idle> true </Should_Death_Clone_Play_Idle>
+    </StarBase>
+    <!--================================ Level 2 ================================-->
+    <StarBase Name="Ancient_Star_Base_2">
+        <Text_ID>TEXT_ANCIENTS_SPACE_BUILDING_STATION_T2</Text_ID>
+        <Encyclopedia_Text>TEXT_DESCRIPTION_ANCIENTS_GC_SPACE_STATION_T2</Encyclopedia_Text>
+        <Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_TAURI_STATION_TECH_2</Encyclopedia_Unit_Class>
+        <Space_Model_Name>Ancient_Space_Building_Station_Tech_2.alo</Space_Model_Name>
+        <Galactic_Model_Name>Ancient_Space_Building_Station_Tech2_Galactic.ALO</Galactic_Model_Name>
+        <Damage>55</Damage>
+        <Scale_Factor>1.0</Scale_Factor>
+        <Layer_Z_Adjust>0.0</Layer_Z_Adjust>
+        <Select_Box_Scale>500</Select_Box_Scale>
+        <Select_Box_Z_Adjust>-20</Select_Box_Z_Adjust>
+        <Icon_Name>ANCIENT_SPACE_BUILDING_STATION_T2.TGA</Icon_Name>
+        <Radar_Icon_Name>I_RADAR_STATION2_A.TGA</Radar_Icon_Name>
+        <Radar_Icon_Size>0.08  0.08</Radar_Icon_Size>
+        <Is_Visible_On_Radar>Yes</Is_Visible_On_Radar>
+        <Visible_On_Radar_When_Fogged>true</Visible_On_Radar_When_Fogged>
+        <GUI_Row>0</GUI_Row>
+        <!--===== Power Values =====-->
+        <Tactical_Health>6420</Tactical_Health>
+        <Shield_Points>3150</Shield_Points>
+        <Shield_Refresh_Rate>50</Shield_Refresh_Rate>
+        <Energy_Capacity>5000</Energy_Capacity>
+        <Energy_Refresh_Rate>1000</Energy_Refresh_Rate>
+        <AI_Combat_Power>8000</AI_Combat_Power>
+        <Armor_Type> Armor_Station </Armor_Type>
+        <Shield_Armor_Type>Armor_Station</Shield_Armor_Type>
+        <CategoryMask>Capital</CategoryMask>
+        <GUI_Bracket_Size>2</GUI_Bracket_Size>
+        <GUI_Bounds_Scale>0.5</GUI_Bounds_Scale>
+        <Additional_Population_Capacity>10</Additional_Population_Capacity>
+        <!--===== Build Dependencies =====-->
+        <Affiliation>Underworld</Affiliation>
+        <Build_Tab_Space_Station>Yes</Build_Tab_Space_Station>
+        <Build_Initially_Locked>No</Build_Initially_Locked>
+        <Build_Can_Be_Unlocked_By_Slicer>Yes</Build_Can_Be_Unlocked_By_Slicer>
+        <Build_Cost_Credits>2500</Build_Cost_Credits>
+        <Build_Time_Seconds>25</Build_Time_Seconds>
+        <Tech_Level>2</Tech_Level>
+        <Base_Level>2</Base_Level>
+        <Prev_Level_Base>Ancient_Star_Base_1</Prev_Level_Base>
+        <Next_Level_Base>Ancient_Star_Base_3</Next_Level_Base>
+        <Required_Ground_Base_Level>0</Required_Ground_Base_Level>
+        <Required_Star_Base_Level>1</Required_Star_Base_Level>
+        <Required_Planets>
+      Pegasus_Prelude_Planet_Asuras,
+      Pegasus_Prelude_Planet_Ascension,
+      Pegasus_Prelude_Planet_Asteroid_Field,
+      Pegasus_Prelude_Planet_Athos,
+      Pegasus_Prelude_Planet_Aurora,
+      Pegasus_Prelude_Planet_Belkan,
+      Pegasus_Prelude_Planet_Dagan,
+      Pegasus_Prelude_Planet_Doranda,
+      Pegasus_Prelude_Planet_Edowin,
+      Pegasus_Prelude_Planet_Gas_Nebula,
+      Pegasus_Prelude_Planet_Gelda,
+      Pegasus_Prelude_Planet_Gonta,
+      Pegasus_Prelude_Planet_Hoff,
+      Pegasus_Prelude_Planet_Iratus_Bestiola,
+      Pegasus_Prelude_Planet_Jenev,
+      Pegasus_Prelude_Planet_Kohal,
+      Pegasus_Prelude_Planet_Lantea,
+      Pegasus_Prelude_Planet_Laros,
+      Pegasus_Prelude_Planet_M6H_987,
+      Pegasus_Prelude_Planet_Manaria,
+      Pegasus_Prelude_Planet_Olesia,
+      Pegasus_Prelude_Planet_Orakis,
+      Pegasus_Prelude_Planet_Orlan,
+      Pegasus_Prelude_Planet_Proculis,
+      Pegasus_Prelude_Planet_Rasputin,
+      Pegasus_Prelude_Planet_Sagon,
+      Pegasus_Prelude_Planet_Sun,
+      Pegasus_Prelude_Planet_Taranis,
+      Pegasus_Prelude_Planet_Vadena,
+      Pegasus_Prelude_Planet_Wraith_Homeworld,
+      Pegasus_Prelude_Planet_Wraith_ZPM_Base
+        </Required_Planets>
+        <Behavior>DUMMY_STAR_BASE, SELECTABLE</Behavior>
+        <SpaceBehavior> SPACE_OBSTACLE, ABILITY_COUNTDOWN, POWERED, SHIELDED, SPAWN_SQUADRON, HIDE_WHEN_FOGGED, REVEAL, UNIT_AI, ION_STUN_EFFECT</SpaceBehavior>
+        <Reinforcement_Prevention_Radius> 2000 </Reinforcement_Prevention_Radius>
+        <Targeting_Max_Attack_Distance>2400.0</Targeting_Max_Attack_Distance>
+        <Dense_FOW_Reveal_Range_Multiplier>0.2</Dense_FOW_Reveal_Range_Multiplier>
+        <Space_FOW_Reveal_Range>1700.0</Space_FOW_Reveal_Range>
+        <Death_Explosions>Huge_Explosion_Space</Death_Explosions>
+        <!-- Set to contuously spawn until fighter bay hard point is destroyed -->
+        <Starting_Spawned_Units_Tech_0>Ancient_Drone_Squadron, 3</Starting_Spawned_Units_Tech_0>
+        <Reserve_Spawned_Units_Tech_0>Ancient_Drone_Squadron, -1</Reserve_Spawned_Units_Tech_0>
+        <Starting_Spawned_Units_Tech_0>Ancient_Jumper_Squadron, 2</Starting_Spawned_Units_Tech_0>
+        <Reserve_Spawned_Units_Tech_0>Ancient_Jumper_Squadron, -1</Reserve_Spawned_Units_Tech_0>
+        <Spawned_Squadron_Delay_Seconds>10</Spawned_Squadron_Delay_Seconds>
+        <Tactical_Buildable_Objects_Campaign>
+        </Tactical_Buildable_Objects_Campaign>
+        <HardPoints>
+      HP_Ancient_Station_Shield_00,
+      HP_Ancient_Station_Supply_Dock_Dummy,
+	  HP_Ancient_Station_Hangar_08,
+      HP_Ancient_Station_Medium_Laser_13,
+	  HP_Ancient_Station_Medium_Laser_14,
+	  HP_Ancient_Station_Medium_Laser_15,
+      HP_Ancient_Station_Sensor_Dummy
+        </HardPoints>
+        <Death_Clone>Damage_Normal, Ancient_Star_Base_2_Death_Clone</Death_Clone>
+        <Space_Layer> StaticObject </Space_Layer>
+        <Space_Obstacle_Offset> 0 0 0 </Space_Obstacle_Offset>
+        <Is_Dummy>No</Is_Dummy>
+        <Multisample_FOW_Check>Yes</Multisample_FOW_Check>
+        <Collidable_By_Projectile_Living>Yes</Collidable_By_Projectile_Living>
+        <Has_Space_Evaluator>True</Has_Space_Evaluator>
+        <Custom_Soft_Footprint_Radius> 300 </Custom_Soft_Footprint_Radius>
+        <Score_Cost_Credits> 1500</Score_Cost_Credits>
+        <Victory_Relevant>yes</Victory_Relevant>
+        <Retreat_Self_Destruct_Explosion>Self_Destruct_Star_Base_Level_1_Rebel</Retreat_Self_Destruct_Explosion>
+        <SFXEvent_Hardpoint_Destroyed> HARD_POINT_DUMMY_ART,  Effect_Empty_Sound</SFXEvent_Hardpoint_Destroyed>
+        <SFXEvent_Hardpoint_Destroyed> HARD_POINT_ENABLE_SPECIAL_ABILITY, Effect_Empty_Sound</SFXEvent_Hardpoint_Destroyed>
+        <SFXEvent_Hardpoint_Destroyed> HARD_POINT_ENGINE,  Effect_Empty_Sound</SFXEvent_Hardpoint_Destroyed>
+        <SFXEvent_Hardpoint_Destroyed> HARD_POINT_FIGHTER_BAY, Effect_Empty_Sound</SFXEvent_Hardpoint_Destroyed>
+        <SFXEvent_Hardpoint_Destroyed> HARD_POINT_GRAVITY_WELL,  Effect_Empty_Sound</SFXEvent_Hardpoint_Destroyed>
+        <SFXEvent_Hardpoint_Destroyed> HARD_POINT_SHIELD_GENERATOR, Effect_Empty_Sound</SFXEvent_Hardpoint_Destroyed>
+        <SFXEvent_Hardpoint_Destroyed> HARD_POINT_TRACTOR_BEAM, Effect_Empty_Sound</SFXEvent_Hardpoint_Destroyed>
+        <SFXEvent_Hardpoint_Destroyed> HARD_POINT_WEAPON_ION_CANNON, Effect_Empty_Sound</SFXEvent_Hardpoint_Destroyed>
+        <SFXEvent_Hardpoint_Destroyed> HARD_POINT_WEAPON_LASER, Effect_Empty_Sound</SFXEvent_Hardpoint_Destroyed>
+        <SFXEvent_Hardpoint_Destroyed> HARD_POINT_WEAPON_MASS_DRIVER,  Effect_Empty_Sound</SFXEvent_Hardpoint_Destroyed>
+        <SFXEvent_Hardpoint_Destroyed> HARD_POINT_WEAPON_MISSILE,  Effect_Empty_Sound</SFXEvent_Hardpoint_Destroyed>
+        <SFXEvent_Hardpoint_Destroyed> HARD_POINT_WEAPON_SPECIAL,  Effect_Empty_Sound</SFXEvent_Hardpoint_Destroyed>
+        <SFXEvent_Hardpoint_Destroyed> HARD_POINT_WEAPON_TORPEDO,  Effect_Empty_Sound</SFXEvent_Hardpoint_Destroyed>
+        <SFXEvent_Select>Unit_Select_Trebal</SFXEvent_Select>
+        <SFXEvent_Move_Into_Nebula></SFXEvent_Move_Into_Nebula>
+        <SFXEvent_Fleet_Move>Unit_Move_Trebal</SFXEvent_Fleet_Move>
+        <SFXEvent_Attack>Unit_Attack_Trebal</SFXEvent_Attack>
+        <SFXEvent_Guard>Unit_Move_Trebal</SFXEvent_Guard>
+        <SFXEvent_Stop></SFXEvent_Stop>
+        <SFXEvent_Health_Critical_Warning></SFXEvent_Health_Critical_Warning>
+        <SFXEvent_Health_Low_Warning></SFXEvent_Health_Low_Warning>
+        <SFXEvent_Build_Complete></SFXEvent_Build_Complete>
+        <Death_SFXEvent_Start_Die></Death_SFXEvent_Start_Die>
+        <SFXEvent_Ambient_Loop>Engine_Ancient_Low</SFXEvent_Ambient_Loop>
+        <Death_SFXEvent_Start_Die>Explosion_Aurora_Class</Death_SFXEvent_Start_Die>
+    </StarBase>
+    <StarBase Name="Ancient_Star_Base_2_Death_Clone">
+        <Text_ID>TEXT_REBEL_STAR_BASE_2</Text_ID>
+        <Space_Model_Name>Ancient_Space_Building_Station_Tech_2_D.alo</Space_Model_Name>
+        <Death_SFXEvent_Start_Die>Unit_Star_Destroyer_Death_SFX</Death_SFXEvent_Start_Die>
+        <Layer_Z_Adjust>0.0</Layer_Z_Adjust>
+        <CategoryMask> Capital </CategoryMask>
+        <Death_Persistence_Duration>0</Death_Persistence_Duration>
+        <Should_Death_Clone_Play_Idle> true </Should_Death_Clone_Play_Idle>
+    </StarBase>
+    <!--================================ Level 3 ================================-->
+    <StarBase Name="Ancient_Star_Base_3">
+        <Text_ID>TEXT_ANCIENTS_SPACE_BUILDING_STATION_T3</Text_ID>
+        <Encyclopedia_Text>TEXT_DESCRIPTION_ANCIENTS_GC_SPACE_STATION_T3</Encyclopedia_Text>
+        <Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_TAURI_STATION_TECH_3</Encyclopedia_Unit_Class>
+        <Space_Model_Name>Ancient_Space_Building_Station_Tech_3.alo</Space_Model_Name>
+        <Galactic_Model_Name>Ancient_Space_Building_Station_Tech3_Galactic.ALO</Galactic_Model_Name>
+        <Damage>65</Damage>
+        <Scale_Factor>1.0</Scale_Factor>
+        <Layer_Z_Adjust>0.0</Layer_Z_Adjust>
+        <Select_Box_Scale>500</Select_Box_Scale>
+        <Select_Box_Z_Adjust>-20</Select_Box_Z_Adjust>
+        <Icon_Name>ANCIENT_SPACE_BUILDING_STATION_T3.TGA</Icon_Name>
+        <Radar_Icon_Name>I_RADAR_STATION3_A.TGA</Radar_Icon_Name>
+        <Radar_Icon_Size>0.08  0.08</Radar_Icon_Size>
+        <Is_Visible_On_Radar>Yes</Is_Visible_On_Radar>
+        <Visible_On_Radar_When_Fogged>true</Visible_On_Radar_When_Fogged>
+        <GUI_Row>0</GUI_Row>
+        <!--===== Power Values =====-->
+        <Tactical_Health>8560</Tactical_Health>
+        <Shield_Points>5250</Shield_Points>
+        <Shield_Refresh_Rate>60</Shield_Refresh_Rate>
+        <Energy_Capacity>5000</Energy_Capacity>
+        <Energy_Refresh_Rate>1000</Energy_Refresh_Rate>
+        <AI_Combat_Power>12000</AI_Combat_Power>
+        <Armor_Type> Armor_Station </Armor_Type>
+        <Shield_Armor_Type>Armor_Station</Shield_Armor_Type>
+        <CategoryMask> Capital </CategoryMask>
+        <GUI_Bracket_Size>2</GUI_Bracket_Size>
+        <GUI_Bounds_Scale>0.5</GUI_Bounds_Scale>
+        <Additional_Population_Capacity>15</Additional_Population_Capacity>
+        <!--===== Build Dependencies =====-->
+        <Affiliation>Underworld</Affiliation>
+        <Build_Tab_Space_Station>Yes</Build_Tab_Space_Station>
+        <Build_Initially_Locked>No</Build_Initially_Locked>
+        <Build_Can_Be_Unlocked_By_Slicer>Yes</Build_Can_Be_Unlocked_By_Slicer>
+        <Build_Cost_Credits>3500</Build_Cost_Credits>
+        <Build_Time_Seconds>50</Build_Time_Seconds>
+        <Tech_Level>3</Tech_Level>
+        <Base_Level>3</Base_Level>
+        <Prev_Level_Base>Ancient_Star_Base_2</Prev_Level_Base>
+        <Next_Level_Base>Ancient_Star_Base_4</Next_Level_Base>
+        <Required_Ground_Base_Level>0</Required_Ground_Base_Level>
+        <Required_Star_Base_Level>2</Required_Star_Base_Level>
+        <Required_Planets>
+      Pegasus_Prelude_Planet_Asuras,
+      Pegasus_Prelude_Planet_Ascension,
+      Pegasus_Prelude_Planet_Asteroid_Field,
+      Pegasus_Prelude_Planet_Athos,
+      Pegasus_Prelude_Planet_Aurora,
+      Pegasus_Prelude_Planet_Belkan,
+      Pegasus_Prelude_Planet_Dagan,
+      Pegasus_Prelude_Planet_Doranda,
+      Pegasus_Prelude_Planet_Edowin,
+      Pegasus_Prelude_Planet_Gas_Nebula,
+      Pegasus_Prelude_Planet_Gelda,
+      Pegasus_Prelude_Planet_Gonta,
+      Pegasus_Prelude_Planet_Hoff,
+      Pegasus_Prelude_Planet_Iratus_Bestiola,
+      Pegasus_Prelude_Planet_Jenev,
+      Pegasus_Prelude_Planet_Kohal,
+      Pegasus_Prelude_Planet_Lantea,
+      Pegasus_Prelude_Planet_Laros,
+      Pegasus_Prelude_Planet_M6H_987,
+      Pegasus_Prelude_Planet_Manaria,
+      Pegasus_Prelude_Planet_Olesia,
+      Pegasus_Prelude_Planet_Orakis,
+      Pegasus_Prelude_Planet_Orlan,
+      Pegasus_Prelude_Planet_Proculis,
+      Pegasus_Prelude_Planet_Rasputin,
+      Pegasus_Prelude_Planet_Sagon,
+      Pegasus_Prelude_Planet_Sun,
+      Pegasus_Prelude_Planet_Taranis,
+      Pegasus_Prelude_Planet_Vadena,
+      Pegasus_Prelude_Planet_Wraith_Homeworld,
+      Pegasus_Prelude_Planet_Wraith_ZPM_Base
+        </Required_Planets>
+        <Behavior>DUMMY_STAR_BASE, SELECTABLE</Behavior>
+        <SpaceBehavior> SPACE_OBSTACLE, ABILITY_COUNTDOWN, POWERED, SHIELDED, SPAWN_SQUADRON, HIDE_WHEN_FOGGED, REVEAL, UNIT_AI, ION_STUN_EFFECT</SpaceBehavior>
+        <Reinforcement_Prevention_Radius> 2200 </Reinforcement_Prevention_Radius>
+        <Targeting_Max_Attack_Distance>2300.0</Targeting_Max_Attack_Distance>
+        <Dense_FOW_Reveal_Range_Multiplier>0.2</Dense_FOW_Reveal_Range_Multiplier>
+        <Space_FOW_Reveal_Range>2500.0</Space_FOW_Reveal_Range>
+        <Death_Explosions>Huge_Explosion_Space</Death_Explosions>
+        <!-- Set to contuously spawn until fighter bay hard point is destroyed -->
+        <Starting_Spawned_Units_Tech_0>Ancient_Drone_Squadron, 3</Starting_Spawned_Units_Tech_0>
+        <Reserve_Spawned_Units_Tech_0>Ancient_Drone_Squadron, -1</Reserve_Spawned_Units_Tech_0>
+        <Starting_Spawned_Units_Tech_0>Ancient_Jumper_Squadron, 3</Starting_Spawned_Units_Tech_0>
+        <Reserve_Spawned_Units_Tech_0>Ancient_Jumper_Squadron, -1</Reserve_Spawned_Units_Tech_0>
+        <Starting_Spawned_Units_Tech_0>Ancient_Corvette, 1</Starting_Spawned_Units_Tech_0>
+        <Reserve_Spawned_Units_Tech_0>Ancient_Corvette, 0</Reserve_Spawned_Units_Tech_0>
+        <Spawned_Squadron_Delay_Seconds>10</Spawned_Squadron_Delay_Seconds>
+        <Tactical_Buildable_Objects_Campaign>
+        </Tactical_Buildable_Objects_Campaign>
+        <HardPoints>
+      HP_Ancient_Station_Shield_00,
+      HP_Ancient_Station_Supply_Dock_Dummy,
+	  HP_Ancient_Station_Hangar_08,
+      HP_Ancient_Station_Large_Laser_10,
+	  HP_Ancient_Station_Large_Laser_11,
+	  HP_Ancient_Station_Large_Laser_12,
+      HP_Ancient_Station_Medium_Laser_13,
+	  HP_Ancient_Station_Medium_Laser_14,
+	  HP_Ancient_Station_Medium_Laser_15,
+      HP_Ancient_Station_Sensor_Dummy
+        </HardPoints>
+        <Death_Clone>Damage_Normal, Ancient_Star_Base_3_Death_Clone</Death_Clone>
+        <Space_Layer> StaticObject </Space_Layer>
+        <Space_Obstacle_Offset> 0 0 0 </Space_Obstacle_Offset>
+        <Is_Dummy>No</Is_Dummy>
+        <Multisample_FOW_Check>Yes</Multisample_FOW_Check>
+        <Collidable_By_Projectile_Living>Yes</Collidable_By_Projectile_Living>
+        <Has_Space_Evaluator>True</Has_Space_Evaluator>
+        <Custom_Soft_Footprint_Radius> 300 </Custom_Soft_Footprint_Radius>
+        <Score_Cost_Credits> 1500</Score_Cost_Credits>
+        <Victory_Relevant>yes</Victory_Relevant>
+        <Retreat_Self_Destruct_Explosion>Self_Destruct_Star_Base_Level_3_Rebel</Retreat_Self_Destruct_Explosion>
+        <SFXEvent_Hardpoint_Destroyed> HARD_POINT_DUMMY_ART,  Effect_Empty_Sound</SFXEvent_Hardpoint_Destroyed>
+        <SFXEvent_Hardpoint_Destroyed> HARD_POINT_ENABLE_SPECIAL_ABILITY, Effect_Empty_Sound</SFXEvent_Hardpoint_Destroyed>
+        <SFXEvent_Hardpoint_Destroyed> HARD_POINT_ENGINE,  Effect_Empty_Sound</SFXEvent_Hardpoint_Destroyed>
+        <SFXEvent_Hardpoint_Destroyed> HARD_POINT_FIGHTER_BAY, Effect_Empty_Sound</SFXEvent_Hardpoint_Destroyed>
+        <SFXEvent_Hardpoint_Destroyed> HARD_POINT_GRAVITY_WELL,  Effect_Empty_Sound</SFXEvent_Hardpoint_Destroyed>
+        <SFXEvent_Hardpoint_Destroyed> HARD_POINT_SHIELD_GENERATOR, Effect_Empty_Sound</SFXEvent_Hardpoint_Destroyed>
+        <SFXEvent_Hardpoint_Destroyed> HARD_POINT_TRACTOR_BEAM, Effect_Empty_Sound</SFXEvent_Hardpoint_Destroyed>
+        <SFXEvent_Hardpoint_Destroyed> HARD_POINT_WEAPON_ION_CANNON, Effect_Empty_Sound</SFXEvent_Hardpoint_Destroyed>
+        <SFXEvent_Hardpoint_Destroyed> HARD_POINT_WEAPON_LASER, Effect_Empty_Sound</SFXEvent_Hardpoint_Destroyed>
+        <SFXEvent_Hardpoint_Destroyed> HARD_POINT_WEAPON_MASS_DRIVER,  Effect_Empty_Sound</SFXEvent_Hardpoint_Destroyed>
+        <SFXEvent_Hardpoint_Destroyed> HARD_POINT_WEAPON_MISSILE,  Effect_Empty_Sound</SFXEvent_Hardpoint_Destroyed>
+        <SFXEvent_Hardpoint_Destroyed> HARD_POINT_WEAPON_SPECIAL,  Effect_Empty_Sound</SFXEvent_Hardpoint_Destroyed>
+        <SFXEvent_Hardpoint_Destroyed> HARD_POINT_WEAPON_TORPEDO,  Effect_Empty_Sound</SFXEvent_Hardpoint_Destroyed>
+        <SFXEvent_Select>Unit_Select_Trebal</SFXEvent_Select>
+        <SFXEvent_Move_Into_Nebula></SFXEvent_Move_Into_Nebula>
+        <SFXEvent_Fleet_Move>Unit_Move_Trebal</SFXEvent_Fleet_Move>
+        <SFXEvent_Attack>Unit_Attack_Trebal</SFXEvent_Attack>
+        <SFXEvent_Guard>Unit_Move_Trebal</SFXEvent_Guard>
+        <SFXEvent_Stop></SFXEvent_Stop>
+        <SFXEvent_Health_Critical_Warning></SFXEvent_Health_Critical_Warning>
+        <SFXEvent_Health_Low_Warning></SFXEvent_Health_Low_Warning>
+        <SFXEvent_Build_Complete></SFXEvent_Build_Complete>
+        <Death_SFXEvent_Start_Die></Death_SFXEvent_Start_Die>
+        <SFXEvent_Ambient_Loop>Engine_Ancient_Low</SFXEvent_Ambient_Loop>
+        <Death_SFXEvent_Start_Die>Explosion_Aurora_Class</Death_SFXEvent_Start_Die>
+    </StarBase>
+    <StarBase Name="Ancient_Star_Base_3_Death_Clone">
+        <Text_ID>TEXT_REBEL_STAR_BASE_3</Text_ID>
+        <Space_Model_Name>Ancient_Space_Building_Station_Tech_3_D.alo</Space_Model_Name>
+        <Death_SFXEvent_Start_Die>Unit_Star_Destroyer_Death_SFX</Death_SFXEvent_Start_Die>
+        <Layer_Z_Adjust>0.0</Layer_Z_Adjust>
+        <CategoryMask> Capital </CategoryMask>
+        <Death_Persistence_Duration>0</Death_Persistence_Duration>
+        <Should_Death_Clone_Play_Idle> true </Should_Death_Clone_Play_Idle>
+    </StarBase>
+    <!--================================ Level 4 ================================-->
+    <StarBase Name="Ancient_Star_Base_4">
+        <Text_ID>TEXT_ANCIENTS_SPACE_BUILDING_STATION_T4</Text_ID>
+        <Encyclopedia_Text>TEXT_DESCRIPTION_ANCIENTS_GC_SPACE_STATION_T4</Encyclopedia_Text>
+        <Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_TAURI_STATION_TECH_4</Encyclopedia_Unit_Class>
+        <Space_Model_Name>Ancient_Space_Building_Station_Tech_4.alo</Space_Model_Name>
+        <Galactic_Model_Name>Ancient_Space_Building_Station_Tech4_Galactic.ALO</Galactic_Model_Name>
+        <Damage>75</Damage>
+        <Scale_Factor>1.0</Scale_Factor>
+        <Layer_Z_Adjust>0.0</Layer_Z_Adjust>
+        <Select_Box_Scale>500</Select_Box_Scale>
+        <Select_Box_Z_Adjust>-20</Select_Box_Z_Adjust>
+        <Icon_Name>ANCIENT_SPACE_BUILDING_STATION_T4.TGA</Icon_Name>
+        <Radar_Icon_Name>I_RADAR_STATION4_A.TGA</Radar_Icon_Name>
+        <Radar_Icon_Size>0.08  0.08</Radar_Icon_Size>
+        <Is_Visible_On_Radar>Yes</Is_Visible_On_Radar>
+        <Visible_On_Radar_When_Fogged>true</Visible_On_Radar_When_Fogged>
+        <GUI_Row>0</GUI_Row>
+        <!--===== Power Values =====-->
+        <Tactical_Health>10700</Tactical_Health>
+        <Shield_Points>8400</Shield_Points>
+        <Shield_Refresh_Rate>70</Shield_Refresh_Rate>
+        <Energy_Capacity>8000</Energy_Capacity>
+        <Energy_Refresh_Rate>1000</Energy_Refresh_Rate>
+        <AI_Combat_Power>16000</AI_Combat_Power>
+        <Armor_Type> Armor_Station </Armor_Type>
+        <Shield_Armor_Type>Armor_Station</Shield_Armor_Type>
+        <CategoryMask> Capital </CategoryMask>
+        <GUI_Bracket_Size>2</GUI_Bracket_Size>
+        <GUI_Bounds_Scale>0.5</GUI_Bounds_Scale>
+        <Additional_Population_Capacity>16</Additional_Population_Capacity>
+        <!--===== Build Dependencies =====-->
+        <Affiliation>Underworld</Affiliation>
+        <Build_Tab_Space_Station>Yes</Build_Tab_Space_Station>
+        <Build_Initially_Locked>No</Build_Initially_Locked>
+        <Build_Can_Be_Unlocked_By_Slicer>Yes</Build_Can_Be_Unlocked_By_Slicer>
+        <Build_Cost_Credits>5000</Build_Cost_Credits>
+        <Build_Time_Seconds>90</Build_Time_Seconds>
+        <Tech_Level>4</Tech_Level>
+        <Base_Level>4</Base_Level>
+        <Prev_Level_Base>Ancient_Star_Base_3</Prev_Level_Base>
+        <Next_Level_Base>Ancient_Star_Base_5</Next_Level_Base>
+        <Required_Ground_Base_Level>0</Required_Ground_Base_Level>
+        <Required_Star_Base_Level>3</Required_Star_Base_Level>
+        <Required_Planets>
+      Pegasus_Prelude_Planet_Asuras,
+      Pegasus_Prelude_Planet_Ascension,
+      Pegasus_Prelude_Planet_Asteroid_Field,
+      Pegasus_Prelude_Planet_Athos,
+      Pegasus_Prelude_Planet_Aurora,
+      Pegasus_Prelude_Planet_Belkan,
+      Pegasus_Prelude_Planet_Dagan,
+      Pegasus_Prelude_Planet_Doranda,
+      Pegasus_Prelude_Planet_Edowin,
+      Pegasus_Prelude_Planet_Gas_Nebula,
+      Pegasus_Prelude_Planet_Gelda,
+      Pegasus_Prelude_Planet_Gonta,
+      Pegasus_Prelude_Planet_Hoff,
+      Pegasus_Prelude_Planet_Iratus_Bestiola,
+      Pegasus_Prelude_Planet_Jenev,
+      Pegasus_Prelude_Planet_Kohal,
+      Pegasus_Prelude_Planet_Lantea,
+      Pegasus_Prelude_Planet_Laros,
+      Pegasus_Prelude_Planet_M6H_987,
+      Pegasus_Prelude_Planet_Manaria,
+      Pegasus_Prelude_Planet_Olesia,
+      Pegasus_Prelude_Planet_Orakis,
+      Pegasus_Prelude_Planet_Orlan,
+      Pegasus_Prelude_Planet_Proculis,
+      Pegasus_Prelude_Planet_Rasputin,
+      Pegasus_Prelude_Planet_Sagon,
+      Pegasus_Prelude_Planet_Sun,
+      Pegasus_Prelude_Planet_Taranis,
+      Pegasus_Prelude_Planet_Vadena,
+      Pegasus_Prelude_Planet_Wraith_Homeworld,
+      Pegasus_Prelude_Planet_Wraith_ZPM_Base
+        </Required_Planets>
+        <Behavior>DUMMY_STAR_BASE, SELECTABLE</Behavior>
+        <SpaceBehavior> SPACE_OBSTACLE, ABILITY_COUNTDOWN, POWERED, SHIELDED, SPAWN_SQUADRON, HIDE_WHEN_FOGGED, REVEAL, UNIT_AI, ION_STUN_EFFECT</SpaceBehavior>
+        <Reinforcement_Prevention_Radius> 2400 </Reinforcement_Prevention_Radius>
+        <Targeting_Max_Attack_Distance>2400.0</Targeting_Max_Attack_Distance>
+        <Dense_FOW_Reveal_Range_Multiplier>0.2</Dense_FOW_Reveal_Range_Multiplier>
+        <Space_FOW_Reveal_Range>2500.0</Space_FOW_Reveal_Range>
+        <Death_Explosions>Huge_Explosion_Space</Death_Explosions>
+        <Tactical_Buildable_Objects_Campaign>
+        </Tactical_Buildable_Objects_Campaign>
+        <HardPoints>
+      HP_Ancient_Station_Shield_00,
+	  HP_Ancient_Station_Supply_Dock_Dummy,
+      HP_Ancient_Station_Drone_Tank_Medium_04,
+	  HP_Ancient_Station_Drone_Tank_Medium_05,
+	  HP_Ancient_Station_Drone_Tank_Medium_06,
+	  HP_Ancient_Station_Hangar_08,
+      HP_Ancient_Station_Large_Laser_10,
+	  HP_Ancient_Station_Large_Laser_11,
+	  HP_Ancient_Station_Large_Laser_12,
+      HP_Ancient_Station_Medium_Laser_13,
+	  HP_Ancient_Station_Medium_Laser_14,
+	  HP_Ancient_Station_Medium_Laser_15,
+      HP_Ancient_Station_Sensor_Dummy
+        </HardPoints>
+        <Death_Clone>Damage_Normal, Ancient_Star_Base_4_Death_Clone</Death_Clone>
+        <Space_Layer> StaticObject </Space_Layer>
+        <Space_Obstacle_Offset> 0 0 0 </Space_Obstacle_Offset>
+        <Is_Dummy>No</Is_Dummy>
+        <Multisample_FOW_Check>Yes</Multisample_FOW_Check>
+        <Collidable_By_Projectile_Living>Yes</Collidable_By_Projectile_Living>
+        <Has_Space_Evaluator>True</Has_Space_Evaluator>
+        <Custom_Soft_Footprint_Radius> 300 </Custom_Soft_Footprint_Radius>
+        <Score_Cost_Credits> 1500</Score_Cost_Credits>
+        <Victory_Relevant>yes</Victory_Relevant>
+        <Retreat_Self_Destruct_Explosion>Self_Destruct_Star_Base_Level_4_Rebel</Retreat_Self_Destruct_Explosion>
+        <!-- Set to contuously spawn until fighter bay hard point is destroyed -->
+        <Starting_Spawned_Units_Tech_0>Ancient_Drone_Squadron, 3</Starting_Spawned_Units_Tech_0>
+        <Reserve_Spawned_Units_Tech_0>Ancient_Drone_Squadron, -1</Reserve_Spawned_Units_Tech_0>
+        <Starting_Spawned_Units_Tech_0>Ancient_Jumper_Squadron, 3</Starting_Spawned_Units_Tech_0>
+        <Reserve_Spawned_Units_Tech_0>Ancient_Jumper_Squadron, -1</Reserve_Spawned_Units_Tech_0>
+        <Starting_Spawned_Units_Tech_0>Ancient_Heavy_Bomber_Squadron, 1</Starting_Spawned_Units_Tech_0>
+        <Reserve_Spawned_Units_Tech_0>Ancient_Heavy_Bomber_Squadron, -1</Reserve_Spawned_Units_Tech_0>
+        <Starting_Spawned_Units_Tech_0>Ancient_Corvette, 2</Starting_Spawned_Units_Tech_0>
+        <Reserve_Spawned_Units_Tech_0>Ancient_Corvette, 0</Reserve_Spawned_Units_Tech_0>
+        <Spawned_Squadron_Delay_Seconds>10</Spawned_Squadron_Delay_Seconds>
+        <SFXEvent_Hardpoint_Destroyed> HARD_POINT_DUMMY_ART,  Effect_Empty_Sound</SFXEvent_Hardpoint_Destroyed>
+        <SFXEvent_Hardpoint_Destroyed> HARD_POINT_ENABLE_SPECIAL_ABILITY, Effect_Empty_Sound</SFXEvent_Hardpoint_Destroyed>
+        <SFXEvent_Hardpoint_Destroyed> HARD_POINT_ENGINE,  Effect_Empty_Sound</SFXEvent_Hardpoint_Destroyed>
+        <SFXEvent_Hardpoint_Destroyed> HARD_POINT_FIGHTER_BAY, Effect_Empty_Sound</SFXEvent_Hardpoint_Destroyed>
+        <SFXEvent_Hardpoint_Destroyed> HARD_POINT_GRAVITY_WELL,  Effect_Empty_Sound</SFXEvent_Hardpoint_Destroyed>
+        <SFXEvent_Hardpoint_Destroyed> HARD_POINT_SHIELD_GENERATOR, Effect_Empty_Sound</SFXEvent_Hardpoint_Destroyed>
+        <SFXEvent_Hardpoint_Destroyed> HARD_POINT_TRACTOR_BEAM, Effect_Empty_Sound</SFXEvent_Hardpoint_Destroyed>
+        <SFXEvent_Hardpoint_Destroyed> HARD_POINT_WEAPON_ION_CANNON, Effect_Empty_Sound</SFXEvent_Hardpoint_Destroyed>
+        <SFXEvent_Hardpoint_Destroyed> HARD_POINT_WEAPON_LASER, Effect_Empty_Sound</SFXEvent_Hardpoint_Destroyed>
+        <SFXEvent_Hardpoint_Destroyed> HARD_POINT_WEAPON_MASS_DRIVER,  Effect_Empty_Sound</SFXEvent_Hardpoint_Destroyed>
+        <SFXEvent_Hardpoint_Destroyed> HARD_POINT_WEAPON_MISSILE,  Effect_Empty_Sound</SFXEvent_Hardpoint_Destroyed>
+        <SFXEvent_Hardpoint_Destroyed> HARD_POINT_WEAPON_SPECIAL,  Effect_Empty_Sound</SFXEvent_Hardpoint_Destroyed>
+        <SFXEvent_Hardpoint_Destroyed> HARD_POINT_WEAPON_TORPEDO,  Effect_Empty_Sound</SFXEvent_Hardpoint_Destroyed>
+        <SFXEvent_Select>Unit_Select_Trebal</SFXEvent_Select>
+        <SFXEvent_Move_Into_Nebula></SFXEvent_Move_Into_Nebula>
+        <SFXEvent_Fleet_Move>Unit_Move_Trebal</SFXEvent_Fleet_Move>
+        <SFXEvent_Attack>Unit_Attack_Trebal</SFXEvent_Attack>
+        <SFXEvent_Guard>Unit_Move_Trebal</SFXEvent_Guard>
+        <SFXEvent_Stop></SFXEvent_Stop>
+        <SFXEvent_Health_Critical_Warning></SFXEvent_Health_Critical_Warning>
+        <SFXEvent_Health_Low_Warning></SFXEvent_Health_Low_Warning>
+        <SFXEvent_Build_Complete></SFXEvent_Build_Complete>
+        <Death_SFXEvent_Start_Die></Death_SFXEvent_Start_Die>
+        <SFXEvent_Ambient_Loop>Engine_Ancient_Low</SFXEvent_Ambient_Loop>
+        <Death_SFXEvent_Start_Die>Explosion_Aurora_Class</Death_SFXEvent_Start_Die>
+    </StarBase>
+    <StarBase Name="Ancient_Star_Base_4_Death_Clone">
+        <Text_ID>TEXT_REBEL_STAR_BASE_4</Text_ID>
+        <Space_Model_Name>Ancient_Space_Building_Station_Tech_4_D.alo</Space_Model_Name>
+        <Death_SFXEvent_Start_Die>Unit_Star_Destroyer_Death_SFX</Death_SFXEvent_Start_Die>
+        <Layer_Z_Adjust>0.0</Layer_Z_Adjust>
+        <CategoryMask> Capital </CategoryMask>
+        <Death_Persistence_Duration>0</Death_Persistence_Duration>
+        <Should_Death_Clone_Play_Idle> true </Should_Death_Clone_Play_Idle>
+    </StarBase>
+    <!--================================ Level 5 ================================-->
+    <StarBase Name="Ancient_Star_Base_5">
+        <Text_ID>TEXT_ANCIENTS_SPACE_BUILDING_STATION_T5</Text_ID>
+        <Encyclopedia_Text>TEXT_DESCRIPTION_ANCIENTS_GC_SPACE_STATION_T5</Encyclopedia_Text>
+        <Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_TAURI_STATION_TECH_5</Encyclopedia_Unit_Class>
+        <Space_Model_Name>Ancient_Space_Building_Station_Tech_5.alo</Space_Model_Name>
+        <Galactic_Model_Name>Ancient_Space_Building_Station_Tech5_Galactic.ALO</Galactic_Model_Name>
+        <Damage>85</Damage>
+        <Scale_Factor>1.0</Scale_Factor>
+        <Layer_Z_Adjust>0.0</Layer_Z_Adjust>
+        <Select_Box_Scale>500</Select_Box_Scale>
+        <Select_Box_Z_Adjust>-20</Select_Box_Z_Adjust>
+        <Icon_Name>ANCIENT_SPACE_BUILDING_STATION_T5.TGA</Icon_Name>
+        <Radar_Icon_Name>I_RADAR_STATION5_A.TGA</Radar_Icon_Name>
+        <Radar_Icon_Size>0.08  0.08</Radar_Icon_Size>
+        <Is_Visible_On_Radar>Yes</Is_Visible_On_Radar>
+        <Visible_On_Radar_When_Fogged>true</Visible_On_Radar_When_Fogged>
+        <GUI_Row>0</GUI_Row>
+        <!--===== Power Values =====-->
+        <Tactical_Health>2340</Tactical_Health>
+        <Shield_Points>10500</Shield_Points>
+        <Shield_Refresh_Rate>100</Shield_Refresh_Rate>
+        <Energy_Capacity>10000</Energy_Capacity>
+        <Energy_Refresh_Rate>1000</Energy_Refresh_Rate>
+        <AI_Combat_Power>18000</AI_Combat_Power>
+        <Armor_Type> Armor_Station </Armor_Type>
+        <Shield_Armor_Type>Armor_Station</Shield_Armor_Type>
+        <CategoryMask> Capital </CategoryMask>
+        <Targeting_Priority_Set>Capital</Targeting_Priority_Set>
+        <GUI_Bracket_Size>2</GUI_Bracket_Size>
+        <GUI_Bounds_Scale>0.6</GUI_Bounds_Scale>
+        <Additional_Population_Capacity>22</Additional_Population_Capacity>
+        <!--===== Build Dependencies =====-->
+        <Affiliation>Underworld</Affiliation>
+        <Build_Tab_Space_Station>Yes</Build_Tab_Space_Station>
+        <Build_Initially_Locked>No</Build_Initially_Locked>
+        <Build_Can_Be_Unlocked_By_Slicer>Yes</Build_Can_Be_Unlocked_By_Slicer>
+        <Build_Cost_Credits>6500</Build_Cost_Credits>
+        <Build_Time_Seconds>150</Build_Time_Seconds>
+        <Tech_Level>5</Tech_Level>
+        <Base_Level>5</Base_Level>
+        <Prev_Level_Base>Ancient_Star_Base_4</Prev_Level_Base>
+        <!-- === Ancients are very adcanced, so they have 6 levels ! === -->
+        <Next_Level_Base></Next_Level_Base>
+        <Required_Ground_Base_Level>0</Required_Ground_Base_Level>
+        <Required_Star_Base_Level>4</Required_Star_Base_Level>
+        <Required_Planets>
+      Pegasus_Prelude_Planet_Asuras,
+      Pegasus_Prelude_Planet_Ascension,
+      Pegasus_Prelude_Planet_Asteroid_Field,
+      Pegasus_Prelude_Planet_Athos,
+      Pegasus_Prelude_Planet_Aurora,
+      Pegasus_Prelude_Planet_Belkan,
+      Pegasus_Prelude_Planet_Dagan,
+      Pegasus_Prelude_Planet_Doranda,
+      Pegasus_Prelude_Planet_Edowin,
+      Pegasus_Prelude_Planet_Gas_Nebula,
+      Pegasus_Prelude_Planet_Gelda,
+      Pegasus_Prelude_Planet_Gonta,
+      Pegasus_Prelude_Planet_Hoff,
+      Pegasus_Prelude_Planet_Iratus_Bestiola,
+      Pegasus_Prelude_Planet_Jenev,
+      Pegasus_Prelude_Planet_Kohal,
+      Pegasus_Prelude_Planet_Lantea,
+      Pegasus_Prelude_Planet_Laros,
+      Pegasus_Prelude_Planet_M6H_987,
+      Pegasus_Prelude_Planet_Manaria,
+      Pegasus_Prelude_Planet_Olesia,
+      Pegasus_Prelude_Planet_Orakis,
+      Pegasus_Prelude_Planet_Orlan,
+      Pegasus_Prelude_Planet_Proculis,
+      Pegasus_Prelude_Planet_Rasputin,
+      Pegasus_Prelude_Planet_Sagon,
+      Pegasus_Prelude_Planet_Sun,
+      Pegasus_Prelude_Planet_Taranis,
+      Pegasus_Prelude_Planet_Vadena,
+      Pegasus_Prelude_Planet_Wraith_Homeworld,
+      Pegasus_Prelude_Planet_Wraith_ZPM_Base
+        </Required_Planets>
+        <Behavior>DUMMY_STAR_BASE, SELECTABLE</Behavior>
+        <SpaceBehavior> SPACE_OBSTACLE, ABILITY_COUNTDOWN, POWERED, SHIELDED, SPAWN_SQUADRON, HIDE_WHEN_FOGGED, REVEAL, UNIT_AI, ION_STUN_EFFECT</SpaceBehavior>
+        <Reinforcement_Prevention_Radius> 2500 </Reinforcement_Prevention_Radius>
+        <Targeting_Max_Attack_Distance>2600.0</Targeting_Max_Attack_Distance>
+        <Dense_FOW_Reveal_Range_Multiplier>0.2</Dense_FOW_Reveal_Range_Multiplier>
+        <Space_FOW_Reveal_Range>2600.0</Space_FOW_Reveal_Range>
+        <Death_Explosions>Huge_Explosion_Space</Death_Explosions>
+        <Tactical_Buildable_Objects_Campaign>
+        </Tactical_Buildable_Objects_Campaign>
+        <HardPoints>
+      HP_Ancient_Station_Shield_00,
+	  HP_Ancient_Station_Supply_Dock_Dummy,
+	  HP_Ancient_Station_Drone_Tank_Heavy_02,
+	  HP_Ancient_Station_Drone_Tank_Heavy_03,
+	  HP_Ancient_Station_Hangar_08,
+      HP_Ancient_Station_Large_Laser_10,
+	  HP_Ancient_Station_Large_Laser_11,
+	  HP_Ancient_Station_Large_Laser_12,
+      HP_Ancient_Station_Medium_Laser_13,
+	  HP_Ancient_Station_Medium_Laser_14,
+	  HP_Ancient_Station_Medium_Laser_15,
+      HP_Ancient_Station_Small_Drone_Tank_16,
+	  HP_Ancient_Station_Small_Drone_Tank_17,
+	  HP_Ancient_Station_Small_Drone_Tank_18,
+      HP_Ancient_Station_Large_Laser_19,
+	  HP_Ancient_Station_Large_Laser_20,
+	  HP_Ancient_Station_Superlaser,
+      HP_Ancient_Station_Sensor_Dummy
+        </HardPoints>
+        <Death_Clone>Damage_Normal, Ancient_Star_Base_5_Death_Clone</Death_Clone>
+        <Space_Layer> StaticObject </Space_Layer>
+        <Space_Obstacle_Offset> 0 0 0 </Space_Obstacle_Offset>
+        <Is_Dummy>No</Is_Dummy>
+        <Multisample_FOW_Check>Yes</Multisample_FOW_Check>
+        <Collidable_By_Projectile_Living>Yes</Collidable_By_Projectile_Living>
+        <Has_Space_Evaluator>True</Has_Space_Evaluator>
+        <Custom_Soft_Footprint_Radius> 300 </Custom_Soft_Footprint_Radius>
+        <Score_Cost_Credits> 1500</Score_Cost_Credits>
+        <Victory_Relevant>yes</Victory_Relevant>
+        <Retreat_Self_Destruct_Explosion>Self_Destruct_Star_Base_Level_5_Rebel</Retreat_Self_Destruct_Explosion>
+        <!-- Set to contuously spawn until fighter bay hard point is destroyed -->
+        <Starting_Spawned_Units_Tech_0>Ancient_Drone_Squadron, 3</Starting_Spawned_Units_Tech_0>
+        <Reserve_Spawned_Units_Tech_0>Ancient_Drone_Squadron, -1</Reserve_Spawned_Units_Tech_0>
+        <Starting_Spawned_Units_Tech_0>Ancient_Jumper_Squadron, 3</Starting_Spawned_Units_Tech_0>
+        <Reserve_Spawned_Units_Tech_0>Ancient_Jumper_Squadron, -1</Reserve_Spawned_Units_Tech_0>
+        <Starting_Spawned_Units_Tech_0>Ancient_Heavy_Bomber_Squadron, 3</Starting_Spawned_Units_Tech_0>
+        <Reserve_Spawned_Units_Tech_0>Ancient_Heavy_Bomber_Squadron, -1</Reserve_Spawned_Units_Tech_0>
+        <Starting_Spawned_Units_Tech_0>Ancient_Corvette, 2</Starting_Spawned_Units_Tech_0>
+        <Reserve_Spawned_Units_Tech_0>Ancient_Corvette, 0</Reserve_Spawned_Units_Tech_0>
+        <Starting_Spawned_Units_Tech_0>Ancient_Frigate, 1</Starting_Spawned_Units_Tech_0>
+        <Reserve_Spawned_Units_Tech_0>Ancient_Frigate, 0</Reserve_Spawned_Units_Tech_0>
+        <Spawned_Squadron_Delay_Seconds>10</Spawned_Squadron_Delay_Seconds>
+        <SFXEvent_Hardpoint_Destroyed> HARD_POINT_DUMMY_ART,  Effect_Empty_Sound</SFXEvent_Hardpoint_Destroyed>
+        <SFXEvent_Hardpoint_Destroyed> HARD_POINT_ENABLE_SPECIAL_ABILITY, Effect_Empty_Sound</SFXEvent_Hardpoint_Destroyed>
+        <SFXEvent_Hardpoint_Destroyed> HARD_POINT_ENGINE,  Effect_Empty_Sound</SFXEvent_Hardpoint_Destroyed>
+        <SFXEvent_Hardpoint_Destroyed> HARD_POINT_FIGHTER_BAY, Effect_Empty_Sound</SFXEvent_Hardpoint_Destroyed>
+        <SFXEvent_Hardpoint_Destroyed> HARD_POINT_GRAVITY_WELL,  Effect_Empty_Sound</SFXEvent_Hardpoint_Destroyed>
+        <SFXEvent_Hardpoint_Destroyed> HARD_POINT_SHIELD_GENERATOR, Effect_Empty_Sound</SFXEvent_Hardpoint_Destroyed>
+        <SFXEvent_Hardpoint_Destroyed> HARD_POINT_TRACTOR_BEAM, Effect_Empty_Sound</SFXEvent_Hardpoint_Destroyed>
+        <SFXEvent_Hardpoint_Destroyed> HARD_POINT_WEAPON_ION_CANNON, Effect_Empty_Sound</SFXEvent_Hardpoint_Destroyed>
+        <SFXEvent_Hardpoint_Destroyed> HARD_POINT_WEAPON_LASER, Effect_Empty_Sound</SFXEvent_Hardpoint_Destroyed>
+        <SFXEvent_Hardpoint_Destroyed> HARD_POINT_WEAPON_MASS_DRIVER,  Effect_Empty_Sound</SFXEvent_Hardpoint_Destroyed>
+        <SFXEvent_Hardpoint_Destroyed> HARD_POINT_WEAPON_MISSILE,  Effect_Empty_Sound</SFXEvent_Hardpoint_Destroyed>
+        <SFXEvent_Hardpoint_Destroyed> HARD_POINT_WEAPON_SPECIAL,  Effect_Empty_Sound</SFXEvent_Hardpoint_Destroyed>
+        <SFXEvent_Hardpoint_Destroyed> HARD_POINT_WEAPON_TORPEDO,  Effect_Empty_Sound</SFXEvent_Hardpoint_Destroyed>
+        <SFXEvent_Select>Unit_Select_Trebal</SFXEvent_Select>
+        <SFXEvent_Move_Into_Nebula></SFXEvent_Move_Into_Nebula>
+        <SFXEvent_Fleet_Move>Unit_Move_Trebal</SFXEvent_Fleet_Move>
+        <SFXEvent_Attack>Unit_Attack_Trebal</SFXEvent_Attack>
+        <SFXEvent_Guard>Unit_Move_Trebal</SFXEvent_Guard>
+        <SFXEvent_Stop></SFXEvent_Stop>
+        <SFXEvent_Health_Critical_Warning></SFXEvent_Health_Critical_Warning>
+        <SFXEvent_Health_Low_Warning></SFXEvent_Health_Low_Warning>
+        <SFXEvent_Build_Complete></SFXEvent_Build_Complete>
+        <Death_SFXEvent_Start_Die></Death_SFXEvent_Start_Die>
+        <SFXEvent_Ambient_Loop>Engine_Ancient_Low</SFXEvent_Ambient_Loop>
+        <Death_SFXEvent_Start_Die>Explosion_Aurora_Class</Death_SFXEvent_Start_Die>
+    </StarBase>
+    <StarBase Name="Ancient_Star_Base_5_Death_Clone">
+        <Text_ID>TEXT_REBEL_STAR_BASE_5</Text_ID>
+        <Space_Model_Name>Ancient_Space_Building_Station_Tech_5_D.alo</Space_Model_Name>
+        <Death_SFXEvent_Start_Die>Unit_Star_Destroyer_Death_SFX</Death_SFXEvent_Start_Die>
+        <Layer_Z_Adjust>0.0</Layer_Z_Adjust>
+        <CategoryMask> Capital </CategoryMask>
+        <Death_Persistence_Duration>0</Death_Persistence_Duration>
+        <Should_Death_Clone_Play_Idle> true </Should_Death_Clone_Play_Idle>
+    </StarBase>
+
+
+
+    <!--=========================== Skirmish Starbases =============================-->
+    <StarBase Name="Skirmish_Ancient_Star_Base_1">
+        <Variant_Of_Existing_Type>Ancient_Star_Base_1</Variant_Of_Existing_Type>
+
+        <HardPoints>
+      HP_Ancient_Station_Shield_00,
+	  HP_Ancient_Station_Supply_Dock_01,
+	  HP_Ancient_Station_Hangar_08,
+      HP_Ancient_Station_Medium_Laser_13,
+	  HP_Ancient_Station_Medium_Laser_14,
+	  HP_Ancient_Station_Medium_Laser_15,
+      HP_Ancient_Station_Sensor_25
+        </HardPoints>
+
+        <!-- Tactical Production Options, seems to cause Start crash if more then 100 Entries!! -->
+        <Tactical_Buildable_Objects_Multiplayer>    
+      Underworld,
+         Ancient_Jumper_Squadron_SK,
+         Ancient_Drone_Squadron,
+         Ancient_Hero_Melia, 
+          
+         Ancient_Starbase_Upgrade_Level_2,
+        </Tactical_Buildable_Objects_Multiplayer>
+
+        <Layer_Z_Adjust>-300.0</Layer_Z_Adjust>
+        <Is_Community_Property>Yes</Is_Community_Property>
+        <Visible_To_Enemies_When_Empty>True</Visible_To_Enemies_When_Empty>
+        <Reinforcement_Prevention_Radius> 2000 </Reinforcement_Prevention_Radius>
+        <!-- Data to prevent this from being buildable in galactic mode -->
+        <Build_Tab_Space_Station>No</Build_Tab_Space_Station>
+        <Build_Cost_Credits>0</Build_Cost_Credits>
+        <Build_Time_Seconds>0</Build_Time_Seconds>
+        <Required_Ground_Base_Level>0</Required_Ground_Base_Level>
+        <Required_Star_Base_Level>0</Required_Star_Base_Level>
+        <Next_Level_Base>Skirmish_Ancient_Star_Base_2</Next_Level_Base>
+        <Last_State_Visible_Under_FOW> True </Last_State_Visible_Under_FOW>
+        <Initial_State_Visible_Under_FOW>False</Initial_State_Visible_Under_FOW>
+        <Visible_On_Radar_When_Fogged>False</Visible_On_Radar_When_Fogged>
+
+        <Abilities SubObjectList="Yes">
+            <Income_Stream_Ability Name="Ancient_Starbase_Income_Stream">
+                <Activation_Style>Skirmish_Automatic</Activation_Style>
+                <Initially_Enabled>Yes</Initially_Enabled>
+                <Base_Income_Value>20</Base_Income_Value>
+                <Base_Interval_In_Secs>10</Base_Interval_In_Secs>
+                <Split_Income_With_Allies>Yes</Split_Income_With_Allies>
+                <Split_Favors_Owner>No</Split_Favors_Owner>
+                <Full_Amount_To_Everyone>Yes</Full_Amount_To_Everyone>
+            </Income_Stream_Ability>
+            <Income_Stream_Mod_Ability Name="Ancient_Supply_Dock_Income_Bonus">
+                <Activation_Style>Skirmish_Automatic</Activation_Style>
+                <Initially_Enabled>No</Initially_Enabled>
+                <Income_Multiplier>1.0</Income_Multiplier>
+                <Income_Additive_Value>20</Income_Additive_Value>
+                <Interval_Multiplier>1.0</Interval_Multiplier>
+                <Stacking_Category>0</Stacking_Category>
+                <Target_Stream_Source>Skirmish_Ancient_Star_Base_1</Target_Stream_Source>
+                <Affects_All_Allied_Sources>Yes</Affects_All_Allied_Sources>
+                <Reverse_Application_Logic>No</Reverse_Application_Logic>
+            </Income_Stream_Mod_Ability>
+            <Enable_Radar_Ability Name="Ancient_Sensor_Array_Enable_Radar">
+                <Activation_Style>Skirmish_Automatic</Activation_Style>
+                <Initially_Enabled>No</Initially_Enabled>
+                <Affects_All_Allies>True</Affects_All_Allies>
+            </Enable_Radar_Ability>
+        </Abilities>
+    </StarBase>
+
+
+    <StarBase Name="Skirmish_Ancient_Star_Base_2">
+        <Variant_Of_Existing_Type>Ancient_Star_Base_2</Variant_Of_Existing_Type>
+
+        <HardPoints>
+      HP_Ancient_Station_Shield_00,
+      HP_Ancient_Station_Supply_Dock_01,
+	  HP_Ancient_Station_Hangar_08,
+      HP_Ancient_Station_Medium_Laser_13,
+	  HP_Ancient_Station_Medium_Laser_14,
+	  HP_Ancient_Station_Medium_Laser_15,
+      HP_Ancient_Station_Sensor_25
+        </HardPoints>
+
+        <!-- Tactical Production Options -->
+        <Tactical_Buildable_Objects_Multiplayer>
+      Underworld,        
+         Ancient_Jumper_Squadron_SK,
+         Ancient_Drone_Squadron,
+         Ancient_Heavy_Fighter_Squadron,
+         Ancient_Heavy_Bomber_Squadron,
+         Ancient_Corvette,
+         Ancient_Hero_Melia,
+         Ancient_Hero_Janus, 
+                
+         Ancient_Starbase_Upgrade_Level_3,                                 
+        </Tactical_Buildable_Objects_Multiplayer>
+
+        <Layer_Z_Adjust>-300.0</Layer_Z_Adjust>
+        <Is_Community_Property>Yes</Is_Community_Property>
+        <Visible_To_Enemies_When_Empty>True</Visible_To_Enemies_When_Empty>
+        <Reinforcement_Prevention_Radius> 2000 </Reinforcement_Prevention_Radius>
+        <!-- Data to prevent this from being buildable in galactic mode -->
+        <Build_Tab_Space_Station>No</Build_Tab_Space_Station>
+        <Build_Cost_Credits>0</Build_Cost_Credits>
+        <Build_Time_Seconds>0</Build_Time_Seconds>
+        <Required_Ground_Base_Level>0</Required_Ground_Base_Level>
+        <Required_Star_Base_Level>1</Required_Star_Base_Level>
+        <Prev_Level_Base>Skirmish_Ancient_Star_Base_1</Prev_Level_Base>
+        <Next_Level_Base>Skirmish_Ancient_Star_Base_3</Next_Level_Base>
+        <Last_State_Visible_Under_FOW> True </Last_State_Visible_Under_FOW>
+        <Initial_State_Visible_Under_FOW>False</Initial_State_Visible_Under_FOW>
+        <Visible_On_Radar_When_Fogged>False</Visible_On_Radar_When_Fogged>
+
+        <Abilities SubObjectList="Yes">
+            <Income_Stream_Ability Name="Ancient_Starbase_Income_Stream">
+                <Activation_Style>Skirmish_Automatic</Activation_Style>
+                <Initially_Enabled>Yes</Initially_Enabled>
+                <Base_Income_Value>25</Base_Income_Value>
+                <Base_Interval_In_Secs>10</Base_Interval_In_Secs>
+                <Split_Income_With_Allies>Yes</Split_Income_With_Allies>
+                <Split_Favors_Owner>No</Split_Favors_Owner>
+                <Full_Amount_To_Everyone>Yes</Full_Amount_To_Everyone>
+            </Income_Stream_Ability>
+            <Income_Stream_Mod_Ability Name="Ancient_Supply_Dock_Income_Bonus">
+                <Activation_Style>Skirmish_Automatic</Activation_Style>
+                <Initially_Enabled>No</Initially_Enabled>
+                <Income_Multiplier>1.0</Income_Multiplier>
+                <Income_Additive_Value>25</Income_Additive_Value>
+                <Interval_Multiplier>1.0</Interval_Multiplier>
+                <Stacking_Category>0</Stacking_Category>
+                <Target_Stream_Source>Skirmish_Ancient_Star_Base_2</Target_Stream_Source>
+                <Affects_All_Allied_Sources>Yes</Affects_All_Allied_Sources>
+                <Reverse_Application_Logic>No</Reverse_Application_Logic>
+            </Income_Stream_Mod_Ability>
+            <Enable_Radar_Ability Name="Ancient_Sensor_Array_Enable_Radar">
+                <Activation_Style>Skirmish_Automatic</Activation_Style>
+                <Initially_Enabled>No</Initially_Enabled>
+                <Affects_All_Allies>True</Affects_All_Allies>
+            </Enable_Radar_Ability>
+        </Abilities>
+    </StarBase>
+
+    <StarBase Name="Skirmish_Ancient_Star_Base_3">
+        <Variant_Of_Existing_Type>Ancient_Star_Base_3</Variant_Of_Existing_Type>
+
+        <HardPoints>
+      HP_Ancient_Station_Shield_00,
+      HP_Ancient_Station_Supply_Dock_01,
+	  HP_Ancient_Station_Hangar_08,
+      HP_Ancient_Station_Large_Laser_10,
+	  HP_Ancient_Station_Large_Laser_11,
+	  HP_Ancient_Station_Large_Laser_12,
+      HP_Ancient_Station_Medium_Laser_13,
+	  HP_Ancient_Station_Medium_Laser_14,
+	  HP_Ancient_Station_Medium_Laser_15,
+      HP_Ancient_Station_Sensor_25
+        </HardPoints>
+
+        <!-- Tactical Production Options -->
+        <Tactical_Buildable_Objects_Multiplayer>
+      Underworld,
+         Ancient_Jumper_Squadron_SK,
+         Ancient_Drone_Squadron,
+         Ancient_Heavy_Fighter_Squadron,
+         Ancient_Heavy_Bomber_Squadron,
+         Ancient_Corvette,
+         Ancient_Frigate,
+         Ancient_Destroyer,
+         Ancient_Hero_Melia,
+         Ancient_Hero_Janus, 
+         Ancient_Hero_Morgan, 
+         
+         Ancient_Starbase_Upgrade_Level_4,                                
+        </Tactical_Buildable_Objects_Multiplayer>
+
+        <Layer_Z_Adjust>-300.0</Layer_Z_Adjust>
+        <Is_Community_Property>Yes</Is_Community_Property>
+        <Visible_To_Enemies_When_Empty>True</Visible_To_Enemies_When_Empty>
+        <Reinforcement_Prevention_Radius> 2000 </Reinforcement_Prevention_Radius>
+        <!-- Data to prevent this from being buildable in galactic mode -->
+        <Build_Tab_Space_Station>No</Build_Tab_Space_Station>
+        <Build_Cost_Credits>0</Build_Cost_Credits>
+        <Build_Time_Seconds>0</Build_Time_Seconds>
+        <Required_Ground_Base_Level>0</Required_Ground_Base_Level>
+        <Required_Star_Base_Level>2</Required_Star_Base_Level>
+        <Prev_Level_Base>Skirmish_Ancient_Star_Base_2</Prev_Level_Base>
+        <Next_Level_Base>Skirmish_Ancient_Star_Base_4</Next_Level_Base>
+        <Last_State_Visible_Under_FOW> True </Last_State_Visible_Under_FOW>
+        <Initial_State_Visible_Under_FOW>False</Initial_State_Visible_Under_FOW>
+        <Visible_On_Radar_When_Fogged>False</Visible_On_Radar_When_Fogged>
+
+        <Abilities SubObjectList="Yes">
+            <Income_Stream_Ability Name="Ancient_Starbase_Income_Stream">
+                <Activation_Style>Skirmish_Automatic</Activation_Style>
+                <Initially_Enabled>Yes</Initially_Enabled>
+                <Base_Income_Value>30</Base_Income_Value>
+                <Base_Interval_In_Secs>10</Base_Interval_In_Secs>
+                <Split_Income_With_Allies>Yes</Split_Income_With_Allies>
+                <Split_Favors_Owner>No</Split_Favors_Owner>
+                <Full_Amount_To_Everyone>Yes</Full_Amount_To_Everyone>
+            </Income_Stream_Ability>
+            <Income_Stream_Mod_Ability Name="Ancient_Supply_Dock_Income_Bonus">
+                <Activation_Style>Skirmish_Automatic</Activation_Style>
+                <Initially_Enabled>No</Initially_Enabled>
+                <Income_Multiplier>1.0</Income_Multiplier>
+                <Income_Additive_Value>30</Income_Additive_Value>
+                <Interval_Multiplier>1.0</Interval_Multiplier>
+                <Stacking_Category>0</Stacking_Category>
+                <Target_Stream_Source>Skirmish_Ancient_Star_Base_3</Target_Stream_Source>
+                <Affects_All_Allied_Sources>Yes</Affects_All_Allied_Sources>
+                <Reverse_Application_Logic>No</Reverse_Application_Logic>
+            </Income_Stream_Mod_Ability>
+            <Enable_Radar_Ability Name="Ancient_Sensor_Array_Enable_Radar">
+                <Activation_Style>Skirmish_Automatic</Activation_Style>
+                <Initially_Enabled>No</Initially_Enabled>
+                <Affects_All_Allies>True</Affects_All_Allies>
+            </Enable_Radar_Ability>
+        </Abilities>
+    </StarBase>
+
+
+    <StarBase Name="Skirmish_Ancient_Star_Base_4">
+        <Variant_Of_Existing_Type>Ancient_Star_Base_4</Variant_Of_Existing_Type>
+
+        <HardPoints>
+      HP_Ancient_Station_Shield_00,
+	  HP_Ancient_Station_Supply_Dock_01,
+      HP_Ancient_Station_Drone_Tank_Medium_04,
+	  HP_Ancient_Station_Drone_Tank_Medium_05,
+	  HP_Ancient_Station_Drone_Tank_Medium_06,
+	  HP_Ancient_Station_Hangar_08,
+      HP_Ancient_Station_Large_Laser_10,
+	  HP_Ancient_Station_Large_Laser_11,
+	  HP_Ancient_Station_Large_Laser_12,
+      HP_Ancient_Station_Medium_Laser_13,
+	  HP_Ancient_Station_Medium_Laser_14,
+	  HP_Ancient_Station_Medium_Laser_15,
+      HP_Ancient_Station_Sensor_25
+        </HardPoints>
+
+        <!-- Tactical Production Options -->
+        <Tactical_Buildable_Objects_Multiplayer>
+      Underworld,
+         Ancient_Jumper_Squadron_SK,
+         Ancient_Drone_Squadron,
+         Ancient_Heavy_Fighter_Squadron,
+         Ancient_Heavy_Bomber_Squadron,
+         Ancient_Corvette,
+         Ancient_Frigate,
+         Ancient_Destroyer,
+         Ancient_Cruiser,
+         Ancient_Hero_Melia,
+         Ancient_Hero_Janus, 
+         Ancient_Hero_Morgan,
+         Ancient_Hero_Wallus,
+         
+         Ancient_Starbase_Upgrade_Level_5,                        
+        </Tactical_Buildable_Objects_Multiplayer>
+
+        <Layer_Z_Adjust>-300.0</Layer_Z_Adjust>
+        <Is_Community_Property>Yes</Is_Community_Property>
+        <Visible_To_Enemies_When_Empty>True</Visible_To_Enemies_When_Empty>
+        <Reinforcement_Prevention_Radius> 2000 </Reinforcement_Prevention_Radius>
+        <!-- Data to prevent this from being buildable in galactic mode -->
+        <Build_Tab_Space_Station>No</Build_Tab_Space_Station>
+        <Build_Cost_Credits>0</Build_Cost_Credits>
+        <Build_Time_Seconds>0</Build_Time_Seconds>
+        <Required_Ground_Base_Level>0</Required_Ground_Base_Level>
+        <Required_Star_Base_Level>3</Required_Star_Base_Level>
+        <Prev_Level_Base>Skirmish_Ancient_Star_Base_3</Prev_Level_Base>
+        <Next_Level_Base>Skirmish_Ancient_Star_Base_5</Next_Level_Base>
+        <Last_State_Visible_Under_FOW> True </Last_State_Visible_Under_FOW>
+        <Initial_State_Visible_Under_FOW>False</Initial_State_Visible_Under_FOW>
+        <Visible_On_Radar_When_Fogged>False</Visible_On_Radar_When_Fogged>
+
+        <Abilities SubObjectList="Yes">
+            <Income_Stream_Ability Name="Ancient_Starbase_Income_Stream">
+                <Activation_Style>Skirmish_Automatic</Activation_Style>
+                <Initially_Enabled>Yes</Initially_Enabled>
+                <Base_Income_Value>35</Base_Income_Value>
+                <Base_Interval_In_Secs>10</Base_Interval_In_Secs>
+                <Split_Income_With_Allies>Yes</Split_Income_With_Allies>
+                <Split_Favors_Owner>No</Split_Favors_Owner>
+                <Full_Amount_To_Everyone>Yes</Full_Amount_To_Everyone>
+            </Income_Stream_Ability>
+            <Income_Stream_Mod_Ability Name="Ancient_Supply_Dock_Income_Bonus">
+                <Activation_Style>Skirmish_Automatic</Activation_Style>
+                <Initially_Enabled>No</Initially_Enabled>
+                <Income_Multiplier>1.0</Income_Multiplier>
+                <Income_Additive_Value>35</Income_Additive_Value>
+                <Interval_Multiplier>1.0</Interval_Multiplier>
+                <Stacking_Category>0</Stacking_Category>
+                <Target_Stream_Source>Skirmish_Ancient_Star_Base_4</Target_Stream_Source>
+                <Affects_All_Allied_Sources>Yes</Affects_All_Allied_Sources>
+                <Reverse_Application_Logic>No</Reverse_Application_Logic>
+            </Income_Stream_Mod_Ability>
+            <Enable_Radar_Ability Name="Ancient_Sensor_Array_Enable_Radar">
+                <Activation_Style>Skirmish_Automatic</Activation_Style>
+                <Initially_Enabled>No</Initially_Enabled>
+                <Affects_All_Allies>True</Affects_All_Allies>
+            </Enable_Radar_Ability>
+        </Abilities>
+    </StarBase>
+
+
+    <StarBase Name="Skirmish_Ancient_Star_Base_5">
+        <Variant_Of_Existing_Type>Ancient_Star_Base_5</Variant_Of_Existing_Type>
+        <!-- Tactical Production Options -->
+        <HardPoints>
+      HP_Ancient_Station_Shield_00,
+	  HP_Ancient_Station_Supply_Dock_01,
+	  HP_Ancient_Station_Drone_Tank_Heavy_02,
+	  HP_Ancient_Station_Drone_Tank_Heavy_03,
+	  HP_Ancient_Station_Hangar_08,
+      HP_Ancient_Station_Large_Laser_10,
+	  HP_Ancient_Station_Large_Laser_11,
+	  HP_Ancient_Station_Large_Laser_12,
+      HP_Ancient_Station_Medium_Laser_13,
+	  HP_Ancient_Station_Medium_Laser_14,
+	  HP_Ancient_Station_Medium_Laser_15,
+      HP_Ancient_Station_Small_Drone_Tank_16,
+	  HP_Ancient_Station_Small_Drone_Tank_17,
+	  HP_Ancient_Station_Small_Drone_Tank_18,
+      HP_Ancient_Station_Large_Laser_19,
+	  HP_Ancient_Station_Large_Laser_20,
+	  HP_Ancient_Station_Superlaser,
+      HP_Ancient_Station_Sensor_25
+        </HardPoints>
+
+        <Tactical_Buildable_Objects_Multiplayer>
+      Underworld,
+         Ancient_Jumper_Squadron_SK,
+         Ancient_Drone_Squadron,
+         Ancient_Heavy_Fighter_Squadron,
+         Ancient_Heavy_Bomber_Squadron,
+         Ancient_Corvette,
+         Ancient_Frigate,
+         Ancient_Destroyer, 
+         Ancient_Cruiser, 
+         Ancient_Battleship,
+         Ancient_Hero_Melia,
+         Ancient_Hero_Janus, 
+         Ancient_Hero_Morgan,
+         Ancient_Hero_Wallus,
+         Ancient_Hero_Moros,                                                           
+        </Tactical_Buildable_Objects_Multiplayer>
+
+        <Layer_Z_Adjust>-300.0</Layer_Z_Adjust>
+        <Is_Community_Property>Yes</Is_Community_Property>
+        <Visible_To_Enemies_When_Empty>True</Visible_To_Enemies_When_Empty>
+        <Reinforcement_Prevention_Radius> 2000 </Reinforcement_Prevention_Radius>
+        <!-- Data to prevent this from being buildable in galactic mode -->
+        <Build_Tab_Space_Station>No</Build_Tab_Space_Station>
+        <Build_Cost_Credits>0</Build_Cost_Credits>
+        <Build_Time_Seconds>0</Build_Time_Seconds>
+        <Required_Ground_Base_Level>0</Required_Ground_Base_Level>
+        <Required_Star_Base_Level>4</Required_Star_Base_Level>
+        <Prev_Level_Base>Skirmish_Ancient_Star_Base_4</Prev_Level_Base>
+        <Last_State_Visible_Under_FOW> True </Last_State_Visible_Under_FOW>
+        <Initial_State_Visible_Under_FOW>False</Initial_State_Visible_Under_FOW>
+        <Visible_On_Radar_When_Fogged>False</Visible_On_Radar_When_Fogged>
+		<Lua_Script>Skirmish_Dummy_Spawn_Tech_5</Lua_Script>
+
+        <Abilities SubObjectList="Yes">
+            <Income_Stream_Ability Name="Ancient_Starbase_Income_Stream">
+                <Activation_Style>Skirmish_Automatic</Activation_Style>
+                <Initially_Enabled>Yes</Initially_Enabled>
+                <Base_Income_Value>40</Base_Income_Value>
+                <Base_Interval_In_Secs>10</Base_Interval_In_Secs>
+                <Split_Income_With_Allies>Yes</Split_Income_With_Allies>
+                <Split_Favors_Owner>No</Split_Favors_Owner>
+                <Full_Amount_To_Everyone>Yes</Full_Amount_To_Everyone>
+            </Income_Stream_Ability>
+            <Income_Stream_Mod_Ability Name="Ancient_Supply_Dock_Income_Bonus">
+                <Activation_Style>Skirmish_Automatic</Activation_Style>
+                <Initially_Enabled>No</Initially_Enabled>
+                <Income_Multiplier>1.0</Income_Multiplier>
+                <Income_Additive_Value>40</Income_Additive_Value>
+                <Interval_Multiplier>1.0</Interval_Multiplier>
+                <Stacking_Category>0</Stacking_Category>
+                <Target_Stream_Source>Skirmish_Ancient_Star_Base_5</Target_Stream_Source>
+                <Affects_All_Allied_Sources>Yes</Affects_All_Allied_Sources>
+                <Reverse_Application_Logic>No</Reverse_Application_Logic>
+            </Income_Stream_Mod_Ability>
+            <Enable_Radar_Ability Name="Ancient_Sensor_Array_Enable_Radar">
+                <Activation_Style>Skirmish_Automatic</Activation_Style>
+                <Initially_Enabled>No</Initially_Enabled>
+                <Affects_All_Allies>True</Affects_All_Allies>
+            </Enable_Radar_Ability>
+        </Abilities>
+    </StarBase>
+
+
+    <!--====================== Field Marker Objects =====================-->
+
+    <!-- === Used to recognize death of a unit (because "register_death" lua command wont work for the unit itself) === -->
+    <MiscObject Name="Death_Recognition_Dummy">
+        <Text_ID />
+        <Space_Model_Name>W_LASER_INVISIBLE.ALO</Space_Model_Name>
+        <Scale_Factor>1.0</Scale_Factor>
+        <Behavior>DUMMY_ORBITAL_STRUCTURE, SPACE_OBSTACLE, IDLE</Behavior>
+        <SpaceBehavior>ABILITY_COUNTDOWN, UNIT_AI, HUNT</SpaceBehavior>
+        <Layer_Z_Adjust>-5.0</Layer_Z_Adjust>
+        <Sort_Order_Adjust>-1</Sort_Order_Adjust>
+        <Remove_Upon_Death>true</Remove_Upon_Death>
+        <Space_Layer> StaticObject </Space_Layer>
+        <Target_Stealth_Units>Yes</Target_Stealth_Units>
+        <Lua_Script>ObjectScript_Death_Recognition_Dummy</Lua_Script>
+    </MiscObject>
+
+
+    <!-- Object used to Count Starbase Rotation -->
+    <MiscObject Name="Ancient_Starbase_Rotation_Counter">
+        <Text_ID />
+        <Space_Model_Name>W_LASER_INVISIBLE.ALO</Space_Model_Name>
+        <Land_Model_Name>W_LASER_INVISIBLE.ALO</Land_Model_Name>
+        <Scale_Factor>1.0</Scale_Factor>
+        <Behavior>DUMMY_ORBITAL_STRUCTURE, SPACE_OBSTACLE, IDLE</Behavior>
+        <SpaceBehavior>ABILITY_COUNTDOWN, UNIT_AI</SpaceBehavior>
+        <Layer_Z_Adjust>0.0</Layer_Z_Adjust>
+        <Sort_Order_Adjust>-1</Sort_Order_Adjust>
+        <Remove_Upon_Death>true</Remove_Upon_Death>
+        <Space_Layer> StaticObject </Space_Layer>
+    </MiscObject>
+
+
+    <!--==== This heals docked Units and despawns all Markers after Base destruction using its lua Script. -->
+    <MiscObject Name="Ancient_Starbase_Repair_Control">
+        <Text_ID />
+        <Space_Model_Name>W_LASER_INVISIBLE.ALO</Space_Model_Name>
+        <Scale_Factor>1.0</Scale_Factor>
+        <Behavior>DUMMY_ORBITAL_STRUCTURE</Behavior>
+        <SpaceBehavior>ABILITY_COUNTDOWN, UNIT_AI</SpaceBehavior>
+        <Layer_Z_Adjust>0.0</Layer_Z_Adjust>
+        <Remove_Upon_Death>true</Remove_Upon_Death>
+        <Lua_Script>ObjectScript_Despawn</Lua_Script>
+
+        <Abilities SubObjectList="Yes">
+            <Force_Healing_Ability Name="Repair_Ship_Healing">
+                <Activation_Style>Space_Automatic</Activation_Style>
+                <Heal_Range>200.0</Heal_Range>
+                <Heal_Amount>5.0</Heal_Amount>
+                <Blob_Color>0, 40, 255, 0</Blob_Color>
+                <Heal_Interval_In_Secs>0.01</Heal_Interval_In_Secs>
+                <Single_Target_Heal>Yes</Single_Target_Heal>
+                <!--==== Only these Units can be healed by the Station ====-->
+                <Applicable_Unit_Types>
+           Ancient_Corvette, Asuran_Corvette, 
+           Ancient_Frigate, Asuran_Frigate, Ancient_Hero_Janus, 
+           Ancient_Destroyer, Asuran_Destroyer_No_Spawn, 
+           Ancient_Heavy_Transport, Asuran_Heavy_Transport
+                </Applicable_Unit_Types>
+                <SFXEvent_Target_Affected></SFXEvent_Target_Affected>
+                <Owner_Particle_Bone_Name>ROOT</Owner_Particle_Bone_Name>
+            </Force_Healing_Ability>
+        </Abilities>
+    </MiscObject>
+
+
+    <!--=== Need the counters so the scripts know which Unit docked at which pier ===-->
+    <MiscObject Name="Pier_1_Counter_A">
+        <Text_ID />
+        <Space_Model_Name>W_LASER_INVISIBLE.ALO</Space_Model_Name>
+        <Land_Model_Name>W_LASER_INVISIBLE.ALO</Land_Model_Name>
+        <Scale_Factor>1.0</Scale_Factor>
+        <Behavior>DUMMY_ORBITAL_STRUCTURE, SPACE_OBSTACLE, IDLE</Behavior>
+        <SpaceBehavior>ABILITY_COUNTDOWN, UNIT_AI</SpaceBehavior>
+        <Layer_Z_Adjust>0.0</Layer_Z_Adjust>
+        <Sort_Order_Adjust>-1</Sort_Order_Adjust>
+        <Remove_Upon_Death>true</Remove_Upon_Death>
+        <Space_Layer> StaticObject </Space_Layer>
+    </MiscObject>
+
+    <MiscObject Name="Pier_1_Counter_B">
+        <Variant_Of_Existing_Type>Pier_1_Counter_A</Variant_Of_Existing_Type>
+    </MiscObject>
+
+
+    <MiscObject Name="Pier_2_Counter_A">
+        <Variant_Of_Existing_Type>Pier_1_Counter_A</Variant_Of_Existing_Type>
+    </MiscObject>
+
+    <MiscObject Name="Pier_2_Counter_B">
+        <Variant_Of_Existing_Type>Pier_1_Counter_A</Variant_Of_Existing_Type>
+    </MiscObject>
+
+    <MiscObject Name="Pier_3_Counter_A">
+        <Variant_Of_Existing_Type>Pier_1_Counter_A</Variant_Of_Existing_Type>
+    </MiscObject>
+
+    <MiscObject Name="Pier_3_Counter_B">
+        <Variant_Of_Existing_Type>Pier_1_Counter_A</Variant_Of_Existing_Type>
+    </MiscObject>
+
+
+    <!--============================== Projectiles ==============================-->
+
+    <Projectile Name="Projectile_Ancient_Station_Large_Laser">
+        <Text_ID>TEXT_NONE</Text_ID>
+        <Space_Model_Name>Asuran_Projectile_Laser_Medium.ALO</Space_Model_Name>
+        <Scale_Factor>0.2</Scale_Factor>
+        <Max_Speed>26.0</Max_Speed>
+        <Max_Rate_Of_Turn>0.0</Max_Rate_Of_Turn>
+        <Behavior>PROJECTILE, HIDE_WHEN_FOGGED</Behavior>
+        <Projectile_Category>Laser</Projectile_Category>
+        <Projectile_Damages_Random_Hard_Points>No</Projectile_Damages_Random_Hard_Points>
+        <Projectile_Max_Flight_Distance>2000.0</Projectile_Max_Flight_Distance>
+        <Projectile_Damage>25.0</Projectile_Damage>
+        <Projectile_Does_Shield_Damage>Yes</Projectile_Does_Shield_Damage>
+        <Projectile_Does_Energy_Damage>No</Projectile_Does_Energy_Damage>
+        <Projectile_Does_Hitpoint_Damage>Yes</Projectile_Does_Hitpoint_Damage>
+        <Projectile_Energy_Per_Shot>20</Projectile_Energy_Per_Shot>
+        <Projectile_Object_Detonation_Particle>Particle_General_Hit_Medium</Projectile_Object_Detonation_Particle>
+        <Projectile_Object_Armor_Reduced_Detonation_Particle>Particle_General_Hit_Medium</Projectile_Object_Armor_Reduced_Detonation_Particle>
+        <Projectile_Absorbed_By_Shields_Particle>Particle_Tauri_Railgun_Shield_Hit</Projectile_Absorbed_By_Shields_Particle>
+        <AI_Combat_Power>140</AI_Combat_Power>
+        <Projectile_SFXEvent_Detonate />
+        <Projectile_SFXEvent_Detonate_Reduced_By_Armor>Damage_Shield_Absorb_Heavy</Projectile_SFXEvent_Detonate_Reduced_By_Armor>
+    </Projectile>
+
+    <Projectile Name="Projectile_Ancient_Station_Medium_Laser">
+        <Text_ID>TEXT_NONE</Text_ID>
+        <Space_Model_Name>Asuran_Projectile_Laser_Medium.ALO</Space_Model_Name>
+        <Scale_Factor>0.2</Scale_Factor>
+        <Max_Speed>26.0</Max_Speed>
+        <Max_Rate_Of_Turn>0.0</Max_Rate_Of_Turn>
+        <Behavior>PROJECTILE, HIDE_WHEN_FOGGED</Behavior>
+        <Projectile_Category>Laser</Projectile_Category>
+        <Projectile_Damages_Random_Hard_Points>No</Projectile_Damages_Random_Hard_Points>
+        <Projectile_Max_Flight_Distance>2000.0</Projectile_Max_Flight_Distance>
+        <Projectile_Damage>20.0</Projectile_Damage>
+        <Projectile_Does_Shield_Damage>Yes</Projectile_Does_Shield_Damage>
+        <Projectile_Does_Energy_Damage>No</Projectile_Does_Energy_Damage>
+        <Projectile_Does_Hitpoint_Damage>Yes</Projectile_Does_Hitpoint_Damage>
+        <Projectile_Energy_Per_Shot>10</Projectile_Energy_Per_Shot>
+        <Projectile_Object_Detonation_Particle>Particle_General_Hit_Medium</Projectile_Object_Detonation_Particle>
+        <Projectile_Object_Armor_Reduced_Detonation_Particle>Particle_General_Hit_Medium</Projectile_Object_Armor_Reduced_Detonation_Particle>
+        <Projectile_Absorbed_By_Shields_Particle>Particle_Tauri_Railgun_Shield_Hit</Projectile_Absorbed_By_Shields_Particle>
+        <AI_Combat_Power>140</AI_Combat_Power>
+        <Projectile_SFXEvent_Detonate />
+        <Projectile_SFXEvent_Detonate_Reduced_By_Armor>Damage_Shield_Absorb_Heavy</Projectile_SFXEvent_Detonate_Reduced_By_Armor>
+    </Projectile>
+
+
+
+    <Projectile Name="Projectile_Ancient_Station_Small_Drone">
+        <Variant_Of_Existing_Type>Proj_Asuran_Drones_Rocket</Variant_Of_Existing_Type>
+        <Projectile_Damage>15.0</Projectile_Damage>
+        <Damage_Type>Damage_Hero_MediumBS</Damage_Type>
+        <Max_Speed>8</Max_Speed>
+        <Max_Rate_Of_Turn>16.0</Max_Rate_Of_Turn>
+        <Scale_Factor>0.07</Scale_Factor>
+    </Projectile>
+
+    <Projectile Name="Projectile_Ancient_Station_Medium_Drone">
+        <Variant_Of_Existing_Type>Proj_Asuran_Drones_Rocket</Variant_Of_Existing_Type>
+        <Projectile_Damage>20.0</Projectile_Damage>
+        <Damage_Type>Damage_Hero_MediumBS</Damage_Type>
+        <Max_Speed>9</Max_Speed>
+        <Max_Rate_Of_Turn>16.0</Max_Rate_Of_Turn>
+        <Scale_Factor>0.07</Scale_Factor>
+    </Projectile>
+
+    <Projectile Name="Projectile_Ancient_Station_Large_Drone">
+        <Variant_Of_Existing_Type>Proj_Asuran_Drones_Rocket</Variant_Of_Existing_Type>
+        <Projectile_Damage>25.0</Projectile_Damage>
+        <Damage_Type>Damage_Hero_MediumBS</Damage_Type>
+        <Max_Speed>10</Max_Speed>
+        <Max_Rate_Of_Turn>16.0</Max_Rate_Of_Turn>
+        <Scale_Factor>0.07</Scale_Factor>
+    </Projectile>
+
+
+</StarBases>

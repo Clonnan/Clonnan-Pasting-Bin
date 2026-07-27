@@ -1,0 +1,1638 @@
+<?xml version="1.0"?>
+<StarBases>
+
+    <!--HPs: 1x11, 2x6, 3x3, 4x3, 5x4, Total: 27
+Health: 18900 (700 each)-->
+    <StarBase Name="Empire_Star_Base_1">
+        <GUI_Bounds_Scale>0.5</GUI_Bounds_Scale>
+        <Text_ID>TEXT_WRAITH_SPACE_BUILDING_GC_STATION_TECH_1</Text_ID>
+        <Encyclopedia_Text>TEXT_DESCRIPTION_WRAITH_GC_STATION_TECH_1 </Encyclopedia_Text>
+        <Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_WRAITH_STATION_TECH_1</Encyclopedia_Unit_Class>
+        <GUI_Row> 0 </GUI_Row>
+        <Damage>35</Damage>
+        <Scale_Factor>1.0</Scale_Factor>
+        <Is_Dummy>No</Is_Dummy>
+        <Space_Model_Name>Wraith_Space_Building_StationTech1.ALO</Space_Model_Name>
+        <Galactic_Model_Name>Wraith_Space_Building_StationTech1_Galactic.ALO</Galactic_Model_Name>
+        <Select_Box_Scale>1800</Select_Box_Scale>
+        <Select_Box_Z_Adjust>-50</Select_Box_Z_Adjust>
+        <Affiliation>Empire</Affiliation>
+        <Build_Cost_Credits>1000</Build_Cost_Credits>
+        <AI_Combat_Power>5000</AI_Combat_Power>
+        <Build_Time_Seconds>25</Build_Time_Seconds>
+        <Build_Tab_Space_Station>Yes</Build_Tab_Space_Station>
+        <Size_Value>10</Size_Value>
+        <Tech_Level>1</Tech_Level>
+        <Base_Level>1</Base_Level>
+        <Behavior>DUMMY_STAR_BASE, SELECTABLE</Behavior>
+        <SpaceBehavior> SPACE_OBSTACLE, POWERED, SPAWN_SQUADRON, HIDE_WHEN_FOGGED, REVEAL, UNIT_AI, ION_STUN_EFFECT</SpaceBehavior>
+        <Multisample_FOW_Check>Yes</Multisample_FOW_Check>
+        <Prev_Level_Base/>
+        <Next_Level_Base>Empire_Star_Base_2</Next_Level_Base>
+        <Required_Ground_Base_Level>0</Required_Ground_Base_Level>
+        <Required_Star_Base_Level>0</Required_Star_Base_Level>
+        <CategoryMask> Capital </CategoryMask>
+		<GUI_Bracket_Size>2</GUI_Bracket_Size>
+        <Victory_Relevant>yes</Victory_Relevant>
+
+        <Energy_Capacity>5000</Energy_Capacity>
+        <Energy_Refresh_Rate>1000</Energy_Refresh_Rate>
+        <Armor_Type> Armor_Station </Armor_Type>
+        <Tactical_Health>4720</Tactical_Health>
+
+        <Collidable_By_Projectile_Living>Yes</Collidable_By_Projectile_Living>
+        <Death_Explosions>Huge_Explosion_Space_Empire</Death_Explosions>
+        <Reinforcement_Prevention_Radius> 2000 </Reinforcement_Prevention_Radius>
+        <Starting_Spawned_Units_Tech_0>TIE_Fighter_Squadron, 3</Starting_Spawned_Units_Tech_0>
+        <Reserve_Spawned_Units_Tech_0>TIE_Fighter_Squadron, -1</Reserve_Spawned_Units_Tech_0>
+        <Starting_Spawned_Units_Tech_0>TIE_Bomber_Squadron, 2</Starting_Spawned_Units_Tech_0>
+        <Reserve_Spawned_Units_Tech_0>TIE_Bomber_Squadron, -1</Reserve_Spawned_Units_Tech_0>
+        <Spawned_Squadron_Delay_Seconds>10</Spawned_Squadron_Delay_Seconds>
+        <Tactical_Buildable_Objects_Campaign>
+            Empire,
+            ES_Enhanced_Reactors_L1_Upgrade,
+            ES_Reinforced_Armor_L1_Upgrade,
+        </Tactical_Buildable_Objects_Campaign>
+        <Dense_FOW_Reveal_Range_Multiplier>0.2</Dense_FOW_Reveal_Range_Multiplier>
+        <Space_FOW_Reveal_Range>2000.0</Space_FOW_Reveal_Range>
+        <Targeting_Max_Attack_Distance>1900.0</Targeting_Max_Attack_Distance>
+        <HardPoints>
+            HP_Wraith_Space_Building_StationTech1_R_WPS_00,
+            HP_Wraith_Space_Building_StationTech1_R_WPS_01,
+            HP_Wraith_Space_Building_StationTech1_M_WPS_01,
+            HP_Wraith_Space_Building_StationTech1_M_WPS_00,
+            HP_Wraith_Space_Building_StationTech1_F_WPS_00,
+            HP_Wraith_Space_Building_StationTech1_F_WPS_01,
+            HP_Wraith_HANGAR1,
+            HP_Wraith_HANGAR2,
+            HP_Wraith_HANGAR3,
+            HP_Wraith_SupplyDock_Dummy,
+            HP_Wraith_Comm_Array_Dummy
+        </HardPoints>
+        <!-- Comm array and supply dock should be replaced by dummy hard points -->
+        <SFXEvent_Select>Effect_Empty_Sound</SFXEvent_Select>
+        <SFXEvent_Hardpoint_Destroyed> HARD_POINT_DUMMY_ART,  Effect_Empty_Sound</SFXEvent_Hardpoint_Destroyed>
+        <SFXEvent_Hardpoint_Destroyed> HARD_POINT_ENABLE_SPECIAL_ABILITY, Effect_Empty_Sound</SFXEvent_Hardpoint_Destroyed>
+        <SFXEvent_Hardpoint_Destroyed> HARD_POINT_ENGINE,  Effect_Empty_Sound</SFXEvent_Hardpoint_Destroyed>
+        <SFXEvent_Hardpoint_Destroyed> HARD_POINT_FIGHTER_BAY, Effect_Empty_Sound</SFXEvent_Hardpoint_Destroyed>
+        <SFXEvent_Hardpoint_Destroyed> HARD_POINT_GRAVITY_WELL,  Effect_Empty_Sound</SFXEvent_Hardpoint_Destroyed>
+        <SFXEvent_Hardpoint_Destroyed> HARD_POINT_SHIELD_GENERATOR, Effect_Empty_Sound</SFXEvent_Hardpoint_Destroyed>
+        <SFXEvent_Hardpoint_Destroyed> HARD_POINT_TRACTOR_BEAM, Effect_Empty_Sound</SFXEvent_Hardpoint_Destroyed>
+        <SFXEvent_Hardpoint_Destroyed> HARD_POINT_WEAPON_ION_CANNON, Effect_Empty_Sound</SFXEvent_Hardpoint_Destroyed>
+        <SFXEvent_Hardpoint_Destroyed> HARD_POINT_WEAPON_LASER, Effect_Empty_Sound</SFXEvent_Hardpoint_Destroyed>
+        <SFXEvent_Hardpoint_Destroyed> HARD_POINT_WEAPON_MASS_DRIVER,  Effect_Empty_Sound</SFXEvent_Hardpoint_Destroyed>
+        <SFXEvent_Hardpoint_Destroyed> HARD_POINT_WEAPON_MISSILE,  Effect_Empty_Sound</SFXEvent_Hardpoint_Destroyed>
+        <SFXEvent_Hardpoint_Destroyed> HARD_POINT_WEAPON_SPECIAL,  Effect_Empty_Sound</SFXEvent_Hardpoint_Destroyed>
+        <SFXEvent_Hardpoint_Destroyed> HARD_POINT_WEAPON_TORPEDO,  Effect_Empty_Sound</SFXEvent_Hardpoint_Destroyed>
+        <Has_Space_Evaluator>True</Has_Space_Evaluator>
+        <Custom_Soft_Footprint_Radius> 250 </Custom_Soft_Footprint_Radius>
+        <Space_Obstacle_Offset> 0 0 0 </Space_Obstacle_Offset>
+        <Space_Layer> StaticObject </Space_Layer>
+        <Layer_Z_Adjust> -150 </Layer_Z_Adjust>
+        <Is_Visible_On_Radar>Yes</Is_Visible_On_Radar>
+        <Visible_On_Radar_When_Fogged>true</Visible_On_Radar_When_Fogged>
+        <Radar_Icon_Name>I_RADAR_STATION1_E.TGA</Radar_Icon_Name>
+        <Radar_Icon_Size>0.12  0.12</Radar_Icon_Size>
+        <Icon_Name>WRAITH_SPACE_BUILDING_STATIONTECH1.TGA</Icon_Name>
+        <Score_Cost_Credits> 1500</Score_Cost_Credits>
+        <Retreat_Self_Destruct_Explosion>Self_Destruct_Star_Base_Level_1_Empire</Retreat_Self_Destruct_Explosion>
+        <Death_Clone>Damage_Normal, Empire_Star_Base_1_Death_Clone</Death_Clone>
+        <Additional_Population_Capacity>10</Additional_Population_Capacity>
+        <Abilities SubObjectList="Yes">
+            <Force_Healing_Ability Name="Wraith_Self_Repair">
+                <Activation_Style>Space_Automatic</Activation_Style>
+                <Heal_Range>0.0</Heal_Range>
+                <Heal_Percent>0.010</Heal_Percent>
+                <Heal_Amount>0.0</Heal_Amount>
+                <Heal_Interval_In_Secs>1.0</Heal_Interval_In_Secs>
+                <Single_Target_Heal>No</Single_Target_Heal>
+                <Applicable_Unit_Categories/>
+                <Applicable_Unit_Types/>
+                <SFXEvent_Target_Affected/>
+                <Owner_Particle_Bone_Name>ROOT</Owner_Particle_Bone_Name>
+                <Owner_Light_Effect_Type>Color_Flash</Owner_Light_Effect_Type>
+                <Owner_Light_Effect_Color>1.2, 1.2, 1.2</Owner_Light_Effect_Color>
+                <Owner_Light_Effect_Color2/>
+                <Owner_Light_Effect_Duration>0.6</Owner_Light_Effect_Duration>
+                <Owner_Light_Effect_Pulse_Count>1</Owner_Light_Effect_Pulse_Count>
+            </Force_Healing_Ability>
+        </Abilities>
+    </StarBase>
+	
+    <StarBase Name="Empire_Star_Base_1_Death_Clone">
+        <Text_ID>TEXT_WRAITH_SPACE_BUILDING_GC_STATION_TECH_2</Text_ID>
+        <Space_Model_Name>Wraith_Space_Building_StationTech1_D.alo</Space_Model_Name>
+        <Death_SFXEvent_Start_Die>Unit_Star_Destroyer_Death_SFX</Death_SFXEvent_Start_Die>
+        <Layer_Z_Adjust>-330.0</Layer_Z_Adjust>
+        <CategoryMask> Capital </CategoryMask>
+        <Death_Persistence_Duration> 34 </Death_Persistence_Duration>
+        <Should_Death_Clone_Play_Idle> true </Should_Death_Clone_Play_Idle>
+    </StarBase>
+	
+	
+    <StarBase Name="Empire_Star_Base_2">
+        <GUI_Bounds_Scale>0.025</GUI_Bounds_Scale>
+        <Text_ID>TEXT_WRAITH_SPACE_BUILDING_GC_STATION_TECH_2</Text_ID>
+        <Encyclopedia_Text>TEXT_DESCRIPTION_WRAITH_GC_STATION_TECH_2 </Encyclopedia_Text>
+        <Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_WRAITH_STATION_TECH_2</Encyclopedia_Unit_Class>
+        <GUI_Row> 0 </GUI_Row>
+        <Damage>45</Damage>
+        <Scale_Factor>1.0</Scale_Factor>
+        <Is_Dummy>No</Is_Dummy>
+        <Space_Model_Name>Wraith_Space_Building_StationTech2.ALO</Space_Model_Name>
+        <Galactic_Model_Name>Wraith_Space_Building_StationTech2_Galactic.ALO</Galactic_Model_Name>
+        <Select_Box_Scale>1800</Select_Box_Scale>
+        <Select_Box_Z_Adjust>-50</Select_Box_Z_Adjust>
+        <Affiliation>Empire</Affiliation>
+        <Build_Cost_Credits>1900</Build_Cost_Credits>
+        <AI_Combat_Power>10000</AI_Combat_Power>
+        <Build_Time_Seconds>30</Build_Time_Seconds>
+        <Build_Tab_Space_Station>Yes</Build_Tab_Space_Station>
+        <Size_Value>20</Size_Value>
+        <Tech_Level>2</Tech_Level>
+        <Base_Level>2</Base_Level>
+        <Behavior>DUMMY_STAR_BASE, SELECTABLE</Behavior>
+        <SpaceBehavior> SPACE_OBSTACLE, POWERED, SPAWN_SQUADRON, HIDE_WHEN_FOGGED, REVEAL, UNIT_AI, ION_STUN_EFFECT</SpaceBehavior>
+        <Multisample_FOW_Check>Yes</Multisample_FOW_Check>
+        <Prev_Level_Base>Empire_Star_Base_1</Prev_Level_Base>
+        <Next_Level_Base>Empire_Star_Base_3</Next_Level_Base>
+        <Required_Ground_Base_Level>0</Required_Ground_Base_Level>
+        <Required_Star_Base_Level>1</Required_Star_Base_Level>
+        <CategoryMask> Capital </CategoryMask>
+		<GUI_Bracket_Size>2</GUI_Bracket_Size>
+        <Victory_Relevant>yes</Victory_Relevant>
+
+        <Energy_Capacity>5000</Energy_Capacity>
+        <Energy_Refresh_Rate>1000</Energy_Refresh_Rate>
+        <Armor_Type> Armor_Station </Armor_Type>
+        <Tactical_Health>7552</Tactical_Health>
+
+        <Collidable_By_Projectile_Living>Yes</Collidable_By_Projectile_Living>
+        <Death_Explosions>Huge_Explosion_Space_Empire</Death_Explosions>
+        <Reinforcement_Prevention_Radius> 2000 </Reinforcement_Prevention_Radius>
+        <Starting_Spawned_Units_Tech_0>TIE_Fighter_Squadron, 5</Starting_Spawned_Units_Tech_0>
+        <Reserve_Spawned_Units_Tech_0>TIE_Fighter_Squadron, -1</Reserve_Spawned_Units_Tech_0>
+        <Starting_Spawned_Units_Tech_0>TIE_Bomber_Squadron, 3</Starting_Spawned_Units_Tech_0>
+        <Reserve_Spawned_Units_Tech_0>TIE_Bomber_Squadron, -1</Reserve_Spawned_Units_Tech_0>
+        <Spawned_Squadron_Delay_Seconds>10</Spawned_Squadron_Delay_Seconds>
+        <Tactical_Buildable_Objects_Campaign>
+            Empire,
+            ES_Enhanced_Reactors_L1_Upgrade,
+            ES_Reinforced_Armor_L1_Upgrade,
+            ES_Improved_Weapons_L1_Upgrade,
+        </Tactical_Buildable_Objects_Campaign>
+        <Dense_FOW_Reveal_Range_Multiplier>0.2</Dense_FOW_Reveal_Range_Multiplier>
+        <Space_FOW_Reveal_Range>2000.0</Space_FOW_Reveal_Range>
+        <Targeting_Max_Attack_Distance>1900.0</Targeting_Max_Attack_Distance>
+        <HardPoints>
+            HP_Wraith_Space_Building_StationTech1_R_WPS_00,
+            HP_Wraith_Space_Building_StationTech1_R_WPS_01,
+            HP_Wraith_Space_Building_StationTech1_M_WPS_01,
+            HP_Wraith_Space_Building_StationTech1_M_WPS_00,
+            HP_Wraith_Space_Building_StationTech1_F_WPS_00,
+            HP_Wraith_Space_Building_StationTech1_F_WPS_01,
+            HP_Wraith_Space_Building_StationTech2_R_WPM_00,
+            HP_Wraith_Space_Building_StationTech2_F_WPM_00,
+            HP_Wraith_Space_Building_StationTech2_F_WPM_01,
+            HP_Wraith_Space_Building_StationTech2_M_WPM_00,
+            HP_Wraith_Space_Building_StationTech2_M_WPM_01,
+            HP_Wraith_Space_Building_StationTech2_M_WPM_02,
+            HP_Wraith_HANGAR1,
+            HP_Wraith_HANGAR2,
+            HP_Wraith_HANGAR3,
+            HP_Wraith_SupplyDock_Dummy,
+            HP_Wraith_Comm_Array_Dummy
+        </HardPoints>
+        <SFXEvent_Select>Effect_Empty_Sound</SFXEvent_Select>
+        <SFXEvent_Hardpoint_Destroyed> HARD_POINT_DUMMY_ART,  Effect_Empty_Sound</SFXEvent_Hardpoint_Destroyed>
+        <SFXEvent_Hardpoint_Destroyed> HARD_POINT_ENABLE_SPECIAL_ABILITY, Effect_Empty_Sound</SFXEvent_Hardpoint_Destroyed>
+        <SFXEvent_Hardpoint_Destroyed> HARD_POINT_ENGINE,  Effect_Empty_Sound</SFXEvent_Hardpoint_Destroyed>
+        <SFXEvent_Hardpoint_Destroyed> HARD_POINT_FIGHTER_BAY, Effect_Empty_Sound</SFXEvent_Hardpoint_Destroyed>
+        <SFXEvent_Hardpoint_Destroyed> HARD_POINT_GRAVITY_WELL,  Effect_Empty_Sound</SFXEvent_Hardpoint_Destroyed>
+        <SFXEvent_Hardpoint_Destroyed> HARD_POINT_SHIELD_GENERATOR, Effect_Empty_Sound</SFXEvent_Hardpoint_Destroyed>
+        <SFXEvent_Hardpoint_Destroyed> HARD_POINT_TRACTOR_BEAM, Effect_Empty_Sound</SFXEvent_Hardpoint_Destroyed>
+        <SFXEvent_Hardpoint_Destroyed> HARD_POINT_WEAPON_ION_CANNON, Effect_Empty_Sound</SFXEvent_Hardpoint_Destroyed>
+        <SFXEvent_Hardpoint_Destroyed> HARD_POINT_WEAPON_LASER, Effect_Empty_Sound</SFXEvent_Hardpoint_Destroyed>
+        <SFXEvent_Hardpoint_Destroyed> HARD_POINT_WEAPON_MASS_DRIVER,  Effect_Empty_Sound</SFXEvent_Hardpoint_Destroyed>
+        <SFXEvent_Hardpoint_Destroyed> HARD_POINT_WEAPON_MISSILE,  Effect_Empty_Sound</SFXEvent_Hardpoint_Destroyed>
+        <SFXEvent_Hardpoint_Destroyed> HARD_POINT_WEAPON_SPECIAL,  Effect_Empty_Sound</SFXEvent_Hardpoint_Destroyed>
+        <SFXEvent_Hardpoint_Destroyed> HARD_POINT_WEAPON_TORPEDO,  Effect_Empty_Sound</SFXEvent_Hardpoint_Destroyed>
+        <Has_Space_Evaluator>True</Has_Space_Evaluator>
+        <Custom_Soft_Footprint_Radius> 250 </Custom_Soft_Footprint_Radius>
+        <Space_Obstacle_Offset> 0 0 0 </Space_Obstacle_Offset>
+        <Space_Layer> StaticObject </Space_Layer>
+        <Layer_Z_Adjust> -200.0 </Layer_Z_Adjust>
+        <Is_Visible_On_Radar>Yes</Is_Visible_On_Radar>
+        <Visible_On_Radar_When_Fogged>true</Visible_On_Radar_When_Fogged>
+        <Radar_Icon_Name>i_radar_station2_e.tga</Radar_Icon_Name>
+        <Radar_Icon_Size>0.16  0.16</Radar_Icon_Size>
+        <Radar_Rotate_Icon>Yes</Radar_Rotate_Icon>
+        <Icon_Name>WRAITH_SPACE_BUILDING_STATIONTECH2.TGA</Icon_Name>
+        <Score_Cost_Credits> 3000</Score_Cost_Credits>
+        <Retreat_Self_Destruct_Explosion>Self_Destruct_Star_Base_Level_2_Empire</Retreat_Self_Destruct_Explosion>
+        <Death_Clone>Damage_Normal, Empire_Star_Base_2_Death_Clone</Death_Clone>
+        <Additional_Population_Capacity>13</Additional_Population_Capacity>
+        <Abilities SubObjectList="Yes">
+            <Force_Healing_Ability Name="Wraith_Self_Repair">
+                <Activation_Style>Space_Automatic</Activation_Style>
+                <Heal_Range>0.0</Heal_Range>
+                <Heal_Percent>0.010</Heal_Percent>
+                <Heal_Amount>0.0</Heal_Amount>
+                <Heal_Interval_In_Secs>1.0</Heal_Interval_In_Secs>
+                <Single_Target_Heal>No</Single_Target_Heal>
+                <Applicable_Unit_Categories/>
+                <Applicable_Unit_Types/>
+                <SFXEvent_Target_Affected/>
+                <Owner_Particle_Bone_Name>ROOT</Owner_Particle_Bone_Name>
+                <Owner_Light_Effect_Type>Color_Flash</Owner_Light_Effect_Type>
+                <Owner_Light_Effect_Color>1.2, 1.2, 1.2</Owner_Light_Effect_Color>
+                <Owner_Light_Effect_Color2/>
+                <Owner_Light_Effect_Duration>0.6</Owner_Light_Effect_Duration>
+                <Owner_Light_Effect_Pulse_Count>1</Owner_Light_Effect_Pulse_Count>
+            </Force_Healing_Ability>
+        </Abilities>
+    </StarBase>
+	
+    <StarBase Name="Empire_Star_Base_2_Death_Clone">
+        <Text_ID>TEXT_WRAITH_SPACE_BUILDING_GC_STATION_TECH_2</Text_ID>
+        <Space_Model_Name>Wraith_Space_Building_StationTech2_D.alo</Space_Model_Name>
+        <Death_SFXEvent_Start_Die>Unit_Star_Destroyer_Death_SFX</Death_SFXEvent_Start_Die>
+        <Layer_Z_Adjust>-330.0</Layer_Z_Adjust>
+        <CategoryMask> Capital </CategoryMask>
+        <Death_Persistence_Duration> 34 </Death_Persistence_Duration>
+        <Should_Death_Clone_Play_Idle> true </Should_Death_Clone_Play_Idle>
+    </StarBase>
+	
+	
+    <StarBase Name="Empire_Star_Base_3">
+        <GUI_Bounds_Scale>0.025</GUI_Bounds_Scale>
+        <Text_ID>TEXT_WRAITH_SPACE_BUILDING_GC_STATION_TECH_3</Text_ID>
+        <Encyclopedia_Text>TEXT_DESCRIPTION_WRAITH_GC_STATION_TECH_3 </Encyclopedia_Text>
+        <Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_WRAITH_STATION_TECH_3</Encyclopedia_Unit_Class>
+        <GUI_Row> 0 </GUI_Row>
+        <Damage>55</Damage>
+        <Scale_Factor>1.0</Scale_Factor>
+        <Is_Dummy>No</Is_Dummy>
+        <Space_Model_Name>Wraith_Space_Building_StationTech3.ALO</Space_Model_Name>
+        <Galactic_Model_Name>Wraith_Space_Building_StationTech3_Galactic.ALO</Galactic_Model_Name>
+        <Select_Box_Scale>1800</Select_Box_Scale>
+        <Select_Box_Z_Adjust>-50</Select_Box_Z_Adjust>
+        <Affiliation>Empire</Affiliation>
+        <Build_Cost_Credits>3500</Build_Cost_Credits>
+        <AI_Combat_Power>15000</AI_Combat_Power>
+        <Build_Time_Seconds>60</Build_Time_Seconds>
+        <Build_Tab_Space_Station>Yes</Build_Tab_Space_Station>
+        <Size_Value>30</Size_Value>
+        <Tech_Level>3</Tech_Level>
+        <Base_Level>3</Base_Level>
+        <Behavior>DUMMY_STAR_BASE, SELECTABLE</Behavior>
+        <SpaceBehavior> SPACE_OBSTACLE, POWERED, SPAWN_SQUADRON, HIDE_WHEN_FOGGED, REVEAL, UNIT_AI, ION_STUN_EFFECT</SpaceBehavior>
+        <Multisample_FOW_Check>Yes</Multisample_FOW_Check>
+        <Prev_Level_Base>Empire_Star_Base_2</Prev_Level_Base>
+        <Next_Level_Base>Empire_Star_Base_4</Next_Level_Base>
+        <Required_Ground_Base_Level>0</Required_Ground_Base_Level>
+        <Required_Star_Base_Level>2</Required_Star_Base_Level>
+        <CategoryMask> Capital </CategoryMask>
+		<GUI_Bracket_Size>2</GUI_Bracket_Size>
+        <Victory_Relevant>yes</Victory_Relevant>
+
+        <Energy_Capacity>5000</Energy_Capacity>
+        <Energy_Refresh_Rate>1000</Energy_Refresh_Rate>
+        <Armor_Type> Armor_Station </Armor_Type>
+        <Tactical_Health>8968</Tactical_Health>
+
+        <Collidable_By_Projectile_Living>Yes</Collidable_By_Projectile_Living>
+        <Death_Explosions>Huge_Explosion_Space</Death_Explosions>
+        <Reinforcement_Prevention_Radius> 2000 </Reinforcement_Prevention_Radius>
+		<Starting_Spawned_Units_Tech_0>TIE_Fighter_Squadron, 6</Starting_Spawned_Units_Tech_0>
+        <Reserve_Spawned_Units_Tech_0>TIE_Fighter_Squadron, -1</Reserve_Spawned_Units_Tech_0>
+        <Starting_Spawned_Units_Tech_0>TIE_Bomber_Squadron, 4</Starting_Spawned_Units_Tech_0>
+        <Reserve_Spawned_Units_Tech_0>TIE_Bomber_Squadron, -1</Reserve_Spawned_Units_Tech_0>
+        <Starting_Spawned_Units_Tech_0>TIE_Interceptor_Squadron, 2</Starting_Spawned_Units_Tech_0>
+        <Reserve_Spawned_Units_Tech_0>TIE_Interceptor_Squadron, -1</Reserve_Spawned_Units_Tech_0>
+        <Spawned_Squadron_Delay_Seconds>10</Spawned_Squadron_Delay_Seconds>
+        <Tactical_Buildable_Objects_Campaign>
+            Empire,
+            ES_Enhanced_Reactors_L1_Upgrade,
+            ES_Enhanced_Reactors_L2_Upgrade,
+            ES_Reinforced_Armor_L1_Upgrade,
+            ES_Reinforced_Armor_L2_Upgrade,
+            ES_Improved_Weapons_L1_Upgrade,
+            ES_Improved_Weapons_L2_Upgrade,
+            ES_Improved_Defenses_L1_Upgrade,
+        </Tactical_Buildable_Objects_Campaign>
+        <Dense_FOW_Reveal_Range_Multiplier>0.2</Dense_FOW_Reveal_Range_Multiplier>
+        <Space_FOW_Reveal_Range>2000.0</Space_FOW_Reveal_Range>
+        <Targeting_Max_Attack_Distance>1900.0</Targeting_Max_Attack_Distance>
+        <HardPoints>
+            HP_Wraith_Space_Building_StationTech1_R_WPS_00,
+            HP_Wraith_Space_Building_StationTech1_R_WPS_01,
+            HP_Wraith_Space_Building_StationTech1_M_WPS_01,
+            HP_Wraith_Space_Building_StationTech1_M_WPS_00,
+            HP_Wraith_Space_Building_StationTech1_F_WPS_00,
+            HP_Wraith_Space_Building_StationTech1_F_WPS_01,
+            HP_Wraith_Space_Building_StationTech2_R_WPM_00,
+            HP_Wraith_Space_Building_StationTech2_F_WPM_00,
+            HP_Wraith_Space_Building_StationTech2_F_WPM_01,
+            HP_Wraith_Space_Building_StationTech2_M_WPM_00,
+            HP_Wraith_Space_Building_StationTech2_M_WPM_01,
+            HP_Wraith_Space_Building_StationTech2_M_WPM_02,
+            HP_Wraith_Space_Building_StationTech3_R_WPH_00,
+            HP_Wraith_Space_Building_StationTech3_F_WPH_00,
+            HP_Wraith_Space_Building_StationTech3_F_WPH_01,
+            HP_Wraith_HANGAR1,
+            HP_Wraith_HANGAR2,
+            HP_Wraith_HANGAR3,
+            HP_Wraith_SupplyDock_Dummy,
+            HP_Wraith_Comm_Array_Dummy
+        </HardPoints>
+        <SFXEvent_Select>Effect_Empty_Sound</SFXEvent_Select>
+        <SFXEvent_Hardpoint_Destroyed> HARD_POINT_DUMMY_ART,  Effect_Empty_Sound</SFXEvent_Hardpoint_Destroyed>
+        <SFXEvent_Hardpoint_Destroyed> HARD_POINT_ENABLE_SPECIAL_ABILITY, Effect_Empty_Sound</SFXEvent_Hardpoint_Destroyed>
+        <SFXEvent_Hardpoint_Destroyed> HARD_POINT_ENGINE,  Effect_Empty_Sound</SFXEvent_Hardpoint_Destroyed>
+        <SFXEvent_Hardpoint_Destroyed> HARD_POINT_FIGHTER_BAY, Effect_Empty_Sound</SFXEvent_Hardpoint_Destroyed>
+        <SFXEvent_Hardpoint_Destroyed> HARD_POINT_GRAVITY_WELL,  Effect_Empty_Sound</SFXEvent_Hardpoint_Destroyed>
+        <SFXEvent_Hardpoint_Destroyed> HARD_POINT_SHIELD_GENERATOR, Effect_Empty_Sound</SFXEvent_Hardpoint_Destroyed>
+        <SFXEvent_Hardpoint_Destroyed> HARD_POINT_TRACTOR_BEAM, Effect_Empty_Sound</SFXEvent_Hardpoint_Destroyed>
+        <SFXEvent_Hardpoint_Destroyed> HARD_POINT_WEAPON_ION_CANNON, Effect_Empty_Sound</SFXEvent_Hardpoint_Destroyed>
+        <SFXEvent_Hardpoint_Destroyed> HARD_POINT_WEAPON_LASER, Effect_Empty_Sound</SFXEvent_Hardpoint_Destroyed>
+        <SFXEvent_Hardpoint_Destroyed> HARD_POINT_WEAPON_MASS_DRIVER,  Effect_Empty_Sound</SFXEvent_Hardpoint_Destroyed>
+        <SFXEvent_Hardpoint_Destroyed> HARD_POINT_WEAPON_MISSILE,  Effect_Empty_Sound</SFXEvent_Hardpoint_Destroyed>
+        <SFXEvent_Hardpoint_Destroyed> HARD_POINT_WEAPON_SPECIAL,  Effect_Empty_Sound</SFXEvent_Hardpoint_Destroyed>
+        <SFXEvent_Hardpoint_Destroyed> HARD_POINT_WEAPON_TORPEDO,  Effect_Empty_Sound</SFXEvent_Hardpoint_Destroyed>
+        <Has_Space_Evaluator>True</Has_Space_Evaluator>
+        <Custom_Soft_Footprint_Radius> 250 </Custom_Soft_Footprint_Radius>
+        <Space_Obstacle_Offset> 0 0 0 </Space_Obstacle_Offset>
+        <Space_Layer> StaticObject </Space_Layer>
+        <Layer_Z_Adjust> -200 </Layer_Z_Adjust>
+        <Is_Visible_On_Radar>Yes</Is_Visible_On_Radar>
+        <Visible_On_Radar_When_Fogged>true</Visible_On_Radar_When_Fogged>
+        <Radar_Icon_Name>i_radar_station3_e.tga</Radar_Icon_Name>
+        <Radar_Icon_Size>0.12  0.12</Radar_Icon_Size>
+        <Radar_Rotate_Icon>Yes</Radar_Rotate_Icon>
+        <Icon_Name>WRAITH_SPACE_BUILDING_STATIONTECH3.TGA</Icon_Name>
+        <Score_Cost_Credits> 6000</Score_Cost_Credits>
+        <Retreat_Self_Destruct_Explosion>Self_Destruct_Star_Base_Level_3_Empire</Retreat_Self_Destruct_Explosion>
+        <Death_Clone>Damage_Normal, Empire_Star_Base_3_Death_Clone</Death_Clone>
+        <Additional_Population_Capacity>15</Additional_Population_Capacity>
+        <Abilities SubObjectList="Yes">
+            <Force_Healing_Ability Name="Wraith_Self_Repair">
+                <Activation_Style>Space_Automatic</Activation_Style>
+                <Heal_Range>0.0</Heal_Range>
+                <Heal_Percent>0.010</Heal_Percent>
+                <Heal_Amount>0.0</Heal_Amount>
+                <Heal_Interval_In_Secs>1.0</Heal_Interval_In_Secs>
+                <Single_Target_Heal>No</Single_Target_Heal>
+                <Applicable_Unit_Categories/>
+                <Applicable_Unit_Types/>
+                <SFXEvent_Target_Affected/>
+                <Owner_Particle_Bone_Name>ROOT</Owner_Particle_Bone_Name>
+                <Owner_Light_Effect_Type>Color_Flash</Owner_Light_Effect_Type>
+                <Owner_Light_Effect_Color>1.2, 1.2, 1.2</Owner_Light_Effect_Color>
+                <Owner_Light_Effect_Color2/>
+                <Owner_Light_Effect_Duration>0.6</Owner_Light_Effect_Duration>
+                <Owner_Light_Effect_Pulse_Count>1</Owner_Light_Effect_Pulse_Count>
+            </Force_Healing_Ability>
+        </Abilities>
+    </StarBase>
+	
+    <StarBase Name="Empire_Star_Base_3_Death_Clone">
+        <Text_ID>TEXT_WRAITH_SPACE_BUILDING_GC_STATION_TECH_3</Text_ID>
+        <Space_Model_Name>Wraith_Space_Building_StationTech3_D.alo</Space_Model_Name>
+        <Death_SFXEvent_Start_Die>Unit_Star_Destroyer_Death_SFX</Death_SFXEvent_Start_Die>
+        <Layer_Z_Adjust>-330.0</Layer_Z_Adjust>
+        <CategoryMask> Capital </CategoryMask>
+        <Death_Persistence_Duration> 34 </Death_Persistence_Duration>
+        <Should_Death_Clone_Play_Idle> true </Should_Death_Clone_Play_Idle>
+    </StarBase>
+	
+	
+    <StarBase Name="Empire_Star_Base_4">
+        <GUI_Bounds_Scale>0.025</GUI_Bounds_Scale>
+        <Text_ID>TEXT_WRAITH_SPACE_BUILDING_GC_STATION_TECH_4</Text_ID>
+        <Encyclopedia_Text>TEXT_DESCRIPTION_WRAITH_GC_STATION_TECH_4 </Encyclopedia_Text>
+        <Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_WRAITH_STATION_TECH_4</Encyclopedia_Unit_Class>
+        <GUI_Row> 0 </GUI_Row>
+        <Damage>65</Damage>
+        <Scale_Factor>1.0</Scale_Factor>
+        <Is_Dummy>No</Is_Dummy>
+        <Space_Model_Name>Wraith_Space_Building_StationTech4.ALO</Space_Model_Name>
+        <Galactic_Model_Name>Wraith_Space_Building_StationTech4_Galactic.ALO</Galactic_Model_Name>
+        <Select_Box_Scale>1800</Select_Box_Scale>
+        <Select_Box_Z_Adjust>-50</Select_Box_Z_Adjust>
+        <Affiliation>Empire</Affiliation>
+        <Build_Cost_Credits>6400</Build_Cost_Credits>
+        <AI_Combat_Power>20000</AI_Combat_Power>
+        <Build_Time_Seconds>90</Build_Time_Seconds>
+        <Build_Tab_Space_Station>Yes</Build_Tab_Space_Station>
+        <Size_Value>40</Size_Value>
+        <Tech_Level>4</Tech_Level>
+        <Base_Level>4</Base_Level>
+        <Behavior>DUMMY_STAR_BASE, SELECTABLE</Behavior>
+        <SpaceBehavior> SPACE_OBSTACLE, POWERED, SPAWN_SQUADRON, HIDE_WHEN_FOGGED, REVEAL, UNIT_AI, ION_STUN_EFFECT</SpaceBehavior>
+        <Multisample_FOW_Check>Yes</Multisample_FOW_Check>
+        <Prev_Level_Base>Empire_Star_Base_3</Prev_Level_Base>
+        <Next_Level_Base>Empire_Star_Base_5</Next_Level_Base>
+        <Required_Ground_Base_Level>0</Required_Ground_Base_Level>
+        <Required_Star_Base_Level>3</Required_Star_Base_Level>
+        <CategoryMask> Capital </CategoryMask>
+		<GUI_Bracket_Size>2</GUI_Bracket_Size>
+        <Victory_Relevant>yes</Victory_Relevant>
+
+        <Energy_Capacity>5000</Energy_Capacity>
+        <Energy_Refresh_Rate>1000</Energy_Refresh_Rate>
+        <Armor_Type> Armor_Station </Armor_Type>
+        <Tactical_Health>10384</Tactical_Health>
+
+        <Collidable_By_Projectile_Living>Yes</Collidable_By_Projectile_Living>
+        <Death_Explosions>Huge_Explosion_Space_Empire</Death_Explosions>
+        <Reinforcement_Prevention_Radius> 2000 </Reinforcement_Prevention_Radius>
+		<Starting_Spawned_Units_Tech_0>TIE_Fighter_Squadron, 8</Starting_Spawned_Units_Tech_0>
+        <Reserve_Spawned_Units_Tech_0>TIE_Fighter_Squadron, -1</Reserve_Spawned_Units_Tech_0>
+        <Starting_Spawned_Units_Tech_0>TIE_Bomber_Squadron, 6</Starting_Spawned_Units_Tech_0>
+        <Reserve_Spawned_Units_Tech_0>TIE_Bomber_Squadron, -1</Reserve_Spawned_Units_Tech_0>
+        <Starting_Spawned_Units_Tech_0>TIE_Interceptor_Squadron, 3</Starting_Spawned_Units_Tech_0>
+        <Reserve_Spawned_Units_Tech_0>TIE_Interceptor_Squadron, -1</Reserve_Spawned_Units_Tech_0>
+        <Starting_Spawned_Units_Tech_0>TIE_Defender_Squadron, 1</Starting_Spawned_Units_Tech_0>
+        <Reserve_Spawned_Units_Tech_0>TIE_Defender_Squadron, -1</Reserve_Spawned_Units_Tech_0>
+        <Spawned_Squadron_Delay_Seconds>10</Spawned_Squadron_Delay_Seconds>
+        <Tactical_Buildable_Objects_Campaign>
+            Empire,
+            ES_Enhanced_Reactors_L1_Upgrade,
+            ES_Enhanced_Reactors_L2_Upgrade,
+            ES_Reinforced_Armor_L1_Upgrade,
+            ES_Reinforced_Armor_L2_Upgrade,
+            ES_Improved_Weapons_L1_Upgrade,
+            ES_Improved_Weapons_L2_Upgrade,
+            ES_Improved_Defenses_L1_Upgrade,
+            ES_Improved_Defenses_L2_Upgrade,
+        </Tactical_Buildable_Objects_Campaign>
+        <Dense_FOW_Reveal_Range_Multiplier>0.2</Dense_FOW_Reveal_Range_Multiplier>
+        <Space_FOW_Reveal_Range>2000.0</Space_FOW_Reveal_Range>
+        <Targeting_Max_Attack_Distance>1900.0</Targeting_Max_Attack_Distance>
+        <HardPoints>
+            HP_Wraith_Space_Building_StationTech1_R_WPS_00,
+            HP_Wraith_Space_Building_StationTech1_R_WPS_01,
+            HP_Wraith_Space_Building_StationTech1_M_WPS_01,
+            HP_Wraith_Space_Building_StationTech1_M_WPS_00,
+            HP_Wraith_Space_Building_StationTech1_F_WPS_00,
+            HP_Wraith_Space_Building_StationTech1_F_WPS_01,
+            HP_Wraith_Space_Building_StationTech2_R_WPM_00,
+            HP_Wraith_Space_Building_StationTech2_F_WPM_00,
+            HP_Wraith_Space_Building_StationTech2_F_WPM_01,
+            HP_Wraith_Space_Building_StationTech2_M_WPM_00,
+            HP_Wraith_Space_Building_StationTech2_M_WPM_01,
+            HP_Wraith_Space_Building_StationTech2_M_WPM_02,
+            HP_Wraith_Space_Building_StationTech3_R_WPH_00,
+            HP_Wraith_Space_Building_StationTech3_F_WPH_00,
+            HP_Wraith_Space_Building_StationTech3_F_WPH_01,
+            HP_Wraith_Space_Building_StationTech4_M_WPM_03,
+            HP_Wraith_Space_Building_StationTech4_M_WPM_04,
+            HP_Wraith_Space_Building_StationTech4_M_WPM_05,
+            HP_Wraith_HANGAR1,
+            HP_Wraith_HANGAR2,
+            HP_Wraith_HANGAR3,
+            HP_Wraith_SupplyDock_Dummy,
+            HP_Wraith_Comm_Array_Dummy
+        </HardPoints>
+        <SFXEvent_Select>Effect_Empty_Sound</SFXEvent_Select>
+        <SFXEvent_Hardpoint_Destroyed> HARD_POINT_DUMMY_ART,  Effect_Empty_Sound</SFXEvent_Hardpoint_Destroyed>
+        <SFXEvent_Hardpoint_Destroyed> HARD_POINT_ENABLE_SPECIAL_ABILITY, Effect_Empty_Sound</SFXEvent_Hardpoint_Destroyed>
+        <SFXEvent_Hardpoint_Destroyed> HARD_POINT_ENGINE,  Effect_Empty_Sound</SFXEvent_Hardpoint_Destroyed>
+        <SFXEvent_Hardpoint_Destroyed> HARD_POINT_FIGHTER_BAY, Effect_Empty_Sound</SFXEvent_Hardpoint_Destroyed>
+        <SFXEvent_Hardpoint_Destroyed> HARD_POINT_GRAVITY_WELL,  Effect_Empty_Sound</SFXEvent_Hardpoint_Destroyed>
+        <SFXEvent_Hardpoint_Destroyed> HARD_POINT_SHIELD_GENERATOR, Effect_Empty_Sound</SFXEvent_Hardpoint_Destroyed>
+        <SFXEvent_Hardpoint_Destroyed> HARD_POINT_TRACTOR_BEAM, Effect_Empty_Sound</SFXEvent_Hardpoint_Destroyed>
+        <SFXEvent_Hardpoint_Destroyed> HARD_POINT_WEAPON_ION_CANNON, Effect_Empty_Sound</SFXEvent_Hardpoint_Destroyed>
+        <SFXEvent_Hardpoint_Destroyed> HARD_POINT_WEAPON_LASER, Effect_Empty_Sound</SFXEvent_Hardpoint_Destroyed>
+        <SFXEvent_Hardpoint_Destroyed> HARD_POINT_WEAPON_MASS_DRIVER,  Effect_Empty_Sound</SFXEvent_Hardpoint_Destroyed>
+        <SFXEvent_Hardpoint_Destroyed> HARD_POINT_WEAPON_MISSILE,  Effect_Empty_Sound</SFXEvent_Hardpoint_Destroyed>
+        <SFXEvent_Hardpoint_Destroyed> HARD_POINT_WEAPON_SPECIAL,  Effect_Empty_Sound</SFXEvent_Hardpoint_Destroyed>
+        <SFXEvent_Hardpoint_Destroyed> HARD_POINT_WEAPON_TORPEDO,  Effect_Empty_Sound</SFXEvent_Hardpoint_Destroyed>
+        <Has_Space_Evaluator>True</Has_Space_Evaluator>
+        <Custom_Soft_Footprint_Radius> 250 </Custom_Soft_Footprint_Radius>
+        <Space_Obstacle_Offset> 0 0 0 </Space_Obstacle_Offset>
+        <Space_Layer> StaticObject </Space_Layer>
+        <Layer_Z_Adjust>-350.0</Layer_Z_Adjust>
+        <Is_Visible_On_Radar>Yes</Is_Visible_On_Radar>
+        <Visible_On_Radar_When_Fogged>true</Visible_On_Radar_When_Fogged>
+        <Radar_Icon_Name>i_radar_station4_e.tga</Radar_Icon_Name>
+        <Radar_Icon_Size>0.12  0.12</Radar_Icon_Size>
+        <Radar_Rotate_Icon>Yes</Radar_Rotate_Icon>
+        <Icon_Name>WRAITH_SPACE_BUILDING_STATIONTECH4.TGA</Icon_Name>
+        <Score_Cost_Credits> 12000</Score_Cost_Credits>
+        <Retreat_Self_Destruct_Explosion>Self_Destruct_Star_Base_Level_4_Empire</Retreat_Self_Destruct_Explosion>
+        <Death_Clone>Damage_Normal, Empire_Star_Base_4_Death_Clone</Death_Clone>
+        <Additional_Population_Capacity>16</Additional_Population_Capacity>
+        <Abilities SubObjectList="Yes">
+            <Force_Healing_Ability Name="Wraith_Self_Repair">
+                <Activation_Style>Space_Automatic</Activation_Style>
+                <Heal_Range>0.0</Heal_Range>
+                <Heal_Percent>0.010</Heal_Percent>
+                <Heal_Amount>0.0</Heal_Amount>
+                <Heal_Interval_In_Secs>1.0</Heal_Interval_In_Secs>
+                <Single_Target_Heal>No</Single_Target_Heal>
+                <Applicable_Unit_Categories/>
+                <Applicable_Unit_Types/>
+                <SFXEvent_Target_Affected/>
+                <Owner_Particle_Bone_Name>ROOT</Owner_Particle_Bone_Name>
+                <Owner_Light_Effect_Type>Color_Flash</Owner_Light_Effect_Type>
+                <Owner_Light_Effect_Color>1.2, 1.2, 1.2</Owner_Light_Effect_Color>
+                <Owner_Light_Effect_Color2/>
+                <Owner_Light_Effect_Duration>0.6</Owner_Light_Effect_Duration>
+                <Owner_Light_Effect_Pulse_Count>1</Owner_Light_Effect_Pulse_Count>
+            </Force_Healing_Ability>
+        </Abilities>
+    </StarBase>
+	
+    <StarBase Name="Empire_Star_Base_4_Death_Clone">
+        <Text_ID>TEXT_WRAITH_SPACE_BUILDING_GC_STATION_TECH_4</Text_ID>
+        <Space_Model_Name>Wraith_Space_Building_StationTech4_D.alo</Space_Model_Name>
+        <Death_SFXEvent_Start_Die>Unit_Star_Destroyer_Death_SFX</Death_SFXEvent_Start_Die>
+        <Layer_Z_Adjust>-330.0</Layer_Z_Adjust>
+        <CategoryMask> Capital </CategoryMask>
+        <Death_Persistence_Duration> 34 </Death_Persistence_Duration>
+        <Should_Death_Clone_Play_Idle> true </Should_Death_Clone_Play_Idle>
+    </StarBase>
+	
+	
+    <StarBase Name="Empire_Star_Base_5">
+        <GUI_Bounds_Scale>0.025</GUI_Bounds_Scale>
+        <Text_ID>TEXT_WRAITH_SPACE_BUILDING_GC_STATION_TECH_5</Text_ID>
+        <Encyclopedia_Text>TEXT_DESCRIPTION_WRAITH_GC_STATION_TECH_5 </Encyclopedia_Text>
+        <Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_WRAITH_STATION_TECH_5</Encyclopedia_Unit_Class>
+        <GUI_Row> 0 </GUI_Row>
+        <Damage>75</Damage>
+        <Scale_Factor>1.0</Scale_Factor>
+        <Is_Dummy>No</Is_Dummy>
+        <Space_Model_Name>Wraith_Space_Building_StationTech5.ALO</Space_Model_Name>
+        <Galactic_Model_Name>Wraith_Space_Building_StationTech5_Galactic.ALO</Galactic_Model_Name>
+        <Select_Box_Scale>1800</Select_Box_Scale>
+        <Select_Box_Z_Adjust>-50</Select_Box_Z_Adjust>
+        <Affiliation>Empire</Affiliation>
+        <Build_Cost_Credits>7500</Build_Cost_Credits>
+        <AI_Combat_Power>35000</AI_Combat_Power>
+        <Build_Time_Seconds>150</Build_Time_Seconds>
+        <Build_Tab_Space_Station>Yes</Build_Tab_Space_Station>
+        <Size_Value>50</Size_Value>
+        <Tech_Level>5</Tech_Level>
+        <Base_Level>5</Base_Level>
+        <Behavior>DUMMY_STAR_BASE, SELECTABLE</Behavior>
+        <SpaceBehavior> SPACE_OBSTACLE, POWERED, SPAWN_SQUADRON, HIDE_WHEN_FOGGED, REVEAL, UNIT_AI, ION_STUN_EFFECT</SpaceBehavior>
+        <Multisample_FOW_Check>Yes</Multisample_FOW_Check>
+        <Prev_Level_Base>Empire_Star_Base_4</Prev_Level_Base>
+        <Next_Level_Base/>
+        <Required_Ground_Base_Level>0</Required_Ground_Base_Level>
+        <Required_Star_Base_Level>4</Required_Star_Base_Level>
+        <CategoryMask> Capital </CategoryMask>
+		<GUI_Bracket_Size>2</GUI_Bracket_Size>
+        <Victory_Relevant>yes</Victory_Relevant>
+
+        <Energy_Capacity>5000</Energy_Capacity>
+        <Energy_Refresh_Rate>1000</Energy_Refresh_Rate>
+        <Armor_Type> Armor_Station </Armor_Type>
+        <Tactical_Health>12272</Tactical_Health>
+
+        <Collidable_By_Projectile_Living>Yes</Collidable_By_Projectile_Living>
+        <Death_Explosions>Huge_Explosion_Space_Empire</Death_Explosions>
+        <Reinforcement_Prevention_Radius> 2000 </Reinforcement_Prevention_Radius>
+		<Starting_Spawned_Units_Tech_0>TIE_Fighter_Squadron, 8</Starting_Spawned_Units_Tech_0>
+        <Reserve_Spawned_Units_Tech_0>TIE_Fighter_Squadron, -1</Reserve_Spawned_Units_Tech_0>
+        <Starting_Spawned_Units_Tech_0>TIE_Bomber_Squadron, 6</Starting_Spawned_Units_Tech_0>
+        <Reserve_Spawned_Units_Tech_0>TIE_Bomber_Squadron, -1</Reserve_Spawned_Units_Tech_0>
+        <Starting_Spawned_Units_Tech_0>TIE_Interceptor_Squadron, 4</Starting_Spawned_Units_Tech_0>
+        <Reserve_Spawned_Units_Tech_0>TIE_Interceptor_Squadron, -1</Reserve_Spawned_Units_Tech_0>
+        <Starting_Spawned_Units_Tech_0>TIE_Defender_Squadron, 3</Starting_Spawned_Units_Tech_0>
+        <Reserve_Spawned_Units_Tech_0>TIE_Defender_Squadron, -1</Reserve_Spawned_Units_Tech_0>
+		<Starting_Spawned_Units_Tech_0>Tartan_Patrol_Cruiser, 1</Starting_Spawned_Units_Tech_0>
+        <Spawned_Squadron_Delay_Seconds>10</Spawned_Squadron_Delay_Seconds>
+        <Tactical_Buildable_Objects_Campaign>
+            Empire,
+            ES_Enhanced_Reactors_L1_Upgrade,
+            ES_Enhanced_Reactors_L2_Upgrade,
+            ES_Enhanced_Reactors_L3_Upgrade,
+            ES_Reinforced_Armor_L1_Upgrade,
+            ES_Reinforced_Armor_L2_Upgrade,
+            ES_Reinforced_Armor_L3_Upgrade,
+            ES_Improved_Weapons_L1_Upgrade,
+            ES_Improved_Weapons_L2_Upgrade,
+            ES_Improved_Weapons_L3_Upgrade,
+            ES_Improved_Defenses_L1_Upgrade,
+            ES_Improved_Defenses_L2_Upgrade,
+            ES_Improved_Defenses_L3_Upgrade,
+        </Tactical_Buildable_Objects_Campaign>
+        <Dense_FOW_Reveal_Range_Multiplier>0.2</Dense_FOW_Reveal_Range_Multiplier>
+        <Space_FOW_Reveal_Range>2000.0</Space_FOW_Reveal_Range>
+        <Targeting_Max_Attack_Distance>1900.0</Targeting_Max_Attack_Distance>
+        <HardPoints>
+            HP_Wraith_Space_Building_StationTech1_F_WPS_00,
+            HP_Wraith_Space_Building_StationTech1_F_WPS_01,
+            HP_Wraith_Space_Building_StationTech2_F_WPM_00,
+            HP_Wraith_Space_Building_StationTech2_F_WPM_01,
+            HP_Wraith_Space_Building_StationTech3_F_WPH_00,
+            HP_Wraith_Space_Building_StationTech3_F_WPH_01,
+            HP_Wraith_Space_Building_StationTech5_F_WPH_02,
+            HP_Wraith_Space_Building_StationTech5_F_WPH_03,
+            HP_Wraith_Space_Building_StationTech1_M_WPS_00,
+            HP_Wraith_Space_Building_StationTech1_M_WPS_01,
+            HP_Wraith_Space_Building_StationTech2_M_WPM_00,
+            HP_Wraith_Space_Building_StationTech2_M_WPM_01,
+            HP_Wraith_Space_Building_StationTech2_M_WPM_02,
+            HP_Wraith_Space_Building_StationTech4_M_WPM_03,
+            HP_Wraith_Space_Building_StationTech4_M_WPM_04,
+            HP_Wraith_Space_Building_StationTech4_M_WPM_05,
+            HP_Wraith_Space_Building_StationTech1_R_WPS_00,
+            HP_Wraith_Space_Building_StationTech1_R_WPS_01,
+            HP_Wraith_Space_Building_StationTech2_R_WPM_00,
+            HP_Wraith_Space_Building_StationTech3_R_WPH_00,
+            HP_Wraith_Space_Building_StationTech5_R_WPH_01,
+            HP_Wraith_HANGAR1,
+            HP_Wraith_HANGAR2,
+            HP_Wraith_HANGAR3,
+            HP_Wraith_SupplyDock_Dummy,
+            HP_Wraith_Comm_Array_Dummy
+        </HardPoints>
+        <SFXEvent_Select>Effect_Empty_Sound</SFXEvent_Select>
+        <SFXEvent_Hardpoint_Destroyed> HARD_POINT_DUMMY_ART,  Effect_Empty_Sound</SFXEvent_Hardpoint_Destroyed>
+        <SFXEvent_Hardpoint_Destroyed> HARD_POINT_ENABLE_SPECIAL_ABILITY, Effect_Empty_Sound</SFXEvent_Hardpoint_Destroyed>
+        <SFXEvent_Hardpoint_Destroyed> HARD_POINT_ENGINE,  Effect_Empty_Sound</SFXEvent_Hardpoint_Destroyed>
+        <SFXEvent_Hardpoint_Destroyed> HARD_POINT_FIGHTER_BAY, Effect_Empty_Sound</SFXEvent_Hardpoint_Destroyed>
+        <SFXEvent_Hardpoint_Destroyed> HARD_POINT_GRAVITY_WELL,  Effect_Empty_Sound</SFXEvent_Hardpoint_Destroyed>
+        <SFXEvent_Hardpoint_Destroyed> HARD_POINT_SHIELD_GENERATOR, Effect_Empty_Sound</SFXEvent_Hardpoint_Destroyed>
+        <SFXEvent_Hardpoint_Destroyed> HARD_POINT_TRACTOR_BEAM, Effect_Empty_Sound</SFXEvent_Hardpoint_Destroyed>
+        <SFXEvent_Hardpoint_Destroyed> HARD_POINT_WEAPON_ION_CANNON, Effect_Empty_Sound</SFXEvent_Hardpoint_Destroyed>
+        <SFXEvent_Hardpoint_Destroyed> HARD_POINT_WEAPON_LASER, Effect_Empty_Sound</SFXEvent_Hardpoint_Destroyed>
+        <SFXEvent_Hardpoint_Destroyed> HARD_POINT_WEAPON_MASS_DRIVER,  Effect_Empty_Sound</SFXEvent_Hardpoint_Destroyed>
+        <SFXEvent_Hardpoint_Destroyed> HARD_POINT_WEAPON_MISSILE,  Effect_Empty_Sound</SFXEvent_Hardpoint_Destroyed>
+        <SFXEvent_Hardpoint_Destroyed> HARD_POINT_WEAPON_SPECIAL,  Effect_Empty_Sound</SFXEvent_Hardpoint_Destroyed>
+        <SFXEvent_Hardpoint_Destroyed> HARD_POINT_WEAPON_TORPEDO,  Effect_Empty_Sound</SFXEvent_Hardpoint_Destroyed>
+        <Has_Space_Evaluator>True</Has_Space_Evaluator>
+        <Custom_Soft_Footprint_Radius> 250 </Custom_Soft_Footprint_Radius>
+        <Space_Obstacle_Offset> 0 0 0 </Space_Obstacle_Offset>
+        <Space_Layer> StaticObject </Space_Layer>
+        <Layer_Z_Adjust>-350.0</Layer_Z_Adjust>
+        <Is_Visible_On_Radar>Yes</Is_Visible_On_Radar>
+        <Visible_On_Radar_When_Fogged>true</Visible_On_Radar_When_Fogged>
+        <Radar_Icon_Name>i_radar_station5_e.tga</Radar_Icon_Name>
+        <Radar_Icon_Scale_Space>1.3</Radar_Icon_Scale_Space>
+        <Radar_Icon_Size>0.16  0.16</Radar_Icon_Size>
+        <Radar_Rotate_Icon>Yes</Radar_Rotate_Icon>
+        <Icon_Name>WRAITH_SPACE_BUILDING_STATIONTECH5.TGA</Icon_Name>
+        <Score_Cost_Credits> 24000</Score_Cost_Credits>
+        <Retreat_Self_Destruct_Explosion>Self_Destruct_Star_Base_Level_5_Empire</Retreat_Self_Destruct_Explosion>
+        <Death_Clone>Damage_Normal, Empire_Star_Base_5_Death_Clone</Death_Clone>
+        <Additional_Population_Capacity>17</Additional_Population_Capacity>
+        <Abilities SubObjectList="Yes">
+            <Force_Healing_Ability Name="Wraith_Self_Repair">
+                <Activation_Style>Space_Automatic</Activation_Style>
+                <Heal_Range>0.0</Heal_Range>
+                <Heal_Percent>0.010</Heal_Percent>
+                <Heal_Amount>0.0</Heal_Amount>
+                <Heal_Interval_In_Secs>1.0</Heal_Interval_In_Secs>
+                <Single_Target_Heal>No</Single_Target_Heal>
+                <Applicable_Unit_Categories/>
+                <Applicable_Unit_Types/>
+                <SFXEvent_Target_Affected/>
+                <Owner_Particle_Bone_Name>ROOT</Owner_Particle_Bone_Name>
+                <Owner_Light_Effect_Type>Color_Flash</Owner_Light_Effect_Type>
+                <Owner_Light_Effect_Color>1.2, 1.2, 1.2</Owner_Light_Effect_Color>
+                <Owner_Light_Effect_Color2/>
+                <Owner_Light_Effect_Duration>0.6</Owner_Light_Effect_Duration>
+                <Owner_Light_Effect_Pulse_Count>1</Owner_Light_Effect_Pulse_Count>
+            </Force_Healing_Ability>
+        </Abilities>
+    </StarBase>
+	
+    <StarBase Name="Empire_Star_Base_5_Death_Clone">
+        <Text_ID>TEXT_WRAITH_SPACE_BUILDING_GC_STATION_TECH_5</Text_ID>
+        <Space_Model_Name>Wraith_Space_Building_StationTech5_D.alo</Space_Model_Name>
+        <Death_SFXEvent_Start_Die>Unit_Star_Destroyer_Death_SFX</Death_SFXEvent_Start_Die>
+        <Layer_Z_Adjust>-330.0</Layer_Z_Adjust>
+        <CategoryMask> Capital </CategoryMask>
+        <Death_Persistence_Duration> 34 </Death_Persistence_Duration>
+        <Should_Death_Clone_Play_Idle> true </Should_Death_Clone_Play_Idle>
+    </StarBase>
+
+    <!-- Empire Skirmish Starbases -->
+
+    <StarBase Name="Skirmish_Empire_Star_Base_1">
+        <Variant_Of_Existing_Type>Empire_Star_Base_1</Variant_Of_Existing_Type>
+        <Text_ID>TEXT_WRAITH_SPACE_BUILDING_SK_STATION_TECH_1</Text_ID>
+        <Encyclopedia_Text>TEXT_DESCRIPTION_WRAITH_SK_STATION_TECH_1 </Encyclopedia_Text>
+        <Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_WRAITH_STATION_TECH_1</Encyclopedia_Unit_Class>
+        <Is_Community_Property>Yes</Is_Community_Property>
+        <HardPoints>
+            HP_Wraith_Space_Building_StationTech1_R_WPS_00,
+            HP_Wraith_Space_Building_StationTech1_R_WPS_01,
+            HP_Wraith_Space_Building_StationTech1_M_WPS_01,
+            HP_Wraith_Space_Building_StationTech1_M_WPS_00,
+            HP_Wraith_Space_Building_StationTech1_F_WPS_00,
+            HP_Wraith_Space_Building_StationTech1_F_WPS_01,
+            HP_Wraith_HANGAR1,
+            HP_Wraith_HANGAR2,
+            HP_Wraith_HANGAR3,
+            HP_Wraith_SupplyDock,
+            HP_Wraith_Comm_Array
+        </HardPoints>
+        <Dense_FOW_Reveal_Range_Multiplier>0.2</Dense_FOW_Reveal_Range_Multiplier>
+        <Space_FOW_Reveal_Range>2000.0</Space_FOW_Reveal_Range>
+        <!-- Tactical Production Options -->
+        <SpaceBehavior> SPACE_OBSTACLE, POWERED, HIDE_WHEN_FOGGED, REVEAL, UNIT_AI, SPAWN_SQUADRON, ION_STUN_EFFECT</SpaceBehavior>
+        <Tactical_Buildable_Objects_Multiplayer>
+            Empire,
+            TIE_Fighter_Squadron,
+            TIE_Bomber_Squadron,
+            Wraith_Hero_Commando_Wraith_Squadron,
+            Tartan_Patrol_Cruiser,
+            W_Damage_L1_Upgrade,
+            W_Defense_L1_Upgrade,
+            W_Speed_L1_Upgrade,
+            ES_Level_Two_Starbase_Upgrade,
+        </Tactical_Buildable_Objects_Multiplayer>
+        <Visible_To_Enemies_When_Empty>True</Visible_To_Enemies_When_Empty>
+        <!-- Data to prevent this from being buildable in galactic mode -->
+        <Build_Cost_Credits>0</Build_Cost_Credits>
+        <Build_Time_Seconds>0</Build_Time_Seconds>
+        <Build_Tab_Space_Station>No</Build_Tab_Space_Station>
+        <Required_Ground_Base_Level>0</Required_Ground_Base_Level>
+        <Required_Star_Base_Level>0</Required_Star_Base_Level>
+        <Reinforcement_Prevention_Radius> 2000 </Reinforcement_Prevention_Radius>
+        <!-- Base upgrade sequence -->
+        <Prev_Level_Base/>
+        <Next_Level_Base>Skirmish_Empire_Star_Base_2</Next_Level_Base>
+        <!-- Special Abilities unique to Skirmish mode -->
+        <Abilities SubObjectList="Yes">
+            <Income_Stream_Ability Name="E_Starbase_Income_Stream">
+                <Activation_Style>Skirmish_Automatic</Activation_Style>
+                <Initially_Enabled>Yes</Initially_Enabled>
+                <Base_Income_Value>30</Base_Income_Value>
+                <Base_Interval_In_Secs>10</Base_Interval_In_Secs>
+                <Split_Income_With_Allies>Yes</Split_Income_With_Allies>
+                <Split_Favors_Owner>No</Split_Favors_Owner>
+                <Full_Amount_To_Everyone>Yes</Full_Amount_To_Everyone>
+            </Income_Stream_Ability>
+            <Income_Stream_Mod_Ability Name="E_Supply_Dock_Income_Bonus">
+                <Activation_Style>Skirmish_Automatic</Activation_Style>
+                <Initially_Enabled>No</Initially_Enabled>
+                <!-- This bonus income is controlled by the presence of the Supply Dock hardpoint -->
+                <Income_Multiplier>1.0</Income_Multiplier>
+                <Income_Additive_Value>20</Income_Additive_Value>
+                <Interval_Multiplier>1.0</Interval_Multiplier>
+                <Stacking_Category>0</Stacking_Category>
+                <Target_Stream_Source>Skirmish_Empire_Star_Base_1</Target_Stream_Source>
+                <Affects_All_Allied_Sources>Yes</Affects_All_Allied_Sources>
+                <Reverse_Application_Logic>No</Reverse_Application_Logic>
+            </Income_Stream_Mod_Ability>
+            <Enable_Radar_Ability Name="E_Comm_Array_Enable_Radar">
+                <Activation_Style>Skirmish_Automatic</Activation_Style>
+                <Initially_Enabled>No</Initially_Enabled>
+                <!-- This effect is controlled by the presence of the Comm Array hardpoint -->
+                <Affects_All_Allies>True</Affects_All_Allies>
+            </Enable_Radar_Ability>
+            <Force_Healing_Ability Name="Wraith_Self_Repair">
+                <Activation_Style>Space_Automatic</Activation_Style>
+                <Heal_Range>0.0</Heal_Range>
+                <Heal_Percent>0.01</Heal_Percent>
+                <Heal_Amount>0.0</Heal_Amount>
+                <Heal_Interval_In_Secs>1.0</Heal_Interval_In_Secs>
+                <Single_Target_Heal>No</Single_Target_Heal>
+                <Applicable_Unit_Categories/>
+                <Applicable_Unit_Types/>
+                <SFXEvent_Target_Affected/>
+                <Owner_Particle_Bone_Name>ROOT</Owner_Particle_Bone_Name>
+                <Owner_Light_Effect_Type>Color_Flash</Owner_Light_Effect_Type>
+                <Owner_Light_Effect_Color>1.2, 1.2, 1.2</Owner_Light_Effect_Color>
+                <Owner_Light_Effect_Color2/>
+                <Owner_Light_Effect_Duration>0.6</Owner_Light_Effect_Duration>
+                <Owner_Light_Effect_Pulse_Count>1</Owner_Light_Effect_Pulse_Count>
+            </Force_Healing_Ability>
+        </Abilities>
+        <Last_State_Visible_Under_FOW> True </Last_State_Visible_Under_FOW>
+        <Initial_State_Visible_Under_FOW>False</Initial_State_Visible_Under_FOW>
+        <Visible_On_Radar_When_Fogged>False</Visible_On_Radar_When_Fogged>
+		<Starting_Spawned_Units_Tech_0>TIE_Fighter_Squadron, 2</Starting_Spawned_Units_Tech_0>
+        <Reserve_Spawned_Units_Tech_0>TIE_Fighter_Squadron, -1</Reserve_Spawned_Units_Tech_0>
+        <Spawned_Squadron_Delay_Seconds>10</Spawned_Squadron_Delay_Seconds>
+    </StarBase>
+
+
+    <StarBase Name="Skirmish_Empire_Star_Base_2">
+        <Variant_Of_Existing_Type>Empire_Star_Base_2</Variant_Of_Existing_Type>
+        <Text_ID>TEXT_WRAITH_SPACE_BUILDING_SK_STATION_TECH_2</Text_ID>
+        <Encyclopedia_Text>TEXT_DESCRIPTION_WRAITH_SK_STATION_TECH_2</Encyclopedia_Text>
+        <Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_WRAITH_STATION_TECH_2</Encyclopedia_Unit_Class>
+        <Is_Community_Property>Yes</Is_Community_Property>
+
+        <Lua_Script>Skirmish_Dummy_Spawn_Tech_2</Lua_Script>
+
+        <HardPoints>
+            HP_Wraith_Space_Building_StationTech1_R_WPS_00,
+            HP_Wraith_Space_Building_StationTech1_R_WPS_01,
+            HP_Wraith_Space_Building_StationTech1_M_WPS_01,
+            HP_Wraith_Space_Building_StationTech1_M_WPS_00,
+            HP_Wraith_Space_Building_StationTech1_F_WPS_00,
+            HP_Wraith_Space_Building_StationTech1_F_WPS_01,
+            HP_Wraith_Space_Building_StationTech2_R_WPM_00,
+            HP_Wraith_Space_Building_StationTech2_F_WPM_00,
+            HP_Wraith_Space_Building_StationTech2_F_WPM_01,
+            HP_Wraith_Space_Building_StationTech2_M_WPM_00,
+            HP_Wraith_Space_Building_StationTech2_M_WPM_01,
+            HP_Wraith_Space_Building_StationTech2_M_WPM_02,
+            HP_Wraith_HANGAR1,
+            HP_Wraith_HANGAR2,
+            HP_Wraith_HANGAR3,
+            HP_Wraith_SupplyDock,
+            HP_Wraith_Comm_Array
+        </HardPoints>
+        <Dense_FOW_Reveal_Range_Multiplier>0.2</Dense_FOW_Reveal_Range_Multiplier>
+        <Space_FOW_Reveal_Range>2000.0</Space_FOW_Reveal_Range>
+        <Reinforcement_Prevention_Radius> 2000 </Reinforcement_Prevention_Radius>
+        <!-- Tactical Production Options -->
+        <SpaceBehavior> SPACE_OBSTACLE, POWERED, HIDE_WHEN_FOGGED, REVEAL, UNIT_AI, SPAWN_SQUADRON, ION_STUN_EFFECT</SpaceBehavior>
+        <Tactical_Buildable_Objects_Multiplayer>
+            Empire,
+            TIE_Fighter_Squadron,
+            TIE_Bomber_Squadron,
+            Probe_Droid_Team_MP,
+            Wraith_Hero_Commando_Wraith_Squadron,
+            Boba_Fett_Team,
+            Tartan_Patrol_Cruiser,
+            Interdictor_Cruiser,
+            W_Damage_L1_Upgrade,
+            W_Damage_L2_Upgrade,
+            W_Defense_L1_Upgrade,
+            W_Defense_L2_Upgrade,
+            W_Speed_L1_Upgrade,
+            W_Speed_L2_Upgrade,
+            ES_Level_Three_Starbase_Upgrade,
+        </Tactical_Buildable_Objects_Multiplayer>
+        <Visible_To_Enemies_When_Empty>True</Visible_To_Enemies_When_Empty>
+        <!-- Data to prevent this from being buildable in galactic mode -->
+        <Build_Cost_Credits>0</Build_Cost_Credits>
+        <Build_Time_Seconds>0</Build_Time_Seconds>
+        <Build_Tab_Space_Station>No</Build_Tab_Space_Station>
+        <Required_Ground_Base_Level>0</Required_Ground_Base_Level>
+        <Required_Star_Base_Level>0</Required_Star_Base_Level>
+        <!-- Base upgrade sequence -->
+        <Prev_Level_Base>Skirmish_Empire_Star_Base_1</Prev_Level_Base>
+        <Next_Level_Base>Skirmish_Empire_Star_Base_3</Next_Level_Base>
+        <!-- Special Abilities unique to Skirmish mode -->
+        <Abilities SubObjectList="Yes">
+            <Income_Stream_Ability Name="E_Starbase_Income_Stream">
+                <Activation_Style>Skirmish_Automatic</Activation_Style>
+                <Initially_Enabled>Yes</Initially_Enabled>
+                <Base_Income_Value>35</Base_Income_Value>
+                <Base_Interval_In_Secs>12</Base_Interval_In_Secs>
+                <Split_Income_With_Allies>Yes</Split_Income_With_Allies>
+                <Split_Favors_Owner>No</Split_Favors_Owner>
+                <Full_Amount_To_Everyone>Yes</Full_Amount_To_Everyone>
+            </Income_Stream_Ability>
+            <Income_Stream_Mod_Ability Name="E_Supply_Dock_Income_Bonus">
+                <Activation_Style>Skirmish_Automatic</Activation_Style>
+                <Initially_Enabled>No</Initially_Enabled>
+                <!-- This bonus income is controlled by the presence of the Supply Dock hardpoint -->
+                <Income_Multiplier>1.0</Income_Multiplier>
+                <Income_Additive_Value>25</Income_Additive_Value>
+                <Interval_Multiplier>1.0</Interval_Multiplier>
+                <Stacking_Category>0</Stacking_Category>
+                <Target_Stream_Source>Skirmish_Empire_Star_Base_2</Target_Stream_Source>
+                <Affects_All_Allied_Sources>Yes</Affects_All_Allied_Sources>
+                <Reverse_Application_Logic>No</Reverse_Application_Logic>
+            </Income_Stream_Mod_Ability>
+            <Enable_Radar_Ability Name="E_Comm_Array_Enable_Radar">
+                <Activation_Style>Skirmish_Automatic</Activation_Style>
+                <Initially_Enabled>No</Initially_Enabled>
+                <!-- This effect is controlled by the presence of the Comm Array hardpoint -->
+                <Affects_All_Allies>True</Affects_All_Allies>
+            </Enable_Radar_Ability>
+            <Force_Healing_Ability Name="Wraith_Self_Repair">
+                <Activation_Style>Space_Automatic</Activation_Style>
+                <Heal_Range>0.0</Heal_Range>
+                <Heal_Percent>0.01</Heal_Percent>
+                <Heal_Amount>0.0</Heal_Amount>
+                <Heal_Interval_In_Secs>1.0</Heal_Interval_In_Secs>
+                <Single_Target_Heal>No</Single_Target_Heal>
+                <Applicable_Unit_Categories/>
+                <Applicable_Unit_Types/>
+                <SFXEvent_Target_Affected/>
+                <Owner_Particle_Bone_Name>ROOT</Owner_Particle_Bone_Name>
+                <Owner_Light_Effect_Type>Color_Flash</Owner_Light_Effect_Type>
+                <Owner_Light_Effect_Color>1.2, 1.2, 1.2</Owner_Light_Effect_Color>
+                <Owner_Light_Effect_Color2/>
+                <Owner_Light_Effect_Duration>0.6</Owner_Light_Effect_Duration>
+                <Owner_Light_Effect_Pulse_Count>1</Owner_Light_Effect_Pulse_Count>
+            </Force_Healing_Ability>
+        </Abilities>
+        <Last_State_Visible_Under_FOW> True </Last_State_Visible_Under_FOW>
+        <Initial_State_Visible_Under_FOW>False</Initial_State_Visible_Under_FOW>
+        <Visible_On_Radar_When_Fogged>False</Visible_On_Radar_When_Fogged>
+		<Starting_Spawned_Units_Tech_0>TIE_Fighter_Squadron, 2</Starting_Spawned_Units_Tech_0>
+        <Reserve_Spawned_Units_Tech_0>TIE_Fighter_Squadron, -1</Reserve_Spawned_Units_Tech_0>
+        <Spawned_Squadron_Delay_Seconds>10</Spawned_Squadron_Delay_Seconds>
+    </StarBase>
+
+
+    <StarBase Name="Skirmish_Empire_Star_Base_3">
+        <Variant_Of_Existing_Type>Empire_Star_Base_3</Variant_Of_Existing_Type>
+        <Text_ID>TEXT_WRAITH_SPACE_BUILDING_SK_STATION_TECH_3</Text_ID>
+        <Encyclopedia_Text>TEXT_DESCRIPTION_WRAITH_SK_STATION_TECH_3</Encyclopedia_Text>
+        <Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_WRAITH_STATION_TECH_3</Encyclopedia_Unit_Class>
+        <Is_Community_Property>Yes</Is_Community_Property>
+
+        <Lua_Script>Skirmish_Dummy_Spawn_Tech_3</Lua_Script>
+
+        <HardPoints>
+            HP_Wraith_Space_Building_StationTech1_R_WPS_00,
+            HP_Wraith_Space_Building_StationTech1_R_WPS_01,
+            HP_Wraith_Space_Building_StationTech1_M_WPS_01,
+            HP_Wraith_Space_Building_StationTech1_M_WPS_00,
+            HP_Wraith_Space_Building_StationTech1_F_WPS_00,
+            HP_Wraith_Space_Building_StationTech1_F_WPS_01,
+            HP_Wraith_Space_Building_StationTech2_R_WPM_00,
+            HP_Wraith_Space_Building_StationTech2_F_WPM_00,
+            HP_Wraith_Space_Building_StationTech2_F_WPM_01,
+            HP_Wraith_Space_Building_StationTech2_M_WPM_00,
+            HP_Wraith_Space_Building_StationTech2_M_WPM_01,
+            HP_Wraith_Space_Building_StationTech2_M_WPM_02,
+            HP_Wraith_Space_Building_StationTech3_R_WPH_00,
+            HP_Wraith_Space_Building_StationTech3_F_WPH_00,
+            HP_Wraith_Space_Building_StationTech3_F_WPH_01,
+            HP_Wraith_HANGAR1,
+            HP_Wraith_HANGAR2,
+            HP_Wraith_HANGAR3,
+            HP_Wraith_SupplyDock,
+            HP_Wraith_Comm_Array
+        </HardPoints>
+        <Dense_FOW_Reveal_Range_Multiplier>0.2</Dense_FOW_Reveal_Range_Multiplier>
+        <Space_FOW_Reveal_Range>2000.0</Space_FOW_Reveal_Range>
+        <Reinforcement_Prevention_Radius> 2000 </Reinforcement_Prevention_Radius>
+        <!-- Tactical Production Options -->
+        <SpaceBehavior> SPACE_OBSTACLE, POWERED, HIDE_WHEN_FOGGED, REVEAL, UNIT_AI, SPAWN_SQUADRON, ION_STUN_EFFECT</SpaceBehavior>
+        <Tactical_Buildable_Objects_Multiplayer>
+            Empire,
+            TIE_Fighter_Squadron,
+            TIE_Interceptor_Squadron,
+            TIE_Bomber_Squadron,
+            TIE_Defender_Squadron,
+            Probe_Droid_Team_MP,
+            Wraith_Hero_Commando_Wraith_Squadron,
+            Boba_Fett_Team,
+            Tartan_Patrol_Cruiser,
+            Wraith_Hero_Steve,
+            Interdictor_Cruiser,
+            Acclamator_Assault_Ship,
+            Broadside_Class_Cruiser,
+            W_Damage_L1_Upgrade,
+            W_Damage_L2_Upgrade,
+            W_Damage_L3_Upgrade,
+            W_Defense_L1_Upgrade,
+            W_Defense_L2_Upgrade,
+            W_Defense_L3_Upgrade,
+            W_Speed_L1_Upgrade,
+            W_Speed_L2_Upgrade,
+            W_Speed_L3_Upgrade,
+            ES_More_Garrisons_L1_Upgrade,
+            ES_Hypervelocity_Gun_Use_Upgrade,
+            ES_Level_Four_Starbase_Upgrade,
+        </Tactical_Buildable_Objects_Multiplayer>
+        <Visible_To_Enemies_When_Empty>True</Visible_To_Enemies_When_Empty>
+        <!-- Data to prevent this from being buildable in galactic mode -->
+        <Build_Cost_Credits>0</Build_Cost_Credits>
+        <Build_Time_Seconds>0</Build_Time_Seconds>
+        <Build_Tab_Space_Station>No</Build_Tab_Space_Station>
+        <Required_Ground_Base_Level>0</Required_Ground_Base_Level>
+        <Required_Star_Base_Level>0</Required_Star_Base_Level>
+        <!-- Base upgrade sequence -->
+        <Prev_Level_Base>Skirmish_Empire_Star_Base_2</Prev_Level_Base>
+        <Next_Level_Base>Skirmish_Empire_Star_Base_4</Next_Level_Base>
+        <!-- Special Abilities unique to Skirmish mode -->
+        <Abilities SubObjectList="Yes">
+            <Income_Stream_Ability Name="E_Starbase_Income_Stream">
+                <Activation_Style>Skirmish_Automatic</Activation_Style>
+                <Initially_Enabled>Yes</Initially_Enabled>
+                <Base_Income_Value>40</Base_Income_Value>
+                <Base_Interval_In_Secs>14</Base_Interval_In_Secs>
+                <Split_Income_With_Allies>Yes</Split_Income_With_Allies>
+                <Split_Favors_Owner>No</Split_Favors_Owner>
+                <Full_Amount_To_Everyone>Yes</Full_Amount_To_Everyone>
+            </Income_Stream_Ability>
+            <Income_Stream_Mod_Ability Name="E_Supply_Dock_Income_Bonus">
+                <Activation_Style>Skirmish_Automatic</Activation_Style>
+                <Initially_Enabled>No</Initially_Enabled>
+                <!-- This bonus income is controlled by the presence of the Supply Dock hardpoint -->
+                <Income_Multiplier>1.0</Income_Multiplier>
+                <Income_Additive_Value>30</Income_Additive_Value>
+                <Interval_Multiplier>1.0</Interval_Multiplier>
+                <Stacking_Category>0</Stacking_Category>
+                <Target_Stream_Source>Skirmish_Empire_Star_Base_3</Target_Stream_Source>
+                <Affects_All_Allied_Sources>Yes</Affects_All_Allied_Sources>
+                <Reverse_Application_Logic>No</Reverse_Application_Logic>
+            </Income_Stream_Mod_Ability>
+            <Enable_Radar_Ability Name="E_Comm_Array_Enable_Radar">
+                <Activation_Style>Skirmish_Automatic</Activation_Style>
+                <Initially_Enabled>No</Initially_Enabled>
+                <!-- This effect is controlled by the presence of the Comm Array hardpoint -->
+                <Affects_All_Allies>True</Affects_All_Allies>
+            </Enable_Radar_Ability>
+            <Force_Healing_Ability Name="Wraith_Self_Repair">
+                <Activation_Style>Space_Automatic</Activation_Style>
+                <Heal_Range>0.0</Heal_Range>
+                <Heal_Percent>0.01</Heal_Percent>
+                <Heal_Amount>0.0</Heal_Amount>
+                <Heal_Interval_In_Secs>1.0</Heal_Interval_In_Secs>
+                <Single_Target_Heal>No</Single_Target_Heal>
+                <Applicable_Unit_Categories/>
+                <Applicable_Unit_Types/>
+                <SFXEvent_Target_Affected/>
+                <Owner_Particle_Bone_Name>ROOT</Owner_Particle_Bone_Name>
+                <Owner_Light_Effect_Type>Color_Flash</Owner_Light_Effect_Type>
+                <Owner_Light_Effect_Color>1.2, 1.2, 1.2</Owner_Light_Effect_Color>
+                <Owner_Light_Effect_Color2/>
+                <Owner_Light_Effect_Duration>0.6</Owner_Light_Effect_Duration>
+                <Owner_Light_Effect_Pulse_Count>1</Owner_Light_Effect_Pulse_Count>
+            </Force_Healing_Ability>
+        </Abilities>
+        <Last_State_Visible_Under_FOW> True </Last_State_Visible_Under_FOW>
+        <Initial_State_Visible_Under_FOW>False</Initial_State_Visible_Under_FOW>
+        <Visible_On_Radar_When_Fogged>False</Visible_On_Radar_When_Fogged>
+		<Starting_Spawned_Units_Tech_0>TIE_Fighter_Squadron, 2</Starting_Spawned_Units_Tech_0>
+        <Reserve_Spawned_Units_Tech_0>TIE_Fighter_Squadron, -1</Reserve_Spawned_Units_Tech_0>
+        <Spawned_Squadron_Delay_Seconds>10</Spawned_Squadron_Delay_Seconds>
+    </StarBase>
+
+
+    <StarBase Name="Skirmish_Empire_Star_Base_4">
+        <Variant_Of_Existing_Type>Empire_Star_Base_4</Variant_Of_Existing_Type>
+        <Text_ID>TEXT_WRAITH_SPACE_BUILDING_SK_STATION_TECH_4</Text_ID>
+        <Encyclopedia_Text>TEXT_DESCRIPTION_WRAITH_SK_STATION_TECH_4</Encyclopedia_Text>
+        <Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_WRAITH_STATION_TECH_4</Encyclopedia_Unit_Class>
+        <Is_Community_Property>Yes</Is_Community_Property>
+
+        <Lua_Script>Skirmish_Dummy_Spawn_Tech_4</Lua_Script>
+
+        <HardPoints>
+            HP_Wraith_Space_Building_StationTech1_R_WPS_00,
+            HP_Wraith_Space_Building_StationTech1_R_WPS_01,
+            HP_Wraith_Space_Building_StationTech1_M_WPS_01,
+            HP_Wraith_Space_Building_StationTech1_M_WPS_00,
+            HP_Wraith_Space_Building_StationTech1_F_WPS_00,
+            HP_Wraith_Space_Building_StationTech1_F_WPS_01,
+            HP_Wraith_Space_Building_StationTech2_R_WPM_00,
+            HP_Wraith_Space_Building_StationTech2_F_WPM_00,
+            HP_Wraith_Space_Building_StationTech2_F_WPM_01,
+            HP_Wraith_Space_Building_StationTech2_M_WPM_00,
+            HP_Wraith_Space_Building_StationTech2_M_WPM_01,
+            HP_Wraith_Space_Building_StationTech2_M_WPM_02,
+            HP_Wraith_Space_Building_StationTech3_R_WPH_00,
+            HP_Wraith_Space_Building_StationTech3_F_WPH_00,
+            HP_Wraith_Space_Building_StationTech3_F_WPH_01,
+            HP_Wraith_Space_Building_StationTech4_M_WPM_03,
+            HP_Wraith_Space_Building_StationTech4_M_WPM_04,
+            HP_Wraith_Space_Building_StationTech4_M_WPM_05,
+            HP_Wraith_HANGAR1,
+            HP_Wraith_HANGAR2,
+            HP_Wraith_HANGAR3,
+            HP_Wraith_SupplyDock,
+            HP_Wraith_Comm_Array
+        </HardPoints>
+        <Dense_FOW_Reveal_Range_Multiplier>0.2</Dense_FOW_Reveal_Range_Multiplier>
+        <Space_FOW_Reveal_Range>2000.0</Space_FOW_Reveal_Range>
+        <Reinforcement_Prevention_Radius> 2000 </Reinforcement_Prevention_Radius>
+        <!-- Tactical Production Options -->
+        <SpaceBehavior> SPACE_OBSTACLE, POWERED, HIDE_WHEN_FOGGED, REVEAL, UNIT_AI, SPAWN_SQUADRON, ION_STUN_EFFECT</SpaceBehavior>
+        <Tactical_Buildable_Objects_Multiplayer>
+            Empire,
+            TIE_Fighter_Squadron,
+            TIE_Interceptor_Squadron,
+            TIE_Bomber_Squadron,
+            TIE_Defender_Squadron,
+            Probe_Droid_Team_MP,
+            TIE_Phantom_Squadron,
+            Wraith_Hero_Commando_Wraith_Squadron,
+            Boba_Fett_Team,
+            Tartan_Patrol_Cruiser,
+            Wraith_Hero_Steve,
+            Interdictor_Cruiser,
+            Wraith_Hero_Michael,
+            Acclamator_Assault_Ship,
+            Broadside_Class_Cruiser,
+            Victory_Destroyer,
+            W_Damage_L1_Upgrade,
+            W_Damage_L2_Upgrade,
+            W_Damage_L3_Upgrade,
+            W_Damage_L4_Upgrade,
+            W_Defense_L1_Upgrade,
+            W_Defense_L2_Upgrade,
+            W_Defense_L3_Upgrade,
+            W_Defense_L4_Upgrade,
+            W_Speed_L1_Upgrade,
+            W_Speed_L2_Upgrade,
+            W_Speed_L3_Upgrade,
+            W_Speed_L4_Upgrade,
+            ES_Hypervelocity_Gun_Use_Upgrade,
+            ES_More_Garrisons_L1_Upgrade,
+            ES_Level_Five_Starbase_Upgrade,
+        </Tactical_Buildable_Objects_Multiplayer>
+        <Visible_To_Enemies_When_Empty>True</Visible_To_Enemies_When_Empty>
+        <!-- Data to prevent this from being buildable in galactic mode -->
+        <Build_Cost_Credits>0</Build_Cost_Credits>
+        <Build_Time_Seconds>0</Build_Time_Seconds>
+        <Build_Tab_Space_Station>No</Build_Tab_Space_Station>
+        <Required_Ground_Base_Level>0</Required_Ground_Base_Level>
+        <Required_Star_Base_Level>0</Required_Star_Base_Level>
+        <!-- Base upgrade sequence -->
+        <Prev_Level_Base>Skirmish_Empire_Star_Base_3</Prev_Level_Base>
+        <Next_Level_Base>Skirmish_Empire_Star_Base_5</Next_Level_Base>
+        <!-- Special Abilities unique to Skirmish mode -->
+        <Abilities SubObjectList="Yes">
+            <Income_Stream_Ability Name="E_Starbase_Income_Stream">
+                <Activation_Style>Skirmish_Automatic</Activation_Style>
+                <Initially_Enabled>Yes</Initially_Enabled>
+                <Base_Income_Value>45</Base_Income_Value>
+                <Base_Interval_In_Secs>16</Base_Interval_In_Secs>
+                <Split_Income_With_Allies>Yes</Split_Income_With_Allies>
+                <Split_Favors_Owner>No</Split_Favors_Owner>
+                <Full_Amount_To_Everyone>Yes</Full_Amount_To_Everyone>
+            </Income_Stream_Ability>
+            <Income_Stream_Mod_Ability Name="E_Supply_Dock_Income_Bonus">
+                <Activation_Style>Skirmish_Automatic</Activation_Style>
+                <Initially_Enabled>No</Initially_Enabled>
+                <!-- This bonus income is controlled by the presence of the Supply Dock hardpoint -->
+                <Income_Multiplier>1.0</Income_Multiplier>
+                <Income_Additive_Value>35</Income_Additive_Value>
+                <Interval_Multiplier>1.0</Interval_Multiplier>
+                <Stacking_Category>0</Stacking_Category>
+                <Target_Stream_Source>Skirmish_Empire_Star_Base_4</Target_Stream_Source>
+                <Affects_All_Allied_Sources>Yes</Affects_All_Allied_Sources>
+                <Reverse_Application_Logic>No</Reverse_Application_Logic>
+            </Income_Stream_Mod_Ability>
+            <Enable_Radar_Ability Name="E_Comm_Array_Enable_Radar">
+                <Activation_Style>Skirmish_Automatic</Activation_Style>
+                <Initially_Enabled>No</Initially_Enabled>
+                <!-- This effect is controlled by the presence of the Comm Array hardpoint -->
+                <Affects_All_Allies>True</Affects_All_Allies>
+            </Enable_Radar_Ability>
+            <Force_Healing_Ability Name="Wraith_Self_Repair">
+                <Activation_Style>Space_Automatic</Activation_Style>
+                <Heal_Range>0.0</Heal_Range>
+                <Heal_Percent>0.01</Heal_Percent>
+                <Heal_Amount>0.0</Heal_Amount>
+                <Heal_Interval_In_Secs>1.0</Heal_Interval_In_Secs>
+                <Single_Target_Heal>No</Single_Target_Heal>
+                <Applicable_Unit_Categories/>
+                <Applicable_Unit_Types/>
+                <SFXEvent_Target_Affected/>
+                <Owner_Particle_Bone_Name>ROOT</Owner_Particle_Bone_Name>
+                <Owner_Light_Effect_Type>Color_Flash</Owner_Light_Effect_Type>
+                <Owner_Light_Effect_Color>1.2, 1.2, 1.2</Owner_Light_Effect_Color>
+                <Owner_Light_Effect_Color2/>
+                <Owner_Light_Effect_Duration>0.6</Owner_Light_Effect_Duration>
+                <Owner_Light_Effect_Pulse_Count>1</Owner_Light_Effect_Pulse_Count>
+            </Force_Healing_Ability>
+        </Abilities>
+        <Last_State_Visible_Under_FOW> True </Last_State_Visible_Under_FOW>
+        <Initial_State_Visible_Under_FOW>False</Initial_State_Visible_Under_FOW>
+        <Visible_On_Radar_When_Fogged>False</Visible_On_Radar_When_Fogged>
+		<Starting_Spawned_Units_Tech_0>TIE_Fighter_Squadron, 2</Starting_Spawned_Units_Tech_0>
+        <Reserve_Spawned_Units_Tech_0>TIE_Fighter_Squadron, -1</Reserve_Spawned_Units_Tech_0>
+        <Spawned_Squadron_Delay_Seconds>10</Spawned_Squadron_Delay_Seconds>
+    </StarBase>
+
+
+    <StarBase Name="Skirmish_Empire_Star_Base_5">
+        <Variant_Of_Existing_Type>Empire_Star_Base_5</Variant_Of_Existing_Type>
+        <Text_ID>TEXT_WRAITH_SPACE_BUILDING_SK_STATION_TECH_5</Text_ID>
+        <Encyclopedia_Text>TEXT_DESCRIPTION_WRAITH_SK_STATION_TECH_5</Encyclopedia_Text>
+        <Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_WRAITH_STATION_TECH_5</Encyclopedia_Unit_Class>
+        <Is_Community_Property>Yes</Is_Community_Property>
+		
+		<Lua_Script>Skirmish_Dummy_Spawn_Tech_5</Lua_Script>
+		
+        <HardPoints>
+            HP_Wraith_Space_Building_StationTech1_F_WPS_00,
+            HP_Wraith_Space_Building_StationTech1_F_WPS_01,
+            HP_Wraith_Space_Building_StationTech2_F_WPM_00,
+            HP_Wraith_Space_Building_StationTech2_F_WPM_01,
+            HP_Wraith_Space_Building_StationTech3_F_WPH_00,
+            HP_Wraith_Space_Building_StationTech3_F_WPH_01,
+            HP_Wraith_Space_Building_StationTech5_F_WPH_02,
+            HP_Wraith_Space_Building_StationTech5_F_WPH_03,
+            HP_Wraith_Space_Building_StationTech1_M_WPS_00,
+            HP_Wraith_Space_Building_StationTech1_M_WPS_01,
+            HP_Wraith_Space_Building_StationTech2_M_WPM_00,
+            HP_Wraith_Space_Building_StationTech2_M_WPM_01,
+            HP_Wraith_Space_Building_StationTech2_M_WPM_02,
+            HP_Wraith_Space_Building_StationTech4_M_WPM_03,
+            HP_Wraith_Space_Building_StationTech4_M_WPM_04,
+            HP_Wraith_Space_Building_StationTech4_M_WPM_05,
+            HP_Wraith_Space_Building_StationTech1_R_WPS_00,
+            HP_Wraith_Space_Building_StationTech1_R_WPS_01,
+            HP_Wraith_Space_Building_StationTech2_R_WPM_00,
+            HP_Wraith_Space_Building_StationTech3_R_WPH_00,
+            HP_Wraith_Space_Building_StationTech5_R_WPH_01,
+            HP_Wraith_HANGAR1,
+            HP_Wraith_HANGAR2,
+            HP_Wraith_HANGAR3,
+            HP_Wraith_SupplyDock,
+            HP_Wraith_Comm_Array
+        </HardPoints>
+        <Dense_FOW_Reveal_Range_Multiplier>0.2</Dense_FOW_Reveal_Range_Multiplier>
+        <Space_FOW_Reveal_Range>2000.0</Space_FOW_Reveal_Range>
+        <Reinforcement_Prevention_Radius> 2000 </Reinforcement_Prevention_Radius>
+        <!-- Tactical Production Options -->
+        <SpaceBehavior> SPACE_OBSTACLE, POWERED, HIDE_WHEN_FOGGED, REVEAL, UNIT_AI, SPAWN_SQUADRON, ION_STUN_EFFECT</SpaceBehavior>
+        <Tactical_Buildable_Objects_Multiplayer>
+            Empire,
+            TIE_Fighter_Squadron,
+            TIE_Interceptor_Squadron,
+            TIE_Bomber_Squadron,
+            TIE_Defender_Squadron,
+            Probe_Droid_Team_MP,
+            TIE_Phantom_Squadron,
+            Wraith_Hero_Commando_Wraith_Squadron,
+            Boba_Fett_Team,
+            Tartan_Patrol_Cruiser,
+            Wraith_Hero_Steve,
+            Interdictor_Cruiser,
+            Wraith_Hero_Michael,
+            Acclamator_Assault_Ship,
+            Broadside_Class_Cruiser,
+            Victory_Destroyer,
+            Star_Destroyer,
+            Accuser_Star_Destroyer,
+            W_Damage_L1_Upgrade,
+            W_Damage_L2_Upgrade,
+            W_Damage_L3_Upgrade,
+            W_Damage_L4_Upgrade,
+            W_Damage_L5_Upgrade,
+            W_Defense_L1_Upgrade,
+            W_Defense_L2_Upgrade,
+            W_Defense_L3_Upgrade,
+            W_Defense_L4_Upgrade,
+            W_Defense_L5_Upgrade,
+            W_Speed_L1_Upgrade,
+            W_Speed_L2_Upgrade,
+            W_Speed_L3_Upgrade,
+            W_Speed_L4_Upgrade,
+            W_Speed_L5_Upgrade,
+            ES_More_Garrisons_L1_Upgrade,
+            ES_Hypervelocity_Gun_Use_Upgrade,
+        </Tactical_Buildable_Objects_Multiplayer>
+        <Visible_To_Enemies_When_Empty>True</Visible_To_Enemies_When_Empty>
+        <!-- Data to prevent this from being buildable in galactic mode -->
+        <Build_Cost_Credits>0</Build_Cost_Credits>
+        <Build_Time_Seconds>0</Build_Time_Seconds>
+        <Build_Tab_Space_Station>No</Build_Tab_Space_Station>
+        <Required_Ground_Base_Level>0</Required_Ground_Base_Level>
+        <Required_Star_Base_Level>0</Required_Star_Base_Level>
+        <!-- Base upgrade sequence -->
+        <Prev_Level_Base>Skirmish_Empire_Star_Base_4</Prev_Level_Base>
+        <Next_Level_Base/>
+        <!-- Special Abilities unique to Skirmish mode -->
+        <Abilities SubObjectList="Yes">
+            <Income_Stream_Ability Name="E_Starbase_Income_Stream">
+                <Activation_Style>Skirmish_Automatic</Activation_Style>
+                <Initially_Enabled>Yes</Initially_Enabled>
+                <Base_Income_Value>55</Base_Income_Value>
+                <Base_Interval_In_Secs>18</Base_Interval_In_Secs>
+                <Split_Income_With_Allies>Yes</Split_Income_With_Allies>
+                <Split_Favors_Owner>No</Split_Favors_Owner>
+                <Full_Amount_To_Everyone>Yes</Full_Amount_To_Everyone>
+            </Income_Stream_Ability>
+            <Income_Stream_Mod_Ability Name="E_Supply_Dock_Income_Bonus">
+                <Activation_Style>Skirmish_Automatic</Activation_Style>
+                <Initially_Enabled>No</Initially_Enabled>
+                <!-- This bonus income is controlled by the presence of the Supply Dock hardpoint -->
+                <Income_Multiplier>1.0</Income_Multiplier>
+                <Income_Additive_Value>45</Income_Additive_Value>
+                <Interval_Multiplier>1.0</Interval_Multiplier>
+                <Stacking_Category>0</Stacking_Category>
+                <Target_Stream_Source>Skirmish_Empire_Star_Base_5</Target_Stream_Source>
+                <Affects_All_Allied_Sources>Yes</Affects_All_Allied_Sources>
+                <Reverse_Application_Logic>No</Reverse_Application_Logic>
+            </Income_Stream_Mod_Ability>
+            <Enable_Radar_Ability Name="E_Comm_Array_Enable_Radar">
+                <Activation_Style>Skirmish_Automatic</Activation_Style>
+                <Initially_Enabled>No</Initially_Enabled>
+                <!-- This effect is controlled by the presence of the Comm Array hardpoint -->
+                <Affects_All_Allies>True</Affects_All_Allies>
+            </Enable_Radar_Ability>
+            <Force_Healing_Ability Name="Wraith_Self_Repair">
+                <Activation_Style>Space_Automatic</Activation_Style>
+                <Heal_Range>0.0</Heal_Range>
+                <Heal_Percent>0.01</Heal_Percent>
+                <Heal_Amount>0.0</Heal_Amount>
+                <Heal_Interval_In_Secs>1.0</Heal_Interval_In_Secs>
+                <Single_Target_Heal>No</Single_Target_Heal>
+                <Applicable_Unit_Categories/>
+                <Applicable_Unit_Types/>
+                <SFXEvent_Target_Affected/>
+                <Owner_Particle_Bone_Name>ROOT</Owner_Particle_Bone_Name>
+                <Owner_Light_Effect_Type>Color_Flash</Owner_Light_Effect_Type>
+                <Owner_Light_Effect_Color>1.2, 1.2, 1.2</Owner_Light_Effect_Color>
+                <Owner_Light_Effect_Color2/>
+                <Owner_Light_Effect_Duration>0.6</Owner_Light_Effect_Duration>
+                <Owner_Light_Effect_Pulse_Count>1</Owner_Light_Effect_Pulse_Count>
+            </Force_Healing_Ability>
+        </Abilities>
+        <Last_State_Visible_Under_FOW> True </Last_State_Visible_Under_FOW>
+        <Initial_State_Visible_Under_FOW>False</Initial_State_Visible_Under_FOW>
+        <Visible_On_Radar_When_Fogged>False</Visible_On_Radar_When_Fogged>
+		<Starting_Spawned_Units_Tech_0>TIE_Fighter_Squadron, 2</Starting_Spawned_Units_Tech_0>
+        <Reserve_Spawned_Units_Tech_0>TIE_Fighter_Squadron, -1</Reserve_Spawned_Units_Tech_0>
+        <Spawned_Squadron_Delay_Seconds>10</Spawned_Squadron_Delay_Seconds>
+    </StarBase>
+
+<!-- =============================================================================================================================================== -->
+    
+    <!-- Wraith Rebels -->
+    
+<!-- =============================================================================================================================================== -->
+    
+    <!-- Wraith Rebel Starbase/Shipyard (Wraith_Large_Shipyard) -->
+    
+    <StarBase Name="Wraith_Rebel_Starbase_NoGarrison">
+        <Affiliation>Wraith_Rebel</Affiliation>
+        <Damage>45</Damage>
+
+        <Behavior>DUMMY_STAR_BASE, SELECTABLE</Behavior>
+        <SpaceBehavior>SPACE_OBSTACLE, POWERED, SPAWN_SQUADRON, HIDE_WHEN_FOGGED, REVEAL, UNIT_AI, ION_STUN_EFFECT</SpaceBehavior>
+
+        <Text_ID>TEXT_WRAITH_REBELS_SPACE_BUILDING_SHIPYARD</Text_ID>
+        <Encyclopedia_Text>TEXT_DESCRIPTION_WRAITH_REBELS_SHIPYARD_SPACE</Encyclopedia_Text>
+        <Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_WRAITH_HEAVY_SHIPYARD</Encyclopedia_Unit_Class>
+
+        <GUI_Bounds_Scale>0.5</GUI_Bounds_Scale>
+        <GUI_Row>0</GUI_Row>
+        
+        <Scale_Factor>1.0</Scale_Factor>
+        
+        <Is_Dummy>No</Is_Dummy>
+        
+        <Space_Model_Name>Wraith_Space_Building_Shipyard.ALO</Space_Model_Name>
+        <Galactic_Model_Name>Wraith_Space_Building_StationTech3_Galactic.ALO</Galactic_Model_Name>
+        
+        <Select_Box_Scale>1800</Select_Box_Scale>
+        <Select_Box_Z_Adjust>-50</Select_Box_Z_Adjust>
+        
+        <Build_Time_Seconds>25</Build_Time_Seconds>
+        <Build_Tab_Space_Station>Yes</Build_Tab_Space_Station>
+        
+        <Size_Value>10</Size_Value>
+        
+        <Tech_Level>0</Tech_Level>
+        <Base_Level>1</Base_Level>
+        
+        <Multisample_FOW_Check>Yes</Multisample_FOW_Check>
+        
+        <Prev_Level_Base/>
+        <Next_Level_Base/>
+        <Required_Ground_Base_Level>0</Required_Ground_Base_Level>
+        <Required_Star_Base_Level>0</Required_Star_Base_Level>
+        
+        <CategoryMask>Capital</CategoryMask>
+        <Victory_Relevant>Yes</Victory_Relevant>
+
+        <Energy_Capacity>6000</Energy_Capacity>
+        <Energy_Refresh_Rate>1000</Energy_Refresh_Rate>
+        <Armor_Type>Armor_Station</Armor_Type>
+        <Tactical_Health>5600</Tactical_Health>
+
+        <Build_Cost_Credits>1800</Build_Cost_Credits>
+        <AI_Combat_Power>7000</AI_Combat_Power>
+        <Targeting_Max_Attack_Distance>2000.0</Targeting_Max_Attack_Distance>
+
+        <Is_Visible_On_Radar>Yes</Is_Visible_On_Radar>
+        <Visible_On_Radar_When_Fogged>true</Visible_On_Radar_When_Fogged>
+        <Radar_Icon_Name>I_RADAR_HEAVYSHIPYARDW.TGA</Radar_Icon_Name>
+        <Radar_Icon_Size>0.12  0.12</Radar_Icon_Size>
+
+        <Icon_Name>WRAITH_SPACE_BUILDING_HEAVY_SHIPYARD.TGA</Icon_Name>
+        
+        <Collidable_By_Projectile_Living>Yes</Collidable_By_Projectile_Living>
+        <Death_Explosions>Huge_Explosion_Space_Empire</Death_Explosions>
+        
+        <Reinforcement_Prevention_Radius>2200</Reinforcement_Prevention_Radius>
+        
+        <Spawned_Squadron_Delay_Seconds>60</Spawned_Squadron_Delay_Seconds>
+        
+        <!-- <Tactical_Buildable_Objects_Campaign>
+            Empire,
+            ES_Enhanced_Reactors_L1_Upgrade,
+            ES_Reinforced_Armor_L1_Upgrade,
+        </Tactical_Buildable_Objects_Campaign> -->
+        
+        <Dense_FOW_Reveal_Range_Multiplier>0.2</Dense_FOW_Reveal_Range_Multiplier>
+        <Space_FOW_Reveal_Range>2000.0</Space_FOW_Reveal_Range>
+
+        <HardPoints>
+            HP_Wraith_Rebel_Starbase_L_WP_00,
+            HP_Wraith_Rebel_Starbase_L_WP_01,
+            HP_Wraith_Rebel_Starbase_L_WP_02,
+            HP_Wraith_Rebel_Starbase_L_WP_03,
+            HP_Wraith_Rebel_Starbase_L_WP_04,
+            HP_Wraith_Rebel_Starbase_L_WP_05,
+            HP_Wraith_Rebel_Starbase_M_WP_00,
+            HP_Wraith_Rebel_Starbase_M_WP_01,
+            HP_Wraith_Rebel_Starbase_M_WP_02,
+            HP_Wraith_Rebel_Starbase_M_WP_03,
+            HP_Wraith_Rebel_Starbase_M_WP_04,
+            HP_Wraith_Rebel_Starbase_M_WP_05,
+            HP_Wraith_Rebel_Starbase_H_WP_00,
+            HP_Wraith_Rebel_Starbase_H_WP_01,
+            HP_Wraith_Rebel_Starbase_Hangar
+        </HardPoints>
+
+        <SFXEvent_Select>Effect_Empty_Sound</SFXEvent_Select>
+        <SFXEvent_Hardpoint_Destroyed> HARD_POINT_FIGHTER_BAY, Effect_Empty_Sound</SFXEvent_Hardpoint_Destroyed>
+        <SFXEvent_Hardpoint_Destroyed> HARD_POINT_WEAPON_ION_CANNON, Effect_Empty_Sound</SFXEvent_Hardpoint_Destroyed>
+        <SFXEvent_Hardpoint_Destroyed> HARD_POINT_WEAPON_LASER, Effect_Empty_Sound</SFXEvent_Hardpoint_Destroyed>
+        <SFXEvent_Hardpoint_Destroyed> HARD_POINT_WEAPON_MASS_DRIVER,  Effect_Empty_Sound</SFXEvent_Hardpoint_Destroyed>
+        
+        <Has_Space_Evaluator>True</Has_Space_Evaluator>
+        <Custom_Soft_Footprint_Radius>250</Custom_Soft_Footprint_Radius>
+        
+        <Space_Obstacle_Offset>0 0 0</Space_Obstacle_Offset>
+        <Space_Layer>StaticObject</Space_Layer>
+        
+        <Layer_Z_Adjust>-150</Layer_Z_Adjust>
+        
+        <Score_Cost_Credits>1500</Score_Cost_Credits>
+        
+        <!-- <Retreat_Self_Destruct_Explosion>Self_Destruct_Star_Base_Level_1_Empire</Retreat_Self_Destruct_Explosion> -->
+
+        <Death_Clone>Damage_Normal, Wraith_Rebel_Death_Clone</Death_Clone>
+        
+        <Additional_Population_Capacity>1</Additional_Population_Capacity>
+        
+        <Abilities SubObjectList="Yes">
+            <Force_Healing_Ability Name="Wraith_Self_Repair">
+                <Activation_Style>Space_Automatic</Activation_Style>
+                <Heal_Range>0.0</Heal_Range>
+                <Heal_Percent>0.01</Heal_Percent>
+                <Heal_Amount>0.0</Heal_Amount>
+                <Heal_Interval_In_Secs>2.0</Heal_Interval_In_Secs>
+                <Single_Target_Heal>No</Single_Target_Heal>
+                <Applicable_Unit_Categories/>
+                <Applicable_Unit_Types/>
+                <SFXEvent_Target_Affected/>
+                <Owner_Particle_Bone_Name>ROOT</Owner_Particle_Bone_Name>
+                <Owner_Light_Effect_Type>Color_Flash</Owner_Light_Effect_Type>
+                <Owner_Light_Effect_Color>1.2, 1.2, 1.2</Owner_Light_Effect_Color>
+                <Owner_Light_Effect_Color2/>
+                <Owner_Light_Effect_Duration>0.6</Owner_Light_Effect_Duration>
+                <Owner_Light_Effect_Pulse_Count>1</Owner_Light_Effect_Pulse_Count>
+            </Force_Healing_Ability>
+        </Abilities>
+    </StarBase>
+
+<!-- =============================================================================================================================================== -->
+    
+    <!-- Wraith Rebel Starbase death clone -->
+    
+    <StarBase Name="Wraith_Rebel_Death_Clone">
+        <Text_ID>TEXT_WRAITH_SPACE_BUILDING_GC_STATION_TECH_2</Text_ID>
+        <Space_Model_Name>Wraith_Space_Building_Shipyard_D.ALO</Space_Model_Name>
+        <Death_SFXEvent_Start_Die>Unit_Star_Destroyer_Death_SFX</Death_SFXEvent_Start_Die>
+        <Layer_Z_Adjust>-330.0</Layer_Z_Adjust>
+        <CategoryMask>Capital</CategoryMask>
+        <Death_Persistence_Duration>34</Death_Persistence_Duration>
+        <Should_Death_Clone_Play_Idle>True</Should_Death_Clone_Play_Idle>
+    </StarBase> 
+
+<!-- =============================================================================================================================================== -->
+
+    <StarBase Name="Wraith_Rebel_Starbase">
+        <Variant_Of_Existing_Type>Wraith_Rebel_Starbase_NoGarrison</Variant_Of_Existing_Type>
+        
+        <Starting_Spawned_Units_Tech_0>Wraith_Rebel_Cruiser, 2</Starting_Spawned_Units_Tech_0>
+        <Reserve_Spawned_Units_Tech_0>Wraith_Rebel_Cruiser, -1</Reserve_Spawned_Units_Tech_0>
+        <Starting_Spawned_Units_Tech_0>Wraith_Rebel_Destroyer, 1</Starting_Spawned_Units_Tech_0>
+        <Reserve_Spawned_Units_Tech_0>Wraith_Rebel_Destroyer, -1</Reserve_Spawned_Units_Tech_0>
+    </StarBase>
+    
+    <!-- Wraith Rebel Starbase skirmish variant -->
+
+    <StarBase Name="Wraith_Rebel_Starbase_Skirmish">
+        <Variant_Of_Existing_Type>Wraith_Rebel_Starbase_NoGarrison</Variant_Of_Existing_Type>
+        <Affiliation>Hostile</Affiliation>
+        <Starting_Spawned_Units_Tech_0>Wraith_Rebel_Corvette, 1</Starting_Spawned_Units_Tech_0>
+        <Reserve_Spawned_Units_Tech_0>Wraith_Rebel_Corvette, -1</Reserve_Spawned_Units_Tech_0>
+        <Starting_Spawned_Units_Tech_0>Wraith_Rebel_Cruiser, 1</Starting_Spawned_Units_Tech_0>
+        <Reserve_Spawned_Units_Tech_0>Wraith_Rebel_Cruiser, -1</Reserve_Spawned_Units_Tech_0>
+        <Starting_Spawned_Units_Tech_0>Wraith_Rebel_Destroyer, 1</Starting_Spawned_Units_Tech_0>
+        <Reserve_Spawned_Units_Tech_0>Wraith_Rebel_Destroyer, -1</Reserve_Spawned_Units_Tech_0>
+        <Starting_Spawned_Units_Tech_0>Wraith_Rebel_Dart_Squadron, 5</Starting_Spawned_Units_Tech_0>
+        <Reserve_Spawned_Units_Tech_0>Wraith_Rebel_Dart_Squadron, -1</Reserve_Spawned_Units_Tech_0>
+        <Lua_Script>ObjectScript_Wraith_Shipyard_Skirmish</Lua_Script>
+    </StarBase>
+    
+<!-- =============================================================================================================================================== -->
+    
+    <!-- Wraith Rebel Starbase Hardpoints -->
+    
+<!-- =============================================================================================================================================== -->
+
+<!-- =============================================================================================================================================== -->
+    
+    <!--Wraith-Rebel-Stations-->
+    <!-- <StarBase Name="Wraith_Rebel_Star_Base_1">
+        <Variant_Of_Existing_Type>Empire_Star_Base_1</Variant_Of_Existing_Type>
+        <Text_ID>TEXT_WRAITH_REBELS_SPACE_BUILDING_STATION_TECH_1</Text_ID>
+        <Affiliation>Wraith_Rebel</Affiliation>
+    </StarBase>
+    <StarBase Name="Wraith_Rebel_Star_Base_2">
+        <Variant_Of_Existing_Type>Empire_Star_Base_2</Variant_Of_Existing_Type>
+        <Text_ID>TEXT_WRAITH_REBELS_SPACE_BUILDING_STATION_TECH_2</Text_ID>
+        <Affiliation>Wraith_Rebel</Affiliation>
+    </StarBase>
+    <StarBase Name="Wraith_Rebel_Star_Base_3">
+        <Variant_Of_Existing_Type>Empire_Star_Base_3</Variant_Of_Existing_Type>
+        <Text_ID>TEXT_WRAITH_REBELS_SPACE_BUILDING_STATION_TECH_3</Text_ID>
+        <Affiliation>Wraith_Rebel</Affiliation>
+    </StarBase>
+    <StarBase Name="Wraith_Rebel_Star_Base_4">
+        <Variant_Of_Existing_Type>Empire_Star_Base_4</Variant_Of_Existing_Type>
+        <Text_ID>TEXT_WRAITH_REBELS_SPACE_BUILDING_STATION_TECH_4</Text_ID>
+        <Affiliation>Wraith_Rebel</Affiliation>
+    </StarBase>
+    <StarBase Name="Wraith_Rebel_Star_Base_5">
+        <Variant_Of_Existing_Type>Empire_Star_Base_5</Variant_Of_Existing_Type>
+        <Text_ID>TEXT_WRAITH_REBELS_SPACE_BUILDING_STATION_TECH_5</Text_ID>
+        <Affiliation>Wraith_Rebel</Affiliation>
+    </StarBase> -->
+
+
+
+    <!--Tech Tree-->
+    <StarBase Name="Tech_Tree_Rebel_Star_Base_1">
+        <Variant_Of_Existing_Type>Rebel_Star_Base_1</Variant_Of_Existing_Type>
+        <Icon_Name>GOAULD_SPACE_BUILDING_STATIONTECH1.TGA</Icon_Name>
+        <Tech_Level>99</Tech_Level>
+    </StarBase>
+    <StarBase Name="Tech_Tree_Rebel_Star_Base_2">
+        <Variant_Of_Existing_Type>Rebel_Star_Base_2</Variant_Of_Existing_Type>
+        <Icon_Name>GOAULD_SPACE_BUILDING_STATIONTECH2.TGA</Icon_Name>
+        <Tech_Level>99</Tech_Level>
+    </StarBase>
+    <StarBase Name="Tech_Tree_Rebel_Star_Base_3">
+        <Variant_Of_Existing_Type>Rebel_Star_Base_3</Variant_Of_Existing_Type>
+        <Icon_Name>GOAULD_SPACE_BUILDING_STATIONTECH3.TGA</Icon_Name>
+        <Tech_Level>99</Tech_Level>
+    </StarBase>
+    <StarBase Name="Tech_Tree_Rebel_Star_Base_4">
+        <Variant_Of_Existing_Type>Rebel_Star_Base_4</Variant_Of_Existing_Type>
+        <Icon_Name>GOAULD_SPACE_BUILDING_STATIONTECH4.TGA</Icon_Name>
+        <Tech_Level>99</Tech_Level>
+    </StarBase>
+    <StarBase Name="Tech_Tree_Rebel_Star_Base_5">
+        <Variant_Of_Existing_Type>Rebel_Star_Base_5</Variant_Of_Existing_Type>
+        <Icon_Name>GOAULD_SPACE_BUILDING_STATIONTECH5.TGA</Icon_Name>
+        <Tech_Level>99</Tech_Level>
+    </StarBase>
+    <!--<StarBase Name="Tech_Tree_Empire_Star_Base_1">
+    <Variant_Of_Existing_Type>Empire_Star_Base_1</Variant_Of_Existing_Type>
+    <Icon_Name>GOAULD_SPACE_BUILDING_STATIONTECH1.TGA</Icon_Name>
+    <Tech_Level>99</Tech_Level>
+  </StarBase>
+  <StarBase Name="Tech_Tree_Empire_Star_Base_2">
+    <Variant_Of_Existing_Type>Empire_Star_Base_2</Variant_Of_Existing_Type>
+    <Icon_Name>GOAULD_SPACE_BUILDING_STATIONTECH2.TGA</Icon_Name>
+    <Tech_Level>99</Tech_Level>
+  </StarBase>
+  <StarBase Name="Tech_Tree_Empire_Star_Base_3">
+    <Variant_Of_Existing_Type>Empire_Star_Base_3</Variant_Of_Existing_Type>
+    <Icon_Name>GOAULD_SPACE_BUILDING_STATIONTECH3.TGA</Icon_Name>
+    <Tech_Level>99</Tech_Level>
+  </StarBase>
+  <StarBase Name="Tech_Tree_Empire_Star_Base_4">
+    <Variant_Of_Existing_Type>Empire_Star_Base_4</Variant_Of_Existing_Type>
+    <Icon_Name>GOAULD_SPACE_BUILDING_STATIONTECH4.TGA</Icon_Name>
+    <Tech_Level>99</Tech_Level>
+  </StarBase>
+  <StarBase Name="Tech_Tree_Empire_Star_Base_5">
+    <Variant_Of_Existing_Type>Empire_Star_Base_5</Variant_Of_Existing_Type>
+    <Icon_Name>GOAULD_SPACE_BUILDING_STATIONTECH5.TGA</Icon_Name>
+    <Tech_Level>99</Tech_Level>
+  </StarBase>-->
+
+
+
+    <Projectile Name="Proj_Wraith_Station_Plasma_Small">
+        <Variant_Of_Existing_Type>Proj_Wraith_Plasma_Small</Variant_Of_Existing_Type>
+        <Projectile_Damage>15.0</Projectile_Damage>
+    </Projectile>
+    <Projectile Name="Proj_Wraith_Station_Plasma_Medium">
+        <Variant_Of_Existing_Type>Proj_Wraith_Plasma_Medium</Variant_Of_Existing_Type>
+        <Projectile_Damage>25.0</Projectile_Damage>
+    </Projectile>
+    <Projectile Name="Proj_Wraith_Station_Plasma_Heavy">
+        <Variant_Of_Existing_Type>Proj_Wraith_Plasma_Heavy</Variant_Of_Existing_Type>
+        <Projectile_Damage>40.0</Projectile_Damage>
+    </Projectile>
+    <Projectile Name="Proj_Wraith_Station_Plasma_Artillery">
+        <Variant_Of_Existing_Type>Proj_Wraith_Plasma_Artillery</Variant_Of_Existing_Type>
+        <Projectile_Damage>55.0</Projectile_Damage>
+    </Projectile>
+
+</StarBases>

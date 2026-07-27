@@ -1,0 +1,62 @@
+<?xml version="1.0"?>
+<Asurans> 
+  
+  <SpaceUnit Name="Asuran_Hero_Koracen">
+    <Variant_Of_Existing_Type>Asuran_Aurora_No_Spawn</Variant_Of_Existing_Type>
+    <Text_ID>TEXT_ASURANS_SPACE_HERO_KORACEN</Text_ID>
+    <Encyclopedia_Text>TEXT_DESCRIPTION_ASURANS_KORACEN_SPACE</Encyclopedia_Text>
+    <Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_TALUS</Encyclopedia_Unit_Class>
+    <Icon_Name>ASURAN_SPACE_HERO_KORACEN.TGA</Icon_Name>
+    <Affiliation>Asuran</Affiliation>
+    <Armor_Type>Armor_Hero_HeavyBS</Armor_Type>
+    <Shield_Armor_Type>Armor_Hero_HeavyBS</Shield_Armor_Type>
+    <CategoryMask> Capital | SpaceHero | AntiFrigate </CategoryMask>
+    <Starting_Spawned_Units_Tech_0>Asuran_Puddle_Jumper_Squadron, 3</Starting_Spawned_Units_Tech_0>
+    <Reserve_Spawned_Units_Tech_0>Asuran_Puddle_Jumper_Squadron, -1</Reserve_Spawned_Units_Tech_0>
+    <AI_Combat_Power>7000</AI_Combat_Power>
+    <Tech_Level>99</Tech_Level>
+    <Is_Named_Hero>Yes</Is_Named_Hero>
+    <Is_Generic_Hero>No</Is_Generic_Hero>
+    <Can_Be_Neutralized_By_Major_Heroes>No</Can_Be_Neutralized_By_Major_Heroes>
+    <Can_Be_Neutralized_By_Minor_Heroes>No</Can_Be_Neutralized_By_Minor_Heroes>
+    <Show_Hero_Head>Yes</Show_Hero_Head>
+    <Neutralization_Cost>2000.0</Neutralization_Cost>
+    <Ranking_In_Category>1</Ranking_In_Category>
+    <Unit_Abilities_Data SubObjectList="Yes">
+      <Unit_Ability>
+        <Type>POWER_TO_WEAPONS</Type>
+        <Recharge_Seconds>60</Recharge_Seconds>
+        <Expiration_Seconds>0.1</Expiration_Seconds>
+        <Alternate_Name_Text>TEXT_ABILITY_DEPLOY_SATELLITE</Alternate_Name_Text>
+        <Alternate_Description_Text>TEXT_DESCRIPTION_ABILITY_DEPLOY_SATELLITE_WALLUS</Alternate_Description_Text>
+        <Alternate_Icon_Name>I_SA_MINI_SATELLITE.TGA</Alternate_Icon_Name>
+      </Unit_Ability>
+      <Unit_Ability>
+        <Type>SELF_DESTRUCT</Type>
+        <Alternate_Name_Text>TEXT_ABILITY_TAURI_SPACE_ASURANER_KRIEGSSCHIFF_SELBSTZERSTOERUNG</Alternate_Name_Text>
+        <Alternate_Description_Text>TEXT_DESCRIPTION_ABILITY_SELF_DESTRUCTION_ANCIENT_BATTLESHIP</Alternate_Description_Text>
+        <SFXEvent_GUI_Unit_Ability_Activated>Unit_SelfDestruction_Aurora</SFXEvent_GUI_Unit_Ability_Activated>
+        <Expiration_Seconds>3.5</Expiration_Seconds>
+        <Recharge_Seconds>10</Recharge_Seconds>
+        <Spawned_Object_Type>Proj_Aurora_Self_Destruct_Blast</Spawned_Object_Type>
+        <Stop_When_Activated>No</Stop_When_Activated>
+        <Supports_Autofire>False</Supports_Autofire>
+      </Unit_Ability>
+    </Unit_Abilities_Data>
+    <Abilities SubObjectList="Yes">
+      <Combat_Bonus_Ability Name="Asuran_Hero_Koracen_Combat_Bonus_GC">
+            <Activation_Style>Space_Automatic</Activation_Style>
+            <Applicable_Unit_Types>Asuran_Hero_Koracen</Applicable_Unit_Types>
+            <Health_Bonus_Percentage>0.8</Health_Bonus_Percentage>
+            <Damage_Bonus_Percentage>0.3</Damage_Bonus_Percentage>
+            <Energy_Pool_Bonus_Percentage>0.0</Energy_Pool_Bonus_Percentage>
+            <Shield_Bonus_Percentage>1.2</Shield_Bonus_Percentage>
+            <Defense_Bonus_Percentage>0.0</Defense_Bonus_Percentage>
+            <Movement_Speed_Bonus_Percentage>0.0</Movement_Speed_Bonus_Percentage>
+            <Stacking_Category>1</Stacking_Category>
+      </Combat_Bonus_Ability>
+    </Abilities> 
+  </SpaceUnit>
+
+  
+</Asurans>

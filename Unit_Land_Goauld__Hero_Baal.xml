@@ -1,0 +1,157 @@
+<?xml version="1.0"?>
+<UniqueUnits>
+
+   <!-- UNIT INFO -->
+   <HeroUnit Name="Luke_Skywalker_Jedi">
+      <Variant_Of_Existing_Type>Template_Ground_Infantry_Single_Hero_Goauld</Variant_Of_Existing_Type>
+      <Text_ID>TEXT_GOAULD_SPACE_HERO_BAAL</Text_ID>
+      <Encyclopedia_Text>TEXT_DESCRIPTION_GOAULD_BAAL_GROUND</Encyclopedia_Text>
+      <Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_BAAL_GROUND</Encyclopedia_Unit_Class>
+      <Encyclopedia_Good_Against>Underworld_Saboteur Underworld_Merc Stormtrooper</Encyclopedia_Good_Against>
+      <Encyclopedia_Vulnerable_To>MZ8_Pulse_Cannon_Tank Tauri_F302_Land Empire_Anti_Infantry_Turret</Encyclopedia_Vulnerable_To>
+      <Icon_Name>GOAULD_SPACE_HERO_BAAL.tga</Icon_Name>
+      <Land_Model_Name>Goauld_Land_Hero_Baal.ALO</Land_Model_Name>
+      <Land_Model_Anim_Override_Name>Goauld_Land_Hero_Baal.ALO</Land_Model_Anim_Override_Name>
+      <LandBehavior>ABILITY_COUNTDOWN, DAMAGE_TRACKING, GARRISON_UNIT, HIDE_WHEN_FOGGED, IDLE, IMPOSING_PRESENCE, REVEAL, SELECTABLE, SURFACE_FX, TARGETING, UNIT_AI, WALK_LOCOMOTOR, WEAPON</LandBehavior>
+      <Affiliation>Rebel</Affiliation>
+      <Tactical_Health>950</Tactical_Health>
+      <AI_Combat_Power>150</AI_Combat_Power>
+      <Neutralization_Cost>3500.0</Neutralization_Cost>
+      <Projectile_Types>Proj_Goauld_Hero_Baal_Land</Projectile_Types>
+      <Projectile_Fire_Recharge_Seconds>3.0</Projectile_Fire_Recharge_Seconds>
+      <Projectile_Fire_Pulse_Count>1</Projectile_Fire_Pulse_Count>
+      <Projectile_Fire_Pulse_Delay_Seconds>2.0</Projectile_Fire_Pulse_Delay_Seconds>
+      <Targeting_Priority_Set>SG_Infantry_AntiInfantry</Targeting_Priority_Set>
+
+      <SFXEvent_Fire>Weapon_Hand_Device_Goauld</SFXEvent_Fire>
+      <Damage>50</Damage>
+      <Presence_Range>80.0</Presence_Range>
+      <SFXEvent_Attack>Unit_Attack_Baal</SFXEvent_Attack>
+      <SFXEvent_Health_Critical_Warning>Unit_CriticalHP_Baal</SFXEvent_Health_Critical_Warning>
+      <SFXEvent_Health_Low_Warning>Unit_LOWHP_Baal</SFXEvent_Health_Low_Warning>
+      <SFXEvent_Move>Unit_Move_Baal</SFXEvent_Move>
+      <SFXEvent_Select>Unit_Select_Baal</SFXEvent_Select>
+      <SFXEvent_Stop></SFXEvent_Stop>
+      <SFXEvent_Build_Started></SFXEvent_Build_Started>
+      <SFXEvent_Build_Cancelled></SFXEvent_Build_Cancelled>
+      <SFXEvent_Build_Complete>Unit_Spawn_Baal</SFXEvent_Build_Complete>
+      <SFXEvent_Hero_Respawned>Unit_Spawn_Baal</SFXEvent_Hero_Respawned>
+      <Unit_Abilities_Data SubObjectList="Yes">
+         <Unit_Ability>
+            <Type>WEAKEN_ENEMY</Type>
+            <Alternate_Name_Text>TEXT_ABILITY_DEPLOY_SHIELD</Alternate_Name_Text>
+            <Alternate_Description_Text>TEXT_DESCRIPTION_ABILITY_DEPLOY_SHIELD_BAAL_GROUND</Alternate_Description_Text>
+            <Alternate_Icon_Name>I_SA_DEPLOYABLE_SHIELD.TGA</Alternate_Icon_Name>
+            <Recharge_Seconds>40</Recharge_Seconds>
+            <Effective_Radius>100.0</Effective_Radius>
+            <Spawned_Object_Type>Goauld_Deployable_Shield_Generator</Spawned_Object_Type>
+            <SFXEvent_Target_Ability></SFXEvent_Target_Ability>
+            <SFXEvent_GUI_Unit_Ability_Activated></SFXEvent_GUI_Unit_Ability_Activated>
+            <SFXEvent_GUI_Unit_Ability_Deactivated />
+            <Area_Effect_Decal_Distance>25</Area_Effect_Decal_Distance>
+         </Unit_Ability>
+         <!--Unit_Ability>
+            <Type>FORCE_WHIRLWIND</Type>
+            <Alternate_Name_Text>TEXT_ABILITY_SHOCKWAVE</Alternate_Name_Text>
+            <Alternate_Description_Text>TEXT_DESCRIPTION_ABILITY_SHOCKWAVE_BAAL_GROUND</Alternate_Description_Text>           
+            <Recharge_Seconds>25.0</Recharge_Seconds>
+            <GUI_Activated_Ability_Name>Baal_Whirlwind</GUI_Activated_Ability_Name>
+            <Effective_Radius>500.0</Effective_Radius>
+            <Spawned_Object_Type>Force_Whirlwind_Particles</Spawned_Object_Type>
+         </Unit_Ability-->
+      </Unit_Abilities_Data>
+      <Abilities SubObjectList="Yes">
+         <!--Force_Whirlwind_Ability Name="Baal_Whirlwind">
+            <Activation_Style> User_Input </Activation_Style>
+            <Activation_Min_Range>0.0</Activation_Min_Range>
+            <Activation_Max_Range>75.0</Activation_Max_Range>
+            <Damage_Amount>500.0</Damage_Amount>
+            <Damage_Range>75.0</Damage_Range>
+            <Travel_Time_In_Secs>1.0</Travel_Time_In_Secs>
+            <Activation_Chance>0,0.0, 1,0.0, 5,1.0, 500,1.0</Activation_Chance>
+            <Applicable_Unit_Categories>Infantry</Applicable_Unit_Categories>
+            <Applicable_Unit_Types />
+            <SFXEvent_Activate></SFXEvent_Activate>
+            <Owner_Particle_Effect>Force_Whirlwind_Particles</Owner_Particle_Effect>
+            <Owner_Particle_Bone_Name />
+            <Owner_Light_Effect_Type>Color_Flash</Owner_Light_Effect_Type>
+            <Owner_Light_Effect_Color>2.0, 2.0, 2.0</Owner_Light_Effect_Color>
+            <Owner_Light_Effect_Color2 />
+            <Owner_Light_Effect_Duration>0.5</Owner_Light_Effect_Duration>
+            <Owner_Light_Effect_Pulse_Count />
+         </Force_Whirlwind_Ability-->
+      </Abilities>
+   </HeroUnit>
+
+   <MiscObject Name="Goauld_Deployable_Shield_Generator">
+      <Text_ID>TEXT_GOAULD_GROUND_BUILDING_SHIELDGENERATOR</Text_ID>
+      <Encyclopedia_Text>TEXT_DESCRIPTION_GC_DEPLOYABLE_SHIELD_GENERATOR</Encyclopedia_Text>
+      <Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_DEFENSIVE_STRUCTURE</Encyclopedia_Unit_Class>
+      <Icon_Name> GOAULD_GROUND_ITEM_SHIELD_GENERATOR.TGA</Icon_Name>
+      <Land_Model_Name>Goauld_Land_Building_Deployable_Shield_Generator.ALO</Land_Model_Name>
+      <Scale_Factor>1.7</Scale_Factor>
+      <Behavior>SELECTABLE</Behavior>
+      <LandBehavior>DAMAGE_TRACKING, HIDE_WHEN_FOGGED, REVEAL, UNIT_AI, SHIELDED</LandBehavior>
+      <Shield_Sub_Mesh>Shield</Shield_Sub_Mesh>
+      <Shield_Points>700</Shield_Points>
+      <Shield_Refresh_Rate>10</Shield_Refresh_Rate>
+      <Multisample_FOW_Check>Yes</Multisample_FOW_Check>
+      <Land_FOW_Reveal_Range>80.0</Land_FOW_Reveal_Range>
+      <Targeting_Max_Attack_Distance>200.0</Targeting_Max_Attack_Distance>
+      <Is_Visible_On_Radar>No</Is_Visible_On_Radar>
+      <Is_Decoration>No</Is_Decoration>
+      <Remove_Upon_Death>Yes</Remove_Upon_Death>
+      <Death_Explosions>Small_Explosion_Land</Death_Explosions>
+      <Tactical_Health>150</Tactical_Health>
+      <Ranged_Target_Z_Adjust>0.5</Ranged_Target_Z_Adjust>
+      <Loop_Idle_Anim_00>No</Loop_Idle_Anim_00>
+      <Space_Layer>Land</Space_Layer>
+      <UnitCollisionClass>Infantry</UnitCollisionClass>
+      <CanCellStack>yes</CanCellStack>
+      <Mass>1.0</Mass>
+      <Mouse_Collide_Override_Sphere_Radius>1</Mouse_Collide_Override_Sphere_Radius>
+      <Collidable_By_Projectile_Living>Yes</Collidable_By_Projectile_Living>
+      <CategoryMask>Infantry</CategoryMask>
+      <IsDeathCloneObstacle>Yes</IsDeathCloneObstacle>
+      <Avoidance_Disabled>Yes</Avoidance_Disabled>
+      <Influences_Capture_Point> False </Influences_Capture_Point>
+      <!--Not_Really_Selectable>True</Not_Really_Selectable-->
+
+      <Select_Box_Scale>10</Select_Box_Scale>
+      <GUI_Bracket_Size>1</GUI_Bracket_Size>
+      <GUI_Bounds_Scale>0.50</GUI_Bounds_Scale>
+   </MiscObject>
+
+   <!-- COMPANY INFO -->
+   <HeroCompany Name="Luke_Skywalker_Jedi_Team">
+      <Variant_Of_Existing_Type>Template_Ground_Hero_Company</Variant_Of_Existing_Type>
+      <Text_ID>TEXT_GOAULD_SPACE_HERO_BAAL</Text_ID>
+      <Encyclopedia_Text>TEXT_DESCRIPTION_GOAULD_BAAL_GROUND</Encyclopedia_Text>
+      <Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_BAAL_GROUND</Encyclopedia_Unit_Class>
+      <Icon_Name>GOAULD_SPACE_HERO_BAAL.tga</Icon_Name>
+      <Affiliation>Rebel</Affiliation>
+      <Company_Transport_Unit>Goauld_Hero_Baal</Company_Transport_Unit>
+      <Company_Units>Luke_Skywalker_Jedi</Company_Units>
+      <Score_Cost_Credits>10000</Score_Cost_Credits>
+      <SFXEvent_Build_Started>Unit_Select_Baal</SFXEvent_Build_Started>
+      <SFXEvent_Build_Complete>Unit_Spawn_Baal</SFXEvent_Build_Complete>
+      <SFXEvent_Fleet_Move>Unit_Move_Baal</SFXEvent_Fleet_Move>
+      <SFXEvent_Hero_Respawned>Unit_Spawn_Baal</SFXEvent_Hero_Respawned>
+      <Tactical_Build_Cost_Multiplayer>2200</Tactical_Build_Cost_Multiplayer>
+      <Tactical_Build_Time_Seconds>18</Tactical_Build_Time_Seconds>
+      <Tactical_Build_Prerequisites>RC_Level_two_Tech_Upgrade</Tactical_Build_Prerequisites>
+      <CategoryMask> LandHero | SpaceHero </CategoryMask>
+   </HeroCompany>
+
+
+   <!-- PROJECTILE INFO -->
+   <Projectile Name="Proj_Goauld_Hero_Baal_Land">
+      <Variant_Of_Existing_Type>Proj_Goauld_Hand_Device</Variant_Of_Existing_Type>
+      <Damage_Type>Damage_Hand_Device</Damage_Type>
+      <Projectile_Damage>120.0</Projectile_Damage>
+      <Projectile_Blast_Area_Range>15.0</Projectile_Blast_Area_Range>
+      <Projectile_Blast_Area_Damage>120.0</Projectile_Blast_Area_Damage>
+      <Max_Secs_For_AE_Delayed_Damage>0.0</Max_Secs_For_AE_Delayed_Damage>
+   </Projectile>
+
+</UniqueUnits>

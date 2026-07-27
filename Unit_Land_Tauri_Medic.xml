@@ -1,0 +1,203 @@
+<?xml version="1.0"?>
+<Medic_Data>
+
+   <!-- UNIT INFO -->
+   <GroundInfantry Name="Vornskr_Wolf">
+      <Variant_Of_Existing_Type>Template_Ground_Infantry_Multi_Tauri</Variant_Of_Existing_Type>
+      <Text_ID>TEXT_TAURI_GROUND_UNIT_SANITAETER</Text_ID>
+      <Encyclopedia_Text>TEXT_DESCRIPTION_TAURI_SANITAETER_GROUND</Encyclopedia_Text>
+      <Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_TAURI_SANITAETER</Encyclopedia_Unit_Class>
+      <Encyclopedia_Good_Against>  </Encyclopedia_Good_Against>
+      <Encyclopedia_Vulnerable_To> Plex_Soldier Dark_Trooper_PhaseI Goauld_Necropolis_Guard </Encyclopedia_Vulnerable_To>
+      <Icon_Name>TAURI_GROUND_UNIT_MEDIC.TGA</Icon_Name>
+      <Land_Model_Name>Tauri_Land_Unit_Medic.alo</Land_Model_Name>
+      <Land_Terrain_Model_Mapping>
+         Temperate,  Tauri_Land_Unit_Medic.ALO,
+         Urban,      Tauri_Land_Unit_Medic_Black.ALO,
+         Arctic,     Tauri_Land_Unit_Medic_Snow.ALO,
+         Volcanic,   Tauri_Land_Unit_Medic_Pegasus.ALO,
+         Desert,     Tauri_Land_Unit_Medic_Desert.ALO,
+         Forest,     Tauri_Land_Unit_Medic_Camo.ALO,
+         Swamp,      Tauri_Land_Unit_Medic_Camo.ALO
+      </Land_Terrain_Model_Mapping>
+      <Land_Model_Anim_Override_Name>Tauri_Land_Unit_Medic.alo</Land_Model_Anim_Override_Name>
+
+      <LandBehavior>ABILITY_COUNTDOWN, LAND_TEAM_INFANTRY_LOCOMOTOR, DAMAGE_TRACKING, HIDE_WHEN_FOGGED, IDLE, REVEAL, STUNNABLE, SURFACE_FX, TARGETING, UNIT_AI, WEAPON</LandBehavior>
+      <Max_Speed>1</Max_Speed>
+      <Tactical_Health>90</Tactical_Health>
+      <Damage>14</Damage>
+      <AI_Combat_Power>33</AI_Combat_Power>
+      <Projectile_Types>Proj_Tauri_Medic_MP5</Projectile_Types>
+      <Projectile_Fire_Recharge_Seconds>2.5</Projectile_Fire_Recharge_Seconds>
+      <Projectile_Fire_Pulse_Count>10</Projectile_Fire_Pulse_Count>
+      <Projectile_Fire_Pulse_Delay_Seconds>0.3</Projectile_Fire_Pulse_Delay_Seconds>
+      <Targeting_Priority_Set>SG_Infantry_AntiInfantry</Targeting_Priority_Set>
+
+      <SFXEvent_Select>Unit_Select_Marine</SFXEvent_Select>
+		<SFXEvent_Move>Unit_Move_Marine</SFXEvent_Move>
+		<SFXEvent_Attack>Unit_Attack_Marine</SFXEvent_Attack>
+
+      <SFXEvent_Fire>Weapon_Tauri_Pistol</SFXEvent_Fire>
+      <CategoryMask>Infantry</CategoryMask>
+      <FormationOrder>7</FormationOrder>
+      <Presence_Induced_Animations>
+         Attention, 
+            Urai_Fen,
+            Samantha_Carter, 
+            Jack_ONeill
+      </Presence_Induced_Animations> 
+      <Death_Clone>Damage_Hand_Device, Vornskr_Wolf_Hand_Device_Death_Clone</Death_Clone>
+      <Conversion_Ability_Changes_To_Enemy>Vornskr_Wolf_Converted_To_Enemy</Conversion_Ability_Changes_To_Enemy>
+      <Unit_Abilities_Data SubObjectList="Yes">
+         <Unit_Ability>
+            <Type>SPREAD_OUT</Type>
+            <Mod_Multiplier>SPEED_MULTIPLIER, 0.4f</Mod_Multiplier>
+            <Mod_Multiplier>TAKE_DAMAGE_MULTIPLIER, 0.85f</Mod_Multiplier>
+            <SFXEvent_GUI_Unit_Ability_Activated></SFXEvent_GUI_Unit_Ability_Activated>
+            <Alternate_Name_Text>TEXT_TOOLTIP_ABILITY_SPREAD_OUT_NAME</Alternate_Name_Text>
+            <Alternate_Description_Text>TEXT_DESCRIPTION_ABILITY_GROUND_SANITAETER_DECKUNG</Alternate_Description_Text>
+         </Unit_Ability>
+         <Unit_Ability>
+            <Type>AREA_EFFECT_HEAL</Type>
+            <Recharge_Seconds>40.0</Recharge_Seconds>
+            <GUI_Activated_Ability_Name>Tauri_Medic_Ability_Healing</GUI_Activated_Ability_Name>
+            <Spawned_Object_Type>Proj_Tauri_Medic_Ability_Instant_Heal_Blast</Spawned_Object_Type>
+            <SFXEvent_Target_Ability></SFXEvent_Target_Ability>
+            <Alternate_Name_Text>TEXT_ABILITY_TAURI_GROUND_SANITAETER_HEILUNG</Alternate_Name_Text>
+            <Alternate_Description_Text>TEXT_DESCRIPTION_ABILITY_GROUND_SANITAETER_HEILUNG</Alternate_Description_Text>
+         </Unit_Ability>
+      </Unit_Abilities_Data>
+      <Abilities SubObjectList="Yes">     <!--TODO: Test if this even works-->
+         <Force_Healing_Ability Name="Tauri_Medic_Ability_Healing">
+            <Activation_Style> User_Input </Activation_Style>
+            <Heal_Range>100.0</Heal_Range>
+            <Heal_Amount>2.0</Heal_Amount>
+            <Heal_Interval_In_Secs>10.0</Heal_Interval_In_Secs>
+            <Applicable_Unit_Categories>Infantry | LandHero</Applicable_Unit_Categories>
+            <Applicable_Unit_Types/>
+            <SFXEvent_Target_Affected></SFXEvent_Target_Affected>
+            <Target_Particle_Effect>Unit_Healed_Particles</Target_Particle_Effect>
+            <Target_Particle_Bone_Name>B_HEAD</Target_Particle_Bone_Name>
+            <Target_Light_Effect_Type>Smooth_Pulse</Target_Light_Effect_Type>
+            <Target_Light_Effect_Color>1.2, 1.2, 2.0</Target_Light_Effect_Color>
+            <Target_Light_Effect_Color2/>
+            <Target_Light_Effect_Duration>0.6</Target_Light_Effect_Duration>
+            <Target_Light_Effect_Pulse_Count>1</Target_Light_Effect_Pulse_Count>
+         </Force_Healing_Ability>
+      </Abilities>
+      <!--Heal ability needs lua script for ai usage <Lua_Script>ObiWanPlan</Lua_Script>-->
+   </GroundInfantry>
+   
+   <GroundInfantry Name="Vornskr_Wolf_Converted_To_Enemy">
+      <Variant_Of_Existing_Type>Vornskr_Wolf</Variant_Of_Existing_Type>
+   </GroundInfantry>
+   
+   <GroundInfantry Name="Vornskr_Wolf_Hand_Device_Death_Clone">
+      <Variant_Of_Existing_Type>Vornskr_Wolf</Variant_Of_Existing_Type>
+      <Specific_Death_Anim_Type>FW_DIE</Specific_Death_Anim_Type>
+   </GroundInfantry>
+
+   
+   
+   <!-- COMPANY INFO -->
+   <GroundCompany Name="Vornskr_Wolf_Pack_No_Prereq">
+      <Variant_Of_Existing_Type>Template_Ground_Company</Variant_Of_Existing_Type>
+      <Text_ID>TEXT_TAURI_GROUND_UNIT_SANITAETER</Text_ID>
+      <Encyclopedia_Text>TEXT_DESCRIPTION_TAURI_SANITAETER_GROUND</Encyclopedia_Text>
+      <Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_TAURI_SANITAETER</Encyclopedia_Unit_Class>
+      <Encyclopedia_Good_Against>  </Encyclopedia_Good_Against>
+      <Encyclopedia_Vulnerable_To> Plex_Soldier Dark_Trooper_PhaseI Goauld_Necropolis_Guard </Encyclopedia_Vulnerable_To>
+      <Icon_Name>TAURI_GROUND_UNIT_MEDIC.TGA</Icon_Name>
+      <Damage>42</Damage>
+      <Score_Cost_Credits>200</Score_Cost_Credits>    
+      <Build_Cost_Credits>350</Build_Cost_Credits>
+      <Build_Time_Seconds>46</Build_Time_Seconds>
+      <Company_Transport_Unit>Underworld_Infantry_Droid_Shuttle</Company_Transport_Unit>
+      <Create_Team_Type>Vornskr_Wolf_Team</Create_Team_Type>
+      <Company_Units>Vornskr_Wolf, Vornskr_Wolf, Vornskr_Wolf</Company_Units>
+      <Max_Squad_Size>3</Max_Squad_Size>   
+      <Tactical_Build_Cost_Multiplayer>700</Tactical_Build_Cost_Multiplayer>
+      <Tactical_Build_Time_Seconds>9</Tactical_Build_Time_Seconds>
+      <Required_Ground_Base_Level>1</Required_Ground_Base_Level>
+   </GroundCompany>
+   
+   <GroundCompany Name="Vornskr_Wolf_Pack">
+      <Variant_Of_Existing_Type>Vornskr_Wolf_Pack_No_Prereq</Variant_Of_Existing_Type>
+      <Affiliation>Underworld</Affiliation>
+      <Tech_Level>3</Tech_Level>
+      <Required_Timeline>0</Required_Timeline>
+      <Required_Ground_Base_Level>1</Required_Ground_Base_Level>
+      <Required_Star_Base_Level>0</Required_Star_Base_Level>
+      <Required_Special_Structures>U_Ground_Academy</Required_Special_Structures>
+      <Tactical_Build_Prerequisites>UC_Level_Two_Tech_Upgrade</Tactical_Build_Prerequisites>
+   </GroundCompany>
+   
+   
+   <!-- CONTAINER INFO -->
+   <Container Name="Vornskr_Wolf_Team">
+      <Variant_Of_Existing_Type>Template_Infantry_Container</Variant_Of_Existing_Type>
+      <Text_ID>TEXT_TAURI_GROUND_UNIT_SANITAETER</Text_ID>
+      <Encyclopedia_Text>TEXT_DESCRIPTION_TAURI_SANITAETER_GROUND</Encyclopedia_Text>
+      <Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_TAURI_SANITAETER</Encyclopedia_Unit_Class>
+      <Encyclopedia_Good_Against>  </Encyclopedia_Good_Against>
+      <Encyclopedia_Vulnerable_To> Plex_Soldier Dark_Trooper_PhaseI Goauld_Necropolis_Guard </Encyclopedia_Vulnerable_To>
+      <Icon_Name>TAURI_GROUND_UNIT_MEDIC.TGA</Icon_Name>  
+      <Unit_Abilities_Data SubObjectList="Yes">
+         <Unit_Ability>
+            <Type>SPREAD_OUT</Type>
+            <Mod_Multiplier>SPEED_MULTIPLIER, 0.4f</Mod_Multiplier>
+            <Mod_Multiplier>TAKE_DAMAGE_MULTIPLIER, 0.85f</Mod_Multiplier>
+            <SFXEvent_GUI_Unit_Ability_Activated></SFXEvent_GUI_Unit_Ability_Activated>
+            <Alternate_Name_Text>TEXT_TOOLTIP_ABILITY_SPREAD_OUT_NAME</Alternate_Name_Text>
+            <Alternate_Description_Text>TEXT_DESCRIPTION_ABILITY_GROUND_SANITAETER_DECKUNG</Alternate_Description_Text>
+         </Unit_Ability>
+         <Unit_Ability>
+            <Type>AREA_EFFECT_HEAL</Type>
+            <Recharge_Seconds>40.0</Recharge_Seconds>
+            <GUI_Activated_Ability_Name>Tauri_Medic_Ability_Healing</GUI_Activated_Ability_Name>
+            <Spawned_Object_Type>Proj_Tauri_Medic_Ability_Instant_Heal_Blast</Spawned_Object_Type>
+            <SFXEvent_Target_Ability></SFXEvent_Target_Ability>
+            <Alternate_Name_Text>TEXT_ABILITY_TAURI_GROUND_SANITAETER_HEILUNG</Alternate_Name_Text>
+            <Alternate_Description_Text>TEXT_DESCRIPTION_ABILITY_GROUND_SANITAETER_HEILUNG</Alternate_Description_Text>
+         </Unit_Ability>
+      </Unit_Abilities_Data>
+   </Container>
+
+
+   <!-- PROJECTILE INFO -->
+   <Projectile Name="Proj_Tauri_Medic_MP5">
+      <Variant_Of_Existing_Type>Proj_Tauri_MP5</Variant_Of_Existing_Type>
+      <Damage_Type>Damage_Normal</Damage_Type>
+      <Projectile_Damage>4.58</Projectile_Damage>
+   </Projectile>
+   
+   <Projectile Name="Proj_Tauri_Medic_Ability_Instant_Heal_Blast">
+      <Text_ID>TEXT_NONE</Text_ID>
+      <Land_Model_Name>W_LASER_INVISIBLE.ALO</Land_Model_Name>
+      <Damage_Type> Damage_Normal </Damage_Type>
+      <Scale_Factor>1.0</Scale_Factor>
+      <Max_Speed>0.01</Max_Speed>
+      <Max_Rate_Of_Turn>0.0</Max_Rate_Of_Turn>
+      <Behavior>PROJECTILE, HIDE_WHEN_FOGGED</Behavior>
+      <Projectile_Category>DEFAULT</Projectile_Category>
+      <Projectile_Max_Flight_Distance>0.01</Projectile_Max_Flight_Distance>
+      <Projectile_Damage>0.0</Projectile_Damage> 
+      <Projectile_Does_Shield_Damage>No</Projectile_Does_Shield_Damage>
+      <Projectile_Does_Energy_Damage>No</Projectile_Does_Energy_Damage>
+      <Projectile_Does_Hitpoint_Damage>No</Projectile_Does_Hitpoint_Damage>
+      <Projectile_Energy_Per_Shot>0</Projectile_Energy_Per_Shot>
+      <Projectile_SFXEvent_Detonate></Projectile_SFXEvent_Detonate>                  
+      <Projectile_Object_Detonation_Particle>Force_Instant_Heal_Particles</Projectile_Object_Detonation_Particle>   
+      <Projectile_Ground_Detonation_Particle>Force_Instant_Heal_Particles</Projectile_Ground_Detonation_Particle>
+      <Projectile_Lifetime_Detonation_Particle>Force_Instant_Heal_Particles</Projectile_Lifetime_Detonation_Particle>
+      <Projectile_Absorbed_By_Shields_Particle />
+      <AI_Combat_Power>0</AI_Combat_Power>
+      <Projectile_Instant_Heal_On_Detonation> Yes </Projectile_Instant_Heal_On_Detonation>
+      <Projectile_Instant_Heal_Duration_Frames> 90 </Projectile_Instant_Heal_Duration_Frames>
+      <Projectile_Instant_Heal_Radius> 300 </Projectile_Instant_Heal_Radius>
+      <Projectile_Instant_Heal_Spawn_Effect> Unit_Healed_Particles </Projectile_Instant_Heal_Spawn_Effect> 
+      <Projectile_Instant_Heal_Targets_Category_Mask> Infantry | LandHero </Projectile_Instant_Heal_Targets_Category_Mask>
+      <Projectile_Instant_Heal_Health_Increase> 200 </Projectile_Instant_Heal_Health_Increase>    <!-- Heals X health instantly -->
+   </Projectile>
+   
+</Medic_Data>

@@ -1,0 +1,99 @@
+<?xml version="1.0"?>
+<Unit_Land_Replicator_Fighter_Data>
+
+   <GroundVehicle Name="Replicator_Land_Fighter">
+      <Variant_Of_Existing_Type>Template_Ground_Flyer</Variant_Of_Existing_Type>
+      <Text_ID>TEXT_REPLIKATOREN_SPACE_UNIT_JAEGER</Text_ID>
+      <Encyclopedia_Text>TEXT_DESCRIPTION_REPLICATOR_FIGHTER_GROUND</Encyclopedia_Text>
+      <Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_ORI_GROUND_FIGHTER</Encyclopedia_Unit_Class>
+      <Encyclopedia_Good_Against>Ewok_Handler F9TZ_Cloaking_Transport Scout_Trooper</Encyclopedia_Good_Against>
+      <Encyclopedia_Vulnerable_To>Scavenger_Droid AT_AA_Walker Underworld_Mass_Driver_Turret</Encyclopedia_Vulnerable_To>
+      <Icon_Name>REPLICATOR_SPACE_UNIT_FIGHTER.TGA</Icon_Name>
+      <!--Radar_Icon_Name>.TGA</Radar_Icon_Name-->
+      <Land_Model_Name>Replicator_Space_Unit_Fighter.ALO</Land_Model_Name>
+      <LandBehavior>FLYING_LOCOMOTOR, AMBIENT_SFX, DAMAGE_TRACKING, HIDE_WHEN_FOGGED, REVEAL, STUNNABLE, TARGETING, TELEKINESIS_TARGET, UNIT_AI, WEAPON, WIND_DISTURBANCE</LandBehavior>
+      <Affiliation>Replicator</Affiliation>
+      <Select_Box_Scale>40</Select_Box_Scale>
+      <Damage>8</Damage>
+      <Tactical_Health>190</Tactical_Health>
+      <AI_Combat_Power>100</AI_Combat_Power>
+      <Targeting_Priority_Set>SG_Air_AntiAll</Targeting_Priority_Set>
+      <Scale_Factor>4.2</Scale_Factor>
+      <Size_Value>15</Size_Value>
+      <Max_Speed>5.0</Max_Speed>
+      <Min_Speed>2.0</Min_Speed>
+      <Blob_Shadow_Scale>40.0, 40.0</Blob_Shadow_Scale>
+      <Spin_Away_On_Death>Yes</Spin_Away_On_Death> 
+      <GUI_Bracket_Size>1</GUI_Bracket_Size>
+      <GUI_Bounds_Scale>0.8</GUI_Bounds_Scale>
+      
+      <Projectile_Types>Proj_Replicator_Land_Fighter_Laser</Projectile_Types>
+      <Projectile_Fire_Recharge_Seconds>2.0</Projectile_Fire_Recharge_Seconds>
+      <Projectile_Fire_Pulse_Count>8</Projectile_Fire_Pulse_Count>
+      <Projectile_Fire_Pulse_Delay_Seconds>0.2</Projectile_Fire_Pulse_Delay_Seconds>
+      <SFXEvent_Fire></SFXEvent_Fire>
+      
+      <SFXEvent_Ambient_Moving> Unit_SnowSpeeder_Fly_By </SFXEvent_Ambient_Moving>
+      <SFXEvent_Ambient_Moving_Min_Delay_Seconds> 5 </SFXEvent_Ambient_Moving_Min_Delay_Seconds>
+      <SFXEvent_Ambient_Moving_Max_Delay_Seconds> 7 </SFXEvent_Ambient_Moving_Max_Delay_Seconds>
+      <SFXEvent_Engine_Cinematic_Focus_Loop> Unit_SnowSpeeder_Cinematic_Engine_Loop </SFXEvent_Engine_Cinematic_Focus_Loop>
+   </GroundVehicle>
+   
+   
+   <GroundCompany Name="Replicator_Land_Fighter_Company">
+      <Variant_Of_Existing_Type>Template_Ground_Company</Variant_Of_Existing_Type>
+      <Text_ID>TEXT_REPLIKATOREN_SPACE_UNIT_JAEGER</Text_ID>
+      <Encyclopedia_Text>TEXT_DESCRIPTION_REPLICATOR_FIGHTER_GROUND</Encyclopedia_Text>
+      <Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_ORI_GROUND_FIGHTER</Encyclopedia_Unit_Class>
+      <Encyclopedia_Good_Against>Ewok_Handler F9TZ_Cloaking_Transport Scout_Trooper</Encyclopedia_Good_Against>
+      <Encyclopedia_Vulnerable_To>Scavenger_Droid AT_AA_Walker Underworld_Mass_Driver_Turret</Encyclopedia_Vulnerable_To>
+      <Icon_Name>REPLICATOR_SPACE_UNIT_FIGHTER.TGA</Icon_Name>
+      <Damage>24</Damage>
+      <Affiliation>Replicator</Affiliation>
+      <Build_Cost_Credits>2000</Build_Cost_Credits>
+      <Build_Time_Seconds>50</Build_Time_Seconds>
+      <Tech_Level>1</Tech_Level>
+      <Ship_Class>walker</Ship_Class>
+      <Company_Transport_Unit>Replicator_Space_Unit_Transport</Company_Transport_Unit>
+      <Company_Units>Replicator_Land_Fighter</Company_Units>    
+      <Score_Cost_Credits>225</Score_Cost_Credits>
+      <Tactical_Build_Cost_Multiplayer>1000</Tactical_Build_Cost_Multiplayer>
+      <Tactical_Build_Time_Seconds>11</Tactical_Build_Time_Seconds> 
+      <Required_Ground_Base_Level>1</Required_Ground_Base_Level>
+   </GroundCompany>
+   
+
+   <!-- Projectiles Replicator Fighter -->
+   <Projectile Name="Proj_Replicator_Land_Fighter_Laser">
+      <!--Variant_Of_Existing_Type>Proj_Goauld_Deathglider</Variant_Of_Existing_Type-->
+      <Damage_Type>Damage_Normal</Damage_Type>
+      <Projectile_Damage>20.0</Projectile_Damage>
+      
+      <Text_ID>TEXT_NONE</Text_ID>
+      <Land_Model_Name>Replicator_Projectile_Light_Laser.ALO</Land_Model_Name>
+      <Projectile_Custom_Render>1</Projectile_Custom_Render>
+      <Projectile_Width>1.0</Projectile_Width>
+      <Projectile_Length>10.4</Projectile_Length>
+      <Projectile_Texture_Slot>0,0</Projectile_Texture_Slot>
+      <Scale_Factor>1.0</Scale_Factor>
+      <Max_Speed>30.0</Max_Speed>
+      <Max_Rate_Of_Turn>0.0</Max_Rate_Of_Turn>
+      <Behavior>PROJECTILE, HIDE_WHEN_FOGGED</Behavior>
+      <Projectile_Category>Laser</Projectile_Category>
+      <Projectile_Max_Flight_Distance>1200.0</Projectile_Max_Flight_Distance>
+      <Projectile_Does_Shield_Damage>Yes</Projectile_Does_Shield_Damage>
+      <Projectile_Does_Energy_Damage>No</Projectile_Does_Energy_Damage>
+      <Projectile_Does_Hitpoint_Damage>Yes</Projectile_Does_Hitpoint_Damage>
+      <Projectile_Energy_Per_Shot>10</Projectile_Energy_Per_Shot>
+      <Projectile_Object_Detonation_Particle>Large_Damage_Land</Projectile_Object_Detonation_Particle>
+      <Projectile_Object_Armor_Reduced_Detonation_Particle>Medium_Dud</Projectile_Object_Armor_Reduced_Detonation_Particle>
+      <Projectile_Ground_Detonation_Particle>Large_Damage_Land</Projectile_Ground_Detonation_Particle>
+      <Projectile_Lifetime_Detonation_Particle />
+      <Projectile_Absorbed_By_Shields_Particle>Projectile_Shield_Absorb_Large</Projectile_Absorbed_By_Shields_Particle>
+      <Projectile_Ground_Detonation_SurfaceFX>PROJECTILE</Projectile_Ground_Detonation_SurfaceFX>
+      <AI_Combat_Power>160</AI_Combat_Power>
+      <Projectile_SFXEvent_Detonate_Reduced_By_Armor> SFX_Small_Damage_Detonation </Projectile_SFXEvent_Detonate_Reduced_By_Armor>
+   </Projectile> 
+  
+  
+</Unit_Land_Replicator_Fighter_Data>

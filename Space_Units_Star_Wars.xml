@@ -1,0 +1,460 @@
+<?xml version="1.0"?>
+<SpaceUnitsStarWars>
+
+  <!--In order to keep the game from suffering instability issues we keep all Star Wars units that have not been replaced by us in this file-->
+  
+  <!--# Containers-->
+  <Container Name="Galactic_Fleet">
+		
+		<Galactic_Model_Name>w_planet_fleet.alo</Galactic_Model_Name>
+    <Pre_Lit>Yes</Pre_Lit>
+		<Mass>1.0</Mass>
+		<Scale_Factor>1.0</Scale_Factor>
+		<Show_Name>No</Show_Name>
+		<Name_Adjust>-20, -12, 0.1</Name_Adjust>
+		<Behavior>SELECTABLE, FLEET, FLEET_LOCOMOTOR</Behavior>
+		<Political_Faction>Empire</Political_Faction>
+		<Pre_Lit>yes</Pre_Lit>
+		<Layer_Z_Adjust>0.5</Layer_Z_Adjust>
+		<Is_Visible_On_Radar>Yes</Is_Visible_On_Radar>
+		<Radar_Icon_Scale_Land>80</Radar_Icon_Scale_Land>
+		<Radar_Icon_Scale_Space>200</Radar_Icon_Scale_Space>	 
+	</Container>
+
+	<Container Name="Galactic_Squadron">
+		
+    <Pre_Lit>Yes</Pre_Lit>
+		<Mass>1.0</Mass>
+		<Scale_Factor>1.0</Scale_Factor>
+		<Show_Name>No</Show_Name>
+		<Name_Adjust>-20, -12, 0.1</Name_Adjust>	
+		<Is_Visible_On_Radar>Yes</Is_Visible_On_Radar>
+		<Radar_Icon_Scale_Land>80</Radar_Icon_Scale_Land>
+		<Radar_Icon_Scale_Space>200</Radar_Icon_Scale_Space>		 
+		<Behavior>FLEET</Behavior>
+	</Container>
+
+	<Container Name="Team">
+		
+		<Show_Name>No</Show_Name>
+		<Behavior>TEAM,SELECTABLE,UNIT_AI,TEAM_LOCOMOTOR</Behavior>
+		<LandBehavior>REVEAL</LandBehavior>
+		<SpaceBehavior>REVEAL</SpaceBehavior>
+		<Land_FOW_Reveal_Range>200.0</Land_FOW_Reveal_Range>
+		<Space_FOW_Reveal_Range>800.0</Space_FOW_Reveal_Range>
+		<MovementClass>Space</MovementClass>
+		<Is_Visible_On_Radar>Yes</Is_Visible_On_Radar>
+		<Radar_Icon_Scale_Land>80</Radar_Icon_Scale_Land>
+		<Radar_Icon_Scale_Space>200</Radar_Icon_Scale_Space>		 	 
+	</Container>
+
+   <!--# UniqueUnits-->
+
+   <UniqueUnit Name="Slave_I">
+      <Variant_Of_Existing_Type>Template_Space_Unit_Fighter_Single</Variant_Of_Existing_Type>
+   </UniqueUnit>
+
+
+
+  <!--# GenericHeroUnits-->
+
+  <GenericHeroUnit Name="Generic_Smuggler_E">
+		
+		<GUI_Row> 1 </GUI_Row>
+		<Icon_Name>i_button_smuggler.tga</Icon_Name>
+		<Mass>1.0</Mass>
+		<Scale_Factor>1.0</Scale_Factor>
+		<Is_Sprite>No</Is_Sprite>
+		<Type>Walk</Type>
+		<Affiliation>Empire</Affiliation>
+		<Political_Control>0</Political_Control>
+		<Size_Value>75</Size_Value>
+		<!--  <Damage>2</Damage> -->
+		<Is_Generic_Hero>Yes</Is_Generic_Hero>
+		<Attach_To_Flagship_During_Space_Battle>Yes</Attach_To_Flagship_During_Space_Battle>
+		<Stay_In_Transport_During_Ground_Battle>Yes</Stay_In_Transport_During_Ground_Battle>
+		<Always_Spawn_In_Orbit>Yes</Always_Spawn_In_Orbit>
+
+		<Neutralization_Cost>50.0</Neutralization_Cost>
+		<Can_Be_Neutralized_By_Major_Heroes>Yes</Can_Be_Neutralized_By_Major_Heroes>
+		<Can_Be_Neutralized_By_Minor_Heroes>Yes</Can_Be_Neutralized_By_Minor_Heroes>
+
+		<CategoryMask> NonCombatHero </CategoryMask>
+		<Ranking_In_Category> 24 </Ranking_In_Category>
+
+		<Encyclopedia_Text>TEXT_TOOLTIP_SMUGGLER</Encyclopedia_Text>
+		
+
+
+
+
+		<Abilities SubObjectList="Yes">
+
+			<Galactic_Stealth_Ability Name="Smuggler_Galactic_Stealth">
+				<Initially_Enabled>Yes</Initially_Enabled>
+				<Activation_Style>Galactic_Automatic</Activation_Style>
+				<Causes_Despawn>No</Causes_Despawn>
+				<Evade_Detection_Chance>0.0</Evade_Detection_Chance>
+			</Galactic_Stealth_Ability>
+
+			<Siphon_Credits_Ability Name="Smuggler_Siphon_Credits">
+				<Initially_Enabled>Yes</Initially_Enabled>
+				<Activation_Style>Ground_Activated</Activation_Style>
+				<Causes_Despawn>Yes</Causes_Despawn>
+				<Min_Siphon_Percentage>0.5</Min_Siphon_Percentage>
+				<Max_Siphon_Percentage>0.5</Max_Siphon_Percentage>
+				<Siphon_Duration_In_Cycles>5</Siphon_Duration_In_Cycles>
+
+			</Siphon_Credits_Ability>
+
+			<System_Spy_Ability Name="Smuggler_Limited_Spy">
+				<Initially_Enabled>Yes</Initially_Enabled>
+				<Activation_Style>Galactic_Automatic</Activation_Style>
+				<Causes_Despawn>No</Causes_Despawn>
+				<Duration_In_Secs>-1.0</Duration_In_Secs>
+				<See_Num_Fleets>Yes</See_Num_Fleets>
+			</System_Spy_Ability>
+		</Abilities>
+	</GenericHeroUnit>
+	
+	<GenericHeroUnit Name="Generic_Smuggler_R">
+		
+		<GUI_Row> 1 </GUI_Row>
+		<Icon_Name>i_button_smuggler.tga</Icon_Name>
+		<Mass>1.0</Mass>
+		<Scale_Factor>1.0</Scale_Factor>
+		<Is_Sprite>No</Is_Sprite>
+		<Type>Walk</Type>
+		<Affiliation>Rebel</Affiliation>
+		<Political_Control>0</Political_Control>
+		<Size_Value>75</Size_Value>
+		<!--  <Damage>2</Damage> -->
+		<Is_Generic_Hero>Yes</Is_Generic_Hero>
+		<Attach_To_Flagship_During_Space_Battle>Yes</Attach_To_Flagship_During_Space_Battle>
+		<Stay_In_Transport_During_Ground_Battle>Yes</Stay_In_Transport_During_Ground_Battle>
+		<Always_Spawn_In_Orbit>Yes</Always_Spawn_In_Orbit>
+
+		<Neutralization_Cost>50.0</Neutralization_Cost>
+		<Can_Be_Neutralized_By_Major_Heroes>Yes</Can_Be_Neutralized_By_Major_Heroes>
+		<Can_Be_Neutralized_By_Minor_Heroes>Yes</Can_Be_Neutralized_By_Minor_Heroes>
+
+		<CategoryMask> NonCombatHero </CategoryMask>
+		<Ranking_In_Category> 24 </Ranking_In_Category>
+
+
+		
+		<Encyclopedia_Text>TEXT_TOOLTIP_SMUGGLER</Encyclopedia_Text>
+		
+
+
+		<Abilities SubObjectList="Yes">
+
+			<Galactic_Stealth_Ability Name="Smuggler_Galactic_Stealth">
+				<Initially_Enabled>Yes</Initially_Enabled>
+				<Activation_Style>Galactic_Automatic</Activation_Style>
+				<Causes_Despawn>No</Causes_Despawn>
+				<Evade_Detection_Chance>0.0</Evade_Detection_Chance>
+			</Galactic_Stealth_Ability>
+
+			<Siphon_Credits_Ability Name="Smuggler_Siphon_Credits">
+				<Initially_Enabled>Yes</Initially_Enabled>
+				<Activation_Style>Ground_Activated</Activation_Style>
+				<Causes_Despawn>Yes</Causes_Despawn>
+				<Min_Siphon_Percentage>0.5</Min_Siphon_Percentage>
+				<Max_Siphon_Percentage>0.5</Max_Siphon_Percentage>
+				<Siphon_Duration_In_Cycles>5</Siphon_Duration_In_Cycles>
+
+			</Siphon_Credits_Ability>
+
+			<System_Spy_Ability Name="Smuggler_Limited_Spy">
+				<Initially_Enabled>Yes</Initially_Enabled>
+				<Activation_Style>Galactic_Automatic</Activation_Style>
+				<Causes_Despawn>No</Causes_Despawn>
+				<Duration_In_Secs>-1.0</Duration_In_Secs>
+				<See_Num_Fleets>Yes</See_Num_Fleets>
+			</System_Spy_Ability>
+		</Abilities>
+	</GenericHeroUnit>
+
+
+
+  <!--# SpaceUnitsCapital-->
+  <!--//none-->
+
+  <!--# SpaceUnitsCorvettes-->
+  <!--//none-->
+
+
+  <!--# SpaceUnitsFighters-->
+  <!--//none-->
+
+
+  <!--# SpaceUnitsFrigates-->
+  <!--//none-->
+
+
+  <!--# SpaceUnitsSupers-->
+	<SpaceUnit Name="Death_Star">
+		
+		<GUI_Row> 1 </GUI_Row>
+		<Space_Model_Name>w_planet_deathstar02.alo</Space_Model_Name>
+		<Galactic_Fleet_Override_Model_Name> w_planet_fleet_ds.alo </Galactic_Fleet_Override_Model_Name>
+		<Galactic_Fleet_Override_Icon_Index> 4 </Galactic_Fleet_Override_Icon_Index>
+		<Ranking_In_Category> 0 </Ranking_In_Category>
+		<Prevents_Story_Campaign_Autoresolve>yes</Prevents_Story_Campaign_Autoresolve>
+		<Mass>0.9995</Mass>
+		<Scale_Factor>2.5</Scale_Factor>
+		<Max_Speed> 0.75 </Max_Speed> 
+		<Max_Thrust> 0.02 </Max_Thrust>
+		<Max_Rate_Of_Turn>0.3</Max_Rate_Of_Turn>
+		<Max_Rate_Of_Roll>0.2</Max_Rate_Of_Roll>
+		<Bank_Turn_Angle>15</Bank_Turn_Angle>
+		<Hyperspace>Yes</Hyperspace>
+		<Hyperspace_Speed>0.25</Hyperspace_Speed>
+		<Maintenance_Cost>0.3</Maintenance_Cost>
+		<Collision_Box_Modifier>250.0</Collision_Box_Modifier>
+		<Affiliation>Empire</Affiliation>
+		<Tech_Level>99</Tech_Level>
+		<Required_Timeline>0</Required_Timeline>
+		<Required_Ground_Base_Level>0</Required_Ground_Base_Level>
+		<Required_Star_Base_Level>5</Required_Star_Base_Level>
+		<Required_Special_Structures />
+		<Required_Planets />
+		<Build_Limit_Current_Per_Player>1</Build_Limit_Current_Per_Player>
+		<Build_Limit_Lifetime_Per_Player>1</Build_Limit_Lifetime_Per_Player>
+		<Build_Cost_Credits>20000</Build_Cost_Credits>
+		<Build_Time_Seconds>310</Build_Time_Seconds>
+		<Build_Tab_Special_Structures>Yes</Build_Tab_Special_Structures>
+		<Damage>50000</Damage>
+		<Shield_Points>5</Shield_Points>
+		<Tactical_Health>50000</Tactical_Health>
+		<Shield_Refresh_Rate>100</Shield_Refresh_Rate>
+		<Energy_Capacity>50000</Energy_Capacity>
+		<Energy_Refresh_Rate>100</Energy_Refresh_Rate>
+		<Ship_Class>super</Ship_Class>
+		<Formation_Priority>6</Formation_Priority>
+		<Is_Escort>no</Is_Escort>
+		<Is_Bomber>no</Is_Bomber>
+		<Political_Faction>Empire</Political_Faction>
+		<Squadron_Capacity>100</Squadron_Capacity>
+		<AI_Combat_Power>0</AI_Combat_Power>
+		<Size_Value>200</Size_Value>
+		<Space_Escort_Unit_Types>
+				TIE_Scout_Squadron,
+				Tartan_Patrol_Cruiser,
+				Tartan_Patrol_Cruiser,
+				Victory_Destroyer,
+				Victory_Destroyer
+		</Space_Escort_Unit_Types>
+		<Behavior> DUMMY_STARSHIP DUMMY_CANT_PATHFIND</Behavior>
+		<GalacticBehavior> SELECTABLE </GalacticBehavior>
+		<SpaceBehavior> TACTICAL_SUPER_WEAPON, IDLE </SpaceBehavior>
+		<In_Background>Yes</In_Background>
+
+		<TSW_Start_Distance_From_Target> 8000.0 </TSW_Start_Distance_From_Target>
+		<TSW_Start_Pos_Match_Targets_Z> Yes </TSW_Start_Pos_Match_Targets_Z>
+		<TSW_Attack_Distance_From_Target> 5800.0 </TSW_Attack_Distance_From_Target>
+		<TSW_Power_Up_Countdown_Seconds> 9.0 </TSW_Power_Up_Countdown_Seconds>
+		<TSW_Attack_Anim_Duration_Seconds> 2.5 </TSW_Attack_Anim_Duration_Seconds>
+		<TSW_Explosion_Debris_Creation_Frame_Delay> 33 </TSW_Explosion_Debris_Creation_Frame_Delay>
+		<TSW_SFXEvent_GUI_Bttton_Press>  </TSW_SFXEvent_GUI_Bttton_Press>
+		<TSW_SFXEvent_Activate_Voice> </TSW_SFXEvent_Activate_Voice>
+		<TSW_SFXEvent_Weapon_Power_Up>  </TSW_SFXEvent_Weapon_Power_Up>
+		<TSW_MusicEvent_Activation_Start> Space_Map_Activate_Death_Star_Music_Event </TSW_MusicEvent_Activation_Start>
+		<TSW_Post_Music_Wait_Frames> 1 </TSW_Post_Music_Wait_Frames>
+		<TSW_Post_Destruction_Wait_Frames> 350 </TSW_Post_Destruction_Wait_Frames>
+		<TSW_Z_Adjust_Relative_To_Target_Pos> 1200.0 </TSW_Z_Adjust_Relative_To_Target_Pos>
+		<Icon_Name>i_button_death_star_complete.tga</Icon_Name>
+		<Build_Countdown_Timer> Yes </Build_Countdown_Timer>
+		<Build_Countdown_Text_ID> TEXT_NONE </Build_Countdown_Text_ID>
+		<Build_Countdown_Text_RGBA> 64, 128, 255, 255 </Build_Countdown_Text_RGBA>
+		<Build_Speech_Underway>  </Build_Speech_Underway>
+		<Build_Speech_Completed>  </Build_Speech_Completed>
+		<Build_Speech_Stopped>  </Build_Speech_Stopped>
+		<Build_Speech_Countdowns> Speech_Death_Star_Build_ </Build_Speech_Countdowns>
+		<Build_Music_Completed> Galactic_Death_Star_Complete_Music_Event </Build_Music_Completed>
+		<Victory_Relevant>No</Victory_Relevant>
+		<CategoryMask> Super </CategoryMask>
+		<Encyclopedia_Text>TEXT_NONE</Encyclopedia_Text>
+		
+		<Targeting_Max_Attack_Distance>20000.0</Targeting_Max_Attack_Distance>
+		<Unit_Abilities_Data SubObjectList="Yes"></Unit_Abilities_Data>
+		<Abilities SubObjectList="Yes">
+			<Planet_Destruction_Ability Name="Death_Star_Planet_Destruction">
+				<Activation_Style>Ground_Activated</Activation_Style>
+				<SFXEvent_Target_Affected>Planet_Death_SFX</SFXEvent_Target_Affected>
+				<Target_Particle_Effect>Planet_Explosion_Galactic</Target_Particle_Effect>
+				<Target_Particle_Bone_Name />
+			</Planet_Destruction_Ability>
+		</Abilities>
+		<Is_Visible_On_Radar>Yes</Is_Visible_On_Radar>
+		<Radar_Icon_Name>TAURI_SPACE_UNIT_X-301.tga</Radar_Icon_Name>
+		<Radar_Icon_Size>0.2  0.2</Radar_Icon_Size>
+		<Radar_Register_As_Foreground_Object>Yes</Radar_Register_As_Foreground_Object>
+		<Radar_Clip_To_Visible_Region>Yes</Radar_Clip_To_Visible_Region>
+		<Population_Value>15</Population_Value>
+		<Space_Override_Population_Value>0</Space_Override_Population_Value>
+	</SpaceUnit>
+		
+	<SpaceUnit Name="Death_Star_II">
+		<Variant_Of_Existing_Type>Death_Star</Variant_Of_Existing_Type>
+		
+		<Encyclopedia_Text></Encyclopedia_Text>
+		<Tech_Level>99</Tech_Level>
+		<Space_Model_Name>w_planet_deathstar02_II.alo</Space_Model_Name>
+		<Scale_Factor>3.0</Scale_Factor>
+		<Space_Escort_Unit_Types>
+				TIE_Interceptor_Squadron,
+				TIE_Interceptor_Squadron,
+				TIE_Defender_Squadron,
+				Tartan_Patrol_Cruiser,
+				Tartan_Patrol_Cruiser,
+				Victory_Destroyer,
+				Victory_Destroyer,
+				Star_Destroyer
+		</Space_Escort_Unit_Types>
+		<AI_Combat_Power>3000</AI_Combat_Power>
+		<Behavior> DUMMY_STARSHIP </Behavior>
+		<GalacticBehavior> SELECTABLE  </GalacticBehavior>
+		<SpaceBehavior> TACTICAL_SUPER_WEAPON, IDLE, ABILITY_COUNTDOWN, TARGETING </SpaceBehavior>	
+		<Unit_Abilities_Data SubObjectList="Yes">		
+			<Unit_Ability>
+				<Type>SUPER_LASER</Type>
+				<Mod_Multiplier>SPEED_MULTIPLIER, 0.8f</Mod_Multiplier>
+				<GUI_Activated_Ability_Name> Death_Star_Super_Laser_Attack_Ability </GUI_Activated_Ability_Name> <!-- GUI Command Bar support -->
+				<Recharge_Seconds>60</Recharge_Seconds>
+				<Expiration_Seconds>10</Expiration_Seconds>
+
+				<SFXEvent_Special_Ability_Loop> Unit_Death_Star_2_Fire </SFXEvent_Special_Ability_Loop>
+			</Unit_Ability>
+		</Unit_Abilities_Data>
+		<Abilities SubObjectList="Yes">
+			<Planet_Destruction_Ability Name="Death_Star_Planet_Destruction">
+				<Activation_Style>Ground_Activated</Activation_Style>
+				<SFXEvent_Target_Affected>Planet_Death_SFX</SFXEvent_Target_Affected>
+				<Target_Particle_Effect>Planet_Explosion_Galactic</Target_Particle_Effect>
+				<Target_Particle_Bone_Name />
+			</Planet_Destruction_Ability>
+			<Super_Laser_Ability Name="Death_Star_Super_Laser_Attack_Ability">
+				<Activation_Style> User_Input </Activation_Style>
+				<Applicable_Unit_Categories> Capital | Frigate </Applicable_Unit_Categories>
+				<Applicable_Unit_Types />
+        <Owner_Particle_Bone_Name>MuzzleA_00</Owner_Particle_Bone_Name>
+				<Activation_Min_Range>0</Activation_Min_Range>
+	      <Activation_Max_Range>20000</Activation_Max_Range>
+				<Damage_Per_Frame>500</Damage_Per_Frame>			
+				<Fire_Frame>60</Fire_Frame>
+				<Attack_Anim_Sub_Index>1</Attack_Anim_Sub_Index>
+				<Beam_Texture_Name>tractor_beam01.tga</Beam_Texture_Name>
+				<Num_Anim_Frames>5</Num_Anim_Frames>
+				<Line_Width>35</Line_Width>
+				<Line_Color>0 237 119 255</Line_Color>
+				<Face_Target>true</Face_Target>
+				<Turn_Rate>-1.0f</Turn_Rate>
+				<Firing_Cone>10.0f</Firing_Cone>
+        <Fire_Delay>0</Fire_Delay>
+        <Fire_Continuation>0.01</Fire_Continuation>
+			</Super_Laser_Ability>
+		</Abilities>
+	</SpaceUnit>
+  
+  <!--# Squadrons-->
+  
+
+
+   
+     <!-- Information Wraith Generic Hero Assassine -->
+  <GenericHeroUnit Name="Generic_Bounty_Hunter_E">
+    <Text_ID>TEXT_WRAITH_GROUND_UNIT_ASSASSINE</Text_ID>
+    <GUI_Row> 1 </GUI_Row>
+    <Icon_Name>WRAITH_SPACE_HERO_ASSASSIN.TGA</Icon_Name>
+    <Mass>1.0</Mass>
+    <Scale_Factor>1.0</Scale_Factor>
+    <Is_Sprite>No</Is_Sprite>
+    <Type>Walk</Type>
+    <Affiliation>Empire</Affiliation>
+    <Political_Control>0</Political_Control>
+    <Size_Value>75</Size_Value>
+    <Tech_Level>99</Tech_Level>
+    <Is_Generic_Hero>Yes</Is_Generic_Hero>
+    <Attach_To_Flagship_During_Space_Battle>Yes</Attach_To_Flagship_During_Space_Battle>
+    <Stay_In_Transport_During_Ground_Battle>Yes</Stay_In_Transport_During_Ground_Battle>
+    <Always_Spawn_In_Orbit>Yes</Always_Spawn_In_Orbit>
+
+    <Neutralization_Cost>50.0</Neutralization_Cost>
+    <Can_Be_Neutralized_By_Major_Heroes>Yes</Can_Be_Neutralized_By_Major_Heroes>
+    <Can_Be_Neutralized_By_Minor_Heroes>Yes</Can_Be_Neutralized_By_Minor_Heroes>
+    <!--AJA 11/28/2005 - Since these are manually buildable now it makes no sense to tie their respawn to the cantina <Respawn_Tied_To_Structure>Ground_Cantina_E</Respawn_Tied_To_Structure>-->
+
+    <Encyclopedia_Text>TEXT_DESCRIPTION_WRAITH_ASSASSINE_GROUND</Encyclopedia_Text>
+    <Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_WRAITH_ASSASSINE</Encyclopedia_Unit_Class>
+
+    <CategoryMask> NonCombatHero </CategoryMask>
+    <Ranking_In_Category> 23 </Ranking_In_Category>
+
+    <Death_SFXEvent_Start_Die></Death_SFXEvent_Start_Die>
+
+    <Abilities SubObjectList="Yes">
+      <Galactic_Stealth_Ability Name="Bounty_Hunter_Galactic_Stealth">
+        <Evade_Detection_Chance>0.0</Evade_Detection_Chance>
+      </Galactic_Stealth_Ability>
+      <Neutralize_Hero_Ability Name="Bounty_Hunter_Neutralize_Hero">
+        <Cost_Mod_By_Base_Level>0.0,0.0, 5.0,1.0</Cost_Mod_By_Base_Level>
+        <Cost_Mod_By_Previous_Neutralizations>0.0,0.0, 1000.0,750.0</Cost_Mod_By_Previous_Neutralizations>
+        <Cost_Mod_By_Planetary_Corruption_Level>0.0,0.0, 1.0,0.25</Cost_Mod_By_Planetary_Corruption_Level>
+        <General_Minor_Hero_Cost_Mod>1.0</General_Minor_Hero_Cost_Mod>
+        <General_Major_Hero_Cost_Mod>2.0</General_Major_Hero_Cost_Mod>
+        <Owner_Respawn_Time_In_Secs>240.0, 300.0</Owner_Respawn_Time_In_Secs>
+        <Target_Respawn_Time_In_Secs>240.0, 300.0</Target_Respawn_Time_In_Secs>
+        <Can_Neutralize_Minor_Heroes>Yes</Can_Neutralize_Minor_Heroes>
+        <Can_Neutralize_Major_Heroes>No</Can_Neutralize_Major_Heroes>
+        <!-- AJA 11/28/2005 - Joe says generic bounty hunters cannot neutralize major heroes -->
+        <SFXEvent_Activate> Unit_Galactic_Eliminate_Bounty_Hunter </SFXEvent_Activate>
+      </Neutralize_Hero_Ability>
+      <System_Spy_Ability Name="Bounty_Hunter_Limited_Spy">
+        <Initially_Enabled>Yes</Initially_Enabled>
+        <Activation_Style>Galactic_Automatic</Activation_Style>
+        <Causes_Despawn>No</Causes_Despawn>
+        <Duration_In_Secs>-1.0</Duration_In_Secs>
+        <See_Num_Fleets>Yes</See_Num_Fleets>
+        <See_Minor_Stealth_Heroes>Yes</See_Minor_Stealth_Heroes>
+        <See_Major_Stealth_Heroes>Yes</See_Major_Stealth_Heroes>
+      </System_Spy_Ability>
+    </Abilities>
+  </GenericHeroUnit>
+  
+  <!-- Company Information Wraith Generic Hero Assassine -->
+  <HeroCompany Name="Bounty_Hunter_Team_E">
+    <GUI_Row>1</GUI_Row>
+    <Text_ID>TEXT_WRAITH_GROUND_UNIT_ASSASSINE</Text_ID>
+    <Icon_Name>WRAITH_SPACE_HERO_ASSASSIN.TGA</Icon_Name>
+    <Is_Dummy>Yes</Is_Dummy>
+    <Affiliation>Empire</Affiliation>
+    <Build_Cost_Credits>1000</Build_Cost_Credits>
+    <Build_Time_Seconds>90</Build_Time_Seconds>
+    <Build_Time_Reduced_By_Multiple_Factories> Yes </Build_Time_Reduced_By_Multiple_Factories>
+    <Build_Tab_Heroes>Yes</Build_Tab_Heroes>
+    <Tech_Level>99</Tech_Level>
+    <Required_Timeline>0</Required_Timeline>
+    <Required_Ground_Base_Level>1</Required_Ground_Base_Level>
+    <Required_Star_Base_Level>0</Required_Star_Base_Level>
+    <Required_Special_Structures>E_Ground_Officer_Academy</Required_Special_Structures>
+    <Required_Planets></Required_Planets>
+    <Behavior>DUMMY_GROUND_COMPANY</Behavior>
+    <Company_Transport_Unit>Shuttle_Tyderium</Company_Transport_Unit>
+    <Company_Units>Generic_Bounty_Hunter_E</Company_Units>
+    <Is_Generic_Hero>Yes</Is_Generic_Hero>
+    <Is_Stealth_Company>Yes</Is_Stealth_Company>
+    <SFXEvent_Hero_Respawned></SFXEvent_Hero_Respawned>
+    <SFXEvent_Build_Complete></SFXEvent_Build_Complete>
+    <SFXEvent_Build_Started></SFXEvent_Build_Started>
+    <SFXEvent_Build_Cancelled></SFXEvent_Build_Cancelled>
+    <Lua_Script>GenericBountyHunter</Lua_Script>
+
+    <Encyclopedia_Text> TEXT_DESCRIPTION_WRAITH_ASSASSINE_GROUND </Encyclopedia_Text>
+    <Encyclopedia_Unit_Class> TEXT_ENCYCLOPEDIA_CLASS_WRAITH_ASSASSINE </Encyclopedia_Unit_Class>
+    <CategoryMask>NonCombatHero</CategoryMask>
+    <Population_Value>1</Population_Value>
+  </HeroCompany>
+  
+</SpaceUnitsStarWars>  

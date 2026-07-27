@@ -1,0 +1,107 @@
+<?xml version="1.0"?>
+<Ori_Soldier_Infantry_Data>
+
+   <GroundInfantry Name="Ori_Prior">
+      <Variant_Of_Existing_Type>Template_Ground_Infantry_Single</Variant_Of_Existing_Type>
+      <Text_ID>TEXT_ORI_GROUND_UNIT_PRIOR</Text_ID>
+      <Encyclopedia_Text>TEXT_DESCRIPTION_ORI_PRIOR_GROUND</Encyclopedia_Text>
+      <Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_SG_TEAM</Encyclopedia_Unit_Class>
+      <Encyclopedia_Good_Against>Underworld_Saboteur Underworld_Merc Stormtrooper</Encyclopedia_Good_Against>
+      <Encyclopedia_Vulnerable_To>MZ8_Pulse_Cannon_Tank Tauri_F302_Land Empire_Anti_Infantry_Turret</Encyclopedia_Vulnerable_To>
+      <Icon_Name>ORI_GROUND_UNIT_PRIOR.TGA</Icon_Name>
+      <Scale_Factor>1.3</Scale_Factor>
+      <Movement_Animation_Speed>0.4</Movement_Animation_Speed>
+      <Rotation_Animation_Speed>20.0</Rotation_Animation_Speed>
+      <Walk_Animation_Speed>0.4</Walk_Animation_Speed>
+      <Crouch_Animation_Speed>0.25</Crouch_Animation_Speed>
+      <Land_Model_Name>Ori_Land_Unit_Prior.alo</Land_Model_Name>
+      <Land_Model_Anim_Override_Name>Ori_Land_Unit_Prior.alo</Land_Model_Anim_Override_Name>
+      <FormationOrder>5</FormationOrder>
+      <Tactical_Health>800</Tactical_Health>
+      <Max_Speed>0.6</Max_Speed>
+
+      <SFXEvent_Select>Unit_Select_Ori_P</SFXEvent_Select>
+      <SFXEvent_Move>Unit_Move_Ori_P</SFXEvent_Move>
+      <SFXEvent_Attack>Unit_Attack_Ori_P</SFXEvent_Attack>
+      <SFXEvent_Attack>Unit_Spawn_Ori_P</SFXEvent_Attack>
+
+      <AI_Combat_Power>20</AI_Combat_Power>
+      <Targeting_Priority_Set>SG_Infantry_AntiInfantry</Targeting_Priority_Set>
+      <Projectile_Types>Proj_Ori_Prior</Projectile_Types>
+      <Projectile_Fire_Recharge_Seconds>1.9</Projectile_Fire_Recharge_Seconds>
+      <Projectile_Fire_Pulse_Count>1</Projectile_Fire_Pulse_Count>
+      <Projectile_Fire_Pulse_Delay_Seconds>1.0</Projectile_Fire_Pulse_Delay_Seconds>
+      <SFXEvent_Fire>Weapon_Staff_Prior</SFXEvent_Fire>
+      <Death_Clone>Damage_Hand_Device, Ori_Prior_Hand_Device_Death_Clone</Death_Clone>
+      <Unit_Abilities_Data SubObjectList="Yes">
+         <Unit_Ability>
+            <Type>FORCE_WHIRLWIND</Type>
+            <Alternate_Name_Text>TEXT_ABILITY_SHOCKWAVE</Alternate_Name_Text>
+            <Alternate_Description_Text>TEXT_DESCRIPTION_ABILITY_SHOCKWAVE_BAAL_GROUND</Alternate_Description_Text>
+            <Recharge_Seconds>25.0</Recharge_Seconds>
+            <GUI_Activated_Ability_Name>Prior_Whirlwind</GUI_Activated_Ability_Name>
+            <Effective_Radius>500.0</Effective_Radius>
+            <Spawned_Object_Type>Force_Whirlwind_Particles</Spawned_Object_Type>
+         </Unit_Ability>
+      </Unit_Abilities_Data>
+      <Abilities SubObjectList="Yes">
+         <Force_Whirlwind_Ability Name="Prior_Whirlwind">
+            <Activation_Style> User_Input </Activation_Style>
+            <Activation_Min_Range>0.0</Activation_Min_Range>
+            <Activation_Max_Range>75.0</Activation_Max_Range>
+            <Damage_Amount>500.0</Damage_Amount>
+            <Damage_Range>75.0</Damage_Range>
+            <Travel_Time_In_Secs>1.0</Travel_Time_In_Secs>
+            <Activation_Chance>0,0.0, 1,0.0, 5,1.0, 500,1.0</Activation_Chance>
+            <Applicable_Unit_Categories>Infantry</Applicable_Unit_Categories>
+            <Applicable_Unit_Types />
+            <SFXEvent_Activate></SFXEvent_Activate>
+            <Owner_Particle_Effect>Force_Whirlwind_Particles</Owner_Particle_Effect>
+            <Owner_Particle_Bone_Name />
+            <Owner_Light_Effect_Type>Color_Flash</Owner_Light_Effect_Type>
+            <Owner_Light_Effect_Color>2.0, 2.0, 2.0</Owner_Light_Effect_Color>
+            <Owner_Light_Effect_Color2 />
+            <Owner_Light_Effect_Duration>0.5</Owner_Light_Effect_Duration>
+            <Owner_Light_Effect_Pulse_Count />
+         </Force_Whirlwind_Ability>
+      </Abilities>
+   </GroundInfantry>
+
+   <GroundInfantry Name="Ori_Prior_Hand_Device_Death_Clone">
+      <Variant_Of_Existing_Type>Ori_Prior</Variant_Of_Existing_Type>
+      <Specific_Death_Anim_Type>FW_DIE</Specific_Death_Anim_Type>
+   </GroundInfantry>
+
+
+   <GroundCompany Name="Ori_Prior_Company">
+      <Variant_Of_Existing_Type>Template_Ground_Company</Variant_Of_Existing_Type>
+      <Text_ID>TEXT_ORI_GROUND_UNIT_PRIOR</Text_ID>
+      <Encyclopedia_Text>TEXT_DESCRIPTION_ORI_PRIOR_GROUND</Encyclopedia_Text>
+      <Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_SG_TEAM</Encyclopedia_Unit_Class>
+      <Encyclopedia_Good_Against>Underworld_Saboteur Underworld_Merc Stormtrooper</Encyclopedia_Good_Against>
+      <Encyclopedia_Vulnerable_To>MZ8_Pulse_Cannon_Tank Tauri_F302_Land Empire_Anti_Infantry_Turret</Encyclopedia_Vulnerable_To>
+      <Icon_Name>ORI_GROUND_UNIT_PRIOR.TGA</Icon_Name>
+      <Affiliation>Ori</Affiliation>
+      <Damage>10</Damage>
+      <Build_Cost_Credits>150</Build_Cost_Credits>
+      <Build_Time_Seconds>20</Build_Time_Seconds>
+      <Tech_Level>1</Tech_Level>
+      <Company_Transport_Unit>Ori_Space_Unit_Transport</Company_Transport_Unit>
+      <Company_Units>Ori_Prior</Company_Units>
+      <Max_Squad_Size>1</Max_Squad_Size>
+      <Tactical_Build_Cost_Multiplayer>500</Tactical_Build_Cost_Multiplayer>
+      <Tactical_Build_Time_Seconds>9</Tactical_Build_Time_Seconds>
+      <Required_Ground_Base_Level>1</Required_Ground_Base_Level>
+      <Required_Special_Structures>Ori_Ground_Building_Temple</Required_Special_Structures>
+   </GroundCompany>
+
+   <Projectile Name="Proj_Ori_Prior">
+      <Variant_Of_Existing_Type>Proj_Goauld_Hand_Device</Variant_Of_Existing_Type>
+      <Damage_Type>Damage_Hand_Device</Damage_Type>
+      <Projectile_Damage>150.0</Projectile_Damage>
+      <Max_Speed>5.0</Max_Speed>
+      <Projectile_Blast_Area_Range>15.0</Projectile_Blast_Area_Range>
+      <Projectile_Blast_Area_Damage>160.0</Projectile_Blast_Area_Damage>
+   </Projectile>
+
+</Ori_Soldier_Infantry_Data>

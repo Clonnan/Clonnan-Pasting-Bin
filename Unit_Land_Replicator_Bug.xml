@@ -1,0 +1,171 @@
+<?xml version="1.0"?>
+<Ground_Infantry_Data>
+
+ <!--TODO: Add unused sound effects:
+ Effect_Replicator_Die
+ Effect_Replicator_Walk
+ in animation_fx for other bug variants.
+
+ all bugs need an MUZZLEA_00 bone to be able to attack!
+
+ There is also a different colored texture of the block replicator_land_unit_bug_diffuse_2.dds which is currently unused.
+
+ add bug spawn ability for queen (ai usable)
+
+ add acid spray ability or add acid spray affect to default attack anim
+
+ add face hugger attack animation using rancor eating ability
+ -->
+
+   <GroundInfantry Name="Replicator_Queen">
+      <Variant_Of_Existing_Type>Template_Ground_Infantry_Single</Variant_Of_Existing_Type>
+      <Text_ID>TEXT_REPLICATOR_GROUND_UNIT_QUEEN</Text_ID>
+      <Encyclopedia_Text>TEXT_DESCRIPTION_REPLICATOR_QUEEN_GROUND</Encyclopedia_Text>
+      <Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_REPLICATOR_BUG</Encyclopedia_Unit_Class>
+      <Encyclopedia_Good_Against> Stormtrooper Rebel_Trooper Goauld_Horus_Guard </Encyclopedia_Good_Against>
+      <Encyclopedia_Vulnerable_To> Underworld_Merc F9TZ_Cloaking_Transport Underworld_Anti_Infantry_Turret </Encyclopedia_Vulnerable_To>
+      <Icon_Name>REPLICATOR_GROUND_UNIT_QUEEN.TGA</Icon_Name>
+      <Land_Model_Name>Replicator_Land_Unit_Queen.ALO</Land_Model_Name>
+
+      <Scale_Factor>1.0</Scale_Factor>
+      <Affiliation>Replicator</Affiliation>
+      <Tactical_Health>50</Tactical_Health>
+      <Ranged_Target_Z_Adjust>0.5</Ranged_Target_Z_Adjust>
+
+      <Projectile_Types>Proj_Replicator_Melee</Projectile_Types>
+      <Projectile_Fire_Recharge_Seconds>1.3</Projectile_Fire_Recharge_Seconds>
+      <Projectile_Fire_Pulse_Count>1</Projectile_Fire_Pulse_Count>
+      <Projectile_Fire_Pulse_Delay_Seconds>0.2</Projectile_Fire_Pulse_Delay_Seconds>
+      <Projectile_Appearance_Delay_Frames>20</Projectile_Appearance_Delay_Frames>
+      <Targeting_Max_Attack_Distance>5.0</Targeting_Max_Attack_Distance>
+      <Fire_Category_Restrictions>Air</Fire_Category_Restrictions>
+      <AI_Combat_Power>100</AI_Combat_Power>	  
+
+      <Custom_Hard_XExtent>0.7</Custom_Hard_XExtent>
+      <Custom_Hard_YExtent>0.7</Custom_Hard_YExtent>
+      <Movement_Animation_Speed>0.40</Movement_Animation_Speed>
+      <Rotation_Animation_Speed>0.40</Rotation_Animation_Speed>
+      <Walk_Animation_Speed>0.40</Walk_Animation_Speed>
+   </GroundInfantry>
+
+   <GroundInfantry Name="Replicator_Warrior">
+      <Variant_Of_Existing_Type>Replicator_Queen</Variant_Of_Existing_Type>
+      <Text_ID>TEXT_REPLICATOR_GROUND_UNIT_WARRIOR</Text_ID>
+      <Encyclopedia_Text>TEXT_DESCRIPTION_REPLICATOR_WARRIOR_GROUND</Encyclopedia_Text>
+      <Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_REPLICATOR_BUG</Encyclopedia_Unit_Class>
+      <Icon_Name>REPLICATOR_GROUND_UNIT_WARRIOR.TGA</Icon_Name>
+      <Land_Model_Name>Replicator_Land_Unit_Warrior.ALO</Land_Model_Name>
+      <AI_Combat_Power>40</AI_Combat_Power>	  
+      <Death_Clone>Damage_Normal, Replicator_Exploding_DC</Death_Clone>
+   </GroundInfantry>
+
+   <GroundInfantry Name="Replicator_Bug">
+      <Variant_Of_Existing_Type>Replicator_Queen</Variant_Of_Existing_Type>
+      <Text_ID>TEXT_REPLICATOR_GROUND_UNIT_DRONE</Text_ID>
+      <Encyclopedia_Text>TEXT_DESCRIPTION_REPLICATOR_DRONE_GROUND</Encyclopedia_Text>
+      <Encyclopedia_Unit_Class> TEXT_ENCYCLOPEDIA_CLASS_REPLICATOR_BUG </Encyclopedia_Unit_Class>
+      <Icon_Name>REPLICATOR_GROUND_UNIT_DRONE.TGA</Icon_Name>
+      <Land_Model_Name>Replicator_Land_Unit_Drone.ALO</Land_Model_Name>
+      <AI_Combat_Power>10</AI_Combat_Power>	  
+      <Death_Clone>Damage_Normal, Replicator_Exploding_DC</Death_Clone>
+   </GroundInfantry>
+
+   <GroundInfantry Name="Replicator_Exploding_DC">
+      <Land_Model_Name>Replicator_Land_Unit_Generic_DC.ALO</Land_Model_Name>
+   </GroundInfantry>
+
+   <!-- COMPANY INFO -->
+   <GroundCompany Name="Replicator_Bug_Squad">
+      <Variant_Of_Existing_Type>Template_Ground_Company</Variant_Of_Existing_Type>
+      <Text_ID>TEXT_REPLICATOR_GROUND_UNIT_DRONE</Text_ID>
+      <Encyclopedia_Text>TEXT_DESCRIPTION_REPLICATOR_DRONE_GROUND</Encyclopedia_Text>
+      <Encyclopedia_Unit_Class> TEXT_ENCYCLOPEDIA_CLASS_REPLICATOR_BUG </Encyclopedia_Unit_Class>
+      <Encyclopedia_Good_Against> Stormtrooper Underworld_Merc </Encyclopedia_Good_Against>
+      <Encyclopedia_Vulnerable_To> TIE_Crawler Destroyer_Droid UC_Empire_Buildable_Anti_Infantry_Turret </Encyclopedia_Vulnerable_To>
+      <Icon_Name>REPLICATOR_GROUND_UNIT_DRONE.TGA</Icon_Name>
+      <Affiliation>Replicator</Affiliation>
+      <Score_Cost_Credits>300</Score_Cost_Credits>
+      <Company_Transport_Unit>Replicator_Space_Unit_Transport</Company_Transport_Unit>
+      <Company_Units>Replicator_Bug, Replicator_Bug, Replicator_Bug, Replicator_Bug, Replicator_Bug, Replicator_Bug, Replicator_Bug, Replicator_Bug, Replicator_Bug</Company_Units>
+      <Max_Squad_Size>1</Max_Squad_Size>
+      <Tech_Level>1</Tech_Level> 	  
+      <Required_Star_Base_Level>0</Required_Star_Base_Level>
+	  <Required_Ground_Base_Level>1</Required_Ground_Base_Level>	  
+      <GUI_Row>1</GUI_Row>
+      <Build_Cost_Credits>1500</Build_Cost_Credits>
+      <Build_Time_Seconds>30</Build_Time_Seconds>	  
+	  <AI_Combat_Power>90</AI_Combat_Power>
+   </GroundCompany>
+
+   <GroundCompany Name="Replicator_Warrior_Squad">
+      <Variant_Of_Existing_Type>Template_Ground_Company</Variant_Of_Existing_Type>
+      <Text_ID>TEXT_REPLICATOR_GROUND_UNIT_WARRIOR</Text_ID>
+      <Encyclopedia_Text>TEXT_DESCRIPTION_REPLICATOR_WARRIOR_GROUND</Encyclopedia_Text>
+      <Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_REPLICATOR_BUG</Encyclopedia_Unit_Class>
+      <Icon_Name>REPLICATOR_GROUND_UNIT_WARRIOR.TGA</Icon_Name>
+      <Affiliation>Replicator</Affiliation>
+      <Score_Cost_Credits>300</Score_Cost_Credits>
+      <Company_Transport_Unit>Replicator_Space_Unit_Transport</Company_Transport_Unit>
+      <Company_Units>Replicator_Warrior, Replicator_Warrior, Replicator_Warrior, Replicator_Warrior, Replicator_Warrior</Company_Units>
+      <Max_Squad_Size>1</Max_Squad_Size>
+      <Tech_Level>5</Tech_Level> 	  
+      <Required_Star_Base_Level>0</Required_Star_Base_Level>
+	  <Required_Ground_Base_Level>1</Required_Ground_Base_Level>	  
+      <GUI_Row>1</GUI_Row>
+      <Build_Cost_Credits>2500</Build_Cost_Credits>
+      <Build_Time_Seconds>45</Build_Time_Seconds>	  
+	  <AI_Combat_Power>200</AI_Combat_Power>
+   </GroundCompany>
+
+   <GroundCompany Name="Replicator_Queen_Squad">
+      <Variant_Of_Existing_Type>Template_Ground_Company</Variant_Of_Existing_Type>
+      <Text_ID>TEXT_REPLICATOR_GROUND_UNIT_WARRIOR</Text_ID>
+      <Encyclopedia_Text>TEXT_DESCRIPTION_REPLICATOR_WARRIOR_GROUND</Encyclopedia_Text>
+      <Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_REPLICATOR_BUG</Encyclopedia_Unit_Class>
+      <Icon_Name>REPLICATOR_GROUND_UNIT_WARRIOR.TGA</Icon_Name>
+      <Affiliation>Replicator</Affiliation>
+      <Score_Cost_Credits>300</Score_Cost_Credits>
+      <Company_Transport_Unit>Replicator_Space_Unit_Transport</Company_Transport_Unit>
+      <Company_Units>Replicator_Queen, Replicator_Warrior, Replicator_Warrior, Replicator_Bug, Replicator_Bug, Replicator_Bug, Replicator_Bug</Company_Units>
+      <Max_Squad_Size>1</Max_Squad_Size>
+      <Tech_Level>5</Tech_Level> 	  
+      <Required_Star_Base_Level>0</Required_Star_Base_Level>
+	  <Required_Ground_Base_Level>1</Required_Ground_Base_Level>	  
+      <GUI_Row>1</GUI_Row>
+      <Build_Cost_Credits>4500</Build_Cost_Credits>
+      <Build_Time_Seconds>70</Build_Time_Seconds>	  
+      <AI_Combat_Power>250</AI_Combat_Power>	  
+   </GroundCompany>
+
+
+
+   <Projectile Name="Proj_Replicator_Melee">
+      <Text_ID>TEXT_NONE</Text_ID>
+      <Land_Model_Name>W_LASER_INVISIBLE.ALO</Land_Model_Name>
+      <Damage_Type>Damage_Anti_Infantry</Damage_Type>
+      <Scale_Factor>1.0</Scale_Factor>
+      <Max_Speed>12.0</Max_Speed>
+      <Max_Rate_Of_Turn>0.0</Max_Rate_Of_Turn>
+      <Behavior>PROJECTILE, HIDE_WHEN_FOGGED</Behavior>
+      <Projectile_Category>DEFAULT</Projectile_Category>
+      <Projectile_Max_Flight_Distance>35.0</Projectile_Max_Flight_Distance>
+      <Projectile_Damage>0.0</Projectile_Damage>
+      <Projectile_Blast_Area_Range>3.0</Projectile_Blast_Area_Range>
+      <Projectile_Blast_Area_Damage>30.0</Projectile_Blast_Area_Damage>
+      <Max_Secs_For_AE_Delayed_Damage>0</Max_Secs_For_AE_Delayed_Damage>
+      <Projectile_Does_Shield_Damage>No</Projectile_Does_Shield_Damage>
+      <Projectile_Does_Energy_Damage>No</Projectile_Does_Energy_Damage>
+      <Projectile_Does_Hitpoint_Damage>Yes</Projectile_Does_Hitpoint_Damage>
+      <Projectile_Energy_Per_Shot>0</Projectile_Energy_Per_Shot>
+      <Projectile_Object_Detonation_Particle />
+      <Projectile_Ground_Detonation_Particle />
+      <Projectile_Lifetime_Detonation_Particle />
+      <Projectile_Absorbed_By_Shields_Particle>Projectile_Shield_Absorb_Medium</Projectile_Absorbed_By_Shields_Particle>
+      <Projectile_SFXEvent_Detonate></Projectile_SFXEvent_Detonate>
+      <AI_Combat_Power>20</AI_Combat_Power>
+   </Projectile>
+
+
+
+
+</Ground_Infantry_Data>

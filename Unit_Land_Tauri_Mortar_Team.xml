@@ -1,0 +1,158 @@
+<?xml version="1.0"?>
+<Destroyer_Droids_Data>
+
+    <!-- UNIT INFO -->
+    <GroundInfantry Name="Destroyer_Droid">
+        <Variant_Of_Existing_Type>Template_Ground_Infantry_Single_Tauri</Variant_Of_Existing_Type>
+        <Text_ID>TEXT_TAURI_GROUND_UNIT_MORTAR_INFANTRY</Text_ID>
+        <Encyclopedia_Text>TEXT_DESCRIPTION_TAURI_MORTAR_INFANTRY_GROUND</Encyclopedia_Text>
+        <Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_MORTAR_INFANTRY</Encyclopedia_Unit_Class>
+        <Encyclopedia_Good_Against> Rebel_Trooper Stormtrooper Goauld_Necropolis_Guard</Encyclopedia_Good_Against>
+        <Encyclopedia_Vulnerable_To> Tauri_B302_Land Wraith_Bomber_Land Rebel_Anti_Infantry_Turret </Encyclopedia_Vulnerable_To>
+        <Icon_Name>TAURI_GROUND_UNIT_MORTAR_SQUAD.TGA</Icon_Name>
+        <Land_Model_Name>Tauri_Land_Unit_Mortar_Team.alo</Land_Model_Name>
+        <Land_Terrain_Model_Mapping>
+            Temperate,  Tauri_Land_Unit_Mortar_Team.ALO,
+            Urban,      Tauri_Land_Unit_Mortar_Team_Black.ALO,
+            Arctic,     Tauri_Land_Unit_Mortar_Team_Snow.ALO,
+            Volcanic,   Tauri_Land_Unit_Mortar_Team_Pegasus.ALO,
+            Desert,     Tauri_Land_Unit_Mortar_Team_Desert.ALO,
+            Forest,     Tauri_Land_Unit_Mortar_Team_Camo.ALO,
+            Swamp,      Tauri_Land_Unit_Mortar_Team_Camo.ALO
+        </Land_Terrain_Model_Mapping>
+        <Land_Model_Anim_Override_Name>Tauri_Land_Unit_Mortar_Team.alo</Land_Model_Anim_Override_Name>
+
+        <Select_Box_Scale>40</Select_Box_Scale>
+        <Max_Speed>0.75</Max_Speed>
+        <Tactical_Health>100</Tactical_Health>
+        <Damage>31</Damage>
+        <AI_Combat_Power>50</AI_Combat_Power>
+        <Land_FOW_Reveal_Range>280</Land_FOW_Reveal_Range>
+        <Movement_Animation_Speed> 0.5 </Movement_Animation_Speed>
+        <Rotation_Animation_Speed> 0.5 </Rotation_Animation_Speed>
+        <Walk_Animation_Speed> 0.5 </Walk_Animation_Speed>
+        <Crouch_Animation_Speed> .50 </Crouch_Animation_Speed>
+        <Max_Rate_Of_Turn>3.0</Max_Rate_Of_Turn>
+
+        <Projectile_Types>Proj_Tauri_Mortar_Grenade</Projectile_Types>
+        <Projectile_Fire_Recharge_Seconds>2.5</Projectile_Fire_Recharge_Seconds>
+        <Projectile_Fire_Pulse_Count>1</Projectile_Fire_Pulse_Count>
+        <Projectile_Fire_Pulse_Delay_Seconds>2.5</Projectile_Fire_Pulse_Delay_Seconds>
+        <SFXEvent_Fire>Weapon_Tauri_Mortar</SFXEvent_Fire>
+        <Targeting_Priority_Set>SG_Infantry_AntiInfantry</Targeting_Priority_Set>
+        <Attack_Category_Restrictions>Air</Attack_Category_Restrictions>
+
+        <SFXEvent_Select>Unit_Select_Marine</SFXEvent_Select>
+        <SFXEvent_Move>Unit_Move_Marine</SFXEvent_Move>
+        <SFXEvent_Attack>Unit_Attack_Marine</SFXEvent_Attack>
+
+        <Targeting_Min_Attack_Distance> 50 </Targeting_Min_Attack_Distance>
+        <Targeting_Max_Attack_Distance>300</Targeting_Max_Attack_Distance>
+
+        <Target_Bones>TORSO, TORSO01</Target_Bones>
+        <Deploys>Yes</Deploys>
+        <Auto_Deploys>Yes</Auto_Deploys>
+        <Deployed_Max_Attack_Distance_Multiplier>1.0</Deployed_Max_Attack_Distance_Multiplier>
+        <Deployment_Anim_Rate>1</Deployment_Anim_Rate>
+        <Fire_Weapon_When_Deployed>Yes</Fire_Weapon_When_Deployed>
+        <Fire_Weapon_When_Undeployed>No</Fire_Weapon_When_Undeployed>
+        <Deployed_Turret_Rotate_Extent_Degrees>120</Deployed_Turret_Rotate_Extent_Degrees>
+        <Deployed_Turret_Elevate_Extent_Degrees>180</Deployed_Turret_Elevate_Extent_Degrees>
+
+        <Presence_Induced_Animations>
+         Attention, 
+            Urai_Fen,
+            Samantha_Carter, 
+            Jack_ONeill
+        </Presence_Induced_Animations>
+        <Death_Clone>Damage_Hand_Device, Destroyer_Droid_Hand_Device_Death_Clone</Death_Clone>
+        <Lua_Script>ObjectScript_Ground_Infantry_Face_Target</Lua_Script>
+
+        <Unit_Abilities_Data SubObjectList="Yes">
+            <Unit_Ability>
+                <Type>DEPLOY</Type>
+                <Alternate_Name_Text>TEXT_ABILITY_DEPLOY</Alternate_Name_Text>
+                <Alternate_Description_Text>TEXT_DESCRIPTION_ABILITY_DEPLOY_MORTAR_GROUND</Alternate_Description_Text>
+            </Unit_Ability>
+        </Unit_Abilities_Data>
+    </GroundInfantry>
+
+    <GroundInfantry Name="Destroyer_Droid_Hand_Device_Death_Clone">
+        <Variant_Of_Existing_Type>Destroyer_Droid</Variant_Of_Existing_Type>
+        <Specific_Death_Anim_Type>FW_DIE</Specific_Death_Anim_Type>
+    </GroundInfantry>
+
+
+
+    <!-- COMPANY INFO -->
+    <GroundCompany Name="Destroyer_Droid_Company_No_Prereq">
+        <Variant_Of_Existing_Type>Template_Ground_Company</Variant_Of_Existing_Type>
+        <Text_ID>TEXT_TAURI_GROUND_UNIT_MORTAR_INFANTRY</Text_ID>
+        <Encyclopedia_Text>TEXT_DESCRIPTION_TAURI_MORTAR_INFANTRY_GROUND</Encyclopedia_Text>
+        <Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_MORTAR_INFANTRY</Encyclopedia_Unit_Class>
+        <Encyclopedia_Good_Against> Rebel_Trooper Stormtrooper Goauld_Necropolis_Guard</Encyclopedia_Good_Against>
+        <Encyclopedia_Vulnerable_To> Tauri_B302_Land Wraith_Bomber_Land Rebel_Anti_Infantry_Turret </Encyclopedia_Vulnerable_To>
+        <Icon_Name>TAURI_GROUND_UNIT_MORTAR_SQUAD.TGA</Icon_Name>
+        <Damage>63</Damage>
+        <Score_Cost_Credits>300</Score_Cost_Credits>
+        <Build_Cost_Credits>350</Build_Cost_Credits>
+        <Build_Time_Seconds>46</Build_Time_Seconds>
+        <Company_Transport_Unit>Underworld_Infantry_Droid_Shuttle</Company_Transport_Unit>
+        <Company_Units>Destroyer_Droid, Destroyer_Droid</Company_Units>
+        <Max_Squad_Size>1</Max_Squad_Size>
+        <Tactical_Build_Cost_Multiplayer>700</Tactical_Build_Cost_Multiplayer>
+        <Tactical_Build_Time_Seconds>9</Tactical_Build_Time_Seconds>
+        <Required_Ground_Base_Level>1</Required_Ground_Base_Level>
+    </GroundCompany>
+
+    <GroundCompany Name="Destroyer_Droid_Company">
+        <Variant_Of_Existing_Type>Destroyer_Droid_Company_No_Prereq</Variant_Of_Existing_Type>
+        <Affiliation>Underworld</Affiliation>
+        <Tech_Level>4</Tech_Level>
+        <Required_Timeline>0</Required_Timeline>
+        <Required_Ground_Base_Level>1</Required_Ground_Base_Level>
+        <Required_Star_Base_Level>0</Required_Star_Base_Level>
+        <Required_Special_Structures>U_Ground_Academy</Required_Special_Structures>
+        <Required_Planets/>
+        <Tactical_Build_Prerequisites>UC_Level_Two_Tech_Upgrade</Tactical_Build_Prerequisites>
+    </GroundCompany>
+
+
+    <!-- PROJECTILE INFO -->
+    <Projectile Name="Proj_Tauri_Mortar_Grenade">
+        <Damage_Type>Damage_Anti_Structure</Damage_Type>
+        <Projectile_Damage>72.50</Projectile_Damage>
+        <Projectile_Blast_Area_Damage>20</Projectile_Blast_Area_Damage>
+        <Projectile_Blast_Area_Range>15</Projectile_Blast_Area_Range>
+        <Max_Secs_For_AE_Delayed_Damage>0</Max_Secs_For_AE_Delayed_Damage>
+
+        <Text_ID>TEXT_NONE</Text_ID>
+        <Land_Model_Name>Tauri_Projectile_Mortar_Shell.ALO</Land_Model_Name>
+        <Scale_Factor>1.2</Scale_Factor>
+
+        <Max_Speed>13.0</Max_Speed>
+        <Max_Rate_Of_Turn>0.0</Max_Rate_Of_Turn>
+        <Behavior>PROJECTILE, HIDE_WHEN_FOGGED</Behavior>
+        <Projectile_Category>GRENADE</Projectile_Category>
+        <Projectile_Grenade_Gravity>0.55</Projectile_Grenade_Gravity>
+        <Projectile_Grenade_Gravity_Lob_Mod>0.8</Projectile_Grenade_Gravity_Lob_Mod>        <!-- Baal 2017-07-24: seems to determine the range. Higher Lob_Mod means vertically higher, thus shorter grenade flight ark -->
+        <Projectile_Grenade_Can_Lob_Slower>yes</Projectile_Grenade_Can_Lob_Slower>
+        <Projectile_Max_Lifetime>900.0</Projectile_Max_Lifetime>
+
+        <Projectile_Does_Shield_Damage>Yes</Projectile_Does_Shield_Damage>
+        <Projectile_Does_Energy_Damage>No</Projectile_Does_Energy_Damage>
+        <Projectile_Does_Hitpoint_Damage>Yes</Projectile_Does_Hitpoint_Damage>
+        <Projectile_Energy_Per_Shot>0</Projectile_Energy_Per_Shot>
+
+        <Projectile_Object_Detonation_Particle>Thermal_Detonator_Explosion</Projectile_Object_Detonation_Particle>
+        <Projectile_Ground_Detonation_Particle>Thermal_Detonator_Explosion</Projectile_Ground_Detonation_Particle>
+        <Projectile_Object_Armor_Reduced_Detonation_Particle>Thermal_Detonator_Explosion</Projectile_Object_Armor_Reduced_Detonation_Particle>
+        <Projectile_Lifetime_Detonation_Particle />
+        <Projectile_Absorbed_By_Shields_Particle>Thermal_Detonator_Explosion</Projectile_Absorbed_By_Shields_Particle>
+        <Projectile_Ground_Detonation_SurfaceFX>PROJECTILE_INFANTRY</Projectile_Ground_Detonation_SurfaceFX>
+        <AI_Combat_Power>5</AI_Combat_Power>
+        <Projectile_SFXEvent_Detonate>SFX_Grenade_Detonation</Projectile_SFXEvent_Detonate>
+    </Projectile>
+
+
+</Destroyer_Droids_Data>

@@ -1,0 +1,138 @@
+<?xml version="1.0"?>
+<Ori_Soldier_Infantry_Data>
+
+   <GroundInfantry Name="Ori_Commander">
+      <Variant_Of_Existing_Type>Template_Ground_Infantry_Multi</Variant_Of_Existing_Type>
+      <Text_ID>TEXT_ORI_GROUND_UNIT_FIELD_COMMANDER</Text_ID>
+      <Encyclopedia_Text>TEXT_DESCRIPTION_ORI_COMMANDER_GROUND</Encyclopedia_Text>
+      <Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_FIELD_COMMANDER</Encyclopedia_Unit_Class>
+      <Encyclopedia_Good_Against>Underworld_Saboteur Underworld_Merc Stormtrooper</Encyclopedia_Good_Against>
+      <Encyclopedia_Vulnerable_To>MZ8_Pulse_Cannon_Tank Tauri_F302_Land Empire_Anti_Infantry_Turret</Encyclopedia_Vulnerable_To>
+      <Icon_Name>ORI_GROUND_UNIT_COMMANDER.TGA</Icon_Name>
+      <Land_Model_Name>Ori_Land_Unit_Leader.alo</Land_Model_Name>
+      <Land_Model_Anim_Override_Name>Ori_Land_Unit_Leader.alo</Land_Model_Anim_Override_Name>
+      <Tactical_Health>200</Tactical_Health>
+      <Redirect_Damage_To_Teammates>Yes</Redirect_Damage_To_Teammates>
+      <Max_Speed>1.0</Max_Speed>
+      <AI_Combat_Power>20</AI_Combat_Power>
+      <Targeting_Priority_Set>SG_Infantry_AntiInfantry</Targeting_Priority_Set>
+      <CategoryMask>Infantry</CategoryMask>
+      <Projectile_Types>Proj_Ori_Commander</Projectile_Types>
+      <Projectile_Fire_Recharge_Seconds>1.2</Projectile_Fire_Recharge_Seconds>
+      <Projectile_Fire_Pulse_Count>5</Projectile_Fire_Pulse_Count>
+      <Projectile_Fire_Pulse_Delay_Seconds>0.9</Projectile_Fire_Pulse_Delay_Seconds>
+      <SFXEvent_Fire>Weapon_Staff_Ori</SFXEvent_Fire>
+      <FormationOrder>2</FormationOrder>
+      <FormationSpacing>1.3</FormationSpacing>
+      <MaxJiggleDistance>0</MaxJiggleDistance>
+      <Death_Clone>Damage_Hand_Device, Ori_Commander_Hand_Device_Death_Clone</Death_Clone>
+
+      <LandBehavior>
+         DAMAGE_TRACKING,
+         HIDE_WHEN_FOGGED,
+         IDLE,
+         LAND_TEAM_INFANTRY_LOCOMOTOR,
+         REVEAL,
+         SPAWN_SQUADRON,
+         STUNNABLE,
+         SURFACE_FX,
+         UNIT_AI,
+         WEAPON
+      </LandBehavior>
+      <Starting_Spawned_Units_Tech_0>Ori_Field_Commander_Buff_Emitter, 1</Starting_Spawned_Units_Tech_0>
+   </GroundInfantry>
+
+   <GroundInfantry Name="Ori_Commander_Hand_Device_Death_Clone">
+      <Variant_Of_Existing_Type>Ori_Commander</Variant_Of_Existing_Type>
+      <Specific_Death_Anim_Type>FW_DIE</Specific_Death_Anim_Type>
+   </GroundInfantry>
+
+
+   <GroundCompany Name="Ori_Commander_Company">
+      <Variant_Of_Existing_Type>Template_Ground_Company</Variant_Of_Existing_Type>
+      <Text_ID>TEXT_ORI_GROUND_UNIT_FIELD_COMMANDER</Text_ID>
+      <Encyclopedia_Text>TEXT_DESCRIPTION_ORI_COMMANDER_GROUND</Encyclopedia_Text>
+      <Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_FIELD_COMMANDER</Encyclopedia_Unit_Class>
+      <Encyclopedia_Good_Against>Underworld_Saboteur Underworld_Merc Stormtrooper</Encyclopedia_Good_Against>
+      <Encyclopedia_Vulnerable_To>MZ8_Pulse_Cannon_Tank Tauri_F302_Land Empire_Anti_Infantry_Turret</Encyclopedia_Vulnerable_To>
+      <Icon_Name>ORI_GROUND_UNIT_COMMANDER.TGA</Icon_Name>
+      <Affiliation>Ori</Affiliation>
+      <Damage>10</Damage>
+      <Build_Cost_Credits>150</Build_Cost_Credits>
+      <Build_Time_Seconds>20</Build_Time_Seconds>
+      <Tech_Level>1</Tech_Level>
+      <Company_Transport_Unit>Ori_Space_Unit_Transport</Company_Transport_Unit>
+      <Create_Team_Type>Ori_Commander_Team</Create_Team_Type>
+      <Company_Units>Ori_Commander, Ori_Soldier, Ori_Soldier, Ori_Soldier, Ori_Soldier</Company_Units>
+      <Max_Squad_Size>5</Max_Squad_Size>
+      <Tactical_Build_Cost_Multiplayer>600</Tactical_Build_Cost_Multiplayer>
+      <Tactical_Build_Time_Seconds>9</Tactical_Build_Time_Seconds>
+      <Required_Ground_Base_Level>1</Required_Ground_Base_Level>
+      <Required_Special_Structures>Ori_Ground_Building_Barracks</Required_Special_Structures>
+   </GroundCompany>
+
+
+   <Container Name="Ori_Commander_Team">
+      <Variant_Of_Existing_Type>Template_Infantry_Container</Variant_Of_Existing_Type>
+      <Text_ID>TEXT_ORI_GROUND_UNIT_FIELD_COMMANDER</Text_ID>
+      <Encyclopedia_Text>TEXT_DESCRIPTION_ORI_COMMANDER_GROUND</Encyclopedia_Text>
+      <Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_FIELD_COMMANDER</Encyclopedia_Unit_Class>
+      <Encyclopedia_Good_Against>Underworld_Saboteur Underworld_Merc Stormtrooper</Encyclopedia_Good_Against>
+      <Encyclopedia_Vulnerable_To>MZ8_Pulse_Cannon_Tank Tauri_F302_Land Empire_Anti_Infantry_Turret</Encyclopedia_Vulnerable_To>
+      <Icon_Name>ORI_GROUND_UNIT_COMMANDER.TGA</Icon_Name>
+      <FormationOrder>2</FormationOrder>
+      <FormationSpacing>1.3</FormationSpacing>
+      <ContainerArrangement>Rows</ContainerArrangement>
+      <Max_Speed>1.0</Max_Speed>
+   </Container>
+
+   <MiscObject Name="Ori_Field_Commander_Buff_Emitter">
+      <Land_Model_Name>W_LASER_INVISIBLE.ALO</Land_Model_Name>
+      <Is_Visible_On_Radar>No</Is_Visible_On_Radar>
+      <Space_Layer>Land</Space_Layer>
+      <UnitCollisionClass>Infantry</UnitCollisionClass>
+      <CanCellStack>yes</CanCellStack>
+      <Avoidance_Disabled>Yes</Avoidance_Disabled>
+      <Influences_Capture_Point> False </Influences_Capture_Point>
+      <Lua_Script>ObjectScript_Field_Commander</Lua_Script>
+   </MiscObject>
+
+   <Projectile Name="Proj_Ori_Commander">
+      <Variant_Of_Existing_Type>Proj_Goauld_Zat</Variant_Of_Existing_Type>
+      <Damage_Type>Damage_Anti_Infantry</Damage_Type>
+      <Projectile_Damage>35.0</Projectile_Damage>
+   </Projectile>
+
+   <Projectile Name="Proj_Ori_Field_Commander_Bonus">
+      <Text_ID>TEXT_NONE</Text_ID>
+      <Land_Model_Name>W_LASER_INVISIBLE.ALO</Land_Model_Name>
+      <Scale_Factor>1.0</Scale_Factor>
+      <Max_Speed>15.0</Max_Speed>
+      <Max_Rate_Of_Turn>1</Max_Rate_Of_Turn>
+      <Behavior>PROJECTILE, HIDE_WHEN_FOGGED</Behavior>
+      <Projectile_Category>DEFAULT</Projectile_Category>
+      <Projectile_Ground_Detonation_SurfaceFX>Hover_No_Particles</Projectile_Ground_Detonation_SurfaceFX>
+
+      <Projectile_Max_Flight_Distance>10.0</Projectile_Max_Flight_Distance>
+      <Projectile_Max_Lifetime>5.0</Projectile_Max_Lifetime>
+      <Projectile_Damage>0.0</Projectile_Damage>
+      <Projectile_Blast_Area_Damage> 0 </Projectile_Blast_Area_Damage>
+      <Projectile_Blast_Area_Range> 5 </Projectile_Blast_Area_Range>
+      <Max_Secs_For_AE_Delayed_Damage>5</Max_Secs_For_AE_Delayed_Damage>
+      <Projectile_Does_Shield_Damage>No</Projectile_Does_Shield_Damage>
+      <Projectile_Does_Energy_Damage>No</Projectile_Does_Energy_Damage>
+      <Projectile_Does_Hitpoint_Damage>No</Projectile_Does_Hitpoint_Damage>
+      <Projectile_Energy_Per_Shot>0</Projectile_Energy_Per_Shot>
+      <Projectile_Object_Detonation_Particle/>
+      <Projectile_Ground_Detonation_Particle/>
+      <Projectile_Lifetime_Detonation_Particle/>
+      <AI_Combat_Power>40</AI_Combat_Power>
+
+      <Projectile_Combat_Mod>COMBAT_MOD_FIRE_RATE</Projectile_Combat_Mod>
+      <Projectile_Combat_Mod_Duration>4</Projectile_Combat_Mod_Duration>
+      <Projectile_Combat_Mod_Value>0.2</Projectile_Combat_Mod_Value>
+      <Projectile_Combat_Mod_Effect>Particle_Goauld_Commander_Buff</Projectile_Combat_Mod_Effect>
+      <Projectile_Combat_Mod_Category_Mask>Infantry | LandHero | Vehicle</Projectile_Combat_Mod_Category_Mask>
+   </Projectile>
+
+</Ori_Soldier_Infantry_Data>

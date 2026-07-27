@@ -1,0 +1,412 @@
+<?xml version="1.0"?>
+<SGA>
+
+    <HeroUnit Name="John_Sheppard">
+        <Variant_Of_Existing_Type> Template_Ground_Infantry_Single_Hero_Tauri </Variant_Of_Existing_Type>
+        <Text_ID>TEXT_TAURI_GROUND_HERO_SGA_COLONEL_SHEPPARD</Text_ID>
+        <Encyclopedia_Text>TEXT_DESCRIPTION_TAURI_COLONEL_SHEPPARD_GROUND</Encyclopedia_Text>
+        <Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_COLONEL_SHEPPARD_GROUND</Encyclopedia_Unit_Class>
+        <Encyclopedia_Good_Against>Stormtrooper Dark_Trooper_PhaseI Rebel_Trooper</Encyclopedia_Good_Against>
+        <Encyclopedia_Vulnerable_To>Wraith_Dart_Land AT_AT_Walker Empire_Anti_Infantry_Turret</Encyclopedia_Vulnerable_To>
+        <Land_Model_Name>Tauri_Land_Hero_Sheppard.ALO</Land_Model_Name>
+        <Icon_Name>TAURI_GROUND_HERO_JOHN_SHEPPARD.TGA</Icon_Name>
+
+        <LandBehavior>ABILITY_COUNTDOWN, DAMAGE_TRACKING, GARRISON_UNIT, HIDE_WHEN_FOGGED, IDLE, IMPOSING_PRESENCE, REVEAL, SELECTABLE, STUNNABLE, SURFACE_FX, TARGETING, UNIT_AI, WALK_LOCOMOTOR, WEAPON</LandBehavior>
+        <Damage>92</Damage>
+        <Tactical_Health>1100</Tactical_Health>
+        <AI_Combat_Power>200</AI_Combat_Power>
+
+        <Neutralization_Cost>6000.0</Neutralization_Cost>
+        <Can_Be_Neutralized_By_Minor_Heroes>No</Can_Be_Neutralized_By_Minor_Heroes>
+        <Respawn_Whole_Team_When_Killed>Yes</Respawn_Whole_Team_When_Killed>
+        <CategoryMask> LandHero | SpaceHero </CategoryMask>
+        <Presence_Range>100.0</Presence_Range>
+
+        <Projectile_Types>Proj_Tauri_Hero_John_Sheppard</Projectile_Types>
+        <Projectile_Fire_Recharge_Seconds>2.0</Projectile_Fire_Recharge_Seconds>
+        <Projectile_Fire_Pulse_Count>20</Projectile_Fire_Pulse_Count>
+        <Projectile_Fire_Pulse_Delay_Seconds>0.1</Projectile_Fire_Pulse_Delay_Seconds>
+        <Targeting_Priority_Set>SG_Infantry_AntiInfantry</Targeting_Priority_Set>
+
+        <!-- <SFXEvent_Select>  </SFXEvent_Select>
+        <SFXEvent_Move>  </SFXEvent_Move>
+        <SFXEvent_Attack>  </SFXEvent_Attack> -->
+        <SFXEvent_Fire>Weapon_Tauri_P90</SFXEvent_Fire>
+
+        <Unit_Abilities_Data SubObjectList="Yes">
+            <Unit_Ability>
+                <Type>PLACE_REMOTE_BOMB</Type>
+                <Alternate_Name_Text>TEXT_ABILITY_TAURI_GROUND_ONEILL_C4_SPRENGLADUNG</Alternate_Name_Text>
+                <Alternate_Description_Text>TEXT_DESCRIPTION_ABILITY_ONEILL_C4_SPRENGLADUNG</Alternate_Description_Text>
+                <Alternate_Icon_Name>I_SA_C4_EXPLOSIVE.TGA</Alternate_Icon_Name>
+                <Recharge_Seconds>18.0</Recharge_Seconds>
+                <GUI_Activated_Ability_Name>John_Sheppard_Remote_C4</GUI_Activated_Ability_Name>
+                <SFXEvent_Target_Ability></SFXEvent_Target_Ability>
+                <Supports_Autofire>False</Supports_Autofire>
+            </Unit_Ability>
+            <Unit_Ability>
+                <Type>DETONATE_REMOTE_BOMB</Type>
+            </Unit_Ability>
+        </Unit_Abilities_Data>
+        <Abilities SubObjectList="Yes">
+            <Remote_Bomb_Ability Name="John_Sheppard_Remote_C4">
+                <Activation_Style> User_Input </Activation_Style>
+                <Activation_Min_Range>5.0</Activation_Min_Range>
+                <Activation_Max_Range>130.0</Activation_Max_Range>
+                <Bomb_Type>Proj_Tauri_Land_Remote_C4</Bomb_Type>
+                <Toss_Anim>BOMBTOSS</Toss_Anim>
+                <Spawn_Frame>5.0</Spawn_Frame>
+                <Spawn_Bone>MUZZLEB_00</Spawn_Bone>
+            </Remote_Bomb_Ability>
+            <Combat_Bonus_Ability Name="John_Sheppard_Combat_Bonus">
+                <Activation_Style>Ground_Automatic</Activation_Style>
+                <Unit_Strength_Category>Vehicle | Infantry | Air</Unit_Strength_Category>
+                <Applicable_Unit_Categories>Vehicle | Infantry | Air</Applicable_Unit_Categories>
+                <Health_Bonus_Percentage>0.1</Health_Bonus_Percentage>
+                <Damage_Bonus_Percentage>0.0</Damage_Bonus_Percentage>
+                <Energy_Pool_Bonus_Percentage>0.0</Energy_Pool_Bonus_Percentage>
+                <Shield_Bonus_Percentage>0.0</Shield_Bonus_Percentage>
+                <Defense_Bonus_Percentage>0.0</Defense_Bonus_Percentage>
+                <Movement_Speed_Bonus_Percentage>0.0</Movement_Speed_Bonus_Percentage>
+                <Stacking_Category>1</Stacking_Category>
+            </Combat_Bonus_Ability>
+            <Galactic_Stealth_Ability Name="John_Sheppard_Galactic_Stealth">
+                <Initially_Enabled>Yes</Initially_Enabled>
+                <Activation_Style>Galactic_Automatic</Activation_Style>
+                <Causes_Despawn>No</Causes_Despawn>
+                <Evade_Detection_Chance>0.0</Evade_Detection_Chance>
+            </Galactic_Stealth_Ability>
+            <System_Spy_Ability Name="John_Sheppard_Limited_Spy">
+                <Initially_Enabled>Yes</Initially_Enabled>
+                <Activation_Style>Galactic_Automatic</Activation_Style>
+                <Causes_Despawn>No</Causes_Despawn>
+                <Duration_In_Secs>-1.0</Duration_In_Secs>
+                <See_Num_Fleets>Yes</See_Num_Fleets>
+            </System_Spy_Ability>
+            <Hero_Protection_Ability Name="John_Sheppard_Hero_Protection">
+                <Neutralization_Cost_Multiplier>1.25</Neutralization_Cost_Multiplier>
+                <Stacking_Category>0</Stacking_Category>
+            </Hero_Protection_Ability>
+        </Abilities>
+    </HeroUnit>
+
+    <Projectile Name="Proj_Tauri_Hero_John_Sheppard">
+        <Variant_Of_Existing_Type>Proj_Tauri_P90</Variant_Of_Existing_Type>
+        <Damage_Type>Damage_Anti_Infantry</Damage_Type>
+        <Projectile_Damage>12.4</Projectile_Damage>
+    </Projectile>
+
+
+    <HeroUnit Name="Rodney_McKay">
+        <Variant_Of_Existing_Type> Template_Ground_Infantry_Single_Hero_Tauri </Variant_Of_Existing_Type>
+        <Text_ID>TEXT_TAURI_GROUND_HERO_SGA_DR_MCKAY</Text_ID>
+        <Encyclopedia_Text>TEXT_DESCRIPTION_TAURI_DR_MCKAY_GROUND</Encyclopedia_Text>
+        <Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_DR_MCKAY_GROUND</Encyclopedia_Unit_Class>
+        <Encyclopedia_Good_Against>Stormtrooper Dark_Trooper_PhaseI Rebel_Trooper</Encyclopedia_Good_Against>
+        <Encyclopedia_Vulnerable_To>Wraith_Dart_Land AT_AT_Walker Empire_Anti_Infantry_Turret</Encyclopedia_Vulnerable_To>
+        <Land_Model_Name>Tauri_Land_Hero_Mckay.ALO</Land_Model_Name>
+        <Icon_Name>TAURI_GROUND_HERO_RODNEY_MCKAY.TGA</Icon_Name>
+
+        <LandBehavior>ABILITY_COUNTDOWN, DAMAGE_TRACKING, GARRISON_UNIT, HIDE_WHEN_FOGGED, IDLE, IMPOSING_PRESENCE, REVEAL, SELECTABLE, STUNNABLE, SURFACE_FX, TARGETING, UNIT_AI, WALK_LOCOMOTOR, WEAPON</LandBehavior>
+        <Damage>80</Damage>
+        <Tactical_Health>900</Tactical_Health>
+        <AI_Combat_Power>145</AI_Combat_Power>
+
+        <Neutralization_Cost>6000.0</Neutralization_Cost>
+        <Can_Be_Neutralized_By_Minor_Heroes>No</Can_Be_Neutralized_By_Minor_Heroes>
+        <Respawn_Whole_Team_When_Killed>Yes</Respawn_Whole_Team_When_Killed>
+        <CategoryMask> LandHero | SpaceHero </CategoryMask>
+        <Presence_Range>100.0</Presence_Range>
+
+        <Projectile_Types>Proj_Tauri_Hero_Rodney_McKay</Projectile_Types>
+        <Projectile_Fire_Recharge_Seconds>2.0</Projectile_Fire_Recharge_Seconds>
+        <Projectile_Fire_Pulse_Count>10</Projectile_Fire_Pulse_Count>
+        <Projectile_Fire_Pulse_Delay_Seconds>0.3</Projectile_Fire_Pulse_Delay_Seconds>
+        <Targeting_Priority_Set>SG_Infantry_AntiInfantry</Targeting_Priority_Set>
+
+        <!-- <SFXEvent_Select>  </SFXEvent_Select>
+        <SFXEvent_Move>  </SFXEvent_Move>
+        <SFXEvent_Attack>  </SFXEvent_Attack> -->
+        <SFXEvent_Fire>Weapon_Tauri_Pistol</SFXEvent_Fire>
+
+<!--    Disabled Hacking ability for now due to missing animation in the mckay model -->
+<!--    <HardPoints>HP_SG1_Tractor_Beam</HardPoints>
+        <Lua_Script>ObjectScript_Carter_Hack_Turret</Lua_Script>
+        <Unit_Abilities_Data SubObjectList="Yes">
+            <Unit_Ability>
+                <Type>TRACTOR_BEAM</Type>
+                <Alternate_Name_Text>TEXT_ABILITY_HACK</Alternate_Name_Text>
+                <Alternate_Description_Text>TEXT_DESCRIPTION_ABILITY_HACK_CARTER_GROUND</Alternate_Description_Text>
+                <Alternate_Icon_Name>I_SA_HACK.tga</Alternate_Icon_Name>
+                <Mod_Multiplier>SPEED_MULTIPLIER, 0.1f</Mod_Multiplier>
+                <GUI_Activated_Ability_Name>Carter_Hack_Turret_Ability</GUI_Activated_Ability_Name>
+                <Recharge_Seconds>45</Recharge_Seconds>
+                <SFXEvent_Target_Ability>Unit_Turret_Hack_Carter</SFXEvent_Target_Ability>
+                <SFXEvent_Special_Ability_Loop></SFXEvent_Special_Ability_Loop>
+                <Supports_Autofire>False</Supports_Autofire>
+            </Unit_Ability>
+        </Unit_Abilities_Data> -->
+        <Abilities SubObjectList="Yes">
+            <!-- The types added here must be kept in sync with the list in ObjectScript_Carter_Hack_Turret.lua! -->
+            <!-- <Tractor_Beam_Attack_Ability Name="Rodney_McKay_Hack_Turret_Ability">
+                <Activation_Style>User_Input</Activation_Style>
+                <Applicable_Unit_Types>
+                E_Ground_Turbolaser_Tower, Empire_Anti_Aircraft_Turret, Empire_Anti_Infantry_Turret, Empire_Anti_Vehicle_Turret, Empire_Grenade_Mortar,
+                Rebel_Anti_Aircraft_Turret, Rebel_Anti_Infantry_Turret, Rebel_Anti_Vehicle_Turret, Rebel_Rapid_Fire_Laser_Turret,
+                Underworld_Anti_Infantry_Turret, Underworld_Mass_Driver_Turret, Underworld_Torpedo_Turret, Underworld_Rocket_Pod,
+                Pirate_Anti_Infantry_Turret, Pirate_Anti_Vehicle_Turret
+                </Applicable_Unit_Types>
+                <Activation_Min_Range>5</Activation_Min_Range>
+                <Activation_Max_Range>200</Activation_Max_Range>
+                <Stacking_Category>2</Stacking_Category>
+            </Tractor_Beam_Attack_Ability> -->
+
+            <Combat_Bonus_Ability Name="Rodney_McKay_Combat_Bonus">
+                <Activation_Style>Ground_Automatic</Activation_Style>
+                <Unit_Strength_Category>Vehicle | Infantry | Air</Unit_Strength_Category>
+                <Applicable_Unit_Categories>Vehicle | Infantry | Air</Applicable_Unit_Categories>
+                <Health_Bonus_Percentage>0.0</Health_Bonus_Percentage>
+                <Damage_Bonus_Percentage>0.0</Damage_Bonus_Percentage>
+                <Energy_Pool_Bonus_Percentage>0.0</Energy_Pool_Bonus_Percentage>
+                <Shield_Bonus_Percentage>0.1</Shield_Bonus_Percentage>
+                <Defense_Bonus_Percentage>0.0</Defense_Bonus_Percentage>
+                <Movement_Speed_Bonus_Percentage>0.0</Movement_Speed_Bonus_Percentage>
+                <Stacking_Category>1</Stacking_Category>
+            </Combat_Bonus_Ability>
+            <Galactic_Stealth_Ability Name="Rodney_McKay_Galactic_Stealth">
+                <Initially_Enabled>Yes</Initially_Enabled>
+                <Activation_Style>Galactic_Automatic</Activation_Style>
+                <Causes_Despawn>No</Causes_Despawn>
+                <Evade_Detection_Chance>0.0</Evade_Detection_Chance>
+            </Galactic_Stealth_Ability>
+            <System_Spy_Ability Name="Rodney_McKay_Limited_Spy">
+                <Initially_Enabled>Yes</Initially_Enabled>
+                <Activation_Style>Galactic_Automatic</Activation_Style>
+                <Causes_Despawn>No</Causes_Despawn>
+                <Duration_In_Secs>-1.0</Duration_In_Secs>
+                <See_Num_Fleets>Yes</See_Num_Fleets>
+            </System_Spy_Ability>
+            <Hero_Protection_Ability Name="Rodney_McKay_Hero_Protection">
+                <Neutralization_Cost_Multiplier>1.25</Neutralization_Cost_Multiplier>
+                <Stacking_Category>0</Stacking_Category>
+            </Hero_Protection_Ability>
+        </Abilities>
+    </HeroUnit>
+
+    <Projectile Name="Proj_Tauri_Hero_Rodney_McKay">
+        <Variant_Of_Existing_Type>Proj_Tauri_MP5</Variant_Of_Existing_Type>
+        <Damage_Type>Damage_Normal</Damage_Type>
+        <Projectile_Damage>21.0</Projectile_Damage>
+    </Projectile>
+
+
+    <HeroUnit Name="Teyla_Emmagan">
+        <Variant_Of_Existing_Type> Template_Ground_Infantry_Single_Hero_Tauri </Variant_Of_Existing_Type>
+        <Text_ID>TEXT_TAURI_GROUND_HERO_SGA_TEYLA</Text_ID>
+        <Encyclopedia_Text>TEXT_DESCRIPTION_TAURI_TEYLA_GROUND</Encyclopedia_Text>
+        <Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_TEYLA_GROUND</Encyclopedia_Unit_Class>
+        <Land_Model_Name>Tauri_Land_Hero_Teyla.ALO</Land_Model_Name>
+        <Icon_Name>TAURI_GROUND_HERO_TEYLA_EMMAGAN.TGA</Icon_Name>
+
+        <LandBehavior>ABILITY_COUNTDOWN, DAMAGE_TRACKING, GARRISON_UNIT, HIDE_WHEN_FOGGED, IDLE, REVEAL, SELECTABLE, STUNNABLE, SURFACE_FX, TARGETING, UNIT_AI, WALK_LOCOMOTOR, WEAPON</LandBehavior>
+        <Damage>70</Damage>
+        <Tactical_Health>750</Tactical_Health>
+        <AI_Combat_Power>120</AI_Combat_Power>
+
+        <Neutralization_Cost>6000.0</Neutralization_Cost>
+        <Can_Be_Neutralized_By_Minor_Heroes>No</Can_Be_Neutralized_By_Minor_Heroes>
+        <Respawn_Whole_Team_When_Killed>Yes</Respawn_Whole_Team_When_Killed>
+        <CategoryMask> LandHero | SpaceHero </CategoryMask>
+
+        <Projectile_Types>Proj_Tauri_Hero_Teyla_Emmagan</Projectile_Types>
+        <Projectile_Fire_Recharge_Seconds>2.0</Projectile_Fire_Recharge_Seconds>
+        <Projectile_Fire_Pulse_Count>20</Projectile_Fire_Pulse_Count>
+        <Projectile_Fire_Pulse_Delay_Seconds>0.1</Projectile_Fire_Pulse_Delay_Seconds>
+        <Targeting_Priority_Set>SG_Infantry_AntiInfantry</Targeting_Priority_Set>
+
+        <!-- <SFXEvent_Select>  </SFXEvent_Select>
+        <SFXEvent_Move>  </SFXEvent_Move>
+        <SFXEvent_Attack>  </SFXEvent_Attack> -->
+        <SFXEvent_Fire>Weapon_Tauri_P90</SFXEvent_Fire>
+
+        <Unit_Abilities_Data SubObjectList="Yes">
+            <Unit_Ability>
+                <Type>SPRINT</Type>
+                <Expiration_Seconds> 7.0 </Expiration_Seconds>
+                <Recharge_Seconds> 45.0 </Recharge_Seconds>
+                <Mod_Multiplier>SPEED_MULTIPLIER, 2.0f</Mod_Multiplier>
+                <Mod_Multiplier>TAKE_DAMAGE_MULTIPLIER, 0.75f</Mod_Multiplier>
+                <SFXEvent_GUI_Unit_Ability_Activated></SFXEvent_GUI_Unit_Ability_Activated>
+            </Unit_Ability>
+        </Unit_Abilities_Data>
+        <Abilities SubObjectList="Yes">
+            <Combat_Bonus_Ability Name="Teyla_Emmagan_Combat_Bonus">
+                <Activation_Style>Ground_Automatic</Activation_Style>
+                <Unit_Strength_Category>Vehicle | Infantry | Air</Unit_Strength_Category>
+                <Applicable_Unit_Categories>Vehicle | Infantry | Air</Applicable_Unit_Categories>
+                <Health_Bonus_Percentage>0.0</Health_Bonus_Percentage>
+                <Damage_Bonus_Percentage>0.0</Damage_Bonus_Percentage>
+                <Energy_Pool_Bonus_Percentage>0.0</Energy_Pool_Bonus_Percentage>
+                <Shield_Bonus_Percentage>0.0</Shield_Bonus_Percentage>
+                <Defense_Bonus_Percentage>0.0</Defense_Bonus_Percentage>
+                <Movement_Speed_Bonus_Percentage>0.05</Movement_Speed_Bonus_Percentage>
+                <Stacking_Category>1</Stacking_Category>
+            </Combat_Bonus_Ability>
+            <Galactic_Stealth_Ability Name="Teyla_Emmagan_Galactic_Stealth">
+                <Initially_Enabled>Yes</Initially_Enabled>
+                <Activation_Style>Galactic_Automatic</Activation_Style>
+                <Causes_Despawn>No</Causes_Despawn>
+                <Evade_Detection_Chance>0.0</Evade_Detection_Chance>
+            </Galactic_Stealth_Ability>
+            <System_Spy_Ability Name="Teyla_Emmagan_Limited_Spy">
+                <Initially_Enabled>Yes</Initially_Enabled>
+                <Activation_Style>Galactic_Automatic</Activation_Style>
+                <Causes_Despawn>No</Causes_Despawn>
+                <Duration_In_Secs>-1.0</Duration_In_Secs>
+                <See_Num_Fleets>Yes</See_Num_Fleets>
+            </System_Spy_Ability>
+            <Hero_Protection_Ability Name="Teyla_Emmagan_Hero_Protection">
+                <Neutralization_Cost_Multiplier>1.25</Neutralization_Cost_Multiplier>
+                <Stacking_Category>0</Stacking_Category>
+            </Hero_Protection_Ability>
+        </Abilities>
+    </HeroUnit>
+
+    <Projectile Name="Proj_Tauri_Hero_Teyla_Emmagan">
+        <Variant_Of_Existing_Type>Proj_Tauri_P90</Variant_Of_Existing_Type>
+        <Damage_Type>Damage_Anti_Infantry</Damage_Type>
+        <Projectile_Damage>10.4</Projectile_Damage>
+    </Projectile>
+
+
+    <HeroUnit Name="Ronon_Dex">
+        <Variant_Of_Existing_Type> Template_Ground_Infantry_Single_Hero_Tauri </Variant_Of_Existing_Type>
+        <Text_ID>TEXT_TAURI_GROUND_HERO_SGA_RONON_DEX</Text_ID>
+        <Encyclopedia_Text>TEXT_DESCRIPTION_TAURI_RONON_DEX_GROUND</Encyclopedia_Text>
+        <Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_RONON_DEX_GROUND</Encyclopedia_Unit_Class>
+        <Land_Model_Name>Tauri_Land_Hero_Ronon.ALO</Land_Model_Name>
+        <Icon_Name>TAURI_GROUND_HERO_RONON_DEX.TGA</Icon_Name>
+
+        <LandBehavior>ABILITY_COUNTDOWN, DAMAGE_TRACKING, GARRISON_UNIT, HIDE_WHEN_FOGGED, IDLE, REVEAL, SELECTABLE, STUNNABLE, SURFACE_FX, TARGETING, UNIT_AI, WALK_LOCOMOTOR, WEAPON</LandBehavior>
+        <Damage>100</Damage>
+        <Tactical_Health>1250</Tactical_Health>
+        <AI_Combat_Power>250</AI_Combat_Power>
+
+        <Neutralization_Cost>6000.0</Neutralization_Cost>
+        <Can_Be_Neutralized_By_Minor_Heroes>No</Can_Be_Neutralized_By_Minor_Heroes>
+        <Respawn_Whole_Team_When_Killed>Yes</Respawn_Whole_Team_When_Killed>
+        <CategoryMask> LandHero | SpaceHero </CategoryMask>
+
+        <Projectile_Types>Proj_Tauri_Ronon_Weapon</Projectile_Types>
+        <Projectile_Fire_Recharge_Seconds>1</Projectile_Fire_Recharge_Seconds>
+        <Projectile_Fire_Pulse_Count>5</Projectile_Fire_Pulse_Count>
+        <Projectile_Fire_Pulse_Delay_Seconds>0.7</Projectile_Fire_Pulse_Delay_Seconds>
+        <Targeting_Priority_Set>SG_Infantry_AntiInfantry</Targeting_Priority_Set>
+
+        <!-- <SFXEvent_Select>  </SFXEvent_Select>
+        <SFXEvent_Move>  </SFXEvent_Move>
+        <SFXEvent_Attack>  </SFXEvent_Attack> -->
+        <SFXEvent_Fire>Weapon_Pistol_Ronon</SFXEvent_Fire>
+
+        <Unit_Abilities_Data SubObjectList="Yes">
+            <Unit_Ability>
+                <Type>SPRINT</Type>
+                <Expiration_Seconds> 7.0 </Expiration_Seconds>
+                <Recharge_Seconds> 45.0 </Recharge_Seconds>
+                <Mod_Multiplier>SPEED_MULTIPLIER, 2.0f</Mod_Multiplier>
+                <Mod_Multiplier>TAKE_DAMAGE_MULTIPLIER, 0.75f</Mod_Multiplier>
+                <SFXEvent_GUI_Unit_Ability_Activated></SFXEvent_GUI_Unit_Ability_Activated>
+            </Unit_Ability>
+        </Unit_Abilities_Data>
+        <Abilities SubObjectList="Yes">
+            <Combat_Bonus_Ability Name="Ronon_Dex_Combat_Bonus">
+                <Activation_Style>Ground_Automatic</Activation_Style>
+                <Unit_Strength_Category>Vehicle | Infantry | Air</Unit_Strength_Category>
+                <Applicable_Unit_Categories>Vehicle | Infantry | Air</Applicable_Unit_Categories>
+                <Health_Bonus_Percentage>0.0</Health_Bonus_Percentage>
+                <Damage_Bonus_Percentage>0.1</Damage_Bonus_Percentage>
+                <Energy_Pool_Bonus_Percentage>0.0</Energy_Pool_Bonus_Percentage>
+                <Shield_Bonus_Percentage>0.0</Shield_Bonus_Percentage>
+                <Defense_Bonus_Percentage>0.0</Defense_Bonus_Percentage>
+                <Movement_Speed_Bonus_Percentage>0.0</Movement_Speed_Bonus_Percentage>
+                <Stacking_Category>1</Stacking_Category>
+            </Combat_Bonus_Ability>
+            <Galactic_Stealth_Ability Name="Ronon_Dex_Galactic_Stealth">
+                <Initially_Enabled>Yes</Initially_Enabled>
+                <Activation_Style>Galactic_Automatic</Activation_Style>
+                <Causes_Despawn>No</Causes_Despawn>
+                <Evade_Detection_Chance>0.0</Evade_Detection_Chance>
+            </Galactic_Stealth_Ability>
+            <System_Spy_Ability Name="Ronon_Dex_Limited_Spy">
+                <Initially_Enabled>Yes</Initially_Enabled>
+                <Activation_Style>Galactic_Automatic</Activation_Style>
+                <Causes_Despawn>No</Causes_Despawn>
+                <Duration_In_Secs>-1.0</Duration_In_Secs>
+                <See_Num_Fleets>Yes</See_Num_Fleets>
+            </System_Spy_Ability>
+            <Hero_Protection_Ability Name="Ronon_Dex_Hero_Protection">
+                <Neutralization_Cost_Multiplier>1.25</Neutralization_Cost_Multiplier>
+                <Stacking_Category>0</Stacking_Category>
+            </Hero_Protection_Ability>
+        </Abilities>
+    </HeroUnit>
+
+    <Projectile Name="Proj_Tauri_Ronon_Weapon">
+        <Text_ID>TEXT_NONE</Text_ID>
+        <Land_Model_Name>Tauri_Projectile_Ronon_Weapon.ALO</Land_Model_Name>
+        <!--<Projectile_Custom_Render>1</Projectile_Custom_Render>-->
+        <!--<Projectile_Width>0.3</Projectile_Width><Projectile_Length>3.0</Projectile_Length>-->
+        <Projectile_Texture_Slot>0,0</Projectile_Texture_Slot>
+        <Scale_Factor>0.2</Scale_Factor>
+        <Max_Speed>11.0</Max_Speed>
+        <Max_Rate_Of_Turn>0.0</Max_Rate_Of_Turn>
+        <Behavior>PROJECTILE, HIDE_WHEN_FOGGED</Behavior>
+        <Damage_Type>Damage_Normal</Damage_Type>
+        <Projectile_Fire_Recharge_Seconds>1.0</Projectile_Fire_Recharge_Seconds>
+        <Projectile_Fire_Pulse_Count>5</Projectile_Fire_Pulse_Count>
+        <Projectile_Fire_Pulse_Delay_Seconds>0.1</Projectile_Fire_Pulse_Delay_Seconds>
+        <Projectile_Category>Laser</Projectile_Category>
+        <Projectile_Max_Flight_Distance>400.0</Projectile_Max_Flight_Distance>
+        <Projectile_Damage>54.0</Projectile_Damage>
+        <Projectile_Does_Shield_Damage>Yes</Projectile_Does_Shield_Damage>
+        <Projectile_Does_Energy_Damage>No</Projectile_Does_Energy_Damage>
+        <Projectile_Does_Hitpoint_Damage>Yes</Projectile_Does_Hitpoint_Damage>
+        <Projectile_Energy_Per_Shot>0</Projectile_Energy_Per_Shot>
+        <Projectile_Object_Detonation_Particle>Particle_Tauri_Ronon_Weapon_Hit</Projectile_Object_Detonation_Particle>
+        <Projectile_Object_Armor_Reduced_Detonation_Particle>Particle_Tauri_Ronon_Weapon_Hit</Projectile_Object_Armor_Reduced_Detonation_Particle>
+        <Projectile_Ground_Detonation_Particle>Projectile_Dirt_Collide</Projectile_Ground_Detonation_Particle>
+        <Projectile_Lifetime_Detonation_Particle/>
+        <Projectile_Absorbed_By_Shields_Particle>Projectile_Shield_Absorb_Small</Projectile_Absorbed_By_Shields_Particle>
+        <Projectile_Ground_Detonation_SurfaceFX>PROJECTILE_INFANTRY</Projectile_Ground_Detonation_SurfaceFX>
+        <AI_Combat_Power>40</AI_Combat_Power>
+        <Projectile_SFXEvent_Detonate></Projectile_SFXEvent_Detonate>
+        <Projectile_SFXEvent_Detonate_Reduced_By_Armor></Projectile_SFXEvent_Detonate_Reduced_By_Armor>
+    </Projectile>
+
+
+    <!-- COMPANY DATA -->
+    <HeroCompany Name="SGA_Team">
+        <Variant_Of_Existing_Type>Template_Ground_Hero_Company</Variant_Of_Existing_Type>
+        <Text_ID>TEXT_TAURI_SPACE_HERO_SGA_TEAM</Text_ID>
+        <Encyclopedia_Text>TEXT_DESCRIPTION_TAURI_SGA_GROUND</Encyclopedia_Text>
+        <Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_SGA_PUDDLE_JUMPER</Encyclopedia_Unit_Class>
+        <Icon_Name>TAURI_SPACE_HERO_ATLANTISTEAM.TGA</Icon_Name>
+
+        <Affiliation>Underworld</Affiliation>
+        <Ranking_In_Category>3</Ranking_In_Category>
+        <Company_Units>John_Sheppard, Rodney_McKay, Teyla_Emmagan, Ronon_Dex</Company_Units>
+        <Company_Transport_Unit>Tauri_Hero_SGA_Squadron</Company_Transport_Unit>
+        <Max_Squad_Size>1</Max_Squad_Size>
+        <Is_Homogeneous>No</Is_Homogeneous>
+        <Land_Override_Population_Value>4</Land_Override_Population_Value>
+        <Is_Stealth_Company>Yes</Is_Stealth_Company>        <!--do notto deletero-->
+        <Available_In_Skirmish>no</Available_In_Skirmish>
+
+        <SFXEvent_Hero_Respawned></SFXEvent_Hero_Respawned>
+        <SFXEvent_Fleet_Move></SFXEvent_Fleet_Move>
+
+        <Score_Cost_Credits>50000</Score_Cost_Credits>
+        <CategoryMask> LandHero | SpaceHero </CategoryMask>
+        <Required_Ground_Base_Level>1</Required_Ground_Base_Level>
+    </HeroCompany>
+</SGA>

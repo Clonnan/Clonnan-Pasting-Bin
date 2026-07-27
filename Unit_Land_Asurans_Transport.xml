@@ -1,0 +1,97 @@
+<?xml version="1.0"?>
+<Asuran_Transport_Land_Data>
+
+  <GroundVehicle Name="Asuran_Transport_Land">
+    <Variant_Of_Existing_Type>Template_Ground_Flyer</Variant_Of_Existing_Type>
+    <Text_ID>TEXT_ANCIENTS_SPACE_UNIT_LIGHT_TRANSPORTER</Text_ID>
+    <Encyclopedia_Text>TEXT_DESCRIPTION_ASURANS_TRANSPORT_GROUND TEXT_DESCRIPTION_KEEP_LANDING_AREA_CLEAR</Encyclopedia_Text>
+    <Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_TRANSPORTER</Encyclopedia_Unit_Class>
+    <Encyclopedia_Good_Against></Encyclopedia_Good_Against>
+    <Encyclopedia_Vulnerable_To> T4B_Tank MZ8_Pulse_Cannon_Tank </Encyclopedia_Vulnerable_To>
+    <Icon_Name>ANCIENT_SPACE_UNIT_TRANSPORTER.tga</Icon_Name>
+    <Land_Model_Name>Asuran_Land_Unit_Light_Transporter.alo</Land_Model_Name>
+    <Radar_Icon_Name>I_RADAR_ASURANTROOPTRANSPORT.TGA</Radar_Icon_Name>
+    <Select_Box_Scale>50</Select_Box_Scale>
+    <Selection_Blob_Material_Name>Highlight_Shuttle_Landing_Area</Selection_Blob_Material_Name>
+
+    <Scale_Factor>3.0</Scale_Factor>
+    <Affiliation>Asuran</Affiliation>
+    <LandBehavior>WALK_LOCOMOTOR, ABILITY_COUNTDOWN, AFFECTED_BY_SHIELD, DAMAGE_TRACKING, HIDE_WHEN_FOGGED, GARRISON_HOVER, IDLE, POWERED, SHIELDED, REVEAL, STUNNABLE, SURFACE_FX, TELEKINESIS_TARGET, UNIT_AI, WIND_DISTURBANCE</LandBehavior>
+    <Max_Speed>2.65</Max_Speed>
+    <Min_Speed>0.1</Min_Speed>
+    <OverrideAcceleration> 0.15 </OverrideAcceleration>
+    <OverrideDeceleration> 0.15 </OverrideDeceleration>
+    <Max_Rate_Of_Turn>2.0</Max_Rate_Of_Turn>
+    <Max_Rate_Of_Roll>0.2</Max_Rate_Of_Roll>
+    <Hover_Height>80.0</Hover_Height>
+    <Damage>24</Damage>
+    <Shield_Points>250</Shield_Points>
+    <Tactical_Health>600</Tactical_Health>
+    <Target_Bones> MISSILE_TARGET00, MISSILE_TARGET01, MISSILE_TARGET02 </Target_Bones>
+    <AI_Combat_Power>100</AI_Combat_Power>
+    <Score_Cost_Credits>200</Score_Cost_Credits>
+    <Deploys>Yes</Deploys>
+    <Garrison_Category> Infantry </Garrison_Category>
+    <Num_Garrison_Slots>6</Num_Garrison_Slots>
+    <Garrison_Bone_Names>MISSILE_TARGET00</Garrison_Bone_Names>
+    <Garrison_Exit_Dist>0</Garrison_Exit_Dist>
+    <Garrison_Enter_Dist>0</Garrison_Enter_Dist>
+    <Garrison_Radius>1</Garrison_Radius>
+    <Targeting_Priority_Set>SG_Air_AntiAll</Targeting_Priority_Set>
+    <Property_Flags> CanContainGarrison </Property_Flags>
+    <Death_Explosions>Large_Explosion_Land</Death_Explosions>
+    <Blob_Shadow_Scale>65.0, 50.0</Blob_Shadow_Scale>
+    <Damaged_Smoke_Asset_Name>W_LASER_INVISIBLE.alo</Damaged_Smoke_Asset_Name>
+
+    <SFXEvent_Engine_Idle_Loop>Engine_Ancient_Puddlejumper_Idle</SFXEvent_Engine_Idle_Loop>
+    <SFXEvent_Engine_Moving_Loop>Engine_Ancient_Puddlejumper</SFXEvent_Engine_Moving_Loop>
+
+    <Unit_Abilities_Data SubObjectList="Yes">
+      <Unit_Ability>
+        <Type>STEALTH</Type>
+        <Alternate_Icon_Name>i_sa_stealth_jumper.tga</Alternate_Icon_Name>
+        <Alternate_Name_Text>TEXT_ABILITY_TAURI_SPACE_PUDDLE_JUMPER_TARNUNG</Alternate_Name_Text>
+        <Alternate_Description_Text>TEXT_ABILITY_DESCRIPTION_TAURI_SPACE_JUMPER_TARNUNG</Alternate_Description_Text>
+        <GUI_Activated_Ability_Name>Stealth_Asuran_Transport</GUI_Activated_Ability_Name>
+        <Recharge_Seconds>15.0</Recharge_Seconds>
+        <Expiration_Seconds>60.0</Expiration_Seconds>
+        <SFXEvent_GUI_Unit_Ability_Activated>Effect_Jumper_Stealth_On</SFXEvent_GUI_Unit_Ability_Activated>
+        <SFXEvent_GUI_Unit_Ability_Deactivated>Effect_Jumper_Stealth_Off</SFXEvent_GUI_Unit_Ability_Deactivated>
+        <Must_Be_Bought_On_Black_Market>No</Must_Be_Bought_On_Black_Market>
+      </Unit_Ability>
+    </Unit_Abilities_Data>
+    <Abilities SubObjectList="Yes">
+      <Stealth_Ability Name="Stealth_Asuran_Transport">
+        <Activation_Style> User_Input </Activation_Style>
+        <Stealth_Color>255, 255, 255, 255</Stealth_Color>
+        <Stealth_Transition_Time>.5</Stealth_Transition_Time>
+        <SFXEvent_Activate></SFXEvent_Activate>
+        <Must_Be_Bought_On_Black_Market>No</Must_Be_Bought_On_Black_Market>
+      </Stealth_Ability>
+    </Abilities>
+
+  </GroundVehicle>
+
+  <GroundCompany Name="Asuran_Transport_Land_Company">
+    <Variant_Of_Existing_Type>Template_Ground_Company</Variant_Of_Existing_Type>
+    <Text_ID>TEXT_ANCIENTS_SPACE_UNIT_LIGHT_TRANSPORTER</Text_ID>
+    <Encyclopedia_Text>TEXT_DESCRIPTION_ASURANS_TRANSPORT_GROUND</Encyclopedia_Text>
+    <Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_TRANSPORTER</Encyclopedia_Unit_Class>
+    <Encyclopedia_Good_Against></Encyclopedia_Good_Against>
+    <Encyclopedia_Vulnerable_To> T4B_Tank MZ8_Pulse_Cannon_Tank </Encyclopedia_Vulnerable_To>
+    <Icon_Name>ANCIENT_SPACE_UNIT_TRANSPORTER.tga</Icon_Name>
+    <Affiliation>Asuran</Affiliation>
+    <Damage>24</Damage>
+    <Tech_Level>4</Tech_Level>	
+    <Build_Cost_Credits>3500</Build_Cost_Credits>
+    <Build_Time_Seconds>70</Build_Time_Seconds>
+    <Required_Special_Structures>Asuran_Ground_Building_Hangar Asuran_Ground_Building_HQ</Required_Special_Structures>	
+    <Company_Transport_Unit>Asuran_Jumper_Transport</Company_Transport_Unit>
+    <Company_Units>Asuran_Transport_Land</Company_Units>
+    <Score_Cost_Credits>200</Score_Cost_Credits>
+    <Tactical_Build_Cost_Multiplayer>800</Tactical_Build_Cost_Multiplayer>
+    <Tactical_Build_Time_Seconds>10</Tactical_Build_Time_Seconds>
+    <Required_Ground_Base_Level>1</Required_Ground_Base_Level>
+  </GroundCompany>
+
+</Asuran_Transport_Land_Data>

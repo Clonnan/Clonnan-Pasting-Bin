@@ -1,0 +1,647 @@
+<?xml version="1.0"?>
+<Bossk_Data>
+
+    <HeroUnit Name="Jack_ONeill">
+        <Variant_Of_Existing_Type>Template_Ground_Infantry_Single_Hero_Tauri</Variant_Of_Existing_Type>
+        <Text_ID>TEXT_TAURI_GROUND_HERO_SG_1_COLONEL_ONEILL</Text_ID>
+        <Encyclopedia_Text>TEXT_DESCRIPTION_TAURI_COLONEL_ONEILL_GROUND</Encyclopedia_Text>
+        <Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_COLONEL_ONEILL_GROUND</Encyclopedia_Unit_Class>
+        <Encyclopedia_Good_Against>Rebel_Trooper Goauld_Jackal_Guard Stormtrooper</Encyclopedia_Good_Against>
+        <Encyclopedia_Vulnerable_To>Snowspeeder AT_AT_Walker Rebel_Anti_Infantry_Turret</Encyclopedia_Vulnerable_To>
+        <Land_Model_Name>Tauri_Land_Hero_Jack.ALO</Land_Model_Name>
+        <Icon_Name>TAURI_GROUND_HERO_JACK_ONEILL.tga</Icon_Name>
+
+        <LandBehavior>ABILITY_COUNTDOWN, DAMAGE_TRACKING, GARRISON_UNIT, HIDE_WHEN_FOGGED, IDLE, IMPOSING_PRESENCE, REVEAL, SELECTABLE, STUNNABLE, SURFACE_FX, TARGETING, UNIT_AI, WALK_LOCOMOTOR, WEAPON</LandBehavior>
+        <Damage>92</Damage>
+        <Tactical_Health>1100</Tactical_Health>
+        <AI_Combat_Power>200</AI_Combat_Power>
+
+        <Neutralization_Cost>6000.0</Neutralization_Cost>
+        <Can_Be_Neutralized_By_Minor_Heroes>No</Can_Be_Neutralized_By_Minor_Heroes>
+        <Respawn_Whole_Team_When_Killed>Yes</Respawn_Whole_Team_When_Killed>
+        <CategoryMask> LandHero | SpaceHero </CategoryMask>
+        <Presence_Range>100.0</Presence_Range>
+
+        <Projectile_Types>Proj_Tauri_Hero_Jack_ONeill</Projectile_Types>
+        <Projectile_Fire_Recharge_Seconds>2.0</Projectile_Fire_Recharge_Seconds>
+        <Projectile_Fire_Pulse_Count>20</Projectile_Fire_Pulse_Count>
+        <Projectile_Fire_Pulse_Delay_Seconds>0.1</Projectile_Fire_Pulse_Delay_Seconds>
+        <Targeting_Priority_Set>SG_Infantry_AntiInfantry</Targeting_Priority_Set>
+
+        <SFXEvent_Select>Unit_Select_Jack_ONeill</SFXEvent_Select>
+        <SFXEvent_Move>Unit_Move_Jack_ONeill</SFXEvent_Move>
+        <SFXEvent_Attack>Unit_Attack_Jack_ONeill</SFXEvent_Attack>
+        <SFXEvent_Fire>Weapon_Tauri_P90</SFXEvent_Fire>
+
+        <Unit_Abilities_Data SubObjectList="Yes">
+            <Unit_Ability>
+                <Type>PLACE_REMOTE_BOMB</Type>
+                <Alternate_Name_Text>TEXT_ABILITY_TAURI_GROUND_ONEILL_C4_SPRENGLADUNG</Alternate_Name_Text>
+                <Alternate_Description_Text>TEXT_DESCRIPTION_ABILITY_ONEILL_C4_SPRENGLADUNG</Alternate_Description_Text>
+                <Alternate_Icon_Name>I_SA_C4_EXPLOSIVE.TGA</Alternate_Icon_Name>
+                <Recharge_Seconds>18.0</Recharge_Seconds>
+                <GUI_Activated_Ability_Name>ONeill_Remote_C4</GUI_Activated_Ability_Name>
+                <SFXEvent_Target_Ability>Unit_C4_Jack_ONeill</SFXEvent_Target_Ability>
+                <Supports_Autofire>False</Supports_Autofire>
+            </Unit_Ability>
+            <Unit_Ability>
+                <Type>DETONATE_REMOTE_BOMB</Type>
+            </Unit_Ability>
+        </Unit_Abilities_Data>
+        <Abilities SubObjectList="Yes">
+            <Remote_Bomb_Ability Name="ONeill_Remote_C4">
+                <Activation_Style>User_Input</Activation_Style>
+                <Activation_Min_Range>5.0</Activation_Min_Range>
+                <Activation_Max_Range>15.0</Activation_Max_Range>
+                <Bomb_Type>Proj_Tauri_Land_Remote_C4</Bomb_Type>
+                <Toss_Anim>BOMBTOSS</Toss_Anim>
+                <Spawn_Frame>100.0</Spawn_Frame>
+                <Spawn_Bone>MUZZLEB_00</Spawn_Bone>
+                <Applicable_Unit_Categories>Vehicle | Structure</Applicable_Unit_Categories>
+                <Applicable_Unit_Types />
+            </Remote_Bomb_Ability>
+            <Combat_Bonus_Ability Name="ONeill_Combat_Bonus">
+                <Activation_Style>Ground_Automatic</Activation_Style>
+                <Unit_Strength_Category>Vehicle | Infantry | Air</Unit_Strength_Category>
+                <Applicable_Unit_Categories>Vehicle | Infantry | Air</Applicable_Unit_Categories>
+                <Health_Bonus_Percentage>0.1</Health_Bonus_Percentage>
+                <Damage_Bonus_Percentage>0.0</Damage_Bonus_Percentage>
+                <Energy_Pool_Bonus_Percentage>0.0</Energy_Pool_Bonus_Percentage>
+                <Shield_Bonus_Percentage>0.0</Shield_Bonus_Percentage>
+                <Defense_Bonus_Percentage>0.0</Defense_Bonus_Percentage>
+                <Movement_Speed_Bonus_Percentage>0.0</Movement_Speed_Bonus_Percentage>
+                <Stacking_Category>1</Stacking_Category>
+            </Combat_Bonus_Ability>
+            <Galactic_Stealth_Ability Name="ONeill_Galactic_Stealth">
+                <Initially_Enabled>Yes</Initially_Enabled>
+                <Activation_Style>Galactic_Automatic</Activation_Style>
+                <Causes_Despawn>No</Causes_Despawn>
+                <Evade_Detection_Chance>0.0</Evade_Detection_Chance>
+            </Galactic_Stealth_Ability>
+            <System_Spy_Ability Name="ONeill_Limited_Spy">
+                <Initially_Enabled>Yes</Initially_Enabled>
+                <Activation_Style>Galactic_Automatic</Activation_Style>
+                <Causes_Despawn>No</Causes_Despawn>
+                <Duration_In_Secs>-1.0</Duration_In_Secs>
+                <See_Num_Fleets>Yes</See_Num_Fleets>
+            </System_Spy_Ability>
+            <Hero_Protection_Ability Name="ONeill_Hero_Protection">
+                <Neutralization_Cost_Multiplier>1.25</Neutralization_Cost_Multiplier>
+                <Stacking_Category>0</Stacking_Category>
+            </Hero_Protection_Ability>
+            <Corruption_Ability Name="SG1_Corruption">
+                <Initially_Enabled>Yes</Initially_Enabled>
+                <Activation_Style>Ground_Activated</Activation_Style>
+                <Causes_Despawn>Yes</Causes_Despawn>
+                <SFXEvent_Activate></SFXEvent_Activate>
+            </Corruption_Ability>
+        </Abilities>
+    </HeroUnit>
+
+    <Projectile Name="Proj_Tauri_Hero_Jack_ONeill">
+        <Variant_Of_Existing_Type>Proj_Tauri_P90</Variant_Of_Existing_Type>
+        <Damage_Type>Damage_Anti_Infantry</Damage_Type>
+        <Projectile_Damage>12.4</Projectile_Damage>
+    </Projectile>
+
+
+    <HeroUnit Name="Samantha_Carter">
+        <Variant_Of_Existing_Type>Template_Ground_Infantry_Single_Hero_Tauri</Variant_Of_Existing_Type>
+        <Text_ID>TEXT_TAURI_GROUND_HERO_SG_1_MAJOR_CARTER</Text_ID>
+        <Encyclopedia_Text>TEXT_DESCRIPTION_TAURI_MAJOR_CARTER_GROUND</Encyclopedia_Text>
+        <Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_MAJOR_CARTER_GROUND</Encyclopedia_Unit_Class>
+        <Encyclopedia_Good_Against>Rebel_Trooper Goauld_Jackal_Guard Stormtrooper</Encyclopedia_Good_Against>
+        <Encyclopedia_Vulnerable_To>Snowspeeder AT_AT_Walker Empire_Anti_Infantry_Turret</Encyclopedia_Vulnerable_To>
+        <Land_Model_Name>Tauri_Land_Hero_Sam.ALO</Land_Model_Name>
+        <Icon_Name>TAURI_GROUND_HERO_SAMANTHA_CARTER.tga</Icon_Name>
+
+        <LandBehavior>ABILITY_COUNTDOWN, DAMAGE_TRACKING, GARRISON_UNIT, HIDE_WHEN_FOGGED, IDLE, IMPOSING_PRESENCE, REVEAL, SELECTABLE, STUNNABLE, SURFACE_FX, TARGETING, UNIT_AI, WALK_LOCOMOTOR, WEAPON</LandBehavior>
+        <Damage>80</Damage>
+        <Tactical_Health>900</Tactical_Health>
+        <AI_Combat_Power>145</AI_Combat_Power>
+
+        <Neutralization_Cost>6000.0</Neutralization_Cost>
+        <Can_Be_Neutralized_By_Minor_Heroes>No</Can_Be_Neutralized_By_Minor_Heroes>
+        <Respawn_Whole_Team_When_Killed>Yes</Respawn_Whole_Team_When_Killed>
+        <CategoryMask> LandHero | SpaceHero </CategoryMask>
+        <Presence_Range>100.0</Presence_Range>
+
+        <Projectile_Types>Proj_Tauri_Hero_Samantha_Carter</Projectile_Types>
+        <Projectile_Fire_Recharge_Seconds>2.0</Projectile_Fire_Recharge_Seconds>
+        <Projectile_Fire_Pulse_Count>20</Projectile_Fire_Pulse_Count>
+        <Projectile_Fire_Pulse_Delay_Seconds>0.1</Projectile_Fire_Pulse_Delay_Seconds>
+        <Targeting_Priority_Set>SG_Infantry_AntiInfantry</Targeting_Priority_Set>
+
+        <SFXEvent_Select>Unit_Select_Carter</SFXEvent_Select>
+        <SFXEvent_Move>Unit_Move_Carter</SFXEvent_Move>
+        <SFXEvent_Attack>Unit_Attack_Carter</SFXEvent_Attack>
+        <SFXEvent_Fire>Weapon_Tauri_P90</SFXEvent_Fire>
+
+        <HardPoints>HP_SG1_Tractor_Beam</HardPoints>
+        <Lua_Script>ObjectScript_Carter_Hack_Turret</Lua_Script>
+        <Unit_Abilities_Data SubObjectList="Yes">
+            <Unit_Ability>
+                <Type>TRACTOR_BEAM</Type>
+                <Alternate_Name_Text>TEXT_ABILITY_HACK</Alternate_Name_Text>
+                <Alternate_Description_Text>TEXT_DESCRIPTION_ABILITY_HACK_CARTER_GROUND</Alternate_Description_Text>
+                <Alternate_Icon_Name>I_SA_HACK.tga</Alternate_Icon_Name>
+                <Mod_Multiplier>SPEED_MULTIPLIER, 0.1f</Mod_Multiplier>
+                <GUI_Activated_Ability_Name>Carter_Hack_Turret_Ability</GUI_Activated_Ability_Name>
+                <Recharge_Seconds>45</Recharge_Seconds>
+                <SFXEvent_Target_Ability>Unit_Turret_Hack_Carter</SFXEvent_Target_Ability>
+                <SFXEvent_Special_Ability_Loop></SFXEvent_Special_Ability_Loop>
+                <Supports_Autofire>False</Supports_Autofire>
+            </Unit_Ability>
+            <Unit_Ability>
+                <Type>STICKY_BOMB</Type>
+                <Alternate_Name_Text>TEXT_ABILITY_TAURI_GROUND_CARTER_HANDGRANATE</Alternate_Name_Text>
+                <Alternate_Description_Text>TEXT_DESCRIPTION_ABILITY_CARTER_HANDGRANATE</Alternate_Description_Text>
+                <Alternate_Icon_Name>I_SA_HAND_GRENADE.TGA</Alternate_Icon_Name>
+                <Recharge_Seconds>26.0f</Recharge_Seconds>
+                <GUI_Activated_Ability_Name>Carter_Hand_Grenade_Attack</GUI_Activated_Ability_Name>
+                <SFXEvent_Target_Ability>Unit_Turret_Hack_Carter</SFXEvent_Target_Ability>
+                <Supports_Autofire>True</Supports_Autofire>
+            </Unit_Ability>
+        </Unit_Abilities_Data>
+        <Abilities SubObjectList="Yes">
+            <!-- The types added here must be kept in sync with the list in ObjectScript_Carter_Hack_Turret.lua! -->
+            <Tractor_Beam_Attack_Ability Name="Carter_Hack_Turret_Ability">
+                <Activation_Style>User_Input</Activation_Style>
+                <Applicable_Unit_Types>
+                E_Ground_Turbolaser_Tower, Empire_Anti_Aircraft_Turret, Empire_Anti_Infantry_Turret, Empire_Anti_Vehicle_Turret, Empire_Grenade_Mortar,
+                Rebel_Anti_Aircraft_Turret, Rebel_Anti_Infantry_Turret, Rebel_Anti_Vehicle_Turret, Rebel_Rapid_Fire_Laser_Turret,
+                Underworld_Anti_Infantry_Turret, Underworld_Mass_Driver_Turret, Underworld_Torpedo_Turret, Underworld_Rocket_Pod,
+                Pirate_Anti_Infantry_Turret, Pirate_Anti_Vehicle_Turret
+                </Applicable_Unit_Types>
+                <Activation_Min_Range>5</Activation_Min_Range>
+                <Activation_Max_Range>200</Activation_Max_Range>
+                <Stacking_Category>2</Stacking_Category>
+            </Tractor_Beam_Attack_Ability>
+            <Grenade_Attack_Ability Name="Carter_Hand_Grenade_Attack">
+                <Activation_Style>User_Input</Activation_Style>
+                <Activation_Min_Range>5.0</Activation_Min_Range>
+                <Activation_Max_Range>200.0</Activation_Max_Range>
+                <Requires_Direct_Player_Command>No</Requires_Direct_Player_Command>
+                <Grenade_Type>Proj_Tauri_Land_Hand_Grenade</Grenade_Type>
+                <Grenade_Toss_Anim>BOMBTOSS</Grenade_Toss_Anim>
+                <Grenade_Spawn_Frame>33.0</Grenade_Spawn_Frame>
+                <Grenade_Spawn_Bone>MUZZLEB_00</Grenade_Spawn_Bone>
+                <Grenade_Explode_Timer_In_Secs>1.8</Grenade_Explode_Timer_In_Secs>
+                <Activation_Chance>0,0.0, 1,1.0, 5,1.0, 500,1.0</Activation_Chance>
+                <Applicable_Unit_Categories>Infantry | LandHero | Vehicle | Structure</Applicable_Unit_Categories>
+                <Applicable_Unit_Types />
+                <SFXEvent_Activate></SFXEvent_Activate>
+            </Grenade_Attack_Ability>
+            <Combat_Bonus_Ability Name="Carter_Combat_Bonus">
+                <Activation_Style>Ground_Automatic</Activation_Style>
+                <Unit_Strength_Category>Vehicle | Infantry | Air</Unit_Strength_Category>
+                <Applicable_Unit_Categories>Vehicle | Infantry | Air</Applicable_Unit_Categories>
+                <Health_Bonus_Percentage>0.0</Health_Bonus_Percentage>
+                <Damage_Bonus_Percentage>0.0</Damage_Bonus_Percentage>
+                <Energy_Pool_Bonus_Percentage>0.0</Energy_Pool_Bonus_Percentage>
+                <Shield_Bonus_Percentage>0.1</Shield_Bonus_Percentage>
+                <Defense_Bonus_Percentage>0.0</Defense_Bonus_Percentage>
+                <Movement_Speed_Bonus_Percentage>0.0</Movement_Speed_Bonus_Percentage>
+                <Stacking_Category>1</Stacking_Category>
+            </Combat_Bonus_Ability>
+            <Galactic_Stealth_Ability Name="Carter_Galactic_Stealth">
+                <Initially_Enabled>Yes</Initially_Enabled>
+                <Activation_Style>Galactic_Automatic</Activation_Style>
+                <Causes_Despawn>No</Causes_Despawn>
+                <Evade_Detection_Chance>0.0</Evade_Detection_Chance>
+            </Galactic_Stealth_Ability>
+            <System_Spy_Ability Name="Carter_Limited_Spy">
+                <Initially_Enabled>Yes</Initially_Enabled>
+                <Activation_Style>Galactic_Automatic</Activation_Style>
+                <Causes_Despawn>No</Causes_Despawn>
+                <Duration_In_Secs>-1.0</Duration_In_Secs>
+                <See_Num_Fleets>Yes</See_Num_Fleets>
+            </System_Spy_Ability>
+            <Hero_Protection_Ability Name="Carter_Hero_Protection">
+                <Neutralization_Cost_Multiplier>1.25</Neutralization_Cost_Multiplier>
+                <Stacking_Category>0</Stacking_Category>
+            </Hero_Protection_Ability>
+            <Corruption_Ability Name="SG1_Corruption">
+                <Initially_Enabled>Yes</Initially_Enabled>
+                <Activation_Style>Ground_Activated</Activation_Style>
+                <Causes_Despawn>Yes</Causes_Despawn>
+                <SFXEvent_Activate></SFXEvent_Activate>
+            </Corruption_Ability>
+        </Abilities>
+    </HeroUnit>
+
+
+    <Projectile Name="Proj_Tauri_Hero_Samantha_Carter">
+        <Variant_Of_Existing_Type>Proj_Tauri_P90</Variant_Of_Existing_Type>
+        <Damage_Type>Damage_Anti_Infantry</Damage_Type>
+        <Projectile_Damage>10.4</Projectile_Damage>
+    </Projectile>
+
+
+    <HeroUnit Name="Daniel_Jackson">
+        <Variant_Of_Existing_Type>Template_Ground_Infantry_Single_Hero_Tauri</Variant_Of_Existing_Type>
+        <Text_ID>TEXT_TAURI_GROUND_HERO_SG_1_DR_JACKSON</Text_ID>
+        <Encyclopedia_Text>TEXT_DESCRIPTION_TAURI_DR_JACKSON_GROUND</Encyclopedia_Text>
+        <Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_DR_JACKSON_GROUND</Encyclopedia_Unit_Class>
+        <Encyclopedia_Good_Against>Rebel_Trooper Goauld_Jackal_Guard Stormtrooper</Encyclopedia_Good_Against>
+        <Encyclopedia_Vulnerable_To>Snowspeeder AT_AT_Walker Empire_Anti_Infantry_Turret</Encyclopedia_Vulnerable_To>
+        <Land_Model_Name>Tauri_Land_Hero_Daniel.ALO</Land_Model_Name>
+        <Icon_Name>TAURI_GROUND_HERO_DANIEL_JACKSON.tga</Icon_Name>
+
+        <LandBehavior>WALK_LOCOMOTOR, ABILITY_COUNTDOWN, DAMAGE_TRACKING, GARRISON_UNIT, HIDE_WHEN_FOGGED, IDLE, REVEAL, SELECTABLE, STUNNABLE, SURFACE_FX, TARGETING, UNIT_AI, WEAPON</LandBehavior>
+        <Damage>70</Damage>
+        <Tactical_Health>750</Tactical_Health>
+        <AI_Combat_Power>120</AI_Combat_Power>
+        <Neutralization_Cost>6000.0</Neutralization_Cost>
+        <CategoryMask> LandHero | SpaceHero </CategoryMask>
+        <Can_Be_Neutralized_By_Minor_Heroes>No</Can_Be_Neutralized_By_Minor_Heroes>
+        <Respawn_Whole_Team_When_Killed>Yes</Respawn_Whole_Team_When_Killed>
+
+        <Projectile_Types>Proj_Tauri_Hero_Daniel_Jackson</Projectile_Types>
+        <Projectile_Fire_Recharge_Seconds>2.0</Projectile_Fire_Recharge_Seconds>
+        <Projectile_Fire_Pulse_Count>10</Projectile_Fire_Pulse_Count>
+        <Projectile_Fire_Pulse_Delay_Seconds>0.3</Projectile_Fire_Pulse_Delay_Seconds>
+        <Targeting_Priority_Set>SG_Infantry_AntiInfantry</Targeting_Priority_Set>
+
+        <SFXEvent_Select>Unit_Select_Daniel_Jackson</SFXEvent_Select>
+        <SFXEvent_Move>Unit_Move_Daniel_Jackson</SFXEvent_Move>
+        <SFXEvent_Attack>Unit_Attack_Daniel_Jackson</SFXEvent_Attack>
+        <SFXEvent_Fire>Weapon_Tauri_Pistol</SFXEvent_Fire>
+        <FormationOrder>3</FormationOrder>
+
+        <Unit_Abilities_Data SubObjectList="Yes">
+            <!--Unit_Ability>
+            <Type>SPRINT</Type>
+            <Expiration_Seconds> 7.0 </Expiration_Seconds>
+            <Recharge_Seconds> 45.0 </Recharge_Seconds>
+            <Mod_Multiplier>SPEED_MULTIPLIER,    2.0f</Mod_Multiplier>
+            <Mod_Multiplier>TAKE_DAMAGE_MULTIPLIER, 0.75f</Mod_Multiplier>
+            <SFXEvent_GUI_Unit_Ability_Activated></SFXEvent_GUI_Unit_Ability_Activated>
+         </Unit_Ability-->
+            <Unit_Ability>
+                <Type>WEAKEN_ENEMY</Type>
+                <Alternate_Name_Text>TEXT_ABILITY_THORS_CHARIOT</Alternate_Name_Text>
+                <Alternate_Description_Text>TEXT_DESCRIPTION_ABILITY_THORS_CHARIOT_DANIEL_GROUND</Alternate_Description_Text>
+                <Alternate_Icon_Name>I_SA_THORS_CHARIOT.TGA</Alternate_Icon_Name>
+                <Recharge_Seconds>180</Recharge_Seconds>
+                <Effective_Radius>400.0</Effective_Radius>
+                <Spawned_Object_Type>Spawn_Dummy_Thors_Chariot</Spawned_Object_Type>
+                <SFXEvent_Target_Ability></SFXEvent_Target_Ability>
+                <SFXEvent_GUI_Unit_Ability_Activated></SFXEvent_GUI_Unit_Ability_Activated>
+                <SFXEvent_GUI_Unit_Ability_Deactivated />
+                <Area_Effect_Decal_Distance>250</Area_Effect_Decal_Distance>
+            </Unit_Ability>
+        </Unit_Abilities_Data>
+        <Abilities SubObjectList="Yes">
+            <Combat_Bonus_Ability Name="Jackson_Combat_Bonus">
+                <Activation_Style>Ground_Automatic</Activation_Style>
+                <Unit_Strength_Category>Vehicle | Infantry | Air</Unit_Strength_Category>
+                <Applicable_Unit_Categories>Vehicle | Infantry | Air</Applicable_Unit_Categories>
+                <Health_Bonus_Percentage>0.0</Health_Bonus_Percentage>
+                <Damage_Bonus_Percentage>0.0</Damage_Bonus_Percentage>
+                <Energy_Pool_Bonus_Percentage>0.0</Energy_Pool_Bonus_Percentage>
+                <Shield_Bonus_Percentage>0.0</Shield_Bonus_Percentage>
+                <Defense_Bonus_Percentage>0.0</Defense_Bonus_Percentage>
+                <Movement_Speed_Bonus_Percentage>0.05</Movement_Speed_Bonus_Percentage>
+                <Stacking_Category>1</Stacking_Category>
+            </Combat_Bonus_Ability>
+            <Galactic_Stealth_Ability Name="Jackson_Galactic_Stealth">
+                <Initially_Enabled>Yes</Initially_Enabled>
+                <Activation_Style>Galactic_Automatic</Activation_Style>
+                <Causes_Despawn>No</Causes_Despawn>
+                <Evade_Detection_Chance>0.0</Evade_Detection_Chance>
+            </Galactic_Stealth_Ability>
+            <System_Spy_Ability Name="Jackson_Limited_Spy">
+                <Initially_Enabled>Yes</Initially_Enabled>
+                <Activation_Style>Galactic_Automatic</Activation_Style>
+                <Causes_Despawn>No</Causes_Despawn>
+                <Duration_In_Secs>-1.0</Duration_In_Secs>
+                <See_Num_Fleets>Yes</See_Num_Fleets>
+            </System_Spy_Ability>
+            <Hero_Protection_Ability Name="Jackson_Hero_Protection">
+                <Neutralization_Cost_Multiplier>1.25</Neutralization_Cost_Multiplier>
+                <Stacking_Category>0</Stacking_Category>
+            </Hero_Protection_Ability>
+            <Corruption_Ability Name="SG1_Corruption">
+                <Initially_Enabled>Yes</Initially_Enabled>
+                <Activation_Style>Ground_Activated</Activation_Style>
+                <Causes_Despawn>Yes</Causes_Despawn>
+                <SFXEvent_Activate></SFXEvent_Activate>
+            </Corruption_Ability>
+        </Abilities>
+    </HeroUnit>
+
+
+    <Projectile Name="Proj_Tauri_Hero_Daniel_Jackson">
+        <Variant_Of_Existing_Type>Proj_Tauri_MP5</Variant_Of_Existing_Type>
+        <Damage_Type>Damage_Normal</Damage_Type>
+        <Projectile_Damage>21.0</Projectile_Damage>
+    </Projectile>
+
+
+    <HeroUnit Name="Tealc">
+        <Variant_Of_Existing_Type>Template_Ground_Infantry_Single_Hero_Tauri</Variant_Of_Existing_Type>
+        <Text_ID>TEXT_TAURI_GROUND_HERO_SG_1_TEALC</Text_ID>
+        <Encyclopedia_Text>TEXT_DESCRIPTION_TAURI_TEALC_GROUND</Encyclopedia_Text>
+        <Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_TEALC_GROUND</Encyclopedia_Unit_Class>
+        <Encyclopedia_Good_Against>Rebel_Trooper Goauld_Jackal_Guard Stormtrooper</Encyclopedia_Good_Against>
+        <Encyclopedia_Vulnerable_To>Snowspeeder AT_AT_Walker Empire_Anti_Infantry_Turret</Encyclopedia_Vulnerable_To>
+        <Land_Model_Name>Tauri_Land_Hero_Tealc.ALO</Land_Model_Name>
+        <Icon_Name>TAURI_GROUND_HERO_TEALC.tga</Icon_Name>
+
+        <LandBehavior>WALK_LOCOMOTOR, ABILITY_COUNTDOWN, DAMAGE_TRACKING, GARRISON_UNIT, HIDE_WHEN_FOGGED, IDLE, REVEAL, SELECTABLE, STUNNABLE, SURFACE_FX, TARGETING, UNIT_AI, WEAPON</LandBehavior>
+        <Damage>100</Damage>
+        <Tactical_Health>1250</Tactical_Health>
+        <AI_Combat_Power>250</AI_Combat_Power>
+        <Neutralization_Cost>6000.0</Neutralization_Cost>
+        <CategoryMask> LandHero | SpaceHero </CategoryMask>
+        <Can_Be_Neutralized_By_Minor_Heroes>No</Can_Be_Neutralized_By_Minor_Heroes>
+        <Respawn_Whole_Team_When_Killed>Yes</Respawn_Whole_Team_When_Killed>
+
+        <Projectile_Types>Proj_Tauri_Hero_Tealc</Projectile_Types>
+        <Projectile_Fire_Recharge_Seconds>1</Projectile_Fire_Recharge_Seconds>
+        <Projectile_Fire_Pulse_Count>5</Projectile_Fire_Pulse_Count>
+        <Projectile_Fire_Pulse_Delay_Seconds>0.7</Projectile_Fire_Pulse_Delay_Seconds>
+        <Targeting_Priority_Set>SG_Infantry_AntiInfantry</Targeting_Priority_Set>
+
+        <SFXEvent_Fire>Weapon_Goauld_Staff</SFXEvent_Fire>
+        <SFXEvent_Select>Unit_Select_Tealc</SFXEvent_Select>
+        <SFXEvent_Move>Unit_Move_Tealc</SFXEvent_Move>
+        <SFXEvent_Attack>Unit_Attack_Tealc</SFXEvent_Attack>
+        <SFXEvent_Guard>Unit_Guard_Tealc</SFXEvent_Guard>
+
+        <Unit_Abilities_Data SubObjectList="Yes">
+            <!--Unit_Ability>
+            <Type>TACTICAL_BRIBE</Type>
+            <Alternate_Name_Text>TEXT_ABILITY_TAURI_GROUND_TEALC_BEKEHREN</Alternate_Name_Text>
+            <Alternate_Description_Text>TEXT_DESCRIPTION_ABILITY_TEALC_BEKEHREN</Alternate_Description_Text>
+            <Alternate_Icon_Name>I_SA_CONVERSION.TGA</Alternate_Icon_Name>
+            <Recharge_Seconds>50.0</Recharge_Seconds>
+            <GUI_Activated_Ability_Name> Tealc_Convert_Jaffa </GUI_Activated_Ability_Name>
+            <SFXEvent_Target_Ability> Unit_Bribe_Tyber_Zann </SFXEvent_Target_Ability>
+            <Supports_Autofire>True</Supports_Autofire>
+         </Unit_Ability-->
+            <Unit_Ability>
+                <Type>POWER_TO_WEAPONS</Type>
+                <Alternate_Name_Text>TEXT_ABILITY_RAPID_FIRE_MODE</Alternate_Name_Text>
+                <Alternate_Description_Text>TEXT_DESCRIPTION_ABILITY_RAPID_FIRE_TEALC_GROUND</Alternate_Description_Text>
+                <Alternate_Icon_Name>I_SA_STAFF_WEAPON.TGA</Alternate_Icon_Name>
+                <Mod_Multiplier>WEAPON_DELAY_MULTIPLIER, 0.6f</Mod_Multiplier>
+                <Mod_Multiplier>CAUSE_DAMAGE_MULTIPLIER , 0.91f</Mod_Multiplier>
+                <Mod_Multiplier>SPEED_MULTIPLIER, 0.8f</Mod_Multiplier>
+                <Recharge_Seconds>60</Recharge_Seconds>
+                <Expiration_Seconds>8</Expiration_Seconds>
+                <SFXEvent_GUI_Unit_Ability_Activated />
+                <SFXEvent_GUI_Unit_Ability_Deactivated />
+            </Unit_Ability>
+            <Unit_Ability>
+                <Type>SPRINT</Type>
+                <Alternate_Description_Text>TEXT_DESCRIPTION_ABILITY_TEALC_SPRINTEN</Alternate_Description_Text>
+                <Expiration_Seconds>7.0</Expiration_Seconds>
+                <Recharge_Seconds>45.0</Recharge_Seconds>
+                <Mod_Multiplier>SPEED_MULTIPLIER, 2.0f</Mod_Multiplier>
+                <Mod_Multiplier>TAKE_DAMAGE_MULTIPLIER, 0.75f</Mod_Multiplier>
+                <SFXEvent_GUI_Unit_Ability_Activated></SFXEvent_GUI_Unit_Ability_Activated>
+            </Unit_Ability>
+        </Unit_Abilities_Data>
+        <Abilities SubObjectList="Yes">
+            <!--    <Tactical_Bribe_Ability Name="Tealc_Convert_Jaffa">
+                <Activation_Style> User_Input </Activation_Style>
+                <Activation_Min_Range>0.0</Activation_Min_Range>
+                <Activation_Max_Range>100.0</Activation_Max_Range>
+                <Bribed_Effect> Bribed_Particle_Effect </Bribed_Effect>
+                <Bribed_Effect_Small> Bribed_Particle_Effect_Small </Bribed_Effect_Small>
+                <Effect_Z_Offset>35.0</Effect_Z_Offset>
+                <SFXEvent_Success>GUI_Bribe_SFX</SFXEvent_Success>
+                <SFXEvent_Fail>Unit_Bribe_Fail_Tyber_Zann</SFXEvent_Fail>
+               <Applicable_Unit_Types>
+               Rebel_Trooper
+               </Applicable_Unit_Types>
+         </Tactical_Bribe_Ability> -->
+            <!--This ability works and makes Teal'c auto-melee infantry units.
+            Sadly, when given a manual attack order it causes him to walk close to far-away units that he could have shot down :(
+            When no attack order is given and enemy units come in range it works though.
+            Not sure if we can get it to work the intended way...-->
+            <!--Berserker_Ability Name="Tealc_Auto_Melee">
+               <Activation_Style> Special_Attack </Activation_Style>
+               <Activation_Min_Range>0.0</Activation_Min_Range>
+               <Activation_Max_Range>15.0</Activation_Max_Range>
+               <Berserker_Speed>1.3</Berserker_Speed>
+               <Berserker_Damage>100.0</Berserker_Damage>
+               <Berserker_Damage_Range>8.0</Berserker_Damage_Range>
+               <Berserker_Duration_In_Secs>3.0</Berserker_Duration_In_Secs>
+               <Applicable_Unit_Categories>Infantry</Applicable_Unit_Categories>
+         </Berserker_Ability-->
+            <Force_Healing_Ability Name="Tealc_Auto_Heal_Tretonin">
+                <Activation_Style>Ground_Automatic</Activation_Style>
+                <Heal_Range>0.0</Heal_Range>
+                <Heal_Percent>0.01</Heal_Percent>
+                <Heal_Amount>0.0</Heal_Amount>
+                <Heal_Interval_In_Secs>6.0</Heal_Interval_In_Secs>
+                <Single_Target_Heal>No</Single_Target_Heal>
+                <Owner_Particle_Bone_Name>ROOT</Owner_Particle_Bone_Name>
+                <Owner_Light_Effect_Duration>0.1</Owner_Light_Effect_Duration>
+                <Owner_Light_Effect_Pulse_Count>1</Owner_Light_Effect_Pulse_Count>
+            </Force_Healing_Ability>
+            <Combat_Bonus_Ability Name="Tealc_Combat_Bonus">
+                <Activation_Style>Ground_Automatic</Activation_Style>
+                <Unit_Strength_Category>Vehicle | Infantry | Air</Unit_Strength_Category>
+                <Applicable_Unit_Categories>Vehicle | Infantry | Air</Applicable_Unit_Categories>
+                <Health_Bonus_Percentage>0.0</Health_Bonus_Percentage>
+                <Damage_Bonus_Percentage>0.1</Damage_Bonus_Percentage>
+                <Energy_Pool_Bonus_Percentage>0.0</Energy_Pool_Bonus_Percentage>
+                <Shield_Bonus_Percentage>0.0</Shield_Bonus_Percentage>
+                <Defense_Bonus_Percentage>0.0</Defense_Bonus_Percentage>
+                <Movement_Speed_Bonus_Percentage>0.0</Movement_Speed_Bonus_Percentage>
+                <Stacking_Category>1</Stacking_Category>
+            </Combat_Bonus_Ability>
+            <Galactic_Stealth_Ability Name="Tealc_Galactic_Stealth">
+                <Initially_Enabled>Yes</Initially_Enabled>
+                <Activation_Style>Galactic_Automatic</Activation_Style>
+                <Causes_Despawn>No</Causes_Despawn>
+                <Evade_Detection_Chance>0.0</Evade_Detection_Chance>
+            </Galactic_Stealth_Ability>
+            <System_Spy_Ability Name="Tealc_Limited_Spy">
+                <Initially_Enabled>Yes</Initially_Enabled>
+                <Activation_Style>Galactic_Automatic</Activation_Style>
+                <Causes_Despawn>No</Causes_Despawn>
+                <Duration_In_Secs>-1.0</Duration_In_Secs>
+                <See_Num_Fleets>Yes</See_Num_Fleets>
+            </System_Spy_Ability>
+            <Hero_Protection_Ability Name="Tealc_Hero_Protection">
+                <Neutralization_Cost_Multiplier>1.25</Neutralization_Cost_Multiplier>
+                <Stacking_Category>0</Stacking_Category>
+            </Hero_Protection_Ability>
+            <Corruption_Ability Name="SG1_Corruption">
+                <Initially_Enabled>Yes</Initially_Enabled>
+                <Activation_Style>Ground_Activated</Activation_Style>
+                <Causes_Despawn>Yes</Causes_Despawn>
+                <SFXEvent_Activate></SFXEvent_Activate>
+            </Corruption_Ability>
+        </Abilities>
+    </HeroUnit>
+
+
+    <!-- Used in Chulak Mission of the Syslords GC -->
+    <HeroUnit Name="Tealc_Chulak_Mission">
+        <Variant_Of_Existing_Type>Tealc</Variant_Of_Existing_Type>
+        <Land_Model_Name>Tauri_Land_Hero_Tealc_Jaf.ALO</Land_Model_Name>
+        <Scale_Factor>1.258</Scale_Factor>
+        <Land_FOW_Reveal_Range>300.0</Land_FOW_Reveal_Range>
+    </HeroUnit>
+
+
+    <Projectile Name="Proj_Tauri_Hero_Tealc">
+        <Variant_Of_Existing_Type>Proj_Goauld_Land_Staff_Weapon</Variant_Of_Existing_Type>
+        <Damage_Type>Damage_Normal</Damage_Type>
+        <Projectile_Damage>58.5</Projectile_Damage>
+    </Projectile>
+
+
+    <!-- Team for GC -->
+    <HeroCompany Name="Bossk_Team">
+        <Variant_Of_Existing_Type>Template_Ground_Hero_Company</Variant_Of_Existing_Type>
+        <Text_ID>TEXT_TAURI_SPACE_HERO_SG_1</Text_ID>
+        <Encyclopedia_Text>TEXT_DESCRIPTION_TAURI_SG_1_GROUND TEXT_DESCRIPTION_FIGHTER_HYPERSPACE_YES</Encyclopedia_Text>
+        <Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_SG_1_TELTAK</Encyclopedia_Unit_Class>
+        <Icon_Name>TAURI_SPACE_HERO_SG1.TGA</Icon_Name>
+
+        <Affiliation>Underworld</Affiliation>
+        <Ranking_In_Category>2</Ranking_In_Category>
+        <Company_Units>Jack_ONeill, Daniel_Jackson, Samantha_Carter, Tealc</Company_Units>
+        <Company_Transport_Unit>Houndstooth</Company_Transport_Unit>
+        <Max_Squad_Size>1</Max_Squad_Size>
+        <Is_Homogeneous>No</Is_Homogeneous>
+        <Land_Override_Population_Value>4</Land_Override_Population_Value>
+        <Is_Stealth_Company>Yes</Is_Stealth_Company>        <!--do notto deletero-->
+        <Always_Spawn_In_Orbit>Yes</Always_Spawn_In_Orbit>
+
+        <SFXEvent_Build_Started>Unit_Select_SG1</SFXEvent_Build_Started>
+        <SFXEvent_Build_Complete>Unit_Select_SG1</SFXEvent_Build_Complete>
+        <SFXEvent_Fleet_Move>Unit_Move_SG1</SFXEvent_Fleet_Move>
+        <SFXEvent_Hero_Respawned>Unit_Select_SG1</SFXEvent_Hero_Respawned>
+
+        <Tactical_Build_Cost_Multiplayer>2200</Tactical_Build_Cost_Multiplayer>
+        <Tactical_Build_Time_Seconds>35</Tactical_Build_Time_Seconds>
+        <Score_Cost_Credits>50000</Score_Cost_Credits>
+        <CategoryMask> LandHero | SpaceHero </CategoryMask>
+        <Required_Ground_Base_Level>1</Required_Ground_Base_Level>
+    </HeroCompany>
+
+
+    <!-- Teams for Ground MP -->
+    <HeroCompany Name="ONeill_Team">
+        <Variant_Of_Existing_Type>Template_Ground_Hero_Company</Variant_Of_Existing_Type>
+        <Text_ID>TEXT_TAURI_GROUND_HERO_SG_1_COLONEL_ONEILL</Text_ID>
+        <Encyclopedia_Text>TEXT_DESCRIPTION_TAURI_COLONEL_ONEILL_GROUND</Encyclopedia_Text>
+        <Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_COLONEL_ONEILL_GROUND</Encyclopedia_Unit_Class>
+        <Encyclopedia_Good_Against>Rebel_Trooper Goauld_Jackal_Guard Stormtrooper</Encyclopedia_Good_Against>
+        <Encyclopedia_Vulnerable_To>Snowspeeder AT_AT_Walker Empire_Anti_Infantry_Turret</Encyclopedia_Vulnerable_To>
+        <Icon_Name>TAURI_GROUND_HERO_JACK_ONEILL.tga</Icon_Name>
+
+        <Affiliation>Underworld</Affiliation>
+        <Ranking_In_Category>1</Ranking_In_Category>
+        <Company_Units>Jack_ONeill</Company_Units>
+        <Company_Transport_Unit>Houndstooth_SK</Company_Transport_Unit>
+        <Max_Squad_Size>1</Max_Squad_Size>
+
+        <Tactical_Build_Cost_Multiplayer>3400</Tactical_Build_Cost_Multiplayer>
+        <Tactical_Build_Time_Seconds>25</Tactical_Build_Time_Seconds>
+        <Tactical_Build_Prerequisites>UC_Level_Three_Tech_Upgrade</Tactical_Build_Prerequisites>
+        <Score_Cost_Credits>20000</Score_Cost_Credits>
+        <CategoryMask>LandHero</CategoryMask>
+        <Required_Ground_Base_Level>1</Required_Ground_Base_Level>
+        <Unit_Abilities_Data SubObjectList="Yes"></Unit_Abilities_Data>
+    </HeroCompany>
+    <HeroCompany Name="Carter_Team">
+        <Variant_Of_Existing_Type>ONeill_Team</Variant_Of_Existing_Type>
+        <Text_ID>TEXT_TAURI_GROUND_HERO_SG_1_MAJOR_CARTER</Text_ID>
+        <Encyclopedia_Text>TEXT_DESCRIPTION_TAURI_MAJOR_CARTER_GROUND</Encyclopedia_Text>
+        <Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_MAJOR_CARTER_GROUND</Encyclopedia_Unit_Class>
+        <Encyclopedia_Good_Against>Rebel_Trooper Goauld_Jackal_Guard Stormtrooper</Encyclopedia_Good_Against>
+        <Encyclopedia_Vulnerable_To>Snowspeeder AT_AT_Walker Empire_Anti_Infantry_Turret</Encyclopedia_Vulnerable_To>
+        <Icon_Name>TAURI_GROUND_HERO_SAMANTHA_CARTER.tga</Icon_Name>
+        <Company_Units>Samantha_Carter</Company_Units>
+        <Tactical_Build_Cost_Multiplayer>2400</Tactical_Build_Cost_Multiplayer>
+        <Tactical_Build_Time_Seconds>19</Tactical_Build_Time_Seconds>
+        <Tactical_Build_Prerequisites>UC_Level_Two_Tech_Upgrade</Tactical_Build_Prerequisites>
+        <Score_Cost_Credits>20000</Score_Cost_Credits>
+    </HeroCompany>
+    <HeroCompany Name="Daniel_Team">
+        <Variant_Of_Existing_Type>ONeill_Team</Variant_Of_Existing_Type>
+        <Text_ID>TEXT_TAURI_GROUND_HERO_SG_1_DR_JACKSON</Text_ID>
+        <Encyclopedia_Text>TEXT_DESCRIPTION_TAURI_DR_JACKSON_GROUND</Encyclopedia_Text>
+        <Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_DR_JACKSON_GROUND</Encyclopedia_Unit_Class>
+        <Encyclopedia_Good_Against>Rebel_Trooper Goauld_Jackal_Guard Stormtrooper</Encyclopedia_Good_Against>
+        <Encyclopedia_Vulnerable_To>Snowspeeder AT_AT_Walker Empire_Anti_Infantry_Turret</Encyclopedia_Vulnerable_To>
+        <Icon_Name>TAURI_GROUND_HERO_DANIEL_JACKSON.tga</Icon_Name>
+        <Company_Units>Daniel_Jackson</Company_Units>
+        <Tactical_Build_Cost_Multiplayer>1500</Tactical_Build_Cost_Multiplayer>
+        <Tactical_Build_Time_Seconds>14</Tactical_Build_Time_Seconds>
+        <Tactical_Build_Prerequisites></Tactical_Build_Prerequisites>
+        <Score_Cost_Credits>15000</Score_Cost_Credits>
+    </HeroCompany>
+    <HeroCompany Name="Tealc_Team">
+        <Variant_Of_Existing_Type>ONeill_Team</Variant_Of_Existing_Type>
+        <Text_ID>TEXT_TAURI_GROUND_HERO_SG_1_TEALC</Text_ID>
+        <Encyclopedia_Text>TEXT_DESCRIPTION_TAURI_TEALC_GROUND</Encyclopedia_Text>
+        <Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_TEALC_GROUND</Encyclopedia_Unit_Class>
+        <Encyclopedia_Good_Against>Rebel_Trooper Goauld_Jackal_Guard Stormtrooper</Encyclopedia_Good_Against>
+        <Encyclopedia_Vulnerable_To>Snowspeeder AT_AT_Walker Empire_Anti_Infantry_Turret</Encyclopedia_Vulnerable_To>
+        <Icon_Name>TAURI_GROUND_HERO_TEALC.tga</Icon_Name>
+        <Company_Units>Tealc</Company_Units>
+        <Tactical_Build_Cost_Multiplayer>3750</Tactical_Build_Cost_Multiplayer>
+        <Tactical_Build_Time_Seconds>28</Tactical_Build_Time_Seconds>
+        <Tactical_Build_Prerequisites>UC_Level_Three_Tech_Upgrade</Tactical_Build_Prerequisites>
+        <Score_Cost_Credits>25000</Score_Cost_Credits>
+    </HeroCompany>
+
+
+    <!-- Spawn-dummy to mark the location where Thors Chariot will land -->
+    <MiscObject Name="Spawn_Dummy_Thors_Chariot">
+        <Text_ID />
+        <Land_Model_Name>W_LASER_INVISIBLE.ALO</Land_Model_Name>
+        <Scale_Factor>1.0</Scale_Factor>
+        <Remove_Upon_Death>true</Remove_Upon_Death>
+        <Victory_Relevant>No</Victory_Relevant>
+        <Is_Valid_Target>No</Is_Valid_Target>
+        <Control_Point_Domination_Condition_Relevant>No</Control_Point_Domination_Condition_Relevant>
+        <Influences_Capture_Point>False</Influences_Capture_Point>
+        <Population_Value>0</Population_Value>		
+        <Lua_Script>ObjectScript_Thors_Chariot</Lua_Script>
+    </MiscObject>
+
+
+    <!-- Invisible dummy whose only purpose is to have Thors Chariot spawn something -->
+    <MiscObject Name="Spawn_Dummy_Thors_Chariot_Freight">
+        <Variant_Of_Existing_Type>Template_Ground_Unit</Variant_Of_Existing_Type>
+        <Land_Model_Name>W_LASER_INVISIBLE.ALO</Land_Model_Name>
+        <Scale_Factor>1.0</Scale_Factor>
+        <Behavior>HIDE_WHEN_FOGGED</Behavior>
+        <LandBehavior>HIDE_WHEN_FOGGED</LandBehavior>
+        <Is_Visible_On_Radar>No</Is_Visible_On_Radar>
+        <Is_Visible_On_Enemy_Radar>No</Is_Visible_On_Enemy_Radar>
+        <Remove_Upon_Death>true</Remove_Upon_Death>
+        <Victory_Relevant>No</Victory_Relevant>
+        <Is_Valid_Target>No</Is_Valid_Target>
+        <Is_Squashable>No</Is_Squashable>
+        <Movie_Object>false</Movie_Object>
+        <AI_Combat_Power>0</AI_Combat_Power>
+        <Ground_Infantry_Turret_Target>No</Ground_Infantry_Turret_Target>
+        <Influences_Capture_Point>False</Influences_Capture_Point>
+        <Collidable_By_Projectile_Living>No</Collidable_By_Projectile_Living>
+        <Collidable_By_Projectile_Dead>No</Collidable_By_Projectile_Dead>
+        <Population_Value>0</Population_Value>
+    </MiscObject>
+
+
+    <MiscObject Name="Spawn_Dummy_Thors_Chariot_Freight_Company">
+        <Variant_Of_Existing_Type>Template_Ground_Company</Variant_Of_Existing_Type>
+        <Affiliation>Underworld</Affiliation>
+        <Company_Transport_Unit>Tauri_Special_Transport_Beliskner_Landing</Company_Transport_Unit>
+        <Company_Units>Spawn_Dummy_Thors_Chariot_Freight</Company_Units>
+        <Required_Ground_Base_Level>1</Required_Ground_Base_Level>
+        <Population_Value>0</Population_Value>		
+    </MiscObject>
+
+</Bossk_Data>

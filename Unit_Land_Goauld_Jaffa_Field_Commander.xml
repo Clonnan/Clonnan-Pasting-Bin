@@ -1,0 +1,288 @@
+<?xml version="1.0"?>
+<Goauld_Jaffa_Infantry_Data>
+
+   <GenericHeroUnit Name="Generic_Field_Commander_Rebel">
+      <Variant_Of_Existing_Type>Template_Ground_Infantry_Single_Hero_Goauld</Variant_Of_Existing_Type>
+      <Text_ID>TEXT_GOAULD_GROUND_UNIT_FIELD_COMMANDER</Text_ID>
+      <Encyclopedia_Text>TEXT_DESCRIPTION_GOAULD_FIELD_COMMANDER_GROUND</Encyclopedia_Text>
+      <Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_FIELD_COMMANDER</Encyclopedia_Unit_Class>
+      <Encyclopedia_Good_Against>Underworld_Saboteur Rebel_Infiltrator Scavenger_Droid</Encyclopedia_Good_Against>
+      <Encyclopedia_Vulnerable_To>Underworld_Merc Tauri_F302_Land Empire_Anti_Infantry_Turret</Encyclopedia_Vulnerable_To>
+      <Icon_Name>GOAULD_GROUND_UNIT_FIELD_COMMANDER.TGA</Icon_Name>
+      <Land_Model_Name>Goauld_Land_Unit_Field_Commander.ALO</Land_Model_Name>
+      <Land_Model_Anim_Override_Name>Goauld_Land_Unit_Field_Commander.ALO</Land_Model_Anim_Override_Name>
+      <Affiliation>Rebel</Affiliation>
+      <Tactical_Health>100</Tactical_Health>
+      <Damage>4</Damage>
+      <AI_Combat_Power>100</AI_Combat_Power>
+      <Targeting_Priority_Set>SG_Infantry_AntiKull</Targeting_Priority_Set>
+
+      <FormationOrder>2</FormationOrder>
+      <FormationSpacing>1.3</FormationSpacing>
+      <MaxJiggleDistance>0</MaxJiggleDistance>
+
+      <CategoryMask>LandHero</CategoryMask>
+      <Is_Named_Hero>No</Is_Named_Hero>
+      <Is_Generic_Hero>Yes</Is_Generic_Hero>
+      <Show_Hero_Head>No</Show_Hero_Head>
+      <Is_Force_Sensitive>No</Is_Force_Sensitive>
+      <Neutralization_Cost>300.0</Neutralization_Cost>
+      <Score_Cost_Credits>500</Score_Cost_Credits>
+
+      <SFXEvent_Select>Unit_Select_GFC</SFXEvent_Select>
+      <SFXEvent_Move>Unit_Move_GFC</SFXEvent_Move>
+      <SFXEvent_Fleet_Move>Unit_Move_GFC</SFXEvent_Fleet_Move>
+      <SFXEvent_Attack>Unit_Attack_GFC</SFXEvent_Attack>
+      <SFXEvent_Build_Complete>Unit_Spawn_GFC</SFXEvent_Build_Complete>
+      <SFXEvent_Hero_Respawned>Unit_Spawn_GFC</SFXEvent_Hero_Respawned>
+
+      <Projectile_Types>Proj_Goauld_Field_Commander</Projectile_Types>
+      <Projectile_Fire_Recharge_Seconds>1.0</Projectile_Fire_Recharge_Seconds>
+      <Projectile_Fire_Pulse_Count>5</Projectile_Fire_Pulse_Count>
+      <Projectile_Fire_Pulse_Delay_Seconds>0.8</Projectile_Fire_Pulse_Delay_Seconds>
+      <SFXEvent_Fire>Weapon_Goauld_Zat</SFXEvent_Fire>
+      <Death_Clone>Damage_Hand_Device, Generic_Field_Commander_Rebel_Hand_Device_Death_Clone</Death_Clone>
+
+      <Execute_Script_On_Type>true</Execute_Script_On_Type>
+      <Abilities SubObjectList="Yes">
+         <Hero_Protection_Ability Name="First_Prime_Hero_Protection">
+            <Neutralization_Cost_Multiplier>2.0</Neutralization_Cost_Multiplier>
+            <Stacking_Category>0</Stacking_Category>
+         </Hero_Protection_Ability>
+      </Abilities>
+      <!--Lua_Script>ObjectScript_Jaffa_Helmet_Transformation</Lua_Script-->
+      <Lua_Script>ObjectScript_Field_Commander</Lua_Script>
+   </GenericHeroUnit>
+
+   <GroundInfantry Name="Generic_Field_Commander_Rebel_Hand_Device_Death_Clone">
+      <Variant_Of_Existing_Type>Generic_Field_Commander_Rebel</Variant_Of_Existing_Type>
+      <Specific_Death_Anim_Type>FW_DIE</Specific_Death_Anim_Type>
+   </GroundInfantry>
+
+   <GenericHeroUnit Name="Squad_Generic_Field_Commander_Rebel">
+      <Variant_Of_Existing_Type>Generic_Field_Commander_Rebel</Variant_Of_Existing_Type>
+      <LandBehavior>
+         DAMAGE_TRACKING,
+         HIDE_WHEN_FOGGED,
+         IDLE,
+         LAND_TEAM_INFANTRY_LOCOMOTOR,
+         REVEAL,
+         SPAWN_SQUADRON,
+         STUNNABLE,
+         SURFACE_FX,
+         TARGETING,
+         UNIT_AI,
+         WEAPON
+      </LandBehavior>
+      <Create_Team>Yes</Create_Team>
+      <Select_Box_Scale>0</Select_Box_Scale>
+      <Redirect_Damage_To_Teammates>Yes</Redirect_Damage_To_Teammates>
+      <Unit_Abilities_Data SubObjectList="Yes">
+         <!--Unit_Ability>
+            <Type>SPREAD_OUT</Type>
+            <Mod_Multiplier>SPEED_MULTIPLIER, 0.5f</Mod_Multiplier>
+            <Mod_Multiplier>TAKE_DAMAGE_MULTIPLIER, 0.85f</Mod_Multiplier>
+         </Unit_Ability-->
+         <Unit_Ability>
+            <Type>POWER_TO_WEAPONS</Type>
+            <Alternate_Name_Text>TEXT_ABILITY_HELMET_UNFOLDING</Alternate_Name_Text>
+            <Alternate_Description_Text>TEXT_DESCRIPTION_ABILITY_UNFOLDING_JAFFA_MASTER_GROUND</Alternate_Description_Text>
+            <Alternate_Icon_Name>I_SA_HELMET_UNFOLD.TGA</Alternate_Icon_Name>
+            <Mod_Multiplier>WEAPON_DELAY_MULTIPLIER, 0.8</Mod_Multiplier>
+            <Mod_Multiplier>SPEED_MULTIPLIER, 0.5</Mod_Multiplier>
+            <Mod_Multiplier>CAUSE_DAMAGE_MULTIPLIER, 1.2</Mod_Multiplier>
+            <Mod_Multiplier>TAKE_DAMAGE_MULTIPLIER, 0.5f</Mod_Multiplier>
+            <Recharge_Seconds></Recharge_Seconds>
+            <SFXEvent_GUI_Unit_Ability_Activated>Unit_Apophis_Helmet</SFXEvent_GUI_Unit_Ability_Activated>
+            <SFXEvent_GUI_Unit_Ability_Deactivated>Unit_Apophis_Helmet</SFXEvent_GUI_Unit_Ability_Deactivated>
+            <Expiration_Seconds></Expiration_Seconds>
+         </Unit_Ability>
+      </Unit_Abilities_Data>
+      <Lua_Script>ObjectScript_Jaffa_Helmet_Transformation</Lua_Script>
+      <Starting_Spawned_Units_Tech_0>Goauld_Field_Commander_Buff_Emitter, 1</Starting_Spawned_Units_Tech_0>
+   </GenericHeroUnit>
+
+   <GroundInfantry Name="Squad_R_Field_Commander_Guard">
+      <Variant_Of_Existing_Type>Squad_Rebel_Trooper</Variant_Of_Existing_Type>
+      <Encyclopedia_Good_Against>Underworld_Saboteur Rebel_Infiltrator Scavenger_Droid</Encyclopedia_Good_Against>
+      <Encyclopedia_Vulnerable_To>Underworld_Merc Tauri_F302_Land Empire_Anti_Infantry_Turret</Encyclopedia_Vulnerable_To>
+      <Land_Model_Name>Goauld_Land_Unit_Horus_Elite.ALO</Land_Model_Name>
+      <Land_Model_Anim_Override_Name>Goauld_Land_Unit_Horus_Elite.ALO</Land_Model_Anim_Override_Name>
+      <Tactical_Health>70</Tactical_Health>
+      <Score_Cost_Credits>250</Score_Cost_Credits>
+      <Targeting_Priority_Set>SG_Infantry_AntiKull</Targeting_Priority_Set>
+      <Projectile_Types>Proj_Goauld_Jaffa</Projectile_Types>
+      <Death_Clone>Damage_Hand_Device, Squad_R_Field_Commander_Guard_Hand_Device_Death_Clone</Death_Clone>
+      <SFXEvent_Select>Unit_Select_GFC</SFXEvent_Select>
+      <SFXEvent_Move>Unit_Move_GFC</SFXEvent_Move>
+      <SFXEvent_Fleet_Move>Unit_Move_GFC</SFXEvent_Fleet_Move>
+      <SFXEvent_Attack>Unit_Attack_GFC</SFXEvent_Attack>
+      <SFXEvent_Build_Complete>Unit_Spawn_GFC</SFXEvent_Build_Complete>
+      <SFXEvent_Hero_Respawned>Unit_Spawn_GFC</SFXEvent_Hero_Respawned>
+
+      <Unit_Abilities_Data SubObjectList="Yes">
+         <Unit_Ability>
+            <Type>POWER_TO_WEAPONS</Type>
+            <Alternate_Name_Text>TEXT_ABILITY_HELMET_UNFOLDING</Alternate_Name_Text>
+            <Alternate_Description_Text>TEXT_DESCRIPTION_ABILITY_UNFOLDING_JAFFA_MASTER_GROUND</Alternate_Description_Text>
+            <Alternate_Icon_Name>I_SA_HELMET_UNFOLD.TGA</Alternate_Icon_Name>
+            <Mod_Multiplier>WEAPON_DELAY_MULTIPLIER, 0.8</Mod_Multiplier>
+            <Mod_Multiplier>SPEED_MULTIPLIER, 0.5</Mod_Multiplier>
+            <Mod_Multiplier>CAUSE_DAMAGE_MULTIPLIER, 1.2</Mod_Multiplier>
+            <Mod_Multiplier>TAKE_DAMAGE_MULTIPLIER, 0.5f</Mod_Multiplier>
+            <Recharge_Seconds></Recharge_Seconds>
+            <SFXEvent_GUI_Unit_Ability_Activated>Unit_Apophis_Helmet</SFXEvent_GUI_Unit_Ability_Activated>
+            <SFXEvent_GUI_Unit_Ability_Deactivated>Unit_Apophis_Helmet</SFXEvent_GUI_Unit_Ability_Deactivated>
+            <Expiration_Seconds></Expiration_Seconds>
+         </Unit_Ability>
+      </Unit_Abilities_Data>
+      <Lua_Script>ObjectScript_Jaffa_Helmet_Transformation</Lua_Script>
+   </GroundInfantry>
+
+   <GroundInfantry Name="Squad_R_Field_Commander_Guard_Hand_Device_Death_Clone">
+      <Variant_Of_Existing_Type>Squad_R_Field_Commander_Guard</Variant_Of_Existing_Type>
+      <Specific_Death_Anim_Type>FW_DIE</Specific_Death_Anim_Type>
+   </GroundInfantry>
+
+   <HeroCompany Name="Field_Com_Rebel_Team_No_Prereq">
+      <Variant_Of_Existing_Type>Template_Ground_Company</Variant_Of_Existing_Type>
+      <Text_ID>TEXT_GOAULD_GROUND_UNIT_FIELD_COMMANDER</Text_ID>
+      <Encyclopedia_Text>TEXT_DESCRIPTION_GOAULD_FIELD_COMMANDER_GROUND</Encyclopedia_Text>
+      <Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_FIELD_COMMANDER</Encyclopedia_Unit_Class>
+      <Encyclopedia_Good_Against>Underworld_Saboteur Rebel_Infiltrator Scavenger_Droid</Encyclopedia_Good_Against>
+      <Encyclopedia_Vulnerable_To>Underworld_Merc Tauri_F302_Land Empire_Anti_Infantry_Turret</Encyclopedia_Vulnerable_To>
+      <Icon_Name>GOAULD_GROUND_UNIT_FIELD_COMMANDER.TGA</Icon_Name>
+      <Build_Cost_Credits>750</Build_Cost_Credits>
+      <Build_Time_Seconds>94</Build_Time_Seconds>
+      <Create_Team_Type>Rebel_Field_Commander_Team</Create_Team_Type>
+      <Company_Transport_Unit>Alliance_Shuttle</Company_Transport_Unit>
+      <Company_Units>Squad_Generic_Field_Commander_Rebel, Squad_R_Field_Commander_Guard, Squad_R_Field_Commander_Guard</Company_Units>
+      <Max_Squad_Size>3</Max_Squad_Size>
+      <Is_Homogeneous>No</Is_Homogeneous>
+      <Is_Generic_Hero>Yes</Is_Generic_Hero>
+      <Build_Tab_Heroes>Yes</Build_Tab_Heroes>
+      <CategoryMask>LandHero</CategoryMask>
+      <Score_Cost_Credits>500</Score_Cost_Credits>
+      <Tactical_Build_Cost_Multiplayer>1000</Tactical_Build_Cost_Multiplayer>
+      <Tactical_Build_Time_Seconds>11</Tactical_Build_Time_Seconds>
+      <Required_Ground_Base_Level>1</Required_Ground_Base_Level>
+      <Formation_Priority>1</Formation_Priority>
+      <Unit_Abilities_Data SubObjectList="Yes">
+         <Unit_Ability>
+            <Type>POWER_TO_WEAPONS</Type>
+            <Alternate_Name_Text>TEXT_ABILITY_HELMET_UNFOLDING</Alternate_Name_Text>
+            <Alternate_Description_Text>TEXT_DESCRIPTION_ABILITY_UNFOLDING_JAFFA_MASTER_GROUND</Alternate_Description_Text>
+            <Alternate_Icon_Name>I_SA_HELMET_UNFOLD.TGA</Alternate_Icon_Name>
+            <Mod_Multiplier>WEAPON_DELAY_MULTIPLIER, 0.8</Mod_Multiplier>
+            <Mod_Multiplier>SPEED_MULTIPLIER, 0.5</Mod_Multiplier>
+            <Mod_Multiplier>CAUSE_DAMAGE_MULTIPLIER, 1.2</Mod_Multiplier>
+            <Mod_Multiplier>TAKE_DAMAGE_MULTIPLIER, 0.5f</Mod_Multiplier>
+            <SFXEvent_GUI_Unit_Ability_Activated>Unit_Apophis_Helmet</SFXEvent_GUI_Unit_Ability_Activated>
+            <SFXEvent_GUI_Unit_Ability_Deactivated>Unit_Apophis_Helmet</SFXEvent_GUI_Unit_Ability_Deactivated>
+            <Recharge_Seconds></Recharge_Seconds>
+            <Expiration_Seconds></Expiration_Seconds>
+         </Unit_Ability>
+      </Unit_Abilities_Data>
+      <Abilities SubObjectList="Yes"></Abilities>
+   </HeroCompany>
+
+   <HeroCompany Name="Field_Com_Rebel_Team">
+      <Variant_Of_Existing_Type>Field_Com_Rebel_Team_No_Prereq</Variant_Of_Existing_Type>
+      <Affiliation>Rebel</Affiliation>
+      <Tech_Level>4</Tech_Level>
+      <Required_Timeline>0</Required_Timeline>
+      <Required_Ground_Base_Level>1</Required_Ground_Base_Level>
+      <Required_Star_Base_Level>0</Required_Star_Base_Level>
+      <Required_Special_Structures>R_Ground_Academy, R_Ground_Barracks</Required_Special_Structures>
+      <Required_Planets></Required_Planets>
+      <Tactical_Build_Prerequisites>RC_Level_Three_Tech_Upgrade</Tactical_Build_Prerequisites>
+   </HeroCompany>
+
+
+   <Container Name="Rebel_Field_Commander_Team">
+      <Variant_Of_Existing_Type>Template_Infantry_Container</Variant_Of_Existing_Type>
+      <Text_ID>TEXT_GOAULD_GROUND_UNIT_FIELD_COMMANDER</Text_ID>
+      <Encyclopedia_Text>TEXT_DESCRIPTION_GOAULD_FIELD_COMMANDER_GROUND</Encyclopedia_Text>
+      <Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_FIELD_COMMANDER</Encyclopedia_Unit_Class>
+      <Encyclopedia_Good_Against>Underworld_Saboteur Rebel_Infiltrator Scavenger_Droid</Encyclopedia_Good_Against>
+      <Encyclopedia_Vulnerable_To>Underworld_Merc Tauri_F302_Land Empire_Anti_Infantry_Turret</Encyclopedia_Vulnerable_To>
+      <Icon_Name>GOAULD_GROUND_UNIT_FIELD_COMMANDER.TGA</Icon_Name>
+      <FormationOrder>2</FormationOrder>
+      <FormationSpacing>1.3</FormationSpacing>
+      <Selection_Blob_Material_Name>Highlight_Rebel_Hero</Selection_Blob_Material_Name>
+      <Unit_Abilities_Data SubObjectList="Yes">
+         <Unit_Ability>
+            <Type>POWER_TO_WEAPONS</Type>
+            <Alternate_Name_Text>TEXT_ABILITY_HELMET_UNFOLDING</Alternate_Name_Text>
+            <Alternate_Description_Text>TEXT_DESCRIPTION_ABILITY_UNFOLDING_JAFFA_MASTER_GROUND</Alternate_Description_Text>
+            <Alternate_Icon_Name>I_SA_HELMET_UNFOLD.TGA</Alternate_Icon_Name>
+            <Mod_Multiplier>WEAPON_DELAY_MULTIPLIER, 0.3</Mod_Multiplier>
+            <Mod_Multiplier>SPEED_MULTIPLIER, 0.5</Mod_Multiplier>
+            <Mod_Multiplier>CAUSE_DAMAGE_MULTIPLIER, 1.0</Mod_Multiplier>
+            <Mod_Multiplier>TAKE_DAMAGE_MULTIPLIER, 0.5f</Mod_Multiplier>
+            <SFXEvent_GUI_Unit_Ability_Activated>Unit_Apophis_Helmet</SFXEvent_GUI_Unit_Ability_Activated>
+            <SFXEvent_GUI_Unit_Ability_Deactivated>Unit_Apophis_Helmet</SFXEvent_GUI_Unit_Ability_Deactivated>
+            <Recharge_Seconds></Recharge_Seconds>
+            <Expiration_Seconds></Expiration_Seconds>
+         </Unit_Ability>
+      </Unit_Abilities_Data>
+   </Container>
+
+
+   <MiscObject Name="Goauld_Field_Commander_Buff_Emitter">
+      <Land_Model_Name>W_LASER_INVISIBLE.ALO</Land_Model_Name>
+      <Is_Visible_On_Radar>No</Is_Visible_On_Radar>
+      <Space_Layer>Land</Space_Layer>
+      <UnitCollisionClass>Infantry</UnitCollisionClass>
+      <CanCellStack>yes</CanCellStack>
+      <Avoidance_Disabled>Yes</Avoidance_Disabled>
+      <Influences_Capture_Point> False </Influences_Capture_Point>
+      <Lua_Script>ObjectScript_Field_Commander</Lua_Script>
+   </MiscObject>
+
+   <Projectile Name="Proj_Goauld_Field_Commander">
+      <Variant_Of_Existing_Type>Proj_Goauld_Zat</Variant_Of_Existing_Type>
+      <Damage_Type>Damage_Anti_Infantry_Only</Damage_Type>
+      <Projectile_Damage>22.0</Projectile_Damage>
+   </Projectile>
+
+   <Projectile Name="Proj_Goauld_Field_Commander_Guard">
+      <Variant_Of_Existing_Type>Proj_Goauld_Jaffa</Variant_Of_Existing_Type>
+      <Damage_Type>Damage_Anti_Kull</Damage_Type>
+   </Projectile>
+
+
+   <Projectile Name="Proj_Goauld_Field_Commander_Bonus">
+      <Text_ID>TEXT_NONE</Text_ID>
+      <Land_Model_Name>W_LASER_INVISIBLE.ALO</Land_Model_Name>
+      <Scale_Factor>1.0</Scale_Factor>
+      <Max_Speed>15.0</Max_Speed>
+      <Max_Rate_Of_Turn>1</Max_Rate_Of_Turn>
+      <Behavior>PROJECTILE, HIDE_WHEN_FOGGED</Behavior>
+      <Projectile_Category>DEFAULT</Projectile_Category>
+      <Projectile_Ground_Detonation_SurfaceFX>Hover_No_Particles</Projectile_Ground_Detonation_SurfaceFX>
+
+      <Projectile_Max_Flight_Distance>10.0</Projectile_Max_Flight_Distance>
+      <Projectile_Max_Lifetime>5.0</Projectile_Max_Lifetime>
+      <Projectile_Damage>0.0</Projectile_Damage>
+      <Projectile_Blast_Area_Damage> 0 </Projectile_Blast_Area_Damage>
+      <Projectile_Blast_Area_Range> 5 </Projectile_Blast_Area_Range>
+      <Max_Secs_For_AE_Delayed_Damage>5</Max_Secs_For_AE_Delayed_Damage>
+      <Projectile_Does_Shield_Damage>No</Projectile_Does_Shield_Damage>
+      <Projectile_Does_Energy_Damage>No</Projectile_Does_Energy_Damage>
+      <Projectile_Does_Hitpoint_Damage>No</Projectile_Does_Hitpoint_Damage>
+      <Projectile_Energy_Per_Shot>0</Projectile_Energy_Per_Shot>
+      <Projectile_Object_Detonation_Particle/>
+      <Projectile_Ground_Detonation_Particle/>
+      <Projectile_Lifetime_Detonation_Particle/>
+      <AI_Combat_Power>40</AI_Combat_Power>
+
+      <Projectile_Combat_Mod>COMBAT_MOD_FIRE_RATE</Projectile_Combat_Mod>
+      <Projectile_Combat_Mod_Duration>5</Projectile_Combat_Mod_Duration>
+      <Projectile_Combat_Mod_Value>0.3</Projectile_Combat_Mod_Value>
+      <Projectile_Combat_Mod_Effect>Particle_Goauld_Commander_Buff</Projectile_Combat_Mod_Effect>
+      <Projectile_Combat_Mod_Category_Mask>Infantry | LandHero | Vehicle</Projectile_Combat_Mod_Category_Mask>
+   </Projectile>
+
+
+</Goauld_Jaffa_Infantry_Data>

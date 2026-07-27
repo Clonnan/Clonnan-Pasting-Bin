@@ -1,0 +1,647 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Space_Buildings_Ancient>
+
+
+
+    <SpecialStructure Name="Ancient_Large_Shipyard">
+	<Variant_Of_Existing_Type>Asuran_Large_Shipyard</Variant_Of_Existing_Type>
+    <Affiliation>Underworld</Affiliation>
+
+    <Text_ID>TEXT_ANCIENTS_SPACE_BUILDING_LARGE_SHIPYARD</Text_ID>
+    <Encyclopedia_Text>TEXT_DESCRIPTION_ANCIENTS_LARGE_SHIPYARD_SPACE</Encyclopedia_Text>
+    <Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_GOAULD_HEAVY_SHIPYARD</Encyclopedia_Unit_Class>
+
+    <Required_Planets />
+	<Tech_Level>99</Tech_Level>
+
+    <Tactical_Buildable_Objects_Multiplayer />
+
+    <Is_Community_Property>Yes</Is_Community_Property>
+	
+    <Starting_Spawned_Units_Tech_0>Ancient_Jumper_Squadron, 2</Starting_Spawned_Units_Tech_0>
+    <Reserve_Spawned_Units_Tech_0>Ancient_Jumper_Squadron, -1</Reserve_Spawned_Units_Tech_0>
+    <Spawned_Squadron_Delay_Seconds>10</Spawned_Squadron_Delay_Seconds>
+	<Spawned_Squadron_Location_Bones>ROOT</Spawned_Squadron_Location_Bones>
+
+    <Death_Clone>Damage_Normal, Ancient_Large_Shipyard_Death_Clone</Death_Clone>
+  
+  </SpecialStructure>
+  
+  <SpecialStructure Name="Ancient_Large_Shipyard_Death_Clone">
+    <Text_ID>TEXT_ANCIENTS_SPACE_BUILDING_LARGE_SHIPYARD</Text_ID>
+    <Space_Model_Name>Ancient_Space_Building_Large_Shipyard_D.alo</Space_Model_Name>
+    <Death_SFXEvent_Start_Die>Unit_Generic_Building_Death_SFX</Death_SFXEvent_Start_Die>
+    <Death_Explosions>Large_Explosion_Space_Empire</Death_Explosions>
+	<Scale_Factor>1</Scale_Factor>
+    <Layer_Z_Adjust>-330.0</Layer_Z_Adjust>
+    <CategoryMask> Capital </CategoryMask>
+    <Death_Persistence_Duration> 34 </Death_Persistence_Duration>
+    <Should_Death_Clone_Play_Idle> true </Should_Death_Clone_Play_Idle>
+  </SpecialStructure>
+
+
+    <!--==== Formerly known as "Starbase Level 6" ====-->
+    <SpecialStructure Name="Ancient_Headquarters">
+        <Text_ID>TEXT_ANCIENTS_SPACE_BUILDING_HEADQUARTERS</Text_ID>
+        <Encyclopedia_Text>TEXT_DESCRIPTION_ANCIENTS_GC_HEADQUARTERS</Encyclopedia_Text>
+        <Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_TAURI_STATION_TECH_5</Encyclopedia_Unit_Class>
+        <Space_Model_Name>Ancient_Space_Building_Headquarters.alo</Space_Model_Name>
+        <Galactic_Model_Name>Ancient_Space_Building_Headquarters_Galactic.ALO</Galactic_Model_Name>
+        <Damage>95</Damage>
+        <Scale_Factor>1.0</Scale_Factor>
+        <Layer_Z_Adjust>0.0</Layer_Z_Adjust>
+        <Select_Box_Scale>1260</Select_Box_Scale>
+        <Select_Box_Z_Adjust>-20</Select_Box_Z_Adjust>
+        <Icon_Name>ANCIENT_SPACE_BUILDING_STATION_T6.TGA</Icon_Name>
+        <Radar_Icon_Name>I_RADAR_STATION6_A.TGA</Radar_Icon_Name>
+        <Radar_Icon_Size>0.12  0.12</Radar_Icon_Size>
+        <Is_Visible_On_Radar>Yes</Is_Visible_On_Radar>
+        <Visible_On_Radar_When_Fogged>true</Visible_On_Radar_When_Fogged>
+        <GUI_Row>0</GUI_Row>
+        <!--===== Power Values =====-->
+        <Tactical_Health>15500</Tactical_Health>
+        <Shield_Points>12000</Shield_Points>
+        <Shield_Refresh_Rate>100</Shield_Refresh_Rate>
+        <Energy_Capacity>10000</Energy_Capacity>
+        <Energy_Refresh_Rate>1000</Energy_Refresh_Rate>
+        <AI_Combat_Power>24000</AI_Combat_Power>
+        <Armor_Type> Armor_Station </Armor_Type>
+        <Shield_Armor_Type>Armor_Station</Shield_Armor_Type>
+        <CategoryMask> Capital </CategoryMask>
+        <Targeting_Priority_Set>Capital</Targeting_Priority_Set>
+        <GUI_Bracket_Size>2</GUI_Bracket_Size>
+        <GUI_Bounds_Scale>0.5</GUI_Bounds_Scale>
+        <Base_Position>Orbital</Base_Position>
+        <Additional_Population_Capacity>40</Additional_Population_Capacity>
+        <!--===== Build Dependencies =====-->
+        <Affiliation>Underworld</Affiliation>
+        <!--Build_Tab_Space_Station>No</Build_Tab_Space_Station-->
+        <Build_Tab_Special_Structures>No</Build_Tab_Special_Structures>
+        <Build_Initially_Locked>No</Build_Initially_Locked>
+        <Build_Can_Be_Unlocked_By_Slicer>Yes</Build_Can_Be_Unlocked_By_Slicer>
+        <Build_Cost_Credits>10000</Build_Cost_Credits>
+        <Build_Time_Seconds>300</Build_Time_Seconds>
+        <Build_Limit_Lifetime_Per_Player>1</Build_Limit_Lifetime_Per_Player>
+        <Tech_Level>99</Tech_Level>
+        <Base_Level>99</Base_Level>
+        <Prev_Level_Base />
+        <Required_Special_Structures />
+        <Next_Level_Base />
+        <Required_Ground_Base_Level>0</Required_Ground_Base_Level>
+        <Required_Star_Base_Level>5</Required_Star_Base_Level>
+        <Required_Planets>
+      Pegasus_Prelude_Planet_Taranis, Pegasus_Prelude_Planet_Athos
+        </Required_Planets>
+        <Behavior>DUMMY_ORBITAL_STRUCTURE, SELECTABLE</Behavior>
+        <SpaceBehavior> SPACE_OBSTACLE, ABILITY_COUNTDOWN, POWERED, SHIELDED, SPAWN_SQUADRON, HIDE_WHEN_FOGGED, REVEAL, UNIT_AI, ION_STUN_EFFECT</SpaceBehavior>
+        <Reinforcement_Prevention_Radius> 2900 </Reinforcement_Prevention_Radius>
+        <Targeting_Max_Attack_Distance>3000.0</Targeting_Max_Attack_Distance>
+        <Dense_FOW_Reveal_Range_Multiplier>0.2</Dense_FOW_Reveal_Range_Multiplier>
+        <Space_FOW_Reveal_Range>3000.0</Space_FOW_Reveal_Range>
+        <Death_Explosions>Huge_Explosion_Space</Death_Explosions>
+        <!-- Set to contuously spawn until fighter bay hard point is destroyed -->
+        <Spawned_Squadron_Delay_Seconds>10</Spawned_Squadron_Delay_Seconds>
+        <Tactical_Buildable_Objects_Campaign>
+        </Tactical_Buildable_Objects_Campaign>
+        <HardPoints>
+      HP_Ancient_Station_Shield_00,
+	  HP_Ancient_Station_Supply_Dock_Dummy,
+      HP_Ancient_Station_Drone_Tank_Heavy_02,
+	  HP_Ancient_Station_Drone_Tank_Heavy_03, 
+	  HP_Ancient_Station_Drone_Tank_Medium_04,  
+	  HP_Ancient_Station_Hangar_08,  
+      HP_Ancient_Station_Large_Laser_10,
+	  HP_Ancient_Station_Large_Laser_11, 
+	  HP_Ancient_Station_Large_Laser_12, 
+      HP_Ancient_Station_Small_Drone_Tank_16, 
+	  HP_Ancient_Station_Small_Drone_Tank_17, 
+	  HP_Ancient_Station_Small_Drone_Tank_18, 
+      HP_Ancient_Station_Sensor_Dummy_26, 
+	  HP_Ancient_Station_Superlaser,
+    
+                        <!-- Level 5 Extra Hexagon Hardpoints --> 
+      HP_Ancient_Station_Drone_Tank_Medium_A1, HP_Ancient_Station_Drone_Tank_Medium_A2, HP_Ancient_Station_Drone_Tank_Medium_A3,
+      HP_Ancient_Station_Large_Laser_A4, HP_Ancient_Station_Large_Laser_A5,
+      
+      HP_Ancient_Station_Drone_Tank_Medium_B1, HP_Ancient_Station_Drone_Tank_Medium_B2, HP_Ancient_Station_Drone_Tank_Medium_B3,
+      HP_Ancient_Station_Large_Laser_B4, HP_Ancient_Station_Large_Laser_B5,
+      
+      HP_Ancient_Station_Drone_Tank_Medium_C1, HP_Ancient_Station_Drone_Tank_Medium_C2, HP_Ancient_Station_Drone_Tank_Medium_C3,
+      HP_Ancient_Station_Large_Laser_C4, HP_Ancient_Station_Large_Laser_C5 
+        </HardPoints>
+        <Death_Clone>Damage_Normal, Ancient_Headquarters_Death_Clone</Death_Clone>
+        <Space_Layer> StaticObject </Space_Layer>
+        <Space_Obstacle_Offset> 0 0 0 </Space_Obstacle_Offset>
+        <Is_Dummy>No</Is_Dummy>
+        <Multisample_FOW_Check>Yes</Multisample_FOW_Check>
+        <Collidable_By_Projectile_Living>Yes</Collidable_By_Projectile_Living>
+        <Has_Space_Evaluator>True</Has_Space_Evaluator>
+        <Custom_Soft_Footprint_Radius> 400 </Custom_Soft_Footprint_Radius>
+        <Score_Cost_Credits> 1500</Score_Cost_Credits>
+        <Victory_Relevant>yes</Victory_Relevant>
+        <Retreat_Self_Destruct_Explosion>Self_Destruct_Star_Base_Level_5_Rebel</Retreat_Self_Destruct_Explosion>
+
+        <SFXEvent_Select>Unit_Select_Trebal</SFXEvent_Select>
+        <SFXEvent_Move_Into_Nebula></SFXEvent_Move_Into_Nebula>
+        <SFXEvent_Fleet_Move>Unit_Move_Trebal</SFXEvent_Fleet_Move>
+        <SFXEvent_Attack>Unit_Attack_Trebal</SFXEvent_Attack>
+        <SFXEvent_Guard>Unit_Move_Trebal</SFXEvent_Guard>
+        <SFXEvent_Stop></SFXEvent_Stop>
+        <SFXEvent_Health_Critical_Warning></SFXEvent_Health_Critical_Warning>
+        <SFXEvent_Health_Low_Warning></SFXEvent_Health_Low_Warning>
+        <SFXEvent_Build_Complete></SFXEvent_Build_Complete>
+        <Death_SFXEvent_Start_Die></Death_SFXEvent_Start_Die>
+        <SFXEvent_Ambient_Loop>Engine_Ancient_Low</SFXEvent_Ambient_Loop>
+        <Death_SFXEvent_Start_Die>Explosion_Aurora_Class</Death_SFXEvent_Start_Die>
+    </SpecialStructure>
+
+    <StarBase Name="Ancient_Headquarters_Death_Clone">
+        <Text_ID>TEXT_ANCIENTS_SPACE_BUILDING_HEADQUARTERS</Text_ID>
+        <Space_Model_Name>Ancient_Space_Building_Headquarters_D.alo</Space_Model_Name>
+        <Death_SFXEvent_Start_Die>Unit_Star_Destroyer_Death_SFX</Death_SFXEvent_Start_Die>
+        <Layer_Z_Adjust>0.0</Layer_Z_Adjust>
+        <CategoryMask> Capital </CategoryMask>
+        <Death_Persistence_Duration>0</Death_Persistence_Duration>
+        <Should_Death_Clone_Play_Idle> true </Should_Death_Clone_Play_Idle>
+    </StarBase>
+
+
+    <!--=========================== Fortess Starbases =============================-->
+    <SpecialStructure Name="Ancient_Fortess_Base">
+        <Text_ID>TEXT_ASURANS_SPACE_BUILDING_FORTRESS</Text_ID>
+        <Encyclopedia_Text>TEXT_DESCRIPTION_ASURANS_FORTRESS_SPACE</Encyclopedia_Text>
+        <Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_ASCHEN_SPACE_STATION</Encyclopedia_Unit_Class>
+        <Space_Model_Name>Ancient_Space_Building_Fortress_Tech_1.alo</Space_Model_Name>
+        <Galactic_Model_Name>Ancient_Space_Building_Fortress_Tech1_Galactic.ALO</Galactic_Model_Name>
+        <Scale_Factor>1.0</Scale_Factor>
+        <Damage>45</Damage>
+        <Layer_Z_Adjust>0.0</Layer_Z_Adjust>
+        <Tactical_Build_Start_Lower_Z> -200.0 </Tactical_Build_Start_Lower_Z>
+        <Select_Box_Scale>800</Select_Box_Scale>
+        <Select_Box_Z_Adjust>-20</Select_Box_Z_Adjust>
+        <Icon_Name>ANCIENT_SPACE_BUILDING_FORTRESS_T1.TGA</Icon_Name>
+        <Radar_Icon_Name></Radar_Icon_Name>
+        <Radar_Icon_Size>0.08  0.08</Radar_Icon_Size>
+        <Is_Visible_On_Radar>Yes</Is_Visible_On_Radar>
+        <Visible_On_Radar_When_Fogged>true</Visible_On_Radar_When_Fogged>
+        <GUI_Row>0</GUI_Row>
+        <!--===== Power Values =====-->
+        <Tactical_Health>6000</Tactical_Health>
+        <Shield_Points>5000</Shield_Points>
+        <Shield_Refresh_Rate>100</Shield_Refresh_Rate>
+        <Energy_Capacity>10000</Energy_Capacity>
+        <Energy_Refresh_Rate>1000</Energy_Refresh_Rate>
+        <AI_Combat_Power>24000</AI_Combat_Power>
+        <Armor_Type> Armor_Station </Armor_Type>
+        <Shield_Armor_Type>Armor_Station</Shield_Armor_Type>
+        <Base_Position>Orbital</Base_Position>
+        <CategoryMask> Capital </CategoryMask>
+        <Targeting_Priority_Set>Capital</Targeting_Priority_Set>
+        <!--===== Need Ship Class in order to increase size of Healthbar =====-->
+        <Ship_Class>Capital</Ship_Class>
+        <Additional_Population_Capacity>40</Additional_Population_Capacity>
+        <!--===== Build Dependencies =====-->
+        <Affiliation>Asuran</Affiliation>
+        <!--Build_Tab_Space_Station>No</Build_Tab_Space_Station-->
+        <Build_Tab_Special_Structures>No</Build_Tab_Special_Structures>
+        <Build_Initially_Locked>No</Build_Initially_Locked>
+        <Build_Can_Be_Unlocked_By_Slicer>Yes</Build_Can_Be_Unlocked_By_Slicer>
+        <Build_Cost_Credits>3000</Build_Cost_Credits>
+        <Build_Time_Seconds>30</Build_Time_Seconds>
+        <Tactical_Build_Cost_Campaign>300</Tactical_Build_Cost_Campaign>
+        <Tactical_Build_Time_Seconds>20</Tactical_Build_Time_Seconds>
+        <Tech_Level>99</Tech_Level>
+        <Base_Level>99</Base_Level>
+        <Required_Special_Structures/>
+        <Build_Max_Instances_Per_Planet>1</Build_Max_Instances_Per_Planet>
+        <!--=== Caution: Limited to 1 so it cant be built after despawn upgrade to next stage -->
+        <Build_Limit_Lifetime_Per_Player>1</Build_Limit_Lifetime_Per_Player>
+        <Required_Planets> 
+      Pegasus_Prelude_Planet_Asuras
+        </Required_Planets>
+        <Behavior>DUMMY_ORBITAL_STRUCTURE, SELECTABLE</Behavior>
+        <SpaceBehavior>DUMMY_STAR_BASE, SPACE_OBSTACLE, ABILITY_COUNTDOWN, POWERED, SHIELDED, SPAWN_SQUADRON, HIDE_WHEN_FOGGED, REVEAL, UNIT_AI, ION_STUN_EFFECT</SpaceBehavior>
+        <Reinforcement_Prevention_Radius> 2900 </Reinforcement_Prevention_Radius>
+        <Targeting_Max_Attack_Distance>3000.0</Targeting_Max_Attack_Distance>
+        <Dense_FOW_Reveal_Range_Multiplier>0.2</Dense_FOW_Reveal_Range_Multiplier>
+        <Space_FOW_Reveal_Range>3000.0</Space_FOW_Reveal_Range>
+        <Death_Explosions>Huge_Explosion_Space</Death_Explosions>
+        <!-- Set to contuously spawn until fighter bay hard point is destroyed -->
+        <Starting_Spawned_Units_Tech_0></Starting_Spawned_Units_Tech_0>
+        <Reserve_Spawned_Units_Tech_0></Reserve_Spawned_Units_Tech_0>
+        <Spawned_Squadron_Delay_Seconds>10</Spawned_Squadron_Delay_Seconds>
+        <Tactical_Buildable_Objects_Campaign>
+        </Tactical_Buildable_Objects_Campaign>
+        <Tactical_Buildable_Objects_Multiplayer>
+        </Tactical_Buildable_Objects_Multiplayer>
+        <HardPoints>
+      HP_Ancient_Station_Shield_00, 
+	  HP_Ancient_Station_Supply_Dock_Dummy,
+      HP_Ancient_Station_Drone_Tank_Heavy_02, 
+	  HP_Ancient_Station_Drone_Tank_Heavy_03, 
+	  HP_Ancient_Station_Drone_Tank_Medium_04,  
+      HP_Ancient_Station_Large_Laser_10, 
+	  HP_Ancient_Station_Large_Laser_12, 
+      HP_Ancient_Station_Small_Drone_Tank_16, 
+	  HP_Ancient_Station_Small_Drone_Tank_17, 
+	  HP_Ancient_Station_Small_Drone_Tank_18
+        </HardPoints>
+        <Space_Layer> StaticObject </Space_Layer>
+        <Space_Obstacle_Offset> 0 0 0 </Space_Obstacle_Offset>
+        <Is_Dummy>No</Is_Dummy>
+        <Multisample_FOW_Check>Yes</Multisample_FOW_Check>
+        <Collidable_By_Projectile_Living>Yes</Collidable_By_Projectile_Living>
+        <Has_Space_Evaluator>True</Has_Space_Evaluator>
+        <Custom_Soft_Footprint_Radius> 400 </Custom_Soft_Footprint_Radius>
+        <Score_Cost_Credits> 1500</Score_Cost_Credits>
+        <Victory_Relevant>yes</Victory_Relevant>
+        <Retreat_Self_Destruct_Explosion>Self_Destruct_Star_Base_Level_5_Rebel</Retreat_Self_Destruct_Explosion>
+
+        <SFXEvent_Select>Unit_Select_Trebal</SFXEvent_Select>
+        <SFXEvent_Move_Into_Nebula></SFXEvent_Move_Into_Nebula>
+        <SFXEvent_Fleet_Move>Unit_Move_Trebal</SFXEvent_Fleet_Move>
+        <SFXEvent_Attack>Unit_Attack_Trebal</SFXEvent_Attack>
+        <SFXEvent_Guard>Unit_Move_Trebal</SFXEvent_Guard>
+        <SFXEvent_Stop></SFXEvent_Stop>
+        <SFXEvent_Health_Critical_Warning></SFXEvent_Health_Critical_Warning>
+        <SFXEvent_Health_Low_Warning></SFXEvent_Health_Low_Warning>
+        <SFXEvent_Build_Complete></SFXEvent_Build_Complete>
+        <Death_SFXEvent_Start_Die></Death_SFXEvent_Start_Die>
+        <SFXEvent_Ambient_Loop>Engine_Ancient_Low</SFXEvent_Ambient_Loop>
+        <Death_SFXEvent_Start_Die>Explosion_Aurora_Class</Death_SFXEvent_Start_Die>
+    </SpecialStructure>
+
+
+    <!-- ==== Base Version isnt allowed to have Death clone, or its variant children will use it ==== -->
+    <SpecialStructure Name="Ancient_Fortess_1">
+        <Variant_Of_Existing_Type>Ancient_Fortess_Base</Variant_Of_Existing_Type>
+        <Damage>45</Damage>
+        <Build_Tab_Special_Structures>Yes</Build_Tab_Special_Structures>
+        <Required_Star_Base_Level>1</Required_Star_Base_Level>
+        <Death_Clone>Damage_Normal, Ancient_Fortess_1_Death_Clone</Death_Clone>
+    </SpecialStructure>
+
+
+    <SpecialStructure Name="Ancient_Fortess_1_Death_Clone">
+        <Text_ID>TEXT_REBEL_STAR_BASE_1</Text_ID>
+        <Space_Model_Name>Ancient_Space_Building_Fortess_Tech_1_D.alo</Space_Model_Name>
+        <Death_SFXEvent_Start_Die>Unit_Star_Destroyer_Death_SFX</Death_SFXEvent_Start_Die>
+        <Layer_Z_Adjust>0.0</Layer_Z_Adjust>
+        <CategoryMask> Capital </CategoryMask>
+        <Death_Persistence_Duration>0</Death_Persistence_Duration>
+        <Should_Death_Clone_Play_Idle> true </Should_Death_Clone_Play_Idle>
+    </SpecialStructure>
+
+
+    <SpecialStructure Name="Ancient_Fortess_2">
+        <Variant_Of_Existing_Type>Ancient_Fortess_Base</Variant_Of_Existing_Type>
+        <Text_ID>TEXT_ASURANS_SPACE_BUILDING_FORTRESS</Text_ID>
+        <Encyclopedia_Text>TEXT_DESCRIPTION_ASURANS_FORTRESS_SPACE</Encyclopedia_Text>
+        <Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_ASCHEN_SPACE_STATION</Encyclopedia_Unit_Class>
+        <Icon_Name>ANCIENT_SPACE_BUILDING_FORTRESS_T2.TGA</Icon_Name>
+        <Radar_Icon_Name></Radar_Icon_Name>
+        <Radar_Icon_Size>0.08  0.08</Radar_Icon_Size>
+        <Space_Model_Name>Ancient_Space_Building_Fortress_Tech_2.alo</Space_Model_Name>
+        <Galactic_Model_Name>Ancient_Space_Building_Fortress_Tech2_Galactic.ALO</Galactic_Model_Name>
+        <Damage>55</Damage>
+        <Layer_Z_Adjust>0.0</Layer_Z_Adjust>
+        <Build_Cost_Credits>5000</Build_Cost_Credits>
+        <Build_Time_Seconds>100</Build_Time_Seconds>
+        <Required_Planets>Pegasus_Prelude_Planet_Asuras</Required_Planets>
+        <!-- === Not 0 because you cant build anything without Starbase, also if the Starbase falls this space Building is gone either === -->
+        <Required_Star_Base_Level>1</Required_Star_Base_Level>
+        <Build_Limit_Lifetime_Per_Player>1</Build_Limit_Lifetime_Per_Player>
+        <Tactical_Buildable_Objects_Campaign>
+        </Tactical_Buildable_Objects_Campaign>
+        <Tactical_Buildable_Objects_Multiplayer>
+        </Tactical_Buildable_Objects_Multiplayer>
+        <Tactical_Build_Cost_Campaign>10</Tactical_Build_Cost_Campaign>
+        <Tactical_Build_Time_Seconds>10</Tactical_Build_Time_Seconds>
+        <Tactical_Buildable_Constructed>Tauri_Defense_Satellite_Railgun</Tactical_Buildable_Constructed>
+
+        <Required_Special_Structures>Ancient_Fortess_1</Required_Special_Structures>
+        <Build_Tab_Space_Station>No</Build_Tab_Space_Station>
+        <Build_Tab_Special_Structures>Yes</Build_Tab_Special_Structures>
+        <Build_Max_Instances_Per_Planet>1</Build_Max_Instances_Per_Planet>
+        <CategoryMask> Structure </CategoryMask>
+        <Base_Position>Orbital</Base_Position>
+        <Tactical_Build_Start_Lower_Z> -200.0 </Tactical_Build_Start_Lower_Z>
+
+        <!--===== Power Values =====-->
+        <Tactical_Health>10000</Tactical_Health>
+        <AI_Combat_Power>10000</AI_Combat_Power>
+        <Death_Clone>Damage_Normal, Ancient_Fortess_2_Death_Clone</Death_Clone>
+
+        <HardPoints>
+      HP_Ancient_Station_Shield_00, 
+	  HP_Ancient_Station_Supply_Dock_Dummy,
+      HP_Ancient_Station_Drone_Tank_Heavy_02, 
+	  HP_Ancient_Station_Drone_Tank_Heavy_03, 
+	  HP_Ancient_Station_Drone_Tank_Medium_04,  
+      HP_Ancient_Station_Hangar_07, 
+      HP_Ancient_Station_Large_Laser_10, 
+	  HP_Ancient_Station_Large_Laser_12, 
+      HP_Ancient_Station_Small_Drone_Tank_16, 
+	  HP_Ancient_Station_Small_Drone_Tank_17, 
+	  HP_Ancient_Station_Small_Drone_Tank_18, 
+   
+                        <!-- Level 5 Extra Hexagon Hardpoints --> 
+      HP_Ancient_Station_Drone_Tank_Medium_A1, HP_Ancient_Station_Drone_Tank_Medium_A2, HP_Ancient_Station_Drone_Tank_Medium_A3,
+      HP_Ancient_Station_Large_Laser_A4, HP_Ancient_Station_Large_Laser_A5
+        </HardPoints>
+    </SpecialStructure>
+
+    <SpecialStructure Name="Ancient_Fortess_2_Death_Clone">
+        <Text_ID>TEXT_REBEL_STAR_BASE_2</Text_ID>
+        <Space_Model_Name>Ancient_Space_Building_Fortess_Tech_2_D.alo</Space_Model_Name>
+        <Death_SFXEvent_Start_Die>Unit_Star_Destroyer_Death_SFX</Death_SFXEvent_Start_Die>
+        <Layer_Z_Adjust>0.0</Layer_Z_Adjust>
+        <CategoryMask> Capital </CategoryMask>
+        <Death_Persistence_Duration>0</Death_Persistence_Duration>
+        <Should_Death_Clone_Play_Idle> true </Should_Death_Clone_Play_Idle>
+    </SpecialStructure>
+
+
+    <SpecialStructure Name="Ancient_Fortess_3">
+        <Variant_Of_Existing_Type>Ancient_Fortess_Base</Variant_Of_Existing_Type>
+        <Text_ID>TEXT_ASURANS_SPACE_BUILDING_FORTRESS</Text_ID>
+        <Encyclopedia_Text>TEXT_DESCRIPTION_ASURANS_FORTRESS_SPACE</Encyclopedia_Text>
+        <Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_ASCHEN_SPACE_STATION</Encyclopedia_Unit_Class>
+        <Icon_Name>ANCIENT_SPACE_BUILDING_FORTRESS_T3.TGA</Icon_Name>
+        <Radar_Icon_Name></Radar_Icon_Name>
+        <Radar_Icon_Size>0.08  0.08</Radar_Icon_Size>
+        <Space_Model_Name>Ancient_Space_Building_Fortress_Tech_3.alo</Space_Model_Name>
+        <Galactic_Model_Name>Ancient_Space_Building_Fortress_Tech3_Galactic.ALO</Galactic_Model_Name>
+        <Damage>65</Damage>
+        <Layer_Z_Adjust>0.0</Layer_Z_Adjust>
+        <Build_Cost_Credits>7000</Build_Cost_Credits>
+        <Build_Time_Seconds>160</Build_Time_Seconds>
+        <Required_Planets>Pegasus_Prelude_Planet_Asuras</Required_Planets>
+        <!-- === Not 0 because you cant build anything without Starbase === -->
+        <Required_Star_Base_Level>1</Required_Star_Base_Level>
+        <Build_Limit_Lifetime_Per_Player>1</Build_Limit_Lifetime_Per_Player>
+
+        <Tactical_Buildable_Objects_Campaign>
+        </Tactical_Buildable_Objects_Campaign>
+        <Tactical_Buildable_Objects_Multiplayer>
+        </Tactical_Buildable_Objects_Multiplayer>
+
+        <Tactical_Build_Cost_Campaign>10</Tactical_Build_Cost_Campaign>
+        <Tactical_Build_Time_Seconds>10</Tactical_Build_Time_Seconds>
+        <Tactical_Buildable_Constructed>Tauri_Defense_Satellite_Railgun</Tactical_Buildable_Constructed>
+        <Required_Special_Structures>Ancient_Fortess_2</Required_Special_Structures>
+        <Build_Tab_Space_Station>No</Build_Tab_Space_Station>
+        <Build_Tab_Special_Structures>Yes</Build_Tab_Special_Structures>
+        <Build_Max_Instances_Per_Planet>1</Build_Max_Instances_Per_Planet>
+        <CategoryMask> Structure </CategoryMask>
+        <Base_Position>Orbital</Base_Position>
+        <Tactical_Build_Start_Lower_Z> -200.0 </Tactical_Build_Start_Lower_Z>
+        <Death_Clone>Damage_Normal, Ancient_Fortess_3_Death_Clone</Death_Clone>
+
+        <!--===== Power Values =====-->
+        <Tactical_Health>20000</Tactical_Health>
+        <AI_Combat_Power>15000</AI_Combat_Power>
+
+        <HardPoints>
+      HP_Ancient_Station_Shield_00, 
+	  HP_Ancient_Station_Supply_Dock_Dummy,
+      HP_Ancient_Station_Drone_Tank_Heavy_02, 
+	  HP_Ancient_Station_Drone_Tank_Heavy_03, 
+	  HP_Ancient_Station_Drone_Tank_Medium_04,  
+      HP_Ancient_Station_Hangar_07, 
+	  HP_Ancient_Station_Hangar_08,       
+      HP_Ancient_Station_Large_Laser_10, 
+	  HP_Ancient_Station_Large_Laser_12, 
+      HP_Ancient_Station_Small_Drone_Tank_16, 
+	  HP_Ancient_Station_Small_Drone_Tank_17, 
+	  HP_Ancient_Station_Small_Drone_Tank_18, 
+   
+                        <!-- Level 5 Extra Hexagon Hardpoints --> 
+      HP_Ancient_Station_Drone_Tank_Medium_A1, HP_Ancient_Station_Drone_Tank_Medium_A2, HP_Ancient_Station_Drone_Tank_Medium_A3,
+      HP_Ancient_Station_Large_Laser_A4, HP_Ancient_Station_Large_Laser_A5,
+      
+      HP_Ancient_Station_Drone_Tank_Medium_B1, HP_Ancient_Station_Drone_Tank_Medium_B2, HP_Ancient_Station_Drone_Tank_Medium_B3,
+      HP_Ancient_Station_Large_Laser_B4, HP_Ancient_Station_Large_Laser_B5
+        </HardPoints>
+    </SpecialStructure>
+
+    <SpecialStructure Name="Ancient_Fortess_3_Death_Clone">
+        <Text_ID>TEXT_REBEL_STAR_BASE_3</Text_ID>
+        <Space_Model_Name>Ancient_Space_Building_Fortess_Tech_3_D.alo</Space_Model_Name>
+        <Death_SFXEvent_Start_Die>Unit_Star_Destroyer_Death_SFX</Death_SFXEvent_Start_Die>
+        <Layer_Z_Adjust>0.0</Layer_Z_Adjust>
+        <CategoryMask> Capital </CategoryMask>
+        <Death_Persistence_Duration>0</Death_Persistence_Duration>
+        <Should_Death_Clone_Play_Idle> true </Should_Death_Clone_Play_Idle>
+    </SpecialStructure>
+
+
+    <SpecialStructure Name="Ancient_Fortess_4">
+        <Variant_Of_Existing_Type>Ancient_Fortess_Base</Variant_Of_Existing_Type>
+        <Text_ID>TEXT_ASURANS_SPACE_BUILDING_FORTRESS</Text_ID>
+        <Encyclopedia_Text>TEXT_DESCRIPTION_ASURANS_FORTRESS_SPACE</Encyclopedia_Text>
+        <Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_ASCHEN_SPACE_STATION</Encyclopedia_Unit_Class>
+        <Icon_Name>ANCIENT_SPACE_BUILDING_FORTRESS_T4.TGA</Icon_Name>
+        <Radar_Icon_Name></Radar_Icon_Name>
+        <Radar_Icon_Size>0.08  0.08</Radar_Icon_Size>
+        <Space_Model_Name>Ancient_Space_Building_Fortress_Tech_4.alo</Space_Model_Name>
+        <Galactic_Model_Name>Ancient_Space_Building_Fortress_Tech4_Galactic.ALO</Galactic_Model_Name>
+        <Damage>75</Damage>
+        <Layer_Z_Adjust>0.0</Layer_Z_Adjust>
+        <Build_Cost_Credits>10000</Build_Cost_Credits>
+        <Build_Time_Seconds>300</Build_Time_Seconds>
+        <Required_Planets>Pegasus_Prelude_Planet_Asuras</Required_Planets>
+        <!-- === Not 0 because you cant build anything without Starbase === -->
+        <Required_Star_Base_Level>1</Required_Star_Base_Level>
+        <Build_Limit_Lifetime_Per_Player>1</Build_Limit_Lifetime_Per_Player>
+
+        <Tactical_Buildable_Objects_Campaign>
+        </Tactical_Buildable_Objects_Campaign>
+        <Tactical_Buildable_Objects_Multiplayer>
+        </Tactical_Buildable_Objects_Multiplayer>
+
+        <Tactical_Build_Cost_Campaign>10</Tactical_Build_Cost_Campaign>
+        <Tactical_Build_Time_Seconds>10</Tactical_Build_Time_Seconds>
+        <Tactical_Buildable_Constructed>Tauri_Defense_Satellite_Railgun</Tactical_Buildable_Constructed>
+        <Required_Special_Structures>Ancient_Fortess_3</Required_Special_Structures>
+        <Build_Tab_Space_Station>No</Build_Tab_Space_Station>
+        <Build_Tab_Special_Structures>Yes</Build_Tab_Special_Structures>
+        <Build_Max_Instances_Per_Planet>1</Build_Max_Instances_Per_Planet>
+        <CategoryMask> Structure </CategoryMask>
+        <Base_Position>Orbital</Base_Position>
+        <Tactical_Build_Start_Lower_Z> -200.0 </Tactical_Build_Start_Lower_Z>
+
+        <!--===== Power Values =====-->
+        <Tactical_Health>22500</Tactical_Health>
+        <AI_Combat_Power>30000</AI_Combat_Power>
+        <Death_Clone>Damage_Normal, Ancient_Fortess_4_Death_Clone</Death_Clone>
+
+        <HardPoints>
+      HP_Ancient_Station_Shield_00, 
+	  HP_Ancient_Station_Supply_Dock_Dummy,
+      HP_Ancient_Station_Drone_Tank_Heavy_02, 
+	  HP_Ancient_Station_Drone_Tank_Heavy_03, 
+	  HP_Ancient_Station_Drone_Tank_Medium_04,  
+      HP_Ancient_Station_Hangar_07, 
+	  HP_Ancient_Station_Hangar_08, 
+	  HP_Ancient_Station_Hangar_09,      
+      HP_Ancient_Station_Large_Laser_10, 
+	  HP_Ancient_Station_Large_Laser_12, 
+      HP_Ancient_Station_Small_Drone_Tank_16, 
+	  HP_Ancient_Station_Small_Drone_Tank_17, 
+	  HP_Ancient_Station_Small_Drone_Tank_18, 
+	  HP_Ancient_Station_Superlaser,
+   
+                        <!-- Level 5 Extra Hexagon Hardpoints --> 
+      HP_Ancient_Station_Drone_Tank_Medium_A1, HP_Ancient_Station_Drone_Tank_Medium_A2, HP_Ancient_Station_Drone_Tank_Medium_A3,
+      HP_Ancient_Station_Large_Laser_A4, HP_Ancient_Station_Large_Laser_A5,
+      
+      HP_Ancient_Station_Drone_Tank_Medium_B1, HP_Ancient_Station_Drone_Tank_Medium_B2, HP_Ancient_Station_Drone_Tank_Medium_B3,
+      HP_Ancient_Station_Large_Laser_B4, HP_Ancient_Station_Large_Laser_B5,
+      
+      HP_Ancient_Station_Drone_Tank_Medium_C1, HP_Ancient_Station_Drone_Tank_Medium_C2, HP_Ancient_Station_Drone_Tank_Medium_C3,
+      HP_Ancient_Station_Large_Laser_C4, HP_Ancient_Station_Large_Laser_C5
+        </HardPoints>
+    </SpecialStructure>
+
+    <SpecialStructure Name="Ancient_Fortess_4_Death_Clone">
+        <Text_ID>TEXT_REBEL_STAR_BASE_4</Text_ID>
+        <Space_Model_Name>Ancient_Space_Building_Fortess_Tech_4_D.alo</Space_Model_Name>
+        <Death_SFXEvent_Start_Die>Unit_Star_Destroyer_Death_SFX</Death_SFXEvent_Start_Die>
+        <Layer_Z_Adjust>0.0</Layer_Z_Adjust>
+        <CategoryMask> Capital </CategoryMask>
+        <Death_Persistence_Duration>0</Death_Persistence_Duration>
+        <Should_Death_Clone_Play_Idle> true </Should_Death_Clone_Play_Idle>
+    </SpecialStructure>
+
+    <!-- ================================= Projectiles ================================= -->
+
+    <Projectile Name="Projectile_Ancient_Fortess_Medium_Drone">
+        <Variant_Of_Existing_Type>Proj_Asuran_Drones_Rocket</Variant_Of_Existing_Type>
+        <Projectile_Damage>40.0</Projectile_Damage>
+        <Damage_Type>Damage_Hero_MediumBS</Damage_Type>
+        <Max_Speed>9</Max_Speed>
+        <Max_Rate_Of_Turn>16.0</Max_Rate_Of_Turn>
+        <Scale_Factor>0.07</Scale_Factor>
+    </Projectile>
+
+    <!--============ From here on this is the older Starbase with Aurora Model ==============-->
+
+    <StarBase Name="Ancient_Starbase_Skirmish">
+        <Text_ID>TEXT_SPACE_BUILDING_DAMAGED_ANCIENTS_SHIP</Text_ID>
+        <Encyclopedia_Text>TEXT_DESCRIPTION_MAP_ASSET_DAMAGED_ANCIENTS_SHIP</Encyclopedia_Text>
+        <MP_Encyclopedia_Text>TEXT_DESCRIPTION_MAP_ASSET_DAMAGED_ANCIENTS_SHIP</MP_Encyclopedia_Text>
+        <Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_ANCIENTS_WARSHIP</Encyclopedia_Unit_Class>
+        <Icon_Name>TAURI_SPACE_HERO_AURORA.TGA</Icon_Name>
+        <Space_Model_Name>Asuran_Space_Unit_Aurora_Damaged.ALO</Space_Model_Name>
+        <Galactic_Model_Name>Asuran_Space_Unit_Aurora_Damaged.ALO</Galactic_Model_Name>
+        <Damage>15</Damage>
+        <Select_Box_Scale>800</Select_Box_Scale>
+        <Select_Box_Z_Adjust>-50</Select_Box_Z_Adjust>
+        <Scale_Factor>1.0</Scale_Factor>
+        <GUI_Row> 0 </GUI_Row>
+        <Is_Dummy>No</Is_Dummy>
+        <Affiliation>Rebel, Empire, Neutral, Underworld, Asuran</Affiliation>
+        <AI_Combat_Power>6000</AI_Combat_Power>
+        <Size_Value>10</Size_Value>
+        <Tech_Level>99</Tech_Level>
+        <Base_Level>6</Base_Level>
+        <Prev_Level_Base />
+        <Next_Level_Base />
+        <CategoryMask> Capital </CategoryMask>
+        <Behavior>CAPTURE_POINT, DUMMY_STAR_BASE, SELECTABLE</Behavior>
+        <SpaceBehavior> SPACE_OBSTACLE, POWERED, HIDE_WHEN_FOGGED, REVEAL, SHIELDED, UNIT_AI, ION_STUN_EFFECT</SpaceBehavior>
+        <Multisample_FOW_Check>Yes</Multisample_FOW_Check>
+        <Armor_Type> Armor_Station </Armor_Type>
+        <Shield_Armor_Type>Armor_Station</Shield_Armor_Type>
+        <Starting_Spawned_Units_Tech_0></Starting_Spawned_Units_Tech_0>
+        <Reserve_Spawned_Units_Tech_0></Reserve_Spawned_Units_Tech_0>
+        <Spawned_Squadron_Delay_Seconds>20</Spawned_Squadron_Delay_Seconds>
+        <Tactical_Health> 5000 </Tactical_Health>
+        <Shield_Points>2000</Shield_Points>
+        <Shield_Refresh_Rate>15</Shield_Refresh_Rate>
+        <Energy_Capacity>2000</Energy_Capacity>
+        <Energy_Refresh_Rate>1000</Energy_Refresh_Rate>
+        <Damage>35</Damage>
+        <Collidable_By_Projectile_Living>Yes</Collidable_By_Projectile_Living>
+        <Dense_FOW_Reveal_Range_Multiplier>0.2</Dense_FOW_Reveal_Range_Multiplier>
+        <Targeting_Max_Attack_Distance>800.0</Targeting_Max_Attack_Distance>
+        <Capture_Point_Transition_Time_Seconds>20</Capture_Point_Transition_Time_Seconds>
+        <Capture_Point_Radius>800</Capture_Point_Radius>
+        <Ownership_Sticks>Yes</Ownership_Sticks>
+        <Tactical_Respawn_Time_In_Secs>120</Tactical_Respawn_Time_In_Secs>
+        <Space_FOW_Reveal_Range>1000.0</Space_FOW_Reveal_Range>
+        <Is_Community_Property>Yes</Is_Community_Property>
+        <Build_Initially_Locked>Yes</Build_Initially_Locked>
+        <Build_Can_Be_Unlocked_By_Slicer>No</Build_Can_Be_Unlocked_By_Slicer>
+        <Has_Space_Evaluator>True</Has_Space_Evaluator>
+        <Reinforcement_Prevention_Radius> 0 </Reinforcement_Prevention_Radius>
+        <Last_State_Visible_Under_FOW> True </Last_State_Visible_Under_FOW>
+        <Initial_State_Visible_Under_FOW>Yes</Initial_State_Visible_Under_FOW>
+        <Tactical_Buildable_Objects_Multiplayer>
+      Empire,
+      Ancient_Jumper_Squadron_SK,
+      Rebel,
+      Ancient_Jumper_Squadron_SK,
+      Underworld,
+      Ancient_Jumper_Squadron_SK,
+	  Asuran,
+      Ancient_Jumper_Squadron_SK,
+        </Tactical_Buildable_Objects_Multiplayer>
+        <HardPoints>
+			HP_AURORA_STATION_SHIELD,
+      HP_AURORA_STATION_F_DL_00,
+      HP_AURORA_STATION_F_DL_01
+        </HardPoints>
+        <SFXEvent_Ambient_Loop>Unit_Starbase_Engine_Loop</SFXEvent_Ambient_Loop>
+        <SFXEvent_Fire></SFXEvent_Fire>
+        <Death_SFXEvent_Start_Die>Unit_Space_Station_Death_SFX</Death_SFXEvent_Start_Die>
+        <Death_Clone>Damage_Normal, Death_Clone_StarBase_Ancient</Death_Clone>
+        <Death_Explosions>Huge_Explosion_Space</Death_Explosions>
+        <Victory_Relevant>no</Victory_Relevant>
+        <Custom_Soft_Footprint_Radius> 300 </Custom_Soft_Footprint_Radius>
+        <Space_Obstacle_Offset> 0 0 0 </Space_Obstacle_Offset>
+        <Space_Layer> StaticObject </Space_Layer>
+        <Is_Visible_On_Radar>Yes</Is_Visible_On_Radar>
+        <Visible_On_Radar_When_Fogged>true</Visible_On_Radar_When_Fogged>
+        <Radar_Icon_Scale_Space>2.0</Radar_Icon_Scale_Space>
+        <Radar_Icon_Name>I_RADAR_ASURANAURORA.TGA</Radar_Icon_Name>
+        <Score_Cost_Credits> 1500</Score_Cost_Credits>
+    </StarBase>
+
+    <StarBase Name="Death_Clone_StarBase_Ancient">
+        <Text_ID>TEXT_NONE</Text_ID>
+        <Space_Model_Name>Asuran_Space_Unit_Aurora_Damaged_D.ALO</Space_Model_Name>
+        <Death_SFXEvent_Start_Die></Death_SFXEvent_Start_Die>
+        <Layer_Z_Adjust>0.0</Layer_Z_Adjust>
+        <CategoryMask> Capital </CategoryMask>
+        <Death_Persistence_Duration> 34 </Death_Persistence_Duration>
+        <Should_Death_Clone_Play_Idle> true </Should_Death_Clone_Play_Idle>
+    </StarBase>
+
+
+    <!--Projectile-->
+    <Projectile Name="Proj_Drones_Aurora_Station">
+        <Variant_Of_Existing_Type>Proj_Asuran_Drones_Rocket</Variant_Of_Existing_Type>
+        <Projectile_Damage>15.0</Projectile_Damage>
+    </Projectile>
+
+
+    <!--==== Asuran Fortress ====-->
+    <SpecialStructure Name="Asuran_Headquarters">
+        <Variant_Of_Existing_Type>Ancient_Headquarters</Variant_Of_Existing_Type>
+        <Affiliation>Asuran</Affiliation>	
+        <Death_Clone>Damage_Normal, Asuran_Headquarters_Death_Clone</Death_Clone>
+    </SpecialStructure>
+
+    <StarBase Name="Asuran_Headquarters_Death_Clone">
+        <Text_ID>TEXT_ANCIENTS_SPACE_BUILDING_HEADQUARTERS</Text_ID>
+        <Space_Model_Name>Ancient_Space_Building_Headquarters_D.alo</Space_Model_Name>
+        <Death_SFXEvent_Start_Die>Unit_Star_Destroyer_Death_SFX</Death_SFXEvent_Start_Die>
+        <Layer_Z_Adjust>0.0</Layer_Z_Adjust>
+        <CategoryMask> Capital </CategoryMask>
+        <Death_Persistence_Duration>0</Death_Persistence_Duration>
+        <Should_Death_Clone_Play_Idle> true </Should_Death_Clone_Play_Idle>
+    </StarBase>
+
+</Space_Buildings_Ancient>

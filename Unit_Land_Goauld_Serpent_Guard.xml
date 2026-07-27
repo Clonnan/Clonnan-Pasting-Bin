@@ -1,0 +1,177 @@
+<?xml version="1.0"?>
+<Infantry_Data>
+
+   <GroundInfantry Name="Plex_Soldier">   
+      <Variant_Of_Existing_Type>Template_Ground_Infantry_Multi_Goauld</Variant_Of_Existing_Type>
+      <Text_ID>TEXT_GOAULD_GROUND_UNIT_SCHLANGENWACHE</Text_ID>
+      <Encyclopedia_Text>TEXT_DESCRIPTION_GOAULD_SCHLANGENWACHE_GROUND</Encyclopedia_Text>
+      <Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_SCHLANGENWACHE</Encyclopedia_Unit_Class>
+      <Encyclopedia_Good_Against>Underworld_Saboteur Underworld_Merc Stormtrooper</Encyclopedia_Good_Against>
+      <Encyclopedia_Vulnerable_To>MZ8_Pulse_Cannon_Tank Tauri_F302_Land Empire_Anti_Infantry_Turret</Encyclopedia_Vulnerable_To>      
+      <Icon_Name>GOAULD_GROUND_UNIT_SERPENT_GUARD.TGA</Icon_Name>
+      <Land_Model_Name>Goauld_Land_Unit_Serpent_Guard.ALO</Land_Model_Name>
+      <Land_Model_Anim_Override_Name>Goauld_Land_Unit_Serpent_Guard.ALO</Land_Model_Anim_Override_Name>
+      <Tactical_Health>90</Tactical_Health>
+      <AI_Combat_Power>25</AI_Combat_Power>
+      <Targeting_Priority_Set>SG_Infantry_AntiInfantry</Targeting_Priority_Set>
+      <Projectile_Types>Proj_Goauld_Serpent_Guard</Projectile_Types>
+      <Projectile_Fire_Recharge_Seconds>1.0</Projectile_Fire_Recharge_Seconds>
+		<Projectile_Fire_Pulse_Count>5</Projectile_Fire_Pulse_Count>
+		<Projectile_Fire_Pulse_Delay_Seconds>0.8</Projectile_Fire_Pulse_Delay_Seconds>
+      <SFXEvent_Fire>Weapon_Goauld_Staff</SFXEvent_Fire>
+          <SFXEvent_Select>Unit_Select_Guard</SFXEvent_Select>
+		<SFXEvent_Move>Unit_Move_Guard</SFXEvent_Move>
+		<SFXEvent_Attack>Unit_Attack_Guard</SFXEvent_Attack>
+      <CategoryMask>Infantry | AntiInfantry</CategoryMask>
+      <Presence_Induced_Animations>
+         Attention, 
+            Luke_Skywalker_Jedi,
+            Yoda, 
+            Commander_Akbar
+      </Presence_Induced_Animations> 
+      <Death_Clone>Damage_Hand_Device, Plex_Soldier_Hand_Device_Death_Clone</Death_Clone>
+      <Conversion_Ability_Changes_To_Enemy>Plex_Soldier_Converted_To_Enemy</Conversion_Ability_Changes_To_Enemy>
+      <Unit_Abilities_Data SubObjectList="Yes">
+         <Unit_Ability>
+            <Type>SPREAD_OUT</Type>
+            <Alternate_Name_Text>TEXT_ABILITY_GOAULD_GROUND_SCHLANGENWACHE_DECKUNG</Alternate_Name_Text>
+				<Alternate_Description_Text>TEXT_DESCRIPTION_ABILITY_SCHLANGENWACHE_DECKUNG</Alternate_Description_Text>
+            <Mod_Multiplier>SPEED_MULTIPLIER, 0.5f</Mod_Multiplier>
+            <Mod_Multiplier>TAKE_DAMAGE_MULTIPLIER, 0.85f</Mod_Multiplier>
+            <SFXEvent_GUI_Unit_Ability_Activated></SFXEvent_GUI_Unit_Ability_Activated>
+         </Unit_Ability>
+         <!--Unit_Ability>
+				<Type>STICKY_BOMB</Type>
+            <Alternate_Name_Text>TEXT_ABILITY_GOAULD_GROUND_SCHLANGENWACHE_GRANATE</Alternate_Name_Text>
+				<Alternate_Description_Text>TEXT_DESCRIPTION_ABILITY_SCHLANGENWACHE_GRANATE</Alternate_Description_Text>
+				<Recharge_Seconds>23.0f</Recharge_Seconds>
+				<GUI_Activated_Ability_Name>Goauld_Sperpent_Guard_Grenade_Ability</GUI_Activated_Ability_Name>
+				<SFXEvent_Target_Ability></SFXEvent_Target_Ability>
+				<Supports_Autofire>True</Supports_Autofire>
+			</Unit_Ability-->
+      </Unit_Abilities_Data>
+		<!--Abilities SubObjectList="Yes">
+			<Grenade_Attack_Ability Name="Goauld_Sperpent_Guard_Grenade_Ability">
+				<Activation_Style> User_Input </Activation_Style> 
+				<Activation_Min_Range>5.0</Activation_Min_Range>
+				<Activation_Max_Range>100.0</Activation_Max_Range>
+				<Requires_Direct_Player_Command>No</Requires_Direct_Player_Command>			
+				<Grenade_Type>Proj_Goauld_Land_Hero_Herak_Shock_Grenade</Grenade_Type>
+				<Grenade_Toss_Anim>BOMBTOSS</Grenade_Toss_Anim>
+				<Grenade_Spawn_Frame>12.0</Grenade_Spawn_Frame>
+				<Grenade_Spawn_Bone>MuzzleB_00</Grenade_Spawn_Bone>
+				<Grenade_Explode_Timer_In_Secs>6.0</Grenade_Explode_Timer_In_Secs>
+				<Activation_Chance>0,0.0, 1,1.0, 5,1.0, 500,1.0</Activation_Chance>
+				<Applicable_Unit_Categories>Vehicle, Structure</Applicable_Unit_Categories>
+				<Applicable_Unit_Types />
+				<SFXEvent_Activate></SFXEvent_Activate>
+			</Grenade_Attack_Ability>
+		</Abilities-->
+  </GroundInfantry>
+  
+  <GroundInfantry Name="Plex_Soldier_Hand_Device_Death_Clone">
+      <Variant_Of_Existing_Type>Plex_Soldier</Variant_Of_Existing_Type>
+      <Specific_Death_Anim_Type>FW_DIE</Specific_Death_Anim_Type>
+  </GroundInfantry>
+                                                                        
+  <GroundInfantry Name="Plex_Soldier_Converted_To_Enemy">
+      <Variant_Of_Existing_Type> Plex_Soldier </Variant_Of_Existing_Type>
+      <Text_ID>TEXT_NONE</Text_ID>
+  </GroundInfantry>
+  <GroundInfantry Name="Plex_Soldier_NonVictroy">
+      <Variant_Of_Existing_Type> Plex_Soldier </Variant_Of_Existing_Type>
+      <Victory_Relevant>no</Victory_Relevant>
+  </GroundInfantry>
+  <GroundInfantry Name="Plex_Soldier_Force_Whirlwind_Death_Clone">
+      <Variant_Of_Existing_Type>Plex_Soldier</Variant_Of_Existing_Type>
+      <Specific_Death_Anim_Type>FW_DIE</Specific_Death_Anim_Type>
+      <Specific_Death_Anim_Index />
+  </GroundInfantry>
+  <GroundInfantry Name="Plex_Soldier_Force_Lightning_Death_Clone">
+      <Variant_Of_Existing_Type>Plex_Soldier</Variant_Of_Existing_Type>
+      <Specific_Death_Anim_Type>FW_DIE</Specific_Death_Anim_Type>
+      <Specific_Death_Anim_Index />
+  </GroundInfantry>
+  <GroundInfantry Name="Plex_Soldier_Crush_Death_Clone">
+      <Variant_Of_Existing_Type>Plex_Soldier</Variant_Of_Existing_Type>
+      <Specific_Death_Anim_Type>FW_DIE</Specific_Death_Anim_Type>
+      <Specific_Death_Anim_Index />
+  </GroundInfantry>
+  <GroundInfantry Name="Plex_Soldier_Remote_Bomb_Death_Clone">
+      <Variant_Of_Existing_Type>Plex_Soldier</Variant_Of_Existing_Type>
+      <Specific_Death_Anim_Type>FW_DIE</Specific_Death_Anim_Type>
+  </GroundInfantry>
+
+  <GroundInfantry Name="Squad_Plex_Soldier">
+      <Variant_Of_Existing_Type>Plex_Soldier</Variant_Of_Existing_Type>
+      <Conversion_Ability_Changes_To_Enemy> Squad_Plex_Soldier_Converted_To_Enemy </Conversion_Ability_Changes_To_Enemy>
+  </GroundInfantry>                                                             
+  <GroundInfantry Name="Squad_Plex_Soldier_Converted_To_Enemy">
+      <Variant_Of_Existing_Type> Squad_Plex_Soldier </Variant_Of_Existing_Type>
+      <Text_ID>TEXT_NONE</Text_ID>
+  </GroundInfantry>
+  
+  
+  <!-- COMPANY INFO -->
+  <GroundCompany Name="Rebel_Tank_Buster_Squad_No_Prereq">
+      <Variant_Of_Existing_Type>Template_Ground_Company</Variant_Of_Existing_Type>
+      <Text_ID>TEXT_GOAULD_GROUND_UNIT_SCHLANGENWACHE</Text_ID>
+      <Encyclopedia_Text>TEXT_DESCRIPTION_GOAULD_SCHLANGENWACHE_GROUND</Encyclopedia_Text>
+      <Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_SCHLANGENWACHE</Encyclopedia_Unit_Class>
+      <Encyclopedia_Good_Against>Underworld_Saboteur Underworld_Merc Stormtrooper</Encyclopedia_Good_Against>
+      <Encyclopedia_Vulnerable_To>MZ8_Pulse_Cannon_Tank Tauri_F302_Land Empire_Anti_Infantry_Turret</Encyclopedia_Vulnerable_To>    
+      <Icon_Name>GOAULD_GROUND_UNIT_SERPENT_GUARD.TGA</Icon_Name>
+      <Score_Cost_Credits>250</Score_Cost_Credits>
+      <Build_Cost_Credits>250</Build_Cost_Credits>
+      <Build_Time_Seconds>28</Build_Time_Seconds>
+      <Company_Transport_Unit>Alliance_Shuttle</Company_Transport_Unit>
+      <Create_Team_Type>Plex_Soldier_Team</Create_Team_Type>
+      <Company_Units>Squad_Plex_Soldier, Squad_Plex_Soldier, Squad_Plex_Soldier, Squad_Plex_Soldier</Company_Units>
+      <Max_Squad_Size>4</Max_Squad_Size>      
+      <Tactical_Build_Cost_Multiplayer>500</Tactical_Build_Cost_Multiplayer>
+      <Tactical_Build_Time_Seconds>9</Tactical_Build_Time_Seconds>   
+      <Required_Ground_Base_Level>1</Required_Ground_Base_Level> 
+   </GroundCompany>
+  
+   <GroundCompany Name="Rebel_Tank_Buster_Squad">
+      <Variant_Of_Existing_Type>Rebel_Tank_Buster_Squad_No_Prereq</Variant_Of_Existing_Type>
+      <Affiliation>Rebel</Affiliation>
+      <Tech_Level>2</Tech_Level>
+      <Required_Timeline>0</Required_Timeline>
+      <Required_Ground_Base_Level>1</Required_Ground_Base_Level>
+      <Required_Star_Base_Level>0</Required_Star_Base_Level>
+      <Required_Special_Structures>R_Ground_Barracks</Required_Special_Structures>
+      <Required_Planets />
+      <Tactical_Build_Prerequisites></Tactical_Build_Prerequisites>
+   </GroundCompany>
+   
+  
+   <!-- CONTAINER INFO -->
+   <Container Name="Plex_Soldier_Team">     
+      <Variant_Of_Existing_Type>Template_Infantry_Container</Variant_Of_Existing_Type>
+      <Text_ID>TEXT_GOAULD_GROUND_UNIT_SCHLANGENWACHE</Text_ID>
+      <Encyclopedia_Text>TEXT_DESCRIPTION_GOAULD_SCHLANGENWACHE_GROUND</Encyclopedia_Text>
+      <Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_SCHLANGENWACHE</Encyclopedia_Unit_Class>
+      <Encyclopedia_Good_Against>Underworld_Saboteur Underworld_Merc Stormtrooper</Encyclopedia_Good_Against>
+      <Encyclopedia_Vulnerable_To>MZ8_Pulse_Cannon_Tank Tauri_F302_Land Empire_Anti_Infantry_Turret</Encyclopedia_Vulnerable_To>  
+      <Icon_Name>GOAULD_GROUND_UNIT_SERPENT_GUARD.TGA</Icon_Name>
+      <ContainerArrangement>Rows</ContainerArrangement>
+      <Unit_Abilities_Data SubObjectList="Yes">
+         <Unit_Ability>
+            <Type>SPREAD_OUT</Type>
+            <Alternate_Name_Text>TEXT_ABILITY_GOAULD_GROUND_SCHLANGENWACHE_DECKUNG</Alternate_Name_Text>
+				<Alternate_Description_Text>TEXT_DESCRIPTION_ABILITY_SCHLANGENWACHE_DECKUNG</Alternate_Description_Text>
+            <Mod_Multiplier>SPEED_MULTIPLIER, 0.5f</Mod_Multiplier>
+            <Mod_Multiplier>TAKE_DAMAGE_MULTIPLIER, 0.85f</Mod_Multiplier>
+         </Unit_Ability>
+      </Unit_Abilities_Data>      
+   </Container>
+  
+
+   <Projectile Name="Proj_Goauld_Serpent_Guard">
+      <Variant_Of_Existing_Type>Proj_Goauld_Land_Staff_Weapon</Variant_Of_Existing_Type>
+      <Damage_Type>Damage_Anti_Infantry</Damage_Type>
+      <Projectile_Damage>8.25</Projectile_Damage>
+   </Projectile>
+  
+</Infantry_Data>

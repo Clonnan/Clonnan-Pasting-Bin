@@ -1,0 +1,397 @@
+<?xml version="1.0"?>
+<UniqueUnits>
+<!--Anubis comes in two iterations:
+The Mon_Mothma_Team version is the non-combat hero version of Anubis, without ground or space unit. It's just the general faction leader who provides production bonuses.
+Commander_Akbar_Team is the developed version of Anubis with flag ship ("Home_One") and ground unit ("Commander_Akbar"). It will replace the other version once the player has reached a certain tech level/condition.
+
+Squad: 1
+Weaponry: None
+Ability: Schlag der Macht (Darth Vader), Machtblitz (Palpatine)
+Note: Should be coded like Emperor Palpatine and the model can be used as placeholder
+
+TEXT_ABILITY_GOAULD_GROUND_ANUBIS_SCHLAG_DER_MACHT
+TEXT_DESCRIPTION_ABILITY_ANUBIS_GROUND_SCHLAG_DER_MACHT-->
+
+
+   <!-- Goauld Hero Anubis ground unit-->    
+   <HeroUnit Name="Commander_Akbar">
+      <Variant_Of_Existing_Type>Template_Ground_Infantry_Single_Hero_Goauld</Variant_Of_Existing_Type>
+      <Text_ID>TEXT_GOAULD_GROUND_HERO_ANUBIS</Text_ID>
+      <Encyclopedia_Text>TEXT_DESCRIPTION_GOAULD_ANUBIS_GC_GROUND</Encyclopedia_Text>
+      <MP_Encyclopedia_Text>TEXT_DESCRIPTION_GOAULD_ANUBIS_SK_GROUND</MP_Encyclopedia_Text>
+      <Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_ANUBIS_GROUND</Encyclopedia_Unit_Class>
+      <Encyclopedia_Good_Against>Underworld_Saboteur Underworld_Merc Stormtrooper</Encyclopedia_Good_Against>
+      <Encyclopedia_Vulnerable_To>MZ8_Pulse_Cannon_Tank Tauri_F302_Land Empire_Anti_Infantry_Turret</Encyclopedia_Vulnerable_To>
+      <Icon_Name>GOAULD_SPACE_HERO_ANUBIS.TGA</Icon_Name>
+      <Land_Model_Name>Goauld_Land__Hero_Anubis.ALO</Land_Model_Name>
+
+      <Behavior> </Behavior>
+      <LandBehavior>ABILITY_COUNTDOWN, DAMAGE_TRACKING, GARRISON_UNIT, HIDE_WHEN_FOGGED, IDLE, IMPOSING_PRESENCE, REVEAL, SELECTABLE, SURFACE_FX, TARGETING, UNIT_AI, WALK_LOCOMOTOR, WEAPON</LandBehavior>  
+      <Affiliation>Rebel</Affiliation>
+      <Presence_Range>100.0</Presence_Range>   
+      <Scale_Factor>1.25</Scale_Factor>      
+      <Tactical_Health>1300</Tactical_Health>
+      <AI_Combat_Power>250</AI_Combat_Power>
+      <Damage>100</Damage>
+      
+      <Movement_Animation_Speed> 0.8 </Movement_Animation_Speed>
+      <Min_Speed> .1 </Min_Speed>
+      <Max_Speed>1</Max_Speed>
+      <Max_Rate_Of_Turn>20.0</Max_Rate_Of_Turn>
+      <OverrideAcceleration> .1 </OverrideAcceleration>
+      <OverrideDeceleration> .25 </OverrideDeceleration>
+      <Is_Stationary_When_Attacking>Yes</Is_Stationary_When_Attacking>
+      <Projectile_Types>Proj_Goauld_Hero_Anubis_Force</Projectile_Types>
+      <Projectile_Fire_Recharge_Seconds>0.3</Projectile_Fire_Recharge_Seconds>
+      <Projectile_Fire_Pulse_Count>1</Projectile_Fire_Pulse_Count>
+		<Projectile_Fire_Pulse_Delay_Seconds>0.3</Projectile_Fire_Pulse_Delay_Seconds>
+      <Targeting_Max_Attack_Distance>20.0</Targeting_Max_Attack_Distance>
+      <Targeting_Priority_Set>SG_Infantry_AntiInfantry</Targeting_Priority_Set>
+      <Ranking_In_Category> 1 </Ranking_In_Category>
+      <FormationOrder>3</FormationOrder>
+      <Score_Cost_Credits> 25000 </Score_Cost_Credits>
+      <Can_Be_Neutralized_By_Major_Heroes>No</Can_Be_Neutralized_By_Major_Heroes>
+      <Can_Be_Neutralized_By_Minor_Heroes>No</Can_Be_Neutralized_By_Minor_Heroes>
+      
+      <SFXEvent_Select>Unit_Select_Anubis</SFXEvent_Select>
+      <SFXEvent_Move>Unit_Move_Anubis</SFXEvent_Move>
+      <SFXEvent_Attack>Unit_Attack_Anubis</SFXEvent_Attack>
+      <SFXEvent_Guard>Unit_Select_Anubis</SFXEvent_Guard>
+      <SFXEvent_Group_Move>Unit_Move_Anubis</SFXEvent_Group_Move>
+      <SFXEvent_Group_Attack>Unit_Attack_Anubis</SFXEvent_Group_Attack>
+      <SFXEvent_Health_Low_Warning> Unit_LOWHP_Anubis </SFXEvent_Health_Low_Warning>
+      <SFXEvent_Health_Critical_Warning>Unit_CriticalHP_Anubis</SFXEvent_Health_Critical_Warning>
+      <Death_SFXEvent_Start_Die>Unit_Defeat_Anubis</Death_SFXEvent_Start_Die> 
+
+      <Unit_Abilities_Data SubObjectList="Yes">
+         <Unit_Ability>
+				<Type>FORCE_CONFUSE</Type>
+				<Alternate_Name_Text>TEXT_ABILITY_INTIMIDATION</Alternate_Name_Text>
+            <Alternate_Description_Text>TEXT_DESCRIPTION_ABILITY_INTIMIDATION_ANUBIS_GROUND</Alternate_Description_Text>
+            <Alternate_Icon_Name>I_SA_INTIMIDATION.TGA</Alternate_Icon_Name>
+				<Recharge_Seconds>40.0</Recharge_Seconds>
+				<GUI_Activated_Ability_Name>Goauld_Hero_Anubis_Intimidate</GUI_Activated_Ability_Name>
+				<Effective_Radius>500.0</Effective_Radius>
+				<SFXEvent_GUI_Unit_Ability_Activated>Unit_Intimidate_Anubis</SFXEvent_GUI_Unit_Ability_Activated>
+				<Supports_Autofire>True</Supports_Autofire>
+			</Unit_Ability>
+         <!--Unit_Ability>
+            <Type>FORCE_LIGHTNING</Type>
+            <Alternate_Name_Text>TEXT_ABILITY_GOAULD_GROUND_ANUBIS_MACHTBLITZ</Alternate_Name_Text>
+            <Alternate_Description_Text>TEXT_DESCRIPTION_ABILITY_ANUBIS_GROUND_MACHTBLITZ</Alternate_Description_Text>
+            <Recharge_Seconds>20.0</Recharge_Seconds>
+            <GUI_Activated_Ability_Name>Goauld_Hero_Anubis_Force_Lightning </GUI_Activated_Ability_Name>
+            <SFXEvent_Target_Ability>Unit_Attack_Anubis</SFXEvent_Target_Ability>
+            <Supports_Autofire>True</Supports_Autofire>
+         </Unit_Ability-->
+      </Unit_Abilities_Data>
+      <Abilities SubObjectList="Yes">
+         <!--Force_Lightning_Ability Name="Goauld_Hero_Anubis_Force_Lightning">
+            <Activation_Style> User_Input </Activation_Style>
+            <Activation_Min_Range>0.0</Activation_Min_Range>
+            <Activation_Max_Range>175.0</Activation_Max_Range>
+            <Applicable_Unit_Categories>Infantry</Applicable_Unit_Categories>
+            <Applicable_Unit_Types/>
+            <Damage_Amount>9999.0</Damage_Amount>
+            <Damage_Application_Time_In_Secs>2.3893</Damage_Application_Time_In_Secs>
+            <Start_Lightning_Frame_Number> 8 </Start_Lightning_Frame_Number>
+            <Lightning_Effect_Name>Force_Lightning</Lightning_Effect_Name>
+            <Lightning_Source_Bone_Name>MuzzleA_00</Lightning_Source_Bone_Name>
+            <Lightning_Target_Bone_Name>B_PELVIS</Lightning_Target_Bone_Name>
+            <Lightning_Max_Targets> 15 </Lightning_Max_Targets>
+            <Lightning_Targets_Radius> 100.0 </Lightning_Targets_Radius>
+            <SFXEvent_Activate/>
+            <SFXEvent_Target_Affected/>
+            <Target_Particle_Effect>Force_Lightning_Smoke</Target_Particle_Effect>
+            <Target_Particle_Bone_Name>B_PELVIS</Target_Particle_Bone_Name>
+            <Target_Light_Effect_Type>Linear_Pulse</Target_Light_Effect_Type>
+            <Target_Light_Effect_Color>0.3, 0.3, 0.8</Target_Light_Effect_Color>
+            <Target_Light_Effect_Color2/>
+            <Target_Light_Effect_Duration>2.3893</Target_Light_Effect_Duration>
+            <Target_Light_Effect_Pulse_Count>25</Target_Light_Effect_Pulse_Count>
+         </Force_Lightning_Ability-->
+         <Force_Confuse_Ability Name="Goauld_Hero_Anubis_Intimidate">
+               <Activation_Style> User_Input </Activation_Style>
+   				<Applicable_Unit_Categories>Infantry</Applicable_Unit_Categories>
+   				<Activation_Min_Range>0.0</Activation_Min_Range>
+   				<Activation_Max_Range>132.0</Activation_Max_Range>
+   				<Confuse_Time_In_Secs>8.0</Confuse_Time_In_Secs>
+   				<Confuse_Range>132.0</Confuse_Range>
+   				<Confuse_Travel_Time_In_Secs>1.2</Confuse_Travel_Time_In_Secs>
+                <Confuse_Effect> Confuse_Particle_Effect </Confuse_Effect>
+   				<SFXEvent_Activate></SFXEvent_Activate>
+   				<Owner_Particle_Effect>Particle_Goauld_Anubis_Intimidation</Owner_Particle_Effect>
+   				<Owner_Particle_Bone_Name />
+   				<Owner_Light_Effect_Type>Color_Flash</Owner_Light_Effect_Type>
+   				<Owner_Light_Effect_Color>8.0, 2.0, 2.0</Owner_Light_Effect_Color>
+   				<Owner_Light_Effect_Color2 />
+   				<Owner_Light_Effect_Duration>0.5</Owner_Light_Effect_Duration>
+   				<Owner_Light_Effect_Pulse_Count />
+   			</Force_Confuse_Ability>
+         <Earthquake_Attack_Ability Name="Goauld_Hero_Anubis_Attack_Structures">
+            <Activation_Style>Special_Attack</Activation_Style>
+            <Terminate_Effect_On_Move_Command>Yes</Terminate_Effect_On_Move_Command>
+            <Activation_Min_Range>0.0</Activation_Min_Range>
+            <Activation_Max_Range>250.0</Activation_Max_Range>
+            <Activation_Chance>1.0</Activation_Chance>
+            <Damage_Amount>0.0</Damage_Amount>
+            <Damage_Percentage>0.01</Damage_Percentage>
+            <Damage_Interval_In_Secs>0.2</Damage_Interval_In_Secs>
+            <Applicable_Unit_Categories>Structure</Applicable_Unit_Categories>
+            <Applicable_Unit_Types/>
+            <SFXEvent_Activate/>
+            <Target_Particle_Effect>Earthquake_Dust_Particles</Target_Particle_Effect>
+            <Target_Particle_Bone_Name/>
+         </Earthquake_Attack_Ability>
+         <Combat_Bonus_Ability Name="Goauld_Hero_Anubis_Land_Combat_Bonus">
+            <Activation_Style>Ground_Automatic</Activation_Style>
+            <Unit_Strength_Category>Vehicle | Infantry | Air</Unit_Strength_Category>
+            <Applicable_Unit_Categories>Vehicle | Infantry | Air</Applicable_Unit_Categories>
+            <Applicable_Unit_Types/>
+            <Health_Bonus_Percentage>0.0</Health_Bonus_Percentage>
+            <Damage_Bonus_Percentage>0.2</Damage_Bonus_Percentage>
+            <Energy_Pool_Bonus_Percentage>0.0</Energy_Pool_Bonus_Percentage>
+            <Shield_Bonus_Percentage>0.0</Shield_Bonus_Percentage>
+            <Defense_Bonus_Percentage>0.0</Defense_Bonus_Percentage>
+            <Movement_Speed_Bonus_Percentage>0.0</Movement_Speed_Bonus_Percentage>
+            <Stacking_Category>0</Stacking_Category>
+         </Combat_Bonus_Ability>
+         <Reduce_Production_Price_Ability Name="Goauld_Hero_Anubis_Reduce_Production_Price">
+            <Applicable_Unit_Categories>All</Applicable_Unit_Categories>
+            <Price_Reduction_Percentage>0.25</Price_Reduction_Percentage>
+            <Stacking_Category>0</Stacking_Category>
+         </Reduce_Production_Price_Ability>
+      </Abilities>
+   </HeroUnit>
+   
+   <!--Anubis non-combat unit-->
+   <HeroUnit Name="Mon_Mothma">
+		<Text_ID>TEXT_GOAULD_GROUND_HERO_ANUBIS</Text_ID>
+      <Encyclopedia_Text>TEXT_DESCRIPTION_GOAULD_GC_ANUBIS_SPECIAL</Encyclopedia_Text>
+      <MP_Encyclopedia_Text>TEXT_DESCRIPTION_GOAULD_ANUBIS_SK_GROUND</MP_Encyclopedia_Text>
+      <Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_ANUBIS_GROUND</Encyclopedia_Unit_Class>
+      <Icon_Name>GOAULD_SPACE_HERO_ANUBIS.TGA</Icon_Name>
+		<Is_Named_Hero>Yes</Is_Named_Hero>
+		<Mass>1.0</Mass>
+		<Scale_Factor>1.0</Scale_Factor>
+		<Type>Walk</Type>
+		<Affiliation>Rebel</Affiliation>
+		<Political_Control>0</Political_Control>
+		<Political_Faction>Rebel</Political_Faction>
+		<Size_Value>75</Size_Value>
+		<Damage>100</Damage>
+		<Attach_To_Flagship_During_Space_Battle>Yes</Attach_To_Flagship_During_Space_Battle>
+		<Stay_In_Transport_During_Ground_Battle>Yes</Stay_In_Transport_During_Ground_Battle>
+		<CategoryMask> NonCombatHero </CategoryMask>
+		<Ranking_In_Category>1</Ranking_In_Category>
+		<Can_Be_Neutralized_By_Major_Heroes>No</Can_Be_Neutralized_By_Major_Heroes>
+		<Can_Be_Neutralized_By_Minor_Heroes>No</Can_Be_Neutralized_By_Minor_Heroes>
+		<Score_Cost_Credits> 25000 </Score_Cost_Credits>
+		<Abilities SubObjectList="Yes">
+			<Combat_Bonus_Ability Name="Mothma_Combat_Bonus">
+				<Activation_Style>Combat_Automatic</Activation_Style>
+				<Unit_Strength_Category>Fighter | Bomber | Corvette | Frigate | Capital | Super | Vehicle | Infantry | Air</Unit_Strength_Category>
+				<Applicable_Unit_Categories>Fighter | Bomber | Corvette | Frigate | Capital | Super | Vehicle | Infantry | Air</Applicable_Unit_Categories>
+				<Applicable_Unit_Types />
+				<Health_Bonus_Percentage>0.0</Health_Bonus_Percentage>
+				<Damage_Bonus_Percentage>0.2</Damage_Bonus_Percentage>
+				<Energy_Pool_Bonus_Percentage>0.0</Energy_Pool_Bonus_Percentage>
+				<Shield_Bonus_Percentage>0.0</Shield_Bonus_Percentage>
+				<Defense_Bonus_Percentage>0.0</Defense_Bonus_Percentage>
+				<Movement_Speed_Bonus_Percentage>0.0</Movement_Speed_Bonus_Percentage>
+				<Stacking_Category>0</Stacking_Category>
+			</Combat_Bonus_Ability>			
+			<Reduce_Production_Price_Ability Name="Mothma_Reduce_Production_Price">
+				<Applicable_Unit_Categories>All</Applicable_Unit_Categories>
+				<Applicable_Unit_Types />
+				<Price_Reduction_Percentage>0.25</Price_Reduction_Percentage>
+				<Stacking_Category>0</Stacking_Category>
+			</Reduce_Production_Price_Ability>
+		</Abilities>		
+	</HeroUnit>
+ 
+      
+   <!-- HeroCompany Information Anubis GC --> 
+   <HeroCompany Name="Commander_Akbar_Team">
+      <Variant_Of_Existing_Type>Template_Ground_Hero_Company</Variant_Of_Existing_Type>
+      <Text_ID>TEXT_GOAULD_GROUND_HERO_ANUBIS</Text_ID>
+      <Encyclopedia_Text>TEXT_DESCRIPTION_GOAULD_ANUBIS_GC_GROUND</Encyclopedia_Text>
+      <MP_Encyclopedia_Text>TEXT_DESCRIPTION_GOAULD_ANUBIS_SK_GROUND</MP_Encyclopedia_Text>
+      <Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_ANUBIS_GROUND</Encyclopedia_Unit_Class>
+      <Icon_Name>GOAULD_SPACE_HERO_ANUBIS.TGA</Icon_Name>                             
+      <Score_Cost_Credits>25000</Score_Cost_Credits>
+      <Ranking_In_Category>1</Ranking_In_Category>      
+      <Company_Transport_Unit>Home_One</Company_Transport_Unit>
+      <Company_Units>Commander_Akbar</Company_Units>   
+      <SFXEvent_Build_Started>Unit_Select_Anubis</SFXEvent_Build_Started>
+      <SFXEvent_Build_Complete>Unit_Spawn_Anubis</SFXEvent_Build_Complete>					
+      <SFXEvent_Fleet_Move>Unit_Spawn_Anubis</SFXEvent_Fleet_Move>
+      <SFXEvent_Hero_Respawned>Unit_Spawn_Anubis</SFXEvent_Hero_Respawned>       
+      <Tactical_Build_Cost_Multiplayer>3700</Tactical_Build_Cost_Multiplayer>
+      <Tactical_Build_Time_Seconds>27</Tactical_Build_Time_Seconds>         
+      <CategoryMask> LandHero | SpaceHero </CategoryMask>
+      <Abilities SubObjectList="Yes">
+         <Absorb_Blaster_Ability Name="Goauld_Hero_Anubis_Absorb_Blaster">
+            <Activation_Style>Take_Damage</Activation_Style>
+            <Absorb_Chance>0.6</Absorb_Chance>
+            <Damage_Absorb_Percentage>0.2</Damage_Absorb_Percentage>
+            <Damage_Absorb_Amount>1</Damage_Absorb_Amount>
+            <Applicable_Unit_Categories>Vehicle | Infantry | Structure</Applicable_Unit_Categories>
+            <Owner_Light_Effect_Type>Color_Flash</Owner_Light_Effect_Type>
+            <Owner_Light_Effect_Color>2.0, 0.4, 0.4</Owner_Light_Effect_Color>
+            <Owner_Light_Effect_Duration>0.5</Owner_Light_Effect_Duration>
+         </Absorb_Blaster_Ability>
+         <Force_Lightning_Ability Name="Goauld_Hero_Anubis_Force_Lightning">
+            <Activation_Style> User_Input </Activation_Style>
+            <Activation_Min_Range>0.0</Activation_Min_Range>
+            <Activation_Max_Range>175.0</Activation_Max_Range>
+            <Applicable_Unit_Categories>Infantry</Applicable_Unit_Categories>
+            <Applicable_Unit_Types/>
+            <Damage_Amount>9999.0</Damage_Amount>
+            <Damage_Application_Time_In_Secs>2.3893</Damage_Application_Time_In_Secs>
+            <Start_Lightning_Frame_Number> 8 </Start_Lightning_Frame_Number>
+            <Lightning_Effect_Name>Force_Lightning</Lightning_Effect_Name>
+            <Lightning_Source_Bone_Name>MuzzleA_00</Lightning_Source_Bone_Name>
+            <Lightning_Target_Bone_Name>B_PELVIS</Lightning_Target_Bone_Name>
+            <Lightning_Max_Targets> 15 </Lightning_Max_Targets>
+            <Lightning_Targets_Radius> 100.0 </Lightning_Targets_Radius>
+            <SFXEvent_Activate/>
+            <SFXEvent_Target_Affected/>
+            <Target_Particle_Effect>Force_Lightning_Smoke</Target_Particle_Effect>
+            <Target_Particle_Bone_Name>B_PELVIS</Target_Particle_Bone_Name>
+            <Target_Light_Effect_Type>Linear_Pulse</Target_Light_Effect_Type>
+            <Target_Light_Effect_Color>0.3, 0.3, 0.8</Target_Light_Effect_Color>
+            <Target_Light_Effect_Color2/>
+            <Target_Light_Effect_Duration>2.3893</Target_Light_Effect_Duration>
+            <Target_Light_Effect_Pulse_Count>25</Target_Light_Effect_Pulse_Count>
+         </Force_Lightning_Ability>
+         <Earthquake_Attack_Ability Name="Goauld_Hero_Anubis_Attack_Structures">
+            <Activation_Style>Special_Attack</Activation_Style>
+            <Terminate_Effect_On_Move_Command>Yes</Terminate_Effect_On_Move_Command>
+            <Activation_Min_Range>0.0</Activation_Min_Range>
+            <Activation_Max_Range>250.0</Activation_Max_Range>
+            <Activation_Chance>1.0</Activation_Chance>
+            <Damage_Amount>0.0</Damage_Amount>
+            <Damage_Percentage>0.01</Damage_Percentage>
+            <Damage_Interval_In_Secs>0.2</Damage_Interval_In_Secs>
+            <Applicable_Unit_Categories>Structure</Applicable_Unit_Categories>
+            <Applicable_Unit_Types/>
+            <SFXEvent_Activate/>
+            <Target_Particle_Effect>Earthquake_Dust_Particles</Target_Particle_Effect>
+            <Target_Particle_Bone_Name/>
+         </Earthquake_Attack_Ability>
+         <Combat_Bonus_Ability Name="Goauld_Hero_Anubis_Land_Combat_Bonus">
+            <Activation_Style>Ground_Automatic</Activation_Style>
+            <Unit_Strength_Category>Vehicle | Infantry | Air</Unit_Strength_Category>
+            <Applicable_Unit_Categories>Vehicle | Infantry | Air</Applicable_Unit_Categories>
+            <Health_Bonus_Percentage>0.0</Health_Bonus_Percentage>
+				<Damage_Bonus_Percentage>0.2</Damage_Bonus_Percentage>
+            <Energy_Pool_Bonus_Percentage>0.0</Energy_Pool_Bonus_Percentage>
+            <Shield_Bonus_Percentage>0.0</Shield_Bonus_Percentage>
+            <Defense_Bonus_Percentage>0.0</Defense_Bonus_Percentage>
+            <Movement_Speed_Bonus_Percentage>0.0</Movement_Speed_Bonus_Percentage>
+            <Stacking_Category>0</Stacking_Category>
+         </Combat_Bonus_Ability>
+         <Reduce_Production_Price_Ability Name="Goauld_Hero_Anubis_Reduce_Production_Price">
+            <Applicable_Unit_Categories>All</Applicable_Unit_Categories>
+            <Price_Reduction_Percentage>0.25</Price_Reduction_Percentage>
+            <Stacking_Category>0</Stacking_Category>
+         </Reduce_Production_Price_Ability>
+         <Concentrate_Fire_Attack_Ability Name="Akbar_Home_One_Ability">
+        <Activation_Style> User_Input </Activation_Style>
+        <Applicable_Unit_Categories>Fighter | Bomber | Transport | Corvette | Frigate | Capital | Super | SpaceHero</Applicable_Unit_Categories>
+        <Applicable_Unit_Types/>
+        <Target_Damage_Increase_Percent>0.5</Target_Damage_Increase_Percent>
+        <Target_Speed_Decrease_Percent>0.0</Target_Speed_Decrease_Percent>
+        <Stacking_Category>0</Stacking_Category>
+      </Concentrate_Fire_Attack_Ability>
+      <Combat_Bonus_Ability Name="Goauld_Hero_Anubis_Space_Combat_Bonus">
+        <Activation_Style>Space_Automatic</Activation_Style>
+        <Unit_Strength_Category>Fighter | Bomber | Transport | Corvette | Frigate | Capital | Super</Unit_Strength_Category>
+        <Applicable_Unit_Categories>Fighter | Bomber | Transport | Corvette | Frigate | Capital | Super</Applicable_Unit_Categories>
+        <Applicable_Unit_Types/>
+        <Health_Bonus_Percentage>0.0</Health_Bonus_Percentage>
+        <Damage_Bonus_Percentage>0.2</Damage_Bonus_Percentage>
+        <Energy_Pool_Bonus_Percentage>0.0</Energy_Pool_Bonus_Percentage>
+        <Shield_Bonus_Percentage>0.0</Shield_Bonus_Percentage>
+        <Defense_Bonus_Percentage>0.0</Defense_Bonus_Percentage>
+        <Movement_Speed_Bonus_Percentage>0.0</Movement_Speed_Bonus_Percentage>
+        <Stacking_Category>0</Stacking_Category>
+      </Combat_Bonus_Ability>
+      <Drain_Life_Ability Name="Anubis_Flash_Weapon">
+        <Activation_Style> User_Input </Activation_Style>
+        <Applicable_Unit_Categories> Transport | Corvette | Frigate | Capital | Super | SpaceHero </Applicable_Unit_Categories>
+        <Duration_In_Seconds>6</Duration_In_Seconds>
+        <Damage_Per_Second>550</Damage_Per_Second>
+        <Drain_Effect_Name>Anubis_Lightning_Weapon</Drain_Effect_Name>
+        <Drain_Source_Bone_Name>MUZZLEA_16</Drain_Source_Bone_Name>
+        <SFXEvent_Activate/>
+        <Max_Drain_Victims>6</Max_Drain_Victims>
+        <Should_Heal>No</Should_Heal>
+        <Charging_Time_In_Seconds>3.0</Charging_Time_In_Seconds>
+        <Drain_Radius>1300.0</Drain_Radius>
+        <Owner_Particle_Effect>Particle_Anubis_Flash_Source</Owner_Particle_Effect>
+        <Owner_Particle_Bone_Name>MUZZLEA_16</Owner_Particle_Bone_Name>
+        <Target_Particle_Effect>Particle_Anubis_Flash_Target</Target_Particle_Effect>
+        <Target_Particle_Bone_Name>Root</Target_Particle_Bone_Name>
+        <Target_Light_Effect_Type>Linear_Pulse</Target_Light_Effect_Type>
+        <Target_Light_Effect_Color>0.8, 0.8, 0.3</Target_Light_Effect_Color>
+        <Target_Light_Effect_Color2/>
+        <Target_Light_Effect_Duration>2.3893</Target_Light_Effect_Duration>
+        <Target_Light_Effect_Pulse_Count>25</Target_Light_Effect_Pulse_Count>
+      </Drain_Life_Ability>
+      </Abilities>
+   </HeroCompany>
+
+   <HeroCompany Name="Mon_Mothma_Team">
+      <Variant_Of_Existing_Type>Template_Ground_Company</Variant_Of_Existing_Type>
+      <Text_ID>TEXT_GOAULD_GROUND_HERO_ANUBIS</Text_ID>
+      <Encyclopedia_Text>TEXT_DESCRIPTION_GOAULD_GC_ANUBIS_SPECIAL</Encyclopedia_Text>
+      <MP_Encyclopedia_Text>TEXT_DESCRIPTION_GOAULD_ANUBIS_SK_GROUND</MP_Encyclopedia_Text>
+      <Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_ANUBIS_GROUND</Encyclopedia_Unit_Class>
+      <Icon_Name>GOAULD_SPACE_HERO_ANUBIS.TGA</Icon_Name>
+      <Affiliation>Rebel</Affiliation>
+      <Damage>1</Damage>
+      <Build_Time_Seconds>0</Build_Time_Seconds>
+      <Company_Transport_Unit>Alliance_Shuttle</Company_Transport_Unit>
+      <Company_Units>Mon_Mothma</Company_Units>
+      <Is_Named_Hero>Yes</Is_Named_Hero>
+      <Is_Force_Sensitive>Yes</Is_Force_Sensitive>
+      <CategoryMask>NonCombatHero</CategoryMask>
+      <Score_Cost_Credits> 25000 </Score_Cost_Credits>
+      <Ranking_In_Category>1</Ranking_In_Category>
+      <SFXEvent_Build_Started>Unit_Select_Anubis</SFXEvent_Build_Started>
+      <SFXEvent_Hero_Respawned>Unit_Select_Anubis</SFXEvent_Hero_Respawned>
+      <SFXEvent_Fleet_Move>Unit_Move_Anubis</SFXEvent_Fleet_Move>
+      <Tactical_Build_Cost_Multiplayer>3000</Tactical_Build_Cost_Multiplayer>
+      <Tactical_Build_Time_Seconds>50</Tactical_Build_Time_Seconds>
+      <Tactical_Build_Prerequisites>RC_Level_Three_Tech_Upgrade</Tactical_Build_Prerequisites>
+      <Build_Limit_Current_Per_Player>1</Build_Limit_Current_Per_Player>
+      <Unit_Abilities_Data SubObjectList="Yes"> </Unit_Abilities_Data>
+   </HeroCompany>   
+   
+   
+   <Projectile Name="Proj_Goauld_Hero_Anubis_Force">
+      <Text_ID>TEXT_NONE</Text_ID>
+      <Land_Model_Name>W_LASER_INVISIBLE.ALO</Land_Model_Name>
+      <Damage_Type>Damage_Normal</Damage_Type>
+      <Scale_Factor>1.0</Scale_Factor>
+      <Max_Speed>11.0</Max_Speed>
+      <Max_Rate_Of_Turn>0.0</Max_Rate_Of_Turn>
+      <Behavior>PROJECTILE, HIDE_WHEN_FOGGED</Behavior>
+      <Projectile_Category>DEFAULT</Projectile_Category>
+      <Projectile_Max_Flight_Distance>35.0</Projectile_Max_Flight_Distance>
+      <Projectile_Damage>35.4</Projectile_Damage>
+      <Projectile_Does_Shield_Damage>No</Projectile_Does_Shield_Damage>
+      <Projectile_Does_Energy_Damage>No</Projectile_Does_Energy_Damage>
+      <Projectile_Does_Hitpoint_Damage>Yes</Projectile_Does_Hitpoint_Damage>
+      <Projectile_Energy_Per_Shot>0</Projectile_Energy_Per_Shot>
+      <Projectile_Object_Detonation_Particle />
+      <Projectile_Ground_Detonation_Particle />
+      <Projectile_Lifetime_Detonation_Particle />
+      <Projectile_Absorbed_By_Shields_Particle>Projectile_Shield_Absorb_Medium</Projectile_Absorbed_By_Shields_Particle>
+      <AI_Combat_Power>100</AI_Combat_Power>
+   </Projectile>
+   
+   
+</UniqueUnits>

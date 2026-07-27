@@ -1,0 +1,94 @@
+<?xml version="1.0"?>
+<MG_Malp_Data>
+
+    <GroundVehicle Name="Tauri_Humvee">
+        <Variant_Of_Existing_Type>Template_Ground_Wheeled</Variant_Of_Existing_Type>
+        <Text_ID>TEXT_TAURI_GROUND_UNIT_HUMVEE</Text_ID>
+        <Encyclopedia_Text>TEXT_DESCRIPTION_TAURI_HUMVEE_GROUND</Encyclopedia_Text>
+        <Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_MG_MALP</Encyclopedia_Unit_Class>
+        <Encyclopedia_Good_Against> Rebel_Trooper Stormtrooper </Encyclopedia_Good_Against>
+        <Encyclopedia_Vulnerable_To> Goauld_Jackal_Guard Rebel_Anti_Vehicle_Turret Empire_Anti_Vehicle_Turret </Encyclopedia_Vulnerable_To>
+        <Icon_Name>TAURI_GROUND_UNIT_HUMVEE.TGA</Icon_Name>
+        <Land_Model_Name>Tauri_Land_Unit_Humvee.ALO</Land_Model_Name>
+        <Radar_Icon_Name>I_RADAR_HUMVEE.TGA</Radar_Icon_Name>
+        <Affiliation>Neutral</Affiliation>
+        <LandBehavior>WALK_LOCOMOTOR, AFFECTED_BY_SHIELD, DAMAGE_TRACKING, HIDE_WHEN_FOGGED, IDLE, POWERED, REVEAL, STUNNABLE, SURFACE_FX, TARGETING, TREAD_SCROLL, UNIT_AI, TURRET, WEAPON, WIND_DISTURBANCE</LandBehavior>
+        <Scale_Factor>1.5</Scale_Factor>
+        <Max_Speed>1.5</Max_Speed>
+        <Movement_Animation_Speed> 0.55 </Movement_Animation_Speed>
+        <FormationSpacing>2.75</FormationSpacing>
+
+        <Max_Thrust>0.1</Max_Thrust>
+        <Max_Rate_Of_Turn>6.0</Max_Rate_Of_Turn>
+        <Select_Box_Scale>52</Select_Box_Scale>
+        <Select_Box_Z_Adjust>3.0f</Select_Box_Z_Adjust>
+        <AI_Combat_Power>150</AI_Combat_Power>
+        <Score_Cost_Credits>600</Score_Cost_Credits>
+        <Tactical_Health>900</Tactical_Health>
+        <Blob_Shadow_Scale>40.0, 30.0</Blob_Shadow_Scale>
+        <Overall_Length>20.0</Overall_Length>
+        <Overall_Width>10.0</Overall_Width>
+        <Targeting_Priority_Set>SG_Vehicle_AntiInfantry</Targeting_Priority_Set>
+
+        <Projectile_Types>Proj_Humvee</Projectile_Types>
+        <Projectile_Fire_Recharge_Seconds>3.5</Projectile_Fire_Recharge_Seconds>
+        <Projectile_Fire_Pulse_Count>110</Projectile_Fire_Pulse_Count>
+        <Projectile_Fire_Pulse_Delay_Seconds>0.2</Projectile_Fire_Pulse_Delay_Seconds>
+        <Targeting_Priority_Set>SG_Infantry_AntiInfantry</Targeting_Priority_Set>
+        <SFXEvent_Fire>Weapon_Tauri_Machinegun_1</SFXEvent_Fire>
+
+        <Barrel_Bone_Name>B_Barrel</Barrel_Bone_Name>
+        <Turret_Bone_Name>B_Turret</Turret_Bone_Name>
+        <Turret_Rotate_Speed>3.0</Turret_Rotate_Speed>
+        <Turret_Rotate_Extent_Degrees>360</Turret_Rotate_Extent_Degrees>
+        <Turret_Elevate_Extent_Degrees>90</Turret_Elevate_Extent_Degrees>
+        <Apply_Y_Turret_Rotate_To_Axis>1</Apply_Y_Turret_Rotate_To_Axis>
+        <Apply_Z_Turret_Rotate_To_Axis>2</Apply_Z_Turret_Rotate_To_Axis>
+        <Turret_Targets_Ground_Vehicles>2</Turret_Targets_Ground_Vehicles>
+        <Turret_Targets_Ground_Infantry>1</Turret_Targets_Ground_Infantry>
+        <Turret_Targets_Air_Vehicles>4</Turret_Targets_Air_Vehicles>
+        <Turret_Targets_Anything_Else>3</Turret_Targets_Anything_Else>
+
+        <Death_Explosions>Large_Explosion_Land</Death_Explosions>
+
+        <SFXEvent_Turret_Rotating_Loop>Vehicle_Turret_Motor</SFXEvent_Turret_Rotating_Loop>
+        <SFXEvent_Engine_Idle_Loop>Unit_T2B_Idle_Engine_Loop</SFXEvent_Engine_Idle_Loop>
+        <SFXEvent_Engine_Moving_Loop>Unit_T2B_Moving_Engine_Loop</SFXEvent_Engine_Moving_Loop>
+    </GroundVehicle>
+
+    <GroundVehicle Name="Abandoned_Tauri_Humvee">
+      <Variant_Of_Existing_Type>Tauri_Humvee</Variant_Of_Existing_Type>
+      <Affiliation>Neutral, Rebel, Empire, Underworld</Affiliation>
+   </GroundVehicle>
+
+
+    <GroundCompany Name="Tauri_Humvee_Company">
+        <Variant_Of_Existing_Type>Template_Ground_Company</Variant_Of_Existing_Type>
+        <Text_ID>TEXT_TAURI_GROUND_UNIT_HUMVEE</Text_ID>
+        <Encyclopedia_Text>TEXT_DESCRIPTION_TAURI_HUMVEE_GROUND</Encyclopedia_Text>
+        <Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_MG_MALP</Encyclopedia_Unit_Class>
+        <Encyclopedia_Good_Against> Rebel_Trooper Stormtrooper </Encyclopedia_Good_Against>
+        <Encyclopedia_Vulnerable_To> Goauld_Jackal_Guard Rebel_Anti_Vehicle_Turret Empire_Anti_Vehicle_Turret </Encyclopedia_Vulnerable_To>
+        <Icon_Name>TAURI_GROUND_UNIT_HUMVEE.TGA</Icon_Name>
+        <Affiliation>Underworld</Affiliation>
+        <Damage>59</Damage>
+        <Score_Cost_Credits>400</Score_Cost_Credits>
+        <Build_Cost_Credits>350</Build_Cost_Credits>
+        <Build_Time_Seconds>46</Build_Time_Seconds>
+        <Ship_Class>tank</Ship_Class>
+        <Company_Transport_Unit>Underworld_Vehicle_Transport</Company_Transport_Unit>
+        <Company_Units>Tauri_Humvee</Company_Units>
+        <Tactical_Build_Cost_Multiplayer>700</Tactical_Build_Cost_Multiplayer>
+        <Tactical_Build_Time_Seconds>9</Tactical_Build_Time_Seconds>
+        <Required_Ground_Base_Level>1</Required_Ground_Base_Level>
+    </GroundCompany>
+
+    <!-- PROJECTILE INFO -->
+    <Projectile Name="Proj_Humvee">
+        <Variant_Of_Existing_Type>Proj_Tauri_MALP_MG</Variant_Of_Existing_Type>
+        <Damage_Type>Damage_Anti_Infantry</Damage_Type>
+        <Projectile_Damage>8.58</Projectile_Damage>
+    </Projectile>
+
+
+</MG_Malp_Data>

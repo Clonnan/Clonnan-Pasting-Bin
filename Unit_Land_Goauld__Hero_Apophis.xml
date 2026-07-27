@@ -1,0 +1,138 @@
+<?xml version="1.0"?>
+<UniqueUnits>
+
+   <HeroUnit Name="Yoda">
+      <Variant_Of_Existing_Type>Template_Ground_Infantry_Single_Hero_Goauld</Variant_Of_Existing_Type>
+      <Text_ID>TEXT_GOAULD_SPACE_HERO_APOPHIS</Text_ID>
+      <Encyclopedia_Text>TEXT_DESCRIPTION_GOAULD_APOPHIS_GROUND</Encyclopedia_Text>
+      <Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_APOPHIS_SYSTEMHATAK</Encyclopedia_Unit_Class>
+      <Encyclopedia_Good_Against>Underworld_Saboteur Underworld_Merc Stormtrooper</Encyclopedia_Good_Against>
+      <Encyclopedia_Vulnerable_To>MZ8_Pulse_Cannon_Tank Tauri_F302_Land Empire_Anti_Infantry_Turret</Encyclopedia_Vulnerable_To>
+      <Icon_Name>SYSTEMLORDS_SPACE_HERO_APOPHIS.TGA</Icon_Name>
+      <Land_Model_Name>Goauld_Land_Hero_Apophis.ALO</Land_Model_Name>
+      <Land_Model_Anim_Override_Name>Goauld_Land_Hero_Apophis.ALO</Land_Model_Anim_Override_Name>
+      <Affiliation>Rebel</Affiliation>
+      <Presence_Range>80.0</Presence_Range>
+      <Tactical_Health>1100</Tactical_Health>
+      <AI_Combat_Power>200</AI_Combat_Power>
+      <Neutralization_Cost>3500.0</Neutralization_Cost>
+      <Projectile_Types>Proj_Goauld_Hero_Apophis_Land</Projectile_Types>
+      <Damage>50</Damage>
+      <LandBehavior>WALK_LOCOMOTOR, ABILITY_COUNTDOWN, DAMAGE_TRACKING, GARRISON_UNIT, HIDE_WHEN_FOGGED, IDLE, IMPOSING_PRESENCE, REVEAL, SELECTABLE, SHIELDED, STUNNABLE, SURFACE_FX, TARGETING, UNIT_AI, WEAPON</LandBehavior>
+
+      <Shield_Points>1000</Shield_Points>
+      <Shield_Refresh_Rate>6</Shield_Refresh_Rate>
+      <Projectile_Fire_Recharge_Seconds>3</Projectile_Fire_Recharge_Seconds>
+      <Projectile_Fire_Pulse_Count>1</Projectile_Fire_Pulse_Count>
+      <Projectile_Fire_Pulse_Delay_Seconds>2</Projectile_Fire_Pulse_Delay_Seconds>
+      <Targeting_Priority_Set>SG_Infantry_AntiInfantry</Targeting_Priority_Set>
+
+      <SFXEvent_Fire>Weapon_Hand_Device_Goauld</SFXEvent_Fire>
+
+      <Shielded_Only_When_Deployed>Yes</Shielded_Only_When_Deployed>
+      <Deploys>Yes</Deploys>
+      <Fire_Weapon_When_Deployed>No</Fire_Weapon_When_Deployed>
+      <Fire_Weapon_When_Undeployed>Yes</Fire_Weapon_When_Undeployed>
+      <Shield_Sub_Mesh>Shield</Shield_Sub_Mesh>
+
+
+      <!--Locomotor_Has_Animation_Priority>yes</Locomotor_Has_Animation_Priority>
+      <Attack_Animation_Is_Overlay>Yes</Attack_Animation_Is_Overlay
+      Is_Stationary_When_Attacking>Yes</Is_Stationary_When_Attacking-->
+      <!--Shielded_Only_When_Deployed>Yes</Shielded_Only_When_Deployed>
+      <Deploys>Yes</Deploys>
+      <Auto_Deploys>Yes</Auto_Deploys>
+      <Deployment_Anim_Rate>3.0</Deployment_Anim_Rate>
+      <Fire_Weapon_When_In_Rocket_Attack_Mode>No</Fire_Weapon_When_In_Rocket_Attack_Mode>
+      <Fire_Weapon_When_In_Normal_Attack_Mode>Yes</Fire_Weapon_When_In_Normal_Attack_Mode>
+      <Fire_Weapon_When_Deployed>Yes</Fire_Weapon_When_Deployed>
+      <Fire_Weapon_When_Undeployed>No</Fire_Weapon_When_Undeployed>
+      <Must_Face_Target_To_Attack_When_Deployed>Yes</Must_Face_Target_To_Attack_When_Deployed>
+        <Max_Dist_Walk_While_Deployed>150.0</Max_Dist_Walk_While_Deployed>
+        <Deployed_Walk_Anim_Speed>2</Deployed_Walk_Anim_Speed>
+        <Deployed_Walk_Speed>2.5</Deployed_Walk_Speed>
+        <Shield_Sub_Mesh>Sphere01</Shield_Sub_Mesh-->
+
+
+
+      <SFXEvent_Attack>Unit_Attack_Apophis</SFXEvent_Attack>
+      <SFXEvent_Guard></SFXEvent_Guard>
+      <SFXEvent_Health_Critical_Warning></SFXEvent_Health_Critical_Warning>
+      <SFXEvent_Health_Low_Warning></SFXEvent_Health_Low_Warning>
+      <SFXEvent_Move>Unit_Move_Apophis</SFXEvent_Move>
+      <SFXEvent_Select>Unit_Select_Apophis</SFXEvent_Select>
+      <SFXEvent_Stop></SFXEvent_Stop>
+      <SFXEvent_Build_Started></SFXEvent_Build_Started>
+      <SFXEvent_Build_Cancelled></SFXEvent_Build_Cancelled>
+      <SFXEvent_Build_Complete>Unit_Spawn_Apophis</SFXEvent_Build_Complete>
+      <SFXEvent_Hero_Respawned>Unit_Spawn_Apophis</SFXEvent_Hero_Respawned>
+      <Death_SFXEvent_Start_Die></Death_SFXEvent_Start_Die>
+      <Death_Clone>Damage_Hand_Device, Yoda_Hand_Device_Death_Clone</Death_Clone>
+      <Unit_Abilities_Data SubObjectList="Yes">
+         <Unit_Ability>
+            <Type>POWER_TO_WEAPONS</Type>
+            <Alternate_Name_Text>TEXT_ABILITY_HELMET_UNFOLDING</Alternate_Name_Text>
+            <Alternate_Description_Text>TEXT_DESCRIPTION_ABILITY_UNFOLDING_APOPHIS_GROUND</Alternate_Description_Text>
+            <Alternate_Icon_Name>I_SA_HELMET_UNFOLD.TGA</Alternate_Icon_Name>
+            <Mod_Multiplier>WEAPON_DELAY_MULTIPLIER, 1.0</Mod_Multiplier>
+            <Mod_Multiplier>SPEED_MULTIPLIER, 0.5</Mod_Multiplier>
+            <Mod_Multiplier>CAUSE_DAMAGE_MULTIPLIER, 1.0</Mod_Multiplier>
+            <Mod_Multiplier>TAKE_DAMAGE_MULTIPLIER, 0.5f</Mod_Multiplier>
+            <Recharge_Seconds></Recharge_Seconds>
+            <Expiration_Seconds></Expiration_Seconds>
+            <SFXEvent_GUI_Unit_Ability_Activated>Unit_Apophis_Helmet</SFXEvent_GUI_Unit_Ability_Activated>
+            <SFXEvent_GUI_Unit_Ability_Deactivated>Unit_Apophis_Helmet</SFXEvent_GUI_Unit_Ability_Deactivated>
+         </Unit_Ability>
+         <Unit_Ability>
+            <Type>DEPLOY</Type>
+            <Alternate_Name_Text>TEXT_ABILITY_PERSONAL_SHIELD</Alternate_Name_Text>
+            <Alternate_Description_Text>TEXT_DESCRIPTION_ABILITY_PERSONAL_SHIELD_APOPHIS_GROUND</Alternate_Description_Text>
+            <Alternate_Icon_Name>I_SA_PERSONAL_SHIELD.TGA</Alternate_Icon_Name>
+            <!--Targeting_Max_Attack_Distance>200</Targeting_Max_Attack_Distance-->
+         </Unit_Ability>
+      </Unit_Abilities_Data>
+      <Lua_Script>ObjectScript_Jaffa_Helmet_Transformation</Lua_Script>
+   </HeroUnit>
+
+   <GroundInfantry Name="Yoda_Hand_Device_Death_Clone">
+      <Variant_Of_Existing_Type>Yoda</Variant_Of_Existing_Type>
+      <Specific_Death_Anim_Type>FW_DIE</Specific_Death_Anim_Type>
+   </GroundInfantry>
+
+
+
+   <!-- YODA COMPANY DATA -->
+   <HeroCompany Name="Yoda_Team">
+      <Variant_Of_Existing_Type>Template_Ground_Hero_Company</Variant_Of_Existing_Type>
+      <Text_ID>TEXT_GOAULD_SPACE_HERO_APOPHIS</Text_ID>
+      <Encyclopedia_Text>TEXT_DESCRIPTION_GOAULD_APOPHIS_GROUND</Encyclopedia_Text>
+      <Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_APOPHIS_SYSTEMHATAK</Encyclopedia_Unit_Class>
+      <Icon_Name>SYSTEMLORDS_SPACE_HERO_APOPHIS.TGA</Icon_Name>
+      <Affiliation>Rebel</Affiliation>
+      <Ranking_In_Category>2</Ranking_In_Category>
+      <Space_Override_Population_Value>8</Space_Override_Population_Value>
+      <Score_Cost_Credits>18000</Score_Cost_Credits>
+      <Company_Transport_Unit>Goauld_Hero_Apophis</Company_Transport_Unit>
+      <Company_Units>Yoda</Company_Units>
+      <SFXEvent_Build_Started>Unit_Select_Apophis</SFXEvent_Build_Started>
+      <SFXEvent_Build_Complete>Unit_Spawn_Apophis</SFXEvent_Build_Complete>
+      <SFXEvent_Fleet_Move>Unit_Move_Apophis</SFXEvent_Fleet_Move>
+      <SFXEvent_Hero_Respawned>Unit_Spawn_Apophis</SFXEvent_Hero_Respawned>
+      <Tactical_Build_Cost_Multiplayer>3500</Tactical_Build_Cost_Multiplayer>
+      <Tactical_Build_Time_Seconds>26</Tactical_Build_Time_Seconds>
+      <Tactical_Build_Prerequisites>RC_Level_Three_Tech_Upgrade</Tactical_Build_Prerequisites>
+      <CategoryMask> LandHero | SpaceHero </CategoryMask>
+   </HeroCompany>
+
+
+   <!-- Projectile Information -->
+   <Projectile Name="Proj_Goauld_Hero_Apophis_Land">
+      <Variant_Of_Existing_Type>Proj_Goauld_Hand_Device</Variant_Of_Existing_Type>
+      <Damage_Type>Damage_Hand_Device</Damage_Type>
+      <Projectile_Damage>120.0</Projectile_Damage>
+      <Projectile_Blast_Area_Range>15.0</Projectile_Blast_Area_Range>
+      <Projectile_Blast_Area_Damage>120.0</Projectile_Blast_Area_Damage>
+      <Max_Secs_For_AE_Delayed_Damage>0.0</Max_Secs_For_AE_Delayed_Damage>
+   </Projectile>
+
+</UniqueUnits>

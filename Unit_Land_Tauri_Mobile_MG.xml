@@ -1,0 +1,133 @@
+<?xml version="1.0"?>
+<Mobile_MG_Data>
+
+    <!-- UNIT INFO -->
+    <GroundInfantry Name="Tauri_Mobile_MG">
+        <Variant_Of_Existing_Type>Template_Ground_Infantry_Single_Tauri</Variant_Of_Existing_Type>
+        <Text_ID>TEXT_TAURI_GROUND_UNIT_MOBILE_MG</Text_ID>
+        <Encyclopedia_Text> TEXT_DESCRIPTION_TAURI_MOBILE_MG_GROUND</Encyclopedia_Text>
+        <Encyclopedia_Unit_Class> TEXT_ENCYCLOPEDIA_CLASS_MOBILE_MG</Encyclopedia_Unit_Class>
+        <Encyclopedia_Good_Against> Rebel_Trooper Stormtrooper </Encyclopedia_Good_Against>
+        <Encyclopedia_Vulnerable_To> Tauri_B302_Land Wraith_Bomber_Land SPMAT_Walker </Encyclopedia_Vulnerable_To>
+        <Icon_Name>TAURI_GROUND_UNIT_MOBILE_MG.tga</Icon_Name>
+        <Land_Model_Name>Tauri_Land_Unit_MG_Team.alo</Land_Model_Name>
+        <Land_Terrain_Model_Mapping>
+            Temperate,  Tauri_Land_Unit_MG_Team.ALO,
+            Urban,      Tauri_Land_Unit_MG_Team_Black.ALO,
+            Arctic,     Tauri_Land_Unit_MG_Team_Snow.ALO,
+            Volcanic,   Tauri_Land_Unit_MG_Team_Pegasus.ALO,
+            Desert,     Tauri_Land_Unit_MG_Team_Desert.ALO,
+            Forest,     Tauri_Land_Unit_MG_Team_Camo.ALO,
+            Swamp,      Tauri_Land_Unit_MG_Team_Camo.ALO
+        </Land_Terrain_Model_Mapping>
+        <Land_Model_Anim_Override_Name>Tauri_Land_Unit_MG_Team.alo</Land_Model_Anim_Override_Name>
+
+        <LandBehavior>WALK_LOCOMOTOR, DAMAGE_TRACKING, GARRISON_UNIT, HIDE_WHEN_FOGGED, IDLE, REVEAL, SELECTABLE, STUNNABLE, SURFACE_FX, TARGETING, TURRET, UNIT_AI, WEAPON</LandBehavior>
+        <Select_Box_Scale>225</Select_Box_Scale>
+        <Scale_Factor>.12</Scale_Factor>
+
+        <Max_Speed>0.75</Max_Speed>
+        <Tactical_Health>200</Tactical_Health>
+        <Damage>30</Damage>
+        <AI_Combat_Power>55</AI_Combat_Power>
+
+
+        <Movement_Animation_Speed> 3 </Movement_Animation_Speed>
+        <Rotation_Animation_Speed> 3 </Rotation_Animation_Speed>
+        <Walk_Animation_Speed> 3 </Walk_Animation_Speed>
+        <Crouch_Animation_Speed> 3 </Crouch_Animation_Speed>
+        <Max_Rate_Of_Turn>3.0</Max_Rate_Of_Turn>
+
+        <Projectile_Types>Proj_Tauri_MG_Team</Projectile_Types>
+        <Projectile_Fire_Recharge_Seconds>3.5</Projectile_Fire_Recharge_Seconds>
+        <Projectile_Fire_Pulse_Count>110</Projectile_Fire_Pulse_Count>
+        <Projectile_Fire_Pulse_Delay_Seconds>0.2</Projectile_Fire_Pulse_Delay_Seconds>
+        <Targeting_Priority_Set>SG_Infantry_AntiInfantry</Targeting_Priority_Set>
+
+        <SFXEvent_Fire>Weapon_Tauri_Machinegun_1</SFXEvent_Fire>
+        <Fire_Category_Restrictions>Air</Fire_Category_Restrictions>
+        <Targeting_Max_Attack_Distance>270</Targeting_Max_Attack_Distance>
+
+        <Deploys>Yes</Deploys>
+        <Auto_Deploys>Yes</Auto_Deploys>
+        <Deployed_Max_Attack_Distance_Multiplier>1.0</Deployed_Max_Attack_Distance_Multiplier>
+        <Deployment_Anim_Rate>1.75</Deployment_Anim_Rate>
+        <Is_Turret> Yes </Is_Turret>
+        <Turret_Rest_Angle> 0.0, 0.0, 0.0 </Turret_Rest_Angle>
+        <Turret_Rotation_Offset> 0.0, 0.0, 0.0 </Turret_Rotation_Offset>
+        <Turret_Rotate_Speed> 5.0 </Turret_Rotate_Speed>
+        <Turret_Rotate_Extent_Degrees> 360 </Turret_Rotate_Extent_Degrees>
+        <Turret_Elevate_Extent_Degrees> 45 </Turret_Elevate_Extent_Degrees>
+        <Deployed_Turret_Rotate_Extent_Degrees>60</Deployed_Turret_Rotate_Extent_Degrees>
+        <Deployed_Turret_Elevate_Extent_Degrees>45</Deployed_Turret_Elevate_Extent_Degrees>
+        <Turret_Bone_Name>PELVIS</Turret_Bone_Name>
+        <Barrel_Bone_Name>MUZZLEA_00</Barrel_Bone_Name>
+        <Lua_Script>ObjectScript_Ground_Infantry_Face_Target</Lua_Script>
+
+
+        <Target_Bones>TORSO, TORSO01</Target_Bones>
+
+        <Apply_Z_Turret_Rotate_To_Axis>2</Apply_Z_Turret_Rotate_To_Axis>
+        <Apply_Y_Turret_Rotate_To_Axis>1</Apply_Y_Turret_Rotate_To_Axis>
+        <Turret_Targets_Anything_Else>3</Turret_Targets_Anything_Else>
+        <Turret_Targets_Air_Vehicles>9999</Turret_Targets_Air_Vehicles>
+        <Turret_Targets_Ground_Vehicles>1</Turret_Targets_Ground_Vehicles>
+        <Turret_Targets_Ground_Infantry>2</Turret_Targets_Ground_Infantry>
+        <Fire_Weapon_When_Undeployed>No</Fire_Weapon_When_Undeployed>
+        <Fire_Weapon_When_Deployed>Yes</Fire_Weapon_When_Deployed>
+        <CategoryMask> Infantry | AntiVehicle </CategoryMask>
+        <Conversion_Ability_Changes_To_Enemy> Tauri_Mobile_MG_Converted_To_Enemy </Conversion_Ability_Changes_To_Enemy>
+        <Unit_Abilities_Data SubObjectList="Yes">
+            <Unit_Ability>
+                <Type>DEPLOY</Type>
+                <Alternate_Name_Text>TEXT_ABILITY_DEPLOY</Alternate_Name_Text>
+                <Alternate_Description_Text>TEXT_DESCRIPTION_ABILITY_DEPLOY_MOBILE_MG_GROUND</Alternate_Description_Text>
+            </Unit_Ability>
+        </Unit_Abilities_Data>
+    </GroundInfantry>
+
+    <GroundInfantry Name="Tauri_Mobile_MG_Converted_To_Enemy">
+        <Variant_Of_Existing_Type> Tauri_Mobile_MG </Variant_Of_Existing_Type>
+    </GroundInfantry>
+
+    <!-- COMPANY INFO -->
+    <GroundCompany Name="Tauri_Mobile_MG_Company_No_Prereq">
+        <Variant_Of_Existing_Type>Template_Ground_Company</Variant_Of_Existing_Type>
+        <Text_ID>TEXT_TAURI_GROUND_UNIT_MOBILE_MG</Text_ID>
+        <Encyclopedia_Text> TEXT_DESCRIPTION_TAURI_MOBILE_MG_GROUND</Encyclopedia_Text>
+        <Encyclopedia_Unit_Class> TEXT_ENCYCLOPEDIA_CLASS_MOBILE_MG</Encyclopedia_Unit_Class>
+        <Encyclopedia_Good_Against> Rebel_Trooper Stormtrooper </Encyclopedia_Good_Against>
+        <Encyclopedia_Vulnerable_To> Tauri_B302_Land Wraith_Bomber_Land SPMAT_Walker </Encyclopedia_Vulnerable_To>
+        <Icon_Name>TAURI_GROUND_UNIT_MOBILE_MG.tga</Icon_Name>
+        <Damage>59</Damage>
+        <Score_Cost_Credits>500</Score_Cost_Credits>
+        <Build_Cost_Credits>450</Build_Cost_Credits>
+        <Build_Time_Seconds>70</Build_Time_Seconds>
+        <Company_Transport_Unit>Underworld_Infantry_Droid_Shuttle</Company_Transport_Unit>
+        <Company_Units>Tauri_Mobile_MG, Tauri_Mobile_MG</Company_Units>
+        <Max_Squad_Size>2</Max_Squad_Size>
+        <Tactical_Build_Cost_Multiplayer>900</Tactical_Build_Cost_Multiplayer>
+        <Tactical_Build_Time_Seconds>10</Tactical_Build_Time_Seconds>
+        <Required_Ground_Base_Level>1</Required_Ground_Base_Level>
+    </GroundCompany>
+
+    <GroundCompany Name="Tauri_Mobile_MG_Company">
+        <Variant_Of_Existing_Type>Tauri_Mobile_MG_Company_No_Prereq</Variant_Of_Existing_Type>
+        <Affiliation>Underworld</Affiliation>
+        <Tech_Level>5</Tech_Level>
+        <Required_Timeline>0</Required_Timeline>
+        <Required_Ground_Base_Level>1</Required_Ground_Base_Level>
+        <Required_Star_Base_Level>0</Required_Star_Base_Level>
+        <Required_Special_Structures>U_Ground_Academy</Required_Special_Structures>
+        <Tactical_Build_Prerequisites>UC_Level_Three_Tech_Upgrade</Tactical_Build_Prerequisites>
+    </GroundCompany>
+
+    <!-- PROJECTILE INFO -->
+    <Projectile Name="Proj_Tauri_MG_Team">
+        <Variant_Of_Existing_Type>Proj_Tauri_Mobile_MG</Variant_Of_Existing_Type>
+        <Damage_Type>Damage_Normal</Damage_Type>
+        <Projectile_Damage>5.22</Projectile_Damage>
+    </Projectile>
+
+
+</Mobile_MG_Data>

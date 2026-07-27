@@ -1,0 +1,117 @@
+<?xml version="1.0"?>
+<Ori_Soldier_Infantry_Data>
+
+   <GroundInfantry Name="Ori_Soldier">
+      <Variant_Of_Existing_Type>Template_Ground_Infantry_Multi</Variant_Of_Existing_Type>
+      <Text_ID>TEXT_ORI_GROUND_UNIT_SOLDIER</Text_ID>
+      <Encyclopedia_Text>TEXT_DESCRIPTION_ORI_SOLDIER_GROUND</Encyclopedia_Text>
+      <Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_SPECIAL_FORCES</Encyclopedia_Unit_Class>
+      <Encyclopedia_Good_Against>Underworld_Saboteur Underworld_Merc Stormtrooper</Encyclopedia_Good_Against>
+      <Encyclopedia_Vulnerable_To>MZ8_Pulse_Cannon_Tank Tauri_F302_Land Empire_Anti_Infantry_Turret</Encyclopedia_Vulnerable_To>    
+      <Icon_Name>ORI_GROUND_UNIT_SOLDIER.TGA</Icon_Name>
+      <Land_Model_Name>Ori_Land_Unit_Soldier.alo</Land_Model_Name>
+      <Land_Model_Anim_Override_Name>Ori_Land_Unit_Soldier.alo</Land_Model_Anim_Override_Name>
+      <Tactical_Health>65</Tactical_Health>
+      <Max_Speed>1.0</Max_Speed>
+
+      <SFXEvent_Select>Unit_Select_Ori_S</SFXEvent_Select>
+      <SFXEvent_Move>Unit_Move_Ori_S</SFXEvent_Move>
+	<SFXEvent_Attack>Unit_Attack_Ori_S</SFXEvent_Attack>
+
+      <AI_Combat_Power>20</AI_Combat_Power>
+      <Targeting_Priority_Set>SG_Infantry_AntiInfantry</Targeting_Priority_Set>
+      <CategoryMask>Infantry</CategoryMask> 
+      <FormationSpacing>0.5</FormationSpacing>	  
+      <Projectile_Types>Proj_Ori_Soldier</Projectile_Types>
+      <Projectile_Fire_Recharge_Seconds>1.2</Projectile_Fire_Recharge_Seconds>
+	  <Projectile_Fire_Pulse_Count>3</Projectile_Fire_Pulse_Count>
+	  <Projectile_Fire_Pulse_Delay_Seconds>0.9</Projectile_Fire_Pulse_Delay_Seconds>
+      <SFXEvent_Fire>Weapon_Staff_Ori</SFXEvent_Fire>
+      <Death_Clone>Damage_Hand_Device, Ori_Soldier_Hand_Device_Death_Clone</Death_Clone>
+  </GroundInfantry>
+   
+   <GroundInfantry Name="Ori_Soldier_Hand_Device_Death_Clone">
+      <Variant_Of_Existing_Type>Ori_Soldier</Variant_Of_Existing_Type>
+      <Specific_Death_Anim_Type>FW_DIE</Specific_Death_Anim_Type>
+   </GroundInfantry>
+
+   <GroundInfantry Name="Ori_Soldier_Rings">
+      <Variant_Of_Existing_Type>Ori_Soldier</Variant_Of_Existing_Type>
+      <LandBehavior>LANDING, SURFACE_FX, LAND_TEAM_INFANTRY_LOCOMOTOR, IDLE, WEAPON, STUNNABLE, REVEAL, HIDE_WHEN_FOGGED, DAMAGE_TRACKING</LandBehavior>
+   </GroundInfantry>
+   
+
+   <GroundCompany Name="Ori_Soldier_Company">
+      <Variant_Of_Existing_Type>Template_Ground_Company</Variant_Of_Existing_Type>
+      <Text_ID>TEXT_ORI_GROUND_UNIT_SOLDIER</Text_ID>
+      <Encyclopedia_Text>TEXT_DESCRIPTION_ORI_SOLDIER_GROUND</Encyclopedia_Text>
+      <Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_SPECIAL_FORCES</Encyclopedia_Unit_Class>
+      <Encyclopedia_Good_Against>Underworld_Saboteur Underworld_Merc Stormtrooper</Encyclopedia_Good_Against>
+      <Encyclopedia_Vulnerable_To>MZ8_Pulse_Cannon_Tank Tauri_F302_Land Empire_Anti_Infantry_Turret</Encyclopedia_Vulnerable_To>
+      <Icon_Name>ORI_GROUND_UNIT_SOLDIER.TGA</Icon_Name>
+      <Affiliation>Ori</Affiliation>
+      <Damage>10</Damage>
+      <Score_Cost_Credits>250</Score_Cost_Credits>
+      <Build_Cost_Credits>300</Build_Cost_Credits>
+      <Build_Time_Seconds>10</Build_Time_Seconds>
+      <Tech_Level>1</Tech_Level>
+      <Company_Transport_Unit>Ori_Space_Unit_Transport</Company_Transport_Unit>
+      <Create_Team_Type>Ori_Soldier_Team</Create_Team_Type>
+      <Company_Units>Ori_Soldier, Ori_Soldier, Ori_Soldier, Ori_Soldier, Ori_Soldier, Ori_Soldier</Company_Units>
+      <Max_Squad_Size>6</Max_Squad_Size>
+      <Tactical_Build_Cost_Multiplayer>600</Tactical_Build_Cost_Multiplayer>
+      <Tactical_Build_Time_Seconds>9</Tactical_Build_Time_Seconds>
+      <Required_Ground_Base_Level>1</Required_Ground_Base_Level>
+      <Required_Special_Structures>Ori_Ground_Building_Barracks</Required_Special_Structures>
+   </GroundCompany>
+
+   <GroundCompany Name="Ori_Soldier_Company_Rings">
+		<Variant_Of_Existing_Type>Ori_Soldier_Company</Variant_Of_Existing_Type>
+		<Company_Units> Ori_Soldier_Rings, Ori_Soldier_Rings, Ori_Soldier_Rings, Ori_Soldier_Rings, Ori_Soldier_Rings, Ori_Soldier_Rings</Company_Units>
+		<Tech_Level>99</Tech_Level>
+	</GroundCompany>
+  
+
+   <Container Name="Ori_Soldier_Team">
+      <Variant_Of_Existing_Type>Template_Infantry_Container</Variant_Of_Existing_Type>
+      <Text_ID>TEXT_ORI_GROUND_UNIT_SOLDIER</Text_ID>
+      <Encyclopedia_Text>TEXT_DESCRIPTION_ORI_SOLDIER_GROUND</Encyclopedia_Text>
+      <Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_SPECIAL_FORCES</Encyclopedia_Unit_Class>
+      <Encyclopedia_Good_Against>Underworld_Saboteur Underworld_Merc Stormtrooper</Encyclopedia_Good_Against>
+      <Encyclopedia_Vulnerable_To>MZ8_Pulse_Cannon_Tank Tauri_F302_Land Empire_Anti_Infantry_Turret</Encyclopedia_Vulnerable_To>
+      <Icon_Name>ORI_GROUND_UNIT_SOLDIER.TGA</Icon_Name>
+      <ContainerArrangement>Rows</ContainerArrangement>
+      <Max_Speed>1.0</Max_Speed>
+   </Container>
+  
+  
+   <Projectile Name="Proj_Ori_Soldier">
+      <Text_ID>TEXT_NONE</Text_ID>
+      <Land_Model_Name>Wraith_Projectile_AntiVehicle.ALO</Land_Model_Name>
+      <Scale_Factor>0.5</Scale_Factor>
+      <Projectile_Category>Laser</Projectile_Category>
+      <Max_Speed>20.0</Max_Speed>
+      <Max_Rate_Of_Turn>0.0</Max_Rate_Of_Turn>
+      <Behavior>PROJECTILE, HIDE_WHEN_FOGGED</Behavior>
+      <Projectile_Fire_Recharge_Seconds>1.0</Projectile_Fire_Recharge_Seconds>
+      <Projectile_Fire_Pulse_Count>5</Projectile_Fire_Pulse_Count>
+      <Projectile_Fire_Pulse_Delay_Seconds>0.1</Projectile_Fire_Pulse_Delay_Seconds>
+      <Projectile_Max_Flight_Distance>400.0</Projectile_Max_Flight_Distance>
+      <Projectile_Damage>4.0</Projectile_Damage>
+      <Projectile_Does_Shield_Damage>Yes</Projectile_Does_Shield_Damage>
+      <Projectile_Does_Energy_Damage>No</Projectile_Does_Energy_Damage>
+      <Projectile_Does_Hitpoint_Damage>Yes</Projectile_Does_Hitpoint_Damage>
+      <Projectile_Energy_Per_Shot>0</Projectile_Energy_Per_Shot>
+      <Projectile_Object_Detonation_Particle>Particle_General_Hit_Small</Projectile_Object_Detonation_Particle>
+      <Projectile_Object_Armor_Reduced_Detonation_Particle>Particle_General_Hit_Small</Projectile_Object_Armor_Reduced_Detonation_Particle>
+      <Projectile_Ground_Detonation_Particle/>
+      <Projectile_Lifetime_Detonation_Particle/>
+      <Projectile_Absorbed_By_Shields_Particle>Particle_Wraith_Fighter_Shield_Hit</Projectile_Absorbed_By_Shields_Particle>
+      <AI_Combat_Power>50</AI_Combat_Power>
+      <Projectile_SFXEvent_Detonate_Reduced_By_Armor>Effect_Shield_Absorb_Light</Projectile_SFXEvent_Detonate_Reduced_By_Armor>
+      <Projectile_Blast_Area_Damage>2</Projectile_Blast_Area_Damage>
+	  <Projectile_Blast_Area_Range>4</Projectile_Blast_Area_Range>
+	  <Max_Secs_For_AE_Delayed_Damage>0</Max_Secs_For_AE_Delayed_Damage>
+   </Projectile>
+   
+</Ori_Soldier_Infantry_Data>

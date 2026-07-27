@@ -1,0 +1,226 @@
+<?xml version="1.0"?>
+<Infantry_Data>
+
+   <GenericHeroUnit Name="Generic_Bounty_Hunter_R">      
+      <Variant_Of_Existing_Type>Template_Ground_Infantry_Single_Hero_Goauld</Variant_Of_Existing_Type>
+      <Text_ID>TEXT_GOAULD_GROUND_UNIT_ASHRAK</Text_ID>
+      <Encyclopedia_Text>TEXT_DESCRIPTION_GOAULD_SK_ASHRAK_GROUND</Encyclopedia_Text>
+      <Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_ASHRAK</Encyclopedia_Unit_Class>
+      <Encyclopedia_Good_Against>Destroyer_Droid Tauri_Mobile_MG Dark_Trooper_PhaseIII</Encyclopedia_Good_Against>
+      <Encyclopedia_Vulnerable_To>Underworld_Merc Tauri_F302_Land Empire_Anti_Infantry_Turret</Encyclopedia_Vulnerable_To> 
+      <Icon_Name>GOAULD_SPACE_HERO_ASHRAK.TGA</Icon_Name>
+      <Land_Model_Name>Goauld_Land_Unit_Ashrak.ALO</Land_Model_Name>
+      <Land_Model_Anim_Override_Name>Goauld_Land_Unit_Ashrak.ALO</Land_Model_Anim_Override_Name>
+      <Scale_Factor>0.75</Scale_Factor>
+      <LandBehavior>ABILITY_COUNTDOWN, DAMAGE_TRACKING, HIDE_WHEN_FOGGED, IDLE, REVEAL, SELECTABLE, SURFACE_FX, TARGETING, UNIT_AI, WALK_LOCOMOTOR, WEAPON, GARRISON_UNIT</LandBehavior>
+      <Tactical_Health>250</Tactical_Health>
+      
+      <SFXEvent_Select>Unit_Select_Ashrak</SFXEvent_Select>
+      <SFXEvent_Move>Unit_Move_Ashrak</SFXEvent_Move>
+      <SFXEvent_Attack>Unit_Attack_Ashrak</SFXEvent_Attack>
+      
+      <Damage>60</Damage>
+      <AI_Combat_Power>100</AI_Combat_Power>
+      <Targeting_Priority_Set>SG_Infantry_AntiInfantry</Targeting_Priority_Set>
+      <Is_Named_Hero>No</Is_Named_Hero> 
+      <Is_Generic_Hero>No</Is_Generic_Hero>      
+      <Show_Hero_Head>No</Show_Hero_Head>      
+      <Is_Force_Sensitive>No</Is_Force_Sensitive>
+      <CategoryMask> LandHero | SpaceHero </CategoryMask>
+      <Attach_To_Flagship_During_Space_Battle>Yes</Attach_To_Flagship_During_Space_Battle>
+      <Stay_In_Transport_During_Ground_Battle>No</Stay_In_Transport_During_Ground_Battle>
+      <Always_Spawn_In_Orbit>No</Always_Spawn_In_Orbit>
+      <Score_Cost_Credits>5000</Score_Cost_Credits>
+      <Movement_Animation_Speed>1.8</Movement_Animation_Speed>
+      <Walk_Animation_Speed>1.0</Walk_Animation_Speed>       
+      <Projectile_Types>Proj_Ashrak_Atar_Blade</Projectile_Types>    
+      <Projectile_Fire_Recharge_Seconds>1.3</Projectile_Fire_Recharge_Seconds>
+      <Projectile_Fire_Pulse_Count>1</Projectile_Fire_Pulse_Count>
+      <Projectile_Fire_Pulse_Delay_Seconds>0.2</Projectile_Fire_Pulse_Delay_Seconds>
+      <Projectile_Appearance_Delay_Frames>20</Projectile_Appearance_Delay_Frames>
+      <Targeting_Max_Attack_Distance>5.0</Targeting_Max_Attack_Distance>  
+      <SFXEvent_Fire>Weapon_Goauld_Ashrak_Blade</SFXEvent_Fire>
+      <Custom_Hard_XExtent>0.7</Custom_Hard_XExtent>
+      <Custom_Hard_YExtent>0.7</Custom_Hard_YExtent>
+      <!-- Special: Ashraks don't show up on enemy's radar map, but they do for allies. -->
+      <Is_Visible_On_Radar>Yes</Is_Visible_On_Radar>
+      <Is_Visible_On_Enemy_Radar>No</Is_Visible_On_Enemy_Radar> 
+      <Unit_Abilities_Data SubObjectList="Yes">
+         <Unit_Ability>
+            <Type>STEALTH</Type>
+            <Alternate_Name_Text>TEXT_TOOLTIP_ABILITY_STEALTH_NAME</Alternate_Name_Text>
+            <Alternate_Description_Text>TEXT_DESCRIPTION_ABILITY_STEALTH_ASHRAK_GROUND</Alternate_Description_Text>
+            <Recharge_Seconds>35.0</Recharge_Seconds>
+            <Expiration_Seconds>35.0</Expiration_Seconds>
+            <GUI_Activated_Ability_Name>Ashrak_Tactical_Stealth</GUI_Activated_Ability_Name> 
+            <SFXEvent_GUI_Unit_Ability_Activated></SFXEvent_GUI_Unit_Ability_Activated>
+            <SFXEvent_GUI_Unit_Ability_Deactivated></SFXEvent_GUI_Unit_Ability_Deactivated>
+         </Unit_Ability>
+       <Unit_Ability>
+            <Type>FORCE_LIGHTNING</Type>
+            <Alternate_Name_Text>TEXT_ABILITY_ZATARC_WEAPON</Alternate_Name_Text>
+            <Alternate_Description_Text>TEXT_DESCRIPTION_ABILITY_ZATARC_WEAPON_ASHRAK_GROUND</Alternate_Description_Text>
+            <Alternate_Icon_Name>I_SA_ZATARC_WEAPON.TGA</Alternate_Icon_Name>
+            <Recharge_Seconds>20.0</Recharge_Seconds>
+            <GUI_Activated_Ability_Name> Ashrak_Weapon_Ability </GUI_Activated_Ability_Name>
+            <SFXEvent_Target_Ability> Weapon_Goauld_Ashrak </SFXEvent_Target_Ability>           
+      </Unit_Ability>
+         <!--<Unit_Ability>
+            <Type>SABER_THROW</Type>
+            <Alternate_Name_Text>TEXT_ABILITY_ZATARC_WEAPON</Alternate_Name_Text>
+            <Alternate_Description_Text>TEXT_DESCRIPTION_ABILITY_ZATARC_WEAPON_ASHRAK_GROUND</Alternate_Description_Text>
+            <Recharge_Seconds>40.0</Recharge_Seconds>
+            <GUI_Activated_Ability_Name>Ashrak_Harakesh_Ability</GUI_Activated_Ability_Name>
+            <Effective_Radius> 500.0 </Effective_Radius>
+            <Supports_Autofire>True</Supports_Autofire>
+         </Unit_Ability> -->
+      </Unit_Abilities_Data>
+      <Abilities SubObjectList="Yes">
+         <Stealth_Ability Name="Ashrak_Tactical_Stealth">
+            <Activation_Style> User_Input </Activation_Style>
+            <Stealth_Color>255, 64, 64, 120</Stealth_Color>
+            <Stealth_Transition_Time>.6</Stealth_Transition_Time>
+         </Stealth_Ability>
+       <Force_Lightning_Ability Name="Ashrak_Weapon_Ability">
+            <!-- <Activation_Style>Special_Attack</Activation_Style> -->
+            <Activation_Style> User_Input </Activation_Style>
+            <Activation_Min_Range>0.0</Activation_Min_Range>
+            <Activation_Max_Range>175.0</Activation_Max_Range>
+            <Applicable_Unit_Categories>Infantry | Vehicle </Applicable_Unit_Categories>
+            <Applicable_Unit_Types />
+            <Damage_Amount>200.0</Damage_Amount>
+            <Damage_Application_Time_In_Secs>0.5</Damage_Application_Time_In_Secs>
+            <Start_Lightning_Frame_Number> 8 </Start_Lightning_Frame_Number>
+            <Lightning_Effect_Name>Ashrak_Weapon_Effect</Lightning_Effect_Name> 
+            <Lightning_Source_Bone_Name>MUZZLEA_00</Lightning_Source_Bone_Name>
+            <Lightning_Target_Bone_Name>B_PELVIS</Lightning_Target_Bone_Name>
+            <Lightning_Max_Targets> 1 </Lightning_Max_Targets>          
+            <Lightning_Targets_Radius> 100.0 </Lightning_Targets_Radius>      
+            <SFXEvent_Activate>Weapon_Goauld_Ashrak</SFXEvent_Activate>
+            <SFXEvent_Target_Affected />
+            <Target_Particle_Effect>Particle_Goauld_Ashrak_Impact</Target_Particle_Effect>
+            <Target_Particle_Bone_Name>ROOT</Target_Particle_Bone_Name> 
+      </Force_Lightning_Ability>
+         <!--<Saber_Throw_Ability Name="Ashrak_Harakesh_Ability">
+            <Activation_Style> User_Input </Activation_Style>
+            <Activation_Min_Range>20.0</Activation_Min_Range>
+            <Activation_Max_Range>200.0</Activation_Max_Range>
+            <Saber_Name>Proj_Ashrak_Harakesh</Saber_Name>
+            <Catch_Dist>15.0</Catch_Dist>
+         </Saber_Throw_Ability>-->
+         <Galactic_Stealth_Ability Name="Ashrak_Galactic_Stealth">
+            <Evade_Detection_Chance>0.0</Evade_Detection_Chance>
+         </Galactic_Stealth_Ability>
+         <Neutralize_Hero_Ability Name="Ashrak_Neutralize_Hero">
+            <Cost_Mod_By_Base_Level>0.0,0.0, 5.0,1.0</Cost_Mod_By_Base_Level>
+            <Cost_Mod_By_Previous_Neutralizations>0.0,0.0, 1000.0,750.0</Cost_Mod_By_Previous_Neutralizations>
+            <Cost_Mod_By_Planetary_Corruption_Level>0.0,0.0, 1.0,0.25</Cost_Mod_By_Planetary_Corruption_Level>
+            <General_Minor_Hero_Cost_Mod>3.0</General_Minor_Hero_Cost_Mod>
+            <General_Major_Hero_Cost_Mod>4.0</General_Major_Hero_Cost_Mod>
+            <Owner_Respawn_Time_In_Secs>240.0, 300.0</Owner_Respawn_Time_In_Secs>
+            <Target_Respawn_Time_In_Secs>240.0, 300.0</Target_Respawn_Time_In_Secs>
+            <Can_Neutralize_Minor_Heroes>Yes</Can_Neutralize_Minor_Heroes>
+            <Can_Neutralize_Major_Heroes>Yes</Can_Neutralize_Major_Heroes>
+         </Neutralize_Hero_Ability>
+      </Abilities>      
+   </GenericHeroUnit>
+
+  
+   <!-- COMPANY INFO -->
+   <GroundCompany Name="Bounty_Hunter_Team_R_No_Prereq">
+      <Variant_Of_Existing_Type>Template_Ground_Company</Variant_Of_Existing_Type>
+      <Text_ID>TEXT_GOAULD_GROUND_UNIT_ASHRAK</Text_ID>
+      <Encyclopedia_Text>TEXT_DESCRIPTION_GOAULD_ASHRAK_GROUND</Encyclopedia_Text>
+      <Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_ASHRAK</Encyclopedia_Unit_Class>
+      <Encyclopedia_Good_Against>Destroyer_Droid Tauri_Mobile_MG Dark_Trooper_PhaseIII</Encyclopedia_Good_Against>
+      <Encyclopedia_Vulnerable_To>Underworld_Merc Tauri_F302_Land Empire_Anti_Infantry_Turret</Encyclopedia_Vulnerable_To> 
+      <Icon_Name>GOAULD_SPACE_HERO_ASHRAK.TGA</Icon_Name>
+      <Damage>15</Damage>
+      <Score_Cost_Credits>300</Score_Cost_Credits>
+      <Build_Cost_Credits>1000</Build_Cost_Credits>
+      <Build_Time_Seconds>90</Build_Time_Seconds>
+      <Company_Transport_Unit>Alliance_Shuttle</Company_Transport_Unit>
+      <Company_Units>Generic_Bounty_Hunter_R</Company_Units>      
+      <Tactical_Build_Cost_Multiplayer>700</Tactical_Build_Cost_Multiplayer>
+      <Tactical_Build_Time_Seconds>9</Tactical_Build_Time_Seconds>
+      <Required_Ground_Base_Level>1</Required_Ground_Base_Level>
+      <Is_Generic_Hero>Yes</Is_Generic_Hero>
+      <Is_Stealth_Company>Yes</Is_Stealth_Company>
+      <Show_Hero_Head>No</Show_Hero_Head>
+      <CategoryMask> LandHero | SpaceHero </CategoryMask>
+      <Unit_Abilities_Data SubObjectList="Yes"> </Unit_Abilities_Data>
+      <Abilities SubObjectList="Yes"> </Abilities>
+      <Lua_Script>GenericBountyHunter</Lua_Script>   
+   </GroundCompany>
+  
+   <GroundCompany Name="Bounty_Hunter_Team_R">
+      <Variant_Of_Existing_Type>Bounty_Hunter_Team_R_No_Prereq</Variant_Of_Existing_Type>
+      <Affiliation>Rebel</Affiliation>
+      <Tech_Level>3</Tech_Level>
+      <Required_Timeline>0</Required_Timeline>
+      <Required_Ground_Base_Level>1</Required_Ground_Base_Level>
+      <Required_Star_Base_Level>0</Required_Star_Base_Level>
+      <Required_Special_Structures>R_Ground_Academy</Required_Special_Structures>
+      <Required_Planets></Required_Planets>
+      <Tactical_Build_Prerequisites>RC_Level_Two_Tech_Upgrade</Tactical_Build_Prerequisites>
+      <Lua_Script>GenericBountyHunter</Lua_Script>
+   </GroundCompany>
+   
+   
+   <Projectile Name="Proj_Ashrak_Atar_Blade">
+      <Text_ID>TEXT_NONE</Text_ID>
+      <Land_Model_Name>W_LASER_INVISIBLE.ALO</Land_Model_Name>
+      <Damage_Type>Damage_Anti_Infantry_Only</Damage_Type>
+      <Scale_Factor>1.0</Scale_Factor>
+      <Max_Speed>12.0</Max_Speed>
+      <Max_Rate_Of_Turn>0.0</Max_Rate_Of_Turn>
+      <Behavior>PROJECTILE, HIDE_WHEN_FOGGED</Behavior>
+      <Projectile_Category>DEFAULT</Projectile_Category>
+      <Projectile_Max_Flight_Distance>35.0</Projectile_Max_Flight_Distance>
+      <Projectile_Damage>0.0</Projectile_Damage>
+      <Projectile_Blast_Area_Range>3.0</Projectile_Blast_Area_Range>
+      <Projectile_Blast_Area_Damage>100.0</Projectile_Blast_Area_Damage>
+      <Max_Secs_For_AE_Delayed_Damage>0</Max_Secs_For_AE_Delayed_Damage>
+      <Projectile_Does_Shield_Damage>No</Projectile_Does_Shield_Damage>
+      <Projectile_Does_Energy_Damage>No</Projectile_Does_Energy_Damage>
+      <Projectile_Does_Hitpoint_Damage>Yes</Projectile_Does_Hitpoint_Damage>
+      <Projectile_Energy_Per_Shot>0</Projectile_Energy_Per_Shot>
+      <Projectile_Object_Detonation_Particle />
+      <Projectile_Ground_Detonation_Particle />
+      <Projectile_Lifetime_Detonation_Particle />
+      <Projectile_Absorbed_By_Shields_Particle>Projectile_Shield_Absorb_Medium</Projectile_Absorbed_By_Shields_Particle>
+      <Projectile_SFXEvent_Detonate>SFX_Ashrak_Blade_Hit</Projectile_SFXEvent_Detonate>
+      <AI_Combat_Power>100</AI_Combat_Power>
+   </Projectile> 
+   
+   <Projectile Name="Proj_Ashrak_Harakesh">
+      <Damage_Type>Damage_Anti_Infantry</Damage_Type>     
+      <Text_ID>TEXT_NONE</Text_ID>
+      <Scale_Factor>1.0</Scale_Factor>
+      <Max_Speed>7.0</Max_Speed>
+      <Max_Rate_Of_Turn>0.0</Max_Rate_Of_Turn>
+      <Behavior>PROJECTILE, HIDE_WHEN_FOGGED</Behavior>
+      <Land_Model_Name>p_disruptor_projectile.alo</Land_Model_Name>
+      <Projectile_Category>Laser</Projectile_Category>
+      <Projectile_Max_Flight_Distance>300.0</Projectile_Max_Flight_Distance>
+      <Projectile_Damage>100</Projectile_Damage> 
+      <!--Projectile_Blast_Area_Range>6.0</Projectile_Blast_Area_Range>
+      <Projectile_Blast_Area_Damage>100.0</Projectile_Blast_Area_Damage-->
+      <Max_Secs_For_AE_Delayed_Damage>0.3</Max_Secs_For_AE_Delayed_Damage>
+      <Projectile_Fire_Pulse_Count>1</Projectile_Fire_Pulse_Count>
+      <Projectile_Fire_Pulse_Delay_Seconds>1</Projectile_Fire_Pulse_Delay_Seconds>
+      <Projectile_Fire_Recharge_Seconds>3</Projectile_Fire_Recharge_Seconds>
+      <Projectile_Does_Shield_Damage>Yes</Projectile_Does_Shield_Damage>
+      <Projectile_Does_Energy_Damage>No</Projectile_Does_Energy_Damage>
+      <Projectile_Does_Hitpoint_Damage>Yes</Projectile_Does_Hitpoint_Damage>
+      <Projectile_Energy_Per_Shot>0</Projectile_Energy_Per_Shot>
+      <Projectile_Object_Detonation_Particle>FOW_Ping_Blast_Particles</Projectile_Object_Detonation_Particle>
+      <Projectile_Ground_Detonation_Particle>FOW_Ping_Blast_Particles</Projectile_Ground_Detonation_Particle>
+      <Projectile_Absorbed_By_Shields_Particle>Projectile_Shield_Absorb_Small</Projectile_Absorbed_By_Shields_Particle>
+      <AI_Combat_Power>40</AI_Combat_Power>
+      <Projectile_SFXEvent_Detonate>SFX_Infantry_Blaster_Detonation</Projectile_SFXEvent_Detonate>
+      <Projectile_SFXEvent_Detonate_Reduced_By_Armor> Unit_Projectile_Infantry_Ricochet </Projectile_SFXEvent_Detonate_Reduced_By_Armor>
+      <SFXEvent_Fire>Unit_Disruptor_Fire</SFXEvent_Fire>
+    </Projectile>
+  
+</Infantry_Data>

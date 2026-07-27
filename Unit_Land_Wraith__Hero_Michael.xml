@@ -1,0 +1,160 @@
+<?xml version="1.0"?>
+ <Michael_Data>
+ 
+   <!-- UNIT INFO -->
+   <HeroUnit Name="Wraith_Hero_Michael_Land">
+      <Variant_Of_Existing_Type>Template_Ground_Infantry_Single_Hero_Wraith</Variant_Of_Existing_Type>
+      <Text_ID>TEXT_WRAITH_GROUND_HERO_MICHAEL</Text_ID>
+      <Encyclopedia_Text>TEXT_DESCRIPTION_WRAITH_MICHAEL_GROUND</Encyclopedia_Text>
+      <Encyclopedia_Unit_Class> TEXT_ENCYCLOPEDIA_CLASS_MICHAEL_GROUND</Encyclopedia_Unit_Class>
+      <Encyclopedia_Good_Against>Rebel_Trooper Goauld_Jackal_Guard Underworld_Merc</Encyclopedia_Good_Against>
+      <Encyclopedia_Vulnerable_To>Snowspeeder Tauri_B302_Land Rebel_Anti_Infantry_Turret</Encyclopedia_Vulnerable_To>
+      <Icon_Name>Wraith_SPACE_HERO_Michael.TGA</Icon_Name>
+      <Land_Model_Name>Wraith_Land_Hero_Michael.ALO</Land_Model_Name>   
+      <LandBehavior>ABILITY_COUNTDOWN, DAMAGE_TRACKING, GARRISON_UNIT, HIDE_WHEN_FOGGED, IDLE, REVEAL, SELECTABLE, TARGETING, UNIT_AI, WALK_LOCOMOTOR, WEAPON</LandBehavior>  
+      <Affiliation>Empire</Affiliation>     
+      <Tactical_Health>900</Tactical_Health>
+      <AI_Combat_Power>150</AI_Combat_Power>
+      <Neutralization_Cost>2150.0</Neutralization_Cost>
+      <Projectile_Types>Proj_Wraith_Land_Hero_Michael_Blaster</Projectile_Types>
+      <Projectile_Fire_Recharge_Seconds>1.7</Projectile_Fire_Recharge_Seconds>
+      <Projectile_Fire_Pulse_Count>2</Projectile_Fire_Pulse_Count>
+      <Projectile_Fire_Pulse_Delay_Seconds>1.5</Projectile_Fire_Pulse_Delay_Seconds>
+      <Targeting_Priority_Set>SG_Infantry_AntiInfantry</Targeting_Priority_Set>
+      <SFXEvent_Fire>Weapon_Pistol_Wraith</SFXEvent_Fire>
+      <Damage>50</Damage>
+      
+      <SFXEvent_Attack>Unit_Attack_Michael</SFXEvent_Attack>
+      <SFXEvent_Guard></SFXEvent_Guard>
+      <SFXEvent_Health_Critical_Warning>Unit_CriticalHP_Michael</SFXEvent_Health_Critical_Warning> 
+      <SFXEvent_Health_Low_Warning>Unit_LOWHP_Michael</SFXEvent_Health_Low_Warning>
+      <SFXEvent_Move>Unit_Move_Michael</SFXEvent_Move>
+      <SFXEvent_Select>Unit_Select_Michael</SFXEvent_Select>
+      <SFXEvent_Stop></SFXEvent_Stop>  
+      <Death_SFXEvent_Start_Die>Unit_Defeat_Michael</Death_SFXEvent_Start_Die>
+      <Unit_Abilities_Data SubObjectList="Yes">
+         <Unit_Ability>
+            <Type>INFECTION</Type>
+            <Alternate_Name_Text>TEXT_TOOLTIP_ABILITY_INFECTION_NAME</Alternate_Name_Text>
+            <Alternate_Description_Text>TEXT_DESCRIPTION_ABILITY_INFECTION_MICHAEL_GROUND</Alternate_Description_Text>
+            <Alternate_Icon_Name>I_SA_INFECTION.TGA</Alternate_Icon_Name>
+            <Recharge_Seconds>40.0</Recharge_Seconds>
+            <GUI_Activated_Ability_Name>Wraith_Land_Hero_Michael_Infection</GUI_Activated_Ability_Name> 
+            <Effective_Radius>500.0</Effective_Radius>
+            <SFXEvent_Target_Ability></SFXEvent_Target_Ability>
+            <Supports_Autofire>False</Supports_Autofire>
+         </Unit_Ability>
+		 <Unit_Ability>
+            <Type>WEAKEN_ENEMY</Type>
+            <Alternate_Name_Text>TEXT_ABILITY_DEPLOY_IRATUS_BUG</Alternate_Name_Text>
+            <Alternate_Description_Text>TEXT_DESCRIPTION_ABILITY_IRATUS_BUG_MICHAEL_GROUND</Alternate_Description_Text>
+            <Alternate_Icon_Name>I_SA_DEPLOY_IRATUS_BUG.TGA</Alternate_Icon_Name>
+            <Recharge_Seconds>40</Recharge_Seconds>
+            <Effective_Radius>100.0</Effective_Radius>
+            <Spawned_Object_Type>Iratus_Bug_Nest</Spawned_Object_Type>
+            <SFXEvent_Target_Ability></SFXEvent_Target_Ability> 
+            <SFXEvent_GUI_Unit_Ability_Activated></SFXEvent_GUI_Unit_Ability_Activated>
+            <SFXEvent_GUI_Unit_Ability_Deactivated />
+            <Area_Effect_Decal_Distance>25</Area_Effect_Decal_Distance>
+         </Unit_Ability>
+      </Unit_Abilities_Data>
+      <Abilities SubObjectList="Yes">
+         <Infection_Ability Name="Wraith_Land_Hero_Michael_Infection">
+            <Activation_Style> User_Input </Activation_Style>
+            <Activation_Min_Range>5.0</Activation_Min_Range>
+            <Activation_Max_Range>275.0</Activation_Max_Range>
+            <Shoot_Anim>BOMBTOSS</Shoot_Anim>
+            <Spawn_Frame>13.0</Spawn_Frame>
+            <Spawn_Bone>MuzzleB_00</Spawn_Bone>
+            <Damage_Per_Second>2</Damage_Per_Second>
+            <Duration_Of_Infection>30.0</Duration_Of_Infection>
+            <Infection_CategoryMask>Infantry</Infection_CategoryMask>
+            <Distance_To_Infect>70.0</Distance_To_Infect>
+            <Infection_Particle>Micheal_Infection_Particle_Effect</Infection_Particle>
+            <Projectile_Type>Proj_Wraith_Land_Hero_Michael_Infection</Projectile_Type>
+            <Seconds_To_Infect>2.0</Seconds_To_Infect>
+         </Infection_Ability>
+      </Abilities>
+   </HeroUnit>
+   
+  
+   <!-- COMPANY INFO -->
+   <HeroCompany Name="Wraith_Hero_Michael_Land_Company">
+      <Variant_Of_Existing_Type>Template_Ground_Hero_Company</Variant_Of_Existing_Type>
+      <Text_ID>TEXT_WRAITH_GROUND_HERO_MICHAEL</Text_ID>
+      <Encyclopedia_Text>TEXT_DESCRIPTION_WRAITH_MICHAEL_GROUND</Encyclopedia_Text>
+      <Encyclopedia_Unit_Class> TEXT_ENCYCLOPEDIA_CLASS_MICHAEL_GROUND</Encyclopedia_Unit_Class>
+      <Icon_Name>Wraith_SPACE_HERO_Michael.TGA</Icon_Name>
+      <Affiliation>Empire</Affiliation>  
+      <Score_Cost_Credits>10000</Score_Cost_Credits>
+      <Company_Transport_Unit>Wraith_Hero_Michael</Company_Transport_Unit>
+      <Company_Units>Wraith_Hero_Michael_Land</Company_Units>   
+      <SFXEvent_Build_Started>Unit_Select_Michael</SFXEvent_Build_Started>
+      <SFXEvent_Build_Complete></SFXEvent_Build_Complete>              
+      <SFXEvent_Fleet_Move>Unit_Move_Michael</SFXEvent_Fleet_Move>
+      <SFXEvent_Hero_Respawned></SFXEvent_Hero_Respawned>
+      <CategoryMask> LandHero | SpaceHero </CategoryMask>
+      <Tactical_Build_Cost_Multiplayer>2150</Tactical_Build_Cost_Multiplayer>
+      <Tactical_Build_Time_Seconds>18</Tactical_Build_Time_Seconds>
+      <Tactical_Build_Prerequisites>EC_Level_Two_Tech_Upgrade</Tactical_Build_Prerequisites>
+   </HeroCompany>
+
+
+   <!-- PROJECTILE INFO -->
+   <Projectile Name="Proj_Wraith_Land_Hero_Michael_Blaster">
+      <Variant_Of_Existing_Type>Proj_Wraith_Stun_Pistol</Variant_Of_Existing_Type>
+      <Damage_Type>Damage_Anti_Infantry</Damage_Type>
+      <Projectile_Damage>112.80</Projectile_Damage>
+   </Projectile>
+   
+   <Projectile Name="Proj_Wraith_Land_Hero_Michael_Infection">
+      <Text_ID>TEXT_NONE</Text_ID>
+      <Land_Model_Name>Wraith_Projectile_Micheal_Infect.ALO</Land_Model_Name>
+      <Scale_Factor>2.0</Scale_Factor>
+      <Max_Speed>10.0</Max_Speed>
+      <Max_Rate_Of_Turn>0.0</Max_Rate_Of_Turn>
+      <Behavior>PROJECTILE, HIDE_WHEN_FOGGED</Behavior>
+      <Projectile_Category>MISSILE</Projectile_Category>
+      <Projectile_Grenade_Gravity>0.5</Projectile_Grenade_Gravity>
+      <Projectile_Grenade_Gravity_Lob_Mod>0.5</Projectile_Grenade_Gravity_Lob_Mod>
+      <Projectile_Grenade_Can_Lob_Slower>yes</Projectile_Grenade_Can_Lob_Slower>
+      <Projectile_Max_Flight_Distance>900.0</Projectile_Max_Flight_Distance>      
+      <Projectile_Damage>2.0</Projectile_Damage>
+      <Projectile_Blast_Area_Damage> 1 </Projectile_Blast_Area_Damage>
+      <Projectile_Blast_Area_Range> 10 </Projectile_Blast_Area_Range>
+      <Max_Secs_For_AE_Delayed_Damage>0</Max_Secs_For_AE_Delayed_Damage>
+      <Explode_When_Reached_Target_Radius> True </Explode_When_Reached_Target_Radius>
+      <Projectile_Target_Point_On_Terrain> True </Projectile_Target_Point_On_Terrain>      
+      <Projectile_Does_Shield_Damage>No</Projectile_Does_Shield_Damage>
+      <Projectile_Does_Energy_Damage>No</Projectile_Does_Energy_Damage>
+      <Projectile_Does_Hitpoint_Damage>Yes</Projectile_Does_Hitpoint_Damage>
+      <Projectile_Energy_Per_Shot>0</Projectile_Energy_Per_Shot>
+      <Projectile_Object_Detonation_Particle>Small_Damage_Land</Projectile_Object_Detonation_Particle>
+      <Projectile_Ground_Detonation_Particle>Projectile_Dirt_Collide</Projectile_Ground_Detonation_Particle>
+      <Projectile_Object_Armor_Reduced_Detonation_Particle>Tiny_Dud</Projectile_Object_Armor_Reduced_Detonation_Particle>
+      <Projectile_Lifetime_Detonation_Particle />
+      <Projectile_Absorbed_By_Shields_Particle>Projectile_Shield_Absorb_Small</Projectile_Absorbed_By_Shields_Particle>
+      <Projectile_Ground_Detonation_SurfaceFX>PROJECTILE_INFANTRY</Projectile_Ground_Detonation_SurfaceFX>
+      <AI_Combat_Power>5</AI_Combat_Power>
+      <Projectile_SFXEvent_Detonate>SFX_Ewok_Rock_Hit</Projectile_SFXEvent_Detonate>
+      <Causes_Infection>Yes</Causes_Infection>
+      <Damage_Type>Damage_Infection</Damage_Type>  
+   </Projectile>
+   
+   <!--Used by all infantry units (through the tenmplate) when they die from infection-->
+   <GroundInfantry Name="Infantry_Infection_Death_Clone_00">
+      <Land_Model_Name>w_infect.alo</Land_Model_Name>
+      <Scale_Factor>1.0</Scale_Factor>
+      <Specific_Death_Anim_Type>DIE</Specific_Death_Anim_Type>
+      <Specific_Death_Anim_Index>0</Specific_Death_Anim_Index>
+      <Death_SFXEvent_Start_Die>Unit_Infantry_Infected_Death</Death_SFXEvent_Start_Die>
+   </GroundInfantry>
+   <GroundInfantry Name="Infantry_Infection_G_Death_Clone_00">
+      <Land_Model_Name>w_infect.alo</Land_Model_Name>
+      <Scale_Factor>1.258</Scale_Factor>
+      <Specific_Death_Anim_Type>DIE</Specific_Death_Anim_Type>
+      <Specific_Death_Anim_Index>0</Specific_Death_Anim_Index>
+      <Death_SFXEvent_Start_Die>Unit_Infantry_Infected_Death</Death_SFXEvent_Start_Die>
+   </GroundInfantry>   
+  
+</Michael_Data>

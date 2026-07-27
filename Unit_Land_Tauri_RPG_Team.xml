@@ -1,0 +1,135 @@
+<?xml version="1.0"?>
+<Ewok_Bomber_Data>
+   
+   <!-- UNIT INFO -->
+    <GroundInfantry Name="Ewok_Handler">
+      <Variant_Of_Existing_Type>Template_Ground_Infantry_Multi_Tauri</Variant_Of_Existing_Type>
+      <Text_ID>TEXT_TAURI_GROUND_UNIT_BAZOOKA_TEAM</Text_ID>   
+      <Encyclopedia_Text>TEXT_DESCRIPTION_TAURI_BAZOOKA_TEAM_GROUND</Encyclopedia_Text>
+      <Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_BAZOOKA_TEAM</Encyclopedia_Unit_Class>
+      <Encyclopedia_Good_Against> T2B_Tank AT_ST_Walker SPMAT_Walker </Encyclopedia_Good_Against>
+      <Encyclopedia_Vulnerable_To> Snowspeeder Wraith_Dart_Land </Encyclopedia_Vulnerable_To>
+      <Icon_Name>TAURI_GROUND_UNIT_BAZOOKA_TEAM.tga</Icon_Name>
+      <Land_Model_Name>Tauri_Land_Unit_RPG.alo</Land_Model_Name>
+      <Land_Terrain_Model_Mapping>
+         Temperate,  Tauri_Land_Unit_RPG.ALO,
+         Urban,      Tauri_Land_Unit_RPG_Black.ALO,
+         Arctic,     Tauri_Land_Unit_RPG_Snow.ALO,
+         Volcanic,   Tauri_Land_Unit_RPG_Pegasus.ALO,
+         Desert,     Tauri_Land_Unit_RPG_Desert.ALO,
+         Forest,     Tauri_Land_Unit_RPG_Camo.ALO,
+         Swamp,      Tauri_Land_Unit_RPG_Camo.ALO
+      </Land_Terrain_Model_Mapping>
+      <Land_Model_Anim_Override_Name>Tauri_Land_Unit_RPG.alo</Land_Model_Anim_Override_Name>
+
+      
+      <Damage>13</Damage>
+      <AI_Combat_Power>25</AI_Combat_Power>
+
+      <Max_Speed>0.8</Max_Speed>
+      <FormationSpacing>1.0</FormationSpacing>
+      <Tactical_Health>90</Tactical_Health>
+      <Projectile_Types>Proj_Tauri_Bazooka</Projectile_Types>
+      <Projectile_Fire_Recharge_Seconds>3.5</Projectile_Fire_Recharge_Seconds>
+      <Projectile_Fire_Pulse_Count>1</Projectile_Fire_Pulse_Count>
+      <Projectile_Fire_Pulse_Delay_Seconds>3.5</Projectile_Fire_Pulse_Delay_Seconds>
+      <SFXEvent_Fire>Weapon_Tauri_Rocketlauncher</SFXEvent_Fire>
+      <Targeting_Priority_Set>SG_Infantry_AntiVehicle</Targeting_Priority_Set>
+
+      <SFXEvent_Select>Unit_Select_Marine</SFXEvent_Select>
+		<SFXEvent_Move>Unit_Move_Marine</SFXEvent_Move>
+		<SFXEvent_Attack>Unit_Attack_Marine</SFXEvent_Attack>
+
+      <Presence_Induced_Animations>
+         Attention, 
+            Urai_Fen,
+            Samantha_Carter, 
+            Jack_ONeill
+      </Presence_Induced_Animations> 
+      <Death_Clone>Damage_Hand_Device, Ewok_Handler_Hand_Device_Death_Clone</Death_Clone>
+      <Conversion_Ability_Changes_To_Enemy>Ewok_Handler_Converted_To_Enemy</Conversion_Ability_Changes_To_Enemy>
+      <Unit_Abilities_Data SubObjectList="Yes">
+         <Unit_Ability>
+            <Type>SPREAD_OUT</Type>
+            <Alternate_Name_Text>TEXT_TOOLTIP_ABILITY_SPREAD_OUT_NAME</Alternate_Name_Text>
+              <Alternate_Description_Text>TEXT_DESCRIPTION_ABILITY_COVER_BAZOOKA_TEAM_GROUND</Alternate_Description_Text>            
+            <Mod_Multiplier>SPEED_MULTIPLIER, 0.4f</Mod_Multiplier>
+            <Mod_Multiplier>TAKE_DAMAGE_MULTIPLIER, 0.85f</Mod_Multiplier>
+         </Unit_Ability>
+      </Unit_Abilities_Data>
+   </GroundInfantry>
+   
+   <GroundInfantry Name="Ewok_Handler_Hand_Device_Death_Clone">
+      <Variant_Of_Existing_Type>Ewok_Handler</Variant_Of_Existing_Type>
+      <Specific_Death_Anim_Type>FW_DIE</Specific_Death_Anim_Type>
+   </GroundInfantry>
+
+   <GroundInfantry Name="Ewok_Handler_Converted_To_Enemy">
+      <Variant_Of_Existing_Type>Ewok_Handler</Variant_Of_Existing_Type>
+   </GroundInfantry>
+
+
+   <!-- COMPANY INFO -->
+   <GroundCompany Name="Underworld_Ewok_Handler_Company_No_Prereq">
+      <Variant_Of_Existing_Type>Template_Ground_Company</Variant_Of_Existing_Type>
+      <Text_ID>TEXT_TAURI_GROUND_UNIT_BAZOOKA_TEAM</Text_ID>   
+      <Encyclopedia_Text>TEXT_DESCRIPTION_TAURI_BAZOOKA_TEAM_GROUND</Encyclopedia_Text>
+      <Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_BAZOOKA_TEAM</Encyclopedia_Unit_Class>
+      <Encyclopedia_Good_Against> T2B_Tank AT_ST_Walker SPMAT_Walker </Encyclopedia_Good_Against>
+      <Encyclopedia_Vulnerable_To> Snowspeeder Wraith_Dart_Land </Encyclopedia_Vulnerable_To>
+      <Icon_Name>TAURI_GROUND_UNIT_BAZOOKA_TEAM.tga</Icon_Name>
+      <Damage>51</Damage>
+      <Score_Cost_Credits>300</Score_Cost_Credits> 
+      <Build_Cost_Credits>300</Build_Cost_Credits>
+      <Build_Time_Seconds>46</Build_Time_Seconds>
+      <Create_Team_Type>Underworld_Ewok_Handler_Team</Create_Team_Type>
+      <Company_Transport_Unit>Underworld_Infantry_Droid_Shuttle</Company_Transport_Unit>
+      <Company_Units> Ewok_Handler, Ewok_Handler, Ewok_Handler, Ewok_Handler </Company_Units>
+      <Max_Squad_Size>4</Max_Squad_Size>
+      <Tactical_Build_Cost_Multiplayer>600</Tactical_Build_Cost_Multiplayer>
+      <Tactical_Build_Time_Seconds>9</Tactical_Build_Time_Seconds>
+      <Required_Ground_Base_Level>1</Required_Ground_Base_Level>
+   </GroundCompany>
+
+   <GroundCompany Name="Underworld_Ewok_Handler_Company">
+      <Variant_Of_Existing_Type>Underworld_Ewok_Handler_Company_No_Prereq</Variant_Of_Existing_Type>
+      <Affiliation>Underworld</Affiliation>
+      <Tech_Level>2</Tech_Level>
+      <Required_Special_Structures>U_Ground_Barracks</Required_Special_Structures>
+      <Tactical_Build_Prerequisites>UC_Level_Two_Tech_Upgrade</Tactical_Build_Prerequisites>
+   </GroundCompany>
+
+
+   <!-- CONTAINER INFO -->
+   <Container Name="Underworld_Ewok_Handler_Team">
+      <Variant_Of_Existing_Type>Template_Infantry_Container</Variant_Of_Existing_Type>
+      <Text_ID>TEXT_TAURI_GROUND_UNIT_BAZOOKA_TEAM</Text_ID>   
+      <Encyclopedia_Text>TEXT_DESCRIPTION_TAURI_BAZOOKA_TEAM_GROUND</Encyclopedia_Text>
+      <Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_BAZOOKA_TEAM</Encyclopedia_Unit_Class>
+      <Encyclopedia_Good_Against> T2B_Tank AT_ST_Walker SPMAT_Walker </Encyclopedia_Good_Against>
+      <Encyclopedia_Vulnerable_To> Snowspeeder Wraith_Dart_Land </Encyclopedia_Vulnerable_To>
+      <Icon_Name>TAURI_GROUND_UNIT_BAZOOKA_TEAM.tga</Icon_Name>
+      <Unit_Abilities_Data SubObjectList="Yes">
+         <Unit_Ability>
+            <Type>SPREAD_OUT</Type>
+            <Mod_Multiplier>SPEED_MULTIPLIER, 0.4f</Mod_Multiplier>
+            <Mod_Multiplier>TAKE_DAMAGE_MULTIPLIER, 0.85f</Mod_Multiplier>
+            <SFXEvent_GUI_Unit_Ability_Activated></SFXEvent_GUI_Unit_Ability_Activated>
+            <Alternate_Name_Text>TEXT_TOOLTIP_ABILITY_SPREAD_OUT_NAME</Alternate_Name_Text>
+              <Alternate_Description_Text>TEXT_DESCRIPTION_ABILITY_COVER_BAZOOKA_TEAM_GROUND</Alternate_Description_Text>
+         </Unit_Ability>
+      </Unit_Abilities_Data>
+   </Container>
+
+
+   <!-- PROJECTILE INFO -->
+   <Projectile Name="Proj_Tauri_Bazooka">
+      <Variant_Of_Existing_Type>Proj_Tauri_AV_Missile</Variant_Of_Existing_Type>
+      <Damage_Type>Damage_Anti_Vehicle</Damage_Type>
+      <Projectile_Damage>30.0</Projectile_Damage>
+      <Projectile_Blast_Area_Range>10.0</Projectile_Blast_Area_Range>
+		<Projectile_Blast_Area_Damage>22.5</Projectile_Blast_Area_Damage>
+		<Max_Secs_For_AE_Delayed_Damage>0.0</Max_Secs_For_AE_Delayed_Damage>
+   </Projectile>
+   
+</Ewok_Bomber_Data>

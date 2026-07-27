@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Cloaking_Transport_Data>
+
+   <!-- UNIT INFO -->
+   <GroundVehicle Name="F9TZ_Cloaking_Transport">
+      <Variant_Of_Existing_Type>Template_Ground_Wheeled</Variant_Of_Existing_Type>      
+      <Text_ID>TEXT_TAURI_GROUND_UNIT_MCP</Text_ID>
+      <Encyclopedia_Text>TEXT_DESCRIPTION_TAURI_MCP_GROUND</Encyclopedia_Text>
+      <Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_TAURI_MCP</Encyclopedia_Unit_Class>
+      <Encyclopedia_Good_Against>  </Encyclopedia_Good_Against>
+      <Encyclopedia_Vulnerable_To> Goauld_Land_Alkesh Goauld_Jackal_Guard Wraith_Bomber_Land </Encyclopedia_Vulnerable_To>
+      <Icon_Name>TAURI_GROUND_UNIT_FRED.TGA</Icon_Name>
+      <Land_Model_Name>Tauri_Land_Unit_Fred.ALO</Land_Model_Name>
+      <Radar_Icon_Name>I_RADAR_FRED.TGA</Radar_Icon_Name>
+      <Radar_Icon_Size>0.03 0.03</Radar_Icon_Size>
+      <LandBehavior>WALK_LOCOMOTOR, AFFECTED_BY_SHIELD, DAMAGE_TRACKING, HIDE_WHEN_FOGGED, IDLE, POWERED, REVEAL, SELECTABLE, STUNNABLE, SURFACE_FX, TREAD_SCROLL, UNIT_AI, WIND_DISTURBANCE</LandBehavior>
+      <Gui_Bracket_Size>0</Gui_Bracket_Size>     
+      <GUI_Bounds_Scale>0.6</GUI_Bounds_Scale> 
+      
+      <Affiliation>Underworld</Affiliation>
+      <Scale_Factor>0.24</Scale_Factor>
+      <Max_Speed>0.4</Max_Speed>
+      <Max_Rate_Of_Turn>4.0</Max_Rate_Of_Turn> 
+      <Movement_Animation_Speed>2.3</Movement_Animation_Speed>     
+      <Select_Box_Scale>151</Select_Box_Scale>
+      <Select_Box_Z_Adjust>3.0f</Select_Box_Z_Adjust>
+      <Damage>0</Damage>
+      <AI_Combat_Power>80</AI_Combat_Power>
+      <Score_Cost_Credits>400</Score_Cost_Credits>    
+      <Tactical_Health>400</Tactical_Health>
+      <Blob_Shadow_Scale>45.0, 35.0</Blob_Shadow_Scale> 
+      <Overall_Length>20.0</Overall_Length>
+      <Overall_Width>10.0</Overall_Width>  
+      <Deploys>Yes</Deploys>
+      <FormationOrder>4</FormationOrder>
+
+      <Death_Explosions>Large_Explosion_Land</Death_Explosions>
+      <SFXEvent_Turret_Rotating_Loop>Vehicle_Turret_Motor</SFXEvent_Turret_Rotating_Loop>
+      <SFXEvent_Engine_Idle_Loop>Unit_T2B_Idle_Engine_Loop</SFXEvent_Engine_Idle_Loop>
+      <SFXEvent_Engine_Moving_Loop>Unit_T2B_Moving_Engine_Loop</SFXEvent_Engine_Moving_Loop>
+      <Lua_Script>ObjectScript_Ability_Land_Fred</Lua_Script>  
+      <Unit_Abilities_Data SubObjectList="Yes">
+         <Unit_Ability>
+            <Type>DEPLOY</Type>
+            <Alternate_Name_Text>TEXT_ABILITY_DEPLOY</Alternate_Name_Text>
+            <Alternate_Description_Text>TEXT_DESCRIPTION_ABILITY_DEPLOY_TAURI_MCP_GROUND</Alternate_Description_Text>
+            <Alternate_Icon_Name>I_SA_DEPLOYABLE_REINFORCEMENT_POINT_FRED.TGA</Alternate_Icon_Name>
+            <Recharge_Seconds>2</Recharge_Seconds>
+            <Expiration_Seconds>2</Expiration_Seconds>            
+         </Unit_Ability>
+      </Unit_Abilities_Data>       
+   </GroundVehicle>
+   
+   <!-- COMPANY INFO -->
+   <GroundCompany Name="F9TZ_Cloaking_Transport_Company_No_Prereq">
+      <Variant_Of_Existing_Type>Template_Ground_Company</Variant_Of_Existing_Type>
+      <Text_ID>TEXT_TAURI_GROUND_UNIT_MCP</Text_ID>
+      <Encyclopedia_Text>TEXT_DESCRIPTION_TAURI_MCP_GROUND</Encyclopedia_Text>
+      <Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_TAURI_MCP</Encyclopedia_Unit_Class>
+      <Encyclopedia_Good_Against>  </Encyclopedia_Good_Against>
+      <Encyclopedia_Vulnerable_To> Goauld_Land_Alkesh Goauld_Jackal_Guard Wraith_Bomber_Land </Encyclopedia_Vulnerable_To>
+      <Icon_Name>TAURI_GROUND_UNIT_FRED.TGA</Icon_Name>
+      <Score_Cost_Credits>400</Score_Cost_Credits>
+      <Build_Cost_Credits>450</Build_Cost_Credits>
+      <Build_Time_Seconds>70</Build_Time_Seconds>
+      <Ship_Class>tank</Ship_Class>
+      <Company_Transport_Unit>Underworld_Vehicle_Transport</Company_Transport_Unit>
+      <Company_Units>F9TZ_Cloaking_Transport</Company_Units>    
+      <Tactical_Build_Cost_Multiplayer>900</Tactical_Build_Cost_Multiplayer>
+      <Tactical_Build_Time_Seconds>10</Tactical_Build_Time_Seconds>
+      <Required_Ground_Base_Level>1</Required_Ground_Base_Level>
+   </GroundCompany>
+
+   <GroundCompany Name="F9TZ_Cloaking_Transport_Company">
+      <Variant_Of_Existing_Type>F9TZ_Cloaking_Transport_Company_No_Prereq</Variant_Of_Existing_Type>
+      <Affiliation>Underworld</Affiliation>
+      <Tech_Level>3</Tech_Level>
+      <Required_Timeline>0</Required_Timeline>
+      <Required_Ground_Base_Level>1</Required_Ground_Base_Level>
+      <Required_Star_Base_Level>0</Required_Star_Base_Level>
+      <Required_Special_Structures>U_Ground_Vehicle_Factory</Required_Special_Structures>
+      <Required_Planets />
+      <Tactical_Build_Prerequisites>UC_Level_Three_Tech_Upgrade</Tactical_Build_Prerequisites>
+   </GroundCompany>
+   
+
+   <!-- Object used to spawn reinforcement point -->
+   <MiscObject Name="Fred_Reinforcement_Marker">
+      <Text_ID />
+      <Land_Model_Name>W_LASER_INVISIBLE.ALO</Land_Model_Name>
+      <Scale_Factor>1.0</Scale_Factor>
+      <Behavior>REINFORCEMENT_POINT</Behavior>
+      <Remove_Upon_Death>true</Remove_Upon_Death> 
+      <Victory_Relevant>No</Victory_Relevant>      
+      <Reinforcement_Enabling_Radius>125.0</Reinforcement_Enabling_Radius>
+      <!--Additional_Population_Capacity>0</Additional_Population_Capacity--> 
+      <Control_Point_Domination_Condition_Relevant>No</Control_Point_Domination_Condition_Relevant>
+      <Blob_Shadow_Below_Detail_Level>4</Blob_Shadow_Below_Detail_Level>
+		<Blob_Shadow_Scale>255.4, 255.4</Blob_Shadow_Scale>
+      <Influences_Capture_Point>False</Influences_Capture_Point>
+		<Blob_Shadow_Material_Name>Reinforcement_Point_Radius_Overlay</Blob_Shadow_Material_Name>
+      <Lua_Script>ObjectScript_Fred_Reinforcement_Marker</Lua_Script>
+   </MiscObject>
+
+</Cloaking_Transport_Data>

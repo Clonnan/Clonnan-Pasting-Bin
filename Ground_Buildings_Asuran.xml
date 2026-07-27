@@ -1,0 +1,14 @@
+<?xml version="1.0"?>
+<Asuran_Ground_Buildings>
+
+    <SpecialStructure Name="Asuran_Ground_Not_Playable">
+        <Variant_Of_Existing_Type>Template_Ground_Structure_Big_Base_Building_Spawn</Variant_Of_Existing_Type>	
+        <Text_ID>TEXT_NONE</Text_ID>
+        <Encyclopedia_Text> TEXT_ASURAN_NOT_PLAYABLE_LONG </Encyclopedia_Text>
+
+        <Land_Model_Name>Asuran_Not_Playable.alo</Land_Model_Name>
+        <Icon_Name>i_icon_asurans.tga</Icon_Name>
+        <Radar_Icon_Name>i_icon_asurans.tga</Radar_Icon_Name>
+        <Affiliation>Asuran</Affiliation>
+    </SpecialStructure>
+</Asuran_Ground_Buildings>

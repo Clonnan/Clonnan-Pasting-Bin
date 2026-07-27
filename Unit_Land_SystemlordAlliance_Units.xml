@@ -1,0 +1,821 @@
+<?xml version="1.0"?>
+<Systemlord_Alliance_Ground_Units>
+
+   <GroundInfantry Name="Systemlord_Alliance_Jaffa">
+      <Variant_Of_Existing_Type>Rebel_Trooper</Variant_Of_Existing_Type>
+      <Text_ID>TEXT_SYSTEMLORDS_GROUND_UNIT_JAFFA</Text_ID>
+      <Encyclopedia_Text>TEXT_DESCRIPTION_SYSTEMLORDS_JAFFA_GROUND</Encyclopedia_Text>
+      <Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_JAFFA</Encyclopedia_Unit_Class>
+      <Icon_Name>SYSTEMLORDS_GROUND_UNIT_JAFFA.TGA</Icon_Name>
+      <Land_Model_Name>Goauld_Land_Unit_Silver_Jaffa.alo</Land_Model_Name>
+      <Affiliation>Systemlord_Alliance</Affiliation>
+      <Death_Clone>Damage_Hand_Device, Systemlord_Alliance_Jaffa_Hand_Device_Death_Clone</Death_Clone>
+   </GroundInfantry>
+   <GroundInfantry Name="Systemlord_Alliance_Jaffa_Hand_Device_Death_Clone">
+      <Variant_Of_Existing_Type>Systemlord_Alliance_Jaffa</Variant_Of_Existing_Type>
+      <Specific_Death_Anim_Type>FW_DIE</Specific_Death_Anim_Type>
+   </GroundInfantry>
+   <GroundCompany Name="Systemlord_Alliance_Jaffa_Company">
+      <Variant_Of_Existing_Type>Rebel_Infantry_Squad_No_Prereq</Variant_Of_Existing_Type>
+      <Text_ID>TEXT_SYSTEMLORDS_GROUND_UNIT_JAFFA</Text_ID>
+      <Encyclopedia_Text>TEXT_DESCRIPTION_SYSTEMLORDS_JAFFA_GROUND</Encyclopedia_Text>
+      <Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_JAFFA</Encyclopedia_Unit_Class>
+      <Icon_Name>SYSTEMLORDS_GROUND_UNIT_JAFFA.TGA</Icon_Name>
+
+      <Affiliation>Systemlord_Alliance</Affiliation>
+      <Tech_Level>0</Tech_Level>
+      <Required_Ground_Base_Level>1</Required_Ground_Base_Level>
+      <Required_Special_Structures>SysLords_Ground_Barracks</Required_Special_Structures>
+
+      <Create_Team_Type>Systemlord_Alliance_Jaffa_Team</Create_Team_Type>
+      <Company_Units>Systemlord_Alliance_Jaffa, Systemlord_Alliance_Jaffa, Systemlord_Alliance_Jaffa, Systemlord_Alliance_Jaffa, Systemlord_Alliance_Jaffa, Systemlord_Alliance_Jaffa</Company_Units>
+   </GroundCompany>
+   <Container Name="Systemlord_Alliance_Jaffa_Team">
+      <Variant_Of_Existing_Type>Rebel_Trooper_Team</Variant_Of_Existing_Type>
+      <Text_ID>TEXT_SYSTEMLORDS_GROUND_UNIT_JAFFA</Text_ID>
+      <Encyclopedia_Text>TEXT_DESCRIPTION_SYSTEMLORDS_JAFFA_GROUND</Encyclopedia_Text>
+      <Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_JAFFA</Encyclopedia_Unit_Class>
+      <Icon_Name>SYSTEMLORDS_GROUND_UNIT_JAFFA.TGA</Icon_Name>
+   </Container>
+
+
+   <GroundInfantry Name="Systemlord_Alliance_Serpent_Guard">
+      <Variant_Of_Existing_Type>Squad_Plex_Soldier</Variant_Of_Existing_Type>
+      <Text_ID>TEXT_SYSTEMLORDS_GROUND_UNIT_SERPENT_GUARD</Text_ID>
+      <Encyclopedia_Text>TEXT_DESCRIPTION_SYSTEMLORDS_SERPENT_GUARD_GROUND</Encyclopedia_Text>
+      <Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_SCHLANGENWACHE</Encyclopedia_Unit_Class>
+      <Affiliation>Systemlord_Alliance</Affiliation>
+      <Death_Clone>Damage_Hand_Device, Systemlord_Alliance_Serpent_Guard_Hand_Device_Death_Clone</Death_Clone>
+   </GroundInfantry>
+   <GroundInfantry Name="Systemlord_Alliance_Serpent_Guard_Hand_Device_Death_Clone">
+      <Variant_Of_Existing_Type>Systemlord_Alliance_Serpent_Guard</Variant_Of_Existing_Type>
+      <Specific_Death_Anim_Type>FW_DIE</Specific_Death_Anim_Type>
+   </GroundInfantry>
+   <GroundCompany Name="Systemlord_Alliance_Serpent_Guard_Company">
+      <Variant_Of_Existing_Type>Rebel_Tank_Buster_Squad_No_Prereq</Variant_Of_Existing_Type>
+      <Text_ID>TEXT_SYSTEMLORDS_GROUND_UNIT_SERPENT_GUARD</Text_ID>
+      <Encyclopedia_Text>TEXT_DESCRIPTION_SYSTEMLORDS_SERPENT_GUARD_GROUND</Encyclopedia_Text>
+      <Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_SCHLANGENWACHE</Encyclopedia_Unit_Class>
+
+      <Affiliation>Systemlord_Alliance</Affiliation>
+      <Tech_Level>2</Tech_Level>
+      <Required_Ground_Base_Level>1</Required_Ground_Base_Level>
+      <Required_Special_Structures>SysLords_Ground_Barracks</Required_Special_Structures>
+
+      <Create_Team_Type>Systemlord_Alliance_Serpent_Guard_Team</Create_Team_Type>
+      <Company_Units>Systemlord_Alliance_Serpent_Guard, Systemlord_Alliance_Serpent_Guard, Systemlord_Alliance_Serpent_Guard, Systemlord_Alliance_Serpent_Guard, Systemlord_Alliance_Serpent_Guard, Systemlord_Alliance_Serpent_Guard</Company_Units>
+      <Max_Squad_Size>6</Max_Squad_Size>
+   </GroundCompany>
+   <Container Name="Systemlord_Alliance_Serpent_Guard_Team">
+      <Variant_Of_Existing_Type>Plex_Soldier_Team</Variant_Of_Existing_Type>
+      <Text_ID>TEXT_SYSTEMLORDS_GROUND_UNIT_SERPENT_GUARD</Text_ID>
+      <Encyclopedia_Text>TEXT_DESCRIPTION_SYSTEMLORDS_SERPENT_GUARD_GROUND</Encyclopedia_Text>
+      <Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_SCHLANGENWACHE</Encyclopedia_Unit_Class>
+   </Container>
+
+
+   <GroundInfantry Name="Systemlord_Alliance_Horus_Guard">
+      <Variant_Of_Existing_Type>Goauld_Horus_Guard</Variant_Of_Existing_Type>
+      <Text_ID>TEXT_SYSTEMLORDS_GROUND_UNIT_AA_JAFFA</Text_ID>
+      <Encyclopedia_Text>TEXT_DESCRIPTION_SYSTEMLORDS_AA_JAFFA_GROUND</Encyclopedia_Text>
+      <Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_HORUSWACHE</Encyclopedia_Unit_Class>
+      <Icon_Name>SYSTEMLORDS_GROUND_UNIT_AA_JAFFA.TGA</Icon_Name>
+      <Land_Model_Name>Goauld_Land_Unit_AA.alo</Land_Model_Name>
+      <Land_Model_Anim_Override_Name>Goauld_Land_Unit_AA.alo</Land_Model_Anim_Override_Name>
+      <Affiliation>Systemlord_Alliance</Affiliation>
+      <SFXEvent_Select>Unit_Select_Jaffa</SFXEvent_Select>
+      <SFXEvent_Move>Unit_Move_Jaffa</SFXEvent_Move>
+      <SFXEvent_Attack>Unit_Attack_Jaffa</SFXEvent_Attack>
+      <Presence_Induced_Animations>
+         Attention,
+            Systemlord_Alliance_Hero_Heruur_Land
+      </Presence_Induced_Animations>
+      <Death_Clone>Damage_Hand_Device, Systemlord_Alliance_Horus_Guard_Hand_Device_Death_Clone</Death_Clone>
+   </GroundInfantry>
+   <GroundInfantry Name="Systemlord_Alliance_Horus_Guard_Hand_Device_Death_Clone">
+      <Variant_Of_Existing_Type>Systemlord_Alliance_Horus_Guard</Variant_Of_Existing_Type>
+      <Specific_Death_Anim_Type>FW_DIE</Specific_Death_Anim_Type>
+   </GroundInfantry>
+   <GroundCompany Name="Systemlord_Alliance_Horus_Guard_Company">
+      <Variant_Of_Existing_Type>Goauld_Horus_Guard_Company_No_Prereq</Variant_Of_Existing_Type>
+      <Text_ID>TEXT_SYSTEMLORDS_GROUND_UNIT_AA_JAFFA</Text_ID>
+      <Encyclopedia_Text>TEXT_DESCRIPTION_SYSTEMLORDS_AA_JAFFA_GROUND</Encyclopedia_Text>
+      <Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_HORUSWACHE</Encyclopedia_Unit_Class>
+      <Icon_Name>SYSTEMLORDS_GROUND_UNIT_AA_JAFFA.TGA</Icon_Name>
+      <Affiliation>Systemlord_Alliance</Affiliation>
+      <Tech_Level>0</Tech_Level>
+      <Required_Ground_Base_Level>1</Required_Ground_Base_Level>
+      <Required_Special_Structures>SysLords_Ground_Barracks</Required_Special_Structures>
+
+      <Create_Team_Type>Systemlord_Alliance_Horus_Guard_Team</Create_Team_Type>
+      <Company_Units>Systemlord_Alliance_Horus_Guard, Systemlord_Alliance_Horus_Guard, Systemlord_Alliance_Horus_Guard, Systemlord_Alliance_Horus_Guard</Company_Units>
+      <Max_Squad_Size>4</Max_Squad_Size>
+   </GroundCompany>
+   <Container Name="Systemlord_Alliance_Horus_Guard_Team">
+      <Variant_Of_Existing_Type>Goauld_Horus_Guard_Team</Variant_Of_Existing_Type>
+      <Text_ID>TEXT_SYSTEMLORDS_GROUND_UNIT_AA_JAFFA</Text_ID>
+      <Encyclopedia_Text>TEXT_DESCRIPTION_SYSTEMLORDS_AA_JAFFA_GROUND</Encyclopedia_Text>
+      <Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_HORUSWACHE</Encyclopedia_Unit_Class>
+      <Icon_Name>SYSTEMLORDS_GROUND_UNIT_AA_JAFFA.TGA</Icon_Name>
+   </Container>
+
+
+   <GroundInfantry Name="Systemlord_Alliance_Horus_Guard_Staff">
+      <Variant_Of_Existing_Type>Rebel_Trooper</Variant_Of_Existing_Type>
+      <Text_ID>TEXT_SYSTEMLORDS_GROUND_UNIT_HORUS_GUARD</Text_ID>
+      <Encyclopedia_Text>TEXT_DESCRIPTION_SYSTEMLORDS_HORUS_GUARD_GROUND</Encyclopedia_Text>
+      <Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_HORUSWACHE</Encyclopedia_Unit_Class>
+      <Icon_Name>GOAULD_GROUND_UNIT_HORUS_GUARD.TGA</Icon_Name>
+      <Land_Model_Name>Goauld_Land_Unit_Jaffa_Horus_GC.alo</Land_Model_Name>
+      <Land_Model_Anim_Override_Name>Goauld_Land_Unit_Jaffa_Horus_GC.alo</Land_Model_Anim_Override_Name>
+      <Affiliation>Systemlord_Alliance</Affiliation>
+      <Presence_Induced_Animations>
+         Attention,
+            Systemlord_Alliance_Hero_Heruur_Land
+      </Presence_Induced_Animations>
+      <Death_Clone>Damage_Hand_Device, Systemlord_Alliance_Horus_Guard_Staff_Hand_Device_Death_Clone</Death_Clone>
+   </GroundInfantry>
+   <GroundInfantry Name="Systemlord_Alliance_Horus_Guard_Staff_Hand_Device_Death_Clone">
+      <Variant_Of_Existing_Type>Systemlord_Alliance_Horus_Guard_Staff</Variant_Of_Existing_Type>
+      <Specific_Death_Anim_Type>FW_DIE</Specific_Death_Anim_Type>
+   </GroundInfantry>
+   <GroundCompany Name="Systemlord_Alliance_Horus_Guard_Staff_Company">
+      <Variant_Of_Existing_Type>Rebel_Infantry_Squad_No_Prereq</Variant_Of_Existing_Type>
+      <Text_ID>TEXT_SYSTEMLORDS_GROUND_UNIT_HORUS_GUARD</Text_ID>
+      <Encyclopedia_Text>TEXT_DESCRIPTION_SYSTEMLORDS_HORUS_GUARD_GROUND</Encyclopedia_Text>
+      <Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_HORUSWACHE</Encyclopedia_Unit_Class>
+      <Icon_Name>GOAULD_GROUND_UNIT_HORUS_GUARD.TGA</Icon_Name>
+      <Affiliation>Systemlord_Alliance</Affiliation>
+      <Create_Team_Type>Systemlord_Alliance_Horus_Guard_Staff_Team</Create_Team_Type>
+      <Company_Units>Systemlord_Alliance_Horus_Guard_Staff, Systemlord_Alliance_Horus_Guard_Staff, Systemlord_Alliance_Horus_Guard_Staff, Systemlord_Alliance_Horus_Guard_Staff, Systemlord_Alliance_Horus_Guard_Staff, Systemlord_Alliance_Horus_Guard_Staff</Company_Units>
+      <Max_Squad_Size>6</Max_Squad_Size>
+   </GroundCompany>
+   <Container Name="Systemlord_Alliance_Horus_Guard_Staff_Team">
+      <Variant_Of_Existing_Type>Goauld_Horus_Guard_Team</Variant_Of_Existing_Type>
+      <Text_ID>TEXT_SYSTEMLORDS_GROUND_UNIT_HORUS_GUARD</Text_ID>
+      <Encyclopedia_Text>TEXT_DESCRIPTION_SYSTEMLORDS_HORUS_GUARD_GROUND</Encyclopedia_Text>
+      <Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_HORUSWACHE</Encyclopedia_Unit_Class>
+      <Icon_Name>GOAULD_GROUND_UNIT_HORUS_GUARD.TGA</Icon_Name>
+   </Container>
+
+
+   <GroundInfantry Name="Systemlord_Alliance_Jackal_Guard">
+      <Variant_Of_Existing_Type>Goauld_Jackal_Guard</Variant_Of_Existing_Type>
+      <Text_ID>TEXT_SYSTEMLORDS_GROUND_UNIT_AV_JAFFA</Text_ID>
+      <Encyclopedia_Text>TEXT_DESCRIPTION_SYSTEMLORDS_AV_JAFFA_GROUND</Encyclopedia_Text>
+      <Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_ANUBISWACHE</Encyclopedia_Unit_Class>
+      <Land_Model_Name>Goauld_Land_Unit_AV.alo</Land_Model_Name>
+      <Affiliation>Systemlord_Alliance</Affiliation>
+      <Icon_Name>SYSTEMLORDS_GROUND_UNIT_AV_JAFFA.TGA</Icon_Name>
+      <Death_Clone>Damage_Hand_Device, Systemlord_Alliance_Jackal_Guard_Hand_Device_Death_Clone</Death_Clone>
+      <SFXEvent_Select>Unit_Select_Jaffa</SFXEvent_Select>
+      <SFXEvent_Move>Unit_Move_Jaffa</SFXEvent_Move>
+      <SFXEvent_Attack>Unit_Attack_Jaffa</SFXEvent_Attack>
+   </GroundInfantry>
+   <GroundInfantry Name="Systemlord_Alliance_Jackal_Guard_Hand_Device_Death_Clone">
+      <Variant_Of_Existing_Type>Systemlord_Alliance_Jackal_Guard</Variant_Of_Existing_Type>
+      <Specific_Death_Anim_Type>FW_DIE</Specific_Death_Anim_Type>
+   </GroundInfantry>
+   <GroundCompany Name="Systemlord_Alliance_Jackal_Guard_Company">
+      <Variant_Of_Existing_Type>Goauld_Jackal_Guard_Company_No_Prereq</Variant_Of_Existing_Type>
+      <Text_ID>TEXT_SYSTEMLORDS_GROUND_UNIT_AV_JAFFA</Text_ID>
+      <Encyclopedia_Text>TEXT_DESCRIPTION_SYSTEMLORDS_AV_JAFFA_GROUND</Encyclopedia_Text>
+      <Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_ANUBISWACHE</Encyclopedia_Unit_Class>
+      <Icon_Name>SYSTEMLORDS_GROUND_UNIT_AV_JAFFA.TGA</Icon_Name>
+
+      <Affiliation>Systemlord_Alliance</Affiliation>
+      <Tech_Level>1</Tech_Level>
+      <Required_Ground_Base_Level>1</Required_Ground_Base_Level>
+      <Required_Special_Structures>SysLords_Ground_Barracks</Required_Special_Structures>
+
+      <Create_Team_Type>Systemlord_Alliance_Jackal_Guard_Team</Create_Team_Type>
+      <Company_Units>Systemlord_Alliance_Jackal_Guard, Systemlord_Alliance_Jackal_Guard, Systemlord_Alliance_Jackal_Guard, Systemlord_Alliance_Jackal_Guard</Company_Units>
+      <Max_Squad_Size>4</Max_Squad_Size>
+   </GroundCompany>
+   <Container Name="Systemlord_Alliance_Jackal_Guard_Team">
+      <Variant_Of_Existing_Type>Goauld_Jackal_Guard_Team</Variant_Of_Existing_Type>
+      <Text_ID>TEXT_SYSTEMLORDS_GROUND_UNIT_AV_JAFFA</Text_ID>
+      <Encyclopedia_Text>TEXT_DESCRIPTION_SYSTEMLORDS_AV_JAFFA_GROUND</Encyclopedia_Text>
+      <Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_ANUBISWACHE</Encyclopedia_Unit_Class>
+      <Icon_Name>SYSTEMLORDS_GROUND_UNIT_AV_JAFFA.TGA</Icon_Name>
+   </Container>
+
+
+
+   <GroundInfantry Name="Systemlord_Alliance_Necropolis_Guard">
+      <Variant_Of_Existing_Type>Goauld_Necropolis_Guard</Variant_Of_Existing_Type>
+      <Text_ID>TEXT_GOAULD_GROUND_UNIT_MOBILE_STAFF_CANNON</Text_ID>
+      <Encyclopedia_Text>TEXT_DESCRIPTION_SYSTEMLORDS_MOBILE_STAFF_CANNON_GROUND</Encyclopedia_Text>
+      <Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_MOBILE_MG</Encyclopedia_Unit_Class>
+      <Icon_Name>SYSTEMLORDS_GROUND_UNIT_MOBILE_STAFF_CANNON.TGA</Icon_Name>
+      <Land_Model_Name>Goauld_Land_Unit_Tripod.alo</Land_Model_Name>
+      <Land_Model_Anim_Override_Name>Goauld_Land_Unit_Tripod.alo</Land_Model_Anim_Override_Name>
+      <Affiliation>Systemlord_Alliance</Affiliation>
+      <Death_Clone>Damage_Hand_Device, Systemlord_Alliance_Necropolis_Guard_Hand_Device_Death_Clone</Death_Clone>
+   </GroundInfantry>
+   <GroundInfantry Name="Systemlord_Alliance_Necropolis_Guard_Hand_Device_Death_Clone">
+      <Variant_Of_Existing_Type>Systemlord_Alliance_Necropolis_Guard</Variant_Of_Existing_Type>
+      <Specific_Death_Anim_Type>FW_DIE</Specific_Death_Anim_Type>
+   </GroundInfantry>
+   <GroundCompany Name="Systemlord_Alliance_Necropolis_Guard_Company">
+      <Variant_Of_Existing_Type>Goauld_Necropolis_Guard_Company_No_Prereq</Variant_Of_Existing_Type>
+      <Text_ID>TEXT_GOAULD_GROUND_UNIT_MOBILE_STAFF_CANNON</Text_ID>
+      <Encyclopedia_Text>TEXT_DESCRIPTION_SYSTEMLORDS_MOBILE_STAFF_CANNON_GROUND</Encyclopedia_Text>
+      <Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_MOBILE_MG</Encyclopedia_Unit_Class>
+      <Icon_Name>SYSTEMLORDS_GROUND_UNIT_MOBILE_STAFF_CANNON.TGA</Icon_Name>
+      <Affiliation>Systemlord_Alliance</Affiliation>
+      <Tech_Level>4</Tech_Level>
+      <Required_Ground_Base_Level>1</Required_Ground_Base_Level>
+      <Required_Special_Structures>SysLords_Ground_Barracks</Required_Special_Structures>
+
+      <Company_Units>Systemlord_Alliance_Necropolis_Guard, Systemlord_Alliance_Necropolis_Guard</Company_Units>
+      <Max_Squad_Size>1</Max_Squad_Size>
+   </GroundCompany>
+
+
+   <GroundInfantry Name="Systemlord_Alliance_Necropolis_Guard_Staff">
+      <Variant_Of_Existing_Type>Rebel_Trooper</Variant_Of_Existing_Type>
+      <Text_ID>TEXT_SYSTEMLORDS_GROUND_UNIT_NECROPOLIS_GUARD</Text_ID>
+      <Encyclopedia_Text>TEXT_DESCRIPTION_SYSTEMLORDS_NECROPOLIS_GUARD_GROUND</Encyclopedia_Text>
+      <Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_JAFFA</Encyclopedia_Unit_Class>
+      <Icon_Name>SYSTEMLORDS_GROUND_UNIT_NECROPOLIS_GUARD.TGA</Icon_Name>
+      <Land_Model_Name>Goauld_Land_Unit_Jaffa_Necro_GC.alo</Land_Model_Name>
+      <Land_Model_Anim_Override_Name>Goauld_Land_Unit_Jaffa_Necro_GC.alo</Land_Model_Anim_Override_Name>
+
+      <Affiliation>Systemlord_Alliance</Affiliation>
+
+      <Death_Clone>Damage_Hand_Device, Systemlord_Alliance_Necropolis_Guard_Hand_Device_Death_Clone</Death_Clone>
+   </GroundInfantry>
+   <GroundInfantry Name="Systemlord_Alliance_Necropolis_Guard_Staff_Hand_Device_Death_Clone">
+      <Variant_Of_Existing_Type>Systemlord_Alliance_Necropolis_Guard_Staff</Variant_Of_Existing_Type>
+      <Specific_Death_Anim_Type>FW_DIE</Specific_Death_Anim_Type>
+   </GroundInfantry>
+   <GroundCompany Name="Systemlord_Alliance_Necropolis_Guard_Staff_Company">
+      <Variant_Of_Existing_Type>Rebel_Infantry_Squad_No_Prereq</Variant_Of_Existing_Type>
+      <Text_ID>TEXT_SYSTEMLORDS_GROUND_UNIT_NECROPOLIS_GUARD</Text_ID>
+      <Encyclopedia_Text>TEXT_DESCRIPTION_SYSTEMLORDS_NECROPOLIS_GUARD_GROUND</Encyclopedia_Text>
+      <Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_JAFFA</Encyclopedia_Unit_Class>
+      <Icon_Name>SYSTEMLORDS_GROUND_UNIT_NECROPOLIS_GUARD.TGA</Icon_Name>
+
+      <Affiliation>Systemlord_Alliance</Affiliation>
+
+      <Create_Team_Type>Systemlord_Alliance_Necropolis_Guard_Staff_Team</Create_Team_Type>
+      <Company_Units>Systemlord_Alliance_Necropolis_Guard_Staff, Systemlord_Alliance_Necropolis_Guard_Staff, Systemlord_Alliance_Necropolis_Guard_Staff, Systemlord_Alliance_Necropolis_Guard_Staff</Company_Units>
+      <Max_Squad_Size>4</Max_Squad_Size>
+   </GroundCompany>
+   <Container Name="Systemlord_Alliance_Necropolis_Guard_Staff_Team">
+      <Variant_Of_Existing_Type>Rebel_Trooper_Team</Variant_Of_Existing_Type>
+      <Text_ID>TEXT_SYSTEMLORDS_GROUND_UNIT_NECROPOLIS_GUARD</Text_ID>
+      <Encyclopedia_Text>TEXT_DESCRIPTION_SYSTEMLORDS_NECROPOLIS_GUARD_GROUND</Encyclopedia_Text>
+      <Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_JAFFA</Encyclopedia_Unit_Class>
+      <Icon_Name>SYSTEMLORDS_GROUND_UNIT_NECROPOLIS_GUARD.TGA</Icon_Name>
+   </Container>
+
+
+   <GroundInfantry Name="Systemlord_Alliance_Bastet_Guard">
+      <Variant_Of_Existing_Type>Rebel_Trooper</Variant_Of_Existing_Type>
+      <Text_ID>TEXT_SYSTEMLORDS_GROUND_UNIT_BASTET_GUARD</Text_ID>
+      <Encyclopedia_Text>TEXT_DESCRIPTION_SYSTEMLORDS_BASTET_GUARD_GROUND</Encyclopedia_Text>
+      <Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_JAFFA</Encyclopedia_Unit_Class>
+      <Icon_Name>GOAULD_GROUND_UNIT_BASTET_GUARD.TGA</Icon_Name>
+      <Land_Model_Name>Goauld_Land_Unit_Feline_Elite.alo</Land_Model_Name>
+      <Land_Model_Anim_Override_Name>Goauld_Land_Unit_Feline_Elite.alo</Land_Model_Anim_Override_Name>
+      <Affiliation>Systemlord_Alliance</Affiliation>
+      <SFXEvent_Attack>Unit_Attack_Jaffa_f</SFXEvent_Attack>
+      <SFXEvent_Move>Unit_Move_Jaffa_f</SFXEvent_Move>
+      <SFXEvent_Select>Unit_Select_Jaffa_f</SFXEvent_Select>
+      <Death_Clone>Damage_Hand_Device, Systemlord_Alliance_Bastet_Guard_Hand_Device_Death_Clone</Death_Clone>
+   </GroundInfantry>
+   <GroundInfantry Name="Systemlord_Alliance_Bastet_Guard_Hand_Device_Death_Clone">
+      <Variant_Of_Existing_Type>Systemlord_Alliance_Bastet_Guard</Variant_Of_Existing_Type>
+      <Specific_Death_Anim_Type>FW_DIE</Specific_Death_Anim_Type>
+   </GroundInfantry>
+   <GroundCompany Name="Systemlord_Alliance_Bastet_Guard_Company">
+      <Variant_Of_Existing_Type>Rebel_Infantry_Squad</Variant_Of_Existing_Type>
+      <Text_ID>TEXT_SYSTEMLORDS_GROUND_UNIT_BASTET_GUARD</Text_ID>
+      <Encyclopedia_Text>TEXT_DESCRIPTION_SYSTEMLORDS_BASTET_GUARD_GROUND</Encyclopedia_Text>
+      <Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_JAFFA</Encyclopedia_Unit_Class>
+      <Icon_Name>GOAULD_GROUND_UNIT_BASTET_GUARD.TGA</Icon_Name>
+
+      <Affiliation>Systemlord_Alliance</Affiliation>
+
+      <Create_Team_Type>Systemlord_Alliance_Bastet_Guard_Team</Create_Team_Type>
+      <Company_Units>Systemlord_Alliance_Bastet_Guard, Systemlord_Alliance_Bastet_Guard, Systemlord_Alliance_Bastet_Guard, Systemlord_Alliance_Bastet_Guard, Systemlord_Alliance_Bastet_Guard, Systemlord_Alliance_Bastet_Guard</Company_Units>
+   </GroundCompany>
+   <Container Name="Systemlord_Alliance_Bastet_Guard_Team">
+      <Variant_Of_Existing_Type>Rebel_Trooper_Team</Variant_Of_Existing_Type>
+
+
+
+      <Text_ID>TEXT_SYSTEMLORDS_GROUND_UNIT_BASTET_GUARD</Text_ID>
+      <Encyclopedia_Text>TEXT_DESCRIPTION_SYSTEMLORDS_BASTET_GUARD_GROUND</Encyclopedia_Text>
+      <Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_JAFFA</Encyclopedia_Unit_Class>
+      <Icon_Name>GOAULD_GROUND_UNIT_BASTET_GUARD.TGA</Icon_Name>
+   </Container>
+
+
+   <GroundInfantry Name="Systemlord_Alliance_Setesh_Guard">
+      <Variant_Of_Existing_Type>Rebel_Trooper</Variant_Of_Existing_Type>
+      <Text_ID>TEXT_SYSTEMLORDS_GROUND_UNIT_SETESH_GUARD</Text_ID>
+      <Encyclopedia_Text>TEXT_DESCRIPTION_SYSTEMLORDS_SETESH_GUARD_GROUND</Encyclopedia_Text>
+      <Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_JAFFA</Encyclopedia_Unit_Class>
+      <Icon_Name>GOAULD_GROUND_UNIT_SETESH_GUARD.TGA</Icon_Name>
+      <Land_Model_Name>Goauld_Land_Unit_Setesh_Guard.alo</Land_Model_Name>
+      <Land_Model_Anim_Override_Name>Goauld_Land_Unit_Setesh_Guard.alo</Land_Model_Anim_Override_Name>
+      <Affiliation>Systemlord_Alliance</Affiliation>
+      <Death_Clone>Damage_Hand_Device, Systemlord_Alliance_Setesh_Guard_Hand_Device_Death_Clone</Death_Clone>
+   </GroundInfantry>
+   <GroundInfantry Name="Systemlord_Alliance_Setesh_Guard_Hand_Device_Death_Clone">
+      <Variant_Of_Existing_Type>Systemlord_Alliance_Setesh_Guard</Variant_Of_Existing_Type>
+      <Specific_Death_Anim_Type>FW_DIE</Specific_Death_Anim_Type>
+   </GroundInfantry>
+   <GroundCompany Name="Systemlord_Alliance_Setesh_Guard_Company">
+      <Variant_Of_Existing_Type>Rebel_Infantry_Squad</Variant_Of_Existing_Type>
+      <Text_ID>TEXT_SYSTEMLORDS_GROUND_UNIT_SETESH_GUARD</Text_ID>
+      <Encyclopedia_Text>TEXT_DESCRIPTION_SYSTEMLORDS_SETESH_GUARD_GROUND</Encyclopedia_Text>
+      <Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_JAFFA</Encyclopedia_Unit_Class>
+      <Icon_Name>GOAULD_GROUND_UNIT_SETESH_GUARD.TGA</Icon_Name>
+      <Affiliation>Systemlord_Alliance</Affiliation>
+      <Create_Team_Type>Systemlord_Alliance_Setesh_Guard_Team</Create_Team_Type>
+      <Company_Units>Systemlord_Alliance_Setesh_Guard, Systemlord_Alliance_Setesh_Guard, Systemlord_Alliance_Setesh_Guard, Systemlord_Alliance_Setesh_Guard, Systemlord_Alliance_Setesh_Guard, Systemlord_Alliance_Setesh_Guard</Company_Units>
+   </GroundCompany>
+   <Container Name="Systemlord_Alliance_Setesh_Guard_Team">
+      <Variant_Of_Existing_Type>Rebel_Trooper_Team</Variant_Of_Existing_Type>
+      <Text_ID>TEXT_SYSTEMLORDS_GROUND_UNIT_BASTET_GUARD</Text_ID>
+      <Encyclopedia_Text>TEXT_DESCRIPTION_SYSTEMLORDS_SETESH_GUARD_GROUND</Encyclopedia_Text>
+      <Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_JAFFA</Encyclopedia_Unit_Class>
+      <Icon_Name>GOAULD_GROUND_UNIT_SETESH_GUARD.TGA</Icon_Name>
+   </Container>
+
+
+   <GroundVehicle Name="Systemlord_Alliance_Deathglider">
+      <Variant_Of_Existing_Type>Snowspeeder</Variant_Of_Existing_Type>
+      <Text_ID>TEXT_SYSTEMLORDS_GROUND_UNIT_DEATH_GLIDER</Text_ID>
+      <Encyclopedia_Text>TEXT_DESCRIPTION_SYSTEMLORDS_DEATH_GLIDER_GROUND</Encyclopedia_Text>
+      <Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_TODESGLEITER_GROUND</Encyclopedia_Unit_Class>
+      <Affiliation>Systemlord_Alliance</Affiliation>
+   </GroundVehicle>
+   <GroundCompany Name="Systemlord_Alliance_Deathglider_Company">
+      <Variant_Of_Existing_Type>Rebel_Speeder_Wing_No_Prereq</Variant_Of_Existing_Type>
+      <Text_ID>TEXT_SYSTEMLORDS_GROUND_UNIT_DEATH_GLIDER</Text_ID>
+      <Encyclopedia_Text>TEXT_DESCRIPTION_SYSTEMLORDS_DEATH_GLIDER_GROUND</Encyclopedia_Text>
+      <Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_TODESGLEITER_GROUND</Encyclopedia_Unit_Class>
+
+      <Affiliation>Systemlord_Alliance</Affiliation>
+      <Tech_Level>3</Tech_Level>
+      <Required_Ground_Base_Level>1</Required_Ground_Base_Level>
+      <Required_Special_Structures>SysLords_Ground_Hangar</Required_Special_Structures>
+
+      <Company_Units>Systemlord_Alliance_Deathglider</Company_Units>
+   </GroundCompany>
+
+
+   <!--Heroes-->
+
+   <HeroUnit Name="Systemlord_Alliance_Hero_Heruur_Land">
+      <Variant_Of_Existing_Type>Template_Ground_Infantry_Single</Variant_Of_Existing_Type>
+      <Text_ID>TEXT_SYSTEMLORDS_SPACE_HERO_HERUUR</Text_ID>
+      <Encyclopedia_Text>TEXT_DESCRIPTION_SYSTEMLORDS_HERUUR_GROUND</Encyclopedia_Text>
+      <Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_HERUUR_ANUBIS_HATAK</Encyclopedia_Unit_Class>
+      <Encyclopedia_Good_Against>Underworld_Saboteur Underworld_Merc Stormtrooper</Encyclopedia_Good_Against>
+      <Encyclopedia_Vulnerable_To>MZ8_Pulse_Cannon_Tank Tauri_F302_Land Empire_Anti_Infantry_Turret</Encyclopedia_Vulnerable_To>
+      <Icon_Name>SYSTEMLORDS_SPACE_HERO_HERUUR.TGA</Icon_Name>
+      <Land_Model_Name>Goauld_Land_Hero_HeruUr.ALO</Land_Model_Name>
+      <Land_Model_Anim_Override_Name>Goauld_Land_Hero_HeruUr.ALO</Land_Model_Anim_Override_Name>
+      <LandBehavior>WALK_LOCOMOTOR, ABILITY_COUNTDOWN, DAMAGE_TRACKING, HIDE_WHEN_FOGGED, IDLE, IMPOSING_PRESENCE, REVEAL, SELECTABLE, SHIELDED, SPAWN_SQUADRON, STUNNABLE, SURFACE_FX, TARGETING, UNIT_AI, WEAPON</LandBehavior>
+      <Affiliation>Rebel</Affiliation>
+      <Scale_Factor>1.25</Scale_Factor>
+      <Movement_Animation_Speed>1.5</Movement_Animation_Speed>
+      <Rotation_Animation_Speed>20.0</Rotation_Animation_Speed>
+      <Walk_Animation_Speed>0.45</Walk_Animation_Speed>
+      <Crouch_Animation_Speed>0.25</Crouch_Animation_Speed>
+      <Is_Named_Hero>No</Is_Named_Hero>
+      <Is_Generic_Hero>Yes</Is_Generic_Hero>
+      <Show_Hero_Head>Yes</Show_Hero_Head>
+      <Presence_Range>80.0</Presence_Range>
+      
+      <Shield_Points>900</Shield_Points>
+      <Shield_Refresh_Rate>6</Shield_Refresh_Rate>
+      <Tactical_Health>800</Tactical_Health>
+      <Score_Cost_Credits>5000</Score_Cost_Credits>
+      <Starting_Spawned_Units_Tech_0>Systemlord_Alliance_Horus_Guard_Staff_Company, 3</Starting_Spawned_Units_Tech_0>
+      <Projectile_Types>Proj_Goauld_Hero_Apophis_Land</Projectile_Types>
+      <Projectile_Fire_Recharge_Seconds>2</Projectile_Fire_Recharge_Seconds>
+      <Projectile_Fire_Pulse_Count>1</Projectile_Fire_Pulse_Count>
+      <Projectile_Fire_Pulse_Delay_Seconds>2</Projectile_Fire_Pulse_Delay_Seconds>
+      <SFXEvent_Fire>Weapon_Hand_Device_Goauld</SFXEvent_Fire>
+
+      <SFXEvent_Select>Unit_Select_HeruUr</SFXEvent_Select>
+      <SFXEvent_Move>Unit_Move_HeruUr</SFXEvent_Move>
+      <SFXEvent_Fleet_Move>Unit_Move_HeruUr</SFXEvent_Fleet_Move>
+      <SFXEvent_Attack>Unit_Attack_HeruUr</SFXEvent_Attack>
+      <SFXEvent_Health_Low_Warning>Unit_LOWHP_HeruUr</SFXEvent_Health_Low_Warning>
+      <SFXEvent_Health_Critical_Warning>Unit_CriticalHP_HeruUr</SFXEvent_Health_Critical_Warning>
+      <SFXEvent_Build_Complete>Unit_Spawn_HeruUr</SFXEvent_Build_Complete>
+      <SFXEvent_Hero_Respawned>Unit_Spawn_HeruUr</SFXEvent_Hero_Respawned>
+
+
+      <Affiliation>Systemlord_Alliance</Affiliation>
+      <Death_Clone>Damage_Hand_Device, Systemlord_Alliance_Hero_Heruur_Land_Hand_Device_Death_Clone</Death_Clone>
+
+      <Deploys>Yes</Deploys>
+      <Shielded_Only_When_Deployed>Yes</Shielded_Only_When_Deployed>
+      <Shield_Sub_Mesh>Shield</Shield_Sub_Mesh>
+      <Unit_Abilities_Data SubObjectList="Yes">
+         <Unit_Ability>
+            <Type>DEPLOY</Type>
+            <Alternate_Name_Text>TEXT_ABILITY_PERSONAL_SHIELD</Alternate_Name_Text>
+            <Alternate_Description_Text>TEXT_DESCRIPTION_ABILITY_PERSONAL_SHIELD_APOPHIS_GROUND</Alternate_Description_Text>
+            <Alternate_Icon_Name>I_SA_PERSONAL_SHIELD.TGA</Alternate_Icon_Name>
+            <!--Targeting_Max_Attack_Distance>200</Targeting_Max_Attack_Distance-->
+         </Unit_Ability>
+         <Unit_Ability>
+            <Type>POWER_TO_WEAPONS</Type>
+            <Alternate_Name_Text>TEXT_ABILITY_HELMET_UNFOLDING</Alternate_Name_Text>
+            <Alternate_Description_Text>TEXT_DESCRIPTION_ABILITY_UNFOLDING_JAFFA_MASTER_GROUND</Alternate_Description_Text>
+            <Mod_Multiplier>WEAPON_DELAY_MULTIPLIER, 0.3</Mod_Multiplier>
+            <Mod_Multiplier>SPEED_MULTIPLIER, 0.5</Mod_Multiplier>
+            <Mod_Multiplier>CAUSE_DAMAGE_MULTIPLIER, 1.0</Mod_Multiplier>
+            <Mod_Multiplier>TAKE_DAMAGE_MULTIPLIER, 0.5f</Mod_Multiplier>
+            <SFXEvent_GUI_Unit_Ability_Activated>Unit_Apophis_Helmet</SFXEvent_GUI_Unit_Ability_Activated>
+            <SFXEvent_GUI_Unit_Ability_Deactivated>Unit_Apophis_Helmet</SFXEvent_GUI_Unit_Ability_Deactivated>
+            <Recharge_Seconds></Recharge_Seconds>
+            <Expiration_Seconds></Expiration_Seconds>
+         </Unit_Ability>
+      </Unit_Abilities_Data>
+      <Abilities SubObjectList="Yes">
+         <Saber_Throw_Ability Name="Herur_Hand_Device">
+            <Activation_Style> User_Input </Activation_Style>
+            <Activation_Min_Range>20.0</Activation_Min_Range>
+            <Activation_Max_Range>200.0</Activation_Max_Range>
+            <Saber_Name>Proj_Goauld_Hero_Apophis_Hand_Device_Shockwave</Saber_Name>
+            <Catch_Dist>15.0</Catch_Dist>
+         </Saber_Throw_Ability>
+         <Force_Healing_Ability Name="Goauld_Infantry_Auto_Heal">
+            <Activation_Style>Ground_Automatic</Activation_Style>
+            <Heal_Percent>0.01</Heal_Percent>
+            <Heal_Interval_In_Secs>2.0</Heal_Interval_In_Secs>
+            <Single_Target_Heal>No</Single_Target_Heal>
+            <Owner_Particle_Bone_Name>ROOT</Owner_Particle_Bone_Name>
+            <Owner_Light_Effect_Duration>0.1</Owner_Light_Effect_Duration>
+            <Owner_Light_Effect_Pulse_Count>1</Owner_Light_Effect_Pulse_Count>
+         </Force_Healing_Ability>
+      </Abilities>
+      <Lua_Script>ObjectScript_Jaffa_Helmet_Transformation</Lua_Script>
+   </HeroUnit>
+   <GroundInfantry Name="Systemlord_Alliance_Hero_Heruur_Land_Hand_Device_Death_Clone">
+      <Variant_Of_Existing_Type>Systemlord_Alliance_Hero_Heruur_Land</Variant_Of_Existing_Type>
+      <Specific_Death_Anim_Type>FW_DIE</Specific_Death_Anim_Type>
+   </GroundInfantry>
+   <HeroCompany Name="Systemlord_Alliance_Hero_Heruur_Company">
+      <Variant_Of_Existing_Type>Template_Ground_Minor_Hero_Company</Variant_Of_Existing_Type>
+      <Text_ID>TEXT_SYSTEMLORDS_SPACE_HERO_HERUUR</Text_ID>
+      <Encyclopedia_Text>TEXT_DESCRIPTION_SYSTEMLORDS_HERUUR_GROUND</Encyclopedia_Text>
+      <Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_HERUUR_ANUBIS_HATAK</Encyclopedia_Unit_Class>
+      <Icon_Name>SYSTEMLORDS_SPACE_HERO_HERUUR.TGA</Icon_Name>
+      <Affiliation>Systemlord_Alliance</Affiliation>
+      <Ranking_In_Category>3</Ranking_In_Category>
+      <Company_Transport_Unit>Systemlord_Alliance_Hero_Heruur_Space</Company_Transport_Unit>
+      <Company_Units>Systemlord_Alliance_Hero_Heruur_Land</Company_Units>
+      <CategoryMask>LandHero | SpaceHero</CategoryMask>
+   </HeroCompany>
+
+
+   <HeroUnit Name="Systemlord_Alliance_Hero_Ra_Land">
+      <Variant_Of_Existing_Type>Template_Ground_Infantry_Single</Variant_Of_Existing_Type>
+      <Text_ID>TEXT_SYSTEMLORDS_SPACE_HERO_RA</Text_ID>
+      <Encyclopedia_Text>TEXT_DESCRIPTION_SYSTEMLORDS_RA_GROUND</Encyclopedia_Text>
+      <Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_BAAL_GROUND</Encyclopedia_Unit_Class>
+      <Encyclopedia_Good_Against>Underworld_Saboteur Underworld_Merc Stormtrooper</Encyclopedia_Good_Against>
+      <Encyclopedia_Vulnerable_To>MZ8_Pulse_Cannon_Tank Tauri_F302_Land Empire_Anti_Infantry_Turret</Encyclopedia_Vulnerable_To>
+      <Icon_Name>SYSTEMLORDS_SPACE_HERO_RA.TGA</Icon_Name>
+      <Land_Model_Name>Goauld_Land_Hero_Ra.ALO</Land_Model_Name>
+      <Land_Model_Anim_Override_Name>Goauld_Land_Hero_Ra.ALO</Land_Model_Anim_Override_Name>
+      <LandBehavior>WALK_LOCOMOTOR, ABILITY_COUNTDOWN, DAMAGE_TRACKING, HIDE_WHEN_FOGGED, IDLE, IMPOSING_PRESENCE, REVEAL, SELECTABLE, SHIELDED, STUNNABLE, SURFACE_FX, TARGETING, UNIT_AI, WEAPON</LandBehavior>
+      <Scale_Factor>1.25</Scale_Factor>
+      <Movement_Animation_Speed>1.5</Movement_Animation_Speed>
+      <Rotation_Animation_Speed>20.0</Rotation_Animation_Speed>
+      <Walk_Animation_Speed>0.45</Walk_Animation_Speed>
+      <Crouch_Animation_Speed>0.25</Crouch_Animation_Speed>
+      <Is_Named_Hero>No</Is_Named_Hero>
+      <Is_Generic_Hero>Yes</Is_Generic_Hero>
+      <Show_Hero_Head>Yes</Show_Hero_Head>
+      <Presence_Range>80.0</Presence_Range>
+      
+      <Shield_Points>900</Shield_Points>
+      <Shield_Refresh_Rate>6</Shield_Refresh_Rate>
+      <Tactical_Health>800</Tactical_Health>
+      <Projectile_Types>Proj_Goauld_Hero_Apophis_Land</Projectile_Types>
+      <Projectile_Fire_Recharge_Seconds>2</Projectile_Fire_Recharge_Seconds>
+      <Projectile_Fire_Pulse_Count>1</Projectile_Fire_Pulse_Count>
+      <Projectile_Fire_Pulse_Delay_Seconds>2</Projectile_Fire_Pulse_Delay_Seconds>
+      <SFXEvent_Fire>Weapon_Hand_Device_Goauld</SFXEvent_Fire>
+      <Affiliation>Systemlord_Alliance</Affiliation>
+      <SFXEvent_Select>Unit_Select_Ra</SFXEvent_Select>
+      <SFXEvent_Move>Unit_Move_Ra</SFXEvent_Move>
+      <SFXEvent_Fleet_Move>Unit_Move_Ra</SFXEvent_Fleet_Move>
+      <SFXEvent_Attack>Unit_Attack_Ra</SFXEvent_Attack>
+      <SFXEvent_Health_Critical_Warning>Unit_CriticalHP_Ra</SFXEvent_Health_Critical_Warning>
+      <SFXEvent_Build_Complete>Unit_Spawn_Ra</SFXEvent_Build_Complete>
+      <SFXEvent_Hero_Respawned>Unit_Spawn_Ra</SFXEvent_Hero_Respawned>
+
+      <Deploys>Yes</Deploys>
+      <Shielded_Only_When_Deployed>Yes</Shielded_Only_When_Deployed>
+      <Shield_Sub_Mesh>Shield</Shield_Sub_Mesh>
+      <Unit_Abilities_Data SubObjectList="Yes">
+         <Unit_Ability>
+            <Type>DEPLOY</Type>
+            <Alternate_Name_Text>TEXT_ABILITY_PERSONAL_SHIELD</Alternate_Name_Text>
+            <Alternate_Description_Text>TEXT_DESCRIPTION_ABILITY_PERSONAL_SHIELD_APOPHIS_GROUND</Alternate_Description_Text>
+            <Alternate_Icon_Name>I_SA_PERSONAL_SHIELD.TGA</Alternate_Icon_Name>
+            <!--Targeting_Max_Attack_Distance>200</Targeting_Max_Attack_Distance-->
+         </Unit_Ability>
+         <Unit_Ability>
+            <Type>POWER_TO_WEAPONS</Type>
+            <Alternate_Name_Text>TEXT_ABILITY_HELMET_UNFOLDING</Alternate_Name_Text>
+            <Alternate_Description_Text>TEXT_DESCRIPTION_ABILITY_UNFOLDING_APOPHIS_GROUND</Alternate_Description_Text>
+            <Alternate_Icon_Name>I_SA_HELMET_UNFOLD.TGA</Alternate_Icon_Name>
+            <Mod_Multiplier>WEAPON_DELAY_MULTIPLIER, 1.0</Mod_Multiplier>
+            <Mod_Multiplier>SPEED_MULTIPLIER, 0.5</Mod_Multiplier>
+            <Mod_Multiplier>CAUSE_DAMAGE_MULTIPLIER, 1.0</Mod_Multiplier>
+            <Mod_Multiplier>TAKE_DAMAGE_MULTIPLIER, 0.5f</Mod_Multiplier>
+            <Recharge_Seconds></Recharge_Seconds>
+            <Expiration_Seconds></Expiration_Seconds>
+            <SFXEvent_GUI_Unit_Ability_Activated>Unit_Apophis_Helmet</SFXEvent_GUI_Unit_Ability_Activated>
+            <SFXEvent_GUI_Unit_Ability_Deactivated>Unit_Apophis_Helmet</SFXEvent_GUI_Unit_Ability_Deactivated>
+         </Unit_Ability>
+      </Unit_Abilities_Data>
+      <Abilities SubObjectList="Yes">
+         <Saber_Throw_Ability Name="Ra_Hand_Device">
+            <Activation_Style> User_Input </Activation_Style>
+            <Activation_Min_Range>20.0</Activation_Min_Range>
+            <Activation_Max_Range>200.0</Activation_Max_Range>
+            <Saber_Name>Proj_Goauld_Hero_Apophis_Hand_Device_Shockwave</Saber_Name>
+            <Catch_Dist>15.0</Catch_Dist>
+         </Saber_Throw_Ability>
+      </Abilities>
+      <Lua_Script>ObjectScript_Ra_Land</Lua_Script>
+   </HeroUnit>
+
+   <HeroCompany Name="Systemlord_Alliance_Hero_Ra_Company">
+      <Variant_Of_Existing_Type>Template_Ground_Hero_Company</Variant_Of_Existing_Type>
+      <Text_ID>TEXT_SYSTEMLORDS_SPACE_HERO_RA</Text_ID>
+      <Encyclopedia_Text>TEXT_DESCRIPTION_SYSTEMLORDS_RA_GROUND</Encyclopedia_Text>
+      <Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_BAAL_GROUND</Encyclopedia_Unit_Class>
+      <Icon_Name>SYSTEMLORDS_SPACE_HERO_RA.TGA</Icon_Name>
+      <Affiliation>Systemlord_Alliance</Affiliation>
+      <Ranking_In_Category>3</Ranking_In_Category>
+      <Company_Transport_Unit>Systemlord_Alliance_Hero_Ra</Company_Transport_Unit>
+      <Company_Units>Systemlord_Alliance_Hero_Ra_Land</Company_Units>
+      <CategoryMask> LandHero | SpaceHero </CategoryMask>
+   </HeroCompany>
+
+
+   <HeroUnit Name="Systemlord_Alliance_Hero_Sokar_Land">
+      <Variant_Of_Existing_Type>Template_Ground_Infantry_Single_Hero_Goauld_Slow</Variant_Of_Existing_Type>
+      <Text_ID>TEXT_SYSTEMLORDS_SPACE_HERO_SOKAR</Text_ID>
+      <Encyclopedia_Text>TEXT_DESCRIPTION_SYSTEMLORDS_SOKAR_GROUND</Encyclopedia_Text>
+      <Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_SOKAR_SYSTEMFLAGGSCHIFF</Encyclopedia_Unit_Class>
+      <Encyclopedia_Good_Against>Underworld_Saboteur Underworld_Merc Stormtrooper</Encyclopedia_Good_Against>
+      <Encyclopedia_Vulnerable_To>MZ8_Pulse_Cannon_Tank Tauri_F302_Land Empire_Anti_Infantry_Turret</Encyclopedia_Vulnerable_To>
+      <Icon_Name>SYSTEMLORDS_SPACE_HERO_SOKAR.TGA</Icon_Name>
+      <Land_Model_Name>Goauld_Land_Hero_Sokar.ALO</Land_Model_Name>
+      <Land_Model_Anim_Override_Name>Goauld_Land_Hero_Sokar.ALO</Land_Model_Anim_Override_Name>
+      <LandBehavior>WALK_LOCOMOTOR, ABILITY_COUNTDOWN, DAMAGE_TRACKING, HIDE_WHEN_FOGGED, IDLE, IMPOSING_PRESENCE, REVEAL, SELECTABLE, SHIELDED, STUNNABLE, SURFACE_FX, TARGETING, UNIT_AI, WEAPON</LandBehavior>
+      <Scale_Factor>1.25</Scale_Factor>
+      <Movement_Animation_Speed>1.5</Movement_Animation_Speed>
+      <Rotation_Animation_Speed>20.0</Rotation_Animation_Speed>
+      <Walk_Animation_Speed>0.45</Walk_Animation_Speed>
+      <Crouch_Animation_Speed>0.25</Crouch_Animation_Speed>
+      <Is_Named_Hero>No</Is_Named_Hero>
+      <Is_Generic_Hero>Yes</Is_Generic_Hero>
+      <Show_Hero_Head>Yes</Show_Hero_Head>
+      <Presence_Range>80.0</Presence_Range>
+      
+      <Shield_Points>900</Shield_Points>
+      <Shield_Refresh_Rate>6</Shield_Refresh_Rate>
+      <Tactical_Health>800</Tactical_Health>
+      <Score_Cost_Credits>5000</Score_Cost_Credits>
+      <Projectile_Types>Proj_Goauld_Hero_Apophis_Land</Projectile_Types>
+      <Projectile_Fire_Recharge_Seconds>2</Projectile_Fire_Recharge_Seconds>
+      <Projectile_Fire_Pulse_Count>1</Projectile_Fire_Pulse_Count>
+      <Projectile_Fire_Pulse_Delay_Seconds>2</Projectile_Fire_Pulse_Delay_Seconds>
+      <SFXEvent_Fire>Weapon_Hand_Device_Goauld</SFXEvent_Fire>
+      <Affiliation>Systemlord_Alliance</Affiliation>
+
+      <Deploys>Yes</Deploys>
+      <Shielded_Only_When_Deployed>Yes</Shielded_Only_When_Deployed>
+      <Shield_Sub_Mesh>Shield</Shield_Sub_Mesh>
+      <Unit_Abilities_Data SubObjectList="Yes">
+         <Unit_Ability>
+            <Type>DEPLOY</Type>
+            <Alternate_Name_Text>TEXT_ABILITY_PERSONAL_SHIELD</Alternate_Name_Text>
+            <Alternate_Description_Text>TEXT_DESCRIPTION_ABILITY_PERSONAL_SHIELD_APOPHIS_GROUND</Alternate_Description_Text>
+            <Alternate_Icon_Name>I_SA_PERSONAL_SHIELD.TGA</Alternate_Icon_Name>
+            <!--Targeting_Max_Attack_Distance>200</Targeting_Max_Attack_Distance-->
+         </Unit_Ability>
+         <Unit_Ability>
+            <Type>FORCE_CONFUSE</Type>
+            <Recharge_Seconds>40.0</Recharge_Seconds>
+            <GUI_Activated_Ability_Name> Sokar_Intimidate </GUI_Activated_Ability_Name>            <!-- GUI Command Bar support -->
+            <Effective_Radius> 500.0 </Effective_Radius>
+            <SFXEvent_GUI_Unit_Ability_Activated> Unit_Intimidate_Sokar </SFXEvent_GUI_Unit_Ability_Activated>
+            <Supports_Autofire>True</Supports_Autofire>
+         </Unit_Ability>
+      </Unit_Abilities_Data>
+      <Abilities SubObjectList="Yes">
+         <Saber_Throw_Ability Name="Sokar_Hand_Device">
+            <Activation_Style> User_Input </Activation_Style>
+            <Activation_Min_Range>20.0</Activation_Min_Range>
+            <Activation_Max_Range>200.0</Activation_Max_Range>
+            <Saber_Name>Proj_Goauld_Hero_Apophis_Hand_Device_Shockwave</Saber_Name>
+            <Catch_Dist>15.0</Catch_Dist>
+         </Saber_Throw_Ability>
+         <Force_Confuse_Ability Name="Sokar_Intimidate">
+            <Activation_Style> User_Input </Activation_Style>
+            <!-- We only consider the following unit types "valid targets": -->
+            <Applicable_Unit_Categories>Infantry</Applicable_Unit_Categories>
+            <Activation_Min_Range>0.0</Activation_Min_Range>
+            <Activation_Max_Range>132.0</Activation_Max_Range>
+            <Confuse_Time_In_Secs>8.0</Confuse_Time_In_Secs>
+            <Confuse_Range>132.0</Confuse_Range>
+            <!-- How long does it take for the shockwave to spread from the hero to the max range? -->
+            <Confuse_Travel_Time_In_Secs>1.2</Confuse_Travel_Time_In_Secs>
+            <Confuse_Effect> Confuse_Particle_Effect </Confuse_Effect>
+            <SFXEvent_Activate></SFXEvent_Activate>
+            <Owner_Particle_Effect>Jedi_Mind_Trick_Effect</Owner_Particle_Effect>
+            <!--<Owner_Particle_Effect>Confuse_Ability_Particles</Owner_Particle_Effect>-->
+            <Owner_Particle_Bone_Name />
+            <Owner_Light_Effect_Type>Color_Flash</Owner_Light_Effect_Type>
+            <Owner_Light_Effect_Color>8.0, 2.0, 2.0</Owner_Light_Effect_Color>
+            <Owner_Light_Effect_Color2 />
+            <Owner_Light_Effect_Duration>0.5</Owner_Light_Effect_Duration>
+            <Owner_Light_Effect_Pulse_Count />
+         </Force_Confuse_Ability>
+         <Force_Healing_Ability Name="Goauld_Infantry_Auto_Heal">
+            <Activation_Style>Ground_Automatic</Activation_Style>
+            <Heal_Percent>0.01</Heal_Percent>
+            <Heal_Interval_In_Secs>2.0</Heal_Interval_In_Secs>
+            <Single_Target_Heal>No</Single_Target_Heal>
+            <Owner_Particle_Bone_Name>ROOT</Owner_Particle_Bone_Name>
+            <Owner_Light_Effect_Duration>0.1</Owner_Light_Effect_Duration>
+            <Owner_Light_Effect_Pulse_Count>1</Owner_Light_Effect_Pulse_Count>
+         </Force_Healing_Ability>
+      </Abilities>
+      <SFXEvent_Select>Unit_Select_Sokar</SFXEvent_Select>
+      <SFXEvent_Move>Unit_Move_Sokar</SFXEvent_Move>
+      <SFXEvent_Fleet_Move>Unit_Move_Sokar</SFXEvent_Fleet_Move>
+      <SFXEvent_Attack>Unit_Attack_Sokar</SFXEvent_Attack>
+      <SFXEvent_Health_Low_Warning>Unit_LOWHP_Sokar</SFXEvent_Health_Low_Warning>
+      <SFXEvent_Health_Critical_Warning>Unit_CriticalHP_Sokar</SFXEvent_Health_Critical_Warning>
+      <SFXEvent_Build_Complete>Unit_Spawn_Sokar</SFXEvent_Build_Complete>
+      <SFXEvent_Hero_Respawned>Unit_Spawn_Sokar</SFXEvent_Hero_Respawned>
+
+   </HeroUnit>
+
+   <HeroCompany Name="Systemlord_Alliance_Hero_Sokar_Company">
+      <Variant_Of_Existing_Type>Template_Ground_Hero_Company</Variant_Of_Existing_Type>
+      <Text_ID>TEXT_SYSTEMLORDS_SPACE_HERO_SOKAR</Text_ID>
+      <Encyclopedia_Text>TEXT_DESCRIPTION_SYSTEMLORDS_SOKAR_GROUND</Encyclopedia_Text>
+      <Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_SOKAR_SYSTEMFLAGGSCHIFF</Encyclopedia_Unit_Class>
+      <Icon_Name>SYSTEMLORDS_SPACE_HERO_SOKAR.TGA</Icon_Name>
+      <Affiliation>Systemlord_Alliance</Affiliation>
+      <Ranking_In_Category>3</Ranking_In_Category>
+      <Company_Transport_Unit>Systemlord_Alliance_Hero_Sokar</Company_Transport_Unit>
+      <Company_Units>Systemlord_Alliance_Hero_Sokar_Land</Company_Units>
+      <CategoryMask> LandHero | SpaceHero </CategoryMask>
+   </HeroCompany>
+
+
+   <HeroUnit Name="Systemlord_Alliance_Hero_Yu_Land">
+      <Variant_Of_Existing_Type>Template_Ground_Infantry_Single</Variant_Of_Existing_Type>
+      <Text_ID>TEXT_SYSTEMLORDS_SPACE_HERO_YU</Text_ID>
+      <Encyclopedia_Text>TEXT_DESCRIPTION_SYSTEMLORDS_YU_GROUND</Encyclopedia_Text>
+      <Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_YU_ANUBIS_HATAK</Encyclopedia_Unit_Class>
+      <Encyclopedia_Good_Against>Underworld_Saboteur Underworld_Merc Stormtrooper</Encyclopedia_Good_Against>
+      <Encyclopedia_Vulnerable_To>MZ8_Pulse_Cannon_Tank Tauri_F302_Land Empire_Anti_Infantry_Turret</Encyclopedia_Vulnerable_To>
+      <Icon_Name>SYSTEMLORDS_SPACE_HERO_YU.TGA</Icon_Name>
+      <Land_Model_Name>Goauld_Land_Hero_Yu.ALO</Land_Model_Name>
+      <Land_Model_Anim_Override_Name>Goauld_Land_Hero_Yu.ALO</Land_Model_Anim_Override_Name>
+      <LandBehavior>WALK_LOCOMOTOR, ABILITY_COUNTDOWN, DAMAGE_TRACKING, HIDE_WHEN_FOGGED, IDLE, IMPOSING_PRESENCE, REVEAL, SELECTABLE, SHIELDED, STUNNABLE, SURFACE_FX, TARGETING, UNIT_AI, WEAPON</LandBehavior>
+      <Scale_Factor>1.25</Scale_Factor>
+      <Movement_Animation_Speed>1.5</Movement_Animation_Speed>
+      <Rotation_Animation_Speed>20.0</Rotation_Animation_Speed>
+      <Walk_Animation_Speed>0.45</Walk_Animation_Speed>
+      <Crouch_Animation_Speed>0.25</Crouch_Animation_Speed>
+      <Is_Named_Hero>No</Is_Named_Hero>
+      <Is_Generic_Hero>Yes</Is_Generic_Hero>
+      <Show_Hero_Head>Yes</Show_Hero_Head>
+      <Presence_Range>80.0</Presence_Range>
+      
+      <Shield_Points>900</Shield_Points>
+      <Shield_Refresh_Rate>6</Shield_Refresh_Rate>
+      <Tactical_Health>800</Tactical_Health>
+      <Projectile_Types>Proj_Goauld_Hero_Apophis_Land</Projectile_Types>
+      <Projectile_Fire_Recharge_Seconds>2</Projectile_Fire_Recharge_Seconds>
+      <Projectile_Fire_Pulse_Count>1</Projectile_Fire_Pulse_Count>
+      <Projectile_Fire_Pulse_Delay_Seconds>2</Projectile_Fire_Pulse_Delay_Seconds>
+      <SFXEvent_Fire>Weapon_Hand_Device_Goauld</SFXEvent_Fire>
+      <Affiliation>Systemlord_Alliance</Affiliation>
+      <SFXEvent_Select>Unit_Select_Yu</SFXEvent_Select>
+      <SFXEvent_Move>Unit_Move_Yu</SFXEvent_Move>
+      <SFXEvent_Fleet_Move>Unit_Move_Yu</SFXEvent_Fleet_Move>
+      <SFXEvent_Attack>Unit_Attack_Yu</SFXEvent_Attack>
+      <SFXEvent_Health_Critical_Warning>Unit_CriticalHP_Yu</SFXEvent_Health_Critical_Warning>
+      <SFXEvent_Build_Complete>Unit_Spawn_Yu</SFXEvent_Build_Complete>
+      <SFXEvent_Hero_Respawned>Unit_Spawn_Yu</SFXEvent_Hero_Respawned>
+
+      <Deploys>Yes</Deploys>
+      <Shielded_Only_When_Deployed>Yes</Shielded_Only_When_Deployed>
+      <Shield_Sub_Mesh>Shield</Shield_Sub_Mesh>
+      <Unit_Abilities_Data SubObjectList="Yes">
+         <Unit_Ability>
+            <Type>DEPLOY</Type>
+            <Alternate_Name_Text>TEXT_ABILITY_PERSONAL_SHIELD</Alternate_Name_Text>
+            <Alternate_Description_Text>TEXT_DESCRIPTION_ABILITY_PERSONAL_SHIELD_APOPHIS_GROUND</Alternate_Description_Text>
+            <Alternate_Icon_Name>I_SA_PERSONAL_SHIELD.TGA</Alternate_Icon_Name>
+            <Targeting_Max_Attack_Distance>200</Targeting_Max_Attack_Distance>
+         </Unit_Ability>
+      </Unit_Abilities_Data>
+      <Abilities SubObjectList="Yes">
+         <Saber_Throw_Ability Name="Yu_Hand_Device">
+            <Activation_Style> User_Input </Activation_Style>
+            <Activation_Min_Range>20.0</Activation_Min_Range>
+            <Activation_Max_Range>200.0</Activation_Max_Range>
+            <Saber_Name>Proj_Goauld_Hero_Apophis_Hand_Device_Shockwave</Saber_Name>
+            <Catch_Dist>15.0</Catch_Dist>
+         </Saber_Throw_Ability>
+      </Abilities>
+   </HeroUnit>
+
+   <HeroCompany Name="Systemlord_Alliance_Hero_Yu_Company">
+      <Variant_Of_Existing_Type>Template_Ground_Hero_Company</Variant_Of_Existing_Type>
+      <Text_ID>TEXT_SYSTEMLORDS_SPACE_HERO_YU</Text_ID>
+      <Encyclopedia_Text>TEXT_DESCRIPTION_SYSTEMLORDS_YU_GROUND</Encyclopedia_Text>
+      <Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_YU_ANUBIS_HATAK</Encyclopedia_Unit_Class>
+      <Icon_Name>SYSTEMLORDS_SPACE_HERO_YU.TGA</Icon_Name>
+      <Affiliation>Systemlord_Alliance</Affiliation>
+      <Ranking_In_Category>3</Ranking_In_Category>
+      <Company_Transport_Unit>Systemlord_Alliance_Hero_Lord_Yu</Company_Transport_Unit>
+      <Company_Units>Systemlord_Alliance_Hero_Yu_Land</Company_Units>
+      <CategoryMask> LandHero | SpaceHero </CategoryMask>
+   </HeroCompany>
+
+
+   <!-- HeroUnit Name="Systemlord_Alliance_Hero_Bastet_Land">
+      <Variant_Of_Existing_Type>Template_Ground_Infantry_Single_Hero_Goauld</Variant_Of_Existing_Type>
+      <Text_ID>TEXT_SYSTEMLORDS_SPACE_HERO_BASTET</Text_ID>
+      <Encyclopedia_Text>TEXT_DESCRIPTION_SYSTEMLORDS_BASTET_GROUND</Encyclopedia_Text>
+      <Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_BASTET_NEUES_HATAK</Encyclopedia_Unit_Class>
+      <Icon_Name>SYSTEMLORDS_SPACE_HERO_BASTET.TGA</Icon_Name>
+      <Land_Model_Name>Goauld_Land_Hero_Bastet.ALO</Land_Model_Name>
+      <Land_Model_Anim_Override_Name>Goauld_Land_Hero_Bastet.ALO</Land_Model_Anim_Override_Name>
+      <LandBehavior>WALK_LOCOMOTOR, ABILITY_COUNTDOWN, DAMAGE_TRACKING, HIDE_WHEN_FOGGED, IDLE, IMPOSING_PRESENCE, REVEAL, SELECTABLE, SHIELDED, STUNNABLE, SURFACE_FX, TARGETING, UNIT_AI, WEAPON</LandBehavior>
+      <Presence_Range>80.0</Presence_Range>
+		
+      <Shield_Points>900</Shield_Points>
+      <Shield_Refresh_Rate>6</Shield_Refresh_Rate>
+      <Tactical_Health>300</Tactical_Health>
+		<Projectile_Types>Proj_Goauld_Hero_Apophis_Land</Projectile_Types>
+      <Projectile_Fire_Recharge_Seconds>2</Projectile_Fire_Recharge_Seconds>
+		<Projectile_Fire_Pulse_Count>1</Projectile_Fire_Pulse_Count>
+		<Projectile_Fire_Pulse_Delay_Seconds>2</Projectile_Fire_Pulse_Delay_Seconds>
+      <Affiliation>Systemlord_Alliance</Affiliation>
+
+      <Deploys>Yes</Deploys>
+      <Shielded_Only_When_Deployed>Yes</Shielded_Only_When_Deployed>
+      <Shield_Sub_Mesh>Shield</Shield_Sub_Mesh>
+      <Unit_Abilities_Data SubObjectList="Yes">
+         <Unit_Ability>
+				<Type>DEPLOY</Type>
+				<Alternate_Name_Text>TEXT_ABILITY_PERSONAL_SHIELD</Alternate_Name_Text>
+            <Alternate_Description_Text>TEXT_DESCRIPTION_ABILITY_PERSONAL_SHIELD_APOPHIS_GROUND</Alternate_Description_Text>
+            <Alternate_Icon_Name>I_SA_PERSONAL_SHIELD.TGA</Alternate_Icon_Name>
+            <Targeting_Max_Attack_Distance>200</Targeting_Max_Attack_Distance>
+			</Unit_Ability>
+      </Unit_Abilities_Data>
+      <Abilities SubObjectList="Yes">
+            <Saber_Throw_Ability Name="Bastet_Hand_Device">
+                <Activation_Style> User_Input </Activation_Style>
+                <Activation_Min_Range>20.0</Activation_Min_Range>
+                <Activation_Max_Range>200.0</Activation_Max_Range>
+                <Saber_Name>Proj_Goauld_Hero_Apophis_Hand_Device_Shockwave</Saber_Name>
+                <Catch_Dist>15.0</Catch_Dist>
+            </Saber_Throw_Ability>
+		</Abilities>
+   </HeroUnit>
+   <HeroCompany Name="Systemlord_Alliance_Hero_Bastet_Company">
+      <Variant_Of_Existing_Type>Template_Ground_Hero_Company</Variant_Of_Existing_Type>
+      <Text_ID>TEXT_SYSTEMLORDS_SPACE_HERO_BASTET</Text_ID>
+      <Encyclopedia_Text>TEXT_DESCRIPTION_SYSTEMLORDS_BASTET_GROUND</Encyclopedia_Text>
+      <Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_BASTET_NEUES_HATAK</Encyclopedia_Unit_Class>
+      <Icon_Name>SYSTEMLORDS_SPACE_HERO_BASTET.TGA</Icon_Name>
+      <Affiliation>Systemlord_Alliance</Affiliation>
+      <Ranking_In_Category>3</Ranking_In_Category>
+      <Company_Transport_Unit>Systemlord_Alliance_Hero_Heruur_Space</Company_Transport_Unit>
+		<Company_Units>Systemlord_Alliance_Hero_Bastet_Land</Company_Units>
+      <CategoryMask> LandHero | SpaceHero </CategoryMask>
+   </HeroCompany -->
+
+
+</Systemlord_Alliance_Ground_Units>

@@ -1,0 +1,700 @@
+<?xml version="1.0"?>
+<Space_Buildings_Wraith>
+
+   <!--The following models are currently not coded and could potentially be used in a campaign:
+   wraith_space_building_heavyshipyard.alo
+   -->
+
+  <!-- Wraith GC Resource Mine -->
+  <SpecialStructure Name="Wraith_Space_Asteroid_Mine">
+    <Scale_Factor>2.4</Scale_Factor>
+    <Text_ID>TEXT_WRAITH_SPACE_BUILDING_ASTEROIDENMINE</Text_ID>
+    <GUI_Row> 0 </GUI_Row>
+    <Is_Dummy>Yes</Is_Dummy>
+    <Space_Model_Name>Wraith_Space_Building_Mine_GC.ALO</Space_Model_Name>
+    <Select_Box_Scale>500</Select_Box_Scale>
+    <Select_Box_Z_Adjust>-30</Select_Box_Z_Adjust>
+    <Affiliation>Empire</Affiliation>
+    <Political_Control>0</Political_Control>
+    <AI_Combat_Power>600</AI_Combat_Power>
+    <Build_Cost_Credits>2400</Build_Cost_Credits>
+    <Build_Time_Seconds>55</Build_Time_Seconds>
+    <Build_Tab_Special_Structures>Yes</Build_Tab_Special_Structures>
+    <Build_Max_Instances_Per_Planet> 1 </Build_Max_Instances_Per_Planet>
+    <Size_Value>30</Size_Value>
+    <Build_Initially_Locked>No</Build_Initially_Locked>
+    <Build_Can_Be_Unlocked_By_Slicer>No</Build_Can_Be_Unlocked_By_Slicer>
+    <Slice_Cost_Credits>400</Slice_Cost_Credits>
+    <Base_Position>Orbital</Base_Position>
+    <Tech_Level>2</Tech_Level>
+    <Required_Timeline>0</Required_Timeline>
+    <Required_Ground_Base_Level>0</Required_Ground_Base_Level>
+    <Required_Star_Base_Level>1</Required_Star_Base_Level>
+    <Required_Special_Structures />
+    <Build_Limit_Current_Per_Player>10</Build_Limit_Current_Per_Player>
+    <Required_Planets>
+      Universe_L_Hoff,
+      Universe_L_M4F_788,
+      Universe_L_P3X_254,
+      Universe_L_P3X_474,
+      Universe_L_Asteroid_Field,
+      Universe_L_M6R_214,
+      Pegasus_G_Hoff,
+      Pegasus_G_M4F_788,
+      Pegasus_G_M6R_214,
+      Pegasus_K_Hoff,
+      Pegasus_K_Manaria,
+      Allianz_P3X_254,
+      Universe_S_M4F_788
+    </Required_Planets>
+    <Tactical_Health>4800</Tactical_Health>
+    <Behavior>SELECTABLE, DUMMY_ORBITAL_STRUCTURE</Behavior>
+    <SpaceBehavior>SPACE_OBSTACLE, REVEAL, HIDE_WHEN_FOGGED, UNIT_AI, DAMAGE_TRACKING</SpaceBehavior>
+    <Space_FOW_Reveal_Range>2000.0</Space_FOW_Reveal_Range>
+    <Targeting_Max_Attack_Distance>1250.0</Targeting_Max_Attack_Distance>
+    <Last_State_Visible_Under_FOW> Yes </Last_State_Visible_Under_FOW>
+    <Collidable_By_Projectile_Living>Yes</Collidable_By_Projectile_Living>
+    <Death_Explosions>Large_Explosion_Space</Death_Explosions>
+    <Icon_Name>WRAITH_SPACE_BUILDING_MINE.TGA</Icon_Name>
+    <Victory_Relevant>yes</Victory_Relevant>
+
+    <GUI_Model_Name>Wraith_Space_Building_Mine_GC.ALO</GUI_Model_Name>
+    <GUI_Distance>800</GUI_Distance>
+    <GUI_Velocity>45</GUI_Velocity>
+    <No_Reflection_Below_Detail_Level>1</No_Reflection_Below_Detail_Level>
+    <No_Refraction_Below_Detail_Level>1</No_Refraction_Below_Detail_Level>
+
+    <SFXEvent_Build_Started />
+    <SFXEvent_Build_Cancelled />
+    <SFXEvent_Build_Complete />
+    <Death_SFXEvent_Start_Die>Unit_Generic_Building_Death_SFX</Death_SFXEvent_Start_Die>
+    <SFXEvent_Unit_Under_Attack />
+    <SFXEvent_Unit_Lost />
+    <SFXEvent_Select></SFXEvent_Select>
+
+    <CategoryMask> Structure </CategoryMask>
+    <Is_Visible_On_Radar>Yes</Is_Visible_On_Radar>
+    <Radar_Icon_Size>0.1  0.1</Radar_Icon_Size>
+    <GUI_Bracket_Size>2</GUI_Bracket_Size>
+    <Armor_Type> Armor_Station </Armor_Type>
+    <Targeting_Priority_Set>Fighter</Targeting_Priority_Set>
+    <Influences_Capture_Point>False</Influences_Capture_Point>
+    <!-- This Galactic_Influence_Range controls how far the OLRS's Fleet Reveal ability extends -->
+    <Galactic_Influence_Range>0.0</Galactic_Influence_Range>
+    <Hyperspace_Fleet_Reveal_Range>0.0</Hyperspace_Fleet_Reveal_Range>
+
+    <Abilities SubObjectList="Yes">
+      <Planet_Income_Bonus_Ability Name="Empire_Mining_Income_Bonus">
+        <Specific_Mod_Source_Text>TEXT_ECONOMY_MINING_FACILITIES</Specific_Mod_Source_Text>
+        <!-- % bonus to base planetary income -->
+        <Percentage_Income_Modifier>0</Percentage_Income_Modifier>
+        <!-- plus an absolute credits to planetary income -->
+        <Absolute_Income_Modifier>100</Absolute_Income_Modifier>
+        <!-- net effect of +( (base income * 0%) + 20) credits -->
+        <Additional_Multiplier_On_Mining_Colonies>1.5</Additional_Multiplier_On_Mining_Colonies>
+        <!-- net result above multiplied by 2.0 if the affected planet is a mining colony -->
+      </Planet_Income_Bonus_Ability>
+      <Force_Healing_Ability Name="E_Mineral_Extractor_Self_Repair">
+        <Activation_Style>Skirmish_Automatic</Activation_Style>
+        <Heal_Range>0.0</Heal_Range>
+        <Heal_Percent>0.005</Heal_Percent>
+        <Heal_Amount>0.0</Heal_Amount>
+        <Heal_Interval_In_Secs>1.0</Heal_Interval_In_Secs>
+        <Single_Target_Heal>No</Single_Target_Heal>
+        <Applicable_Unit_Categories />
+        <Applicable_Unit_Types />
+        <SFXEvent_Target_Affected />
+        <Owner_Particle_Bone_Name>ROOT</Owner_Particle_Bone_Name>
+        <Owner_Light_Effect_Type>Color_Flash</Owner_Light_Effect_Type>
+        <Owner_Light_Effect_Color>1.2, 1.2, 1.2</Owner_Light_Effect_Color>
+        <Owner_Light_Effect_Color2 />
+        <Owner_Light_Effect_Duration>0.6</Owner_Light_Effect_Duration>
+        <Owner_Light_Effect_Pulse_Count>1</Owner_Light_Effect_Pulse_Count>
+      </Force_Healing_Ability>
+    </Abilities>
+
+    <Encyclopedia_Text> TEXT_DESCRIPTION_WRAITH_GC_ASTEROIDENMINE </Encyclopedia_Text>
+    <Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_WELTRAUMMINE</Encyclopedia_Unit_Class>
+    <Score_Cost_Credits> 21000 </Score_Cost_Credits>
+    <Custom_Soft_Footprint_Radius> 100 </Custom_Soft_Footprint_Radius>
+    <Space_Obstacle_Offset> 0 0 0 </Space_Obstacle_Offset>
+    <Space_Layer> StaticObject </Space_Layer>
+    <Remove_Upon_Death>true</Remove_Upon_Death>
+  </SpecialStructure>
+  
+  <!-- Variant for Pegasus Prelude -->
+  <SpecialStructure Name="Wraith_Space_Asteroid_Mine_PP">
+		<Variant_Of_Existing_Type>Wraith_Space_Asteroid_Mine</Variant_Of_Existing_Type>
+		<Build_Cost_Credits>1600</Build_Cost_Credits>
+        <Percentage_Income_Modifier>3.0</Percentage_Income_Modifier>
+		<Additional_Multiplier_On_Mining_Colonies>2.0</Additional_Multiplier_On_Mining_Colonies>
+		<Required_Planets>
+        Pegasus_Prelude_Planet_Edowin,
+        Pegasus_Prelude_Planet_Hoff,
+        Pegasus_Prelude_Planet_Iratus_Bestiola,
+        Pegasus_Prelude_Planet_Manaria,
+        Pegasus_Prelude_Planet_Olesia,
+	    Pegasus_Prelude_Planet_Proculis,
+        Pegasus_Prelude_Planet_Sagon,
+        Pegasus_Prelude_Planet_Vadena
+        </Required_Planets>
+        <Required_Star_Base_Level>1</Required_Star_Base_Level>
+	</SpecialStructure>
+  
+  
+  
+  <SpecialStructure Name="Wraith_Hangar">
+
+    <Behavior>SELECTABLE, DUMMY_ORBITAL_STRUCTURE</Behavior>
+    <SpaceBehavior>SPACE_OBSTACLE, REVEAL, HIDE_WHEN_FOGGED, UNIT_AI, SPAWN_SQUADRON</SpaceBehavior>
+    <Scale_Factor>1.5</Scale_Factor>
+
+    <Text_ID>TEXT_WRAITH_SPACE_BUILDING_WELTRAUMHANGAR</Text_ID>
+    <GUI_Row> 0 </GUI_Row>
+    <Is_Dummy>Yes</Is_Dummy>
+    <Space_Model_Name>Wraith_Space_Building_Hangar.ALO</Space_Model_Name>
+    <Icon_Name>WRAITH_SPACE_BUILDING_HANGAR.TGA</Icon_Name>
+    <Space_FOW_Reveal_Range>2000.0</Space_FOW_Reveal_Range>
+    <Build_Tab_Special_Structures>Yes</Build_Tab_Special_Structures>
+    <Build_Max_Instances_Per_Planet> 1 </Build_Max_Instances_Per_Planet>
+    <Political_Control>0</Political_Control>
+    <Galactic_Influence_Range>0.0</Galactic_Influence_Range>
+    <Hyperspace_Fleet_Reveal_Range>0.0</Hyperspace_Fleet_Reveal_Range>
+    <AI_Combat_Power>0</AI_Combat_Power>
+    <Tech_Level>2</Tech_Level>
+    <Build_Cost_Credits>1000</Build_Cost_Credits>
+    <Build_Time_Seconds>10</Build_Time_Seconds>
+    <Required_Ground_Base_Level>0</Required_Ground_Base_Level>
+    <Required_Star_Base_Level>1</Required_Star_Base_Level>
+    <Required_Special_Structures />
+    <Required_Planets>Pegasus_G_Asuras, Pegasus_G_Doronda, Pegasus_G_Genii, Pegasus_G_Sateda, Pegasus_G_Taranis, Pegasus_G_Wraith_Heimatwelt</Required_Planets>
+    <Required_Planets>Pegasus_K_Asuras, Pegasus_K_Doranda, Pegasus_K_Genii, Pegasus_K_Sateda, Pegasus_K_Taranis, Pegasus_K_Wraith_Homeworld</Required_Planets>
+    <Required_Planets>Universe_L_Asuras, Universe_L_Celestis, Universe_L_Doranda, Universe_L_Genii, Universe_L_Juna, Universe_L_Langara, Universe_L_Oran, Universe_L_Othala, Universe_L_Sateda, Universe_L_Taranis, Universe_L_Tegalus, Universe_L_Tollana, Universe_L_Wraith_Homeworld</Required_Planets>
+	<Required_Planets>Universe_S_Genii, Universe_S_Juna, Universe_S_Langara, Universe_S_Sateda, Universe_S_Revanna, Universe_S_Tollana, Universe_S_Wraith_Homeworld</Required_Planets>
+    <Required_Planets>
+      Pegasus_Prelude_Planet_Ascension,
+      Pegasus_Prelude_Planet_Asteroid_Field,
+      Pegasus_Prelude_Planet_Asuras,
+      Pegasus_Prelude_Planet_Athos,
+      Pegasus_Prelude_Planet_Belkan,
+      Pegasus_Prelude_Planet_Dagan,
+      Pegasus_Prelude_Planet_Doranda,
+      Pegasus_Prelude_Planet_Edowin,
+      Pegasus_Prelude_Planet_Gelda,
+      Pegasus_Prelude_Planet_Gonta,
+      Pegasus_Prelude_Planet_Hoff,
+      Pegasus_Prelude_Planet_Iratus_Bestiola,
+      Pegasus_Prelude_Planet_Jenev,
+      Pegasus_Prelude_Planet_Kohal,
+      Pegasus_Prelude_Planet_Lantea,
+      Pegasus_Prelude_Planet_Laros,
+      Pegasus_Prelude_Planet_M6H_987,
+      Pegasus_Prelude_Planet_Manaria,
+      Pegasus_Prelude_Planet_Olesia,
+      Pegasus_Prelude_Planet_Orakis,
+      Pegasus_Prelude_Planet_Orlan,
+      Pegasus_Prelude_Planet_Proculis,
+      Pegasus_Prelude_Planet_Rasputin,
+      Pegasus_Prelude_Planet_Sagon,
+      Pegasus_Prelude_Planet_Taranis,
+      Pegasus_Prelude_Planet_Vadena,
+      Pegasus_Prelude_Planet_Wraith_Homeworld,
+      Pegasus_Prelude_Planet_Wraith_ZPM_Base
+    </Required_Planets>
+    <Select_Box_Scale>800</Select_Box_Scale>
+    <Select_Box_Z_Adjust>-30</Select_Box_Z_Adjust>
+    <Affiliation>Empire</Affiliation>
+    <Size_Value>30</Size_Value>
+    <Shield_Points/>
+    <Tactical_Health>4000</Tactical_Health>
+    <Shield_Refresh_Rate/>
+    <Energy_Capacity>10000</Energy_Capacity>
+    <Energy_Refresh_Rate>20</Energy_Refresh_Rate>
+    <Damage>12</Damage>
+    <Collidable_By_Projectile_Living>Yes</Collidable_By_Projectile_Living>
+    <Death_Explosions>Large_Explosion_Space</Death_Explosions>
+    <SFXEvent_Fire></SFXEvent_Fire>
+    <Victory_Relevant>yes</Victory_Relevant>
+    <GUI_Model_Name>Wraith_Space_Building_Hangar.ALO</GUI_Model_Name>
+    <GUI_Distance>100</GUI_Distance>
+    <GUI_Velocity>45</GUI_Velocity>
+    <GUI_Bracket_Size>2</GUI_Bracket_Size>
+    <GUI_Bounds_Scale>0.35</GUI_Bounds_Scale>    
+    <No_Reflection_Below_Detail_Level>1</No_Reflection_Below_Detail_Level>
+    <No_Refraction_Below_Detail_Level>1</No_Refraction_Below_Detail_Level>
+    <SFXEvent_Build_Started/>
+    <SFXEvent_Build_Cancelled/>
+    <SFXEvent_Build_Complete/>
+    <Death_SFXEvent_Start_Die>Unit_Generic_Building_Death_SFX</Death_SFXEvent_Start_Die>
+	
+	<HardPoints>HP_Wraith_Space_Hangar_Fighter_Bay</HardPoints>
+	
+	<Starting_Spawned_Units_Tech_0>TIE_Fighter_Squadron, 5</Starting_Spawned_Units_Tech_0>
+    <Reserve_Spawned_Units_Tech_0>TIE_Fighter_Squadron, -1</Reserve_Spawned_Units_Tech_0>
+    <Spawned_Squadron_Delay_Seconds>10</Spawned_Squadron_Delay_Seconds>
+
+    <Land_Damage_Thresholds>1, 0.66, 0.33</Land_Damage_Thresholds>
+    <Land_Damage_Alternates>0, 1, 2</Land_Damage_Alternates>
+    <Land_Damage_SFX>null,SFX_Grenade_Detonation, SFX_Grenade_Detonation</Land_Damage_SFX>
+    <Remove_Upon_Death>true</Remove_Upon_Death>
+	<Visible_On_Radar_When_Fogged>true</Visible_On_Radar_When_Fogged>
+
+    <CategoryMask> Structure </CategoryMask>
+    <Is_Visible_On_Radar>Yes</Is_Visible_On_Radar>
+    <Radar_Icon_Size>0.1  0.1</Radar_Icon_Size>
+	<Radar_Icon_Name>I_RADAR_WRAITH_SPACE_HANGAR.TGA</Radar_Icon_Name>
+    <Armor_Type> Armor_Satellite </Armor_Type>
+    <Encyclopedia_Text>TEXT_DESCRIPTION_WRAITH_GC_WELTRAUMHANGAR</Encyclopedia_Text>
+    <Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_WRAITH_WELTRAUMHANGAR</Encyclopedia_Unit_Class>
+    <Score_Cost_Credits> 25000 </Score_Cost_Credits>
+    <Custom_Soft_Footprint_Radius> 100 </Custom_Soft_Footprint_Radius>
+	<Base_Position>Orbital</Base_Position>
+    <Space_Obstacle_Offset> 0 0 0 </Space_Obstacle_Offset>
+    <Space_Layer> StaticObject </Space_Layer>
+    <Has_Space_Evaluator>True</Has_Space_Evaluator>
+
+    <Abilities SubObjectList="Yes">
+      <!--Force_Healing_Ability Name="Repair_Ship_Healing">
+        <Activation_Style>Space_Automatic</Activation_Style>
+        <Heal_Range>0.0</Heal_Range>
+        <Heal_Amount>5.0</Heal_Amount>
+        <Heal_Interval_In_Secs>1.0</Heal_Interval_In_Secs>
+        <Single_Target_Heal>Yes</Single_Target_Heal>
+        <Heal_Range_Blob_Material/>
+        <Applicable_Unit_Categories>All</Applicable_Unit_Categories>
+        <Target_Light_Effect_Type>Color_Flash</Target_Light_Effect_Type>
+        <Target_Light_Effect_Color>1.2, 1.2, 2.0</Target_Light_Effect_Color>
+        <Target_Light_Effect_Duration>0.6</Target_Light_Effect_Duration>
+        <Target_Light_Effect_Pulse_Count>1</Target_Light_Effect_Pulse_Count>
+        <Owner_Particle_Bone_Name>ROOT</Owner_Particle_Bone_Name>
+        <Owner_Light_Effect_Type></Owner_Light_Effect_Type>
+        <Owner_Light_Effect_Color>1.2, 1.2, 2.0</Owner_Light_Effect_Color>
+        <Owner_Light_Effect_Duration>0.6</Owner_Light_Effect_Duration>
+        <Owner_Light_Effect_Pulse_Count>1</Owner_Light_Effect_Pulse_Count>
+      </Force_Healing_Ability-->
+      <Force_Healing_Ability Name="Wraith_Self_Repair">
+            <Activation_Style>Space_Automatic</Activation_Style>
+            <Heal_Range>0.0</Heal_Range>
+            <Heal_Percent>0.005</Heal_Percent>
+            <Heal_Amount>0.0</Heal_Amount>
+            <Heal_Interval_In_Secs>1.0</Heal_Interval_In_Secs>
+            <Single_Target_Heal>No</Single_Target_Heal>
+            <Owner_Particle_Bone_Name>ROOT</Owner_Particle_Bone_Name>
+            <Owner_Light_Effect_Type>Color_Flash</Owner_Light_Effect_Type>
+            <Owner_Light_Effect_Color>1.2, 1.2, 1.2</Owner_Light_Effect_Color>
+            <Owner_Light_Effect_Duration>0.6</Owner_Light_Effect_Duration>
+            <Owner_Light_Effect_Pulse_Count>1</Owner_Light_Effect_Pulse_Count>
+         </Force_Healing_Ability>
+
+    </Abilities>
+
+    <Last_State_Visible_Under_FOW> True </Last_State_Visible_Under_FOW>
+    <Initial_State_Visible_Under_FOW>False</Initial_State_Visible_Under_FOW>
+    <Influences_Capture_Point> False </Influences_Capture_Point>
+	
+	<Death_Clone>Damage_Normal, Wraith_Hangar_Death_Clone</Death_Clone>
+	
+  </SpecialStructure>
+  
+  <SpecialStructure Name="Wraith_Hangar_Death_Clone">
+    <Text_ID>TEXT_WRAITH_SPACE_BUILDING_WELTRAUMHANGAR</Text_ID>
+    <Space_Model_Name>Wraith_Space_Building_Hangar_D.ALO</Space_Model_Name>
+    <Death_SFXEvent_Start_Die>Unit_Generic_Building_Death_SFX</Death_SFXEvent_Start_Die>
+    <Death_Explosions>Large_Explosion_Space_Empire</Death_Explosions>
+	<Scale_Factor>1.5</Scale_Factor>
+    <Layer_Z_Adjust>-330.0</Layer_Z_Adjust>
+    <CategoryMask> Capital </CategoryMask>
+    <Death_Persistence_Duration> 34 </Death_Persistence_Duration>
+    <Should_Death_Clone_Play_Idle> true </Should_Death_Clone_Play_Idle>
+  </SpecialStructure>
+
+
+  <!-- Wraith Orbital Shipyard E_Orbital_Jamming_Station-->
+
+    <SpecialStructure Name="Wraith_Large_Shipyard">
+        <Affiliation>Empire</Affiliation>
+        <Base_Position>Orbital</Base_Position>
+
+        <Behavior>SELECTABLE, DUMMY_ORBITAL_STRUCTURE</Behavior>
+        <SpaceBehavior>SPACE_OBSTACLE, POWERED, TARGETING, DAMAGE_TRACKING, REVEAL, HIDE_WHEN_FOGGED, UNIT_AI, ION_STUN_EFFECT</SpaceBehavior>
+
+        <Text_ID>TEXT_WRAITH_SPACE_BUILDING_HEAVY_SHIPYARD</Text_ID>
+        <Encyclopedia_Text>TEXT_DESCRIPTION_WRAITH_GC_HEAVY_SHIPYARD_SPACE</Encyclopedia_Text>
+		<MP_Encyclopedia_Text>TEXT_DESCRIPTION_WRAITH_SK_HEAVY_SHIPYARD_SPACE</MP_Encyclopedia_Text>
+        <Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_WRAITH_HEAVY_SHIPYARD</Encyclopedia_Unit_Class>
+
+        <Space_Model_Name>Wraith_Space_Building_Shipyard.ALO</Space_Model_Name>
+
+        <Icon_Name>WRAITH_SPACE_BUILDING_HEAVY_SHIPYARD.TGA</Icon_Name>
+
+        <Radar_Icon_Name>I_RADAR_HEAVYSHIPYARDW.TGA</Radar_Icon_Name>
+        <Is_Visible_On_Radar>Yes</Is_Visible_On_Radar>
+        <Radar_Icon_Size>0.1  0.1</Radar_Icon_Size>
+		<Visible_On_Radar_When_Fogged>true</Visible_On_Radar_When_Fogged>
+
+        <GUI_Row>0</GUI_Row>
+        <GUI_Bracket_Size>2</GUI_Bracket_Size>
+        <GUI_Bounds_Scale>0.35</GUI_Bounds_Scale>
+        <Select_Box_Scale>1200</Select_Box_Scale>
+        <Select_Box_Z_Adjust>-30</Select_Box_Z_Adjust>
+
+        <Is_Dummy>No</Is_Dummy>
+
+        <CategoryMask>Structure</CategoryMask>
+
+        <Influences_Capture_Point>False</Influences_Capture_Point>
+
+        <Tech_Level>4</Tech_Level>
+        <Required_Timeline>0</Required_Timeline>
+        
+        <Tactical_Buildable_Objects_Multiplayer>
+            Empire,
+            Wraith_Hero_Envoy_SK,
+            Wraith_Hero_Warlord_SK,
+            Wraith_Hero_General_SK,
+            Wraith_Hero_Queen_SK,
+            Wraith_Hero_Super_Hive_SK
+        </Tactical_Buildable_Objects_Multiplayer>
+        <Is_Community_Property>Yes</Is_Community_Property>
+
+        <Tactical_Health>3400</Tactical_Health>
+        <Energy_Capacity>3000</Energy_Capacity>
+        <Energy_Refresh_Rate>500</Energy_Refresh_Rate>
+
+        <Targeting_Max_Attack_Distance>1800.0</Targeting_Max_Attack_Distance>
+
+        <Armor_Type>Armor_Station</Armor_Type>
+
+        <AI_Combat_Power>2200</AI_Combat_Power>
+
+        <Build_Cost_Credits>2700</Build_Cost_Credits>
+        <Build_Time_Seconds>50</Build_Time_Seconds>
+
+        <Build_Tab_Special_Structures>Yes</Build_Tab_Special_Structures>
+        <Build_Max_Instances_Per_Planet>1</Build_Max_Instances_Per_Planet>
+
+        <Size_Value>90</Size_Value>
+
+        <Space_FOW_Reveal_Range>1900.0</Space_FOW_Reveal_Range>
+        <Last_State_Visible_Under_FOW>Yes</Last_State_Visible_Under_FOW>
+
+        <Political_Control>0</Political_Control>
+
+        <Collidable_By_Projectile_Living>Yes</Collidable_By_Projectile_Living>
+        <Victory_Relevant>Yes</Victory_Relevant>
+
+        <Required_Ground_Base_Level>0</Required_Ground_Base_Level>
+        <Required_Star_Base_Level>1</Required_Star_Base_Level>
+        <Required_Special_Structures/>
+        <Required_Planets>
+		    Universe_L_Asuras, 
+		    Universe_L_Celestis, 
+			Universe_L_Delmak, 
+			Universe_L_Doranda, 
+			Universe_L_Erebus, 
+			Universe_L_Hebridan, 
+			Universe_L_Othala, 
+			Universe_L_Orban, 
+			Universe_L_PX9_757, 
+			Universe_L_Sateda, 
+			Universe_L_Tartarus,
+			Universe_L_Vanir,
+			Universe_L_Wraith_Cloning_Facility
+		</Required_Planets>
+		<Required_Planets>
+            Universe_S_Dakara, 
+            Universe_S_Orban, 
+            Universe_S_Sateda
+        </Required_Planets>
+        <Required_Planets>
+            Pegasus_G_Asuras, 
+            Pegasus_G_Vanir, 
+            Pegasus_G_Wraith_ZPM_Basis
+        </Required_Planets>
+		<Required_Planets>
+            Pegasus_K_Asuras, 
+            Pegasus_K_Sateda
+        </Required_Planets>
+        <Required_Planets>
+          Pegasus_Prelude_Planet_Asuras,
+          Pegasus_Prelude_Planet_Kohal,
+          Pegasus_Prelude_Planet_Taranis,
+          Pegasus_Prelude_Planet_Orlan,
+          Pegasus_Prelude_Planet_Vadena,
+          Pegasus_Prelude_Planet_Wraith_Homeworld,
+          Pegasus_Prelude_Planet_Wraith_ZPM_Base
+        </Required_Planets>
+        <Death_Explosions>Huge_Explosion_Space_Empire</Death_Explosions>
+
+        <No_Reflection_Below_Detail_Level>1</No_Reflection_Below_Detail_Level>
+        <No_Refraction_Below_Detail_Level>1</No_Refraction_Below_Detail_Level>
+
+        <HardPoints>
+            HP_Wraith_Space_Building_Shipyard_L_WP_00,
+            HP_Wraith_Space_Building_Shipyard_L_WP_01,
+            HP_Wraith_Space_Building_Shipyard_L_WP_02,
+            HP_Wraith_Space_Building_Shipyard_L_WP_03,
+            HP_Wraith_Space_Building_Shipyard_L_WP_04,
+            HP_Wraith_Space_Building_Shipyard_L_WP_05,
+            HP_Wraith_Space_Building_Shipyard_M_WP_00,
+            HP_Wraith_Space_Building_Shipyard_M_WP_01,
+            HP_Wraith_Space_Building_Shipyard_M_WP_02,
+            HP_Wraith_Space_Building_Shipyard_M_WP_03,
+            HP_Wraith_Space_Building_Shipyard_M_WP_04,
+            HP_Wraith_Space_Building_Shipyard_M_WP_05,
+            HP_Wraith_Space_Building_Shipyard_H_WP_00,
+            HP_Wraith_Space_Building_Shipyard_H_WP_01
+        </HardPoints>
+
+        <Abilities SubObjectList="Yes">
+            <Force_Healing_Ability Name="Wraith_Self_Repair">
+                <Activation_Style>Space_Automatic</Activation_Style>
+                <Heal_Range>0.0</Heal_Range>
+                <Heal_Percent>0.010</Heal_Percent>
+                <Heal_Amount>0.0</Heal_Amount>
+                <Heal_Interval_In_Secs>1.0</Heal_Interval_In_Secs>
+                <Single_Target_Heal>No</Single_Target_Heal>
+                <Applicable_Unit_Categories/>
+                <Applicable_Unit_Types/>
+                <SFXEvent_Target_Affected/>
+                <Owner_Particle_Bone_Name>ROOT</Owner_Particle_Bone_Name>
+                <Owner_Light_Effect_Type>Color_Flash</Owner_Light_Effect_Type>
+                <Owner_Light_Effect_Color>1.2, 1.2, 1.2</Owner_Light_Effect_Color>
+                <Owner_Light_Effect_Color2/>
+                <Owner_Light_Effect_Duration>0.6</Owner_Light_Effect_Duration>
+                <Owner_Light_Effect_Pulse_Count>1</Owner_Light_Effect_Pulse_Count>
+            </Force_Healing_Ability>
+        </Abilities>
+
+        <Sabotage_Cost_Credits>3000</Sabotage_Cost_Credits>
+
+        <SFXEvent_Build_Started></SFXEvent_Build_Started>
+        <SFXEvent_Build_Cancelled></SFXEvent_Build_Cancelled>
+        <SFXEvent_Build_Complete></SFXEvent_Build_Complete>
+        <SFXEvent_Ambient_Loop></SFXEvent_Ambient_Loop>
+
+        <SFXEvent_Select></SFXEvent_Select>
+        <SFXEvent_Attack></SFXEvent_Attack>
+        <SFXEvent_Barrage></SFXEvent_Barrage>
+        <Death_SFXEvent_Start_Die></Death_SFXEvent_Start_Die>
+        <SFXEvent_Unit_Under_Attack></SFXEvent_Unit_Under_Attack>
+
+
+        <!-- <Modifies_Reveal_Range>yes</Modifies_Reveal_Range>
+				<Reveal_Range_Modifier>-.50</Reveal_Range_Modifier> -->
+
+        <Score_Cost_Credits>1500</Score_Cost_Credits>
+        <Has_Space_Evaluator>True</Has_Space_Evaluator>
+        <Custom_Soft_Footprint_Radius> 200 </Custom_Soft_Footprint_Radius>
+
+        <Space_Obstacle_Offset>0 0 0</Space_Obstacle_Offset>
+        <Space_Layer>StaticObject</Space_Layer>
+
+        <Death_Clone>Damage_Normal, Wraith_Large_Shipyard_Death_Clone</Death_Clone>
+    </SpecialStructure>
+
+    <SpecialStructure Name="Wraith_Large_Shipyard_Death_Clone">
+        <Text_ID>TEXT_WRAITH_SPACE_BUILDING_HEAVY_SHIPYARD</Text_ID>
+        <Space_Model_Name>Wraith_Space_Building_Shipyard_D.ALO</Space_Model_Name>
+        <Death_SFXEvent_Start_Die>Unit_Generic_Building_Death_SFX</Death_SFXEvent_Start_Die>
+        <Death_Explosions>Large_Explosion_Space_Empire</Death_Explosions>
+        <Affiliation>Empire</Affiliation>
+        <Ship_Class>Capital_ship</Ship_Class>
+        <Remove_Upon_Death>True</Remove_Upon_Death>
+		<Should_Death_Clone_Play_Idle> true </Should_Death_Clone_Play_Idle>
+    </SpecialStructure>
+
+    <!-- =============================================================================================================================================== -->
+
+    <!-- SpecialStructure HardPoints -->
+
+    <!-- =============================================================================================================================================== -->
+
+    <!-- Wraith HardPoints -->
+
+    <!-- =============================================================================================================================================== -->
+
+    <!-- Wraith Orbital Shipyard HardPoints -->
+
+    <!-- =============================================================================================================================================== -->
+
+    <!-- Wraith Orbital Shipyard light plasma weapon HP-->
+
+    <!-- =============================================================================================================================================== -->
+
+    <!-- SpecialStructure projectiles -->
+
+    <!-- =============================================================================================================================================== -->
+
+    <!-- Wraith projectiles -->
+
+    <!-- =============================================================================================================================================== -->
+
+    <!-- Wraith Orbital Shipyard projectiles -->
+
+    <Projectile Name="Proj_Wraith_Shipyard_Plasma_Small">
+        <Variant_Of_Existing_Type>Proj_Wraith_Plasma_Small</Variant_Of_Existing_Type>
+        <Projectile_Damage>12.5</Projectile_Damage>
+    </Projectile>
+    <Projectile Name="Proj_Wraith_Shipyard_Plasma_Medium">
+        <Variant_Of_Existing_Type>Proj_Wraith_Plasma_Medium</Variant_Of_Existing_Type>
+        <Projectile_Damage>20.0</Projectile_Damage>
+    </Projectile>
+    <Projectile Name="Proj_Wraith_Shipyard_Plasma_Heavy">
+        <Variant_Of_Existing_Type>Proj_Wraith_Plasma_Heavy</Variant_Of_Existing_Type>
+        <Projectile_Damage>35.0</Projectile_Damage>
+    </Projectile>
+
+  <!--The attached script changes the affiliation of the mine to hostile. after that it shots an invisible projectile on nearby ships that stuns them before it selfdestructs-->
+  <SpaceBuildable Name="Wraith_Space_Building_Ion_Mine_Indestructible">
+		<Text_ID>TEXT_WRAITH_SPACE_UNIT_IONMINE</Text_ID>
+    <Encyclopedia_Text>TEXT_DESCRIPTION_WRAITH_IONMINE_SPACE</Encyclopedia_Text>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_TOGANER_MINE</Encyclopedia_Unit_Class>
+		<Space_Model_Name>Wraith_Space_Building_IonMine.ALO</Space_Model_Name>
+		<Icon_Name>WRAITH_SPACE_UNIT_IONMINE.TGA</Icon_Name>
+    <Scale_Factor>1.0</Scale_Factor>
+    <Is_Valid_Target>No</Is_Valid_Target>
+    <Tactical_Respawn_Time_In_Secs>45</Tactical_Respawn_Time_In_Secs>
+    <SpaceBehavior> SPACE_OBSTACLE, DUMMY_ORBITAL_STRUCTURE, SELECTABLE, REVEAL, HIDE_WHEN_FOGGED, UNIT_AI, TARGETING, WEAPON, POWERED, DAMAGE_TRACKING, SELF_DESTRUCT</SpaceBehavior>		
+		<Is_Dummy>Yes</Is_Dummy>
+		<Select_Box_Scale>150</Select_Box_Scale>
+		<Select_Box_Z_Adjust>-30</Select_Box_Z_Adjust>
+		<Affiliation>Hostile, Wraith_Rebel</Affiliation>
+		<Size_Value>30</Size_Value>
+		<SFXEvent_Fire></SFXEvent_Fire>
+		<Tactical_Health>10000</Tactical_Health>
+		<Energy_Capacity>10000</Energy_Capacity>
+		<Energy_Refresh_Rate>5000</Energy_Refresh_Rate>
+		<Armor_Type> Armor_Station </Armor_Type>
+		<Hardpoints>
+      HP_Wraith_Space_Building_Ion_Mine_00_Indestructible
+    </Hardpoints>
+		<Space_FOW_Reveal_Range>300.0</Space_FOW_Reveal_Range>
+		<Targeting_Max_Attack_Distance>300.0</Targeting_Max_Attack_Distance>
+		<Collidable_By_Projectile_Living>No</Collidable_By_Projectile_Living>
+		<Death_Explosions>Large_Explosion_Space</Death_Explosions>
+		<Victory_Relevant>no</Victory_Relevant>
+		<Remove_Upon_Death>true</Remove_Upon_Death>
+		<CategoryMask> Structure </CategoryMask>
+		<Space_Layer> StaticObject </Space_Layer>
+		<Has_Space_Evaluator>True</Has_Space_Evaluator>
+		<Targeting_Priority_Set>Corvette</Targeting_Priority_Set>
+    <Is_Visible_On_Radar>No</Is_Visible_On_Radar>
+		<Visible_On_Radar_When_Fogged>false</Visible_On_Radar_When_Fogged>
+		<Last_State_Visible_Under_FOW> True </Last_State_Visible_Under_FOW>
+		<Initial_State_Visible_Under_FOW>True</Initial_State_Visible_Under_FOW>
+		<Influences_Capture_Point> False </Influences_Capture_Point>
+      <Selt_Destruct_SFXEvent_Start_Die>Effect_Empty_Sound</Selt_Destruct_SFXEvent_Start_Die>
+    <Unit_Abilities_Data SubObjectList="Yes">
+      <Unit_Ability>
+        <Type>SELF_DESTRUCT</Type>
+        <Spawned_Object_Type>Particle_Goauld_Stun_Explosion</Spawned_Object_Type>
+        <Expiration_Seconds>0.1</Expiration_Seconds>
+      </Unit_Ability>
+    </Unit_Abilities_Data>
+    <Lua_Script>ObjectScript_Wraith_Ion_Mine_Skirmish</Lua_Script>
+	</SpaceBuildable>
+  
+  <Projectile Name="Proj_Wraith_Space_Building_Ion_Mine_Indestructible">
+    <Text_ID>TEXT_NONE</Text_ID>
+    <Space_Model_Name>Camera_Unit.ALO</Space_Model_Name>
+    <Scale_Factor>1.0</Scale_Factor>
+    <Max_Speed>80.0</Max_Speed>   
+    <Max_Rate_Of_Turn>0.0</Max_Rate_Of_Turn>
+    <Behavior>PROJECTILE, HIDE_WHEN_FOGGED</Behavior>
+    <Projectile_Category>Laser</Projectile_Category>
+    <Projectile_Max_Flight_Distance>200.0</Projectile_Max_Flight_Distance>         
+    <Projectile_Ion_Stun_On_Detonation>Yes</Projectile_Ion_Stun_On_Detonation>
+    <Projectile_Disables_Engines_When_Power_Drained>No</Projectile_Disables_Engines_When_Power_Drained>
+    <Projectile_Ion_Stun_Duration>0.2</Projectile_Ion_Stun_Duration>
+    <Projectile_Ion_Stun_Speed_Reduction_Percent>1</Projectile_Ion_Stun_Speed_Reduction_Percent>
+    <Projectile_Ion_Stun_Shot_Rate_Reduction_Percent>0.9</Projectile_Ion_Stun_Shot_Rate_Reduction_Percent>
+    <Projectile_Ion_Stun_Stack_Duration>Yes</Projectile_Ion_Stun_Stack_Duration>         
+    <Projectile_Stun_On_Detonation>Yes</Projectile_Stun_On_Detonation>
+    <Projectile_Stun_Duration_Frames>1</Projectile_Stun_Duration_Frames>
+    <Projectile_Stun_Radius>300</Projectile_Stun_Radius>
+    <Projectile_Stun_Spawn_Effect> Stunned_Infantry </Projectile_Stun_Spawn_Effect> 
+    <Projectile_Stun_Victims_Category_Mask> All </Projectile_Stun_Victims_Category_Mask>
+    <Damage_Type>Damage_HeavyBS</Damage_Type>
+    <Projectile_Damage>5.0</Projectile_Damage> 
+    <Projectile_Does_Shield_Damage>Yes</Projectile_Does_Shield_Damage> 
+    <Projectile_Does_Energy_Damage>No</Projectile_Does_Energy_Damage>
+    <Projectile_Does_Hitpoint_Damage>No</Projectile_Does_Hitpoint_Damage> 
+    <Projectile_Energy_Per_Shot>10</Projectile_Energy_Per_Shot>
+    <SFXEvent_Fire></SFXEvent_Fire>
+    <Projectile_SFXEvent_Detonate>SFX_Ion_Detonation</Projectile_SFXEvent_Detonate>
+    <Projectile_SFXEvent_Detonate_Reduced_By_Armor> SFX_Small_Damage_Detonation </Projectile_SFXEvent_Detonate_Reduced_By_Armor>
+	</Projectile>
+  
+  <!--this is a different version of the mine currently used on the skimish map. it's targetable (=can be killed), has alot of health and fires single stun projectiles -->
+  <SpaceBuildable Name="Wraith_Space_Building_Ion_Mine">
+		<Text_ID>TEXT_WRAITH_SPACE_UNIT_IONMINE</Text_ID>
+    <Encyclopedia_Text>TEXT_DESCRIPTION_WRAITH_IONMINE_SPACE</Encyclopedia_Text>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_TOGANER_MINE</Encyclopedia_Unit_Class>
+		<Space_Model_Name>Wraith_Space_Building_IonMine.ALO</Space_Model_Name>
+		<Icon_Name>WRAITH_SPACE_UNIT_IONMINE.TGA</Icon_Name>
+    <Scale_Factor>1.0</Scale_Factor>
+    <Tactical_Respawn_Time_In_Secs>180</Tactical_Respawn_Time_In_Secs>
+    <Behavior>DUMMY_ORBITAL_STRUCTURE, POWERED</Behavior>
+    <SpaceBehavior>SPACE_OBSTACLE,  SELECTABLE, REVEAL, UNIT_AI, TARGETING, WEAPON, DAMAGE_TRACKING, POWERED</SpaceBehavior>		
+		<Is_Dummy>Yes</Is_Dummy>
+		<Select_Box_Scale>150</Select_Box_Scale>
+		<Select_Box_Z_Adjust>-30</Select_Box_Z_Adjust>
+		<Affiliation>Hostile, Wraith_Rebel</Affiliation>
+		<Size_Value>30</Size_Value>
+    <AI_Combat_Power>1</AI_Combat_Power>
+		<SFXEvent_Fire></SFXEvent_Fire>
+		<Tactical_Health>600</Tactical_Health>
+		<Energy_Capacity>10000</Energy_Capacity>
+		<Energy_Refresh_Rate>5000</Energy_Refresh_Rate>
+		<Armor_Type> Armor_Cruiser </Armor_Type>
+		<Hardpoints>
+      HP_Wraith_Space_Building_Ion_Mine_00
+    </Hardpoints>
+		<Space_FOW_Reveal_Range>2000.0</Space_FOW_Reveal_Range>
+		<Targeting_Max_Attack_Distance>600.0</Targeting_Max_Attack_Distance>
+		<Collidable_By_Projectile_Living>Yes</Collidable_By_Projectile_Living>
+		<Death_Explosions>Large_Explosion_Space</Death_Explosions>
+		<Victory_Relevant>no</Victory_Relevant>
+		<Remove_Upon_Death>true</Remove_Upon_Death>
+		<CategoryMask> Structure </CategoryMask>
+		<Space_Layer> StaticObject </Space_Layer>
+		<Has_Space_Evaluator>True</Has_Space_Evaluator>
+		<Targeting_Priority_Set>Capital</Targeting_Priority_Set> 
+    <Is_Visible_On_Radar>Yes</Is_Visible_On_Radar>
+		<Visible_On_Radar_When_Fogged>true</Visible_On_Radar_When_Fogged>
+		<Influences_Capture_Point> False </Influences_Capture_Point>
+	</SpaceBuildable>
+  
+  <Projectile Name="Proj_Wraith_Space_Building_Ion_Mine">
+    <Text_ID>TEXT_NONE</Text_ID>
+    <Space_Model_Name>Wraith_Projectile_Plasma_Artillery.alo</Space_Model_Name>
+    <Scale_Factor>1.0</Scale_Factor>
+    <Max_Speed>80.0</Max_Speed>   
+    <Max_Rate_Of_Turn>0.0</Max_Rate_Of_Turn>
+    <Behavior>PROJECTILE, HIDE_WHEN_FOGGED</Behavior>
+    <Projectile_Category>Laser</Projectile_Category>
+    <Projectile_Max_Flight_Distance>700.0</Projectile_Max_Flight_Distance>         
+    <Projectile_Ion_Stun_On_Detonation>Yes</Projectile_Ion_Stun_On_Detonation>
+    <Projectile_Disables_Engines_When_Power_Drained>No</Projectile_Disables_Engines_When_Power_Drained>
+    <Projectile_Ion_Stun_Duration>10.0</Projectile_Ion_Stun_Duration>
+    <Projectile_Ion_Stun_Speed_Reduction_Percent>1</Projectile_Ion_Stun_Speed_Reduction_Percent>
+    <Projectile_Ion_Stun_Shot_Rate_Reduction_Percent>0.9</Projectile_Ion_Stun_Shot_Rate_Reduction_Percent>
+    <Projectile_Ion_Stun_Stack_Duration>Yes</Projectile_Ion_Stun_Stack_Duration>         
+    <Projectile_Stun_On_Detonation>Yes</Projectile_Stun_On_Detonation>
+    <Projectile_Stun_Duration_Frames>250</Projectile_Stun_Duration_Frames>
+    <Projectile_Stun_Radius>300</Projectile_Stun_Radius>
+    <Projectile_Stun_Spawn_Effect> Stunned_Infantry </Projectile_Stun_Spawn_Effect> 
+    <Projectile_Stun_Victims_Category_Mask> All </Projectile_Stun_Victims_Category_Mask>
+    <Damage_Type>Damage_HeavyBS</Damage_Type>
+    <Projectile_Damage>5.0</Projectile_Damage> 
+    <Projectile_Does_Shield_Damage>No</Projectile_Does_Shield_Damage> 
+    <Projectile_Does_Energy_Damage>No</Projectile_Does_Energy_Damage>
+    <Projectile_Does_Hitpoint_Damage>No</Projectile_Does_Hitpoint_Damage> 
+    <Projectile_Energy_Per_Shot>10</Projectile_Energy_Per_Shot>
+    <SFXEvent_Fire></SFXEvent_Fire>
+    <Projectile_SFXEvent_Detonate>SFX_Ion_Detonation</Projectile_SFXEvent_Detonate>
+    <Projectile_SFXEvent_Detonate_Reduced_By_Armor> SFX_Small_Damage_Detonation </Projectile_SFXEvent_Detonate_Reduced_By_Armor>
+	</Projectile>
+    
+</Space_Buildings_Wraith>
