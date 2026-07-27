@@ -1,0 +1,32 @@
+<?xml version="1.0"?>
+<Tauri_PuddleJumper>
+
+  <SpaceUnit Name="Tauri_Puddle_Jumper">
+    <Variant_Of_Existing_Type>Asuran_Puddle_Jumper</Variant_Of_Existing_Type>
+    <Text_ID>TEXT_UNIT_TAURI_PUDDLE_JUMPER</Text_ID>
+    <Encyclopedia_Text>TEXT_DESCRIPTION_TAURI_PUDDLE_JUMPER TEXT_DESCRIPTION_FIGHTER_HYPERSPACE_NO</Encyclopedia_Text>
+    <Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_PUDDLE_JUMPER</Encyclopedia_Unit_Class>
+    <Affiliation>Underworld</Affiliation>
+       <Abilities SubObjectList="Yes">
+        <Force_Healing_Ability Name="Tauri_Battlefield_Auto_Repair">
+           <Activation_Style>Space_Automatic</Activation_Style>
+           <Heal_Range>0.0</Heal_Range>
+           <Heal_Percent>0.004</Heal_Percent>
+           <Heal_Amount>1.0</Heal_Amount>
+           <Heal_Interval_In_Secs>2.0</Heal_Interval_In_Secs>
+           <Single_Target_Heal>No</Single_Target_Heal>
+           <Owner_Particle_Bone_Name>ROOT</Owner_Particle_Bone_Name>
+        </Force_Healing_Ability>
+     </Abilities>
+  </SpaceUnit>
+
+  <Squadron Name="Tauri_Puddle_Jumper_Squadron">
+    <Variant_Of_Existing_Type>Asuran_Puddle_Jumper_Squadron_No_Prereq</Variant_Of_Existing_Type>
+    <Text_ID>TEXT_UNIT_TAURI_PUDDLE_JUMPER</Text_ID>
+    <Encyclopedia_Text>TEXT_DESCRIPTION_TAURI_PUDDLE_JUMPER TEXT_DESCRIPTION_FIGHTER_HYPERSPACE_NO</Encyclopedia_Text>
+    <Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_PUDDLE_JUMPER</Encyclopedia_Unit_Class>
+    <Affiliation>Underworld</Affiliation>
+    <Squadron_Units>Tauri_Puddle_Jumper, Tauri_Puddle_Jumper, Tauri_Puddle_Jumper</Squadron_Units>
+  </Squadron>
+  
+</Tauri_PuddleJumper>

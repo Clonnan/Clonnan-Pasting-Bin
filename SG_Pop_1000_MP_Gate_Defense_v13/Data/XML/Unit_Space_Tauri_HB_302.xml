@@ -1,0 +1,215 @@
+<?xml version="1.0"?>
+<HB-302>
+  <SpaceUnit Name="Tauri_HB_302">
+    <Text_ID>TEXT_TAURI_SPACE_UNIT_HB_302</Text_ID>
+    <Encyclopedia_Text>TEXT_DESCRIPTION_TAURI_HB_302 TEXT_DESCRIPTION_FIGHTER_HYPERSPACE_NO</Encyclopedia_Text>
+    <Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_HB_302</Encyclopedia_Unit_Class>
+    <Encyclopedia_Good_Against>Interdictor_Cruiser MC30_Frigate MC30_Frigate</Encyclopedia_Good_Against>
+    <Encyclopedia_Vulnerable_To>Tartan_Patrol_Cruiser Wraith_Rebel_Heavy_Fighter Tartan_Patrol_Cruiser</Encyclopedia_Vulnerable_To>
+    <Icon_Name>TAURI_SPACE_UNIT_HB-302.TGA</Icon_Name>
+    <Space_Model_Name>Tauri_Space_Unit_HB-302.ALO</Space_Model_Name>
+    <Galactic_Fleet_Override_Model_Name>W_planet_fleet_HB-302.ALO</Galactic_Fleet_Override_Model_Name>
+    <Scale_Factor>1.0</Scale_Factor>
+    <Select_Box_Scale>70</Select_Box_Scale>
+    <Mouse_Collide_Override_Sphere_Radius> 50.0 </Mouse_Collide_Override_Sphere_Radius>
+    <Ranged_Target_Z_Adjust>0</Ranged_Target_Z_Adjust>
+    <Dense_FOW_Reveal_Range_Multiplier>0.2</Dense_FOW_Reveal_Range_Multiplier>
+    <Mass>0.99</Mass>
+    <Max_Lift>3</Max_Lift>
+    <Max_Speed>4.0</Max_Speed>
+    <Min_Speed>2.5</Min_Speed>
+    <Max_Rate_Of_Turn>2.1</Max_Rate_Of_Turn>
+    <Max_Thrust>1.1</Max_Thrust>
+    <Max_Rate_Of_Roll>3.0</Max_Rate_Of_Roll>
+    <Bank_Turn_Angle>70</Bank_Turn_Angle>
+    <Begin_Turn_Towards_Distance>500.0</Begin_Turn_Towards_Distance>
+    <Hyperspace>No</Hyperspace>
+    <Hyperspace_Speed/>
+    <Maintenance_Cost>0.1</Maintenance_Cost>
+    <Affiliation>Underworld</Affiliation>
+    <Land_Bomber_Type>HB302_Bombing_Run</Land_Bomber_Type>
+
+    <Tactical_Health>90</Tactical_Health>
+    <Energy_Capacity>999</Energy_Capacity>
+    <Energy_Refresh_Rate>999</Energy_Refresh_Rate>
+    <Armor_Type>Armor_HeavyBomber</Armor_Type>
+    <Ship_Class>bomber</Ship_Class>
+    <Damage_Type>Damage_HeavyBomber</Damage_Type>
+    <Formation_Priority>2</Formation_Priority>
+    <Size_Value>8</Size_Value>
+    <Is_Escort>yes</Is_Escort>
+    <Is_Bomber>yes</Is_Bomber>
+    <Squadron_Capacity>3</Squadron_Capacity>
+    <SpaceBehavior>HUNT, ABILITY_COUNTDOWN, FIGHTER_LOCOMOTOR, SELECTABLE, TARGETING, POWERED, HIDE_WHEN_FOGGED, AMBIENT_SFX, DAMAGE_TRACKING, REVEAL, NEBULA </SpaceBehavior>
+    <Collidable_By_Projectile_Living>Yes</Collidable_By_Projectile_Living>
+    <Land_FOW_Reveal_Range>130.0</Land_FOW_Reveal_Range>
+    <Space_FOW_Reveal_Range>700.0</Space_FOW_Reveal_Range>
+    <Targeting_Max_Attack_Distance>500.0</Targeting_Max_Attack_Distance>
+    <Hardpoints>
+      HP_HB302_BOMB,
+      HP_HB302_Missile,
+    </Hardpoints>
+    <SFXEvent_Fire>Weapon_Railgun_Tauri_Fighter</SFXEvent_Fire>
+    <SFXEvent_Attack>Unit_Attack_FB</SFXEvent_Attack>
+    <SFXEvent_Fleet_Move>Unit_Move_FB</SFXEvent_Fleet_Move>
+    <SFXEvent_Guard>Unit_Guard_FB</SFXEvent_Guard>
+    <SFXEvent_Health_Critical_Warning></SFXEvent_Health_Critical_Warning> 
+    <SFXEvent_Health_Low_Warning></SFXEvent_Health_Low_Warning>
+    <SFXEvent_Move>Unit_Move_FB</SFXEvent_Move>
+    <SFXEvent_Move_Into_Asteroid_Field></SFXEvent_Move_Into_Asteroid_Field>
+		<SFXEvent_Move_Into_Nebula></SFXEvent_Move_Into_Nebula>
+    <SFXEvent_Select>Unit_Select_FB</SFXEvent_Select>
+    <SFXEvent_Stop></SFXEvent_Stop>
+           
+    <SFXEvent_Engine_Idle_Loop>Engine_Tauri_F302_Idle</SFXEvent_Engine_Idle_Loop>
+    <SFXEvent_Engine_Moving_Loop>Engine_Tauri_F302</SFXEvent_Engine_Moving_Loop>
+    <SFXEvent_Engine_Cinematic_Focus_Loop>Engine_Tauri_F302</SFXEvent_Engine_Cinematic_Focus_Loop>
+    
+    <SFXEvent_Build_Started></SFXEvent_Build_Started>
+    <SFXEvent_Build_Cancelled></SFXEvent_Build_Cancelled>
+    <SFXEvent_Build_Complete></SFXEvent_Build_Complete>
+    <Death_SFXEvent_Start_Die>Explosion_Figther</Death_SFXEvent_Start_Die>
+    <Death_Explosions>Small_Explosion_Space</Death_Explosions>
+    
+    <Asteroid_Damage_Hit_Particles>Small_Damage_Space</Asteroid_Damage_Hit_Particles>
+    <CategoryMask> Bomber | AntiCapital | Fighter</CategoryMask>
+    <Property_Flags> SmallShip </Property_Flags>
+    <Victory_Relevant>yes</Victory_Relevant>
+    <Air_Vehicle_Turret_Target> Yes </Air_Vehicle_Turret_Target>
+    <Is_Visible_On_Radar>Yes</Is_Visible_On_Radar>
+    <Min_Speed_Fraction_For_Turn>0.6</Min_Speed_Fraction_For_Turn>
+    <Custom_Footprint_Radius> 15.0 </Custom_Footprint_Radius>
+    <MovementClass> Space </MovementClass>
+    <Out_Of_Combat_Defense_Adjustment>-1.0</Out_Of_Combat_Defense_Adjustment>
+    <Minimum_Follow_Distance>50.0</Minimum_Follow_Distance>
+    <Create_Team>Yes</Create_Team>
+    <AI_Combat_Power>75</AI_Combat_Power>
+    <Collision_Box_Modifier>2.0</Collision_Box_Modifier>
+    <Targeting_Priority_Set>Bomber</Targeting_Priority_Set>
+    <Targeting_Stickiness_Time_Threshold>5.0</Targeting_Stickiness_Time_Threshold>
+    <Spin_Away_On_Death>Yes</Spin_Away_On_Death>
+    <Spin_Away_On_Death_Chance>0.2</Spin_Away_On_Death_Chance>
+    <Spin_Away_On_Death_Time>2.0f</Spin_Away_On_Death_Time>
+    <Spin_Away_On_Death_Explosion>Small_Explosion_Space</Spin_Away_On_Death_Explosion>
+    <Spin_Away_On_Death_SFXEvent_Start_Die>Unit_Y_Wing_Spinning_By</Spin_Away_On_Death_SFXEvent_Start_Die>
+    <Remove_Upon_Death>true</Remove_Upon_Death>
+    <Strafe_Distance>500.0</Strafe_Distance>
+    <Population_Value>1</Population_Value>
+    <Unit_Abilities_Data SubObjectList="Yes">
+	  <Unit_Ability>
+        <Type>TURBO</Type>
+        <Expiration_Seconds>15</Expiration_Seconds>
+        <Recharge_Seconds>25</Recharge_Seconds>
+        <Mod_Multiplier>WEAPON_DELAY_MULTIPLIER,	2.5f</Mod_Multiplier>
+        <Mod_Multiplier>SHIELD_REGEN_MULTIPLIER,	0.0f</Mod_Multiplier>
+        <Mod_Multiplier>ENERGY_REGEN_MULTIPLIER,	1.0f</Mod_Multiplier>
+        <Mod_Multiplier>SPEED_MULTIPLIER,		2.0f</Mod_Multiplier>
+        <Alternate_Name_Text>TEXT_TOOLTIP_ABILITY_TURBO_NAME</Alternate_Name_Text>
+        <Alternate_Description_Text>TEXT_DESCRIPTION_ABILITY_ENGINES_BOOST_BOMBER</Alternate_Description_Text>
+		<Alternate_Icon_Name>I_SA_POWER_ENGINES_HB302.TGA</Alternate_Icon_Name>
+        <SFXEvent_GUI_Unit_Ability_Activated></SFXEvent_GUI_Unit_Ability_Activated>
+        <SFXEvent_GUI_Unit_Ability_Deactivated/>
+      </Unit_Ability>
+	
+      <Unit_Ability>
+        <Type>HUNT</Type>
+        <Alternate_Name_Text>TEXT_ABILITY_TAURI_SPACE_HB_302_GEGNER_JAGEN</Alternate_Name_Text>
+        <Alternate_Description_Text>TEXT_ABILITY_DESCRIPTION_TAURI_SPACE_HB_302_GEGNER_JAGEN</Alternate_Description_Text>
+      </Unit_Ability>
+    </Unit_Abilities_Data>
+       <Abilities SubObjectList="Yes">
+        <Force_Healing_Ability Name="Tauri_Battlefield_Auto_Repair">
+           <Activation_Style>Space_Automatic</Activation_Style>
+           <Heal_Range>0.0</Heal_Range>
+           <Heal_Percent>0.004</Heal_Percent>
+           <Heal_Amount>1.0</Heal_Amount>
+           <Heal_Interval_In_Secs>2.0</Heal_Interval_In_Secs>
+           <Single_Target_Heal>No</Single_Target_Heal>
+           <Owner_Particle_Bone_Name>ROOT</Owner_Particle_Bone_Name>
+        </Force_Healing_Ability>
+     </Abilities>
+  </SpaceUnit>
+  <!-- Squadron info -->
+  <Squadron Name="Tauri_HB_302_Squadron">
+    <Text_ID>TEXT_TAURI_SPACE_UNIT_HB_302</Text_ID>
+    <Encyclopedia_Text>TEXT_DESCRIPTION_TAURI_HB_302 TEXT_DESCRIPTION_FIGHTER_HYPERSPACE_NO</Encyclopedia_Text>
+    <Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_HB_302</Encyclopedia_Unit_Class>
+    <Encyclopedia_Good_Against>Interdictor_Cruiser MC30_Frigate MC30_Frigate</Encyclopedia_Good_Against>
+    <Encyclopedia_Vulnerable_To>Tartan_Patrol_Cruiser Wraith_Rebel_Heavy_Fighter Tartan_Patrol_Cruiser</Encyclopedia_Vulnerable_To>
+    <Icon_Name>TAURI_SPACE_UNIT_HB-302.TGA</Icon_Name>
+    <GUI_Row> 1 </GUI_Row>
+    <Is_Dummy>Yes</Is_Dummy>
+    <Formation_Priority>2</Formation_Priority>
+    <Is_Escort>yes</Is_Escort>
+    <Is_Bomber>yes</Is_Bomber>
+    <Affiliation>Underworld</Affiliation>
+    <Build_Cost_Credits>500</Build_Cost_Credits>
+    <Build_Time_Seconds>22</Build_Time_Seconds>
+    <Build_Tab_Space_Units>Yes</Build_Tab_Space_Units>
+    <Tech_Level>2</Tech_Level>
+    <Required_Timeline/>
+    <Required_Star_Base_Level>1</Required_Star_Base_Level>
+    <Required_Special_Structures>U_Ground_Droid_Works</Required_Special_Structures>
+    <Cheap_Bribe_Cost>10</Cheap_Bribe_Cost>
+    <Expensive_Bribe_Cost>20</Expensive_Bribe_Cost>
+    <Tactical_Bribe_Cost>275</Tactical_Bribe_Cost>
+    <Behavior>DUMMY_SPACE_FIGHTER_SQUADRON</Behavior>
+    <Squadron_Units>Tauri_HB_302, Tauri_HB_302, Tauri_HB_302</Squadron_Units>
+    <Squadron_Offsets>60.0,0.0,0.0</Squadron_Offsets>
+    <Squadron_Offsets>0.0,60.0,0.0</Squadron_Offsets>
+    <Squadron_Offsets>0.0,-60.0,0.0</Squadron_Offsets>
+    <FormationOrder>2</FormationOrder>
+    <Squadron_Formation_Error_Tolerance>25.0</Squadron_Formation_Error_Tolerance>
+    <Guard_Chase_Range>1000.0</Guard_Chase_Range>
+    <Idle_Chase_Range>200.0</Idle_Chase_Range>
+    <Attack_Move_Response_Range>300.0</Attack_Move_Response_Range>
+    <Autonomous_Move_Extension_Vs_Attacker>500.0</Autonomous_Move_Extension_Vs_Attacker>
+    <Property_Flags> SmallShip </Property_Flags>
+    <Population_Value>1</Population_Value>
+    <Score_Cost_Credits> 800</Score_Cost_Credits>
+    <Max_Squad_Size> 3 </Max_Squad_Size>
+    <!--<MULTIPLAYER SKIRMISH VALUES BEGIN>-->
+    <Tactical_Build_Cost_Multiplayer>500</Tactical_Build_Cost_Multiplayer>
+    <Tactical_Build_Time_Seconds>15</Tactical_Build_Time_Seconds>
+    <Tactical_Build_Prerequisites/>
+    <Tactical_Production_Queue>Tactical_Units</Tactical_Production_Queue>
+    <Build_Limit_Current_Per_Player>-1</Build_Limit_Current_Per_Player>
+    <Build_Limit_Lifetime_Per_Player>-1</Build_Limit_Lifetime_Per_Player>
+    <!--<MULTIPLAYER SKIRMISH VALUES END>-->
+    <Unit_Abilities_Data SubObjectList="Yes">
+	  <Unit_Ability>
+        <Type>TURBO</Type>
+        <Expiration_Seconds>15</Expiration_Seconds>
+        <Recharge_Seconds>25</Recharge_Seconds>
+        <Mod_Multiplier>WEAPON_DELAY_MULTIPLIER,	2.5f</Mod_Multiplier>
+        <Mod_Multiplier>SHIELD_REGEN_MULTIPLIER,	0.0f</Mod_Multiplier>
+        <Mod_Multiplier>ENERGY_REGEN_MULTIPLIER,	1.0f</Mod_Multiplier>
+        <Mod_Multiplier>SPEED_MULTIPLIER,		2.0f</Mod_Multiplier>
+        <Alternate_Name_Text>TEXT_TOOLTIP_ABILITY_TURBO_NAME</Alternate_Name_Text>
+        <Alternate_Description_Text>TEXT_DESCRIPTION_ABILITY_ENGINES_BOOST_BOMBER</Alternate_Description_Text>
+		<Alternate_Icon_Name>I_SA_POWER_ENGINES_HB302.TGA</Alternate_Icon_Name>
+        <SFXEvent_GUI_Unit_Ability_Activated></SFXEvent_GUI_Unit_Ability_Activated>
+        <SFXEvent_GUI_Unit_Ability_Deactivated/>
+      </Unit_Ability>
+	
+      <Unit_Ability>
+        <Type>HUNT</Type>
+        <Alternate_Name_Text>TEXT_ABILITY_TAURI_SPACE_HB_302_GEGNER_JAGEN</Alternate_Name_Text>
+        <Alternate_Description_Text>TEXT_ABILITY_DESCRIPTION_TAURI_SPACE_HB_302_GEGNER_JAGEN</Alternate_Description_Text>
+      </Unit_Ability>
+    </Unit_Abilities_Data>
+  </Squadron>
+
+  <!--Projectiles-->
+  <Projectile Name="Proj_Tauri_HB302_Missile">
+    <Variant_Of_Existing_Type>Proj_Tauri_Fighter_Missile_General</Variant_Of_Existing_Type>
+    <Damage_Type>Damage_Fighter</Damage_Type>
+    <Projectile_Damage>18.0</Projectile_Damage>
+  </Projectile>
+  <Projectile Name="Proj_Tauri_HB302_Bomb">
+    <Variant_Of_Existing_Type>Proj_Tauri_Bomber_Bomb_Heavy_General</Variant_Of_Existing_Type>
+    <Damage_Type>Damage_HeavyBomber</Damage_Type>
+    <Projectile_Damage>35.0</Projectile_Damage>
+  </Projectile>
+
+</HB-302>

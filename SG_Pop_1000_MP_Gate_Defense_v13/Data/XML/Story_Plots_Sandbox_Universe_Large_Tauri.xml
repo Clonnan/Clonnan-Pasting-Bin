@@ -1,0 +1,11 @@
+<?xml version="1.0" ?>
+
+<Story_Mode_Plots>
+    <Lua_Script>Story_Sandbox_Universe_Large_Tauri</Lua_Script>
+    <Active_Plot>Story_Sandbox_Universe_Large_Tauri.xml</Active_Plot>
+
+
+    <Lua_Script>Story_Gate_Defense_Network</Lua_Script>
+    <Active_Plot>Story_Gate_Defense_Network.xml</Active_Plot>
+    <Active_Plot>Story_XmlRewards_Default.xml</Active_Plot>
+</Story_Mode_Plots>

@@ -1,0 +1,334 @@
+<?xml version="1.0"?>
+<Units_Naquadah_Generator>
+   <!-- Information Naquadah Generator MK1 -->
+   <SpaceUnit Name="Tauri_Hero_Naquadah_Generator_MK1_Generic_Transport">
+      <Variant_Of_Existing_Type>Template_Space_Unit_Corvette</Variant_Of_Existing_Type>
+      <Text_ID>TEXT_TAURI_SPECIAL_HERO_NAQUADAH_GENERATOR</Text_ID>
+      <Encyclopedia_Text>TEXT_DESCRIPTION_TAURI_GC_NAQUADAH_GENERATOR_SPACE</Encyclopedia_Text>
+      <Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_NAQUADAH_GENERATOR</Encyclopedia_Unit_Class>
+      <Icon_Name>TAURI_NAQUADAH_GENERATOR.TGA</Icon_Name>
+      <Affiliation>Underworld</Affiliation>
+	  <Space_Model_Name>Tauri_Space_Unit_T-302.ALO</Space_Model_Name>
+      <Galactic_Fleet_Override_Model_Name>W_planet_fleet_DropShip.ALO</Galactic_Fleet_Override_Model_Name>
+      <Galactic_Fleet_Override_Icon_Index> 4 </Galactic_Fleet_Override_Icon_Index>
+      <Radar_Icon_Name>I_RADAR_DROPSHIP.TGA</Radar_Icon_Name>
+      <Radar_Icon_Size>0.036 0.036</Radar_Icon_Size>
+      <Scale_Factor>0.025</Scale_Factor>
+      <Select_Box_Scale>80</Select_Box_Scale>
+      <Select_Box_Z_Adjust>-30</Select_Box_Z_Adjust>
+      <Tactical_Health>400</Tactical_Health>
+      <Shield_Points>200</Shield_Points>
+      <Shield_Refresh_Rate>5</Shield_Refresh_Rate>
+      <Population_Value>0</Population_Value>
+      <Death_Explosions>Medium_Explosion_Space</Death_Explosions>
+      <Death_Clone>Damage_Normal, Underworld_Infantry_Droid_Shuttle_Death_Clone</Death_Clone>
+      <Always_Spawn_In_Orbit>Yes</Always_Spawn_In_Orbit>
+      <CategoryMask>SpaceHero</CategoryMask>	  
+      <Behavior>DUMMY_STARSHIP, TRANSPORT</Behavior>
+      <SpaceBehavior>ABILITY_COUNTDOWN, SIMPLE_SPACE_LOCOMOTOR, SELECTABLE, TARGETING, POWERED, SHIELDED, REVEAL, SPAWN_SQUADRON, HIDE_WHEN_FOGGED, AMBIENT_SFX, DAMAGE_TRACKING, UNIT_AI, NEBULA</SpaceBehavior>
+      <Unit_Abilities_Data SubObjectList="Yes">
+         <Unit_Ability>
+            <Type>TARGETED_INVULNERABILITY</Type>
+            <Alternate_Name_Text>TEXT_ABILITY_LOAD_INTO</Alternate_Name_Text>
+            <Alternate_Description_Text>TEXT_DESCRIPTION_ABILITY_LOAD_INTO_ITEM </Alternate_Description_Text>
+			<Alternate_Icon_Name>I_SA_JOIN_ME.tga</Alternate_Icon_Name>
+			<Activation_Style> User_Input </Activation_Style>
+            <Recharge_Seconds>5.0</Recharge_Seconds>
+            <GUI_Activated_Ability_Name> </GUI_Activated_Ability_Name>
+            <Spawned_Object_Type>Dummy_Proj_Load_Into</Spawned_Object_Type>
+            <Effective_Radius>3000</Effective_Radius>
+            <Friendly_Ability> true </Friendly_Ability>
+            <Supports_Autofire>False</Supports_Autofire>
+         </Unit_Ability>
+      </Unit_Abilities_Data>
+      <Lua_Script>ObjectScript_Fleet_Commander_and_Items</Lua_Script>
+         <Abilities SubObjectList="Yes">
+         <Force_Healing_Ability Name="Tauri_Battlefield_Auto_Repair">
+            <Activation_Style>Space_Automatic</Activation_Style>
+            <Heal_Range>0.0</Heal_Range>
+            <Heal_Percent>0.004</Heal_Percent>
+            <Heal_Amount>1.0</Heal_Amount>
+            <Heal_Interval_In_Secs>2.0</Heal_Interval_In_Secs>
+            <Single_Target_Heal>No</Single_Target_Heal>
+            <Owner_Particle_Bone_Name>ROOT</Owner_Particle_Bone_Name>
+         </Force_Healing_Ability>
+      </Abilities>
+   </SpaceUnit>
+   
+   <HeroCompany Name="Tauri_Hero_Naquadah_Generator_MK1_Generic_Team">
+      <Text_ID>TEXT_TAURI_SPECIAL_HERO_NAQUADAH_GENERATOR</Text_ID>
+      <Encyclopedia_Text>TEXT_DESCRIPTION_TAURI_GC_NAQUADAH_GENERATOR_SPACE</Encyclopedia_Text>
+      <Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_NAQUADAH_GENERATOR</Encyclopedia_Unit_Class>
+      <Affiliation>Underworld</Affiliation>     
+	  <Icon_Name>TAURI_NAQUADAH_GENERATOR.TGA</Icon_Name>
+      <Company_Transport_Unit>Tauri_Hero_Naquadah_Generator_MK1_Generic_Transport</Company_Transport_Unit>
+      <Company_Units>Tauri_Hero_Naquadah_Generator_MK1_Generic</Company_Units>
+      <CategoryMask> LandHero | SpaceHero </CategoryMask>
+      <Tactical_Production_Queue>Tactical_Units</Tactical_Production_Queue>	  
+      <Is_Dummy>Yes</Is_Dummy>
+	  <Damage>20</Damage>
+	  <Behavior>DUMMY_GROUND_COMPANY</Behavior>
+	  <Is_Escort>yes</Is_Escort>
+	  <Ship_Class>infantry</Ship_Class>
+	  <Max_Squad_Size>1</Max_Squad_Size>
+	  <Required_Star_Base_Level>1</Required_Star_Base_Level>
+	  <Required_Ground_Base_Level>0</Required_Ground_Base_Level>
+	  <Required_Timeline>0</Required_Timeline>
+	  <Build_Tab_Space_Units>Yes</Build_Tab_Space_Units>
+	  <GUI_Row>1</GUI_Row>
+	  <Tech_Level>3</Tech_Level>
+	  <Build_Cost_Credits>3500</Build_Cost_Credits>
+      <Build_Time_Seconds>45</Build_Time_Seconds>
+	  <Score_Cost_Credits>2000</Score_Cost_Credits>
+      <Tactical_Build_Cost_Multiplayer>2500</Tactical_Build_Cost_Multiplayer>
+      <Tactical_Build_Time_Seconds>20</Tactical_Build_Time_Seconds>
+	  <Build_Limit_Current_Per_Player>2</Build_Limit_Current_Per_Player>
+	  <Required_Planets>Universe_L_Orban</Required_Planets>
+	  <Population_Value>1</Population_Value>
+	  <Build_Initially_Locked>No</Build_Initially_Locked>
+   </HeroCompany>
+   
+   <GenericHeroUnit Name="Tauri_Hero_Naquadah_Generator_MK1_Generic">
+      <Text_ID>TEXT_TAURI_SPECIAL_HERO_NAQUADAH_GENERATOR</Text_ID>
+      <Encyclopedia_Text>TEXT_DESCRIPTION_TAURI_GC_NAQUADAH_GENERATOR_SPACE</Encyclopedia_Text>
+      <Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_NAQUADAH_GENERATOR</Encyclopedia_Unit_Class>
+      <Icon_Name>TAURI_NAQUADAH_GENERATOR.TGA</Icon_Name>
+      <Show_Hero_Head>Yes</Show_Hero_Head>
+      <GUI_Row> 1 </GUI_Row>
+      <Mass>1.0</Mass>
+      <Scale_Factor>1.0</Scale_Factor>
+      <Is_Sprite>No</Is_Sprite>
+      <Type>Walk</Type>
+      <Affiliation>Underworld</Affiliation>
+      <Political_Control>0</Political_Control>
+      <Size_Value>75</Size_Value>
+      <Is_Generic_Hero>Yes</Is_Generic_Hero>
+      <Always_Spawn_In_Orbit>Yes</Always_Spawn_In_Orbit>
+      <Neutralization_Cost>100.0</Neutralization_Cost>
+      <Can_Be_Neutralized_By_Major_Heroes>No</Can_Be_Neutralized_By_Major_Heroes>
+      <Can_Be_Neutralized_By_Minor_Heroes>No</Can_Be_Neutralized_By_Minor_Heroes>
+      <CategoryMask>NonCombatHero</CategoryMask>
+      <Ranking_In_Category>21</Ranking_In_Category>
+  </GenericHeroUnit>
+
+   <Projectile Name="Proj_Tauri_Hero_Naquadah_Generator_MK1_Commander_Defence_Bonus">
+       <Variant_Of_Existing_Type>Proj_Neutral_Template_Commander_Bonus</Variant_Of_Existing_Type>
+       <Projectile_Combat_Mod>COMBAT_MOD_DEFENSE</Projectile_Combat_Mod>
+        <Projectile_Combat_Mod_Duration>7200.0</Projectile_Combat_Mod_Duration>
+        <Projectile_Combat_Mod_Value>0.05f</Projectile_Combat_Mod_Value>
+        <Projectile_Combat_Mod_Effect>Particle_Tauri_Commander_Buff</Projectile_Combat_Mod_Effect>
+        <Projectile_Combat_Mod_Category_Mask>Corvette | Frigate | Capital | SpaceHero | Structure</Projectile_Combat_Mod_Category_Mask>
+   </Projectile>
+
+   <Projectile Name="Proj_Tauri_Hero_Naquadah_Generator_MK1_Commander_Speed_Bonus">
+        <Variant_Of_Existing_Type>Proj_Neutral_Template_Commander_Bonus</Variant_Of_Existing_Type>
+       <Projectile_Combat_Mod>COMBAT_MOD_SPEED</Projectile_Combat_Mod>
+        <Projectile_Combat_Mod_Duration>7200.0</Projectile_Combat_Mod_Duration>
+        <Projectile_Combat_Mod_Value>0.15f</Projectile_Combat_Mod_Value>
+        <Projectile_Combat_Mod_Effect>Particle_Tauri_Commander_Buff</Projectile_Combat_Mod_Effect>
+        <Projectile_Combat_Mod_Category_Mask>Corvette | Frigate | Capital | SpaceHero | Structure</Projectile_Combat_Mod_Category_Mask>
+   </Projectile>
+
+   <Projectile Name="Proj_Tauri_Hero_Naquadah_Generator_MK1_Commander_Fire_Rate_Bonus">
+       <Variant_Of_Existing_Type>Proj_Neutral_Template_Commander_Bonus</Variant_Of_Existing_Type>
+       <Projectile_Combat_Mod>COMBAT_MOD_FIRE_RATE</Projectile_Combat_Mod>
+        <Projectile_Combat_Mod_Duration>7200.0</Projectile_Combat_Mod_Duration>
+        <Projectile_Combat_Mod_Value>0.1f</Projectile_Combat_Mod_Value>
+        <Projectile_Combat_Mod_Effect>Particle_Tauri_Commander_Buff</Projectile_Combat_Mod_Effect>
+        <Projectile_Combat_Mod_Category_Mask>Corvette | Frigate | Capital | SpaceHero | Structure</Projectile_Combat_Mod_Category_Mask>
+   </Projectile>
+
+   <Projectile Name="Proj_Tauri_Hero_Naquadah_Generator_MK1_Commander_Fire_Range_Bonus">
+       <Variant_Of_Existing_Type>Proj_Neutral_Template_Commander_Bonus</Variant_Of_Existing_Type>
+       <Projectile_Combat_Mod>COMBAT_MOD_FIRE_RANGE</Projectile_Combat_Mod>
+        <Projectile_Combat_Mod_Duration>7200.0</Projectile_Combat_Mod_Duration>
+        <Projectile_Combat_Mod_Value>0.0f</Projectile_Combat_Mod_Value>
+        <Projectile_Combat_Mod_Effect>Particle_Tauri_Commander_Buff</Projectile_Combat_Mod_Effect>
+        <Projectile_Combat_Mod_Category_Mask>Corvette | Frigate | Capital | SpaceHero | Structure</Projectile_Combat_Mod_Category_Mask>
+   </Projectile>
+
+   <Projectile Name="Proj_Tauri_Hero_Naquadah_Generator_MK1_Commander_Damage_Bonus">
+       <Variant_Of_Existing_Type>Proj_Neutral_Template_Commander_Bonus</Variant_Of_Existing_Type>
+       <Projectile_Combat_Mod>COMBAT_MOD_DAMAGE</Projectile_Combat_Mod>
+        <Projectile_Combat_Mod_Duration>7200.0</Projectile_Combat_Mod_Duration>
+        <Projectile_Combat_Mod_Value>0.1f</Projectile_Combat_Mod_Value>
+        <Projectile_Combat_Mod_Effect>Particle_Tauri_Commander_Buff</Projectile_Combat_Mod_Effect>
+        <Projectile_Combat_Mod_Category_Mask>Corvette | Frigate | Capital | SpaceHero | Structure</Projectile_Combat_Mod_Category_Mask>
+   </Projectile>
+
+   <Projectile Name="Proj_Tauri_Hero_Naquadah_Generator_MK1_Commander_Ability_Bonus">
+       <Variant_Of_Existing_Type>Proj_Neutral_Template_Commander_Bonus</Variant_Of_Existing_Type>
+       <Projectile_Combat_Mod>COMBAT_MOD_ABILITY_RECHARGE_TIME</Projectile_Combat_Mod>
+        <Projectile_Combat_Mod_Duration>7200.0</Projectile_Combat_Mod_Duration>
+        <Projectile_Combat_Mod_Value>0.1f</Projectile_Combat_Mod_Value>
+        <Projectile_Combat_Mod_Effect>Particle_Tauri_Commander_Buff</Projectile_Combat_Mod_Effect>
+        <Projectile_Combat_Mod_Category_Mask>Corvette | Frigate | Capital | SpaceHero | Structure</Projectile_Combat_Mod_Category_Mask>
+   </Projectile>
+
+   <!-- Information Naquadah Generator MK2 -->
+
+   <SpaceUnit Name="Tauri_Hero_Naquadah_Generator_MK2_Generic_Transport">
+      <Variant_Of_Existing_Type>Template_Space_Unit_Corvette</Variant_Of_Existing_Type>
+      <Text_ID>TEXT_TAURI_SPECIAL_HERO_NAQUADAH_GENERATOR_MK2</Text_ID>
+      <Encyclopedia_Text>TEXT_DESCRIPTION_TAURI_GC_NAQUADAH_GENERATOR_MK2_SPACE</Encyclopedia_Text>
+      <Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_NAQUADAH_GENERATOR</Encyclopedia_Unit_Class>
+      <Icon_Name>TAURI_NAQUADAH_GENERATOR_MK2.TGA</Icon_Name>
+      <Affiliation>Underworld</Affiliation>
+	  <Space_Model_Name>Tauri_Space_Unit_T-302.ALO</Space_Model_Name>
+      <Galactic_Fleet_Override_Model_Name>W_planet_fleet_DropShip.ALO</Galactic_Fleet_Override_Model_Name>
+      <Galactic_Fleet_Override_Icon_Index> 4 </Galactic_Fleet_Override_Icon_Index>
+      <Radar_Icon_Name>I_RADAR_DROPSHIP.TGA</Radar_Icon_Name>
+      <Radar_Icon_Size>0.036 0.036</Radar_Icon_Size>
+      <Scale_Factor>0.025</Scale_Factor>
+      <Select_Box_Scale>80</Select_Box_Scale>
+      <Select_Box_Z_Adjust>-30</Select_Box_Z_Adjust>
+      <Tactical_Health>400</Tactical_Health>
+      <Shield_Points>200</Shield_Points>
+      <Shield_Refresh_Rate>5</Shield_Refresh_Rate>
+      <Population_Value>0</Population_Value>
+      <Death_Explosions>Medium_Explosion_Space</Death_Explosions>
+      <Death_Clone>Damage_Normal, Underworld_Infantry_Droid_Shuttle_Death_Clone</Death_Clone>
+      <Always_Spawn_In_Orbit>Yes</Always_Spawn_In_Orbit>
+      <CategoryMask>SpaceHero</CategoryMask>	  
+      <Behavior>DUMMY_STARSHIP, TRANSPORT</Behavior>
+      <SpaceBehavior>ABILITY_COUNTDOWN, SIMPLE_SPACE_LOCOMOTOR, SELECTABLE, TARGETING, POWERED, SHIELDED, REVEAL, SPAWN_SQUADRON, HIDE_WHEN_FOGGED, AMBIENT_SFX, DAMAGE_TRACKING, UNIT_AI, NEBULA</SpaceBehavior>
+      <Unit_Abilities_Data SubObjectList="Yes">
+         <Unit_Ability>
+            <Type>TARGETED_INVULNERABILITY</Type>
+            <Alternate_Name_Text>TEXT_ABILITY_LOAD_INTO</Alternate_Name_Text>
+            <Alternate_Description_Text>TEXT_DESCRIPTION_ABILITY_LOAD_INTO_ITEM </Alternate_Description_Text>
+			<Alternate_Icon_Name>I_SA_JOIN_ME.tga</Alternate_Icon_Name>
+			<Activation_Style> User_Input </Activation_Style>
+            <Recharge_Seconds>5.0</Recharge_Seconds>
+            <GUI_Activated_Ability_Name> </GUI_Activated_Ability_Name>
+            <Spawned_Object_Type>Dummy_Proj_Load_Into</Spawned_Object_Type>
+            <Effective_Radius>3000</Effective_Radius>
+            <Friendly_Ability> true </Friendly_Ability>
+            <Supports_Autofire>False</Supports_Autofire>
+         </Unit_Ability>
+      </Unit_Abilities_Data>
+      <Lua_Script>ObjectScript_Fleet_Commander_and_Items</Lua_Script>
+         <Abilities SubObjectList="Yes">
+         <Force_Healing_Ability Name="Tauri_Battlefield_Auto_Repair">
+            <Activation_Style>Space_Automatic</Activation_Style>
+            <Heal_Range>0.0</Heal_Range>
+            <Heal_Percent>0.004</Heal_Percent>
+            <Heal_Amount>1.0</Heal_Amount>
+            <Heal_Interval_In_Secs>2.0</Heal_Interval_In_Secs>
+            <Single_Target_Heal>No</Single_Target_Heal>
+            <Owner_Particle_Bone_Name>ROOT</Owner_Particle_Bone_Name>
+         </Force_Healing_Ability>
+      </Abilities>
+   </SpaceUnit>
+   
+   <HeroCompany Name="Tauri_Hero_Naquadah_Generator_MK2_Generic_Team">
+      <Text_ID>TEXT_TAURI_SPECIAL_HERO_NAQUADAH_GENERATOR_MK2</Text_ID>
+      <Encyclopedia_Text>TEXT_DESCRIPTION_TAURI_GC_NAQUADAH_GENERATOR_MK2_SPACE</Encyclopedia_Text>
+      <Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_NAQUADAH_GENERATOR</Encyclopedia_Unit_Class>
+      <Affiliation>Underworld</Affiliation>     
+	  <Icon_Name>TAURI_NAQUADAH_GENERATOR_MK2.TGA</Icon_Name>
+      <Company_Transport_Unit>Tauri_Hero_Naquadah_Generator_MK2_Generic_Transport</Company_Transport_Unit>
+      <Company_Units>Tauri_Hero_Naquadah_Generator_MK2_Generic</Company_Units>
+      <CategoryMask> LandHero | SpaceHero </CategoryMask>
+      <Tactical_Production_Queue>Tactical_Units</Tactical_Production_Queue>	  
+      <Is_Dummy>Yes</Is_Dummy>
+	  <Damage>20</Damage>
+	  <Behavior>DUMMY_GROUND_COMPANY</Behavior>
+	  <Is_Escort>yes</Is_Escort>
+	  <Ship_Class>infantry</Ship_Class>
+	  <Max_Squad_Size>1</Max_Squad_Size>
+      <Required_Star_Base_Level>1</Required_Star_Base_Level>
+	  <Required_Ground_Base_Level>0</Required_Ground_Base_Level>
+	  <Required_Timeline>0</Required_Timeline>
+	  <Build_Tab_Space_Units>Yes</Build_Tab_Space_Units>
+	  <GUI_Row>1</GUI_Row>
+	  <Tech_Level>4</Tech_Level>
+	  <Build_Cost_Credits>6000</Build_Cost_Credits>
+      <Build_Time_Seconds>90</Build_Time_Seconds>
+	  <Score_Cost_Credits>4000</Score_Cost_Credits>
+      <Tactical_Build_Cost_Multiplayer>5000</Tactical_Build_Cost_Multiplayer>
+      <Tactical_Build_Time_Seconds>40</Tactical_Build_Time_Seconds>
+	  <Build_Limit_Current_Per_Player>2</Build_Limit_Current_Per_Player>
+	  <Required_Planets>Universe_L_Earth</Required_Planets>
+	  <Population_Value>1</Population_Value>
+	  <Build_Initially_Locked>Yes</Build_Initially_Locked>
+   </HeroCompany>
+   
+   <GenericHeroUnit Name="Tauri_Hero_Naquadah_Generator_MK2_Generic">
+      <Text_ID>TEXT_TAURI_SPECIAL_HERO_NAQUADAH_GENERATOR_MK2</Text_ID>
+      <Encyclopedia_Text>TEXT_DESCRIPTION_TAURI_GC_NAQUADAH_GENERATOR_MK2_SPACE</Encyclopedia_Text>
+      <Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_NAQUADAH_GENERATOR</Encyclopedia_Unit_Class>
+      <Icon_Name>TAURI_NAQUADAH_GENERATOR_MK2.TGA</Icon_Name>
+      <Show_Hero_Head>Yes</Show_Hero_Head>
+      <GUI_Row> 1 </GUI_Row>
+      <Mass>1.0</Mass>
+      <Scale_Factor>1.0</Scale_Factor>
+      <Is_Sprite>No</Is_Sprite>
+      <Type>Walk</Type>
+      <Affiliation>Underworld</Affiliation>
+      <Political_Control>0</Political_Control>
+      <Size_Value>75</Size_Value>
+      <Is_Generic_Hero>Yes</Is_Generic_Hero>
+      <Always_Spawn_In_Orbit>Yes</Always_Spawn_In_Orbit>
+      <Neutralization_Cost>100.0</Neutralization_Cost>
+      <Can_Be_Neutralized_By_Major_Heroes>No</Can_Be_Neutralized_By_Major_Heroes>
+      <Can_Be_Neutralized_By_Minor_Heroes>No</Can_Be_Neutralized_By_Minor_Heroes>
+      <CategoryMask>NonCombatHero</CategoryMask>
+      <Ranking_In_Category>21</Ranking_In_Category>
+  </GenericHeroUnit>
+
+   <Projectile Name="Proj_Tauri_Hero_Naquadah_Generator_MK2_Commander_Defence_Bonus">
+       <Variant_Of_Existing_Type>Proj_Neutral_Template_Commander_Bonus</Variant_Of_Existing_Type>
+       <Projectile_Combat_Mod>COMBAT_MOD_DEFENSE</Projectile_Combat_Mod>
+        <Projectile_Combat_Mod_Duration>7200.0</Projectile_Combat_Mod_Duration>
+        <Projectile_Combat_Mod_Value>0.075f</Projectile_Combat_Mod_Value>
+        <Projectile_Combat_Mod_Effect>Particle_Tauri_Commander_Buff</Projectile_Combat_Mod_Effect>
+        <Projectile_Combat_Mod_Category_Mask>Corvette | Frigate | Capital | SpaceHero | Structure</Projectile_Combat_Mod_Category_Mask>
+   </Projectile>
+
+   <Projectile Name="Proj_Tauri_Hero_Naquadah_Generator_MK2_Commander_Speed_Bonus">
+        <Variant_Of_Existing_Type>Proj_Neutral_Template_Commander_Bonus</Variant_Of_Existing_Type>
+       <Projectile_Combat_Mod>COMBAT_MOD_SPEED</Projectile_Combat_Mod>
+        <Projectile_Combat_Mod_Duration>7200.0</Projectile_Combat_Mod_Duration>
+        <Projectile_Combat_Mod_Value>0.2f</Projectile_Combat_Mod_Value>
+        <Projectile_Combat_Mod_Effect>Particle_Tauri_Commander_Buff</Projectile_Combat_Mod_Effect>
+        <Projectile_Combat_Mod_Category_Mask>Corvette | Frigate | Capital | SpaceHero | Structure</Projectile_Combat_Mod_Category_Mask>
+   </Projectile>
+
+   <Projectile Name="Proj_Tauri_Hero_Naquadah_Generator_MK2_Commander_Fire_Rate_Bonus">
+       <Variant_Of_Existing_Type>Proj_Neutral_Template_Commander_Bonus</Variant_Of_Existing_Type>
+       <Projectile_Combat_Mod>COMBAT_MOD_FIRE_RATE</Projectile_Combat_Mod>
+        <Projectile_Combat_Mod_Duration>7200.0</Projectile_Combat_Mod_Duration>
+        <Projectile_Combat_Mod_Value>0.2f</Projectile_Combat_Mod_Value>
+        <Projectile_Combat_Mod_Effect>Particle_Tauri_Commander_Buff</Projectile_Combat_Mod_Effect>
+        <Projectile_Combat_Mod_Category_Mask>Corvette | Frigate | Capital | SpaceHero | Structure</Projectile_Combat_Mod_Category_Mask>
+   </Projectile>
+
+   <Projectile Name="Proj_Tauri_Hero_Naquadah_Generator_MK2_Commander_Fire_Range_Bonus">
+       <Variant_Of_Existing_Type>Proj_Neutral_Template_Commander_Bonus</Variant_Of_Existing_Type>
+       <Projectile_Combat_Mod>COMBAT_MOD_FIRE_RANGE</Projectile_Combat_Mod>
+        <Projectile_Combat_Mod_Duration>7200.0</Projectile_Combat_Mod_Duration>
+        <Projectile_Combat_Mod_Value>0.05f</Projectile_Combat_Mod_Value>
+        <Projectile_Combat_Mod_Effect>Particle_Tauri_Commander_Buff</Projectile_Combat_Mod_Effect>
+        <Projectile_Combat_Mod_Category_Mask>Corvette | Frigate | Capital | SpaceHero | Structure</Projectile_Combat_Mod_Category_Mask>
+   </Projectile>
+
+   <Projectile Name="Proj_Tauri_Hero_Naquadah_Generator_MK2_Commander_Damage_Bonus">
+       <Variant_Of_Existing_Type>Proj_Neutral_Template_Commander_Bonus</Variant_Of_Existing_Type>
+       <Projectile_Combat_Mod>COMBAT_MOD_DAMAGE</Projectile_Combat_Mod>
+        <Projectile_Combat_Mod_Duration>7200.0</Projectile_Combat_Mod_Duration>
+        <Projectile_Combat_Mod_Value>0.15f</Projectile_Combat_Mod_Value>
+        <Projectile_Combat_Mod_Effect>Particle_Tauri_Commander_Buff</Projectile_Combat_Mod_Effect>
+        <Projectile_Combat_Mod_Category_Mask>Corvette | Frigate | Capital | SpaceHero | Structure</Projectile_Combat_Mod_Category_Mask>
+   </Projectile>
+
+   <Projectile Name="Proj_Tauri_Hero_Naquadah_Generator_MK2_Commander_Ability_Bonus">
+       <Variant_Of_Existing_Type>Proj_Neutral_Template_Commander_Bonus</Variant_Of_Existing_Type>
+       <Projectile_Combat_Mod>COMBAT_MOD_ABILITY_RECHARGE_TIME</Projectile_Combat_Mod>
+        <Projectile_Combat_Mod_Duration>7200.0</Projectile_Combat_Mod_Duration>
+        <Projectile_Combat_Mod_Value>0.15f</Projectile_Combat_Mod_Value>
+        <Projectile_Combat_Mod_Effect>Particle_Tauri_Commander_Buff</Projectile_Combat_Mod_Effect>
+        <Projectile_Combat_Mod_Category_Mask>Corvette | Frigate | Capital | SpaceHero | Structure</Projectile_Combat_Mod_Category_Mask>
+   </Projectile>
+
+</Units_Naquadah_Generator>

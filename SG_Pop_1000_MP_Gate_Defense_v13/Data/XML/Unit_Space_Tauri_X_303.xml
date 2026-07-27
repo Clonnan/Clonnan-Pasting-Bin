@@ -1,0 +1,143 @@
+<?xml version="1.0"?>
+<Crusader_Gunship_Data>
+
+   <SpaceUnit Name="Crusader_Gunship_No_Spawn">
+      <Variant_Of_Existing_Type>Template_Space_Unit_Corvette</Variant_Of_Existing_Type>
+      <Text_ID>TEXT_TAURI_SPACE_UNIT_X_303</Text_ID>
+      <Encyclopedia_Text>TEXT_DESCRIPTION_TAURI_X_303</Encyclopedia_Text>
+      <Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_X_303</Encyclopedia_Unit_Class>
+      <Encyclopedia_Good_Against> Tartan_Patrol_Cruiser Wraith_Rebel_Heavy_Bomber Goauld_Needle_Threader </Encyclopedia_Good_Against>
+      <Encyclopedia_Vulnerable_To> MC30_Frigate TIE_Bomber B-Wing  </Encyclopedia_Vulnerable_To>
+      <Space_Model_Name>Tauri_Space_Unit_Pometheus.alo</Space_Model_Name>
+      <Galactic_Fleet_Override_Model_Name>W_planet_fleet_X-303.ALO</Galactic_Fleet_Override_Model_Name>
+      <Icon_Name>TAURI_SPACE_UNIT_X-303.TGA</Icon_Name>
+      <Select_Box_Scale>260</Select_Box_Scale>
+      <Scale_Factor>1.0</Scale_Factor>
+      <Radar_Icon_Name>I_RADAR_X-303.TGA</Radar_Icon_Name>
+      <Radar_Icon_Size>0.04 0.038</Radar_Icon_Size>
+      <Affiliation>Neutral</Affiliation>
+      <SpaceBehavior>SIMPLE_SPACE_LOCOMOTOR, ABILITY_COUNTDOWN, DAMAGE_TRACKING, HIDE_WHEN_FOGGED, ION_STUN_EFFECT, NEBULA, POWERED, REVEAL, SELECTABLE, SHIELDED, SPAWN_SQUADRON, TARGETING, UNIT_AI, WEAPON</SpaceBehavior>
+
+      <HardPoints>
+         HP_X303_AF,
+         HP_X303_F_RB,
+         HP_X303_M_RB,
+         HP_X303_R_RB,
+         HP_X303_ENGINE,
+         HP_X303_SHIELD,
+         HP_X303_HANGAR
+      </HardPoints>
+      <Projectile_Types>Proj_Fake_Space</Projectile_Types>
+      <Projectile_Fire_Recharge_Seconds>10.0</Projectile_Fire_Recharge_Seconds>
+      <Projectile_Fire_Pulse_Count>1</Projectile_Fire_Pulse_Count>
+      <Projectile_Fire_Pulse_Delay_Seconds>1</Projectile_Fire_Pulse_Delay_Seconds>
+      <Turret_Rotate_Extent_Degrees> 20.0 </Turret_Rotate_Extent_Degrees>
+      <Turret_Elevate_Extent_Degrees> 60.0 </Turret_Elevate_Extent_Degrees>
+
+      <Shield_Points>800</Shield_Points>
+      <Shield_Refresh_Rate>17</Shield_Refresh_Rate>
+      <Tactical_Health>1480</Tactical_Health>
+      <Tactical_Build_Cost_Multiplayer>1850</Tactical_Build_Cost_Multiplayer>
+      <Tactical_Build_Time_Seconds>15</Tactical_Build_Time_Seconds>
+      <Build_Cost_Credits>1850</Build_Cost_Credits>
+      <Build_Time_Seconds>20</Build_Time_Seconds>
+
+      <Max_Speed>3.0</Max_Speed>
+      <Max_Rate_Of_Turn>1.0</Max_Rate_Of_Turn>
+      <Layer_Z_Adjust>-10.0</Layer_Z_Adjust>
+      <Max_Rate_Of_Roll>0.9</Max_Rate_Of_Roll>
+      <Bank_Turn_Angle>35</Bank_Turn_Angle>
+      <OverrideAcceleration> .090 </OverrideAcceleration>
+      <OverrideDeceleration> .090 </OverrideDeceleration>
+      <Max_Thrust>2.0</Max_Thrust>
+
+      <Space_FOW_Reveal_Range>1250.0</Space_FOW_Reveal_Range>
+      <Targeting_Max_Attack_Distance>1450.0</Targeting_Max_Attack_Distance>
+      <Death_Explosions>Large_Explosion_Space_Empire</Death_Explosions>
+      
+      <SFXEvent_Attack>Unit_Attack_X303</SFXEvent_Attack>
+      <SFXEvent_Fleet_Move>Unit_Move_X303</SFXEvent_Fleet_Move>
+      <SFXEvent_Move>Unit_Move_X303</SFXEvent_Move>
+      <SFXEvent_Select>Unit_Select_X303</SFXEvent_Select>
+      <SFXEvent_Hardpoint_Destroyed> HARD_POINT_ENGINE, Unit_NoEngine_X303</SFXEvent_Hardpoint_Destroyed>
+
+      <SFXEvent_Engine_Idle_Loop>  Engine_Tauri_X303_Idle </SFXEvent_Engine_Idle_Loop>
+      <SFXEvent_Engine_Moving_Loop>  Engine_Tauri_X303 </SFXEvent_Engine_Moving_Loop>
+      <SFXEvent_Engine_Cinematic_Focus_Loop>  Engine_Tauri_X303_Cinematic </SFXEvent_Engine_Cinematic_Focus_Loop>
+
+      <Required_Ground_Base_Level>0</Required_Ground_Base_Level>
+      <Required_Star_Base_Level>1</Required_Star_Base_Level>
+      <Required_Special_Structures>U_Ground_Shipyard</Required_Special_Structures>
+
+      <Population_Value>2</Population_Value>
+      <Death_Clone>Damage_Normal, Crusader_Gunship_Death_Clone</Death_Clone>
+      <Lua_Script>ObjectScript_HW_Small</Lua_Script>
+      <Unit_Abilities_Data SubObjectList="Yes">
+          <Unit_Ability>
+              <Type>TURBO</Type>
+              <Expiration_Seconds>20</Expiration_Seconds>
+              <Recharge_Seconds>50</Recharge_Seconds>
+              <Mod_Multiplier>WEAPON_DELAY_MULTIPLIER, 2.2f</Mod_Multiplier>
+              <Mod_Multiplier>SHIELD_REGEN_MULTIPLIER, 0.0f</Mod_Multiplier>
+              <Mod_Multiplier>ENERGY_REGEN_MULTIPLIER, 1.0f</Mod_Multiplier>
+              <Mod_Multiplier>SPEED_MULTIPLIER,     2.2f</Mod_Multiplier>
+              <SFXEvent_GUI_Unit_Ability_Activated></SFXEvent_GUI_Unit_Ability_Activated>
+              <SFXEvent_GUI_Unit_Ability_Deactivated/>
+              <Alternate_Name_Text>TEXT_ABILITY_TAURI_SPACE_X_303_ANTRIEBSSCHUB</Alternate_Name_Text>
+              <Alternate_Description_Text>TEXT_DESCRIPTION_ABILITY_SPACE_X_303_ANTRIEBSSCHUB</Alternate_Description_Text>
+              <Alternate_Icon_Name>I_SA_POWER_ENGINES_303.tga</Alternate_Icon_Name>
+          </Unit_Ability>
+      </Unit_Abilities_Data>
+           <Abilities SubObjectList="Yes">
+          <Force_Healing_Ability Name="Tauri_Battlefield_Auto_Repair">
+             <Activation_Style>Space_Automatic</Activation_Style>
+             <Heal_Range>0.0</Heal_Range>
+             <Heal_Percent>0.004</Heal_Percent>
+             <Heal_Amount>1.0</Heal_Amount>
+             <Heal_Interval_In_Secs>2.0</Heal_Interval_In_Secs>
+             <Single_Target_Heal>No</Single_Target_Heal>
+             <Owner_Particle_Bone_Name>ROOT</Owner_Particle_Bone_Name>
+          </Force_Healing_Ability>
+       </Abilities>
+    </SpaceUnit>
+
+   <SpaceUnit Name="Crusader_Gunship">
+      <Variant_Of_Existing_Type>Crusader_Gunship_No_Spawn</Variant_Of_Existing_Type>
+      <Affiliation>Underworld</Affiliation>
+      <Tech_Level>1</Tech_Level>
+      <Starting_Spawned_Units_Tech_0>Tauri_X_301_Squadron, 1</Starting_Spawned_Units_Tech_0>
+      <Spawned_Squadron_Delay_Seconds>4</Spawned_Squadron_Delay_Seconds>
+      <Reserve_Spawned_Units_Tech_0>Tauri_X_301_Squadron, 1</Reserve_Spawned_Units_Tech_0>
+    </SpaceUnit>
+
+   <SpaceUnit Name="Crusader_Gunship_Mission_Tagrea">
+      <Variant_Of_Existing_Type>Crusader_Gunship_No_Spawn</Variant_Of_Existing_Type>
+      <Behavior>ABILITY_COUNTDOWN, DUMMY_STARSHIP, SELECTABLE, POWERED</Behavior>
+      <Shield_Points>0</Shield_Points>
+      <Shield_Refresh_Rate>0</Shield_Refresh_Rate>
+      <Lua_Script>ObjectScript_HW_Small</Lua_Script>
+   </SpaceUnit>
+
+   <SpaceUnit Name="Crusader_Gunship_No_Script">
+      <Variant_Of_Existing_Type>Crusader_Gunship_No_Spawn</Variant_Of_Existing_Type>
+      <Lua_Script>None</Lua_Script>
+   </SpaceUnit>
+
+   <SpaceUnit Name="Crusader_Gunship_Death_Clone">
+      <Variant_Of_Existing_Type>Template_Space_Deathclone</Variant_Of_Existing_Type>
+      <Affiliation>Underworld</Affiliation>
+      <Space_Model_Name>Tauri_Space_Unit_Pometheus_D.ALO</Space_Model_Name>
+   </SpaceUnit>
+
+    <Projectile Name="Proj_X303_Railgun">
+      <Variant_Of_Existing_Type>Proj_Tauri_X303_Railgun_General</Variant_Of_Existing_Type>
+      <Max_Speed>35.0</Max_Speed>
+      <Projectile_Damage>3.8</Projectile_Damage>
+    </Projectile>
+
+    <Projectile Name="Proj_X303_AF">
+      <Variant_Of_Existing_Type>Proj_Tauri_Fighter_Missile_General</Variant_Of_Existing_Type>
+      <Projectile_Damage>30.0</Projectile_Damage>
+    </Projectile>
+
+</Crusader_Gunship_Data>

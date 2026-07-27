@@ -1,0 +1,251 @@
+<?xml version="1.0"?>
+<X302>
+   <SpaceUnit Name="Tauri_Hero_X_302">
+      <Variant_Of_Existing_Type>Template_Space_Hero_Fighter_Multi</Variant_Of_Existing_Type>
+	  <Text_ID>TEXT_TAURI_SPACE_HERO_X_302</Text_ID>
+	  <Encyclopedia_Text>TEXT_DESCRIPTION_TAURI_X_302_SPACE</Encyclopedia_Text>
+	  <Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_X_302</Encyclopedia_Unit_Class>
+      <Icon_Name>TAURI_SPACE_HERO_X_302.TGA</Icon_Name>
+      <Space_Model_Name>Tauri_Space_Unit_F-302.ALO</Space_Model_Name>
+      <Galactic_Fleet_Override_Model_Name>Tauri_Space_Unit_F-302.ALO</Galactic_Fleet_Override_Model_Name>
+      <Scale_Factor>1.0</Scale_Factor>
+      <Select_Box_Scale>70</Select_Box_Scale>
+	  <Population_Value>2</Population_Value>
+      <Max_Speed>6.5</Max_Speed>
+      <Max_Rate_Of_Turn>1.3</Max_Rate_Of_Turn>
+      <Is_Named_Hero>No</Is_Named_Hero>
+	  <Is_Generic_Hero>Yes</Is_Generic_Hero>
+      <Show_Hero_Head>No</Show_Hero_Head>	
+      <SpaceBehavior>FIGHTER_LOCOMOTOR, ABILITY_COUNTDOWN, AMBIENT_SFX, DAMAGE_TRACKING, HIDE_WHEN_FOGGED, NEBULA, POWERED, REVEAL, SHIELDED, SELECTABLE, TARGETING</SpaceBehavior>
+      <Affiliation>Underworld</Affiliation>
+      <Targeting_Priority_Set>Fighter</Targeting_Priority_Set>
+      <CategoryMask> Fighter | AntiCapital | SpaceHero</CategoryMask>
+      <Spin_Away_On_Death>Yes</Spin_Away_On_Death>
+      <Spin_Away_On_Death_Chance>1.0</Spin_Away_On_Death_Chance>
+
+      <Tactical_Health>500</Tactical_Health>
+      <Shield_Points>400</Shield_Points><!--Sadly not shown due to the unit being part of a squadron-->
+      <Shield_Refresh_Rate>0</Shield_Refresh_Rate>
+
+				<HardPoints>
+						HP_X302_Railgun,
+						HP_X302_Missile
+				</HardPoints>
+
+		<SFXEvent_Fire>Weapon_Railgun_Tauri_Fighter</SFXEvent_Fire>
+		<SFXEvent_Attack>Unit_Attack_FB</SFXEvent_Attack>
+		<SFXEvent_Fleet_Move>Unit_Move_FB</SFXEvent_Fleet_Move>
+		<SFXEvent_Guard>Unit_Guard_FB</SFXEvent_Guard>
+		<SFXEvent_Health_Critical_Warning></SFXEvent_Health_Critical_Warning> 
+		<SFXEvent_Health_Low_Warning></SFXEvent_Health_Low_Warning>
+		<SFXEvent_Move>Unit_Move_FB</SFXEvent_Move>
+		<SFXEvent_Move_Into_Asteroid_Field></SFXEvent_Move_Into_Asteroid_Field>
+		<SFXEvent_Move_Into_Nebula></SFXEvent_Move_Into_Nebula>
+		<SFXEvent_Select>Unit_Select_FB</SFXEvent_Select>
+		<SFXEvent_Stop></SFXEvent_Stop>
+		<SFXEvent_Engine_Idle_Loop>Engine_Tauri_F302_Idle</SFXEvent_Engine_Idle_Loop>
+		<SFXEvent_Engine_Moving_Loop>Engine_Tauri_F302</SFXEvent_Engine_Moving_Loop>
+		<SFXEvent_Engine_Cinematic_Focus_Loop>Engine_Tauri_F302</SFXEvent_Engine_Cinematic_Focus_Loop>
+		<Required_Ground_Base_Level>0</Required_Ground_Base_Level>
+		<Tech_Level>99</Tech_Level>
+      <Required_Star_Base_Level>0</Required_Star_Base_Level>
+      <Unit_Abilities_Data SubObjectList="Yes">
+						<Unit_Ability>
+								<Type>ION_CANNON_SHOT</Type>
+								<GUI_Activated_Ability_Name>Tauri_Hero_Mitchell_Ion_Cannon_Shot</GUI_Activated_Ability_Name>
+								<SFXEvent_GUI_Unit_Ability_Activated></SFXEvent_GUI_Unit_Ability_Activated>
+								<Projectile_Types_Override>Proj_Tauri_Mitchell_Lucky_Shot</Projectile_Types_Override>
+								<Recharge_Seconds>120.0</Recharge_Seconds>
+								<Alternate_Name_Text>TEXT_TOOLTIP_ABILITY_LUCKY_SHOT_NAME</Alternate_Name_Text>
+								<Alternate_Description_Text>TEXT_DESCRIPTION_ABILITY_LUCKY_SHOT_X_302_SPACE</Alternate_Description_Text>
+								<Supports_Autofire>False</Supports_Autofire>
+								<Alternate_Icon_Name>I_SA_LUCKY_ROCKET.tga</Alternate_Icon_Name>
+						</Unit_Ability>
+						  <Unit_Ability>           
+							<Type>WEAKEN_ENEMY</Type>
+							<Expiration_Seconds>1000000</Expiration_Seconds>
+							<Recharge_Seconds>1000000</Recharge_Seconds>
+							<Effective_Radius> 3000 </Effective_Radius>
+							<Spawned_Object_Type>Hyperspace_Jump_Target</Spawned_Object_Type>
+							<Bomb_Countdown_Seconds>-1</Bomb_Countdown_Seconds>
+							<Alternate_Name_Text>TEXT_ABILITY_HYPERSPACE_JUMP</Alternate_Name_Text>
+							<Alternate_Description_Text>TEXT_DESCRIPTION_ABILITY_HYPERSPACE_JUMP_GENERIC_01</Alternate_Description_Text>		  	
+							<Alternate_Icon_Name>I_SA_FORCE_CONFUSE.TGA</Alternate_Icon_Name>	
+							<SFXEvent_Target_Ability></SFXEvent_Target_Ability>
+							<SFXEvent_GUI_Unit_Ability_Activated></SFXEvent_GUI_Unit_Ability_Activated>
+							<SFXEvent_GUI_Unit_Ability_Deactivated />
+							<Area_Effect_Decal_Distance> 20 </Area_Effect_Decal_Distance> <!--was 800-->
+						  </Unit_Ability> 							
+      </Unit_Abilities_Data>
+				<Abilities SubObjectList="Yes">
+						<Ion_Cannon_Shot_Attack_Ability Name="Tauri_Hero_Mitchell_Ion_Cannon_Shot">
+								<Activation_Style> User_Input </Activation_Style>
+								<!-- We only consider the following unit types "valid targets": -->
+								<Applicable_Unit_Categories>All</Applicable_Unit_Categories>
+								<Applicable_Unit_Types />
+						</Ion_Cannon_Shot_Attack_Ability>
+								   <Force_Healing_Ability Name="Tauri_Battlefield_Auto_Repair">
+				      <Activation_Style>Space_Automatic</Activation_Style>
+				      <Heal_Range>0.0</Heal_Range>
+				      <Heal_Percent>0.004</Heal_Percent>
+				      <Heal_Amount>1.0</Heal_Amount>
+				      <Heal_Interval_In_Secs>2.0</Heal_Interval_In_Secs>
+				      <Single_Target_Heal>No</Single_Target_Heal>
+				      <Owner_Particle_Bone_Name>ROOT</Owner_Particle_Bone_Name>
+				   </Force_Healing_Ability>
+				</Abilities>
+      <Lua_Script>ObjectScript_Ability_Hyperspace_Jump</Lua_Script>
+	</SpaceUnit>
+
+   <Squadron Name="Tauri_Hero_X_302_Squadron">
+	  <Text_ID>TEXT_TAURI_SPACE_HERO_X_302</Text_ID>
+	  <Encyclopedia_Text>TEXT_DESCRIPTION_TAURI_X_302_SPACE</Encyclopedia_Text>
+	  <Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_X_302</Encyclopedia_Unit_Class>
+      <Icon_Name>TAURI_SPACE_HERO_X_302.TGA</Icon_Name>
+      <Galactic_Fleet_Override_Model_Name>Tauri_Space_Unit_F-302.ALO</Galactic_Fleet_Override_Model_Name>	  
+      <GUI_Row>1</GUI_Row>
+      <Is_Named_Hero>No</Is_Named_Hero>
+	  <Is_Generic_Hero>Yes</Is_Generic_Hero>
+      <Show_Hero_Head>No</Show_Hero_Head>		  
+      <Is_Dummy>Yes</Is_Dummy>
+      <Formation_Priority>1</Formation_Priority>
+      <Is_Escort>No</Is_Escort>
+      <Is_Bomber>Yes</Is_Bomber>
+      <Affiliation>Underworld</Affiliation>
+      <Build_Initially_Locked>Yes</Build_Initially_Locked>
+      <Build_Can_Be_Unlocked_By_Slicer>No</Build_Can_Be_Unlocked_By_Slicer>
+
+      <Political_Control>0</Political_Control>
+      <Tech_Level>5</Tech_Level>
+      <Required_Star_Base_Level>1</Required_Star_Base_Level>
+      <Behavior>DUMMY_SPACE_FIGHTER_SQUADRON</Behavior>
+      <Squadron_Units>Tauri_Hero_X_302</Squadron_Units>
+      <Squadron_Offsets>60.0,0.0,0.0</Squadron_Offsets>
+      <Squadron_Offsets>0.0,30.0,0.0</Squadron_Offsets>
+      <Squadron_Offsets>0.0,-30.0,0.0</Squadron_Offsets>
+      <FormationOrder>1</FormationOrder>
+      <Squadron_Formation_Error_Tolerance>35.0</Squadron_Formation_Error_Tolerance>
+      <Guard_Chase_Range>1000.0</Guard_Chase_Range>
+      <Idle_Chase_Range>200.0</Idle_Chase_Range>
+      <Attack_Move_Response_Range>300.0</Attack_Move_Response_Range>
+      <Autonomous_Move_Extension_Vs_Attacker>500.0</Autonomous_Move_Extension_Vs_Attacker>
+      <Property_Flags> SmallShip </Property_Flags>
+      <Score_Cost_Credits> 500</Score_Cost_Credits>
+      <Population_Value>1</Population_Value>
+      <Tactical_Production_Queue>Tactical_Units</Tactical_Production_Queue>
+
+		<SFXEvent_Fire>Weapon_Railgun_Tauri_Fighter</SFXEvent_Fire>
+		<SFXEvent_Attack>Unit_Attack_FB</SFXEvent_Attack>
+		<SFXEvent_Fleet_Move>Unit_Move_FB</SFXEvent_Fleet_Move>
+		<SFXEvent_Guard>Unit_Guard_FB</SFXEvent_Guard>
+		<SFXEvent_Health_Critical_Warning></SFXEvent_Health_Critical_Warning> 
+		<SFXEvent_Health_Low_Warning></SFXEvent_Health_Low_Warning>
+		<SFXEvent_Move>Unit_Move_FB</SFXEvent_Move>
+		<SFXEvent_Move_Into_Asteroid_Field></SFXEvent_Move_Into_Asteroid_Field>
+		<SFXEvent_Move_Into_Nebula></SFXEvent_Move_Into_Nebula>
+		<SFXEvent_Select>Unit_Select_FB</SFXEvent_Select>
+		<SFXEvent_Stop></SFXEvent_Stop>
+		<SFXEvent_Engine_Idle_Loop>Engine_Tauri_F302_Idle</SFXEvent_Engine_Idle_Loop>
+		<SFXEvent_Engine_Moving_Loop>Engine_Tauri_F302</SFXEvent_Engine_Moving_Loop>
+		<SFXEvent_Engine_Cinematic_Focus_Loop>Engine_Tauri_F302</SFXEvent_Engine_Cinematic_Focus_Loop>
+
+      <Create_Team_Type>Tauri_Hero_X_302_Container</Create_Team_Type>
+
+      <Unit_Abilities_Data SubObjectList="Yes">
+						<Unit_Ability>
+								<Type>ION_CANNON_SHOT</Type>
+								<GUI_Activated_Ability_Name>Tauri_Hero_Mitchell_Ion_Cannon_Shot</GUI_Activated_Ability_Name>
+								<SFXEvent_GUI_Unit_Ability_Activated></SFXEvent_GUI_Unit_Ability_Activated>
+								<Projectile_Types_Override>Proj_Tauri_Mitchell_Lucky_Shot</Projectile_Types_Override>
+								<Recharge_Seconds>120.0</Recharge_Seconds>
+								<Alternate_Name_Text>TEXT_TOOLTIP_ABILITY_LUCKY_SHOT_NAME</Alternate_Name_Text>
+								<Alternate_Description_Text>TEXT_DESCRIPTION_ABILITY_LUCKY_SHOT_MITCHELL_SPACE</Alternate_Description_Text>
+								<Supports_Autofire>False</Supports_Autofire>
+								<Alternate_Icon_Name>I_SA_LUCKY_ROCKET.tga</Alternate_Icon_Name>
+						</Unit_Ability>
+						  <Unit_Ability>           
+							<Type>WEAKEN_ENEMY</Type>
+							<Expiration_Seconds>1000000</Expiration_Seconds>
+							<Recharge_Seconds>1000000</Recharge_Seconds>
+							<Effective_Radius> 3000 </Effective_Radius>
+							<Spawned_Object_Type>Hyperspace_Jump_Target</Spawned_Object_Type>
+							<Bomb_Countdown_Seconds>-1</Bomb_Countdown_Seconds>
+							<Alternate_Name_Text>TEXT_ABILITY_HYPERSPACE_JUMP</Alternate_Name_Text>
+							<Alternate_Description_Text>TEXT_DESCRIPTION_ABILITY_HYPERSPACE_JUMP_GENERIC_01</Alternate_Description_Text>		  	
+							<Alternate_Icon_Name>I_SA_FORCE_CONFUSE.TGA</Alternate_Icon_Name>	
+							<SFXEvent_Target_Ability></SFXEvent_Target_Ability>
+							<SFXEvent_GUI_Unit_Ability_Activated></SFXEvent_GUI_Unit_Ability_Activated>
+							<SFXEvent_GUI_Unit_Ability_Deactivated />
+							<Area_Effect_Decal_Distance> 20 </Area_Effect_Decal_Distance> <!--was 800-->
+						  </Unit_Ability> 							
+      </Unit_Abilities_Data>
+				<Abilities SubObjectList="Yes">
+						<Ion_Cannon_Shot_Attack_Ability Name="Tauri_Hero_Mitchell_Ion_Cannon_Shot">
+								<Activation_Style> User_Input </Activation_Style>
+								<!-- We only consider the following unit types "valid targets": -->
+								<Applicable_Unit_Categories>All</Applicable_Unit_Categories>
+								<Applicable_Unit_Types />
+						</Ion_Cannon_Shot_Attack_Ability>
+				</Abilities>
+   </Squadron>
+
+   <Container Name="Tauri_Hero_X_302_Container">
+      <Variant_Of_Existing_Type>Template_Space_Container</Variant_Of_Existing_Type>
+	  <Text_ID>TEXT_TAURI_SPACE_HERO_X_302</Text_ID>
+	  <Encyclopedia_Text>TEXT_DESCRIPTION_TAURI_X_302_SPACE</Encyclopedia_Text>
+	  <Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_X_302</Encyclopedia_Unit_Class>
+      <Show_Hero_Head>No</Show_Hero_Head>	  
+      <Icon_Name>TAURI_SPACE_HERO_X_302.TGA</Icon_Name>
+      <SpaceBehavior> REVEAL, ABILITY_COUNTDOWN</SpaceBehavior>
+      <Max_Speed>6.5</Max_Speed>
+      <Min_Speed>1.5</Min_Speed>
+      <Hyperspace>Yes</Hyperspace>
+      <CategoryMask> Fighter | AntiCapital | SpaceHero</CategoryMask>
+      <Unit_Abilities_Data SubObjectList="Yes">
+						<Unit_Ability>
+								<Type>ION_CANNON_SHOT</Type>
+								<GUI_Activated_Ability_Name>Tauri_Hero_Mitchell_Ion_Cannon_Shot</GUI_Activated_Ability_Name>
+								<SFXEvent_GUI_Unit_Ability_Activated></SFXEvent_GUI_Unit_Ability_Activated>
+								<Projectile_Types_Override>Proj_Tauri_Mitchell_Lucky_Shot</Projectile_Types_Override>
+								<Recharge_Seconds>120.0</Recharge_Seconds>
+								<Alternate_Name_Text>TEXT_TOOLTIP_ABILITY_LUCKY_SHOT_NAME</Alternate_Name_Text>
+								<Alternate_Description_Text>TEXT_DESCRIPTION_ABILITY_LUCKY_SHOT_MITCHELL_SPACE</Alternate_Description_Text>
+								<Supports_Autofire>False</Supports_Autofire>
+								<Alternate_Icon_Name>I_SA_LUCKY_ROCKET.tga</Alternate_Icon_Name>
+						</Unit_Ability>
+						  <Unit_Ability>           
+							<Type>WEAKEN_ENEMY</Type>
+							<Expiration_Seconds>1000000</Expiration_Seconds>
+							<Recharge_Seconds>1000000</Recharge_Seconds>
+							<Effective_Radius> 3000 </Effective_Radius>
+							<Spawned_Object_Type>Hyperspace_Jump_Target</Spawned_Object_Type>
+							<Bomb_Countdown_Seconds>-1</Bomb_Countdown_Seconds>
+							<Alternate_Name_Text>TEXT_ABILITY_HYPERSPACE_JUMP</Alternate_Name_Text>
+							<Alternate_Description_Text>TEXT_DESCRIPTION_ABILITY_HYPERSPACE_JUMP_GENERIC_01</Alternate_Description_Text>		  	
+							<Alternate_Icon_Name>I_SA_FORCE_CONFUSE.TGA</Alternate_Icon_Name>	
+							<SFXEvent_Target_Ability></SFXEvent_Target_Ability>
+							<SFXEvent_GUI_Unit_Ability_Activated></SFXEvent_GUI_Unit_Ability_Activated>
+							<SFXEvent_GUI_Unit_Ability_Deactivated />
+							<Area_Effect_Decal_Distance> 20 </Area_Effect_Decal_Distance> <!--was 800-->
+						  </Unit_Ability> 							
+      </Unit_Abilities_Data>
+				<Abilities SubObjectList="Yes">
+						<Ion_Cannon_Shot_Attack_Ability Name="Tauri_Hero_Mitchell_Ion_Cannon_Shot">
+								<Activation_Style> User_Input </Activation_Style>
+								<!-- We only consider the following unit types "valid targets": -->
+								<Applicable_Unit_Categories>All</Applicable_Unit_Categories>
+								<Applicable_Unit_Types />
+						</Ion_Cannon_Shot_Attack_Ability>
+				</Abilities>
+   </Container>
+		
+		<Projectile Name="Proj_X302_Railgun">
+				<Variant_Of_Existing_Type>Proj_Tauri_Small_Railgun_General</Variant_Of_Existing_Type>
+				<Projectile_Damage>9.0</Projectile_Damage>
+		</Projectile>
+
+		<Projectile Name="Proj_X302_AFK">
+				<Variant_Of_Existing_Type>Proj_Tauri_Fighter_Missile_General</Variant_Of_Existing_Type>
+				<Projectile_Damage>30.0</Projectile_Damage>
+		</Projectile>			
+</X302>

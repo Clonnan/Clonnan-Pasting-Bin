@@ -1,0 +1,185 @@
+<?xml version="1.0"?>
+<Asgard>
+
+   <SpaceUnit Name="Tauri_Hero_Odin">
+      <Variant_Of_Existing_Type>Template_Space_Unit_Heavy_Battleship</Variant_Of_Existing_Type>
+      <Text_ID>TEXT_TAURI_SPACE_HERO_ODIN</Text_ID>
+      <Encyclopedia_Text>TEXT_DESCRIPTION_TAURI_ODIN_SPACE</Encyclopedia_Text>
+      <Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_ODIN</Encyclopedia_Unit_Class>
+      <Encyclopedia_Good_Against> Interdictor_Cruiser Corellian_Gunboat Star_Destroyer </Encyclopedia_Good_Against>
+      <Encyclopedia_Vulnerable_To> X-Wing Y-Wing TIE_Defender </Encyclopedia_Vulnerable_To>
+      <Icon_Name>TAURI_SPACE_HERO_ODIN.TGA</Icon_Name>
+      <Space_Model_Name>Tauri_Space_Hero_Odin.alo</Space_Model_Name>
+      <Radar_Icon_Name>I_RADAR_ODINS_SHIP.TGA</Radar_Icon_Name>
+      <Radar_Icon_Size>0.13 0.10</Radar_Icon_Size>
+      <Scale_Factor>0.8</Scale_Factor>
+      <Select_Box_Scale>1500</Select_Box_Scale>
+      <Select_Box_Z_Adjust>-700</Select_Box_Z_Adjust>
+      <Layer_Z_Adjust>-475.0</Layer_Z_Adjust>
+      <Custom_Hard_XExtent> 320.0 </Custom_Hard_XExtent>
+      <Custom_Hard_YExtent> 320.0 </Custom_Hard_YExtent>
+      <Affiliation>Underworld</Affiliation>
+      <SpaceBehavior>SIMPLE_SPACE_LOCOMOTOR, ASTEROID_FIELD_DAMAGE, ABILITY_COUNTDOWN, DAMAGE_TRACKING, HIDE_WHEN_FOGGED, ION_STUN_EFFECT, NEBULA, POWERED, REVEAL, SELECTABLE, SHIELDED, TARGETING, UNIT_AI</SpaceBehavior>
+      <HardPoints>
+         Odin_00, Odin_01, Odin_02,
+         Odin_03, Odin_04, Odin_05,
+         Odin_06, Odin_07, Odin_08,
+         Odin_09_Shield_Generator,
+         Odin_10_Engine
+      </HardPoints>
+
+
+      <CategoryMask>Capital | SpaceHero | AntiCapital</CategoryMask>
+      <AI_Combat_Power>7000</AI_Combat_Power>
+      <Ranking_In_Category>7</Ranking_In_Category>
+      <Build_Limit_Current_Per_Player>1</Build_Limit_Current_Per_Player>
+      <Is_Named_Hero>No</Is_Named_Hero>
+      <Is_Generic_Hero>Yes</Is_Generic_Hero>
+      <Show_Hero_Head>Yes</Show_Hero_Head>
+
+      <Tactical_Health>2000</Tactical_Health>
+      <Shield_Points>4000</Shield_Points>
+      <Shield_Refresh_Rate>75</Shield_Refresh_Rate>
+
+      <Max_Speed>1.9</Max_Speed>
+      <Max_Rate_Of_Turn>0.4</Max_Rate_Of_Turn>
+      <OverrideAcceleration> .02 </OverrideAcceleration>
+      <OverrideDeceleration> .02 </OverrideDeceleration>
+      <Max_Rate_Of_Roll>0.2</Max_Rate_Of_Roll>
+      <Bank_Turn_Angle>25</Bank_Turn_Angle>
+      <Max_Thrust>0.2</Max_Thrust>
+
+      <Space_FOW_Reveal_Range>3000.0</Space_FOW_Reveal_Range>
+      <Targeting_Max_Attack_Distance>2000.0</Targeting_Max_Attack_Distance>
+      <Targeting_Priority_Set>SpaceArtillery</Targeting_Priority_Set>
+
+      <SFXEvent_Attack>Unit_Attack_Asgard_Oneill</SFXEvent_Attack>
+      <SFXEvent_Fleet_Move>Unit_Move_Asgard_Oneill</SFXEvent_Fleet_Move>
+      <SFXEvent_Health_Critical_Warning>Unit_CriticalHP_Asgard_Oneill</SFXEvent_Health_Critical_Warning>
+      <SFXEvent_Move>Unit_Move_Asgard_Oneill</SFXEvent_Move>
+      <SFXEvent_Select>Unit_Select_Asgard_Oneill</SFXEvent_Select>
+      <Death_SFXEvent_Start_Die>Unit_Defeat_Asgard_ONeill</Death_SFXEvent_Start_Die>
+
+      <SFXEvent_Engine_Idle_Loop> Engine_Asgard_Heavy_Idle </SFXEvent_Engine_Idle_Loop>
+      <SFXEvent_Engine_Moving_Loop> Engine_Asgard_Heavy </SFXEvent_Engine_Moving_Loop>
+      <SFXEvent_Engine_Cinematic_Focus_Loop> Engine_Asgard_Heavy_Cinematic </SFXEvent_Engine_Cinematic_Focus_Loop>
+
+      <Death_Clone>Damage_Normal, Odin_Death_Clone</Death_Clone>
+
+      <Tactical_Build_Cost_Multiplayer>10000</Tactical_Build_Cost_Multiplayer>
+      <Tactical_Build_Time_Seconds>140</Tactical_Build_Time_Seconds>
+      <Population_Value>14</Population_Value>
+      <Unit_Abilities_Data SubObjectList="Yes">
+         <Unit_Ability>
+            <Type>DEFEND</Type>
+            <Alternate_Icon_Name>I_SA_SHIELD_BOOST_ODIN.TGA</Alternate_Icon_Name>
+            <Alternate_Name_Text>TEXT_TOOLTIP_ABILITY_DEFEND_NAME</Alternate_Name_Text>
+            <Alternate_Description_Text>TEXT_DESCRIPTION_ABILITY_SHIELDBOOST_ODINS_SHIP</Alternate_Description_Text>
+            <Expiration_Seconds></Expiration_Seconds>
+            <Mod_Multiplier>WEAPON_DELAY_MULTIPLIER,  1.5f</Mod_Multiplier>
+            <Mod_Multiplier>SHIELD_REGEN_MULTIPLIER,  0.5f</Mod_Multiplier>
+            <Mod_Multiplier>SHIELD_REGEN_INTERVAL_MULTIPLIER,  0.1f</Mod_Multiplier>
+            <Recharge_Seconds>45</Recharge_Seconds>
+            <Supports_Autofire>False</Supports_Autofire>
+         </Unit_Ability>
+      </Unit_Abilities_Data>
+      <Lua_Script>ObjectScript_HW_Huge</Lua_Script>
+         <Abilities SubObjectList="Yes">
+         <Force_Healing_Ability Name="Asgard_Advanced_Auto_Repair">
+            <Activation_Style>Space_Automatic</Activation_Style>
+            <Heal_Range>0.0</Heal_Range>
+            <Heal_Percent>0.008</Heal_Percent>
+            <Heal_Amount>2.0</Heal_Amount>
+            <Heal_Interval_In_Secs>2.0</Heal_Interval_In_Secs>
+            <Single_Target_Heal>No</Single_Target_Heal>
+            <Owner_Particle_Bone_Name>ROOT</Owner_Particle_Bone_Name>
+         </Force_Healing_Ability>
+      </Abilities>
+   </SpaceUnit>
+
+   <UniqueUnit Name="Tauri_Hero_Odins_Ship">
+      <Variant_Of_Existing_Type>Tauri_Hero_Odin</Variant_Of_Existing_Type>
+      <Text_ID>TEXT_TAURI_SPACE_UNIT_ODINS_SHIP</Text_ID>
+      <Encyclopedia_Text>TEXT_DESCRIPTION_TAURI_ODINS_SHIP_SGU_SPACE</Encyclopedia_Text>
+      <Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_ODINS_SHIP</Encyclopedia_Unit_Class>
+      <Icon_Name>TAURI_SPACE_UNIT_ODINS_SHIP.TGA</Icon_Name>
+      <Shield_Points>4500</Shield_Points>
+      <Shield_Refresh_Rate>75</Shield_Refresh_Rate>
+	  <HardPoints>
+         Odin_00, Odin_01, Odin_02,
+         Odin_03_GC, Odin_04_GC, Odin_05_GC,
+         Odin_06_GC, Odin_07_GC, Odin_08_GC,
+         Odin_09_Shield_Generator,
+         Odin_10_Engine
+      </HardPoints>
+      <Unit_Abilities_Data SubObjectList="Yes">
+         <Unit_Ability>
+            <Type>DEFEND</Type>
+            <Alternate_Icon_Name>I_SA_SHIELD_BOOST_ODIN.TGA</Alternate_Icon_Name>
+            <Alternate_Name_Text>TEXT_TOOLTIP_ABILITY_DEFEND_NAME</Alternate_Name_Text>
+            <Alternate_Description_Text>TEXT_DESCRIPTION_ABILITY_SHIELDBOOST_ODINS_SHIP</Alternate_Description_Text>
+            <Expiration_Seconds></Expiration_Seconds>
+            <Mod_Multiplier>WEAPON_DELAY_MULTIPLIER,  2.0f</Mod_Multiplier>
+            <Mod_Multiplier>SHIELD_REGEN_MULTIPLIER,  0.35f</Mod_Multiplier>
+            <Mod_Multiplier>SHIELD_REGEN_INTERVAL_MULTIPLIER,  0.1f</Mod_Multiplier>
+            <Recharge_Seconds>45</Recharge_Seconds>
+            <Supports_Autofire>False</Supports_Autofire>
+         </Unit_Ability>
+      </Unit_Abilities_Data>
+   </UniqueUnit>
+
+   <!--This unit is used for the skirmish map-->
+   <UniqueUnit Name="Tauri_Hero_Odin_SK">
+      <Variant_Of_Existing_Type>Tauri_Hero_Odin</Variant_Of_Existing_Type>
+      <Text_ID>TEXT_SUPERGATE_UNIT_ODINS_SHIP</Text_ID>
+      <Encyclopedia_Text>TEXT_DESCRIPTION_SUPERGATE_UNIT_ODINS_SHIP</Encyclopedia_Text>
+      <Icon_Name>TAURI_SPACE_UNIT_ODINS_SHIP.TGA</Icon_Name>
+      <Tactical_Build_Cost_Multiplayer>6000</Tactical_Build_Cost_Multiplayer>
+      <Tactical_Build_Time_Seconds>70</Tactical_Build_Time_Seconds>
+      <Tactical_Build_Prerequisites>Odin_Unlock_1_Upgrade, Odin_Unlock_2_Upgrade, Odin_Unlock_3_Upgrade, Odin_Unlock_4_Upgrade</Tactical_Build_Prerequisites>
+      <Tactical_Production_Queue>Tactical_Units</Tactical_Production_Queue>
+      <Affiliation>Rebel, Empire, Underworld, Asuran</Affiliation>
+      <Build_Tab_Space_Units>Yes</Build_Tab_Space_Units>
+      <Tech_Level>99</Tech_Level>
+      <Build_Limit_Current_For_All_Allies>-1</Build_Limit_Current_For_All_Allies>
+      <Build_Limit_Lifetime_For_All_Allies>-1</Build_Limit_Lifetime_For_All_Allies>
+      <Build_Limit_Lifetime_Per_Player>-1</Build_Limit_Lifetime_Per_Player>
+      <Build_Limit_Current_Per_Player>1</Build_Limit_Current_Per_Player>
+   </UniqueUnit>
+
+   <SpaceUnit Name="Odin_Death_Clone">
+      <Variant_Of_Existing_Type>Template_Space_Deathclone</Variant_Of_Existing_Type>
+      <Affiliation>Underworld</Affiliation>
+      <Space_Model_Name>Tauri_Space_Hero_Odin_D.alo</Space_Model_Name>
+      <Scale_Factor>0.8</Scale_Factor>
+   </SpaceUnit>
+
+
+   <Projectile Name="Proj_Odin_Superlaser">
+      <Variant_Of_Existing_Type>Proj_Tauri_Superlaser</Variant_Of_Existing_Type>
+      <Projectile_Does_Hitpoint_Damage>Yes</Projectile_Does_Hitpoint_Damage>
+      <Projectile_Damage>800.0</Projectile_Damage>
+      <Projectile_Max_Flight_Distance>1800.0</Projectile_Max_Flight_Distance>
+   </Projectile>
+
+   <Projectile Name="Proj_Odin_Heavy_Plasma">
+      <Variant_Of_Existing_Type>Proj_Asgard_Heavy_Laser_General</Variant_Of_Existing_Type>
+      <Projectile_Damage>15.0</Projectile_Damage>
+   </Projectile>
+
+   <Projectile Name="Proj_Odin_Medium_Plasma">
+      <Variant_Of_Existing_Type>Proj_Asgard_Medium_Laser_General</Variant_Of_Existing_Type>
+      <Projectile_Damage>10.0</Projectile_Damage>
+   </Projectile>
+   
+   <Projectile Name="Proj_Odin_Heavy_Plasma_GC">
+      <Variant_Of_Existing_Type>Proj_Asgard_Heavy_Laser_General</Variant_Of_Existing_Type>
+      <Projectile_Damage>40.0</Projectile_Damage>
+   </Projectile>
+
+   <Projectile Name="Proj_Odin_Medium_Plasma_GC">
+      <Variant_Of_Existing_Type>Proj_Asgard_Medium_Laser_General</Variant_Of_Existing_Type>
+      <Projectile_Damage>28.0</Projectile_Damage>
+   </Projectile>  
+
+</Asgard>

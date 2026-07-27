@@ -1,0 +1,2396 @@
+<?xml version="1.0"?>
+<Tauri_Ground_Buildings>
+
+<!--========================================================================================================
+#    Base Buildings
+========================================================================================================-->
+
+   <!-- Command Center -->
+   <Ground_Structure_Tauri Name="U_Ground_Palace">
+      <Variant_Of_Existing_Type>Template_Ground_Structure_Big_Base_Building_Spawn_HQ</Variant_Of_Existing_Type>
+      <Text_ID>TEXT_TAURI_GROUND_BUILDING_HEADQUARTERS</Text_ID>
+      <Encyclopedia_Text> TEXT_DESCRIPTION_TAURI_HEADQUARTERS_GC_GROUND </Encyclopedia_Text>
+      <MP_Encyclopedia_Text> TEXT_DESCRIPTION_TAURI_HEADQUARTERS_SK_GROUND </MP_Encyclopedia_Text>
+      <Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_TAURI_HEADQUARTERS</Encyclopedia_Unit_Class>
+      <Icon_Name>TAURI_LAND_BUILDING_COMMANDCENTER.TGA</Icon_Name>
+      <Land_Model_Name>Tauri_Land_Building_Command_Center.alo</Land_Model_Name>
+      <Radar_Icon_Name>I_RADAR_TAURI_HEADQUARTERS.TGA</Radar_Icon_Name>
+      <Radar_Icon_Size>0.075  0.075</Radar_Icon_Size>
+      <Scale_Factor>1.2</Scale_Factor>
+      <Select_Box_Scale>230</Select_Box_Scale>
+      <Loop_Idle_Anim_00>Yes</Loop_Idle_Anim_00>
+
+      <Destruction_Survivors>
+         Underworld_Merc_Squad, 1.0
+         Underworld_Ewok_Handler_Company, 1.0
+      </Destruction_Survivors>
+
+      <Starting_Spawned_Units_Tech_0>Underworld_Merc_Squad, 2</Starting_Spawned_Units_Tech_0><!--Marine-->
+      <Reserve_Spawned_Units_Tech_0>Underworld_Merc_Squad, -1</Reserve_Spawned_Units_Tech_0>
+      <Starting_Spawned_Units_Tech_0>Underworld_Saboteur_Team, 1</Starting_Spawned_Units_Tech_0><!--SG_Team-->
+      <Reserve_Spawned_Units_Tech_0>Underworld_Saboteur_Team, -1</Reserve_Spawned_Units_Tech_0>
+      <Starting_Spawned_Units_Tech_0>Underworld_Ewok_Handler_Company, 1</Starting_Spawned_Units_Tech_0><!--RPG-->
+      <Reserve_Spawned_Units_Tech_0>Underworld_Ewok_Handler_Company, -1</Reserve_Spawned_Units_Tech_0>
+      <Starting_Spawned_Units_Tech_0>Scavenger_Droid_Company, 1</Starting_Spawned_Units_Tech_0><!--Stinger-->
+      <Reserve_Spawned_Units_Tech_0>Scavenger_Droid_Company, -1</Reserve_Spawned_Units_Tech_0>
+      <Spawned_Squadron_Location_Bones>SPAWN_00</Spawned_Squadron_Location_Bones>
+
+      <Land_Damage_Thresholds>1, 0.66, 0.33, 0</Land_Damage_Thresholds>
+      <Land_Damage_Alternates>0, 1, 2, 3</Land_Damage_Alternates>
+      <Land_Damage_SFX>null,SFX_Grenade_Detonation, SFX_Grenade_Detonation,null</Land_Damage_SFX>
+
+      <SFXEvent_Select>Structure_Command_Center_Select_SFX</SFXEvent_Select>
+      <SFXEvent_Ambient_Loop>Structure_Communications_Array_Loop</SFXEvent_Ambient_Loop>
+
+      <Tech_Level>0</Tech_Level>
+      <Affiliation>Underworld</Affiliation>
+      <Required_Ground_Base_Level>0</Required_Ground_Base_Level>
+
+      <Tactical_Buildable_Objects_Multiplayer>
+         Underworld,
+            <!--Bossk_Team,-->           <!-- SG1 -->
+            ONeill_Team,
+            Carter_Team,
+            Daniel_Team,
+            Tealc_Team,
+            IG88_Team,            <!-- Bratac -->
+            <!-- Silri_Team, -->           <!-- Not used -->
+            <!-- Tyber_Zann_Team, -->      <!-- Not used -->
+            Urai_Fen_Team,        <!-- Selmak -->
+            UC_Level_Two_Tech_Upgrade,
+            UC_Level_Three_Tech_Upgrade,
+      </Tactical_Buildable_Objects_Multiplayer>
+	  
+	  <Tactical_Buildable_Objects_Campaign>
+			Underworld,
+                T_Ground_Turret_Defense_Upgrade
+	  </Tactical_Buildable_Objects_Campaign>
+
+      <Abilities SubObjectList="Yes">
+         <Force_Healing_Ability Name="U_Palace_Self_Repair">
+            <Activation_Style>Skirmish_Automatic</Activation_Style>
+            <Heal_Percent>0.015</Heal_Percent>
+            <Heal_Interval_In_Secs>5.0</Heal_Interval_In_Secs>
+            <Single_Target_Heal>Yes</Single_Target_Heal>
+            <Owner_Particle_Bone_Name>ROOT</Owner_Particle_Bone_Name>
+            <Owner_Light_Effect_Type>Color_Flash</Owner_Light_Effect_Type>
+            <Owner_Light_Effect_Color>1.2, 1.2, 1.2</Owner_Light_Effect_Color>
+            <Owner_Light_Effect_Duration>0.6</Owner_Light_Effect_Duration>
+            <Owner_Light_Effect_Pulse_Count>1</Owner_Light_Effect_Pulse_Count>
+         </Force_Healing_Ability>
+         <Income_Stream_Ability Name="Underworld_Palace_Income_Stream">
+            <Base_Income_Value>50</Base_Income_Value>
+            <Base_Interval_In_Secs>5</Base_Interval_In_Secs>
+            <Split_Income_With_Allies>Yes</Split_Income_With_Allies>
+            <Split_Favors_Owner>No</Split_Favors_Owner>
+            <Full_Amount_To_Everyone>Yes</Full_Amount_To_Everyone>
+         </Income_Stream_Ability>
+      </Abilities>
+   </Ground_Structure_Tauri>
+
+   <Ground_Structure_Tauri Name="Underworld_Palace_Build_Pad">
+      <Variant_Of_Existing_Type>Template_Ground_Structure_Build_Pad</Variant_Of_Existing_Type>
+      <Land_Model_Name>Tauri_Land_Building_Command_Center_BP.alo</Land_Model_Name>
+      <Scale_Factor>1.2</Scale_Factor>
+      <Affiliation>Underworld</Affiliation>
+      <Tactical_Buildable_Objects_Multiplayer>Underworld, UC_Underworld_Palace</Tactical_Buildable_Objects_Multiplayer>
+      <Lua_Script>ObjectScript_BBS_Enabler</Lua_Script>
+   </Ground_Structure_Tauri>
+   <Ground_Structure_Tauri Name="UC_Underworld_Palace">
+      <Variant_Of_Existing_Type>Template_Ground_Structure_UC</Variant_Of_Existing_Type>
+      <Text_ID>TEXT_TAURI_GROUND_BUILDING_HEADQUARTERS</Text_ID>
+      <Encyclopedia_Text> TEXT_DESCRIPTION_TAURI_HEADQUARTERS_GC_GROUND </Encyclopedia_Text>
+      <MP_Encyclopedia_Text> TEXT_DESCRIPTION_TAURI_HEADQUARTERS_SK_GROUND </MP_Encyclopedia_Text>
+      <Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_TAURI_HEADQUARTERS</Encyclopedia_Unit_Class>
+      <Icon_Name>TAURI_LAND_BUILDING_COMMANDCENTER.TGA</Icon_Name>
+      <Land_Model_Name>Tauri_Land_Building_Command_Center_UC.alo</Land_Model_Name>
+      <Scale_Factor>1.2</Scale_Factor>
+      <Affiliation>Underworld</Affiliation>
+      <Tactical_Buildable_Constructed>U_Ground_Palace</Tactical_Buildable_Constructed>
+      <Tactical_Build_Start_Lower_Z>0</Tactical_Build_Start_Lower_Z>
+      <Tactical_Health>4000</Tactical_Health>
+      <Tactical_Build_Cost_Multiplayer>2200</Tactical_Build_Cost_Multiplayer>
+      <Tactical_Build_Time_Seconds>45</Tactical_Build_Time_Seconds>
+   </Ground_Structure_Tauri>
+   
+
+   <!-- Airfield - Hangar -->
+   <Ground_Structure_Tauri Name="U_Ground_Droid_Works">
+      <Variant_Of_Existing_Type>Template_Ground_Structure_Big_Base_Building_Spawn</Variant_Of_Existing_Type>
+      <Text_ID>TEXT_TAURI_GROUND_BUILDING_AIRFIELD</Text_ID>
+      <Encyclopedia_Text> TEXT_DESCRIPTION_TAURI_AIRFIELD_GC_GROUND </Encyclopedia_Text>
+      <MP_Encyclopedia_Text> TEXT_DESCRIPTION_TAURI_AIRFIELD_SK_GROUND </MP_Encyclopedia_Text>
+      <Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_TAURI_AIRFIELD</Encyclopedia_Unit_Class>
+      <Icon_Name>TAURI_LAND_BUILDING_AIRFIELD.TGA</Icon_Name>
+      <Land_Model_Name>Tauri_Land_Building_Airfield.alo</Land_Model_Name>
+      <Radar_Icon_Name>I_RADAR_TAURI_AIRFIELD.TGA</Radar_Icon_Name>
+      <Radar_Icon_Size>0.075  0.08</Radar_Icon_Size>
+      <Loop_Idle_Anim_00>Yes</Loop_Idle_Anim_00>
+      <Select_Box_Scale>240</Select_Box_Scale>
+      <Scale_Factor>1.1</Scale_Factor>
+      <Ranged_Target_Z_Adjust>5.0</Ranged_Target_Z_Adjust>
+      <GUI_Bounds_Scale>0.5</GUI_Bounds_Scale>
+      <Affiliation>Underworld</Affiliation>
+      <Tech_Level>0</Tech_Level>
+
+      <Tactical_Buildable_Objects_Multiplayer>
+         Underworld,
+            Tauri_B302_Land_Company,
+            Tauri_F302_Land_Company,
+            Tauri_UAV_Company
+      </Tactical_Buildable_Objects_Multiplayer>
+	  
+	  <Tactical_Buildable_Objects_Campaign>
+			Underworld,
+				T_Ground_Air_Unit_Firepower_Upgrade,
+				T_Ground_Air_Unit_Armor_Upgrade,
+                T_Ground_UAV_Sensor_Range_Upgrade
+	  </Tactical_Buildable_Objects_Campaign>
+
+      <Destruction_Survivors>
+         Underworld_Merc_Squad, 1.0
+         Underworld_Ewok_Handler_Company, 1.0
+      </Destruction_Survivors>
+
+      <Land_Damage_Thresholds>1, 0.66, 0.33, 0</Land_Damage_Thresholds>
+      <Land_Damage_Alternates>0, 1, 2, 3</Land_Damage_Alternates>
+      <Land_Damage_SFX>null,SFX_Grenade_Detonation, SFX_Grenade_Detonation,null</Land_Damage_SFX>
+
+      <Starting_Spawned_Units_Tech_0>Tauri_F302_Land, 1</Starting_Spawned_Units_Tech_0>
+      <Reserve_Spawned_Units_Tech_0>Tauri_F302_Land, -1</Reserve_Spawned_Units_Tech_0>
+      <Spawned_Squadron_Delay_Seconds>60</Spawned_Squadron_Delay_Seconds>
+
+      <Required_Ground_Base_Level>0</Required_Ground_Base_Level>
+      <Required_Special_Structures>U_Ground_Palace</Required_Special_Structures>
+      <Required_Planets>Universe_L_Alpha_Site, Universe_L_Asuras, Universe_L_Celestis, Universe_L_Doranda, Universe_L_Earth, Universe_L_Gamma_Site, Universe_L_Genii, Universe_L_Hebridan, Universe_L_Icarus_Base, Universe_L_Juna, Universe_L_Langara, 
+	  Universe_L_Lantea, Universe_L_Latona, Universe_L_Oran, Universe_L_Othala, Universe_L_Sateda, Universe_L_Tegalus, Universe_L_Tollana, Universe_L_Tagrea, Universe_L_Taranis</Required_Planets>
+      <Required_Planets>Allianz_AlphaBasis, Allianz_Erde, Allianz_Juna, Allianz_Langara, Allianz_Latona, Allianz_P3S_114, Allianz_Revanna, Allianz_Tagrea, Allianz_Tollana</Required_Planets>
+      <Required_Planets>Pegasus_G_AlphaBasis_P, Pegasus_G_Asuras, Pegasus_G_Doronda, Pegasus_G_Erde, Pegasus_G_Genii, Pegasus_G_Lantea, Pegasus_G_M35_117, Pegasus_G_Sateda, Pegasus_G_Taranis</Required_Planets>
+      <Required_Planets>Pegasus_K_Asuras, Pegasus_K_Lantea, Pegasus_K_Doranda, Pegasus_K_Genii, Pegasus_K_Sateda, Pegasus_K_Taranis</Required_Planets>
+      <Required_Planets>Universe_S_Earth, Universe_S_Revanna, Universe_S_Genii, Universe_S_Juna, Universe_S_Langara, Universe_S_Lantea, Universe_S_Sateda, Universe_S_Tollana</Required_Planets>
+
+      <Abilities SubObjectList="Yes">
+         <Force_Healing_Ability Name="U_Ground_Droid_Works_Self_Repair">
+            <Activation_Style>Skirmish_Automatic</Activation_Style>
+            <Heal_Percent>0.025</Heal_Percent>
+            <Heal_Interval_In_Secs>5.0</Heal_Interval_In_Secs>
+            <Single_Target_Heal>Yes</Single_Target_Heal>
+            <Owner_Particle_Bone_Name>ROOT</Owner_Particle_Bone_Name>
+            <Owner_Light_Effect_Type>Color_Flash</Owner_Light_Effect_Type>
+            <Owner_Light_Effect_Color>1.2, 1.2, 1.2</Owner_Light_Effect_Color>
+            <Owner_Light_Effect_Duration>0.6</Owner_Light_Effect_Duration>
+            <Owner_Light_Effect_Pulse_Count>1</Owner_Light_Effect_Pulse_Count>
+         </Force_Healing_Ability>
+         <Income_Stream_Ability Name="U_Ground_Droid_Works_Income_Stream">
+            <Base_Income_Value>5</Base_Income_Value>
+            <Base_Interval_In_Secs>5</Base_Interval_In_Secs>
+            <Split_Income_With_Allies>Yes</Split_Income_With_Allies>
+            <Split_Favors_Owner>No</Split_Favors_Owner>
+            <Full_Amount_To_Everyone>Yes</Full_Amount_To_Everyone>
+         </Income_Stream_Ability>
+      </Abilities>
+   </Ground_Structure_Tauri>
+
+   <Ground_Structure_Tauri Name="U_Ground_Droid_Works_Build_Pad">
+      <Variant_Of_Existing_Type>Template_Ground_Structure_Build_Pad</Variant_Of_Existing_Type>
+      <Land_Model_Name>Tauri_Land_Building_Airfield_BP.alo</Land_Model_Name>
+      <Scale_Factor>1.1</Scale_Factor>
+      <Affiliation>Underworld</Affiliation>
+      <Tactical_Buildable_Objects_Multiplayer>Underworld, UC_U_Ground_Droid_Works</Tactical_Buildable_Objects_Multiplayer>
+   </Ground_Structure_Tauri>
+   <Ground_Structure_Tauri Name="UC_U_Ground_Droid_Works">
+      <Variant_Of_Existing_Type>Template_Ground_Structure_UC</Variant_Of_Existing_Type>
+      <Text_ID>TEXT_TAURI_GROUND_BUILDING_AIRFIELD</Text_ID>
+      <Encyclopedia_Text> TEXT_DESCRIPTION_TAURI_AIRFIELD_GC_GROUND </Encyclopedia_Text>
+      <MP_Encyclopedia_Text> TEXT_DESCRIPTION_TAURI_AIRFIELD_SK_GROUND </MP_Encyclopedia_Text>
+      <Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_TAURI_AIRFIELD</Encyclopedia_Unit_Class>
+      <Icon_Name>TAURI_LAND_BUILDING_AIRFIELD.TGA</Icon_Name>
+      <Land_Model_Name>Tauri_Land_Building_Airfield_UC.alo</Land_Model_Name>
+      <Scale_Factor>1.1</Scale_Factor>
+      <Affiliation>Underworld</Affiliation>
+      <Tactical_Buildable_Constructed>U_Ground_Droid_Works</Tactical_Buildable_Constructed>
+      <Tactical_Build_Start_Lower_Z>0</Tactical_Build_Start_Lower_Z>
+      <Tactical_Health>1000</Tactical_Health>
+      <Tactical_Build_Cost_Multiplayer>800</Tactical_Build_Cost_Multiplayer>
+      <Tactical_Build_Time_Seconds>40</Tactical_Build_Time_Seconds>
+   </Ground_Structure_Tauri>
+
+
+   <!-- Vehicle Factory -->
+   <Ground_Structure_Tauri Name="U_Ground_Vehicle_Factory">
+      <Variant_Of_Existing_Type>Template_Ground_Structure_Big_Base_Building_Spawn</Variant_Of_Existing_Type>
+      <Text_ID>TEXT_TAURI_GROUND_BUILDING_VEHICLE_FACTORY</Text_ID>
+      <Encyclopedia_Text> TEXT_DESCRIPTION_TAURI_VEHICLE_FACTORY_GC_GROUND </Encyclopedia_Text>
+      <MP_Encyclopedia_Text> TEXT_DESCRIPTION_TAURI_VEHICLE_FACTORY_SK_GROUND </MP_Encyclopedia_Text>
+      <Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_TAURI_VEHICLE_FACTORY</Encyclopedia_Unit_Class>
+      <Icon_Name>TAURI_LAND_BUILDING_VEHICLEFACTORY.TGA</Icon_Name>
+      <Land_Model_Name>Tauri_Land_Building_Vehicle_Factory.alo</Land_Model_Name>
+      <Radar_Icon_Name>I_RADAR_TAURI_VEHICLE_FACTORY.TGA</Radar_Icon_Name>
+      <Loop_Idle_Anim_00>Yes</Loop_Idle_Anim_00>
+      <Radar_Icon_Size>0.075  0.075</Radar_Icon_Size>
+      <Select_Box_Scale>600</Select_Box_Scale>
+      <Scale_Factor>0.5</Scale_Factor>
+
+      <Destruction_Survivors>
+         Underworld_Merc_Squad, 1.0
+         Underworld_Ewok_Handler_Company, 1.0
+      </Destruction_Survivors>
+
+      <Land_Damage_Thresholds>1, 0.66, 0.33, 0</Land_Damage_Thresholds>
+      <Land_Damage_Alternates>0, 1, 2, 3</Land_Damage_Alternates>
+      <Land_Damage_SFX>null,SFX_Grenade_Detonation, SFX_Grenade_Detonation,null</Land_Damage_SFX>
+
+      <Tech_Level>2</Tech_Level>
+      <Affiliation>Underworld</Affiliation>
+      <Required_Ground_Base_Level>0</Required_Ground_Base_Level>
+      <Required_Special_Structures>U_Ground_Palace</Required_Special_Structures>
+      <SFXEvent_Select>Structure_Light_Factory_Select_SFX</SFXEvent_Select>
+
+      <Starting_Spawned_Units_Tech_0>MZ8_Pulse_Cannon_Tank_Company, 1</Starting_Spawned_Units_Tech_0>
+      <Reserve_Spawned_Units_Tech_0>MZ8_Pulse_Cannon_Tank_Company, -1</Reserve_Spawned_Units_Tech_0>
+      <Spawned_Squadron_Delay_Seconds>50</Spawned_Squadron_Delay_Seconds>
+
+      <Tactical_Buildable_Objects_Multiplayer>
+         Underworld,
+            <!-- MAL_Rocket_Vehicle_Company, Artillery Malp - not used at the moment -->
+            F9TZ_Cloaking_Transport_Company, <!-- FRED -->
+            MZ8_Pulse_Cannon_Tank_Company, <!-- MG Malp -->
+            Canderous_Assault_Tank_Company, <!-- Shield Malp -->
+      </Tactical_Buildable_Objects_Multiplayer>
+	  
+	  <Tactical_Buildable_Objects_Campaign>
+			Underworld,
+				T_Ground_Malp_Engine_Upgrade_1,
+                T_Ground_Malp_Engine_Upgrade_2,
+                T_Ground_Heavy_Vehicle_Armor_Upgrade,
+                T_Ground_MALP_Weapon_Boost_Upgrade,
+				T_Ground_MSG_Shields_Upgrade,
+	  </Tactical_Buildable_Objects_Campaign>
+
+      <Abilities SubObjectList="Yes">
+          <Force_Healing_Ability Name="U_Vehicle_Factory_Self_Repair">
+            <Activation_Style>Skirmish_Automatic</Activation_Style>
+            <Heal_Percent>0.025</Heal_Percent>
+            <Heal_Interval_In_Secs>5.0</Heal_Interval_In_Secs>
+            <Single_Target_Heal>Yes</Single_Target_Heal>
+            <Owner_Particle_Bone_Name>ROOT</Owner_Particle_Bone_Name>
+            <Owner_Light_Effect_Type>Color_Flash</Owner_Light_Effect_Type>
+            <Owner_Light_Effect_Color>1.2, 1.2, 1.2</Owner_Light_Effect_Color>
+            <Owner_Light_Effect_Duration>0.6</Owner_Light_Effect_Duration>
+            <Owner_Light_Effect_Pulse_Count>1</Owner_Light_Effect_Pulse_Count>
+         </Force_Healing_Ability>
+         <Income_Stream_Ability Name="U_Heavy_Vehicle_Factory_Income_Stream">
+            <Base_Income_Value>5</Base_Income_Value>
+            <Base_Interval_In_Secs>5</Base_Interval_In_Secs>
+            <Split_Income_With_Allies>Yes</Split_Income_With_Allies>
+            <Split_Favors_Owner>No</Split_Favors_Owner>
+            <Full_Amount_To_Everyone>Yes</Full_Amount_To_Everyone>
+         </Income_Stream_Ability>
+      </Abilities>
+    </Ground_Structure_Tauri>
+
+   <Ground_Structure_Tauri Name="U_Ground_Vehicle_Factory_Build_Pad">
+      <Variant_Of_Existing_Type>Template_Ground_Structure_Build_Pad</Variant_Of_Existing_Type>
+      <Land_Model_Name>Tauri_Land_Building_Vehicle_Factory_BP.alo</Land_Model_Name>
+      <Scale_Factor>0.5</Scale_Factor>
+      <Affiliation>Underworld</Affiliation>
+      <Tactical_Buildable_Objects_Multiplayer>Underworld, UC_U_Ground_Vehicle_Factory</Tactical_Buildable_Objects_Multiplayer>
+   </Ground_Structure_Tauri>
+   <Ground_Structure_Tauri Name="UC_U_Ground_Vehicle_Factory">
+      <Variant_Of_Existing_Type>Template_Ground_Structure_UC</Variant_Of_Existing_Type>
+       <Text_ID>TEXT_TAURI_GROUND_BUILDING_VEHICLE_FACTORY</Text_ID>
+      <Encyclopedia_Text> TEXT_DESCRIPTION_TAURI_VEHICLE_FACTORY_GC_GROUND </Encyclopedia_Text>
+      <MP_Encyclopedia_Text> TEXT_DESCRIPTION_TAURI_VEHICLE_FACTORY_SK_GROUND </MP_Encyclopedia_Text>
+      <Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_TAURI_VEHICLE_FACTORY</Encyclopedia_Unit_Class>
+      <Icon_Name>TAURI_LAND_BUILDING_VEHICLEFACTORY.TGA</Icon_Name>
+      <Land_Model_Name>Tauri_Land_Building_Vehicle_Factory_UC.alo</Land_Model_Name>
+      <Scale_Factor>0.5</Scale_Factor>
+      <Affiliation>Underworld</Affiliation>
+      <Tactical_Buildable_Constructed>U_Ground_Vehicle_Factory</Tactical_Buildable_Constructed>
+      <Tactical_Build_Start_Lower_Z>50.0</Tactical_Build_Start_Lower_Z>
+      <Tactical_Health>800</Tactical_Health>
+      <Tactical_Build_Cost_Multiplayer>1200</Tactical_Build_Cost_Multiplayer>
+      <Tactical_Build_Time_Seconds>30</Tactical_Build_Time_Seconds>
+   </Ground_Structure_Tauri>
+
+
+   <!-- Barracks -->
+   <Ground_Structure_Tauri Name="U_Ground_Barracks">
+      <Variant_Of_Existing_Type>Template_Ground_Structure_Big_Base_Building_Spawn</Variant_Of_Existing_Type>
+      <Text_ID>TEXT_TAURI_GROUND_BUILDING_BARRACKS</Text_ID>
+      <Encyclopedia_Text> TEXT_DESCRIPTION_TAURI_BARRACKS_GC_GROUND </Encyclopedia_Text>
+      <MP_Encyclopedia_Text> TEXT_DESCRIPTION_TAURI_BARRACKS_SK_GROUND </MP_Encyclopedia_Text>
+      <Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_TAURI_BARRACKS</Encyclopedia_Unit_Class>
+      <Icon_Name>TAURI_LAND_BUILDING_BARRACKS.TGA</Icon_Name>
+      <Land_Model_Name>Tauri_Land_Building_Barracks.alo</Land_Model_Name>
+      <Radar_Icon_Name>I_RADAR_TAURI_BARRACKS.TGA</Radar_Icon_Name>
+      <Radar_Icon_Size>0.075  0.075</Radar_Icon_Size>
+      <Loop_Idle_Anim_00>Yes</Loop_Idle_Anim_00>
+      <Select_Box_Scale>400</Select_Box_Scale>
+      <Scale_Factor>0.6</Scale_Factor>
+
+      <Destruction_Survivors>
+         Underworld_Merc_Squad, 1.0
+         Underworld_Ewok_Handler_Company, 1.0
+      </Destruction_Survivors>
+
+      <Land_Damage_Thresholds>1, 0.66, 0.33, 0</Land_Damage_Thresholds>
+      <Land_Damage_Alternates>0, 1, 2, 3</Land_Damage_Alternates>
+      <Land_Damage_SFX>null,SFX_Grenade_Detonation, SFX_Grenade_Detonation,null</Land_Damage_SFX>
+
+      <Tech_Level>1</Tech_Level>
+      <Affiliation>Underworld</Affiliation>
+      <Required_Ground_Base_Level>0</Required_Ground_Base_Level>
+      <Required_Special_Structures>U_Ground_Palace</Required_Special_Structures>
+      <SFXEvent_Select>Structure_Barracks_Select_SFX</SFXEvent_Select>
+
+      <Starting_Spawned_Units_Tech_0>Underworld_Merc_Squad, 1</Starting_Spawned_Units_Tech_0>
+      <Reserve_Spawned_Units_Tech_0>Underworld_Merc_Squad, -1</Reserve_Spawned_Units_Tech_0>
+      <Spawned_Squadron_Delay_Seconds>60</Spawned_Squadron_Delay_Seconds>
+
+      <Tactical_Buildable_Objects_Multiplayer>
+         Underworld,
+            Underworld_Saboteur_Team,   <!-- SG-Team -->
+            Underworld_Disruptor_Merc_Squad, <!-- Special Forces T2-->
+            Underworld_Merc_Squad, <!-- Marines T1-->
+            Night_Sister_Company, <!-- Sniper T1-->
+            Vornskr_Wolf_Pack,  <!-- Medic -->
+            Underworld_Ewok_Handler_Company, <!-- Bazooka T1-->
+            Destroyer_Droid_Company, <!-- Mortar -->
+            Scavenger_Droid_Company, <!-- Missile (Stinger)-->
+            Tauri_Mobile_MG_Company
+      </Tactical_Buildable_Objects_Multiplayer>
+	  
+	  <Tactical_Buildable_Objects_Campaign>
+			Underworld,
+				T_Ground_Sniper_Range_Upgrade,
+                T_Ground_Infantry_Armor_Upgrade
+	  </Tactical_Buildable_Objects_Campaign>
+
+
+      <Abilities SubObjectList="Yes">
+         <Force_Healing_Ability Name="U_Barracks_Self_Repair">
+            <Activation_Style>Skirmish_Automatic</Activation_Style>
+            <Heal_Percent>0.025</Heal_Percent>
+            <Heal_Interval_In_Secs>5.0</Heal_Interval_In_Secs>
+            <Single_Target_Heal>Yes</Single_Target_Heal>
+            <Owner_Particle_Bone_Name>ROOT</Owner_Particle_Bone_Name>
+            <Owner_Light_Effect_Type>Color_Flash</Owner_Light_Effect_Type>
+            <Owner_Light_Effect_Color>1.2, 1.2, 1.2</Owner_Light_Effect_Color>
+            <Owner_Light_Effect_Duration>0.6</Owner_Light_Effect_Duration>
+            <Owner_Light_Effect_Pulse_Count>1</Owner_Light_Effect_Pulse_Count>
+         </Force_Healing_Ability>
+         <Income_Stream_Ability Name="U_Barracks_Income_Stream">
+            <Base_Income_Value>5</Base_Income_Value>
+            <Base_Interval_In_Secs>5</Base_Interval_In_Secs>
+            <Split_Income_With_Allies>Yes</Split_Income_With_Allies>
+            <Split_Favors_Owner>No</Split_Favors_Owner>
+            <Full_Amount_To_Everyone>Yes</Full_Amount_To_Everyone>
+         </Income_Stream_Ability>
+      </Abilities>
+   </Ground_Structure_Tauri>
+
+   <Ground_Structure_Tauri Name="U_Ground_Merc_Outpost_Build_Pad">
+      <Variant_Of_Existing_Type>Template_Ground_Structure_Build_Pad</Variant_Of_Existing_Type>
+      <Land_Model_Name>Tauri_Land_Building_Barracks_BP.alo</Land_Model_Name>
+      <Scale_Factor>0.6</Scale_Factor>
+      <Affiliation>Underworld</Affiliation>
+      <Tactical_Buildable_Objects_Multiplayer>Underworld, UC_U_Ground_Merc_Outpost</Tactical_Buildable_Objects_Multiplayer>
+   </Ground_Structure_Tauri>
+   <Ground_Structure_Tauri Name="UC_U_Ground_Merc_Outpost">
+      <Variant_Of_Existing_Type>Template_Ground_Structure_UC</Variant_Of_Existing_Type>
+      <Text_ID>TEXT_TAURI_GROUND_BUILDING_BARRACKS</Text_ID>
+      <Encyclopedia_Text> TEXT_DESCRIPTION_TAURI_BARRACKS_GC_GROUND </Encyclopedia_Text>
+      <MP_Encyclopedia_Text> TEXT_DESCRIPTION_TAURI_BARRACKS_SK_GROUND </MP_Encyclopedia_Text>
+      <Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_TAURI_BARRACKS</Encyclopedia_Unit_Class>
+      <Icon_Name>TAURI_LAND_BUILDING_BARRACKS.TGA</Icon_Name>
+      <Land_Model_Name>Tauri_Land_Building_Barracks_UC.alo</Land_Model_Name>
+      <Scale_Factor>0.6</Scale_Factor>
+      <Affiliation>Underworld</Affiliation>
+      <Tactical_Buildable_Constructed>U_Ground_Barracks</Tactical_Buildable_Constructed>
+      <Tactical_Build_Start_Lower_Z>50.0</Tactical_Build_Start_Lower_Z>
+      <Tactical_Health>500</Tactical_Health>
+      <Tactical_Build_Cost_Multiplayer>600</Tactical_Build_Cost_Multiplayer>
+      <Tactical_Build_Time_Seconds>25</Tactical_Build_Time_Seconds>
+   </Ground_Structure_Tauri>
+
+
+    <!-- Research Facility -->
+    <Ground_Structure_Tauri Name="U_Ground_Research_Facility">
+       <Variant_Of_Existing_Type>Template_Ground_Structure_Big_Base_Building</Variant_Of_Existing_Type>
+      <Text_ID>TEXT_TAURI_GROUND_BUILDING_RESEARCH_FACILITY</Text_ID>
+      <Encyclopedia_Text> TEXT_DESCRIPTION_TAURI_RESEARCH_FACILITY_GC_GROUND </Encyclopedia_Text>
+      <MP_Encyclopedia_Text> TEXT_DESCRIPTION_TAURI_RESEARCH_FACILITY_SK_GROUND </MP_Encyclopedia_Text>
+      <Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_TAURI_RESEARCH_CENTER</Encyclopedia_Unit_Class>
+      <Icon_Name>TAURI_LAND_BUILDING_RESEARCH_FACILITY.TGA</Icon_Name>
+      <Land_Model_Name>Tauri_Land_Building_Research_Center.alo</Land_Model_Name>
+      <Radar_Icon_Name>I_RADAR_TAURI_RESEARCH_CENTER.TGA</Radar_Icon_Name>
+      <Radar_Icon_Size>0.075  0.075</Radar_Icon_Size>
+      <Loop_Idle_Anim_00>Yes</Loop_Idle_Anim_00>
+      <Select_Box_Scale>350</Select_Box_Scale>
+      <Mass>1.0</Mass>
+      <Scale_Factor>0.8</Scale_Factor>
+      <SFXEvent_Ambient_Loop>Structure_Barracks_Loop</SFXEvent_Ambient_Loop>
+      <SFXEvent_Select>Structure_Research_Select_SFX</SFXEvent_Select>
+
+      <Destruction_Survivors>
+         Underworld_Merc_Squad, 1.0
+         Underworld_Ewok_Handler_Company, 1.0
+      </Destruction_Survivors>
+
+      <Land_Damage_Thresholds>1, 0.66, 0.33, 0</Land_Damage_Thresholds>
+      <Land_Damage_Alternates>0, 1, 2, 3</Land_Damage_Alternates>
+      <Land_Damage_SFX>null,SFX_Grenade_Detonation, SFX_Grenade_Detonation,null</Land_Damage_SFX>
+
+      <Tech_Level>1</Tech_Level>
+      <Affiliation>Underworld</Affiliation>
+      <Build_Max_Instances_Per_Planet> 1 </Build_Max_Instances_Per_Planet>
+      <Base_Position>Out_Base</Base_Position>
+      <Required_Special_Structures>U_Ground_Palace</Required_Special_Structures>
+      <Required_Planets>Universe_L_Earth, Universe_S_Earth, Pegasus_K_Lantea</Required_Planets>
+
+      <Tactical_Buildable_Objects_Multiplayer>
+         Underworld,
+            T_Ground_Unit_Defense_Upgrade_1,
+            T_Ground_Unit_Defense_Upgrade_2,
+            T_Ground_Unit_Defense_Upgrade_3,
+            T_Ground_Turret_Defense_Upgrade_1,
+            T_Ground_Turret_Defense_Upgrade_2,
+            T_Ground_Malp_Engine_Upgrade_1,
+            T_Ground_Malp_Engine_Upgrade_2,
+            T_Ground_Special_Forces_Upgrade,
+            T_Ground_Sniper_Range_Upgrade,
+            T_Ground_Faster_Deployments_Upgrade,
+            T_Ground_UAV_Sensor_Range_Upgrade
+      </Tactical_Buildable_Objects_Multiplayer>
+
+      <Abilities SubObjectList="Yes">
+         <Force_Healing_Ability Name="U_Ground_Research_Facility_Self_Repair">
+            <Activation_Style>Skirmish_Automatic</Activation_Style>
+            <Heal_Percent>0.025</Heal_Percent>
+            <Heal_Interval_In_Secs>5.0</Heal_Interval_In_Secs>
+            <Single_Target_Heal>Yes</Single_Target_Heal>
+            <Owner_Particle_Bone_Name>ROOT</Owner_Particle_Bone_Name>
+            <Owner_Light_Effect_Type>Color_Flash</Owner_Light_Effect_Type>
+            <Owner_Light_Effect_Color>1.2, 1.2, 1.2</Owner_Light_Effect_Color>
+            <Owner_Light_Effect_Duration>0.6</Owner_Light_Effect_Duration>
+            <Owner_Light_Effect_Pulse_Count>1</Owner_Light_Effect_Pulse_Count>
+         </Force_Healing_Ability>
+         <Income_Stream_Ability Name="U_Ground_Research_Facility_Income_Stream">
+            <Base_Income_Value>5</Base_Income_Value>
+            <Base_Interval_In_Secs>5</Base_Interval_In_Secs>
+            <Split_Income_With_Allies>Yes</Split_Income_With_Allies>
+            <Split_Favors_Owner>No</Split_Favors_Owner>
+            <Full_Amount_To_Everyone>Yes</Full_Amount_To_Everyone>
+         </Income_Stream_Ability>
+      </Abilities>
+   </Ground_Structure_Tauri>
+
+   <Ground_Structure_Tauri Name="U_Ground_Research_Facility_Build_Pad">
+      <Variant_Of_Existing_Type>Template_Ground_Structure_Build_Pad</Variant_Of_Existing_Type>
+      <Land_Model_Name>Tauri_Land_Building_Research_Center_BP.alo</Land_Model_Name>
+      <Scale_Factor>0.8</Scale_Factor>
+      <Affiliation>Underworld</Affiliation>
+      <Tactical_Buildable_Objects_Multiplayer>Underworld, UC_U_Ground_Research_Facility</Tactical_Buildable_Objects_Multiplayer>
+   </Ground_Structure_Tauri>
+   <Ground_Structure_Tauri Name="UC_U_Ground_Research_Facility">
+      <Variant_Of_Existing_Type>Template_Ground_Structure_UC</Variant_Of_Existing_Type>
+      <Text_ID>TEXT_TAURI_GROUND_BUILDING_RESEARCH_FACILITY</Text_ID>
+      <Encyclopedia_Text> TEXT_DESCRIPTION_TAURI_RESEARCH_FACILITY_GC_GROUND </Encyclopedia_Text>
+      <MP_Encyclopedia_Text> TEXT_DESCRIPTION_TAURI_RESEARCH_FACILITY_SK_GROUND </MP_Encyclopedia_Text>
+      <Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_TAURI_RESEARCH_CENTER</Encyclopedia_Unit_Class>
+      <Icon_Name>TAURI_LAND_BUILDING_RESEARCH_FACILITY.TGA</Icon_Name>
+      <Land_Model_Name>Tauri_Land_Building_Research_Center_UC.alo</Land_Model_Name>
+      <Scale_Factor>0.8</Scale_Factor>
+      <Affiliation>Underworld</Affiliation>
+      <Tactical_Buildable_Constructed>U_Ground_Research_Facility</Tactical_Buildable_Constructed>
+      <Tactical_Build_Start_Lower_Z>50.0</Tactical_Build_Start_Lower_Z>
+      <Tactical_Health>800</Tactical_Health>
+      <Tactical_Build_Cost_Multiplayer>500</Tactical_Build_Cost_Multiplayer>
+      <Tactical_Build_Time_Seconds>38</Tactical_Build_Time_Seconds>
+   </Ground_Structure_Tauri>
+
+
+   <!-- Shield Generator -->
+   <Ground_Structure_Tauri Name="U_Ground_Base_Shield">
+      <Variant_Of_Existing_Type>Template_Ground_Structure_Special_Base_Shield</Variant_Of_Existing_Type>
+      <Text_ID>TEXT_TAURI_GROUND_BUILDING_SHIELDGENERATOR</Text_ID>
+      <Encyclopedia_Text>TEXT_DESCRIPTION_TAURI_SHIELDGENERATOR_GC_GROUND</Encyclopedia_Text>
+      <Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_TAURI_SHIELDGENERATOR</Encyclopedia_Unit_Class>
+      <Icon_Name>TAURI_LAND_BUILDING_SHIELDGENERATOR.TGA</Icon_Name>
+      <Land_Model_Name>Tauri_Land_Building_Shield_Generator.alo</Land_Model_Name>
+      <Radar_Icon_Name>I_RADAR_TAURI_SHIELD_GENERATOR.TGA</Radar_Icon_Name>
+      <Radar_Icon_Size>0.075  0.075</Radar_Icon_Size>
+      <Obstacle_Proxy_Type>U_Ground_Base_Shield_Build_Pad</Obstacle_Proxy_Type>
+
+      <Affiliation>Underworld</Affiliation>
+      <Select_Box_Scale>180</Select_Box_Scale>
+      <Base_Shield_Radius>750</Base_Shield_Radius>
+      <Shield_Sub_Mesh>Shield</Shield_Sub_Mesh>
+      <GUI_Bounds_Scale>0.05</GUI_Bounds_Scale>
+      <Reinforcement_Prevention_Radius>600</Reinforcement_Prevention_Radius>
+
+      <Tactical_Health>1000</Tactical_Health>
+      <Shield_Points>1600</Shield_Points>
+      <Shield_Refresh_Rate>20</Shield_Refresh_Rate>
+      <Build_Cost_Credits>2000</Build_Cost_Credits>
+
+      <Blob_Shadow_Below_Detail_Level>2</Blob_Shadow_Below_Detail_Level>
+      <Blob_Shadow_Material_Name>Square_Shadow</Blob_Shadow_Material_Name>
+      <Blob_Shadow_Scale>25.0, 25.0</Blob_Shadow_Scale>
+
+      <Obstacle_Width>40.0</Obstacle_Width>
+      <Obstacle_Height>40.0</Obstacle_Height>
+      <Obstacle_X_Offset>-20.0</Obstacle_X_Offset>
+      <Obstacle_Y_Offset>-20.0</Obstacle_Y_Offset>
+      <Custom_Hard_XExtent> 50.0 </Custom_Hard_XExtent>
+      <Custom_Hard_YExtent> 50.0 </Custom_Hard_YExtent>
+
+      <Land_Damage_Thresholds>1, 0.5, 0</Land_Damage_Thresholds>
+      <Land_Damage_Alternates>0, 1, 2</Land_Damage_Alternates>
+      <Land_Damage_SFX>null,SFX_Grenade_Detonation, SFX_Grenade_Detonation</Land_Damage_SFX>
+
+      <Tech_Level>3</Tech_Level>
+      <Tactical_Build_Prerequisites>U_Ground_Base_Shield_Build_Pad, UC_Level_Three_Tech_Upgrade</Tactical_Build_Prerequisites>
+      <Required_Special_Structures>U_Ground_Palace</Required_Special_Structures>
+      <Required_Ground_Base_Level>1</Required_Ground_Base_Level>
+
+      <Death_Clone>Damage_Normal, U_Ground_Base_Shield_DC</Death_Clone>
+   </Ground_Structure_Tauri>
+
+   <SpecialStructure Name="U_Ground_Base_Shield_DC">
+      <Land_Model_Name>Tauri_Land_Building_Shield_Generator_DC.alo</Land_Model_Name>
+   </SpecialStructure>
+
+   <Ground_Structure_Tauri Name="U_Ground_Base_Shield_Small">
+      <Variant_Of_Existing_Type>U_Ground_Base_Shield</Variant_Of_Existing_Type>
+      <Tech_Level>99</Tech_Level>
+      <Land_Model_Name>NB_BASESHIELDGEN_small.alo</Land_Model_Name>
+      <Tactical_Health>500</Tactical_Health>
+      <Reinforcement_Prevention_Radius>370</Reinforcement_Prevention_Radius>
+      <Base_Shield_Radius>370</Base_Shield_Radius>
+   </Ground_Structure_Tauri>
+
+   <!-- To make the base shield depend on T3 in skirmish, the regular buildpad will can only build UC_U_Ground_Base_Shield_Dummy.
+    The T3 upgrade has a script attached, which will exchange the buildpad with the Working version, which can then build the acutal UC_U_Ground_Base_Shield -->
+   <Ground_Structure_Tauri Name="U_Ground_Base_Shield_Build_Pad">
+      <Variant_Of_Existing_Type>Template_Ground_Structure_Build_Pad</Variant_Of_Existing_Type>
+      <Land_Model_Name>Tauri_Land_Building_Shield_Generator_BP.alo</Land_Model_Name>
+      <Scale_Factor>1.0</Scale_Factor>
+      <Affiliation>Underworld</Affiliation>
+      <Tactical_Buildable_Objects_Multiplayer>Underworld, UC_U_Ground_Base_Shield_Dummy</Tactical_Buildable_Objects_Multiplayer>
+      <Base_Shield_Always_Off>True</Base_Shield_Always_Off>
+      <Minimum_Time_Before_Pad_Can_Build_Again>150</Minimum_Time_Before_Pad_Can_Build_Again>
+   </Ground_Structure_Tauri>
+   <Ground_Structure_Tauri Name="U_Ground_Base_Shield_Build_Pad_Working">
+      <Variant_Of_Existing_Type>U_Ground_Base_Shield_Build_Pad</Variant_Of_Existing_Type>
+      <Tactical_Buildable_Objects_Multiplayer>Underworld, UC_U_Ground_Base_Shield</Tactical_Buildable_Objects_Multiplayer>
+    </Ground_Structure_Tauri>
+
+   <Ground_Structure_Tauri Name="UC_U_Ground_Base_Shield">
+      <Variant_Of_Existing_Type>Template_Ground_Structure_UC</Variant_Of_Existing_Type>
+      <Text_ID>TEXT_TAURI_GROUND_BUILDING_SHIELDGENERATOR</Text_ID>
+      <Encyclopedia_Text>TEXT_DESCRIPTION_TAURI_SHIELDGENERATOR_GC_GROUND</Encyclopedia_Text>
+      <Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_TAURI_SHIELDGENERATOR</Encyclopedia_Unit_Class>
+      <Icon_Name>TAURI_LAND_BUILDING_SHIELDGENERATOR.TGA</Icon_Name>
+      <Land_Model_Name>Tauri_Land_Building_Shield_Generator_UC.alo</Land_Model_Name>
+      <Scale_Factor>1.0</Scale_Factor>
+      <Affiliation>Underworld</Affiliation>
+      <Tactical_Buildable_Constructed>U_Ground_Base_Shield</Tactical_Buildable_Constructed>
+      <Tactical_Build_Start_Lower_Z>50.0</Tactical_Build_Start_Lower_Z>
+      <Tactical_Health>650</Tactical_Health>
+      <Tactical_Build_Cost_Multiplayer>1600</Tactical_Build_Cost_Multiplayer>
+      <Tactical_Build_Time_Seconds>35</Tactical_Build_Time_Seconds>
+   </Ground_Structure_Tauri>
+   <Ground_Structure_Tauri Name="UC_U_Ground_Base_Shield_Dummy">
+      <Variant_Of_Existing_Type>UC_U_Ground_Base_Shield</Variant_Of_Existing_Type>
+      <Tactical_Build_Cost_Multiplayer> 999999 </Tactical_Build_Cost_Multiplayer>
+      <Encyclopedia_Text>TEXT_TECH_3_REQUIRED TEXT_NONE MP_TEXT_ENCYCLOPEDIA_BASE_SHIELD_UNDERWORLD_00</Encyclopedia_Text>
+      <Icon_Name>BUILD_LOCKED_T3.tga</Icon_Name>
+    </Ground_Structure_Tauri>
+
+
+<!--========================================================================================================
+#    GC only Buildings
+========================================================================================================-->
+
+   <!-- Academy -->
+   <Ground_Structure_Tauri Name="U_Ground_Academy">
+      <Variant_Of_Existing_Type>Template_Ground_Structure_Big_Base_Building</Variant_Of_Existing_Type>
+      <Text_ID>TEXT_TAURI_GROUND_BUILDING_ACADEMY</Text_ID>
+      <Encyclopedia_Text> TEXT_DESCRIPTION_TAURI_ACADEMY_GC_GROUND </Encyclopedia_Text>
+      <MP_Encyclopedia_Text> TEXT_DESCRIPTION_TAURI_ACADEMY_SK_GROUND </MP_Encyclopedia_Text>
+      <Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_TAURI_ACADEMY</Encyclopedia_Unit_Class>
+      <Icon_Name>TAURI_LAND_BUILDING_ACADEMY.TGA</Icon_Name>
+      <Land_Model_Name>Tauri_Land_Building_Academy.alo</Land_Model_Name>
+      <Radar_Icon_Name>I_RADAR_TAURI_ACADEMY.TGA</Radar_Icon_Name>
+      <Radar_Icon_Size>0.075  0.075</Radar_Icon_Size>
+      <Select_Box_Scale>270</Select_Box_Scale>
+      <Scale_Factor>1.3</Scale_Factor>
+      <Loop_Idle_Anim_00>Yes</Loop_Idle_Anim_00>
+
+      <Tech_Level>3</Tech_Level>
+      <Affiliation>Underworld</Affiliation>
+      <Build_Cost_Credits>1000</Build_Cost_Credits>
+      <Build_Time_Seconds>25</Build_Time_Seconds>
+      <Build_Max_Instances_Per_Planet> 1 </Build_Max_Instances_Per_Planet>
+      <Tactical_Health>1500</Tactical_Health>
+
+      <Destruction_Survivors>
+         Underworld_Merc_Squad, 1.0
+         Underworld_Ewok_Handler_Company, 1.0
+      </Destruction_Survivors>
+
+      <Tactical_Buildable_Objects_Multiplayer>
+         Underworld,
+            MZ8_Pulse_Cannon_Tank,
+            Vornskr_Wolf,
+            Night_Sister,
+      </Tactical_Buildable_Objects_Multiplayer>
+
+      <Land_Damage_Thresholds>1, 0.66, 0.33, 0</Land_Damage_Thresholds>
+      <Land_Damage_Alternates>0, 1, 2, 3</Land_Damage_Alternates>
+      <Land_Damage_SFX>null,SFX_Grenade_Detonation, SFX_Grenade_Detonation,null</Land_Damage_SFX>
+
+      <Required_Special_Structures>U_Ground_Palace</Required_Special_Structures>
+      <Required_Planets>Universe_L_Dagan, Universe_L_Earth, Universe_L_Orban, Universe_L_P3X_439, Universe_L_Pangar</Required_Planets>
+      <Required_Planets>Pegasus_G_Dagan, Pegasus_G_M1B_129, Pegasus_G_Vadena</Required_Planets>
+      <Required_Planets>Allianz_Erde, Allianz_P3X_666, Allianz_Pangar</Required_Planets>
+      <Required_Planets>Pegasus_K_Dagan</Required_Planets>
+      <Required_Planets>Universe_S_Dagan, Universe_S_Earth, Universe_S_Orban, Universe_S_Pangar</Required_Planets>
+      <Required_Ground_Base_Level>1</Required_Ground_Base_Level>
+    </Ground_Structure_Tauri>
+
+   <Ground_Structure_Tauri Name="U_Ground_Academy_Build_Pad">
+      <Variant_Of_Existing_Type>Template_Ground_Structure_Build_Pad</Variant_Of_Existing_Type>
+      <Land_Model_Name>Tauri_Land_Building_Academy_BP.alo</Land_Model_Name>
+      <Scale_Factor>1.3</Scale_Factor>
+      <Affiliation>Underworld</Affiliation>
+      <Tactical_Buildable_Objects_Multiplayer>Underworld, UC_U_Ground_Academy</Tactical_Buildable_Objects_Multiplayer>
+   </Ground_Structure_Tauri>
+   <Ground_Structure_Tauri Name="UC_U_Ground_Academy">
+      <Variant_Of_Existing_Type>Template_Ground_Structure_UC</Variant_Of_Existing_Type>
+      <Text_ID>TEXT_TAURI_GROUND_BUILDING_ACADEMY</Text_ID>
+      <Encyclopedia_Text> TEXT_DESCRIPTION_TAURI_ACADEMY_GC_GROUND </Encyclopedia_Text>
+      <MP_Encyclopedia_Text> TEXT_DESCRIPTION_TAURI_ACADEMY_SK_GROUND </MP_Encyclopedia_Text>
+      <Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_TAURI_ACADEMY</Encyclopedia_Unit_Class>
+      <Icon_Name>TAURI_LAND_BUILDING_ACADEMY.TGA</Icon_Name>
+      <Land_Model_Name>Tauri_Land_Building_Academy_UC.alo</Land_Model_Name>
+      <Scale_Factor>1.3</Scale_Factor>
+      <Affiliation>Underworld</Affiliation>
+      <Tactical_Buildable_Constructed>U_Ground_Academy</Tactical_Buildable_Constructed>
+      <Tactical_Build_Start_Lower_Z>50.0</Tactical_Build_Start_Lower_Z>
+      <Tactical_Health>500</Tactical_Health>
+      <Tactical_Build_Cost_Multiplayer>600</Tactical_Build_Cost_Multiplayer>
+      <Tactical_Build_Time_Seconds>25</Tactical_Build_Time_Seconds>
+   </Ground_Structure_Tauri>
+
+
+   <!-- Small Shipyard -->
+   <Ground_Structure_Tauri Name="U_Ground_Shipyard">
+      <Variant_Of_Existing_Type>Template_Ground_Structure_Big_Base_Building</Variant_Of_Existing_Type>
+      <Text_ID>TEXT_TAURI_GROUND_BUILDING_SMALL_SHIPYARD</Text_ID>
+      <Encyclopedia_Text> TEXT_DESCRIPTION_TAURI_SMALL_SHIPYARD_GC_GROUND </Encyclopedia_Text>
+      <MP_Encyclopedia_Text>TEXT_DESCRIPTION_TAURI_SMALL_SHIPYARD_GC_GROUND</MP_Encyclopedia_Text>
+      <Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_TAURI_SMALL_SHIPYARD</Encyclopedia_Unit_Class>
+      <Icon_Name>TAURI_LAND_BUILDING_SHIPYARD.TGA</Icon_Name>
+      <Land_Model_Name>Tauri_Land_Building_ShipYard.alo</Land_Model_Name>
+      <Radar_Icon_Name>I_RADAR_TAURI_SHIPYARD.TGA</Radar_Icon_Name>
+      <Radar_Icon_Size>0.1  0.1</Radar_Icon_Size>
+      <Loop_Idle_Anim_00>Yes</Loop_Idle_Anim_00>
+      <Exclude_From_Distance_Fade>true</Exclude_From_Distance_Fade>
+      <GUI_Bounds_Scale>0.5</GUI_Bounds_Scale>
+      <Select_Box_Scale>400</Select_Box_Scale>
+
+      <Affiliation>Underworld</Affiliation>
+      <Build_Cost_Credits>1500</Build_Cost_Credits>
+      <Build_Time_Seconds>25</Build_Time_Seconds>
+      <Tech_Level>0</Tech_Level>
+      <Base_Position>Out_Base</Base_Position>
+      <Tactical_Health>1500</Tactical_Health>
+
+      <Land_Damage_Thresholds>1, 0.66, 0.33, 0</Land_Damage_Thresholds>
+      <Land_Damage_Alternates>0, 1, 2, 3</Land_Damage_Alternates>
+      <Land_Damage_SFX>null,SFX_Grenade_Detonation, SFX_Grenade_Detonation,null</Land_Damage_SFX>
+
+      <Required_Special_Structures>U_Ground_Palace</Required_Special_Structures>
+      <Required_Ground_Base_Level>1</Required_Ground_Base_Level>
+      <Required_Planets>Allianz_AlphaBasis, Allianz_Erde, Allianz_PX9_757, Allianz_Tagrea, Allianz_Tollana</Required_Planets>
+      <Required_Planets>Pegasus_G_AlphaBasis_P, Pegasus_G_Asuras, Pegasus_G_Erde, Pegasus_G_Lantea, Pegasus_G_Taranis</Required_Planets>
+      <Required_Planets>Pegasus_K_Asuras, Pegasus_K_Lantea, Pegasus_K_Taranis</Required_Planets>
+      <Required_Planets>RepliOri_AlphaBasis, RepliOri_Celestis, RepliOri_Earth, RepliOri_Tegalus</Required_Planets>
+      <Required_Planets>Universe_L_Alpha_Site, Universe_L_Asuras, Universe_L_Celestis, Universe_L_Earth, Universe_L_Erebus, Universe_L_Gamma_Site, Universe_L_Hebridan, Universe_L_Lantea, Universe_L_Tegalus, Universe_L_Tollana, Universe_L_Taranis, Universe_L_Vanir</Required_Planets>
+      <Required_Planets>Universe_S_Earth, Universe_S_Erebus, Universe_S_Lantea, Universe_S_Tollana</Required_Planets>
+   </Ground_Structure_Tauri>
+
+
+   <!-- Big Resource Mine -->
+   <Ground_Structure_Tauri Name="U_Ground_Mining_Facility" Description="GC structure">
+      <Variant_Of_Existing_Type>Template_Ground_Structure_Big</Variant_Of_Existing_Type>
+      <Text_ID>TEXT_TAURI_GROUND_BUILDING_MINING_FACILITY</Text_ID>
+      <Encyclopedia_Text>TEXT_DESCRIPTION_TAURI_MINING_FACILITY_GROUND</Encyclopedia_Text>
+      <Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_TAURI_MINING_FACILITY</Encyclopedia_Unit_Class>
+      <Icon_Name>TAURI_LAND_BUILDING_MINING_FACILITY.tga</Icon_Name>
+      <Land_Model_Name> Tauri_Land_Building_Resource_Mine_Big.alo </Land_Model_Name>
+      <Radar_Icon_Name>mini_map_mining_facilities.tga</Radar_Icon_Name>
+      <Radar_Icon_Size>0.1  0.1</Radar_Icon_Size>
+      <Radar_Show_Facing>No</Radar_Show_Facing>
+      <Scale_Factor>0.3</Scale_Factor>
+      <Loop_Idle_Anim_00>Yes</Loop_Idle_Anim_00>
+      <Select_Box_Scale>300</Select_Box_Scale>
+      <Ranged_Target_Z_Adjust>5.0</Ranged_Target_Z_Adjust>
+      <Exclude_From_Distance_Fade>true</Exclude_From_Distance_Fade>
+
+      <Tactical_Health>1500</Tactical_Health>
+
+      <Affiliation>Underworld</Affiliation>
+      <Base_Position>Out_Base</Base_Position>
+      <Tech_Level>1</Tech_Level>
+      <Required_Ground_Base_Level>0</Required_Ground_Base_Level>
+      <Required_Special_Structures>U_Ground_Palace</Required_Special_Structures>
+      <Required_Planets>Universe_L_Abydos, Universe_L_Erebus, Universe_L_Juna, Universe_L_Jenev, Universe_L_M4X_337, Universe_L_M5R_179, Universe_L_M5V_801, Universe_L_Lucian_Base, 
+	  Universe_L_Olesia, Universe_L_Orilla, Universe_L_Langara, Universe_L_P3R_636, Universe_L_P3X_403, Universe_L_P4S_237, Universe_L_P5S_117, Universe_L_P8X_412, Universe_L_Tollana, Universe_L_Vis_Deorum</Required_Planets>
+      <Required_Planets>Pegasus_G_M4X_337, Pegasus_G_M5R_179, Pegasus_G_M5V_801</Required_Planets>
+      <Required_Planets>Pegasus_K_M4X_337, Pegasus_K_M5R_179</Required_Planets>
+      <Required_Planets>Allianz_Erebus, Allianz_Juna, Allianz_P5S_117, Allianz_Tollana</Required_Planets>
+      <Required_Planets>Universe_S_Abydos, Universe_S_Erebus, Universe_S_Juna, Universe_S_P3R_636, Universe_S_P5S_117, Universe_S_Tollana</Required_Planets>
+
+      <Tactical_Buildable_Objects_Multiplayer>
+         Underworld,
+            T_Ground_Resource_Mine_Upgrade_1,
+            T_Ground_Resource_Mine_Upgrade_2,
+            T_Ground_Resource_Mine_Upgrade_3,
+      </Tactical_Buildable_Objects_Multiplayer>
+
+      <Obstacle_Width>120.0</Obstacle_Width>
+      <Obstacle_Height>120.0</Obstacle_Height>
+      <Obstacle_X_Offset>-60.0</Obstacle_X_Offset>
+      <Obstacle_Y_Offset>-60.0</Obstacle_Y_Offset>
+
+      <Land_Damage_Thresholds>1, 0.66, 0.33, 0</Land_Damage_Thresholds>
+      <Land_Damage_Alternates>0, 1, 2, 3</Land_Damage_Alternates>
+      <Land_Damage_SFX>null,SFX_Grenade_Detonation, SFX_Grenade_Detonation,null</Land_Damage_SFX>
+      <Target_Bones>RAMP</Target_Bones>
+
+      <Abilities SubObjectList="Yes">
+         <Planet_Income_Bonus_Ability Name="Underworld_Mining_Income_Bonus">
+            <Specific_Mod_Source_Text>TEXT_ECONOMY_MINING_FACILITIES</Specific_Mod_Source_Text>
+            <Percentage_Income_Modifier>0</Percentage_Income_Modifier>
+            <Absolute_Income_Modifier>100</Absolute_Income_Modifier>
+            <Additional_Multiplier_On_Mining_Colonies>1.5</Additional_Multiplier_On_Mining_Colonies>
+         </Planet_Income_Bonus_Ability>
+         <Income_Stream_Ability Name="Underworld_Mining_Income_Stream">
+            <Base_Income_Value>80</Base_Income_Value>
+            <Base_Interval_In_Secs>5</Base_Interval_In_Secs>
+            <Split_Income_With_Allies>Yes</Split_Income_With_Allies>
+            <Split_Favors_Owner>No</Split_Favors_Owner>
+            <Full_Amount_To_Everyone>Yes</Full_Amount_To_Everyone>
+         </Income_Stream_Ability>
+         <Force_Healing_Ability Name="U_Mining_Facility_Self_Repair">
+            <Activation_Style>Skirmish_Automatic</Activation_Style>
+            <Heal_Percent>0.003</Heal_Percent>
+            <Heal_Interval_In_Secs>2.0</Heal_Interval_In_Secs>
+            <Single_Target_Heal>Yes</Single_Target_Heal>
+            <Owner_Particle_Bone_Name>ROOT</Owner_Particle_Bone_Name>
+            <Owner_Light_Effect_Type>Color_Flash</Owner_Light_Effect_Type>
+            <Owner_Light_Effect_Color>1.2, 1.2, 1.2</Owner_Light_Effect_Color>
+            <Owner_Light_Effect_Duration>0.6</Owner_Light_Effect_Duration>
+            <Owner_Light_Effect_Pulse_Count>1</Owner_Light_Effect_Pulse_Count>
+         </Force_Healing_Ability>
+      </Abilities>
+   </Ground_Structure_Tauri>
+
+   <Ground_Structure_Tauri Name="Skirmish_Ground_Mining_Facility_U" Description="Skirmish version">
+      <Variant_Of_Existing_Type>U_Ground_Mining_Facility</Variant_Of_Existing_Type>
+      <Affiliation>Underworld</Affiliation>
+      <Tech_Level>99</Tech_Level>
+      <Behavior>TACTICAL_SELL, SELECTABLE, DUMMY_GROUND_STRUCTURE</Behavior>
+      <Tactical_Sell_Credits>600</Tactical_Sell_Credits>
+      <Victory_Relevant>No</Victory_Relevant>
+   </Ground_Structure_Tauri>
+   <Ground_Structure_Tauri Name="UC_Underwold_Ground_Mining_Facility">
+      <Variant_Of_Existing_Type>Template_Ground_Structure_UC</Variant_Of_Existing_Type>
+      <Text_ID>TEXT_TAURI_GROUND_BUILDING_MINING_FACILITY</Text_ID>
+      <Encyclopedia_Text>TEXT_DESCRIPTION_TAURI_MINING_FACILITY_GROUND</Encyclopedia_Text>
+      <Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_TAURI_MINING_FACILITY</Encyclopedia_Unit_Class>
+      <Icon_Name>TAURI_LAND_BUILDING_MINING_FACILITY.TGA</Icon_Name>
+      <Land_Model_Name>Tauri_Land_Building_Resource_Mine_Big_UC.alo</Land_Model_Name>
+      <Scale_Factor>0.3</Scale_Factor>
+      <Affiliation>Underworld</Affiliation>
+      <Tactical_Buildable_Constructed>Skirmish_Ground_Mining_Facility_U</Tactical_Buildable_Constructed>
+      <Tactical_Build_Start_Lower_Z>0</Tactical_Build_Start_Lower_Z>
+      <Tactical_Health>800</Tactical_Health>
+      <Tactical_Build_Cost_Multiplayer>1200</Tactical_Build_Cost_Multiplayer>
+      <Tactical_Build_Time_Seconds>35</Tactical_Build_Time_Seconds>
+   </Ground_Structure_Tauri>
+   
+   
+   <!-- Tauri GTSW -->
+   <SpecialStructure Name="U_Ground_Missile_Silo">
+      <GUI_Bounds_Scale>0.4</GUI_Bounds_Scale>
+      <Loop_Idle_Anim_00>Yes</Loop_Idle_Anim_00>
+      <Text_ID>TEXT_TAURI_GROUND_BUILDING_MISSILESILO</Text_ID>
+      <Land_Model_Name>Tauri_Land_Building_Missile_Silo.ALO</Land_Model_Name>
+      <GUI_Row> 0 </GUI_Row>
+      <Is_Dummy>No</Is_Dummy>
+      <Scale_Factor>1.0</Scale_Factor>
+      <Select_Box_Scale>300</Select_Box_Scale>
+      <Icon_Name>TAURI_LAND_BUILDING_MISSILESILO.TGA</Icon_Name>
+      <Radar_Icon_Name>I_RADAR_TAURI_GTSW.TGA</Radar_Icon_Name>
+      <Radar_Icon_Size>0.1  0.1</Radar_Icon_Size>
+      <Encyclopedia_Text>TEXT_DESCRIPTION_TAURI_MISSILESILO_GC_GROUND</Encyclopedia_Text>
+      <Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_TAURI_MISSILESILO</Encyclopedia_Unit_Class>
+
+      <Behavior>DUMMY_GROUND_STRUCTURE</Behavior>
+      <SpaceBehavior>SPECIAL_WEAPON</SpaceBehavior>
+      <LandBehavior>SPACE_OBSTACLE, LAND_OBSTACLE,SELECTABLE,REVEAL,HIDE_WHEN_FOGGED,DAMAGE_TRACKING,DUMMY_LAND_BASE_LEVEL_COMPONENT,UNIT_AI,EARTHQUAKE_TARGET,ION_STUN_EFFECT, STUNNABLE</LandBehavior>
+
+      <Affiliation>Underworld</Affiliation>
+      <Political_Control>0</Political_Control>
+      <Build_Cost_Credits>3500</Build_Cost_Credits>
+      <Build_Time_Seconds>35</Build_Time_Seconds>
+      <Build_Tab_Special_Structures>Yes</Build_Tab_Special_Structures>
+      <Build_Max_Instances_Per_Planet> 2 </Build_Max_Instances_Per_Planet>
+      <Size_Value>100</Size_Value>
+      <Build_Initially_Locked>No</Build_Initially_Locked>
+      <Build_Can_Be_Unlocked_By_Slicer>Yes</Build_Can_Be_Unlocked_By_Slicer>
+      <Slice_Cost_Credits>800</Slice_Cost_Credits>
+      <Required_Ground_Base_Level>0</Required_Ground_Base_Level>
+      <Required_Star_Base_Level>0</Required_Star_Base_Level>
+      <Required_Special_Structures>U_Ground_Palace</Required_Special_Structures>
+      <Required_Planets />
+      <Base_Position>Out_Base</Base_Position>
+      <Tech_Level>5</Tech_Level>
+      <Required_Timeline>0</Required_Timeline>
+      <GUI_Bracket_Size>2</GUI_Bracket_Size>
+      <Is_Community_Property>Yes</Is_Community_Property>
+      <Death_Clone_Is_Obstacle> true </Death_Clone_Is_Obstacle>
+      <Tactical_Additional_Structure_Type>U_Ground_Palace</Tactical_Additional_Structure_Type>         <!-- We don't want buildings to require the power geneerator -->
+
+      <Multisample_FOW_Check>Yes</Multisample_FOW_Check>
+      <Last_State_Visible_Under_FOW> Yes </Last_State_Visible_Under_FOW>
+      <Collidable_By_Projectile_Living>Yes</Collidable_By_Projectile_Living>
+
+      <Sabotage_Cost_Credits>4000</Sabotage_Cost_Credits>
+      <Tutorial_Sabotage_Cost_Credits>4000</Tutorial_Sabotage_Cost_Credits>
+
+      <Weapon_Type>Ion_Cannon_Planetary</Weapon_Type>
+      <Weapon_Quantity>1</Weapon_Quantity>
+      <SpaceAutoResolveStunRate>3</SpaceAutoResolveStunRate>
+      <Tactical_Health>1500</Tactical_Health>
+      <Projectile_Fire_Recharge_Seconds>45.0</Projectile_Fire_Recharge_Seconds>
+      <Projectile_Fire_Pulse_Count>1</Projectile_Fire_Pulse_Count>
+      <Projectile_Fire_Pulse_Delay_Seconds>0.75</Projectile_Fire_Pulse_Delay_Seconds>
+      <Projectile_Types>Proj_Tauri_Orbital_Nuclear_Missile</Projectile_Types>
+      <Land_FOW_Reveal_Range>300.0</Land_FOW_Reveal_Range>
+
+      <Destruction_Survivors>
+      </Destruction_Survivors>
+
+      <Armor_Type> Armor_Structure </Armor_Type>
+      <Reveal_During_Setup_Phase> true </Reveal_During_Setup_Phase>
+
+      <Land_Damage_Thresholds>1, 0.66, 0.33, 0.1, 0</Land_Damage_Thresholds>
+      <Land_Damage_Alternates>0, 1, 2, 3, 4</Land_Damage_Alternates>
+      <Land_Damage_SFX>null,SFX_Grenade_Detonation,SFX_Grenade_Detonation,SFX_Grenade_Detonation,null</Land_Damage_SFX>
+
+      <Is_Special_Weapon_In_Space>Yes</Is_Special_Weapon_In_Space>
+      <Special_Weapon_Index>0</Special_Weapon_Index>
+      <Special_Weapon_Target_Action_Index> 1 </Special_Weapon_Target_Action_Index>
+      <!-- HV Gun = 0, Ion Cannon = 1, Magnepulse Cannon = 2 -->
+      <Special_Weapon_Valid_Targets>Transport | Corvette | Frigate | Capital | Super</Special_Weapon_Valid_Targets>
+
+      <Space_Victory_Relevant>No</Space_Victory_Relevant>
+      <Land_Victory_Relevant>Yes</Land_Victory_Relevant>
+      <No_Reflection_Below_Detail_Level>1</No_Reflection_Below_Detail_Level>
+      <No_Refraction_Below_Detail_Level>1</No_Refraction_Below_Detail_Level>
+
+      <SFXEvent_Build_Started></SFXEvent_Build_Started>
+      <SFXEvent_Build_Cancelled></SFXEvent_Build_Cancelled>
+      <SFXEvent_Build_Complete></SFXEvent_Build_Complete>
+      <SFXEvent_Fire></SFXEvent_Fire>
+      <SFXEvent_Special_Weapon_Ready></SFXEvent_Special_Weapon_Ready>
+      <Death_SFXEvent_Start_Die>Unit_Generic_Building_Death_SFX</Death_SFXEvent_Start_Die>
+      <SFXEvent_Unit_Under_Attack></SFXEvent_Unit_Under_Attack>
+      <SFXEvent_Unit_Lost></SFXEvent_Unit_Lost>
+      <SFXEvent_Select>Structure_Ion_Select_SFX</SFXEvent_Select>
+
+      <Death_Explosions>Huge_Explosion_Land</Death_Explosions>
+      <CategoryMask> Structure </CategoryMask>
+      <Prevents_Blockade_Run_Attrition>True</Prevents_Blockade_Run_Attrition>
+
+      <Influences_Capture_Point>False</Influences_Capture_Point>
+
+      <Space_Obstacle_Offset> 0 0 0 </Space_Obstacle_Offset>
+      <Space_Layer> Corvette </Space_Layer>
+      <Has_Land_Evaluator>True</Has_Land_Evaluator>
+      <Score_Cost_Credits> 20000 </Score_Cost_Credits>
+
+      <Is_Visible_On_Radar>Yes</Is_Visible_On_Radar>
+      <Radar_Icon_Size>0.1  0.1</Radar_Icon_Size>
+      <Abilities SubObjectList="Yes">
+         <Force_Healing_Ability Name="Ion_Cannon_Self_Repair">
+            <Activation_Style>Skirmish_Automatic</Activation_Style>
+            <Heal_Range>0.0</Heal_Range>
+            <Heal_Percent>0.025</Heal_Percent>
+            <Heal_Amount>0.0</Heal_Amount>
+            <Heal_Interval_In_Secs>5.0</Heal_Interval_In_Secs>
+            <Single_Target_Heal>Yes</Single_Target_Heal>
+            <Applicable_Unit_Categories />
+            <Applicable_Unit_Types />
+            <SFXEvent_Target_Affected />
+            <Owner_Particle_Bone_Name>ROOT</Owner_Particle_Bone_Name>
+            <Owner_Light_Effect_Type>Color_Flash</Owner_Light_Effect_Type>
+            <Owner_Light_Effect_Color>1.2, 1.2, 1.2</Owner_Light_Effect_Color>
+            <Owner_Light_Effect_Color2 />
+            <Owner_Light_Effect_Duration>0.6</Owner_Light_Effect_Duration>
+            <Owner_Light_Effect_Pulse_Count>1</Owner_Light_Effect_Pulse_Count>
+         </Force_Healing_Ability>
+      </Abilities>
+   </SpecialStructure>
+   
+   
+   <!-- Ancient Weapons Platform -->
+   <SpecialStructure Name="Ancient_Weapon_Plattform">
+      <GUI_Bounds_Scale>0.4</GUI_Bounds_Scale>
+      <Text_ID>TEXT_TAURI_GROUND_BUILDING_ANCIENT_WEAPONSPLATFORM</Text_ID>
+      <Land_Model_Name>Ancient_Land_Building_Weapon_Platform.ALO</Land_Model_Name>
+      <Radar_Icon_Name>I_RADAR_ANCIENT_GTSW.tga</Radar_Icon_Name>
+      <Radar_Icon_Size>0.1  0.1</Radar_Icon_Size>
+      <GUI_Row> 0 </GUI_Row>
+      <Is_Dummy>No</Is_Dummy>
+      <Scale_Factor>1.0</Scale_Factor>
+      <Select_Box_Scale>300</Select_Box_Scale>
+      <Radar_Icon_Name>I_RADAR_TAURI_GTSW.TGA</Radar_Icon_Name>
+      <Radar_Icon_Size>0.1  0.1</Radar_Icon_Size>
+      <Icon_Name>TAURI_LAND_BUILDING_ANCIENT_WEAPON_PLATFORM.TGA</Icon_Name>
+      <Encyclopedia_Text>TEXT_DESCRIPTION_TAURI_ANCIENT_WEAPONSPLATFORM_GROUND</Encyclopedia_Text>
+      <Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_ANCIENT_WEAPON_PLATFORM</Encyclopedia_Unit_Class>
+
+      <Behavior>DUMMY_GROUND_STRUCTURE</Behavior>
+      <SpaceBehavior>SPECIAL_WEAPON</SpaceBehavior>
+      <LandBehavior>SPACE_OBSTACLE, LAND_OBSTACLE,SELECTABLE,REVEAL,HIDE_WHEN_FOGGED,DAMAGE_TRACKING,DUMMY_LAND_BASE_LEVEL_COMPONENT,UNIT_AI,EARTHQUAKE_TARGET,ION_STUN_EFFECT, STUNNABLE</LandBehavior>
+
+      <Affiliation>Underworld, Asuran</Affiliation>
+      <Political_Control>0</Political_Control>
+      <Build_Cost_Credits>3500</Build_Cost_Credits>
+      <Build_Time_Seconds>35</Build_Time_Seconds>
+      <Build_Tab_Special_Structures>Yes</Build_Tab_Special_Structures>
+      <Build_Max_Instances_Per_Planet> 1 </Build_Max_Instances_Per_Planet>
+      <Size_Value>100</Size_Value>
+      <Build_Initially_Locked>No</Build_Initially_Locked>
+      <Build_Can_Be_Unlocked_By_Slicer>Yes</Build_Can_Be_Unlocked_By_Slicer>
+      <Slice_Cost_Credits>800</Slice_Cost_Credits>
+      <Required_Ground_Base_Level>0</Required_Ground_Base_Level>
+      <Required_Star_Base_Level>0</Required_Star_Base_Level>
+      <Required_Special_Structures>U_Ground_Palace</Required_Special_Structures>
+      <Required_Planets>Universe_L_Earth, Universe_S_Earth, Universe_L_Lantea, Pegasus_K_Lantea, Pegasus_G_Lantea, Universe_S_Lantea</Required_Planets>
+      <Base_Position>Out_Base</Base_Position>
+      <Tech_Level>5</Tech_Level>
+      <Required_Timeline>0</Required_Timeline>
+      <GUI_Bracket_Size>2</GUI_Bracket_Size>
+      <Is_Community_Property>Yes</Is_Community_Property>
+      <Death_Clone_Is_Obstacle> true </Death_Clone_Is_Obstacle>
+      <Tactical_Additional_Structure_Type>U_Ground_Palace</Tactical_Additional_Structure_Type>      <!-- We don't want buildings to require the power geneerator -->
+
+      <Multisample_FOW_Check>Yes</Multisample_FOW_Check>
+      <Last_State_Visible_Under_FOW> Yes </Last_State_Visible_Under_FOW>
+      <Collidable_By_Projectile_Living>Yes</Collidable_By_Projectile_Living>
+
+      <Sabotage_Cost_Credits>4000</Sabotage_Cost_Credits>
+      <Tutorial_Sabotage_Cost_Credits>4000</Tutorial_Sabotage_Cost_Credits>
+
+      <Weapon_Type>Ion_Cannon_Planetary</Weapon_Type>
+      <Weapon_Quantity>1</Weapon_Quantity>
+      <SpaceAutoResolveStunRate>3</SpaceAutoResolveStunRate>
+      <Tactical_Health>1500</Tactical_Health>
+      <Projectile_Fire_Recharge_Seconds>60.0</Projectile_Fire_Recharge_Seconds>
+      <Projectile_Fire_Pulse_Count>250</Projectile_Fire_Pulse_Count>
+      <Projectile_Fire_Pulse_Delay_Seconds>0.1</Projectile_Fire_Pulse_Delay_Seconds>
+      <Projectile_Types>Proj_Tauri_Orbital_Drone_Platform</Projectile_Types>
+      <Land_FOW_Reveal_Range>300.0</Land_FOW_Reveal_Range>
+
+      <Destruction_Survivors>
+      </Destruction_Survivors>
+
+      <Armor_Type> Armor_Structure </Armor_Type>
+      <Reveal_During_Setup_Phase> true </Reveal_During_Setup_Phase>
+
+      <Land_Damage_Thresholds>1, 0.66, 0.33, 0</Land_Damage_Thresholds>
+      <Land_Damage_Alternates>0, 1, 2, 3</Land_Damage_Alternates>
+      <Land_Damage_SFX>null,SFX_Grenade_Detonation, SFX_Grenade_Detonation,null</Land_Damage_SFX>
+
+      <Is_Special_Weapon_In_Space>Yes</Is_Special_Weapon_In_Space>
+      <Special_Weapon_Index>0</Special_Weapon_Index>
+      <Special_Weapon_Target_Action_Index> 1 </Special_Weapon_Target_Action_Index>
+      <!-- HV Gun = 0, Ion Cannon = 1, Magnepulse Cannon = 2 -->
+      <Special_Weapon_Valid_Targets>Transport | Corvette | Frigate | Capital | Super</Special_Weapon_Valid_Targets>
+
+      <Space_Victory_Relevant>No</Space_Victory_Relevant>
+      <Land_Victory_Relevant>Yes</Land_Victory_Relevant>
+      <No_Reflection_Below_Detail_Level>1</No_Reflection_Below_Detail_Level>
+      <No_Refraction_Below_Detail_Level>1</No_Refraction_Below_Detail_Level>
+
+      <SFXEvent_Build_Started></SFXEvent_Build_Started>
+      <SFXEvent_Build_Cancelled></SFXEvent_Build_Cancelled>
+      <SFXEvent_Build_Complete></SFXEvent_Build_Complete>
+      <SFXEvent_Fire></SFXEvent_Fire>
+      <SFXEvent_Special_Weapon_Ready></SFXEvent_Special_Weapon_Ready>
+      <Death_SFXEvent_Start_Die>Unit_Generic_Building_Death_SFX</Death_SFXEvent_Start_Die>
+      <SFXEvent_Unit_Under_Attack></SFXEvent_Unit_Under_Attack>
+      <SFXEvent_Unit_Lost></SFXEvent_Unit_Lost>
+      <SFXEvent_Select>Structure_Ion_Select_SFX</SFXEvent_Select>
+
+      <Death_Explosions>Huge_Explosion_Land</Death_Explosions>
+      <CategoryMask> Structure </CategoryMask>
+      <Prevents_Blockade_Run_Attrition>True</Prevents_Blockade_Run_Attrition>
+
+      <Influences_Capture_Point>False</Influences_Capture_Point>
+
+      <Space_Obstacle_Offset> 0 0 0 </Space_Obstacle_Offset>
+      <Space_Layer> Corvette </Space_Layer>
+      <Has_Land_Evaluator>True</Has_Land_Evaluator>
+      <Score_Cost_Credits> 20000 </Score_Cost_Credits>
+
+      <Is_Visible_On_Radar>Yes</Is_Visible_On_Radar>
+      <Radar_Icon_Size>0.1  0.1</Radar_Icon_Size>
+      <Abilities SubObjectList="Yes">
+         <Force_Healing_Ability Name="Ion_Cannon_Self_Repair">
+            <Activation_Style>Skirmish_Automatic</Activation_Style>
+            <Heal_Range>0.0</Heal_Range>
+            <Heal_Percent>0.025</Heal_Percent>
+            <Heal_Amount>0.0</Heal_Amount>
+            <Heal_Interval_In_Secs>5.0</Heal_Interval_In_Secs>
+            <Single_Target_Heal>Yes</Single_Target_Heal>
+            <Applicable_Unit_Categories />
+            <Applicable_Unit_Types />
+            <SFXEvent_Target_Affected />
+            <Owner_Particle_Bone_Name>ROOT</Owner_Particle_Bone_Name>
+            <Owner_Light_Effect_Type>Color_Flash</Owner_Light_Effect_Type>
+            <Owner_Light_Effect_Color>1.2, 1.2, 1.2</Owner_Light_Effect_Color>
+            <Owner_Light_Effect_Color2 />
+            <Owner_Light_Effect_Duration>0.6</Owner_Light_Effect_Duration>
+            <Owner_Light_Effect_Pulse_Count>1</Owner_Light_Effect_Pulse_Count>
+         </Force_Healing_Ability>
+      </Abilities>
+   </SpecialStructure>
+
+   <!-- GTSW Projectile variant -->
+   <Projectile Name="Proj_Tauri_Orbital_Drone_Platform">
+      <Variant_Of_Existing_Type>Proj_Asuran_Drones_Rocket</Variant_Of_Existing_Type>
+      <Space_Model_Name>Tauri_Projectile_Drone.ALO</Space_Model_Name>
+      <Land_Model_Name>Tauri_Projectile_Drone.ALO</Land_Model_Name>
+      <Behavior>PROJECTILE</Behavior>
+      <Max_Speed>25.0</Max_Speed>
+      <Scale_Factor>1.5</Scale_Factor>
+      <Projectile_Max_Flight_Distance>9999999.0</Projectile_Max_Flight_Distance>
+      <Projectile_Category>ROCKET</Projectile_Category>
+      <Projectile_Rocket_Curve_Distance>450</Projectile_Rocket_Curve_Distance>
+      <Projectile_Rocket_Curve_Offset>90</Projectile_Rocket_Curve_Offset>
+      <Projectile_Rocket_Straight_Distance>250</Projectile_Rocket_Straight_Distance>
+      <Explode_When_Reached_Target_Radius> True </Explode_When_Reached_Target_Radius>
+      <Projectile_Max_Scan_Range>1000</Projectile_Max_Scan_Range>
+      <Projectile_Damage>90.0</Projectile_Damage>
+      <Projectile_Object_Detonation_Particle>Particle_General_Hit_Small</Projectile_Object_Detonation_Particle>
+      <Projectile_Object_Armor_Reduced_Detonation_Particle>Particle_General_Hit_Small</Projectile_Object_Armor_Reduced_Detonation_Particle>
+      <Projectile_Ground_Detonation_Particle/>
+      <Projectile_Lifetime_Detonation_Particle/>
+      <Projectile_Absorbed_By_Shields_Particle>Particle_Tauri_Railgun_Shield_Hit</Projectile_Absorbed_By_Shields_Particle>
+      <AI_Combat_Power>50</AI_Combat_Power>
+      <Projectile_SFXEvent_Detonate/>
+      <Projectile_SFXEvent_Detonate_Reduced_By_Armor>Damage_Shield_Absorb_Small</Projectile_SFXEvent_Detonate_Reduced_By_Armor>
+   </Projectile>
+
+   <Projectile Name="Proj_Story_Ancient_Weapons_Platform">
+      <Variant_Of_Existing_Type>Proj_Asuran_Drones_Rocket</Variant_Of_Existing_Type>
+      <Space_Model_Name>Tauri_Projectile_Drone.ALO</Space_Model_Name>
+      <Land_Model_Name>Tauri_Projectile_Drone.ALO</Land_Model_Name>
+      <Behavior>PROJECTILE</Behavior>
+      <Max_Speed>25.0</Max_Speed>
+      <Max_Rate_Of_Turn>2.5</Max_Rate_Of_Turn>
+      <Scale_Factor>1.0</Scale_Factor>
+      <Projectile_Max_Flight_Distance>15000.0</Projectile_Max_Flight_Distance>
+      <Projectile_Damages_Random_Hard_Points>yes</Projectile_Damages_Random_Hard_Points>
+      <Projectile_Category>ROCKET</Projectile_Category>
+      <Projectile_Rocket_Curve_Distance>350</Projectile_Rocket_Curve_Distance>
+      <Projectile_Rocket_Curve_Offset>60</Projectile_Rocket_Curve_Offset>
+      <Projectile_Rocket_Straight_Distance>250</Projectile_Rocket_Straight_Distance>
+      <Explode_When_Reached_Target_Radius> True </Explode_When_Reached_Target_Radius>
+      <Projectile_Max_Scan_Range>1000</Projectile_Max_Scan_Range>
+      <Projectile_Damage>500.0</Projectile_Damage>
+      <Projectile_Object_Detonation_Particle>Particle_General_Hit_Small</Projectile_Object_Detonation_Particle>
+      <Projectile_Object_Armor_Reduced_Detonation_Particle>Particle_General_Hit_Small</Projectile_Object_Armor_Reduced_Detonation_Particle>
+      <Projectile_Ground_Detonation_Particle/>
+      <Projectile_Lifetime_Detonation_Particle/>
+      <Projectile_Absorbed_By_Shields_Particle>Particle_Tauri_Railgun_Shield_Hit</Projectile_Absorbed_By_Shields_Particle>
+      <AI_Combat_Power>50</AI_Combat_Power>
+      <Projectile_SFXEvent_Detonate/>
+      <Projectile_SFXEvent_Detonate_Reduced_By_Armor>Damage_Shield_Absorb_Small</Projectile_SFXEvent_Detonate_Reduced_By_Armor>
+   </Projectile>
+
+
+   <!--The Tokra underground network allows two things:
+   a) when being attacked all FOW is being lifted (like the Secondary_Abandoned_Sensor does) and
+   b) enables the construction of special Tokra units on the galactic layer-->
+   <Ground_Structure_Tauri Name="Tokra_Underground_Base">
+      <Variant_Of_Existing_Type>Template_Ground_Structure_Big</Variant_Of_Existing_Type>
+      <Text_ID>TEXT_TOKRA_GROUND_BUILDING_UNDERGROUND_BASE</Text_ID>
+      <Encyclopedia_Text>TEXT_DESCRIPTION_TOKRA_UNDERGROUND_BASE</Encyclopedia_Text>
+      <Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_SPECIAL_STRUCTURE</Encyclopedia_Unit_Class>
+      <Icon_Name>TOKRA_GROUND_BUILDING_UNDERGROUND_BASE.TGA</Icon_Name>
+      <Land_Model_Name>Goauld_Land_Building_Ringtransporter_Platform.alo</Land_Model_Name>
+      <Radar_Icon_Name>I_RADAR_SUPERGATE.TGA</Radar_Icon_Name>
+      <Radar_Icon_Size>0.1  0.1</Radar_Icon_Size>
+      <Scale_Factor>2.0</Scale_Factor>
+      <Select_Box_Scale>45</Select_Box_Scale>
+      <!-- Override the template's higher value, since the rings are very flat on the ground -->
+      <Ranged_Target_Z_Adjust>0.0</Ranged_Target_Z_Adjust>
+      
+      <Affiliation>Underworld</Affiliation>
+      <Build_Cost_Credits>2000</Build_Cost_Credits>
+      <Build_Time_Seconds>60</Build_Time_Seconds>
+      <Build_Max_Instances_Per_Planet>1</Build_Max_Instances_Per_Planet>
+      <Base_Position>Out_Base</Base_Position>
+      <Tech_Level>0</Tech_Level>
+      <Required_Ground_Base_Level>1</Required_Ground_Base_Level>
+      <Required_Planets>P34_353J, Vorash, Revanna</Required_Planets>
+      <Required_Planets>Universe_L_P34_353J, Universe_L_Vorash, Universe_L_Revanna</Required_Planets>
+      <Required_Planets>Universe_S_Vorash, Universe_S_Revanna</Required_Planets>
+      <Tactical_Health>800</Tactical_Health>
+      <Abilities SubObjectList="Yes">
+         <Income_Stream_Mod_Ability Name="Tokra_Underground_Base_Maintenance_Cost">
+            <Income_Multiplier>0.80</Income_Multiplier>
+            <Income_Additive_Value>0.0</Income_Additive_Value>
+            <Interval_Multiplier>2.0</Interval_Multiplier>
+            <Stacking_Category>0</Stacking_Category>
+            <Target_Stream_Source>U_Ground_Mining_Facility</Target_Stream_Source>
+            <Affects_All_Allied_Sources>Yes</Affects_All_Allied_Sources>
+            <Reverse_Application_Logic>Yes</Reverse_Application_Logic>
+         </Income_Stream_Mod_Ability>
+      </Abilities>
+   </Ground_Structure_Tauri>
+
+
+   <!--Thors Hammer-->
+   <!--Once on the map the structure will beam away/kill enemy non-hero infantry units every few seconds-->
+   <Ground_Structure_Tauri Name="Tauri_Building_Thors_Hammer">
+      <Variant_Of_Existing_Type>Template_Ground_Structure_Big</Variant_Of_Existing_Type>
+      <Text_ID>TEXT_GROUND_BUILDING_THORS_HAMMER</Text_ID>
+      <Encyclopedia_Text>TEXT_DESCRIPTION_GC_THORS_HAMMER_GROUND</Encyclopedia_Text>
+      <Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_SPECIAL_STRUCTURE</Encyclopedia_Unit_Class>
+      <Icon_Name>NEUTRAL_GROUND_THORS_HAMMER.TGA</Icon_Name>
+      <Land_Model_Name>Map_Asset_Cimmeria_ThorsHammer.alo</Land_Model_Name>
+      <Radar_Icon_Name>MINI_MAP_BUILDING.TGA</Radar_Icon_Name>
+      <Radar_Icon_Size>0.1  0.1</Radar_Icon_Size>
+      <Radar_Show_Facing>No</Radar_Show_Facing>
+      <Select_Box_Scale>45</Select_Box_Scale>
+      <Tactical_Health>600</Tactical_Health>
+      <Land_FOW_Reveal_Range>150.0</Land_FOW_Reveal_Range>
+      <Affiliation>Underworld</Affiliation>
+      <Tactical_Health>550</Tactical_Health>
+      <Build_Cost_Credits>2000</Build_Cost_Credits>
+      <Build_Time_Seconds>60</Build_Time_Seconds>
+      <Build_Tab_Special_Structures>Yes</Build_Tab_Special_Structures>
+      <Build_Max_Instances_Per_Planet>1</Build_Max_Instances_Per_Planet>
+      <Base_Position>Out_Base</Base_Position>
+      <Tech_Level>0</Tech_Level>
+      <Required_Planets>Cimmeria</Required_Planets>
+      <Required_Planets>Universe_L_Cimmeria, Universe_S_Cimmeria</Required_Planets>
+      <Required_Ground_Base_Level>1</Required_Ground_Base_Level>
+      <Place_At_Every_Specific_Marker_Position>True</Place_At_Every_Specific_Marker_Position>
+      <Place_Other_Type_At_Every_Specific_Marker_Position>Tauri_Building_Thors_Hammer</Place_Other_Type_At_Every_Specific_Marker_Position>
+      <Lua_Script>ObjectScript_Thors_Hammer</Lua_Script>
+   </Ground_Structure_Tauri>
+
+
+<!--========================================================================================================
+#    Skirmish only buildings
+========================================================================================================-->
+
+   <!-- Radar Station -->
+   <Ground_Structure_Tauri Name="Communications_Array_U">
+      <Variant_Of_Existing_Type>Template_Ground_Structure_Big</Variant_Of_Existing_Type>
+      <Text_ID>TEXT_TAURI_GROUND_BUILDING_RADARSTATION</Text_ID>
+      <Encyclopedia_Text>TEXT_DESCRIPTION_TAURI_RADARSTATION_GROUND</Encyclopedia_Text>
+      <Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_SPECIAL_STRUCTURE</Encyclopedia_Unit_Class>
+      <Icon_Name>TAURI_LAND_BUILDING_RADARSTATION.tga</Icon_Name>
+      <Land_Model_Name>Tauri_Land_Building_Radar.alo</Land_Model_Name>
+      <Radar_Icon_Name>I_RADAR_TAURI_RADARSTATION.tga</Radar_Icon_Name>
+      <Radar_Icon_Size>0.075  0.075</Radar_Icon_Size>
+      <Loop_Idle_Anim_00>Yes</Loop_Idle_Anim_00>
+      <Select_Box_Scale>250</Select_Box_Scale>
+      <Scale_Factor>0.6</Scale_Factor>
+
+      <Affiliation>Underworld</Affiliation>
+      <Tactical_Health>1500</Tactical_Health>
+      <Base_Position>Out_Base</Base_Position>
+
+      <SFXEvent_Select> Structure_Comm_Array_Select_SFX </SFXEvent_Select>
+      <SFXEvent_Ambient_Loop>Structure_Communications_Array_Loop</SFXEvent_Ambient_Loop>
+
+      <Land_Damage_Thresholds>1, 0.66, 0.33, 0</Land_Damage_Thresholds>
+      <Land_Damage_Alternates>0, 1, 2, 3</Land_Damage_Alternates>
+      <Land_Damage_SFX>null,SFX_Grenade_Detonation, SFX_Grenade_Detonation,null</Land_Damage_SFX>
+
+      <Tactical_Buildable_Objects_Multiplayer>
+            Underworld,
+            UL_Bombing_Run_Use_Upgrade,
+            UL_Planetary_Bombard_Use_Upgrade
+      </Tactical_Buildable_Objects_Multiplayer>
+
+      <Required_Ground_Base_Level>1</Required_Ground_Base_Level>
+      <Abilities SubObjectList="Yes">
+         <Enable_Radar_Ability Name="U_Comm_Array_Enable_Radar">
+            <Activation_Style>Skirmish_Automatic</Activation_Style>
+            <Affects_All_Allies>True</Affects_All_Allies>
+         </Enable_Radar_Ability>
+         <Force_Healing_Ability Name="U_Comm_Array_Self_Repair">
+            <Activation_Style>Skirmish_Automatic</Activation_Style>
+            <Heal_Percent>0.025</Heal_Percent>
+            <Heal_Interval_In_Secs>5.0</Heal_Interval_In_Secs>
+            <Single_Target_Heal>Yes</Single_Target_Heal>
+            <Owner_Particle_Bone_Name>ROOT</Owner_Particle_Bone_Name>
+            <Owner_Light_Effect_Type>Color_Flash</Owner_Light_Effect_Type>
+            <Owner_Light_Effect_Color>1.2, 1.2, 1.2</Owner_Light_Effect_Color>
+            <Owner_Light_Effect_Duration>0.6</Owner_Light_Effect_Duration>
+            <Owner_Light_Effect_Pulse_Count>1</Owner_Light_Effect_Pulse_Count>
+         </Force_Healing_Ability>
+         <Income_Stream_Ability Name="Communications_Array_U_Income_Stream">
+            <Base_Income_Value>5</Base_Income_Value>
+            <Base_Interval_In_Secs>5</Base_Interval_In_Secs>
+            <Split_Income_With_Allies>Yes</Split_Income_With_Allies>
+            <Split_Favors_Owner>No</Split_Favors_Owner>
+            <Full_Amount_To_Everyone>Yes</Full_Amount_To_Everyone>
+       </Income_Stream_Ability>
+      </Abilities>
+    </Ground_Structure_Tauri>
+
+   <Ground_Structure_Tauri Name="Communications_Array_U_Build_Pad">
+      <Variant_Of_Existing_Type>Template_Ground_Structure_Build_Pad</Variant_Of_Existing_Type>
+      <Land_Model_Name>Tauri_Land_Building_Radar_BP.alo</Land_Model_Name>
+      <Scale_Factor>0.6</Scale_Factor>
+      <Affiliation>Underworld</Affiliation>
+      <Tactical_Buildable_Objects_Multiplayer>Underworld, UC_Communications_Array_U</Tactical_Buildable_Objects_Multiplayer>
+   </Ground_Structure_Tauri>
+   <Ground_Structure_Tauri Name="UC_Communications_Array_U">
+      <Variant_Of_Existing_Type>Template_Ground_Structure_UC</Variant_Of_Existing_Type>
+      <Text_ID>TEXT_TAURI_GROUND_BUILDING_RADARSTATION</Text_ID>
+      <Encyclopedia_Text>TEXT_DESCRIPTION_TAURI_RADARSTATION_GROUND</Encyclopedia_Text>
+      <Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_SPECIAL_STRUCTURE</Encyclopedia_Unit_Class>
+      <Icon_Name>TAURI_LAND_BUILDING_RADARSTATION.tga</Icon_Name>
+      <Land_Model_Name>Tauri_Land_Building_Radar_UC.alo</Land_Model_Name>
+      <Scale_Factor>0.6</Scale_Factor>
+      <Affiliation>Underworld</Affiliation>
+      <Tactical_Buildable_Constructed>Communications_Array_U</Tactical_Buildable_Constructed>
+      <Tactical_Build_Start_Lower_Z>50.0</Tactical_Build_Start_Lower_Z>
+      <Tactical_Health>500</Tactical_Health>
+      <Tactical_Build_Cost_Multiplayer>800</Tactical_Build_Cost_Multiplayer>
+      <Tactical_Build_Time_Seconds>28</Tactical_Build_Time_Seconds>
+   </Ground_Structure_Tauri>
+
+
+    <!-- Small Resource Mine -->
+    <Ground_Structure_Tauri Name="Underworld_Mineral_Processor">
+      <Variant_Of_Existing_Type>Rebel_Mineral_Processor</Variant_Of_Existing_Type>
+      <Text_ID>TEXT_TAURI_GROUND_BUILDING_MINERAL_PROCESSOR</Text_ID>
+      <Encyclopedia_Text>TEXT_DESCRIPTION_TAURI_MINERAL_PROCESSOR_GROUND</Encyclopedia_Text>
+      <Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_MINING_FACILITY</Encyclopedia_Unit_Class>
+      <Icon_Name>TAURI_LAND_BUILDING_MINERAL_PROCESSOR.TGA</Icon_Name>
+      <Land_Model_Name> Tauri_Land_Building_Small_Mine.alo </Land_Model_Name>
+      <Scale_Factor>0.4</Scale_Factor>
+      <Affiliation>Underworld</Affiliation>
+
+      <Land_Damage_Thresholds>1, 0.5, 0</Land_Damage_Thresholds>
+      <Land_Damage_Alternates>0, 1, 2</Land_Damage_Alternates>
+      <Land_Damage_SFX>null,SFX_Grenade_Detonation, SFX_Grenade_Detonation</Land_Damage_SFX>
+
+      <Abilities SubObjectList="Yes">
+         <Force_Healing_Ability Name="U_Mineral_Processor_Self_Repair">
+            <Activation_Style>Skirmish_Automatic</Activation_Style>
+            <Heal_Percent>0.003</Heal_Percent>
+            <Heal_Interval_In_Secs>2.0</Heal_Interval_In_Secs>
+            <Single_Target_Heal>Yes</Single_Target_Heal>
+            <Owner_Particle_Bone_Name>ROOT</Owner_Particle_Bone_Name>
+            <Owner_Light_Effect_Type>Color_Flash</Owner_Light_Effect_Type>
+            <Owner_Light_Effect_Color>1.2, 1.2, 1.2</Owner_Light_Effect_Color>
+            <Owner_Light_Effect_Duration>0.6</Owner_Light_Effect_Duration>
+            <Owner_Light_Effect_Pulse_Count>1</Owner_Light_Effect_Pulse_Count>
+         </Force_Healing_Ability>
+         <Income_Stream_Ability Name="U_Mineral_Processor_Income_Stream">
+            <Base_Income_Value>45</Base_Income_Value>
+            <Base_Interval_In_Secs>5.0</Base_Interval_In_Secs>
+            <Split_Income_With_Allies>Yes</Split_Income_With_Allies>
+            <Split_Favors_Owner>No</Split_Favors_Owner>
+            <Full_Amount_To_Everyone>Yes</Full_Amount_To_Everyone>
+         </Income_Stream_Ability>
+      </Abilities>
+   </Ground_Structure_Tauri>
+
+   <Ground_Structure_Tauri Name="UC_Underworld_Mineral_Processor">
+      <Variant_Of_Existing_Type>UC_Rebel_Mineral_Processor</Variant_Of_Existing_Type>
+      <Text_ID> TEXT_TAURI_GROUND_BUILDING_MINERAL_PROCESSOR </Text_ID>
+      <Encyclopedia_Text>TEXT_DESCRIPTION_TAURI_MINERAL_PROCESSOR_GROUND</Encyclopedia_Text>
+      <Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_MINING_FACILITY</Encyclopedia_Unit_Class>
+      <Icon_Name>TAURI_LAND_BUILDING_MINERAL_PROCESSOR.TGA</Icon_Name>
+      <Land_Model_Name>Tauri_Land_Building_Small_Mine_UC.alo</Land_Model_Name>
+      <Affiliation>Underworld</Affiliation>
+      <Tactical_Buildable_Constructed>Underworld_Mineral_Processor</Tactical_Buildable_Constructed>
+      <Scale_Factor>0.4</Scale_Factor>
+   </Ground_Structure_Tauri>
+
+
+   <!--Outpost-->
+   <Ground_Structure_Tauri Name="U_Ground_Outpost">
+      <Variant_Of_Existing_Type>Template_Ground_Structure_Big_Base_Building_Spawn</Variant_Of_Existing_Type>
+      <Text_ID>TEXT_TAURI_GROUND_BUILDING_OUTPOST</Text_ID>
+      <Encyclopedia_Text>TEXT_DESCRIPTION_TAURI_SK_OUTPOST_GROUND</Encyclopedia_Text>
+      <Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_SPECIAL_STRUCTURE</Encyclopedia_Unit_Class>
+      <Icon_Name>TAURI_LAND_BUILDING_OUTPOST.tga</Icon_Name>
+      <Land_Model_Name>Tauri_Land_Building_Outpost.alo</Land_Model_Name>
+      <Radar_Icon_Name>mini_map_structure.tga</Radar_Icon_Name>
+      <Radar_Icon_Size>0.1  0.1</Radar_Icon_Size>
+      <Loop_Idle_Anim_00>Yes</Loop_Idle_Anim_00>
+      <Select_Box_Scale>300</Select_Box_Scale>
+
+      <Affiliation>Underworld</Affiliation>
+      <Build_Cost_Credits>2000</Build_Cost_Credits>
+      <Build_Time_Seconds>60</Build_Time_Seconds>
+      <Build_Max_Instances_Per_Planet>1</Build_Max_Instances_Per_Planet>
+      <Base_Position>Out_Base</Base_Position>
+      <Required_Ground_Base_Level>1</Required_Ground_Base_Level>
+      <Tactical_Health>800</Tactical_Health>
+      <Behavior>TACTICAL_SELL, SELECTABLE, DUMMY_GROUND_STRUCTURE</Behavior>
+      <Tactical_Sell_Credits>600</Tactical_Sell_Credits>
+      <Exclude_From_Distance_Fade>true</Exclude_From_Distance_Fade>
+
+      <Land_Damage_Thresholds>1, 0.66, 0.33, 0</Land_Damage_Thresholds>
+      <Land_Damage_Alternates>0, 1, 2, 3</Land_Damage_Alternates>
+      <Land_Damage_SFX>null,SFX_Grenade_Detonation, SFX_Grenade_Detonation,null</Land_Damage_SFX>
+
+      <Additional_Population_Capacity>50</Additional_Population_Capacity>
+      <Starting_Spawned_Units_Tech_0>Underworld_Disruptor_Merc_Squad, 1</Starting_Spawned_Units_Tech_0>
+      <Reserve_Spawned_Units_Tech_0>Underworld_Disruptor_Merc_Squad, -1</Reserve_Spawned_Units_Tech_0>
+      <Spawned_Squadron_Location_Bones>SPAWN_00</Spawned_Squadron_Location_Bones>
+
+     <Abilities SubObjectList="Yes">
+        <Force_Healing_Ability Name="Repair_Facility_Healing">
+            <Activation_Style>Ground_Automatic</Activation_Style>
+            <Heal_Range>200.0</Heal_Range>
+            <Heal_Amount>8.0</Heal_Amount>
+            <Heal_Interval_In_Secs>5.0</Heal_Interval_In_Secs>
+            <Single_Target_Heal>Yes</Single_Target_Heal>
+            <Heal_Range_Blob_Material>Reinforcement_Point_Radius_Overlay</Heal_Range_Blob_Material>
+            <Applicable_Unit_Categories>Vehicle</Applicable_Unit_Categories>
+            <Applicable_Unit_Types>F9TZ_Cloaking_Transport, Canderous_Assault_Tank, MZ8_Pulse_Cannon_Tank</Applicable_Unit_Types>
+            <Target_Particle_Effect>Shield_Sparks_Medium</Target_Particle_Effect>
+            <Target_Light_Effect_Type>Color_Flash</Target_Light_Effect_Type>
+            <Target_Light_Effect_Color>1.2, 1.2, 2.0</Target_Light_Effect_Color>
+            <Target_Light_Effect_Duration>0.6</Target_Light_Effect_Duration>
+            <Target_Light_Effect_Pulse_Count>1</Target_Light_Effect_Pulse_Count>
+            <Owner_Particle_Bone_Name>ROOT</Owner_Particle_Bone_Name>
+            <Owner_Light_Effect_Type>Color_Flash</Owner_Light_Effect_Type>
+            <Owner_Light_Effect_Color>1.2, 1.2, 2.0</Owner_Light_Effect_Color>
+            <Owner_Light_Effect_Duration>0.6</Owner_Light_Effect_Duration>
+            <Owner_Light_Effect_Pulse_Count>1</Owner_Light_Effect_Pulse_Count>
+         </Force_Healing_Ability>
+         <Income_Stream_Ability Name="Outpost_U_Income_Stream">
+            <Base_Income_Value>45</Base_Income_Value>
+            <Base_Interval_In_Secs>5</Base_Interval_In_Secs>
+            <Split_Income_With_Allies>Yes</Split_Income_With_Allies>
+            <Split_Favors_Owner>No</Split_Favors_Owner>
+            <Full_Amount_To_Everyone>Yes</Full_Amount_To_Everyone>
+         </Income_Stream_Ability>
+      </Abilities>
+   </Ground_Structure_Tauri>
+
+   <Ground_Structure_Tauri Name="UC_Underworld_Outpost">
+      <Variant_Of_Existing_Type>Template_Ground_Structure_UC</Variant_Of_Existing_Type>
+      <Text_ID>TEXT_TAURI_GROUND_BUILDING_OUTPOST</Text_ID>
+      <Encyclopedia_Text>TEXT_DESCRIPTION_TAURI_SK_OUTPOST_GROUND</Encyclopedia_Text>
+      <Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_SPECIAL_STRUCTURE</Encyclopedia_Unit_Class>
+      <Icon_Name>TAURI_LAND_BUILDING_OUTPOST.TGA</Icon_Name>
+      <Land_Model_Name>Tauri_Land_Building_Outpost_UC.alo</Land_Model_Name>
+      <Scale_Factor>1.0</Scale_Factor>
+      <Affiliation>Underworld</Affiliation>
+      <Tactical_Buildable_Constructed>U_Ground_Outpost</Tactical_Buildable_Constructed>
+      <Tactical_Build_Start_Lower_Z>0</Tactical_Build_Start_Lower_Z>
+      <Tactical_Health>800</Tactical_Health>
+      <Tactical_Build_Cost_Multiplayer>1200</Tactical_Build_Cost_Multiplayer>
+      <Tactical_Build_Time_Seconds>35</Tactical_Build_Time_Seconds>
+   </Ground_Structure_Tauri>
+
+
+   <!-- Guard Tower -->
+   <Ground_Structure_Tauri Name="U_Ground_Turbolaser_Tower">
+        <Variant_Of_Existing_Type>Template_Ground_Turbolaser_Tower</Variant_Of_Existing_Type>
+        <Text_ID>TEXT_GOAULD_GROUND_BUILDING_GUARD_TOWER</Text_ID>
+        <Encyclopedia_Text>TEXT_DESCRIPTION_GOAULD_GUARD_TOWER_GROUND</Encyclopedia_Text>
+        <Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_TURRET</Encyclopedia_Unit_Class>
+        <Icon_Name>GOAULD_GROUND_BUILDING_GUARD_TOWER.TGA</Icon_Name>
+        <Land_Model_Name>Tauri_Land_Building_Tower.ALO</Land_Model_Name>
+        <Obstacle_Proxy_Type>U_Ground_Turbolaser_Tower_Build_Pad</Obstacle_Proxy_Type>
+        <Affiliation>Underworld</Affiliation>
+    </Ground_Structure_Tauri>
+    <Ground_Structure_Tauri Name="U_Ground_Turbolaser_Tower_Build_Pad">
+      <Variant_Of_Existing_Type>Template_Ground_Structure_Build_Pad</Variant_Of_Existing_Type>
+      <Land_Model_Name>Goauld_Land_Building_Tower_BP.alo</Land_Model_Name>
+      <Scale_Factor>1.0</Scale_Factor>
+      <Affiliation>Underworld</Affiliation>
+      <Tactical_Buildable_Objects_Multiplayer>Underworld, UC_U_Ground_Turbolaser_Tower</Tactical_Buildable_Objects_Multiplayer>
+   </Ground_Structure_Tauri>
+   <Ground_Structure_Tauri Name="UC_U_Ground_Turbolaser_Tower">
+      <Variant_Of_Existing_Type>Template_Ground_Structure_UC</Variant_Of_Existing_Type>
+      <Text_ID>TEXT_GOAULD_GROUND_BUILDING_GUARD_TOWER</Text_ID>
+      <Encyclopedia_Text>TEXT_DESCRIPTION_GOAULD_GUARD_TOWER_GROUND</Encyclopedia_Text>
+      <Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_TURRET</Encyclopedia_Unit_Class>
+      <Icon_Name>GOAULD_GROUND_BUILDING_GUARD_TOWER.tga</Icon_Name>
+      <Land_Model_Name>Tauri_Land_Building_Tower_UC.alo</Land_Model_Name>
+      <Scale_Factor>1.0</Scale_Factor>
+      <Affiliation>Underworld</Affiliation>
+      <Tactical_Buildable_Constructed>U_Ground_Turbolaser_Tower</Tactical_Buildable_Constructed>
+      <Tactical_Build_Start_Lower_Z>50.0</Tactical_Build_Start_Lower_Z>
+      <Tactical_Health>500</Tactical_Health>
+      <Tactical_Build_Cost_Multiplayer>500</Tactical_Build_Cost_Multiplayer>
+      <Tactical_Build_Time_Seconds>28</Tactical_Build_Time_Seconds>
+   </Ground_Structure_Tauri>
+
+   <!-- Bunker -->
+   <Ground_Structure_Tauri Name="Garrison_Bunker_Underworld">
+      <Variant_Of_Existing_Type>Garrison_Bunker_Template</Variant_Of_Existing_Type>
+      <Land_Model_Name>UB_Bunker.alo</Land_Model_Name>
+      <Icon_Name>i_button_ui_bunker.tga</Icon_Name>
+      <Affiliation>Underworld</Affiliation>
+   </Ground_Structure_Tauri>
+   <Ground_Structure_Tauri Name="UC_Underworld_Bunker">
+      <Variant_Of_Existing_Type>UC_Rebel_Bunker</Variant_Of_Existing_Type>
+      <Affiliation>Underworld</Affiliation>
+      <Tactical_Buildable_Constructed>Garrison_Bunker_Underworld</Tactical_Buildable_Constructed>
+      <Land_Model_Name>UB_Bunker.alo</Land_Model_Name>
+      <Icon_Name>i_button_ui_bunker.tga</Icon_Name>
+   </Ground_Structure_Tauri>
+
+
+<!--========================================================================================================
+#    Tauri Ground Turrets
+========================================================================================================-->
+
+   <!-- Anti Infantry Turret -->
+    <Ground_Structure_Tauri Name="Underworld_Anti_Infantry_Turret">
+      <Variant_Of_Existing_Type> Abstract_Anti_Infantry_Turret </Variant_Of_Existing_Type>
+      <Text_ID>TEXT_TAURI_GROUND_BUILDING_ANTI_INFANTRY_TURRET</Text_ID>
+      <Encyclopedia_Text>TEXT_DESCRIPTION_TAURI_ANTI_INFANTRY_TURRET_GROUND</Encyclopedia_Text>
+      <Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_TAURI_MINIGUN_DEFENSE</Encyclopedia_Unit_Class>
+      <Icon_Name>TAURI_LAND_BUILDING_TURRET_ANTI_INFANTRY.TGA</Icon_Name>
+      <Land_Model_Name> Tauri_Land_Building_Turret_AI.alo</Land_Model_Name>
+      <Affiliation>Underworld</Affiliation>
+      <Scale_Factor>1.2</Scale_Factor>
+     <Select_Box_Scale>40</Select_Box_Scale>
+      <Projectile_Types>Proj_Underworld_Anti_Infantry_Turret</Projectile_Types>
+      <Projectile_Fire_Recharge_Seconds>1.0</Projectile_Fire_Recharge_Seconds>
+      <Projectile_Fire_Pulse_Count>10</Projectile_Fire_Pulse_Count>
+      <Projectile_Fire_Pulse_Delay_Seconds>0.08</Projectile_Fire_Pulse_Delay_Seconds>
+     <SFXEvent_Fire>Weapon_Tauri_Machinegun_2</SFXEvent_Fire>
+    </Ground_Structure_Tauri>
+
+   <Projectile Name="Proj_Underworld_Anti_Infantry_Turret">
+      <Variant_Of_Existing_Type>Proj_Tauri_MALP_MG</Variant_Of_Existing_Type>
+      <Damage_Type>Damage_Anti_Infantry</Damage_Type>
+      <Projectile_Damage>6.30</Projectile_Damage>
+   </Projectile>
+
+
+   <!-- Anti Vehicle Turret -->
+   <Ground_Structure_Tauri Name="Underworld_Torpedo_Turret">
+      <Variant_Of_Existing_Type> Abstract_Anti_Vehicle_Turret </Variant_Of_Existing_Type>
+      <Text_ID>TEXT_TAURI_GROUND_BUILDING_ANTI_VEHICLE_TURRET</Text_ID>
+      <Encyclopedia_Text>TEXT_DESCRIPTION_TAURI_ANTI_VEHICLE_TURRET_GROUND</Encyclopedia_Text>
+      <Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_TAURI_RAILGUN_DEFENSE</Encyclopedia_Unit_Class>
+      <Icon_Name>TAURI_LAND_BUILDING_TURRET_ANTI_VEHICLE.TGA</Icon_Name>
+      <Land_Model_Name>Tauri_Land_Building_Turret_AV.alo</Land_Model_Name>
+      <Affiliation>Underworld</Affiliation>
+      <Scale_Factor>1.2</Scale_Factor>
+     <Select_Box_Scale>40</Select_Box_Scale>
+      <Projectile_Types>Proj_Underworld_Anti_Vehicle_Turret</Projectile_Types>
+      <Projectile_Fire_Recharge_Seconds>3.0</Projectile_Fire_Recharge_Seconds>
+      <Projectile_Fire_Pulse_Count>2</Projectile_Fire_Pulse_Count>
+      <Projectile_Fire_Pulse_Delay_Seconds>1.0</Projectile_Fire_Pulse_Delay_Seconds>
+     <SFXEvent_Fire>Weapon_Small_Missile_Tauri</SFXEvent_Fire>
+    </Ground_Structure_Tauri>
+
+   <Projectile Name="Proj_Underworld_Anti_Vehicle_Turret">
+      <Variant_Of_Existing_Type>Proj_Tauri_AV_Missile</Variant_Of_Existing_Type>
+      <Damage_Type>Damage_Anti_Vehicle</Damage_Type>
+      <Projectile_Damage>40.0</Projectile_Damage>
+      <Projectile_Blast_Area_Range>10.0</Projectile_Blast_Area_Range>
+      <Projectile_Blast_Area_Damage>1.0</Projectile_Blast_Area_Damage>
+   </Projectile>
+
+
+   <!-- Anti Air Turret -->
+   <Ground_Structure_Tauri Name="Underworld_Mass_Driver_Turret">
+      <Variant_Of_Existing_Type> Abstract_Anti_Aircraft_Turret </Variant_Of_Existing_Type>
+      <Text_ID>TEXT_TAURI_GROUND_BUILDING_ANTI_AIR_TURRET</Text_ID>
+      <Encyclopedia_Text>TEXT_DESCRIPTION_TAURI_ANTI_AIR_TURRET_GROUND</Encyclopedia_Text>
+      <Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_TURRET_AA</Encyclopedia_Unit_Class>
+      <Icon_Name>TAURI_LAND_BUILDING_TURRET_ANTI_AIR.TGA</Icon_Name>
+      <Land_Model_Name>Tauri_Land_Building_Turret_AA.alo</Land_Model_Name>
+      <Affiliation>Underworld</Affiliation>
+      <Scale_Factor>1.2</Scale_Factor>
+     <Select_Box_Scale>40</Select_Box_Scale>
+      <Projectile_Types>Proj_Underworld_Anti_Aircraft_Turret</Projectile_Types>
+      <Projectile_Fire_Recharge_Seconds>1.0</Projectile_Fire_Recharge_Seconds>
+      <Projectile_Fire_Pulse_Count>8</Projectile_Fire_Pulse_Count>
+      <Projectile_Fire_Pulse_Delay_Seconds>0.08</Projectile_Fire_Pulse_Delay_Seconds>
+     <SFXEvent_Fire>Weapon_Railgun_Tauri_Small</SFXEvent_Fire>
+      <Turret_Rest_Angle> 0.0, -45.0, 0.0 </Turret_Rest_Angle>
+      <Turret_Bone_Name>B_Turret</Turret_Bone_Name>
+      <Barrel_Bone_Name>B_Barrel</Barrel_Bone_Name>
+    </Ground_Structure_Tauri>
+
+   <Projectile Name="Proj_Underworld_Anti_Aircraft_Turret">
+      <Variant_Of_Existing_Type>Proj_Tauri_AntiAir_Turret</Variant_Of_Existing_Type>
+      <Damage_Type>Damage_Anti_Air</Damage_Type>
+      <Projectile_Damage>5.13</Projectile_Damage>
+   </Projectile>
+
+
+   <!-- Inhibitor -->
+   <Ground_Structure_Tauri Name="Underworld_Buildable_Repair_Facility">
+
+      <Land_Model_Name> Tauri_Land_Building_Buildpad_Inhibitor.alo </Land_Model_Name>
+      <Text_ID>TEXT_TAURI_GROUND_BUILDING_INHIBITOR</Text_ID>
+      <Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_SPECIAL_STRUCTURE</Encyclopedia_Unit_Class>
+      <Encyclopedia_Text>TEXT_DESCRIPTION_TAURI_INHIBITOR_GROUND</Encyclopedia_Text>
+      <Icon_Name>TAURI_LAND_BUILDING_INHIBITOR.TGA</Icon_Name>
+
+      <Scale_Factor>1.2</Scale_Factor>
+      <Select_Box_Scale>40</Select_Box_Scale>
+      <Loop_Idle_Anim_00> Yes </Loop_Idle_Anim_00>
+      <Radar_Icon_Name>I_RADAR_TURRET_DEFENSIVE.TGA</Radar_Icon_Name>
+       <Is_Visible_On_Radar>Yes</Is_Visible_On_Radar>
+       <Radar_Icon_Size>0.05  0.05</Radar_Icon_Size>
+      <Radar_Show_Facing>No</Radar_Show_Facing>
+
+      <Tactical_Health> 450 </Tactical_Health>
+      <Collidable_By_Projectile_Living> Yes </Collidable_By_Projectile_Living>
+      <Death_Explosions>Large_Explosion_Land</Death_Explosions>
+      <Ranged_Target_Z_Adjust> 10.0 </Ranged_Target_Z_Adjust>
+
+      <Space_Layer> Land </Space_Layer>
+      <UnitCollisionClass> Vehicle </UnitCollisionClass>
+      <Custom_Hard_XExtent> 13.0 </Custom_Hard_XExtent>
+      <Custom_Hard_YExtent> 13.0 </Custom_Hard_YExtent>
+
+      <Base_Level_Available> 1 </Base_Level_Available>
+      <Required_Ground_Base_Level> 0 </Required_Ground_Base_Level>
+      <Armor_Type> Armor_Structure </Armor_Type>
+      <Reveal_During_Setup_Phase> False </Reveal_During_Setup_Phase>
+      <Victory_Relevant> No </Victory_Relevant>
+      <No_Reflection_Below_Detail_Level> 1 </No_Reflection_Below_Detail_Level>
+      <No_Refraction_Below_Detail_Level> 1 </No_Refraction_Below_Detail_Level>
+      <CategoryMask> Structure </CategoryMask>
+      <GUI_Bracket_Width> 20 </GUI_Bracket_Width>
+      <GUI_Bracket_Height> 0 </GUI_Bracket_Height>
+      <GUI_Bracket_Size> 0 </GUI_Bracket_Size>
+      <Score_Cost_Credits> 1500 </Score_Cost_Credits>
+      <Influences_Capture_Point> False </Influences_Capture_Point>
+
+      <Modifies_Reveal_Range>yes</Modifies_Reveal_Range>
+      <Reveal_Range_Modifier>-.75</Reveal_Range_Modifier>
+      <Dense_FOW_Reveal_Range_Multiplier>1.0</Dense_FOW_Reveal_Range_Multiplier>
+      <Passive_Missile_Shield_Radius> 300.0 </Passive_Missile_Shield_Radius>
+      <Disable_Force_Abilities_Range>250</Disable_Force_Abilities_Range>
+
+      <Lua_Script>ObjectScript_Ground_Turret</Lua_Script>
+
+      <Behavior>DUMMY_GROUND_STRUCTURE, SELECTABLE, TACTICAL_SELL</Behavior>
+      <LandBehavior>TARGETING, UNIT_AI, REVEAL, HIDE_WHEN_FOGGED, DAMAGE_TRACKING, STUNNABLE, POWERED, EARTHQUAKE_TARGET, IDLE, DISABLE_FORCE_ABILITIES, ABILITY_COUNTDOWN</LandBehavior>
+
+      <Unit_Abilities_Data SubObjectList="Yes">
+         <Unit_Ability>
+            <Type>AREA_EFFECT_STUN</Type>
+            <Alternate_Name_Text>TEXT_ABILITY_OVERCHARGING</Alternate_Name_Text>
+            <Alternate_Description_Text>TEXT_DESCRIPTION_ABILITY_EMP_INHIBITOR_GROUND</Alternate_Description_Text>
+            <Alternate_Icon_Name>I_SA_STUN.TGA</Alternate_Icon_Name>
+            <Recharge_Seconds>40.0</Recharge_Seconds>
+            <GUI_Activated_Ability_Name></GUI_Activated_Ability_Name>
+            <Spawned_Object_Type> Particle_Tauri_Land_Building_Buildpad_Inhibitor </Spawned_Object_Type>
+            <Supports_Autofire>True</Supports_Autofire>
+         </Unit_Ability>
+      </Unit_Abilities_Data>
+      <Abilities SubObjectList="Yes">
+         <Sensor_Jamming_Ability Name="Inhibitor_Sensor_Jamming">
+            <Activation_Style> COMBAT_AUTOMATIC </Activation_Style>
+            <Duration_In_Secs>15.0</Duration_In_Secs>
+            <Show_Blob_To_Enemies>Yes</Show_Blob_To_Enemies>
+         </Sensor_Jamming_Ability>
+         <Force_Healing_Ability Name="U_Inhibitor_Self_Repair">
+            <Activation_Style>Skirmish_Automatic</Activation_Style>
+            <Heal_Percent>0.010</Heal_Percent>
+            <Heal_Interval_In_Secs>5.0</Heal_Interval_In_Secs>
+            <Single_Target_Heal>Yes</Single_Target_Heal>
+            <Owner_Particle_Bone_Name>ROOT</Owner_Particle_Bone_Name>
+            <Owner_Light_Effect_Type>Color_Flash</Owner_Light_Effect_Type>
+            <Owner_Light_Effect_Color>1.2, 1.2, 1.2</Owner_Light_Effect_Color>
+
+            <Owner_Light_Effect_Duration>0.6</Owner_Light_Effect_Duration>
+            <Owner_Light_Effect_Pulse_Count>1</Owner_Light_Effect_Pulse_Count>
+         </Force_Healing_Ability>
+         <Battlefield_Modifier_Ability Name="Inhibitor_Slower_Reinforcements_Effect">
+            <Activation_Style>Skirmish_Automatic</Activation_Style>
+            <Reinforcement_Time_Multiplier>2.0</Reinforcement_Time_Multiplier>
+            <Reverse_Application_Logic>Yes</Reverse_Application_Logic>
+            <Apply_To_All_Allies>Yes</Apply_To_All_Allies>
+            <Stacking_Category>0</Stacking_Category>
+         </Battlefield_Modifier_Ability>
+      </Abilities>
+
+      <Land_FOW_Reveal_Range> 300.0 </Land_FOW_Reveal_Range>
+      <SFXEvent_Sold_Tactical></SFXEvent_Sold_Tactical>
+      <Affiliation> Underworld </Affiliation>
+
+   </Ground_Structure_Tauri>
+
+
+   <!-- Sonic Emitter -->
+   <Ground_Structure_Tauri Name="Underworld_Buildable_Bacta_Tank">
+
+      <Land_Model_Name> Tauri_Land_Building_Buildpad_Screamer.alo </Land_Model_Name>
+      <Text_ID>TEXT_TAURI_GROUND_BUILDING_SONIC_EMITTER</Text_ID>
+      <Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_SPECIAL_STRUCTURE</Encyclopedia_Unit_Class>
+      <Encyclopedia_Text>TEXT_DESCRIPTION_TAURI_SONIC_EMITTER_GROUND</Encyclopedia_Text>
+      <Icon_Name>TAURI_LAND_BUILDING_SONIC_EMITTER.TGA</Icon_Name>
+
+      <Scale_Factor>1.2</Scale_Factor>
+      <Select_Box_Scale>40</Select_Box_Scale>
+      <Loop_Idle_Anim_00> Yes </Loop_Idle_Anim_00>
+      <Radar_Icon_Name>I_RADAR_TURRET_DEFENSIVE.TGA</Radar_Icon_Name>
+       <Is_Visible_On_Radar>Yes</Is_Visible_On_Radar>
+       <Radar_Icon_Size>0.05  0.05</Radar_Icon_Size>
+      <Radar_Show_Facing>No</Radar_Show_Facing>
+
+      <Tactical_Health> 450 </Tactical_Health>
+      <Collidable_By_Projectile_Living> Yes </Collidable_By_Projectile_Living>
+      <Death_Explosions>Large_Explosion_Land</Death_Explosions>
+      <Ranged_Target_Z_Adjust> 10.0 </Ranged_Target_Z_Adjust>
+
+      <Space_Layer> Land </Space_Layer>
+      <UnitCollisionClass> Vehicle </UnitCollisionClass>
+      <Custom_Hard_XExtent> 13.0 </Custom_Hard_XExtent>
+      <Custom_Hard_YExtent> 13.0 </Custom_Hard_YExtent>
+
+      <Base_Level_Available> 1 </Base_Level_Available>
+      <Required_Ground_Base_Level> 0 </Required_Ground_Base_Level>
+      <Armor_Type> Armor_Structure </Armor_Type>
+      <Reveal_During_Setup_Phase> False </Reveal_During_Setup_Phase>
+      <Victory_Relevant> No </Victory_Relevant>
+      <No_Reflection_Below_Detail_Level> 1 </No_Reflection_Below_Detail_Level>
+      <No_Refraction_Below_Detail_Level> 1 </No_Refraction_Below_Detail_Level>
+      <CategoryMask> Structure </CategoryMask>
+      <GUI_Bracket_Width> 20 </GUI_Bracket_Width>
+      <GUI_Bracket_Height> 0 </GUI_Bracket_Height>
+      <GUI_Bracket_Size> 0 </GUI_Bracket_Size>
+      <Score_Cost_Credits> 1500 </Score_Cost_Credits>
+      <Influences_Capture_Point> False </Influences_Capture_Point>
+      <Lua_Script>ObjectScript_Ground_Turret</Lua_Script>
+
+      <Behavior>DUMMY_GROUND_STRUCTURE, SELECTABLE, TACTICAL_SELL</Behavior>
+      <LandBehavior>TARGETING, UNIT_AI, REVEAL, HIDE_WHEN_FOGGED, DAMAGE_TRACKING, STUNNABLE, POWERED, EARTHQUAKE_TARGET, IDLE, ABILITY_COUNTDOWN </LandBehavior>
+
+      <Unit_Abilities_Data SubObjectList="Yes">
+         <Unit_Ability>
+            <Type>FORCE_CONFUSE</Type>
+            <Alternate_Name_Text>TEXT_ABILITY_SONAR_WAVE</Alternate_Name_Text>
+              <Alternate_Description_Text>TEXT_DESCRIPTION_ABILITY_SONAR_WAVE_SONIC_EMITTER</Alternate_Description_Text>
+            <Recharge_Seconds>30.0</Recharge_Seconds>
+            <GUI_Activated_Ability_Name>Sonic_Emitter_Sound_Wave</GUI_Activated_Ability_Name>
+            <Effective_Radius>300.0</Effective_Radius>
+            <SFXEvent_GUI_Unit_Ability_Activated>Effect_Tauri_Emmitor</SFXEvent_GUI_Unit_Ability_Activated>
+            <Spawned_Object_Type>Particle_Sonic_Emitter</Spawned_Object_Type>
+            <Supports_Autofire>True</Supports_Autofire>
+         </Unit_Ability>
+         <!-- Unit_Ability>
+          <Type>FORCE_WHIRLWIND</Type>
+          <Alternate_Name_Text>TEXT_ABILITY_SONAR_WAVE</Alternate_Name_Text>
+          <Alternate_Description_Text>TEXT_DESCRIPTION_ABILITY_SONAR_WAVE_SONIC_EMITTER</Alternate_Description_Text>
+          <Alternate_Icon_Name>I_SA_FORCE_CONFUSE.TGA</Alternate_Icon_Name>
+          <Recharge_Seconds>25.0</Recharge_Seconds>
+          <GUI_Activated_Ability_Name>Sound_Wave</GUI_Activated_Ability_Name>
+          <Effective_Radius>500.0</Effective_Radius>
+          <Spawned_Object_Type>Particle_Sonic_Emitter</Spawned_Object_Type>
+         <Supports_Autofire>True</Supports_Autofire>
+       </Unit_Ability -->
+         </Unit_Abilities_Data>
+       <Abilities SubObjectList="Yes">
+       <Force_Confuse_Ability Name="Sonic_Emitter_Sound_Wave">
+             <Activation_Style>Special_Attack</Activation_Style>
+               <Applicable_Unit_Categories>Infantry</Applicable_Unit_Categories>
+               <Activation_Min_Range>0.0</Activation_Min_Range>
+               <Activation_Max_Range>240.0</Activation_Max_Range>
+               <Confuse_Time_In_Secs>8.0</Confuse_Time_In_Secs>
+               <Confuse_Range>300.0</Confuse_Range>
+               <Confuse_Travel_Time_In_Secs>1.2</Confuse_Travel_Time_In_Secs>
+              <Confuse_Effect> Confuse_Particle_Effect </Confuse_Effect>
+               <SFXEvent_Activate>Effect_Tauri_Emmitor</SFXEvent_Activate>
+               <Owner_Particle_Effect>Particle_Sonic_Emitter</Owner_Particle_Effect>
+               <Owner_Particle_Bone_Name />
+               <Owner_Light_Effect_Type>Color_Flash</Owner_Light_Effect_Type>
+               <Owner_Light_Effect_Color>8.0, 2.0, 2.0</Owner_Light_Effect_Color>
+
+               <Owner_Light_Effect_Duration>0.5</Owner_Light_Effect_Duration>
+               <Owner_Light_Effect_Pulse_Count />
+            </Force_Confuse_Ability>
+       <!-- Force_Whirlwind_Ability Name="Sound_Wave">
+          <Activation_Style>Special_Attack</Activation_Style>
+          <Activation_Min_Range>1</Activation_Min_Range>
+          <Activation_Max_Range>75.0</Activation_Max_Range>
+          <Damage_Amount>500.0</Damage_Amount>
+          <Damage_Range>75.0</Damage_Range>
+          <Travel_Time_In_Secs>1.0</Travel_Time_In_Secs>
+          <Activation_Chance>0,0.0, 1,0.0, 5,1.0, 500,1.0</Activation_Chance>
+          <Applicable_Unit_Categories>Infantry | LandHero</Applicable_Unit_Categories>
+
+          <SFXEvent_Activate></SFXEvent_Activate>
+          <Owner_Particle_Effect>Particle_Sonic_Emitter</Owner_Particle_Effect>
+          <Owner_Particle_Bone_Name />
+          <Owner_Light_Effect_Type>Color_Flash</Owner_Light_Effect_Type>
+          <Owner_Light_Effect_Color>2.0, 2.0, 2.0</Owner_Light_Effect_Color>
+
+          <Owner_Light_Effect_Duration>0.5</Owner_Light_Effect_Duration>
+          <Owner_Light_Effect_Pulse_Count />
+       </Force_Whirlwind_Ability -->
+       <Force_Healing_Ability Name="U_Sonic_Emitter_Self_Repair">
+              <Activation_Style>Skirmish_Automatic</Activation_Style>
+
+              <Heal_Percent>0.010</Heal_Percent>
+
+              <Heal_Interval_In_Secs>5.0</Heal_Interval_In_Secs>
+              <Single_Target_Heal>Yes</Single_Target_Heal>
+
+
+
+              <Owner_Particle_Bone_Name>ROOT</Owner_Particle_Bone_Name>
+              <Owner_Light_Effect_Type>Color_Flash</Owner_Light_Effect_Type>
+              <Owner_Light_Effect_Color>1.2, 1.2, 1.2</Owner_Light_Effect_Color>
+
+              <Owner_Light_Effect_Duration>0.6</Owner_Light_Effect_Duration>
+              <Owner_Light_Effect_Pulse_Count>1</Owner_Light_Effect_Pulse_Count>
+          </Force_Healing_Ability>
+      </Abilities>
+
+      <Land_FOW_Reveal_Range> 300.0 </Land_FOW_Reveal_Range>
+      <Dense_FOW_Reveal_Range_Multiplier> 1.0 </Dense_FOW_Reveal_Range_Multiplier>
+      <SFXEvent_Sold_Tactical></SFXEvent_Sold_Tactical>
+
+      <Affiliation> Underworld </Affiliation>
+
+   </Ground_Structure_Tauri>
+
+
+   <!-- Detector -->
+   <Ground_Structure_Tauri Name="Sensor_Node_Underworld">
+
+      <Variant_Of_Existing_Type> Abstract_Sensor_Node </Variant_Of_Existing_Type>
+
+      <Land_Model_Name> Tauri_Land_Building_Buildpad_Detector.alo </Land_Model_Name>
+      <Text_ID>TEXT_TAURI_GROUND_BUILDING_DETECTOR</Text_ID>
+      <Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_SPECIAL_STRUCTURE</Encyclopedia_Unit_Class>
+      <Encyclopedia_Text>TEXT_DESCRIPTION_TAURI_DETECTOR_GROUND</Encyclopedia_Text>
+      <Icon_Name>TAURI_LAND_BUILDING_DETECTOR.TGA</Icon_Name>
+
+      <Scale_Factor>1.2</Scale_Factor>
+      <Select_Box_Scale>40</Select_Box_Scale>
+      <Radar_Icon_Name>I_RADAR_TURRET_DEFENSIVE.TGA</Radar_Icon_Name>
+       <Is_Visible_On_Radar>Yes</Is_Visible_On_Radar>
+       <Radar_Icon_Size>0.05  0.05</Radar_Icon_Size>
+      <Radar_Show_Facing>No</Radar_Show_Facing>
+
+      <Tactical_Health> 400 </Tactical_Health>
+      <Tactical_Sell_Credits> 250 </Tactical_Sell_Credits>
+      <SFXEvent_Sold_Tactical></SFXEvent_Sold_Tactical>
+
+      <Target_Stealth_Units>Yes</Target_Stealth_Units>
+      <Loop_Idle_Anim_00> Yes </Loop_Idle_Anim_00>
+      <Land_FOW_Reveal_Range>750.0</Land_FOW_Reveal_Range>
+
+      <Affiliation>Underworld</Affiliation>
+
+      <Obstacle_Proxy_Type> Underworld_Build_Pad </Obstacle_Proxy_Type>
+
+      <Abilities SubObjectList="Yes">
+          <Force_Healing_Ability Name="U_Detector_Self_Repair">
+              <Activation_Style>Skirmish_Automatic</Activation_Style>
+
+              <Heal_Percent>0.010</Heal_Percent>
+
+              <Heal_Interval_In_Secs>5.0</Heal_Interval_In_Secs>
+              <Single_Target_Heal>Yes</Single_Target_Heal>
+
+
+
+              <Owner_Particle_Bone_Name>ROOT</Owner_Particle_Bone_Name>
+              <Owner_Light_Effect_Type>Color_Flash</Owner_Light_Effect_Type>
+              <Owner_Light_Effect_Color>1.2, 1.2, 1.2</Owner_Light_Effect_Color>
+
+              <Owner_Light_Effect_Duration>0.6</Owner_Light_Effect_Duration>
+              <Owner_Light_Effect_Pulse_Count>1</Owner_Light_Effect_Pulse_Count>
+          </Force_Healing_Ability>
+      </Abilities>
+
+   </Ground_Structure_Tauri>
+
+
+    <!-- ========================================== -->
+    <!-- GROUND-BASED TACTICAL BUILD PADS - UNDERWORLD  -->
+    <!-- ========================================== -->
+
+    <Ground_Structure_Tauri Name="Underworld_Build_Pad">
+
+      <Behavior> TACTICAL_BUILD_OBJECTS, REVEAL, HIDE_WHEN_FOGGED </Behavior>
+      <!-- This is a list of the buildable objects at this pad (defined below) - that will be under construction -->
+      <Tactical_Buildable_Objects_Campaign> Underworld, UC_Underworld_Buildable_Anti_Infantry_Turret, UC_Underworld_Buildable_Torpedo_Turret, UC_Underworld_Buildable_Mass_Driver_Turret, UC_Underworld_Buildable_Bacta_Tank, UC_Underworld_Buildable_Repair_Facility, UC_Underworld_Buildable_Sensor_Node </Tactical_Buildable_Objects_Campaign>
+      <Tactical_Buildable_Objects_Multiplayer> Underworld, UC_Underworld_Buildable_Anti_Infantry_Turret, UC_Underworld_Buildable_Torpedo_Turret, UC_Underworld_Buildable_Mass_Driver_Turret, UC_Underworld_Buildable_Repair_Facility, UC_Underworld_Buildable_Sensor_Node </Tactical_Buildable_Objects_Multiplayer>
+
+      <Text_ID> TEXT_UNDERWORLD_BUILD_PAD </Text_ID>
+      <Land_Model_Name> Tauri_Land_Building_Buildpad.alo </Land_Model_Name>
+      <Capture_Point_Radius>0</Capture_Point_Radius>
+      <Loop_Idle_Anim_00> No </Loop_Idle_Anim_00>
+      <Collidable_By_Projectile_Living> No </Collidable_By_Projectile_Living>
+      <Is_Visible_On_Radar>No</Is_Visible_On_Radar>
+      <Radar_Icon_Size>0.075  0.075</Radar_Icon_Size>
+      <Select_Box_Scale> 50 </Select_Box_Scale>
+      <Respects_Skirmish_Pre_Build_Bases_Option> false </Respects_Skirmish_Pre_Build_Bases_Option>
+
+      <Size_Value>0.2</Size_Value>
+
+      <Space_Layer> Land </Space_Layer>
+      <UnitCollisionClass> Build Pad </UnitCollisionClass>
+      <Custom_Hard_XExtent> 10.0 </Custom_Hard_XExtent>
+      <Custom_Hard_YExtent> 10.0 </Custom_Hard_YExtent>
+
+      <Scale_Factor> 1 </Scale_Factor>
+      <Shield_Points> 0 </Shield_Points>
+      <Tactical_Health> 10000 </Tactical_Health>
+      <Affiliation> Underworld </Affiliation>
+      <Base_Level_Available> 1 </Base_Level_Available>
+      <Required_Ground_Base_Level> 0 </Required_Ground_Base_Level>
+      <Reveal_During_Setup_Phase> False </Reveal_During_Setup_Phase>
+      <Reveal_During_Setup_Phase_Only> False </Reveal_During_Setup_Phase_Only>
+      <Land_FOW_Reveal_Range>100.0</Land_FOW_Reveal_Range>
+      <Victory_Relevant> No </Victory_Relevant>
+      <No_Reflection_Below_Detail_Level> 1 </No_Reflection_Below_Detail_Level>
+      <No_Refraction_Below_Detail_Level> 1 </No_Refraction_Below_Detail_Level>
+      <CategoryMask> Structure </CategoryMask>
+      <GUI_Bracket_Width> 20 </GUI_Bracket_Width>
+      <GUI_Bracket_Height> 0 </GUI_Bracket_Height>
+      <GUI_Bracket_Size> 1 </GUI_Bracket_Size>
+      <Has_Land_Evaluator>True</Has_Land_Evaluator>
+
+      <Influences_Capture_Point> False </Influences_Capture_Point>
+
+      <Visible_To_Enemies_When_Empty>True</Visible_To_Enemies_When_Empty>
+      <Immune_To_Damage>True</Immune_To_Damage>
+      <Minimum_Time_Before_Pad_Can_Build_Again> 15 </Minimum_Time_Before_Pad_Can_Build_Again>
+
+    </Ground_Structure_Tauri>
+
+    <Ground_Structure_Tauri Name="Underworld_Build_Pad_Offensive">
+
+      <Variant_Of_Existing_Type> Underworld_Build_Pad </Variant_Of_Existing_Type>
+
+      <!-- This is a list of the buildable objects at this pad (defined below) - that will be under construction -->
+      <Tactical_Buildable_Objects_Campaign> Underworld, UC_Underworld_Buildable_Torpedo_Turret, UC_Underworld_Buildable_Anti_Infantry_Turret, UC_Underworld_Buildable_Mass_Driver_Turret </Tactical_Buildable_Objects_Campaign>
+      <Tactical_Buildable_Objects_Multiplayer> Underworld, UC_Underworld_Buildable_Torpedo_Turret, UC_Underworld_Buildable_Anti_Infantry_Turret, UC_Underworld_Buildable_Mass_Driver_Turret </Tactical_Buildable_Objects_Multiplayer>
+
+    </Ground_Structure_Tauri>
+
+    <Ground_Structure_Tauri Name="Underworld_Build_Pad_Defensive">
+
+      <Variant_Of_Existing_Type> Underworld_Build_Pad </Variant_Of_Existing_Type>
+
+      <!-- This is a list of the buildable objects at this pad (defined below) - that will be under construction -->
+      <Tactical_Buildable_Objects_Campaign> Underworld, UC_Underworld_Buildable_Bacta_Tank, UC_Underworld_Buildable_Repair_Facility, UC_Underworld_Buildable_Sensor_Node </Tactical_Buildable_Objects_Campaign>
+      <Tactical_Buildable_Objects_Multiplayer> Underworld, UC_Underworld_Buildable_Bacta_Tank, UC_Underworld_Buildable_Repair_Facility, UC_Underworld_Buildable_Sensor_Node </Tactical_Buildable_Objects_Multiplayer>
+
+    </Ground_Structure_Tauri>
+
+
+    <!-- ============================================================================ -->
+    <!-- UNDER CONSTRUCTION GROUND-BASED BUILDABLE TACTICAL BASE STRUCTURES - TAURI  -->
+    <!-- ============================================================================ -->
+
+
+   <!-- Inhibitor UC -->
+    <Ground_Structure_Tauri Name="UC_Underworld_Buildable_Repair_Facility">
+      <Variant_Of_Existing_Type>Template_Ground_Turret_UC</Variant_Of_Existing_Type>
+      <Text_ID>TEXT_TAURI_GROUND_BUILDING_INHIBITOR</Text_ID>
+      <Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_DEFENSIVE_STRUCTURE</Encyclopedia_Unit_Class>
+      <Encyclopedia_Text>TEXT_DESCRIPTION_TAURI_INHIBITOR_GROUND</Encyclopedia_Text>
+      <Icon_Name>TAURI_LAND_BUILDING_INHIBITOR.TGA</Icon_Name>
+      <Land_Model_Name> Tauri_Land_Building_Buildpad_Inhibitor_UC.alo </Land_Model_Name>
+      <Scale_Factor>1.2</Scale_Factor>
+      <Select_Box_Scale>40</Select_Box_Scale>
+      <Affiliation>Underworld</Affiliation>
+      <SFXEvent_Select>Structure_Repair_Select_SFX</SFXEvent_Select>
+
+      <Tactical_Buildable_Constructed> Underworld_Buildable_Repair_Facility </Tactical_Buildable_Constructed>
+      <Tactical_Build_Cost_Multiplayer> 600 </Tactical_Build_Cost_Multiplayer>
+      <Tactical_Build_Cost_Campaign>50</Tactical_Build_Cost_Campaign>
+      <Tactical_Build_Time_Seconds> 20 </Tactical_Build_Time_Seconds>
+      <Tactical_Build_Start_Lower_Z> 0 </Tactical_Build_Start_Lower_Z>
+      <Tactical_Health> 250 </Tactical_Health>
+    </Ground_Structure_Tauri>
+
+
+    <!-- Sonic Emitter UC -->
+    <Ground_Structure_Tauri Name="UC_Underworld_Buildable_Bacta_Tank">
+      <Variant_Of_Existing_Type>Template_Ground_Turret_UC</Variant_Of_Existing_Type>
+      <Text_ID>TEXT_TAURI_GROUND_BUILDING_SONIC_EMITTER</Text_ID>
+      <Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_DEFENSIVE_STRUCTURE</Encyclopedia_Unit_Class>
+      <Encyclopedia_Text>TEXT_DESCRIPTION_TAURI_SONIC_EMITTER_GROUND</Encyclopedia_Text>
+      <Icon_Name>TAURI_LAND_BUILDING_SONIC_EMITTER.TGA</Icon_Name>
+      <Land_Model_Name> Tauri_Land_Building_Buildpad_Screamer_UC.alo </Land_Model_Name>
+      <Scale_Factor>1.2</Scale_Factor>
+      <Select_Box_Scale>40</Select_Box_Scale>
+      <Affiliation>Underworld</Affiliation>
+      <SFXEvent_Select>Structure_Bacta_Select_SFX</SFXEvent_Select>
+
+      <Tactical_Buildable_Constructed> Underworld_Buildable_Bacta_Tank </Tactical_Buildable_Constructed>
+      <Tactical_Build_Cost_Multiplayer> 600 </Tactical_Build_Cost_Multiplayer>
+      <Tactical_Build_Cost_Campaign>30</Tactical_Build_Cost_Campaign>
+      <Tactical_Build_Time_Seconds> 15 </Tactical_Build_Time_Seconds>
+      <Tactical_Build_Start_Lower_Z> 0 </Tactical_Build_Start_Lower_Z>
+      <Tactical_Health> 250 </Tactical_Health>
+    </Ground_Structure_Tauri>
+
+
+   <Ground_Structure_Tauri Name="UC_Underworld_Buildable_Torpedo_Turret">
+      <Variant_Of_Existing_Type>Template_Ground_Turret_UC</Variant_Of_Existing_Type>
+      <Text_ID>TEXT_TAURI_GROUND_BUILDING_ANTI_VEHICLE_TURRET</Text_ID>
+      <Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_TAURI_RAILGUN_DEFENSE</Encyclopedia_Unit_Class>
+      <Encyclopedia_Text>TEXT_DESCRIPTION_TAURI_ANTI_VEHICLE_TURRET_GROUND</Encyclopedia_Text>
+      <Icon_Name>TAURI_LAND_BUILDING_TURRET_ANTI_VEHICLE.TGA</Icon_Name>
+      <Land_Model_Name> Tauri_Land_Building_Turret_AV_UC.alo </Land_Model_Name>
+      <Scale_Factor>1.2</Scale_Factor>
+      <Affiliation>Underworld</Affiliation>
+      <SFXEvent_Select>Structure_Turret_Select_SFX</SFXEvent_Select>
+
+      <Tactical_Buildable_Constructed> Underworld_Torpedo_Turret </Tactical_Buildable_Constructed>
+      <Tactical_Build_Cost_Multiplayer> 600 </Tactical_Build_Cost_Multiplayer>
+      <Tactical_Build_Cost_Campaign>20</Tactical_Build_Cost_Campaign>
+      <Tactical_Build_Time_Seconds> 23 </Tactical_Build_Time_Seconds>
+      <Tactical_Build_Start_Lower_Z> 0 </Tactical_Build_Start_Lower_Z>
+      <Tactical_Health> 250 </Tactical_Health>
+    </Ground_Structure_Tauri>
+
+
+    <Ground_Structure_Tauri Name="UC_Underworld_Buildable_Anti_Infantry_Turret">
+      <Variant_Of_Existing_Type>Template_Ground_Turret_UC</Variant_Of_Existing_Type>
+      <Text_ID>TEXT_TAURI_GROUND_BUILDING_ANTI_INFANTRY_TURRET</Text_ID>
+      <Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_TAURI_MINIGUN_DEFENSE</Encyclopedia_Unit_Class>
+      <Encyclopedia_Text>TEXT_DESCRIPTION_TAURI_ANTI_INFANTRY_TURRET_GROUND</Encyclopedia_Text>
+      <Icon_Name>TAURI_LAND_BUILDING_TURRET_ANTI_INFANTRY.TGA</Icon_Name>
+      <Land_Model_Name> Tauri_Land_Building_Turret_AI_UC.alo </Land_Model_Name>
+      <Scale_Factor>1.2</Scale_Factor>
+      <Affiliation>Underworld</Affiliation>
+      <SFXEvent_Select>Structure_Turret_Select_SFX</SFXEvent_Select>
+
+      <Tactical_Buildable_Constructed> Underworld_Anti_Infantry_Turret </Tactical_Buildable_Constructed>
+      <Tactical_Build_Cost_Multiplayer> 500 </Tactical_Build_Cost_Multiplayer>
+      <Tactical_Build_Cost_Campaign>20</Tactical_Build_Cost_Campaign>
+      <Tactical_Build_Time_Seconds> 15 </Tactical_Build_Time_Seconds>
+      <Tactical_Build_Start_Lower_Z> 0 </Tactical_Build_Start_Lower_Z>
+      <Tactical_Health> 250 </Tactical_Health>
+    </Ground_Structure_Tauri>
+
+
+    <Ground_Structure_Tauri Name="UC_Underworld_Buildable_Mass_Driver_Turret">
+      <Variant_Of_Existing_Type>Template_Ground_Turret_UC</Variant_Of_Existing_Type>
+      <Text_ID>TEXT_TAURI_GROUND_BUILDING_ANTI_AIR_TURRET</Text_ID>
+      <Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_TURRET_AA</Encyclopedia_Unit_Class>
+      <Encyclopedia_Text>TEXT_DESCRIPTION_TAURI_ANTI_AIR_TURRET_GROUND</Encyclopedia_Text>
+      <Icon_Name>TAURI_LAND_BUILDING_TURRET_ANTI_AIR.TGA</Icon_Name>
+      <Land_Model_Name> Tauri_Land_Building_Turret_AA_UC.alo </Land_Model_Name>
+      <Scale_Factor>1.2</Scale_Factor>
+      <Affiliation>Underworld</Affiliation>
+      <SFXEvent_Select>Structure_Turret_Select_SFX</SFXEvent_Select>
+
+      <Tactical_Buildable_Constructed> Underworld_Mass_Driver_Turret </Tactical_Buildable_Constructed>
+      <Tactical_Build_Cost_Multiplayer> 600 </Tactical_Build_Cost_Multiplayer>
+      <Tactical_Build_Cost_Campaign>20</Tactical_Build_Cost_Campaign>
+      <Tactical_Build_Time_Seconds> 18 </Tactical_Build_Time_Seconds>
+      <Tactical_Build_Start_Lower_Z> 0 </Tactical_Build_Start_Lower_Z>
+      <Tactical_Health> 250 </Tactical_Health>
+    </Ground_Structure_Tauri>
+
+
+    <!-- Detector UC -->
+    <Ground_Structure_Tauri Name="UC_Underworld_Buildable_Sensor_Node">
+      <Variant_Of_Existing_Type>Template_Ground_Turret_UC</Variant_Of_Existing_Type>
+      <Text_ID>TEXT_TAURI_GROUND_BUILDING_DETECTOR</Text_ID>
+      <Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_DEFENSIVE_STRUCTURE</Encyclopedia_Unit_Class>
+      <Encyclopedia_Text>TEXT_DESCRIPTION_TAURI_DETECTOR_GROUND</Encyclopedia_Text>
+      <Icon_Name>TAURI_LAND_BUILDING_DETECTOR.TGA</Icon_Name>
+      <Land_Model_Name> Tauri_Land_Building_Buildpad_Detector_UC.alo </Land_Model_Name>
+      <Scale_Factor>1.2</Scale_Factor>
+      <Affiliation>Underworld</Affiliation>
+      <SFXEvent_Select>Structure_Sensor_Select_SFX</SFXEvent_Select>
+
+      <Tactical_Buildable_Constructed> Sensor_Node_Underworld </Tactical_Buildable_Constructed>
+      <Tactical_Build_Cost_Multiplayer> 450 </Tactical_Build_Cost_Multiplayer>
+      <Tactical_Build_Cost_Campaign>10</Tactical_Build_Cost_Campaign>
+      <Tactical_Build_Time_Seconds> 10 </Tactical_Build_Time_Seconds>
+      <Tactical_Build_Start_Lower_Z> 0 </Tactical_Build_Start_Lower_Z>
+      <Tactical_Health> 250 </Tactical_Health>
+    </Ground_Structure_Tauri>
+
+
+   <!-- Special Variant for Tartarus Ground Map -->
+   <Ground_Structure_Tauri Name="Underworld_Anti_Infantry_Turret_Tartarus">
+      <Variant_Of_Existing_Type> Underworld_Anti_Infantry_Turret </Variant_Of_Existing_Type>
+      <Targeting_Max_Attack_Distance>110.0</Targeting_Max_Attack_Distance>
+   </Ground_Structure_Tauri>
+   <Ground_Structure_Tauri Name="UC_Underworld_Buildable_Anti_Infantry_Turret_Tartarus">
+      <Variant_Of_Existing_Type> UC_Underworld_Buildable_Anti_Infantry_Turret </Variant_Of_Existing_Type>
+      <Tactical_Buildable_Constructed> Underworld_Anti_Infantry_Turret_Tartarus </Tactical_Buildable_Constructed>
+   </Ground_Structure_Tauri>
+   <Ground_Structure_Tauri Name="Underworld_Build_Pad_Tartarus">
+      <Variant_Of_Existing_Type> Underworld_Build_Pad </Variant_Of_Existing_Type>
+      <Tactical_Buildable_Objects_Campaign> Underworld, UC_Underworld_Buildable_Anti_Infantry_Turret_Tartarus, UC_Underworld_Buildable_Bacta_Tank, UC_Underworld_Buildable_Repair_Facility, UC_Underworld_Buildable_Sensor_Node </Tactical_Buildable_Objects_Campaign>
+      </Ground_Structure_Tauri>
+   <Ground_Structure_Tauri Name="Underworld_Build_Pad_Offensive_Tartarus">
+      <Variant_Of_Existing_Type> Underworld_Build_Pad_Offensive </Variant_Of_Existing_Type>
+      <Tactical_Buildable_Objects_Campaign> Underworld, UC_Underworld_Buildable_Anti_Infantry_Turret_Tartarus </Tactical_Buildable_Objects_Campaign>
+   </Ground_Structure_Tauri>
+
+
+
+   <!-- ===================================================================== -->
+   <!-- v10: Universal Galactic Fleet Supply Depots                          -->
+   <!-- One depot per planet, +50 global fleet population                    -->
+   <!-- ===================================================================== -->
+   <Ground_Structure_Tauri Name="Fleet_Supply_Depot_Rebel">
+      <Variant_Of_Existing_Type>Template_Ground_Structure_Big_Base_Building</Variant_Of_Existing_Type>
+      <Text_ID>TEXT_TAURI_GROUND_BUILDING_OUTPOST</Text_ID>
+      <Encyclopedia_Text>TEXT_DESCRIPTION_TAURI_SK_OUTPOST_GROUND</Encyclopedia_Text>
+      <Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_SPECIAL_STRUCTURE</Encyclopedia_Unit_Class>
+      <Icon_Name>TAURI_LAND_BUILDING_OUTPOST.tga</Icon_Name>
+      <Land_Model_Name>Tauri_Land_Building_Outpost.alo</Land_Model_Name>
+      <Radar_Icon_Name>mini_map_structure.tga</Radar_Icon_Name>
+      <Radar_Icon_Size>0.1 0.1</Radar_Icon_Size>
+      <Loop_Idle_Anim_00>Yes</Loop_Idle_Anim_00>
+      <Select_Box_Scale>300</Select_Box_Scale>
+      <Affiliation>Rebel</Affiliation>
+      <Build_Cost_Credits>2000</Build_Cost_Credits>
+      <Build_Time_Seconds>60</Build_Time_Seconds>
+      <Build_Max_Instances_Per_Planet>1</Build_Max_Instances_Per_Planet>
+      <Base_Position>Out_Base</Base_Position>
+      <Required_Ground_Base_Level>1</Required_Ground_Base_Level>
+      <Tactical_Health>1200</Tactical_Health>
+      <Behavior>TACTICAL_SELL, SELECTABLE, DUMMY_GROUND_STRUCTURE</Behavior>
+      <Tactical_Sell_Credits>1000</Tactical_Sell_Credits>
+      <Exclude_From_Distance_Fade>true</Exclude_From_Distance_Fade>
+      <Additional_Population_Capacity>50</Additional_Population_Capacity>
+   </Ground_Structure_Tauri>
+
+   <Ground_Structure_Tauri Name="Fleet_Supply_Depot_Empire">
+      <Variant_Of_Existing_Type>Template_Ground_Structure_Big_Base_Building</Variant_Of_Existing_Type>
+      <Text_ID>TEXT_TAURI_GROUND_BUILDING_OUTPOST</Text_ID>
+      <Encyclopedia_Text>TEXT_DESCRIPTION_TAURI_SK_OUTPOST_GROUND</Encyclopedia_Text>
+      <Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_SPECIAL_STRUCTURE</Encyclopedia_Unit_Class>
+      <Icon_Name>TAURI_LAND_BUILDING_OUTPOST.tga</Icon_Name>
+      <Land_Model_Name>Tauri_Land_Building_Outpost.alo</Land_Model_Name>
+      <Radar_Icon_Name>mini_map_structure.tga</Radar_Icon_Name>
+      <Radar_Icon_Size>0.1 0.1</Radar_Icon_Size>
+      <Loop_Idle_Anim_00>Yes</Loop_Idle_Anim_00>
+      <Select_Box_Scale>300</Select_Box_Scale>
+      <Affiliation>Empire</Affiliation>
+      <Build_Cost_Credits>2000</Build_Cost_Credits>
+      <Build_Time_Seconds>60</Build_Time_Seconds>
+      <Build_Max_Instances_Per_Planet>1</Build_Max_Instances_Per_Planet>
+      <Base_Position>Out_Base</Base_Position>
+      <Required_Ground_Base_Level>1</Required_Ground_Base_Level>
+      <Tactical_Health>1200</Tactical_Health>
+      <Behavior>TACTICAL_SELL, SELECTABLE, DUMMY_GROUND_STRUCTURE</Behavior>
+      <Tactical_Sell_Credits>1000</Tactical_Sell_Credits>
+      <Exclude_From_Distance_Fade>true</Exclude_From_Distance_Fade>
+      <Additional_Population_Capacity>50</Additional_Population_Capacity>
+   </Ground_Structure_Tauri>
+
+   <Ground_Structure_Tauri Name="Fleet_Supply_Depot_Asuran">
+      <Variant_Of_Existing_Type>Template_Ground_Structure_Big_Base_Building</Variant_Of_Existing_Type>
+      <Text_ID>TEXT_TAURI_GROUND_BUILDING_OUTPOST</Text_ID>
+      <Encyclopedia_Text>TEXT_DESCRIPTION_TAURI_SK_OUTPOST_GROUND</Encyclopedia_Text>
+      <Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_SPECIAL_STRUCTURE</Encyclopedia_Unit_Class>
+      <Icon_Name>TAURI_LAND_BUILDING_OUTPOST.tga</Icon_Name>
+      <Land_Model_Name>Tauri_Land_Building_Outpost.alo</Land_Model_Name>
+      <Radar_Icon_Name>mini_map_structure.tga</Radar_Icon_Name>
+      <Radar_Icon_Size>0.1 0.1</Radar_Icon_Size>
+      <Loop_Idle_Anim_00>Yes</Loop_Idle_Anim_00>
+      <Select_Box_Scale>300</Select_Box_Scale>
+      <Affiliation>Asuran</Affiliation>
+      <Build_Cost_Credits>2000</Build_Cost_Credits>
+      <Build_Time_Seconds>60</Build_Time_Seconds>
+      <Build_Max_Instances_Per_Planet>1</Build_Max_Instances_Per_Planet>
+      <Base_Position>Out_Base</Base_Position>
+      <Required_Ground_Base_Level>1</Required_Ground_Base_Level>
+      <Tactical_Health>1200</Tactical_Health>
+      <Behavior>TACTICAL_SELL, SELECTABLE, DUMMY_GROUND_STRUCTURE</Behavior>
+      <Tactical_Sell_Credits>1000</Tactical_Sell_Credits>
+      <Exclude_From_Distance_Fade>true</Exclude_From_Distance_Fade>
+      <Additional_Population_Capacity>50</Additional_Population_Capacity>
+   </Ground_Structure_Tauri>
+
+   <Ground_Structure_Tauri Name="Fleet_Supply_Depot_Traveler">
+      <Variant_Of_Existing_Type>Template_Ground_Structure_Big_Base_Building</Variant_Of_Existing_Type>
+      <Text_ID>TEXT_TAURI_GROUND_BUILDING_OUTPOST</Text_ID>
+      <Encyclopedia_Text>TEXT_DESCRIPTION_TAURI_SK_OUTPOST_GROUND</Encyclopedia_Text>
+      <Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_SPECIAL_STRUCTURE</Encyclopedia_Unit_Class>
+      <Icon_Name>TAURI_LAND_BUILDING_OUTPOST.tga</Icon_Name>
+      <Land_Model_Name>Tauri_Land_Building_Outpost.alo</Land_Model_Name>
+      <Radar_Icon_Name>mini_map_structure.tga</Radar_Icon_Name>
+      <Radar_Icon_Size>0.1 0.1</Radar_Icon_Size>
+      <Loop_Idle_Anim_00>Yes</Loop_Idle_Anim_00>
+      <Select_Box_Scale>300</Select_Box_Scale>
+      <Affiliation>Traveler</Affiliation>
+      <Build_Cost_Credits>2000</Build_Cost_Credits>
+      <Build_Time_Seconds>60</Build_Time_Seconds>
+      <Build_Max_Instances_Per_Planet>1</Build_Max_Instances_Per_Planet>
+      <Base_Position>Out_Base</Base_Position>
+      <Required_Ground_Base_Level>1</Required_Ground_Base_Level>
+      <Tactical_Health>1200</Tactical_Health>
+      <Behavior>TACTICAL_SELL, SELECTABLE, DUMMY_GROUND_STRUCTURE</Behavior>
+      <Tactical_Sell_Credits>1000</Tactical_Sell_Credits>
+      <Exclude_From_Distance_Fade>true</Exclude_From_Distance_Fade>
+      <Additional_Population_Capacity>50</Additional_Population_Capacity>
+   </Ground_Structure_Tauri>
+
+   <Ground_Structure_Tauri Name="Fleet_Supply_Depot_Replicator">
+      <Variant_Of_Existing_Type>Template_Ground_Structure_Big_Base_Building</Variant_Of_Existing_Type>
+      <Text_ID>TEXT_TAURI_GROUND_BUILDING_OUTPOST</Text_ID>
+      <Encyclopedia_Text>TEXT_DESCRIPTION_TAURI_SK_OUTPOST_GROUND</Encyclopedia_Text>
+      <Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_SPECIAL_STRUCTURE</Encyclopedia_Unit_Class>
+      <Icon_Name>TAURI_LAND_BUILDING_OUTPOST.tga</Icon_Name>
+      <Land_Model_Name>Tauri_Land_Building_Outpost.alo</Land_Model_Name>
+      <Radar_Icon_Name>mini_map_structure.tga</Radar_Icon_Name>
+      <Radar_Icon_Size>0.1 0.1</Radar_Icon_Size>
+      <Loop_Idle_Anim_00>Yes</Loop_Idle_Anim_00>
+      <Select_Box_Scale>300</Select_Box_Scale>
+      <Affiliation>Replicator</Affiliation>
+      <Build_Cost_Credits>2000</Build_Cost_Credits>
+      <Build_Time_Seconds>60</Build_Time_Seconds>
+      <Build_Max_Instances_Per_Planet>1</Build_Max_Instances_Per_Planet>
+      <Base_Position>Out_Base</Base_Position>
+      <Required_Ground_Base_Level>1</Required_Ground_Base_Level>
+      <Tactical_Health>1200</Tactical_Health>
+      <Behavior>TACTICAL_SELL, SELECTABLE, DUMMY_GROUND_STRUCTURE</Behavior>
+      <Tactical_Sell_Credits>1000</Tactical_Sell_Credits>
+      <Exclude_From_Distance_Fade>true</Exclude_From_Distance_Fade>
+      <Additional_Population_Capacity>50</Additional_Population_Capacity>
+   </Ground_Structure_Tauri>
+
+   <Ground_Structure_Tauri Name="Fleet_Supply_Depot_Ori">
+      <Variant_Of_Existing_Type>Template_Ground_Structure_Big_Base_Building</Variant_Of_Existing_Type>
+      <Text_ID>TEXT_TAURI_GROUND_BUILDING_OUTPOST</Text_ID>
+      <Encyclopedia_Text>TEXT_DESCRIPTION_TAURI_SK_OUTPOST_GROUND</Encyclopedia_Text>
+      <Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_SPECIAL_STRUCTURE</Encyclopedia_Unit_Class>
+      <Icon_Name>TAURI_LAND_BUILDING_OUTPOST.tga</Icon_Name>
+      <Land_Model_Name>Tauri_Land_Building_Outpost.alo</Land_Model_Name>
+      <Radar_Icon_Name>mini_map_structure.tga</Radar_Icon_Name>
+      <Radar_Icon_Size>0.1 0.1</Radar_Icon_Size>
+      <Loop_Idle_Anim_00>Yes</Loop_Idle_Anim_00>
+      <Select_Box_Scale>300</Select_Box_Scale>
+      <Affiliation>Ori</Affiliation>
+      <Build_Cost_Credits>2000</Build_Cost_Credits>
+      <Build_Time_Seconds>60</Build_Time_Seconds>
+      <Build_Max_Instances_Per_Planet>1</Build_Max_Instances_Per_Planet>
+      <Base_Position>Out_Base</Base_Position>
+      <Required_Ground_Base_Level>1</Required_Ground_Base_Level>
+      <Tactical_Health>1200</Tactical_Health>
+      <Behavior>TACTICAL_SELL, SELECTABLE, DUMMY_GROUND_STRUCTURE</Behavior>
+      <Tactical_Sell_Credits>1000</Tactical_Sell_Credits>
+      <Exclude_From_Distance_Fade>true</Exclude_From_Distance_Fade>
+      <Additional_Population_Capacity>50</Additional_Population_Capacity>
+   </Ground_Structure_Tauri>
+
+   <Ground_Structure_Tauri Name="Fleet_Supply_Depot_Wraith_Rebel">
+      <Variant_Of_Existing_Type>Template_Ground_Structure_Big_Base_Building</Variant_Of_Existing_Type>
+      <Text_ID>TEXT_TAURI_GROUND_BUILDING_OUTPOST</Text_ID>
+      <Encyclopedia_Text>TEXT_DESCRIPTION_TAURI_SK_OUTPOST_GROUND</Encyclopedia_Text>
+      <Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_SPECIAL_STRUCTURE</Encyclopedia_Unit_Class>
+      <Icon_Name>TAURI_LAND_BUILDING_OUTPOST.tga</Icon_Name>
+      <Land_Model_Name>Tauri_Land_Building_Outpost.alo</Land_Model_Name>
+      <Radar_Icon_Name>mini_map_structure.tga</Radar_Icon_Name>
+      <Radar_Icon_Size>0.1 0.1</Radar_Icon_Size>
+      <Loop_Idle_Anim_00>Yes</Loop_Idle_Anim_00>
+      <Select_Box_Scale>300</Select_Box_Scale>
+      <Affiliation>Wraith_Rebel</Affiliation>
+      <Build_Cost_Credits>2000</Build_Cost_Credits>
+      <Build_Time_Seconds>60</Build_Time_Seconds>
+      <Build_Max_Instances_Per_Planet>1</Build_Max_Instances_Per_Planet>
+      <Base_Position>Out_Base</Base_Position>
+      <Required_Ground_Base_Level>1</Required_Ground_Base_Level>
+      <Tactical_Health>1200</Tactical_Health>
+      <Behavior>TACTICAL_SELL, SELECTABLE, DUMMY_GROUND_STRUCTURE</Behavior>
+      <Tactical_Sell_Credits>1000</Tactical_Sell_Credits>
+      <Exclude_From_Distance_Fade>true</Exclude_From_Distance_Fade>
+      <Additional_Population_Capacity>50</Additional_Population_Capacity>
+   </Ground_Structure_Tauri>
+
+   <Ground_Structure_Tauri Name="Fleet_Supply_Depot_Systemlord_Alliance">
+      <Variant_Of_Existing_Type>Template_Ground_Structure_Big_Base_Building</Variant_Of_Existing_Type>
+      <Text_ID>TEXT_TAURI_GROUND_BUILDING_OUTPOST</Text_ID>
+      <Encyclopedia_Text>TEXT_DESCRIPTION_TAURI_SK_OUTPOST_GROUND</Encyclopedia_Text>
+      <Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_SPECIAL_STRUCTURE</Encyclopedia_Unit_Class>
+      <Icon_Name>TAURI_LAND_BUILDING_OUTPOST.tga</Icon_Name>
+      <Land_Model_Name>Tauri_Land_Building_Outpost.alo</Land_Model_Name>
+      <Radar_Icon_Name>mini_map_structure.tga</Radar_Icon_Name>
+      <Radar_Icon_Size>0.1 0.1</Radar_Icon_Size>
+      <Loop_Idle_Anim_00>Yes</Loop_Idle_Anim_00>
+      <Select_Box_Scale>300</Select_Box_Scale>
+      <Affiliation>Systemlord_Alliance</Affiliation>
+      <Build_Cost_Credits>2000</Build_Cost_Credits>
+      <Build_Time_Seconds>60</Build_Time_Seconds>
+      <Build_Max_Instances_Per_Planet>1</Build_Max_Instances_Per_Planet>
+      <Base_Position>Out_Base</Base_Position>
+      <Required_Ground_Base_Level>1</Required_Ground_Base_Level>
+      <Tactical_Health>1200</Tactical_Health>
+      <Behavior>TACTICAL_SELL, SELECTABLE, DUMMY_GROUND_STRUCTURE</Behavior>
+      <Tactical_Sell_Credits>1000</Tactical_Sell_Credits>
+      <Exclude_From_Distance_Fade>true</Exclude_From_Distance_Fade>
+      <Additional_Population_Capacity>50</Additional_Population_Capacity>
+   </Ground_Structure_Tauri>
+
+   <Ground_Structure_Tauri Name="Fleet_Supply_Depot_Aschen">
+      <Variant_Of_Existing_Type>Template_Ground_Structure_Big_Base_Building</Variant_Of_Existing_Type>
+      <Text_ID>TEXT_TAURI_GROUND_BUILDING_OUTPOST</Text_ID>
+      <Encyclopedia_Text>TEXT_DESCRIPTION_TAURI_SK_OUTPOST_GROUND</Encyclopedia_Text>
+      <Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_SPECIAL_STRUCTURE</Encyclopedia_Unit_Class>
+      <Icon_Name>TAURI_LAND_BUILDING_OUTPOST.tga</Icon_Name>
+      <Land_Model_Name>Tauri_Land_Building_Outpost.alo</Land_Model_Name>
+      <Radar_Icon_Name>mini_map_structure.tga</Radar_Icon_Name>
+      <Radar_Icon_Size>0.1 0.1</Radar_Icon_Size>
+      <Loop_Idle_Anim_00>Yes</Loop_Idle_Anim_00>
+      <Select_Box_Scale>300</Select_Box_Scale>
+      <Affiliation>Aschen</Affiliation>
+      <Build_Cost_Credits>2000</Build_Cost_Credits>
+      <Build_Time_Seconds>60</Build_Time_Seconds>
+      <Build_Max_Instances_Per_Planet>1</Build_Max_Instances_Per_Planet>
+      <Base_Position>Out_Base</Base_Position>
+      <Required_Ground_Base_Level>1</Required_Ground_Base_Level>
+      <Tactical_Health>1200</Tactical_Health>
+      <Behavior>TACTICAL_SELL, SELECTABLE, DUMMY_GROUND_STRUCTURE</Behavior>
+      <Tactical_Sell_Credits>1000</Tactical_Sell_Credits>
+      <Exclude_From_Distance_Fade>true</Exclude_From_Distance_Fade>
+      <Additional_Population_Capacity>50</Additional_Population_Capacity>
+   </Ground_Structure_Tauri>
+
+   <Ground_Structure_Tauri Name="Fleet_Supply_Depot_Jaffa_Rebels">
+      <Variant_Of_Existing_Type>Template_Ground_Structure_Big_Base_Building</Variant_Of_Existing_Type>
+      <Text_ID>TEXT_TAURI_GROUND_BUILDING_OUTPOST</Text_ID>
+      <Encyclopedia_Text>TEXT_DESCRIPTION_TAURI_SK_OUTPOST_GROUND</Encyclopedia_Text>
+      <Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_SPECIAL_STRUCTURE</Encyclopedia_Unit_Class>
+      <Icon_Name>TAURI_LAND_BUILDING_OUTPOST.tga</Icon_Name>
+      <Land_Model_Name>Tauri_Land_Building_Outpost.alo</Land_Model_Name>
+      <Radar_Icon_Name>mini_map_structure.tga</Radar_Icon_Name>
+      <Radar_Icon_Size>0.1 0.1</Radar_Icon_Size>
+      <Loop_Idle_Anim_00>Yes</Loop_Idle_Anim_00>
+      <Select_Box_Scale>300</Select_Box_Scale>
+      <Affiliation>Jaffa_Rebels</Affiliation>
+      <Build_Cost_Credits>2000</Build_Cost_Credits>
+      <Build_Time_Seconds>60</Build_Time_Seconds>
+      <Build_Max_Instances_Per_Planet>1</Build_Max_Instances_Per_Planet>
+      <Base_Position>Out_Base</Base_Position>
+      <Required_Ground_Base_Level>1</Required_Ground_Base_Level>
+      <Tactical_Health>1200</Tactical_Health>
+      <Behavior>TACTICAL_SELL, SELECTABLE, DUMMY_GROUND_STRUCTURE</Behavior>
+      <Tactical_Sell_Credits>1000</Tactical_Sell_Credits>
+      <Exclude_From_Distance_Fade>true</Exclude_From_Distance_Fade>
+      <Additional_Population_Capacity>50</Additional_Population_Capacity>
+   </Ground_Structure_Tauri>
+
+   <Ground_Structure_Tauri Name="Fleet_Supply_Depot_Lucian_Alliance">
+      <Variant_Of_Existing_Type>Template_Ground_Structure_Big_Base_Building</Variant_Of_Existing_Type>
+      <Text_ID>TEXT_TAURI_GROUND_BUILDING_OUTPOST</Text_ID>
+      <Encyclopedia_Text>TEXT_DESCRIPTION_TAURI_SK_OUTPOST_GROUND</Encyclopedia_Text>
+      <Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_SPECIAL_STRUCTURE</Encyclopedia_Unit_Class>
+      <Icon_Name>TAURI_LAND_BUILDING_OUTPOST.tga</Icon_Name>
+      <Land_Model_Name>Tauri_Land_Building_Outpost.alo</Land_Model_Name>
+      <Radar_Icon_Name>mini_map_structure.tga</Radar_Icon_Name>
+      <Radar_Icon_Size>0.1 0.1</Radar_Icon_Size>
+      <Loop_Idle_Anim_00>Yes</Loop_Idle_Anim_00>
+      <Select_Box_Scale>300</Select_Box_Scale>
+      <Affiliation>Lucian_Alliance</Affiliation>
+      <Build_Cost_Credits>2000</Build_Cost_Credits>
+      <Build_Time_Seconds>60</Build_Time_Seconds>
+      <Build_Max_Instances_Per_Planet>1</Build_Max_Instances_Per_Planet>
+      <Base_Position>Out_Base</Base_Position>
+      <Required_Ground_Base_Level>1</Required_Ground_Base_Level>
+      <Tactical_Health>1200</Tactical_Health>
+      <Behavior>TACTICAL_SELL, SELECTABLE, DUMMY_GROUND_STRUCTURE</Behavior>
+      <Tactical_Sell_Credits>1000</Tactical_Sell_Credits>
+      <Exclude_From_Distance_Fade>true</Exclude_From_Distance_Fade>
+      <Additional_Population_Capacity>50</Additional_Population_Capacity>
+   </Ground_Structure_Tauri>
+
+   <Ground_Structure_Tauri Name="Fleet_Supply_Depot_Pirates">
+      <Variant_Of_Existing_Type>Template_Ground_Structure_Big_Base_Building</Variant_Of_Existing_Type>
+      <Text_ID>TEXT_TAURI_GROUND_BUILDING_OUTPOST</Text_ID>
+      <Encyclopedia_Text>TEXT_DESCRIPTION_TAURI_SK_OUTPOST_GROUND</Encyclopedia_Text>
+      <Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_SPECIAL_STRUCTURE</Encyclopedia_Unit_Class>
+      <Icon_Name>TAURI_LAND_BUILDING_OUTPOST.tga</Icon_Name>
+      <Land_Model_Name>Tauri_Land_Building_Outpost.alo</Land_Model_Name>
+      <Radar_Icon_Name>mini_map_structure.tga</Radar_Icon_Name>
+      <Radar_Icon_Size>0.1 0.1</Radar_Icon_Size>
+      <Loop_Idle_Anim_00>Yes</Loop_Idle_Anim_00>
+      <Select_Box_Scale>300</Select_Box_Scale>
+      <Affiliation>Pirates</Affiliation>
+      <Build_Cost_Credits>2000</Build_Cost_Credits>
+      <Build_Time_Seconds>60</Build_Time_Seconds>
+      <Build_Max_Instances_Per_Planet>1</Build_Max_Instances_Per_Planet>
+      <Base_Position>Out_Base</Base_Position>
+      <Required_Ground_Base_Level>1</Required_Ground_Base_Level>
+      <Tactical_Health>1200</Tactical_Health>
+      <Behavior>TACTICAL_SELL, SELECTABLE, DUMMY_GROUND_STRUCTURE</Behavior>
+      <Tactical_Sell_Credits>1000</Tactical_Sell_Credits>
+      <Exclude_From_Distance_Fade>true</Exclude_From_Distance_Fade>
+      <Additional_Population_Capacity>50</Additional_Population_Capacity>
+   </Ground_Structure_Tauri>
+
+   <!-- ===================================================================== -->
+   <!-- v13: Universal Gate Defense Network                                   -->
+   <!-- Blocks Raid Force/Stargate invasions while present on a planet        -->
+   <!-- ===================================================================== -->
+   <Ground_Structure_Tauri Name="Universal_Gate_Defense_Network">
+      <Variant_Of_Existing_Type>Template_Ground_Structure_Big_Base_Building</Variant_Of_Existing_Type>
+      <Text_ID>TEXT_TAURI_GROUND_BUILDING_SHIELDGENERATOR</Text_ID>
+      <Encyclopedia_Text>TEXT_DESCRIPTION_TAURI_SHIELDGENERATOR_GC_GROUND</Encyclopedia_Text>
+      <Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_SPECIAL_STRUCTURE</Encyclopedia_Unit_Class>
+      <Icon_Name>TAURI_LAND_BUILDING_SHIELDGENERATOR.TGA</Icon_Name>
+      <Land_Model_Name>Tauri_Land_Building_Shield_Generator.alo</Land_Model_Name>
+      <Radar_Icon_Name>I_RADAR_TAURI_SHIELD_GENERATOR.TGA</Radar_Icon_Name>
+      <Radar_Icon_Size>0.075 0.075</Radar_Icon_Size>
+      <Loop_Idle_Anim_00>Yes</Loop_Idle_Anim_00>
+      <Select_Box_Scale>220</Select_Box_Scale>
+      <Scale_Factor>1.0</Scale_Factor>
+
+      <Affiliation>Rebel, Empire, Underworld, Asuran, Traveler, Replicator, Ori, Wraith_Rebel, Systemlord_Alliance, Aschen, Jaffa_Rebels, Lucian_Alliance, Pirates</Affiliation>
+      <Tech_Level>1</Tech_Level>
+      <Build_Cost_Credits>20000</Build_Cost_Credits>
+      <Build_Time_Seconds>90</Build_Time_Seconds>
+      <Build_Max_Instances_Per_Planet>1</Build_Max_Instances_Per_Planet>
+      <Base_Position>Out_Base</Base_Position>
+      <Required_Ground_Base_Level>1</Required_Ground_Base_Level>
+
+      <Tactical_Health>5000</Tactical_Health>
+      <AI_Combat_Power>1000</AI_Combat_Power>
+      <Behavior>TACTICAL_SELL, SELECTABLE, DUMMY_GROUND_STRUCTURE</Behavior>
+      <Tactical_Sell_Credits>10000</Tactical_Sell_Credits>
+      <Exclude_From_Distance_Fade>true</Exclude_From_Distance_Fade>
+
+      <Land_Damage_Thresholds>1, 0.66, 0.33, 0</Land_Damage_Thresholds>
+      <Land_Damage_Alternates>0, 1, 2, 3</Land_Damage_Alternates>
+      <Land_Damage_SFX>null,SFX_Grenade_Detonation,SFX_Grenade_Detonation,null</Land_Damage_SFX>
+   </Ground_Structure_Tauri>
+
+</Tauri_Ground_Buildings>

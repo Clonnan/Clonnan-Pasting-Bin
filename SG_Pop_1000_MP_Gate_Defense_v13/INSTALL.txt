@@ -1,0 +1,38 @@
+SG Pop 1000 + Multiplayer GC + Universal Gate Defense v13
+
+Install into:
+F:\SteamLibrary\steamapps\common\Star Wars Empire at War\corruption\Mods\1000PopStarGate
+
+Copy the Data folder from this patch into the existing 1000PopStarGate folder.
+Choose Replace for matching files. Do NOT delete the original Data or XML folders.
+
+v13 retains all v12 features:
+- 1000 space tactical population
+- 1000 ground reinforcement population
+- 1000 campaign ground-force limit
+- Multiplayer Galactic Conquest entries
+- Rebalanced O'Neill-class
+- Automatic Tau'ri and Asgard ship repair
+- Universal +50 fleet-population logistics depots
+- Stargate invasions for all playable factions
+
+New Gate Defense Network:
+- Available to every playable faction
+- Cost: 20,000 credits
+- Build time: 90 seconds
+- Limit: 1 per planet
+- Requires ground base level 1
+- Blocks hostile Raid Force / Stargate invasions while the structure exists
+- Selling it, losing it, or having it destroyed restores the Stargate raid slot
+- Original permanent blocks such as Earth's iris remain protected
+- Attackers can still reach the planet normally by fleet
+
+Important:
+- This feature uses campaign story Lua and the native HIDE_RAID_SLOT /
+  SHOW_RAID_SLOT reward system.
+- Both multiplayer players must use identical v13 files.
+- Start a new Galactic Conquest campaign.
+- The structure reuses the existing Shield Generator name, icon and model because
+  adding brand-new display text requires editing MasterTextFile.dat.
+- Runtime testing is still required because Empire at War story scripting can
+  behave differently between single-player and multiplayer Galactic Conquest.

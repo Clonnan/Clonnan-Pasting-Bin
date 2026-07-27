@@ -1,0 +1,171 @@
+<?xml version="1.0"?>
+<Sol>
+
+   <SpaceUnit Name="Tauri_Hero_Sol">
+      <Variant_Of_Existing_Type>Template_Space_Hero_Heavy_Battleship</Variant_Of_Existing_Type>
+      <Text_ID>TEXT_TAURI_SPACE_HERO_ESF_SOL</Text_ID>
+      <Encyclopedia_Text>TEXT_DESCRIPTION_TAURI_ESF_SOL_SPACE TEXT_DESCRIPTION_ORBITAL_BOMBARDMENT_UNIT</Encyclopedia_Text>
+      <Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_ESF_SOL</Encyclopedia_Unit_Class>
+      <Encyclopedia_Good_Against>Interdictor_Cruiser Corellian_Gunboat Star_Destroyer</Encyclopedia_Good_Against>
+      <Encyclopedia_Vulnerable_To>X-Wing Y-Wing TIE_Defender</Encyclopedia_Vulnerable_To>
+      <Icon_Name>TAURI_SPACE_HERO_SOL.TGA</Icon_Name>
+      <Space_Model_Name>Tauri_Space_Hero_SOL.ALO</Space_Model_Name>
+      <Galactic_Fleet_Override_Model_Name>W_planet_fleet_BC-304.ALO</Galactic_Fleet_Override_Model_Name>
+      <Radar_Icon_Name>I_RADAR_SOL.TGA</Radar_Icon_Name>
+      <Radar_Icon_Size>0.11 0.11</Radar_Icon_Size>
+      <Select_Box_Scale>350</Select_Box_Scale>
+      <Scale_Factor>1.2</Scale_Factor>
+      <Layer_Z_Adjust>-350.0</Layer_Z_Adjust>
+      <Mass>0.999</Mass>
+      <Custom_Hard_XExtent> 200.0 </Custom_Hard_XExtent>
+      <Custom_Hard_YExtent> 60.0 </Custom_Hard_YExtent>
+      <Affiliation>Underworld</Affiliation>
+      <SpaceBehavior>SIMPLE_SPACE_LOCOMOTOR, ABILITY_COUNTDOWN, ASTEROID_FIELD_DAMAGE, DAMAGE_TRACKING, HIDE_WHEN_FOGGED, ION_STUN_EFFECT, NEBULA, POWERED, REVEAL, SELECTABLE, SHIELDED, SPAWN_SQUADRON, TARGETING, UNIT_AI, WEAPON</SpaceBehavior>
+      <HardPoints>
+         HP_SOL_SHIELD,
+         HP_SOL_ENGINE,
+         HP_SOL_HANGAR_1,
+         HP_SOL_HANGAR_2,
+         HP_SOL_F_RB,
+         HP_SOL_M_RB_0,
+         HP_SOL_M_RB_1,
+         HP_SOL_R_RB,
+         HP_SOL_M_RB_2,
+         HP_SOL_M_RB_3,
+         HP_SOL_Turret_FR_0,
+         HP_SOL_Turret_FR_1,
+         HP_SOL_Turret_FL_0,
+         HP_SOL_Turret_FL_1,
+         HP_SOL_Turret_RL_0,
+         HP_SOL_Turret_RL_1,
+         HP_SOL_Turret_RR_0,
+         HP_SOL_Turret_RR_1
+      </HardPoints>
+
+      <Is_Named_Hero>No</Is_Named_Hero>
+      <Is_Generic_Hero>Yes</Is_Generic_Hero>
+      <Can_Be_Neutralized_By_Major_Heroes>No</Can_Be_Neutralized_By_Major_Heroes>
+      <Can_Be_Neutralized_By_Minor_Heroes>No</Can_Be_Neutralized_By_Minor_Heroes>
+      <Show_Hero_Head>Yes</Show_Hero_Head>
+
+      <Shield_Points>3250</Shield_Points>
+      <Shield_Refresh_Rate>50</Shield_Refresh_Rate>
+      <Tactical_Health>4000</Tactical_Health>
+
+      <Space_FOW_Reveal_Range>1500.0</Space_FOW_Reveal_Range>
+      <Targeting_Max_Attack_Distance>1800.0</Targeting_Max_Attack_Distance>
+
+      <Max_Speed>2.5</Max_Speed>
+      <Max_Rate_Of_Turn>0.7</Max_Rate_Of_Turn>
+      <Max_Rate_Of_Roll>0.7</Max_Rate_Of_Roll>
+      <Bank_Turn_Angle>15</Bank_Turn_Angle>
+      <OverrideAcceleration> .04 </OverrideAcceleration>
+      <OverrideDeceleration> .04 </OverrideDeceleration>
+      <Max_Thrust>2.0</Max_Thrust>
+
+      <Starting_Spawned_Units_Tech_0>StarViper_Squadron, 3</Starting_Spawned_Units_Tech_0>
+      <Starting_Spawned_Units_Tech_0>Tauri_HB_302_Squadron, 2</Starting_Spawned_Units_Tech_0>
+      <Spawned_Squadron_Delay_Seconds>3</Spawned_Squadron_Delay_Seconds>
+      <Reserve_Spawned_Units_Tech_0>StarViper_Squadron, -1</Reserve_Spawned_Units_Tech_0>
+      <Reserve_Spawned_Units_Tech_0>Tauri_HB_302_Squadron, -1</Reserve_Spawned_Units_Tech_0>
+ 
+      <!-- Legacy code as ROCKET_ATTACK ability is removed in release version? -->
+      <Projectile_Types>Proj_SOL_AGKS</Projectile_Types>
+      <Projectile_Fire_Pulse_Count>4</Projectile_Fire_Pulse_Count>
+      <Projectile_Fire_Pulse_Delay_Seconds>0.5</Projectile_Fire_Pulse_Delay_Seconds>
+      <Projectile_Fire_Recharge_Seconds>10.0</Projectile_Fire_Recharge_Seconds>
+
+      <SFXEvent_Attack>Unit_Attack_Paul_Davis</SFXEvent_Attack>
+      <SFXEvent_Fleet_Move>Unit_Move_Paul_Davis</SFXEvent_Fleet_Move>
+      <SFXEvent_Health_Critical_Warning>Unit_CriticalHP_Paul_Davis</SFXEvent_Health_Critical_Warning>
+      <SFXEvent_Health_Low_Warning>Unit_LOWHP_Paul_Davis</SFXEvent_Health_Low_Warning>
+      <SFXEvent_Move>Unit_Move_Paul_Davis</SFXEvent_Move>
+      <SFXEvent_Select>Unit_Select_Paul_Davis</SFXEvent_Select>
+      <SFXEvent_Build_Complete>Unit_Spawn_Paul_Davis</SFXEvent_Build_Complete>
+      <SFXEvent_Hero_Respawned>Unit_Spawn_Paul_Davis</SFXEvent_Hero_Respawned>
+
+      <SFXEvent_Engine_Idle_Loop> Engine_Tauri_BC304_Idle </SFXEvent_Engine_Idle_Loop>
+      <SFXEvent_Engine_Moving_Loop> Engine_Tauri_BC304 </SFXEvent_Engine_Moving_Loop>
+      <SFXEvent_Engine_Cinematic_Focus_Loop> Engine_Tauri_BC304_Cinematic </SFXEvent_Engine_Cinematic_Focus_Loop>
+
+      <Death_Clone>Damage_Normal, Tauri_Hero_Sol_Death_Clone</Death_Clone>
+
+      <Tactical_Build_Cost_Multiplayer>8000</Tactical_Build_Cost_Multiplayer>
+      <Tactical_Build_Time_Seconds>60</Tactical_Build_Time_Seconds>
+
+      <Unit_Abilities_Data SubObjectList="Yes">
+        <Unit_Ability>
+          <Type>ENERGY_WEAPON</Type>
+          <Alternate_Icon_Name>I_SA_PLASMABEAMCANNON.TGA</Alternate_Icon_Name>
+          <Alternate_Name_Text>TEXT_ABILITY_PLASMABEAMCANNON</Alternate_Name_Text>
+          <Alternate_Description_Text>TEXT_DESCRIPTION_ABILITY_PLASMABEAMCANNON_SOL_SPACE</Alternate_Description_Text>
+          <Mod_Multiplier>SPEED_MULTIPLIER, 0.8f</Mod_Multiplier>
+          <GUI_Activated_Ability_Name> Sol_Energy_Weapon_Attack_Ability </GUI_Activated_Ability_Name>
+          <Recharge_Seconds>120</Recharge_Seconds>
+          <Expiration_Seconds>2</Expiration_Seconds>
+          <SFXEvent_Target_Ability>  </SFXEvent_Target_Ability>
+          <SFXEvent_Special_Ability_Loop>  </SFXEvent_Special_Ability_Loop>
+          <Supports_Autofire>False</Supports_Autofire>
+        </Unit_Ability>
+      </Unit_Abilities_Data>
+      <Abilities SubObjectList="Yes">
+        <Energy_Weapon_Attack_Ability Name="Sol_Energy_Weapon_Attack_Ability">
+          <Activation_Style> User_Input </Activation_Style>
+          <Applicable_Unit_Categories>Corvette | Frigate | Capital | Super | SpaceHero</Applicable_Unit_Categories>
+          <Applicable_Unit_Types />
+          <Owner_Particle_Effect>Piet_Powerup_Particle_Effect</Owner_Particle_Effect>
+          <Owner_Particle_Bone_Name>HP_trac_bone</Owner_Particle_Bone_Name>
+          <Activation_Min_Range>200</Activation_Min_Range>
+          <Activation_Max_Range>1500</Activation_Max_Range>
+          <Damage_Per_Frame>50</Damage_Per_Frame>
+        </Energy_Weapon_Attack_Ability>
+               <Force_Healing_Ability Name="Asgard_Advanced_Auto_Repair">
+            <Activation_Style>Space_Automatic</Activation_Style>
+            <Heal_Range>0.0</Heal_Range>
+            <Heal_Percent>0.008</Heal_Percent>
+            <Heal_Amount>2.0</Heal_Amount>
+            <Heal_Interval_In_Secs>2.0</Heal_Interval_In_Secs>
+            <Single_Target_Heal>No</Single_Target_Heal>
+            <Owner_Particle_Bone_Name>ROOT</Owner_Particle_Bone_Name>
+         </Force_Healing_Ability>
+      </Abilities>
+      <Lua_Script>ObjectScript_HW_Big</Lua_Script>
+   </SpaceUnit>
+
+   <SpaceUnit Name="Tauri_Hero_Sol_SK">
+      <Variant_Of_Existing_Type>Tauri_Hero_Sol</Variant_Of_Existing_Type>
+      <Tactical_Build_Prerequisites> General_Tech_4_Prereq </Tactical_Build_Prerequisites>
+      <Tech_Level>99</Tech_Level>
+   </SpaceUnit>
+
+
+   <SpaceUnit Name="Tauri_Hero_Sol_Death_Clone">
+      <Variant_Of_Existing_Type>Template_Space_Deathclone</Variant_Of_Existing_Type>
+      <Affiliation>Underworld</Affiliation>
+      <Space_Model_Name>Tauri_Space_Hero_SOL_D.alo</Space_Model_Name>
+      <Scale_Factor>1.2</Scale_Factor>
+   </SpaceUnit>
+
+
+   <!--Projectiles-->
+   <Projectile Name="Proj_SOL_Railgun">
+      <Variant_Of_Existing_Type>Proj_Tauri_Railgun_General</Variant_Of_Existing_Type>
+      <Projectile_Damage>3.7</Projectile_Damage>
+      <Damage_Type>Damage_Corvette</Damage_Type>
+   </Projectile>
+
+   <Projectile Name="Proj_SOL_AGKS">
+      <Variant_Of_Existing_Type>Proj_Tauri_Ship_Missile_General</Variant_Of_Existing_Type>
+      <Projectile_Damage>18.0</Projectile_Damage>
+      <Projectile_Rocket_Straight_Distance>500</Projectile_Rocket_Straight_Distance>
+      <Damage_Type>Damage_HeavyBS</Damage_Type>
+      <Scale_Factor>1.8</Scale_Factor>
+      <Max_Speed>7.5</Max_Speed>
+      <Max_Rate_Of_Turn>15.0</Max_Rate_Of_Turn>
+      <Projectile_Category>ROCKET</Projectile_Category>
+      <Projectile_Rocket_Curve_Distance>450</Projectile_Rocket_Curve_Distance>
+      <Projectile_Rocket_Curve_Offset>60</Projectile_Rocket_Curve_Offset>
+      <Projectile_Rocket_Straight_Distance>250</Projectile_Rocket_Straight_Distance>
+   </Projectile>
+
+</Sol>

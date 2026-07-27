@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Krayt_Destroyer_Data>
+
+   <SpaceUnit Name="Krayt_Class_Destroyer">
+      <Variant_Of_Existing_Type>Template_Space_Unit_Medium_Battleship</Variant_Of_Existing_Type>
+      <Text_ID>TEXT_TAURI_SPACE_UNIT_BELISKNER</Text_ID>
+      <Encyclopedia_Text>TEXT_DESCRIPTION_TAURI_BELISKNER</Encyclopedia_Text>
+      <Encyclopedia_Unit_Class> TEXT_ENCYCLOPEDIA_CLASS_BELISKNER </Encyclopedia_Unit_Class>
+      <Encyclopedia_Good_Against>MC30_Frigate Interdictor_Cruiser Victory_Destroyer</Encyclopedia_Good_Against>
+      <Encyclopedia_Vulnerable_To>Wraith_Rebel_Heavy_Bomber Star_Destroyer B-Wing_Squadron</Encyclopedia_Vulnerable_To>
+      <Icon_Name>Tauri_Space_Unit_Beliskner.TGA</Icon_Name>
+      <Space_Model_Name>Tauri_Space_Unit_Beliskner.ALO</Space_Model_Name>
+      <Galactic_Fleet_Override_Model_Name>W_planet_fleet_Beliskner.ALO</Galactic_Fleet_Override_Model_Name>
+      <Radar_Icon_Name>I_RADAR_beliskner.tga</Radar_Icon_Name>
+      <Radar_Icon_Size>0.07 0.07</Radar_Icon_Size>
+      <Select_Box_Scale>550</Select_Box_Scale>
+      <Scale_Factor>1.25</Scale_Factor>
+      <Layer_Z_Adjust>-350.0</Layer_Z_Adjust>
+      <Affiliation>Underworld</Affiliation>
+      <SpaceBehavior>SIMPLE_SPACE_LOCOMOTOR, ABILITY_COUNTDOWN, ASTEROID_FIELD_DAMAGE, DAMAGE_TRACKING, HIDE_WHEN_FOGGED, ION_STUN_EFFECT, NEBULA, POWERED, REVEAL, SELECTABLE, SHIELDED, TARGETING, UNIT_AI</SpaceBehavior>
+      <Tech_Level>4</Tech_Level>
+      <HardPoints>
+         HP_BELISKNER_F_ICH,
+         HP_BELISKNER_SHIELD,
+         HP_BELISKNER_ENGINE,
+         HP_BELISKNER_FR_ICS,
+         HP_BELISKNER_FL_ICS,
+         HP_BELISKNER_ML_ICM,
+         HP_BELISKNER_MR_ICM
+      </HardPoints>
+      <Custom_Hard_XExtent> 220.0 </Custom_Hard_XExtent>
+      <Custom_Hard_YExtent> 170.0 </Custom_Hard_YExtent>
+
+      <Shield_Points>3400</Shield_Points>
+      <Shield_Refresh_Rate>40</Shield_Refresh_Rate>
+      <Tactical_Health>2190</Tactical_Health>
+      <Space_FOW_Reveal_Range>1400.0</Space_FOW_Reveal_Range>
+      <Targeting_Max_Attack_Distance>1650.0</Targeting_Max_Attack_Distance>
+
+      <Build_Cost_Credits>3600</Build_Cost_Credits>
+      <Build_Time_Seconds>45</Build_Time_Seconds>
+      <Tactical_Build_Cost_Multiplayer>3600</Tactical_Build_Cost_Multiplayer>
+      <Tactical_Build_Time_Seconds>28</Tactical_Build_Time_Seconds>
+
+      <Max_Speed>2.5</Max_Speed>
+      <Max_Rate_Of_Turn>0.5</Max_Rate_Of_Turn>
+      <OverrideAcceleration> .05 </OverrideAcceleration>
+      <OverrideDeceleration> .05 </OverrideDeceleration>
+      <Max_Rate_Of_Roll>0.5</Max_Rate_Of_Roll>
+      <Bank_Turn_Angle>25</Bank_Turn_Angle>
+      <Max_Thrust>0.2</Max_Thrust>
+
+      <SFXEvent_Attack>Unit_Attack_Asgard_Beliskner</SFXEvent_Attack>
+      <SFXEvent_Fleet_Move>Unit_Move_Asgard_Beliskner</SFXEvent_Fleet_Move>
+      <SFXEvent_Health_Critical_Warning>Unit_CriticalHP_Asgard_Beliskner</SFXEvent_Health_Critical_Warning>
+      <SFXEvent_Health_Low_Warning>Unit_LOWHP_Asgard_Beliskner</SFXEvent_Health_Low_Warning>
+      <SFXEvent_Move>Unit_Move_Asgard_Beliskner</SFXEvent_Move>
+      <SFXEvent_Select>Unit_Select_Asgard_Beliskner</SFXEvent_Select>
+
+      <SFXEvent_Engine_Idle_Loop> Engine_Asgard_Medium_Idle </SFXEvent_Engine_Idle_Loop>
+      <SFXEvent_Engine_Moving_Loop> Engine_Asgard_Medium </SFXEvent_Engine_Moving_Loop>
+      <SFXEvent_Engine_Cinematic_Focus_Loop>Engine_Asgard_Medium_Cinematic</SFXEvent_Engine_Cinematic_Focus_Loop>
+
+      <Death_SFXEvent_Start_Die>Unit_Defeat_Asgard_Beliskner</Death_SFXEvent_Start_Die>
+      <Death_Explosions>Large_Explosion_Space</Death_Explosions>
+      <Death_Clone>Damage_Normal, Krayt_Class_Destroyer_Death_Clone</Death_Clone>
+
+      <Required_Star_Base_Level>1</Required_Star_Base_Level>
+      <Required_Special_Structures>U_Space_Asgard_Shipyard</Required_Special_Structures>
+      <Population_Value>6</Population_Value>
+      <Lua_Script>ObjectScript_Beliskner</Lua_Script>
+      <Unit_Abilities_Data SubObjectList="Yes">
+         <Unit_Ability>
+            <Type>SHIELD_FLARE</Type>
+            <Alternate_Icon_Name>I_SA_SHIELD_OVERLOAD_BELISKNER.tga</Alternate_Icon_Name>
+            <Alternate_Description_Text>TEXT_DESCRIPTION_ABILITY_SPACE_BELISKNER_SCHILDUEBERLADUNG</Alternate_Description_Text>
+            <Recharge_Seconds>45</Recharge_Seconds>
+            <GUI_Activated_Ability_Name> Shield_Flare_Beliskner </GUI_Activated_Ability_Name>
+            <SFXEvent_GUI_Unit_Ability_Activated></SFXEvent_GUI_Unit_Ability_Activated>
+            <Supports_Autofire>False</Supports_Autofire>
+         </Unit_Ability>
+      </Unit_Abilities_Data>
+      <Abilities SubObjectList="Yes">
+         <Shield_Flare_Ability Name="Shield_Flare_Beliskner">
+            <Max_Damage_Per_Victim>1250</Max_Damage_Per_Victim>
+            <Damage_Radius>1500</Damage_Radius>
+            <Charge_Up_Seconds>3</Charge_Up_Seconds>
+            <Activation_Style> User_Input </Activation_Style>
+            <Owner_Particle_Effect>Shield_Flare_Beliskner</Owner_Particle_Effect>
+            <Owner_Light_Effect_Type>Color_Flash</Owner_Light_Effect_Type>
+            <Owner_Light_Effect_Color>0.0, 0.2, 0.2</Owner_Light_Effect_Color>
+            <Owner_Light_Effect_Color2 />
+            <Owner_Light_Effect_Duration>1.5</Owner_Light_Effect_Duration>
+            <Owner_Light_Effect_Pulse_Count />
+            <SFXEvent_Activate>Shield_Flare_SFX_Event</SFXEvent_Activate>
+         </Shield_Flare_Ability>
+               <Force_Healing_Ability Name="Asgard_Advanced_Auto_Repair">
+            <Activation_Style>Space_Automatic</Activation_Style>
+            <Heal_Range>0.0</Heal_Range>
+            <Heal_Percent>0.008</Heal_Percent>
+            <Heal_Amount>2.0</Heal_Amount>
+            <Heal_Interval_In_Secs>2.0</Heal_Interval_In_Secs>
+            <Single_Target_Heal>No</Single_Target_Heal>
+            <Owner_Particle_Bone_Name>ROOT</Owner_Particle_Bone_Name>
+         </Force_Healing_Ability>
+      </Abilities>
+   </SpaceUnit>
+
+   <SpaceUnit Name="Krayt_Class_Destroyer_Death_Clone">
+      <Variant_Of_Existing_Type>Template_Space_Deathclone</Variant_Of_Existing_Type>
+      <Affiliation>Underworld</Affiliation>
+      <Space_Model_Name>Tauri_Space_Unit_Beliskner_D.alo</Space_Model_Name>
+   </SpaceUnit>
+
+   <Particle Name="Shield_Flare_Beliskner">
+      <Land_Model_Name>p_garg_flare.ALO</Land_Model_Name>
+      <Space_Model_Name>p_garg_flare.ALO</Space_Model_Name>
+      <Scale_Factor>2.5</Scale_Factor>
+      <Is_Decoration>Yes</Is_Decoration>
+      <Behavior>PARTICLE,DYNAMIC_TRANSFORM</Behavior>
+      <Dynamic_Transform_Delay_Seconds>3</Dynamic_Transform_Delay_Seconds>
+      <Dynamic_Transform_Start_Scale>3</Dynamic_Transform_Start_Scale>
+      <Dynamic_Transform_End_Scale>5</Dynamic_Transform_End_Scale>
+      <Dynamic_Transform_Seconds>2</Dynamic_Transform_Seconds>
+      <Dynamic_Transform_Start_Color>6.0, 1.0, 1.0, 1.0</Dynamic_Transform_Start_Color>
+      <Dynamic_Transform_End_Color>1.0, 0.0, 0.0, 1.0</Dynamic_Transform_End_Color>
+      <Particle_Lifetime_Frames>120</Particle_Lifetime_Frames>
+   </Particle>
+
+   <Projectile Name="Proj_Beliskner_Laser_Small">
+      <Variant_Of_Existing_Type>Proj_Asgard_Small_Laser_General</Variant_Of_Existing_Type>
+      <Projectile_Damage>20.0</Projectile_Damage>
+   </Projectile>
+
+   <Projectile Name="Proj_Beliskner_Laser_Middle">
+      <Variant_Of_Existing_Type>Proj_Asgard_Medium_Laser_General</Variant_Of_Existing_Type>
+      <Projectile_Damage>32.0</Projectile_Damage>
+   </Projectile>
+
+   <Projectile Name="Proj_Beliskner_Heavy_Weapon">
+      <Variant_Of_Existing_Type>Proj_Asgard_Heavy_Laser_General</Variant_Of_Existing_Type>
+      <Projectile_Damage>45.0</Projectile_Damage>
+   </Projectile>
+
+</Krayt_Destroyer_Data>

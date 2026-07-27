@@ -1,0 +1,131 @@
+<?xml version="1.0"?>
+<Vengeance_Frigate_Data>
+
+   <SpaceUnit Name="Vengeance_Frigate">
+      <Variant_Of_Existing_Type>Template_Space_Unit_Light_Battleship</Variant_Of_Existing_Type>
+      <Text_ID>TEXT_TAURI_SPACE_UNIT_DANIEL_JACKSON</Text_ID>
+      <Encyclopedia_Text>TEXT_DESCRIPTION_TAURI_DANIEL_JACKSON </Encyclopedia_Text>
+      <Encyclopedia_Unit_Class> TEXT_ENCYCLOPEDIA_CLASS_DANIEL_JACKSON </Encyclopedia_Unit_Class>
+      <Encyclopedia_Good_Against>MC30_Frigate Interdictor_Cruiser Victory_Destroyer Nebulon_B_Frigate Corellian_Gunboat Interdictor_Cruiser</Encyclopedia_Good_Against>
+      <Encyclopedia_Vulnerable_To>TIE_Bomber B-Wing  Victory_Destroyer</Encyclopedia_Vulnerable_To>
+      <Icon_Name>TAURI_SPACE_UNIT_DANIELJACKSON.TGA</Icon_Name>
+      <Space_Model_Name>Tauri_Space_Unit_DanielJackson.alo</Space_Model_Name>
+      <Galactic_Fleet_Override_Model_Name>W_planet_fleet_DanielJackson.ALO</Galactic_Fleet_Override_Model_Name>
+      <Radar_Icon_Name>I_RADAR_DANIELJACKSON.TGA</Radar_Icon_Name>
+      <Radar_Icon_Size>0.062 0.066</Radar_Icon_Size>
+      <Scale_Factor>1.0</Scale_Factor>
+      <Select_Box_Scale>550</Select_Box_Scale>
+      <Layer_Z_Adjust>-160.0</Layer_Z_Adjust>
+      <Affiliation>Underworld</Affiliation>
+      <Tech_Level>3</Tech_Level>
+      <SpaceBehavior>SIMPLE_SPACE_LOCOMOTOR, ABILITY_COUNTDOWN, ASTEROID_FIELD_DAMAGE, DAMAGE_TRACKING, HIDE_WHEN_FOGGED, ION_STUN_EFFECT, NEBULA, POWERED, REVEAL, SELECTABLE, SHIELDED, TARGETING, UNIT_AI</SpaceBehavior>
+      <HardPoints>
+         HP_DANIELJACKSON_F_AIM,
+         HP_DANIELJACKSON_MR_ICM,
+         HP_DANIELJACKSON_ML_ICM,
+         HP_DANIELJACKSON_RR_ICS,
+         HP_DANIELJACKSON_RL_ICS,
+         HP_DANIELJACKSON_SHIELD,
+         HP_DANIELJACKSON_ENGINE
+      </HardPoints>
+
+      <Shield_Points>1600</Shield_Points>
+      <Shield_Refresh_Rate>53</Shield_Refresh_Rate>
+      <Tactical_Health>2030</Tactical_Health>
+      <Space_FOW_Reveal_Range>1550.0</Space_FOW_Reveal_Range>
+      <Targeting_Max_Attack_Distance>1525.0</Targeting_Max_Attack_Distance>
+
+      <Target_Stealth_Units>Yes</Target_Stealth_Units>
+
+      <Max_Speed>2.5</Max_Speed>
+      <Max_Rate_Of_Turn>0.8</Max_Rate_Of_Turn>
+      <Max_Rate_Of_Roll>0.3</Max_Rate_Of_Roll>
+      <Bank_Turn_Angle>30</Bank_Turn_Angle>
+      <Max_Thrust>2.3</Max_Thrust>
+      <OverrideAcceleration> .04 </OverrideAcceleration>
+      <OverrideDeceleration> .04 </OverrideDeceleration>
+      
+      <Build_Cost_Credits>2700</Build_Cost_Credits>
+      <Build_Time_Seconds>34</Build_Time_Seconds>
+      <Tactical_Build_Cost_Multiplayer>2700</Tactical_Build_Cost_Multiplayer>
+      <Tactical_Build_Time_Seconds>22</Tactical_Build_Time_Seconds>
+
+      <SFXEvent_Attack>Unit_Attack_Asgard_Daniel_Jackson</SFXEvent_Attack>
+      <SFXEvent_Fleet_Move>Unit_Move_Asgard_Daniel_Jackson</SFXEvent_Fleet_Move>
+      <SFXEvent_Health_Critical_Warning>Unit_CriticalHP_Asgard_Daniel_Jackson</SFXEvent_Health_Critical_Warning>
+      <SFXEvent_Health_Low_Warning>Unit_LOWHP_Asgard_Daniel_Jackson</SFXEvent_Health_Low_Warning>
+      <SFXEvent_Move>Unit_Move_Asgard_Daniel_Jackson</SFXEvent_Move>
+      <SFXEvent_Select>Unit_Select_Asgard_Daniel_Jackson</SFXEvent_Select>
+      <Death_SFXEvent_Start_Die>Unit_Defeat_Asgard_Daniel_Jackson</Death_SFXEvent_Start_Die>
+
+      <SFXEvent_Engine_Idle_Loop> Engine_Asgard_Low_Idle </SFXEvent_Engine_Idle_Loop>
+      <SFXEvent_Engine_Moving_Loop> Engine_Asgard_Low </SFXEvent_Engine_Moving_Loop>
+      <SFXEvent_Engine_Cinematic_Focus_Loop> Engine_Asgard_Low_Cinematic </SFXEvent_Engine_Cinematic_Focus_Loop>
+
+      <Death_Clone>Damage_Normal, Vengeance_Frigate_Death_Clone</Death_Clone>
+      <Required_Star_Base_Level>1</Required_Star_Base_Level>
+      <Required_Special_Structures>U_Space_Asgard_Shipyard</Required_Special_Structures>
+      <Population_Value>5</Population_Value>
+      <Lua_Script>ObjectScript_PowerToShields</Lua_Script>
+
+      <Unit_Abilities_Data SubObjectList="Yes">
+         <Unit_Ability>
+            <Type>DEFEND</Type>
+            <Alternate_Name_Text>TEXT_ABILITY_TAURI_SPACE_DANIEL_JACKSON_SCHILDENERGIESCHUB</Alternate_Name_Text>
+            <Alternate_Description_Text>TEXT_DESCRIPTION_ABILITY_SPACE_DANIEL_JACKSON_SCHILDENERGIESCHUB</Alternate_Description_Text>
+            <Alternate_Icon_Name>I_SA_SHIELD_BOOST_DANIEL_JACKSON.TGA</Alternate_Icon_Name>
+            <Expiration_Seconds>20</Expiration_Seconds>
+            <Mod_Multiplier>WEAPON_DELAY_MULTIPLIER,   3.0f</Mod_Multiplier>
+            <Mod_Multiplier>SHIELD_REGEN_MULTIPLIER,   1.0f</Mod_Multiplier>
+            <Mod_Multiplier>SHIELD_REGEN_INTERVAL_MULTIPLIER,   0.10f</Mod_Multiplier>
+            <Mod_Multiplier>SPEED_MULTIPLIER,       0.8f</Mod_Multiplier>
+            <Recharge_Seconds>55</Recharge_Seconds>
+            <Expiration_Seconds>13</Expiration_Seconds>
+            <Supports_Autofire>False</Supports_Autofire>
+         </Unit_Ability>
+         <Unit_Ability>
+            <Type>FOW_REVEAL_PING</Type>
+            <Alternate_Name_Text>TEXT_ABILITY_TAURI_SPACE_DANIEL_JACKSON_PING</Alternate_Name_Text>
+            <Alternate_Description_Text>TEXT_ABILITY_DESCRIPTION_TAURI_SPACE_DANIEL_JACKSON_PING</Alternate_Description_Text>
+            <Recharge_Seconds> 30.0 </Recharge_Seconds>
+            <Spawned_Object_Type> Proj_Special_Space_FOW_Reveal_Ping_Blast </Spawned_Object_Type>
+            <Effective_Radius> 0.0 </Effective_Radius>
+            <Area_Effect_Decal_Distance> 1000.0 </Area_Effect_Decal_Distance>
+         </Unit_Ability>
+      </Unit_Abilities_Data>
+         <Abilities SubObjectList="Yes">
+         <Force_Healing_Ability Name="Asgard_Advanced_Auto_Repair">
+            <Activation_Style>Space_Automatic</Activation_Style>
+            <Heal_Range>0.0</Heal_Range>
+            <Heal_Percent>0.008</Heal_Percent>
+            <Heal_Amount>2.0</Heal_Amount>
+            <Heal_Interval_In_Secs>2.0</Heal_Interval_In_Secs>
+            <Single_Target_Heal>No</Single_Target_Heal>
+            <Owner_Particle_Bone_Name>ROOT</Owner_Particle_Bone_Name>
+         </Force_Healing_Ability>
+      </Abilities>
+   </SpaceUnit>
+
+   <SpaceUnit Name="Vengeance_Frigate_Death_Clone">
+      <Variant_Of_Existing_Type>Template_Space_Deathclone</Variant_Of_Existing_Type>
+      <Affiliation>Underworld</Affiliation>
+      <Space_Model_Name>Tauri_Space_Unit_DanielJackson_D.alo</Space_Model_Name>
+   </SpaceUnit>
+
+
+   <Projectile Name="Proj_DanielJackson_Small_Laser">
+      <Variant_Of_Existing_Type>Proj_Asgard_Small_Laser_General</Variant_Of_Existing_Type>
+      <Projectile_Damage>10.0</Projectile_Damage>
+   </Projectile>
+
+   <Projectile Name="Proj_DanielJackson_Ion_Mortar_Plasm">
+      <Variant_Of_Existing_Type>Proj_Asgard_Ion_Mortar_Plasma</Variant_Of_Existing_Type>
+      <Projectile_Damage>80.0</Projectile_Damage>
+   </Projectile>
+
+   <Projectile Name="Proj_DanielJackson_Medium_Laser">
+      <Variant_Of_Existing_Type>Proj_Asgard_Medium_Laser_General</Variant_Of_Existing_Type>
+      <Projectile_Damage>18.0</Projectile_Damage>
+   </Projectile>
+
+</Vengeance_Frigate_Data>

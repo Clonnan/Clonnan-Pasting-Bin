@@ -1,0 +1,152 @@
+<?xml version="1.0"?>
+<Interceptor_IV_Frigate>
+
+   <SpaceUnit Name="Interceptor4_Frigate_No_Spawn">
+      <Variant_Of_Existing_Type>Template_Space_Unit_Cruiser</Variant_Of_Existing_Type>
+      <Text_ID>TEXT_TAURI_SPACE_UNIT_BC_304</Text_ID>
+      <Encyclopedia_Text>TEXT_DESCRIPTION_TAURI_BC_304</Encyclopedia_Text>
+      <Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_BC_304</Encyclopedia_Unit_Class>
+      <Encyclopedia_Good_Against>Broadside_Class_Cruiser Tartan_Patrol_Cruiser Nebulon_B_Frigate</Encyclopedia_Good_Against>
+      <Encyclopedia_Vulnerable_To>TIE_Defender Star_Destroyer B-Wing</Encyclopedia_Vulnerable_To>
+      <Icon_Name>TAURI_SPACE_UNIT_BC-304.TGA</Icon_Name>
+      <Space_Model_Name>Tauri_Space_Unit_BC-304.alo</Space_Model_Name>
+      <Galactic_Fleet_Override_Model_Name>W_planet_fleet_BC-304.ALO</Galactic_Fleet_Override_Model_Name>
+      <Radar_Icon_Name>I_RADAR_BC-304.TGA</Radar_Icon_Name>
+      <Radar_Icon_Size>0.05 0.05</Radar_Icon_Size>
+      <Select_Box_Scale>350</Select_Box_Scale>
+      <Scale_Factor>1.0</Scale_Factor>
+      <Layer_Z_Adjust>-90.0</Layer_Z_Adjust>
+      <Affiliation>Underworld</Affiliation>
+      <SpaceBehavior>SIMPLE_SPACE_LOCOMOTOR, ABILITY_COUNTDOWN, ASTEROID_FIELD_DAMAGE, DAMAGE_TRACKING, HIDE_WHEN_FOGGED, ION_STUN_EFFECT, NEBULA, POWERED, REVEAL, SELECTABLE, SHIELDED, SPAWN_SQUADRON, TARGETING, UNIT_AI</SpaceBehavior>
+      <HardPoints>
+         HP_BC304_ENGINE,
+         HP_BC304_SHIELD,
+         HP_BC304_AGKS,
+         HP_BC304_F_RB,
+         HP_BC304_MF_RB,
+         HP_BC304_MR_RB,
+         HP_BC304_R_RB,
+         HP_BC304_HANGAR1,
+         HP_BC304_HANGAR2
+      </HardPoints>
+
+      <Shield_Points>700</Shield_Points>
+      <Shield_Refresh_Rate>22</Shield_Refresh_Rate>
+      <Tactical_Health>1500</Tactical_Health>
+      <Space_FOW_Reveal_Range>1450.0</Space_FOW_Reveal_Range>
+      <Targeting_Max_Attack_Distance>1450.0</Targeting_Max_Attack_Distance>
+
+      <Max_Speed>2.8</Max_Speed>
+      <Max_Rate_Of_Turn>1.0</Max_Rate_Of_Turn>
+      <Max_Rate_Of_Roll>0.9</Max_Rate_Of_Roll>
+      <Bank_Turn_Angle>35</Bank_Turn_Angle>
+      <OverrideAcceleration> .08 </OverrideAcceleration>
+      <OverrideDeceleration> .08 </OverrideDeceleration>
+      <Max_Thrust>2.0</Max_Thrust>
+
+      <Build_Cost_Credits>2450</Build_Cost_Credits>
+      <Build_Time_Seconds>26</Build_Time_Seconds>
+      <Tactical_Build_Cost_Multiplayer>2450</Tactical_Build_Cost_Multiplayer>
+      <Tactical_Build_Time_Seconds>20</Tactical_Build_Time_Seconds>
+
+      <SFXEvent_Attack>Unit_Attack_X304</SFXEvent_Attack>
+      <SFXEvent_Fleet_Move>Unit_Move_X304</SFXEvent_Fleet_Move>
+      <SFXEvent_Move>Unit_Move_X304</SFXEvent_Move>
+      <SFXEvent_Select>Unit_Select_X304</SFXEvent_Select>
+      <SFXEvent_Engine_Idle_Loop> Engine_Tauri_BC304_Idle </SFXEvent_Engine_Idle_Loop>
+      <SFXEvent_Engine_Moving_Loop> Engine_Tauri_BC304 </SFXEvent_Engine_Moving_Loop>
+      <SFXEvent_Engine_Cinematic_Focus_Loop> Engine_Tauri_BC304_Cinematic </SFXEvent_Engine_Cinematic_Focus_Loop>
+
+      <Population_Value>4</Population_Value>
+      <Death_Clone>Damage_Normal, Interceptor4_Frigate_Death_Clone</Death_Clone>
+      <Required_Star_Base_Level>1</Required_Star_Base_Level>
+      <Required_Special_Structures>U_Ground_Shipyard</Required_Special_Structures>
+      <Lua_Script>ObjectScript_HW_Middle</Lua_Script>
+      <Unit_Abilities_Data SubObjectList="Yes">
+         <Unit_Ability>
+            <Type>TURBO</Type>
+            <Expiration_Seconds>20</Expiration_Seconds>
+            <Recharge_Seconds>50</Recharge_Seconds>
+            <Mod_Multiplier>WEAPON_DELAY_MULTIPLIER,  2.0f</Mod_Multiplier>
+            <Mod_Multiplier>SHIELD_REGEN_MULTIPLIER,  0.5f</Mod_Multiplier>
+            <Mod_Multiplier>ENERGY_REGEN_MULTIPLIER,  1.0f</Mod_Multiplier>
+            <Mod_Multiplier>SPEED_MULTIPLIER,      3.0f</Mod_Multiplier>
+            <SFXEvent_GUI_Unit_Ability_Activated></SFXEvent_GUI_Unit_Ability_Activated>
+            <SFXEvent_GUI_Unit_Ability_Deactivated/>
+            <Alternate_Name_Text>TEXT_ABILITY_TAURI_SPACE_BC_304_ANTRIEBSSCHUB</Alternate_Name_Text>
+            <Alternate_Description_Text>TEXT_DESCRIPTION_ABILITY_SPACE_BC_304_ANTRIEBSSCHUB</Alternate_Description_Text>
+            <Alternate_Icon_Name>I_SA_POWER_ENGINES_304.tga</Alternate_Icon_Name>
+         </Unit_Ability>
+      </Unit_Abilities_Data>
+         <Abilities SubObjectList="Yes">
+         <Force_Healing_Ability Name="Tauri_Battlefield_Auto_Repair">
+            <Activation_Style>Space_Automatic</Activation_Style>
+            <Heal_Range>0.0</Heal_Range>
+            <Heal_Percent>0.004</Heal_Percent>
+            <Heal_Amount>1.0</Heal_Amount>
+            <Heal_Interval_In_Secs>2.0</Heal_Interval_In_Secs>
+            <Single_Target_Heal>No</Single_Target_Heal>
+            <Owner_Particle_Bone_Name>ROOT</Owner_Particle_Bone_Name>
+         </Force_Healing_Ability>
+      </Abilities>
+   </SpaceUnit>
+
+   <SpaceUnit Name="Interceptor4_Frigate">
+      <Variant_Of_Existing_Type>Interceptor4_Frigate_No_Spawn</Variant_Of_Existing_Type>
+      <Starting_Spawned_Units_Tech_0>Tauri_X_301_Squadron, 1</Starting_Spawned_Units_Tech_0>
+      <Spawned_Squadron_Delay_Seconds>4</Spawned_Squadron_Delay_Seconds>
+      <Reserve_Spawned_Units_Tech_0>Tauri_X_301_Squadron, 1</Reserve_Spawned_Units_Tech_0>
+      <Tech_Level>2</Tech_Level>
+   </SpaceUnit>
+   
+   <SpaceUnit Name="Interceptor4_Frigate_Refit">
+      <Variant_Of_Existing_Type>Interceptor4_Frigate_No_Spawn</Variant_Of_Existing_Type>
+	  <Text_ID>TEXT_TAURI_SPACE_UNIT_BC_304_REFIT</Text_ID>
+      <Encyclopedia_Text>TEXT_DESCRIPTION_TAURI_BC_304_REFIT</Encyclopedia_Text>
+      <Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_ODYSSEY</Encyclopedia_Unit_Class>
+	  <Icon_Name>TAURI_SPACE_UNIT_BC304_REFIT.TGA</Icon_Name>
+      <HardPoints>
+        HP_BC304_ENGINE,
+        HP_BC304_SHIELD,
+        HP_BC304_MK2_AGKS,
+        HP_BC304_MK2_F_RB,
+        HP_BC304_MK2_MF_RB,
+        HP_BC304_MK2_MR_RB,
+        HP_BC304_MK2_R_RB,
+        HP_BC304_HANGAR1,
+        HP_BC304_HANGAR2,
+      </HardPoints>
+      <Build_Cost_Credits>3500</Build_Cost_Credits>
+      <Build_Time_Seconds>50</Build_Time_Seconds>
+      <Tactical_Build_Cost_Multiplayer>3500</Tactical_Build_Cost_Multiplayer>
+      <Tactical_Build_Time_Seconds>50</Tactical_Build_Time_Seconds>	  
+	  <Population_Value>6</Population_Value>
+      <Shield_Points>1000</Shield_Points>
+      <Shield_Refresh_Rate>35</Shield_Refresh_Rate>
+      <Tactical_Health>1500</Tactical_Health>	  
+      <Tech_Level>4</Tech_Level>
+      <Required_Star_Base_Level>1</Required_Star_Base_Level>
+      <Required_Ground_Base_Level>0</Required_Ground_Base_Level>	 	  
+      <Starting_Spawned_Units_Tech_0>StarViper_Squadron, 1</Starting_Spawned_Units_Tech_0>
+      <Spawned_Squadron_Delay_Seconds>4</Spawned_Squadron_Delay_Seconds>
+      <Reserve_Spawned_Units_Tech_0>StarViper_Squadron, 1</Reserve_Spawned_Units_Tech_0>
+   </SpaceUnit>   
+
+   <SpaceUnit Name="Interceptor4_Frigate_Death_Clone">
+      <Variant_Of_Existing_Type>Template_Space_Deathclone</Variant_Of_Existing_Type>
+      <Affiliation>Underworld</Affiliation>
+      <Space_Model_Name>Tauri_Space_Unit_BC-304_D.alo</Space_Model_Name>
+   </SpaceUnit>
+
+
+   <Projectile Name="Proj_BC304_Railgun">
+      <Variant_Of_Existing_Type>Proj_Tauri_Railgun_General</Variant_Of_Existing_Type>
+      <Projectile_Damage>3.5</Projectile_Damage>
+   </Projectile>
+
+   <Projectile Name="Proj_BC304_AGKS">
+      <Variant_Of_Existing_Type>Proj_Tauri_Ship_Missile_General</Variant_Of_Existing_Type>
+      <Projectile_Damage>40.0</Projectile_Damage>
+   </Projectile>
+
+</Interceptor_IV_Frigate>
