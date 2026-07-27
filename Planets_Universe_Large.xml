@@ -1,0 +1,761 @@
+<?xml version="1.0" ?>
+<Planets>
+
+  <Planet Name="Galaxy_Core_Art_Model_Universe_L_Milkyway">
+    <Variant_Of_Existing_Type>Galaxy_Core_Art_Model_Milkyway</Variant_Of_Existing_Type>
+    <Galactic_Position>371.2, -73.43, 0.0</Galactic_Position>
+  </Planet>
+
+  <Planet Name="Galaxy_Core_Art_Model_Universe_L_Pegasus">
+    <Variant_Of_Existing_Type>Galaxy_Core_Art_Model_Pegasus</Variant_Of_Existing_Type>
+    <Galactic_Position>-482.01, 701.16, 0.0</Galactic_Position>
+  </Planet>
+
+  <Planet Name="Galaxy_Core_Art_Model_Universe_L_Ida">
+    <Variant_Of_Existing_Type>Galaxy_Core_Art_Model_Ida</Variant_Of_Existing_Type>
+    <Galactic_Position>423.3, 855.8, -50</Galactic_Position>
+  </Planet>
+
+  <Planet Name="Galaxy_Core_Art_Model_Universe_L_Ori_Galaxy">
+    <Variant_Of_Existing_Type>Galaxy_Core_Art_Model_Ori_Galaxy</Variant_Of_Existing_Type>
+    <Galactic_Position>-280, -820, -100.0</Galactic_Position>
+  </Planet>
+
+
+<!--Milkyway-->
+
+  <Planet Name="Universe_L_Abydos">
+    <Variant_Of_Existing_Type>Abydos</Variant_Of_Existing_Type>
+    <Galactic_Position>145.76, -79.45, 20.0</Galactic_Position>
+  </Planet>
+  
+  <Planet Name="Universe_L_Adara">
+    <Variant_Of_Existing_Type>Adara</Variant_Of_Existing_Type>
+    <Galactic_Position>358.24, 295.11, 20.0</Galactic_Position>
+  </Planet>
+  
+  <Planet Name="Universe_L_Alpha_Site">
+    <Variant_Of_Existing_Type>Alpha_Site</Variant_Of_Existing_Type>
+    <Galactic_Position>66.88, -234.95, 20.0</Galactic_Position>
+  </Planet>
+	
+  <Planet Name="Universe_L_Anubis_Homeworld"><!--Mastarba-->
+    <Variant_Of_Existing_Type>Anubis_Homeworld</Variant_Of_Existing_Type>
+    <Galactic_Position>685.65, 46.96, 20.0</Galactic_Position>
+  </Planet>
+  
+  <Planet Name="Universe_L_Black_Hole">
+    <Variant_Of_Existing_Type>Black_Hole_M</Variant_Of_Existing_Type>
+    <Galactic_Position>116.88, -284.95, 20.0</Galactic_Position>
+  </Planet>
+  
+  <Planet Name="Universe_L_Cal_Mah">
+    <Variant_Of_Existing_Type>Cal_Mah</Variant_Of_Existing_Type>
+    <Galactic_Position>255.75, -63.95, 10.0</Galactic_Position>
+  </Planet>
+  
+  <Planet Name="Universe_L_Chulak">
+    <Variant_Of_Existing_Type>Chulak</Variant_Of_Existing_Type>
+    <Galactic_Position>278.61, -278.91, 20.0</Galactic_Position>
+  </Planet>
+  
+  <Planet Name="Universe_L_Cimmeria">
+    <Variant_Of_Existing_Type>Cimmeria</Variant_Of_Existing_Type>
+    <Galactic_Position>142.76, 29.45, 20.0</Galactic_Position>
+  </Planet>
+  
+  <Planet Name="Universe_L_Cunae">
+    <Variant_Of_Existing_Type>Cunae</Variant_Of_Existing_Type>
+    <Galactic_Position>663.88, 137.92, 15.0</Galactic_Position>
+  </Planet>
+  
+  <Planet Name="Universe_L_Dakara">
+    <Variant_Of_Existing_Type>Dakara</Variant_Of_Existing_Type>
+    <Galactic_Position>419.28, -145.77, 20.0</Galactic_Position>
+  </Planet>
+  
+  <Planet Name="Universe_L_Dar_Eshkalon">
+    <Variant_Of_Existing_Type>Dar_Eshkalon</Variant_Of_Existing_Type>
+    <Galactic_Position>340, 110, 22.0</Galactic_Position>
+  </Planet>
+  
+  <Planet Name="Universe_L_Delmak">
+    <Variant_Of_Existing_Type>Delmak</Variant_Of_Existing_Type>
+    <Galactic_Position>323.27, -415.2, 20.0</Galactic_Position>
+  </Planet>
+  
+  <Planet Name="Universe_L_Earth">
+    <Variant_Of_Existing_Type>Earth</Variant_Of_Existing_Type>
+    <Galactic_Position>102.88, -93.97, 20.0</Galactic_Position>
+  </Planet>
+  
+  <Planet Name="Universe_L_Entac">
+    <Variant_Of_Existing_Type>Entac</Variant_Of_Existing_Type>
+    <Galactic_Position>243.06, 71.28, 10.0</Galactic_Position>
+  </Planet>
+  
+  <Planet Name="Universe_L_Erebus">
+    <Variant_Of_Existing_Type>Erebus</Variant_Of_Existing_Type>
+    <Galactic_Position>442.24, -446.39, 20.0</Galactic_Position>
+  </Planet>
+  
+  <Planet Name="Universe_L_Gamma_Site">
+    <Variant_Of_Existing_Type>Gamma_Site</Variant_Of_Existing_Type>
+    <Galactic_Position>542.24, -386.39, 10.0</Galactic_Position>
+  </Planet>
+  
+  <Planet Name="Universe_L_Haktyl">
+    <Variant_Of_Existing_Type>Haktyl</Variant_Of_Existing_Type>
+    <Galactic_Position>249.02, 141.32, 10.0</Galactic_Position>
+  </Planet>
+  
+  <Planet Name="Universe_L_Hanka">
+    <Variant_Of_Existing_Type>Hanka</Variant_Of_Existing_Type>
+    <Galactic_Position>305.1, -160.21, 10.0</Galactic_Position>
+  </Planet>
+  
+  <Planet Name="Universe_L_Hassara">
+    <Variant_Of_Existing_Type>Hassara</Variant_Of_Existing_Type>
+    <Galactic_Position>353.08, -64.98, 20.0</Galactic_Position>
+  </Planet>
+  
+  <Planet Name="Universe_L_Hathor_Homeworld"><!--Dendera-->
+    <Variant_Of_Existing_Type>Hathor_Homeworld</Variant_Of_Existing_Type>
+    <Galactic_Position>466.46, -108.14, 10.0</Galactic_Position>
+  </Planet>
+  
+  <Planet Name="Universe_L_Hebridan">
+    <Variant_Of_Existing_Type>Hebridan</Variant_Of_Existing_Type>
+    <Galactic_Position>450, 240.11, 20.0</Galactic_Position>
+  </Planet>
+  
+  <Planet Name="Universe_L_Icarus_Base">
+    <Variant_Of_Existing_Type>Icarus_Base</Variant_Of_Existing_Type>
+    <Galactic_Position>283, -560, 10.0</Galactic_Position>
+  </Planet>
+
+  <Planet Name="Universe_L_Ion_Nebula">
+    <Variant_Of_Existing_Type>Ion_Nebula</Variant_Of_Existing_Type>
+    <Galactic_Position>178.61, -198.91, 20.0</Galactic_Position>
+  </Planet>
+  
+  <Planet Name="Universe_L_Juna">
+    <Variant_Of_Existing_Type>Juna</Variant_Of_Existing_Type>
+    <Galactic_Position>406.15, 31.64, 20.0</Galactic_Position>
+  </Planet>
+  
+  <Planet Name="Universe_L_Kallana">
+    <Variant_Of_Existing_Type>Kallana</Variant_Of_Existing_Type>
+    <Galactic_Position>228.61, -388.91, 20.0</Galactic_Position>
+  </Planet>
+  
+  <Planet Name="Universe_L_Kheb">
+    <Variant_Of_Existing_Type>Kheb</Variant_Of_Existing_Type>
+    <Galactic_Position>624.85, 2.49, 10.0</Galactic_Position>
+  </Planet>
+  
+  <Planet Name="Universe_L_Kreshta">
+    <Variant_Of_Existing_Type>Kreshta</Variant_Of_Existing_Type>
+    <Galactic_Position>422.19, 128.92, 20.0</Galactic_Position>
+  </Planet>
+  
+  <Planet Name="Universe_L_KS7_535">
+    <Variant_Of_Existing_Type>KS7_535</Variant_Of_Existing_Type>
+    <Galactic_Position>411.77, -487.36, 10.0</Galactic_Position>
+  </Planet>
+  
+  <Planet Name="Universe_L_Ktau">
+    <Variant_Of_Existing_Type>Ktau</Variant_Of_Existing_Type>
+    <Galactic_Position>294.75, 163.42, 20.0</Galactic_Position>
+  </Planet>
+  
+  <Planet Name="Universe_L_Langara">
+    <Variant_Of_Existing_Type>Langara</Variant_Of_Existing_Type>
+    <Galactic_Position>672.77, -238.33, 20.0</Galactic_Position>
+  </Planet>
+  
+  <Planet Name="Universe_L_Latona">
+    <Variant_Of_Existing_Type>Latona</Variant_Of_Existing_Type>
+    <Galactic_Position>368.13, -519.42, 10.0</Galactic_Position>
+  </Planet>
+  
+  <Planet Name="Universe_L_Lucian_Base">
+    <Variant_Of_Existing_Type>Lucian_Base</Variant_Of_Existing_Type>
+    <Galactic_Position>546.46, -138.14, 20.0</Galactic_Position>
+  </Planet>
+
+  <Planet Name="Universe_L_Minefield">
+    <Variant_Of_Existing_Type>Minefield</Variant_Of_Existing_Type>
+    <Galactic_Position>562, -323, 20.0</Galactic_Position>
+  </Planet>
+  
+  <Planet Name="Universe_L_Oran">
+    <Variant_Of_Existing_Type>Oran</Variant_Of_Existing_Type>
+    <Galactic_Position>605.92, -286.95, 20.0</Galactic_Position>
+  </Planet>
+  
+  <Planet Name="Universe_L_Orban">
+    <Variant_Of_Existing_Type>Orban</Variant_Of_Existing_Type>
+    <Galactic_Position>22.88, 33.97, 20.0</Galactic_Position>
+  </Planet>
+  
+  <Planet Name="Universe_L_Orlan">
+    <Variant_Of_Existing_Type>Orlan</Variant_Of_Existing_Type>
+    <Galactic_Position>-492.86, 522.54, 28.0</Galactic_Position>
+  </Planet>
+  
+  <Planet Name="Universe_L_P2X_338">
+    <Variant_Of_Existing_Type>P2X_338</Variant_Of_Existing_Type>
+    <Galactic_Position>260, 310, 20.0</Galactic_Position>
+  </Planet>
+
+  <Planet Name="Universe_L_P34_353J">
+    <Variant_Of_Existing_Type>P34_353J</Variant_Of_Existing_Type>
+    <Galactic_Position>510.46, -83.14, 20.0</Galactic_Position>
+  </Planet>
+  
+  <Planet Name="Universe_L_P3M_736">
+    <Variant_Of_Existing_Type>P3M_736</Variant_Of_Existing_Type>
+    <Galactic_Position>-550, 915, 20.0</Galactic_Position>
+  </Planet>
+  
+  <Planet Name="Universe_L_P3R_118">
+    <Variant_Of_Existing_Type>P3R_118</Variant_Of_Existing_Type>
+    <Galactic_Position>12.41, -121.17, 20.0</Galactic_Position>
+  </Planet>
+  
+  <Planet Name="Universe_L_P3R_636">
+    <Variant_Of_Existing_Type>P3R_636</Variant_Of_Existing_Type>
+    <Galactic_Position>532.88, 50.64, 20.0</Galactic_Position>
+  </Planet>
+  
+  <Planet Name="Universe_L_P3S_114">
+    <Variant_Of_Existing_Type>P3S_114</Variant_Of_Existing_Type>
+    <Galactic_Position>515.19, 168.92, 10.0</Galactic_Position>
+  </Planet>
+  
+  <Planet Name="Universe_L_P3X_116">
+    <Variant_Of_Existing_Type>P3X_116</Variant_Of_Existing_Type>
+    <Galactic_Position>354.72, -344.9, 10.0</Galactic_Position>
+  </Planet>
+  
+  <Planet Name="Universe_L_P3X_254">
+    <Variant_Of_Existing_Type>P3X_254</Variant_Of_Existing_Type>
+    <Galactic_Position>409.28, -230.77, 20.0</Galactic_Position>
+  </Planet>
+  
+  <Planet Name="Universe_L_P3X_367">
+    <Variant_Of_Existing_Type>P3X_367</Variant_Of_Existing_Type>
+    <Galactic_Position>255.1, -189.21, 10.0</Galactic_Position>
+  </Planet>
+  
+  <Planet Name="Universe_L_P3X_403">
+    <Variant_Of_Existing_Type>P3X_403</Variant_Of_Existing_Type>
+    <Galactic_Position>182.6, 112.31, 20.0</Galactic_Position>
+  </Planet>
+  
+  <Planet Name="Universe_L_P3X_439">
+    <Variant_Of_Existing_Type>P3X_439</Variant_Of_Existing_Type>
+    <Galactic_Position>482.88, 60.64, 20.0</Galactic_Position>
+  </Planet>
+  
+  <Planet Name="Universe_L_P3X_474">
+    <Variant_Of_Existing_Type>P3X_474</Variant_Of_Existing_Type>
+    <Galactic_Position>220, 280, 20.0</Galactic_Position>
+  </Planet>
+  
+  <Planet Name="Universe_L_P3X_584">
+    <Variant_Of_Existing_Type>P3X_584</Variant_Of_Existing_Type>
+    <Galactic_Position>250.61, -465.91, 20.0</Galactic_Position>
+  </Planet>
+  
+  <Planet Name="Universe_L_P3X_666">
+    <Variant_Of_Existing_Type>P3X_666</Variant_Of_Existing_Type>
+    <Galactic_Position>383.24, 200.11, 10.0</Galactic_Position>
+  </Planet>
+  
+  <Planet Name="Universe_L_P3Y_229">
+    <Variant_Of_Existing_Type>P3Y_229</Variant_Of_Existing_Type>
+    <Galactic_Position>415.72, -374.9, 20.0</Galactic_Position>
+  </Planet>
+  
+  <Planet Name="Universe_L_P4C_970"><!--Aschen Homeworld-->
+    <Variant_Of_Existing_Type>P4C_970</Variant_Of_Existing_Type>
+    <Galactic_Position>133.61, -468.91, 20.0</Galactic_Position>
+  </Planet>
+  
+  <Planet Name="Universe_L_P4M_399">
+    <Variant_Of_Existing_Type>P4M_399</Variant_Of_Existing_Type>
+    <Galactic_Position>81.98, 171.88, 20.0</Galactic_Position>
+  </Planet>
+  
+  <Planet Name="Universe_L_P4S_237">
+    <Variant_Of_Existing_Type>P4S_237</Variant_Of_Existing_Type>
+    <Galactic_Position>565.92, -216.95, 20.0</Galactic_Position>
+  </Planet>
+  
+  <Planet Name="Universe_L_P5C_353">
+    <Variant_Of_Existing_Type>P5C_353</Variant_Of_Existing_Type>
+    <Galactic_Position>32.88, -63.97, 20.0</Galactic_Position>
+  </Planet>
+  
+  <Planet Name="Universe_L_P5S_117">
+    <Variant_Of_Existing_Type>P5S_117</Variant_Of_Existing_Type>
+    <Galactic_Position>100.86, 52.64, 28.0</Galactic_Position>
+  </Planet>
+  
+  <Planet Name="Universe_L_P6G_452">
+    <Variant_Of_Existing_Type>P6G_452</Variant_Of_Existing_Type>
+    <Galactic_Position>604.42, -93.07, 20.0</Galactic_Position>
+  </Planet>
+  
+  <Planet Name="Universe_L_P8X_412">
+    <Variant_Of_Existing_Type>P8X_412</Variant_Of_Existing_Type>
+    <Galactic_Position>745.65, -76.96, 20.0</Galactic_Position>
+  </Planet>
+
+  <Planet Name="Universe_L_P9C_882">
+    <Variant_Of_Existing_Type>P9C_882</Variant_Of_Existing_Type>
+    <Galactic_Position>537, -470, 20.0</Galactic_Position>
+  </Planet>
+
+  <Planet Name="Universe_L_Pangar">
+    <Variant_Of_Existing_Type>Pangar</Variant_Of_Existing_Type>
+    <Galactic_Position>525.92, -266.95, 20.0</Galactic_Position>
+  </Planet>
+
+  <Planet Name="Universe_L_Praclarush_Taonas">
+    <Variant_Of_Existing_Type>Praclarush_Taonas</Variant_Of_Existing_Type>
+    <Galactic_Position>560.19, 238.92, 20.0</Galactic_Position>
+  </Planet>
+  
+  <Planet Name="Universe_L_PX9_757">
+    <Variant_Of_Existing_Type>PX9_757</Variant_Of_Existing_Type>
+    <Galactic_Position>467.03, -21.03, 10.0</Galactic_Position>
+  </Planet>
+  
+  <Planet Name="Universe_L_Reese_Homeworld"><!--Gaia-->
+    <Variant_Of_Existing_Type>Reese_Homeworld</Variant_Of_Existing_Type>
+    <Galactic_Position>308.24, 265.11, 20.0</Galactic_Position>
+  </Planet>
+  
+  <Planet Name="Universe_L_Revanna">
+    <Variant_Of_Existing_Type>Revanna</Variant_Of_Existing_Type>
+    <Galactic_Position>162.6, 242.31, 0.0</Galactic_Position>
+  </Planet>
+  
+  <Planet Name="Universe_L_Sodan">
+    <Variant_Of_Existing_Type>Sodan</Variant_Of_Existing_Type>
+    <Galactic_Position>612.24, -416.39, 22.0</Galactic_Position>
+  </Planet>
+  
+  <Planet Name="Universe_L_Sun">
+    <Variant_Of_Existing_Type>Sun_P</Variant_Of_Existing_Type>
+    <Galactic_Position>-507.01, 657.86, 30.0</Galactic_Position>
+  </Planet>
+  
+  <Planet Name="Universe_L_Tagrea">
+    <Variant_Of_Existing_Type>Tagrea</Variant_Of_Existing_Type>
+    <Galactic_Position>603.88, 157.92, 10.0</Galactic_Position>
+  </Planet>
+  
+  <Planet Name="Universe_L_Talthus">
+    <Variant_Of_Existing_Type>Talthus</Variant_Of_Existing_Type>
+    <Galactic_Position>480, 280, 30.0</Galactic_Position>
+  </Planet>
+  
+  <Planet Name="Universe_L_Tartarus">
+    <Variant_Of_Existing_Type>Tartarus</Variant_Of_Existing_Type>
+    <Galactic_Position>664.42, -113.07, 20.0</Galactic_Position>
+  </Planet>
+  
+  <Planet Name="Universe_L_Tegalus">
+    <Variant_Of_Existing_Type>Tegalus</Variant_Of_Existing_Type>
+    <Galactic_Position>722.77, -188.33, 20.0</Galactic_Position>
+  </Planet>
+  
+  <Planet Name="Universe_L_Tobin">
+    <Variant_Of_Existing_Type>Tobin</Variant_Of_Existing_Type>
+    <Galactic_Position>455.92, -286.95, 20.0</Galactic_Position>
+  </Planet>
+  
+  <Planet Name="Universe_L_Tollana">
+    <Variant_Of_Existing_Type>Tollana</Variant_Of_Existing_Type>
+    <Galactic_Position>74.37, -376.37, 20.0</Galactic_Position>
+  </Planet>
+  
+  <Planet Name="Universe_L_Vis_Uban">
+    <Variant_Of_Existing_Type>Vis_Uban</Variant_Of_Existing_Type>
+    <Galactic_Position>472.19, 178.92, 20.0</Galactic_Position>
+  </Planet>
+  
+  <Planet Name="Universe_L_Volian">
+    <Variant_Of_Existing_Type>Volian</Variant_Of_Existing_Type>
+    <Galactic_Position>178.61, -418.91, 20.0</Galactic_Position>
+  </Planet>
+  
+  <Planet Name="Universe_L_Vorash">
+    <Variant_Of_Existing_Type>Vorash</Variant_Of_Existing_Type>
+    <Galactic_Position>208.61, -288.91, 20.0</Galactic_Position>
+  </Planet>
+  
+  <Planet Name="Universe_L_Yus_Homeworld"><!--Otsu-->
+    <Variant_Of_Existing_Type>Yu_Homeworld</Variant_Of_Existing_Type>
+    <Galactic_Position>310.52, 15.54, 20.0</Galactic_Position>
+  </Planet>
+  
+  
+  <!--Pegasus Galaxy-->
+  
+  <Planet Name="Universe_L_Alpha_Site_P">
+    <Variant_Of_Existing_Type>Alpha_Site_P</Variant_Of_Existing_Type>
+    <Galactic_Position>-506.52, 435.8, 20.0</Galactic_Position>
+  </Planet>
+  
+  <Planet Name="Universe_L_Asteroid_Field">
+    <Variant_Of_Existing_Type>Asteroid_Field_P</Variant_Of_Existing_Type>
+    <Galactic_Position>-806.37, 788.87, 30.0</Galactic_Position>
+  </Planet>
+
+  <Planet Name="Universe_L_Asuras">
+    <Variant_Of_Existing_Type>Asuras</Variant_Of_Existing_Type>
+    <Galactic_Position>-698.69, 541.27, 20.0</Galactic_Position>
+  </Planet>
+  
+  <Planet Name="Universe_L_Athos">
+    <Variant_Of_Existing_Type>Athos</Variant_Of_Existing_Type>
+    <Galactic_Position>-330.25, 429.55, 20.0</Galactic_Position>
+  </Planet>
+
+  <Planet Name="Universe_L_Basis_Ford">
+    <Variant_Of_Existing_Type>Basis_Ford</Variant_Of_Existing_Type>
+    <Galactic_Position>-590.0, 730.0, 20.0</Galactic_Position>
+  </Planet>
+
+  <Planet Name="Universe_L_Belkan">
+    <Variant_Of_Existing_Type>Belkan</Variant_Of_Existing_Type>
+    <Galactic_Position>-353.31, 508.95, 28.0</Galactic_Position>
+  </Planet>
+
+  <Planet Name="Universe_L_Black_Hole_P">
+    <Variant_Of_Existing_Type>Black_Hole_P</Variant_Of_Existing_Type>
+    <Galactic_Position>-635, 765, 20.0</Galactic_Position>
+  </Planet>
+
+  <Planet Name="Universe_L_Cloister">
+    <Variant_Of_Existing_Type>Cloister</Variant_Of_Existing_Type>
+    <Galactic_Position>-248.87, 736.6, 10.0</Galactic_Position>
+  </Planet>
+
+  <Planet Name="Universe_L_Dagan">
+    <Variant_Of_Existing_Type>Dagan</Variant_Of_Existing_Type>
+    <Galactic_Position>-774.85, 654.02, 20.0</Galactic_Position>
+  </Planet>
+  
+  <Planet Name="Universe_L_Doranda">
+    <Variant_Of_Existing_Type>Doranda</Variant_Of_Existing_Type>
+    <Galactic_Position>-364.15, 651.32, 20.0</Galactic_Position>
+  </Planet>
+  
+  <Planet Name="Universe_L_Edowin">
+    <Variant_Of_Existing_Type>Edowin</Variant_Of_Existing_Type>
+    <Galactic_Position>-584.05, 612.26, 10.0</Galactic_Position>
+  </Planet>
+  
+  <Planet Name="Universe_L_Gas_Cloud">
+    <Variant_Of_Existing_Type>Gas_Cloud_P</Variant_Of_Existing_Type>
+    <Galactic_Position>-415.0, 800.0, 15.0</Galactic_Position>
+  </Planet>
+  
+  <Planet Name="Universe_L_Gelda"><!--M4D-058-->
+    <Variant_Of_Existing_Type>Gelda</Variant_Of_Existing_Type>
+    <Galactic_Position>-707.12, 467.97, 20.0</Galactic_Position>
+  </Planet>
+  
+  <Planet Name="Universe_L_Genii">
+    <Variant_Of_Existing_Type>Genii</Variant_Of_Existing_Type>
+    <Galactic_Position>-303.31, 568.95, 20.0</Galactic_Position>
+  </Planet>
+  
+  <Planet Name="Universe_L_Gonta">
+    <Variant_Of_Existing_Type>Gonta</Variant_Of_Existing_Type>
+    <Galactic_Position>-686.07, 779.99, 10.0</Galactic_Position>
+  </Planet>
+  
+  <Planet Name="Universe_L_Hoff">
+    <Variant_Of_Existing_Type>Hoff</Variant_Of_Existing_Type>
+    <Galactic_Position>-510.79, 732.58, 20.0</Galactic_Position>
+  </Planet>
+  
+  <Planet Name="Universe_L_Iratus_Bestiola">
+    <Variant_Of_Existing_Type>Iratus_Bestiola</Variant_Of_Existing_Type>
+    <Galactic_Position>-457.74, 892.36, 28.0</Galactic_Position>
+  </Planet>
+  
+  <Planet Name="Universe_L_Jenev">
+    <Variant_Of_Existing_Type>Jenev</Variant_Of_Existing_Type>
+    <Galactic_Position>-591.52, 439.8, 20.0</Galactic_Position>
+  </Planet>
+  
+  <Planet Name="Universe_L_Kohal">
+    <Variant_Of_Existing_Type>Kohal</Variant_Of_Existing_Type>
+    <Galactic_Position>-640.45, 638.55, 28.0</Galactic_Position>
+  </Planet>
+  
+  <Planet Name="Universe_L_Lantea">
+    <Variant_Of_Existing_Type>Lantea</Variant_Of_Existing_Type>
+    <Galactic_Position>-417.16, 362.79, 20.0</Galactic_Position>
+  </Planet>
+
+  <Planet Name="Universe_L_Laros">
+    <Variant_Of_Existing_Type>Laros</Variant_Of_Existing_Type>
+    <Galactic_Position>-359.96, 752.35, 28.0</Galactic_Position>
+  </Planet>
+  
+  <Planet Name="Universe_L_M1B_129">
+    <Variant_Of_Existing_Type>M1B_129</Variant_Of_Existing_Type>
+    <Galactic_Position>-530.41, 376.35, 28.0</Galactic_Position>
+  </Planet>
+
+  <Planet Name="Universe_L_M1K_177">
+    <Variant_Of_Existing_Type>M1K_177</Variant_Of_Existing_Type>
+    <Galactic_Position>-245.0, 530.0, 20.0</Galactic_Position>
+  </Planet>
+
+  <Planet Name="Universe_L_M2R_441">
+    <Variant_Of_Existing_Type>M2R_441</Variant_Of_Existing_Type>
+    <Galactic_Position>-208.87, 761.6, 20.0</Galactic_Position>
+  </Planet>
+
+  <Planet Name="Universe_L_M2S_445">
+    <Variant_Of_Existing_Type>M2S_445</Variant_Of_Existing_Type>
+    <Galactic_Position>-330.0, 930.0, 20.0</Galactic_Position>
+  </Planet>
+
+  <Planet Name="Universe_L_M35_117">
+    <Variant_Of_Existing_Type>M35_117</Variant_Of_Existing_Type>
+    <Galactic_Position>-210, 631, 20.0</Galactic_Position>
+  </Planet>
+
+  <Planet Name="Universe_L_M4F_788">
+    <Variant_Of_Existing_Type>M4F_788</Variant_Of_Existing_Type>
+    <Galactic_Position>-266.98, 439.96, 20.0</Galactic_Position>
+  </Planet>
+  
+  <Planet Name="Universe_L_M4H_212">
+    <Variant_Of_Existing_Type>M4H_212</Variant_Of_Existing_Type>
+    <Galactic_Position>-422.65, 632.26, 20.0</Galactic_Position>
+  </Planet>
+  
+  <Planet Name="Universe_L_M4X_337">
+    <Variant_Of_Existing_Type>M4X_337</Variant_Of_Existing_Type>
+    <Galactic_Position>-335.0, 830.0, 20.0</Galactic_Position>
+  </Planet>
+  
+  <Planet Name="Universe_L_M5R_179">
+    <Variant_Of_Existing_Type>M5R_179</Variant_Of_Existing_Type>
+    <Galactic_Position>-735.0, 783.34, 28.0</Galactic_Position>
+  </Planet>
+
+  <Planet Name="Universe_L_M56_768">
+    <Variant_Of_Existing_Type>M56_768</Variant_Of_Existing_Type>
+    <Galactic_Position>-708.69, 621.27, 20.0</Galactic_Position>
+  </Planet>
+  
+  <Planet Name="Universe_L_M5S_224">
+    <Variant_Of_Existing_Type>M5S_224</Variant_Of_Existing_Type>
+    <Galactic_Position>-819.26, 714.6, 28.0</Galactic_Position>
+  </Planet>
+
+  <Planet Name="Universe_L_M5V_801">
+    <Variant_Of_Existing_Type>M5V_801</Variant_Of_Existing_Type>
+    <Galactic_Position>-500.0, 280.0, 20.0</Galactic_Position>
+  </Planet>
+  
+  <Planet Name="Universe_L_M65_PL8">
+    <Variant_Of_Existing_Type>M65_PL8</Variant_Of_Existing_Type>
+    <Galactic_Position>-293.31, 625.95, 20.0</Galactic_Position>
+  </Planet>
+
+  <Planet Name="Universe_L_M6H_987">
+    <Variant_Of_Existing_Type>M6H_987</Variant_Of_Existing_Type>
+    <Galactic_Position>-600.98, 353.25, 20.0</Galactic_Position>
+  </Planet>
+
+  <Planet Name="Universe_L_M6R_214">
+    <Variant_Of_Existing_Type>M6R_214</Variant_Of_Existing_Type>
+    <Galactic_Position>-400.0, 990.0, 20.0</Galactic_Position>
+  </Planet>
+
+  <Planet Name="Universe_L_M6R_867">
+    <Variant_Of_Existing_Type>M6R_867</Variant_Of_Existing_Type>
+    <Galactic_Position>-470.0, 600.0, 20.0</Galactic_Position>
+  </Planet>
+  
+  <Planet Name="Universe_L_M7G_677">
+    <Variant_Of_Existing_Type>M7G_677</Variant_Of_Existing_Type>
+    <Galactic_Position>-413.31, 488.95, 20.0</Galactic_Position>
+  </Planet>
+
+  <Planet Name="Universe_L_M8G_352">
+    <Variant_Of_Existing_Type>M8G_352</Variant_Of_Existing_Type>
+    <Galactic_Position>-546.52, 465.8, 20.0</Galactic_Position>
+  </Planet>
+  
+  <Planet Name="Universe_L_M9R_373">
+    <Variant_Of_Existing_Type>M9R_373</Variant_Of_Existing_Type>
+    <Galactic_Position>-624.05, 582.26, 15.0</Galactic_Position>
+  </Planet>
+  
+  <Planet Name="Universe_L_Manaria">
+    <Variant_Of_Existing_Type>Manaria</Variant_Of_Existing_Type>
+    <Galactic_Position>-577.92, 515.0, 28.0</Galactic_Position>
+  </Planet>
+  
+  <Planet Name="Universe_L_Midway">
+    <Variant_Of_Existing_Type>Midway</Variant_Of_Existing_Type>
+    <Galactic_Position>-226.7, 179.5, 20.0</Galactic_Position>
+  </Planet>
+
+  <Planet Name="Universe_L_Moon_Base">
+    <Variant_Of_Existing_Type>Moon_Base</Variant_Of_Existing_Type>
+    <Galactic_Position>-390, 880, 20.0</Galactic_Position>
+  </Planet>
+  
+  <Planet Name="Universe_L_New_Athos">
+    <Variant_Of_Existing_Type>New_Athos</Variant_Of_Existing_Type>
+    <Galactic_Position>-180, 550, 28.0</Galactic_Position>
+  </Planet>
+  
+  <Planet Name="Universe_L_Olesia">
+    <Variant_Of_Existing_Type>Olesia</Variant_Of_Existing_Type>
+    <Galactic_Position>-623.62, 913.92, 20.0</Galactic_Position>
+  </Planet>
+  
+  <Planet Name="Universe_L_Orakis">
+    <Variant_Of_Existing_Type>Orakis</Variant_Of_Existing_Type>
+    <Galactic_Position>-455.88, 359.01, 20.0</Galactic_Position>
+  </Planet>
+  
+  <Planet Name="Universe_L_Proculis">
+    <Variant_Of_Existing_Type>Proculis</Variant_Of_Existing_Type>
+    <Galactic_Position>-588.82, 850.5, 20.0</Galactic_Position>
+  </Planet>
+  
+  <Planet Name="Universe_L_Rasputin">
+    <Variant_Of_Existing_Type>Rasputin</Variant_Of_Existing_Type>
+    <Galactic_Position>-506.98, 593.48, 28.0</Galactic_Position>
+  </Planet>
+  
+  <Planet Name="Universe_L_Sagon">
+    <Variant_Of_Existing_Type>Sagon</Variant_Of_Existing_Type>
+    <Galactic_Position>-442.65, 722.26, 20.0</Galactic_Position>
+  </Planet>
+  
+  <Planet Name="Universe_L_Sateda">
+    <Variant_Of_Existing_Type>Sateda</Variant_Of_Existing_Type>
+    <Galactic_Position>-300, 875, 20.0</Galactic_Position>
+  </Planet>
+  
+  <Planet Name="Universe_L_Taranis">
+    <Variant_Of_Existing_Type>Taranis</Variant_Of_Existing_Type>
+    <Galactic_Position>-738.21, 714.18, 20.0</Galactic_Position>
+  </Planet>
+  
+  <Planet Name="Universe_L_Unknown_Sector_P">
+    <Variant_Of_Existing_Type>Unknown_Sector_P</Variant_Of_Existing_Type>
+    <Galactic_Position>-817.7, 479.15, 20.0</Galactic_Position>
+  </Planet>
+  
+  <Planet Name="Universe_L_Vanir">
+    <Variant_Of_Existing_Type>Vanir</Variant_Of_Existing_Type>
+    <Galactic_Position>-180.0, 853.00, 20.0</Galactic_Position>
+  </Planet>
+  
+  <Planet Name="Universe_L_Vadena">
+    <Variant_Of_Existing_Type>Vadena</Variant_Of_Existing_Type>
+    <Galactic_Position>-552.15, 781.9, 20.0</Galactic_Position>
+  </Planet>
+
+  <Planet Name="Universe_L_Void">
+    <Variant_Of_Existing_Type>Void</Variant_Of_Existing_Type>
+    <Galactic_Position>-86.5, 290.1, 30.0</Galactic_Position>
+  </Planet>
+  
+  <Planet Name="Universe_L_Wraith_Cloning_Facility"><!--Arcanus-->
+    <Variant_Of_Existing_Type>Wraith_Cloning_Facility</Variant_Of_Existing_Type>
+    <Galactic_Position>-698.31, 845.76, 20.0</Galactic_Position>
+  </Planet>
+  
+  <Planet Name="Universe_L_Wraith_Homeworld"><!--Avitus-->
+    <Variant_Of_Existing_Type>Wraith_Homeworld</Variant_Of_Existing_Type>
+    <Galactic_Position>-480.78, 971.76, 20.0</Galactic_Position>
+  </Planet>
+  
+  
+  <!--Ori Galaxy-->
+  
+  <Planet Name="Universe_L_Celestis">
+    <Variant_Of_Existing_Type>Celestis</Variant_Of_Existing_Type>
+    <Galactic_Position>-330, -935, -100.0</Galactic_Position>
+  </Planet>
+  
+  <Planet Name="Universe_L_Supergate">
+    <Variant_Of_Existing_Type>Supergate</Variant_Of_Existing_Type>
+    <Galactic_Position>-160, -800, -100.0</Galactic_Position>
+  </Planet>
+  
+  <Planet Name="Universe_L_Via_Caelum">
+    <Variant_Of_Existing_Type>Via_Caelum</Variant_Of_Existing_Type>
+    <Galactic_Position>-393, -771, -100.0</Galactic_Position>
+  </Planet>
+  
+  <Planet Name="Universe_L_Vis_Deorum">
+    <Variant_Of_Existing_Type>Vis_Deorum</Variant_Of_Existing_Type>
+    <Galactic_Position>-262, -885, -100.0</Galactic_Position>
+  </Planet>
+  
+  <Planet Name="Universe_L_Ver_Isca">
+    <Variant_Of_Existing_Type>Ver_Isca</Variant_Of_Existing_Type>
+    <Galactic_Position>-225, -819, -100.0</Galactic_Position>
+  </Planet>
+  
+  <Planet Name="Universe_L_Ver_Omesh">
+    <Variant_Of_Existing_Type>Ver_Omesh</Variant_Of_Existing_Type>
+    <Galactic_Position>-290, -756, -100.0</Galactic_Position>
+  </Planet>
+  
+  
+  <!--Ida Galaxy-->
+  
+  <Planet Name="Universe_L_Hala">
+    <Variant_Of_Existing_Type>Hala</Variant_Of_Existing_Type>
+    <Galactic_Position>380, 895, -50</Galactic_Position>
+  </Planet>
+  
+  <Planet Name="Universe_L_Orilla">
+    <Variant_Of_Existing_Type>Orilla</Variant_Of_Existing_Type>
+    <Galactic_Position>504, 827, -50</Galactic_Position>
+  </Planet>
+  
+  <Planet Name="Universe_L_Othala">
+    <Variant_Of_Existing_Type>Othala</Variant_Of_Existing_Type>
+    <Galactic_Position>490, 930, -50</Galactic_Position>
+  </Planet>
+  
+  <Planet Name="Universe_L_Thrudvang">
+    <Variant_Of_Existing_Type>Thrudvang</Variant_Of_Existing_Type>
+    <Galactic_Position>330, 840, -50</Galactic_Position>
+  </Planet>
+
+  <Planet Name="Universe_L_Engi">
+    <Variant_Of_Existing_Type>Engi</Variant_Of_Existing_Type>
+    <Galactic_Position>435, 770, -50</Galactic_Position>
+  </Planet>
+  
+  <Planet Name="Universe_L_Algiz">
+    <Variant_Of_Existing_Type>Algiz</Variant_Of_Existing_Type>
+    <Galactic_Position>446.0, 877.8, -50</Galactic_Position>
+  </Planet>
+
+</Planets>
