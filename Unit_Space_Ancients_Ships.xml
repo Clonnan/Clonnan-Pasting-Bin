@@ -1,0 +1,744 @@
+<?xml version="1.0"?>
+<Ancients> 
+
+  <SpaceUnit Name="Ancient_Jumper">
+    <Variant_Of_Existing_Type>Asuran_Puddle_Jumper</Variant_Of_Existing_Type>
+    <Text_ID>TEXT_ANCIENTS_SPACE_UNIT_PUDDLE_JUMPER</Text_ID>
+    <Encyclopedia_Text>TEXT_DESCRIPTION_ANCIENTS_PUDDLE_JUMPER_SPACE TEXT_DESCRIPTION_FIGHTER_HYPERSPACE_NO</Encyclopedia_Text>
+    <Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_PUDDLE_JUMPER</Encyclopedia_Unit_Class>
+    <Affiliation>Asuran, Rebel, Empire, Underworld</Affiliation>
+    <Tech_Level>99</Tech_Level>
+    <!--Abilities SubObjectList="Yes">
+			<Combat_Bonus_Ability Name="Ancient_Jumper_Combat_Bonus_GC">
+				<Unit_Strength_Category/>
+				<Activation_Style>Space_Automatic</Activation_Style>
+				<Applicable_Unit_Categories/>
+				<Applicable_Unit_Types>Ancient_Jumper</Applicable_Unit_Types>
+				<Health_Bonus_Percentage>0.0</Health_Bonus_Percentage>
+				<Damage_Bonus_Percentage>0.5</Damage_Bonus_Percentage>
+				<Energy_Pool_Bonus_Percentage>0.0</Energy_Pool_Bonus_Percentage>
+				<Shield_Bonus_Percentage>0.5</Shield_Bonus_Percentage>
+				<Defense_Bonus_Percentage>0.0</Defense_Bonus_Percentage>
+				<Movement_Speed_Bonus_Percentage>0.0</Movement_Speed_Bonus_Percentage>
+				<Stacking_Category>1</Stacking_Category>
+			</Combat_Bonus_Ability>
+		</Abilities-->
+  </SpaceUnit>
+  <Squadron Name="Ancient_Jumper_Squadron">
+    <Variant_Of_Existing_Type>Asuran_Puddle_Jumper_Squadron_No_Prereq</Variant_Of_Existing_Type>
+    <Text_ID>TEXT_ANCIENTS_SPACE_UNIT_PUDDLE_JUMPER</Text_ID>
+    <Encyclopedia_Text>TEXT_DESCRIPTION_ANCIENTS_PUDDLE_JUMPER_SPACE TEXT_DESCRIPTION_FIGHTER_HYPERSPACE_NO</Encyclopedia_Text>
+    <Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_PUDDLE_JUMPER</Encyclopedia_Unit_Class>
+    <Affiliation>Asuran, Rebel, Empire, Underworld</Affiliation>
+    <Squadron_Units>Ancient_Jumper, Ancient_Jumper, Ancient_Jumper, Ancient_Jumper, Ancient_Jumper</Squadron_Units>
+    <Tactical_Build_Cost_Multiplayer>900</Tactical_Build_Cost_Multiplayer>
+    <Tactical_Build_Time_Seconds>10</Tactical_Build_Time_Seconds> 
+		<Tech_Level>1</Tech_Level>
+		<Required_Timeline>0</Required_Timeline>
+		<Required_Ground_Base_Level>0</Required_Ground_Base_Level>
+		<Required_Star_Base_Level>1</Required_Star_Base_Level>
+		<Required_Special_Structures></Required_Special_Structures>
+		<Required_Planets>
+      Pegasus_Prelude_Planet_Ascension,
+      Pegasus_Prelude_Planet_Asteroid_Field,
+      Pegasus_Prelude_Planet_Asuras,
+      Pegasus_Prelude_Planet_Athos,
+      Pegasus_Prelude_Planet_Aurora,
+      Pegasus_Prelude_Planet_Belkan,
+      Pegasus_Prelude_Planet_Dagan,
+      Pegasus_Prelude_Planet_Doranda,
+      Pegasus_Prelude_Planet_Edowin,
+      Pegasus_Prelude_Planet_Gas_Nebula,
+      Pegasus_Prelude_Planet_Gelda,
+      Pegasus_Prelude_Planet_Gonta,
+      Pegasus_Prelude_Planet_Hoff,
+      Pegasus_Prelude_Planet_Iratus_Bestiola,
+      Pegasus_Prelude_Planet_Jenev,
+      Pegasus_Prelude_Planet_Kohal,
+      Pegasus_Prelude_Planet_Lantea,
+      Pegasus_Prelude_Planet_Laros,
+      Pegasus_Prelude_Planet_M6H_987,
+      Pegasus_Prelude_Planet_Manaria,
+      Pegasus_Prelude_Planet_Olesia,
+      Pegasus_Prelude_Planet_Orakis,
+      Pegasus_Prelude_Planet_Orlan,
+      Pegasus_Prelude_Planet_Proculis,
+      Pegasus_Prelude_Planet_Rasputin,
+      Pegasus_Prelude_Planet_Sagon,
+      Pegasus_Prelude_Planet_Sun,
+      Pegasus_Prelude_Planet_Taranis,
+      Pegasus_Prelude_Planet_Vadena,
+      Pegasus_Prelude_Planet_Wraith_Homeworld,
+      Pegasus_Prelude_Planet_Wraith_ZPM_Base
+    </Required_Planets>
+	</Squadron>
+  
+   <SpaceUnit Name="Ancient_Jumper_SK">
+    <Variant_Of_Existing_Type>Asuran_Puddle_Jumper</Variant_Of_Existing_Type>
+    <Text_ID>TEXT_UNIT_TAURI_PUDDLE_JUMPER</Text_ID>
+    <Encyclopedia_Text>TEXT_DESCRIPTION_TAURI_PUDDLE_JUMPER</Encyclopedia_Text>
+    <Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_PUDDLE_JUMPER</Encyclopedia_Unit_Class>
+    <Affiliation>Empire, Rebel, Underworld</Affiliation>
+    <Tech_Level>99</Tech_Level>
+  </SpaceUnit>
+  <Squadron Name="Ancient_Jumper_Squadron_SK">
+    <Variant_Of_Existing_Type>Asuran_Puddle_Jumper_Squadron_No_Prereq</Variant_Of_Existing_Type>
+    <Text_ID>TEXT_UNIT_TAURI_PUDDLE_JUMPER</Text_ID>
+    <Encyclopedia_Text>TEXT_DESCRIPTION_TAURI_PUDDLE_JUMPER</Encyclopedia_Text>
+    <Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_PUDDLE_JUMPER</Encyclopedia_Unit_Class>
+    <Affiliation>Empire, Rebel, Underworld</Affiliation>
+    <Squadron_Units>Ancient_Jumper_SK, Ancient_Jumper_SK, Ancient_Jumper_SK, Ancient_Jumper_SK, Ancient_Jumper_SK</Squadron_Units>
+    <Tech_Level>99</Tech_Level>
+  </Squadron>
+  
+  <SpaceUnit Name="Ancient_Drone">
+    <Variant_Of_Existing_Type>Asuran_Drone</Variant_Of_Existing_Type>
+    <Text_ID>TEXT_ANCIENTS_SPACE_UNIT_BATTLEDRONE</Text_ID>
+    <Encyclopedia_Text>TEXT_DESCRIPTION_ANCIENTS_BATTLEDRONE_SPACE</Encyclopedia_Text>
+    <Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_ANCIENTS_BATTLEDRONE</Encyclopedia_Unit_Class>
+    <Affiliation>Asuran, Rebel, Empire, Underworld</Affiliation>
+    <Tech_Level>99</Tech_Level>
+    <!--Abilities SubObjectList="Yes">
+			<Combat_Bonus_Ability Name="Ancient_Drone_Combat_Bonus_GC">
+				<Unit_Strength_Category/>
+				<Activation_Style>Space_Automatic</Activation_Style>
+				<Applicable_Unit_Categories/>
+				<Applicable_Unit_Types>Ancient_Drone</Applicable_Unit_Types>
+				<Health_Bonus_Percentage>0.5</Health_Bonus_Percentage>
+				<Damage_Bonus_Percentage>0.5</Damage_Bonus_Percentage>
+				<Energy_Pool_Bonus_Percentage>0.0</Energy_Pool_Bonus_Percentage>
+				<Shield_Bonus_Percentage>0.0</Shield_Bonus_Percentage>
+				<Defense_Bonus_Percentage>0.0</Defense_Bonus_Percentage>
+				<Movement_Speed_Bonus_Percentage>0.0</Movement_Speed_Bonus_Percentage>
+				<Stacking_Category>1</Stacking_Category>
+			</Combat_Bonus_Ability>
+		</Abilities-->
+  </SpaceUnit>
+  <Squadron Name="Ancient_Drone_Squadron">
+    <Variant_Of_Existing_Type>Asuran_Drone_Squadron_No_Prereq</Variant_Of_Existing_Type>
+    <Text_ID>TEXT_ANCIENTS_SPACE_UNIT_BATTLEDRONE</Text_ID>
+    <Encyclopedia_Text>TEXT_DESCRIPTION_ANCIENTS_BATTLEDRONE_SPACE</Encyclopedia_Text>
+    <Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_ANCIENTS_BATTLEDRONE</Encyclopedia_Unit_Class>
+    <Squadron_Units>Ancient_Drone, Ancient_Drone, Ancient_Drone, Ancient_Drone, Ancient_Drone, Ancient_Drone, Ancient_Drone, Ancient_Drone</Squadron_Units>
+    <Affiliation>Asuran, Rebel, Empire, Underworld</Affiliation>
+    <Tactical_Build_Cost_Multiplayer>500</Tactical_Build_Cost_Multiplayer>
+    <Tactical_Build_Time_Seconds>8</Tactical_Build_Time_Seconds> 
+		<Tech_Level>2</Tech_Level>
+		<Required_Timeline>0</Required_Timeline>
+		<Required_Ground_Base_Level>0</Required_Ground_Base_Level>
+		<Required_Star_Base_Level>1</Required_Star_Base_Level>
+		<Required_Special_Structures></Required_Special_Structures>
+		<Required_Planets>
+      Pegasus_Prelude_Planet_Ascension,
+      Pegasus_Prelude_Planet_Asteroid_Field,
+      Pegasus_Prelude_Planet_Asuras,
+      Pegasus_Prelude_Planet_Athos,
+      Pegasus_Prelude_Planet_Aurora,
+      Pegasus_Prelude_Planet_Belkan,
+      Pegasus_Prelude_Planet_Dagan,
+      Pegasus_Prelude_Planet_Doranda,
+      Pegasus_Prelude_Planet_Edowin,
+      Pegasus_Prelude_Planet_Gas_Nebula,
+      Pegasus_Prelude_Planet_Gelda,
+      Pegasus_Prelude_Planet_Gonta,
+      Pegasus_Prelude_Planet_Hoff,
+      Pegasus_Prelude_Planet_Iratus_Bestiola,
+      Pegasus_Prelude_Planet_Jenev,
+      Pegasus_Prelude_Planet_Kohal,
+      Pegasus_Prelude_Planet_Lantea,
+      Pegasus_Prelude_Planet_Laros,
+      Pegasus_Prelude_Planet_M6H_987,
+      Pegasus_Prelude_Planet_Manaria,
+      Pegasus_Prelude_Planet_Olesia,
+      Pegasus_Prelude_Planet_Orakis,
+      Pegasus_Prelude_Planet_Orlan,
+      Pegasus_Prelude_Planet_Proculis,
+      Pegasus_Prelude_Planet_Rasputin,
+      Pegasus_Prelude_Planet_Sagon,
+      Pegasus_Prelude_Planet_Sun,
+      Pegasus_Prelude_Planet_Taranis,
+      Pegasus_Prelude_Planet_Vadena,
+      Pegasus_Prelude_Planet_Wraith_Homeworld,
+      Pegasus_Prelude_Planet_Wraith_ZPM_Base
+    </Required_Planets>
+  </Squadron>
+  
+  <SpaceUnit Name="Ancient_Heavy_Fighter">
+    <Variant_Of_Existing_Type>Asuran_Heavy_Fighter</Variant_Of_Existing_Type>
+    <Text_ID>TEXT_ANCIENTS_SPACE_UNIT_HEAVY_BOMBER</Text_ID>
+    <Encyclopedia_Text>TEXT_DESCRIPTION_ANCIENTS_HEAVY_BOMBER_SPACE</Encyclopedia_Text>
+    <Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_ANCIENTS_HEAVY_FIGHTER</Encyclopedia_Unit_Class>
+    <Affiliation>Asuran, Rebel, Empire, Underworld</Affiliation>
+    <Tech_Level>99</Tech_Level>
+    <!--Abilities SubObjectList="Yes">
+			<Combat_Bonus_Ability Name="Ancient_Heavy_Fighter_Combat_Bonus_GC">
+				<Unit_Strength_Category/>
+				<Activation_Style>Space_Automatic</Activation_Style>
+				<Applicable_Unit_Categories/>
+				<Applicable_Unit_Types>Ancient_Heavy_Fighter</Applicable_Unit_Types>
+				<Health_Bonus_Percentage>0.5</Health_Bonus_Percentage>
+				<Damage_Bonus_Percentage>0.5</Damage_Bonus_Percentage>
+				<Energy_Pool_Bonus_Percentage>0.0</Energy_Pool_Bonus_Percentage>
+				<Shield_Bonus_Percentage>0.0</Shield_Bonus_Percentage>
+				<Defense_Bonus_Percentage>0.0</Defense_Bonus_Percentage>
+				<Movement_Speed_Bonus_Percentage>0.0</Movement_Speed_Bonus_Percentage>
+				<Stacking_Category>1</Stacking_Category>
+			</Combat_Bonus_Ability>
+		</Abilities-->
+  </SpaceUnit>
+  <Squadron Name="Ancient_Heavy_Fighter_Squadron">
+    <Variant_Of_Existing_Type>Asuran_Heavy_Fighter_Squadron_No_Prereq</Variant_Of_Existing_Type>
+    <Text_ID>TEXT_ANCIENTS_SPACE_UNIT_HEAVY_FIGHTER</Text_ID>
+    <Encyclopedia_Text>TEXT_DESCRIPTION_ANCIENTS_HEAVY_FIGHTER_SPACE</Encyclopedia_Text>
+    <Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_ANCIENTS_HEAVY_FIGHTER</Encyclopedia_Unit_Class>
+    <Affiliation>Asuran, Rebel, Empire, Underworld</Affiliation>
+    <Squadron_Units>Ancient_Heavy_Fighter, Ancient_Heavy_Fighter, Ancient_Heavy_Fighter, Ancient_Heavy_Fighter, Ancient_Heavy_Fighter, Ancient_Heavy_Fighter, Ancient_Heavy_Fighter, Ancient_Heavy_Fighter</Squadron_Units>
+    <Tactical_Build_Cost_Multiplayer>750</Tactical_Build_Cost_Multiplayer>
+    <Tactical_Build_Time_Seconds>10</Tactical_Build_Time_Seconds> 
+		<Tech_Level>3</Tech_Level>
+		<Required_Timeline>0</Required_Timeline>
+		<Required_Ground_Base_Level>0</Required_Ground_Base_Level>
+		<Required_Star_Base_Level>1</Required_Star_Base_Level>
+		<Required_Special_Structures></Required_Special_Structures>
+		<Required_Planets>
+      Pegasus_Prelude_Planet_Ascension,
+      Pegasus_Prelude_Planet_Asteroid_Field,
+      Pegasus_Prelude_Planet_Asuras,
+      Pegasus_Prelude_Planet_Athos,
+      Pegasus_Prelude_Planet_Aurora,
+      Pegasus_Prelude_Planet_Belkan,
+      Pegasus_Prelude_Planet_Dagan,
+      Pegasus_Prelude_Planet_Doranda,
+      Pegasus_Prelude_Planet_Edowin,
+      Pegasus_Prelude_Planet_Gas_Nebula,
+      Pegasus_Prelude_Planet_Gelda,
+      Pegasus_Prelude_Planet_Gonta,
+      Pegasus_Prelude_Planet_Hoff,
+      Pegasus_Prelude_Planet_Iratus_Bestiola,
+      Pegasus_Prelude_Planet_Jenev,
+      Pegasus_Prelude_Planet_Kohal,
+      Pegasus_Prelude_Planet_Lantea,
+      Pegasus_Prelude_Planet_Laros,
+      Pegasus_Prelude_Planet_M6H_987,
+      Pegasus_Prelude_Planet_Manaria,
+      Pegasus_Prelude_Planet_Olesia,
+      Pegasus_Prelude_Planet_Orakis,
+      Pegasus_Prelude_Planet_Orlan,
+      Pegasus_Prelude_Planet_Proculis,
+      Pegasus_Prelude_Planet_Rasputin,
+      Pegasus_Prelude_Planet_Sagon,
+      Pegasus_Prelude_Planet_Sun,
+      Pegasus_Prelude_Planet_Taranis,
+      Pegasus_Prelude_Planet_Vadena,
+      Pegasus_Prelude_Planet_Wraith_Homeworld,
+      Pegasus_Prelude_Planet_Wraith_ZPM_Base
+    </Required_Planets>
+  </Squadron>
+    
+  <SpaceUnit Name="Ancient_Heavy_Bomber">
+    <Variant_Of_Existing_Type>Asuran_Heavy_Bomber</Variant_Of_Existing_Type>
+    <Text_ID>TEXT_ANCIENTS_SPACE_UNIT_HEAVY_BOMBER</Text_ID>
+    <Encyclopedia_Text>TEXT_DESCRIPTION_ANCIENTS_HEAVY_BOMBER_SPACE</Encyclopedia_Text>
+    <Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_ANCIENTS_HEAVY_BOMBER</Encyclopedia_Unit_Class>
+    <Affiliation>Asuran, Rebel, Empire, Underworld</Affiliation>
+    <Tech_Level>99</Tech_Level>
+    <!--Abilities SubObjectList="Yes">
+			<Combat_Bonus_Ability Name="Ancient_Heavy_Bomber_Combat_Bonus_GC">
+				<Unit_Strength_Category/>
+				<Activation_Style>Space_Automatic</Activation_Style>
+				<Applicable_Unit_Categories/>
+				<Applicable_Unit_Types>Ancient_Heavy_Bomber</Applicable_Unit_Types>
+				<Health_Bonus_Percentage>0.5</Health_Bonus_Percentage>
+				<Damage_Bonus_Percentage>0.5</Damage_Bonus_Percentage>
+				<Energy_Pool_Bonus_Percentage>0.0</Energy_Pool_Bonus_Percentage>
+				<Shield_Bonus_Percentage>0.0</Shield_Bonus_Percentage>
+				<Defense_Bonus_Percentage>0.0</Defense_Bonus_Percentage>
+				<Movement_Speed_Bonus_Percentage>0.0</Movement_Speed_Bonus_Percentage>
+				<Stacking_Category>1</Stacking_Category>
+			</Combat_Bonus_Ability>
+		</Abilities-->
+  </SpaceUnit>
+  <Squadron Name="Ancient_Heavy_Bomber_Squadron">
+    <Variant_Of_Existing_Type>Asuran_Heavy_Bomber_Squadron_No_Prereq</Variant_Of_Existing_Type>
+    <Text_ID>TEXT_ANCIENTS_SPACE_UNIT_HEAVY_BOMBER</Text_ID>
+    <Encyclopedia_Text>TEXT_DESCRIPTION_ANCIENTS_HEAVY_BOMBER_SPACE</Encyclopedia_Text>
+    <Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_ANCIENTS_HEAVY_BOMBER</Encyclopedia_Unit_Class>
+    <Affiliation>Asuran, Rebel, Empire, Underworld</Affiliation>
+    <Squadron_Units>Ancient_Heavy_Bomber, Ancient_Heavy_Bomber, Ancient_Heavy_Bomber<!--, Ancient_Heavy_Bomber, Ancient_Heavy_Bomber-->, Ancient_Heavy_Bomber, Ancient_Heavy_Bomber, Ancient_Heavy_Bomber<!--</Squadron_Units>
+    <Tactical_Build_Cost_Multiplayer>750</Tactical_Build_Cost_Multiplayer>
+    <Tactical_Build_Time_Seconds>10</Tactical_Build_Time_Seconds> 
+		<Tech_Level>4</Tech_Level>
+		<Required_Timeline>0</Required_Timeline>
+		<Required_Ground_Base_Level>0</Required_Ground_Base_Level>
+		<Required_Star_Base_Level>1</Required_Star_Base_Level>
+		<Required_Special_Structures></Required_Special_Structures>
+		<Required_Planets>
+      Pegasus_Prelude_Planet_Ascension,
+      Pegasus_Prelude_Planet_Asteroid_Field,
+      Pegasus_Prelude_Planet_Asuras,
+      Pegasus_Prelude_Planet_Athos,
+      Pegasus_Prelude_Planet_Aurora,
+      Pegasus_Prelude_Planet_Belkan,
+      Pegasus_Prelude_Planet_Dagan,
+      Pegasus_Prelude_Planet_Doranda,
+      Pegasus_Prelude_Planet_Edowin,
+      Pegasus_Prelude_Planet_Gas_Nebula,
+      Pegasus_Prelude_Planet_Gelda,
+      Pegasus_Prelude_Planet_Gonta,
+      Pegasus_Prelude_Planet_Hoff,
+      Pegasus_Prelude_Planet_Iratus_Bestiola,
+      Pegasus_Prelude_Planet_Jenev,
+      Pegasus_Prelude_Planet_Kohal,
+      Pegasus_Prelude_Planet_Lantea,
+      Pegasus_Prelude_Planet_Laros,
+      Pegasus_Prelude_Planet_M6H_987,
+      Pegasus_Prelude_Planet_Manaria,
+      Pegasus_Prelude_Planet_Olesia,
+      Pegasus_Prelude_Planet_Orakis,
+      Pegasus_Prelude_Planet_Orlan,
+      Pegasus_Prelude_Planet_Proculis,
+      Pegasus_Prelude_Planet_Rasputin,
+      Pegasus_Prelude_Planet_Sagon,
+      Pegasus_Prelude_Planet_Sun,
+      Pegasus_Prelude_Planet_Taranis,
+      Pegasus_Prelude_Planet_Vadena,
+      Pegasus_Prelude_Planet_Wraith_Homeworld,
+      Pegasus_Prelude_Planet_Wraith_ZPM_Base
+    </Required_Planets>
+  </Squadron>
+ 
+  <SpaceUnit Name="Ancient_Corvette">
+    <Variant_Of_Existing_Type>Asuran_Corvette</Variant_Of_Existing_Type>
+    <Text_ID>TEXT_ANCIENTS_SPACE_UNIT_CORVETTE</Text_ID>
+    <Encyclopedia_Text>TEXT_DESCRIPTION_ANCIENTS_CORVETTE_SPACE</Encyclopedia_Text>
+    <Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_ANCIENTS_CORVETTE</Encyclopedia_Unit_Class>
+    <Affiliation>Asuran, Rebel, Empire, Underworld</Affiliation>
+    <Tactical_Build_Cost_Multiplayer>2000</Tactical_Build_Cost_Multiplayer>
+    <Tactical_Build_Time_Seconds>15</Tactical_Build_Time_Seconds> 
+		<Tech_Level>1</Tech_Level>
+		<Required_Timeline>0</Required_Timeline>
+		<Required_Ground_Base_Level>0</Required_Ground_Base_Level>
+		<Required_Star_Base_Level>1</Required_Star_Base_Level>
+		<Required_Special_Structures></Required_Special_Structures>
+		<Required_Planets>
+      Pegasus_Prelude_Planet_Ascension,
+      Pegasus_Prelude_Planet_Asteroid_Field,
+      Pegasus_Prelude_Planet_Asuras,
+      Pegasus_Prelude_Planet_Athos,
+      Pegasus_Prelude_Planet_Aurora,
+      Pegasus_Prelude_Planet_Belkan,
+      Pegasus_Prelude_Planet_Dagan,
+      Pegasus_Prelude_Planet_Doranda,
+      Pegasus_Prelude_Planet_Edowin,
+      Pegasus_Prelude_Planet_Gas_Nebula,
+      Pegasus_Prelude_Planet_Gelda,
+      Pegasus_Prelude_Planet_Gonta,
+      Pegasus_Prelude_Planet_Hoff,
+      Pegasus_Prelude_Planet_Iratus_Bestiola,
+      Pegasus_Prelude_Planet_Jenev,
+      Pegasus_Prelude_Planet_Kohal,
+      Pegasus_Prelude_Planet_Lantea,
+      Pegasus_Prelude_Planet_Laros,
+      Pegasus_Prelude_Planet_M6H_987,
+      Pegasus_Prelude_Planet_Manaria,
+      Pegasus_Prelude_Planet_Olesia,
+      Pegasus_Prelude_Planet_Orakis,
+      Pegasus_Prelude_Planet_Orlan,
+      Pegasus_Prelude_Planet_Proculis,
+      Pegasus_Prelude_Planet_Rasputin,
+      Pegasus_Prelude_Planet_Sagon,
+      Pegasus_Prelude_Planet_Sun,
+      Pegasus_Prelude_Planet_Taranis,
+      Pegasus_Prelude_Planet_Vadena,
+      Pegasus_Prelude_Planet_Wraith_Homeworld,
+      Pegasus_Prelude_Planet_Wraith_ZPM_Base
+    </Required_Planets>
+    -->
+    <!--Abilities SubObjectList="Yes">
+			<Combat_Bonus_Ability Name="Ancient_Corvette_Combat_Bonus_GC">
+				<Unit_Strength_Category/>
+				<Activation_Style>Space_Automatic</Activation_Style>
+				<Applicable_Unit_Categories/>
+				<Applicable_Unit_Types>Ancient_Corvette</Applicable_Unit_Types>
+				<Health_Bonus_Percentage>0.1</Health_Bonus_Percentage>
+				<Damage_Bonus_Percentage>0.5</Damage_Bonus_Percentage>
+				<Energy_Pool_Bonus_Percentage>0.0</Energy_Pool_Bonus_Percentage>
+				<Shield_Bonus_Percentage>0.4</Shield_Bonus_Percentage>
+				<Defense_Bonus_Percentage>0.0</Defense_Bonus_Percentage>
+				<Movement_Speed_Bonus_Percentage>0.0</Movement_Speed_Bonus_Percentage>
+				<Stacking_Category>1</Stacking_Category>
+			</Combat_Bonus_Ability>
+		</Abilities-->
+  </SpaceUnit>
+
+  <SpaceUnit Name="Corvette_Dummy_Final_Mission_W">
+    <Variant_Of_Existing_Type>Ancient_Corvette</Variant_Of_Existing_Type>
+    <Affiliation>Neutral</Affiliation>
+    <HardPoints>Hardpoint_None</HardPoints>
+    <Tech_Level>99</Tech_Level>
+  </SpaceUnit>
+
+  <SpaceUnit Name="Ancient_Frigate">
+    <Variant_Of_Existing_Type>Asuran_Frigate</Variant_Of_Existing_Type>
+    <Text_ID>TEXT_ANCIENTS_SPACE_UNIT_FRIGATE</Text_ID>
+    <Encyclopedia_Text>TEXT_DESCRIPTION_ANCIENTS_FRIGATE_SPACE</Encyclopedia_Text>
+    <Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_ANCIENTS_FRIGATE</Encyclopedia_Unit_Class>
+    <Affiliation>Asuran, Rebel, Empire, Underworld</Affiliation>
+    <Tactical_Build_Cost_Multiplayer>3000</Tactical_Build_Cost_Multiplayer>
+    <Tactical_Build_Time_Seconds>22</Tactical_Build_Time_Seconds> 
+		<Tech_Level>2</Tech_Level>
+		<Required_Timeline>0</Required_Timeline>
+		<Required_Ground_Base_Level>0</Required_Ground_Base_Level>
+		<Required_Star_Base_Level>1</Required_Star_Base_Level>
+		<Required_Special_Structures></Required_Special_Structures>
+		<Required_Planets>
+      Pegasus_Prelude_Planet_Ascension,
+      Pegasus_Prelude_Planet_Asteroid_Field,
+      Pegasus_Prelude_Planet_Asuras,
+      Pegasus_Prelude_Planet_Athos,
+      Pegasus_Prelude_Planet_Aurora,
+      Pegasus_Prelude_Planet_Belkan,
+      Pegasus_Prelude_Planet_Dagan,
+      Pegasus_Prelude_Planet_Doranda,
+      Pegasus_Prelude_Planet_Edowin,
+      Pegasus_Prelude_Planet_Gas_Nebula,
+      Pegasus_Prelude_Planet_Gelda,
+      Pegasus_Prelude_Planet_Gonta,
+      Pegasus_Prelude_Planet_Hoff,
+      Pegasus_Prelude_Planet_Iratus_Bestiola,
+      Pegasus_Prelude_Planet_Jenev,
+      Pegasus_Prelude_Planet_Kohal,
+      Pegasus_Prelude_Planet_Lantea,
+      Pegasus_Prelude_Planet_Laros,
+      Pegasus_Prelude_Planet_M6H_987,
+      Pegasus_Prelude_Planet_Manaria,
+      Pegasus_Prelude_Planet_Olesia,
+      Pegasus_Prelude_Planet_Orakis,
+      Pegasus_Prelude_Planet_Orlan,
+      Pegasus_Prelude_Planet_Proculis,
+      Pegasus_Prelude_Planet_Rasputin,
+      Pegasus_Prelude_Planet_Sagon,
+      Pegasus_Prelude_Planet_Sun,
+      Pegasus_Prelude_Planet_Taranis,
+      Pegasus_Prelude_Planet_Vadena,
+      Pegasus_Prelude_Planet_Wraith_Homeworld,
+      Pegasus_Prelude_Planet_Wraith_ZPM_Base
+    </Required_Planets>
+    <HardPoints>
+      HP_Asuran_Frigate_Shield,
+      HP_Asuran_Frigate_Engine,
+      HP_Asuran_Frigate_Plasma_Battery_1,
+      HP_Asuran_Frigate_Plasma_Battery_2,
+      HP_Asuran_Frigate_Plasma_Battery_3,
+      HP_Asuran_Frigate_Plasma_Battery_4
+    </HardPoints>
+    <!--Abilities SubObjectList="Yes">
+			<Combat_Bonus_Ability Name="Ancient_Frigate_Combat_Bonus_GC">
+				<Unit_Strength_Category/>
+				<Activation_Style>Space_Automatic</Activation_Style>
+				<Applicable_Unit_Categories/>
+				<Applicable_Unit_Types>Ancient_Frigate</Applicable_Unit_Types>
+				<Health_Bonus_Percentage>0.1</Health_Bonus_Percentage>
+				<Damage_Bonus_Percentage>0.5</Damage_Bonus_Percentage>
+				<Energy_Pool_Bonus_Percentage>0.0</Energy_Pool_Bonus_Percentage>
+				<Shield_Bonus_Percentage>0.4</Shield_Bonus_Percentage>
+				<Defense_Bonus_Percentage>0.0</Defense_Bonus_Percentage>
+				<Movement_Speed_Bonus_Percentage>0.0</Movement_Speed_Bonus_Percentage>
+				<Stacking_Category>1</Stacking_Category>
+			</Combat_Bonus_Ability>
+		</Abilities-->
+  </SpaceUnit>
+  
+  <SpaceUnit Name="Ancient_Destroyer">
+    <Variant_Of_Existing_Type>Asuran_Destroyer_No_Spawn</Variant_Of_Existing_Type>
+    <Text_ID>TEXT_ANCIENTS_SPACE_UNIT_DESTROYER</Text_ID>
+    <Encyclopedia_Text>TEXT_DESCRIPTION_ANCIENTS_DESTROYER_SPACE</Encyclopedia_Text>
+    <Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_ANCIENTS_DESTROYER</Encyclopedia_Unit_Class>
+    <Starting_Spawned_Units_Tech_0>Ancient_Drone_Squadron, 1</Starting_Spawned_Units_Tech_0>
+    <Spawned_Squadron_Delay_Seconds>15</Spawned_Squadron_Delay_Seconds>
+    <Reserve_Spawned_Units_Tech_0>Ancient_Drone_Squadron, -1</Reserve_Spawned_Units_Tech_0>
+    <Affiliation>Asuran, Rebel, Empire, Underworld</Affiliation>
+    <Tactical_Build_Cost_Multiplayer>4500</Tactical_Build_Cost_Multiplayer>
+    <Tactical_Build_Time_Seconds>29</Tactical_Build_Time_Seconds> 
+		<Tech_Level>3</Tech_Level>
+		<Required_Timeline>0</Required_Timeline>
+		<Required_Ground_Base_Level>0</Required_Ground_Base_Level>
+		<Required_Star_Base_Level>1</Required_Star_Base_Level>
+		<Required_Special_Structures></Required_Special_Structures>
+		<Required_Planets>
+      Pegasus_Prelude_Planet_Ascension,
+      Pegasus_Prelude_Planet_Asteroid_Field,
+      Pegasus_Prelude_Planet_Asuras,
+      Pegasus_Prelude_Planet_Athos,
+      Pegasus_Prelude_Planet_Aurora,
+      Pegasus_Prelude_Planet_Belkan,
+      Pegasus_Prelude_Planet_Dagan,
+      Pegasus_Prelude_Planet_Doranda,
+      Pegasus_Prelude_Planet_Edowin,
+      Pegasus_Prelude_Planet_Gas_Nebula,
+      Pegasus_Prelude_Planet_Gelda,
+      Pegasus_Prelude_Planet_Gonta,
+      Pegasus_Prelude_Planet_Hoff,
+      Pegasus_Prelude_Planet_Iratus_Bestiola,
+      Pegasus_Prelude_Planet_Jenev,
+      Pegasus_Prelude_Planet_Kohal,
+      Pegasus_Prelude_Planet_Lantea,
+      Pegasus_Prelude_Planet_Laros,
+      Pegasus_Prelude_Planet_M6H_987,
+      Pegasus_Prelude_Planet_Manaria,
+      Pegasus_Prelude_Planet_Olesia,
+      Pegasus_Prelude_Planet_Orakis,
+      Pegasus_Prelude_Planet_Orlan,
+      Pegasus_Prelude_Planet_Proculis,
+      Pegasus_Prelude_Planet_Rasputin,
+      Pegasus_Prelude_Planet_Sagon,
+      Pegasus_Prelude_Planet_Sun,
+      Pegasus_Prelude_Planet_Taranis,
+      Pegasus_Prelude_Planet_Vadena,
+      Pegasus_Prelude_Planet_Wraith_Homeworld,
+      Pegasus_Prelude_Planet_Wraith_ZPM_Base
+    </Required_Planets>
+    <!--Abilities SubObjectList="Yes">
+			<Combat_Bonus_Ability Name="Ancient_Destroyer_Combat_Bonus_GC">
+				<Unit_Strength_Category/>
+				<Activation_Style>Space_Automatic</Activation_Style>
+				<Applicable_Unit_Categories/>
+				<Applicable_Unit_Types>Ancient_Destroyer</Applicable_Unit_Types>
+				<Health_Bonus_Percentage>0.1</Health_Bonus_Percentage>
+				<Damage_Bonus_Percentage>0.5</Damage_Bonus_Percentage>
+				<Energy_Pool_Bonus_Percentage>0.0</Energy_Pool_Bonus_Percentage>
+				<Shield_Bonus_Percentage>0.4</Shield_Bonus_Percentage>
+				<Defense_Bonus_Percentage>0.0</Defense_Bonus_Percentage>
+				<Movement_Speed_Bonus_Percentage>0.0</Movement_Speed_Bonus_Percentage>
+				<Stacking_Category>1</Stacking_Category>
+			</Combat_Bonus_Ability>
+		</Abilities-->
+  </SpaceUnit> 
+
+  <SpaceUnit Name="Ancient_Cruiser">
+    <Variant_Of_Existing_Type>Asuran_Cruiser_No_Spawn</Variant_Of_Existing_Type>
+    <Text_ID>TEXT_ANCIENTS_SPACE_UNIT_CRUISER</Text_ID>
+    <Encyclopedia_Text>TEXT_DESCRIPTION_ANCIENTS_CRUISER_SPACE</Encyclopedia_Text>
+    <Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_ANCIENTS_CRUISER</Encyclopedia_Unit_Class>
+    <Starting_Spawned_Units_Tech_0>Ancient_Drone_Squadron, 2</Starting_Spawned_Units_Tech_0>
+    <Spawned_Squadron_Delay_Seconds>4</Spawned_Squadron_Delay_Seconds>
+    <Reserve_Spawned_Units_Tech_0>Ancient_Drone_Squadron, -1</Reserve_Spawned_Units_Tech_0>
+    <Affiliation>Asuran, Rebel, Empire, Underworld</Affiliation>
+    <Tactical_Build_Cost_Multiplayer>6000</Tactical_Build_Cost_Multiplayer>
+    <Tactical_Build_Time_Seconds>36</Tactical_Build_Time_Seconds> 
+		<Tech_Level>4</Tech_Level>
+		<Required_Timeline>0</Required_Timeline>
+		<Required_Ground_Base_Level>0</Required_Ground_Base_Level>
+		<Required_Star_Base_Level>1</Required_Star_Base_Level>
+		<Required_Special_Structures></Required_Special_Structures>
+		<Required_Planets>
+      Pegasus_Prelude_Planet_Ascension,
+      Pegasus_Prelude_Planet_Asteroid_Field,
+      Pegasus_Prelude_Planet_Asuras,
+      Pegasus_Prelude_Planet_Athos,
+      Pegasus_Prelude_Planet_Aurora,
+      Pegasus_Prelude_Planet_Belkan,
+      Pegasus_Prelude_Planet_Dagan,
+      Pegasus_Prelude_Planet_Doranda,
+      Pegasus_Prelude_Planet_Edowin,
+      Pegasus_Prelude_Planet_Gas_Nebula,
+      Pegasus_Prelude_Planet_Gelda,
+      Pegasus_Prelude_Planet_Gonta,
+      Pegasus_Prelude_Planet_Hoff,
+      Pegasus_Prelude_Planet_Iratus_Bestiola,
+      Pegasus_Prelude_Planet_Jenev,
+      Pegasus_Prelude_Planet_Kohal,
+      Pegasus_Prelude_Planet_Lantea,
+      Pegasus_Prelude_Planet_Laros,
+      Pegasus_Prelude_Planet_M6H_987,
+      Pegasus_Prelude_Planet_Manaria,
+      Pegasus_Prelude_Planet_Olesia,
+      Pegasus_Prelude_Planet_Orakis,
+      Pegasus_Prelude_Planet_Orlan,
+      Pegasus_Prelude_Planet_Proculis,
+      Pegasus_Prelude_Planet_Rasputin,
+      Pegasus_Prelude_Planet_Sagon,
+      Pegasus_Prelude_Planet_Sun,
+      Pegasus_Prelude_Planet_Taranis,
+      Pegasus_Prelude_Planet_Vadena,
+      Pegasus_Prelude_Planet_Wraith_Homeworld,
+      Pegasus_Prelude_Planet_Wraith_ZPM_Base
+    </Required_Planets>
+    <!--Abilities SubObjectList="Yes">
+			<Combat_Bonus_Ability Name="Ancient_Cruiser_Combat_Bonus_GC">
+				<Unit_Strength_Category/>
+				<Activation_Style>Space_Automatic</Activation_Style>
+				<Applicable_Unit_Categories/>
+				<Applicable_Unit_Types>Ancient_Cruiser</Applicable_Unit_Types>
+				<Health_Bonus_Percentage>0.1</Health_Bonus_Percentage>
+				<Damage_Bonus_Percentage>0.5</Damage_Bonus_Percentage>
+				<Energy_Pool_Bonus_Percentage>0.0</Energy_Pool_Bonus_Percentage>
+				<Shield_Bonus_Percentage>0.4</Shield_Bonus_Percentage>
+				<Defense_Bonus_Percentage>0.0</Defense_Bonus_Percentage>
+				<Movement_Speed_Bonus_Percentage>0.0</Movement_Speed_Bonus_Percentage>
+				<Stacking_Category>1</Stacking_Category>
+			</Combat_Bonus_Ability>
+		</Abilities-->
+  </SpaceUnit>
+  
+  <SpaceUnit Name="Ancient_Battleship">
+    <Variant_Of_Existing_Type>Asuran_Aurora_No_Spawn</Variant_Of_Existing_Type>
+    <Text_ID>TEXT_ANCIENTS_SPACE_UNIT_WARSHIP</Text_ID>
+    <Encyclopedia_Text>TEXT_DESCRIPTION_ANCIENTS_WARSHIP_SPACE</Encyclopedia_Text>
+    <Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_ANCIENTS_WARSHIP</Encyclopedia_Unit_Class>    
+    <Starting_Spawned_Units_Tech_0>Ancient_Jumper_Squadron, 3</Starting_Spawned_Units_Tech_0>
+    <Spawned_Squadron_Delay_Seconds>6</Spawned_Squadron_Delay_Seconds>
+    <Reserve_Spawned_Units_Tech_0>Ancient_Jumper_Squadron, -1</Reserve_Spawned_Units_Tech_0>
+    <Affiliation>Asuran, Rebel, Empire, Underworld</Affiliation>
+    <Tactical_Build_Cost_Multiplayer>8000</Tactical_Build_Cost_Multiplayer>
+    <Tactical_Build_Time_Seconds>43</Tactical_Build_Time_Seconds> 
+		<Tech_Level>5</Tech_Level>
+		<Required_Timeline>0</Required_Timeline>
+		<Required_Ground_Base_Level>0</Required_Ground_Base_Level>
+		<Required_Star_Base_Level>1</Required_Star_Base_Level>
+		<Required_Special_Structures></Required_Special_Structures>
+		<Required_Planets>
+      Pegasus_Prelude_Planet_Ascension,
+      Pegasus_Prelude_Planet_Asteroid_Field,
+      Pegasus_Prelude_Planet_Asuras,
+      Pegasus_Prelude_Planet_Athos,
+      Pegasus_Prelude_Planet_Aurora,
+      Pegasus_Prelude_Planet_Belkan,
+      Pegasus_Prelude_Planet_Dagan,
+      Pegasus_Prelude_Planet_Doranda,
+      Pegasus_Prelude_Planet_Edowin,
+      Pegasus_Prelude_Planet_Gas_Nebula,
+      Pegasus_Prelude_Planet_Gelda,
+      Pegasus_Prelude_Planet_Gonta,
+      Pegasus_Prelude_Planet_Hoff,
+      Pegasus_Prelude_Planet_Iratus_Bestiola,
+      Pegasus_Prelude_Planet_Jenev,
+      Pegasus_Prelude_Planet_Kohal,
+      Pegasus_Prelude_Planet_Lantea,
+      Pegasus_Prelude_Planet_Laros,
+      Pegasus_Prelude_Planet_M6H_987,
+      Pegasus_Prelude_Planet_Manaria,
+      Pegasus_Prelude_Planet_Olesia,
+      Pegasus_Prelude_Planet_Orakis,
+      Pegasus_Prelude_Planet_Orlan,
+      Pegasus_Prelude_Planet_Proculis,
+      Pegasus_Prelude_Planet_Rasputin,
+      Pegasus_Prelude_Planet_Sagon,
+      Pegasus_Prelude_Planet_Sun,
+      Pegasus_Prelude_Planet_Taranis,
+      Pegasus_Prelude_Planet_Vadena,
+      Pegasus_Prelude_Planet_Wraith_Homeworld,
+      Pegasus_Prelude_Planet_Wraith_ZPM_Base
+    </Required_Planets>
+    <Unit_Abilities_Data SubObjectList="Yes">
+      <Unit_Ability>
+        <Type>SELF_DESTRUCT</Type>
+        <Alternate_Name_Text>TEXT_ABILITY_TAURI_SPACE_ASURANER_KRIEGSSCHIFF_SELBSTZERSTOERUNG</Alternate_Name_Text>
+        <Alternate_Description_Text>TEXT_DESCRIPTION_ABILITY_SELF_DESTRUCTION_ANCIENT_BATTLESHIP</Alternate_Description_Text>
+        <Expiration_Seconds>3.5</Expiration_Seconds>
+        <Recharge_Seconds>10</Recharge_Seconds>
+        <Spawned_Object_Type>Proj_Aurora_Self_Destruct_Blast</Spawned_Object_Type>
+        <Stop_When_Activated>No</Stop_When_Activated>
+        <Supports_Autofire>False</Supports_Autofire>
+      </Unit_Ability>
+    </Unit_Abilities_Data>
+    <!--Abilities SubObjectList="Yes">
+			<Combat_Bonus_Ability Name="Ancient_Aurora_Combat_Bonus_GC">
+				<Unit_Strength_Category/>
+				<Activation_Style>Space_Automatic</Activation_Style>
+				<Applicable_Unit_Categories/>
+				<Applicable_Unit_Types>Ancient_Battleship</Applicable_Unit_Types>
+				<Health_Bonus_Percentage>0.1</Health_Bonus_Percentage>
+				<Damage_Bonus_Percentage>0.7</Damage_Bonus_Percentage>
+				<Energy_Pool_Bonus_Percentage>0.0</Energy_Pool_Bonus_Percentage>
+				<Shield_Bonus_Percentage>0.4</Shield_Bonus_Percentage>
+				<Defense_Bonus_Percentage>0.0</Defense_Bonus_Percentage>
+				<Movement_Speed_Bonus_Percentage>0.0</Movement_Speed_Bonus_Percentage>
+				<Stacking_Category>1</Stacking_Category>
+			</Combat_Bonus_Ability>
+		</Abilities-->
+  </SpaceUnit>
+  
+  <SpaceUnit Name="Ancient_Aurora_ZPM_Mission">
+    <Variant_Of_Existing_Type>Ancient_Battleship</Variant_Of_Existing_Type>
+    <Affiliation>Neutral</Affiliation>
+    <Tech_Level>99</Tech_Level>
+    <Shield_Points>1100</Shield_Points>   
+    <Shield_Refresh_Rate>20</Shield_Refresh_Rate>
+    <Lua_Script>ObjectScript_HW_Big</Lua_Script>
+  </SpaceUnit>
+  
+  <SpaceUnit Name="Ancient_Aurora_Aurora_Mission">
+    <Variant_Of_Existing_Type>Ancient_Battleship</Variant_Of_Existing_Type>
+    <Affiliation>Neutral</Affiliation>
+    <Tech_Level>99</Tech_Level>
+    <Hyperspace_Speed>0.2</Hyperspace_Speed>
+    <Lua_Script>ObjectScript_Patrol_Ships_and_Relay_Hints</Lua_Script>
+  </SpaceUnit>
+  
+  <SpaceUnit Name="Ancient_Dreadnought">
+    <Variant_Of_Existing_Type>Asuran_Dreadnought_No_Spawn</Variant_Of_Existing_Type>
+    <Text_ID>TEXT_ANCIENTS_SPACE_UNIT_DREADNOUGHT</Text_ID>
+    <Encyclopedia_Text>TEXT_DESCRIPTION_ANCIENTS_DREADNOUGHT_SPACE</Encyclopedia_Text>
+    <Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_ANCIENTS_DREADNOUGHT</Encyclopedia_Unit_Class> 
+    <Starting_Spawned_Units_Tech_0>Ancient_Drone_Squadron, 4</Starting_Spawned_Units_Tech_0>
+    <Starting_Spawned_Units_Tech_0>Ancient_Jumper_Squadron, 2</Starting_Spawned_Units_Tech_0>
+    <Spawned_Squadron_Delay_Seconds>4</Spawned_Squadron_Delay_Seconds>
+    <Reserve_Spawned_Units_Tech_0>Ancient_Drone_Squadron, -1</Reserve_Spawned_Units_Tech_0>
+    <Reserve_Spawned_Units_Tech_0>Ancient_Jumper_Squadron, -1</Reserve_Spawned_Units_Tech_0>
+    <Affiliation>Asuran, Rebel, Empire, Underworld</Affiliation>
+    <Tech_Level>99</Tech_Level>
+  </SpaceUnit>
+
+  <SpaceUnit Name="Ancient_City">
+    <Variant_Of_Existing_Type>Asuran_City</Variant_Of_Existing_Type>
+    <Affiliation>Asuran, Rebel, Empire, Underworld</Affiliation>
+    <Text_ID>TEXT_ANCIENTS_SPACE_UNIT_CITYSHIP</Text_ID>
+    <Encyclopedia_Text>TEXT_DESCRIPTION_ANCIENTS_CITYSHIP_SPACE</Encyclopedia_Text>
+    <Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_ATLANTIS</Encyclopedia_Unit_Class>
+    <Tech_Level>99</Tech_Level>
+  </SpaceUnit>
+  
+  <SpaceUnit Name="Ancient_Light_Transport">
+    <Variant_Of_Existing_Type>Asuran_Light_Transport</Variant_Of_Existing_Type>
+    <Text_ID>TEXT_ANCIENTS_SPACE_UNIT_LIGHT_TRANSPORTER</Text_ID>
+    <Encyclopedia_Text>TEXT_DESCRIPTION_ANCIENTS_LIGHT_TRANSPORTER_SPACE</Encyclopedia_Text>
+    <Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_ANCIENTS_LIGHT_TRANSPORTER</Encyclopedia_Unit_Class>
+    <Affiliation>Asuran, Rebel, Empire, Underworld</Affiliation>    
+    <Tech_Level>99</Tech_Level>
+  </SpaceUnit> 
+  
+  <SpaceUnit Name="Ancient_Heavy_Transport">
+    <Variant_Of_Existing_Type>Asuran_Heavy_Transport</Variant_Of_Existing_Type>
+    <Text_ID>TEXT_ANCIENTS_SPACE_UNIT_HEAVY_TRANSPORTER</Text_ID>
+    <Encyclopedia_Text>TEXT_DESCRIPTION_ANCIENTS_HEAVY_TRANSPORTER_SPACE</Encyclopedia_Text>
+    <Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_ANCIENTS_HEAVY_TRANSPORTER</Encyclopedia_Unit_Class> 
+    <Affiliation>Asuran, Rebel, Empire, Underworld</Affiliation>   
+    <Tech_Level>99</Tech_Level>
+  </SpaceUnit> 
+  
+  <SpaceUnit Name="Ancient_Heavy_Transport_Mission_Void">   <!--remove selectable-->
+    <Variant_Of_Existing_Type>Ancient_Heavy_Transport</Variant_Of_Existing_Type>
+    <Affiliation>Asuran, Rebel, Empire, Underworld</Affiliation> 
+    <Armor_Type> Armor_Transport </Armor_Type>
+    <Max_Speed>3.0</Max_Speed><!--4-->
+    <Ship_Class>Transport</Ship_Class>
+    <Tactical_Health>2000</Tactical_Health>
+    <Shield_Points>1500</Shield_Points>
+    <Shield_Refresh_Rate>5</Shield_Refresh_Rate>  
+    <Tech_Level>99</Tech_Level>
+  </SpaceUnit>
+  
+  <SpaceUnit Name="Ancient_Heavy_Transport_Mission_Atlantis">  
+    <Variant_Of_Existing_Type>Ancient_Heavy_Transport</Variant_Of_Existing_Type>
+    <Affiliation>Underworld</Affiliation> 
+    <Armor_Type> Armor_Transport </Armor_Type>
+    <Max_Speed>1.8</Max_Speed>
+    <Ship_Class>Transport</Ship_Class>
+    <Tactical_Health>800</Tactical_Health>
+    <Shield_Points>1000</Shield_Points>
+    <Shield_Refresh_Rate>5</Shield_Refresh_Rate>  
+    <Tech_Level>99</Tech_Level>
+  </SpaceUnit>            
+  
+</Ancients>
